@@ -1,0 +1,30 @@
+{
+  "schema": "roadmap-ai-provider-config-v1",
+  "version": "1.0",
+  "default_provider": "mock",
+  "providers": {
+    "mock": {
+      "enabled": true,
+      "adapter": "mock",
+      "network": false,
+      "description": "Deterministic local QA adapter; no API key."
+    },
+    "openai": {
+      "enabled": false,
+      "adapter": "openai-compatible",
+      "base_url": null,
+      "model": null,
+      "secret_location": "runtime-only",
+      "note": "No API key is stored in repository or learner data."
+    },
+    "gemini": {
+      "enabled": false,
+      "adapter": "gemini",
+      "base_url": null,
+      "model": null,
+      "secret_location": "runtime-only",
+      "note": "No API key is stored in repository or learner data."
+    }
+  },
+  "invariant": "Provider selection changes transport/model only; Tutor Contract, curriculum, graph and learner-evidence policy remain unchanged."
+}

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="440" height="280" viewBox="0 0 440 280" role="img">
+<style>
+  .g{fill:none;stroke:#222;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round}
+  .thin{fill:none;stroke:#555;stroke-width:1.6;stroke-linecap:round}
+  .dash{fill:none;stroke:#666;stroke-width:1.6;stroke-dasharray:6 5}
+  .pt{fill:#222}
+  .txt{font:16px system-ui,sans-serif;fill:#222}
+  .small{font:14px system-ui,sans-serif;fill:#444}
+</style>
+<circle class="g" cx="220" cy="140" r="105"/><circle class="pt" cx="220" cy="140" r="4"/>
+<circle class="pt" cx="120" cy="172" r="4"/><circle class="pt" cx="320" cy="172" r="4"/><circle class="pt" cx="220" cy="35" r="4"/>
+<path class="g" d="M120 172 L220 140 L320 172 M120 172 L220 35 L320 172"/>
+<text class="txt" x="208" y="158">O</text><text class="txt" x="104" y="190">A</text><text class="txt" x="326" y="190">B</text><text class="txt" x="224" y="28">C</text></svg>

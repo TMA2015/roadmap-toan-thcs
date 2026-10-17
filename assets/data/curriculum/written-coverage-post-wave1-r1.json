@@ -1,0 +1,83 @@
+{
+  "audit_id": "MATH-WRITTEN-COVERAGE-POST-WAVE1-R1-20261010",
+  "as_of": "2026-10-10",
+  "status": "RECONCILED_NO_FURTHER_R1_AUTHORING_AUTHORIZED",
+  "sources": {
+    "priority_decision": {
+      "path": "docs/assets/data/curriculum/written-coverage-priority-r1.json",
+      "clearance": "WRITTEN_COVERAGE_PRIORITY_R1_REVIEW_COMPLETE"
+    },
+    "implementation": {
+      "path": "docs/assets/data/curriculum/written-implementation-wave1-r1.json",
+      "clearance": "WRITTEN_IMPLEMENTATION_W1_R1_CONTENT_REVIEW_COMPLETE"
+    },
+    "written_library": "docs/assets/data/written-exercises/written-exercise-library-v1.json",
+    "taxonomy": "docs/assets/data/curriculum/skill-taxonomy-v2-registry-r1.json"
+  },
+  "baseline": {
+    "kntt_core_families": 100,
+    "zero_written_before_wave1": 34,
+    "add_written_authorized": 9,
+    "keep_no_written": 25,
+    "needs_more_evidence": 0
+  },
+  "implementation_result": {
+    "published_written_items_before": 54,
+    "published_written_items_after": 63,
+    "new_core_base_items": 9,
+    "add_written_families_covered": 9,
+    "approved_crosswalks_applied": 2,
+    "new_canonical_families": 0,
+    "core_apply_added": 0,
+    "readiness_mastery_credit_changed": false
+  },
+  "crosswalk_effects": {
+    "WX24-MOD-002": [
+      "SYS-MODEL",
+      "SYS-SOLVE"
+    ],
+    "WX23-PRO-003": [
+      "PROB-EVENT"
+    ],
+    "zero_written_reduction_from_existing_crosswalk": 1,
+    "note": "PROB-EVENT moved from zero-Written to covered via the already-existing reviewed item WX23-PRO-003. SYS-MODEL and SYS-SOLVE were already covered before Wave 1."
+  },
+  "post_wave1": {
+    "kntt_core_written_families": 76,
+    "kntt_core_zero_written_families": 24,
+    "zero_written_reduction": 10,
+    "remaining_zero_families": [
+      "NUM-INTEGER-OPS",
+      "NUM-ABS",
+      "NUM-ORDER",
+      "NUM-POWER",
+      "NUM-FRACTION-FORM",
+      "RATIO-BASIC",
+      "RATIO-PROP",
+      "RATIO-DIRECT",
+      "ALG-STRUCTURE",
+      "RATEX-CONCEPT",
+      "RATEX-MULT-DIV",
+      "RATEX-EVALUATE",
+      "EQ-BASIC",
+      "GRAPH-POINT",
+      "RAD-CUBEROOT",
+      "TRI-CONGRUENCE",
+      "TRI-ORTHOCENTER",
+      "CIRCLE-POSITION",
+      "GEO-REGULAR-SYMM",
+      "SOLID-PYRAMID",
+      "SOLID-SPHERE",
+      "STAT-DATA",
+      "STAT-FREQUENCY",
+      "STAT-ADVANCED-DATA"
+    ],
+    "all_remaining_zero_are_prior_keep_no_written": true,
+    "unresolved_written_items": 0
+  },
+  "conclusion": {
+    "r1_written_authoring_complete": true,
+    "further_wave_authorized": false,
+    "rule": "Do not author additional Written items from the remaining zero-Written list under R1. Any later expansion requires new evidence or a separately approved review decision."
+  }
+}

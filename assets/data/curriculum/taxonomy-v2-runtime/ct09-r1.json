@@ -1,0 +1,3059 @@
+{
+  "schema": "skill-taxonomy-v2-topic-policy-r1",
+  "version": 1,
+  "status": "I1_COMPILED_RUNTIME_DISABLED",
+  "topic_id": "CT09",
+  "topic_slug": "09-he-phuong-trinh",
+  "runtime_enabled": false,
+  "learner_data_write_enabled": false,
+  "independent_credit_authorized": false,
+  "source_overlay": {
+    "path": "docs/assets/data/curriculum/primary-skill-overlay-core09-s2-phase-d-r1.reconciled.json",
+    "ref": "review/skill-taxonomy-v2-s2-ct09-12-combined-r1-20261002",
+    "blob_sha": "8131b32a16cdfe45e6ebcc5824a87a6f0c9de73c",
+    "raw_status": "NOTEBOOKLM_PASS_CLEARED_FOR_CT09_S2_RECONCILIATION",
+    "review_gate": "OVERLAY_STATUS_PASS"
+  },
+  "review_support": null,
+  "source_files": {
+    "09-he-phuong-trinh-v1-01.json": {
+      "path": "docs/assets/data/practice/09-he-phuong-trinh-v1-01.json",
+      "blob_sha": "f74f701f23c2c2fa03e7e6f2162954d52ec0586f",
+      "question_count": 30
+    },
+    "09-he-phuong-trinh-v1-02.json": {
+      "path": "docs/assets/data/practice/09-he-phuong-trinh-v1-02.json",
+      "blob_sha": "ea101b62695d37174dfc257e6d49e5b09a45893e",
+      "question_count": 30
+    },
+    "09-he-phuong-trinh-v1-03.json": {
+      "path": "docs/assets/data/practice/09-he-phuong-trinh-v1-03.json",
+      "blob_sha": "18e4f5e4d00956e3f6a0a979cf5d59f5afb506e3",
+      "question_count": 30
+    },
+    "09-he-phuong-trinh-v1-04.json": {
+      "path": "docs/assets/data/practice/09-he-phuong-trinh-v1-04.json",
+      "blob_sha": "09e3c0269d42addb9a21b3fecf6fe4c3e811ce2f",
+      "question_count": 30
+    }
+  },
+  "counts": {
+    "questions": 120,
+    "family_link_rows": 120,
+    "no_family_rows": 0
+  },
+  "rows": [
+    {
+      "question_id": "SYS09V1_001",
+      "topic_id": "CT09",
+      "source_file": "09-he-phuong-trinh-v1-01.json",
+      "source_blob": "f74f701f23c2c2fa03e7e6f2162954d52ec0586f",
+      "legacy_skill_tags": [
+        "nghiem-pt-hai-an"
+      ],
+      "source_primary_id": "nghiem-pt-hai-an",
+      "diagnostic_skill_id": "nghiem-pt-hai-an",
+      "family_id": "SYS-CONCEPT",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family": "SYS09-TWO-VAR-001-006",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "SYS09V1_002",
+      "topic_id": "CT09",
+      "source_file": "09-he-phuong-trinh-v1-01.json",
+      "source_blob": "f74f701f23c2c2fa03e7e6f2162954d52ec0586f",
+      "legacy_skill_tags": [
+        "nghiem-pt-hai-an"
+      ],
+      "source_primary_id": "nghiem-pt-hai-an",
+      "diagnostic_skill_id": "nghiem-pt-hai-an",
+      "family_id": "SYS-CONCEPT",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family": "SYS09-TWO-VAR-001-006",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "SYS09V1_003",
+      "topic_id": "CT09",
+      "source_file": "09-he-phuong-trinh-v1-01.json",
+      "source_blob": "f74f701f23c2c2fa03e7e6f2162954d52ec0586f",
+      "legacy_skill_tags": [
+        "nghiem-pt-hai-an"
+      ],
+      "source_primary_id": "nghiem-pt-hai-an",
+      "diagnostic_skill_id": "nghiem-pt-hai-an",
+      "family_id": "SYS-CONCEPT",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family": "SYS09-TWO-VAR-001-006",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "SYS09V1_004",
+      "topic_id": "CT09",
+      "source_file": "09-he-phuong-trinh-v1-01.json",
+      "source_blob": "f74f701f23c2c2fa03e7e6f2162954d52ec0586f",
+      "legacy_skill_tags": [
+        "nghiem-pt-hai-an"
+      ],
+      "source_primary_id": "nghiem-pt-hai-an",
+      "diagnostic_skill_id": "nghiem-pt-hai-an",
+      "family_id": "SYS-CONCEPT",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family": "SYS09-TWO-VAR-001-006",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "SYS09V1_005",
+      "topic_id": "CT09",
+      "source_file": "09-he-phuong-trinh-v1-01.json",
+      "source_blob": "f74f701f23c2c2fa03e7e6f2162954d52ec0586f",
+      "legacy_skill_tags": [
+        "nghiem-pt-hai-an"
+      ],
+      "source_primary_id": "nghiem-pt-hai-an",
+      "diagnostic_skill_id": "nghiem-pt-hai-an",
+      "family_id": "SYS-CONCEPT",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family": "SYS09-TWO-VAR-001-006",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "SYS09V1_006",
+      "topic_id": "CT09",
+      "source_file": "09-he-phuong-trinh-v1-01.json",
+      "source_blob": "f74f701f23c2c2fa03e7e6f2162954d52ec0586f",
+      "legacy_skill_tags": [
+        "nghiem-pt-hai-an"
+      ],
+      "source_primary_id": "nghiem-pt-hai-an",
+      "diagnostic_skill_id": "nghiem-pt-hai-an",
+      "family_id": "SYS-CONCEPT",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family": "SYS09-TWO-VAR-001-006",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "SYS09V1_007",
+      "topic_id": "CT09",
+      "source_file": "09-he-phuong-trinh-v1-01.json",
+      "source_blob": "f74f701f23c2c2fa03e7e6f2162954d52ec0586f",
+      "legacy_skill_tags": [
+        "nghiem-pt-hai-an"
+      ],
+      "source_primary_id": "nghiem-pt-hai-an",
+      "diagnostic_skill_id": "nghiem-pt-hai-an",
+      "family_id": "SYS-CONCEPT",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family": "SYS09-TWO-VAR-007-012",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "SYS09V1_008",
+      "topic_id": "CT09",
+      "source_file": "09-he-phuong-trinh-v1-01.json",
+      "source_blob": "f74f701f23c2c2fa03e7e6f2162954d52ec0586f",
+      "legacy_skill_tags": [
+        "nghiem-pt-hai-an"
+      ],
+      "source_primary_id": "nghiem-pt-hai-an",
+      "diagnostic_skill_id": "nghiem-pt-hai-an",
+      "family_id": "SYS-CONCEPT",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family": "SYS09-TWO-VAR-007-012",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "SYS09V1_009",
+      "topic_id": "CT09",
+      "source_file": "09-he-phuong-trinh-v1-01.json",
+      "source_blob": "f74f701f23c2c2fa03e7e6f2162954d52ec0586f",
+      "legacy_skill_tags": [
+        "nghiem-pt-hai-an"
+      ],
+      "source_primary_id": "nghiem-pt-hai-an",
+      "diagnostic_skill_id": "nghiem-pt-hai-an",
+      "family_id": "SYS-CONCEPT",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family": "SYS09-TWO-VAR-007-012",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "SYS09V1_010",
+      "topic_id": "CT09",
+      "source_file": "09-he-phuong-trinh-v1-01.json",
+      "source_blob": "f74f701f23c2c2fa03e7e6f2162954d52ec0586f",
+      "legacy_skill_tags": [
+        "nghiem-pt-hai-an"
+      ],
+      "source_primary_id": "nghiem-pt-hai-an",
+      "diagnostic_skill_id": "nghiem-pt-hai-an",
+      "family_id": "SYS-CONCEPT",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family": "SYS09-TWO-VAR-007-012",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "SYS09V1_011",
+      "topic_id": "CT09",
+      "source_file": "09-he-phuong-trinh-v1-01.json",
+      "source_blob": "f74f701f23c2c2fa03e7e6f2162954d52ec0586f",
+      "legacy_skill_tags": [
+        "nghiem-pt-hai-an"
+      ],
+      "source_primary_id": "nghiem-pt-hai-an",
+      "diagnostic_skill_id": "nghiem-pt-hai-an",
+      "family_id": "SYS-CONCEPT",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family": "SYS09-TWO-VAR-007-012",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "SYS09V1_012",
+      "topic_id": "CT09",
+      "source_file": "09-he-phuong-trinh-v1-01.json",
+      "source_blob": "f74f701f23c2c2fa03e7e6f2162954d52ec0586f",
+      "legacy_skill_tags": [
+        "nghiem-pt-hai-an"
+      ],
+      "source_primary_id": "nghiem-pt-hai-an",
+      "diagnostic_skill_id": "nghiem-pt-hai-an",
+      "family_id": "SYS-CONCEPT",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family": "SYS09-TWO-VAR-007-012",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "SYS09V1_013",
+      "topic_id": "CT09",
+      "source_file": "09-he-phuong-trinh-v1-01.json",
+      "source_blob": "f74f701f23c2c2fa03e7e6f2162954d52ec0586f",
+      "legacy_skill_tags": [
+        "giai-he-the",
+        "nghiem-he"
+      ],
+      "source_primary_id": "giai-he-the",
+      "diagnostic_skill_id": "giai-he-the",
+      "family_id": "SYS-SOLVE",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": "SYS09-SOLVE-013-028",
+      "supporting_skills": [
+        "nghiem-he"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "SYS09V1_014",
+      "topic_id": "CT09",
+      "source_file": "09-he-phuong-trinh-v1-01.json",
+      "source_blob": "f74f701f23c2c2fa03e7e6f2162954d52ec0586f",
+      "legacy_skill_tags": [
+        "giai-he-the",
+        "nghiem-he"
+      ],
+      "source_primary_id": "giai-he-the",
+      "diagnostic_skill_id": "giai-he-the",
+      "family_id": "SYS-SOLVE",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": "SYS09-SOLVE-013-028",
+      "supporting_skills": [
+        "nghiem-he"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "SYS09V1_015",
+      "topic_id": "CT09",
+      "source_file": "09-he-phuong-trinh-v1-01.json",
+      "source_blob": "f74f701f23c2c2fa03e7e6f2162954d52ec0586f",
+      "legacy_skill_tags": [
+        "giai-he-the",
+        "nghiem-he"
+      ],
+      "source_primary_id": "giai-he-the",
+      "diagnostic_skill_id": "giai-he-the",
+      "family_id": "SYS-SOLVE",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": "SYS09-SOLVE-013-028",
+      "supporting_skills": [
+        "nghiem-he"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "SYS09V1_016",
+      "topic_id": "CT09",
+      "source_file": "09-he-phuong-trinh-v1-01.json",
+      "source_blob": "f74f701f23c2c2fa03e7e6f2162954d52ec0586f",
+      "legacy_skill_tags": [
+        "giai-he-cong",
+        "nghiem-he"
+      ],
+      "source_primary_id": "giai-he-cong",
+      "diagnostic_skill_id": "giai-he-cong",
+      "family_id": "SYS-SOLVE",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": "SYS09-SOLVE-013-028",
+      "supporting_skills": [
+        "nghiem-he"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "SYS09V1_017",
+      "topic_id": "CT09",
+      "source_file": "09-he-phuong-trinh-v1-01.json",
+      "source_blob": "f74f701f23c2c2fa03e7e6f2162954d52ec0586f",
+      "legacy_skill_tags": [
+        "giai-he-the",
+        "nghiem-he"
+      ],
+      "source_primary_id": "giai-he-the",
+      "diagnostic_skill_id": "giai-he-the",
+      "family_id": "SYS-SOLVE",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": "SYS09-SOLVE-013-028",
+      "supporting_skills": [
+        "nghiem-he"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "SYS09V1_018",
+      "topic_id": "CT09",
+      "source_file": "09-he-phuong-trinh-v1-01.json",
+      "source_blob": "f74f701f23c2c2fa03e7e6f2162954d52ec0586f",
+      "legacy_skill_tags": [
+        "giai-he-the",
+        "nghiem-he"
+      ],
+      "source_primary_id": "giai-he-the",
+      "diagnostic_skill_id": "giai-he-the",
+      "family_id": "SYS-SOLVE",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": "SYS09-SOLVE-013-028",
+      "supporting_skills": [
+        "nghiem-he"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "SYS09V1_019",
+      "topic_id": "CT09",
+      "source_file": "09-he-phuong-trinh-v1-01.json",
+      "source_blob": "f74f701f23c2c2fa03e7e6f2162954d52ec0586f",
+      "legacy_skill_tags": [
+        "giai-he-the",
+        "nghiem-he"
+      ],
+      "source_primary_id": "giai-he-the",
+      "diagnostic_skill_id": "giai-he-the",
+      "family_id": "SYS-SOLVE",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": "SYS09-SOLVE-013-028",
+      "supporting_skills": [
+        "nghiem-he"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "SYS09V1_020",
+      "topic_id": "CT09",
+      "source_file": "09-he-phuong-trinh-v1-01.json",
+      "source_blob": "f74f701f23c2c2fa03e7e6f2162954d52ec0586f",
+      "legacy_skill_tags": [
+        "giai-he-cong",
+        "nghiem-he"
+      ],
+      "source_primary_id": "giai-he-cong",
+      "diagnostic_skill_id": "giai-he-cong",
+      "family_id": "SYS-SOLVE",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": "SYS09-SOLVE-013-028",
+      "supporting_skills": [
+        "nghiem-he"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "SYS09V1_021",
+      "topic_id": "CT09",
+      "source_file": "09-he-phuong-trinh-v1-01.json",
+      "source_blob": "f74f701f23c2c2fa03e7e6f2162954d52ec0586f",
+      "legacy_skill_tags": [
+        "giai-he-the",
+        "nghiem-he"
+      ],
+      "source_primary_id": "giai-he-the",
+      "diagnostic_skill_id": "giai-he-the",
+      "family_id": "SYS-SOLVE",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": "SYS09-SOLVE-013-028",
+      "supporting_skills": [
+        "nghiem-he"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "SYS09V1_022",
+      "topic_id": "CT09",
+      "source_file": "09-he-phuong-trinh-v1-01.json",
+      "source_blob": "f74f701f23c2c2fa03e7e6f2162954d52ec0586f",
+      "legacy_skill_tags": [
+        "giai-he-the",
+        "nghiem-he"
+      ],
+      "source_primary_id": "giai-he-the",
+      "diagnostic_skill_id": "giai-he-the",
+      "family_id": "SYS-SOLVE",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": "SYS09-SOLVE-013-028",
+      "supporting_skills": [
+        "nghiem-he"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "SYS09V1_023",
+      "topic_id": "CT09",
+      "source_file": "09-he-phuong-trinh-v1-01.json",
+      "source_blob": "f74f701f23c2c2fa03e7e6f2162954d52ec0586f",
+      "legacy_skill_tags": [
+        "giai-he-the",
+        "nghiem-he"
+      ],
+      "source_primary_id": "giai-he-the",
+      "diagnostic_skill_id": "giai-he-the",
+      "family_id": "SYS-SOLVE",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": "SYS09-SOLVE-013-028",
+      "supporting_skills": [
+        "nghiem-he"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "SYS09V1_024",
+      "topic_id": "CT09",
+      "source_file": "09-he-phuong-trinh-v1-01.json",
+      "source_blob": "f74f701f23c2c2fa03e7e6f2162954d52ec0586f",
+      "legacy_skill_tags": [
+        "giai-he-cong",
+        "nghiem-he"
+      ],
+      "source_primary_id": "giai-he-cong",
+      "diagnostic_skill_id": "giai-he-cong",
+      "family_id": "SYS-SOLVE",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": "SYS09-SOLVE-013-028",
+      "supporting_skills": [
+        "nghiem-he"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "SYS09V1_025",
+      "topic_id": "CT09",
+      "source_file": "09-he-phuong-trinh-v1-01.json",
+      "source_blob": "f74f701f23c2c2fa03e7e6f2162954d52ec0586f",
+      "legacy_skill_tags": [
+        "giai-he-the",
+        "nghiem-he"
+      ],
+      "source_primary_id": "giai-he-the",
+      "diagnostic_skill_id": "giai-he-the",
+      "family_id": "SYS-SOLVE",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": "SYS09-SOLVE-013-028",
+      "supporting_skills": [
+        "nghiem-he"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "SYS09V1_026",
+      "topic_id": "CT09",
+      "source_file": "09-he-phuong-trinh-v1-01.json",
+      "source_blob": "f74f701f23c2c2fa03e7e6f2162954d52ec0586f",
+      "legacy_skill_tags": [
+        "giai-he-the",
+        "nghiem-he"
+      ],
+      "source_primary_id": "giai-he-the",
+      "diagnostic_skill_id": "giai-he-the",
+      "family_id": "SYS-SOLVE",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": "SYS09-SOLVE-013-028",
+      "supporting_skills": [
+        "nghiem-he"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "SYS09V1_027",
+      "topic_id": "CT09",
+      "source_file": "09-he-phuong-trinh-v1-01.json",
+      "source_blob": "f74f701f23c2c2fa03e7e6f2162954d52ec0586f",
+      "legacy_skill_tags": [
+        "giai-he-the",
+        "nghiem-he"
+      ],
+      "source_primary_id": "giai-he-the",
+      "diagnostic_skill_id": "giai-he-the",
+      "family_id": "SYS-SOLVE",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": "SYS09-SOLVE-013-028",
+      "supporting_skills": [
+        "nghiem-he"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "SYS09V1_028",
+      "topic_id": "CT09",
+      "source_file": "09-he-phuong-trinh-v1-01.json",
+      "source_blob": "f74f701f23c2c2fa03e7e6f2162954d52ec0586f",
+      "legacy_skill_tags": [
+        "giai-he-cong",
+        "nghiem-he"
+      ],
+      "source_primary_id": "giai-he-cong",
+      "diagnostic_skill_id": "giai-he-cong",
+      "family_id": "SYS-SOLVE",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": "SYS09-SOLVE-013-028",
+      "supporting_skills": [
+        "nghiem-he"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "SYS09V1_029",
+      "topic_id": "CT09",
+      "source_file": "09-he-phuong-trinh-v1-01.json",
+      "source_blob": "f74f701f23c2c2fa03e7e6f2162954d52ec0586f",
+      "legacy_skill_tags": [
+        "so-nghiem-he",
+        "y-nghia-hinh-hoc"
+      ],
+      "source_primary_id": "so-nghiem-he",
+      "diagnostic_skill_id": "so-nghiem-he",
+      "family_id": "SYS-CONCEPT",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family": "SYS09-SOLUTION-COUNT-029-040",
+      "supporting_skills": [
+        "y-nghia-hinh-hoc"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "SYS09V1_030",
+      "topic_id": "CT09",
+      "source_file": "09-he-phuong-trinh-v1-01.json",
+      "source_blob": "f74f701f23c2c2fa03e7e6f2162954d52ec0586f",
+      "legacy_skill_tags": [
+        "so-nghiem-he",
+        "y-nghia-hinh-hoc"
+      ],
+      "source_primary_id": "so-nghiem-he",
+      "diagnostic_skill_id": "so-nghiem-he",
+      "family_id": "SYS-CONCEPT",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family": "SYS09-SOLUTION-COUNT-029-040",
+      "supporting_skills": [
+        "y-nghia-hinh-hoc"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "SYS09V1_031",
+      "topic_id": "CT09",
+      "source_file": "09-he-phuong-trinh-v1-02.json",
+      "source_blob": "ea101b62695d37174dfc257e6d49e5b09a45893e",
+      "legacy_skill_tags": [
+        "so-nghiem-he",
+        "y-nghia-hinh-hoc"
+      ],
+      "source_primary_id": "so-nghiem-he",
+      "diagnostic_skill_id": "so-nghiem-he",
+      "family_id": "SYS-CONCEPT",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family": "SYS09-SOLUTION-COUNT-029-040",
+      "supporting_skills": [
+        "y-nghia-hinh-hoc"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "SYS09V1_032",
+      "topic_id": "CT09",
+      "source_file": "09-he-phuong-trinh-v1-02.json",
+      "source_blob": "ea101b62695d37174dfc257e6d49e5b09a45893e",
+      "legacy_skill_tags": [
+        "so-nghiem-he",
+        "y-nghia-hinh-hoc"
+      ],
+      "source_primary_id": "so-nghiem-he",
+      "diagnostic_skill_id": "so-nghiem-he",
+      "family_id": "SYS-CONCEPT",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family": "SYS09-SOLUTION-COUNT-029-040",
+      "supporting_skills": [
+        "y-nghia-hinh-hoc"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "SYS09V1_033",
+      "topic_id": "CT09",
+      "source_file": "09-he-phuong-trinh-v1-02.json",
+      "source_blob": "ea101b62695d37174dfc257e6d49e5b09a45893e",
+      "legacy_skill_tags": [
+        "so-nghiem-he",
+        "y-nghia-hinh-hoc"
+      ],
+      "source_primary_id": "so-nghiem-he",
+      "diagnostic_skill_id": "so-nghiem-he",
+      "family_id": "SYS-CONCEPT",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family": "SYS09-SOLUTION-COUNT-029-040",
+      "supporting_skills": [
+        "y-nghia-hinh-hoc"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "SYS09V1_034",
+      "topic_id": "CT09",
+      "source_file": "09-he-phuong-trinh-v1-02.json",
+      "source_blob": "ea101b62695d37174dfc257e6d49e5b09a45893e",
+      "legacy_skill_tags": [
+        "so-nghiem-he",
+        "y-nghia-hinh-hoc"
+      ],
+      "source_primary_id": "so-nghiem-he",
+      "diagnostic_skill_id": "so-nghiem-he",
+      "family_id": "SYS-CONCEPT",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family": "SYS09-SOLUTION-COUNT-029-040",
+      "supporting_skills": [
+        "y-nghia-hinh-hoc"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "SYS09V1_035",
+      "topic_id": "CT09",
+      "source_file": "09-he-phuong-trinh-v1-02.json",
+      "source_blob": "ea101b62695d37174dfc257e6d49e5b09a45893e",
+      "legacy_skill_tags": [
+        "so-nghiem-he",
+        "y-nghia-hinh-hoc"
+      ],
+      "source_primary_id": "so-nghiem-he",
+      "diagnostic_skill_id": "so-nghiem-he",
+      "family_id": "SYS-CONCEPT",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family": "SYS09-SOLUTION-COUNT-029-040",
+      "supporting_skills": [
+        "y-nghia-hinh-hoc"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "SYS09V1_036",
+      "topic_id": "CT09",
+      "source_file": "09-he-phuong-trinh-v1-02.json",
+      "source_blob": "ea101b62695d37174dfc257e6d49e5b09a45893e",
+      "legacy_skill_tags": [
+        "so-nghiem-he",
+        "y-nghia-hinh-hoc"
+      ],
+      "source_primary_id": "so-nghiem-he",
+      "diagnostic_skill_id": "so-nghiem-he",
+      "family_id": "SYS-CONCEPT",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family": "SYS09-SOLUTION-COUNT-029-040",
+      "supporting_skills": [
+        "y-nghia-hinh-hoc"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "SYS09V1_037",
+      "topic_id": "CT09",
+      "source_file": "09-he-phuong-trinh-v1-02.json",
+      "source_blob": "ea101b62695d37174dfc257e6d49e5b09a45893e",
+      "legacy_skill_tags": [
+        "so-nghiem-he",
+        "y-nghia-hinh-hoc"
+      ],
+      "source_primary_id": "so-nghiem-he",
+      "diagnostic_skill_id": "so-nghiem-he",
+      "family_id": "SYS-CONCEPT",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family": "SYS09-SOLUTION-COUNT-029-040",
+      "supporting_skills": [
+        "y-nghia-hinh-hoc"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "SYS09V1_038",
+      "topic_id": "CT09",
+      "source_file": "09-he-phuong-trinh-v1-02.json",
+      "source_blob": "ea101b62695d37174dfc257e6d49e5b09a45893e",
+      "legacy_skill_tags": [
+        "so-nghiem-he",
+        "y-nghia-hinh-hoc"
+      ],
+      "source_primary_id": "so-nghiem-he",
+      "diagnostic_skill_id": "so-nghiem-he",
+      "family_id": "SYS-CONCEPT",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family": "SYS09-SOLUTION-COUNT-029-040",
+      "supporting_skills": [
+        "y-nghia-hinh-hoc"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "SYS09V1_039",
+      "topic_id": "CT09",
+      "source_file": "09-he-phuong-trinh-v1-02.json",
+      "source_blob": "ea101b62695d37174dfc257e6d49e5b09a45893e",
+      "legacy_skill_tags": [
+        "so-nghiem-he",
+        "y-nghia-hinh-hoc"
+      ],
+      "source_primary_id": "so-nghiem-he",
+      "diagnostic_skill_id": "so-nghiem-he",
+      "family_id": "SYS-CONCEPT",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family": "SYS09-SOLUTION-COUNT-029-040",
+      "supporting_skills": [
+        "y-nghia-hinh-hoc"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "SYS09V1_040",
+      "topic_id": "CT09",
+      "source_file": "09-he-phuong-trinh-v1-02.json",
+      "source_blob": "ea101b62695d37174dfc257e6d49e5b09a45893e",
+      "legacy_skill_tags": [
+        "so-nghiem-he",
+        "y-nghia-hinh-hoc"
+      ],
+      "source_primary_id": "so-nghiem-he",
+      "diagnostic_skill_id": "so-nghiem-he",
+      "family_id": "SYS-CONCEPT",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family": "SYS09-SOLUTION-COUNT-029-040",
+      "supporting_skills": [
+        "y-nghia-hinh-hoc"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "SYS09V1_041",
+      "topic_id": "CT09",
+      "source_file": "09-he-phuong-trinh-v1-02.json",
+      "source_blob": "ea101b62695d37174dfc257e6d49e5b09a45893e",
+      "legacy_skill_tags": [
+        "chon-phuong-phap"
+      ],
+      "source_primary_id": "chon-phuong-phap",
+      "diagnostic_skill_id": "chon-phuong-phap",
+      "family_id": "SYS-SOLVE",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "METHOD",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_METHOD_SELECTION_ONLY",
+      "clone_family": "SYS09-METHOD-041-044",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "SYS09V1_042",
+      "topic_id": "CT09",
+      "source_file": "09-he-phuong-trinh-v1-02.json",
+      "source_blob": "ea101b62695d37174dfc257e6d49e5b09a45893e",
+      "legacy_skill_tags": [
+        "chon-phuong-phap"
+      ],
+      "source_primary_id": "chon-phuong-phap",
+      "diagnostic_skill_id": "chon-phuong-phap",
+      "family_id": "SYS-SOLVE",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "METHOD",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_METHOD_SELECTION_ONLY",
+      "clone_family": "SYS09-METHOD-041-044",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "SYS09V1_043",
+      "topic_id": "CT09",
+      "source_file": "09-he-phuong-trinh-v1-02.json",
+      "source_blob": "ea101b62695d37174dfc257e6d49e5b09a45893e",
+      "legacy_skill_tags": [
+        "chon-phuong-phap"
+      ],
+      "source_primary_id": "chon-phuong-phap",
+      "diagnostic_skill_id": "chon-phuong-phap",
+      "family_id": "SYS-SOLVE",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "METHOD",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_METHOD_SELECTION_ONLY",
+      "clone_family": "SYS09-METHOD-041-044",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "SYS09V1_044",
+      "topic_id": "CT09",
+      "source_file": "09-he-phuong-trinh-v1-02.json",
+      "source_blob": "ea101b62695d37174dfc257e6d49e5b09a45893e",
+      "legacy_skill_tags": [
+        "chon-phuong-phap"
+      ],
+      "source_primary_id": "chon-phuong-phap",
+      "diagnostic_skill_id": "chon-phuong-phap",
+      "family_id": "SYS-SOLVE",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "METHOD",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_METHOD_SELECTION_ONLY",
+      "clone_family": "SYS09-METHOD-041-044",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "SYS09V1_045",
+      "topic_id": "CT09",
+      "source_file": "09-he-phuong-trinh-v1-02.json",
+      "source_blob": "ea101b62695d37174dfc257e6d49e5b09a45893e",
+      "legacy_skill_tags": [
+        "chon-phuong-phap"
+      ],
+      "source_primary_id": "chon-phuong-phap",
+      "diagnostic_skill_id": "chon-phuong-phap",
+      "family_id": "SYS-SOLVE",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "METHOD",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_METHOD_SELECTION_ONLY",
+      "clone_family": "SYS09-METHOD-045-048",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "SYS09V1_046",
+      "topic_id": "CT09",
+      "source_file": "09-he-phuong-trinh-v1-02.json",
+      "source_blob": "ea101b62695d37174dfc257e6d49e5b09a45893e",
+      "legacy_skill_tags": [
+        "chon-phuong-phap"
+      ],
+      "source_primary_id": "chon-phuong-phap",
+      "diagnostic_skill_id": "chon-phuong-phap",
+      "family_id": "SYS-SOLVE",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "METHOD",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_METHOD_SELECTION_ONLY",
+      "clone_family": "SYS09-METHOD-045-048",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "SYS09V1_047",
+      "topic_id": "CT09",
+      "source_file": "09-he-phuong-trinh-v1-02.json",
+      "source_blob": "ea101b62695d37174dfc257e6d49e5b09a45893e",
+      "legacy_skill_tags": [
+        "chon-phuong-phap"
+      ],
+      "source_primary_id": "chon-phuong-phap",
+      "diagnostic_skill_id": "chon-phuong-phap",
+      "family_id": "SYS-SOLVE",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "METHOD",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_METHOD_SELECTION_ONLY",
+      "clone_family": "SYS09-METHOD-045-048",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "SYS09V1_048",
+      "topic_id": "CT09",
+      "source_file": "09-he-phuong-trinh-v1-02.json",
+      "source_blob": "ea101b62695d37174dfc257e6d49e5b09a45893e",
+      "legacy_skill_tags": [
+        "chon-phuong-phap"
+      ],
+      "source_primary_id": "chon-phuong-phap",
+      "diagnostic_skill_id": "chon-phuong-phap",
+      "family_id": "SYS-SOLVE",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "METHOD",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_METHOD_SELECTION_ONLY",
+      "clone_family": "SYS09-METHOD-045-048",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "SYS09V1_049",
+      "topic_id": "CT09",
+      "source_file": "09-he-phuong-trinh-v1-02.json",
+      "source_blob": "ea101b62695d37174dfc257e6d49e5b09a45893e",
+      "legacy_skill_tags": [
+        "chon-phuong-phap"
+      ],
+      "source_primary_id": "chon-phuong-phap",
+      "diagnostic_skill_id": "chon-phuong-phap",
+      "family_id": "SYS-SOLVE",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "METHOD",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_METHOD_SELECTION_ONLY",
+      "clone_family": "SYS09-METHOD-049-052",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "SYS09V1_050",
+      "topic_id": "CT09",
+      "source_file": "09-he-phuong-trinh-v1-02.json",
+      "source_blob": "ea101b62695d37174dfc257e6d49e5b09a45893e",
+      "legacy_skill_tags": [
+        "chon-phuong-phap"
+      ],
+      "source_primary_id": "chon-phuong-phap",
+      "diagnostic_skill_id": "chon-phuong-phap",
+      "family_id": "SYS-SOLVE",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "METHOD",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_METHOD_SELECTION_ONLY",
+      "clone_family": "SYS09-METHOD-049-052",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "SYS09V1_051",
+      "topic_id": "CT09",
+      "source_file": "09-he-phuong-trinh-v1-02.json",
+      "source_blob": "ea101b62695d37174dfc257e6d49e5b09a45893e",
+      "legacy_skill_tags": [
+        "chon-phuong-phap"
+      ],
+      "source_primary_id": "chon-phuong-phap",
+      "diagnostic_skill_id": "chon-phuong-phap",
+      "family_id": "SYS-SOLVE",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "METHOD",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_METHOD_SELECTION_ONLY",
+      "clone_family": "SYS09-METHOD-049-052",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "SYS09V1_052",
+      "topic_id": "CT09",
+      "source_file": "09-he-phuong-trinh-v1-02.json",
+      "source_blob": "ea101b62695d37174dfc257e6d49e5b09a45893e",
+      "legacy_skill_tags": [
+        "chon-phuong-phap"
+      ],
+      "source_primary_id": "chon-phuong-phap",
+      "diagnostic_skill_id": "chon-phuong-phap",
+      "family_id": "SYS-SOLVE",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "METHOD",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_METHOD_SELECTION_ONLY",
+      "clone_family": "SYS09-METHOD-049-052",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "SYS09V1_053",
+      "topic_id": "CT09",
+      "source_file": "09-he-phuong-trinh-v1-02.json",
+      "source_blob": "ea101b62695d37174dfc257e6d49e5b09a45893e",
+      "legacy_skill_tags": [
+        "bien-doi-truoc-giai",
+        "giai-he-the"
+      ],
+      "source_primary_id": "bien-doi-truoc-giai",
+      "diagnostic_skill_id": "bien-doi-truoc-giai",
+      "family_id": "SYS-SOLVE",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "SUPPORTING_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": "SYS09-PRETRANSFORM-053-058",
+      "supporting_skills": [
+        "giai-he-the"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "SYS09V1_054",
+      "topic_id": "CT09",
+      "source_file": "09-he-phuong-trinh-v1-02.json",
+      "source_blob": "ea101b62695d37174dfc257e6d49e5b09a45893e",
+      "legacy_skill_tags": [
+        "bien-doi-truoc-giai",
+        "giai-he-the"
+      ],
+      "source_primary_id": "bien-doi-truoc-giai",
+      "diagnostic_skill_id": "bien-doi-truoc-giai",
+      "family_id": "SYS-SOLVE",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "SUPPORTING_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": "SYS09-PRETRANSFORM-053-058",
+      "supporting_skills": [
+        "giai-he-the"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "SYS09V1_055",
+      "topic_id": "CT09",
+      "source_file": "09-he-phuong-trinh-v1-02.json",
+      "source_blob": "ea101b62695d37174dfc257e6d49e5b09a45893e",
+      "legacy_skill_tags": [
+        "bien-doi-truoc-giai",
+        "giai-he-the"
+      ],
+      "source_primary_id": "bien-doi-truoc-giai",
+      "diagnostic_skill_id": "bien-doi-truoc-giai",
+      "family_id": "SYS-SOLVE",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "SUPPORTING_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": "SYS09-PRETRANSFORM-053-058",
+      "supporting_skills": [
+        "giai-he-the"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "SYS09V1_056",
+      "topic_id": "CT09",
+      "source_file": "09-he-phuong-trinh-v1-02.json",
+      "source_blob": "ea101b62695d37174dfc257e6d49e5b09a45893e",
+      "legacy_skill_tags": [
+        "bien-doi-truoc-giai",
+        "giai-he-the"
+      ],
+      "source_primary_id": "bien-doi-truoc-giai",
+      "diagnostic_skill_id": "bien-doi-truoc-giai",
+      "family_id": "SYS-SOLVE",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "SUPPORTING_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": "SYS09-PRETRANSFORM-053-058",
+      "supporting_skills": [
+        "giai-he-the"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "SYS09V1_057",
+      "topic_id": "CT09",
+      "source_file": "09-he-phuong-trinh-v1-02.json",
+      "source_blob": "ea101b62695d37174dfc257e6d49e5b09a45893e",
+      "legacy_skill_tags": [
+        "bien-doi-truoc-giai",
+        "giai-he-the"
+      ],
+      "source_primary_id": "bien-doi-truoc-giai",
+      "diagnostic_skill_id": "bien-doi-truoc-giai",
+      "family_id": "SYS-SOLVE",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "SUPPORTING_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": "SYS09-PRETRANSFORM-053-058",
+      "supporting_skills": [
+        "giai-he-the"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "SYS09V1_058",
+      "topic_id": "CT09",
+      "source_file": "09-he-phuong-trinh-v1-02.json",
+      "source_blob": "ea101b62695d37174dfc257e6d49e5b09a45893e",
+      "legacy_skill_tags": [
+        "bien-doi-truoc-giai",
+        "giai-he-the"
+      ],
+      "source_primary_id": "bien-doi-truoc-giai",
+      "diagnostic_skill_id": "bien-doi-truoc-giai",
+      "family_id": "SYS-SOLVE",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "SUPPORTING_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": "SYS09-PRETRANSFORM-053-058",
+      "supporting_skills": [
+        "giai-he-the"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "SYS09V1_059",
+      "topic_id": "CT09",
+      "source_file": "09-he-phuong-trinh-v1-02.json",
+      "source_blob": "ea101b62695d37174dfc257e6d49e5b09a45893e",
+      "legacy_skill_tags": [
+        "bien-doi-truoc-giai",
+        "giai-he-the"
+      ],
+      "source_primary_id": "bien-doi-truoc-giai",
+      "diagnostic_skill_id": "bien-doi-truoc-giai",
+      "family_id": "SYS-SOLVE",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "SUPPORTING_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": "SYS09-PRETRANSFORM-059-064",
+      "supporting_skills": [
+        "giai-he-the"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "SYS09V1_060",
+      "topic_id": "CT09",
+      "source_file": "09-he-phuong-trinh-v1-02.json",
+      "source_blob": "ea101b62695d37174dfc257e6d49e5b09a45893e",
+      "legacy_skill_tags": [
+        "bien-doi-truoc-giai",
+        "giai-he-the"
+      ],
+      "source_primary_id": "bien-doi-truoc-giai",
+      "diagnostic_skill_id": "bien-doi-truoc-giai",
+      "family_id": "SYS-SOLVE",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "SUPPORTING_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": "SYS09-PRETRANSFORM-059-064",
+      "supporting_skills": [
+        "giai-he-the"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "SYS09V1_061",
+      "topic_id": "CT09",
+      "source_file": "09-he-phuong-trinh-v1-03.json",
+      "source_blob": "18e4f5e4d00956e3f6a0a979cf5d59f5afb506e3",
+      "legacy_skill_tags": [
+        "bien-doi-truoc-giai",
+        "giai-he-the"
+      ],
+      "source_primary_id": "bien-doi-truoc-giai",
+      "diagnostic_skill_id": "bien-doi-truoc-giai",
+      "family_id": "SYS-SOLVE",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "SUPPORTING_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": "SYS09-PRETRANSFORM-059-064",
+      "supporting_skills": [
+        "giai-he-the"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "SYS09V1_062",
+      "topic_id": "CT09",
+      "source_file": "09-he-phuong-trinh-v1-03.json",
+      "source_blob": "18e4f5e4d00956e3f6a0a979cf5d59f5afb506e3",
+      "legacy_skill_tags": [
+        "bien-doi-truoc-giai",
+        "giai-he-the"
+      ],
+      "source_primary_id": "bien-doi-truoc-giai",
+      "diagnostic_skill_id": "bien-doi-truoc-giai",
+      "family_id": "SYS-SOLVE",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "SUPPORTING_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": "SYS09-PRETRANSFORM-059-064",
+      "supporting_skills": [
+        "giai-he-the"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "SYS09V1_063",
+      "topic_id": "CT09",
+      "source_file": "09-he-phuong-trinh-v1-03.json",
+      "source_blob": "18e4f5e4d00956e3f6a0a979cf5d59f5afb506e3",
+      "legacy_skill_tags": [
+        "bien-doi-truoc-giai",
+        "giai-he-the"
+      ],
+      "source_primary_id": "bien-doi-truoc-giai",
+      "diagnostic_skill_id": "bien-doi-truoc-giai",
+      "family_id": "SYS-SOLVE",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "SUPPORTING_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": "SYS09-PRETRANSFORM-059-064",
+      "supporting_skills": [
+        "giai-he-the"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "SYS09V1_064",
+      "topic_id": "CT09",
+      "source_file": "09-he-phuong-trinh-v1-03.json",
+      "source_blob": "18e4f5e4d00956e3f6a0a979cf5d59f5afb506e3",
+      "legacy_skill_tags": [
+        "bien-doi-truoc-giai",
+        "giai-he-the"
+      ],
+      "source_primary_id": "bien-doi-truoc-giai",
+      "diagnostic_skill_id": "bien-doi-truoc-giai",
+      "family_id": "SYS-SOLVE",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "SUPPORTING_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": "SYS09-PRETRANSFORM-059-064",
+      "supporting_skills": [
+        "giai-he-the"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "SYS09V1_065",
+      "topic_id": "CT09",
+      "source_file": "09-he-phuong-trinh-v1-03.json",
+      "source_blob": "18e4f5e4d00956e3f6a0a979cf5d59f5afb506e3",
+      "legacy_skill_tags": [
+        "kiem-tra-nghiem-he"
+      ],
+      "source_primary_id": "kiem-tra-nghiem-he",
+      "diagnostic_skill_id": "kiem-tra-nghiem-he",
+      "family_id": "SYS-SOLVE",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "SUPPORTING_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family": "SYS09-CHECK-065-070",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "SYS09V1_066",
+      "topic_id": "CT09",
+      "source_file": "09-he-phuong-trinh-v1-03.json",
+      "source_blob": "18e4f5e4d00956e3f6a0a979cf5d59f5afb506e3",
+      "legacy_skill_tags": [
+        "kiem-tra-nghiem-he"
+      ],
+      "source_primary_id": "kiem-tra-nghiem-he",
+      "diagnostic_skill_id": "kiem-tra-nghiem-he",
+      "family_id": "SYS-SOLVE",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "SUPPORTING_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family": "SYS09-CHECK-065-070",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "SYS09V1_067",
+      "topic_id": "CT09",
+      "source_file": "09-he-phuong-trinh-v1-03.json",
+      "source_blob": "18e4f5e4d00956e3f6a0a979cf5d59f5afb506e3",
+      "legacy_skill_tags": [
+        "kiem-tra-nghiem-he"
+      ],
+      "source_primary_id": "kiem-tra-nghiem-he",
+      "diagnostic_skill_id": "kiem-tra-nghiem-he",
+      "family_id": "SYS-SOLVE",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "SUPPORTING_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family": "SYS09-CHECK-065-070",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "SYS09V1_068",
+      "topic_id": "CT09",
+      "source_file": "09-he-phuong-trinh-v1-03.json",
+      "source_blob": "18e4f5e4d00956e3f6a0a979cf5d59f5afb506e3",
+      "legacy_skill_tags": [
+        "kiem-tra-nghiem-he"
+      ],
+      "source_primary_id": "kiem-tra-nghiem-he",
+      "diagnostic_skill_id": "kiem-tra-nghiem-he",
+      "family_id": "SYS-SOLVE",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "SUPPORTING_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family": "SYS09-CHECK-065-070",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "SYS09V1_069",
+      "topic_id": "CT09",
+      "source_file": "09-he-phuong-trinh-v1-03.json",
+      "source_blob": "18e4f5e4d00956e3f6a0a979cf5d59f5afb506e3",
+      "legacy_skill_tags": [
+        "kiem-tra-nghiem-he"
+      ],
+      "source_primary_id": "kiem-tra-nghiem-he",
+      "diagnostic_skill_id": "kiem-tra-nghiem-he",
+      "family_id": "SYS-SOLVE",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "SUPPORTING_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family": "SYS09-CHECK-065-070",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "SYS09V1_070",
+      "topic_id": "CT09",
+      "source_file": "09-he-phuong-trinh-v1-03.json",
+      "source_blob": "18e4f5e4d00956e3f6a0a979cf5d59f5afb506e3",
+      "legacy_skill_tags": [
+        "kiem-tra-nghiem-he"
+      ],
+      "source_primary_id": "kiem-tra-nghiem-he",
+      "diagnostic_skill_id": "kiem-tra-nghiem-he",
+      "family_id": "SYS-SOLVE",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "SUPPORTING_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family": "SYS09-CHECK-065-070",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "SYS09V1_071",
+      "topic_id": "CT09",
+      "source_file": "09-he-phuong-trinh-v1-03.json",
+      "source_blob": "18e4f5e4d00956e3f6a0a979cf5d59f5afb506e3",
+      "legacy_skill_tags": [
+        "kiem-tra-nghiem-he"
+      ],
+      "source_primary_id": "kiem-tra-nghiem-he",
+      "diagnostic_skill_id": "kiem-tra-nghiem-he",
+      "family_id": "SYS-SOLVE",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "SUPPORTING_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family": "SYS09-CHECK-071-076",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "SYS09V1_072",
+      "topic_id": "CT09",
+      "source_file": "09-he-phuong-trinh-v1-03.json",
+      "source_blob": "18e4f5e4d00956e3f6a0a979cf5d59f5afb506e3",
+      "legacy_skill_tags": [
+        "kiem-tra-nghiem-he"
+      ],
+      "source_primary_id": "kiem-tra-nghiem-he",
+      "diagnostic_skill_id": "kiem-tra-nghiem-he",
+      "family_id": "SYS-SOLVE",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "SUPPORTING_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family": "SYS09-CHECK-071-076",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "SYS09V1_073",
+      "topic_id": "CT09",
+      "source_file": "09-he-phuong-trinh-v1-03.json",
+      "source_blob": "18e4f5e4d00956e3f6a0a979cf5d59f5afb506e3",
+      "legacy_skill_tags": [
+        "kiem-tra-nghiem-he"
+      ],
+      "source_primary_id": "kiem-tra-nghiem-he",
+      "diagnostic_skill_id": "kiem-tra-nghiem-he",
+      "family_id": "SYS-SOLVE",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "SUPPORTING_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family": "SYS09-CHECK-071-076",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "SYS09V1_074",
+      "topic_id": "CT09",
+      "source_file": "09-he-phuong-trinh-v1-03.json",
+      "source_blob": "18e4f5e4d00956e3f6a0a979cf5d59f5afb506e3",
+      "legacy_skill_tags": [
+        "kiem-tra-nghiem-he"
+      ],
+      "source_primary_id": "kiem-tra-nghiem-he",
+      "diagnostic_skill_id": "kiem-tra-nghiem-he",
+      "family_id": "SYS-SOLVE",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "SUPPORTING_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family": "SYS09-CHECK-071-076",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "SYS09V1_075",
+      "topic_id": "CT09",
+      "source_file": "09-he-phuong-trinh-v1-03.json",
+      "source_blob": "18e4f5e4d00956e3f6a0a979cf5d59f5afb506e3",
+      "legacy_skill_tags": [
+        "kiem-tra-nghiem-he"
+      ],
+      "source_primary_id": "kiem-tra-nghiem-he",
+      "diagnostic_skill_id": "kiem-tra-nghiem-he",
+      "family_id": "SYS-SOLVE",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "SUPPORTING_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family": "SYS09-CHECK-071-076",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "SYS09V1_076",
+      "topic_id": "CT09",
+      "source_file": "09-he-phuong-trinh-v1-03.json",
+      "source_blob": "18e4f5e4d00956e3f6a0a979cf5d59f5afb506e3",
+      "legacy_skill_tags": [
+        "kiem-tra-nghiem-he"
+      ],
+      "source_primary_id": "kiem-tra-nghiem-he",
+      "diagnostic_skill_id": "kiem-tra-nghiem-he",
+      "family_id": "SYS-SOLVE",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "SUPPORTING_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family": "SYS09-CHECK-071-076",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "SYS09V1_077",
+      "topic_id": "CT09",
+      "source_file": "09-he-phuong-trinh-v1-03.json",
+      "source_blob": "18e4f5e4d00956e3f6a0a979cf5d59f5afb506e3",
+      "legacy_skill_tags": [
+        "tham-so-he",
+        "kiem-tra-nghiem-he"
+      ],
+      "source_primary_id": "tham-so-he",
+      "diagnostic_skill_id": "tham-so-he",
+      "family_id": "SYS-PARAM",
+      "family_layer": "Entrance10",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": "SYS09-PARAM-077-088",
+      "supporting_skills": [
+        "kiem-tra-nghiem-he"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "SYS09V1_078",
+      "topic_id": "CT09",
+      "source_file": "09-he-phuong-trinh-v1-03.json",
+      "source_blob": "18e4f5e4d00956e3f6a0a979cf5d59f5afb506e3",
+      "legacy_skill_tags": [
+        "tham-so-he",
+        "kiem-tra-nghiem-he"
+      ],
+      "source_primary_id": "tham-so-he",
+      "diagnostic_skill_id": "tham-so-he",
+      "family_id": "SYS-PARAM",
+      "family_layer": "Entrance10",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": "SYS09-PARAM-077-088",
+      "supporting_skills": [
+        "kiem-tra-nghiem-he"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "SYS09V1_079",
+      "topic_id": "CT09",
+      "source_file": "09-he-phuong-trinh-v1-03.json",
+      "source_blob": "18e4f5e4d00956e3f6a0a979cf5d59f5afb506e3",
+      "legacy_skill_tags": [
+        "tham-so-he",
+        "kiem-tra-nghiem-he"
+      ],
+      "source_primary_id": "tham-so-he",
+      "diagnostic_skill_id": "tham-so-he",
+      "family_id": "SYS-PARAM",
+      "family_layer": "Entrance10",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": "SYS09-PARAM-077-088",
+      "supporting_skills": [
+        "kiem-tra-nghiem-he"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "SYS09V1_080",
+      "topic_id": "CT09",
+      "source_file": "09-he-phuong-trinh-v1-03.json",
+      "source_blob": "18e4f5e4d00956e3f6a0a979cf5d59f5afb506e3",
+      "legacy_skill_tags": [
+        "tham-so-he",
+        "kiem-tra-nghiem-he"
+      ],
+      "source_primary_id": "tham-so-he",
+      "diagnostic_skill_id": "tham-so-he",
+      "family_id": "SYS-PARAM",
+      "family_layer": "Entrance10",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": "SYS09-PARAM-077-088",
+      "supporting_skills": [
+        "kiem-tra-nghiem-he"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "SYS09V1_081",
+      "topic_id": "CT09",
+      "source_file": "09-he-phuong-trinh-v1-03.json",
+      "source_blob": "18e4f5e4d00956e3f6a0a979cf5d59f5afb506e3",
+      "legacy_skill_tags": [
+        "tham-so-he",
+        "kiem-tra-nghiem-he"
+      ],
+      "source_primary_id": "tham-so-he",
+      "diagnostic_skill_id": "tham-so-he",
+      "family_id": "SYS-PARAM",
+      "family_layer": "Entrance10",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": "SYS09-PARAM-077-088",
+      "supporting_skills": [
+        "kiem-tra-nghiem-he"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "SYS09V1_082",
+      "topic_id": "CT09",
+      "source_file": "09-he-phuong-trinh-v1-03.json",
+      "source_blob": "18e4f5e4d00956e3f6a0a979cf5d59f5afb506e3",
+      "legacy_skill_tags": [
+        "tham-so-he",
+        "kiem-tra-nghiem-he"
+      ],
+      "source_primary_id": "tham-so-he",
+      "diagnostic_skill_id": "tham-so-he",
+      "family_id": "SYS-PARAM",
+      "family_layer": "Entrance10",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": "SYS09-PARAM-077-088",
+      "supporting_skills": [
+        "kiem-tra-nghiem-he"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "SYS09V1_083",
+      "topic_id": "CT09",
+      "source_file": "09-he-phuong-trinh-v1-03.json",
+      "source_blob": "18e4f5e4d00956e3f6a0a979cf5d59f5afb506e3",
+      "legacy_skill_tags": [
+        "tham-so-he",
+        "kiem-tra-nghiem-he"
+      ],
+      "source_primary_id": "tham-so-he",
+      "diagnostic_skill_id": "tham-so-he",
+      "family_id": "SYS-PARAM",
+      "family_layer": "Entrance10",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": "SYS09-PARAM-077-088",
+      "supporting_skills": [
+        "kiem-tra-nghiem-he"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "SYS09V1_084",
+      "topic_id": "CT09",
+      "source_file": "09-he-phuong-trinh-v1-03.json",
+      "source_blob": "18e4f5e4d00956e3f6a0a979cf5d59f5afb506e3",
+      "legacy_skill_tags": [
+        "tham-so-he",
+        "kiem-tra-nghiem-he"
+      ],
+      "source_primary_id": "tham-so-he",
+      "diagnostic_skill_id": "tham-so-he",
+      "family_id": "SYS-PARAM",
+      "family_layer": "Entrance10",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": "SYS09-PARAM-077-088",
+      "supporting_skills": [
+        "kiem-tra-nghiem-he"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "SYS09V1_085",
+      "topic_id": "CT09",
+      "source_file": "09-he-phuong-trinh-v1-03.json",
+      "source_blob": "18e4f5e4d00956e3f6a0a979cf5d59f5afb506e3",
+      "legacy_skill_tags": [
+        "tham-so-he",
+        "kiem-tra-nghiem-he"
+      ],
+      "source_primary_id": "tham-so-he",
+      "diagnostic_skill_id": "tham-so-he",
+      "family_id": "SYS-PARAM",
+      "family_layer": "Entrance10",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": "SYS09-PARAM-077-088",
+      "supporting_skills": [
+        "kiem-tra-nghiem-he"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "SYS09V1_086",
+      "topic_id": "CT09",
+      "source_file": "09-he-phuong-trinh-v1-03.json",
+      "source_blob": "18e4f5e4d00956e3f6a0a979cf5d59f5afb506e3",
+      "legacy_skill_tags": [
+        "tham-so-he",
+        "kiem-tra-nghiem-he"
+      ],
+      "source_primary_id": "tham-so-he",
+      "diagnostic_skill_id": "tham-so-he",
+      "family_id": "SYS-PARAM",
+      "family_layer": "Entrance10",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": "SYS09-PARAM-077-088",
+      "supporting_skills": [
+        "kiem-tra-nghiem-he"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "SYS09V1_087",
+      "topic_id": "CT09",
+      "source_file": "09-he-phuong-trinh-v1-03.json",
+      "source_blob": "18e4f5e4d00956e3f6a0a979cf5d59f5afb506e3",
+      "legacy_skill_tags": [
+        "tham-so-he",
+        "kiem-tra-nghiem-he"
+      ],
+      "source_primary_id": "tham-so-he",
+      "diagnostic_skill_id": "tham-so-he",
+      "family_id": "SYS-PARAM",
+      "family_layer": "Entrance10",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": "SYS09-PARAM-077-088",
+      "supporting_skills": [
+        "kiem-tra-nghiem-he"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "SYS09V1_088",
+      "topic_id": "CT09",
+      "source_file": "09-he-phuong-trinh-v1-03.json",
+      "source_blob": "18e4f5e4d00956e3f6a0a979cf5d59f5afb506e3",
+      "legacy_skill_tags": [
+        "tham-so-he",
+        "kiem-tra-nghiem-he"
+      ],
+      "source_primary_id": "tham-so-he",
+      "diagnostic_skill_id": "tham-so-he",
+      "family_id": "SYS-PARAM",
+      "family_layer": "Entrance10",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": "SYS09-PARAM-077-088",
+      "supporting_skills": [
+        "kiem-tra-nghiem-he"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "SYS09V1_089",
+      "topic_id": "CT09",
+      "source_file": "09-he-phuong-trinh-v1-03.json",
+      "source_blob": "18e4f5e4d00956e3f6a0a979cf5d59f5afb506e3",
+      "legacy_skill_tags": [
+        "lap-he-bai-toan",
+        "bai-toan-so"
+      ],
+      "source_primary_id": "lap-he-bai-toan",
+      "diagnostic_skill_id": "lap-he-bai-toan",
+      "family_id": "SYS-MODEL",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_MODELING_PARTIAL_SYSTEM_SELECTION",
+      "clone_family": "SYS09-MODEL-NUMBER-089-100",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [
+        "bai-toan-so"
+      ],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "SYS09V1_090",
+      "topic_id": "CT09",
+      "source_file": "09-he-phuong-trinh-v1-03.json",
+      "source_blob": "18e4f5e4d00956e3f6a0a979cf5d59f5afb506e3",
+      "legacy_skill_tags": [
+        "lap-he-bai-toan",
+        "bai-toan-so"
+      ],
+      "source_primary_id": "lap-he-bai-toan",
+      "diagnostic_skill_id": "lap-he-bai-toan",
+      "family_id": "SYS-MODEL",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_MODELING_PARTIAL_SYSTEM_SELECTION",
+      "clone_family": "SYS09-MODEL-NUMBER-089-100",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [
+        "bai-toan-so"
+      ],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "SYS09V1_091",
+      "topic_id": "CT09",
+      "source_file": "09-he-phuong-trinh-v1-04.json",
+      "source_blob": "09e3c0269d42addb9a21b3fecf6fe4c3e811ce2f",
+      "legacy_skill_tags": [
+        "lap-he-bai-toan",
+        "bai-toan-so"
+      ],
+      "source_primary_id": "lap-he-bai-toan",
+      "diagnostic_skill_id": "lap-he-bai-toan",
+      "family_id": "SYS-MODEL",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_MODELING_PARTIAL_SYSTEM_SELECTION",
+      "clone_family": "SYS09-MODEL-NUMBER-089-100",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [
+        "bai-toan-so"
+      ],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "SYS09V1_092",
+      "topic_id": "CT09",
+      "source_file": "09-he-phuong-trinh-v1-04.json",
+      "source_blob": "09e3c0269d42addb9a21b3fecf6fe4c3e811ce2f",
+      "legacy_skill_tags": [
+        "lap-he-bai-toan",
+        "bai-toan-so"
+      ],
+      "source_primary_id": "lap-he-bai-toan",
+      "diagnostic_skill_id": "lap-he-bai-toan",
+      "family_id": "SYS-MODEL",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_MODELING_PARTIAL_SYSTEM_SELECTION",
+      "clone_family": "SYS09-MODEL-NUMBER-089-100",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [
+        "bai-toan-so"
+      ],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "SYS09V1_093",
+      "topic_id": "CT09",
+      "source_file": "09-he-phuong-trinh-v1-04.json",
+      "source_blob": "09e3c0269d42addb9a21b3fecf6fe4c3e811ce2f",
+      "legacy_skill_tags": [
+        "lap-he-bai-toan",
+        "bai-toan-so"
+      ],
+      "source_primary_id": "lap-he-bai-toan",
+      "diagnostic_skill_id": "lap-he-bai-toan",
+      "family_id": "SYS-MODEL",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_MODELING_PARTIAL_SYSTEM_SELECTION",
+      "clone_family": "SYS09-MODEL-NUMBER-089-100",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [
+        "bai-toan-so"
+      ],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "SYS09V1_094",
+      "topic_id": "CT09",
+      "source_file": "09-he-phuong-trinh-v1-04.json",
+      "source_blob": "09e3c0269d42addb9a21b3fecf6fe4c3e811ce2f",
+      "legacy_skill_tags": [
+        "lap-he-bai-toan",
+        "bai-toan-so"
+      ],
+      "source_primary_id": "lap-he-bai-toan",
+      "diagnostic_skill_id": "lap-he-bai-toan",
+      "family_id": "SYS-MODEL",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_MODELING_PARTIAL_SYSTEM_SELECTION",
+      "clone_family": "SYS09-MODEL-NUMBER-089-100",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [
+        "bai-toan-so"
+      ],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "SYS09V1_095",
+      "topic_id": "CT09",
+      "source_file": "09-he-phuong-trinh-v1-04.json",
+      "source_blob": "09e3c0269d42addb9a21b3fecf6fe4c3e811ce2f",
+      "legacy_skill_tags": [
+        "lap-he-bai-toan",
+        "bai-toan-so"
+      ],
+      "source_primary_id": "lap-he-bai-toan",
+      "diagnostic_skill_id": "lap-he-bai-toan",
+      "family_id": "SYS-MODEL",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_MODELING_PARTIAL_SYSTEM_SELECTION",
+      "clone_family": "SYS09-MODEL-NUMBER-089-100",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [
+        "bai-toan-so"
+      ],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "SYS09V1_096",
+      "topic_id": "CT09",
+      "source_file": "09-he-phuong-trinh-v1-04.json",
+      "source_blob": "09e3c0269d42addb9a21b3fecf6fe4c3e811ce2f",
+      "legacy_skill_tags": [
+        "lap-he-bai-toan",
+        "bai-toan-so"
+      ],
+      "source_primary_id": "lap-he-bai-toan",
+      "diagnostic_skill_id": "lap-he-bai-toan",
+      "family_id": "SYS-MODEL",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_MODELING_PARTIAL_SYSTEM_SELECTION",
+      "clone_family": "SYS09-MODEL-NUMBER-089-100",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [
+        "bai-toan-so"
+      ],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "SYS09V1_097",
+      "topic_id": "CT09",
+      "source_file": "09-he-phuong-trinh-v1-04.json",
+      "source_blob": "09e3c0269d42addb9a21b3fecf6fe4c3e811ce2f",
+      "legacy_skill_tags": [
+        "lap-he-bai-toan",
+        "bai-toan-so"
+      ],
+      "source_primary_id": "lap-he-bai-toan",
+      "diagnostic_skill_id": "lap-he-bai-toan",
+      "family_id": "SYS-MODEL",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_MODELING_PARTIAL_SYSTEM_SELECTION",
+      "clone_family": "SYS09-MODEL-NUMBER-089-100",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [
+        "bai-toan-so"
+      ],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "SYS09V1_098",
+      "topic_id": "CT09",
+      "source_file": "09-he-phuong-trinh-v1-04.json",
+      "source_blob": "09e3c0269d42addb9a21b3fecf6fe4c3e811ce2f",
+      "legacy_skill_tags": [
+        "lap-he-bai-toan",
+        "bai-toan-so"
+      ],
+      "source_primary_id": "lap-he-bai-toan",
+      "diagnostic_skill_id": "lap-he-bai-toan",
+      "family_id": "SYS-MODEL",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_MODELING_PARTIAL_SYSTEM_SELECTION",
+      "clone_family": "SYS09-MODEL-NUMBER-089-100",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [
+        "bai-toan-so"
+      ],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "SYS09V1_099",
+      "topic_id": "CT09",
+      "source_file": "09-he-phuong-trinh-v1-04.json",
+      "source_blob": "09e3c0269d42addb9a21b3fecf6fe4c3e811ce2f",
+      "legacy_skill_tags": [
+        "lap-he-bai-toan",
+        "bai-toan-so"
+      ],
+      "source_primary_id": "lap-he-bai-toan",
+      "diagnostic_skill_id": "lap-he-bai-toan",
+      "family_id": "SYS-MODEL",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_MODELING_PARTIAL_SYSTEM_SELECTION",
+      "clone_family": "SYS09-MODEL-NUMBER-089-100",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [
+        "bai-toan-so"
+      ],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "SYS09V1_100",
+      "topic_id": "CT09",
+      "source_file": "09-he-phuong-trinh-v1-04.json",
+      "source_blob": "09e3c0269d42addb9a21b3fecf6fe4c3e811ce2f",
+      "legacy_skill_tags": [
+        "lap-he-bai-toan",
+        "bai-toan-so"
+      ],
+      "source_primary_id": "lap-he-bai-toan",
+      "diagnostic_skill_id": "lap-he-bai-toan",
+      "family_id": "SYS-MODEL",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_MODELING_PARTIAL_SYSTEM_SELECTION",
+      "clone_family": "SYS09-MODEL-NUMBER-089-100",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [
+        "bai-toan-so"
+      ],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "SYS09V1_101",
+      "topic_id": "CT09",
+      "source_file": "09-he-phuong-trinh-v1-04.json",
+      "source_blob": "09e3c0269d42addb9a21b3fecf6fe4c3e811ce2f",
+      "legacy_skill_tags": [
+        "lap-he-bai-toan",
+        "chuyen-dong-he"
+      ],
+      "source_primary_id": "lap-he-bai-toan",
+      "diagnostic_skill_id": "lap-he-bai-toan",
+      "family_id": "SYS-MODEL",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_MODELING_PARTIAL_SYSTEM_SELECTION",
+      "clone_family": "SYS09-MODEL-MOTION-101-110",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [
+        "chuyen-dong-he"
+      ],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "SYS09V1_102",
+      "topic_id": "CT09",
+      "source_file": "09-he-phuong-trinh-v1-04.json",
+      "source_blob": "09e3c0269d42addb9a21b3fecf6fe4c3e811ce2f",
+      "legacy_skill_tags": [
+        "lap-he-bai-toan",
+        "chuyen-dong-he"
+      ],
+      "source_primary_id": "lap-he-bai-toan",
+      "diagnostic_skill_id": "lap-he-bai-toan",
+      "family_id": "SYS-MODEL",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_MODELING_PARTIAL_SYSTEM_SELECTION",
+      "clone_family": "SYS09-MODEL-MOTION-101-110",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [
+        "chuyen-dong-he"
+      ],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "SYS09V1_103",
+      "topic_id": "CT09",
+      "source_file": "09-he-phuong-trinh-v1-04.json",
+      "source_blob": "09e3c0269d42addb9a21b3fecf6fe4c3e811ce2f",
+      "legacy_skill_tags": [
+        "lap-he-bai-toan",
+        "chuyen-dong-he"
+      ],
+      "source_primary_id": "lap-he-bai-toan",
+      "diagnostic_skill_id": "lap-he-bai-toan",
+      "family_id": "SYS-MODEL",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_MODELING_PARTIAL_SYSTEM_SELECTION",
+      "clone_family": "SYS09-MODEL-MOTION-101-110",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [
+        "chuyen-dong-he"
+      ],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "SYS09V1_104",
+      "topic_id": "CT09",
+      "source_file": "09-he-phuong-trinh-v1-04.json",
+      "source_blob": "09e3c0269d42addb9a21b3fecf6fe4c3e811ce2f",
+      "legacy_skill_tags": [
+        "lap-he-bai-toan",
+        "chuyen-dong-he"
+      ],
+      "source_primary_id": "lap-he-bai-toan",
+      "diagnostic_skill_id": "lap-he-bai-toan",
+      "family_id": "SYS-MODEL",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_MODELING_PARTIAL_SYSTEM_SELECTION",
+      "clone_family": "SYS09-MODEL-MOTION-101-110",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [
+        "chuyen-dong-he"
+      ],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "SYS09V1_105",
+      "topic_id": "CT09",
+      "source_file": "09-he-phuong-trinh-v1-04.json",
+      "source_blob": "09e3c0269d42addb9a21b3fecf6fe4c3e811ce2f",
+      "legacy_skill_tags": [
+        "lap-he-bai-toan",
+        "chuyen-dong-he"
+      ],
+      "source_primary_id": "lap-he-bai-toan",
+      "diagnostic_skill_id": "lap-he-bai-toan",
+      "family_id": "SYS-MODEL",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_MODELING_PARTIAL_SYSTEM_SELECTION",
+      "clone_family": "SYS09-MODEL-MOTION-101-110",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [
+        "chuyen-dong-he"
+      ],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "SYS09V1_106",
+      "topic_id": "CT09",
+      "source_file": "09-he-phuong-trinh-v1-04.json",
+      "source_blob": "09e3c0269d42addb9a21b3fecf6fe4c3e811ce2f",
+      "legacy_skill_tags": [
+        "lap-he-bai-toan",
+        "chuyen-dong-he"
+      ],
+      "source_primary_id": "lap-he-bai-toan",
+      "diagnostic_skill_id": "lap-he-bai-toan",
+      "family_id": "SYS-MODEL",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_MODELING_PARTIAL_SYSTEM_SELECTION",
+      "clone_family": "SYS09-MODEL-MOTION-101-110",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [
+        "chuyen-dong-he"
+      ],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "SYS09V1_107",
+      "topic_id": "CT09",
+      "source_file": "09-he-phuong-trinh-v1-04.json",
+      "source_blob": "09e3c0269d42addb9a21b3fecf6fe4c3e811ce2f",
+      "legacy_skill_tags": [
+        "lap-he-bai-toan",
+        "chuyen-dong-he"
+      ],
+      "source_primary_id": "lap-he-bai-toan",
+      "diagnostic_skill_id": "lap-he-bai-toan",
+      "family_id": "SYS-MODEL",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_MODELING_PARTIAL_SYSTEM_SELECTION",
+      "clone_family": "SYS09-MODEL-MOTION-101-110",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [
+        "chuyen-dong-he"
+      ],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "SYS09V1_108",
+      "topic_id": "CT09",
+      "source_file": "09-he-phuong-trinh-v1-04.json",
+      "source_blob": "09e3c0269d42addb9a21b3fecf6fe4c3e811ce2f",
+      "legacy_skill_tags": [
+        "lap-he-bai-toan",
+        "chuyen-dong-he"
+      ],
+      "source_primary_id": "lap-he-bai-toan",
+      "diagnostic_skill_id": "lap-he-bai-toan",
+      "family_id": "SYS-MODEL",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_MODELING_PARTIAL_SYSTEM_SELECTION",
+      "clone_family": "SYS09-MODEL-MOTION-101-110",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [
+        "chuyen-dong-he"
+      ],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "SYS09V1_109",
+      "topic_id": "CT09",
+      "source_file": "09-he-phuong-trinh-v1-04.json",
+      "source_blob": "09e3c0269d42addb9a21b3fecf6fe4c3e811ce2f",
+      "legacy_skill_tags": [
+        "lap-he-bai-toan",
+        "chuyen-dong-he"
+      ],
+      "source_primary_id": "lap-he-bai-toan",
+      "diagnostic_skill_id": "lap-he-bai-toan",
+      "family_id": "SYS-MODEL",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_MODELING_PARTIAL_SYSTEM_SELECTION",
+      "clone_family": "SYS09-MODEL-MOTION-101-110",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [
+        "chuyen-dong-he"
+      ],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "SYS09V1_110",
+      "topic_id": "CT09",
+      "source_file": "09-he-phuong-trinh-v1-04.json",
+      "source_blob": "09e3c0269d42addb9a21b3fecf6fe4c3e811ce2f",
+      "legacy_skill_tags": [
+        "lap-he-bai-toan",
+        "chuyen-dong-he"
+      ],
+      "source_primary_id": "lap-he-bai-toan",
+      "diagnostic_skill_id": "lap-he-bai-toan",
+      "family_id": "SYS-MODEL",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_MODELING_PARTIAL_SYSTEM_SELECTION",
+      "clone_family": "SYS09-MODEL-MOTION-101-110",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [
+        "chuyen-dong-he"
+      ],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "SYS09V1_111",
+      "topic_id": "CT09",
+      "source_file": "09-he-phuong-trinh-v1-04.json",
+      "source_blob": "09e3c0269d42addb9a21b3fecf6fe4c3e811ce2f",
+      "legacy_skill_tags": [
+        "lap-he-bai-toan",
+        "nang-suat-he"
+      ],
+      "source_primary_id": "lap-he-bai-toan",
+      "diagnostic_skill_id": "lap-he-bai-toan",
+      "family_id": "SYS-MODEL",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_MODELING_PARTIAL_SYSTEM_SELECTION",
+      "clone_family": "SYS09-MODEL-RATE-111-120",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [
+        "nang-suat-he"
+      ],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "SYS09V1_112",
+      "topic_id": "CT09",
+      "source_file": "09-he-phuong-trinh-v1-04.json",
+      "source_blob": "09e3c0269d42addb9a21b3fecf6fe4c3e811ce2f",
+      "legacy_skill_tags": [
+        "lap-he-bai-toan",
+        "nang-suat-he"
+      ],
+      "source_primary_id": "lap-he-bai-toan",
+      "diagnostic_skill_id": "lap-he-bai-toan",
+      "family_id": "SYS-MODEL",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_MODELING_PARTIAL_SYSTEM_SELECTION",
+      "clone_family": "SYS09-MODEL-RATE-111-120",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [
+        "nang-suat-he"
+      ],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "SYS09V1_113",
+      "topic_id": "CT09",
+      "source_file": "09-he-phuong-trinh-v1-04.json",
+      "source_blob": "09e3c0269d42addb9a21b3fecf6fe4c3e811ce2f",
+      "legacy_skill_tags": [
+        "lap-he-bai-toan",
+        "nang-suat-he"
+      ],
+      "source_primary_id": "lap-he-bai-toan",
+      "diagnostic_skill_id": "lap-he-bai-toan",
+      "family_id": "SYS-MODEL",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_MODELING_PARTIAL_SYSTEM_SELECTION",
+      "clone_family": "SYS09-MODEL-RATE-111-120",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [
+        "nang-suat-he"
+      ],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "SYS09V1_114",
+      "topic_id": "CT09",
+      "source_file": "09-he-phuong-trinh-v1-04.json",
+      "source_blob": "09e3c0269d42addb9a21b3fecf6fe4c3e811ce2f",
+      "legacy_skill_tags": [
+        "lap-he-bai-toan",
+        "nang-suat-he"
+      ],
+      "source_primary_id": "lap-he-bai-toan",
+      "diagnostic_skill_id": "lap-he-bai-toan",
+      "family_id": "SYS-MODEL",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_MODELING_PARTIAL_SYSTEM_SELECTION",
+      "clone_family": "SYS09-MODEL-RATE-111-120",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [
+        "nang-suat-he"
+      ],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "SYS09V1_115",
+      "topic_id": "CT09",
+      "source_file": "09-he-phuong-trinh-v1-04.json",
+      "source_blob": "09e3c0269d42addb9a21b3fecf6fe4c3e811ce2f",
+      "legacy_skill_tags": [
+        "lap-he-bai-toan",
+        "nang-suat-he"
+      ],
+      "source_primary_id": "lap-he-bai-toan",
+      "diagnostic_skill_id": "lap-he-bai-toan",
+      "family_id": "SYS-MODEL",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_MODELING_PARTIAL_SYSTEM_SELECTION",
+      "clone_family": "SYS09-MODEL-RATE-111-120",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [
+        "nang-suat-he"
+      ],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "SYS09V1_116",
+      "topic_id": "CT09",
+      "source_file": "09-he-phuong-trinh-v1-04.json",
+      "source_blob": "09e3c0269d42addb9a21b3fecf6fe4c3e811ce2f",
+      "legacy_skill_tags": [
+        "lap-he-bai-toan",
+        "nang-suat-he"
+      ],
+      "source_primary_id": "lap-he-bai-toan",
+      "diagnostic_skill_id": "lap-he-bai-toan",
+      "family_id": "SYS-MODEL",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_MODELING_PARTIAL_SYSTEM_SELECTION",
+      "clone_family": "SYS09-MODEL-RATE-111-120",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [
+        "nang-suat-he"
+      ],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "SYS09V1_117",
+      "topic_id": "CT09",
+      "source_file": "09-he-phuong-trinh-v1-04.json",
+      "source_blob": "09e3c0269d42addb9a21b3fecf6fe4c3e811ce2f",
+      "legacy_skill_tags": [
+        "lap-he-bai-toan",
+        "nang-suat-he"
+      ],
+      "source_primary_id": "lap-he-bai-toan",
+      "diagnostic_skill_id": "lap-he-bai-toan",
+      "family_id": "SYS-MODEL",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_MODELING_PARTIAL_SYSTEM_SELECTION",
+      "clone_family": "SYS09-MODEL-RATE-111-120",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [
+        "nang-suat-he"
+      ],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "SYS09V1_118",
+      "topic_id": "CT09",
+      "source_file": "09-he-phuong-trinh-v1-04.json",
+      "source_blob": "09e3c0269d42addb9a21b3fecf6fe4c3e811ce2f",
+      "legacy_skill_tags": [
+        "lap-he-bai-toan",
+        "nang-suat-he"
+      ],
+      "source_primary_id": "lap-he-bai-toan",
+      "diagnostic_skill_id": "lap-he-bai-toan",
+      "family_id": "SYS-MODEL",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_MODELING_PARTIAL_SYSTEM_SELECTION",
+      "clone_family": "SYS09-MODEL-RATE-111-120",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [
+        "nang-suat-he"
+      ],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "SYS09V1_119",
+      "topic_id": "CT09",
+      "source_file": "09-he-phuong-trinh-v1-04.json",
+      "source_blob": "09e3c0269d42addb9a21b3fecf6fe4c3e811ce2f",
+      "legacy_skill_tags": [
+        "lap-he-bai-toan",
+        "nang-suat-he"
+      ],
+      "source_primary_id": "lap-he-bai-toan",
+      "diagnostic_skill_id": "lap-he-bai-toan",
+      "family_id": "SYS-MODEL",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_MODELING_PARTIAL_SYSTEM_SELECTION",
+      "clone_family": "SYS09-MODEL-RATE-111-120",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [
+        "nang-suat-he"
+      ],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "SYS09V1_120",
+      "topic_id": "CT09",
+      "source_file": "09-he-phuong-trinh-v1-04.json",
+      "source_blob": "09e3c0269d42addb9a21b3fecf6fe4c3e811ce2f",
+      "legacy_skill_tags": [
+        "lap-he-bai-toan",
+        "nang-suat-he"
+      ],
+      "source_primary_id": "lap-he-bai-toan",
+      "diagnostic_skill_id": "lap-he-bai-toan",
+      "family_id": "SYS-MODEL",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_MODELING_PARTIAL_SYSTEM_SELECTION",
+      "clone_family": "SYS09-MODEL-RATE-111-120",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [
+        "nang-suat-he"
+      ],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    }
+  ]
+}

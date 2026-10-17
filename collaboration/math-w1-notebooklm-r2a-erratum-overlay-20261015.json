@@ -1,0 +1,337 @@
+{
+  "schema": "math-w1-notebooklm-r2a-erratum-overlay-v1",
+  "packet_id": "MATH-EXERCISE-RECLASSIFY-W1-20261015",
+  "review_round": "R2a",
+  "reviewer_report_source": "owner-pasted NotebookLM R2a erratum received in Math App chat 2026-10-15",
+  "parent_r2_overlay": "docs/collaboration/math-w1-notebooklm-r2-verdict-overlay-20261015.json",
+  "original_r2_report": "review-packets/math-exercise-w1-20261015/NOTEBOOKLM_W1_R2_OWNER_SUBMITTED_20261015.md",
+  "reviewer_verdict": {
+    "academic_content_verdict": "ACADEMIC_ITEMS_PASS",
+    "deployment_verdict": "REVISE_POINTERS_AND_GRADING_CONTRACTS_REQUIRED",
+    "clearance": "ACADEMIC_CONTENT_AUDIT_COMPLETE_PENDING_PARSER_AND_POINTER_UPDATES",
+    "counts": {
+      "pass": 14,
+      "revise": 5,
+      "insufficient_evidence": 0
+    }
+  },
+  "review_evidence_scope": "NotebookLM reported using KNTT Grade 6–9 textbooks; this repository audit has not independently inspected the PDF pages.",
+  "restriction": "Do not alter learner questions, exact IDs, keys, assessment results or original paper sources. Never imply item-level PASS is a live feature.",
+  "source_total": 75,
+  "reviewed_total": 19,
+  "other_unreviewed": 56,
+  "math_source_verified": {
+    "source_04_WR_01_polynomial": "4x^3-2x+7",
+    "constant_term": 7,
+    "reviewer_r2a_agrees": true
+  },
+  "items": [
+    {
+      "source_id": "02-G6-WR-01",
+      "r2_verdict": "PASS",
+      "r2a_verdict": "PASS",
+      "s1_citation_claimed": "sach-giao-khoa-toan-6-tap-1-ket-noi-tri-thuc-voi-cuoc-song.pdf · Bài 7: Thứ tự thực hiện các phép tính (Trang 25–26)",
+      "canonical_reuse_id": null,
+      "release_status": "BLOCKED_PENDING_REVIEWED_IMPLEMENTATION_AND_OWNER_QA",
+      "legacy_visibility": "PRESERVE",
+      "retirement_allowed": false,
+      "correction": null
+    },
+    {
+      "source_id": "02-G6-WR-02",
+      "r2_verdict": "REVISE",
+      "r2a_verdict": "REVISE",
+      "s1_citation_claimed": "sach-giao-khoa-toan-6-tap-1-ket-noi-tri-thuc-voi-cuoc-song.pdf · Bài 11: Ước chung. Ước chung lớn nhất (Trang 44–48)",
+      "canonical_reuse_id": "WX02-NUM-001",
+      "release_status": "BLOCKED_PENDING_REVIEWED_IMPLEMENTATION_AND_OWNER_QA",
+      "legacy_visibility": "PRESERVE",
+      "retirement_allowed": false,
+      "correction": null
+    },
+    {
+      "source_id": "02-G6-WR-03",
+      "r2_verdict": "PASS",
+      "r2a_verdict": "PASS",
+      "s1_citation_claimed": "sach-giao-khoa-toan-6-tap-2-ket-noi-tri-thuc-voi-cuoc-song.pdf · Bài 25: Phép cộng và phép trừ phân số (Trang 15–18)",
+      "canonical_reuse_id": null,
+      "release_status": "BLOCKED_PENDING_REVIEWED_IMPLEMENTATION_AND_OWNER_QA",
+      "legacy_visibility": "PRESERVE",
+      "retirement_allowed": false,
+      "correction": null
+    },
+    {
+      "source_id": "02-G6-WR-04",
+      "r2_verdict": "REVISE",
+      "r2a_verdict": "REVISE",
+      "s1_citation_claimed": "sach-giao-khoa-toan-6-tap-2-ket-noi-tri-thuc-voi-cuoc-song.pdf · Bài 31: Một số bài toán về tỉ số và tỉ số phần trăm (Trang 38–41)",
+      "canonical_reuse_id": "WX02-NUM-002",
+      "release_status": "BLOCKED_PENDING_REVIEWED_IMPLEMENTATION_AND_OWNER_QA",
+      "legacy_visibility": "PRESERVE",
+      "retirement_allowed": false,
+      "correction": null
+    },
+    {
+      "source_id": "02-M2-03",
+      "r2_verdict": "PASS",
+      "r2a_verdict": "PASS",
+      "s1_citation_claimed": "sach-giao-khoa-toan-7-tap-1-ket-noi-tri-thuc-voi-cuoc-song.pdf · Bài 1: Tập hợp các số hữu tỉ (Trang 5–9)",
+      "canonical_reuse_id": null,
+      "release_status": "BLOCKED_PENDING_REVIEWED_IMPLEMENTATION_AND_OWNER_QA",
+      "legacy_visibility": "PRESERVE",
+      "retirement_allowed": false,
+      "correction": null
+    },
+    {
+      "source_id": "03-M1-01",
+      "r2_verdict": "PASS",
+      "r2a_verdict": "REVISE",
+      "s1_citation_claimed": "sach-giao-khoa-toan-7-tap-2-ket-noi-tri-thuc-voi-cuoc-song.pdf · Bài 20: Tỉ lệ thức (Trang 4–7)",
+      "canonical_reuse_id": null,
+      "release_status": "BLOCKED_PENDING_REVIEWED_IMPLEMENTATION_AND_OWNER_QA",
+      "legacy_visibility": "PRESERVE",
+      "retirement_allowed": false,
+      "correction": {
+        "reviewer_r2a_verdict": "REVISE",
+        "correction_type": "DETERMINISTIC_PROPORTION_CONTRACT",
+        "given_multiset": [
+          3,
+          4,
+          15,
+          20
+        ],
+        "required": "USE_EACH_ONCE_AND_NONZERO_DENOMINATORS_AND_CROSS_PRODUCTS_EQUAL",
+        "examples_valid": [
+          [
+            3,
+            4,
+            15,
+            20
+          ],
+          [
+            20,
+            15,
+            4,
+            3
+          ]
+        ],
+        "examples_invalid": [
+          [
+            1,
+            1,
+            60,
+            60
+          ],
+          [
+            3,
+            20,
+            4,
+            15
+          ],
+          [
+            3,
+            3,
+            20,
+            20
+          ]
+        ]
+      }
+    },
+    {
+      "source_id": "03-M1-02",
+      "r2_verdict": "PASS",
+      "r2a_verdict": "PASS",
+      "s1_citation_claimed": "sach-giao-khoa-toan-7-tap-2-ket-noi-tri-thuc-voi-cuoc-song.pdf · Bài 20: Tỉ lệ thức (Trang 4–7)",
+      "canonical_reuse_id": null,
+      "release_status": "BLOCKED_PENDING_REVIEWED_IMPLEMENTATION_AND_OWNER_QA",
+      "legacy_visibility": "PRESERVE",
+      "retirement_allowed": false,
+      "correction": null
+    },
+    {
+      "source_id": "03-M3-01",
+      "r2_verdict": "PASS",
+      "r2a_verdict": "PASS",
+      "s1_citation_claimed": "sach-giao-khoa-toan-7-tap-2-ket-noi-tri-thuc-voi-cuoc-song.pdf · Bài 20 & Bài 22: Tỉ lệ thức và Đại lượng tỉ lệ thuận (Trang 4–14)",
+      "canonical_reuse_id": null,
+      "release_status": "BLOCKED_PENDING_REVIEWED_IMPLEMENTATION_AND_OWNER_QA",
+      "legacy_visibility": "PRESERVE",
+      "retirement_allowed": false,
+      "correction": null
+    },
+    {
+      "source_id": "03-M4-01",
+      "r2_verdict": "PASS",
+      "r2a_verdict": "PASS",
+      "s1_citation_claimed": "sach-giao-khoa-toan-7-tap-2-ket-noi-tri-thuc-voi-cuoc-song.pdf · Bài 21 & Bài 22: Tính chất dãy tỉ số bằng nhau (Trang 8–14)",
+      "canonical_reuse_id": null,
+      "release_status": "BLOCKED_PENDING_REVIEWED_IMPLEMENTATION_AND_OWNER_QA",
+      "legacy_visibility": "PRESERVE",
+      "retirement_allowed": false,
+      "correction": null
+    },
+    {
+      "source_id": "04-WR-01",
+      "r2_verdict": "PASS",
+      "r2a_verdict": "PASS",
+      "s1_citation_claimed": "sach-giao-khoa-toan-7-tap-2-ket-noi-tri-thuc-voi-cuoc-song.pdf · Bài 25: Đa thức một biến (Trang 25–30)",
+      "canonical_reuse_id": null,
+      "release_status": "BLOCKED_PENDING_REVIEWED_IMPLEMENTATION_AND_OWNER_QA",
+      "legacy_visibility": "PRESERVE",
+      "retirement_allowed": false,
+      "correction": {
+        "reviewer_r2a_verdict": "PASS",
+        "correction_type": "KEY_SIGN_ERRATUM",
+        "corrected_answer": {
+          "degree": 3,
+          "coefficient_x3": 4,
+          "constant_term": 7,
+          "accepted": [
+            "7",
+            "+7"
+          ]
+        },
+        "r2_key_was_wrong": -7,
+        "implementation": "MULTIPLE_NUMERIC_FIELDS"
+      }
+    },
+    {
+      "source_id": "04-WR-02",
+      "r2_verdict": "REVISE",
+      "r2a_verdict": "REVISE",
+      "s1_citation_claimed": "sach-giao-khoa-toan-8-tap-1-ket-noi-tri-thuc-voi-cuoc-song.pdf · Bài 2 & Bài 3: Đa thức và phép cộng trừ đa thức (Trang 11–18)",
+      "canonical_reuse_id": "ALG04MICRO_005",
+      "release_status": "BLOCKED_PENDING_REVIEWED_IMPLEMENTATION_AND_OWNER_QA",
+      "legacy_visibility": "PRESERVE",
+      "retirement_allowed": false,
+      "correction": null
+    },
+    {
+      "source_id": "04-WR-03",
+      "r2_verdict": "PASS",
+      "r2a_verdict": "PASS",
+      "s1_citation_claimed": "sach-giao-khoa-toan-8-tap-1-ket-noi-tri-thuc-voi-cuoc-song.pdf · Bài 3: Phép cộng và phép trừ đa thức (Trang 15–18)",
+      "canonical_reuse_id": null,
+      "release_status": "BLOCKED_PENDING_REVIEWED_IMPLEMENTATION_AND_OWNER_QA",
+      "legacy_visibility": "PRESERVE",
+      "retirement_allowed": false,
+      "correction": null
+    },
+    {
+      "source_id": "04-CH-01",
+      "r2_verdict": "PASS",
+      "r2a_verdict": "PASS",
+      "s1_citation_claimed": "sach-giao-khoa-toan-8-tap-1-ket-noi-tri-thuc-voi-cuoc-song.pdf · Bài 4: Phép nhân đa thức (Trang 19–21)",
+      "canonical_reuse_id": null,
+      "release_status": "BLOCKED_PENDING_REVIEWED_IMPLEMENTATION_AND_OWNER_QA",
+      "legacy_visibility": "PRESERVE",
+      "retirement_allowed": false,
+      "correction": null
+    },
+    {
+      "source_id": "21-WR-01",
+      "r2_verdict": "PASS",
+      "r2a_verdict": "PASS",
+      "s1_citation_claimed": "sach-giao-khoa-toan-8-tap-1-ket-noi-tri-thuc-voi-cuoc-song.pdf · Bài 18: Thu thập và phân loại dữ liệu (Trang 90–92)",
+      "canonical_reuse_id": null,
+      "release_status": "BLOCKED_PENDING_REVIEWED_IMPLEMENTATION_AND_OWNER_QA",
+      "legacy_visibility": "PRESERVE",
+      "retirement_allowed": false,
+      "correction": null
+    },
+    {
+      "source_id": "21-WR-02",
+      "r2_verdict": "PASS",
+      "r2a_verdict": "PASS",
+      "s1_citation_claimed": "sach-giao-khoa-toan-6-tap-2-ket-noi-tri-thuc-voi-cuoc-song.pdf · Bài 40 (Trang 77–81) & Toán 8 Tập 1, Bài 19 (Trang 93–98)",
+      "canonical_reuse_id": null,
+      "release_status": "BLOCKED_PENDING_REVIEWED_IMPLEMENTATION_AND_OWNER_QA",
+      "legacy_visibility": "PRESERVE",
+      "retirement_allowed": false,
+      "correction": null
+    },
+    {
+      "source_id": "21-M1-01",
+      "r2_verdict": "PASS",
+      "r2a_verdict": "PASS",
+      "s1_citation_claimed": "sach-giao-khoa-toan-9-tap-2-ket-noi-tri-thuc-voi-cuoc-song.pdf · Bài 18: Bảng tần số và biểu đồ tần số (Trang 33–38)",
+      "canonical_reuse_id": null,
+      "release_status": "BLOCKED_PENDING_REVIEWED_IMPLEMENTATION_AND_OWNER_QA",
+      "legacy_visibility": "PRESERVE",
+      "retirement_allowed": false,
+      "correction": null
+    },
+    {
+      "source_id": "21-M2-01",
+      "r2_verdict": "PASS",
+      "r2a_verdict": "PASS",
+      "s1_citation_claimed": "sach-giao-khoa-toan-9-tap-2-ket-noi-tri-thuc-voi-cuoc-song.pdf · Bài 18: Bảng tần số và biểu đồ tần số (Trang 33–38)",
+      "canonical_reuse_id": null,
+      "release_status": "BLOCKED_PENDING_REVIEWED_IMPLEMENTATION_AND_OWNER_QA",
+      "legacy_visibility": "PRESERVE",
+      "retirement_allowed": false,
+      "correction": null
+    },
+    {
+      "source_id": "21-M3-01",
+      "r2_verdict": "PASS",
+      "r2a_verdict": "PASS",
+      "s1_citation_claimed": "sach-giao-khoa-toan-9-tap-2-ket-noi-tri-thuc-voi-cuoc-song.pdf · Bài 18: Bảng tần số và biểu đồ tần số (Trang 33–38)",
+      "canonical_reuse_id": null,
+      "release_status": "BLOCKED_PENDING_REVIEWED_IMPLEMENTATION_AND_OWNER_QA",
+      "legacy_visibility": "PRESERVE",
+      "retirement_allowed": false,
+      "correction": null
+    },
+    {
+      "source_id": "21-M4-01",
+      "r2_verdict": "PASS",
+      "r2a_verdict": "REVISE",
+      "s1_citation_claimed": "sach-giao-khoa-toan-9-tap-2-ket-noi-tri-thuc-voi-cuoc-song.pdf · Bài 19: Bảng tần suất và biểu đồ tần suất (Trang 43–48)",
+      "canonical_reuse_id": null,
+      "release_status": "BLOCKED_PENDING_REVIEWED_IMPLEMENTATION_AND_OWNER_QA",
+      "legacy_visibility": "PRESERVE",
+      "retirement_allowed": false,
+      "correction": {
+        "reviewer_r2a_verdict": "REVISE",
+        "correction_type": "DECIMAL_ROUNDING_CONTRACT",
+        "data": [
+          5,
+          6,
+          6,
+          7,
+          7,
+          7,
+          8,
+          8,
+          8,
+          8,
+          9,
+          9
+        ],
+        "rows": [
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "frequencies": [
+          1,
+          2,
+          3,
+          4,
+          2
+        ],
+        "percentages_one_decimal": [
+          8.3,
+          16.7,
+          25,
+          33.3,
+          16.7
+        ],
+        "reject_tolerance_based_wrong_rounding": true,
+        "require_all_five_fields": true
+      }
+    }
+  ]
+}

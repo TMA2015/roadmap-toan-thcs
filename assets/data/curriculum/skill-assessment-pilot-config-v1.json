@@ -1,0 +1,91 @@
+{
+  "schema": "one-skill-evidence-pilot-config-v1",
+  "status": "opt_in_beta",
+  "as_of": "2026-09-26",
+  "legacy_storage_key": "toan-thcs-practice-v1",
+  "new_storage_key": "toan-thcs-assessment-v2",
+  "sample_questions": [
+    {
+      "question_id": "ALG04V2_037",
+      "source_file": "04-bieu-thuc-dai-so-v2-02.json",
+      "assessed_skill": "cong-tru-da-thuc",
+      "secondary_tag": "bo-ngoac-dau",
+      "secondary_role": "supporting_skill",
+      "topic": "04-bieu-thuc-dai-so"
+    },
+    {
+      "question_id": "ALG04V2_051",
+      "source_file": "04-bieu-thuc-dai-so-v2-02.json",
+      "assessed_skill": "nhan-bieu-thuc",
+      "secondary_tag": "tinh-phan-phoi",
+      "secondary_role": "method",
+      "topic": "04-bieu-thuc-dai-so"
+    },
+    {
+      "question_id": "ALG04V2_111",
+      "source_file": "04-bieu-thuc-dai-so-v2-04.json",
+      "assessed_skill": "lap-bieu-thuc",
+      "secondary_tag": "bai-toan-thuc-te",
+      "secondary_role": "context",
+      "topic": "04-bieu-thuc-dai-so"
+    },
+    {
+      "question_id": "ID05V1_061",
+      "source_file": "05-7-hang-dang-thuc-v1-03.json",
+      "assessed_skill": "binh-phuong-hoan-chinh",
+      "secondary_tag": "nhan-dang-hdt",
+      "secondary_role": "category",
+      "topic": "05-7-hang-dang-thuc"
+    },
+    {
+      "question_id": "ID05V1_021",
+      "source_file": "05-7-hang-dang-thuc-v1-01.json",
+      "assessed_skill": "hieu-hai-binh-phuong",
+      "secondary_tag": "phan-tich-hdt",
+      "secondary_role": "category",
+      "topic": "05-7-hang-dang-thuc"
+    },
+    {
+      "question_id": "RAT07V1_025",
+      "source_file": "07-phan-thuc-dai-so-v1-01.json",
+      "assessed_skill": "hai-phan-thuc-bang-nhau",
+      "secondary_tag": "giu-dieu-kien-ban-dau",
+      "secondary_role": "supporting_skill",
+      "topic": "07-phan-thuc-dai-so"
+    },
+    {
+      "question_id": "SYS09V1_029",
+      "source_file": "09-he-phuong-trinh-v1-01.json",
+      "assessed_skill": "so-nghiem-he",
+      "secondary_tag": "y-nghia-hinh-hoc",
+      "secondary_role": "representation",
+      "topic": "09-he-phuong-trinh"
+    },
+    {
+      "question_id": "SYS09V1_089",
+      "source_file": "09-he-phuong-trinh-v1-03.json",
+      "assessed_skill": "lap-he-bai-toan",
+      "secondary_tag": "bai-toan-so",
+      "secondary_role": "context",
+      "topic": "09-he-phuong-trinh"
+    },
+    {
+      "question_id": "FUN10V1_103",
+      "source_file": "10-ham-so-do-thi-v1-04.json",
+      "assessed_skill": "giao-diem-do-thi",
+      "secondary_tag": "lien-he-he-phuong-trinh",
+      "secondary_role": "method",
+      "topic": "10-ham-so-do-thi"
+    },
+    {
+      "question_id": "RAD11V1_043",
+      "source_file": "11-can-thuc-v1-02.json",
+      "assessed_skill": "dua-thua-so-ra",
+      "secondary_tag": "khai-phuong-tich",
+      "secondary_role": "supporting_skill",
+      "topic": "11-can-thuc"
+    }
+  ],
+  "micro_source": "data/curriculum/skill-diagnostic-micro-pilot-v1.json",
+  "notes": "10 existing questions fetched from their unchanged question-bank sources; 4 separately reviewed micro-items. Only this opt-in page writes v2 evidence."
+}

@@ -1,0 +1,75 @@
+{
+  "version": 2,
+  "schema": "practice-bank-manifest-v1",
+  "bank_id": "ID05-V1",
+  "topic": {
+    "id": "05-7-hang-dang-thuc",
+    "title": "7 Hằng đẳng thức đáng nhớ"
+  },
+  "session_size": 10,
+  "question_count": 120,
+  "skill_labels": {
+    "binh-phuong-tong": "Bình phương của một tổng",
+    "binh-phuong-hieu": "Bình phương của một hiệu",
+    "hieu-hai-binh-phuong": "Hiệu hai bình phương",
+    "lap-phuong-tong": "Lập phương của một tổng",
+    "lap-phuong-hieu": "Lập phương của một hiệu",
+    "tong-hai-lap-phuong": "Tổng hai lập phương",
+    "hieu-hai-lap-phuong": "Hiệu hai lập phương",
+    "nhan-dang-hdt": "Nhận dạng cấu trúc hằng đẳng thức",
+    "binh-phuong-hoan-chinh": "Nhận dạng bình phương hoàn chỉnh",
+    "nhan-dang-lap-phuong": "Nhận dạng cấu trúc lập phương",
+    "phan-tich-hdt": "Phân tích biểu thức bằng hằng đẳng thức",
+    "tinh-nhanh-hdt": "Tính nhanh bằng hằng đẳng thức",
+    "rut-gon-hdt": "Rút gọn bằng hằng đẳng thức",
+    "chung-minh-hdt": "Chứng minh đẳng thức",
+    "giai-phuong-trinh-hdt": "Giải phương trình bằng hằng đẳng thức"
+  },
+  "skill_groups": [
+    {
+      "id": "nhom-binh-phuong",
+      "label": "A. Nhóm bình phương",
+      "skills": [
+        "binh-phuong-tong",
+        "binh-phuong-hieu",
+        "hieu-hai-binh-phuong"
+      ]
+    },
+    {
+      "id": "nhom-lap-phuong",
+      "label": "B. Nhóm lập phương",
+      "skills": [
+        "lap-phuong-tong",
+        "lap-phuong-hieu",
+        "tong-hai-lap-phuong",
+        "hieu-hai-lap-phuong"
+      ]
+    },
+    {
+      "id": "nhan-dang-hai-chieu",
+      "label": "C. Nhận dạng hai chiều",
+      "skills": [
+        "nhan-dang-hdt",
+        "binh-phuong-hoan-chinh",
+        "nhan-dang-lap-phuong",
+        "phan-tich-hdt"
+      ]
+    },
+    {
+      "id": "van-dung-hdt",
+      "label": "D. Vận dụng hằng đẳng thức",
+      "skills": [
+        "tinh-nhanh-hdt",
+        "rut-gon-hdt",
+        "chung-minh-hdt",
+        "giai-phuong-trinh-hdt"
+      ]
+    }
+  ],
+  "sources": [
+    "05-7-hang-dang-thuc-v1-01.json",
+    "05-7-hang-dang-thuc-v1-02.json",
+    "05-7-hang-dang-thuc-v1-03.json",
+    "05-7-hang-dang-thuc-v1-04.json"
+  ]
+}

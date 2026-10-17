@@ -1,0 +1,80 @@
+{
+  "protocol_version": "2.0",
+  "packet_id": "C07-MICRO15-GEMINI-REVIEW-001-RESPONSE",
+  "task_id": "C07-MICRO15-001",
+  "context_version": "1.0.16",
+  "from": "GEMINI",
+  "to": "CHATGPT",
+  "mode": "REVIEW",
+  "scope": {
+    "layer": [
+      "KNTT-Core"
+    ],
+    "topics": [
+      "07-phan-thuc-dai-so"
+    ],
+    "skills": [
+      "nhan-biet-phan-thuc",
+      "dieu-kien-xac-dinh",
+      "rut-gon-phan-thuc",
+      "quy-dong-mau-thuc",
+      "cong-tru-phan-thuc",
+      "nhan-phan-thuc",
+      "chia-phan-thuc"
+    ]
+  },
+  "source_artifacts": [
+    "docs/assets/data/curriculum/topic07-learning-workspace.json",
+    "docs/assets/data/curriculum/knowledge-graph-v1.json"
+  ],
+  "claims": [
+    {
+      "id": "G1",
+      "status": "FACT_VERIFIED",
+      "statement": "MTC uses the least common multiple of coefficients and the largest required exponent of each factor.",
+      "evidence": [
+        "Gemini correction accepted after ChatGPT QA"
+      ]
+    },
+    {
+      "id": "G2",
+      "status": "PEDAGOGICAL_PROPOSAL",
+      "statement": "Option-level misconception triggers should be downgraded to observed signals rather than immediate weakness conclusions.",
+      "evidence": [
+        "Soft Mastery principle"
+      ]
+    },
+    {
+      "id": "G3",
+      "status": "TECHNICAL_PROPOSAL",
+      "statement": "Add signal_weight so more specific distractors may carry stronger observed-signal salience.",
+      "evidence": []
+    }
+  ],
+  "proposed_changes": [
+    {
+      "artifact": "CĐ07 15-item Core micro-practice batch",
+      "change": "Author 3 questions per Core card in Base / Trap / Apply order.",
+      "rationale": "Use micro-practice as learner-evidence sensors."
+    },
+    {
+      "artifact": "question schema",
+      "change": "Attach option-level observed signals and optional signal_weight.",
+      "rationale": "Provide precise Tutor feedback without NLP inference."
+    }
+  ],
+  "tests": [
+    {
+      "id": "GATE-CORE",
+      "expected": "All 15 questions remain within KNTT Grade 8 Core.",
+      "result": "PASS"
+    }
+  ],
+  "uncertainties": [
+    "Whether triet-tieu-sai-hang-tu should causally remediate to nhan-tu-chung or require a new node remains unresolved."
+  ],
+  "acceptance": {
+    "verdict": "PASS-WITH-CHANGES",
+    "notes": "Hand back to ChatGPT for independent math QA, schema integration and Knowledge Graph decision."
+  }
+}

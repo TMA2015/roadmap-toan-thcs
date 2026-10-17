@@ -1,0 +1,261 @@
+{
+  "schema": "roadmap-topic-learning-workspace-v1",
+  "topic": "10-ham-so-do-thi",
+  "title": "Hàm số và đồ thị",
+  "core_progress_policy": {
+    "layer": "KNTT-Core",
+    "rule": "Only Core cards contribute to readiness. Entrance10 and Challenge never gate Core completion."
+  },
+  "cards": [
+    {
+      "id": "fun10-core-1",
+      "order": 1,
+      "title": "Hàm số & bảng giá trị",
+      "kntt_lessons": [
+        "Lớp 8"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "khai-niem-ham-so",
+        "tinh-gia-tri-ham",
+        "bang-gia-tri"
+      ],
+      "prerequisites": [
+        "bieu-thuc-dai-so"
+      ],
+      "micro_practice": [
+        "FUN10MICRO_001",
+        "FUN10MICRO_002",
+        "FUN10MICRO_003"
+      ],
+      "teaching_copy": {
+        "key_idea": "Hàm số gán cho mỗi \\(x\\) thuộc tập xác định **đúng một** \\(y\\). Với công thức \\(y=f(x)\\), thay giá trị \\(x\\) để tính \\(y\\); bảng giá trị ghi các cặp \\((x;y)\\) tương ứng và chuẩn bị cho vẽ đồ thị.",
+        "worked_example": {
+          "problem": "Với \\(f(x)=-x+4\\), lập bảng \\(y\\) ứng với \\(x=-2,0,2\\).",
+          "solution": "Bước 1: \\(f(-2)=-(-2)+4=6\\).\nBước 2: \\(f(0)=4\\), \\(f(2)=-2+4=2\\).\nBước 3: Các cặp của bảng là \\((-2;6),(0;4),(2;2)\\)."
+        },
+        "misconception": "Thay (x=-2) nhưng quên dấu âm trước x, hoặc đảo cột x và y.",
+        "summary": "Mỗi x hợp lệ có đúng một y; thay x cẩn thận rồi ghi cặp có thứ tự.",
+        "source_reference": "docs/kien-thuc/10-ham-so-do-thi/index.md",
+        "source_sections": [
+          "3.1",
+          "3.2",
+          "Dạng 1"
+        ],
+        "source_question_ids": [
+          "FUN10MICRO_001",
+          "FUN10MICRO_002",
+          "FUN10MICRO_003"
+        ],
+        "review_status": "SELF_AUDITED",
+        "review_method": "SOURCE_LOCKED_BOUNDED_SELF_AUDIT",
+        "academic_review_ref": "content-staging/reviews/MATH-CORE08-12-TEACH-SELF-AUDIT-20260929.md"
+      }
+    },
+    {
+      "id": "fun10-core-2",
+      "order": 2,
+      "title": "Tọa độ & điểm thuộc đồ thị",
+      "kntt_lessons": [
+        "Lớp 8"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "toa-do-diem",
+        "diem-thuoc-do-thi"
+      ],
+      "prerequisites": [
+        "mat-phang-toa-do"
+      ],
+      "micro_practice": [
+        "FUN10MICRO_004",
+        "FUN10MICRO_005",
+        "FUN10MICRO_006"
+      ],
+      "teaching_copy": {
+        "key_idea": "Điểm \\(M(x_0;y_0)\\) có hoành độ \\(x_0\\), tung độ \\(y_0\\). Điểm thuộc đồ thị \\(y=f(x)\\) khi \\(x_0\\) hợp lệ và \\(f(x_0)=y_0\\); nằm gần đường vẽ không đủ để kết luận.",
+        "worked_example": {
+          "problem": "Kiểm tra \\(A(-1;5)\\) có thuộc đồ thị \\(y=-2x+3\\) không.",
+          "solution": "Bước 1: Hoành độ của \\(A\\) là \\(x=-1\\).\nBước 2: Tính \\(f(-1)=-2(-1)+3=5\\).\nBước 3: Tung độ \\(A\\) cũng bằng 5, nên \\(A\\) thuộc đồ thị."
+        },
+        "misconception": "Đổi nhầm thứ tự tọa độ hoặc chỉ ước lượng bằng mắt trên hình.",
+        "summary": "Muốn kiểm tra điểm thuộc đồ thị, thay hoành độ vào công thức và so sánh tung độ.",
+        "source_reference": "docs/kien-thuc/10-ham-so-do-thi/index.md",
+        "source_sections": [
+          "3.3",
+          "3.4",
+          "Dạng 2"
+        ],
+        "source_question_ids": [
+          "FUN10MICRO_004",
+          "FUN10MICRO_005",
+          "FUN10MICRO_006"
+        ],
+        "review_status": "SELF_AUDITED",
+        "review_method": "SOURCE_LOCKED_BOUNDED_SELF_AUDIT",
+        "academic_review_ref": "content-staging/reviews/MATH-CORE08-12-TEACH-SELF-AUDIT-20260929.md"
+      }
+    },
+    {
+      "id": "fun10-core-3",
+      "order": 3,
+      "title": "Hàm số bậc nhất",
+      "kntt_lessons": [
+        "Lớp 8"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "nhan-biet-ham-bac-nhat",
+        "he-so-goc",
+        "tung-do-goc"
+      ],
+      "prerequisites": [
+        "khai-niem-ham-so"
+      ],
+      "micro_practice": [
+        "FUN10MICRO_007",
+        "FUN10MICRO_008",
+        "FUN10MICRO_009"
+      ],
+      "teaching_copy": {
+        "key_idea": "Hàm số bậc nhất có dạng \\(y=ax+b\\), \\(a\\ne0\\); \\(a\\) là hệ số góc và \\(b\\) là tung độ gốc. Đồ thị cắt \\(Oy\\) tại \\((0;b)\\). Nếu cần giao \\(Ox\\), đặt \\(y=0\\) để giải \\(ax+b=0\\).",
+        "worked_example": {
+          "problem": "Với \\(y=-3x+6\\), xác định hệ số góc và giao điểm hai trục.",
+          "solution": "Bước 1: \\(a=-3\\ne0\\), \\(b=6\\), nên hệ số góc bằng \\(-3\\).\nBước 2: Cho \\(x=0\\), được \\(A(0;6)\\) trên trục \\(Oy\\).\nBước 3: Cho \\(y=0\\), \\(-3x+6=0\\Rightarrow x=2\\), được \\(B(2;0)\\) trên trục \\(Ox\\)."
+        },
+        "misconception": "Nhầm dấu của hệ số góc hoặc viết giao Oy thành ((b;0)).",
+        "summary": "Hệ số góc là a; giao Oy ((0;b)), giao Ox cho y=0.",
+        "source_reference": "docs/kien-thuc/10-ham-so-do-thi/index.md",
+        "source_sections": [
+          "3.5",
+          "Dạng 5"
+        ],
+        "source_question_ids": [
+          "FUN10MICRO_007",
+          "FUN10MICRO_008",
+          "FUN10MICRO_009"
+        ],
+        "review_status": "SELF_AUDITED",
+        "review_method": "SOURCE_LOCKED_BOUNDED_SELF_AUDIT",
+        "academic_review_ref": "content-staging/reviews/MATH-CORE08-12-TEACH-SELF-AUDIT-20260929.md"
+      }
+    },
+    {
+      "id": "fun10-core-4",
+      "order": 4,
+      "title": "Đồng/nghịch biến & vẽ đường thẳng",
+      "kntt_lessons": [
+        "Lớp 8"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "dong-nghich-bien",
+        "ve-do-thi-ham-bac-nhat"
+      ],
+      "prerequisites": [
+        "he-so-goc",
+        "toa-do-diem"
+      ],
+      "micro_practice": [
+        "FUN10MICRO_010",
+        "FUN10MICRO_011",
+        "FUN10MICRO_012"
+      ],
+      "teaching_copy": {
+        "key_idea": "Đường thẳng \\(y=ax+b\\) được xác định bởi hai **điểm phân biệt** thuộc đồ thị. Nếu \\(a>0\\), hàm số đồng biến; \\(a<0\\), hàm số nghịch biến. Hai điểm dễ chọn thường là giao với \\(Ox\\) và \\(Oy\\), nhưng cần kiểm tra chúng phân biệt.",
+        "worked_example": {
+          "problem": "Vẽ \\(y=-x+2\\) bằng hai điểm và cho biết tính biến thiên.",
+          "solution": "Bước 1: Cho \\(x=0\\), được \\(A(0;2)\\).\nBước 2: Cho \\(y=0\\), được \\(x=2\\), \\(B(2;0)\\).\nBước 3: Nối A và B để được đồ thị. Vì \\(a=-1<0\\), hàm số nghịch biến."
+        },
+        "misconception": "Chọn hai điểm trùng nhau, đặt nhầm x/y hoặc suy diễn biến thiên từ b thay vì a.",
+        "summary": "Hai điểm khác nhau vẽ được đường thẳng; dấu a quyết định đồng/nghịch biến.",
+        "source_reference": "docs/kien-thuc/10-ham-so-do-thi/index.md",
+        "source_sections": [
+          "3.5",
+          "Dạng 4",
+          "Dạng 6"
+        ],
+        "source_question_ids": [
+          "FUN10MICRO_010",
+          "FUN10MICRO_011",
+          "FUN10MICRO_012"
+        ],
+        "review_status": "SELF_AUDITED",
+        "review_method": "SOURCE_LOCKED_BOUNDED_SELF_AUDIT",
+        "academic_review_ref": "content-staging/reviews/MATH-CORE08-12-TEACH-SELF-AUDIT-20260929.md"
+      }
+    },
+    {
+      "id": "fun10-core-5",
+      "order": 5,
+      "title": "Parabol \\(y=ax^2\\)",
+      "kntt_lessons": [
+        "Lớp 9"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "ham-y-ax2",
+        "doi-xung-parabol",
+        "diem-thuoc-parabol"
+      ],
+      "prerequisites": [
+        "toa-do-diem",
+        "diem-thuoc-do-thi"
+      ],
+      "micro_practice": [
+        "FUN10MICRO_013",
+        "FUN10MICRO_014",
+        "FUN10MICRO_015"
+      ],
+      "teaching_copy": {
+        "key_idea": "Với dạng **đặc biệt** \\(y=ax^2\\), \\(a\\ne0\\), parabol có đỉnh \\(O(0;0)\\), đối xứng qua \\(Oy\\); \\(a>0\\) mở lên, \\(a<0\\) mở xuống. Giá trị tại \\(x\\) và \\(-x\\) bằng nhau. Không áp dụng máy móc tính chất đỉnh O cho \\(y=ax^2+bx+c\\).",
+        "worked_example": {
+          "problem": "Cho \\(y=-2x^2\\). Tính \\(y\\) tại \\(x=-2,0,2\\) và nêu đặc điểm đồ thị.",
+          "solution": "Bước 1: Khi \\(x=-2\\) và \\(x=2\\), \\(y=-2\\cdot4=-8\\).\nBước 2: Khi \\(x=0\\), \\(y=0\\).\nBước 3: Parabol đi qua \\((-2;-8),(0;0),(2;-8)\\), có đỉnh O, trục đối xứng Oy và mở xuống."
+        },
+        "misconception": "Tính ((-2)^2=-4) hoặc cho rằng mọi phương trình hàm bậc hai đều có đỉnh tại O.",
+        "summary": "Với y=ax²: đỉnh O, đối xứng Oy, hướng mở theo dấu a.",
+        "source_reference": "docs/kien-thuc/10-ham-so-do-thi/index.md",
+        "source_sections": [
+          "3.8"
+        ],
+        "source_question_ids": [
+          "FUN10MICRO_013",
+          "FUN10MICRO_014",
+          "FUN10MICRO_015"
+        ],
+        "review_status": "SELF_AUDITED",
+        "review_method": "SOURCE_LOCKED_BOUNDED_SELF_AUDIT",
+        "academic_review_ref": "content-staging/reviews/MATH-CORE08-12-TEACH-SELF-AUDIT-20260929.md"
+      }
+    }
+  ],
+  "extensions": [
+    {
+      "id": "fun10-ent10-1",
+      "layer": "Entrance10",
+      "title": "Vị trí tương đối hai đường thẳng",
+      "gates_core": false
+    },
+    {
+      "id": "fun10-ent10-2",
+      "layer": "Entrance10",
+      "title": "Giao điểm đồ thị & liên hệ hệ phương trình",
+      "gates_core": false
+    },
+    {
+      "id": "fun10-challenge-1",
+      "layer": "Specialized-Challenge",
+      "title": "Đường thẳng – parabol & tham số",
+      "gates_core": false
+    }
+  ],
+  "micro_practice_bank": "assets/data/practice/10-ham-so-do-thi-micro-v1.json",
+  "observed_signal_policy": {
+    "rule": "Signals are observations only; they never create causal remediation without sufficient learner evidence and a reviewed rule."
+  },
+  "qa_notes": [
+    "vi-tri-hai-duong-thang, giao-diem-do-thi and lien-he-he-phuong-trinh remain outside Core readiness until separately source-verified.",
+    "y=ax^2 special-form parabol is Core Grade 9 overlay; do not generalize its vertex/symmetry rules to y=ax^2+bx+c."
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "schema": "practice-question-chunk-v1",
+  "version": 5,
+  "bank_id": "04-BIEU-THUC-DAI-SO-RICH-W2A-WAVE1",
+  "questions": [
+    {
+      "id": "ALG04-RICH-W2A-01-V1",
+      "source_item_id": "04-WR-06",
+      "source_lineage": "W2A owner-submitted NotebookLM 12/12 academic PASS; separately verified no exact live expression clone; original paper exercise preserved",
+      "response_type": "numeric_fields",
+      "answer_contract": {
+        "fields": [
+          {
+            "label": "Hệ số của x²",
+            "expected": "2"
+          },
+          {
+            "label": "Hệ số của x",
+            "expected": "-5"
+          },
+          {
+            "label": "Hạng tử tự do",
+            "expected": "-3"
+          }
+        ]
+      },
+      "question": "Khai triển và thu gọn (2x + 1)(x − 3). Nhập lần lượt hệ số của x², hệ số của x và hạng tử tự do trong kết quả.",
+      "explanation": "(2x + 1)(x − 3) = 2x·x + 2x·(−3) + 1·x + 1·(−3) = 2x² − 6x + x − 3 = 2x² − 5x − 3. Hệ số lần lượt là 2; −5; −3.",
+      "hints": [
+        "Nhân mỗi hạng tử của ngoặc thứ nhất với cả hai hạng tử của ngoặc thứ hai.",
+        "Chú ý 2x·(−3) = −6x, rồi gộp −6x + x = −5x."
+      ],
+      "difficulty": "intermediate",
+      "tags": {
+        "topic": "04-bieu-thuc-dai-so",
+        "skill": [
+          "nhan-bieu-thuc",
+          "tinh-phan-phoi"
+        ],
+        "type": "rich-w2a-typed-response",
+        "layer": "KNTT-Core",
+        "grade": 8
+      },
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          8
+        ],
+        "level": "core",
+        "review_packet": "MATH-EXERCISE-RECLASSIFY-W2A-20261015",
+        "academic_review": "NOTEBOOKLM_W2A_OWNER_20261015"
+      },
+      "authoring_review": {
+        "status": "PASS",
+        "packet_id": "MATH-EXERCISE-RECLASSIFY-W2A-20261015",
+        "review_round": "W2A",
+        "scope": "SOURCE_TASK_ONLY; INPUT_MODE_AND_RELEASE_GATED_BY_CI_AND_OWNER_QA"
+      },
+      "variant_group": "04-WR-06-typed-v1",
+      "worked_answer": "2x² − 5x − 3; hệ số x²: 2; hệ số x: −5; hạng tử tự do: −3"
+    }
+  ]
+}

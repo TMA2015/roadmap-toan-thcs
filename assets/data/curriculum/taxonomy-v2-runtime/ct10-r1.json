@@ -1,0 +1,2951 @@
+{
+  "schema": "skill-taxonomy-v2-topic-policy-r1",
+  "version": 1,
+  "status": "I1_COMPILED_RUNTIME_DISABLED",
+  "topic_id": "CT10",
+  "topic_slug": "10-ham-so-do-thi",
+  "runtime_enabled": false,
+  "learner_data_write_enabled": false,
+  "independent_credit_authorized": false,
+  "source_overlay": {
+    "path": "docs/assets/data/curriculum/primary-skill-overlay-core10-s2-phase-d-r1.reconciled.json",
+    "ref": "review/skill-taxonomy-v2-s2-ct09-12-combined-r1-20261002",
+    "blob_sha": "ad3c2500c28afd5fe7362693c56ff5427bbd933b",
+    "raw_status": "NOTEBOOKLM_PASS_CLEARED_FOR_CT10_S2_RECONCILIATION",
+    "review_gate": "OVERLAY_STATUS_PASS"
+  },
+  "review_support": null,
+  "source_files": {
+    "10-ham-so-do-thi-v1-01.json": {
+      "path": "docs/assets/data/practice/10-ham-so-do-thi-v1-01.json",
+      "blob_sha": "6e021811c9f3258d26c08befe2dda61c41c47f93",
+      "question_count": 30
+    },
+    "10-ham-so-do-thi-v1-02.json": {
+      "path": "docs/assets/data/practice/10-ham-so-do-thi-v1-02.json",
+      "blob_sha": "d4fe2168b1481bc46017892a4b0c1d0a16b920f5",
+      "question_count": 30
+    },
+    "10-ham-so-do-thi-v1-03.json": {
+      "path": "docs/assets/data/practice/10-ham-so-do-thi-v1-03.json",
+      "blob_sha": "496c61c5cacb1dbe359bfc719155f2a78568014a",
+      "question_count": 30
+    },
+    "10-ham-so-do-thi-v1-04.json": {
+      "path": "docs/assets/data/practice/10-ham-so-do-thi-v1-04.json",
+      "blob_sha": "d4169204b04e770470890100b1a85e3558c5e2b2",
+      "question_count": 30
+    }
+  },
+  "counts": {
+    "questions": 120,
+    "family_link_rows": 120,
+    "no_family_rows": 0
+  },
+  "rows": [
+    {
+      "question_id": "FUN10V1_001",
+      "topic_id": "CT10",
+      "source_file": "10-ham-so-do-thi-v1-01.json",
+      "source_blob": "6e021811c9f3258d26c08befe2dda61c41c47f93",
+      "legacy_skill_tags": [
+        "tinh-gia-tri-ham"
+      ],
+      "source_primary_id": "tinh-gia-tri-ham",
+      "diagnostic_skill_id": "tinh-gia-tri-ham",
+      "family_id": "FUNC-BASIC",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": "FUN10-VALUE-001-006",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "FUN10V1_002",
+      "topic_id": "CT10",
+      "source_file": "10-ham-so-do-thi-v1-01.json",
+      "source_blob": "6e021811c9f3258d26c08befe2dda61c41c47f93",
+      "legacy_skill_tags": [
+        "tinh-gia-tri-ham"
+      ],
+      "source_primary_id": "tinh-gia-tri-ham",
+      "diagnostic_skill_id": "tinh-gia-tri-ham",
+      "family_id": "FUNC-BASIC",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": "FUN10-VALUE-001-006",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "FUN10V1_003",
+      "topic_id": "CT10",
+      "source_file": "10-ham-so-do-thi-v1-01.json",
+      "source_blob": "6e021811c9f3258d26c08befe2dda61c41c47f93",
+      "legacy_skill_tags": [
+        "tinh-gia-tri-ham"
+      ],
+      "source_primary_id": "tinh-gia-tri-ham",
+      "diagnostic_skill_id": "tinh-gia-tri-ham",
+      "family_id": "FUNC-BASIC",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": "FUN10-VALUE-001-006",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "FUN10V1_004",
+      "topic_id": "CT10",
+      "source_file": "10-ham-so-do-thi-v1-01.json",
+      "source_blob": "6e021811c9f3258d26c08befe2dda61c41c47f93",
+      "legacy_skill_tags": [
+        "tinh-gia-tri-ham"
+      ],
+      "source_primary_id": "tinh-gia-tri-ham",
+      "diagnostic_skill_id": "tinh-gia-tri-ham",
+      "family_id": "FUNC-BASIC",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": "FUN10-VALUE-001-006",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "FUN10V1_005",
+      "topic_id": "CT10",
+      "source_file": "10-ham-so-do-thi-v1-01.json",
+      "source_blob": "6e021811c9f3258d26c08befe2dda61c41c47f93",
+      "legacy_skill_tags": [
+        "tinh-gia-tri-ham"
+      ],
+      "source_primary_id": "tinh-gia-tri-ham",
+      "diagnostic_skill_id": "tinh-gia-tri-ham",
+      "family_id": "FUNC-BASIC",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": "FUN10-VALUE-001-006",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "FUN10V1_006",
+      "topic_id": "CT10",
+      "source_file": "10-ham-so-do-thi-v1-01.json",
+      "source_blob": "6e021811c9f3258d26c08befe2dda61c41c47f93",
+      "legacy_skill_tags": [
+        "tinh-gia-tri-ham"
+      ],
+      "source_primary_id": "tinh-gia-tri-ham",
+      "diagnostic_skill_id": "tinh-gia-tri-ham",
+      "family_id": "FUNC-BASIC",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": "FUN10-VALUE-001-006",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "FUN10V1_007",
+      "topic_id": "CT10",
+      "source_file": "10-ham-so-do-thi-v1-01.json",
+      "source_blob": "6e021811c9f3258d26c08befe2dda61c41c47f93",
+      "legacy_skill_tags": [
+        "tinh-gia-tri-ham"
+      ],
+      "source_primary_id": "tinh-gia-tri-ham",
+      "diagnostic_skill_id": "tinh-gia-tri-ham",
+      "family_id": "FUNC-BASIC",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": "FUN10-VALUE-007-012",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "FUN10V1_008",
+      "topic_id": "CT10",
+      "source_file": "10-ham-so-do-thi-v1-01.json",
+      "source_blob": "6e021811c9f3258d26c08befe2dda61c41c47f93",
+      "legacy_skill_tags": [
+        "tinh-gia-tri-ham"
+      ],
+      "source_primary_id": "tinh-gia-tri-ham",
+      "diagnostic_skill_id": "tinh-gia-tri-ham",
+      "family_id": "FUNC-BASIC",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": "FUN10-VALUE-007-012",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "FUN10V1_009",
+      "topic_id": "CT10",
+      "source_file": "10-ham-so-do-thi-v1-01.json",
+      "source_blob": "6e021811c9f3258d26c08befe2dda61c41c47f93",
+      "legacy_skill_tags": [
+        "tinh-gia-tri-ham"
+      ],
+      "source_primary_id": "tinh-gia-tri-ham",
+      "diagnostic_skill_id": "tinh-gia-tri-ham",
+      "family_id": "FUNC-BASIC",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": "FUN10-VALUE-007-012",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "FUN10V1_010",
+      "topic_id": "CT10",
+      "source_file": "10-ham-so-do-thi-v1-01.json",
+      "source_blob": "6e021811c9f3258d26c08befe2dda61c41c47f93",
+      "legacy_skill_tags": [
+        "tinh-gia-tri-ham"
+      ],
+      "source_primary_id": "tinh-gia-tri-ham",
+      "diagnostic_skill_id": "tinh-gia-tri-ham",
+      "family_id": "FUNC-BASIC",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": "FUN10-VALUE-007-012",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "FUN10V1_011",
+      "topic_id": "CT10",
+      "source_file": "10-ham-so-do-thi-v1-01.json",
+      "source_blob": "6e021811c9f3258d26c08befe2dda61c41c47f93",
+      "legacy_skill_tags": [
+        "tinh-gia-tri-ham"
+      ],
+      "source_primary_id": "tinh-gia-tri-ham",
+      "diagnostic_skill_id": "tinh-gia-tri-ham",
+      "family_id": "FUNC-BASIC",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": "FUN10-VALUE-007-012",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "FUN10V1_012",
+      "topic_id": "CT10",
+      "source_file": "10-ham-so-do-thi-v1-01.json",
+      "source_blob": "6e021811c9f3258d26c08befe2dda61c41c47f93",
+      "legacy_skill_tags": [
+        "tinh-gia-tri-ham"
+      ],
+      "source_primary_id": "tinh-gia-tri-ham",
+      "diagnostic_skill_id": "tinh-gia-tri-ham",
+      "family_id": "FUNC-BASIC",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": "FUN10-VALUE-007-012",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "FUN10V1_013",
+      "topic_id": "CT10",
+      "source_file": "10-ham-so-do-thi-v1-01.json",
+      "source_blob": "6e021811c9f3258d26c08befe2dda61c41c47f93",
+      "legacy_skill_tags": [
+        "khai-niem-ham-so"
+      ],
+      "source_primary_id": "khai-niem-ham-so",
+      "diagnostic_skill_id": "khai-niem-ham-so",
+      "family_id": "FUNC-BASIC",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family": "FUN10-CONCEPT-013-016",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "FUN10V1_014",
+      "topic_id": "CT10",
+      "source_file": "10-ham-so-do-thi-v1-01.json",
+      "source_blob": "6e021811c9f3258d26c08befe2dda61c41c47f93",
+      "legacy_skill_tags": [
+        "khai-niem-ham-so"
+      ],
+      "source_primary_id": "khai-niem-ham-so",
+      "diagnostic_skill_id": "khai-niem-ham-so",
+      "family_id": "FUNC-BASIC",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family": "FUN10-CONCEPT-013-016",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "FUN10V1_015",
+      "topic_id": "CT10",
+      "source_file": "10-ham-so-do-thi-v1-01.json",
+      "source_blob": "6e021811c9f3258d26c08befe2dda61c41c47f93",
+      "legacy_skill_tags": [
+        "khai-niem-ham-so"
+      ],
+      "source_primary_id": "khai-niem-ham-so",
+      "diagnostic_skill_id": "khai-niem-ham-so",
+      "family_id": "FUNC-BASIC",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family": "FUN10-CONCEPT-013-016",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "FUN10V1_016",
+      "topic_id": "CT10",
+      "source_file": "10-ham-so-do-thi-v1-01.json",
+      "source_blob": "6e021811c9f3258d26c08befe2dda61c41c47f93",
+      "legacy_skill_tags": [
+        "khai-niem-ham-so"
+      ],
+      "source_primary_id": "khai-niem-ham-so",
+      "diagnostic_skill_id": "khai-niem-ham-so",
+      "family_id": "FUNC-BASIC",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family": "FUN10-CONCEPT-013-016",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "FUN10V1_017",
+      "topic_id": "CT10",
+      "source_file": "10-ham-so-do-thi-v1-01.json",
+      "source_blob": "6e021811c9f3258d26c08befe2dda61c41c47f93",
+      "legacy_skill_tags": [
+        "khai-niem-ham-so"
+      ],
+      "source_primary_id": "khai-niem-ham-so",
+      "diagnostic_skill_id": "khai-niem-ham-so",
+      "family_id": "FUNC-BASIC",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family": "FUN10-CONCEPT-017-020",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "FUN10V1_018",
+      "topic_id": "CT10",
+      "source_file": "10-ham-so-do-thi-v1-01.json",
+      "source_blob": "6e021811c9f3258d26c08befe2dda61c41c47f93",
+      "legacy_skill_tags": [
+        "khai-niem-ham-so"
+      ],
+      "source_primary_id": "khai-niem-ham-so",
+      "diagnostic_skill_id": "khai-niem-ham-so",
+      "family_id": "FUNC-BASIC",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family": "FUN10-CONCEPT-017-020",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "FUN10V1_019",
+      "topic_id": "CT10",
+      "source_file": "10-ham-so-do-thi-v1-01.json",
+      "source_blob": "6e021811c9f3258d26c08befe2dda61c41c47f93",
+      "legacy_skill_tags": [
+        "khai-niem-ham-so"
+      ],
+      "source_primary_id": "khai-niem-ham-so",
+      "diagnostic_skill_id": "khai-niem-ham-so",
+      "family_id": "FUNC-BASIC",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family": "FUN10-CONCEPT-017-020",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "FUN10V1_020",
+      "topic_id": "CT10",
+      "source_file": "10-ham-so-do-thi-v1-01.json",
+      "source_blob": "6e021811c9f3258d26c08befe2dda61c41c47f93",
+      "legacy_skill_tags": [
+        "khai-niem-ham-so"
+      ],
+      "source_primary_id": "khai-niem-ham-so",
+      "diagnostic_skill_id": "khai-niem-ham-so",
+      "family_id": "FUNC-BASIC",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family": "FUN10-CONCEPT-017-020",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "FUN10V1_021",
+      "topic_id": "CT10",
+      "source_file": "10-ham-so-do-thi-v1-01.json",
+      "source_blob": "6e021811c9f3258d26c08befe2dda61c41c47f93",
+      "legacy_skill_tags": [
+        "bang-gia-tri",
+        "tinh-gia-tri-ham"
+      ],
+      "source_primary_id": "bang-gia-tri",
+      "diagnostic_skill_id": "bang-gia-tri",
+      "family_id": "FUNC-BASIC",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "REPRESENTATION",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": "FUN10-TABLE-021-030",
+      "supporting_skills": [
+        "tinh-gia-tri-ham"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "FUN10V1_022",
+      "topic_id": "CT10",
+      "source_file": "10-ham-so-do-thi-v1-01.json",
+      "source_blob": "6e021811c9f3258d26c08befe2dda61c41c47f93",
+      "legacy_skill_tags": [
+        "bang-gia-tri",
+        "tinh-gia-tri-ham"
+      ],
+      "source_primary_id": "bang-gia-tri",
+      "diagnostic_skill_id": "bang-gia-tri",
+      "family_id": "FUNC-BASIC",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "REPRESENTATION",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": "FUN10-TABLE-021-030",
+      "supporting_skills": [
+        "tinh-gia-tri-ham"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "FUN10V1_023",
+      "topic_id": "CT10",
+      "source_file": "10-ham-so-do-thi-v1-01.json",
+      "source_blob": "6e021811c9f3258d26c08befe2dda61c41c47f93",
+      "legacy_skill_tags": [
+        "bang-gia-tri",
+        "tinh-gia-tri-ham"
+      ],
+      "source_primary_id": "bang-gia-tri",
+      "diagnostic_skill_id": "bang-gia-tri",
+      "family_id": "FUNC-BASIC",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "REPRESENTATION",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": "FUN10-TABLE-021-030",
+      "supporting_skills": [
+        "tinh-gia-tri-ham"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "FUN10V1_024",
+      "topic_id": "CT10",
+      "source_file": "10-ham-so-do-thi-v1-01.json",
+      "source_blob": "6e021811c9f3258d26c08befe2dda61c41c47f93",
+      "legacy_skill_tags": [
+        "bang-gia-tri",
+        "tinh-gia-tri-ham"
+      ],
+      "source_primary_id": "bang-gia-tri",
+      "diagnostic_skill_id": "bang-gia-tri",
+      "family_id": "FUNC-BASIC",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "REPRESENTATION",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": "FUN10-TABLE-021-030",
+      "supporting_skills": [
+        "tinh-gia-tri-ham"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "FUN10V1_025",
+      "topic_id": "CT10",
+      "source_file": "10-ham-so-do-thi-v1-01.json",
+      "source_blob": "6e021811c9f3258d26c08befe2dda61c41c47f93",
+      "legacy_skill_tags": [
+        "bang-gia-tri",
+        "tinh-gia-tri-ham"
+      ],
+      "source_primary_id": "bang-gia-tri",
+      "diagnostic_skill_id": "bang-gia-tri",
+      "family_id": "FUNC-BASIC",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "REPRESENTATION",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": "FUN10-TABLE-021-030",
+      "supporting_skills": [
+        "tinh-gia-tri-ham"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "FUN10V1_026",
+      "topic_id": "CT10",
+      "source_file": "10-ham-so-do-thi-v1-01.json",
+      "source_blob": "6e021811c9f3258d26c08befe2dda61c41c47f93",
+      "legacy_skill_tags": [
+        "bang-gia-tri",
+        "tinh-gia-tri-ham"
+      ],
+      "source_primary_id": "bang-gia-tri",
+      "diagnostic_skill_id": "bang-gia-tri",
+      "family_id": "FUNC-BASIC",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "REPRESENTATION",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": "FUN10-TABLE-021-030",
+      "supporting_skills": [
+        "tinh-gia-tri-ham"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "FUN10V1_027",
+      "topic_id": "CT10",
+      "source_file": "10-ham-so-do-thi-v1-01.json",
+      "source_blob": "6e021811c9f3258d26c08befe2dda61c41c47f93",
+      "legacy_skill_tags": [
+        "bang-gia-tri",
+        "tinh-gia-tri-ham"
+      ],
+      "source_primary_id": "bang-gia-tri",
+      "diagnostic_skill_id": "bang-gia-tri",
+      "family_id": "FUNC-BASIC",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "REPRESENTATION",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": "FUN10-TABLE-021-030",
+      "supporting_skills": [
+        "tinh-gia-tri-ham"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "FUN10V1_028",
+      "topic_id": "CT10",
+      "source_file": "10-ham-so-do-thi-v1-01.json",
+      "source_blob": "6e021811c9f3258d26c08befe2dda61c41c47f93",
+      "legacy_skill_tags": [
+        "bang-gia-tri",
+        "tinh-gia-tri-ham"
+      ],
+      "source_primary_id": "bang-gia-tri",
+      "diagnostic_skill_id": "bang-gia-tri",
+      "family_id": "FUNC-BASIC",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "REPRESENTATION",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": "FUN10-TABLE-021-030",
+      "supporting_skills": [
+        "tinh-gia-tri-ham"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "FUN10V1_029",
+      "topic_id": "CT10",
+      "source_file": "10-ham-so-do-thi-v1-01.json",
+      "source_blob": "6e021811c9f3258d26c08befe2dda61c41c47f93",
+      "legacy_skill_tags": [
+        "bang-gia-tri",
+        "tinh-gia-tri-ham"
+      ],
+      "source_primary_id": "bang-gia-tri",
+      "diagnostic_skill_id": "bang-gia-tri",
+      "family_id": "FUNC-BASIC",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "REPRESENTATION",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": "FUN10-TABLE-021-030",
+      "supporting_skills": [
+        "tinh-gia-tri-ham"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "FUN10V1_030",
+      "topic_id": "CT10",
+      "source_file": "10-ham-so-do-thi-v1-01.json",
+      "source_blob": "6e021811c9f3258d26c08befe2dda61c41c47f93",
+      "legacy_skill_tags": [
+        "bang-gia-tri",
+        "tinh-gia-tri-ham"
+      ],
+      "source_primary_id": "bang-gia-tri",
+      "diagnostic_skill_id": "bang-gia-tri",
+      "family_id": "FUNC-BASIC",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "REPRESENTATION",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": "FUN10-TABLE-021-030",
+      "supporting_skills": [
+        "tinh-gia-tri-ham"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "FUN10V1_031",
+      "topic_id": "CT10",
+      "source_file": "10-ham-so-do-thi-v1-02.json",
+      "source_blob": "d4fe2168b1481bc46017892a4b0c1d0a16b920f5",
+      "legacy_skill_tags": [
+        "toa-do-diem"
+      ],
+      "source_primary_id": "toa-do-diem",
+      "diagnostic_skill_id": "toa-do-diem",
+      "family_id": "GRAPH-POINT",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "SUPPORTING_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family": null,
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "FUN10V1_032",
+      "topic_id": "CT10",
+      "source_file": "10-ham-so-do-thi-v1-02.json",
+      "source_blob": "d4fe2168b1481bc46017892a4b0c1d0a16b920f5",
+      "legacy_skill_tags": [
+        "toa-do-diem"
+      ],
+      "source_primary_id": "toa-do-diem",
+      "diagnostic_skill_id": "toa-do-diem",
+      "family_id": "GRAPH-POINT",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "SUPPORTING_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family": null,
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "FUN10V1_033",
+      "topic_id": "CT10",
+      "source_file": "10-ham-so-do-thi-v1-02.json",
+      "source_blob": "d4fe2168b1481bc46017892a4b0c1d0a16b920f5",
+      "legacy_skill_tags": [
+        "toa-do-diem"
+      ],
+      "source_primary_id": "toa-do-diem",
+      "diagnostic_skill_id": "toa-do-diem",
+      "family_id": "GRAPH-POINT",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "SUPPORTING_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family": null,
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "FUN10V1_034",
+      "topic_id": "CT10",
+      "source_file": "10-ham-so-do-thi-v1-02.json",
+      "source_blob": "d4fe2168b1481bc46017892a4b0c1d0a16b920f5",
+      "legacy_skill_tags": [
+        "toa-do-diem"
+      ],
+      "source_primary_id": "toa-do-diem",
+      "diagnostic_skill_id": "toa-do-diem",
+      "family_id": "GRAPH-POINT",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "SUPPORTING_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family": null,
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "FUN10V1_035",
+      "topic_id": "CT10",
+      "source_file": "10-ham-so-do-thi-v1-02.json",
+      "source_blob": "d4fe2168b1481bc46017892a4b0c1d0a16b920f5",
+      "legacy_skill_tags": [
+        "toa-do-diem"
+      ],
+      "source_primary_id": "toa-do-diem",
+      "diagnostic_skill_id": "toa-do-diem",
+      "family_id": "GRAPH-POINT",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "SUPPORTING_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family": null,
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "FUN10V1_036",
+      "topic_id": "CT10",
+      "source_file": "10-ham-so-do-thi-v1-02.json",
+      "source_blob": "d4fe2168b1481bc46017892a4b0c1d0a16b920f5",
+      "legacy_skill_tags": [
+        "toa-do-diem"
+      ],
+      "source_primary_id": "toa-do-diem",
+      "diagnostic_skill_id": "toa-do-diem",
+      "family_id": "GRAPH-POINT",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "SUPPORTING_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family": null,
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "FUN10V1_037",
+      "topic_id": "CT10",
+      "source_file": "10-ham-so-do-thi-v1-02.json",
+      "source_blob": "d4fe2168b1481bc46017892a4b0c1d0a16b920f5",
+      "legacy_skill_tags": [
+        "toa-do-diem"
+      ],
+      "source_primary_id": "toa-do-diem",
+      "diagnostic_skill_id": "toa-do-diem",
+      "family_id": "GRAPH-POINT",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "SUPPORTING_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family": null,
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "FUN10V1_038",
+      "topic_id": "CT10",
+      "source_file": "10-ham-so-do-thi-v1-02.json",
+      "source_blob": "d4fe2168b1481bc46017892a4b0c1d0a16b920f5",
+      "legacy_skill_tags": [
+        "toa-do-diem"
+      ],
+      "source_primary_id": "toa-do-diem",
+      "diagnostic_skill_id": "toa-do-diem",
+      "family_id": "GRAPH-POINT",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "SUPPORTING_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family": null,
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "FUN10V1_039",
+      "topic_id": "CT10",
+      "source_file": "10-ham-so-do-thi-v1-02.json",
+      "source_blob": "d4fe2168b1481bc46017892a4b0c1d0a16b920f5",
+      "legacy_skill_tags": [
+        "toa-do-diem"
+      ],
+      "source_primary_id": "toa-do-diem",
+      "diagnostic_skill_id": "toa-do-diem",
+      "family_id": "GRAPH-POINT",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "SUPPORTING_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family": null,
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "FUN10V1_040",
+      "topic_id": "CT10",
+      "source_file": "10-ham-so-do-thi-v1-02.json",
+      "source_blob": "d4fe2168b1481bc46017892a4b0c1d0a16b920f5",
+      "legacy_skill_tags": [
+        "toa-do-diem"
+      ],
+      "source_primary_id": "toa-do-diem",
+      "diagnostic_skill_id": "toa-do-diem",
+      "family_id": "GRAPH-POINT",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "SUPPORTING_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family": null,
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "FUN10V1_041",
+      "topic_id": "CT10",
+      "source_file": "10-ham-so-do-thi-v1-02.json",
+      "source_blob": "d4fe2168b1481bc46017892a4b0c1d0a16b920f5",
+      "legacy_skill_tags": [
+        "diem-thuoc-do-thi"
+      ],
+      "source_primary_id": "diem-thuoc-do-thi",
+      "diagnostic_skill_id": "diem-thuoc-do-thi",
+      "family_id": "GRAPH-POINT",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": null,
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "FUN10V1_042",
+      "topic_id": "CT10",
+      "source_file": "10-ham-so-do-thi-v1-02.json",
+      "source_blob": "d4fe2168b1481bc46017892a4b0c1d0a16b920f5",
+      "legacy_skill_tags": [
+        "diem-thuoc-do-thi"
+      ],
+      "source_primary_id": "diem-thuoc-do-thi",
+      "diagnostic_skill_id": "diem-thuoc-do-thi",
+      "family_id": "GRAPH-POINT",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": null,
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "FUN10V1_043",
+      "topic_id": "CT10",
+      "source_file": "10-ham-so-do-thi-v1-02.json",
+      "source_blob": "d4fe2168b1481bc46017892a4b0c1d0a16b920f5",
+      "legacy_skill_tags": [
+        "diem-thuoc-do-thi"
+      ],
+      "source_primary_id": "diem-thuoc-do-thi",
+      "diagnostic_skill_id": "diem-thuoc-do-thi",
+      "family_id": "GRAPH-POINT",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": null,
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "FUN10V1_044",
+      "topic_id": "CT10",
+      "source_file": "10-ham-so-do-thi-v1-02.json",
+      "source_blob": "d4fe2168b1481bc46017892a4b0c1d0a16b920f5",
+      "legacy_skill_tags": [
+        "diem-thuoc-do-thi"
+      ],
+      "source_primary_id": "diem-thuoc-do-thi",
+      "diagnostic_skill_id": "diem-thuoc-do-thi",
+      "family_id": "GRAPH-POINT",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": null,
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "FUN10V1_045",
+      "topic_id": "CT10",
+      "source_file": "10-ham-so-do-thi-v1-02.json",
+      "source_blob": "d4fe2168b1481bc46017892a4b0c1d0a16b920f5",
+      "legacy_skill_tags": [
+        "diem-thuoc-do-thi"
+      ],
+      "source_primary_id": "diem-thuoc-do-thi",
+      "diagnostic_skill_id": "diem-thuoc-do-thi",
+      "family_id": "GRAPH-POINT",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": null,
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "FUN10V1_046",
+      "topic_id": "CT10",
+      "source_file": "10-ham-so-do-thi-v1-02.json",
+      "source_blob": "d4fe2168b1481bc46017892a4b0c1d0a16b920f5",
+      "legacy_skill_tags": [
+        "diem-thuoc-do-thi"
+      ],
+      "source_primary_id": "diem-thuoc-do-thi",
+      "diagnostic_skill_id": "diem-thuoc-do-thi",
+      "family_id": "GRAPH-POINT",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": null,
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "FUN10V1_047",
+      "topic_id": "CT10",
+      "source_file": "10-ham-so-do-thi-v1-02.json",
+      "source_blob": "d4fe2168b1481bc46017892a4b0c1d0a16b920f5",
+      "legacy_skill_tags": [
+        "diem-thuoc-do-thi"
+      ],
+      "source_primary_id": "diem-thuoc-do-thi",
+      "diagnostic_skill_id": "diem-thuoc-do-thi",
+      "family_id": "GRAPH-POINT",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": null,
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "FUN10V1_048",
+      "topic_id": "CT10",
+      "source_file": "10-ham-so-do-thi-v1-02.json",
+      "source_blob": "d4fe2168b1481bc46017892a4b0c1d0a16b920f5",
+      "legacy_skill_tags": [
+        "diem-thuoc-do-thi"
+      ],
+      "source_primary_id": "diem-thuoc-do-thi",
+      "diagnostic_skill_id": "diem-thuoc-do-thi",
+      "family_id": "GRAPH-POINT",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": null,
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "FUN10V1_049",
+      "topic_id": "CT10",
+      "source_file": "10-ham-so-do-thi-v1-02.json",
+      "source_blob": "d4fe2168b1481bc46017892a4b0c1d0a16b920f5",
+      "legacy_skill_tags": [
+        "diem-thuoc-do-thi"
+      ],
+      "source_primary_id": "diem-thuoc-do-thi",
+      "diagnostic_skill_id": "diem-thuoc-do-thi",
+      "family_id": "GRAPH-POINT",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": null,
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "FUN10V1_050",
+      "topic_id": "CT10",
+      "source_file": "10-ham-so-do-thi-v1-02.json",
+      "source_blob": "d4fe2168b1481bc46017892a4b0c1d0a16b920f5",
+      "legacy_skill_tags": [
+        "diem-thuoc-do-thi"
+      ],
+      "source_primary_id": "diem-thuoc-do-thi",
+      "diagnostic_skill_id": "diem-thuoc-do-thi",
+      "family_id": "GRAPH-POINT",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": null,
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "FUN10V1_051",
+      "topic_id": "CT10",
+      "source_file": "10-ham-so-do-thi-v1-02.json",
+      "source_blob": "d4fe2168b1481bc46017892a4b0c1d0a16b920f5",
+      "legacy_skill_tags": [
+        "nhan-biet-ham-bac-nhat"
+      ],
+      "source_primary_id": "nhan-biet-ham-bac-nhat",
+      "diagnostic_skill_id": "nhan-biet-ham-bac-nhat",
+      "family_id": "LINEAR-FUNC",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family": "FUN10-LINEAR-RECOG-051-055",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "FUN10V1_052",
+      "topic_id": "CT10",
+      "source_file": "10-ham-so-do-thi-v1-02.json",
+      "source_blob": "d4fe2168b1481bc46017892a4b0c1d0a16b920f5",
+      "legacy_skill_tags": [
+        "nhan-biet-ham-bac-nhat"
+      ],
+      "source_primary_id": "nhan-biet-ham-bac-nhat",
+      "diagnostic_skill_id": "nhan-biet-ham-bac-nhat",
+      "family_id": "LINEAR-FUNC",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family": "FUN10-LINEAR-RECOG-051-055",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "FUN10V1_053",
+      "topic_id": "CT10",
+      "source_file": "10-ham-so-do-thi-v1-02.json",
+      "source_blob": "d4fe2168b1481bc46017892a4b0c1d0a16b920f5",
+      "legacy_skill_tags": [
+        "nhan-biet-ham-bac-nhat"
+      ],
+      "source_primary_id": "nhan-biet-ham-bac-nhat",
+      "diagnostic_skill_id": "nhan-biet-ham-bac-nhat",
+      "family_id": "LINEAR-FUNC",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family": "FUN10-LINEAR-RECOG-051-055",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "FUN10V1_054",
+      "topic_id": "CT10",
+      "source_file": "10-ham-so-do-thi-v1-02.json",
+      "source_blob": "d4fe2168b1481bc46017892a4b0c1d0a16b920f5",
+      "legacy_skill_tags": [
+        "nhan-biet-ham-bac-nhat"
+      ],
+      "source_primary_id": "nhan-biet-ham-bac-nhat",
+      "diagnostic_skill_id": "nhan-biet-ham-bac-nhat",
+      "family_id": "LINEAR-FUNC",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family": "FUN10-LINEAR-RECOG-051-055",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "FUN10V1_055",
+      "topic_id": "CT10",
+      "source_file": "10-ham-so-do-thi-v1-02.json",
+      "source_blob": "d4fe2168b1481bc46017892a4b0c1d0a16b920f5",
+      "legacy_skill_tags": [
+        "nhan-biet-ham-bac-nhat"
+      ],
+      "source_primary_id": "nhan-biet-ham-bac-nhat",
+      "diagnostic_skill_id": "nhan-biet-ham-bac-nhat",
+      "family_id": "LINEAR-FUNC",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family": "FUN10-LINEAR-RECOG-051-055",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "FUN10V1_056",
+      "topic_id": "CT10",
+      "source_file": "10-ham-so-do-thi-v1-02.json",
+      "source_blob": "d4fe2168b1481bc46017892a4b0c1d0a16b920f5",
+      "legacy_skill_tags": [
+        "nhan-biet-ham-bac-nhat"
+      ],
+      "source_primary_id": "nhan-biet-ham-bac-nhat",
+      "diagnostic_skill_id": "nhan-biet-ham-bac-nhat",
+      "family_id": "LINEAR-FUNC",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family": "FUN10-LINEAR-RECOG-056-060",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "FUN10V1_057",
+      "topic_id": "CT10",
+      "source_file": "10-ham-so-do-thi-v1-02.json",
+      "source_blob": "d4fe2168b1481bc46017892a4b0c1d0a16b920f5",
+      "legacy_skill_tags": [
+        "nhan-biet-ham-bac-nhat"
+      ],
+      "source_primary_id": "nhan-biet-ham-bac-nhat",
+      "diagnostic_skill_id": "nhan-biet-ham-bac-nhat",
+      "family_id": "LINEAR-FUNC",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family": "FUN10-LINEAR-RECOG-056-060",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "FUN10V1_058",
+      "topic_id": "CT10",
+      "source_file": "10-ham-so-do-thi-v1-02.json",
+      "source_blob": "d4fe2168b1481bc46017892a4b0c1d0a16b920f5",
+      "legacy_skill_tags": [
+        "nhan-biet-ham-bac-nhat"
+      ],
+      "source_primary_id": "nhan-biet-ham-bac-nhat",
+      "diagnostic_skill_id": "nhan-biet-ham-bac-nhat",
+      "family_id": "LINEAR-FUNC",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family": "FUN10-LINEAR-RECOG-056-060",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "FUN10V1_059",
+      "topic_id": "CT10",
+      "source_file": "10-ham-so-do-thi-v1-02.json",
+      "source_blob": "d4fe2168b1481bc46017892a4b0c1d0a16b920f5",
+      "legacy_skill_tags": [
+        "nhan-biet-ham-bac-nhat"
+      ],
+      "source_primary_id": "nhan-biet-ham-bac-nhat",
+      "diagnostic_skill_id": "nhan-biet-ham-bac-nhat",
+      "family_id": "LINEAR-FUNC",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family": "FUN10-LINEAR-RECOG-056-060",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "FUN10V1_060",
+      "topic_id": "CT10",
+      "source_file": "10-ham-so-do-thi-v1-02.json",
+      "source_blob": "d4fe2168b1481bc46017892a4b0c1d0a16b920f5",
+      "legacy_skill_tags": [
+        "nhan-biet-ham-bac-nhat"
+      ],
+      "source_primary_id": "nhan-biet-ham-bac-nhat",
+      "diagnostic_skill_id": "nhan-biet-ham-bac-nhat",
+      "family_id": "LINEAR-FUNC",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family": "FUN10-LINEAR-RECOG-056-060",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "FUN10V1_061",
+      "topic_id": "CT10",
+      "source_file": "10-ham-so-do-thi-v1-03.json",
+      "source_blob": "496c61c5cacb1dbe359bfc719155f2a78568014a",
+      "legacy_skill_tags": [
+        "he-so-goc"
+      ],
+      "source_primary_id": "he-so-goc",
+      "diagnostic_skill_id": "he-so-goc",
+      "family_id": "LINEAR-FUNC",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": "FUN10-COEFFICIENTS-061-066",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "FUN10V1_062",
+      "topic_id": "CT10",
+      "source_file": "10-ham-so-do-thi-v1-03.json",
+      "source_blob": "496c61c5cacb1dbe359bfc719155f2a78568014a",
+      "legacy_skill_tags": [
+        "tung-do-goc"
+      ],
+      "source_primary_id": "tung-do-goc",
+      "diagnostic_skill_id": "tung-do-goc",
+      "family_id": "LINEAR-FUNC",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": "FUN10-COEFFICIENTS-061-066",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "FUN10V1_063",
+      "topic_id": "CT10",
+      "source_file": "10-ham-so-do-thi-v1-03.json",
+      "source_blob": "496c61c5cacb1dbe359bfc719155f2a78568014a",
+      "legacy_skill_tags": [
+        "he-so-goc"
+      ],
+      "source_primary_id": "he-so-goc",
+      "diagnostic_skill_id": "he-so-goc",
+      "family_id": "LINEAR-FUNC",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": "FUN10-COEFFICIENTS-061-066",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "FUN10V1_064",
+      "topic_id": "CT10",
+      "source_file": "10-ham-so-do-thi-v1-03.json",
+      "source_blob": "496c61c5cacb1dbe359bfc719155f2a78568014a",
+      "legacy_skill_tags": [
+        "tung-do-goc"
+      ],
+      "source_primary_id": "tung-do-goc",
+      "diagnostic_skill_id": "tung-do-goc",
+      "family_id": "LINEAR-FUNC",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": "FUN10-COEFFICIENTS-061-066",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "FUN10V1_065",
+      "topic_id": "CT10",
+      "source_file": "10-ham-so-do-thi-v1-03.json",
+      "source_blob": "496c61c5cacb1dbe359bfc719155f2a78568014a",
+      "legacy_skill_tags": [
+        "he-so-goc"
+      ],
+      "source_primary_id": "he-so-goc",
+      "diagnostic_skill_id": "he-so-goc",
+      "family_id": "LINEAR-FUNC",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": "FUN10-COEFFICIENTS-061-066",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "FUN10V1_066",
+      "topic_id": "CT10",
+      "source_file": "10-ham-so-do-thi-v1-03.json",
+      "source_blob": "496c61c5cacb1dbe359bfc719155f2a78568014a",
+      "legacy_skill_tags": [
+        "tung-do-goc"
+      ],
+      "source_primary_id": "tung-do-goc",
+      "diagnostic_skill_id": "tung-do-goc",
+      "family_id": "LINEAR-FUNC",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": "FUN10-COEFFICIENTS-061-066",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "FUN10V1_067",
+      "topic_id": "CT10",
+      "source_file": "10-ham-so-do-thi-v1-03.json",
+      "source_blob": "496c61c5cacb1dbe359bfc719155f2a78568014a",
+      "legacy_skill_tags": [
+        "he-so-goc"
+      ],
+      "source_primary_id": "he-so-goc",
+      "diagnostic_skill_id": "he-so-goc",
+      "family_id": "LINEAR-FUNC",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": "FUN10-COEFFICIENTS-067-072",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "FUN10V1_068",
+      "topic_id": "CT10",
+      "source_file": "10-ham-so-do-thi-v1-03.json",
+      "source_blob": "496c61c5cacb1dbe359bfc719155f2a78568014a",
+      "legacy_skill_tags": [
+        "tung-do-goc"
+      ],
+      "source_primary_id": "tung-do-goc",
+      "diagnostic_skill_id": "tung-do-goc",
+      "family_id": "LINEAR-FUNC",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": "FUN10-COEFFICIENTS-067-072",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "FUN10V1_069",
+      "topic_id": "CT10",
+      "source_file": "10-ham-so-do-thi-v1-03.json",
+      "source_blob": "496c61c5cacb1dbe359bfc719155f2a78568014a",
+      "legacy_skill_tags": [
+        "he-so-goc"
+      ],
+      "source_primary_id": "he-so-goc",
+      "diagnostic_skill_id": "he-so-goc",
+      "family_id": "LINEAR-FUNC",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": "FUN10-COEFFICIENTS-067-072",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "FUN10V1_070",
+      "topic_id": "CT10",
+      "source_file": "10-ham-so-do-thi-v1-03.json",
+      "source_blob": "496c61c5cacb1dbe359bfc719155f2a78568014a",
+      "legacy_skill_tags": [
+        "tung-do-goc"
+      ],
+      "source_primary_id": "tung-do-goc",
+      "diagnostic_skill_id": "tung-do-goc",
+      "family_id": "LINEAR-FUNC",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": "FUN10-COEFFICIENTS-067-072",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "FUN10V1_071",
+      "topic_id": "CT10",
+      "source_file": "10-ham-so-do-thi-v1-03.json",
+      "source_blob": "496c61c5cacb1dbe359bfc719155f2a78568014a",
+      "legacy_skill_tags": [
+        "he-so-goc"
+      ],
+      "source_primary_id": "he-so-goc",
+      "diagnostic_skill_id": "he-so-goc",
+      "family_id": "LINEAR-FUNC",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": "FUN10-COEFFICIENTS-067-072",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "FUN10V1_072",
+      "topic_id": "CT10",
+      "source_file": "10-ham-so-do-thi-v1-03.json",
+      "source_blob": "496c61c5cacb1dbe359bfc719155f2a78568014a",
+      "legacy_skill_tags": [
+        "tung-do-goc"
+      ],
+      "source_primary_id": "tung-do-goc",
+      "diagnostic_skill_id": "tung-do-goc",
+      "family_id": "LINEAR-FUNC",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": "FUN10-COEFFICIENTS-067-072",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "FUN10V1_073",
+      "topic_id": "CT10",
+      "source_file": "10-ham-so-do-thi-v1-03.json",
+      "source_blob": "496c61c5cacb1dbe359bfc719155f2a78568014a",
+      "legacy_skill_tags": [
+        "dong-nghich-bien",
+        "he-so-goc"
+      ],
+      "source_primary_id": "dong-nghich-bien",
+      "diagnostic_skill_id": "dong-nghich-bien",
+      "family_id": "LINEAR-FUNC",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family": null,
+      "supporting_skills": [
+        "he-so-goc"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "FUN10V1_074",
+      "topic_id": "CT10",
+      "source_file": "10-ham-so-do-thi-v1-03.json",
+      "source_blob": "496c61c5cacb1dbe359bfc719155f2a78568014a",
+      "legacy_skill_tags": [
+        "dong-nghich-bien",
+        "he-so-goc"
+      ],
+      "source_primary_id": "dong-nghich-bien",
+      "diagnostic_skill_id": "dong-nghich-bien",
+      "family_id": "LINEAR-FUNC",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family": null,
+      "supporting_skills": [
+        "he-so-goc"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "FUN10V1_075",
+      "topic_id": "CT10",
+      "source_file": "10-ham-so-do-thi-v1-03.json",
+      "source_blob": "496c61c5cacb1dbe359bfc719155f2a78568014a",
+      "legacy_skill_tags": [
+        "dong-nghich-bien",
+        "he-so-goc"
+      ],
+      "source_primary_id": "dong-nghich-bien",
+      "diagnostic_skill_id": "dong-nghich-bien",
+      "family_id": "LINEAR-FUNC",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family": null,
+      "supporting_skills": [
+        "he-so-goc"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "FUN10V1_076",
+      "topic_id": "CT10",
+      "source_file": "10-ham-so-do-thi-v1-03.json",
+      "source_blob": "496c61c5cacb1dbe359bfc719155f2a78568014a",
+      "legacy_skill_tags": [
+        "dong-nghich-bien",
+        "he-so-goc"
+      ],
+      "source_primary_id": "dong-nghich-bien",
+      "diagnostic_skill_id": "dong-nghich-bien",
+      "family_id": "LINEAR-FUNC",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family": null,
+      "supporting_skills": [
+        "he-so-goc"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "FUN10V1_077",
+      "topic_id": "CT10",
+      "source_file": "10-ham-so-do-thi-v1-03.json",
+      "source_blob": "496c61c5cacb1dbe359bfc719155f2a78568014a",
+      "legacy_skill_tags": [
+        "dong-nghich-bien",
+        "he-so-goc"
+      ],
+      "source_primary_id": "dong-nghich-bien",
+      "diagnostic_skill_id": "dong-nghich-bien",
+      "family_id": "LINEAR-FUNC",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family": null,
+      "supporting_skills": [
+        "he-so-goc"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "FUN10V1_078",
+      "topic_id": "CT10",
+      "source_file": "10-ham-so-do-thi-v1-03.json",
+      "source_blob": "496c61c5cacb1dbe359bfc719155f2a78568014a",
+      "legacy_skill_tags": [
+        "dong-nghich-bien",
+        "he-so-goc"
+      ],
+      "source_primary_id": "dong-nghich-bien",
+      "diagnostic_skill_id": "dong-nghich-bien",
+      "family_id": "LINEAR-FUNC",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family": null,
+      "supporting_skills": [
+        "he-so-goc"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "FUN10V1_079",
+      "topic_id": "CT10",
+      "source_file": "10-ham-so-do-thi-v1-03.json",
+      "source_blob": "496c61c5cacb1dbe359bfc719155f2a78568014a",
+      "legacy_skill_tags": [
+        "dong-nghich-bien",
+        "he-so-goc"
+      ],
+      "source_primary_id": "dong-nghich-bien",
+      "diagnostic_skill_id": "dong-nghich-bien",
+      "family_id": "LINEAR-FUNC",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family": null,
+      "supporting_skills": [
+        "he-so-goc"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "FUN10V1_080",
+      "topic_id": "CT10",
+      "source_file": "10-ham-so-do-thi-v1-03.json",
+      "source_blob": "496c61c5cacb1dbe359bfc719155f2a78568014a",
+      "legacy_skill_tags": [
+        "dong-nghich-bien",
+        "he-so-goc"
+      ],
+      "source_primary_id": "dong-nghich-bien",
+      "diagnostic_skill_id": "dong-nghich-bien",
+      "family_id": "LINEAR-FUNC",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family": null,
+      "supporting_skills": [
+        "he-so-goc"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "FUN10V1_081",
+      "topic_id": "CT10",
+      "source_file": "10-ham-so-do-thi-v1-03.json",
+      "source_blob": "496c61c5cacb1dbe359bfc719155f2a78568014a",
+      "legacy_skill_tags": [
+        "dong-nghich-bien",
+        "he-so-goc"
+      ],
+      "source_primary_id": "dong-nghich-bien",
+      "diagnostic_skill_id": "dong-nghich-bien",
+      "family_id": "LINEAR-FUNC",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family": null,
+      "supporting_skills": [
+        "he-so-goc"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "FUN10V1_082",
+      "topic_id": "CT10",
+      "source_file": "10-ham-so-do-thi-v1-03.json",
+      "source_blob": "496c61c5cacb1dbe359bfc719155f2a78568014a",
+      "legacy_skill_tags": [
+        "dong-nghich-bien",
+        "he-so-goc"
+      ],
+      "source_primary_id": "dong-nghich-bien",
+      "diagnostic_skill_id": "dong-nghich-bien",
+      "family_id": "LINEAR-FUNC",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family": null,
+      "supporting_skills": [
+        "he-so-goc"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "FUN10V1_083",
+      "topic_id": "CT10",
+      "source_file": "10-ham-so-do-thi-v1-03.json",
+      "source_blob": "496c61c5cacb1dbe359bfc719155f2a78568014a",
+      "legacy_skill_tags": [
+        "ve-do-thi-ham-bac-nhat",
+        "diem-thuoc-do-thi"
+      ],
+      "source_primary_id": "ve-do-thi-ham-bac-nhat",
+      "diagnostic_skill_id": "ve-do-thi-ham-bac-nhat",
+      "family_id": "LINEAR-FUNC",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_GRAPH_DRAWING_PARTIAL_POINT_SELECTION",
+      "clone_family": "FUN10-DRAW-083-087",
+      "supporting_skills": [
+        "diem-thuoc-do-thi"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "FUN10V1_084",
+      "topic_id": "CT10",
+      "source_file": "10-ham-so-do-thi-v1-03.json",
+      "source_blob": "496c61c5cacb1dbe359bfc719155f2a78568014a",
+      "legacy_skill_tags": [
+        "ve-do-thi-ham-bac-nhat",
+        "diem-thuoc-do-thi"
+      ],
+      "source_primary_id": "ve-do-thi-ham-bac-nhat",
+      "diagnostic_skill_id": "ve-do-thi-ham-bac-nhat",
+      "family_id": "LINEAR-FUNC",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_GRAPH_DRAWING_PARTIAL_POINT_SELECTION",
+      "clone_family": "FUN10-DRAW-083-087",
+      "supporting_skills": [
+        "diem-thuoc-do-thi"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "FUN10V1_085",
+      "topic_id": "CT10",
+      "source_file": "10-ham-so-do-thi-v1-03.json",
+      "source_blob": "496c61c5cacb1dbe359bfc719155f2a78568014a",
+      "legacy_skill_tags": [
+        "ve-do-thi-ham-bac-nhat",
+        "diem-thuoc-do-thi"
+      ],
+      "source_primary_id": "ve-do-thi-ham-bac-nhat",
+      "diagnostic_skill_id": "ve-do-thi-ham-bac-nhat",
+      "family_id": "LINEAR-FUNC",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_GRAPH_DRAWING_PARTIAL_POINT_SELECTION",
+      "clone_family": "FUN10-DRAW-083-087",
+      "supporting_skills": [
+        "diem-thuoc-do-thi"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "FUN10V1_086",
+      "topic_id": "CT10",
+      "source_file": "10-ham-so-do-thi-v1-03.json",
+      "source_blob": "496c61c5cacb1dbe359bfc719155f2a78568014a",
+      "legacy_skill_tags": [
+        "ve-do-thi-ham-bac-nhat",
+        "diem-thuoc-do-thi"
+      ],
+      "source_primary_id": "ve-do-thi-ham-bac-nhat",
+      "diagnostic_skill_id": "ve-do-thi-ham-bac-nhat",
+      "family_id": "LINEAR-FUNC",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_GRAPH_DRAWING_PARTIAL_POINT_SELECTION",
+      "clone_family": "FUN10-DRAW-083-087",
+      "supporting_skills": [
+        "diem-thuoc-do-thi"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "FUN10V1_087",
+      "topic_id": "CT10",
+      "source_file": "10-ham-so-do-thi-v1-03.json",
+      "source_blob": "496c61c5cacb1dbe359bfc719155f2a78568014a",
+      "legacy_skill_tags": [
+        "ve-do-thi-ham-bac-nhat",
+        "diem-thuoc-do-thi"
+      ],
+      "source_primary_id": "ve-do-thi-ham-bac-nhat",
+      "diagnostic_skill_id": "ve-do-thi-ham-bac-nhat",
+      "family_id": "LINEAR-FUNC",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_GRAPH_DRAWING_PARTIAL_POINT_SELECTION",
+      "clone_family": "FUN10-DRAW-083-087",
+      "supporting_skills": [
+        "diem-thuoc-do-thi"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "FUN10V1_088",
+      "topic_id": "CT10",
+      "source_file": "10-ham-so-do-thi-v1-03.json",
+      "source_blob": "496c61c5cacb1dbe359bfc719155f2a78568014a",
+      "legacy_skill_tags": [
+        "ve-do-thi-ham-bac-nhat",
+        "diem-thuoc-do-thi"
+      ],
+      "source_primary_id": "ve-do-thi-ham-bac-nhat",
+      "diagnostic_skill_id": "ve-do-thi-ham-bac-nhat",
+      "family_id": "LINEAR-FUNC",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_GRAPH_DRAWING_PARTIAL_POINT_SELECTION",
+      "clone_family": "FUN10-DRAW-088-092",
+      "supporting_skills": [
+        "diem-thuoc-do-thi"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "FUN10V1_089",
+      "topic_id": "CT10",
+      "source_file": "10-ham-so-do-thi-v1-03.json",
+      "source_blob": "496c61c5cacb1dbe359bfc719155f2a78568014a",
+      "legacy_skill_tags": [
+        "ve-do-thi-ham-bac-nhat",
+        "diem-thuoc-do-thi"
+      ],
+      "source_primary_id": "ve-do-thi-ham-bac-nhat",
+      "diagnostic_skill_id": "ve-do-thi-ham-bac-nhat",
+      "family_id": "LINEAR-FUNC",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_GRAPH_DRAWING_PARTIAL_POINT_SELECTION",
+      "clone_family": "FUN10-DRAW-088-092",
+      "supporting_skills": [
+        "diem-thuoc-do-thi"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "FUN10V1_090",
+      "topic_id": "CT10",
+      "source_file": "10-ham-so-do-thi-v1-03.json",
+      "source_blob": "496c61c5cacb1dbe359bfc719155f2a78568014a",
+      "legacy_skill_tags": [
+        "ve-do-thi-ham-bac-nhat",
+        "diem-thuoc-do-thi"
+      ],
+      "source_primary_id": "ve-do-thi-ham-bac-nhat",
+      "diagnostic_skill_id": "ve-do-thi-ham-bac-nhat",
+      "family_id": "LINEAR-FUNC",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_GRAPH_DRAWING_PARTIAL_POINT_SELECTION",
+      "clone_family": "FUN10-DRAW-088-092",
+      "supporting_skills": [
+        "diem-thuoc-do-thi"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "FUN10V1_091",
+      "topic_id": "CT10",
+      "source_file": "10-ham-so-do-thi-v1-04.json",
+      "source_blob": "d4169204b04e770470890100b1a85e3558c5e2b2",
+      "legacy_skill_tags": [
+        "ve-do-thi-ham-bac-nhat",
+        "diem-thuoc-do-thi"
+      ],
+      "source_primary_id": "ve-do-thi-ham-bac-nhat",
+      "diagnostic_skill_id": "ve-do-thi-ham-bac-nhat",
+      "family_id": "LINEAR-FUNC",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_GRAPH_DRAWING_PARTIAL_POINT_SELECTION",
+      "clone_family": "FUN10-DRAW-088-092",
+      "supporting_skills": [
+        "diem-thuoc-do-thi"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "FUN10V1_092",
+      "topic_id": "CT10",
+      "source_file": "10-ham-so-do-thi-v1-04.json",
+      "source_blob": "d4169204b04e770470890100b1a85e3558c5e2b2",
+      "legacy_skill_tags": [
+        "ve-do-thi-ham-bac-nhat",
+        "diem-thuoc-do-thi"
+      ],
+      "source_primary_id": "ve-do-thi-ham-bac-nhat",
+      "diagnostic_skill_id": "ve-do-thi-ham-bac-nhat",
+      "family_id": "LINEAR-FUNC",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_GRAPH_DRAWING_PARTIAL_POINT_SELECTION",
+      "clone_family": "FUN10-DRAW-088-092",
+      "supporting_skills": [
+        "diem-thuoc-do-thi"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "FUN10V1_093",
+      "topic_id": "CT10",
+      "source_file": "10-ham-so-do-thi-v1-04.json",
+      "source_blob": "d4169204b04e770470890100b1a85e3558c5e2b2",
+      "legacy_skill_tags": [
+        "vi-tri-hai-duong-thang"
+      ],
+      "source_primary_id": "vi-tri-hai-duong-thang",
+      "diagnostic_skill_id": "vi-tri-hai-duong-thang",
+      "family_id": "GRAPH-INTERSECTION",
+      "family_layer": "Entrance10",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family": null,
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "FUN10V1_094",
+      "topic_id": "CT10",
+      "source_file": "10-ham-so-do-thi-v1-04.json",
+      "source_blob": "d4169204b04e770470890100b1a85e3558c5e2b2",
+      "legacy_skill_tags": [
+        "vi-tri-hai-duong-thang"
+      ],
+      "source_primary_id": "vi-tri-hai-duong-thang",
+      "diagnostic_skill_id": "vi-tri-hai-duong-thang",
+      "family_id": "GRAPH-INTERSECTION",
+      "family_layer": "Entrance10",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family": null,
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "FUN10V1_095",
+      "topic_id": "CT10",
+      "source_file": "10-ham-so-do-thi-v1-04.json",
+      "source_blob": "d4169204b04e770470890100b1a85e3558c5e2b2",
+      "legacy_skill_tags": [
+        "vi-tri-hai-duong-thang"
+      ],
+      "source_primary_id": "vi-tri-hai-duong-thang",
+      "diagnostic_skill_id": "vi-tri-hai-duong-thang",
+      "family_id": "GRAPH-INTERSECTION",
+      "family_layer": "Entrance10",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family": null,
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "FUN10V1_096",
+      "topic_id": "CT10",
+      "source_file": "10-ham-so-do-thi-v1-04.json",
+      "source_blob": "d4169204b04e770470890100b1a85e3558c5e2b2",
+      "legacy_skill_tags": [
+        "vi-tri-hai-duong-thang"
+      ],
+      "source_primary_id": "vi-tri-hai-duong-thang",
+      "diagnostic_skill_id": "vi-tri-hai-duong-thang",
+      "family_id": "GRAPH-INTERSECTION",
+      "family_layer": "Entrance10",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family": null,
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "FUN10V1_097",
+      "topic_id": "CT10",
+      "source_file": "10-ham-so-do-thi-v1-04.json",
+      "source_blob": "d4169204b04e770470890100b1a85e3558c5e2b2",
+      "legacy_skill_tags": [
+        "vi-tri-hai-duong-thang"
+      ],
+      "source_primary_id": "vi-tri-hai-duong-thang",
+      "diagnostic_skill_id": "vi-tri-hai-duong-thang",
+      "family_id": "GRAPH-INTERSECTION",
+      "family_layer": "Entrance10",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family": null,
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "FUN10V1_098",
+      "topic_id": "CT10",
+      "source_file": "10-ham-so-do-thi-v1-04.json",
+      "source_blob": "d4169204b04e770470890100b1a85e3558c5e2b2",
+      "legacy_skill_tags": [
+        "vi-tri-hai-duong-thang"
+      ],
+      "source_primary_id": "vi-tri-hai-duong-thang",
+      "diagnostic_skill_id": "vi-tri-hai-duong-thang",
+      "family_id": "GRAPH-INTERSECTION",
+      "family_layer": "Entrance10",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family": null,
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "FUN10V1_099",
+      "topic_id": "CT10",
+      "source_file": "10-ham-so-do-thi-v1-04.json",
+      "source_blob": "d4169204b04e770470890100b1a85e3558c5e2b2",
+      "legacy_skill_tags": [
+        "vi-tri-hai-duong-thang"
+      ],
+      "source_primary_id": "vi-tri-hai-duong-thang",
+      "diagnostic_skill_id": "vi-tri-hai-duong-thang",
+      "family_id": "GRAPH-INTERSECTION",
+      "family_layer": "Entrance10",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family": null,
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "FUN10V1_100",
+      "topic_id": "CT10",
+      "source_file": "10-ham-so-do-thi-v1-04.json",
+      "source_blob": "d4169204b04e770470890100b1a85e3558c5e2b2",
+      "legacy_skill_tags": [
+        "vi-tri-hai-duong-thang"
+      ],
+      "source_primary_id": "vi-tri-hai-duong-thang",
+      "diagnostic_skill_id": "vi-tri-hai-duong-thang",
+      "family_id": "GRAPH-INTERSECTION",
+      "family_layer": "Entrance10",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family": null,
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "FUN10V1_101",
+      "topic_id": "CT10",
+      "source_file": "10-ham-so-do-thi-v1-04.json",
+      "source_blob": "d4169204b04e770470890100b1a85e3558c5e2b2",
+      "legacy_skill_tags": [
+        "vi-tri-hai-duong-thang"
+      ],
+      "source_primary_id": "vi-tri-hai-duong-thang",
+      "diagnostic_skill_id": "vi-tri-hai-duong-thang",
+      "family_id": "GRAPH-INTERSECTION",
+      "family_layer": "Entrance10",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family": null,
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "FUN10V1_102",
+      "topic_id": "CT10",
+      "source_file": "10-ham-so-do-thi-v1-04.json",
+      "source_blob": "d4169204b04e770470890100b1a85e3558c5e2b2",
+      "legacy_skill_tags": [
+        "vi-tri-hai-duong-thang"
+      ],
+      "source_primary_id": "vi-tri-hai-duong-thang",
+      "diagnostic_skill_id": "vi-tri-hai-duong-thang",
+      "family_id": "GRAPH-INTERSECTION",
+      "family_layer": "Entrance10",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family": null,
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "FUN10V1_103",
+      "topic_id": "CT10",
+      "source_file": "10-ham-so-do-thi-v1-04.json",
+      "source_blob": "d4169204b04e770470890100b1a85e3558c5e2b2",
+      "legacy_skill_tags": [
+        "giao-diem-do-thi",
+        "lien-he-he-phuong-trinh"
+      ],
+      "source_primary_id": "giao-diem-do-thi",
+      "diagnostic_skill_id": "giao-diem-do-thi",
+      "family_id": "GRAPH-INTERSECTION",
+      "family_layer": "Entrance10",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": "FUN10-INTERSECTION-103-110",
+      "supporting_skills": [
+        "lien-he-he-phuong-trinh"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "FUN10V1_104",
+      "topic_id": "CT10",
+      "source_file": "10-ham-so-do-thi-v1-04.json",
+      "source_blob": "d4169204b04e770470890100b1a85e3558c5e2b2",
+      "legacy_skill_tags": [
+        "giao-diem-do-thi",
+        "lien-he-he-phuong-trinh"
+      ],
+      "source_primary_id": "giao-diem-do-thi",
+      "diagnostic_skill_id": "giao-diem-do-thi",
+      "family_id": "GRAPH-INTERSECTION",
+      "family_layer": "Entrance10",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": "FUN10-INTERSECTION-103-110",
+      "supporting_skills": [
+        "lien-he-he-phuong-trinh"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "FUN10V1_105",
+      "topic_id": "CT10",
+      "source_file": "10-ham-so-do-thi-v1-04.json",
+      "source_blob": "d4169204b04e770470890100b1a85e3558c5e2b2",
+      "legacy_skill_tags": [
+        "giao-diem-do-thi",
+        "lien-he-he-phuong-trinh"
+      ],
+      "source_primary_id": "giao-diem-do-thi",
+      "diagnostic_skill_id": "giao-diem-do-thi",
+      "family_id": "GRAPH-INTERSECTION",
+      "family_layer": "Entrance10",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": "FUN10-INTERSECTION-103-110",
+      "supporting_skills": [
+        "lien-he-he-phuong-trinh"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "FUN10V1_106",
+      "topic_id": "CT10",
+      "source_file": "10-ham-so-do-thi-v1-04.json",
+      "source_blob": "d4169204b04e770470890100b1a85e3558c5e2b2",
+      "legacy_skill_tags": [
+        "giao-diem-do-thi",
+        "lien-he-he-phuong-trinh"
+      ],
+      "source_primary_id": "giao-diem-do-thi",
+      "diagnostic_skill_id": "giao-diem-do-thi",
+      "family_id": "GRAPH-INTERSECTION",
+      "family_layer": "Entrance10",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": "FUN10-INTERSECTION-103-110",
+      "supporting_skills": [
+        "lien-he-he-phuong-trinh"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "FUN10V1_107",
+      "topic_id": "CT10",
+      "source_file": "10-ham-so-do-thi-v1-04.json",
+      "source_blob": "d4169204b04e770470890100b1a85e3558c5e2b2",
+      "legacy_skill_tags": [
+        "giao-diem-do-thi",
+        "lien-he-he-phuong-trinh"
+      ],
+      "source_primary_id": "giao-diem-do-thi",
+      "diagnostic_skill_id": "giao-diem-do-thi",
+      "family_id": "GRAPH-INTERSECTION",
+      "family_layer": "Entrance10",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": "FUN10-INTERSECTION-103-110",
+      "supporting_skills": [
+        "lien-he-he-phuong-trinh"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "FUN10V1_108",
+      "topic_id": "CT10",
+      "source_file": "10-ham-so-do-thi-v1-04.json",
+      "source_blob": "d4169204b04e770470890100b1a85e3558c5e2b2",
+      "legacy_skill_tags": [
+        "giao-diem-do-thi",
+        "lien-he-he-phuong-trinh"
+      ],
+      "source_primary_id": "giao-diem-do-thi",
+      "diagnostic_skill_id": "giao-diem-do-thi",
+      "family_id": "GRAPH-INTERSECTION",
+      "family_layer": "Entrance10",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": "FUN10-INTERSECTION-103-110",
+      "supporting_skills": [
+        "lien-he-he-phuong-trinh"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "FUN10V1_109",
+      "topic_id": "CT10",
+      "source_file": "10-ham-so-do-thi-v1-04.json",
+      "source_blob": "d4169204b04e770470890100b1a85e3558c5e2b2",
+      "legacy_skill_tags": [
+        "giao-diem-do-thi",
+        "lien-he-he-phuong-trinh"
+      ],
+      "source_primary_id": "giao-diem-do-thi",
+      "diagnostic_skill_id": "giao-diem-do-thi",
+      "family_id": "GRAPH-INTERSECTION",
+      "family_layer": "Entrance10",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": "FUN10-INTERSECTION-103-110",
+      "supporting_skills": [
+        "lien-he-he-phuong-trinh"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "FUN10V1_110",
+      "topic_id": "CT10",
+      "source_file": "10-ham-so-do-thi-v1-04.json",
+      "source_blob": "d4169204b04e770470890100b1a85e3558c5e2b2",
+      "legacy_skill_tags": [
+        "giao-diem-do-thi",
+        "lien-he-he-phuong-trinh"
+      ],
+      "source_primary_id": "giao-diem-do-thi",
+      "diagnostic_skill_id": "giao-diem-do-thi",
+      "family_id": "GRAPH-INTERSECTION",
+      "family_layer": "Entrance10",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": "FUN10-INTERSECTION-103-110",
+      "supporting_skills": [
+        "lien-he-he-phuong-trinh"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "FUN10V1_111",
+      "topic_id": "CT10",
+      "source_file": "10-ham-so-do-thi-v1-04.json",
+      "source_blob": "d4169204b04e770470890100b1a85e3558c5e2b2",
+      "legacy_skill_tags": [
+        "ham-y-ax2",
+        "diem-thuoc-parabol"
+      ],
+      "source_primary_id": "diem-thuoc-parabol",
+      "diagnostic_skill_id": "diem-thuoc-parabol",
+      "family_id": "PARABOLA-BASIC",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": null,
+      "supporting_skills": [
+        "ham-y-ax2"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "FUN10V1_112",
+      "topic_id": "CT10",
+      "source_file": "10-ham-so-do-thi-v1-04.json",
+      "source_blob": "d4169204b04e770470890100b1a85e3558c5e2b2",
+      "legacy_skill_tags": [
+        "ham-y-ax2",
+        "doi-xung-parabol"
+      ],
+      "source_primary_id": "doi-xung-parabol",
+      "diagnostic_skill_id": "doi-xung-parabol",
+      "family_id": "PARABOLA-BASIC",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family": null,
+      "supporting_skills": [
+        "ham-y-ax2"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "FUN10V1_113",
+      "topic_id": "CT10",
+      "source_file": "10-ham-so-do-thi-v1-04.json",
+      "source_blob": "d4169204b04e770470890100b1a85e3558c5e2b2",
+      "legacy_skill_tags": [
+        "ham-y-ax2",
+        "diem-thuoc-parabol"
+      ],
+      "source_primary_id": "diem-thuoc-parabol",
+      "diagnostic_skill_id": "diem-thuoc-parabol",
+      "family_id": "PARABOLA-BASIC",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": null,
+      "supporting_skills": [
+        "ham-y-ax2"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "FUN10V1_114",
+      "topic_id": "CT10",
+      "source_file": "10-ham-so-do-thi-v1-04.json",
+      "source_blob": "d4169204b04e770470890100b1a85e3558c5e2b2",
+      "legacy_skill_tags": [
+        "ham-y-ax2",
+        "doi-xung-parabol"
+      ],
+      "source_primary_id": "doi-xung-parabol",
+      "diagnostic_skill_id": "doi-xung-parabol",
+      "family_id": "PARABOLA-BASIC",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family": null,
+      "supporting_skills": [
+        "ham-y-ax2"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "FUN10V1_115",
+      "topic_id": "CT10",
+      "source_file": "10-ham-so-do-thi-v1-04.json",
+      "source_blob": "d4169204b04e770470890100b1a85e3558c5e2b2",
+      "legacy_skill_tags": [
+        "ham-y-ax2",
+        "diem-thuoc-parabol"
+      ],
+      "source_primary_id": "diem-thuoc-parabol",
+      "diagnostic_skill_id": "diem-thuoc-parabol",
+      "family_id": "PARABOLA-BASIC",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": null,
+      "supporting_skills": [
+        "ham-y-ax2"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "FUN10V1_116",
+      "topic_id": "CT10",
+      "source_file": "10-ham-so-do-thi-v1-04.json",
+      "source_blob": "d4169204b04e770470890100b1a85e3558c5e2b2",
+      "legacy_skill_tags": [
+        "ham-y-ax2",
+        "doi-xung-parabol"
+      ],
+      "source_primary_id": "doi-xung-parabol",
+      "diagnostic_skill_id": "doi-xung-parabol",
+      "family_id": "PARABOLA-BASIC",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family": null,
+      "supporting_skills": [
+        "ham-y-ax2"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "FUN10V1_117",
+      "topic_id": "CT10",
+      "source_file": "10-ham-so-do-thi-v1-04.json",
+      "source_blob": "d4169204b04e770470890100b1a85e3558c5e2b2",
+      "legacy_skill_tags": [
+        "ham-y-ax2",
+        "diem-thuoc-parabol"
+      ],
+      "source_primary_id": "diem-thuoc-parabol",
+      "diagnostic_skill_id": "diem-thuoc-parabol",
+      "family_id": "PARABOLA-BASIC",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": null,
+      "supporting_skills": [
+        "ham-y-ax2"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "FUN10V1_118",
+      "topic_id": "CT10",
+      "source_file": "10-ham-so-do-thi-v1-04.json",
+      "source_blob": "d4169204b04e770470890100b1a85e3558c5e2b2",
+      "legacy_skill_tags": [
+        "ham-y-ax2",
+        "doi-xung-parabol"
+      ],
+      "source_primary_id": "doi-xung-parabol",
+      "diagnostic_skill_id": "doi-xung-parabol",
+      "family_id": "PARABOLA-BASIC",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family": null,
+      "supporting_skills": [
+        "ham-y-ax2"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "FUN10V1_119",
+      "topic_id": "CT10",
+      "source_file": "10-ham-so-do-thi-v1-04.json",
+      "source_blob": "d4169204b04e770470890100b1a85e3558c5e2b2",
+      "legacy_skill_tags": [
+        "ham-y-ax2",
+        "diem-thuoc-parabol"
+      ],
+      "source_primary_id": "diem-thuoc-parabol",
+      "diagnostic_skill_id": "diem-thuoc-parabol",
+      "family_id": "PARABOLA-BASIC",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": null,
+      "supporting_skills": [
+        "ham-y-ax2"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "FUN10V1_120",
+      "topic_id": "CT10",
+      "source_file": "10-ham-so-do-thi-v1-04.json",
+      "source_blob": "d4169204b04e770470890100b1a85e3558c5e2b2",
+      "legacy_skill_tags": [
+        "ham-y-ax2",
+        "doi-xung-parabol"
+      ],
+      "source_primary_id": "doi-xung-parabol",
+      "diagnostic_skill_id": "doi-xung-parabol",
+      "family_id": "PARABOLA-BASIC",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family": null,
+      "supporting_skills": [
+        "ham-y-ax2"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    }
+  ]
+}

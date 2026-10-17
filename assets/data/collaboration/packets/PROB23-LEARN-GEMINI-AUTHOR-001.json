@@ -1,0 +1,182 @@
+{
+  "protocol_version": "2.0",
+  "packet_id": "PROB23-LEARN-GEMINI-AUTHOR-001",
+  "task_id": "PROB23-LEARN-001",
+  "context_version": "1.0.48",
+  "from": "CHATGPT",
+  "to": "GEMINI",
+  "mode": "AUTHOR",
+  "topic_id": "23-xac-suat",
+  "title": "Xác suất",
+  "source_bundle_url": "https://tma2015.github.io/roadmap-toan-thcs/assets/data/collaboration/exports/prob23-learn-gemini-author-001.json",
+  "scope": {
+    "layer": "KNTT-Core",
+    "deliverables": [
+      "5 Golden Template Learning Cards",
+      "15 micro-practice MCQs, 3 per card: Base → Trap → Apply",
+      "5 teaching-copy blocks with key idea, worked example, common misconception and summary"
+    ],
+    "card_plan": [
+      {
+        "id": "prob23-core-1",
+        "grade": 6,
+        "lesson": "Bài 42–43",
+        "title": "Kết quả có thể và xác suất thực nghiệm",
+        "skills": [
+          "xac-suat-thuc-nghiem"
+        ],
+        "focus": "Đếm số lần sự kiện xảy ra / tổng số lần thử; mô tả kết quả có thể bằng lời nhưng chưa gán skill đề xuất vào điểm.",
+        "order": 1,
+        "micro_ids": [
+          "PRO23MICRO_001",
+          "PRO23MICRO_002",
+          "PRO23MICRO_003"
+        ]
+      },
+      {
+        "id": "prob23-core-2",
+        "grade": 7,
+        "lesson": "Bài 29",
+        "title": "Biến cố và các loại biến cố",
+        "skills": [
+          "bien-co",
+          "bien-co-chac-chan-khong-the"
+        ],
+        "focus": "Nêu rõ phép thử, phân biệt biến cố ngẫu nhiên/chắc chắn/không thể, chỉ dùng dữ kiện trong đề.",
+        "order": 2,
+        "micro_ids": [
+          "PRO23MICRO_004",
+          "PRO23MICRO_005",
+          "PRO23MICRO_006"
+        ]
+      },
+      {
+        "id": "prob23-core-3",
+        "grade": 7,
+        "lesson": "Bài 30",
+        "title": "Xác suất của biến cố đơn giản",
+        "skills": [
+          "xac-suat-co-dien",
+          "kiem-tra-xac-suat"
+        ],
+        "focus": "Tỉ số kết quả thuận lợi/kết quả đồng khả năng trong mô hình đơn giản; 0≤P≤1; không suy đoán đồng khả năng.",
+        "order": 3,
+        "micro_ids": [
+          "PRO23MICRO_007",
+          "PRO23MICRO_008",
+          "PRO23MICRO_009"
+        ]
+      },
+      {
+        "id": "prob23-core-4",
+        "grade": 8,
+        "lesson": "Bài 30",
+        "title": "Phép thử và kết quả thuận lợi",
+        "skills": [
+          "phep-thu-ngau-nhien",
+          "bien-co"
+        ],
+        "focus": "Phân biệt thao tác ngẫu nhiên và một biến cố; mô tả kết quả thuận lợi mà không chấm skill mới chưa duyệt.",
+        "order": 4,
+        "micro_ids": [
+          "PRO23MICRO_010",
+          "PRO23MICRO_011",
+          "PRO23MICRO_012"
+        ]
+      },
+      {
+        "id": "prob23-core-5",
+        "grade": 8,
+        "lesson": "Bài 31–32",
+        "title": "Xác suất theo tỉ số và đối chiếu thực nghiệm",
+        "skills": [
+          "xac-suat-co-dien",
+          "kiem-tra-xac-suat",
+          "xac-suat-thuc-nghiem"
+        ],
+        "focus": "Tính xác suất trong mô hình đồng khả năng đơn giản, so sánh với tỉ lệ quan sát thực nghiệm, không khẳng định tỉ lệ hữu hạn phải bằng xác suất mô hình.",
+        "order": 5,
+        "micro_ids": [
+          "PRO23MICRO_013",
+          "PRO23MICRO_014",
+          "PRO23MICRO_015"
+        ]
+      }
+    ],
+    "grade_scope": [
+      6,
+      7,
+      8
+    ],
+    "outside_core": [
+      "khong-gian-mau",
+      "bien-co-doi",
+      "dong-xu-nhieu-lan",
+      "xuc-xac-hai-lan",
+      "so-do-cay",
+      "nhieu-buoc-doc-lap",
+      "khong-hoan-lai"
+    ],
+    "proposed_unscored": [
+      "ket-qua-co-the",
+      "su-kien-don-gian",
+      "ket-qua-thuan-loi"
+    ]
+  },
+  "source_lock": {
+    "files": [
+      "docs/assets/data/curriculum/topic23-layer-audit-v1.json",
+      "docs/assets/data/practice/23-xac-suat-v1.manifest.json",
+      "docs/assets/data/practice/23-xac-suat-v1-01.json",
+      "docs/assets/data/practice/23-xac-suat-v1-02.json",
+      "docs/assets/data/practice/23-xac-suat-v1-03.json",
+      "docs/assets/data/practice/23-xac-suat-v1-04.json",
+      "docs/assets/data/curriculum/kntt-grade6-map.json",
+      "docs/assets/data/curriculum/kntt-grade7-map.json",
+      "docs/assets/data/curriculum/kntt-grade8-map.json",
+      "docs/assets/data/curriculum/kntt-grade9-map.json",
+      "docs/assets/data/curriculum/golden-template-v1.json",
+      "docs/assets/data/curriculum/topic21-learning-workspace.json",
+      "docs/assets/data/practice/21-thong-ke-micro-v1.json",
+      "docs/huong-dan/chuan-ngon-ngu-de-toan-v1.md",
+      "docs/kien-thuc/23-xac-suat/index.md",
+      "docs/kien-thuc/23-xac-suat/bai-tap.md",
+      "docs/kien-thuc/23-xac-suat/tu-kiem-tra.md"
+    ],
+    "bank_count": 120,
+    "layer_counts": {
+      "KNTT-Core": 52,
+      "Core-Support": 30,
+      "Entrance10": 38
+    },
+    "rule": "Use current grade maps and exact existing skill IDs. The Grade6 possible-results/event proposed IDs are unscored conceptual explanations, not assessed Core IDs. Grade9 overlay lacks a PRIMARY reference but no assertion about all of Grade9 curriculum. Manual per-item layer exceptions are authoritative; never infer an old item's Core status from its skill label alone."
+  },
+  "delivery": {
+    "packet_id": "PROB23-LEARN-GEMINI-AUTHOR-001-RESULT",
+    "format": "one complete JSON object",
+    "fields": [
+      "packet_id",
+      "status",
+      "learning_workspace",
+      "micro_practice_bank",
+      "card_copy",
+      "independent_checks",
+      "uncertainties"
+    ],
+    "micro_shape": "Use topic21-micro template: id/card_id/micro_role/question/options/answer/tags(topic,skill,type,layer,grade)/difficulty/explanation/hints/curriculum(book,grades,level,lesson)/exam/target.",
+    "workspace_shape": "Use topic21-learning-workspace schema with five grade-mapped cards, three stable micro IDs each, non-gating extensions and optional teaching_copy in card.",
+    "acceptance": "AUTHOR_DRAFT_PENDING_CHATGPT_QA"
+  },
+  "constraints": [
+    "Return 5 cards and 15 uniquely authored questions exactly. Each card has three items in base,trap,apply order, IDs PRO23MICRO_001..015.",
+    "Each item has exactly one assessed skill contained in its card.skills, one actual KNTT grade (6/7/8), and layer KNTT-Core; no automatic credit to supporting skills.",
+    "Keep Grade6 scoring to xac-suat-thuc-nghiem only; Grade6 outcomes and simple event names are prerequisite explanation without unapproved new scored IDs.",
+    "Grade7 cards use only bien-co, bien-co-chac-chan-khong-the, xac-suat-co-dien, kiem-tra-xac-suat. Grade8 cards use only phep-thu-ngau-nhien, bien-co, xac-suat-co-dien, kiem-tra-xac-suat, xac-suat-thuc-nghiem.",
+    "No two dice, complement shortcuts, multi-stage independent trials, tree calculus, or draws without replacement in scored Core. Keep advanced questions as clearly non-gating extension references.",
+    "For equal-likelihood formula, explicitly establish equally likely outcomes; experimental relative frequency can differ from model probability in finite samples.",
+    "No invisible chart/image, every number and unit present in question; hypothetical trials/data must be stated. Avoid vague 'phù hợp nhất' when a unique exact mathematical answer can be asked.",
+    "Four distinct plausible choices, one correct answer index 0..3, varied key positions, two helpful hints (hint1 does not reveal answer), clear explanation using direct Vietnamese.",
+    "Do not duplicate any existing 120 questions even if changing the numbers; vary reasoning, task and misconception. Independently solve each answer and report checks.",
+    "No Readiness authoring, no hard progression gates, no changing 120 questions, no learner data changes, no repository writes. ChatGPT independently reviews then integrates."
+  ]
+}

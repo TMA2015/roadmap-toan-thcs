@@ -1,0 +1,207 @@
+{
+  "schema": "roadmap-readiness-assessment-v1",
+  "version": 1,
+  "assessment_id": "ALG04-CORE-READY-V1",
+  "topic": {
+    "id": "04-bieu-thuc-dai-so",
+    "title": "Chuyên đề 04 – Biểu thức và biến đổi đại số"
+  },
+  "layer": "KNTT-Core",
+  "title": "Core Readiness Check – Chuyên đề 04 – Biểu thức và biến đổi đại số",
+  "skill_labels": {
+    "nhan-biet-don-thuc": "Nhận biết đơn thức",
+    "nhan-biet-da-thuc": "Nhận biết đa thức",
+    "he-so-bac": "Hệ số và bậc",
+    "hang-tu-dong-dang": "Hạng tử đồng dạng",
+    "thu-gon-da-thuc": "Thu gọn đa thức",
+    "cong-tru-da-thuc": "Cộng – trừ đa thức",
+    "bo-ngoac-dau": "Bỏ ngoặc và dấu",
+    "tinh-phan-phoi": "Tính phân phối",
+    "nhan-bieu-thuc": "Nhân biểu thức",
+    "chia-da-thuc-cho-don-thuc": "Chia đa thức cho đơn thức",
+    "tinh-gia-tri-bieu-thuc": "Tính giá trị biểu thức"
+  },
+  "policy": {
+    "feedback": "after_submit",
+    "hints": false,
+    "tutor": false,
+    "hard_gate": false,
+    "target_minutes": 20,
+    "allow_partial_submit": true
+  },
+  "readiness": {
+    "ready_threshold": 0.8,
+    "minimum_answered_ratio": 0.8,
+    "hard_gate": false,
+    "states": [
+      "READY",
+      "REVIEW_RECOMMENDED",
+      "MORE_EVIDENCE_NEEDED"
+    ]
+  },
+  "items": [
+    {
+      "id": "ALG04READY_001",
+      "type": "mcq",
+      "skill": "nhan-biet-don-thuc",
+      "points": 1,
+      "question": "Biểu thức nào là đơn thức đã thu gọn?",
+      "options": [
+        "\\(-3x^2y\\)",
+        "\\(2x+y\\)",
+        "\\(x^2\\cdot3x\\)",
+        "\\(1/x\\)"
+      ],
+      "answer": 0,
+      "explanation": "-3x^2y đã ở dạng tích thu gọn với số mũ nguyên không âm."
+    },
+    {
+      "id": "ALG04READY_002",
+      "type": "mcq",
+      "skill": "he-so-bac",
+      "points": 1,
+      "question": "Sau khi thu gọn, bậc của \\(4x^3-4x^3+2x^2-x+1\\) là:",
+      "options": [
+        "2",
+        "3",
+        "1",
+        "0"
+      ],
+      "answer": 0,
+      "explanation": "Hai hạng tử bậc 3 triệt tiêu, còn đa thức bậc 2.",
+      "supporting_skills": [
+        "thu-gon-da-thuc"
+      ]
+    },
+    {
+      "id": "ALG04READY_003",
+      "type": "mcq",
+      "skill": "hang-tu-dong-dang",
+      "points": 1,
+      "question": "Hạng tử nào đồng dạng với \\(5a^2b\\)?",
+      "options": [
+        "\\(-3a^2b\\)",
+        "\\(5ab^2\\)",
+        "\\(a^2\\)",
+        "\\(a^3b\\)"
+      ],
+      "answer": 0,
+      "explanation": "Hạng tử đồng dạng có cùng phần biến a^2b."
+    },
+    {
+      "id": "ALG04READY_004",
+      "type": "mcq",
+      "skill": "thu-gon-da-thuc",
+      "points": 1,
+      "question": "Thu gọn \\(3x^2-2x+x^2+5x-1\\).",
+      "options": [
+        "\\(4x^2+3x-1\\)",
+        "\\(4x^2+7x-1\\)",
+        "\\(2x^2+3x-1\\)",
+        "\\(4x^2+3x+1\\)"
+      ],
+      "answer": 0,
+      "explanation": "Gộp các hạng tử đồng dạng."
+    },
+    {
+      "id": "ALG04READY_005",
+      "type": "mcq",
+      "skill": "bo-ngoac-dau",
+      "points": 1,
+      "question": "Rút gọn \\((2x+1)-(x-3)\\).",
+      "options": [
+        "\\(x+4\\)",
+        "\\(x-2\\)",
+        "\\(3x-2\\)",
+        "\\(x-4\\)"
+      ],
+      "answer": 0,
+      "explanation": "Dấu trừ đổi dấu toàn bộ ngoặc thứ hai.",
+      "supporting_skills": [
+        "cong-tru-da-thuc"
+      ]
+    },
+    {
+      "id": "ALG04READY_006",
+      "type": "mcq",
+      "skill": "cong-tru-da-thuc",
+      "points": 1,
+      "question": "Cho \\(A=2x^2-x\\), \\(B=x^2+4x\\). \\(A+B\\) bằng:",
+      "options": [
+        "\\(3x^2+3x\\)",
+        "\\(3x^2-5x\\)",
+        "\\(x^2+3x\\)",
+        "\\(3x^2+5x\\)"
+      ],
+      "answer": 0,
+      "explanation": "Cộng các hạng tử đồng dạng."
+    },
+    {
+      "id": "ALG04READY_007",
+      "type": "mcq",
+      "skill": "tinh-phan-phoi",
+      "points": 1,
+      "question": "Khai triển \\(-2x(x-3)\\).",
+      "options": [
+        "\\(-2x^2+6x\\)",
+        "\\(-2x^2-6x\\)",
+        "\\(2x^2-6x\\)",
+        "\\(-2x^2+3\\)"
+      ],
+      "answer": 0,
+      "explanation": "Nhân -2x với từng hạng tử."
+    },
+    {
+      "id": "ALG04READY_008",
+      "type": "mcq",
+      "skill": "nhan-bieu-thuc",
+      "points": 1,
+      "question": "Khai triển \\((x+2)(x-1)\\).",
+      "options": [
+        "\\(x^2+x-2\\)",
+        "\\(x^2-x-2\\)",
+        "\\(x^2+2x-1\\)",
+        "\\(x^2-2\\)"
+      ],
+      "answer": 0,
+      "explanation": "Nhân từng hạng tử rồi thu gọn.",
+      "supporting_skills": [
+        "tinh-phan-phoi"
+      ]
+    },
+    {
+      "id": "ALG04READY_009",
+      "type": "mcq",
+      "skill": "chia-da-thuc-cho-don-thuc",
+      "points": 1,
+      "question": "Thực hiện \\((6x^3-9x^2):3x\\), \\(x\\ne0\\).",
+      "options": [
+        "\\(2x^2-3x\\)",
+        "\\(2x^2-3\\)",
+        "\\(3x^2-3x\\)",
+        "\\(2x-3x\\)"
+      ],
+      "answer": 0,
+      "explanation": "Chia từng hạng tử cho 3x."
+    },
+    {
+      "id": "ALG04READY_010",
+      "type": "mcq",
+      "skill": "tinh-gia-tri-bieu-thuc",
+      "points": 1,
+      "question": "Giá trị của \\(x^2-2x+3\\) tại \\(x=-2\\) là:",
+      "options": [
+        "11",
+        "3",
+        "-5",
+        "7"
+      ],
+      "answer": 0,
+      "explanation": "(-2)^2-2(-2)+3=4+4+3=11."
+    }
+  ],
+  "next_topic": {
+    "id": "05-7-hang-dang-thuc",
+    "title": "Chuyên đề 05 – 7 Hằng đẳng thức đáng nhớ"
+  }
+}

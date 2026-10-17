@@ -1,0 +1,128 @@
+{
+  "protocol_version": "2.0",
+  "packet_id": "STA21-GEMINI-AUTHOR-001",
+  "task_id": "STA21-AUTHOR-001",
+  "context_version": "1.0.39",
+  "from": "CHATGPT",
+  "to": "GEMINI",
+  "mode": "AUTHOR",
+  "scope": {
+    "topic_id": "21-thong-ke",
+    "title": "Thống kê và thu thập dữ liệu",
+    "layer": "KNTT-Core",
+    "batch_size": 12,
+    "skills": [
+      {
+        "id": "du-lieu-phan-loai",
+        "count": 4,
+        "grades": [
+          6,
+          7
+        ],
+        "focus": "Distinguish numerical/categorical values; avoid confusing a variable name with its observed value."
+      },
+      {
+        "id": "thu-thap-du-lieu",
+        "count": 4,
+        "grades": [
+          6,
+          7,
+          8
+        ],
+        "focus": "Choose methods fit for a measurable question, observation time, population and recording accuracy."
+      },
+      {
+        "id": "doc-bieu-do-cot",
+        "count": 4,
+        "grades": [
+          6,
+          8
+        ],
+        "focus": "Read actual numerical values, units and comparisons from complete text-specified bar-chart datasets."
+      }
+    ],
+    "id_range": "STA21NEW_001 through STA21NEW_012 (draft IDs; ChatGPT normalizes final IDs)",
+    "excluded": [
+      "kiem-tra-chat-luong",
+      "mau-thien-lech",
+      "du-lieu-ghep-nhom",
+      "tan-suat",
+      "other skills outside batch"
+    ]
+  },
+  "source_lock": {
+    "source_of_truth": [
+      "docs/assets/data/practice/21-thong-ke-v1.manifest.json",
+      "docs/assets/data/practice/21-thong-ke-v1-01.json",
+      "docs/assets/data/practice/21-thong-ke-v1-02.json",
+      "docs/assets/data/practice/21-thong-ke-v1-03.json",
+      "docs/assets/data/practice/21-thong-ke-v1-04.json",
+      "docs/assets/data/curriculum/kntt-grade6-map.json",
+      "docs/assets/data/curriculum/kntt-grade7-map.json",
+      "docs/assets/data/curriculum/kntt-grade8-map.json",
+      "docs/assets/data/curriculum/golden-template-v1.json"
+    ],
+    "existing_bank_count": 120,
+    "rule": "Use source bundle as authoritative: reject duplicate or near-duplicate existing questions, preserve exact skill IDs and Core mapping; proposed refinements not auto promoted."
+  },
+  "deliverable": {
+    "format": "JSON object",
+    "result_packet_id": "STA21-GEMINI-AUTHOR-001-RESULT",
+    "fields": [
+      "packet_id",
+      "status",
+      "questions",
+      "editorial_notes",
+      "uncertainties"
+    ],
+    "question_shape": {
+      "id": "STA21NEW_001",
+      "question": "Vietnamese question with all necessary data",
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "21-thong-ke",
+        "skill": [
+          "du-lieu-phan-loai"
+        ],
+        "type": "specific-question-type",
+        "layer": "KNTT-Core"
+      },
+      "difficulty": "basic | intermediate | advanced",
+      "explanation": "full student-facing explanation",
+      "hints": [
+        "short conceptual hint",
+        "more concrete hint without giving answer"
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      },
+      "author_check": "explicit calculation or unique-answer check"
+    },
+    "constraints": [
+      "12 items exactly, 4 per whitelisted skill; 4 unique answer options and exactly one correct answer; answer integer 0..3, vary correct position; no ambiguous chart values or reading diagrams to scale.",
+      "At least 4 tasks interpret a realistic dataset, at least 3 check a common misconception with plausible distractors.",
+      "No new diagram asset needed in this first batch; for bar-chart items state the entire categorical data table within the question and use correct units.",
+      "Do not invent statistics or claim survey facts are real: label small datasets hypothetical.",
+      "Explanations show values/operation and units; make errors diagnostically useful.",
+      "Every scored item has exactly one assessed skill. No cross-credit for supporting skills.",
+      "Keep hints in author draft only; these will not be attached to Core Readiness; this batch is interactive Practice Bank only.",
+      "Do not change or claim to have committed repository files; return only one complete JSON packet."
+    ],
+    "acceptance": "AUTHOR_DRAFT_PENDING_CHATGPT_QA"
+  },
+  "source_bundle_url": "https://tma2015.github.io/roadmap-toan-thcs/assets/data/collaboration/exports/sta21-gemini-author-001.json"
+}

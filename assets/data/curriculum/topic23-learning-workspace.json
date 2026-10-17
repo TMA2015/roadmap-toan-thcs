@@ -1,0 +1,316 @@
+{
+  "schema": "roadmap-topic-learning-workspace-v1",
+  "topic": "23-xac-suat",
+  "title": "Xác suất",
+  "core_progress_policy": {
+    "layer": "KNTT-Core",
+    "rule": "Only five grade-mapped Core cards; Core-Support and Entrance10 never gate Core."
+  },
+  "cards": [
+    {
+      "id": "prob23-core-1",
+      "order": 1,
+      "title": "Kết quả có thể, sự kiện và xác suất thực nghiệm",
+      "kntt_lessons": [
+        "Lớp 6: Bài 42–43"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "xac-suat-thuc-nghiem"
+      ],
+      "prerequisites": [],
+      "micro_practice": [
+        "PRO23MICRO_001",
+        "PRO23MICRO_002",
+        "PRO23MICRO_003",
+        "PRO23MICRO_018",
+        "PRO23MICRO_019",
+        "PRO23MICRO_020"
+      ],
+      "teaching_copy": {
+        "key_idea": "Trong một trò chơi hoặc thí nghiệm, trước hết ta liệt kê các kết quả có thể xảy ra. Một sự kiện là điều ta quan tâm; sự kiện xảy ra khi kết quả nhận được thỏa điều mô tả. Khi lặp lại thí nghiệm nhiều lần, xác suất thực nghiệm của một sự kiện bằng số lần sự kiện xảy ra chia cho tổng số lần thực hiện.",
+        "worked_example": {
+          "problem": "Gieo một xúc xắc sáu mặt. a) Nêu các kết quả có thể. b) Xét sự kiện “số chấm lớn hơn 4”; những kết quả nào làm sự kiện xảy ra? c) Nếu gieo 20 lần và sự kiện xảy ra 7 lần thì xác suất thực nghiệm của sự kiện bằng bao nhiêu?",
+          "solution": "a) Các kết quả có thể là 1, 2, 3, 4, 5, 6. b) Sự kiện xảy ra khi kết quả là 5 hoặc 6. c) Xác suất thực nghiệm là 7/20."
+        },
+        "misconception": "Không nhầm một kết quả cụ thể với một sự kiện: một sự kiện có thể xảy ra bởi một hoặc nhiều kết quả. Cũng không dùng số kết quả có thể để thay cho số lần sự kiện thực sự xảy ra khi tính xác suất thực nghiệm.",
+        "summary": "Bài 42: xác định kết quả có thể và nhận biết khi một sự kiện xảy ra. Bài 43: sau nhiều lần thử, dùng tần số xảy ra thực tế để tính xác suất thực nghiệm."
+      },
+      "lesson_local_concepts": [
+        {
+          "id": "ket-qua-co-the",
+          "label": "Kết quả có thể",
+          "family_id": "PROB-EVENT",
+          "role": "LESSON_LOCAL_CONCEPT",
+          "grade": 6,
+          "lesson": "Bài 42"
+        },
+        {
+          "id": "su-kien-don-gian",
+          "label": "Sự kiện đơn giản",
+          "family_id": "PROB-EVENT",
+          "role": "LESSON_LOCAL_CONCEPT",
+          "grade": 6,
+          "lesson": "Bài 42"
+        }
+      ]
+    },
+    {
+      "id": "prob23-core-2",
+      "order": 2,
+      "title": "Biến cố và các loại biến cố",
+      "kntt_lessons": [
+        "Lớp 7: Bài 29"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "bien-co",
+        "bien-co-chac-chan-khong-the"
+      ],
+      "prerequisites": [],
+      "micro_practice": [
+        "PRO23MICRO_004",
+        "PRO23MICRO_005",
+        "PRO23MICRO_006"
+      ],
+      "teaching_copy": {
+        "key_idea": "Biến cố là hiện tượng có thể hoặc không thể xảy ra dựa trên một phép thử. Biến cố chắc chắn luôn xảy ra, còn biến cố không thể không bao giờ xảy ra.",
+        "worked_example": {
+          "problem": "Gieo xúc xắc sáu mặt. Phân loại các biến cố: số chấm lớn hơn 0; số chấm bằng 7; số chấm lẻ.",
+          "solution": "Lớn hơn 0 là chắc chắn; bằng 7 là không thể; số chấm lẻ là ngẫu nhiên."
+        },
+        "misconception": "Đôi khi học sinh nhầm lẫn giữa một biến cố ngẫu nhiên có xác suất thấp với biến cố không thể.",
+        "summary": "Liệt kê chính xác không gian các kết quả có thể của phép thử sẽ giúp ta phân loại đúng tính chất của biến cố."
+      }
+    },
+    {
+      "id": "prob23-core-3",
+      "order": 3,
+      "title": "Xác suất của biến cố đơn giản",
+      "kntt_lessons": [
+        "Lớp 7: Bài 30"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "xac-suat-co-dien",
+        "kiem-tra-xac-suat"
+      ],
+      "prerequisites": [],
+      "micro_practice": [
+        "PRO23MICRO_007",
+        "PRO23MICRO_008",
+        "PRO23MICRO_009",
+        "PRO23MICRO_016"
+      ],
+      "teaching_copy": {
+        "key_idea": "Trong một phép thử có các kết quả đồng khả năng, xác suất của một biến cố bằng số kết quả thuận lợi cho biến cố đó chia cho tổng số kết quả có thể xảy ra.",
+        "worked_example": {
+          "problem": "Có 10 thẻ giống nhau, đánh số từ 1 đến 10, trộn đều rồi rút một thẻ. Xác suất rút số chia hết cho 5 bằng bao nhiêu?",
+          "solution": "Hai thẻ ghi 5 và 10 thuận lợi trong 10 thẻ đồng khả năng. Xác suất bằng 2/10 = 1/5."
+        },
+        "misconception": "Học sinh áp dụng công thức tỉ số ngay cả khi các kết quả không đồng khả năng (ví dụ: vòng quay có các ô to nhỏ khác nhau).",
+        "summary": "Xác định rõ điều kiện đồng khả năng, đếm chính xác số kết quả thuận lợi, rồi lập tỉ số để tìm xác suất cổ điển."
+      }
+    },
+    {
+      "id": "prob23-core-4",
+      "order": 4,
+      "title": "Phép thử và kết quả thuận lợi",
+      "kntt_lessons": [
+        "Lớp 8: Bài 30"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "phep-thu-ngau-nhien",
+        "bien-co"
+      ],
+      "prerequisites": [],
+      "micro_practice": [
+        "PRO23MICRO_010",
+        "PRO23MICRO_011",
+        "PRO23MICRO_012"
+      ],
+      "teaching_copy": {
+        "key_idea": "Phép thử ngẫu nhiên là hành động mà ta không biết trước chắc chắn kết quả. Kết quả thuận lợi là kết quả cụ thể khiến cho một biến cố xảy ra.",
+        "worked_example": {
+          "problem": "Một vòng quay có năm ô ghi 1, 2, 3, 4, 5. Biến cố A là dừng ở ô ghi số chẵn. Các kết quả thuận lợi của A là gì?",
+          "solution": "Các số chẵn trên vòng quay là 2 và 4, nên kết quả thuận lợi là {2; 4}."
+        },
+        "misconception": "Liệt kê thừa kết quả thuận lợi do hiểu sai định nghĩa toán học (ví dụ: nhầm số 1 là số nguyên tố).",
+        "summary": "Cần đọc kỹ cả yêu cầu của phép thử ngẫu nhiên và điều kiện mô tả biến cố để tìm chính xác tập kết quả thuận lợi."
+      }
+    },
+    {
+      "id": "prob23-core-5",
+      "order": 5,
+      "title": "Xác suất theo tỉ số và đối chiếu thực nghiệm",
+      "kntt_lessons": [
+        "Lớp 8: Bài 31–32"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "xac-suat-co-dien",
+        "kiem-tra-xac-suat",
+        "xac-suat-thuc-nghiem"
+      ],
+      "prerequisites": [],
+      "micro_practice": [
+        "PRO23MICRO_013",
+        "PRO23MICRO_014",
+        "PRO23MICRO_015",
+        "PRO23MICRO_017"
+      ],
+      "teaching_copy": {
+        "key_idea": "Xác suất thực nghiệm là tỉ số tính từ thực tế quan sát được. Với số lần thử lớn, nó thường tiến gần đến xác suất lý thuyết (cổ điển), nhưng với mẫu hữu hạn, hai giá trị này có thể khác biệt.",
+        "worked_example": {
+          "problem": "Xác suất theo mô hình của một cú ném trúng là 0,5. Trong 10 lần ném có 6 lần trúng. Xác suất thực nghiệm bằng bao nhiêu?",
+          "solution": "Số lần trúng là 6 trong 10 lần ném, nên xác suất thực nghiệm là 6/10 = 0,6. Với số lần thử hữu hạn, hai giá trị không bắt buộc bằng nhau."
+        },
+        "misconception": "Lầm tưởng xác suất lý thuyết 1/2 nghĩa là hễ cứ thực hiện 2 lần thì chắc chắn 1 lần thành công.",
+        "summary": "Xác suất mô hình giúp ta ước lượng xu hướng dài hạn, trong khi kết quả thực nghiệm phản ánh cụ thể những gì đã xảy ra ngẫu nhiên."
+      }
+    },
+    {
+      "id": "prob23-core-g9-6",
+      "order": 6,
+      "title": "Không gian mẫu nhiều bước và sơ đồ cây",
+      "kntt_lessons": [
+        "Lớp 9: Bài 25"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "khong-gian-mau",
+        "bien-co",
+        "xac-suat-co-dien"
+      ],
+      "prerequisites": [
+        "phep-thu-ngau-nhien"
+      ],
+      "micro_practice": [
+        "PRO23MICRO_021",
+        "PRO23MICRO_022",
+        "PRO23MICRO_023",
+        "PRO23MICRO_024"
+      ],
+      "teaching_copy": {
+        "key_idea": "Với phép thử nhiều bước, không gian mẫu gồm mọi kết quả có thể của toàn bộ chuỗi bước. Có thể dùng bảng hoặc sơ đồ cây để liệt kê có hệ thống, tránh bỏ sót hay đếm trùng. Khi các kết quả của không gian mẫu là đồng khả năng, xác suất của một biến cố bằng số kết quả thuận lợi chia cho tổng số kết quả có thể. Khi các bước độc lập và mỗi bước có số kết quả xác định, số kết quả toàn bộ có thể tính bằng quy tắc nhân.",
+        "worked_example": {
+          "problem": "Tung một đồng xu cân đối hai lần. Hãy lập không gian mẫu.",
+          "solution": "Mỗi lần có hai kết quả N (ngửa) hoặc S (sấp). Không gian mẫu là {NN, NS, SN, SS}; có 4 kết quả. Sơ đồ cây có hai nhánh ở lần đầu và từ mỗi nhánh lại tách thành hai nhánh ở lần hai."
+        },
+        "misconception": "Chỉ liệt kê kết quả của từng bước riêng lẻ thay vì kết quả của cả chuỗi, hoặc coi (1;2) và (2;1) là một khi thứ tự hai lần/bộ xúc xắc tạo ra kết quả khác nhau.",
+        "summary": "Mô tả từng bước, liệt kê toàn bộ đường đi bằng bảng/sơ đồ cây, rồi xác định biến cố trong không gian mẫu đầy đủ."
+      },
+      "lesson_local_problem_types": [
+        {
+          "id": "dong-xu-nhieu-lan",
+          "label": "Tung đồng xu nhiều lần",
+          "role": "LESSON_LOCAL_PROBLEM_TYPE",
+          "grade": 9,
+          "lesson": "Bài 25"
+        },
+        {
+          "id": "xuc-xac-hai-lan",
+          "label": "Gieo hai xúc xắc / gieo xúc xắc hai bước",
+          "role": "LESSON_LOCAL_PROBLEM_TYPE",
+          "grade": 9,
+          "lesson": "Bài 25"
+        },
+        {
+          "id": "so-do-cay",
+          "label": "Sơ đồ cây",
+          "role": "LESSON_LOCAL_PROBLEM_TYPE",
+          "grade": 9,
+          "lesson": "Bài 25"
+        },
+        {
+          "id": "nhieu-buoc-doc-lap",
+          "label": "Phép thử nhiều bước độc lập",
+          "role": "LESSON_LOCAL_PROBLEM_TYPE",
+          "grade": 9,
+          "lesson": "Bài 25"
+        }
+      ],
+      "authoring_review": {
+        "packet_id": "MATH-KNTT-G9-REPAIR-W1-R1-20261009",
+        "status": "PASS",
+        "method": "INDEPENDENT_NOTEBOOKLM_CONTENT_REVIEW",
+        "verdict": "PASS",
+        "clearance": "G9_REPAIR_W1_R1_CONTENT_REVIEW_COMPLETE"
+      }
+    },
+    {
+      "id": "prob23-core-g9-7",
+      "order": 7,
+      "title": "Xác suất trong mô hình nhiều bước và không hoàn lại",
+      "kntt_lessons": [
+        "Lớp 9: Bài 26"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "xac-suat-co-dien",
+        "kiem-tra-xac-suat"
+      ],
+      "prerequisites": [
+        "khong-gian-mau",
+        "bien-co"
+      ],
+      "micro_practice": [
+        "PRO23MICRO_025",
+        "PRO23MICRO_026",
+        "PRO23MICRO_027",
+        "PRO23MICRO_028"
+      ],
+      "teaching_copy": {
+        "key_idea": "Sau khi lập đúng không gian mẫu, xác suất cổ điển được tính bằng số kết quả thuận lợi chia cho tổng số kết quả đồng khả năng. Với phép thử không hoàn lại, thành phần còn lại thay đổi sau mỗi lần rút nên xác suất ở bước sau phải cập nhật theo điều kiện đã xảy ra trước đó.",
+        "worked_example": {
+          "problem": "Hộp có 3 thẻ đỏ và 2 thẻ xanh. Rút liên tiếp 2 thẻ không hoàn lại. Xác suất cả hai thẻ đều đỏ bằng bao nhiêu?",
+          "solution": "Lần đầu rút đỏ có xác suất 3/5. Khi đã rút một thẻ đỏ, còn 2 thẻ đỏ trong 4 thẻ nên xác suất lần hai đỏ là 2/4. Vì vậy xác suất cả hai đỏ là (3/5)×(2/4)=3/10."
+        },
+        "misconception": "Dùng lại xác suất của lần rút đầu cho lần rút sau trong mô hình không hoàn lại, hoặc áp dụng công thức n(A)/n(Ω) khi các kết quả đang xét không đồng khả năng.",
+        "summary": "Với mô hình nhiều bước: lập không gian mẫu/nhánh đúng, cập nhật điều kiện sau mỗi bước, rồi tính và kiểm tra xác suất trong [0;1]."
+      },
+      "lesson_local_problem_types": [
+        {
+          "id": "khong-hoan-lai",
+          "label": "Lấy mẫu không hoàn lại",
+          "role": "LESSON_LOCAL_PROBLEM_TYPE",
+          "grade": 9,
+          "lesson": "Bài 26"
+        },
+        {
+          "id": "nhieu-buoc-doc-lap",
+          "label": "Phép thử nhiều bước độc lập",
+          "role": "LESSON_LOCAL_PROBLEM_TYPE",
+          "grade": 9,
+          "lesson": "Bài 26"
+        }
+      ],
+      "authoring_review": {
+        "packet_id": "MATH-KNTT-G9-REPAIR-W1-R1-20261009",
+        "status": "PASS",
+        "method": "INDEPENDENT_NOTEBOOKLM_CONTENT_REVIEW",
+        "verdict": "PASS",
+        "clearance": "G9_REPAIR_W1_R1_CONTENT_REVIEW_COMPLETE"
+      }
+    }
+  ],
+  "extensions": [
+    {
+      "id": "prob23-ext-1",
+      "layer": "Core-Support",
+      "title": "Không gian mẫu, biến cố đối và đồng xu nhiều lần – không chấm Core",
+      "gates_core": false
+    },
+    {
+      "id": "prob23-ext-2",
+      "layer": "Entrance10",
+      "title": "Hai xúc xắc, sơ đồ cây và bài toán nhiều bước – không chấm Core",
+      "gates_core": false
+    }
+  ],
+  "micro_practice_bank": "assets/data/practice/23-xac-suat-micro-v1.json",
+  "qa_notes": [
+    "Seven-gap R1 PASS: appended PRO23MICRO_016–017; original 15 records and learner history remain immutable."
+  ]
+}

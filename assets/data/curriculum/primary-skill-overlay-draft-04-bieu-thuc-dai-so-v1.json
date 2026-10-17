@@ -1,0 +1,2593 @@
+{
+  "schema": "primary-skill-overlay-draft-v1",
+  "status": "review_only_not_consumed_by_runtime",
+  "topic": "04-bieu-thuc-dai-so",
+  "source_manifest": "docs/assets/data/practice/04-bieu-thuc-dai-so-v2.manifest.json",
+  "source_manifest_blob_sha": "bd0ebbfa60402d321d06f7ca6195e56d67f589bb",
+  "source_inventory_snapshot_sha": "dc58cd013ea7070219319f2d0c2c0194020af3a1",
+  "source_files": {
+    "04-bieu-thuc-dai-so-v2-01.json": {
+      "github_blob_sha": "216a464a1935bd5d1d00147e9386eb2ee224f27b",
+      "question_count": 30
+    },
+    "04-bieu-thuc-dai-so-v2-02.json": {
+      "github_blob_sha": "8a84956d7c1bfa718e1b38943619395113068fb6",
+      "question_count": 30
+    },
+    "04-bieu-thuc-dai-so-v2-03.json": {
+      "github_blob_sha": "42d57ec1c5a65cf331eb07d7b681b479dc203775",
+      "question_count": 30
+    },
+    "04-bieu-thuc-dai-so-v2-04.json": {
+      "github_blob_sha": "92f879459581ac21a0bf80ddb369efbbcb07088f",
+      "question_count": 30
+    },
+    "04-bieu-thuc-dai-so-v2-05.json": {
+      "github_blob_sha": "df7ea6d85961dc264696a0a1400820e5078d5ce5",
+      "question_count": 12
+    }
+  },
+  "rules": "Explicit original-tag combinations and small item exceptions, no first-tag default on multi-tag items; candidate != academic approval.",
+  "limitations": [
+    "This is metadata, not item-by-item mathematical validation",
+    "No changes to question banks, learner history, knowledge graph, KNTT layer or published practice engine",
+    "Needs full question-level and curriculum QA before any counted mastery"
+  ],
+  "summary": {
+    "questions": 132,
+    "proposed_primary": 132,
+    "needs_review": 2,
+    "no_primary": 0,
+    "original_tags_preserved": true
+  },
+  "items": [
+    {
+      "id": "ALG04V2_001",
+      "source_file": "04-bieu-thuc-dai-so-v2-01.json",
+      "original_skill_tags": [
+        "nhan-biet-don-thuc",
+        "he-so-bac"
+      ],
+      "proposed_assessed_skill": "he-so-bac",
+      "roles": {
+        "supporting_skills": [
+          "nhan-biet-don-thuc"
+        ],
+        "methods": [],
+        "contexts": [],
+        "categories": []
+      },
+      "review_state": "pattern_candidate_only",
+      "basis": "exact_pattern_candidate",
+      "flags": []
+    },
+    {
+      "id": "ALG04V2_002",
+      "source_file": "04-bieu-thuc-dai-so-v2-01.json",
+      "original_skill_tags": [
+        "nhan-biet-don-thuc",
+        "he-so-bac"
+      ],
+      "proposed_assessed_skill": "he-so-bac",
+      "roles": {
+        "supporting_skills": [
+          "nhan-biet-don-thuc"
+        ],
+        "methods": [],
+        "contexts": [],
+        "categories": []
+      },
+      "review_state": "pattern_candidate_only",
+      "basis": "exact_pattern_candidate",
+      "flags": []
+    },
+    {
+      "id": "ALG04V2_003",
+      "source_file": "04-bieu-thuc-dai-so-v2-01.json",
+      "original_skill_tags": [
+        "nhan-biet-don-thuc",
+        "he-so-bac"
+      ],
+      "proposed_assessed_skill": "he-so-bac",
+      "roles": {
+        "supporting_skills": [
+          "nhan-biet-don-thuc"
+        ],
+        "methods": [],
+        "contexts": [],
+        "categories": []
+      },
+      "review_state": "pattern_candidate_only",
+      "basis": "exact_pattern_candidate",
+      "flags": []
+    },
+    {
+      "id": "ALG04V2_004",
+      "source_file": "04-bieu-thuc-dai-so-v2-01.json",
+      "original_skill_tags": [
+        "nhan-biet-don-thuc",
+        "he-so-bac"
+      ],
+      "proposed_assessed_skill": "he-so-bac",
+      "roles": {
+        "supporting_skills": [
+          "nhan-biet-don-thuc"
+        ],
+        "methods": [],
+        "contexts": [],
+        "categories": []
+      },
+      "review_state": "pattern_candidate_only",
+      "basis": "exact_pattern_candidate",
+      "flags": []
+    },
+    {
+      "id": "ALG04V2_005",
+      "source_file": "04-bieu-thuc-dai-so-v2-01.json",
+      "original_skill_tags": [
+        "nhan-biet-don-thuc"
+      ],
+      "proposed_assessed_skill": "nhan-biet-don-thuc",
+      "roles": {
+        "supporting_skills": [],
+        "methods": [],
+        "contexts": [],
+        "categories": []
+      },
+      "review_state": "pattern_candidate_only",
+      "basis": "exact_pattern_candidate",
+      "flags": []
+    },
+    {
+      "id": "ALG04V2_006",
+      "source_file": "04-bieu-thuc-dai-so-v2-01.json",
+      "original_skill_tags": [
+        "nhan-biet-da-thuc"
+      ],
+      "proposed_assessed_skill": "nhan-biet-da-thuc",
+      "roles": {
+        "supporting_skills": [],
+        "methods": [],
+        "contexts": [],
+        "categories": []
+      },
+      "review_state": "pattern_candidate_only",
+      "basis": "exact_pattern_candidate",
+      "flags": []
+    },
+    {
+      "id": "ALG04V2_007",
+      "source_file": "04-bieu-thuc-dai-so-v2-01.json",
+      "original_skill_tags": [
+        "nhan-biet-da-thuc",
+        "he-so-bac"
+      ],
+      "proposed_assessed_skill": "he-so-bac",
+      "roles": {
+        "supporting_skills": [
+          "nhan-biet-da-thuc"
+        ],
+        "methods": [],
+        "contexts": [],
+        "categories": []
+      },
+      "review_state": "pattern_candidate_only",
+      "basis": "exact_pattern_candidate",
+      "flags": []
+    },
+    {
+      "id": "ALG04V2_008",
+      "source_file": "04-bieu-thuc-dai-so-v2-01.json",
+      "original_skill_tags": [
+        "nhan-biet-da-thuc",
+        "he-so-bac"
+      ],
+      "proposed_assessed_skill": "he-so-bac",
+      "roles": {
+        "supporting_skills": [
+          "nhan-biet-da-thuc"
+        ],
+        "methods": [],
+        "contexts": [],
+        "categories": []
+      },
+      "review_state": "pattern_candidate_only",
+      "basis": "exact_pattern_candidate",
+      "flags": []
+    },
+    {
+      "id": "ALG04V2_009",
+      "source_file": "04-bieu-thuc-dai-so-v2-01.json",
+      "original_skill_tags": [
+        "nhan-biet-da-thuc"
+      ],
+      "proposed_assessed_skill": "nhan-biet-da-thuc",
+      "roles": {
+        "supporting_skills": [],
+        "methods": [],
+        "contexts": [],
+        "categories": []
+      },
+      "review_state": "needs_item_or_layer_review",
+      "basis": "exact_pattern_candidate",
+      "flags": [
+        "broad_label_free_term"
+      ]
+    },
+    {
+      "id": "ALG04V2_010",
+      "source_file": "04-bieu-thuc-dai-so-v2-01.json",
+      "original_skill_tags": [
+        "nhan-biet-don-thuc",
+        "he-so-bac"
+      ],
+      "proposed_assessed_skill": "nhan-biet-don-thuc",
+      "roles": {
+        "supporting_skills": [
+          "he-so-bac"
+        ],
+        "methods": [],
+        "contexts": [],
+        "categories": []
+      },
+      "review_state": "needs_item_or_layer_review",
+      "basis": "exact_pattern_candidate",
+      "flags": [
+        "tag_he_so_bac_not_actual_target"
+      ]
+    },
+    {
+      "id": "ALG04V2_011",
+      "source_file": "04-bieu-thuc-dai-so-v2-01.json",
+      "original_skill_tags": [
+        "nhan-biet-da-thuc",
+        "he-so-bac",
+        "thu-gon-da-thuc"
+      ],
+      "proposed_assessed_skill": "he-so-bac",
+      "roles": {
+        "supporting_skills": [
+          "nhan-biet-da-thuc",
+          "thu-gon-da-thuc"
+        ],
+        "methods": [],
+        "contexts": [],
+        "categories": []
+      },
+      "review_state": "pattern_candidate_only",
+      "basis": "exact_pattern_candidate",
+      "flags": []
+    },
+    {
+      "id": "ALG04V2_012",
+      "source_file": "04-bieu-thuc-dai-so-v2-01.json",
+      "original_skill_tags": [
+        "nhan-biet-da-thuc",
+        "thu-gon-da-thuc"
+      ],
+      "proposed_assessed_skill": "thu-gon-da-thuc",
+      "roles": {
+        "supporting_skills": [
+          "nhan-biet-da-thuc"
+        ],
+        "methods": [],
+        "contexts": [],
+        "categories": []
+      },
+      "review_state": "pattern_candidate_only",
+      "basis": "exact_pattern_candidate",
+      "flags": []
+    },
+    {
+      "id": "ALG04V2_013",
+      "source_file": "04-bieu-thuc-dai-so-v2-01.json",
+      "original_skill_tags": [
+        "hang-tu-dong-dang"
+      ],
+      "proposed_assessed_skill": "hang-tu-dong-dang",
+      "roles": {
+        "supporting_skills": [],
+        "methods": [],
+        "contexts": [],
+        "categories": []
+      },
+      "review_state": "pattern_candidate_only",
+      "basis": "exact_pattern_candidate",
+      "flags": []
+    },
+    {
+      "id": "ALG04V2_014",
+      "source_file": "04-bieu-thuc-dai-so-v2-01.json",
+      "original_skill_tags": [
+        "hang-tu-dong-dang"
+      ],
+      "proposed_assessed_skill": "hang-tu-dong-dang",
+      "roles": {
+        "supporting_skills": [],
+        "methods": [],
+        "contexts": [],
+        "categories": []
+      },
+      "review_state": "pattern_candidate_only",
+      "basis": "exact_pattern_candidate",
+      "flags": []
+    },
+    {
+      "id": "ALG04V2_015",
+      "source_file": "04-bieu-thuc-dai-so-v2-01.json",
+      "original_skill_tags": [
+        "hang-tu-dong-dang"
+      ],
+      "proposed_assessed_skill": "hang-tu-dong-dang",
+      "roles": {
+        "supporting_skills": [],
+        "methods": [],
+        "contexts": [],
+        "categories": []
+      },
+      "review_state": "pattern_candidate_only",
+      "basis": "exact_pattern_candidate",
+      "flags": []
+    },
+    {
+      "id": "ALG04V2_016",
+      "source_file": "04-bieu-thuc-dai-so-v2-01.json",
+      "original_skill_tags": [
+        "hang-tu-dong-dang"
+      ],
+      "proposed_assessed_skill": "hang-tu-dong-dang",
+      "roles": {
+        "supporting_skills": [],
+        "methods": [],
+        "contexts": [],
+        "categories": []
+      },
+      "review_state": "pattern_candidate_only",
+      "basis": "exact_pattern_candidate",
+      "flags": []
+    },
+    {
+      "id": "ALG04V2_017",
+      "source_file": "04-bieu-thuc-dai-so-v2-01.json",
+      "original_skill_tags": [
+        "hang-tu-dong-dang"
+      ],
+      "proposed_assessed_skill": "hang-tu-dong-dang",
+      "roles": {
+        "supporting_skills": [],
+        "methods": [],
+        "contexts": [],
+        "categories": []
+      },
+      "review_state": "pattern_candidate_only",
+      "basis": "exact_pattern_candidate",
+      "flags": []
+    },
+    {
+      "id": "ALG04V2_018",
+      "source_file": "04-bieu-thuc-dai-so-v2-01.json",
+      "original_skill_tags": [
+        "hang-tu-dong-dang"
+      ],
+      "proposed_assessed_skill": "hang-tu-dong-dang",
+      "roles": {
+        "supporting_skills": [],
+        "methods": [],
+        "contexts": [],
+        "categories": []
+      },
+      "review_state": "pattern_candidate_only",
+      "basis": "exact_pattern_candidate",
+      "flags": []
+    },
+    {
+      "id": "ALG04V2_019",
+      "source_file": "04-bieu-thuc-dai-so-v2-01.json",
+      "original_skill_tags": [
+        "hang-tu-dong-dang"
+      ],
+      "proposed_assessed_skill": "hang-tu-dong-dang",
+      "roles": {
+        "supporting_skills": [],
+        "methods": [],
+        "contexts": [],
+        "categories": []
+      },
+      "review_state": "pattern_candidate_only",
+      "basis": "exact_pattern_candidate",
+      "flags": []
+    },
+    {
+      "id": "ALG04V2_020",
+      "source_file": "04-bieu-thuc-dai-so-v2-01.json",
+      "original_skill_tags": [
+        "hang-tu-dong-dang"
+      ],
+      "proposed_assessed_skill": "hang-tu-dong-dang",
+      "roles": {
+        "supporting_skills": [],
+        "methods": [],
+        "contexts": [],
+        "categories": []
+      },
+      "review_state": "pattern_candidate_only",
+      "basis": "exact_pattern_candidate",
+      "flags": []
+    },
+    {
+      "id": "ALG04V2_021",
+      "source_file": "04-bieu-thuc-dai-so-v2-01.json",
+      "original_skill_tags": [
+        "thu-gon-da-thuc",
+        "hang-tu-dong-dang"
+      ],
+      "proposed_assessed_skill": "thu-gon-da-thuc",
+      "roles": {
+        "supporting_skills": [
+          "hang-tu-dong-dang"
+        ],
+        "methods": [],
+        "contexts": [],
+        "categories": []
+      },
+      "review_state": "pattern_candidate_only",
+      "basis": "exact_pattern_candidate",
+      "flags": []
+    },
+    {
+      "id": "ALG04V2_022",
+      "source_file": "04-bieu-thuc-dai-so-v2-01.json",
+      "original_skill_tags": [
+        "thu-gon-da-thuc",
+        "hang-tu-dong-dang"
+      ],
+      "proposed_assessed_skill": "thu-gon-da-thuc",
+      "roles": {
+        "supporting_skills": [
+          "hang-tu-dong-dang"
+        ],
+        "methods": [],
+        "contexts": [],
+        "categories": []
+      },
+      "review_state": "pattern_candidate_only",
+      "basis": "exact_pattern_candidate",
+      "flags": []
+    },
+    {
+      "id": "ALG04V2_023",
+      "source_file": "04-bieu-thuc-dai-so-v2-01.json",
+      "original_skill_tags": [
+        "thu-gon-da-thuc",
+        "hang-tu-dong-dang"
+      ],
+      "proposed_assessed_skill": "thu-gon-da-thuc",
+      "roles": {
+        "supporting_skills": [
+          "hang-tu-dong-dang"
+        ],
+        "methods": [],
+        "contexts": [],
+        "categories": []
+      },
+      "review_state": "pattern_candidate_only",
+      "basis": "exact_pattern_candidate",
+      "flags": []
+    },
+    {
+      "id": "ALG04V2_024",
+      "source_file": "04-bieu-thuc-dai-so-v2-01.json",
+      "original_skill_tags": [
+        "thu-gon-da-thuc",
+        "hang-tu-dong-dang"
+      ],
+      "proposed_assessed_skill": "thu-gon-da-thuc",
+      "roles": {
+        "supporting_skills": [
+          "hang-tu-dong-dang"
+        ],
+        "methods": [],
+        "contexts": [],
+        "categories": []
+      },
+      "review_state": "pattern_candidate_only",
+      "basis": "exact_pattern_candidate",
+      "flags": []
+    },
+    {
+      "id": "ALG04V2_025",
+      "source_file": "04-bieu-thuc-dai-so-v2-01.json",
+      "original_skill_tags": [
+        "thu-gon-da-thuc",
+        "hang-tu-dong-dang"
+      ],
+      "proposed_assessed_skill": "thu-gon-da-thuc",
+      "roles": {
+        "supporting_skills": [
+          "hang-tu-dong-dang"
+        ],
+        "methods": [],
+        "contexts": [],
+        "categories": []
+      },
+      "review_state": "pattern_candidate_only",
+      "basis": "exact_pattern_candidate",
+      "flags": []
+    },
+    {
+      "id": "ALG04V2_026",
+      "source_file": "04-bieu-thuc-dai-so-v2-01.json",
+      "original_skill_tags": [
+        "thu-gon-da-thuc",
+        "hang-tu-dong-dang"
+      ],
+      "proposed_assessed_skill": "thu-gon-da-thuc",
+      "roles": {
+        "supporting_skills": [
+          "hang-tu-dong-dang"
+        ],
+        "methods": [],
+        "contexts": [],
+        "categories": []
+      },
+      "review_state": "pattern_candidate_only",
+      "basis": "exact_pattern_candidate",
+      "flags": []
+    },
+    {
+      "id": "ALG04V2_027",
+      "source_file": "04-bieu-thuc-dai-so-v2-01.json",
+      "original_skill_tags": [
+        "thu-gon-da-thuc",
+        "hang-tu-dong-dang"
+      ],
+      "proposed_assessed_skill": "thu-gon-da-thuc",
+      "roles": {
+        "supporting_skills": [
+          "hang-tu-dong-dang"
+        ],
+        "methods": [],
+        "contexts": [],
+        "categories": []
+      },
+      "review_state": "pattern_candidate_only",
+      "basis": "exact_pattern_candidate",
+      "flags": []
+    },
+    {
+      "id": "ALG04V2_028",
+      "source_file": "04-bieu-thuc-dai-so-v2-01.json",
+      "original_skill_tags": [
+        "thu-gon-da-thuc",
+        "hang-tu-dong-dang"
+      ],
+      "proposed_assessed_skill": "thu-gon-da-thuc",
+      "roles": {
+        "supporting_skills": [
+          "hang-tu-dong-dang"
+        ],
+        "methods": [],
+        "contexts": [],
+        "categories": []
+      },
+      "review_state": "pattern_candidate_only",
+      "basis": "exact_pattern_candidate",
+      "flags": []
+    },
+    {
+      "id": "ALG04V2_029",
+      "source_file": "04-bieu-thuc-dai-so-v2-01.json",
+      "original_skill_tags": [
+        "thu-gon-da-thuc",
+        "hang-tu-dong-dang"
+      ],
+      "proposed_assessed_skill": "thu-gon-da-thuc",
+      "roles": {
+        "supporting_skills": [
+          "hang-tu-dong-dang"
+        ],
+        "methods": [],
+        "contexts": [],
+        "categories": []
+      },
+      "review_state": "pattern_candidate_only",
+      "basis": "exact_pattern_candidate",
+      "flags": []
+    },
+    {
+      "id": "ALG04V2_030",
+      "source_file": "04-bieu-thuc-dai-so-v2-01.json",
+      "original_skill_tags": [
+        "thu-gon-da-thuc",
+        "hang-tu-dong-dang"
+      ],
+      "proposed_assessed_skill": "thu-gon-da-thuc",
+      "roles": {
+        "supporting_skills": [
+          "hang-tu-dong-dang"
+        ],
+        "methods": [],
+        "contexts": [],
+        "categories": []
+      },
+      "review_state": "pattern_candidate_only",
+      "basis": "exact_pattern_candidate",
+      "flags": []
+    },
+    {
+      "id": "ALG04V2_031",
+      "source_file": "04-bieu-thuc-dai-so-v2-02.json",
+      "original_skill_tags": [
+        "thu-gon-da-thuc",
+        "hang-tu-dong-dang"
+      ],
+      "proposed_assessed_skill": "thu-gon-da-thuc",
+      "roles": {
+        "supporting_skills": [
+          "hang-tu-dong-dang"
+        ],
+        "methods": [],
+        "contexts": [],
+        "categories": []
+      },
+      "review_state": "pattern_candidate_only",
+      "basis": "exact_pattern_candidate",
+      "flags": []
+    },
+    {
+      "id": "ALG04V2_032",
+      "source_file": "04-bieu-thuc-dai-so-v2-02.json",
+      "original_skill_tags": [
+        "thu-gon-da-thuc",
+        "hang-tu-dong-dang"
+      ],
+      "proposed_assessed_skill": "thu-gon-da-thuc",
+      "roles": {
+        "supporting_skills": [
+          "hang-tu-dong-dang"
+        ],
+        "methods": [],
+        "contexts": [],
+        "categories": []
+      },
+      "review_state": "pattern_candidate_only",
+      "basis": "exact_pattern_candidate",
+      "flags": []
+    },
+    {
+      "id": "ALG04V2_033",
+      "source_file": "04-bieu-thuc-dai-so-v2-02.json",
+      "original_skill_tags": [
+        "thu-gon-da-thuc",
+        "hang-tu-dong-dang"
+      ],
+      "proposed_assessed_skill": "thu-gon-da-thuc",
+      "roles": {
+        "supporting_skills": [
+          "hang-tu-dong-dang"
+        ],
+        "methods": [],
+        "contexts": [],
+        "categories": []
+      },
+      "review_state": "pattern_candidate_only",
+      "basis": "exact_pattern_candidate",
+      "flags": []
+    },
+    {
+      "id": "ALG04V2_034",
+      "source_file": "04-bieu-thuc-dai-so-v2-02.json",
+      "original_skill_tags": [
+        "thu-gon-da-thuc",
+        "hang-tu-dong-dang"
+      ],
+      "proposed_assessed_skill": "thu-gon-da-thuc",
+      "roles": {
+        "supporting_skills": [
+          "hang-tu-dong-dang"
+        ],
+        "methods": [],
+        "contexts": [],
+        "categories": []
+      },
+      "review_state": "pattern_candidate_only",
+      "basis": "exact_pattern_candidate",
+      "flags": []
+    },
+    {
+      "id": "ALG04V2_035",
+      "source_file": "04-bieu-thuc-dai-so-v2-02.json",
+      "original_skill_tags": [
+        "thu-gon-da-thuc",
+        "hang-tu-dong-dang"
+      ],
+      "proposed_assessed_skill": "thu-gon-da-thuc",
+      "roles": {
+        "supporting_skills": [
+          "hang-tu-dong-dang"
+        ],
+        "methods": [],
+        "contexts": [],
+        "categories": []
+      },
+      "review_state": "pattern_candidate_only",
+      "basis": "exact_pattern_candidate",
+      "flags": []
+    },
+    {
+      "id": "ALG04V2_036",
+      "source_file": "04-bieu-thuc-dai-so-v2-02.json",
+      "original_skill_tags": [
+        "thu-gon-da-thuc",
+        "hang-tu-dong-dang"
+      ],
+      "proposed_assessed_skill": "thu-gon-da-thuc",
+      "roles": {
+        "supporting_skills": [
+          "hang-tu-dong-dang"
+        ],
+        "methods": [],
+        "contexts": [],
+        "categories": []
+      },
+      "review_state": "pattern_candidate_only",
+      "basis": "exact_pattern_candidate",
+      "flags": []
+    },
+    {
+      "id": "ALG04V2_037",
+      "source_file": "04-bieu-thuc-dai-so-v2-02.json",
+      "original_skill_tags": [
+        "cong-tru-da-thuc",
+        "bo-ngoac-dau"
+      ],
+      "proposed_assessed_skill": "cong-tru-da-thuc",
+      "roles": {
+        "supporting_skills": [],
+        "methods": [
+          "bo-ngoac-dau"
+        ],
+        "contexts": [],
+        "categories": []
+      },
+      "review_state": "pattern_candidate_only",
+      "basis": "exact_pattern_candidate",
+      "flags": []
+    },
+    {
+      "id": "ALG04V2_038",
+      "source_file": "04-bieu-thuc-dai-so-v2-02.json",
+      "original_skill_tags": [
+        "cong-tru-da-thuc",
+        "bo-ngoac-dau"
+      ],
+      "proposed_assessed_skill": "cong-tru-da-thuc",
+      "roles": {
+        "supporting_skills": [],
+        "methods": [
+          "bo-ngoac-dau"
+        ],
+        "contexts": [],
+        "categories": []
+      },
+      "review_state": "pattern_candidate_only",
+      "basis": "exact_pattern_candidate",
+      "flags": []
+    },
+    {
+      "id": "ALG04V2_039",
+      "source_file": "04-bieu-thuc-dai-so-v2-02.json",
+      "original_skill_tags": [
+        "cong-tru-da-thuc",
+        "bo-ngoac-dau"
+      ],
+      "proposed_assessed_skill": "cong-tru-da-thuc",
+      "roles": {
+        "supporting_skills": [],
+        "methods": [
+          "bo-ngoac-dau"
+        ],
+        "contexts": [],
+        "categories": []
+      },
+      "review_state": "pattern_candidate_only",
+      "basis": "exact_pattern_candidate",
+      "flags": []
+    },
+    {
+      "id": "ALG04V2_040",
+      "source_file": "04-bieu-thuc-dai-so-v2-02.json",
+      "original_skill_tags": [
+        "cong-tru-da-thuc",
+        "bo-ngoac-dau"
+      ],
+      "proposed_assessed_skill": "cong-tru-da-thuc",
+      "roles": {
+        "supporting_skills": [],
+        "methods": [
+          "bo-ngoac-dau"
+        ],
+        "contexts": [],
+        "categories": []
+      },
+      "review_state": "pattern_candidate_only",
+      "basis": "exact_pattern_candidate",
+      "flags": []
+    },
+    {
+      "id": "ALG04V2_041",
+      "source_file": "04-bieu-thuc-dai-so-v2-02.json",
+      "original_skill_tags": [
+        "cong-tru-da-thuc",
+        "bo-ngoac-dau"
+      ],
+      "proposed_assessed_skill": "cong-tru-da-thuc",
+      "roles": {
+        "supporting_skills": [],
+        "methods": [
+          "bo-ngoac-dau"
+        ],
+        "contexts": [],
+        "categories": []
+      },
+      "review_state": "pattern_candidate_only",
+      "basis": "exact_pattern_candidate",
+      "flags": []
+    },
+    {
+      "id": "ALG04V2_042",
+      "source_file": "04-bieu-thuc-dai-so-v2-02.json",
+      "original_skill_tags": [
+        "cong-tru-da-thuc",
+        "bo-ngoac-dau"
+      ],
+      "proposed_assessed_skill": "cong-tru-da-thuc",
+      "roles": {
+        "supporting_skills": [],
+        "methods": [
+          "bo-ngoac-dau"
+        ],
+        "contexts": [],
+        "categories": []
+      },
+      "review_state": "pattern_candidate_only",
+      "basis": "exact_pattern_candidate",
+      "flags": []
+    },
+    {
+      "id": "ALG04V2_043",
+      "source_file": "04-bieu-thuc-dai-so-v2-02.json",
+      "original_skill_tags": [
+        "cong-tru-da-thuc",
+        "bo-ngoac-dau"
+      ],
+      "proposed_assessed_skill": "cong-tru-da-thuc",
+      "roles": {
+        "supporting_skills": [],
+        "methods": [
+          "bo-ngoac-dau"
+        ],
+        "contexts": [],
+        "categories": []
+      },
+      "review_state": "pattern_candidate_only",
+      "basis": "exact_pattern_candidate",
+      "flags": []
+    },
+    {
+      "id": "ALG04V2_044",
+      "source_file": "04-bieu-thuc-dai-so-v2-02.json",
+      "original_skill_tags": [
+        "cong-tru-da-thuc",
+        "bo-ngoac-dau"
+      ],
+      "proposed_assessed_skill": "cong-tru-da-thuc",
+      "roles": {
+        "supporting_skills": [],
+        "methods": [
+          "bo-ngoac-dau"
+        ],
+        "contexts": [],
+        "categories": []
+      },
+      "review_state": "pattern_candidate_only",
+      "basis": "exact_pattern_candidate",
+      "flags": []
+    },
+    {
+      "id": "ALG04V2_045",
+      "source_file": "04-bieu-thuc-dai-so-v2-02.json",
+      "original_skill_tags": [
+        "cong-tru-da-thuc",
+        "bo-ngoac-dau"
+      ],
+      "proposed_assessed_skill": "cong-tru-da-thuc",
+      "roles": {
+        "supporting_skills": [],
+        "methods": [
+          "bo-ngoac-dau"
+        ],
+        "contexts": [],
+        "categories": []
+      },
+      "review_state": "pattern_candidate_only",
+      "basis": "exact_pattern_candidate",
+      "flags": []
+    },
+    {
+      "id": "ALG04V2_046",
+      "source_file": "04-bieu-thuc-dai-so-v2-02.json",
+      "original_skill_tags": [
+        "cong-tru-da-thuc",
+        "bo-ngoac-dau"
+      ],
+      "proposed_assessed_skill": "cong-tru-da-thuc",
+      "roles": {
+        "supporting_skills": [],
+        "methods": [
+          "bo-ngoac-dau"
+        ],
+        "contexts": [],
+        "categories": []
+      },
+      "review_state": "pattern_candidate_only",
+      "basis": "exact_pattern_candidate",
+      "flags": []
+    },
+    {
+      "id": "ALG04V2_047",
+      "source_file": "04-bieu-thuc-dai-so-v2-02.json",
+      "original_skill_tags": [
+        "cong-tru-da-thuc",
+        "bo-ngoac-dau"
+      ],
+      "proposed_assessed_skill": "cong-tru-da-thuc",
+      "roles": {
+        "supporting_skills": [],
+        "methods": [
+          "bo-ngoac-dau"
+        ],
+        "contexts": [],
+        "categories": []
+      },
+      "review_state": "pattern_candidate_only",
+      "basis": "exact_pattern_candidate",
+      "flags": []
+    },
+    {
+      "id": "ALG04V2_048",
+      "source_file": "04-bieu-thuc-dai-so-v2-02.json",
+      "original_skill_tags": [
+        "cong-tru-da-thuc",
+        "bo-ngoac-dau"
+      ],
+      "proposed_assessed_skill": "cong-tru-da-thuc",
+      "roles": {
+        "supporting_skills": [],
+        "methods": [
+          "bo-ngoac-dau"
+        ],
+        "contexts": [],
+        "categories": []
+      },
+      "review_state": "pattern_candidate_only",
+      "basis": "exact_pattern_candidate",
+      "flags": []
+    },
+    {
+      "id": "ALG04V2_049",
+      "source_file": "04-bieu-thuc-dai-so-v2-02.json",
+      "original_skill_tags": [
+        "cong-tru-da-thuc",
+        "bo-ngoac-dau"
+      ],
+      "proposed_assessed_skill": "cong-tru-da-thuc",
+      "roles": {
+        "supporting_skills": [],
+        "methods": [
+          "bo-ngoac-dau"
+        ],
+        "contexts": [],
+        "categories": []
+      },
+      "review_state": "pattern_candidate_only",
+      "basis": "exact_pattern_candidate",
+      "flags": []
+    },
+    {
+      "id": "ALG04V2_050",
+      "source_file": "04-bieu-thuc-dai-so-v2-02.json",
+      "original_skill_tags": [
+        "cong-tru-da-thuc",
+        "bo-ngoac-dau"
+      ],
+      "proposed_assessed_skill": "cong-tru-da-thuc",
+      "roles": {
+        "supporting_skills": [],
+        "methods": [
+          "bo-ngoac-dau"
+        ],
+        "contexts": [],
+        "categories": []
+      },
+      "review_state": "pattern_candidate_only",
+      "basis": "exact_pattern_candidate",
+      "flags": []
+    },
+    {
+      "id": "ALG04V2_051",
+      "source_file": "04-bieu-thuc-dai-so-v2-02.json",
+      "original_skill_tags": [
+        "nhan-bieu-thuc",
+        "tinh-phan-phoi"
+      ],
+      "proposed_assessed_skill": "nhan-bieu-thuc",
+      "roles": {
+        "supporting_skills": [],
+        "methods": [
+          "tinh-phan-phoi"
+        ],
+        "contexts": [],
+        "categories": []
+      },
+      "review_state": "pattern_candidate_only",
+      "basis": "exact_pattern_candidate",
+      "flags": []
+    },
+    {
+      "id": "ALG04V2_052",
+      "source_file": "04-bieu-thuc-dai-so-v2-02.json",
+      "original_skill_tags": [
+        "nhan-bieu-thuc",
+        "tinh-phan-phoi"
+      ],
+      "proposed_assessed_skill": "nhan-bieu-thuc",
+      "roles": {
+        "supporting_skills": [],
+        "methods": [
+          "tinh-phan-phoi"
+        ],
+        "contexts": [],
+        "categories": []
+      },
+      "review_state": "pattern_candidate_only",
+      "basis": "exact_pattern_candidate",
+      "flags": []
+    },
+    {
+      "id": "ALG04V2_053",
+      "source_file": "04-bieu-thuc-dai-so-v2-02.json",
+      "original_skill_tags": [
+        "nhan-bieu-thuc",
+        "tinh-phan-phoi"
+      ],
+      "proposed_assessed_skill": "nhan-bieu-thuc",
+      "roles": {
+        "supporting_skills": [],
+        "methods": [
+          "tinh-phan-phoi"
+        ],
+        "contexts": [],
+        "categories": []
+      },
+      "review_state": "pattern_candidate_only",
+      "basis": "exact_pattern_candidate",
+      "flags": []
+    },
+    {
+      "id": "ALG04V2_054",
+      "source_file": "04-bieu-thuc-dai-so-v2-02.json",
+      "original_skill_tags": [
+        "nhan-bieu-thuc",
+        "tinh-phan-phoi"
+      ],
+      "proposed_assessed_skill": "nhan-bieu-thuc",
+      "roles": {
+        "supporting_skills": [],
+        "methods": [
+          "tinh-phan-phoi"
+        ],
+        "contexts": [],
+        "categories": []
+      },
+      "review_state": "pattern_candidate_only",
+      "basis": "exact_pattern_candidate",
+      "flags": []
+    },
+    {
+      "id": "ALG04V2_055",
+      "source_file": "04-bieu-thuc-dai-so-v2-02.json",
+      "original_skill_tags": [
+        "nhan-bieu-thuc",
+        "tinh-phan-phoi"
+      ],
+      "proposed_assessed_skill": "nhan-bieu-thuc",
+      "roles": {
+        "supporting_skills": [],
+        "methods": [
+          "tinh-phan-phoi"
+        ],
+        "contexts": [],
+        "categories": []
+      },
+      "review_state": "pattern_candidate_only",
+      "basis": "exact_pattern_candidate",
+      "flags": []
+    },
+    {
+      "id": "ALG04V2_056",
+      "source_file": "04-bieu-thuc-dai-so-v2-02.json",
+      "original_skill_tags": [
+        "nhan-bieu-thuc",
+        "tinh-phan-phoi"
+      ],
+      "proposed_assessed_skill": "nhan-bieu-thuc",
+      "roles": {
+        "supporting_skills": [],
+        "methods": [
+          "tinh-phan-phoi"
+        ],
+        "contexts": [],
+        "categories": []
+      },
+      "review_state": "pattern_candidate_only",
+      "basis": "exact_pattern_candidate",
+      "flags": []
+    },
+    {
+      "id": "ALG04V2_057",
+      "source_file": "04-bieu-thuc-dai-so-v2-02.json",
+      "original_skill_tags": [
+        "nhan-bieu-thuc",
+        "tinh-phan-phoi"
+      ],
+      "proposed_assessed_skill": "nhan-bieu-thuc",
+      "roles": {
+        "supporting_skills": [],
+        "methods": [
+          "tinh-phan-phoi"
+        ],
+        "contexts": [],
+        "categories": []
+      },
+      "review_state": "pattern_candidate_only",
+      "basis": "exact_pattern_candidate",
+      "flags": []
+    },
+    {
+      "id": "ALG04V2_058",
+      "source_file": "04-bieu-thuc-dai-so-v2-02.json",
+      "original_skill_tags": [
+        "nhan-bieu-thuc",
+        "tinh-phan-phoi"
+      ],
+      "proposed_assessed_skill": "nhan-bieu-thuc",
+      "roles": {
+        "supporting_skills": [],
+        "methods": [
+          "tinh-phan-phoi"
+        ],
+        "contexts": [],
+        "categories": []
+      },
+      "review_state": "pattern_candidate_only",
+      "basis": "exact_pattern_candidate",
+      "flags": []
+    },
+    {
+      "id": "ALG04V2_059",
+      "source_file": "04-bieu-thuc-dai-so-v2-02.json",
+      "original_skill_tags": [
+        "nhan-bieu-thuc",
+        "tinh-phan-phoi"
+      ],
+      "proposed_assessed_skill": "nhan-bieu-thuc",
+      "roles": {
+        "supporting_skills": [],
+        "methods": [
+          "tinh-phan-phoi"
+        ],
+        "contexts": [],
+        "categories": []
+      },
+      "review_state": "pattern_candidate_only",
+      "basis": "exact_pattern_candidate",
+      "flags": []
+    },
+    {
+      "id": "ALG04V2_060",
+      "source_file": "04-bieu-thuc-dai-so-v2-02.json",
+      "original_skill_tags": [
+        "nhan-bieu-thuc",
+        "tinh-phan-phoi"
+      ],
+      "proposed_assessed_skill": "nhan-bieu-thuc",
+      "roles": {
+        "supporting_skills": [],
+        "methods": [
+          "tinh-phan-phoi"
+        ],
+        "contexts": [],
+        "categories": []
+      },
+      "review_state": "pattern_candidate_only",
+      "basis": "exact_pattern_candidate",
+      "flags": []
+    },
+    {
+      "id": "ALG04V2_061",
+      "source_file": "04-bieu-thuc-dai-so-v2-03.json",
+      "original_skill_tags": [
+        "nhan-bieu-thuc",
+        "tinh-phan-phoi"
+      ],
+      "proposed_assessed_skill": "nhan-bieu-thuc",
+      "roles": {
+        "supporting_skills": [],
+        "methods": [
+          "tinh-phan-phoi"
+        ],
+        "contexts": [],
+        "categories": []
+      },
+      "review_state": "pattern_candidate_only",
+      "basis": "exact_pattern_candidate",
+      "flags": []
+    },
+    {
+      "id": "ALG04V2_062",
+      "source_file": "04-bieu-thuc-dai-so-v2-03.json",
+      "original_skill_tags": [
+        "nhan-bieu-thuc",
+        "tinh-phan-phoi"
+      ],
+      "proposed_assessed_skill": "nhan-bieu-thuc",
+      "roles": {
+        "supporting_skills": [],
+        "methods": [
+          "tinh-phan-phoi"
+        ],
+        "contexts": [],
+        "categories": []
+      },
+      "review_state": "pattern_candidate_only",
+      "basis": "exact_pattern_candidate",
+      "flags": []
+    },
+    {
+      "id": "ALG04V2_063",
+      "source_file": "04-bieu-thuc-dai-so-v2-03.json",
+      "original_skill_tags": [
+        "nhan-bieu-thuc",
+        "tinh-phan-phoi"
+      ],
+      "proposed_assessed_skill": "nhan-bieu-thuc",
+      "roles": {
+        "supporting_skills": [],
+        "methods": [
+          "tinh-phan-phoi"
+        ],
+        "contexts": [],
+        "categories": []
+      },
+      "review_state": "pattern_candidate_only",
+      "basis": "exact_pattern_candidate",
+      "flags": []
+    },
+    {
+      "id": "ALG04V2_064",
+      "source_file": "04-bieu-thuc-dai-so-v2-03.json",
+      "original_skill_tags": [
+        "nhan-bieu-thuc",
+        "tinh-phan-phoi"
+      ],
+      "proposed_assessed_skill": "nhan-bieu-thuc",
+      "roles": {
+        "supporting_skills": [],
+        "methods": [
+          "tinh-phan-phoi"
+        ],
+        "contexts": [],
+        "categories": []
+      },
+      "review_state": "pattern_candidate_only",
+      "basis": "exact_pattern_candidate",
+      "flags": []
+    },
+    {
+      "id": "ALG04V2_065",
+      "source_file": "04-bieu-thuc-dai-so-v2-03.json",
+      "original_skill_tags": [
+        "nhan-bieu-thuc",
+        "tinh-phan-phoi"
+      ],
+      "proposed_assessed_skill": "nhan-bieu-thuc",
+      "roles": {
+        "supporting_skills": [],
+        "methods": [
+          "tinh-phan-phoi"
+        ],
+        "contexts": [],
+        "categories": []
+      },
+      "review_state": "pattern_candidate_only",
+      "basis": "exact_pattern_candidate",
+      "flags": []
+    },
+    {
+      "id": "ALG04V2_066",
+      "source_file": "04-bieu-thuc-dai-so-v2-03.json",
+      "original_skill_tags": [
+        "nhan-bieu-thuc",
+        "tinh-phan-phoi"
+      ],
+      "proposed_assessed_skill": "nhan-bieu-thuc",
+      "roles": {
+        "supporting_skills": [],
+        "methods": [
+          "tinh-phan-phoi"
+        ],
+        "contexts": [],
+        "categories": []
+      },
+      "review_state": "pattern_candidate_only",
+      "basis": "exact_pattern_candidate",
+      "flags": []
+    },
+    {
+      "id": "ALG04V2_067",
+      "source_file": "04-bieu-thuc-dai-so-v2-03.json",
+      "original_skill_tags": [
+        "nhan-bieu-thuc",
+        "tinh-phan-phoi"
+      ],
+      "proposed_assessed_skill": "nhan-bieu-thuc",
+      "roles": {
+        "supporting_skills": [],
+        "methods": [
+          "tinh-phan-phoi"
+        ],
+        "contexts": [],
+        "categories": []
+      },
+      "review_state": "pattern_candidate_only",
+      "basis": "exact_pattern_candidate",
+      "flags": []
+    },
+    {
+      "id": "ALG04V2_068",
+      "source_file": "04-bieu-thuc-dai-so-v2-03.json",
+      "original_skill_tags": [
+        "nhan-bieu-thuc",
+        "tinh-phan-phoi"
+      ],
+      "proposed_assessed_skill": "nhan-bieu-thuc",
+      "roles": {
+        "supporting_skills": [],
+        "methods": [
+          "tinh-phan-phoi"
+        ],
+        "contexts": [],
+        "categories": []
+      },
+      "review_state": "pattern_candidate_only",
+      "basis": "exact_pattern_candidate",
+      "flags": []
+    },
+    {
+      "id": "ALG04V2_069",
+      "source_file": "04-bieu-thuc-dai-so-v2-03.json",
+      "original_skill_tags": [
+        "nhan-bieu-thuc",
+        "tinh-phan-phoi"
+      ],
+      "proposed_assessed_skill": "nhan-bieu-thuc",
+      "roles": {
+        "supporting_skills": [],
+        "methods": [
+          "tinh-phan-phoi"
+        ],
+        "contexts": [],
+        "categories": []
+      },
+      "review_state": "pattern_candidate_only",
+      "basis": "exact_pattern_candidate",
+      "flags": []
+    },
+    {
+      "id": "ALG04V2_070",
+      "source_file": "04-bieu-thuc-dai-so-v2-03.json",
+      "original_skill_tags": [
+        "nhan-bieu-thuc",
+        "tinh-phan-phoi"
+      ],
+      "proposed_assessed_skill": "nhan-bieu-thuc",
+      "roles": {
+        "supporting_skills": [],
+        "methods": [
+          "tinh-phan-phoi"
+        ],
+        "contexts": [],
+        "categories": []
+      },
+      "review_state": "pattern_candidate_only",
+      "basis": "exact_pattern_candidate",
+      "flags": []
+    },
+    {
+      "id": "ALG04V2_071",
+      "source_file": "04-bieu-thuc-dai-so-v2-03.json",
+      "original_skill_tags": [
+        "nhan-bieu-thuc",
+        "tinh-phan-phoi"
+      ],
+      "proposed_assessed_skill": "nhan-bieu-thuc",
+      "roles": {
+        "supporting_skills": [],
+        "methods": [
+          "tinh-phan-phoi"
+        ],
+        "contexts": [],
+        "categories": []
+      },
+      "review_state": "pattern_candidate_only",
+      "basis": "exact_pattern_candidate",
+      "flags": []
+    },
+    {
+      "id": "ALG04V2_072",
+      "source_file": "04-bieu-thuc-dai-so-v2-03.json",
+      "original_skill_tags": [
+        "nhan-bieu-thuc",
+        "tinh-phan-phoi"
+      ],
+      "proposed_assessed_skill": "nhan-bieu-thuc",
+      "roles": {
+        "supporting_skills": [],
+        "methods": [
+          "tinh-phan-phoi"
+        ],
+        "contexts": [],
+        "categories": []
+      },
+      "review_state": "pattern_candidate_only",
+      "basis": "exact_pattern_candidate",
+      "flags": []
+    },
+    {
+      "id": "ALG04V2_073",
+      "source_file": "04-bieu-thuc-dai-so-v2-03.json",
+      "original_skill_tags": [
+        "nhan-bieu-thuc",
+        "tinh-phan-phoi"
+      ],
+      "proposed_assessed_skill": "nhan-bieu-thuc",
+      "roles": {
+        "supporting_skills": [],
+        "methods": [
+          "tinh-phan-phoi"
+        ],
+        "contexts": [],
+        "categories": []
+      },
+      "review_state": "pattern_candidate_only",
+      "basis": "exact_pattern_candidate",
+      "flags": []
+    },
+    {
+      "id": "ALG04V2_074",
+      "source_file": "04-bieu-thuc-dai-so-v2-03.json",
+      "original_skill_tags": [
+        "nhan-bieu-thuc",
+        "tinh-phan-phoi"
+      ],
+      "proposed_assessed_skill": "nhan-bieu-thuc",
+      "roles": {
+        "supporting_skills": [],
+        "methods": [
+          "tinh-phan-phoi"
+        ],
+        "contexts": [],
+        "categories": []
+      },
+      "review_state": "pattern_candidate_only",
+      "basis": "exact_pattern_candidate",
+      "flags": []
+    },
+    {
+      "id": "ALG04V2_075",
+      "source_file": "04-bieu-thuc-dai-so-v2-03.json",
+      "original_skill_tags": [
+        "nhan-bieu-thuc",
+        "tinh-phan-phoi"
+      ],
+      "proposed_assessed_skill": "nhan-bieu-thuc",
+      "roles": {
+        "supporting_skills": [],
+        "methods": [
+          "tinh-phan-phoi"
+        ],
+        "contexts": [],
+        "categories": []
+      },
+      "review_state": "pattern_candidate_only",
+      "basis": "exact_pattern_candidate",
+      "flags": []
+    },
+    {
+      "id": "ALG04V2_076",
+      "source_file": "04-bieu-thuc-dai-so-v2-03.json",
+      "original_skill_tags": [
+        "nhan-bieu-thuc",
+        "tinh-phan-phoi"
+      ],
+      "proposed_assessed_skill": "nhan-bieu-thuc",
+      "roles": {
+        "supporting_skills": [],
+        "methods": [
+          "tinh-phan-phoi"
+        ],
+        "contexts": [],
+        "categories": []
+      },
+      "review_state": "pattern_candidate_only",
+      "basis": "exact_pattern_candidate",
+      "flags": []
+    },
+    {
+      "id": "ALG04V2_077",
+      "source_file": "04-bieu-thuc-dai-so-v2-03.json",
+      "original_skill_tags": [
+        "tinh-gia-tri-bieu-thuc"
+      ],
+      "proposed_assessed_skill": "tinh-gia-tri-bieu-thuc",
+      "roles": {
+        "supporting_skills": [],
+        "methods": [],
+        "contexts": [],
+        "categories": []
+      },
+      "review_state": "pattern_candidate_only",
+      "basis": "exact_pattern_candidate",
+      "flags": []
+    },
+    {
+      "id": "ALG04V2_078",
+      "source_file": "04-bieu-thuc-dai-so-v2-03.json",
+      "original_skill_tags": [
+        "tinh-gia-tri-bieu-thuc"
+      ],
+      "proposed_assessed_skill": "tinh-gia-tri-bieu-thuc",
+      "roles": {
+        "supporting_skills": [],
+        "methods": [],
+        "contexts": [],
+        "categories": []
+      },
+      "review_state": "pattern_candidate_only",
+      "basis": "exact_pattern_candidate",
+      "flags": []
+    },
+    {
+      "id": "ALG04V2_079",
+      "source_file": "04-bieu-thuc-dai-so-v2-03.json",
+      "original_skill_tags": [
+        "tinh-gia-tri-bieu-thuc"
+      ],
+      "proposed_assessed_skill": "tinh-gia-tri-bieu-thuc",
+      "roles": {
+        "supporting_skills": [],
+        "methods": [],
+        "contexts": [],
+        "categories": []
+      },
+      "review_state": "pattern_candidate_only",
+      "basis": "exact_pattern_candidate",
+      "flags": []
+    },
+    {
+      "id": "ALG04V2_080",
+      "source_file": "04-bieu-thuc-dai-so-v2-03.json",
+      "original_skill_tags": [
+        "tinh-gia-tri-bieu-thuc"
+      ],
+      "proposed_assessed_skill": "tinh-gia-tri-bieu-thuc",
+      "roles": {
+        "supporting_skills": [],
+        "methods": [],
+        "contexts": [],
+        "categories": []
+      },
+      "review_state": "pattern_candidate_only",
+      "basis": "exact_pattern_candidate",
+      "flags": []
+    },
+    {
+      "id": "ALG04V2_081",
+      "source_file": "04-bieu-thuc-dai-so-v2-03.json",
+      "original_skill_tags": [
+        "tinh-gia-tri-bieu-thuc"
+      ],
+      "proposed_assessed_skill": "tinh-gia-tri-bieu-thuc",
+      "roles": {
+        "supporting_skills": [],
+        "methods": [],
+        "contexts": [],
+        "categories": []
+      },
+      "review_state": "pattern_candidate_only",
+      "basis": "exact_pattern_candidate",
+      "flags": []
+    },
+    {
+      "id": "ALG04V2_082",
+      "source_file": "04-bieu-thuc-dai-so-v2-03.json",
+      "original_skill_tags": [
+        "tinh-gia-tri-bieu-thuc"
+      ],
+      "proposed_assessed_skill": "tinh-gia-tri-bieu-thuc",
+      "roles": {
+        "supporting_skills": [],
+        "methods": [],
+        "contexts": [],
+        "categories": []
+      },
+      "review_state": "pattern_candidate_only",
+      "basis": "exact_pattern_candidate",
+      "flags": []
+    },
+    {
+      "id": "ALG04V2_083",
+      "source_file": "04-bieu-thuc-dai-so-v2-03.json",
+      "original_skill_tags": [
+        "tinh-gia-tri-bieu-thuc"
+      ],
+      "proposed_assessed_skill": "tinh-gia-tri-bieu-thuc",
+      "roles": {
+        "supporting_skills": [],
+        "methods": [],
+        "contexts": [],
+        "categories": []
+      },
+      "review_state": "pattern_candidate_only",
+      "basis": "exact_pattern_candidate",
+      "flags": []
+    },
+    {
+      "id": "ALG04V2_084",
+      "source_file": "04-bieu-thuc-dai-so-v2-03.json",
+      "original_skill_tags": [
+        "tinh-gia-tri-bieu-thuc"
+      ],
+      "proposed_assessed_skill": "tinh-gia-tri-bieu-thuc",
+      "roles": {
+        "supporting_skills": [],
+        "methods": [],
+        "contexts": [],
+        "categories": []
+      },
+      "review_state": "pattern_candidate_only",
+      "basis": "exact_pattern_candidate",
+      "flags": []
+    },
+    {
+      "id": "ALG04V2_085",
+      "source_file": "04-bieu-thuc-dai-so-v2-03.json",
+      "original_skill_tags": [
+        "tinh-gia-tri-bieu-thuc"
+      ],
+      "proposed_assessed_skill": "tinh-gia-tri-bieu-thuc",
+      "roles": {
+        "supporting_skills": [],
+        "methods": [],
+        "contexts": [],
+        "categories": []
+      },
+      "review_state": "pattern_candidate_only",
+      "basis": "exact_pattern_candidate",
+      "flags": []
+    },
+    {
+      "id": "ALG04V2_086",
+      "source_file": "04-bieu-thuc-dai-so-v2-03.json",
+      "original_skill_tags": [
+        "tinh-gia-tri-bieu-thuc"
+      ],
+      "proposed_assessed_skill": "tinh-gia-tri-bieu-thuc",
+      "roles": {
+        "supporting_skills": [],
+        "methods": [],
+        "contexts": [],
+        "categories": []
+      },
+      "review_state": "pattern_candidate_only",
+      "basis": "exact_pattern_candidate",
+      "flags": []
+    },
+    {
+      "id": "ALG04V2_087",
+      "source_file": "04-bieu-thuc-dai-so-v2-03.json",
+      "original_skill_tags": [
+        "tinh-gia-tri-bieu-thuc"
+      ],
+      "proposed_assessed_skill": "tinh-gia-tri-bieu-thuc",
+      "roles": {
+        "supporting_skills": [],
+        "methods": [],
+        "contexts": [],
+        "categories": []
+      },
+      "review_state": "pattern_candidate_only",
+      "basis": "exact_pattern_candidate",
+      "flags": []
+    },
+    {
+      "id": "ALG04V2_088",
+      "source_file": "04-bieu-thuc-dai-so-v2-03.json",
+      "original_skill_tags": [
+        "tinh-gia-tri-bieu-thuc"
+      ],
+      "proposed_assessed_skill": "tinh-gia-tri-bieu-thuc",
+      "roles": {
+        "supporting_skills": [],
+        "methods": [],
+        "contexts": [],
+        "categories": []
+      },
+      "review_state": "pattern_candidate_only",
+      "basis": "exact_pattern_candidate",
+      "flags": []
+    },
+    {
+      "id": "ALG04V2_089",
+      "source_file": "04-bieu-thuc-dai-so-v2-03.json",
+      "original_skill_tags": [
+        "dieu-kien-xac-dinh"
+      ],
+      "proposed_assessed_skill": "dieu-kien-xac-dinh",
+      "roles": {
+        "supporting_skills": [],
+        "methods": [],
+        "contexts": [],
+        "categories": []
+      },
+      "review_state": "pattern_candidate_only",
+      "basis": "exact_pattern_candidate",
+      "flags": []
+    },
+    {
+      "id": "ALG04V2_090",
+      "source_file": "04-bieu-thuc-dai-so-v2-03.json",
+      "original_skill_tags": [
+        "dieu-kien-xac-dinh"
+      ],
+      "proposed_assessed_skill": "dieu-kien-xac-dinh",
+      "roles": {
+        "supporting_skills": [],
+        "methods": [],
+        "contexts": [],
+        "categories": []
+      },
+      "review_state": "pattern_candidate_only",
+      "basis": "exact_pattern_candidate",
+      "flags": []
+    },
+    {
+      "id": "ALG04V2_091",
+      "source_file": "04-bieu-thuc-dai-so-v2-04.json",
+      "original_skill_tags": [
+        "dieu-kien-xac-dinh"
+      ],
+      "proposed_assessed_skill": "dieu-kien-xac-dinh",
+      "roles": {
+        "supporting_skills": [],
+        "methods": [],
+        "contexts": [],
+        "categories": []
+      },
+      "review_state": "pattern_candidate_only",
+      "basis": "exact_pattern_candidate",
+      "flags": []
+    },
+    {
+      "id": "ALG04V2_092",
+      "source_file": "04-bieu-thuc-dai-so-v2-04.json",
+      "original_skill_tags": [
+        "dieu-kien-xac-dinh"
+      ],
+      "proposed_assessed_skill": "dieu-kien-xac-dinh",
+      "roles": {
+        "supporting_skills": [],
+        "methods": [],
+        "contexts": [],
+        "categories": []
+      },
+      "review_state": "pattern_candidate_only",
+      "basis": "exact_pattern_candidate",
+      "flags": []
+    },
+    {
+      "id": "ALG04V2_093",
+      "source_file": "04-bieu-thuc-dai-so-v2-04.json",
+      "original_skill_tags": [
+        "dieu-kien-xac-dinh"
+      ],
+      "proposed_assessed_skill": "dieu-kien-xac-dinh",
+      "roles": {
+        "supporting_skills": [],
+        "methods": [],
+        "contexts": [],
+        "categories": []
+      },
+      "review_state": "pattern_candidate_only",
+      "basis": "exact_pattern_candidate",
+      "flags": []
+    },
+    {
+      "id": "ALG04V2_094",
+      "source_file": "04-bieu-thuc-dai-so-v2-04.json",
+      "original_skill_tags": [
+        "dieu-kien-xac-dinh"
+      ],
+      "proposed_assessed_skill": "dieu-kien-xac-dinh",
+      "roles": {
+        "supporting_skills": [],
+        "methods": [],
+        "contexts": [],
+        "categories": []
+      },
+      "review_state": "pattern_candidate_only",
+      "basis": "exact_pattern_candidate",
+      "flags": []
+    },
+    {
+      "id": "ALG04V2_095",
+      "source_file": "04-bieu-thuc-dai-so-v2-04.json",
+      "original_skill_tags": [
+        "dieu-kien-xac-dinh"
+      ],
+      "proposed_assessed_skill": "dieu-kien-xac-dinh",
+      "roles": {
+        "supporting_skills": [],
+        "methods": [],
+        "contexts": [],
+        "categories": []
+      },
+      "review_state": "pattern_candidate_only",
+      "basis": "exact_pattern_candidate",
+      "flags": []
+    },
+    {
+      "id": "ALG04V2_096",
+      "source_file": "04-bieu-thuc-dai-so-v2-04.json",
+      "original_skill_tags": [
+        "dieu-kien-xac-dinh"
+      ],
+      "proposed_assessed_skill": "dieu-kien-xac-dinh",
+      "roles": {
+        "supporting_skills": [],
+        "methods": [],
+        "contexts": [],
+        "categories": []
+      },
+      "review_state": "pattern_candidate_only",
+      "basis": "exact_pattern_candidate",
+      "flags": []
+    },
+    {
+      "id": "ALG04V2_097",
+      "source_file": "04-bieu-thuc-dai-so-v2-04.json",
+      "original_skill_tags": [
+        "dieu-kien-xac-dinh"
+      ],
+      "proposed_assessed_skill": "dieu-kien-xac-dinh",
+      "roles": {
+        "supporting_skills": [],
+        "methods": [],
+        "contexts": [],
+        "categories": []
+      },
+      "review_state": "pattern_candidate_only",
+      "basis": "exact_pattern_candidate",
+      "flags": []
+    },
+    {
+      "id": "ALG04V2_098",
+      "source_file": "04-bieu-thuc-dai-so-v2-04.json",
+      "original_skill_tags": [
+        "dieu-kien-xac-dinh"
+      ],
+      "proposed_assessed_skill": "dieu-kien-xac-dinh",
+      "roles": {
+        "supporting_skills": [],
+        "methods": [],
+        "contexts": [],
+        "categories": []
+      },
+      "review_state": "pattern_candidate_only",
+      "basis": "exact_pattern_candidate",
+      "flags": []
+    },
+    {
+      "id": "ALG04V2_099",
+      "source_file": "04-bieu-thuc-dai-so-v2-04.json",
+      "original_skill_tags": [
+        "bien-doi-nhieu-buoc",
+        "bo-ngoac-dau",
+        "thu-gon-da-thuc"
+      ],
+      "proposed_assessed_skill": "bien-doi-nhieu-buoc",
+      "roles": {
+        "supporting_skills": [
+          "thu-gon-da-thuc"
+        ],
+        "methods": [
+          "bo-ngoac-dau"
+        ],
+        "contexts": [],
+        "categories": []
+      },
+      "review_state": "pattern_candidate_only",
+      "basis": "exact_pattern_candidate",
+      "flags": []
+    },
+    {
+      "id": "ALG04V2_100",
+      "source_file": "04-bieu-thuc-dai-so-v2-04.json",
+      "original_skill_tags": [
+        "bien-doi-nhieu-buoc",
+        "bo-ngoac-dau",
+        "thu-gon-da-thuc"
+      ],
+      "proposed_assessed_skill": "bien-doi-nhieu-buoc",
+      "roles": {
+        "supporting_skills": [
+          "thu-gon-da-thuc"
+        ],
+        "methods": [
+          "bo-ngoac-dau"
+        ],
+        "contexts": [],
+        "categories": []
+      },
+      "review_state": "pattern_candidate_only",
+      "basis": "exact_pattern_candidate",
+      "flags": []
+    },
+    {
+      "id": "ALG04V2_101",
+      "source_file": "04-bieu-thuc-dai-so-v2-04.json",
+      "original_skill_tags": [
+        "bien-doi-nhieu-buoc",
+        "bo-ngoac-dau",
+        "thu-gon-da-thuc"
+      ],
+      "proposed_assessed_skill": "bien-doi-nhieu-buoc",
+      "roles": {
+        "supporting_skills": [
+          "thu-gon-da-thuc"
+        ],
+        "methods": [
+          "bo-ngoac-dau"
+        ],
+        "contexts": [],
+        "categories": []
+      },
+      "review_state": "pattern_candidate_only",
+      "basis": "exact_pattern_candidate",
+      "flags": []
+    },
+    {
+      "id": "ALG04V2_102",
+      "source_file": "04-bieu-thuc-dai-so-v2-04.json",
+      "original_skill_tags": [
+        "bien-doi-nhieu-buoc",
+        "bo-ngoac-dau",
+        "thu-gon-da-thuc"
+      ],
+      "proposed_assessed_skill": "bien-doi-nhieu-buoc",
+      "roles": {
+        "supporting_skills": [
+          "thu-gon-da-thuc"
+        ],
+        "methods": [
+          "bo-ngoac-dau"
+        ],
+        "contexts": [],
+        "categories": []
+      },
+      "review_state": "pattern_candidate_only",
+      "basis": "exact_pattern_candidate",
+      "flags": []
+    },
+    {
+      "id": "ALG04V2_103",
+      "source_file": "04-bieu-thuc-dai-so-v2-04.json",
+      "original_skill_tags": [
+        "bien-doi-nhieu-buoc",
+        "bo-ngoac-dau",
+        "thu-gon-da-thuc"
+      ],
+      "proposed_assessed_skill": "bien-doi-nhieu-buoc",
+      "roles": {
+        "supporting_skills": [
+          "thu-gon-da-thuc"
+        ],
+        "methods": [
+          "bo-ngoac-dau"
+        ],
+        "contexts": [],
+        "categories": []
+      },
+      "review_state": "pattern_candidate_only",
+      "basis": "exact_pattern_candidate",
+      "flags": []
+    },
+    {
+      "id": "ALG04V2_104",
+      "source_file": "04-bieu-thuc-dai-so-v2-04.json",
+      "original_skill_tags": [
+        "bien-doi-nhieu-buoc",
+        "bo-ngoac-dau",
+        "thu-gon-da-thuc"
+      ],
+      "proposed_assessed_skill": "bien-doi-nhieu-buoc",
+      "roles": {
+        "supporting_skills": [
+          "thu-gon-da-thuc"
+        ],
+        "methods": [
+          "bo-ngoac-dau"
+        ],
+        "contexts": [],
+        "categories": []
+      },
+      "review_state": "pattern_candidate_only",
+      "basis": "exact_pattern_candidate",
+      "flags": []
+    },
+    {
+      "id": "ALG04V2_105",
+      "source_file": "04-bieu-thuc-dai-so-v2-04.json",
+      "original_skill_tags": [
+        "bien-doi-nhieu-buoc",
+        "bo-ngoac-dau",
+        "thu-gon-da-thuc"
+      ],
+      "proposed_assessed_skill": "bien-doi-nhieu-buoc",
+      "roles": {
+        "supporting_skills": [
+          "thu-gon-da-thuc"
+        ],
+        "methods": [
+          "bo-ngoac-dau"
+        ],
+        "contexts": [],
+        "categories": []
+      },
+      "review_state": "pattern_candidate_only",
+      "basis": "exact_pattern_candidate",
+      "flags": []
+    },
+    {
+      "id": "ALG04V2_106",
+      "source_file": "04-bieu-thuc-dai-so-v2-04.json",
+      "original_skill_tags": [
+        "bien-doi-nhieu-buoc",
+        "bo-ngoac-dau",
+        "thu-gon-da-thuc"
+      ],
+      "proposed_assessed_skill": "bien-doi-nhieu-buoc",
+      "roles": {
+        "supporting_skills": [
+          "thu-gon-da-thuc"
+        ],
+        "methods": [
+          "bo-ngoac-dau"
+        ],
+        "contexts": [],
+        "categories": []
+      },
+      "review_state": "pattern_candidate_only",
+      "basis": "exact_pattern_candidate",
+      "flags": []
+    },
+    {
+      "id": "ALG04V2_107",
+      "source_file": "04-bieu-thuc-dai-so-v2-04.json",
+      "original_skill_tags": [
+        "bien-doi-nhieu-buoc",
+        "bo-ngoac-dau",
+        "thu-gon-da-thuc"
+      ],
+      "proposed_assessed_skill": "bien-doi-nhieu-buoc",
+      "roles": {
+        "supporting_skills": [
+          "thu-gon-da-thuc"
+        ],
+        "methods": [
+          "bo-ngoac-dau"
+        ],
+        "contexts": [],
+        "categories": []
+      },
+      "review_state": "pattern_candidate_only",
+      "basis": "exact_pattern_candidate",
+      "flags": []
+    },
+    {
+      "id": "ALG04V2_108",
+      "source_file": "04-bieu-thuc-dai-so-v2-04.json",
+      "original_skill_tags": [
+        "bien-doi-nhieu-buoc",
+        "bo-ngoac-dau",
+        "thu-gon-da-thuc"
+      ],
+      "proposed_assessed_skill": "bien-doi-nhieu-buoc",
+      "roles": {
+        "supporting_skills": [
+          "thu-gon-da-thuc"
+        ],
+        "methods": [
+          "bo-ngoac-dau"
+        ],
+        "contexts": [],
+        "categories": []
+      },
+      "review_state": "pattern_candidate_only",
+      "basis": "exact_pattern_candidate",
+      "flags": []
+    },
+    {
+      "id": "ALG04V2_109",
+      "source_file": "04-bieu-thuc-dai-so-v2-04.json",
+      "original_skill_tags": [
+        "bien-doi-nhieu-buoc",
+        "bo-ngoac-dau",
+        "thu-gon-da-thuc"
+      ],
+      "proposed_assessed_skill": "bien-doi-nhieu-buoc",
+      "roles": {
+        "supporting_skills": [
+          "thu-gon-da-thuc"
+        ],
+        "methods": [
+          "bo-ngoac-dau"
+        ],
+        "contexts": [],
+        "categories": []
+      },
+      "review_state": "pattern_candidate_only",
+      "basis": "exact_pattern_candidate",
+      "flags": []
+    },
+    {
+      "id": "ALG04V2_110",
+      "source_file": "04-bieu-thuc-dai-so-v2-04.json",
+      "original_skill_tags": [
+        "bien-doi-nhieu-buoc",
+        "bo-ngoac-dau",
+        "thu-gon-da-thuc"
+      ],
+      "proposed_assessed_skill": "bien-doi-nhieu-buoc",
+      "roles": {
+        "supporting_skills": [
+          "thu-gon-da-thuc"
+        ],
+        "methods": [
+          "bo-ngoac-dau"
+        ],
+        "contexts": [],
+        "categories": []
+      },
+      "review_state": "pattern_candidate_only",
+      "basis": "exact_pattern_candidate",
+      "flags": []
+    },
+    {
+      "id": "ALG04V2_111",
+      "source_file": "04-bieu-thuc-dai-so-v2-04.json",
+      "original_skill_tags": [
+        "bai-toan-thuc-te",
+        "lap-bieu-thuc"
+      ],
+      "proposed_assessed_skill": "lap-bieu-thuc",
+      "roles": {
+        "supporting_skills": [],
+        "methods": [],
+        "contexts": [
+          "bai-toan-thuc-te"
+        ],
+        "categories": []
+      },
+      "review_state": "pattern_candidate_only",
+      "basis": "exact_pattern_candidate",
+      "flags": []
+    },
+    {
+      "id": "ALG04V2_112",
+      "source_file": "04-bieu-thuc-dai-so-v2-04.json",
+      "original_skill_tags": [
+        "bai-toan-thuc-te",
+        "lap-bieu-thuc"
+      ],
+      "proposed_assessed_skill": "lap-bieu-thuc",
+      "roles": {
+        "supporting_skills": [],
+        "methods": [],
+        "contexts": [
+          "bai-toan-thuc-te"
+        ],
+        "categories": []
+      },
+      "review_state": "pattern_candidate_only",
+      "basis": "exact_pattern_candidate",
+      "flags": []
+    },
+    {
+      "id": "ALG04V2_113",
+      "source_file": "04-bieu-thuc-dai-so-v2-04.json",
+      "original_skill_tags": [
+        "bai-toan-thuc-te",
+        "lap-bieu-thuc"
+      ],
+      "proposed_assessed_skill": "lap-bieu-thuc",
+      "roles": {
+        "supporting_skills": [],
+        "methods": [],
+        "contexts": [
+          "bai-toan-thuc-te"
+        ],
+        "categories": []
+      },
+      "review_state": "pattern_candidate_only",
+      "basis": "exact_pattern_candidate",
+      "flags": []
+    },
+    {
+      "id": "ALG04V2_114",
+      "source_file": "04-bieu-thuc-dai-so-v2-04.json",
+      "original_skill_tags": [
+        "bai-toan-thuc-te",
+        "lap-bieu-thuc"
+      ],
+      "proposed_assessed_skill": "lap-bieu-thuc",
+      "roles": {
+        "supporting_skills": [],
+        "methods": [],
+        "contexts": [
+          "bai-toan-thuc-te"
+        ],
+        "categories": []
+      },
+      "review_state": "pattern_candidate_only",
+      "basis": "exact_pattern_candidate",
+      "flags": []
+    },
+    {
+      "id": "ALG04V2_115",
+      "source_file": "04-bieu-thuc-dai-so-v2-04.json",
+      "original_skill_tags": [
+        "bai-toan-thuc-te",
+        "lap-bieu-thuc"
+      ],
+      "proposed_assessed_skill": "lap-bieu-thuc",
+      "roles": {
+        "supporting_skills": [],
+        "methods": [],
+        "contexts": [
+          "bai-toan-thuc-te"
+        ],
+        "categories": []
+      },
+      "review_state": "pattern_candidate_only",
+      "basis": "exact_pattern_candidate",
+      "flags": []
+    },
+    {
+      "id": "ALG04V2_116",
+      "source_file": "04-bieu-thuc-dai-so-v2-04.json",
+      "original_skill_tags": [
+        "bai-toan-thuc-te",
+        "lap-bieu-thuc"
+      ],
+      "proposed_assessed_skill": "lap-bieu-thuc",
+      "roles": {
+        "supporting_skills": [],
+        "methods": [],
+        "contexts": [
+          "bai-toan-thuc-te"
+        ],
+        "categories": []
+      },
+      "review_state": "pattern_candidate_only",
+      "basis": "exact_pattern_candidate",
+      "flags": []
+    },
+    {
+      "id": "ALG04V2_117",
+      "source_file": "04-bieu-thuc-dai-so-v2-04.json",
+      "original_skill_tags": [
+        "bai-toan-thuc-te",
+        "lap-bieu-thuc"
+      ],
+      "proposed_assessed_skill": "lap-bieu-thuc",
+      "roles": {
+        "supporting_skills": [],
+        "methods": [],
+        "contexts": [
+          "bai-toan-thuc-te"
+        ],
+        "categories": []
+      },
+      "review_state": "pattern_candidate_only",
+      "basis": "exact_pattern_candidate",
+      "flags": []
+    },
+    {
+      "id": "ALG04V2_118",
+      "source_file": "04-bieu-thuc-dai-so-v2-04.json",
+      "original_skill_tags": [
+        "bai-toan-thuc-te",
+        "lap-bieu-thuc"
+      ],
+      "proposed_assessed_skill": "lap-bieu-thuc",
+      "roles": {
+        "supporting_skills": [],
+        "methods": [],
+        "contexts": [
+          "bai-toan-thuc-te"
+        ],
+        "categories": []
+      },
+      "review_state": "pattern_candidate_only",
+      "basis": "exact_pattern_candidate",
+      "flags": []
+    },
+    {
+      "id": "ALG04V2_119",
+      "source_file": "04-bieu-thuc-dai-so-v2-04.json",
+      "original_skill_tags": [
+        "bai-toan-thuc-te",
+        "lap-bieu-thuc"
+      ],
+      "proposed_assessed_skill": "lap-bieu-thuc",
+      "roles": {
+        "supporting_skills": [],
+        "methods": [],
+        "contexts": [
+          "bai-toan-thuc-te"
+        ],
+        "categories": []
+      },
+      "review_state": "pattern_candidate_only",
+      "basis": "exact_pattern_candidate",
+      "flags": []
+    },
+    {
+      "id": "ALG04V2_120",
+      "source_file": "04-bieu-thuc-dai-so-v2-04.json",
+      "original_skill_tags": [
+        "bai-toan-thuc-te",
+        "lap-bieu-thuc"
+      ],
+      "proposed_assessed_skill": "lap-bieu-thuc",
+      "roles": {
+        "supporting_skills": [],
+        "methods": [],
+        "contexts": [
+          "bai-toan-thuc-te"
+        ],
+        "categories": []
+      },
+      "review_state": "pattern_candidate_only",
+      "basis": "exact_pattern_candidate",
+      "flags": []
+    },
+    {
+      "id": "ALG04V2_121",
+      "source_file": "04-bieu-thuc-dai-so-v2-05.json",
+      "original_skill_tags": [
+        "chia-da-thuc-cho-don-thuc"
+      ],
+      "proposed_assessed_skill": "chia-da-thuc-cho-don-thuc",
+      "roles": {
+        "supporting_skills": [],
+        "methods": [],
+        "contexts": [],
+        "categories": []
+      },
+      "review_state": "pattern_candidate_only",
+      "basis": "exact_pattern_candidate",
+      "flags": []
+    },
+    {
+      "id": "ALG04V2_122",
+      "source_file": "04-bieu-thuc-dai-so-v2-05.json",
+      "original_skill_tags": [
+        "chia-da-thuc-cho-don-thuc"
+      ],
+      "proposed_assessed_skill": "chia-da-thuc-cho-don-thuc",
+      "roles": {
+        "supporting_skills": [],
+        "methods": [],
+        "contexts": [],
+        "categories": []
+      },
+      "review_state": "pattern_candidate_only",
+      "basis": "exact_pattern_candidate",
+      "flags": []
+    },
+    {
+      "id": "ALG04V2_123",
+      "source_file": "04-bieu-thuc-dai-so-v2-05.json",
+      "original_skill_tags": [
+        "chia-da-thuc-cho-don-thuc"
+      ],
+      "proposed_assessed_skill": "chia-da-thuc-cho-don-thuc",
+      "roles": {
+        "supporting_skills": [],
+        "methods": [],
+        "contexts": [],
+        "categories": []
+      },
+      "review_state": "pattern_candidate_only",
+      "basis": "exact_pattern_candidate",
+      "flags": []
+    },
+    {
+      "id": "ALG04V2_124",
+      "source_file": "04-bieu-thuc-dai-so-v2-05.json",
+      "original_skill_tags": [
+        "chia-da-thuc-cho-don-thuc"
+      ],
+      "proposed_assessed_skill": "chia-da-thuc-cho-don-thuc",
+      "roles": {
+        "supporting_skills": [],
+        "methods": [],
+        "contexts": [],
+        "categories": []
+      },
+      "review_state": "pattern_candidate_only",
+      "basis": "exact_pattern_candidate",
+      "flags": []
+    },
+    {
+      "id": "ALG04V2_125",
+      "source_file": "04-bieu-thuc-dai-so-v2-05.json",
+      "original_skill_tags": [
+        "chia-da-thuc-cho-don-thuc"
+      ],
+      "proposed_assessed_skill": "chia-da-thuc-cho-don-thuc",
+      "roles": {
+        "supporting_skills": [],
+        "methods": [],
+        "contexts": [],
+        "categories": []
+      },
+      "review_state": "pattern_candidate_only",
+      "basis": "exact_pattern_candidate",
+      "flags": []
+    },
+    {
+      "id": "ALG04V2_126",
+      "source_file": "04-bieu-thuc-dai-so-v2-05.json",
+      "original_skill_tags": [
+        "chia-da-thuc-cho-don-thuc"
+      ],
+      "proposed_assessed_skill": "chia-da-thuc-cho-don-thuc",
+      "roles": {
+        "supporting_skills": [],
+        "methods": [],
+        "contexts": [],
+        "categories": []
+      },
+      "review_state": "pattern_candidate_only",
+      "basis": "exact_pattern_candidate",
+      "flags": []
+    },
+    {
+      "id": "ALG04V2_127",
+      "source_file": "04-bieu-thuc-dai-so-v2-05.json",
+      "original_skill_tags": [
+        "chia-da-thuc-cho-don-thuc"
+      ],
+      "proposed_assessed_skill": "chia-da-thuc-cho-don-thuc",
+      "roles": {
+        "supporting_skills": [],
+        "methods": [],
+        "contexts": [],
+        "categories": []
+      },
+      "review_state": "pattern_candidate_only",
+      "basis": "exact_pattern_candidate",
+      "flags": []
+    },
+    {
+      "id": "ALG04V2_128",
+      "source_file": "04-bieu-thuc-dai-so-v2-05.json",
+      "original_skill_tags": [
+        "chia-da-thuc-cho-don-thuc"
+      ],
+      "proposed_assessed_skill": "chia-da-thuc-cho-don-thuc",
+      "roles": {
+        "supporting_skills": [],
+        "methods": [],
+        "contexts": [],
+        "categories": []
+      },
+      "review_state": "pattern_candidate_only",
+      "basis": "exact_pattern_candidate",
+      "flags": []
+    },
+    {
+      "id": "ALG04V2_129",
+      "source_file": "04-bieu-thuc-dai-so-v2-05.json",
+      "original_skill_tags": [
+        "chia-da-thuc-cho-don-thuc"
+      ],
+      "proposed_assessed_skill": "chia-da-thuc-cho-don-thuc",
+      "roles": {
+        "supporting_skills": [],
+        "methods": [],
+        "contexts": [],
+        "categories": []
+      },
+      "review_state": "pattern_candidate_only",
+      "basis": "exact_pattern_candidate",
+      "flags": []
+    },
+    {
+      "id": "ALG04V2_130",
+      "source_file": "04-bieu-thuc-dai-so-v2-05.json",
+      "original_skill_tags": [
+        "chia-da-thuc-cho-don-thuc"
+      ],
+      "proposed_assessed_skill": "chia-da-thuc-cho-don-thuc",
+      "roles": {
+        "supporting_skills": [],
+        "methods": [],
+        "contexts": [],
+        "categories": []
+      },
+      "review_state": "pattern_candidate_only",
+      "basis": "exact_pattern_candidate",
+      "flags": []
+    },
+    {
+      "id": "ALG04V2_131",
+      "source_file": "04-bieu-thuc-dai-so-v2-05.json",
+      "original_skill_tags": [
+        "chia-da-thuc-cho-don-thuc"
+      ],
+      "proposed_assessed_skill": "chia-da-thuc-cho-don-thuc",
+      "roles": {
+        "supporting_skills": [],
+        "methods": [],
+        "contexts": [],
+        "categories": []
+      },
+      "review_state": "pattern_candidate_only",
+      "basis": "exact_pattern_candidate",
+      "flags": []
+    },
+    {
+      "id": "ALG04V2_132",
+      "source_file": "04-bieu-thuc-dai-so-v2-05.json",
+      "original_skill_tags": [
+        "chia-da-thuc-cho-don-thuc"
+      ],
+      "proposed_assessed_skill": "chia-da-thuc-cho-don-thuc",
+      "roles": {
+        "supporting_skills": [],
+        "methods": [],
+        "contexts": [],
+        "categories": []
+      },
+      "review_state": "pattern_candidate_only",
+      "basis": "exact_pattern_candidate",
+      "flags": []
+    }
+  ],
+  "content_revision_note": "CĐ04 academic QA: five division questions specify nonzero divisor; three application questions clarify valid parameter domains. All question IDs, options, answer indices, tags and question count unchanged."
+}

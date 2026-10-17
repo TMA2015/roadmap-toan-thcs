@@ -1,0 +1,2486 @@
+{
+  "version": 2,
+  "schema": "practice-question-chunk-v1",
+  "bank_id": "SYN20-V1-05",
+  "topic": {
+    "id": "20-hinh-hoc-tong-hop",
+    "title": "Hình học tổng hợp, đo lường và hình khối"
+  },
+  "questions": [
+    {
+      "id": "SYN20V1_121",
+      "question": "Tam giác có ba cạnh bằng nhau là:",
+      "options": [
+        "Tam giác đều",
+        "Tam giác vuông",
+        "Tam giác tù",
+        "Tam giác thường"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "hinh-hoc-tong-hop",
+        "skill": [
+          "nhan-biet-tam-giac-deu"
+        ],
+        "type": "nhan-biet-tam-giac-deu",
+        "layer": "KNTT-Core",
+        "grade": 6
+      },
+      "difficulty": "intermediate",
+      "explanation": "Định nghĩa tam giác đều.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "SYN20V1_122",
+      "question": "Mỗi góc của tam giác đều bằng:",
+      "options": [
+        "60°",
+        "90°",
+        "45°",
+        "120°"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "hinh-hoc-tong-hop",
+        "skill": [
+          "nhan-biet-tam-giac-deu"
+        ],
+        "type": "nhan-biet-tam-giac-deu",
+        "layer": "KNTT-Core",
+        "grade": 6
+      },
+      "difficulty": "intermediate",
+      "explanation": "Ba góc bằng nhau và tổng 180°.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "SYN20V1_123",
+      "question": "Tam giác ABC có AB=BC=CA. Kết luận:",
+      "options": [
+        "ABC đều",
+        "ABC vuông",
+        "ABC chỉ cân tại A",
+        "Không đủ"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "hinh-hoc-tong-hop",
+        "skill": [
+          "nhan-biet-tam-giac-deu"
+        ],
+        "type": "nhan-biet-tam-giac-deu",
+        "layer": "KNTT-Core",
+        "grade": 6
+      },
+      "difficulty": "intermediate",
+      "explanation": "Ba cạnh bằng nhau → tam giác đều.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "SYN20V1_124",
+      "question": "Tứ giác có bốn cạnh bằng nhau và bốn góc vuông là:",
+      "options": [
+        "Hình vuông",
+        "Hình thoi không vuông",
+        "Hình chữ nhật không vuông",
+        "Hình thang"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "hinh-hoc-tong-hop",
+        "skill": [
+          "nhan-biet-hinh-vuong"
+        ],
+        "type": "nhan-biet-hinh-vuong",
+        "layer": "KNTT-Core",
+        "grade": 6
+      },
+      "difficulty": "intermediate",
+      "explanation": "Định nghĩa hình vuông.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "SYN20V1_125",
+      "question": "Hình vuông có số góc vuông:",
+      "options": [
+        "4",
+        "2",
+        "1",
+        "0"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "hinh-hoc-tong-hop",
+        "skill": [
+          "nhan-biet-hinh-vuong"
+        ],
+        "type": "nhan-biet-hinh-vuong",
+        "layer": "KNTT-Core",
+        "grade": 6
+      },
+      "difficulty": "intermediate",
+      "explanation": "Bốn góc đều 90°.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "SYN20V1_126",
+      "question": "Hình chữ nhật có hai cạnh kề bằng nhau là:",
+      "options": [
+        "Hình vuông",
+        "Hình thoi bất kỳ",
+        "Hình thang cân",
+        "Không xác định"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "hinh-hoc-tong-hop",
+        "skill": [
+          "nhan-biet-hinh-vuong"
+        ],
+        "type": "nhan-biet-hinh-vuong",
+        "layer": "KNTT-Core",
+        "grade": 6
+      },
+      "difficulty": "intermediate",
+      "explanation": "Dấu hiệu hình vuông.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "SYN20V1_127",
+      "question": "Lục giác đều có:",
+      "options": [
+        "6 cạnh bằng nhau và 6 góc bằng nhau",
+        "Chỉ 6 cạnh bằng nhau",
+        "4 cạnh bằng nhau",
+        "Mỗi góc 90°"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "hinh-hoc-tong-hop",
+        "skill": [
+          "nhan-biet-luc-giac-deu"
+        ],
+        "type": "nhan-biet-luc-giac-deu",
+        "layer": "KNTT-Core",
+        "grade": 6
+      },
+      "difficulty": "intermediate",
+      "explanation": "Định nghĩa lục giác đều.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "SYN20V1_128",
+      "question": "Mỗi góc trong lục giác đều:",
+      "options": [
+        "120°",
+        "60°",
+        "90°",
+        "135°"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "hinh-hoc-tong-hop",
+        "skill": [
+          "nhan-biet-luc-giac-deu"
+        ],
+        "type": "nhan-biet-luc-giac-deu",
+        "layer": "KNTT-Core",
+        "grade": 6
+      },
+      "difficulty": "intermediate",
+      "explanation": "720°/6=120°.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "SYN20V1_129",
+      "question": "Lục giác đều có bao nhiêu cạnh?",
+      "options": [
+        "6",
+        "5",
+        "7",
+        "8"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "hinh-hoc-tong-hop",
+        "skill": [
+          "nhan-biet-luc-giac-deu"
+        ],
+        "type": "nhan-biet-luc-giac-deu",
+        "layer": "KNTT-Core",
+        "grade": 6
+      },
+      "difficulty": "intermediate",
+      "explanation": "Tên gọi lục giác tương ứng 6 cạnh.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "SYN20V1_130",
+      "question": "Tứ giác có hai cặp cạnh đối song song là:",
+      "options": [
+        "Hình bình hành",
+        "Hình thang chỉ có một cặp song song",
+        "Tam giác",
+        "Lục giác"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "hinh-hoc-tong-hop",
+        "skill": [
+          "nhan-biet-tu-giac-dac-biet"
+        ],
+        "type": "nhan-biet-tu-giac-dac-biet",
+        "layer": "KNTT-Core",
+        "grade": 6
+      },
+      "difficulty": "intermediate",
+      "explanation": "Dấu hiệu hình bình hành.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "SYN20V1_131",
+      "question": "Hình bình hành có một góc vuông là:",
+      "options": [
+        "Hình chữ nhật",
+        "Hình thoi",
+        "Hình thang cân",
+        "Tam giác vuông"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "hinh-hoc-tong-hop",
+        "skill": [
+          "nhan-biet-tu-giac-dac-biet"
+        ],
+        "type": "nhan-biet-tu-giac-dac-biet",
+        "layer": "KNTT-Core",
+        "grade": 6
+      },
+      "difficulty": "intermediate",
+      "explanation": "Dấu hiệu hình chữ nhật.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "SYN20V1_132",
+      "question": "Hình bình hành có hai cạnh kề bằng nhau là:",
+      "options": [
+        "Hình thoi",
+        "Hình chữ nhật",
+        "Hình thang",
+        "Không đủ"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "hinh-hoc-tong-hop",
+        "skill": [
+          "nhan-biet-tu-giac-dac-biet"
+        ],
+        "type": "nhan-biet-tu-giac-dac-biet",
+        "layer": "KNTT-Core",
+        "grade": 6
+      },
+      "difficulty": "intermediate",
+      "explanation": "Dấu hiệu hình thoi.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "SYN20V1_133",
+      "question": "Hình chữ nhật 5 cm × 3 cm có chu vi:",
+      "options": [
+        "16 cm",
+        "15 cm",
+        "8 cm",
+        "30 cm"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "hinh-hoc-tong-hop",
+        "skill": [
+          "chu-vi-tu-giac"
+        ],
+        "type": "chu-vi-tu-giac",
+        "layer": "KNTT-Core",
+        "grade": 6
+      },
+      "difficulty": "intermediate",
+      "explanation": "P=2(5+3)=16.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "SYN20V1_134",
+      "question": "Hình vuông cạnh 7 cm có chu vi:",
+      "options": [
+        "28 cm",
+        "49 cm",
+        "14 cm",
+        "21 cm"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "hinh-hoc-tong-hop",
+        "skill": [
+          "chu-vi-tu-giac"
+        ],
+        "type": "chu-vi-tu-giac",
+        "layer": "KNTT-Core",
+        "grade": 6
+      },
+      "difficulty": "intermediate",
+      "explanation": "P=4·7.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "SYN20V1_135",
+      "question": "Tứ giác có các cạnh 2,3,4,5 cm. Chu vi:",
+      "options": [
+        "14 cm",
+        "12 cm",
+        "15 cm",
+        "10 cm"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "hinh-hoc-tong-hop",
+        "skill": [
+          "chu-vi-tu-giac"
+        ],
+        "type": "chu-vi-tu-giac",
+        "layer": "KNTT-Core",
+        "grade": 6
+      },
+      "difficulty": "intermediate",
+      "explanation": "Cộng bốn cạnh.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "SYN20V1_136",
+      "question": "Hình chữ nhật 7×4 cm có diện tích:",
+      "options": [
+        "28 cm²",
+        "22 cm²",
+        "11 cm²",
+        "56 cm²"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "hinh-hoc-tong-hop",
+        "skill": [
+          "dien-tich-tu-giac"
+        ],
+        "type": "dien-tich-tu-giac",
+        "layer": "KNTT-Core",
+        "grade": 6
+      },
+      "difficulty": "intermediate",
+      "explanation": "S=7·4.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "SYN20V1_137",
+      "question": "Hình vuông cạnh 6 cm có diện tích:",
+      "options": [
+        "36 cm²",
+        "24 cm²",
+        "12 cm²",
+        "72 cm²"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "hinh-hoc-tong-hop",
+        "skill": [
+          "dien-tich-tu-giac"
+        ],
+        "type": "dien-tich-tu-giac",
+        "layer": "KNTT-Core",
+        "grade": 6
+      },
+      "difficulty": "intermediate",
+      "explanation": "S=6².",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "SYN20V1_138",
+      "question": "Hình thang có hai đáy 6,10 cm và cao 4 cm. Diện tích:",
+      "options": [
+        "32 cm²",
+        "64 cm²",
+        "40 cm²",
+        "16 cm²"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "hinh-hoc-tong-hop",
+        "skill": [
+          "dien-tich-tu-giac"
+        ],
+        "type": "dien-tich-tu-giac",
+        "layer": "KNTT-Core",
+        "grade": 6
+      },
+      "difficulty": "intermediate",
+      "explanation": "S=(6+10)·4/2=32.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "SYN20V1_139",
+      "question": "Phòng dài 5 m, rộng 4 m. Diện tích sàn:",
+      "options": [
+        "20 m²",
+        "18 m²",
+        "9 m²",
+        "40 m²"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "hinh-hoc-tong-hop",
+        "skill": [
+          "do-luong-thuc-te"
+        ],
+        "type": "do-luong-thuc-te",
+        "layer": "KNTT-Core",
+        "grade": 6
+      },
+      "difficulty": "intermediate",
+      "explanation": "S=5·4.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "SYN20V1_140",
+      "question": "Một hàng rào quanh sân vuông cạnh 8 m cần tối thiểu:",
+      "options": [
+        "32 m",
+        "64 m",
+        "16 m",
+        "8 m"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "hinh-hoc-tong-hop",
+        "skill": [
+          "do-luong-thuc-te"
+        ],
+        "type": "do-luong-thuc-te",
+        "layer": "KNTT-Core",
+        "grade": 6
+      },
+      "difficulty": "intermediate",
+      "explanation": "Chu vi =4·8.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "SYN20V1_141",
+      "question": "Tấm bìa 200 cm × 50 cm có diện tích theo m²:",
+      "options": [
+        "1 m²",
+        "10 m²",
+        "0,1 m²",
+        "100 m²"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "hinh-hoc-tong-hop",
+        "skill": [
+          "do-luong-thuc-te"
+        ],
+        "type": "do-luong-thuc-te",
+        "layer": "KNTT-Core",
+        "grade": 6
+      },
+      "difficulty": "intermediate",
+      "explanation": "200 cm=2 m, 50 cm=0,5 m; S=1 m².",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "SYN20V1_142",
+      "question": "Hình vuông có số trục đối xứng:",
+      "options": [
+        "4",
+        "2",
+        "1",
+        "0"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "hinh-hoc-tong-hop",
+        "skill": [
+          "truc-doi-xung"
+        ],
+        "type": "truc-doi-xung",
+        "layer": "KNTT-Core",
+        "grade": 6
+      },
+      "difficulty": "intermediate",
+      "explanation": "Hai đường chéo và hai đường qua trung điểm cạnh đối.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "SYN20V1_143",
+      "question": "Hình chữ nhật không phải hình vuông có số trục đối xứng:",
+      "options": [
+        "2",
+        "4",
+        "1",
+        "0"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "hinh-hoc-tong-hop",
+        "skill": [
+          "truc-doi-xung"
+        ],
+        "type": "truc-doi-xung",
+        "layer": "KNTT-Core",
+        "grade": 6
+      },
+      "difficulty": "intermediate",
+      "explanation": "Hai đường qua tâm song song các cạnh.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "SYN20V1_144",
+      "question": "Một đường thẳng là trục đối xứng nếu phép đối xứng qua nó:",
+      "options": [
+        "Biến hình thành chính nó",
+        "Luôn đổi diện tích",
+        "Biến mọi điểm thành tâm",
+        "Xóa một nửa hình"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "hinh-hoc-tong-hop",
+        "skill": [
+          "truc-doi-xung"
+        ],
+        "type": "truc-doi-xung",
+        "layer": "KNTT-Core",
+        "grade": 6
+      },
+      "difficulty": "intermediate",
+      "explanation": "Định nghĩa trục đối xứng.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "SYN20V1_145",
+      "question": "Tâm hình bình hành là:",
+      "options": [
+        "Giao điểm hai đường chéo",
+        "Một đỉnh",
+        "Trung điểm một cạnh",
+        "Không có"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "hinh-hoc-tong-hop",
+        "skill": [
+          "tam-doi-xung"
+        ],
+        "type": "tam-doi-xung",
+        "layer": "KNTT-Core",
+        "grade": 6
+      },
+      "difficulty": "intermediate",
+      "explanation": "Giao điểm hai đường chéo là tâm đối xứng.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "SYN20V1_146",
+      "question": "Hình chữ nhật có tâm đối xứng tại:",
+      "options": [
+        "Giao điểm hai đường chéo",
+        "Một góc vuông",
+        "Trung điểm cạnh dài",
+        "Mọi điểm"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "hinh-hoc-tong-hop",
+        "skill": [
+          "tam-doi-xung"
+        ],
+        "type": "tam-doi-xung",
+        "layer": "KNTT-Core",
+        "grade": 6
+      },
+      "difficulty": "intermediate",
+      "explanation": "Hình chữ nhật là hình bình hành.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "SYN20V1_147",
+      "question": "Đối xứng tâm O biến điểm A thành A' khi:",
+      "options": [
+        "O là trung điểm AA'",
+        "OA vuông góc OA'",
+        "OA=0",
+        "A=A' luôn"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "hinh-hoc-tong-hop",
+        "skill": [
+          "tam-doi-xung"
+        ],
+        "type": "tam-doi-xung",
+        "layer": "KNTT-Core",
+        "grade": 6
+      },
+      "difficulty": "intermediate",
+      "explanation": "Định nghĩa đối xứng tâm.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "SYN20V1_148",
+      "question": "Hình hộp chữ nhật có:",
+      "options": [
+        "6 mặt là hình chữ nhật",
+        "2 mặt tròn",
+        "1 đáy",
+        "Các mặt đều tam giác"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "hinh-hoc-tong-hop",
+        "skill": [
+          "nhan-biet-hinh-hop-lap-phuong"
+        ],
+        "type": "nhan-biet-hinh-hop-lap-phuong",
+        "layer": "KNTT-Core",
+        "grade": 7
+      },
+      "difficulty": "intermediate",
+      "explanation": "Đặc trưng hình hộp chữ nhật.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "SYN20V1_149",
+      "question": "Hình lập phương có:",
+      "options": [
+        "6 mặt vuông bằng nhau",
+        "Chỉ 4 mặt",
+        "Hai đáy tròn",
+        "Một đỉnh"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "hinh-hoc-tong-hop",
+        "skill": [
+          "nhan-biet-hinh-hop-lap-phuong"
+        ],
+        "type": "nhan-biet-hinh-hop-lap-phuong",
+        "layer": "KNTT-Core",
+        "grade": 7
+      },
+      "difficulty": "intermediate",
+      "explanation": "Định nghĩa hình lập phương.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "SYN20V1_150",
+      "question": "Mọi hình lập phương là:",
+      "options": [
+        "Hình hộp chữ nhật đặc biệt",
+        "Hình nón",
+        "Hình trụ",
+        "Hình chóp"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "hinh-hoc-tong-hop",
+        "skill": [
+          "nhan-biet-hinh-hop-lap-phuong"
+        ],
+        "type": "nhan-biet-hinh-hop-lap-phuong",
+        "layer": "KNTT-Core",
+        "grade": 7
+      },
+      "difficulty": "intermediate",
+      "explanation": "Lập phương là hộp chữ nhật có các cạnh bằng nhau.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "SYN20V1_151",
+      "question": "Hộp chữ nhật đáy 3×4 cm, cao 5 cm. Sxq:",
+      "options": [
+        "70 cm²",
+        "60 cm²",
+        "94 cm²",
+        "20 cm²"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "hinh-hoc-tong-hop",
+        "skill": [
+          "dien-tich-xung-quanh-hop-chu-nhat"
+        ],
+        "type": "dien-tich-xung-quanh-hop-chu-nhat",
+        "layer": "KNTT-Core",
+        "grade": 7
+      },
+      "difficulty": "intermediate",
+      "explanation": "Sxq=2(3+4)·5=70.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "SYN20V1_152",
+      "question": "Hình lập phương cạnh 2 cm. Sxq (4 mặt bên):",
+      "options": [
+        "16 cm²",
+        "24 cm²",
+        "8 cm²",
+        "4 cm²"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "hinh-hoc-tong-hop",
+        "skill": [
+          "dien-tich-xung-quanh-hop-chu-nhat"
+        ],
+        "type": "dien-tich-xung-quanh-hop-chu-nhat",
+        "layer": "KNTT-Core",
+        "grade": 7
+      },
+      "difficulty": "intermediate",
+      "explanation": "4·2²=16.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "SYN20V1_153",
+      "question": "Hộp chữ nhật có chu vi đáy 18 cm, cao 4 cm. Sxq:",
+      "options": [
+        "72 cm²",
+        "22 cm²",
+        "36 cm²",
+        "144 cm²"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "hinh-hoc-tong-hop",
+        "skill": [
+          "dien-tich-xung-quanh-hop-chu-nhat"
+        ],
+        "type": "dien-tich-xung-quanh-hop-chu-nhat",
+        "layer": "KNTT-Core",
+        "grade": 7
+      },
+      "difficulty": "intermediate",
+      "explanation": "Sxq=Pđáy·h=72.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "SYN20V1_154",
+      "question": "Lăng trụ đứng có các cạnh bên:",
+      "options": [
+        "Vuông góc với hai mặt đáy",
+        "Song song mặt đáy",
+        "Nằm trong mặt đáy",
+        "Không bằng nhau"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "hinh-hoc-tong-hop",
+        "skill": [
+          "nhan-biet-lang-tru-dung"
+        ],
+        "type": "nhan-biet-lang-tru-dung",
+        "layer": "KNTT-Core",
+        "grade": 7
+      },
+      "difficulty": "intermediate",
+      "explanation": "Đặc trưng lăng trụ đứng.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "SYN20V1_155",
+      "question": "Hai mặt đáy của lăng trụ đứng:",
+      "options": [
+        "Là hai đa giác bằng nhau và song song",
+        "Luôn là hình tròn",
+        "Luôn là tam giác đều",
+        "Vuông góc nhau"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "hinh-hoc-tong-hop",
+        "skill": [
+          "nhan-biet-lang-tru-dung"
+        ],
+        "type": "nhan-biet-lang-tru-dung",
+        "layer": "KNTT-Core",
+        "grade": 7
+      },
+      "difficulty": "intermediate",
+      "explanation": "Định nghĩa lăng trụ.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "SYN20V1_156",
+      "question": "Mặt bên lăng trụ đứng là:",
+      "options": [
+        "Hình chữ nhật",
+        "Hình tròn",
+        "Tam giác đều",
+        "Hình quạt"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "hinh-hoc-tong-hop",
+        "skill": [
+          "nhan-biet-lang-tru-dung"
+        ],
+        "type": "nhan-biet-lang-tru-dung",
+        "layer": "KNTT-Core",
+        "grade": 7
+      },
+      "difficulty": "intermediate",
+      "explanation": "Với lăng trụ đứng, các mặt bên là hình chữ nhật.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "SYN20V1_157",
+      "question": "Lăng trụ đứng Pđáy=14 cm,h=6 cm. Sxq:",
+      "options": [
+        "84 cm²",
+        "20 cm²",
+        "42 cm²",
+        "196 cm²"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "hinh-hoc-tong-hop",
+        "skill": [
+          "dien-tich-xung-quanh-lang-tru"
+        ],
+        "type": "dien-tich-xung-quanh-lang-tru",
+        "layer": "KNTT-Core",
+        "grade": 7
+      },
+      "difficulty": "intermediate",
+      "explanation": "Sxq=Pđáy·h.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "SYN20V1_158",
+      "question": "Lăng trụ đứng có Sxq=60 cm²,h=5 cm. Pđáy:",
+      "options": [
+        "12 cm",
+        "300 cm",
+        "30 cm",
+        "6 cm"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "hinh-hoc-tong-hop",
+        "skill": [
+          "dien-tich-xung-quanh-lang-tru"
+        ],
+        "type": "dien-tich-xung-quanh-lang-tru",
+        "layer": "KNTT-Core",
+        "grade": 7
+      },
+      "difficulty": "intermediate",
+      "explanation": "Pđáy=Sxq/h=12.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "SYN20V1_159",
+      "question": "Lăng trụ đứng đáy tam giác cạnh 3,4,5 cm, h=10 cm. Sxq:",
+      "options": [
+        "120 cm²",
+        "60 cm²",
+        "50 cm²",
+        "240 cm²"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "hinh-hoc-tong-hop",
+        "skill": [
+          "dien-tich-xung-quanh-lang-tru"
+        ],
+        "type": "dien-tich-xung-quanh-lang-tru",
+        "layer": "KNTT-Core",
+        "grade": 7
+      },
+      "difficulty": "intermediate",
+      "explanation": "Pđáy=12; Sxq=120.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "SYN20V1_160",
+      "question": "Hình chóp đều có đáy:",
+      "options": [
+        "Đa giác đều",
+        "Hình bất kỳ",
+        "Đường tròn",
+        "Luôn là tam giác vuông"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "hinh-hoc-tong-hop",
+        "skill": [
+          "nhan-biet-hinh-chop-deu"
+        ],
+        "type": "nhan-biet-hinh-chop-deu",
+        "layer": "KNTT-Core",
+        "grade": 8
+      },
+      "difficulty": "intermediate",
+      "explanation": "Định nghĩa hình chóp đều.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          8
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "SYN20V1_161",
+      "question": "Chân đường cao của hình chóp đều nằm tại:",
+      "options": [
+        "Tâm của đa giác đáy",
+        "Một đỉnh đáy",
+        "Trung điểm cạnh bên",
+        "Bất kỳ"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "hinh-hoc-tong-hop",
+        "skill": [
+          "nhan-biet-hinh-chop-deu"
+        ],
+        "type": "nhan-biet-hinh-chop-deu",
+        "layer": "KNTT-Core",
+        "grade": 8
+      },
+      "difficulty": "intermediate",
+      "explanation": "Đặc trưng hình chóp đều.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          8
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "SYN20V1_162",
+      "question": "Các mặt bên của hình chóp đều là:",
+      "options": [
+        "Các tam giác cân bằng nhau",
+        "Các hình chữ nhật",
+        "Các hình tròn",
+        "Các tam giác vuông bất kỳ"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "hinh-hoc-tong-hop",
+        "skill": [
+          "nhan-biet-hinh-chop-deu"
+        ],
+        "type": "nhan-biet-hinh-chop-deu",
+        "layer": "KNTT-Core",
+        "grade": 8
+      },
+      "difficulty": "intermediate",
+      "explanation": "Mặt bên là các tam giác cân bằng nhau.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          8
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "SYN20V1_163",
+      "question": "Hình chóp đều có nửa chu vi đáy p=10 cm, trung đoạn d=6 cm. Sxq:",
+      "options": [
+        "60 cm²",
+        "120 cm²",
+        "16 cm²",
+        "30 cm²"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "hinh-hoc-tong-hop",
+        "skill": [
+          "dien-tich-xung-quanh-hinh-chop"
+        ],
+        "type": "dien-tich-xung-quanh-hinh-chop",
+        "layer": "KNTT-Core",
+        "grade": 8
+      },
+      "difficulty": "intermediate",
+      "explanation": "Sxq=pd.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          8
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "SYN20V1_164",
+      "question": "Nếu chu vi đáy P=24 cm và trung đoạn d=5 cm, Sxq:",
+      "options": [
+        "60 cm²",
+        "120 cm²",
+        "29 cm²",
+        "48 cm²"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "hinh-hoc-tong-hop",
+        "skill": [
+          "dien-tich-xung-quanh-hinh-chop"
+        ],
+        "type": "dien-tich-xung-quanh-hinh-chop",
+        "layer": "KNTT-Core",
+        "grade": 8
+      },
+      "difficulty": "intermediate",
+      "explanation": "p=P/2=12; Sxq=60.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          8
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "SYN20V1_165",
+      "question": "Hình chóp đều có Sxq=48 cm²,p=8 cm. Trung đoạn:",
+      "options": [
+        "6 cm",
+        "4 cm",
+        "384 cm",
+        "40 cm"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "hinh-hoc-tong-hop",
+        "skill": [
+          "dien-tich-xung-quanh-hinh-chop"
+        ],
+        "type": "dien-tich-xung-quanh-hinh-chop",
+        "layer": "KNTT-Core",
+        "grade": 8
+      },
+      "difficulty": "intermediate",
+      "explanation": "d=Sxq/p=6.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          8
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "SYN20V1_166",
+      "question": "Sđáy=24 cm²,h=9 cm. V chóp:",
+      "options": [
+        "72 cm³",
+        "216 cm³",
+        "33 cm³",
+        "648 cm³"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "hinh-hoc-tong-hop",
+        "skill": [
+          "the-tich-hinh-chop"
+        ],
+        "type": "the-tich-hinh-chop",
+        "layer": "KNTT-Core",
+        "grade": 8
+      },
+      "difficulty": "intermediate",
+      "explanation": "V=1/3·24·9=72.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          8
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "SYN20V1_167",
+      "question": "V=100 cm³,Sđáy=25 cm². h:",
+      "options": [
+        "12 cm",
+        "4 cm",
+        "25 cm",
+        "8 cm"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "hinh-hoc-tong-hop",
+        "skill": [
+          "the-tich-hinh-chop"
+        ],
+        "type": "the-tich-hinh-chop",
+        "layer": "KNTT-Core",
+        "grade": 8
+      },
+      "difficulty": "intermediate",
+      "explanation": "100=1/3·25h → h=12.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          8
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "SYN20V1_168",
+      "question": "Chóp đáy vuông cạnh 6 cm,h=5 cm. V:",
+      "options": [
+        "60 cm³",
+        "180 cm³",
+        "36 cm³",
+        "90 cm³"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "hinh-hoc-tong-hop",
+        "skill": [
+          "the-tich-hinh-chop"
+        ],
+        "type": "the-tich-hinh-chop",
+        "layer": "KNTT-Core",
+        "grade": 8
+      },
+      "difficulty": "intermediate",
+      "explanation": "Sđáy=36; V=1/3·36·5=60.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          8
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "SYN20V1_169",
+      "question": "Hình trụ có hai đáy:",
+      "options": [
+        "Hai hình tròn bằng nhau song song",
+        "Hai tam giác",
+        "Một hình tròn",
+        "Hai hình vuông"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "hinh-hoc-tong-hop",
+        "skill": [
+          "nhan-biet-hinh-tru"
+        ],
+        "type": "nhan-biet-hinh-tru",
+        "layer": "KNTT-Core",
+        "grade": 9
+      },
+      "difficulty": "intermediate",
+      "explanation": "Định nghĩa hình trụ.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          9
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "SYN20V1_170",
+      "question": "Khi quay hình chữ nhật quanh một cạnh cố định, có thể tạo:",
+      "options": [
+        "Hình trụ",
+        "Hình cầu",
+        "Hình chóp",
+        "Lăng trụ tam giác"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "hinh-hoc-tong-hop",
+        "skill": [
+          "nhan-biet-hinh-tru"
+        ],
+        "type": "nhan-biet-hinh-tru",
+        "layer": "KNTT-Core",
+        "grade": 9
+      },
+      "difficulty": "intermediate",
+      "explanation": "Mô hình hình trụ tròn xoay.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          9
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "SYN20V1_171",
+      "question": "Chiều cao hình trụ là:",
+      "options": [
+        "Khoảng cách giữa hai mặt phẳng đáy",
+        "Bán kính đáy",
+        "Chu vi đáy",
+        "Đường kính bắt buộc"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "hinh-hoc-tong-hop",
+        "skill": [
+          "nhan-biet-hinh-tru"
+        ],
+        "type": "nhan-biet-hinh-tru",
+        "layer": "KNTT-Core",
+        "grade": 9
+      },
+      "difficulty": "intermediate",
+      "explanation": "Định nghĩa chiều cao.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          9
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "SYN20V1_172",
+      "question": "Hình trụ r=3,h=5. Sxq:",
+      "options": [
+        "30π",
+        "15π",
+        "45π",
+        "18π"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "hinh-hoc-tong-hop",
+        "skill": [
+          "dien-tich-xung-quanh-hinh-tru"
+        ],
+        "type": "dien-tich-xung-quanh-hinh-tru",
+        "layer": "KNTT-Core",
+        "grade": 9
+      },
+      "difficulty": "intermediate",
+      "explanation": "Sxq=2πrh=30π.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          9
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "SYN20V1_173",
+      "question": "Hình trụ đường kính 8,h=2. Sxq:",
+      "options": [
+        "16π",
+        "32π",
+        "8π",
+        "64π"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "hinh-hoc-tong-hop",
+        "skill": [
+          "dien-tich-xung-quanh-hinh-tru"
+        ],
+        "type": "dien-tich-xung-quanh-hinh-tru",
+        "layer": "KNTT-Core",
+        "grade": 9
+      },
+      "difficulty": "intermediate",
+      "explanation": "r=4; 2π·4·2=16π.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          9
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "SYN20V1_174",
+      "question": "Sxq=40π,r=4. h:",
+      "options": [
+        "5",
+        "10",
+        "2",
+        "20"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "hinh-hoc-tong-hop",
+        "skill": [
+          "dien-tich-xung-quanh-hinh-tru"
+        ],
+        "type": "dien-tich-xung-quanh-hinh-tru",
+        "layer": "KNTT-Core",
+        "grade": 9
+      },
+      "difficulty": "intermediate",
+      "explanation": "40π=2π·4·h → h=5.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          9
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "SYN20V1_175",
+      "question": "Hình trụ r=2,h=7. V:",
+      "options": [
+        "28π",
+        "14π",
+        "8π",
+        "56π"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "hinh-hoc-tong-hop",
+        "skill": [
+          "the-tich-hinh-tru"
+        ],
+        "type": "the-tich-hinh-tru",
+        "layer": "KNTT-Core",
+        "grade": 9
+      },
+      "difficulty": "intermediate",
+      "explanation": "V=πr²h=28π.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          9
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "SYN20V1_176",
+      "question": "Hình trụ diện tích đáy 9π,h=10. V:",
+      "options": [
+        "90π",
+        "19π",
+        "45π",
+        "900π"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "hinh-hoc-tong-hop",
+        "skill": [
+          "the-tich-hinh-tru"
+        ],
+        "type": "the-tich-hinh-tru",
+        "layer": "KNTT-Core",
+        "grade": 9
+      },
+      "difficulty": "intermediate",
+      "explanation": "V=Sđáyh.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          9
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "SYN20V1_177",
+      "question": "V=48π,r=4. h:",
+      "options": [
+        "3",
+        "12",
+        "4",
+        "6"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "hinh-hoc-tong-hop",
+        "skill": [
+          "the-tich-hinh-tru"
+        ],
+        "type": "the-tich-hinh-tru",
+        "layer": "KNTT-Core",
+        "grade": 9
+      },
+      "difficulty": "intermediate",
+      "explanation": "48π=16πh → h=3.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          9
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "SYN20V1_178",
+      "question": "Hình nón có:",
+      "options": [
+        "Một đáy tròn và một đỉnh",
+        "Hai đáy tròn",
+        "Không có đỉnh",
+        "Sáu mặt vuông"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "hinh-hoc-tong-hop",
+        "skill": [
+          "nhan-biet-hinh-non"
+        ],
+        "type": "nhan-biet-hinh-non",
+        "layer": "KNTT-Core",
+        "grade": 9
+      },
+      "difficulty": "intermediate",
+      "explanation": "Đặc trưng hình nón.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          9
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "SYN20V1_179",
+      "question": "Đường sinh l của hình nón là đoạn:",
+      "options": [
+        "Từ đỉnh tới một điểm trên đường tròn đáy dọc mặt bên",
+        "Từ tâm đáy tới đỉnh",
+        "Đường kính đáy",
+        "Bán kính bất kỳ"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "hinh-hoc-tong-hop",
+        "skill": [
+          "nhan-biet-hinh-non"
+        ],
+        "type": "nhan-biet-hinh-non",
+        "layer": "KNTT-Core",
+        "grade": 9
+      },
+      "difficulty": "intermediate",
+      "explanation": "Định nghĩa đường sinh.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          9
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "SYN20V1_180",
+      "question": "Trong nón tròn xoay vuông, r,h,l thỏa:",
+      "options": [
+        "l²=r²+h²",
+        "h²=r²+l²",
+        "r=l+h",
+        "l=rh"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "hinh-hoc-tong-hop",
+        "skill": [
+          "nhan-biet-hinh-non"
+        ],
+        "type": "nhan-biet-hinh-non",
+        "layer": "KNTT-Core",
+        "grade": 9
+      },
+      "difficulty": "intermediate",
+      "explanation": "Mặt cắt qua trục tạo tam giác vuông.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          9
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "SYN20V1_181",
+      "question": "Nón r=3,l=5. Sxq:",
+      "options": [
+        "15π",
+        "30π",
+        "9π",
+        "45π"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "hinh-hoc-tong-hop",
+        "skill": [
+          "dien-tich-xung-quanh-hinh-non"
+        ],
+        "type": "dien-tich-xung-quanh-hinh-non",
+        "layer": "KNTT-Core",
+        "grade": 9
+      },
+      "difficulty": "intermediate",
+      "explanation": "Sxq=πrl=15π.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          9
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "SYN20V1_182",
+      "question": "Nón r=4,l=6. Sxq:",
+      "options": [
+        "24π",
+        "48π",
+        "16π",
+        "10π"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "hinh-hoc-tong-hop",
+        "skill": [
+          "dien-tich-xung-quanh-hinh-non"
+        ],
+        "type": "dien-tich-xung-quanh-hinh-non",
+        "layer": "KNTT-Core",
+        "grade": 9
+      },
+      "difficulty": "intermediate",
+      "explanation": "π·4·6.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          9
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "SYN20V1_183",
+      "question": "Sxq=20π,r=4. l:",
+      "options": [
+        "5",
+        "16",
+        "80",
+        "10"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "hinh-hoc-tong-hop",
+        "skill": [
+          "dien-tich-xung-quanh-hinh-non"
+        ],
+        "type": "dien-tich-xung-quanh-hinh-non",
+        "layer": "KNTT-Core",
+        "grade": 9
+      },
+      "difficulty": "intermediate",
+      "explanation": "20π=π·4·l → l=5.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          9
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "SYN20V1_184",
+      "question": "Nón r=3,h=4. V:",
+      "options": [
+        "12π",
+        "36π",
+        "9π",
+        "48π"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "hinh-hoc-tong-hop",
+        "skill": [
+          "the-tich-hinh-non"
+        ],
+        "type": "the-tich-hinh-non",
+        "layer": "KNTT-Core",
+        "grade": 9
+      },
+      "difficulty": "intermediate",
+      "explanation": "V=1/3·π·9·4=12π.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          9
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "SYN20V1_185",
+      "question": "Nón Sđáy=25π,h=6. V:",
+      "options": [
+        "50π",
+        "150π",
+        "25π",
+        "75π"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "hinh-hoc-tong-hop",
+        "skill": [
+          "the-tich-hinh-non"
+        ],
+        "type": "the-tich-hinh-non",
+        "layer": "KNTT-Core",
+        "grade": 9
+      },
+      "difficulty": "intermediate",
+      "explanation": "V=1/3·25π·6=50π.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          9
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "SYN20V1_186",
+      "question": "V=16π,r=2. h:",
+      "options": [
+        "12",
+        "4",
+        "6",
+        "3"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "hinh-hoc-tong-hop",
+        "skill": [
+          "the-tich-hinh-non"
+        ],
+        "type": "the-tich-hinh-non",
+        "layer": "KNTT-Core",
+        "grade": 9
+      },
+      "difficulty": "intermediate",
+      "explanation": "16π=1/3·4πh → h=12.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          9
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "SYN20V1_187",
+      "question": "Mặt cầu tâm O bán kính R gồm các điểm:",
+      "options": [
+        "Cách O đúng R",
+        "Cách O nhỏ hơn R",
+        "Cách O không quá R",
+        "Nằm trên một mặt phẳng"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "hinh-hoc-tong-hop",
+        "skill": [
+          "nhan-biet-hinh-cau"
+        ],
+        "type": "nhan-biet-hinh-cau",
+        "layer": "KNTT-Core",
+        "grade": 9
+      },
+      "difficulty": "intermediate",
+      "explanation": "Định nghĩa mặt cầu.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          9
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "SYN20V1_188",
+      "question": "Hình cầu bán kính R gồm các điểm:",
+      "options": [
+        "Cách tâm O không quá R",
+        "Cách O đúng R",
+        "Cách O lớn hơn R",
+        "Chỉ nằm trên mặt cầu"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "hinh-hoc-tong-hop",
+        "skill": [
+          "nhan-biet-hinh-cau"
+        ],
+        "type": "nhan-biet-hinh-cau",
+        "layer": "KNTT-Core",
+        "grade": 9
+      },
+      "difficulty": "intermediate",
+      "explanation": "Hình cầu gồm cả phần bên trong.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          9
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "SYN20V1_189",
+      "question": "Đường kính hình cầu bán kính 7 cm:",
+      "options": [
+        "14 cm",
+        "7 cm",
+        "49 cm",
+        "3,5 cm"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "hinh-hoc-tong-hop",
+        "skill": [
+          "nhan-biet-hinh-cau"
+        ],
+        "type": "nhan-biet-hinh-cau",
+        "layer": "KNTT-Core",
+        "grade": 9
+      },
+      "difficulty": "intermediate",
+      "explanation": "Đường kính=2R.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          9
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "SYN20V1_190",
+      "question": "Mặt cầu r=2. Diện tích:",
+      "options": [
+        "16π",
+        "8π",
+        "4π",
+        "32π"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "hinh-hoc-tong-hop",
+        "skill": [
+          "dien-tich-mat-cau"
+        ],
+        "type": "dien-tich-mat-cau",
+        "layer": "KNTT-Core",
+        "grade": 9
+      },
+      "difficulty": "intermediate",
+      "explanation": "S=4πr²=16π.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          9
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "SYN20V1_191",
+      "question": "Mặt cầu r=5. Diện tích:",
+      "options": [
+        "100π",
+        "25π",
+        "20π",
+        "125π"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "hinh-hoc-tong-hop",
+        "skill": [
+          "dien-tich-mat-cau"
+        ],
+        "type": "dien-tich-mat-cau",
+        "layer": "KNTT-Core",
+        "grade": 9
+      },
+      "difficulty": "intermediate",
+      "explanation": "4π·25=100π.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          9
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "SYN20V1_192",
+      "question": "Diện tích mặt cầu 36π. Bán kính:",
+      "options": [
+        "3",
+        "6",
+        "9",
+        "18"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "hinh-hoc-tong-hop",
+        "skill": [
+          "dien-tich-mat-cau"
+        ],
+        "type": "dien-tich-mat-cau",
+        "layer": "KNTT-Core",
+        "grade": 9
+      },
+      "difficulty": "intermediate",
+      "explanation": "4πr²=36π → r²=9.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          9
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "SYN20V1_193",
+      "question": "Hình cầu r=3. V:",
+      "options": [
+        "36π",
+        "27π",
+        "12π",
+        "108π"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "hinh-hoc-tong-hop",
+        "skill": [
+          "the-tich-hinh-cau"
+        ],
+        "type": "the-tich-hinh-cau",
+        "layer": "KNTT-Core",
+        "grade": 9
+      },
+      "difficulty": "intermediate",
+      "explanation": "V=4/3π·27=36π.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          9
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "SYN20V1_194",
+      "question": "Hình cầu r=6. V:",
+      "options": [
+        "288π",
+        "216π",
+        "144π",
+        "72π"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "hinh-hoc-tong-hop",
+        "skill": [
+          "the-tich-hinh-cau"
+        ],
+        "type": "the-tich-hinh-cau",
+        "layer": "KNTT-Core",
+        "grade": 9
+      },
+      "difficulty": "intermediate",
+      "explanation": "4/3π·216=288π.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          9
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "SYN20V1_195",
+      "question": "Nếu bán kính hình cầu tăng gấp 2 thì thể tích:",
+      "options": [
+        "Tăng gấp 8",
+        "Tăng gấp 2",
+        "Tăng gấp 4",
+        "Không đổi"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "hinh-hoc-tong-hop",
+        "skill": [
+          "the-tich-hinh-cau"
+        ],
+        "type": "the-tich-hinh-cau",
+        "layer": "KNTT-Core",
+        "grade": 9
+      },
+      "difficulty": "intermediate",
+      "explanation": "V tỉ lệ với r³.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          9
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    }
+  ]
+}

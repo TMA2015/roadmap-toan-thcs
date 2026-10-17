@@ -1,0 +1,48 @@
+/* Self-Learning Math progress + local-only backup screen. */
+.math-progress-page{max-width:1100px;margin:0 auto 2rem;--mpd-line:color-mix(in srgb,var(--md-default-fg-color) 17%,transparent)}
+.mpd-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.75rem;margin:1rem 0 1.25rem}
+.mpd-stat,.mpd-panel{border:1px solid var(--mpd-line);background:var(--md-default-bg-color);border-radius:.8rem;padding:1rem;min-width:0}
+.mpd-stat{display:grid;gap:.38rem;align-content:start}
+.mpd-stat-label{font-size:.78rem;color:var(--md-default-fg-color--light);line-height:1.4}
+.mpd-stat-value{font-size:1.85rem;line-height:1.1;font-variant-numeric:tabular-nums}
+.mpd-stat p{font-size:.74rem;line-height:1.5;margin:.25rem 0 0;color:var(--md-default-fg-color--light)}
+.mpd-columns{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem;margin:1rem 0}
+.mpd-panel h2{font-size:1.04rem!important;margin:0 0 .55rem!important}
+.mpd-panel p,.mpd-footnote{font-size:.81rem;line-height:1.55}
+.mpd-hint{font-size:.76rem!important;color:var(--md-default-fg-color--light);line-height:1.5}
+.mpd-activity-list{padding:0!important;list-style:none!important;margin:.7rem 0 0!important}
+.mpd-activity-list li{display:flex;align-items:flex-start;justify-content:space-between;gap:1rem;padding:.5rem 0;border-top:1px solid var(--mpd-line);font-size:.77rem;overflow-wrap:anywhere}
+.mpd-activity-list li strong{white-space:nowrap;font-variant-numeric:tabular-nums}
+.mpd-warning{padding:.78rem .9rem;border-left:3px solid var(--md-accent-fg-color);border-radius:.4rem;background:color-mix(in srgb,var(--md-accent-fg-color) 6%,transparent);font-size:.81rem;line-height:1.6}
+.mpd-panel+.mpd-panel{margin-top:1rem}
+/* R2-A follow-up: the paired panels share the same Grid row and height.
+   Grid gap already supplies spacing when stacked on a phone. */
+.mpd-columns>.mpd-panel+.mpd-panel{margin-top:0}
+.mpd-columns>.mpd-panel{height:100%}
+.mpd-action{display:inline-flex;align-items:center;justify-content:center;max-width:100%;border:1px solid var(--md-primary-fg-color);background:transparent;color:var(--md-primary-fg-color);padding:.52rem .85rem;border-radius:.46rem;cursor:pointer;min-height:2.4rem;font:inherit;font-size:.8rem;font-weight:700;margin:.35rem .6rem .35rem 0}
+.mpd-action.mpd-primary{background:var(--md-primary-fg-color);color:var(--md-primary-bg-color)}
+.mpd-action:disabled{opacity:.45;cursor:not-allowed}
+.mpd-action:focus-visible,.mpd-file-label input:focus-visible,.mpd-file-label select:focus-visible{outline:2px solid var(--md-accent-fg-color);outline-offset:3px}
+.mpd-file-label{display:grid;gap:.42rem;font-size:.81rem;font-weight:650;margin:.8rem 0}
+.mpd-file-label input,.mpd-file-label select{max-width:100%;min-width:0;min-height:2.45rem;padding:.45rem .55rem;border:1px solid var(--mpd-line);border-radius:.45rem;background:var(--md-default-bg-color);color:var(--md-default-fg-color);font:inherit}
+.mpd-file-label input[type=file]{width:100%}
+.mpd-checkbox{display:flex;gap:.55rem;align-items:flex-start;margin:.7rem 0;font-size:.81rem;line-height:1.5}
+.mpd-checkbox input{margin-top:.2rem;width:1.1rem;height:1.1rem;flex-shrink:0}
+.mpd-restore-list{padding-left:1.2rem!important;font-size:.8rem}
+.mpd-restore-list li{margin:.35rem 0}.mpd-restore-list details{margin:.2rem 0;font-size:.75rem;max-height:10rem;overflow:auto}
+.mpd-restore-list details ul{margin:.35rem 0;padding-left:1.2rem;overflow-wrap:anywhere}
+.mpd-status{min-height:1.4rem;font-size:.81rem}
+.math-progress-page [hidden]{display:none!important}
+@media(max-width:900px){.mpd-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:650px){.mpd-columns{grid-template-columns:1fr}.mpd-panel{padding:.85rem}.mpd-stat{padding:.7rem}.mpd-stat-value{font-size:1.5rem}}
+@media(max-width:370px){.mpd-grid{grid-template-columns:1fr}}
+
+/* Dashboard R2-A: student-facing Core / Practice / Readiness, without new persisted metrics. */
+.mpd-section-title{font-size:1.08rem!important;margin:1rem 0 .45rem!important}
+.mpd-intro{font-size:.84rem;line-height:1.6;color:var(--md-default-fg-color--light);margin:.3rem 0 .65rem}
+.mpd-stat-label{font-size:.86rem;font-weight:750;color:var(--md-default-fg-color);margin:0!important}
+.mpd-stat-value--text{font-size:1.22rem;line-height:1.3}
+.mpd-stat-link{display:inline-block;align-self:end;font-weight:700;font-size:.76rem;margin-top:.38rem;text-decoration:underline;text-underline-offset:.18em}
+.mpd-stat-link:focus-visible{outline:2px solid var(--md-accent-fg-color);outline-offset:3px}
+.mpd-empty{padding:.78rem .9rem;background:var(--md-code-bg-color);border-radius:.55rem;font-size:.81rem;line-height:1.55}
+@media(max-width:650px){.mpd-grid{grid-template-columns:1fr}.mpd-stat-value--text{font-size:1.17rem}}

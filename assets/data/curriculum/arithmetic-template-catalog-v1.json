@@ -1,0 +1,76 @@
+{
+  "schema": "arithmetic-template-catalog-v1",
+  "version": 1,
+  "status": "opt_in_formative_unscored",
+  "as_of": "2026-09-27",
+  "policy": {
+    "source": "authored_mathematical_templates_not_ai_generated",
+    "geometry": "existing_verified_question_and_diagram_pairs_only",
+    "independent_credit": false,
+    "write_to_learner_storage": false,
+    "max_per_session": 6,
+    "solution_origin": "deterministic_equations_and_authored_explanation_rules",
+    "generator_code": "assets/javascripts/arithmetic-template-engine-v1.js"
+  },
+  "templates": [
+    {
+      "id": "INT_MIXED_ADD",
+      "version": 1,
+      "topic": "02-so-va-phep-tinh",
+      "display_name": "Cộng hai số nguyên trái dấu",
+      "assessed_skill_candidate": "cong-so-nguyen-trai-dau",
+      "generator": "signed_integer_addition",
+      "params": {
+        "a_min": -12,
+        "a_max": -3,
+        "b_min": 2,
+        "b_max": 12
+      },
+      "range_policy": "signed integers, no division",
+      "solution_rule": "Compare absolute values and subtract; sign of result follows greater absolute value."
+    },
+    {
+      "id": "FRACTION_UNLIKE_ADD",
+      "version": 1,
+      "topic": "02-so-va-phep-tinh",
+      "display_name": "Cộng hai phân số khác mẫu",
+      "assessed_skill_candidate": "cong-phan-so-khac-mau",
+      "generator": "fraction_addition",
+      "params": {
+        "numerator_min": 1,
+        "numerator_max": 5,
+        "denominator_min": 3,
+        "denominator_max": 9,
+        "proper": true,
+        "distinct_denominators": true
+      },
+      "range_policy": "strictly positive proper fractions with unequal nonzero denominators",
+      "solution_rule": "Cross multiply, add numerator, and reduce with exact greatest common divisor."
+    },
+    {
+      "id": "NUMERIC_DIFFERENCE_SQUARES",
+      "version": 1,
+      "topic": "05-7-hang-dang-thuc",
+      "display_name": "Tính nhanh hiệu hai bình phương",
+      "assessed_skill_candidate": "hieu-hai-binh-phuong",
+      "generator": "integer_difference_of_squares",
+      "params": {
+        "a_min": 8,
+        "a_max": 24,
+        "b_min": 2,
+        "b_max": 10,
+        "gap_min": 2
+      },
+      "range_policy": "positive a>b+1, exactly computed integer values",
+      "solution_rule": "a²−b²=(a−b)(a+b), then calculate."
+    }
+  ],
+  "delivery": {
+    "initial_two_of_each": true,
+    "review_same_variant": "same variant_id; no independent credit",
+    "similar_after_feedback": "new parameter values and variant_id; assisted_transfer; no independent credit",
+    "answer_key": "computed_from_exact_integer_or_rational_arithmetic",
+    "math_instructions": "result and distractor explanations substitute the generated values",
+    "max_seeds_per_template": 100000
+  }
+}

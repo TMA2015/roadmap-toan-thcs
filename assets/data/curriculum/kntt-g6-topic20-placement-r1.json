@@ -1,0 +1,147 @@
+{
+  "schema": "kntt-grade6-topic20-placement-overlay-r1",
+  "version": 1,
+  "grade": 6,
+  "topic": "20-hinh-hoc-tong-hop",
+  "status": "SOURCE_CONFIRMED_EXISTING_REVIEW",
+  "purpose": "Provide exact Grade-6 KNTT lesson placement for existing source-locked Topic20 display cards without mutating the immutable legacy workspace or learner history.",
+  "review_policy": {
+    "new_academic_content": false,
+    "new_canonical_skills": false,
+    "new_micro_items": false,
+    "independent_review_required": false,
+    "reason": "This overlay maps already reconciled Grade-6 KNTT semantic targets to already released Topic20 display cards. New cards geo20-core-1a/1b were previously NotebookLM-reviewed; legacy geo20-core-1 content and learner bindings remain immutable."
+  },
+  "source_locks": {
+    "grade6_reconciliation": {
+      "path": "docs/assets/data/curriculum/kntt-grade6-reconciliation-r1.json",
+      "sha": "38aa6e86781ac63e1481aa0080c3fbc2d819885b"
+    },
+    "topic20_display": {
+      "path": "docs/assets/data/curriculum/topic20-core-display-v2.json",
+      "sha": "ebd5e3e2a7d58d0a75a4cfafd7c026bbd693bd32"
+    },
+    "topic20_legacy_workspace": {
+      "path": "docs/assets/data/curriculum/topic20-learning-workspace.json",
+      "sha": "774997cd9ac4d2efc1c53c17c0de48e6fcdba497"
+    },
+    "topic20_micro": {
+      "path": "docs/assets/data/practice/20-hinh-hoc-tong-hop-micro-v1.json",
+      "sha": "efaa4bff821023700381edee0168b294c2d3ea05"
+    },
+    "core20_release_reconciliation": {
+      "path": "content-staging/reviews/MATH-CORE20-V2-RELEASE-RECONCILIATION-20260929.md",
+      "sha": "5accb88c1cbb3f26648d2fe18d7d7d698b148f4d"
+    },
+    "core20_owner_review": {
+      "path": "content-staging/reviews/MATH-CORE20-PARTB-OWNER-REVIEW-RESULT-20260929.md",
+      "sha": "c12ea25f3703c269e3697a4ff64202dce00f6a84"
+    }
+  },
+  "placements": [
+    {
+      "lesson_ref": "Bài 18",
+      "curriculum_summary": "Tam giác đều, hình vuông, lục giác đều: nhận biết và tính chất trực quan",
+      "direct_skills": [
+        "nhan-biet-tam-giac-deu",
+        "nhan-biet-hinh-vuong",
+        "nhan-biet-luc-giac-deu"
+      ],
+      "card_evidence": [
+        {
+          "card_id": "geo20-core-1",
+          "skills": [
+            "nhan-biet-tam-giac-deu"
+          ]
+        },
+        {
+          "card_id": "geo20-core-1a",
+          "skills": [
+            "nhan-biet-hinh-vuong",
+            "nhan-biet-luc-giac-deu"
+          ]
+        }
+      ]
+    },
+    {
+      "lesson_ref": "Bài 19",
+      "curriculum_summary": "Hình chữ nhật, hình thoi, hình bình hành, hình thang cân: nhận biết và tính chất trực quan",
+      "direct_skills": [
+        "nhan-biet-tu-giac-dac-biet"
+      ],
+      "card_evidence": [
+        {
+          "card_id": "geo20-core-1a",
+          "skills": [
+            "nhan-biet-tu-giac-dac-biet"
+          ]
+        }
+      ]
+    },
+    {
+      "lesson_ref": "Bài 20",
+      "curriculum_summary": "Chu vi và diện tích một số tứ giác đã học",
+      "direct_skills": [
+        "chu-vi-tu-giac",
+        "dien-tich-tu-giac",
+        "do-luong-thuc-te"
+      ],
+      "card_evidence": [
+        {
+          "card_id": "geo20-core-1",
+          "skills": [
+            "dien-tich-tu-giac"
+          ]
+        },
+        {
+          "card_id": "geo20-core-1b",
+          "skills": [
+            "chu-vi-tu-giac",
+            "do-luong-thuc-te"
+          ]
+        }
+      ]
+    },
+    {
+      "lesson_ref": "Bài 21",
+      "curriculum_summary": "Hình có trục đối xứng",
+      "direct_skills": [
+        "truc-doi-xung"
+      ],
+      "card_evidence": [
+        {
+          "card_id": "geo20-core-1",
+          "skills": [
+            "truc-doi-xung"
+          ]
+        }
+      ]
+    },
+    {
+      "lesson_ref": "Bài 22",
+      "curriculum_summary": "Hình có tâm đối xứng",
+      "direct_skills": [
+        "tam-doi-xung"
+      ],
+      "card_evidence": [
+        {
+          "card_id": "geo20-core-1b",
+          "skills": [
+            "tam-doi-xung"
+          ]
+        }
+      ]
+    }
+  ],
+  "protected_boundaries": {
+    "legacy_workspace_mutated": false,
+    "display_card_content_mutated": false,
+    "micro_bank_mutated": false,
+    "practice_bank_mutated": false,
+    "written_library_mutated": false,
+    "readiness_mutated": false,
+    "learner_history_migrated": false,
+    "mastery_semantics_mutated": false,
+    "runtime_taxonomy_mutated": false
+  }
+}

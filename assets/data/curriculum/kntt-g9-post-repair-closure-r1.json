@@ -1,0 +1,130 @@
+{
+  "audit_id": "MATH-KNTT-G9-POST-REPAIR-CLOSURE-R1-20261009",
+  "as_of": "2026-10-09",
+  "grade": 9,
+  "status": "POST_REPAIR_CLOSURE_AUDIT_COMPLETE",
+  "purpose": "Reconcile all 10 Grade-9 KNTT chapter rows after reviewed Repair Wave 1 (CH7/CH8) and Repair Wave 2 (CH6), without creating new learner content or expanding protected dimensions.",
+  "sources": {
+    "inventory": "docs/assets/data/curriculum/kntt-dimension-coverage-g9-v1.json",
+    "scope_review": "docs/assets/data/curriculum/kntt-g9-gap-priority-r1.json",
+    "repair_wave1": "docs/assets/data/curriculum/kntt-g9-repair-wave1-r1.json",
+    "repair_wave2": "docs/assets/data/curriculum/kntt-g9-repair-wave2-r1.json",
+    "repair_wave1_clearance": "G9_REPAIR_W1_R1_CONTENT_REVIEW_COMPLETE",
+    "repair_wave2_clearance": "G9_REPAIR_W2_R1_CONTENT_REVIEW_COMPLETE",
+    "semantic_clearance": "G9_R4_RECONCILIATION_REVIEW_COMPLETE"
+  },
+  "closure_rule": {
+    "p0_definition": "Missing or materially insufficient Grade-9 learner-facing Learn/Micro evidence for a required chapter target.",
+    "p1_definition": "Item-level source review still required before deciding Core Learn/Micro treatment.",
+    "p2_definition": "Non-blocking density or breadth issue that may be useful later but is not a current Grade-9 Core-path gap.",
+    "no_quota_rule": "Do not add Practice/Written/Readiness merely because a chapter received Learn/Micro repair."
+  },
+  "chapters": [
+    {
+      "chapter": 1,
+      "title": "Phương trình và hệ hai phương trình bậc nhất hai ẩn",
+      "pre_repair_priority": "NONE",
+      "post_repair_status": "CLOSED_NO_GAP",
+      "evidence": "Existing Learn/Micro VERIFIED_DIRECT; no repair needed."
+    },
+    {
+      "chapter": 2,
+      "title": "Phương trình và bất phương trình bậc nhất một ẩn",
+      "pre_repair_priority": "NONE",
+      "post_repair_status": "CLOSED_NO_GAP",
+      "evidence": "Existing Learn/Micro VERIFIED_DIRECT; no repair needed."
+    },
+    {
+      "chapter": 3,
+      "title": "Căn bậc hai và căn bậc ba",
+      "pre_repair_priority": "NONE",
+      "post_repair_status": "CLOSED_NO_GAP",
+      "evidence": "Existing Learn/Micro VERIFIED_DIRECT; no repair needed."
+    },
+    {
+      "chapter": 4,
+      "title": "Hệ thức lượng trong tam giác vuông",
+      "pre_repair_priority": "NONE",
+      "post_repair_status": "CLOSED_NO_GAP",
+      "evidence": "Existing Learn/Micro VERIFIED_DIRECT; no repair needed."
+    },
+    {
+      "chapter": 5,
+      "title": "Đường tròn",
+      "pre_repair_priority": "NONE",
+      "post_repair_status": "CLOSED_NO_GAP",
+      "evidence": "Existing Learn/Micro VERIFIED_DIRECT; no repair needed."
+    },
+    {
+      "chapter": 6,
+      "title": "Hàm số y=ax² và phương trình bậc hai",
+      "pre_repair_priority": "P1_ITEM_REVIEW",
+      "post_repair_status": "CLOSED_AFTER_WAVE2",
+      "evidence": "NotebookLM cleared bieu-thuc-doi-xung as CORE_LEARN_MICRO; dau-nghiem and lien-he-do-thi remain CORE_SUPPORT_ONLY. Wave 2 added 1 Learn + 4 Micro and no protected-dimension expansion."
+    },
+    {
+      "chapter": 7,
+      "title": "Tần số và tần số tương đối",
+      "pre_repair_priority": "P0",
+      "post_repair_status": "CLOSED_AFTER_WAVE1",
+      "evidence": "Wave 1 added 2 Grade-9 Learn cards + 8 Micro covering frequency/relative-frequency/grouped-data and reviewed representation targets."
+    },
+    {
+      "chapter": 8,
+      "title": "Xác suất của biến cố trong một số mô hình xác suất đơn giản",
+      "pre_repair_priority": "P0",
+      "post_repair_status": "CLOSED_AFTER_WAVE1",
+      "evidence": "Wave 1 added 2 Grade-9 Learn cards + 8 Micro covering base probability targets and the five reviewed lesson-local model types."
+    },
+    {
+      "chapter": 9,
+      "title": "Đường tròn ngoại tiếp và đường tròn nội tiếp",
+      "pre_repair_priority": "NONE",
+      "post_repair_status": "CLOSED_NO_GAP",
+      "evidence": "Existing Learn/Micro VERIFIED_DIRECT; no repair needed."
+    },
+    {
+      "chapter": 10,
+      "title": "Một số hình khối trong thực tiễn",
+      "pre_repair_priority": "NONE",
+      "post_repair_status": "CLOSED_WITH_NONBLOCKING_SHARED_GAP",
+      "evidence": "All Grade-9-specific solid-geometry targets have direct Learn/Micro evidence. Shared doi-don-vi-do-luong Micro remains absent but was explicitly judged not to justify a density quota because Practice evidence already exists."
+    }
+  ],
+  "summary": {
+    "chapter_rows": 10,
+    "closed_no_gap": 6,
+    "closed_after_wave1": 2,
+    "closed_after_wave2": 1,
+    "closed_with_nonblocking_shared_gap": 1,
+    "remaining_p0": 0,
+    "remaining_p1": 0,
+    "remaining_p2": 0,
+    "new_learn_cards_from_repairs": 5,
+    "new_micro_items_from_repairs": 20,
+    "new_practice_items": 0,
+    "new_written_items": 0,
+    "new_readiness_items": 0,
+    "new_canonical_skills": 0
+  },
+  "protected_boundaries": {
+    "practice_expansion": false,
+    "written_expansion": false,
+    "readiness_expansion": false,
+    "new_canonical_skills": false,
+    "new_canonical_families": false,
+    "runtime_taxonomy_change": false,
+    "mastery_change": false,
+    "learner_history_regrade": false
+  },
+  "decision": {
+    "grade9_core_learn_micro_closure": "PASS",
+    "open_p0_p1_queue": [],
+    "next_phase": "SEPARATE_DIMENSION_DECISION_ONLY",
+    "note": "Grade-9 Core Learn/Micro repair is closed. Any future Written or Readiness work requires its own scope decision and must not be inferred from this closure."
+  },
+  "notebooklm": {
+    "additional_review_required": false,
+    "reason": "This closure audit introduces no new academic promotion or item-level judgment; it only reconciles already-reviewed inventory and NotebookLM-cleared repair decisions."
+  }
+}

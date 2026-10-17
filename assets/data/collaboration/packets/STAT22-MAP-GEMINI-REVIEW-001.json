@@ -1,0 +1,112 @@
+{
+  "protocol_version": "2.0",
+  "packet_id": "STAT22-MAP-GEMINI-REVIEW-001",
+  "task_id": "STAT22-MAP-001",
+  "context_version": "1.0.46",
+  "from": "CHATGPT",
+  "to": "GEMINI",
+  "mode": "REVIEW",
+  "topic": {
+    "id": "22-dai-luong-dac-trung",
+    "title": "Các đại lượng đặc trưng của dữ liệu"
+  },
+  "status": "SOURCE_LOCKED_REVIEW_PENDING",
+  "scope": {
+    "goal": "Audit the KNTT grade 6–9 Core versus supplementary/bridge/grade-10 boundaries before CĐ22 Golden Template authoring. No invented Core labels.",
+    "skills": [
+      "trung-binh-tho",
+      "trung-binh-tan-so",
+      "trung-vi",
+      "mot",
+      "nhieu-mot",
+      "khoang-bien-thien",
+      "ngoai-lai",
+      "so-sanh-trung-binh-trung-vi",
+      "chon-dai-luong",
+      "so-sanh-hai-bo"
+    ],
+    "current_bank_count": 120,
+    "possible_layers": [
+      "KNTT-Core",
+      "Core-Support",
+      "Entrance10",
+      "THPT-Bridge",
+      "UNRESOLVED"
+    ],
+    "source_lock": [
+      "docs/assets/data/practice/22-dai-luong-dac-trung-v1.manifest.json",
+      "docs/assets/data/practice/22-dai-luong-dac-trung-v1-01.json",
+      "docs/assets/data/practice/22-dai-luong-dac-trung-v1-02.json",
+      "docs/assets/data/practice/22-dai-luong-dac-trung-v1-03.json",
+      "docs/assets/data/practice/22-dai-luong-dac-trung-v1-04.json",
+      "docs/assets/data/curriculum/kntt-grade6-map.json",
+      "docs/assets/data/curriculum/kntt-grade7-map.json",
+      "docs/assets/data/curriculum/kntt-grade8-map.json",
+      "docs/assets/data/curriculum/kntt-grade9-map.json",
+      "docs/kien-thuc/22-dai-luong-dac-trung/index.md",
+      "docs/kien-thuc/22-dai-luong-dac-trung/bai-tap.md",
+      "docs/kien-thuc/22-dai-luong-dac-trung/tu-kiem-tra.md",
+      "docs/assets/data/curriculum/golden-template-v1.json",
+      "docs/huong-dan/chuan-ngon-ngu-de-toan-v1.md"
+    ],
+    "external_reference_candidates": [
+      {
+        "url": "https://toan10.edu.vn/sgk-toan-10-ket-noi-tri-thuc",
+        "purpose": "Check Toán 10 KNTT Bài 13–14 and compare THPT placement",
+        "authority": "secondary index; verify against actual publisher/book before final classification"
+      },
+      {
+        "url": "https://toan9.edu.vn/sach-giao-khoa-toan-9-tap-2-ket-noi-tri-thuc-voi-cuoc-song",
+        "purpose": "Check grade-9 frequency and relative-frequency chapter",
+        "authority": "secondary index; verify actual chapter/lesson evidence"
+      },
+      {
+        "url": "https://thuvienphapluat.vn/van-ban/Giao-duc/Thong-tu-32-2018-TT-BGDDTChuong-trinh-giao-duc-pho-thong-403454.aspx",
+        "purpose": "2018 curriculum legal frame and attached math programme",
+        "authority": "regulatory reference; inspect actual subject programme content"
+      }
+    ]
+  },
+  "facts_verified_from_repo": [
+    "No Grade 6–9 KNTT map presently has a PRIMARY roadmap reference to topic 22.",
+    "The Grade-9 overlay explicitly lists topic 22 as excluded and cautions that cross-grade audit is required before relayering.",
+    "The existing 120-question bank uses 10 skill IDs but does not by itself prove which are current KNTT-Core.",
+    "The current CĐ22 lesson claims grades 7–9 and contains an old hard 7/10 completion gate. Both need careful follow-up after source review."
+  ],
+  "required_output": {
+    "packet_id": "STAT22-MAP-GEMINI-REVIEW-001-RESULT",
+    "format": "one complete JSON object",
+    "fields": [
+      "packet_id",
+      "verdict",
+      "skill_classifications",
+      "topic_layer_recommendation",
+      "grade_evidence",
+      "lesson_and_assessment_corrections",
+      "uncertainties"
+    ],
+    "skill_classification_shape": {
+      "skill": "existing exact ID",
+      "proposed_layer": "one enumerated layer",
+      "grade_scope": [],
+      "evidence": [
+        {
+          "source": "exact KNTT grade/book chapter lesson or official curriculum clause",
+          "locator": "page/lesson/paragraph and optional URL",
+          "quote_or_paraphrase": "small source-specific excerpt"
+        }
+      ],
+      "reason": "brief descriptive analysis",
+      "review_status": "VERIFIED or UNRESOLVED"
+    }
+  },
+  "constraints": [
+    "Do not assume Topic 22 is THCS Core or that all its skills are THPT: classify each skill individually from the actual curriculum/SGK.",
+    "Differentiate arithmetic prior knowledge (e.g. simple mean) from the formal statistics curriculum requirement.",
+    "Do not use existing bank presence or website grade banner as proof of KNTT Core.",
+    "When documentary support is missing, return UNRESOLVED and specify what exact source/page is needed.",
+    "No new score/readiness labels and no changes to repo. Recommend the smallest correct next authoring batch only after evidence review.",
+    "Do not silently change Golden Template or relabel questions without evidence. Apply direct-language math editorial guide.",
+    "If grade-10 placement is verified, classify THPT-Bridge rather than claim grade-6–9 Core; preserve useful learner practice in a non-gating pathway."
+  ]
+}

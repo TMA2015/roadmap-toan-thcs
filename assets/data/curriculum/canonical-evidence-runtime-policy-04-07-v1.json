@@ -1,0 +1,1754 @@
+{
+  "schema": "canonical-evidence-runtime-policy-v1",
+  "state": "G2_PROVEN_SKILLS_STAGED_NOT_PRODUCTION_RELEASED",
+  "as_of": "2026-09-30",
+  "policy_id": "canonical-evidence-g2-proven-skills-04-07-v1",
+  "capture_version": "practice-canonical-g2-v1",
+  "design_packet": "MATH-CANONICAL-EVIDENCE-G2-PROVEN-SKILLS-R1-20260930",
+  "notebooklm_source_blob": "95b32fa4b5ebebdc88886cc9725b7b90ae991e46",
+  "design_blob": "e86b0e98637c1cc5a5b1218af053ab0f8f3d3c9e",
+  "notebooklm_verdict": "PASS_74_OF_74_8_OF_8",
+  "academic_review_pr": 223,
+  "academic_review_receipt": "review-packets/skill-taxonomy/phase-g2/07_NOTEBOOKLM_G2_R1_PASS_RECEIPT.md",
+  "production_store": {
+    "key": "toan-thcs-canonical-evidence-v2",
+    "schema": "canonical-skill-evidence-store-v2",
+    "recent_events_max": 1000,
+    "beta_v1_key": "toan-thcs-canonical-evidence-v1",
+    "beta_v1_mode": "FROZEN_READ_ONLY_PROVENANCE",
+    "migrate_beta_v1": false,
+    "backfill_beta_v1": false
+  },
+  "runtime_rules": {
+    "default_capture": "NO_CAPTURE",
+    "legacy_write_first": true,
+    "canonical_fail_open": true,
+    "auto_retry_backfill": false,
+    "assisted_event_stored": true,
+    "assisted_event_independent": false,
+    "same_question_after_any_prior_exposure_independent": false,
+    "unseen_sibling_after_assisted_exposure_may_be_independent": true,
+    "negative_first_unassisted_is_independent": true,
+    "supporting_skill_second_event": false,
+    "cross_topic_clone_equivalence": false,
+    "normal_learner_ui_change": false,
+    "mastery_threshold": null,
+    "core_readiness_credit": false
+  },
+  "scope": {
+    "rows": 101,
+    "existing_g1_rows": 27,
+    "g2_delta_rows": 74,
+    "canonical_skills": 7,
+    "max_independent_units": 23,
+    "topics": [
+      "04-bieu-thuc-dai-so",
+      "05-7-hang-dang-thuc",
+      "06-phan-tich-da-thuc",
+      "07-phan-thuc-dai-so"
+    ]
+  },
+  "rows": [
+    {
+      "question_id": "ALG04V2_013",
+      "normalized_topic_key": "04-bieu-thuc-dai-so",
+      "canonical_skill_id": "hang-tu-dong-dang",
+      "evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family": "ALG04-DONGDANG-013-020",
+      "supporting_skills": [],
+      "source_file": "04-bieu-thuc-dai-so-v2-01.json",
+      "source_blob": "216a464a1935bd5d1d00147e9386eb2ee224f27b",
+      "phase_d_overlay_blob": "badef3ac1d335ed727c1a017dd295ed8ce46298f",
+      "legacy_skill_tags": [
+        "hang-tu-dong-dang"
+      ],
+      "capture_status": "G1_CANARY_ACTIVE",
+      "beta_provenance": "BETA_V5_OWNER_QA_PASS"
+    },
+    {
+      "question_id": "ALG04V2_014",
+      "normalized_topic_key": "04-bieu-thuc-dai-so",
+      "canonical_skill_id": "hang-tu-dong-dang",
+      "evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family": "ALG04-DONGDANG-013-020",
+      "supporting_skills": [],
+      "source_file": "04-bieu-thuc-dai-so-v2-01.json",
+      "source_blob": "216a464a1935bd5d1d00147e9386eb2ee224f27b",
+      "phase_d_overlay_blob": "badef3ac1d335ed727c1a017dd295ed8ce46298f",
+      "legacy_skill_tags": [
+        "hang-tu-dong-dang"
+      ],
+      "capture_status": "G1_CANARY_ACTIVE",
+      "beta_provenance": "BETA_V5_OWNER_QA_PASS"
+    },
+    {
+      "question_id": "ALG04V2_015",
+      "normalized_topic_key": "04-bieu-thuc-dai-so",
+      "canonical_skill_id": "hang-tu-dong-dang",
+      "evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family": "ALG04-DONGDANG-013-020",
+      "supporting_skills": [],
+      "source_file": "04-bieu-thuc-dai-so-v2-01.json",
+      "source_blob": "216a464a1935bd5d1d00147e9386eb2ee224f27b",
+      "phase_d_overlay_blob": "badef3ac1d335ed727c1a017dd295ed8ce46298f",
+      "legacy_skill_tags": [
+        "hang-tu-dong-dang"
+      ],
+      "capture_status": "G2_PROVEN_SKILLS_ACTIVE",
+      "beta_provenance": "PHASE_D_G2_NOTEBOOKLM_R1_PASS"
+    },
+    {
+      "question_id": "ALG04V2_016",
+      "normalized_topic_key": "04-bieu-thuc-dai-so",
+      "canonical_skill_id": "hang-tu-dong-dang",
+      "evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family": "ALG04-DONGDANG-013-020",
+      "supporting_skills": [],
+      "source_file": "04-bieu-thuc-dai-so-v2-01.json",
+      "source_blob": "216a464a1935bd5d1d00147e9386eb2ee224f27b",
+      "phase_d_overlay_blob": "badef3ac1d335ed727c1a017dd295ed8ce46298f",
+      "legacy_skill_tags": [
+        "hang-tu-dong-dang"
+      ],
+      "capture_status": "G2_PROVEN_SKILLS_ACTIVE",
+      "beta_provenance": "PHASE_D_G2_NOTEBOOKLM_R1_PASS"
+    },
+    {
+      "question_id": "ALG04V2_017",
+      "normalized_topic_key": "04-bieu-thuc-dai-so",
+      "canonical_skill_id": "hang-tu-dong-dang",
+      "evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family": "ALG04-DONGDANG-013-020",
+      "supporting_skills": [],
+      "source_file": "04-bieu-thuc-dai-so-v2-01.json",
+      "source_blob": "216a464a1935bd5d1d00147e9386eb2ee224f27b",
+      "phase_d_overlay_blob": "badef3ac1d335ed727c1a017dd295ed8ce46298f",
+      "legacy_skill_tags": [
+        "hang-tu-dong-dang"
+      ],
+      "capture_status": "G2_PROVEN_SKILLS_ACTIVE",
+      "beta_provenance": "PHASE_D_G2_NOTEBOOKLM_R1_PASS"
+    },
+    {
+      "question_id": "ALG04V2_018",
+      "normalized_topic_key": "04-bieu-thuc-dai-so",
+      "canonical_skill_id": "hang-tu-dong-dang",
+      "evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family": "ALG04-DONGDANG-013-020",
+      "supporting_skills": [],
+      "source_file": "04-bieu-thuc-dai-so-v2-01.json",
+      "source_blob": "216a464a1935bd5d1d00147e9386eb2ee224f27b",
+      "phase_d_overlay_blob": "badef3ac1d335ed727c1a017dd295ed8ce46298f",
+      "legacy_skill_tags": [
+        "hang-tu-dong-dang"
+      ],
+      "capture_status": "G2_PROVEN_SKILLS_ACTIVE",
+      "beta_provenance": "PHASE_D_G2_NOTEBOOKLM_R1_PASS"
+    },
+    {
+      "question_id": "ALG04V2_019",
+      "normalized_topic_key": "04-bieu-thuc-dai-so",
+      "canonical_skill_id": "hang-tu-dong-dang",
+      "evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family": "ALG04-DONGDANG-013-020",
+      "supporting_skills": [],
+      "source_file": "04-bieu-thuc-dai-so-v2-01.json",
+      "source_blob": "216a464a1935bd5d1d00147e9386eb2ee224f27b",
+      "phase_d_overlay_blob": "badef3ac1d335ed727c1a017dd295ed8ce46298f",
+      "legacy_skill_tags": [
+        "hang-tu-dong-dang"
+      ],
+      "capture_status": "G2_PROVEN_SKILLS_ACTIVE",
+      "beta_provenance": "PHASE_D_G2_NOTEBOOKLM_R1_PASS"
+    },
+    {
+      "question_id": "ALG04V2_020",
+      "normalized_topic_key": "04-bieu-thuc-dai-so",
+      "canonical_skill_id": "hang-tu-dong-dang",
+      "evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family": "ALG04-DONGDANG-013-020",
+      "supporting_skills": [],
+      "source_file": "04-bieu-thuc-dai-so-v2-01.json",
+      "source_blob": "216a464a1935bd5d1d00147e9386eb2ee224f27b",
+      "phase_d_overlay_blob": "badef3ac1d335ed727c1a017dd295ed8ce46298f",
+      "legacy_skill_tags": [
+        "hang-tu-dong-dang"
+      ],
+      "capture_status": "G2_PROVEN_SKILLS_ACTIVE",
+      "beta_provenance": "PHASE_D_G2_NOTEBOOKLM_R1_PASS"
+    },
+    {
+      "question_id": "ALG04V2_089",
+      "normalized_topic_key": "04-bieu-thuc-dai-so",
+      "canonical_skill_id": "dieu-kien-xac-dinh",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": "ALG04-DKXD-LINEAR-089-098",
+      "supporting_skills": [],
+      "source_file": "04-bieu-thuc-dai-so-v2-03.json",
+      "source_blob": "42d57ec1c5a65cf331eb07d7b681b479dc203775",
+      "phase_d_overlay_blob": "badef3ac1d335ed727c1a017dd295ed8ce46298f",
+      "legacy_skill_tags": [
+        "dieu-kien-xac-dinh"
+      ],
+      "capture_status": "G1_CANARY_ACTIVE",
+      "beta_provenance": "BETA_V5_OWNER_QA_PASS"
+    },
+    {
+      "question_id": "ALG04V2_090",
+      "normalized_topic_key": "04-bieu-thuc-dai-so",
+      "canonical_skill_id": "dieu-kien-xac-dinh",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": "ALG04-DKXD-LINEAR-089-098",
+      "supporting_skills": [],
+      "source_file": "04-bieu-thuc-dai-so-v2-03.json",
+      "source_blob": "42d57ec1c5a65cf331eb07d7b681b479dc203775",
+      "phase_d_overlay_blob": "badef3ac1d335ed727c1a017dd295ed8ce46298f",
+      "legacy_skill_tags": [
+        "dieu-kien-xac-dinh"
+      ],
+      "capture_status": "G1_CANARY_ACTIVE",
+      "beta_provenance": "BETA_V5_OWNER_QA_PASS"
+    },
+    {
+      "question_id": "ALG04V2_091",
+      "normalized_topic_key": "04-bieu-thuc-dai-so",
+      "canonical_skill_id": "dieu-kien-xac-dinh",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": "ALG04-DKXD-LINEAR-089-098",
+      "supporting_skills": [],
+      "source_file": "04-bieu-thuc-dai-so-v2-04.json",
+      "source_blob": "92f879459581ac21a0bf80ddb369efbbcb07088f",
+      "phase_d_overlay_blob": "badef3ac1d335ed727c1a017dd295ed8ce46298f",
+      "legacy_skill_tags": [
+        "dieu-kien-xac-dinh"
+      ],
+      "capture_status": "G2_PROVEN_SKILLS_ACTIVE",
+      "beta_provenance": "PHASE_D_G2_NOTEBOOKLM_R1_PASS"
+    },
+    {
+      "question_id": "ALG04V2_092",
+      "normalized_topic_key": "04-bieu-thuc-dai-so",
+      "canonical_skill_id": "dieu-kien-xac-dinh",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": "ALG04-DKXD-LINEAR-089-098",
+      "supporting_skills": [],
+      "source_file": "04-bieu-thuc-dai-so-v2-04.json",
+      "source_blob": "92f879459581ac21a0bf80ddb369efbbcb07088f",
+      "phase_d_overlay_blob": "badef3ac1d335ed727c1a017dd295ed8ce46298f",
+      "legacy_skill_tags": [
+        "dieu-kien-xac-dinh"
+      ],
+      "capture_status": "G2_PROVEN_SKILLS_ACTIVE",
+      "beta_provenance": "PHASE_D_G2_NOTEBOOKLM_R1_PASS"
+    },
+    {
+      "question_id": "ALG04V2_093",
+      "normalized_topic_key": "04-bieu-thuc-dai-so",
+      "canonical_skill_id": "dieu-kien-xac-dinh",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": "ALG04-DKXD-LINEAR-089-098",
+      "supporting_skills": [],
+      "source_file": "04-bieu-thuc-dai-so-v2-04.json",
+      "source_blob": "92f879459581ac21a0bf80ddb369efbbcb07088f",
+      "phase_d_overlay_blob": "badef3ac1d335ed727c1a017dd295ed8ce46298f",
+      "legacy_skill_tags": [
+        "dieu-kien-xac-dinh"
+      ],
+      "capture_status": "G2_PROVEN_SKILLS_ACTIVE",
+      "beta_provenance": "PHASE_D_G2_NOTEBOOKLM_R1_PASS"
+    },
+    {
+      "question_id": "ALG04V2_094",
+      "normalized_topic_key": "04-bieu-thuc-dai-so",
+      "canonical_skill_id": "dieu-kien-xac-dinh",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": "ALG04-DKXD-LINEAR-089-098",
+      "supporting_skills": [],
+      "source_file": "04-bieu-thuc-dai-so-v2-04.json",
+      "source_blob": "92f879459581ac21a0bf80ddb369efbbcb07088f",
+      "phase_d_overlay_blob": "badef3ac1d335ed727c1a017dd295ed8ce46298f",
+      "legacy_skill_tags": [
+        "dieu-kien-xac-dinh"
+      ],
+      "capture_status": "G2_PROVEN_SKILLS_ACTIVE",
+      "beta_provenance": "PHASE_D_G2_NOTEBOOKLM_R1_PASS"
+    },
+    {
+      "question_id": "ALG04V2_095",
+      "normalized_topic_key": "04-bieu-thuc-dai-so",
+      "canonical_skill_id": "dieu-kien-xac-dinh",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": "ALG04-DKXD-LINEAR-089-098",
+      "supporting_skills": [],
+      "source_file": "04-bieu-thuc-dai-so-v2-04.json",
+      "source_blob": "92f879459581ac21a0bf80ddb369efbbcb07088f",
+      "phase_d_overlay_blob": "badef3ac1d335ed727c1a017dd295ed8ce46298f",
+      "legacy_skill_tags": [
+        "dieu-kien-xac-dinh"
+      ],
+      "capture_status": "G2_PROVEN_SKILLS_ACTIVE",
+      "beta_provenance": "PHASE_D_G2_NOTEBOOKLM_R1_PASS"
+    },
+    {
+      "question_id": "ALG04V2_096",
+      "normalized_topic_key": "04-bieu-thuc-dai-so",
+      "canonical_skill_id": "dieu-kien-xac-dinh",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": "ALG04-DKXD-LINEAR-089-098",
+      "supporting_skills": [],
+      "source_file": "04-bieu-thuc-dai-so-v2-04.json",
+      "source_blob": "92f879459581ac21a0bf80ddb369efbbcb07088f",
+      "phase_d_overlay_blob": "badef3ac1d335ed727c1a017dd295ed8ce46298f",
+      "legacy_skill_tags": [
+        "dieu-kien-xac-dinh"
+      ],
+      "capture_status": "G2_PROVEN_SKILLS_ACTIVE",
+      "beta_provenance": "PHASE_D_G2_NOTEBOOKLM_R1_PASS"
+    },
+    {
+      "question_id": "ALG04V2_097",
+      "normalized_topic_key": "04-bieu-thuc-dai-so",
+      "canonical_skill_id": "dieu-kien-xac-dinh",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": "ALG04-DKXD-LINEAR-089-098",
+      "supporting_skills": [],
+      "source_file": "04-bieu-thuc-dai-so-v2-04.json",
+      "source_blob": "92f879459581ac21a0bf80ddb369efbbcb07088f",
+      "phase_d_overlay_blob": "badef3ac1d335ed727c1a017dd295ed8ce46298f",
+      "legacy_skill_tags": [
+        "dieu-kien-xac-dinh"
+      ],
+      "capture_status": "G2_PROVEN_SKILLS_ACTIVE",
+      "beta_provenance": "PHASE_D_G2_NOTEBOOKLM_R1_PASS"
+    },
+    {
+      "question_id": "ALG04V2_098",
+      "normalized_topic_key": "04-bieu-thuc-dai-so",
+      "canonical_skill_id": "dieu-kien-xac-dinh",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": "ALG04-DKXD-LINEAR-089-098",
+      "supporting_skills": [],
+      "source_file": "04-bieu-thuc-dai-so-v2-04.json",
+      "source_blob": "92f879459581ac21a0bf80ddb369efbbcb07088f",
+      "phase_d_overlay_blob": "badef3ac1d335ed727c1a017dd295ed8ce46298f",
+      "legacy_skill_tags": [
+        "dieu-kien-xac-dinh"
+      ],
+      "capture_status": "G2_PROVEN_SKILLS_ACTIVE",
+      "beta_provenance": "PHASE_D_G2_NOTEBOOKLM_R1_PASS"
+    },
+    {
+      "question_id": "ID05V1_021",
+      "normalized_topic_key": "05-7-hang-dang-thuc",
+      "canonical_skill_id": "hieu-hai-binh-phuong",
+      "evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family": "ID05-HIEU-HAI-BP-021-030",
+      "supporting_skills": [],
+      "source_file": "05-7-hang-dang-thuc-v1-01.json",
+      "source_blob": "6bb054851b281e495b02a55bf65008a08ad82218",
+      "phase_d_overlay_blob": "6d2a872d229c8c34cf2232ed55c9ef2a2a64468e",
+      "legacy_skill_tags": [
+        "hieu-hai-binh-phuong",
+        "phan-tich-hdt"
+      ],
+      "capture_status": "G1_CANARY_ACTIVE",
+      "beta_provenance": "BETA_V5_OWNER_QA_PASS"
+    },
+    {
+      "question_id": "ID05V1_022",
+      "normalized_topic_key": "05-7-hang-dang-thuc",
+      "canonical_skill_id": "hieu-hai-binh-phuong",
+      "evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family": "ID05-HIEU-HAI-BP-021-030",
+      "supporting_skills": [],
+      "source_file": "05-7-hang-dang-thuc-v1-01.json",
+      "source_blob": "6bb054851b281e495b02a55bf65008a08ad82218",
+      "phase_d_overlay_blob": "6d2a872d229c8c34cf2232ed55c9ef2a2a64468e",
+      "legacy_skill_tags": [
+        "hieu-hai-binh-phuong",
+        "phan-tich-hdt"
+      ],
+      "capture_status": "G1_CANARY_ACTIVE",
+      "beta_provenance": "BETA_V5_OWNER_QA_PASS"
+    },
+    {
+      "question_id": "ID05V1_023",
+      "normalized_topic_key": "05-7-hang-dang-thuc",
+      "canonical_skill_id": "hieu-hai-binh-phuong",
+      "evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family": "ID05-HIEU-HAI-BP-021-030",
+      "supporting_skills": [],
+      "source_file": "05-7-hang-dang-thuc-v1-01.json",
+      "source_blob": "6bb054851b281e495b02a55bf65008a08ad82218",
+      "phase_d_overlay_blob": "6d2a872d229c8c34cf2232ed55c9ef2a2a64468e",
+      "legacy_skill_tags": [
+        "hieu-hai-binh-phuong",
+        "phan-tich-hdt"
+      ],
+      "capture_status": "G2_PROVEN_SKILLS_ACTIVE",
+      "beta_provenance": "PHASE_D_G2_NOTEBOOKLM_R1_PASS"
+    },
+    {
+      "question_id": "ID05V1_024",
+      "normalized_topic_key": "05-7-hang-dang-thuc",
+      "canonical_skill_id": "hieu-hai-binh-phuong",
+      "evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family": "ID05-HIEU-HAI-BP-021-030",
+      "supporting_skills": [],
+      "source_file": "05-7-hang-dang-thuc-v1-01.json",
+      "source_blob": "6bb054851b281e495b02a55bf65008a08ad82218",
+      "phase_d_overlay_blob": "6d2a872d229c8c34cf2232ed55c9ef2a2a64468e",
+      "legacy_skill_tags": [
+        "hieu-hai-binh-phuong",
+        "phan-tich-hdt"
+      ],
+      "capture_status": "G2_PROVEN_SKILLS_ACTIVE",
+      "beta_provenance": "PHASE_D_G2_NOTEBOOKLM_R1_PASS"
+    },
+    {
+      "question_id": "ID05V1_025",
+      "normalized_topic_key": "05-7-hang-dang-thuc",
+      "canonical_skill_id": "hieu-hai-binh-phuong",
+      "evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family": "ID05-HIEU-HAI-BP-021-030",
+      "supporting_skills": [],
+      "source_file": "05-7-hang-dang-thuc-v1-01.json",
+      "source_blob": "6bb054851b281e495b02a55bf65008a08ad82218",
+      "phase_d_overlay_blob": "6d2a872d229c8c34cf2232ed55c9ef2a2a64468e",
+      "legacy_skill_tags": [
+        "hieu-hai-binh-phuong",
+        "phan-tich-hdt"
+      ],
+      "capture_status": "G2_PROVEN_SKILLS_ACTIVE",
+      "beta_provenance": "PHASE_D_G2_NOTEBOOKLM_R1_PASS"
+    },
+    {
+      "question_id": "ID05V1_026",
+      "normalized_topic_key": "05-7-hang-dang-thuc",
+      "canonical_skill_id": "hieu-hai-binh-phuong",
+      "evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family": "ID05-HIEU-HAI-BP-021-030",
+      "supporting_skills": [],
+      "source_file": "05-7-hang-dang-thuc-v1-01.json",
+      "source_blob": "6bb054851b281e495b02a55bf65008a08ad82218",
+      "phase_d_overlay_blob": "6d2a872d229c8c34cf2232ed55c9ef2a2a64468e",
+      "legacy_skill_tags": [
+        "hieu-hai-binh-phuong",
+        "phan-tich-hdt"
+      ],
+      "capture_status": "G2_PROVEN_SKILLS_ACTIVE",
+      "beta_provenance": "PHASE_D_G2_NOTEBOOKLM_R1_PASS"
+    },
+    {
+      "question_id": "ID05V1_027",
+      "normalized_topic_key": "05-7-hang-dang-thuc",
+      "canonical_skill_id": "hieu-hai-binh-phuong",
+      "evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family": "ID05-HIEU-HAI-BP-021-030",
+      "supporting_skills": [],
+      "source_file": "05-7-hang-dang-thuc-v1-01.json",
+      "source_blob": "6bb054851b281e495b02a55bf65008a08ad82218",
+      "phase_d_overlay_blob": "6d2a872d229c8c34cf2232ed55c9ef2a2a64468e",
+      "legacy_skill_tags": [
+        "hieu-hai-binh-phuong",
+        "phan-tich-hdt"
+      ],
+      "capture_status": "G2_PROVEN_SKILLS_ACTIVE",
+      "beta_provenance": "PHASE_D_G2_NOTEBOOKLM_R1_PASS"
+    },
+    {
+      "question_id": "ID05V1_028",
+      "normalized_topic_key": "05-7-hang-dang-thuc",
+      "canonical_skill_id": "hieu-hai-binh-phuong",
+      "evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family": "ID05-HIEU-HAI-BP-021-030",
+      "supporting_skills": [],
+      "source_file": "05-7-hang-dang-thuc-v1-01.json",
+      "source_blob": "6bb054851b281e495b02a55bf65008a08ad82218",
+      "phase_d_overlay_blob": "6d2a872d229c8c34cf2232ed55c9ef2a2a64468e",
+      "legacy_skill_tags": [
+        "hieu-hai-binh-phuong",
+        "phan-tich-hdt"
+      ],
+      "capture_status": "G2_PROVEN_SKILLS_ACTIVE",
+      "beta_provenance": "PHASE_D_G2_NOTEBOOKLM_R1_PASS"
+    },
+    {
+      "question_id": "ID05V1_029",
+      "normalized_topic_key": "05-7-hang-dang-thuc",
+      "canonical_skill_id": "hieu-hai-binh-phuong",
+      "evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family": "ID05-HIEU-HAI-BP-021-030",
+      "supporting_skills": [],
+      "source_file": "05-7-hang-dang-thuc-v1-01.json",
+      "source_blob": "6bb054851b281e495b02a55bf65008a08ad82218",
+      "phase_d_overlay_blob": "6d2a872d229c8c34cf2232ed55c9ef2a2a64468e",
+      "legacy_skill_tags": [
+        "hieu-hai-binh-phuong",
+        "phan-tich-hdt"
+      ],
+      "capture_status": "G2_PROVEN_SKILLS_ACTIVE",
+      "beta_provenance": "PHASE_D_G2_NOTEBOOKLM_R1_PASS"
+    },
+    {
+      "question_id": "ID05V1_030",
+      "normalized_topic_key": "05-7-hang-dang-thuc",
+      "canonical_skill_id": "hieu-hai-binh-phuong",
+      "evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family": "ID05-HIEU-HAI-BP-021-030",
+      "supporting_skills": [],
+      "source_file": "05-7-hang-dang-thuc-v1-01.json",
+      "source_blob": "6bb054851b281e495b02a55bf65008a08ad82218",
+      "phase_d_overlay_blob": "6d2a872d229c8c34cf2232ed55c9ef2a2a64468e",
+      "legacy_skill_tags": [
+        "hieu-hai-binh-phuong",
+        "phan-tich-hdt"
+      ],
+      "capture_status": "G2_PROVEN_SKILLS_ACTIVE",
+      "beta_provenance": "PHASE_D_G2_NOTEBOOKLM_R1_PASS"
+    },
+    {
+      "question_id": "ID05V1_081",
+      "normalized_topic_key": "05-7-hang-dang-thuc",
+      "canonical_skill_id": "hieu-hai-binh-phuong",
+      "evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family": null,
+      "supporting_skills": [],
+      "source_file": "05-7-hang-dang-thuc-v1-03.json",
+      "source_blob": "fa18b11a46d5aad8e47813d3cc83549cd5769ac4",
+      "phase_d_overlay_blob": "6d2a872d229c8c34cf2232ed55c9ef2a2a64468e",
+      "legacy_skill_tags": [
+        "hieu-hai-binh-phuong",
+        "nhan-dang-hdt"
+      ],
+      "capture_status": "G1_CANARY_ACTIVE",
+      "beta_provenance": "BETA_V5_OWNER_QA_PASS"
+    },
+    {
+      "question_id": "ID05V1_087",
+      "normalized_topic_key": "05-7-hang-dang-thuc",
+      "canonical_skill_id": "hieu-hai-binh-phuong",
+      "evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family": null,
+      "supporting_skills": [],
+      "source_file": "05-7-hang-dang-thuc-v1-03.json",
+      "source_blob": "fa18b11a46d5aad8e47813d3cc83549cd5769ac4",
+      "phase_d_overlay_blob": "6d2a872d229c8c34cf2232ed55c9ef2a2a64468e",
+      "legacy_skill_tags": [
+        "hieu-hai-binh-phuong",
+        "phan-tich-hdt"
+      ],
+      "capture_status": "G1_CANARY_ACTIVE",
+      "beta_provenance": "BETA_V5_OWNER_QA_PASS"
+    },
+    {
+      "question_id": "ID05V1_120",
+      "normalized_topic_key": "05-7-hang-dang-thuc",
+      "canonical_skill_id": "hieu-hai-binh-phuong",
+      "evidence_class": "MCQ_METHOD_SELECTION_ONLY",
+      "clone_family": null,
+      "supporting_skills": [],
+      "source_file": "05-7-hang-dang-thuc-v1-04.json",
+      "source_blob": "c1edbbe7eba0d144a32d54cb384eb1ec09f156c8",
+      "phase_d_overlay_blob": "6d2a872d229c8c34cf2232ed55c9ef2a2a64468e",
+      "legacy_skill_tags": [
+        "phan-tich-hdt",
+        "hieu-hai-binh-phuong"
+      ],
+      "capture_status": "G1_CANARY_ACTIVE",
+      "beta_provenance": "BETA_V5_OWNER_QA_PASS"
+    },
+    {
+      "question_id": "FAC06V1_001",
+      "normalized_topic_key": "06-phan-tich-da-thuc",
+      "canonical_skill_id": "nhan-tu-chung",
+      "evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family": "FAC06-NHAN-TU-CHUNG-001-012",
+      "supporting_skills": [],
+      "source_file": "06-phan-tich-da-thuc-v1-01.json",
+      "source_blob": "1c2dd47977aa016cd24ce07d64215c213641f27f",
+      "phase_d_overlay_blob": "a64ec780b62ef6fd40668eb4bbad331024b470aa",
+      "legacy_skill_tags": [
+        "nhan-tu-chung"
+      ],
+      "capture_status": "G1_CANARY_ACTIVE",
+      "beta_provenance": "BETA_V5_OWNER_QA_PASS"
+    },
+    {
+      "question_id": "FAC06V1_002",
+      "normalized_topic_key": "06-phan-tich-da-thuc",
+      "canonical_skill_id": "nhan-tu-chung",
+      "evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family": "FAC06-NHAN-TU-CHUNG-001-012",
+      "supporting_skills": [],
+      "source_file": "06-phan-tich-da-thuc-v1-01.json",
+      "source_blob": "1c2dd47977aa016cd24ce07d64215c213641f27f",
+      "phase_d_overlay_blob": "a64ec780b62ef6fd40668eb4bbad331024b470aa",
+      "legacy_skill_tags": [
+        "nhan-tu-chung"
+      ],
+      "capture_status": "G1_CANARY_ACTIVE",
+      "beta_provenance": "BETA_V5_OWNER_QA_PASS"
+    },
+    {
+      "question_id": "FAC06V1_003",
+      "normalized_topic_key": "06-phan-tich-da-thuc",
+      "canonical_skill_id": "nhan-tu-chung",
+      "evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family": "FAC06-NHAN-TU-CHUNG-001-012",
+      "supporting_skills": [],
+      "source_file": "06-phan-tich-da-thuc-v1-01.json",
+      "source_blob": "1c2dd47977aa016cd24ce07d64215c213641f27f",
+      "phase_d_overlay_blob": "a64ec780b62ef6fd40668eb4bbad331024b470aa",
+      "legacy_skill_tags": [
+        "nhan-tu-chung"
+      ],
+      "capture_status": "G2_PROVEN_SKILLS_ACTIVE",
+      "beta_provenance": "PHASE_D_G2_NOTEBOOKLM_R1_PASS"
+    },
+    {
+      "question_id": "FAC06V1_004",
+      "normalized_topic_key": "06-phan-tich-da-thuc",
+      "canonical_skill_id": "nhan-tu-chung",
+      "evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family": "FAC06-NHAN-TU-CHUNG-001-012",
+      "supporting_skills": [],
+      "source_file": "06-phan-tich-da-thuc-v1-01.json",
+      "source_blob": "1c2dd47977aa016cd24ce07d64215c213641f27f",
+      "phase_d_overlay_blob": "a64ec780b62ef6fd40668eb4bbad331024b470aa",
+      "legacy_skill_tags": [
+        "nhan-tu-chung"
+      ],
+      "capture_status": "G2_PROVEN_SKILLS_ACTIVE",
+      "beta_provenance": "PHASE_D_G2_NOTEBOOKLM_R1_PASS"
+    },
+    {
+      "question_id": "FAC06V1_005",
+      "normalized_topic_key": "06-phan-tich-da-thuc",
+      "canonical_skill_id": "nhan-tu-chung",
+      "evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family": "FAC06-NHAN-TU-CHUNG-001-012",
+      "supporting_skills": [],
+      "source_file": "06-phan-tich-da-thuc-v1-01.json",
+      "source_blob": "1c2dd47977aa016cd24ce07d64215c213641f27f",
+      "phase_d_overlay_blob": "a64ec780b62ef6fd40668eb4bbad331024b470aa",
+      "legacy_skill_tags": [
+        "nhan-tu-chung"
+      ],
+      "capture_status": "G2_PROVEN_SKILLS_ACTIVE",
+      "beta_provenance": "PHASE_D_G2_NOTEBOOKLM_R1_PASS"
+    },
+    {
+      "question_id": "FAC06V1_006",
+      "normalized_topic_key": "06-phan-tich-da-thuc",
+      "canonical_skill_id": "nhan-tu-chung",
+      "evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family": "FAC06-NHAN-TU-CHUNG-001-012",
+      "supporting_skills": [],
+      "source_file": "06-phan-tich-da-thuc-v1-01.json",
+      "source_blob": "1c2dd47977aa016cd24ce07d64215c213641f27f",
+      "phase_d_overlay_blob": "a64ec780b62ef6fd40668eb4bbad331024b470aa",
+      "legacy_skill_tags": [
+        "nhan-tu-chung"
+      ],
+      "capture_status": "G2_PROVEN_SKILLS_ACTIVE",
+      "beta_provenance": "PHASE_D_G2_NOTEBOOKLM_R1_PASS"
+    },
+    {
+      "question_id": "FAC06V1_007",
+      "normalized_topic_key": "06-phan-tich-da-thuc",
+      "canonical_skill_id": "nhan-tu-chung",
+      "evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family": "FAC06-NHAN-TU-CHUNG-001-012",
+      "supporting_skills": [],
+      "source_file": "06-phan-tich-da-thuc-v1-01.json",
+      "source_blob": "1c2dd47977aa016cd24ce07d64215c213641f27f",
+      "phase_d_overlay_blob": "a64ec780b62ef6fd40668eb4bbad331024b470aa",
+      "legacy_skill_tags": [
+        "nhan-tu-chung"
+      ],
+      "capture_status": "G2_PROVEN_SKILLS_ACTIVE",
+      "beta_provenance": "PHASE_D_G2_NOTEBOOKLM_R1_PASS"
+    },
+    {
+      "question_id": "FAC06V1_008",
+      "normalized_topic_key": "06-phan-tich-da-thuc",
+      "canonical_skill_id": "nhan-tu-chung",
+      "evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family": "FAC06-NHAN-TU-CHUNG-001-012",
+      "supporting_skills": [],
+      "source_file": "06-phan-tich-da-thuc-v1-01.json",
+      "source_blob": "1c2dd47977aa016cd24ce07d64215c213641f27f",
+      "phase_d_overlay_blob": "a64ec780b62ef6fd40668eb4bbad331024b470aa",
+      "legacy_skill_tags": [
+        "nhan-tu-chung"
+      ],
+      "capture_status": "G2_PROVEN_SKILLS_ACTIVE",
+      "beta_provenance": "PHASE_D_G2_NOTEBOOKLM_R1_PASS"
+    },
+    {
+      "question_id": "FAC06V1_009",
+      "normalized_topic_key": "06-phan-tich-da-thuc",
+      "canonical_skill_id": "nhan-tu-chung",
+      "evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family": "FAC06-NHAN-TU-CHUNG-001-012",
+      "supporting_skills": [],
+      "source_file": "06-phan-tich-da-thuc-v1-01.json",
+      "source_blob": "1c2dd47977aa016cd24ce07d64215c213641f27f",
+      "phase_d_overlay_blob": "a64ec780b62ef6fd40668eb4bbad331024b470aa",
+      "legacy_skill_tags": [
+        "nhan-tu-chung"
+      ],
+      "capture_status": "G2_PROVEN_SKILLS_ACTIVE",
+      "beta_provenance": "PHASE_D_G2_NOTEBOOKLM_R1_PASS"
+    },
+    {
+      "question_id": "FAC06V1_010",
+      "normalized_topic_key": "06-phan-tich-da-thuc",
+      "canonical_skill_id": "nhan-tu-chung",
+      "evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family": "FAC06-NHAN-TU-CHUNG-001-012",
+      "supporting_skills": [],
+      "source_file": "06-phan-tich-da-thuc-v1-01.json",
+      "source_blob": "1c2dd47977aa016cd24ce07d64215c213641f27f",
+      "phase_d_overlay_blob": "a64ec780b62ef6fd40668eb4bbad331024b470aa",
+      "legacy_skill_tags": [
+        "nhan-tu-chung"
+      ],
+      "capture_status": "G2_PROVEN_SKILLS_ACTIVE",
+      "beta_provenance": "PHASE_D_G2_NOTEBOOKLM_R1_PASS"
+    },
+    {
+      "question_id": "FAC06V1_011",
+      "normalized_topic_key": "06-phan-tich-da-thuc",
+      "canonical_skill_id": "nhan-tu-chung",
+      "evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family": "FAC06-NHAN-TU-CHUNG-001-012",
+      "supporting_skills": [],
+      "source_file": "06-phan-tich-da-thuc-v1-01.json",
+      "source_blob": "1c2dd47977aa016cd24ce07d64215c213641f27f",
+      "phase_d_overlay_blob": "a64ec780b62ef6fd40668eb4bbad331024b470aa",
+      "legacy_skill_tags": [
+        "nhan-tu-chung"
+      ],
+      "capture_status": "G2_PROVEN_SKILLS_ACTIVE",
+      "beta_provenance": "PHASE_D_G2_NOTEBOOKLM_R1_PASS"
+    },
+    {
+      "question_id": "FAC06V1_012",
+      "normalized_topic_key": "06-phan-tich-da-thuc",
+      "canonical_skill_id": "nhan-tu-chung",
+      "evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family": "FAC06-NHAN-TU-CHUNG-001-012",
+      "supporting_skills": [],
+      "source_file": "06-phan-tich-da-thuc-v1-01.json",
+      "source_blob": "1c2dd47977aa016cd24ce07d64215c213641f27f",
+      "phase_d_overlay_blob": "a64ec780b62ef6fd40668eb4bbad331024b470aa",
+      "legacy_skill_tags": [
+        "nhan-tu-chung"
+      ],
+      "capture_status": "G2_PROVEN_SKILLS_ACTIVE",
+      "beta_provenance": "PHASE_D_G2_NOTEBOOKLM_R1_PASS"
+    },
+    {
+      "question_id": "FAC06V1_021",
+      "normalized_topic_key": "06-phan-tich-da-thuc",
+      "canonical_skill_id": "hieu-hai-binh-phuong",
+      "evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family": "FAC06-HIEU-HAI-BP-021-032",
+      "supporting_skills": [],
+      "source_file": "06-phan-tich-da-thuc-v1-01.json",
+      "source_blob": "1c2dd47977aa016cd24ce07d64215c213641f27f",
+      "phase_d_overlay_blob": "a64ec780b62ef6fd40668eb4bbad331024b470aa",
+      "legacy_skill_tags": [
+        "hieu-hai-binh-phuong"
+      ],
+      "capture_status": "G1_CANARY_ACTIVE",
+      "beta_provenance": "BETA_V5_OWNER_QA_PASS"
+    },
+    {
+      "question_id": "FAC06V1_022",
+      "normalized_topic_key": "06-phan-tich-da-thuc",
+      "canonical_skill_id": "hieu-hai-binh-phuong",
+      "evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family": "FAC06-HIEU-HAI-BP-021-032",
+      "supporting_skills": [],
+      "source_file": "06-phan-tich-da-thuc-v1-01.json",
+      "source_blob": "1c2dd47977aa016cd24ce07d64215c213641f27f",
+      "phase_d_overlay_blob": "a64ec780b62ef6fd40668eb4bbad331024b470aa",
+      "legacy_skill_tags": [
+        "hieu-hai-binh-phuong"
+      ],
+      "capture_status": "G1_CANARY_ACTIVE",
+      "beta_provenance": "BETA_V5_OWNER_QA_PASS"
+    },
+    {
+      "question_id": "FAC06V1_023",
+      "normalized_topic_key": "06-phan-tich-da-thuc",
+      "canonical_skill_id": "hieu-hai-binh-phuong",
+      "evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family": "FAC06-HIEU-HAI-BP-021-032",
+      "supporting_skills": [],
+      "source_file": "06-phan-tich-da-thuc-v1-01.json",
+      "source_blob": "1c2dd47977aa016cd24ce07d64215c213641f27f",
+      "phase_d_overlay_blob": "a64ec780b62ef6fd40668eb4bbad331024b470aa",
+      "legacy_skill_tags": [
+        "hieu-hai-binh-phuong"
+      ],
+      "capture_status": "G2_PROVEN_SKILLS_ACTIVE",
+      "beta_provenance": "PHASE_D_G2_NOTEBOOKLM_R1_PASS"
+    },
+    {
+      "question_id": "FAC06V1_024",
+      "normalized_topic_key": "06-phan-tich-da-thuc",
+      "canonical_skill_id": "hieu-hai-binh-phuong",
+      "evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family": "FAC06-HIEU-HAI-BP-021-032",
+      "supporting_skills": [],
+      "source_file": "06-phan-tich-da-thuc-v1-01.json",
+      "source_blob": "1c2dd47977aa016cd24ce07d64215c213641f27f",
+      "phase_d_overlay_blob": "a64ec780b62ef6fd40668eb4bbad331024b470aa",
+      "legacy_skill_tags": [
+        "hieu-hai-binh-phuong"
+      ],
+      "capture_status": "G2_PROVEN_SKILLS_ACTIVE",
+      "beta_provenance": "PHASE_D_G2_NOTEBOOKLM_R1_PASS"
+    },
+    {
+      "question_id": "FAC06V1_025",
+      "normalized_topic_key": "06-phan-tich-da-thuc",
+      "canonical_skill_id": "hieu-hai-binh-phuong",
+      "evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family": "FAC06-HIEU-HAI-BP-021-032",
+      "supporting_skills": [],
+      "source_file": "06-phan-tich-da-thuc-v1-01.json",
+      "source_blob": "1c2dd47977aa016cd24ce07d64215c213641f27f",
+      "phase_d_overlay_blob": "a64ec780b62ef6fd40668eb4bbad331024b470aa",
+      "legacy_skill_tags": [
+        "hieu-hai-binh-phuong"
+      ],
+      "capture_status": "G2_PROVEN_SKILLS_ACTIVE",
+      "beta_provenance": "PHASE_D_G2_NOTEBOOKLM_R1_PASS"
+    },
+    {
+      "question_id": "FAC06V1_026",
+      "normalized_topic_key": "06-phan-tich-da-thuc",
+      "canonical_skill_id": "hieu-hai-binh-phuong",
+      "evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family": "FAC06-HIEU-HAI-BP-021-032",
+      "supporting_skills": [],
+      "source_file": "06-phan-tich-da-thuc-v1-01.json",
+      "source_blob": "1c2dd47977aa016cd24ce07d64215c213641f27f",
+      "phase_d_overlay_blob": "a64ec780b62ef6fd40668eb4bbad331024b470aa",
+      "legacy_skill_tags": [
+        "hieu-hai-binh-phuong"
+      ],
+      "capture_status": "G2_PROVEN_SKILLS_ACTIVE",
+      "beta_provenance": "PHASE_D_G2_NOTEBOOKLM_R1_PASS"
+    },
+    {
+      "question_id": "FAC06V1_027",
+      "normalized_topic_key": "06-phan-tich-da-thuc",
+      "canonical_skill_id": "hieu-hai-binh-phuong",
+      "evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family": "FAC06-HIEU-HAI-BP-021-032",
+      "supporting_skills": [],
+      "source_file": "06-phan-tich-da-thuc-v1-01.json",
+      "source_blob": "1c2dd47977aa016cd24ce07d64215c213641f27f",
+      "phase_d_overlay_blob": "a64ec780b62ef6fd40668eb4bbad331024b470aa",
+      "legacy_skill_tags": [
+        "hieu-hai-binh-phuong"
+      ],
+      "capture_status": "G2_PROVEN_SKILLS_ACTIVE",
+      "beta_provenance": "PHASE_D_G2_NOTEBOOKLM_R1_PASS"
+    },
+    {
+      "question_id": "FAC06V1_028",
+      "normalized_topic_key": "06-phan-tich-da-thuc",
+      "canonical_skill_id": "hieu-hai-binh-phuong",
+      "evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family": "FAC06-HIEU-HAI-BP-021-032",
+      "supporting_skills": [],
+      "source_file": "06-phan-tich-da-thuc-v1-01.json",
+      "source_blob": "1c2dd47977aa016cd24ce07d64215c213641f27f",
+      "phase_d_overlay_blob": "a64ec780b62ef6fd40668eb4bbad331024b470aa",
+      "legacy_skill_tags": [
+        "hieu-hai-binh-phuong"
+      ],
+      "capture_status": "G2_PROVEN_SKILLS_ACTIVE",
+      "beta_provenance": "PHASE_D_G2_NOTEBOOKLM_R1_PASS"
+    },
+    {
+      "question_id": "FAC06V1_029",
+      "normalized_topic_key": "06-phan-tich-da-thuc",
+      "canonical_skill_id": "hieu-hai-binh-phuong",
+      "evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family": "FAC06-HIEU-HAI-BP-021-032",
+      "supporting_skills": [],
+      "source_file": "06-phan-tich-da-thuc-v1-01.json",
+      "source_blob": "1c2dd47977aa016cd24ce07d64215c213641f27f",
+      "phase_d_overlay_blob": "a64ec780b62ef6fd40668eb4bbad331024b470aa",
+      "legacy_skill_tags": [
+        "hieu-hai-binh-phuong"
+      ],
+      "capture_status": "G2_PROVEN_SKILLS_ACTIVE",
+      "beta_provenance": "PHASE_D_G2_NOTEBOOKLM_R1_PASS"
+    },
+    {
+      "question_id": "FAC06V1_030",
+      "normalized_topic_key": "06-phan-tich-da-thuc",
+      "canonical_skill_id": "hieu-hai-binh-phuong",
+      "evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family": "FAC06-HIEU-HAI-BP-021-032",
+      "supporting_skills": [],
+      "source_file": "06-phan-tich-da-thuc-v1-01.json",
+      "source_blob": "1c2dd47977aa016cd24ce07d64215c213641f27f",
+      "phase_d_overlay_blob": "a64ec780b62ef6fd40668eb4bbad331024b470aa",
+      "legacy_skill_tags": [
+        "hieu-hai-binh-phuong"
+      ],
+      "capture_status": "G2_PROVEN_SKILLS_ACTIVE",
+      "beta_provenance": "PHASE_D_G2_NOTEBOOKLM_R1_PASS"
+    },
+    {
+      "question_id": "FAC06V1_031",
+      "normalized_topic_key": "06-phan-tich-da-thuc",
+      "canonical_skill_id": "hieu-hai-binh-phuong",
+      "evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family": "FAC06-HIEU-HAI-BP-021-032",
+      "supporting_skills": [],
+      "source_file": "06-phan-tich-da-thuc-v1-02.json",
+      "source_blob": "fb9459c3728f2679a3f5eb74f14a6df35be9f63d",
+      "phase_d_overlay_blob": "a64ec780b62ef6fd40668eb4bbad331024b470aa",
+      "legacy_skill_tags": [
+        "hieu-hai-binh-phuong"
+      ],
+      "capture_status": "G2_PROVEN_SKILLS_ACTIVE",
+      "beta_provenance": "PHASE_D_G2_NOTEBOOKLM_R1_PASS"
+    },
+    {
+      "question_id": "FAC06V1_032",
+      "normalized_topic_key": "06-phan-tich-da-thuc",
+      "canonical_skill_id": "hieu-hai-binh-phuong",
+      "evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family": "FAC06-HIEU-HAI-BP-021-032",
+      "supporting_skills": [],
+      "source_file": "06-phan-tich-da-thuc-v1-02.json",
+      "source_blob": "fb9459c3728f2679a3f5eb74f14a6df35be9f63d",
+      "phase_d_overlay_blob": "a64ec780b62ef6fd40668eb4bbad331024b470aa",
+      "legacy_skill_tags": [
+        "hieu-hai-binh-phuong"
+      ],
+      "capture_status": "G2_PROVEN_SKILLS_ACTIVE",
+      "beta_provenance": "PHASE_D_G2_NOTEBOOKLM_R1_PASS"
+    },
+    {
+      "question_id": "RAT07V1_009",
+      "normalized_topic_key": "07-phan-thuc-dai-so",
+      "canonical_skill_id": "dieu-kien-xac-dinh",
+      "evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family": "RAT07-DOMAIN-LINEAR-009-016",
+      "supporting_skills": [],
+      "source_file": "07-phan-thuc-dai-so-v1-01.json",
+      "source_blob": "3bf6305a57286b92c9c6a2486c94eadcff0d9163",
+      "phase_d_overlay_blob": "0318bde17dd140ad2e94563abdbddca90343cc77",
+      "legacy_skill_tags": [
+        "dieu-kien-xac-dinh"
+      ],
+      "capture_status": "G1_CANARY_ACTIVE",
+      "beta_provenance": "BETA_V4_OWNER_QA_PASS"
+    },
+    {
+      "question_id": "RAT07V1_010",
+      "normalized_topic_key": "07-phan-thuc-dai-so",
+      "canonical_skill_id": "dieu-kien-xac-dinh",
+      "evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family": "RAT07-DOMAIN-LINEAR-009-016",
+      "supporting_skills": [],
+      "source_file": "07-phan-thuc-dai-so-v1-01.json",
+      "source_blob": "3bf6305a57286b92c9c6a2486c94eadcff0d9163",
+      "phase_d_overlay_blob": "0318bde17dd140ad2e94563abdbddca90343cc77",
+      "legacy_skill_tags": [
+        "dieu-kien-xac-dinh"
+      ],
+      "capture_status": "G1_CANARY_ACTIVE",
+      "beta_provenance": "BETA_V4_OWNER_QA_PASS"
+    },
+    {
+      "question_id": "RAT07V1_011",
+      "normalized_topic_key": "07-phan-thuc-dai-so",
+      "canonical_skill_id": "dieu-kien-xac-dinh",
+      "evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family": "RAT07-DOMAIN-LINEAR-009-016",
+      "supporting_skills": [],
+      "source_file": "07-phan-thuc-dai-so-v1-01.json",
+      "source_blob": "3bf6305a57286b92c9c6a2486c94eadcff0d9163",
+      "phase_d_overlay_blob": "0318bde17dd140ad2e94563abdbddca90343cc77",
+      "legacy_skill_tags": [
+        "dieu-kien-xac-dinh"
+      ],
+      "capture_status": "G2_PROVEN_SKILLS_ACTIVE",
+      "beta_provenance": "PHASE_D_G2_NOTEBOOKLM_R1_PASS"
+    },
+    {
+      "question_id": "RAT07V1_012",
+      "normalized_topic_key": "07-phan-thuc-dai-so",
+      "canonical_skill_id": "dieu-kien-xac-dinh",
+      "evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family": "RAT07-DOMAIN-LINEAR-009-016",
+      "supporting_skills": [],
+      "source_file": "07-phan-thuc-dai-so-v1-01.json",
+      "source_blob": "3bf6305a57286b92c9c6a2486c94eadcff0d9163",
+      "phase_d_overlay_blob": "0318bde17dd140ad2e94563abdbddca90343cc77",
+      "legacy_skill_tags": [
+        "dieu-kien-xac-dinh"
+      ],
+      "capture_status": "G2_PROVEN_SKILLS_ACTIVE",
+      "beta_provenance": "PHASE_D_G2_NOTEBOOKLM_R1_PASS"
+    },
+    {
+      "question_id": "RAT07V1_013",
+      "normalized_topic_key": "07-phan-thuc-dai-so",
+      "canonical_skill_id": "dieu-kien-xac-dinh",
+      "evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family": "RAT07-DOMAIN-LINEAR-009-016",
+      "supporting_skills": [],
+      "source_file": "07-phan-thuc-dai-so-v1-01.json",
+      "source_blob": "3bf6305a57286b92c9c6a2486c94eadcff0d9163",
+      "phase_d_overlay_blob": "0318bde17dd140ad2e94563abdbddca90343cc77",
+      "legacy_skill_tags": [
+        "dieu-kien-xac-dinh"
+      ],
+      "capture_status": "G2_PROVEN_SKILLS_ACTIVE",
+      "beta_provenance": "PHASE_D_G2_NOTEBOOKLM_R1_PASS"
+    },
+    {
+      "question_id": "RAT07V1_014",
+      "normalized_topic_key": "07-phan-thuc-dai-so",
+      "canonical_skill_id": "dieu-kien-xac-dinh",
+      "evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family": "RAT07-DOMAIN-LINEAR-009-016",
+      "supporting_skills": [],
+      "source_file": "07-phan-thuc-dai-so-v1-01.json",
+      "source_blob": "3bf6305a57286b92c9c6a2486c94eadcff0d9163",
+      "phase_d_overlay_blob": "0318bde17dd140ad2e94563abdbddca90343cc77",
+      "legacy_skill_tags": [
+        "dieu-kien-xac-dinh"
+      ],
+      "capture_status": "G2_PROVEN_SKILLS_ACTIVE",
+      "beta_provenance": "PHASE_D_G2_NOTEBOOKLM_R1_PASS"
+    },
+    {
+      "question_id": "RAT07V1_015",
+      "normalized_topic_key": "07-phan-thuc-dai-so",
+      "canonical_skill_id": "dieu-kien-xac-dinh",
+      "evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family": "RAT07-DOMAIN-LINEAR-009-016",
+      "supporting_skills": [],
+      "source_file": "07-phan-thuc-dai-so-v1-01.json",
+      "source_blob": "3bf6305a57286b92c9c6a2486c94eadcff0d9163",
+      "phase_d_overlay_blob": "0318bde17dd140ad2e94563abdbddca90343cc77",
+      "legacy_skill_tags": [
+        "dieu-kien-xac-dinh"
+      ],
+      "capture_status": "G2_PROVEN_SKILLS_ACTIVE",
+      "beta_provenance": "PHASE_D_G2_NOTEBOOKLM_R1_PASS"
+    },
+    {
+      "question_id": "RAT07V1_016",
+      "normalized_topic_key": "07-phan-thuc-dai-so",
+      "canonical_skill_id": "dieu-kien-xac-dinh",
+      "evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family": "RAT07-DOMAIN-LINEAR-009-016",
+      "supporting_skills": [],
+      "source_file": "07-phan-thuc-dai-so-v1-01.json",
+      "source_blob": "3bf6305a57286b92c9c6a2486c94eadcff0d9163",
+      "phase_d_overlay_blob": "0318bde17dd140ad2e94563abdbddca90343cc77",
+      "legacy_skill_tags": [
+        "dieu-kien-xac-dinh"
+      ],
+      "capture_status": "G2_PROVEN_SKILLS_ACTIVE",
+      "beta_provenance": "PHASE_D_G2_NOTEBOOKLM_R1_PASS"
+    },
+    {
+      "question_id": "RAT07V1_017",
+      "normalized_topic_key": "07-phan-thuc-dai-so",
+      "canonical_skill_id": "dieu-kien-xac-dinh",
+      "evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family": "RAT07-DOMAIN-QUADRATIC-017-024",
+      "supporting_skills": [
+        "phan-tich-tu-mau"
+      ],
+      "source_file": "07-phan-thuc-dai-so-v1-01.json",
+      "source_blob": "3bf6305a57286b92c9c6a2486c94eadcff0d9163",
+      "phase_d_overlay_blob": "0318bde17dd140ad2e94563abdbddca90343cc77",
+      "legacy_skill_tags": [
+        "dieu-kien-xac-dinh",
+        "phan-tich-tu-mau"
+      ],
+      "capture_status": "G1_CANARY_ACTIVE",
+      "beta_provenance": "BETA_V4_OWNER_QA_PASS"
+    },
+    {
+      "question_id": "RAT07V1_018",
+      "normalized_topic_key": "07-phan-thuc-dai-so",
+      "canonical_skill_id": "dieu-kien-xac-dinh",
+      "evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family": "RAT07-DOMAIN-QUADRATIC-017-024",
+      "supporting_skills": [
+        "phan-tich-tu-mau"
+      ],
+      "source_file": "07-phan-thuc-dai-so-v1-01.json",
+      "source_blob": "3bf6305a57286b92c9c6a2486c94eadcff0d9163",
+      "phase_d_overlay_blob": "0318bde17dd140ad2e94563abdbddca90343cc77",
+      "legacy_skill_tags": [
+        "dieu-kien-xac-dinh",
+        "phan-tich-tu-mau"
+      ],
+      "capture_status": "G1_CANARY_ACTIVE",
+      "beta_provenance": "BETA_V4_OWNER_QA_PASS"
+    },
+    {
+      "question_id": "RAT07V1_019",
+      "normalized_topic_key": "07-phan-thuc-dai-so",
+      "canonical_skill_id": "dieu-kien-xac-dinh",
+      "evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family": "RAT07-DOMAIN-QUADRATIC-017-024",
+      "supporting_skills": [
+        "phan-tich-tu-mau"
+      ],
+      "source_file": "07-phan-thuc-dai-so-v1-01.json",
+      "source_blob": "3bf6305a57286b92c9c6a2486c94eadcff0d9163",
+      "phase_d_overlay_blob": "0318bde17dd140ad2e94563abdbddca90343cc77",
+      "legacy_skill_tags": [
+        "dieu-kien-xac-dinh",
+        "phan-tich-tu-mau"
+      ],
+      "capture_status": "G2_PROVEN_SKILLS_ACTIVE",
+      "beta_provenance": "PHASE_D_G2_NOTEBOOKLM_R1_PASS"
+    },
+    {
+      "question_id": "RAT07V1_020",
+      "normalized_topic_key": "07-phan-thuc-dai-so",
+      "canonical_skill_id": "dieu-kien-xac-dinh",
+      "evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family": "RAT07-DOMAIN-QUADRATIC-017-024",
+      "supporting_skills": [
+        "phan-tich-tu-mau"
+      ],
+      "source_file": "07-phan-thuc-dai-so-v1-01.json",
+      "source_blob": "3bf6305a57286b92c9c6a2486c94eadcff0d9163",
+      "phase_d_overlay_blob": "0318bde17dd140ad2e94563abdbddca90343cc77",
+      "legacy_skill_tags": [
+        "dieu-kien-xac-dinh",
+        "phan-tich-tu-mau"
+      ],
+      "capture_status": "G2_PROVEN_SKILLS_ACTIVE",
+      "beta_provenance": "PHASE_D_G2_NOTEBOOKLM_R1_PASS"
+    },
+    {
+      "question_id": "RAT07V1_021",
+      "normalized_topic_key": "07-phan-thuc-dai-so",
+      "canonical_skill_id": "dieu-kien-xac-dinh",
+      "evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family": "RAT07-DOMAIN-QUADRATIC-017-024",
+      "supporting_skills": [
+        "phan-tich-tu-mau"
+      ],
+      "source_file": "07-phan-thuc-dai-so-v1-01.json",
+      "source_blob": "3bf6305a57286b92c9c6a2486c94eadcff0d9163",
+      "phase_d_overlay_blob": "0318bde17dd140ad2e94563abdbddca90343cc77",
+      "legacy_skill_tags": [
+        "dieu-kien-xac-dinh",
+        "phan-tich-tu-mau"
+      ],
+      "capture_status": "G2_PROVEN_SKILLS_ACTIVE",
+      "beta_provenance": "PHASE_D_G2_NOTEBOOKLM_R1_PASS"
+    },
+    {
+      "question_id": "RAT07V1_022",
+      "normalized_topic_key": "07-phan-thuc-dai-so",
+      "canonical_skill_id": "dieu-kien-xac-dinh",
+      "evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family": "RAT07-DOMAIN-QUADRATIC-017-024",
+      "supporting_skills": [
+        "phan-tich-tu-mau"
+      ],
+      "source_file": "07-phan-thuc-dai-so-v1-01.json",
+      "source_blob": "3bf6305a57286b92c9c6a2486c94eadcff0d9163",
+      "phase_d_overlay_blob": "0318bde17dd140ad2e94563abdbddca90343cc77",
+      "legacy_skill_tags": [
+        "dieu-kien-xac-dinh",
+        "phan-tich-tu-mau"
+      ],
+      "capture_status": "G2_PROVEN_SKILLS_ACTIVE",
+      "beta_provenance": "PHASE_D_G2_NOTEBOOKLM_R1_PASS"
+    },
+    {
+      "question_id": "RAT07V1_023",
+      "normalized_topic_key": "07-phan-thuc-dai-so",
+      "canonical_skill_id": "dieu-kien-xac-dinh",
+      "evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family": "RAT07-DOMAIN-QUADRATIC-017-024",
+      "supporting_skills": [
+        "phan-tich-tu-mau"
+      ],
+      "source_file": "07-phan-thuc-dai-so-v1-01.json",
+      "source_blob": "3bf6305a57286b92c9c6a2486c94eadcff0d9163",
+      "phase_d_overlay_blob": "0318bde17dd140ad2e94563abdbddca90343cc77",
+      "legacy_skill_tags": [
+        "dieu-kien-xac-dinh",
+        "phan-tich-tu-mau"
+      ],
+      "capture_status": "G2_PROVEN_SKILLS_ACTIVE",
+      "beta_provenance": "PHASE_D_G2_NOTEBOOKLM_R1_PASS"
+    },
+    {
+      "question_id": "RAT07V1_024",
+      "normalized_topic_key": "07-phan-thuc-dai-so",
+      "canonical_skill_id": "dieu-kien-xac-dinh",
+      "evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family": "RAT07-DOMAIN-QUADRATIC-017-024",
+      "supporting_skills": [
+        "phan-tich-tu-mau"
+      ],
+      "source_file": "07-phan-thuc-dai-so-v1-01.json",
+      "source_blob": "3bf6305a57286b92c9c6a2486c94eadcff0d9163",
+      "phase_d_overlay_blob": "0318bde17dd140ad2e94563abdbddca90343cc77",
+      "legacy_skill_tags": [
+        "dieu-kien-xac-dinh",
+        "phan-tich-tu-mau"
+      ],
+      "capture_status": "G2_PROVEN_SKILLS_ACTIVE",
+      "beta_provenance": "PHASE_D_G2_NOTEBOOKLM_R1_PASS"
+    },
+    {
+      "question_id": "RAT07V1_047",
+      "normalized_topic_key": "07-phan-thuc-dai-so",
+      "canonical_skill_id": "rut-gon-phan-thuc",
+      "evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family": "RAT07-SIMPLIFY-047-055",
+      "supporting_skills": [
+        "phan-tich-tu-mau"
+      ],
+      "source_file": "07-phan-thuc-dai-so-v1-02.json",
+      "source_blob": "2294a3f9d93b01b70036167713a3940fea367dca",
+      "phase_d_overlay_blob": "0318bde17dd140ad2e94563abdbddca90343cc77",
+      "legacy_skill_tags": [
+        "rut-gon-phan-thuc",
+        "phan-tich-tu-mau"
+      ],
+      "capture_status": "G1_CANARY_ACTIVE",
+      "beta_provenance": "BETA_V4_OWNER_QA_PASS"
+    },
+    {
+      "question_id": "RAT07V1_048",
+      "normalized_topic_key": "07-phan-thuc-dai-so",
+      "canonical_skill_id": "rut-gon-phan-thuc",
+      "evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family": "RAT07-SIMPLIFY-048-056",
+      "supporting_skills": [
+        "phan-tich-tu-mau"
+      ],
+      "source_file": "07-phan-thuc-dai-so-v1-02.json",
+      "source_blob": "2294a3f9d93b01b70036167713a3940fea367dca",
+      "phase_d_overlay_blob": "0318bde17dd140ad2e94563abdbddca90343cc77",
+      "legacy_skill_tags": [
+        "rut-gon-phan-thuc",
+        "phan-tich-tu-mau"
+      ],
+      "capture_status": "G1_CANARY_ACTIVE",
+      "beta_provenance": "BETA_V4_OWNER_QA_PASS"
+    },
+    {
+      "question_id": "RAT07V1_049",
+      "normalized_topic_key": "07-phan-thuc-dai-so",
+      "canonical_skill_id": "rut-gon-phan-thuc",
+      "evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family": "RAT07-SIMPLIFY-049-057",
+      "supporting_skills": [
+        "phan-tich-tu-mau"
+      ],
+      "source_file": "07-phan-thuc-dai-so-v1-02.json",
+      "source_blob": "2294a3f9d93b01b70036167713a3940fea367dca",
+      "phase_d_overlay_blob": "0318bde17dd140ad2e94563abdbddca90343cc77",
+      "legacy_skill_tags": [
+        "rut-gon-phan-thuc",
+        "phan-tich-tu-mau"
+      ],
+      "capture_status": "G1_CANARY_ACTIVE",
+      "beta_provenance": "BETA_V4_OWNER_QA_PASS"
+    },
+    {
+      "question_id": "RAT07V1_050",
+      "normalized_topic_key": "07-phan-thuc-dai-so",
+      "canonical_skill_id": "rut-gon-phan-thuc",
+      "evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family": "RAT07-SIMPLIFY-050-058",
+      "supporting_skills": [
+        "phan-tich-tu-mau"
+      ],
+      "source_file": "07-phan-thuc-dai-so-v1-02.json",
+      "source_blob": "2294a3f9d93b01b70036167713a3940fea367dca",
+      "phase_d_overlay_blob": "0318bde17dd140ad2e94563abdbddca90343cc77",
+      "legacy_skill_tags": [
+        "rut-gon-phan-thuc",
+        "phan-tich-tu-mau"
+      ],
+      "capture_status": "G2_PROVEN_SKILLS_ACTIVE",
+      "beta_provenance": "PHASE_D_G2_NOTEBOOKLM_R1_PASS"
+    },
+    {
+      "question_id": "RAT07V1_051",
+      "normalized_topic_key": "07-phan-thuc-dai-so",
+      "canonical_skill_id": "rut-gon-phan-thuc",
+      "evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family": "RAT07-SIMPLIFY-051-059",
+      "supporting_skills": [
+        "phan-tich-tu-mau"
+      ],
+      "source_file": "07-phan-thuc-dai-so-v1-02.json",
+      "source_blob": "2294a3f9d93b01b70036167713a3940fea367dca",
+      "phase_d_overlay_blob": "0318bde17dd140ad2e94563abdbddca90343cc77",
+      "legacy_skill_tags": [
+        "rut-gon-phan-thuc",
+        "phan-tich-tu-mau"
+      ],
+      "capture_status": "G2_PROVEN_SKILLS_ACTIVE",
+      "beta_provenance": "PHASE_D_G2_NOTEBOOKLM_R1_PASS"
+    },
+    {
+      "question_id": "RAT07V1_052",
+      "normalized_topic_key": "07-phan-thuc-dai-so",
+      "canonical_skill_id": "rut-gon-phan-thuc",
+      "evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family": "RAT07-SIMPLIFY-052-060",
+      "supporting_skills": [
+        "phan-tich-tu-mau"
+      ],
+      "source_file": "07-phan-thuc-dai-so-v1-02.json",
+      "source_blob": "2294a3f9d93b01b70036167713a3940fea367dca",
+      "phase_d_overlay_blob": "0318bde17dd140ad2e94563abdbddca90343cc77",
+      "legacy_skill_tags": [
+        "rut-gon-phan-thuc",
+        "phan-tich-tu-mau"
+      ],
+      "capture_status": "G2_PROVEN_SKILLS_ACTIVE",
+      "beta_provenance": "PHASE_D_G2_NOTEBOOKLM_R1_PASS"
+    },
+    {
+      "question_id": "RAT07V1_053",
+      "normalized_topic_key": "07-phan-thuc-dai-so",
+      "canonical_skill_id": "rut-gon-phan-thuc",
+      "evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family": "RAT07-SIMPLIFY-053-061",
+      "supporting_skills": [
+        "phan-tich-tu-mau"
+      ],
+      "source_file": "07-phan-thuc-dai-so-v1-02.json",
+      "source_blob": "2294a3f9d93b01b70036167713a3940fea367dca",
+      "phase_d_overlay_blob": "0318bde17dd140ad2e94563abdbddca90343cc77",
+      "legacy_skill_tags": [
+        "rut-gon-phan-thuc",
+        "phan-tich-tu-mau"
+      ],
+      "capture_status": "G2_PROVEN_SKILLS_ACTIVE",
+      "beta_provenance": "PHASE_D_G2_NOTEBOOKLM_R1_PASS"
+    },
+    {
+      "question_id": "RAT07V1_054",
+      "normalized_topic_key": "07-phan-thuc-dai-so",
+      "canonical_skill_id": "rut-gon-phan-thuc",
+      "evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family": "RAT07-SIMPLIFY-054-062",
+      "supporting_skills": [
+        "phan-tich-tu-mau"
+      ],
+      "source_file": "07-phan-thuc-dai-so-v1-02.json",
+      "source_blob": "2294a3f9d93b01b70036167713a3940fea367dca",
+      "phase_d_overlay_blob": "0318bde17dd140ad2e94563abdbddca90343cc77",
+      "legacy_skill_tags": [
+        "rut-gon-phan-thuc",
+        "phan-tich-tu-mau"
+      ],
+      "capture_status": "G2_PROVEN_SKILLS_ACTIVE",
+      "beta_provenance": "PHASE_D_G2_NOTEBOOKLM_R1_PASS"
+    },
+    {
+      "question_id": "RAT07V1_055",
+      "normalized_topic_key": "07-phan-thuc-dai-so",
+      "canonical_skill_id": "rut-gon-phan-thuc",
+      "evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family": "RAT07-SIMPLIFY-047-055",
+      "supporting_skills": [
+        "phan-tich-tu-mau"
+      ],
+      "source_file": "07-phan-thuc-dai-so-v1-02.json",
+      "source_blob": "2294a3f9d93b01b70036167713a3940fea367dca",
+      "phase_d_overlay_blob": "0318bde17dd140ad2e94563abdbddca90343cc77",
+      "legacy_skill_tags": [
+        "rut-gon-phan-thuc",
+        "phan-tich-tu-mau"
+      ],
+      "capture_status": "G1_CANARY_ACTIVE",
+      "beta_provenance": "BETA_V4_OWNER_QA_PASS"
+    },
+    {
+      "question_id": "RAT07V1_056",
+      "normalized_topic_key": "07-phan-thuc-dai-so",
+      "canonical_skill_id": "rut-gon-phan-thuc",
+      "evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family": "RAT07-SIMPLIFY-048-056",
+      "supporting_skills": [
+        "phan-tich-tu-mau"
+      ],
+      "source_file": "07-phan-thuc-dai-so-v1-02.json",
+      "source_blob": "2294a3f9d93b01b70036167713a3940fea367dca",
+      "phase_d_overlay_blob": "0318bde17dd140ad2e94563abdbddca90343cc77",
+      "legacy_skill_tags": [
+        "rut-gon-phan-thuc",
+        "phan-tich-tu-mau"
+      ],
+      "capture_status": "G1_CANARY_ACTIVE",
+      "beta_provenance": "BETA_V4_OWNER_QA_PASS"
+    },
+    {
+      "question_id": "RAT07V1_057",
+      "normalized_topic_key": "07-phan-thuc-dai-so",
+      "canonical_skill_id": "rut-gon-phan-thuc",
+      "evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family": "RAT07-SIMPLIFY-049-057",
+      "supporting_skills": [
+        "phan-tich-tu-mau"
+      ],
+      "source_file": "07-phan-thuc-dai-so-v1-02.json",
+      "source_blob": "2294a3f9d93b01b70036167713a3940fea367dca",
+      "phase_d_overlay_blob": "0318bde17dd140ad2e94563abdbddca90343cc77",
+      "legacy_skill_tags": [
+        "rut-gon-phan-thuc",
+        "phan-tich-tu-mau"
+      ],
+      "capture_status": "G1_CANARY_ACTIVE",
+      "beta_provenance": "BETA_V4_OWNER_QA_PASS"
+    },
+    {
+      "question_id": "RAT07V1_058",
+      "normalized_topic_key": "07-phan-thuc-dai-so",
+      "canonical_skill_id": "rut-gon-phan-thuc",
+      "evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family": "RAT07-SIMPLIFY-050-058",
+      "supporting_skills": [
+        "phan-tich-tu-mau"
+      ],
+      "source_file": "07-phan-thuc-dai-so-v1-02.json",
+      "source_blob": "2294a3f9d93b01b70036167713a3940fea367dca",
+      "phase_d_overlay_blob": "0318bde17dd140ad2e94563abdbddca90343cc77",
+      "legacy_skill_tags": [
+        "rut-gon-phan-thuc",
+        "phan-tich-tu-mau"
+      ],
+      "capture_status": "G2_PROVEN_SKILLS_ACTIVE",
+      "beta_provenance": "PHASE_D_G2_NOTEBOOKLM_R1_PASS"
+    },
+    {
+      "question_id": "RAT07V1_059",
+      "normalized_topic_key": "07-phan-thuc-dai-so",
+      "canonical_skill_id": "rut-gon-phan-thuc",
+      "evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family": "RAT07-SIMPLIFY-051-059",
+      "supporting_skills": [
+        "phan-tich-tu-mau"
+      ],
+      "source_file": "07-phan-thuc-dai-so-v1-02.json",
+      "source_blob": "2294a3f9d93b01b70036167713a3940fea367dca",
+      "phase_d_overlay_blob": "0318bde17dd140ad2e94563abdbddca90343cc77",
+      "legacy_skill_tags": [
+        "rut-gon-phan-thuc",
+        "phan-tich-tu-mau"
+      ],
+      "capture_status": "G2_PROVEN_SKILLS_ACTIVE",
+      "beta_provenance": "PHASE_D_G2_NOTEBOOKLM_R1_PASS"
+    },
+    {
+      "question_id": "RAT07V1_060",
+      "normalized_topic_key": "07-phan-thuc-dai-so",
+      "canonical_skill_id": "rut-gon-phan-thuc",
+      "evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family": "RAT07-SIMPLIFY-052-060",
+      "supporting_skills": [
+        "phan-tich-tu-mau"
+      ],
+      "source_file": "07-phan-thuc-dai-so-v1-02.json",
+      "source_blob": "2294a3f9d93b01b70036167713a3940fea367dca",
+      "phase_d_overlay_blob": "0318bde17dd140ad2e94563abdbddca90343cc77",
+      "legacy_skill_tags": [
+        "rut-gon-phan-thuc",
+        "phan-tich-tu-mau"
+      ],
+      "capture_status": "G2_PROVEN_SKILLS_ACTIVE",
+      "beta_provenance": "PHASE_D_G2_NOTEBOOKLM_R1_PASS"
+    },
+    {
+      "question_id": "RAT07V1_061",
+      "normalized_topic_key": "07-phan-thuc-dai-so",
+      "canonical_skill_id": "rut-gon-phan-thuc",
+      "evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family": "RAT07-SIMPLIFY-053-061",
+      "supporting_skills": [
+        "phan-tich-tu-mau"
+      ],
+      "source_file": "07-phan-thuc-dai-so-v1-03.json",
+      "source_blob": "9297d644a65c09b8c8ca8cc4b3f81cc194764360",
+      "phase_d_overlay_blob": "0318bde17dd140ad2e94563abdbddca90343cc77",
+      "legacy_skill_tags": [
+        "rut-gon-phan-thuc",
+        "phan-tich-tu-mau"
+      ],
+      "capture_status": "G2_PROVEN_SKILLS_ACTIVE",
+      "beta_provenance": "PHASE_D_G2_NOTEBOOKLM_R1_PASS"
+    },
+    {
+      "question_id": "RAT07V1_062",
+      "normalized_topic_key": "07-phan-thuc-dai-so",
+      "canonical_skill_id": "rut-gon-phan-thuc",
+      "evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family": "RAT07-SIMPLIFY-054-062",
+      "supporting_skills": [
+        "phan-tich-tu-mau"
+      ],
+      "source_file": "07-phan-thuc-dai-so-v1-03.json",
+      "source_blob": "9297d644a65c09b8c8ca8cc4b3f81cc194764360",
+      "phase_d_overlay_blob": "0318bde17dd140ad2e94563abdbddca90343cc77",
+      "legacy_skill_tags": [
+        "rut-gon-phan-thuc",
+        "phan-tich-tu-mau"
+      ],
+      "capture_status": "G2_PROVEN_SKILLS_ACTIVE",
+      "beta_provenance": "PHASE_D_G2_NOTEBOOKLM_R1_PASS"
+    },
+    {
+      "question_id": "RAT07V1_071",
+      "normalized_topic_key": "07-phan-thuc-dai-so",
+      "canonical_skill_id": "quy-dong-mau-thuc",
+      "evidence_class": "MCQ_METHOD_SELECTION_ONLY",
+      "clone_family": "RAT07-COMMON-DENOMINATOR-071-080",
+      "supporting_skills": [],
+      "source_file": "07-phan-thuc-dai-so-v1-03.json",
+      "source_blob": "9297d644a65c09b8c8ca8cc4b3f81cc194764360",
+      "phase_d_overlay_blob": "0318bde17dd140ad2e94563abdbddca90343cc77",
+      "legacy_skill_tags": [
+        "quy-dong-mau-thuc"
+      ],
+      "capture_status": "G1_CANARY_ACTIVE",
+      "beta_provenance": "BETA_V5_OWNER_QA_PASS"
+    },
+    {
+      "question_id": "RAT07V1_072",
+      "normalized_topic_key": "07-phan-thuc-dai-so",
+      "canonical_skill_id": "quy-dong-mau-thuc",
+      "evidence_class": "MCQ_METHOD_SELECTION_ONLY",
+      "clone_family": "RAT07-COMMON-DENOMINATOR-071-080",
+      "supporting_skills": [],
+      "source_file": "07-phan-thuc-dai-so-v1-03.json",
+      "source_blob": "9297d644a65c09b8c8ca8cc4b3f81cc194764360",
+      "phase_d_overlay_blob": "0318bde17dd140ad2e94563abdbddca90343cc77",
+      "legacy_skill_tags": [
+        "quy-dong-mau-thuc"
+      ],
+      "capture_status": "G1_CANARY_ACTIVE",
+      "beta_provenance": "BETA_V5_OWNER_QA_PASS"
+    },
+    {
+      "question_id": "RAT07V1_073",
+      "normalized_topic_key": "07-phan-thuc-dai-so",
+      "canonical_skill_id": "quy-dong-mau-thuc",
+      "evidence_class": "MCQ_METHOD_SELECTION_ONLY",
+      "clone_family": "RAT07-COMMON-DENOMINATOR-071-080",
+      "supporting_skills": [],
+      "source_file": "07-phan-thuc-dai-so-v1-03.json",
+      "source_blob": "9297d644a65c09b8c8ca8cc4b3f81cc194764360",
+      "phase_d_overlay_blob": "0318bde17dd140ad2e94563abdbddca90343cc77",
+      "legacy_skill_tags": [
+        "quy-dong-mau-thuc"
+      ],
+      "capture_status": "G2_PROVEN_SKILLS_ACTIVE",
+      "beta_provenance": "PHASE_D_G2_NOTEBOOKLM_R1_PASS"
+    },
+    {
+      "question_id": "RAT07V1_074",
+      "normalized_topic_key": "07-phan-thuc-dai-so",
+      "canonical_skill_id": "quy-dong-mau-thuc",
+      "evidence_class": "MCQ_METHOD_SELECTION_ONLY",
+      "clone_family": "RAT07-COMMON-DENOMINATOR-071-080",
+      "supporting_skills": [],
+      "source_file": "07-phan-thuc-dai-so-v1-03.json",
+      "source_blob": "9297d644a65c09b8c8ca8cc4b3f81cc194764360",
+      "phase_d_overlay_blob": "0318bde17dd140ad2e94563abdbddca90343cc77",
+      "legacy_skill_tags": [
+        "quy-dong-mau-thuc"
+      ],
+      "capture_status": "G2_PROVEN_SKILLS_ACTIVE",
+      "beta_provenance": "PHASE_D_G2_NOTEBOOKLM_R1_PASS"
+    },
+    {
+      "question_id": "RAT07V1_075",
+      "normalized_topic_key": "07-phan-thuc-dai-so",
+      "canonical_skill_id": "quy-dong-mau-thuc",
+      "evidence_class": "MCQ_METHOD_SELECTION_ONLY",
+      "clone_family": "RAT07-COMMON-DENOMINATOR-071-080",
+      "supporting_skills": [],
+      "source_file": "07-phan-thuc-dai-so-v1-03.json",
+      "source_blob": "9297d644a65c09b8c8ca8cc4b3f81cc194764360",
+      "phase_d_overlay_blob": "0318bde17dd140ad2e94563abdbddca90343cc77",
+      "legacy_skill_tags": [
+        "quy-dong-mau-thuc"
+      ],
+      "capture_status": "G2_PROVEN_SKILLS_ACTIVE",
+      "beta_provenance": "PHASE_D_G2_NOTEBOOKLM_R1_PASS"
+    },
+    {
+      "question_id": "RAT07V1_076",
+      "normalized_topic_key": "07-phan-thuc-dai-so",
+      "canonical_skill_id": "quy-dong-mau-thuc",
+      "evidence_class": "MCQ_METHOD_SELECTION_ONLY",
+      "clone_family": "RAT07-COMMON-DENOMINATOR-071-080",
+      "supporting_skills": [],
+      "source_file": "07-phan-thuc-dai-so-v1-03.json",
+      "source_blob": "9297d644a65c09b8c8ca8cc4b3f81cc194764360",
+      "phase_d_overlay_blob": "0318bde17dd140ad2e94563abdbddca90343cc77",
+      "legacy_skill_tags": [
+        "quy-dong-mau-thuc"
+      ],
+      "capture_status": "G2_PROVEN_SKILLS_ACTIVE",
+      "beta_provenance": "PHASE_D_G2_NOTEBOOKLM_R1_PASS"
+    },
+    {
+      "question_id": "RAT07V1_077",
+      "normalized_topic_key": "07-phan-thuc-dai-so",
+      "canonical_skill_id": "quy-dong-mau-thuc",
+      "evidence_class": "MCQ_METHOD_SELECTION_ONLY",
+      "clone_family": "RAT07-COMMON-DENOMINATOR-071-080",
+      "supporting_skills": [],
+      "source_file": "07-phan-thuc-dai-so-v1-03.json",
+      "source_blob": "9297d644a65c09b8c8ca8cc4b3f81cc194764360",
+      "phase_d_overlay_blob": "0318bde17dd140ad2e94563abdbddca90343cc77",
+      "legacy_skill_tags": [
+        "quy-dong-mau-thuc"
+      ],
+      "capture_status": "G2_PROVEN_SKILLS_ACTIVE",
+      "beta_provenance": "PHASE_D_G2_NOTEBOOKLM_R1_PASS"
+    },
+    {
+      "question_id": "RAT07V1_078",
+      "normalized_topic_key": "07-phan-thuc-dai-so",
+      "canonical_skill_id": "quy-dong-mau-thuc",
+      "evidence_class": "MCQ_METHOD_SELECTION_ONLY",
+      "clone_family": "RAT07-COMMON-DENOMINATOR-071-080",
+      "supporting_skills": [],
+      "source_file": "07-phan-thuc-dai-so-v1-03.json",
+      "source_blob": "9297d644a65c09b8c8ca8cc4b3f81cc194764360",
+      "phase_d_overlay_blob": "0318bde17dd140ad2e94563abdbddca90343cc77",
+      "legacy_skill_tags": [
+        "quy-dong-mau-thuc"
+      ],
+      "capture_status": "G2_PROVEN_SKILLS_ACTIVE",
+      "beta_provenance": "PHASE_D_G2_NOTEBOOKLM_R1_PASS"
+    },
+    {
+      "question_id": "RAT07V1_079",
+      "normalized_topic_key": "07-phan-thuc-dai-so",
+      "canonical_skill_id": "quy-dong-mau-thuc",
+      "evidence_class": "MCQ_METHOD_SELECTION_ONLY",
+      "clone_family": "RAT07-COMMON-DENOMINATOR-071-080",
+      "supporting_skills": [],
+      "source_file": "07-phan-thuc-dai-so-v1-03.json",
+      "source_blob": "9297d644a65c09b8c8ca8cc4b3f81cc194764360",
+      "phase_d_overlay_blob": "0318bde17dd140ad2e94563abdbddca90343cc77",
+      "legacy_skill_tags": [
+        "quy-dong-mau-thuc"
+      ],
+      "capture_status": "G2_PROVEN_SKILLS_ACTIVE",
+      "beta_provenance": "PHASE_D_G2_NOTEBOOKLM_R1_PASS"
+    },
+    {
+      "question_id": "RAT07V1_080",
+      "normalized_topic_key": "07-phan-thuc-dai-so",
+      "canonical_skill_id": "quy-dong-mau-thuc",
+      "evidence_class": "MCQ_METHOD_SELECTION_ONLY",
+      "clone_family": "RAT07-COMMON-DENOMINATOR-071-080",
+      "supporting_skills": [],
+      "source_file": "07-phan-thuc-dai-so-v1-03.json",
+      "source_blob": "9297d644a65c09b8c8ca8cc4b3f81cc194764360",
+      "phase_d_overlay_blob": "0318bde17dd140ad2e94563abdbddca90343cc77",
+      "legacy_skill_tags": [
+        "quy-dong-mau-thuc"
+      ],
+      "capture_status": "G2_PROVEN_SKILLS_ACTIVE",
+      "beta_provenance": "PHASE_D_G2_NOTEBOOKLM_R1_PASS"
+    },
+    {
+      "question_id": "RAT07V1_115",
+      "normalized_topic_key": "07-phan-thuc-dai-so",
+      "canonical_skill_id": "tinh-gia-tri-phan-thuc",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": null,
+      "supporting_skills": [],
+      "source_file": "07-phan-thuc-dai-so-v1-04.json",
+      "source_blob": "b1ba2cc3664cfc2cda13fdafe4655f744130c833",
+      "phase_d_overlay_blob": "0318bde17dd140ad2e94563abdbddca90343cc77",
+      "legacy_skill_tags": [
+        "tinh-gia-tri-phan-thuc"
+      ],
+      "capture_status": "G1_CANARY_ACTIVE",
+      "beta_provenance": "BETA_V4_OWNER_QA_PASS"
+    },
+    {
+      "question_id": "RAT07V1_116",
+      "normalized_topic_key": "07-phan-thuc-dai-so",
+      "canonical_skill_id": "tinh-gia-tri-phan-thuc",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": null,
+      "supporting_skills": [],
+      "source_file": "07-phan-thuc-dai-so-v1-04.json",
+      "source_blob": "b1ba2cc3664cfc2cda13fdafe4655f744130c833",
+      "phase_d_overlay_blob": "0318bde17dd140ad2e94563abdbddca90343cc77",
+      "legacy_skill_tags": [
+        "tinh-gia-tri-phan-thuc"
+      ],
+      "capture_status": "G1_CANARY_ACTIVE",
+      "beta_provenance": "BETA_V4_OWNER_QA_PASS"
+    },
+    {
+      "question_id": "RAT07V1_117",
+      "normalized_topic_key": "07-phan-thuc-dai-so",
+      "canonical_skill_id": "tinh-gia-tri-phan-thuc",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": null,
+      "supporting_skills": [],
+      "source_file": "07-phan-thuc-dai-so-v1-04.json",
+      "source_blob": "b1ba2cc3664cfc2cda13fdafe4655f744130c833",
+      "phase_d_overlay_blob": "0318bde17dd140ad2e94563abdbddca90343cc77",
+      "legacy_skill_tags": [
+        "tinh-gia-tri-phan-thuc"
+      ],
+      "capture_status": "G2_PROVEN_SKILLS_ACTIVE",
+      "beta_provenance": "PHASE_D_G2_NOTEBOOKLM_R1_PASS"
+    },
+    {
+      "question_id": "RAT07V1_118",
+      "normalized_topic_key": "07-phan-thuc-dai-so",
+      "canonical_skill_id": "tinh-gia-tri-phan-thuc",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": null,
+      "supporting_skills": [],
+      "source_file": "07-phan-thuc-dai-so-v1-04.json",
+      "source_blob": "b1ba2cc3664cfc2cda13fdafe4655f744130c833",
+      "phase_d_overlay_blob": "0318bde17dd140ad2e94563abdbddca90343cc77",
+      "legacy_skill_tags": [
+        "tinh-gia-tri-phan-thuc"
+      ],
+      "capture_status": "G2_PROVEN_SKILLS_ACTIVE",
+      "beta_provenance": "PHASE_D_G2_NOTEBOOKLM_R1_PASS"
+    }
+  ]
+}

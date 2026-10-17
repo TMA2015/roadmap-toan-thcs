@@ -1,0 +1,759 @@
+{
+  "schema_version": "1.0.0",
+  "engine": "RoadmapExamEngineV1",
+  "exam_family": "TOPIC25",
+  "assessment_mode": "self_marked_written_work",
+  "integrity_note": "Static GitHub Pages cannot securely hide publicly published answers. The UI blocks self-scoring until submission but is not a proctoring system.",
+  "exams": [
+    {
+      "id": "EXAM25-01",
+      "no": "01",
+      "title": "Đề 01 · Nền tảng tổng hợp",
+      "duration_minutes": 120,
+      "total_points": 10,
+      "exam_uri": "kien-thuc/25-tong-hop-on-thi-10/de-luyen-01/",
+      "answer_uri": "kien-thuc/25-tong-hop-on-thi-10/de-luyen-01-dap-an/",
+      "items": [
+        {
+          "id": "I.1",
+          "anchor_ids": [
+            "A25-001"
+          ],
+          "topic_uris": [
+            "kien-thuc/11-can-thuc/"
+          ],
+          "criteria": [
+            {
+              "text": "Đổi ba căn thức về cùng căn √2",
+              "points": 0.75
+            },
+            {
+              "text": "Cộng trừ hệ số và kết luận đúng",
+              "points": 0.25
+            }
+          ],
+          "points": 1
+        },
+        {
+          "id": "I.2",
+          "anchor_ids": [
+            "A25-001"
+          ],
+          "topic_uris": [
+            "kien-thuc/08-phuong-trinh-bat-phuong-trinh/"
+          ],
+          "criteria": [
+            {
+              "text": "Nêu điều kiện x khác −1",
+              "points": 0.25
+            },
+            {
+              "text": "Giải đúng x = 8",
+              "points": 0.5
+            },
+            {
+              "text": "Đối chiếu điều kiện và kết luận",
+              "points": 0.25
+            }
+          ],
+          "points": 1
+        },
+        {
+          "id": "II.1",
+          "anchor_ids": [
+            "A25-002"
+          ],
+          "topic_uris": [
+            "kien-thuc/12-phuong-trinh-bac-hai-viete/"
+          ],
+          "criteria": [
+            {
+              "text": "Nêu tổng/tích hai nghiệm theo Viète",
+              "points": 0.5
+            },
+            {
+              "text": "Áp dụng hằng đẳng thức, tính được 13",
+              "points": 0.5
+            }
+          ],
+          "points": 1
+        },
+        {
+          "id": "II.2",
+          "anchor_ids": [
+            "A25-003"
+          ],
+          "topic_uris": [
+            "kien-thuc/09-he-phuong-trinh/",
+            "kien-thuc/24-bai-toan-thuc-te/"
+          ],
+          "criteria": [
+            {
+              "text": "Đặt ẩn có ý nghĩa và điều kiện",
+              "points": 0.25
+            },
+            {
+              "text": "Lập hệ số lượng và doanh thu",
+              "points": 0.35
+            },
+            {
+              "text": "Giải x = 14, y = 26",
+              "points": 0.25
+            },
+            {
+              "text": "Kiểm tra và kết luận theo ngữ cảnh",
+              "points": 0.15
+            }
+          ],
+          "points": 1
+        },
+        {
+          "id": "III.1",
+          "anchor_ids": [],
+          "topic_uris": [
+            "kien-thuc/21-thong-ke/"
+          ],
+          "criteria": [
+            {
+              "text": "Tính đúng tổng 65",
+              "points": 0.25
+            },
+            {
+              "text": "Chia 8, ra trung bình 8,125",
+              "points": 0.25
+            }
+          ],
+          "points": 0.5
+        },
+        {
+          "id": "III.2",
+          "anchor_ids": [],
+          "topic_uris": [
+            "kien-thuc/21-thong-ke/"
+          ],
+          "criteria": [
+            {
+              "text": "Trung vị 8,5",
+              "points": 0.25
+            },
+            {
+              "text": "Mốt 9",
+              "points": 0.25
+            }
+          ],
+          "points": 0.5
+        },
+        {
+          "id": "III.3",
+          "anchor_ids": [],
+          "topic_uris": [
+            "kien-thuc/23-xac-suat/"
+          ],
+          "criteria": [
+            {
+              "text": "Đếm 4 kết quả từ 9 điểm trở lên",
+              "points": 0.25
+            },
+            {
+              "text": "Xác suất 4/8 = 1/2",
+              "points": 0.25
+            }
+          ],
+          "points": 0.5
+        },
+        {
+          "id": "IV.1",
+          "anchor_ids": [
+            "A25-004"
+          ],
+          "topic_uris": [
+            "kien-thuc/17-thales-dong-dang/",
+            "kien-thuc/18-he-thuc-luong/"
+          ],
+          "criteria": [
+            {
+              "text": "Chỉ ra hai cặp góc bằng nhau",
+              "points": 0.4
+            },
+            {
+              "text": "Viết đúng thứ tự đồng dạng",
+              "points": 0.6
+            }
+          ],
+          "points": 1
+        },
+        {
+          "id": "IV.2",
+          "anchor_ids": [
+            "A25-004"
+          ],
+          "topic_uris": [
+            "kien-thuc/17-thales-dong-dang/",
+            "kien-thuc/18-he-thuc-luong/"
+          ],
+          "criteria": [
+            {
+              "text": "Từ tỷ số cạnh suy ra AH² = BH·CH",
+              "points": 0.75
+            }
+          ],
+          "points": 0.75
+        },
+        {
+          "id": "IV.3",
+          "anchor_ids": [
+            "A25-004"
+          ],
+          "topic_uris": [
+            "kien-thuc/18-he-thuc-luong/"
+          ],
+          "criteria": [
+            {
+              "text": "BC = 25",
+              "points": 0.25
+            },
+            {
+              "text": "AH = 12",
+              "points": 0.35
+            },
+            {
+              "text": "AB = 15 và AC = 20 kèm công thức",
+              "points": 0.65
+            }
+          ],
+          "points": 1.25
+        },
+        {
+          "id": "IV.4",
+          "anchor_ids": [
+            "A25-004"
+          ],
+          "topic_uris": [
+            "kien-thuc/18-he-thuc-luong/"
+          ],
+          "criteria": [
+            {
+              "text": "Công thức diện tích đúng",
+              "points": 0.25
+            },
+            {
+              "text": "Kết quả 150",
+              "points": 0.25
+            }
+          ],
+          "points": 0.5
+        },
+        {
+          "id": "V",
+          "anchor_ids": [
+            "A25-005"
+          ],
+          "topic_uris": [
+            "kien-thuc/04-bieu-thuc-dai-so/"
+          ],
+          "criteria": [
+            {
+              "text": "Chứng minh 4xy ≤ (x+y)²",
+              "points": 0.5
+            },
+            {
+              "text": "Suy ra P ≤ 25",
+              "points": 0.25
+            },
+            {
+              "text": "Dấu bằng x=y=5 và kết luận",
+              "points": 0.25
+            }
+          ],
+          "points": 1
+        }
+      ]
+    },
+    {
+      "id": "EXAM25-02",
+      "no": "02",
+      "title": "Đề 02 · Mạch liên kết",
+      "duration_minutes": 120,
+      "total_points": 10,
+      "exam_uri": "kien-thuc/25-tong-hop-on-thi-10/de-luyen-02/",
+      "answer_uri": "kien-thuc/25-tong-hop-on-thi-10/de-luyen-02-dap-an/",
+      "items": [
+        {
+          "id": "I.1",
+          "anchor_ids": [
+            "A25-006"
+          ],
+          "topic_uris": [
+            "kien-thuc/11-can-thuc/"
+          ],
+          "criteria": [
+            {
+              "text": "Thế x = 9, tính A = 2",
+              "points": 0.5
+            }
+          ],
+          "points": 0.5
+        },
+        {
+          "id": "I.2",
+          "anchor_ids": [
+            "A25-006"
+          ],
+          "topic_uris": [
+            "kien-thuc/11-can-thuc/"
+          ],
+          "criteria": [
+            {
+              "text": "Đặt n=√x, giữ n≥0, n≠1",
+              "points": 0.5
+            },
+            {
+              "text": "Tách A=1+2/(n−1)",
+              "points": 0.5
+            },
+            {
+              "text": "Xét cả ước âm, được n=0,2,3",
+              "points": 0.5
+            }
+          ],
+          "points": 1.5
+        },
+        {
+          "id": "II.1",
+          "anchor_ids": [
+            "A25-003"
+          ],
+          "topic_uris": [
+            "kien-thuc/09-he-phuong-trinh/",
+            "kien-thuc/24-bai-toan-thuc-te/"
+          ],
+          "criteria": [
+            {
+              "text": "Đặt ẩn và điều kiện",
+              "points": 0.25
+            },
+            {
+              "text": "Lập hệ 36 vé, 2070 nghìn",
+              "points": 0.5
+            },
+            {
+              "text": "Giải 15 vé người lớn, 21 vé học sinh",
+              "points": 0.5
+            },
+            {
+              "text": "Đối chiếu và kết luận",
+              "points": 0.25
+            }
+          ],
+          "points": 1.5
+        },
+        {
+          "id": "II.2",
+          "anchor_ids": [
+            "A25-003"
+          ],
+          "topic_uris": [
+            "kien-thuc/24-bai-toan-thuc-te/"
+          ],
+          "criteria": [
+            {
+              "text": "Giá mới 400×1,1×0,9=396 nghìn",
+              "points": 0.5
+            }
+          ],
+          "points": 0.5
+        },
+        {
+          "id": "III.1",
+          "anchor_ids": [
+            "A25-011"
+          ],
+          "topic_uris": [
+            "kien-thuc/10-ham-so-do-thi/",
+            "kien-thuc/12-phuong-trinh-bac-hai-viete/"
+          ],
+          "criteria": [
+            {
+              "text": "Lập hoành độ, tính Δ=16>0",
+              "points": 0.5
+            }
+          ],
+          "points": 0.5
+        },
+        {
+          "id": "III.2",
+          "anchor_ids": [
+            "A25-011"
+          ],
+          "topic_uris": [
+            "kien-thuc/10-ham-so-do-thi/",
+            "kien-thuc/12-phuong-trinh-bac-hai-viete/"
+          ],
+          "criteria": [
+            {
+              "text": "Giải x=−1 hoặc 3",
+              "points": 0.5
+            },
+            {
+              "text": "Tìm đủ hai giao điểm",
+              "points": 0.5
+            }
+          ],
+          "points": 1
+        },
+        {
+          "id": "III.3",
+          "anchor_ids": [
+            "A25-011",
+            "A25-007"
+          ],
+          "topic_uris": [
+            "kien-thuc/12-phuong-trinh-bac-hai-viete/"
+          ],
+          "criteria": [
+            {
+              "text": "Viète tổng 2, tích −3, kết quả 10",
+              "points": 0.5
+            }
+          ],
+          "points": 0.5
+        },
+        {
+          "id": "IV.1",
+          "anchor_ids": [
+            "A25-008"
+          ],
+          "topic_uris": [
+            "kien-thuc/19-duong-tron/"
+          ],
+          "criteria": [
+            {
+              "text": "Nêu hai góc vuông tại B và C",
+              "points": 0.25
+            },
+            {
+              "text": "Nội tiếp đường tròn đường kính AO",
+              "points": 0.5
+            }
+          ],
+          "points": 0.75
+        },
+        {
+          "id": "IV.2",
+          "anchor_ids": [
+            "A25-008"
+          ],
+          "topic_uris": [
+            "kien-thuc/19-duong-tron/"
+          ],
+          "criteria": [
+            {
+              "text": "Hai tam giác vuông bằng nhau, AB=AC",
+              "points": 0.5
+            }
+          ],
+          "points": 0.5
+        },
+        {
+          "id": "IV.3",
+          "anchor_ids": [
+            "A25-008"
+          ],
+          "topic_uris": [
+            "kien-thuc/17-thales-dong-dang/",
+            "kien-thuc/19-duong-tron/"
+          ],
+          "criteria": [
+            {
+              "text": "Hai cặp góc tương ứng",
+              "points": 0.5
+            },
+            {
+              "text": "Đồng dạng đúng thứ tự",
+              "points": 0.5
+            },
+            {
+              "text": "Suy ra AB²=AD·AE",
+              "points": 0.25
+            }
+          ],
+          "points": 1.25
+        },
+        {
+          "id": "IV.4",
+          "anchor_ids": [
+            "A25-008"
+          ],
+          "topic_uris": [
+            "kien-thuc/19-duong-tron/"
+          ],
+          "criteria": [
+            {
+              "text": "AE=9 cm",
+              "points": 0.5
+            }
+          ],
+          "points": 0.5
+        },
+        {
+          "id": "V",
+          "anchor_ids": [
+            "A25-005"
+          ],
+          "topic_uris": [
+            "kien-thuc/04-bieu-thuc-dai-so/"
+          ],
+          "criteria": [
+            {
+              "text": "Đặt a,b>0 và a+b=12",
+              "points": 0.25
+            },
+            {
+              "text": "Chứng minh ab≤36",
+              "points": 0.5
+            },
+            {
+              "text": "Dấu bằng và kết luận diện tích 36cm²",
+              "points": 0.25
+            }
+          ],
+          "points": 1
+        }
+      ]
+    },
+    {
+      "id": "EXAM25-03",
+      "no": "03",
+      "title": "Đề 03 · Lập luận chặt chẽ",
+      "duration_minutes": 120,
+      "total_points": 10,
+      "exam_uri": "kien-thuc/25-tong-hop-on-thi-10/de-luyen-03/",
+      "answer_uri": "kien-thuc/25-tong-hop-on-thi-10/de-luyen-03-dap-an/",
+      "items": [
+        {
+          "id": "I.1",
+          "anchor_ids": [
+            "A25-001"
+          ],
+          "topic_uris": [
+            "kien-thuc/11-can-thuc/"
+          ],
+          "criteria": [
+            {
+              "text": "Đổi căn thức về căn √2",
+              "points": 0.5
+            },
+            {
+              "text": "Kết luận 4√2",
+              "points": 0.5
+            }
+          ],
+          "points": 1
+        },
+        {
+          "id": "I.2",
+          "anchor_ids": [
+            "A25-001"
+          ],
+          "topic_uris": [
+            "kien-thuc/08-phuong-trinh-bat-phuong-trinh/"
+          ],
+          "criteria": [
+            {
+              "text": "Điều kiện x≠2",
+              "points": 0.25
+            },
+            {
+              "text": "Giải đúng x=1",
+              "points": 0.5
+            },
+            {
+              "text": "Thử điều kiện và kết luận",
+              "points": 0.25
+            }
+          ],
+          "points": 1
+        },
+        {
+          "id": "II.1",
+          "anchor_ids": [
+            "A25-010"
+          ],
+          "topic_uris": [
+            "kien-thuc/03-ti-le-ti-le-thuc/",
+            "kien-thuc/24-bai-toan-thuc-te/"
+          ],
+          "criteria": [
+            {
+              "text": "Mô hình năng suất A và A+B",
+              "points": 0.5
+            },
+            {
+              "text": "Tính năng suất B=1/30",
+              "points": 0.5
+            },
+            {
+              "text": "B làm riêng 30 ngày",
+              "points": 0.5
+            }
+          ],
+          "points": 1.5
+        },
+        {
+          "id": "II.2",
+          "anchor_ids": [
+            "A25-010"
+          ],
+          "topic_uris": [
+            "kien-thuc/03-ti-le-ti-le-thuc/",
+            "kien-thuc/24-bai-toan-thuc-te/"
+          ],
+          "criteria": [
+            {
+              "text": "Bốn ngày hoàn thành 1/3 công việc",
+              "points": 0.5
+            }
+          ],
+          "points": 0.5
+        },
+        {
+          "id": "III.1",
+          "anchor_ids": [
+            "A25-011"
+          ],
+          "topic_uris": [
+            "kien-thuc/10-ham-so-do-thi/",
+            "kien-thuc/12-phuong-trinh-bac-hai-viete/"
+          ],
+          "criteria": [
+            {
+              "text": "Giải phương trình hoành độ",
+              "points": 0.5
+            },
+            {
+              "text": "Hai giao điểm (2;4), (−1;1)",
+              "points": 0.5
+            }
+          ],
+          "points": 1
+        },
+        {
+          "id": "III.2",
+          "anchor_ids": [
+            "A25-002"
+          ],
+          "topic_uris": [
+            "kien-thuc/12-phuong-trinh-bac-hai-viete/"
+          ],
+          "criteria": [
+            {
+              "text": "Viète tổng 6 tích 5",
+              "points": 0.5
+            },
+            {
+              "text": "Tính x₁²+x₂²=26",
+              "points": 0.5
+            }
+          ],
+          "points": 1
+        },
+        {
+          "id": "IV.1",
+          "anchor_ids": [
+            "A25-009"
+          ],
+          "topic_uris": [
+            "kien-thuc/19-duong-tron/"
+          ],
+          "criteria": [
+            {
+              "text": "Chứng minh hai góc BEC, BFC vuông",
+              "points": 0.5
+            },
+            {
+              "text": "Nội tiếp đường tròn đường kính BC",
+              "points": 0.5
+            }
+          ],
+          "points": 1
+        },
+        {
+          "id": "IV.2",
+          "anchor_ids": [
+            "A25-009"
+          ],
+          "topic_uris": [
+            "kien-thuc/19-duong-tron/"
+          ],
+          "criteria": [
+            {
+              "text": "Chứng minh AEH, AFH vuông",
+              "points": 0.5
+            },
+            {
+              "text": "Nội tiếp đường tròn đường kính AH",
+              "points": 0.5
+            }
+          ],
+          "points": 1
+        },
+        {
+          "id": "IV.3",
+          "anchor_ids": [
+            "A25-009"
+          ],
+          "topic_uris": [
+            "kien-thuc/19-duong-tron/"
+          ],
+          "criteria": [
+            {
+              "text": "Nêu hai góc cùng chắn dây BF",
+              "points": 0.5
+            },
+            {
+              "text": "Kết luận đúng góc BEF=BCF",
+              "points": 0.5
+            }
+          ],
+          "points": 1
+        },
+        {
+          "id": "V.1",
+          "anchor_ids": [],
+          "topic_uris": [
+            "kien-thuc/21-thong-ke/"
+          ],
+          "criteria": [
+            {
+              "text": "Trung bình 8",
+              "points": 0.25
+            },
+            {
+              "text": "Trung vị 8",
+              "points": 0.25
+            },
+            {
+              "text": "Mốt 8",
+              "points": 0.25
+            }
+          ],
+          "points": 0.75
+        },
+        {
+          "id": "V.2",
+          "anchor_ids": [],
+          "topic_uris": [
+            "kien-thuc/23-xac-suat/"
+          ],
+          "criteria": [
+            {
+              "text": "Xác suất 2/6=1/3",
+              "points": 0.25
+            }
+          ],
+          "points": 0.25
+        }
+      ]
+    }
+  ]
+}
