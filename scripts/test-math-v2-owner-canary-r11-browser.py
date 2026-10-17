@@ -93,6 +93,49 @@ with sync_playwright() as pw:
         target.reload(wait_until="domcontentloaded")
         target.wait_for_function("() => document.querySelector('#stat-answer').textContent==='2'",timeout=20000)
         assert stat(target,"stat-readiness")=="1",(width,"reload must persist")
+        # A real learner backup MUST NOT be misinterpreted as synthetic QA.
+        # Use metadata-only synthetic fixtures, never actual student records.
+        real_backup={
+            "schema":"self-learning-math-local-backup-v1",
+            "app":"self-learning-math","version":1,
+            "created_at":"2026-10-17T12:00:00+07:00",
+            "entries":{},"sha256":"0"*64
+        }
+        target.locator("#file").set_input_files({
+            "name":"real-progress-synthetic.json","mimeType":"application/json",
+            "buffer":json.dumps(real_backup).encode("utf8")
+        })
+        assert target.locator("#restore").is_enabled(),(width,"selected file triggers import")
+        target.locator("#restore").click()
+        target.wait_for_function(
+            "() => document.querySelector('#status').textContent.includes('sao lưu tiến độ học thật')",
+            timeout=20000
+        )
+        rejection=target.locator("#status").inner_text()
+        assert "KHÔNG phải bản sao lưu QA R11" in rejection
+        assert "Không có dữ liệu nào được nhập" in rejection
+        assert stat(target,"stat-answer")=="2" and stat(target,"stat-pending")=="4"
+        assert stat(target,"stat-readiness")=="1" and stat(target,"stat-written")=="1"
+        # Journal remained byte-for-byte the same after rejecting the real-backup schema.
+        unchanged=target.evaluate("""async () => {
+            const j=await MathV2JournalR6.createCanary({learner_scope:'QA_OWNER_R11'});
+            try {return {events:await j.readEvents(),pending:await j.readPending()};}
+            finally {j.close();}
+        }""")
+        assert unchanged["events"]==backup["events"] and unchanged["pending"]==backup["pending"]
+
+        # Reject unrelated JSON with a distinct, actionable message.
+        target.locator("#file").set_input_files({
+            "name":"unrelated.json","mimeType":"application/json",
+            "buffer":json.dumps({"schema":"unrelated"}).encode("utf8")
+        })
+        target.locator("#restore").click()
+        target.wait_for_function(
+            "() => document.querySelector('#status').textContent.includes('Không đúng loại tệp')",
+            timeout=20000
+        )
+        assert stat(target,"stat-answer")=="2"
+
         # Importing into occupied QA storage must refuse without two consents,
         # even when the page has just reloaded and Start has NOT been pressed.
         assert target.locator("#start").is_enabled(),(width,"fresh reload is not yet active")
