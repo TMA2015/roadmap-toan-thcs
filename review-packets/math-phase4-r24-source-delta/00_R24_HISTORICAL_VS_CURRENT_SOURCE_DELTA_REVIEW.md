@@ -1,7 +1,7 @@
 # R24 — Historical/current question delta evidence for Skill source-lock holds
 
 **Date:** 2026-10-17  
-**Purpose:** Precise input to independent academic/source review; NO auto-approval, NO learner migration, NO mastery credit.  
+**Purpose:** Verify exact existing independent academic locks and retain source-provenance/counter activation gates. NO new blanket approval, NO learner migration, NO mastery credit.  
 **Parent phase:** Skill counter unification, R22 #508 and R23 #509 both merged after full Math public CI PASS.
 
 ## Provenance and method
@@ -25,7 +25,7 @@ R22 held **150 historical questions** because the original Git blob SHA differed
 
 For CT09, the fields `question`, `options`, `answer`, `tags`, `difficulty`, and `explanation` were unchanged on all 120 items, but the added `variant_group` may influence how practice variants are grouped. Its values need a separate *engineering grouping/coverage review*; metadata-only does not automatically mean behavioral irrelevance.
 
-## Four CT08 item-level changes requiring academic disposition
+## Four CT08 item-level changes covered by a pre-existing notation-only review
 
 The displayed `options`, `answer` (index 0), `tags` and `difficulty` did **not** change. Only the denominator notation in the question and its accompanying explanation changed:
 
@@ -38,7 +38,7 @@ The displayed `options`, `answer` (index 0), `tags` and `difficulty` did **not**
 
 Full question pattern before/after: “Điều kiện xác định của phương trình \(\frac{x+1}{x--n}=2\) là:” → “Điều kiện xác định của phương trình \(\frac{x+1}{x+n}=2\) là:”, with \(n\in\{4,3,2,1\}\). Corresponding explanations change the denominator from `x--n` to `x+n` and continue to require \(x\ne -n\).
 
-It *appears* that the edit normalizes ambiguous double-minus TeX rather than changing the intended domain or grading key. **That is a review hypothesis, not a NotebookLM PASS.** Do not mark the four revised questions academically cleared without independent signoff.
+**Previously documented academic approval found:** `review-packets/academic-depth/ct08-p1a/01_CT08_P1A_NOTATION_ACADEMIC_LOCK_R1.json` records `NOTEBOOKLM_R1_APPROVED_NOTATION_ONLY_EXCEPTION`, with exactly these four IDs, exactly the current `question` and `explanation` replacements and unchanged `id`, `options`, `answer`, `tags`, `difficulty`. The authorization is `CLEARED_FOR_CT08_P1_IMPLEMENTATION_ONLY`. This meets the narrow notation-change review requirement **without requesting NotebookLM to repeat the existing work**; it does **not** authorize changing historical learner evidence or production Skill counters.
 
 
 ## R24 follow-up — previously approved CT09 delivery policy, not an open academic re-review
@@ -51,18 +51,20 @@ The Practice selector intentionally **prefers unseen `variant_group` values with
 
 New R24 regression script `scripts/test-math-r24-ct08-source-delta-gates.js` asserts that the 4 CT08 current denominators, corresponding domain choices, reviewed Skill tag structure and the 27-group CT09 delivery safeguards remain in place. It is **technical regression only**, not NotebookLM PASS for the four edited CT08 stems.
 
-**Still pending:** independent academic verdict for EQ08V1_047, EQ08V1_048, EQ08V1_049, EQ08V1_050, by ID. Their `x--n` to `x+n` edits remain unapproved for a Taxonomy source-lock refresh until that verdict. The 59 newer candidate-bank items are tracked separately; the existing CT09 P1-C2 receipts cover exactly **nine** of those items, not the other 50. Inclusion in a newer catalog still does not automatically authorize Skill mastery or backfill.
+**No new CT08 NotebookLM review needed for these exact corrections:** the prior 2026-10-03 notation-only academic lock already defines the four permitted replacements. Still pending: formally source-locking the refreshed compiled Taxonomy policy (a **separate** decision), and evidence-specific review of new candidate-bank items. Of 59 newer items, CT09 P1-C2 receipts cover exactly **nine**; the other 50 need individual provenance/evidence classification. No current catalog item receives Skill mastery or backfill authorization by this packet.
 
 ## Required review decisions
 
-1. **Academic:** Independently verify the four current CT08 question renderings, single unambiguous correct choice, plausible distractors, explanation, target diagnostic skill `dkxd-phuong-trinh-mau`, and evidence class. Record PASS / REVISE / HOLD by exact ID, not group-by-assumption.
-2. **Engineering:** Verify all CT09 `variant_group` values follow the currently approved grouping/dedup policy. Review conflicts across items and randomized sessions before treating them as purely passive metadata.
+1. **Existing academic receipt reused:** the exact four CT08 corrections and invariant answer/Skill fields must continue matching `01_CT08_P1A_NOTATION_ACADEMIC_LOCK_R1.json`; fail CI on any mismatch. A new academic verdict is needed **only for a subsequent different edit**, not for the already reviewed four replacements.
+2. **Existing CT09 engineering QA reused:** 120 historical questions match `review-packets/academic-depth/ct09-p1c1/01_CT09_PRACTICE_ACADEMIC_LOCK_R1.json` except for an added `variant_group`, and 129 questions currently partition into 27 validated delivery groups. Existing P1-C1/P1-C2 browser and owner QA continue to run; re-review only if this contract changes.
 3. **Source integrity:** Decide whether an explicitly reviewed policy refresh is warranted. If so, regenerate correct per-chunk Git blob pins without touching historical learner data, keep stable question IDs and grading keys, and test exact-source identity. Do not simply swap all SHA values to make R22 PASS.
 4. **New content:** Triage R23's 59 additional item IDs by exact live-route status, response type, source version, academic status, Skill role and answer option identity. Rich answers need their own response/grading contract.
 5. **Rollout:** Even after review, R20 Skill counters are QA-only. No Readiness/Mastery authorization, no silent migration or score writes on PC/iPad.
 
-## Independent NotebookLM review prompt
+## Narrow outstanding gate after R24
 
-> Please independently audit the current 4 CT08 question edits EQ08V1_047–050 against KNTT mathematics and unambiguous answer keys, using the original/current exact source anchors above. Classify each ID PASS, REVISE, or HOLD with the precise reason. Separately evaluate whether the 120 CT09 `variant_group` metadata additions require grouped-item/dedup technical testing rather than academic regrading. Do not infer approval for 59 new items or for production Skill mastery. Return a compact evidence-based verdict and any remaining owner/engineering gates.
+The per-question evidence is now backed by prior repo academic locks (CT08 notation-only; CT09 approved additive delivery metadata) and by the R24 all-150-record regression test. **Do not** silently rewrite the frozen Taxonomy v2 source hash pins, or give Practice-formative evidence independent Readiness/Mastery status.
 
-**Packet status: REVIEW INPUT — no NotebookLM verdict received.**
+The 59 newer catalog question IDs still require a topic-specific reviewed mapping inventory; nine CT09 P1-C2 question IDs have their own existing PASS and owner QA receipts, while the other 50 require status-by-ID. A separate source-provenance policy regeneration/change review can be planned with exact SHA anchoring and cross-version identity tests. Its default is HOLD. This R24 packet alone grants **no learner cutover**.
+
+**R24 status: PRE-EXISTING REVIEW RECEIPTS LOCATED; all-150 technical regression required before any QA-only merge. No fresh NotebookLM verdict claimed or requested.**
