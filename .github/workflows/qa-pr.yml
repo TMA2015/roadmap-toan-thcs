@@ -349,6 +349,8 @@ jobs:
           node scripts/test-math-v2-source-locked-skill-audit-r22.js
           node --check scripts/prototypes/math-v2-practice-manifest-drift-r23.js
           node scripts/test-math-v2-practice-manifest-drift-r23.js
+          node --check scripts/prototypes/math-v2-reviewed-source-exception-shadow-r25.js
+          node scripts/test-math-v2-reviewed-source-exception-shadow-r25.js
           node --check scripts/prototypes/math-v2-real-journal-bridge-r7.js
       - name: Validate CĐ25 display math source
         run: node scripts/test-topic25-math-render.js
