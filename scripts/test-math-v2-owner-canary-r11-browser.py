@@ -55,7 +55,7 @@ with sync_playwright() as pw:
         assert page.evaluate("localStorage.getItem('r11-unrelated-sentinel')")=="untouched"
         assert page.evaluate("localStorage.getItem('toan-thcs-practice-v1')") is None
         assert page.evaluate("localStorage.getItem('toan-thcs-assessment-v1')") is None
-        first=page.evaluate("async () => {const j=await MathV2JournalR6.createCanary({learner_scope:'QA_OWNER_R11'});try{return j.readEvents();}finally{j.close();}}")
+        first=page.evaluate("async () => {const j=await MathV2JournalR6.createCanary({learner_scope:'QA_OWNER_R11'});try{return await j.readEvents();}finally{j.close();}}")
         assert len(first)==4
         assert {x["kind"] for x in first}=={"answer_attempt","readiness_submission","written_self_check"}
         assert all(x["learner_scope"]=="QA_OWNER_R11" for x in first)
@@ -91,6 +91,7 @@ with sync_playwright() as pw:
         assert stat(target,"stat-readiness")=="1",(width,"reload must persist")
         # Importing into occupied QA storage must refuse without two consents.
         target.locator("#start").click()
+        target.locator("#file").set_input_files(str(saved))
         target.wait_for_function("() => !document.querySelector('#restore').disabled",timeout=20000)
         target.locator("#restore").click()
         target.wait_for_function("() => document.querySelector('#status').textContent.includes('Chưa nhập dữ liệu')",timeout=20000)
