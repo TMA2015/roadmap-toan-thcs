@@ -89,7 +89,7 @@
         </div>
         <div>
           <h3>Nhập dữ liệu thử nghiệm</h3>
-          <label for="file">Chọn tệp JSON đã xuất ở PC hoặc iPad:</label>
+          <label for="file">Chọn tệp JSON đã xuất ở PC hoặc iPad (có thể nhập trực tiếp, không cần bấm “Bắt đầu thử nghiệm” trước):</label>
           <input id="file" type="file" accept=".json,application/json">
           <label class="check"><input type="checkbox" id="confirm-backup"><span>Tôi đã xuất và giữ bản sao lưu của dữ liệu thử nghiệm hiện tại.</span></label>
           <label class="check"><input type="checkbox" id="confirm-replace"><span>Nếu thiết bị này đã có dữ liệu thử nghiệm, tôi đồng ý thay thế bộ dữ liệu <strong>QA</strong> đó.</span></label>
@@ -126,7 +126,7 @@
       $("start").disabled=active||busy;
       for(const id of actionIds)$(id).disabled=!allow||Boolean(pending);
       $("retry").disabled=!allow||!pending;
-      $("restore").disabled=!allow||!$("file").files.length;
+      $("restore").disabled=busy||!$("file").files.length;
       $("export").disabled=busy;
     };
     const count=(id,n)=>{$(id).textContent=Number.isSafeInteger(n)?new Intl.NumberFormat("vi-VN").format(n):"—";};
@@ -202,9 +202,16 @@
       finally{if(temp&&!archive)temp.close();busy=false;buttons();}
     };
     const restoreJSON=async()=>{
-      if(!active||busy)return;
+      if(busy)return;
       const file=$("file").files[0];
       if(!file)return;
+      // Importing a file is itself an explicit owner action. Initialize the
+      // QA-only IndexedDB store here instead of silently disabling Import
+      // until the unrelated "Bắt đầu thử nghiệm" button has been pressed.
+      if(!active){
+        await begin();
+        if(!active)return; // Begin reported the IndexedDB error to the user.
+      }
       busy=true;buttons();
       try{
         if(file.size>2*1024*1024)throw Error("Tệp vượt quá giới hạn QA 2 MB.");
@@ -232,7 +239,11 @@
       catch(e){status("Không đọc được dữ liệu: "+e.message,"error");}
     });
     $("export").addEventListener("click",exportJSON);
-    $("file").addEventListener("change",buttons);
+    $("file").addEventListener("change",()=>{
+      buttons();
+      if($("file").files.length&&!active)
+        status("Đã chọn tệp JSON. Bấm “Kiểm tra và nhập tệp”; trang sẽ tự bật kho QA để kiểm tra và khôi phục.");
+    });
     $("restore").addEventListener("click",restoreJSON);
     buttons();
     show().catch(e=>status("Chưa đọc được dữ liệu thử nghiệm: "+e.message,"error"));

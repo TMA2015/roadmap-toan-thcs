@@ -77,9 +77,13 @@ with sync_playwright() as pw:
         second=browser.new_context(**opts)
         target=second.new_page()
         target.goto(PAGE,wait_until="domcontentloaded")
-        target.locator("#start").click()
-        target.wait_for_function("() => !document.querySelector('#answer-correct').disabled",timeout=20000)
+        # Regression: import must work directly on the receiving PC/iPad,
+        # without requiring the separate "Bắt đầu thử nghiệm" button.
+        assert target.locator("#restore").is_disabled(),(width,"no file selected")
+        assert target.locator("#start").is_enabled(),(width,"QA not yet started")
         target.locator("#file").set_input_files(str(saved))
+        assert target.locator("#restore").is_enabled(),(width,"selected backup must unlock import")
+        assert "tự bật kho QA" in target.locator("#status").inner_text()
         target.locator("#restore").click()
         target.wait_for_function("() => document.querySelector('#stat-readiness').textContent==='1'",timeout=20000)
         assert stat(target,"stat-answer")=="2"
@@ -89,10 +93,11 @@ with sync_playwright() as pw:
         target.reload(wait_until="domcontentloaded")
         target.wait_for_function("() => document.querySelector('#stat-answer').textContent==='2'",timeout=20000)
         assert stat(target,"stat-readiness")=="1",(width,"reload must persist")
-        # Importing into occupied QA storage must refuse without two consents.
-        target.locator("#start").click()
+        # Importing into occupied QA storage must refuse without two consents,
+        # even when the page has just reloaded and Start has NOT been pressed.
+        assert target.locator("#start").is_enabled(),(width,"fresh reload is not yet active")
         target.locator("#file").set_input_files(str(saved))
-        target.wait_for_function("() => !document.querySelector('#restore').disabled",timeout=20000)
+        assert target.locator("#restore").is_enabled(),(width,"occupied target direct import")
         target.locator("#restore").click()
         target.wait_for_function("() => document.querySelector('#status').textContent.includes('Chưa nhập dữ liệu')",timeout=20000)
         assert "đã có dữ liệu" in target.locator("#status").inner_text().lower()
@@ -110,13 +115,13 @@ with sync_playwright() as pw:
         bad=browser.new_context(**opts)
         test=bad.new_page()
         test.goto(PAGE,wait_until="domcontentloaded")
-        test.locator("#start").click()
         tampered=json.loads(json.dumps(backup))
         tampered["events"][0]["item_id"]="FORGED_QA_ID"
         test.locator("#file").set_input_files({
             "name":"tampered.json","mimeType":"application/json",
             "buffer":json.dumps(tampered).encode("utf8")
         })
+        assert test.locator("#restore").is_enabled(),(width,"tampered import also self-initializes")
         test.locator("#restore").click()
         test.wait_for_function("() => document.querySelector('#status').textContent.includes('Chưa nhập dữ liệu')",timeout=20000)
         assert "BACKUP_SHA_MISMATCH" in test.locator("#status").inner_text()

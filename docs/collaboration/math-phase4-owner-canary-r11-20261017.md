@@ -10,6 +10,14 @@ The page uses *the exact reviewed R6/R8/R9/R10 JavaScript sources*, mirrored int
 
 The fixed canary data scope is `QA_OWNER_R11` in the isolated database `math-v2-qa-journal-r6`. It is intentionally **not** the production Practice/Readiness or canonical skill database, and is unsuitable for multi-person real learning.
 
+## R11 import UX regression fix (2026-10-17)
+
+A parent reported that **Kiểm tra và nhập tệp** remained disabled on the receiving PC despite a selected JSON backup and both replacement acknowledgments. The cause was a UI-only precondition: the Import button was disabled until **Bắt đầu thử nghiệm** had separately been pressed on that tab.
+
+The test page now makes file selection sufficient to unlock the Import action. Clicking Import explicitly initializes the **same isolated QA database** when needed, then runs the **unchanged R10 signature/scope validation and guarded restore**. The two replacement consents are still mandatory when the target already contains QA events. Merely choosing the file never imports it.
+
+Browser QA covers initial disabled-without-file, direct import into a fresh receiving browser without pressing Start, reloading, replacement safeguards and tampered-file rejection. This does **not** change any real learner page or widen the QA data scope.
+
 ## Parent test flow
 
 1. Open the separate QA page in a normal browser (not private browsing). Before pressing **Bắt đầu thử nghiệm**, no journal write action is enabled.
