@@ -61,10 +61,13 @@ async ({scope,action})=>{
      return {result,pending:await a.pending()};
    }
    if(action==="concurrent"){
-     const intent={submission_key:"QA_R13_TAB_04",item_id:"QA_Q_TWO_TABS",kind:"answer_attempt",correct:false};
-     const [x,y]=await Promise.all([a.stage(intent),a.stage({...intent})]);
-     const [cx,cy]=await Promise.all([a.commit(intent.submission_key),a.commit(intent.submission_key)]);
-     return {x,y,cx,cy,pending:await a.pending()};
+     const second=await api.create(options); // independent IDB connection
+     try{
+       const intent={submission_key:"QA_R13_TAB_04",item_id:"QA_Q_TWO_TABS",kind:"answer_attempt",correct:false};
+       const [x,y]=await Promise.all([a.stage(intent),second.stage({...intent})]);
+       const [cx,cy]=await Promise.all([a.commit(intent.submission_key),second.commit(intent.submission_key)]);
+       return {x,y,cx,cy,pending:await a.pending()};
+     }finally{second.close();}
    }
    if(action==="scope_check")return {pending:await a.pending(),missing:await a.lookup("QA_R13_SUBMIT_01")};
    if(action==="read")return {pending:await a.pending(),first:await a.lookup("QA_R13_SUBMIT_01")};
