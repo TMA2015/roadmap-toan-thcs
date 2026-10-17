@@ -116,8 +116,10 @@ with sync_playwright() as playwright:
         page.reload(wait_until="domcontentloaded")
         page.add_script_tag(content=SCRIPT)
         before=page.evaluate(RUN,{"scope":scope,"action":"snapshot"})
-        assert before["rows"]["intents"][0]["event_id"]==original_id
-        assert before["rows"]["intents"][0]["occurred_at"]==original_timestamp
+        restored_intent=next(x for x in before["rows"]["intents"]
+                             if x["submission_key"]=="QA_R16_SUBMIT_01")
+        assert restored_intent["event_id"]==original_id
+        assert restored_intent["occurred_at"]==original_timestamp
         committed=page.evaluate(RUN,{"scope":scope,"action":"commit"})
         assert committed["p"]["saved"] and not committed["p"]["duplicate"]
         assert committed["p"]["event_id"]==original_id
