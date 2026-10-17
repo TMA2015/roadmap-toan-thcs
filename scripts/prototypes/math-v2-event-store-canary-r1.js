@@ -47,8 +47,12 @@ function createCanary(storage,{enabled=false,learner_scope}={}){
     }catch(e){
       if(attempted){
         try{
-          if(old===null)storage.removeItem(KEY);
-          else storage.setItem(KEY,old);
+          // A rejected single-key write generally preserves old data; avoid
+          // unnecessarily rewriting it when the attempted write never landed.
+          if(storage.getItem(KEY)!==old){
+            if(old===null)storage.removeItem(KEY);
+            else storage.setItem(KEY,old);
+          }
         }catch(_){throw Error("CANARY_WRITE_AND_ROLLBACK_FAILED");}
       }
       throw Error("CANARY_WRITE_ABORTED: "+String(e.message||e));
