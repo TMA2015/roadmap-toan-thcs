@@ -22,7 +22,10 @@ ROWS="async () => await MathV2PracticeCommitGateR15.qaRead()"
 PENDING="async () => await MathV2PracticeCommitGateR15.qaPending()"
 def fixture(browser,width,scope):
     ctx=browser.new_context(viewport={"width":width,"height":900 if width==1365 else 844})
-    init="window.__MATH_R17_QA_CONFIG__="+json.dumps({"enabled":True,"learner_scope":scope})+";\n"
+    # Practice draws a random question/session every reload. Keep the QA
+    # selection deterministic so the restored staged intent refers to the
+    # SAME question and answer; this affects only disposable test contexts.
+    init="Math.random=()=>0.314159265;\nwindow.__MATH_R17_QA_CONFIG__="+json.dumps({"enabled":True,"learner_scope":scope})+";\n"
     ctx.add_init_script(script=init+JS)
     return ctx
 def start(page):
