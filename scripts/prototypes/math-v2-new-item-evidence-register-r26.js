@@ -23,8 +23,10 @@ const richSources=Object.freeze({
  "ALG04-RICH-W1-02-V1":{source:"04-WR-03",receipt:W1,wave:"W1"},
  "STA21-RICH-W1-01-V1":{source:"21-M2-01",receipt:W1,wave:"W1"},
  "STA21-RICH-W1-02-V1":{source:"21-M3-01",receipt:W1,wave:"W1"},
- "ALG04-RICH-W2A-01-V1":{source:"04-WR-06",receipt:W2A,wave:"W2A"},
- "ALG04-RICH-W2B-01-V1":{source:"04-WR-10",receipt:W2B,wave:"W2B"}
+ "ALG04-RICH-W2A-01-V1":{source:"04-WR-06",receipt:W2A,wave:"W2A",
+  owner_receipt:"docs/collaboration/math-w2a-wave1-owner-preview-qa-20261015.md"},
+ "ALG04-RICH-W2B-01-V1":{source:"04-WR-10",receipt:W2B,wave:"W2B",
+  owner_receipt:"docs/collaboration/math-w2b-wave1-owner-preview-qa-20261016.md"}
 });
 const requireSafe=(condition,code)=>{if(!condition)throw Error("R26_"+code);};
 function classify(item,{receiptText,ct09Row,extension,ct09ChunkSha}){
@@ -35,10 +37,13 @@ function classify(item,{receiptText,ct09Row,extension,ct09ChunkSha}){
    requireSafe(!!known&&known.source===q.source_item_id,
      "RICH_WITHOUT_EXACT_SOURCE_PROVENANCE_"+q.id);
    const text=receiptText(known.receipt);
-   requireSafe(text.includes(known.source)&&text.includes(q.id),
+   const released=known.owner_receipt?receiptText(known.owner_receipt):text;
+   requireSafe(text.includes(known.source)&&released.includes(q.id)&&
+     released.includes(known.source),
      "RICH_RECEIPT_OR_RELEASE_REFERENCE_MISSING_"+q.id);
    return {kind:"RICH_TYPED",prior_review_status:"PRIOR_WAVE_REVIEW_OR_RELEASE_REFERENCED",
-    receipt:known.receipt,source_item_id:known.source,
+    receipt:known.receipt,owner_release_receipt:known.owner_receipt||null,
+    source_item_id:known.source,
     wave:known.wave,exact_taxonomy_mapping_approved:false,
     stable_option_identity_approved:false,
     mastery_or_readiness_approved:false};
