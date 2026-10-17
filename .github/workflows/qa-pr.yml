@@ -323,6 +323,8 @@ jobs:
           node --check scripts/prototypes/math-v2-idb-browser-canary-r4.js
           node --check scripts/prototypes/math-v2-real-submission-bridge-r5.js
           node --check scripts/prototypes/math-v2-idb-journal-r6.js
+          node --check scripts/prototypes/math-v2-journal-dashboard-projection-r9.js
+          node scripts/test-math-v2-journal-dashboard-projection-r9.js
           node --check scripts/prototypes/math-v2-journal-first-submit-r8.js
           node --check scripts/prototypes/math-v2-real-journal-bridge-r7.js
       - name: Validate CĐ25 display math source
@@ -371,6 +373,7 @@ jobs:
           python scripts/test-math-v2-idb-browser-canary-r4.py
           python scripts/test-math-v2-real-submission-r5-browser.py
           python scripts/test-math-v2-atomic-journal-r6-browser.py
+          python scripts/test-math-v2-journal-dashboard-r9-browser.py
           python scripts/test-math-v2-journal-first-r8-browser.py
           python scripts/test-math-v2-real-journal-r7-browser.py
           python scripts/test-help-disclosure-toggle-browser.py
