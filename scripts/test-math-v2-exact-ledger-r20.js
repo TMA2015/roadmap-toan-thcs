@@ -1,0 +1,25 @@
+#!/usr/bin/env node
+"use strict";
+const assert=require("node:assert/strict"),fs=require("node:fs");
+const src=fs.readFileSync("scripts/prototypes/math-v2-exact-ledger-r20.js","utf8");
+const id=fs.readFileSync("scripts/prototypes/math-v2-exact-action-identity-r19.js","utf8");
+const site=fs.readFileSync("mkdocs.yml","utf8");
+const practice=fs.readFileSync("docs/assets/javascripts/practice-engine-v2.js","utf8");
+const readiness=fs.readFileSync("docs/assets/javascripts/assessment-engine-v1.js","utf8");
+assert(src.includes('const DB = "math-v2-qa-exact-ledger-r20"'));
+assert(src.includes('const tx=db.transaction(STORES,"readwrite")'));
+assert(src.includes('const tx=db.transaction(STORES,"readonly")'));
+assert(src.includes('MathV2ExactActionIdentityR19.create'));
+assert(src.includes('option_id:i.option_id'));
+assert(src.includes('action_id:i.action_id'));
+assert(src.includes('skill_ids:copy(i.skill_ids)'));
+assert(src.includes('R20_EXACT_ACTION_CONFLICT'));
+assert(src.includes('R20_SIMULATED_ABORT'));
+assert(src.includes('R20_HASH_MISMATCH'));
+assert(src.includes('Object.create(null)'));
+assert(id.includes('CHANGED_OPTION_OR_ANSWER_CONFLICT'));
+assert(!site.includes('math-v2-exact-ledger-r20'));
+assert(!practice.includes('MathV2ExactLedgerR20'));
+assert(!readiness.includes('MathV2ExactLedgerR20'));
+assert(!/\blocalStorage\b|\bfetch\s*\(|\bnavigator\.sendBeacon\b/.test(src));
+console.log('PASS R20 single DB 3-store journal, exact option/action metadata, skill projections, QA-only no real page loader');
