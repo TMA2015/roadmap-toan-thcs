@@ -89,7 +89,8 @@
         </div>
         <div>
           <h3>Nhập dữ liệu thử nghiệm</h3>
-          <label for="file">Chọn tệp JSON đã xuất ở PC hoặc iPad (có thể nhập trực tiếp, không cần bấm “Bắt đầu thử nghiệm” trước):</label>
+          <label for="file">Chọn tệp JSON <strong>xuất từ chính trang QA R11</strong> ở PC hoặc iPad (không cần bấm “Bắt đầu thử nghiệm” trước):</label>
+          <p class="small">Không nhập tệp sao lưu tiến độ học thật từ trang “Tiến độ học tập” vào đây. Hai loại tệp có cấu trúc riêng và không tự chuyển đổi.</p>
           <input id="file" type="file" accept=".json,application/json">
           <label class="check"><input type="checkbox" id="confirm-backup"><span>Tôi đã xuất và giữ bản sao lưu của dữ liệu thử nghiệm hiện tại.</span></label>
           <label class="check"><input type="checkbox" id="confirm-replace"><span>Nếu thiết bị này đã có dữ liệu thử nghiệm, tôi đồng ý thay thế bộ dữ liệu <strong>QA</strong> đó.</span></label>
@@ -216,6 +217,13 @@
       try{
         if(file.size>2*1024*1024)throw Error("Tệp vượt quá giới hạn QA 2 MB.");
         const raw=JSON.parse(await file.text());
+        // A real learner backup is not an R11 fixture. Reject it clearly
+        // BEFORE the isolated QA restore transaction, without parsing or
+        // translating any learner progress entries into artificial events.
+        if(raw?.schema==="self-learning-math-local-backup-v1")
+          throw Error("Đây là tệp sao lưu tiến độ học thật (Self-Learning Math v1), KHÔNG phải bản sao lưu QA R11. Không có dữ liệu nào được nhập. Hãy giữ tệp này để dùng với công cụ sao lưu của trang Tiến độ học tập; không chuyển đổi điểm học thật thành lượt QA.");
+        if(raw?.schema!=="math-v2-journal-backup-r10")
+          throw Error("Không đúng loại tệp: trang QA R11 chỉ nhận JSON xuất từ mục “Xuất tệp sao lưu JSON” của chính trang QA.");
         const validated=await archive.verifyBackup(raw);
         const current=await archive.read();
         const occupied=current.events.length+current.pending.length>0;
