@@ -145,14 +145,18 @@
         $("grade-note").textContent="Readiness: "+p.readiness.unscored+" bài chưa có điểm chấm. Written không tự tính vào Core Readiness.";
       }finally{if(!journal)reader.close();}
     };
+    const openQA=async()=>{
+      if(active)return;
+      journal=await window.MathV2JournalR6.createCanary({learner_scope:SCOPE,enabled:true});
+      writer=await window.MathV2JournalFirstR8.create({learner_scope:SCOPE,enabled:true});
+      archive=await window.MathV2JournalBackupR10.create({learner_scope:SCOPE,enabled:true});
+      active=true;
+    };
     const begin=async()=>{
       if(active)return;
       busy=true;buttons();
       try{
-        journal=await window.MathV2JournalR6.createCanary({learner_scope:SCOPE,enabled:true});
-        writer=await window.MathV2JournalFirstR8.create({learner_scope:SCOPE,enabled:true});
-        archive=await window.MathV2JournalBackupR10.create({learner_scope:SCOPE,enabled:true});
-        active=true;
+        await openQA();
         status(pending?"Đã bật. Có lượt thử chưa xác nhận lưu: hãy chọn Thử lưu lại.":"Đã bật ghi thử nghiệm. Có thể bấm các hoạt động giả lập.","success");
         await show();
       }catch(e){status("Không mở được kho thử nghiệm trên trình duyệt này: "+e.message+". Có thể thử trình duyệt thông thường, tránh chế độ riêng tư.","error");}
@@ -206,24 +210,20 @@
       if(busy)return;
       const file=$("file").files[0];
       if(!file)return;
-      // Importing a file is itself an explicit owner action. Initialize the
-      // QA-only IndexedDB store here instead of silently disabling Import
-      // until the unrelated "Bắt đầu thử nghiệm" button has been pressed.
-      if(!active){
-        await begin();
-        if(!active)return; // Begin reported the IndexedDB error to the user.
-      }
       busy=true;buttons();
       try{
         if(file.size>2*1024*1024)throw Error("Tệp vượt quá giới hạn QA 2 MB.");
         const raw=JSON.parse(await file.text());
-        // A real learner backup is not an R11 fixture. Reject it clearly
-        // BEFORE the isolated QA restore transaction, without parsing or
-        // translating any learner progress entries into artificial events.
+        // Reject real learner backup types BEFORE even opening a QA writer.
+        // No student entries are translated, imported or inspected beyond
+        // this declared file format marker.
         if(raw?.schema==="self-learning-math-local-backup-v1")
           throw Error("Đây là tệp sao lưu tiến độ học thật (Self-Learning Math v1), KHÔNG phải bản sao lưu QA R11. Không có dữ liệu nào được nhập. Hãy giữ tệp này để dùng với công cụ sao lưu của trang Tiến độ học tập; không chuyển đổi điểm học thật thành lượt QA.");
         if(raw?.schema!=="math-v2-journal-backup-r10")
           throw Error("Không đúng loại tệp: trang QA R11 chỉ nhận JSON xuất từ mục “Xuất tệp sao lưu JSON” của chính trang QA.");
+        // A compatible file is an explicit owner request to open only the
+        // isolated QA store; no separate Start click is required.
+        if(!active)await openQA();
         const validated=await archive.verifyBackup(raw);
         const current=await archive.read();
         const occupied=current.events.length+current.pending.length>0;
