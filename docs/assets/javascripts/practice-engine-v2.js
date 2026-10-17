@@ -1242,6 +1242,17 @@
         // Intentionally ignore Taxonomy v2 observer failures in the Practice lane.
       }
 
+      // Phase 4 R5: observer-only hook after the original Practice write succeeded.
+      // No R5 bridge is loaded on learner pages. Errors must never regrade,
+      // block feedback, or create canonical Readiness evidence.
+      if (persistence.ok) try {
+        const observer = window.MathV2CanaryBridgeR5?.capturePractice;
+        if (typeof observer === "function") {
+          Promise.resolve(observer({question_id: question.id, correct: Boolean(correct),
+            hints_used: hintsUsed, full_solution_viewed: Boolean(fullSolutionViewed)})).catch(() => {});
+        }
+      } catch (_) { /* QA-only bridge must never interrupt Practice */ }
+
       questionSkills(question).forEach((skill) => this.closePendingRecoveryOnTarget(skill));
       return persistence;
     }

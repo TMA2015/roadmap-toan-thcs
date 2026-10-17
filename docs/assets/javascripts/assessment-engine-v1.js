@@ -270,7 +270,17 @@
         readiness_state: attempt.readiness_state
       };
       store.assessments[this.data.assessment_id] = bucket;
-      return saveStore(store);
+      const persistence = saveStore(store);
+      // Phase 4 R5: optional QA-only hook after a submitted independent
+      // Readiness attempt has been saved. Never promote Written self-check.
+      if (persistence.ok) try {
+        const observer = window.MathV2CanaryBridgeR5?.captureReadiness;
+        if (typeof observer === "function") {
+          Promise.resolve(observer({assessment_id: attempt.assessment_id,
+            submitted_at: attempt.submitted_at})).catch(() => {});
+        }
+      } catch (_) { /* QA-only bridge must never interrupt Readiness */ }
+      return persistence;
     }
 
     renderResult(attempt) {
