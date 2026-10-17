@@ -17,6 +17,7 @@
 
 <section aria-labelledby="math-progress-backup-title">
   <h2 id="math-progress-backup-title">Sao lưu và khôi phục tiến độ</h2>
+  <p><strong>Dành cho phụ huynh:</strong> <a href="../qa/math-v2-cutover-preflight.html">Kiểm tra bản sao lưu học thật trước khi chuyển sang bộ đếm v2 (chỉ đọc)</a>. Bước kiểm tra này không bật bộ đếm mới và không thay đổi điểm học.</p>
   <div data-math-progress-backup aria-label="Công cụ sao lưu và khôi phục tiến độ bằng tệp"></div>
 </section>
 
