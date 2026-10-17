@@ -130,7 +130,7 @@ with sync_playwright() as pw:
             else:
                 readiness(page)
                 assert page.locator(".readiness-save-warning").count()==1
-            assert page.evaluate("localStorage.getItem(arguments[0])",key)=="{invalid-json"
+            assert page.evaluate("(key) => localStorage.getItem(key)",key)=="{invalid-json"
             assert page.evaluate(PENDING)==[]
             assert page.evaluate(SNAP)["events"]==0
             ctx.close()
