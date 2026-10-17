@@ -21,7 +21,7 @@ R22 held **150 historical questions** because the original Git blob SHA differed
 | CT09 | \`09-he-phuong-trinh-v1-03.json\` | \`18e4f5e4d00956e3f6a0a979cf5d59f5afb506e3\` | \`0ba5cb4b23d0b668c5f0ce83a1efd70883c0e7bc\` | 30 | \`variant_group\` added to all 30 |
 | CT09 | \`09-he-phuong-trinh-v1-04.json\` | \`09e3c0269d42addb9a21b3fecf6fe4c3e811ce2f\` | \`e980933d5a432d86084f0c471fd5ce1b1fc9c2da\` | 30 | \`variant_group\` added to all 30 |
 
-**150 holds = 26 bit-for-bit equal item JSONs + 4 changed educational texts + 120 metadata-only changes.** No historical IDs were added/removed within these five chunks.
+**150 holds = 26 field-for-field identical question records + 4 changed educational texts + 120 metadata-only changes.** No historical IDs were added/removed within these five chunks.
 
 For CT09, the fields \`question\`, \`options\`, \`answer\`, \`tags\`, \`difficulty\`, and \`explanation\` were unchanged on all 120 items, but the added \`variant_group\` may influence how practice variants are grouped. Its values need a separate *engineering grouping/coverage review*; metadata-only does not automatically mean behavioral irrelevance.
 
