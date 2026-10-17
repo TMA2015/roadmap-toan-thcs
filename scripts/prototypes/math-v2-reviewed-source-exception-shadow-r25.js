@@ -6,6 +6,7 @@
 const fs=require("node:fs"),path=require("node:path");
 const {isDeepStrictEqual}=require("node:util");
 const {audit,gitBlob}=require("./math-v2-source-locked-skill-audit-r22.js");
+const {auditManifests}=require("./math-v2-practice-manifest-drift-r23.js");
 const INDEX="docs/assets/data/curriculum/taxonomy-v2-runtime/index-r1.json";
 const CUR="docs/assets/data/curriculum/taxonomy-v2-runtime/";
 const BANK="docs/assets/data/practice/";
@@ -33,6 +34,14 @@ function reconcile({root=process.cwd(),readBytes=(rel)=>fs.readFileSync(path.joi
  need(base.family_candidate_rows===2750 &&
    base.no_family_rows===214 && base.held_rows===150,
    "BASELINE_DRIFT_NOT_REVIEWED");
+ const candidate=auditManifests({root});
+ need(candidate.summary.historic_policy_rows===3114&&
+   candidate.summary.shared_policy_ids===3114&&
+   candidate.summary.candidate_questions===3173&&
+   candidate.summary.new_unreviewed_ids===59&&
+   candidate.summary.mcq_new_items===49&&
+   candidate.summary.rich_new_items===10,
+   "NEW_PRACTICE_CATALOG_DRIFT_NOT_REVIEWED");
  const index=json(INDEX),lock08=json(LOCK08),lock09=json(LOCK09);
  need(lock08.status==="NOTEBOOKLM_R1_APPROVED_NOTATION_ONLY_EXCEPTION" &&
    lock08.authorization==="CLEARED_FOR_CT08_P1_IMPLEMENTATION_ONLY",
