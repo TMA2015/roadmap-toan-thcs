@@ -114,6 +114,7 @@ with sync_playwright() as pw:
         rejection=target.locator("#status").inner_text()
         assert "KHÔNG phải bản sao lưu QA R11" in rejection
         assert "Không có dữ liệu nào được nhập" in rejection
+        assert target.locator("#start").is_enabled(),(width,"real backup rejection does not even enable QA writer")
         assert stat(target,"stat-answer")=="2" and stat(target,"stat-pending")=="4"
         assert stat(target,"stat-readiness")=="1" and stat(target,"stat-written")=="1"
         # Journal remained byte-for-byte the same after rejecting the real-backup schema.
