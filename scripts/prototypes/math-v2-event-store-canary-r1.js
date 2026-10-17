@@ -52,6 +52,7 @@ function createCanary(storage,{enabled=false,learner_scope}={}){
           if(storage.getItem(KEY)!==old){
             if(old===null)storage.removeItem(KEY);
             else storage.setItem(KEY,old);
+            if(storage.getItem(KEY)!==old)throw Error("CANARY_ROLLBACK_READBACK_MISMATCH");
           }
         }catch(_){throw Error("CANARY_WRITE_AND_ROLLBACK_FAILED");}
       }
