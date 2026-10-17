@@ -37,5 +37,6 @@ assert(read("docs/roadmap/index.md").includes("Tự kiểm tra")&&read("docs/roa
 assert(read("docs/huong-dan/index.md").includes("window.location.replace")&&read("docs/huong-dan/index.md").includes("../roadmap/"),"old guide link redirects to canonical map");
 const written=JSON.parse(read("docs/assets/data/written-exercises/written-exercise-library-v1.json"));
 const anchors=JSON.parse(read("docs/assets/data/anchors/anchor-catalog-v1.json"));
-assert(written.exercises.length===63&&anchors.anchors.length===11,"preserve existing canonical item counts");
+assert(written.exercises.length===65&&anchors.anchors.length===11,"preserve 11 A25 anchors and exact 63+2 written count");
+assert.deepStrictEqual(written.exercises.slice(63).map(x=>x.exercise_id),["WX05-ENT-001","WX06-CH-001"],"approved W3A-WR append only");
 console.log("PASS learner menu 6 lanes, library 4 pages, legacy routes and 63 Written / 11 A25 unchanged");

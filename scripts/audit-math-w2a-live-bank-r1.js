@@ -42,7 +42,9 @@ for(const name of all.filter(x=>x.endsWith("-micro-v1.json"))){
  }
 }
 const written=json(path.join(ROOT,"docs/assets/data/written-exercises/written-exercise-library-v1.json")).exercises;
-assert.equal(written.length,63,"unexpected Written canonical library size");
+assert(written.length>=63,"historical Written canonical library cannot shrink");
+assert.equal(new Set(written.map(x=>x.exercise_id)).size,written.length,"duplicate Written IDs");
+assert.deepEqual(written.slice(63).map(x=>x.exercise_id),["WX05-ENT-001","WX06-CH-001"],"W3A-WR reviewed append-only delta");
 const byId=new Map([...items,...micro].map(q=>[q.id,q]));
 const byWritten=new Map(written.map(q=>[q.exercise_id,q]));
 const evidence=[

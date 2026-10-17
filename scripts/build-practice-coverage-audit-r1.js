@@ -7,7 +7,8 @@ const exists=p=>fs.existsSync(path.join(root,p));
 const reg=read("docs/assets/data/curriculum/skill-taxonomy-v2-registry-r1.json");
 const idx=read("docs/assets/data/curriculum/taxonomy-v2-runtime/index-r1.json");
 const written=read("docs/assets/data/written-exercises/written-exercise-library-v1.json");
-const writtenCoverageR1Baseline=(written.exercises||[]).filter(e=>e.academic_review?.packet_id!=="MATH-WRITTEN-IMPLEMENTATION-W1-R1-20261010");
+// Historical audit baseline predates the reviewed W3A-WR two-item optional append.
+const writtenCoverageR1Baseline=(written.exercises||[]).slice(0,63).filter(e=>e.academic_review?.packet_id!=="MATH-WRITTEN-IMPLEMENTATION-W1-R1-20261010");
 const anchors=read("docs/assets/data/anchors/anchor-catalog-v1.json");
 
 const famById=new Map(reg.families.map(f=>[f.family_id,f]));

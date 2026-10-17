@@ -93,7 +93,7 @@
           "problem": "Rút gọn \\(Q=\\frac{x^2-16}{x^2-4x}\\) và nêu điều kiện xác định.",
           "solution": "Bước 1: \\(x^2-4x=x(x-4)\\ne0\\), nên \\(x\\ne0\\), \\(x\\ne4\\).\nBước 2: \\(x^2-16=(x-4)(x+4)\\).\nBước 3: Với điều kiện trên, \\(Q=\\frac{(x-4)(x+4)}{x(x-4)}=\\frac{x+4}{x}\\).\nBước 4: Giữ nguyên cả \\(x\\ne0\\), \\(x\\ne4\\), dù mẫu sau rút gọn chỉ còn \\(x\\)."
         },
-        "misconception": "Gạch bỏ các hạng tử qua dấu cộng/trừ; chỉ rút gọn nhân tử. Hoặc quên giữ điều kiện của mẫu ban đầu.",
+        "misconception": "Gạch bỏ các hạng tử qua dấu cộng/trừ; chỉ rút gọn nhân tử. Hoặc quên giữ điều kiện của mẫu ban đầu. Vì sao vẫn giữ điều kiện? Với $\\\\frac{x^2-4}{x-2}$, tại $x=2$ mẫu ban đầu bằng $0$ nên phân thức không xác định. Chỉ khi $x\\\\ne2$ mới có $\\\\frac{(x-2)(x+2)}{x-2}=x+2$. Biểu thức $x+2$ có nghĩa tại $2$, nhưng phép rút gọn không thể bổ sung giá trị đó vào miền xác định của phân thức gốc.",
         "summary": "Phân tích → rút gọn nhân tử → ghi lại điều kiện gốc.",
         "source_reference": "docs/kien-thuc/07-phan-thuc-dai-so/index.md",
         "source_sections": [

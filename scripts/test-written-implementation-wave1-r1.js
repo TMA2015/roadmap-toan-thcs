@@ -48,8 +48,9 @@ for(const e of cand.exercises){
   assert.ok(Array.isArray(e.source_refs)&&e.source_refs.length>=1);
 }
 
-assert.equal(lib.exercises.length,63);
-assert.equal(lib.published_scope.exercise_count,63);
+assert.equal(lib.exercises.length,65);
+assert.deepEqual(lib.exercises.slice(63).map(x=>x.exercise_id),["WX05-ENT-001","WX06-CH-001"]);
+assert.equal(lib.published_scope.exercise_count,65);
 const batch=lib.published_scope.batches.find(x=>x.batch_id==="WRITTEN_IMPLEMENTATION_W1_R1");
 assert.ok(batch);
 assert.equal(batch.count,9);
@@ -64,4 +65,4 @@ assert.equal((receipt.match(/^CROSSWALK\|/gm)||[]).length,2);
 assert.ok(receipt.includes("CLEARANCE|WRITTEN_IMPLEMENTATION_W1_R1_CONTENT_REVIEW_COMPLETE"));
 
 console.log("PASS: Written Implementation Wave 1 reconciles 9/9 NotebookLM-approved CORE_BASE items into the canonical live library.");
-console.log("PASS: Written library is 63 items and contains exactly the 2 approved crosswalk updates.");
+console.log("PASS: Written library is 65 items (historical 63 + reviewed W3A-WR 2), original crosswalk unchanged.");

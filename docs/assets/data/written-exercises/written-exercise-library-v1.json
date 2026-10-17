@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "catalog_id": "MATH-WRITTEN-EXERCISE-LIBRARY-V1",
-  "snapshot_date": "2026-10-10",
+  "snapshot_date": "2026-10-17",
   "status": "ACTIVE_APPEND_ONLY",
   "auto_readiness_credit": false,
   "self_marking_only": true,
@@ -6075,6 +6075,205 @@
         "packet_id": "MATH-WRITTEN-IMPLEMENTATION-W1-R1-20261010",
         "receipt": "review-packets/written-implementation-wave1-r1/01_NOTEBOOKLM_RESULT_R1.md"
       }
+    },
+    {
+      "exercise_id": "WX05-ENT-001",
+      "exercise_kind": "anchor",
+      "topic_id": "CT05",
+      "topic_slug": "05-7-hang-dang-thuc",
+      "topic_title": "7 hằng đẳng thức đáng nhớ",
+      "problem_type_id": "identity-constant-transfer",
+      "problem_type_title": "Chứng minh biểu thức không phụ thuộc biến",
+      "title": "Chứng minh biểu thức không phụ thuộc biến",
+      "learning_layer": "Entrance10",
+      "level": "ENTRANCE10",
+      "learner_label": "Ôn thi vào 10",
+      "grade_overlay": [
+        8
+      ],
+      "skills": [
+        "lap-phuong-tong",
+        "lap-phuong-hieu",
+        "hieu-hai-binh-phuong",
+        "rut-gon-hdt"
+      ],
+      "prerequisites": [
+        "lap-phuong-tong",
+        "lap-phuong-hieu",
+        "hieu-hai-binh-phuong"
+      ],
+      "estimated_minutes": 12,
+      "problem_markdown": "Chứng minh $$A=(x-1)^3-(x+1)^3+6(x-1)(x+1)$$ không phụ thuộc giá trị của $x$. Trình bày các bước biến đổi và kết luận.",
+      "figure_uri": null,
+      "figure_alt": null,
+      "solution_steps": [
+        {
+          "step_id": "S1",
+          "title": "Khai triển hai lập phương",
+          "content_markdown": "$(x-1)^3=x^3-3x^2+3x-1$ và $(x+1)^3=x^3+3x^2+3x+1$."
+        },
+        {
+          "step_id": "S2",
+          "title": "Trừ đúng dấu",
+          "content_markdown": "$(x-1)^3-(x+1)^3=-6x^2-2$."
+        },
+        {
+          "step_id": "S3",
+          "title": "Biến đổi tích",
+          "content_markdown": "$6(x-1)(x+1)=6(x^2-1)=6x^2-6$."
+        },
+        {
+          "step_id": "S4",
+          "title": "Kết luận",
+          "content_markdown": "$A=(-6x^2-2)+(6x^2-6)=-8$ với mọi $x$, nên $A$ không phụ thuộc vào $x$."
+        }
+      ],
+      "rubric": [
+        {
+          "criterion": "Khai triển, trừ hai lập phương đúng",
+          "points": 1.5
+        },
+        {
+          "criterion": "Biến đổi tích $6(x-1)(x+1)$ đúng",
+          "points": 1
+        },
+        {
+          "criterion": "Thu gọn và kết luận biểu thức độc lập với $x$",
+          "points": 1.5
+        }
+      ],
+      "rubric_total": 4,
+      "common_mistakes": [
+        "Bỏ dấu âm khi trừ lập phương.",
+        "Viết sai dấu $6x^2-6$.",
+        "Có kết quả nhưng quên kết luận không phụ thuộc biến."
+      ],
+      "remediation_links": [
+        {
+          "label": "Ôn CT05 – Core",
+          "href": "../kien-thuc/05-7-hang-dang-thuc/core/"
+        },
+        {
+          "label": "Luyện thêm CT05",
+          "href": "../kien-thuc/05-7-hang-dang-thuc/bai-tap/"
+        }
+      ],
+      "source_refs": [
+        "docs/kien-thuc/05-7-hang-dang-thuc/bai-tap.md#05-ENT-01"
+      ],
+      "academic_review": {
+        "status": "APPROVED",
+        "method": "NOTEBOOKLM_OWNER_SUBMITTED",
+        "packet_id": "MATH-CT05-07-W3A-WR-R1-20261016",
+        "receipt": "review-packets/math-content-cleanup/MATH-CT05-07-W3A-WR-R1-20261016_NOTEBOOKLM_VERDICT_RECEIPT.md"
+      },
+      "hint_steps": [
+        "Khai triển riêng từng lập phương, chú ý đổi dấu toàn bộ ngoặc bị trừ.",
+        "Dùng $(x-1)(x+1)=x^2-1$ để xử lý tích.",
+        "Gộp các hạng tử chứa $x^2$ rồi kiểm tra còn phụ thuộc $x$ không."
+      ],
+      "full_solution_markdown": "**Khai triển hai lập phương.** $(x-1)^3=x^3-3x^2+3x-1$ và $(x+1)^3=x^3+3x^2+3x+1$.\n\n**Trừ đúng dấu.** $(x-1)^3-(x+1)^3=-6x^2-2$.\n\n**Biến đổi tích.** $6(x-1)(x+1)=6(x^2-1)=6x^2-6$.\n\n**Kết luận.** $A=(-6x^2-2)+(6x^2-6)=-8$ với mọi $x$, nên $A$ không phụ thuộc vào $x$.",
+      "method_rationale_markdown": "Khai triển hai lập phương rồi nhóm với tích hiệu hai bình phương giúp quan sát các hạng chứa biến triệt tiêu.",
+      "remediation_markdown": "Ôn khai triển lập phương, dấu trừ trước ngoặc và hiệu hai bình phương trước khi làm lại.",
+      "gates_core": false,
+      "auto_readiness_credit": false
+    },
+    {
+      "exercise_id": "WX06-CH-001",
+      "exercise_kind": "anchor",
+      "topic_id": "CT06",
+      "topic_slug": "06-phan-tich-da-thuc",
+      "topic_title": "Phân tích đa thức thành nhân tử",
+      "problem_type_id": "sophie-germain-specialized",
+      "problem_type_title": "Thêm bớt để phân tích thành nhân tử",
+      "title": "Thêm bớt để phân tích thành nhân tử",
+      "learning_layer": "Specialized-Challenge",
+      "level": "CHALLENGE",
+      "learner_label": "Thử thách",
+      "grade_overlay": [
+        8
+      ],
+      "skills": [
+        "binh-phuong-hoan-chinh",
+        "hieu-hai-binh-phuong",
+        "phoi-hop-phuong-phap",
+        "kiem-tra-phan-tich"
+      ],
+      "prerequisites": [
+        "binh-phuong-hoan-chinh",
+        "hieu-hai-binh-phuong"
+      ],
+      "estimated_minutes": 12,
+      "problem_markdown": "Phân tích $x^4+4$ thành nhân tử với hệ số nguyên. Giải thích tại sao chọn thêm và bớt cùng một hạng tử.",
+      "figure_uri": null,
+      "figure_alt": null,
+      "solution_steps": [
+        {
+          "step_id": "S1",
+          "title": "Tạo bình phương hoàn chỉnh",
+          "content_markdown": "$x^4+4=x^4+4x^2+4-4x^2$."
+        },
+        {
+          "step_id": "S2",
+          "title": "Viết hiệu hai bình phương",
+          "content_markdown": "$x^4+4=(x^2+2)^2-(2x)^2$."
+        },
+        {
+          "step_id": "S3",
+          "title": "Phân tích thành tích",
+          "content_markdown": "$x^4+4=(x^2-2x+2)(x^2+2x+2)$."
+        },
+        {
+          "step_id": "S4",
+          "title": "Kiểm tra",
+          "content_markdown": "Nhân hai nhân tử ngược lại được $x^4+4$; phép thêm và bớt $4x^2$ bảo toàn biểu thức."
+        }
+      ],
+      "rubric": [
+        {
+          "criterion": "Thêm bớt $4x^2$ tạo bình phương đúng",
+          "points": 2
+        },
+        {
+          "criterion": "Áp dụng hiệu hai bình phương và viết hai nhân tử đúng",
+          "points": 2
+        }
+      ],
+      "rubric_total": 4,
+      "common_mistakes": [
+        "Thêm nhưng quên bớt $4x^2$.",
+        "Dừng ở dạng hiệu hai bình phương chưa ra tích.",
+        "Nhầm $(x^2+2)^2=x^4+4$."
+      ],
+      "remediation_links": [
+        {
+          "label": "Ôn CT06 – Core",
+          "href": "../kien-thuc/06-phan-tich-da-thuc/core/"
+        },
+        {
+          "label": "Luyện thêm CT06",
+          "href": "../kien-thuc/06-phan-tich-da-thuc/bai-tap/"
+        }
+      ],
+      "source_refs": [
+        "docs/kien-thuc/06-phan-tich-da-thuc/bai-tap.md#06-CH-01"
+      ],
+      "academic_review": {
+        "status": "APPROVED",
+        "method": "NOTEBOOKLM_OWNER_SUBMITTED",
+        "packet_id": "MATH-CT05-07-W3A-WR-R1-20261016",
+        "receipt": "review-packets/math-content-cleanup/MATH-CT05-07-W3A-WR-R1-20261016_NOTEBOOKLM_VERDICT_RECEIPT.md"
+      },
+      "hint_steps": [
+        "Hãy thử tạo bình phương từ $x^4+4$.",
+        "Thêm và bớt $4x^2$ để tạo $(x^2+2)^2-(2x)^2$.",
+        "Áp dụng $a^2-b^2=(a-b)(a+b)$."
+      ],
+      "full_solution_markdown": "**Tạo bình phương hoàn chỉnh.** $x^4+4=x^4+4x^2+4-4x^2$.\n\n**Viết hiệu hai bình phương.** $x^4+4=(x^2+2)^2-(2x)^2$.\n\n**Phân tích thành tích.** $x^4+4=(x^2-2x+2)(x^2+2x+2)$.\n\n**Kiểm tra.** Nhân hai nhân tử ngược lại được $x^4+4$; phép thêm và bớt $4x^2$ bảo toàn biểu thức.",
+      "method_rationale_markdown": "Thêm và bớt cùng $4x^2$ làm xuất hiện bình phương hoàn chỉnh và hiệu hai bình phương, trong khi không đổi giá trị biểu thức.",
+      "remediation_markdown": "Ôn bình phương của một tổng và hiệu hai bình phương, sau đó thử phân tích ngược từ hai nhân tử.",
+      "gates_core": false,
+      "auto_readiness_credit": false
     }
   ],
   "extension_policy": [
@@ -6109,7 +6308,7 @@
       "CT23",
       "CT24"
     ],
-    "exercise_count": 63,
+    "exercise_count": 65,
     "batches": [
       {
         "batch_id": "PILOT_R1",
@@ -6181,6 +6380,12 @@
         "batch_id": "WRITTEN_IMPLEMENTATION_W1_R1",
         "packet_id": "MATH-WRITTEN-IMPLEMENTATION-W1-R1-20261010",
         "count": 9,
+        "status": "PUBLISHED"
+      },
+      {
+        "batch_id": "CT05_07_W3A_WR_R1",
+        "packet_id": "MATH-CT05-07-W3A-WR-R1-20261016",
+        "count": 2,
         "status": "PUBLISHED"
       }
     ],
