@@ -335,6 +335,8 @@ jobs:
           node scripts/test-math-v2-practice-journal-first-r15.js
           node --check scripts/prototypes/math-v2-unified-ledger-r16.js
           node scripts/test-math-v2-unified-ledger-r16.js
+          node --check scripts/prototypes/math-v2-practice-unified-ledger-gate-r17.js
+          node scripts/test-math-v2-practice-unified-ledger-r17.js
           node --check scripts/prototypes/math-v2-real-journal-bridge-r7.js
       - name: Validate CĐ25 display math source
         run: node scripts/test-topic25-math-render.js
@@ -391,6 +393,7 @@ jobs:
           python scripts/test-math-v2-real-submission-intent-r14-browser.py
           python scripts/test-math-v2-practice-journal-first-r15-browser.py
           python scripts/test-math-v2-unified-ledger-r16-browser.py
+          python scripts/test-math-v2-practice-unified-ledger-r17-browser.py
           python scripts/test-math-v2-real-journal-r7-browser.py
           python scripts/test-help-disclosure-toggle-browser.py
           python scripts/test-topic08-academic-depth-p1a-browser.py
