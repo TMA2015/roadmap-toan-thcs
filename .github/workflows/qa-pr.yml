@@ -316,6 +316,10 @@ jobs:
         run: |
           node --check scripts/prototypes/math-unified-counter-v2-shadow-r1.js
           node scripts/test-math-unified-counter-v2-shadow-r1.js
+      - name: Validate Phase4 v2 event storage canary R3 (test-only)
+        run: |
+          node --check scripts/prototypes/math-v2-event-store-canary-r1.js
+          node scripts/test-math-v2-event-store-canary-r1.js
       - name: Validate CĐ25 display math source
         run: node scripts/test-topic25-math-render.js
       - name: Validate CĐ25 student journey
