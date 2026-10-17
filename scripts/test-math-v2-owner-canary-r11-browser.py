@@ -93,10 +93,11 @@ with sync_playwright() as pw:
         target.reload(wait_until="domcontentloaded")
         target.wait_for_function("() => document.querySelector('#stat-answer').textContent==='2'",timeout=20000)
         assert stat(target,"stat-readiness")=="1",(width,"reload must persist")
-        # Importing into occupied QA storage must refuse without two consents.
-        target.locator("#start").click()
+        # Importing into occupied QA storage must refuse without two consents,
+        # even when the page has just reloaded and Start has NOT been pressed.
+        assert target.locator("#start").is_enabled(),(width,"fresh reload is not yet active")
         target.locator("#file").set_input_files(str(saved))
-        target.wait_for_function("() => !document.querySelector('#restore').disabled",timeout=20000)
+        assert target.locator("#restore").is_enabled(),(width,"occupied target direct import")
         target.locator("#restore").click()
         target.wait_for_function("() => document.querySelector('#status').textContent.includes('Chưa nhập dữ liệu')",timeout=20000)
         assert "đã có dữ liệu" in target.locator("#status").inner_text().lower()
