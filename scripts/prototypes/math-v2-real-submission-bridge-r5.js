@@ -3,6 +3,10 @@
  */
 (() => {
   "use strict";
+  // add_init_script also executes inside MathJax/sandboxed subframes.
+  // IndexedDB is inaccessible in opaque-origin frames: capture only the
+  // secure-or-localhost first-party top-level learner page.
+  if(window.top!==window||!/^https?:$/.test(location.protocol))return;
   const config=window.__MATH_R5_QA_CONFIG__;
   if(!config?.enabled)return;
   if(!window.MathV2IDBCanaryR4?.createCanary)throw Error("QA_IDB_R4_DEPENDENCY_MISSING");
