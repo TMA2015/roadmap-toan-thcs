@@ -49,7 +49,7 @@ assert.equal(storage.writes.length,writeCount);
 storage.mode="quota";
 assert.throws(()=>active.append(event("EVENT_005",Reducer.TYPES.REMEDIATION)),/CANARY_WRITE_ABORTED/);
 assert.equal(storage.getItem(Store.KEY),untouched,"quota rejection leaves existing events untouched");
-storage.mode="silent_corrupt";
+storage.mode="corrupt_once";
 assert.throws(()=>active.append(event("EVENT_006",Reducer.TYPES.EXAM)),/CANARY_WRITE_ABORTED/);
 assert.equal(storage.getItem(Store.KEY),untouched,"corrupt readback rolled back");
 storage.mode="normal";
