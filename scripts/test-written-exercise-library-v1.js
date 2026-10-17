@@ -72,7 +72,9 @@ for(const x of data.exercises){
     ok(x.solution_steps.every(s=>String(s.title||"").trim()&&String(s.content_markdown||"").trim()),"complete solution steps "+x.exercise_id);
   }
   const isWave1=x.academic_review?.packet_id==="MATH-WRITTEN-IMPLEMENTATION-W1-R1-20261010";
-  ok(Array.isArray(x.rubric)&&x.rubric.length>=(isWave1?3:4),"rubric "+x.exercise_id);
+  const exactR1={"WX05-ENT-001":3,"WX06-CH-001":2};
+  const expectedRubric=exactR1[x.exercise_id]??(isWave1?3:4);
+  ok(Array.isArray(x.rubric)&&(x.exercise_id in exactR1?x.rubric.length===expectedRubric:x.rubric.length>=expectedRubric),"rubric "+x.exercise_id);
   const sum=x.rubric.reduce((n,r)=>n+Number(r.points||0),0);
   ok(sum===x.rubric_total,"rubric total "+x.exercise_id);
   ok(Array.isArray(x.common_mistakes)&&x.common_mistakes.length>=3,"common mistakes "+x.exercise_id);

@@ -16,6 +16,7 @@ assert(catalog.includes("x.grade_overlay")&&catalog.includes("grades:[9]"),"expl
 assert(catalog.includes("x.exercise_kind===\"anchor\"")&&catalog.includes('publication_status==="published"'),"no unapproved sources");
 assert(catalog.includes("rootPath()+\"kien-thuc/25-tong-hop-on-thi-10/\""),"A25 canonical links");
 assert(!catalog.includes("localStorage")&&!catalog.includes("saveStats")&&!catalog.includes("assessment"),"read-only catalog");
-assert(written.exercises.filter(x=>x.exercise_kind==="anchor").length===10,"ten historic WX examples");
+assert(written.exercises.slice(0,63).filter(x=>x.exercise_kind==="anchor").length===10,"ten historic WX examples preserved");
+assert.deepStrictEqual(written.exercises.slice(63).map(x=>x.exercise_id),["WX05-ENT-001","WX06-CH-001"],"two reviewed W3A-WR anchors only");
 assert(a25.anchors.filter(x=>x.publication_status==="published").length===11,"eleven historic A25 models");
 console.log("PASS: separate Written landing, paper library, model library, and canonical data unchanged.");

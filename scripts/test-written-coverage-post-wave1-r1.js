@@ -15,8 +15,9 @@ assert.equal(artifact.status,"RECONCILED_NO_FURTHER_R1_AUTHORING_AUTHORIZED");
 assert.equal(decision.clearance,"WRITTEN_COVERAGE_PRIORITY_R1_REVIEW_COMPLETE");
 assert.equal(impl.clearance,"WRITTEN_IMPLEMENTATION_W1_R1_CONTENT_REVIEW_COMPLETE");
 assert.equal(impl.independent_review?.verdict,"PASS");
-assert.equal(lib.exercises.length,63);
-assert.equal(lib.published_scope.exercise_count,63);
+assert.equal(lib.exercises.length,65);
+assert.deepEqual(lib.exercises.slice(63).map(x=>x.exercise_id),["WX05-ENT-001","WX06-CH-001"]);
+assert.equal(lib.published_scope.exercise_count,65);
 
 const mapByLegacy=new Map();
 for(const m of reg.legacy_mappings||[]){
@@ -43,7 +44,8 @@ const rows=new Map((reg.families||[]).map(f=>[f.family_id,{
   exercise_ids:[]
 }]));
 const unresolved=[];
-for(const e of lib.exercises||[]){
+// Historical 2026-10-10 audit covers the original 63; later optional Challenge is not Core coverage.
+for(const e of lib.exercises.slice(0,63)){
   const mapped=new Set((e.canonical_family_ids||[]).filter(fid=>rows.has(fid)));
   if(!mapped.size){
     for(const sk of e.skills||[]){
@@ -96,6 +98,6 @@ assert.equal(artifact.post_wave1.all_remaining_zero_are_prior_keep_no_written,tr
 assert.equal(artifact.conclusion.r1_written_authoring_complete,true);
 assert.equal(artifact.conclusion.further_wave_authorized,false);
 
-console.log("PASS: post-Wave1 Written coverage reconciles 63 published items to 76/100 covered KNTT-Core families.");
+console.log("PASS: post-Wave1 Written coverage reconciles historical 63 items plus two reviewed W3A-WR additions to 76/100 covered KNTT-Core families.");
 console.log("PASS: zero-Written falls 34 -> 24: nine reviewed additions plus PROB-EVENT existing-item crosswalk.");
 console.log("PASS: all 24 remaining zero-Written families were already reviewed KEEP_NO_WRITTEN; no R1 Wave 2 authoring is authorized.");

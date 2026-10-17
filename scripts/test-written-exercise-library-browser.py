@@ -95,6 +95,18 @@ with sync_playwright() as p:
         assert cards.count() == 1, (device, "CT14 apply filter")
         assert page.locator(".written-exercise-card#wx14-tri-002").count() == 1
 
+        # Reviewed W3A-WR additions must be discoverable at both desktop and 390px.
+        topic.select_option("CT06")
+        level.select_option("CHALLENGE")
+        assert cards.count() == 1, (device, "optional Challenge only")
+        challenge = page.locator(".written-exercise-card#wx06-ch-001")
+        assert challenge.count() == 1, (device, "reviewed Challenge visible")
+        assert "Thử thách" in challenge.locator(".written-exercise-meta").inner_text(), (device, "friendly Challenge label")
+        assert challenge.locator(".written-help-action").count() == 5, (device, "Challenge hints and rubric")
+        topic.select_option("CT05")
+        level.select_option("ENTRANCE10")
+        assert page.locator(".written-exercise-card#wx05-ent-001").count() == 1, (device, "reviewed Entrance10 visible")
+
         topic.select_option("all")
         level.select_option("all")
         problem_type = page.locator('select[aria-label="Lọc theo dạng bài"]')

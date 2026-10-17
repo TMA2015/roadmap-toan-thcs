@@ -9,7 +9,8 @@ const read=p=>JSON.parse(fs.readFileSync(path.join(root,p),"utf8"));
 const reg=read("docs/assets/data/curriculum/skill-taxonomy-v2-registry-r1.json");
 const lib=read("docs/assets/data/written-exercises/written-exercise-library-v1.json");
 const contract=fs.readFileSync(path.join(root,"docs/collaboration/written-exercise-library-v1.md"),"utf8");
-const auditBaselineExercises=(lib.exercises||[]).filter(e=>e.academic_review?.packet_id!=="MATH-WRITTEN-IMPLEMENTATION-W1-R1-20261010");
+// Snapshot audit is 2026-10-10 R1; exclude the separately reviewed W3A-WR two-item release.
+const auditBaselineExercises=(lib.exercises||[]).slice(0,63).filter(e=>e.academic_review?.packet_id!=="MATH-WRITTEN-IMPLEMENTATION-W1-R1-20261010");
 
 const mapByLegacy=new Map();
 for(const m of reg.legacy_mappings||[]){
