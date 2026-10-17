@@ -35,11 +35,14 @@ async ({scope, action, backup}) => {
    await c.append(event("EVENT_0002","written_self_check"));
    return {first,duplicate,conflict,counts:await c.summarize()};
   }
-  if(action==="tab"){
-   return await c.append(event("EVENT_0003","readiness_submission"));
-  }
-  if(action==="other_tab"){
-   return await c.append(event("EVENT_0004","answer_attempt",{correct:false}));
+  if(action==="concurrent"){
+   const another=await api.createCanary({learner_scope:scope,enabled:true});
+   try{
+    return await Promise.all([
+     c.append(event("EVENT_0003","readiness_submission")),
+     another.append(event("EVENT_0004","answer_attempt",{correct:false}))
+    ]);
+   }finally{another.close();}
   }
   if(action==="check"){
    return {rows:(await c.read()).length,counts:await c.summarize(),
@@ -88,14 +91,12 @@ with sync_playwright() as pw:
         tab=context.new_page()
         tab.goto(BASE+"luyen-tap/",wait_until="domcontentloaded")
         tab.add_script_tag(content=SOURCE)
-        # Two tabs writing different IDs into one IndexedDB scope must not drop either.
-        concurrent=page.evaluate("""async ({scope,script})=>{
-          const task=eval("("+script+")");
-          return task({scope,action:"tab"});
-        }""",{"scope":scope,"script":SCRIPT})
-        assert concurrent["written"]
-        other=tab.evaluate(SCRIPT,{"scope":scope,"action":"other_tab"})
-        assert other["written"]
+        # Two independent IDB connections writing concurrently must not lose either event.
+        concurrent=page.evaluate(SCRIPT,{"scope":scope,"action":"concurrent"})
+        assert all(x["written"] for x in concurrent),(width,"two atomic concurrent writes")
+        # A different browser tab sees both committed events without a manual import.
+        cross_tab=tab.evaluate(SCRIPT,{"scope":scope,"action":"check"})
+        assert cross_tab["rows"]==4,(width,"same-device two-tab visibility")
         tab.close()
         page.reload(wait_until="domcontentloaded")
         page.add_script_tag(content=SOURCE)
