@@ -1081,7 +1081,79 @@
       typeset(this.cardEl);
     }
 
-    answer(selectedIndex) {
+    // Phase 4 R15: optional journal-first QA gate for ONE real MCQ answer.
+    // The gate is not loaded anywhere in the deployed learner app. Without it,
+    // the established v1 path below runs byte-for-byte as before.
+    async answerJournalFirst(selectedIndex) {
+      const gate = window.MathV2PracticeCommitGateR15;
+      if (!gate?.enabled || this.answered || this.__r15Busy) return;
+      const question = this.currentQuestion();
+      if (!question || question.response_type) return;
+      const sessionIndex = this.index;
+      const pending = this.__r15Pending;
+      if (pending && (pending.question_id !== question.id || pending.selected_index !== selectedIndex)) {
+        return; // A failed save may be retried, never silently changed to a new answer.
+      }
+      if (!pending) {
+        this.__r15Pending = {
+          question_id: question.id,
+          selected_index: selectedIndex,
+          submission_key: "QA_R15_" + crypto.randomUUID().replace(/-/g, "")
+        };
+      }
+      this.__r15Busy = true;
+      const buttons = [...this.optionsEl.querySelectorAll(".practice-option")];
+      buttons.forEach(button => { button.disabled = true; });
+      this.actionsEl.innerHTML = "";
+      this.feedbackEl.hidden = false;
+      this.feedbackEl.textContent = "Đang lưu lượt thử nghiệm v2 trước khi xác nhận bài…";
+      let saved = false;
+      let reason = "UNKNOWN_SAVE_ERROR";
+      try {
+        const result = await gate.accept({
+          submission_key: this.__r15Pending.submission_key,
+          question_id: question.id,
+          correct: selectedIndex === question.answer
+        });
+        saved = result?.saved === true;
+        reason = result?.reason || result?.state || reason;
+      } catch (error) {
+        reason = String(error?.message || error);
+      }
+      this.__r15Busy = false;
+      if (this.answered || this.index !== sessionIndex || this.currentQuestion()?.id !== question.id) {
+        // The journal is authoritative if committed; never credit another
+        // on-screen question after the learner navigates elsewhere.
+        return;
+      }
+      if (saved) {
+        this.__r15Pending = null;
+        this.feedbackEl.hidden = true;
+        this.feedbackEl.textContent = "";
+        // Only now run existing Practice grading, feedback and legacy save.
+        // If the *later* legacy save fails, the original warning still appears.
+        this.answer(selectedIndex, true);
+        return;
+      }
+      // Persisted score/session counters and answered flag are untouched.
+      // The same submission_key is reused if the parent retries this attempt.
+      this.feedbackEl.textContent = "";
+      const warning = document.createElement("p");
+      warning.className = "practice-save-warning";
+      warning.setAttribute("role", "alert");
+      warning.textContent = "Chưa lưu được lượt thử nghiệm v2 (" + reason +
+        "). Câu này chưa được ghi điểm. Hãy thử lưu lại; hệ thống dùng cùng mã lượt.";
+      this.feedbackEl.appendChild(warning);
+      const retry = createButton("Thử lưu lại lượt này", "practice-btn-primary");
+      retry.addEventListener("click", () => this.answerJournalFirst(selectedIndex));
+      this.actionsEl.appendChild(retry);
+    }
+
+    answer(selectedIndex, r15JournalApproved = false) {
+      if (!r15JournalApproved && window.MathV2PracticeCommitGateR15?.enabled === true) {
+        void this.answerJournalFirst(selectedIndex);
+        return;
+      }
       if (this.answered) return;
       this.answered = true;
       const question = this.currentQuestion();

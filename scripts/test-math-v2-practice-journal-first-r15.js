@@ -1,0 +1,20 @@
+#!/usr/bin/env node
+"use strict";
+const fs=require("node:fs"),assert=require("node:assert/strict");
+const src=fs.readFileSync("docs/assets/javascripts/practice-engine-v2.js","utf8");
+const config=fs.readFileSync("mkdocs.yml","utf8");
+const gate=fs.readFileSync("scripts/prototypes/math-v2-practice-journal-first-gate-r15.js","utf8");
+const answer=src.indexOf("answer(selectedIndex, r15JournalApproved = false) {");
+const record=src.indexOf("this.record(question, correct, this.hintLevel, selectedIndex, this.fullSolutionViewed);",answer);
+const guard=src.indexOf("window.MathV2PracticeCommitGateR15?.enabled === true",answer);
+assert(answer>0&&guard>answer&&record>guard,"journal-first Practice feature guard must precede old scoring and save");
+assert(src.includes("this.answer(selectedIndex, true);"),"approved commit must restore existing feedback path");
+assert(src.includes("this.__r15Pending = null;"),"clear pending only after v2 persisted");
+assert(src.includes('retry.addEventListener("click", () => this.answerJournalFirst(selectedIndex));'));
+assert(gate.includes('if(!config?.enabled)return;'),"bridge must be default off");
+assert(gate.includes("R15_QA_SCOPE_ONLY"),"bridge must reject non-QA learner IDs");
+assert(gate.includes("const token=old?.submission_key||submission_key;"),"reload same question must reuse unresolved ID");
+assert(!config.includes("math-v2-practice-journal-first-gate-r15"),"QA bridge must never load on learner pages");
+assert(!config.includes("math-v2-stable-submission-intent-r13"),"QA intent storage must remain test-only");
+assert(!config.includes("math-v2-journal-first-submit-r8"),"QA journal must remain test-only");
+console.log("PASS R15 Practice: gated journal-first path, saved-only legacy grade, retry-preserved token, no learner loader.");
