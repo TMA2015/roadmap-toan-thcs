@@ -5,6 +5,28 @@ const {audit,TARGETS,FLAGGED,RECEIPT,PIN,PRIMARY_RECEIPT,PRIMARY_PIN,G9_CONCEPT_
 const a=audit();
 assert.equal(a.schema,"math-v2-r33-provisional-24-row-S1-evidence-matrix-v1");
 assert.equal(a.input_rows,24);
+const editorialPath="review-packets/math-phase4-r27-mcq-40/TEMP_R33_OWNER_EDITORIAL_24_ID_METADATA_DECISION_MATRIX_20261018.md";
+const editorial=fs.readFileSync(editorialPath,"utf8");
+assert(editorial.includes("EDITORIAL_CANDIDATE_NOT_ACADEMICALLY_APPROVED"));
+const editorialRows=editorial.split("\n")
+ .filter(line=>/^\| `(?:NUM02V1_|ALG04V2_|QUA12V1_)\d+` \|/.test(line))
+ .map(line=>{
+  const cells=line.split("|").map(x=>x.trim());
+  return {id:cells[1].replace(/`/g,""),evidence:cells[4].replace(/`/g,""),
+   layer:cells[5].replace(/`/g,"")};
+ });
+assert.equal(editorialRows.length,24,"24 editorial rows");
+assert.deepEqual(editorialRows.map(x=>x.id),TARGETS,"editorial item order");
+assert.equal(new Set(editorialRows.map(x=>x.id)).size,24,"editorial item uniqueness");
+assert.equal(editorialRows.filter(x=>x.evidence==="STRUCTURAL_CLONE").length,8);
+assert.equal(editorialRows.filter(x=>x.evidence==="CONCEPT_BASE").length,16);
+assert.equal(editorialRows.filter(x=>x.evidence==="EXACT_MATCH").length,0);
+assert.equal(editorialRows.filter(x=>x.layer==="KNTT-Core").length,21);
+assert.deepEqual(editorialRows.filter(x=>x.layer==="LAYER_HOLD").map(x=>x.id),
+ ["QUA12V1_121","QUA12V1_122","QUA12V1_123"]);
+assert(editorial.includes("academic_pass_authorized=false")&&
+ editorial.includes("production_skill_counter_authorized=false")&&
+ editorial.includes("production_release_authorized=false"));
 assert.equal(a.flagged_priority_ids,16);
 assert.equal(a.residual_primary_S1_ids,8);
 assert.equal(a.academic_S1_accepted,0);
