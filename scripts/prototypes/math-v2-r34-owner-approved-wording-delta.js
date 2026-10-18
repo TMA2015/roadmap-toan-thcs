@@ -9,6 +9,10 @@ const {inspect:R27,PINS,R34_WORDING,historicalBytesForR27}=
  require("./math-v2-r27-mcq-source-review.js");
 const FILE="docs/assets/data/practice/"+R34_WORDING.source_file;
 const FINGERPRINT=q=>crypto.createHash("sha256").update(JSON.stringify(q)).digest("hex");
+const RECORD_PINS=Object.freeze({
+ original:"119627613d0e3d0d08a7a582ddf1cebcfb065aa7e1e7f25fd29a5afdd989d863",
+ approved:"6c7e6d4d8f66802da30d1f6d9829fffdee4f814aba94745a0d62b0a6d80b467c"
+});
 const assertOk=(yes,code)=>{if(!yes)throw Error("R34_"+code);};
 function audit({root=process.cwd(),readBytes=rel=>fs.readFileSync(path.join(root,rel))}={}){
  const liveBytes=readBytes(FILE);
@@ -55,6 +59,7 @@ function audit({root=process.cwd(),readBytes=rel=>fs.readFileSync(path.join(root
   baseline.rows.find(x=>x.id===R34_WORDING.question_id).source_git_blob_sha===
     PINS[R34_WORDING.source_file],"R27_HISTORICAL_IDENTITY_CHANGED");
  assertOk(FINGERPRINT(current)!==FINGERPRINT(old),"RECORD_FINGERPRINT_NOT_ADVANCED");
+ assertOk(FINGERPRINT(old)===RECORD_PINS.original&&FINGERPRINT(current)===RECORD_PINS.approved,"RECORD_SHA256_NOT_EXPECTED");
  return Object.freeze({
   schema:"math-r34-owner-approved-wording-delta-v1",
   item_id:R34_WORDING.question_id,
@@ -76,7 +81,7 @@ function audit({root=process.cwd(),readBytes=rel=>fs.readFileSync(path.join(root
   production_deployment_authorized:false
  });
 }
-module.exports={audit,FILE,FINGERPRINT};
+module.exports={audit,FILE,FINGERPRINT,RECORD_PINS};
 if(require.main===module){
  const r=audit();
  console.log(JSON.stringify({status:"R34_APPROVED_WORDING_QA_ONLY",
