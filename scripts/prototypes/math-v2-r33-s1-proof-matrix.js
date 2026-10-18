@@ -9,6 +9,8 @@ const {inspect}=require("./math-v2-r27-mcq-source-review.js");
 const {audit:baselineR31}=require("./math-v2-r31-s1-page-boundary-audit.js");
 const RECEIPT="review-packets/math-phase4-r27-mcq-40/TEMP_R33_SECONDARY_EVIDENCE_FLAGS_20261018.json";
 const PIN="2dbf86359c541c71a4b37e4f9be30c15391ff8b1";
+const PRIMARY_RECEIPT="review-packets/math-phase4-r27-mcq-40/TEMP_R33_NXBGD_ORIGINAL_PAGE_OBSERVATIONS_20261018.json";
+const PRIMARY_PIN="1acde19b575a177e33fc00c3b66854b730f329d7";
 const TARGETS=Object.freeze([
  ...Array.from({length:12},(_,i)=>"NUM02V1_"+(121+i)),
  ...Array.from({length:3},(_,i)=>"NUM02V1_"+(145+i)),
@@ -23,7 +25,7 @@ const FLAGGED=Object.freeze([
 ]);
 const requireOk=(ok,what)=>{if(!ok)throw Error("R33_"+what);};
 function audit({root=process.cwd(),readBytes=rel=>fs.readFileSync(path.join(root,rel)),
- override=null}={}){
+ override=null,overridePrimary=null}={}){
  const source=inspect({root});
  const prev=baselineR31({root});
  const raw=readBytes(RECEIPT);
@@ -57,8 +59,47 @@ function audit({root=process.cwd(),readBytes=rel=>fs.readFileSync(path.join(root
    "INVALID_OBSERVATION_OR_FAKE_S1_"+x.question_id);
   flagMap.set(x.question_id,x);
  }
+ // Verified provenance of individual publisher page observations, not blanket academic PASS.
+ const primaryBytes=readBytes(PRIMARY_RECEIPT);
+ requireOk(gitBlob(primaryBytes)===PRIMARY_PIN,"PRIMARY_PAGE_RECEIPT_CHANGED");
+ const primary=overridePrimary||JSON.parse(primaryBytes.toString("utf8"));
+ requireOk(primary.schema==="math-r33-nxbgd-original-page-observation-v1"&&
+  primary.packet_id===source.packet_id&&
+  primary.source_class==="S1_PUBLISHER_EBOOK_PAGE_OBSERVED"&&
+  primary.primary_observed_page_count===5&&
+  primary.items_with_first_party_page_basis===9&&
+  primary.remaining_24_target_ids_without_first_party_page_basis===15&&
+  primary.source_images_redistributed===false&&
+  primary.academic_pass_authorized===false&&primary.layer_change_authorized===false&&
+  primary.production_skill_counter_authorized===false&&
+  primary.original_questions_changed===false,"INVALID_PRIMARY_OBSERVATION_METADATA");
+ const pages=primary.printed_page_sources;
+ const expectedPages={"T7T1_P36":36,"T7T2_P41":41,"T7T2_P42":42,"T7T2_P43":43,"T7T2_P45":45};
+ requireOk(Object.keys(pages).length===5&&
+  Object.entries(expectedPages).every(([k,n])=>{
+   const p=pages[k];return p?.printed_page===n&&p.primary_page_viewed===true&&
+    p.book_viewer.startsWith("https://taphuan.nxbgd.vn/tap-huan/doc-sach/")&&
+    p.observed_page_image.startsWith("https://cdn3.olm.vn/upload/taphuan/")&&
+    typeof p.observed_section==="string"&&p.observed_section.length>=15;
+  }),"INVALID_PUBLISHER_PAGE_LOCATORS");
+ const expectedObservedIds=[
+  "NUM02V1_145","NUM02V1_146","NUM02V1_147",
+  "ALG04V2_133","ALG04V2_134","ALG04V2_135",
+  "ALG04V2_136","ALG04V2_137","ALG04V2_138"];
+ requireOk(primary.rows.length===9&&
+  new Set(primary.rows.map(x=>x.question_id)).size===9&&
+  expectedObservedIds.every(id=>primary.rows.some(x=>x.question_id===id))&&
+  primary.rows.every(x=>x.primary_page_observed===true&&
+   x.exact_item_match_approved===false&&
+   x.academic_verdict_approved===false&&
+   x.curriculum_layer_approved===false&&
+   typeof x.observed_comparison==="string"&&x.observed_comparison.length>=35&&
+   typeof x.evidence_interpretation_candidate==="string"&&
+   x.source_keys.length>0&&x.source_keys.every(k=>Object.hasOwn(pages,k))),
+  "INVALID_PRIMARY_ITEM_OBSERVATION");
+ const primaryMap=new Map(primary.rows.map(x=>[x.question_id,x]));
  const rows=TARGETS.map(id=>{
-  const q=bank.get(id),flag=flagMap.get(id);
+  const q=bank.get(id),flag=flagMap.get(id),observation=primaryMap.get(id);
   return {
    question_id:id,source_file:q.source_file,
    source_git_blob_sha:q.source_git_blob_sha,
@@ -67,6 +108,10 @@ function audit({root=process.cwd(),readBytes=rel=>fs.readFileSync(path.join(root
    secondary_observation:flag?.concern||null,
    editorial_candidate_not_approved:flag?.editorial_candidate_not_approved||null,
    reference_urls_secondary_only:flag?.secondary_reference_urls||[],
+   first_party_publisher_page_observed:!!observation,
+   observed_primary_page_keys:observation?.source_keys||[],
+   S1_observed_question_comparison:observation?.observed_comparison||null,
+   proposed_evidence_type_not_approved:observation?.evidence_interpretation_candidate||null,
    primary_S1_verified:false,final_citation_verdict:"INSUFFICIENT_EVIDENCE",
    approved_curriculum_layer:null,academic_pass_authorized:false,
    production_skill_counter_authorized:false,mastery_credit_authorized:false
@@ -76,20 +121,25 @@ function audit({root=process.cwd(),readBytes=rel=>fs.readFileSync(path.join(root
   schema:"math-v2-r33-provisional-24-row-S1-evidence-matrix-v1",
   packet_id:source.packet_id,source_receipt_pin:PIN,
   input_rows:24,flagged_priority_ids:16,residual_primary_S1_ids:8,
+  first_party_page_observed_item_count:9,
+  first_party_pages_directly_viewed:5,
+  items_still_without_first_party_page_basis:15,
+  primary_page_observation_receipt_pin:PRIMARY_PIN,
   academic_S1_accepted:0,reviewer_R32_pass_claims_not_imported:true,
   source_R27_originals_verified:source.total===40,
   rows,
   safeguards:{original_items_changed:false,option_keys_changed:false,
    taxonomy_modified:false,student_history_written:false,
    mastery_or_readiness_awarded:false,automatic_curriculum_relayer:false,
-   original_S1_pages_examined:false,final_release_authorized:false}
+   original_S1_pages_examined_for_subset:true,
+   all_original_S1_citations_validated:false,final_release_authorized:false}
  });
 }
-module.exports={audit,TARGETS,FLAGGED,RECEIPT,PIN};
+module.exports={audit,TARGETS,FLAGGED,RECEIPT,PIN,PRIMARY_RECEIPT,PRIMARY_PIN};
 if(require.main===module){
  const r=audit();
  console.log(JSON.stringify({schema:r.schema,status:"R33_24_ROWS_S1_AWAITED",
   targets:r.input_rows,priority:r.flagged_priority_ids,
-  routine:r.residual_primary_S1_ids,academic_S1_accepted:r.academic_S1_accepted,
+  routine:r.residual_primary_S1_ids,first_party_observed:r.first_party_page_observed_item_count,academic_S1_accepted:r.academic_S1_accepted,
   safeguards:r.safeguards},null,2));
 }
