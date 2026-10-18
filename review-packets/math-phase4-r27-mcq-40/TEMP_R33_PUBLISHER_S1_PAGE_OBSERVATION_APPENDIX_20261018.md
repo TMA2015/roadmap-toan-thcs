@@ -51,3 +51,22 @@ Kết quả mong đợi: nguồn R27 40 câu bất biến; R31 24 ID; 16 cảnh 
 ## 5. Điều kiện đóng R33
 
 Chỉ được gọi `ACADEMIC_S1_RECONCILED` sau khi kiểm tra đủ **24 ID**, có minh chứng chính xác theo trang/hoạt động, đối soát SHA và có quyết định học thuật của chủ dự án. Trường hợp `QUA12V1_121–123` cần kết luận riêng về Core vs Entrance10; không lấy sự xuất hiện trong mục GeoGebra làm bằng chứng duy nhất. Không ép toàn bộ 24 phải PASS nếu bằng chứng thiếu.
+
+## 6. Cập nhật bổ sung — Trang chính thức Toán 9 tập hai, trang 5 (Bài 18)
+
+**Nguồn SGK điện tử nhà xuất bản:**
+- [SGK Toán 9 tập 2 trên cổng NXBGD](https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-toan-9-tap-hai.4714699696)
+- [Ảnh trang 5 được mở trực tiếp](https://cdn3.olm.vn/upload/taphuan/2026/0413/4714699696-page-6-1776054368832.png)
+
+Trang 5, **Bài 18 — Hàm số y=ax² (a≠0)**, Mục 1, cho thấy định nghĩa hàm số `y=ax²`, bảng giá trị, ví dụ và luyện tập. Đây là **S1 trực tiếp cho kiến thức hàm số nền tảng**, liên quan đến `QUA12V1_121–123`; nó **không có bài tập tương giao đường thẳng–parabol, không giải phương trình hoành độ giao điểm, không nêu tiêu chí tiếp xúc bằng nghiệm kép** trên chính trang này.
+
+**Giới hạn suy luận:** Không tìm thấy một dạng bài trên *trang 5* không đồng nghĩa dạng đó vắng mặt trên *toàn bộ SGK*. Chưa được kết luận bài toán giao điểm/tiếp xúc nằm ngoài KNTT-Core, và chưa được nâng `Entrance10` thành nhãn phê duyệt.
+
+**Cập nhật phân vùng theo khả năng quan sát trang nguồn (tổng 24 ID):**
+- 9 ID Toán 7 có trang gốc trực tiếp hỗ trợ đối chiếu nội dung từng câu (`NUM02V1_145–147`, `ALG04V2_133–138`), **chưa có PASS cuối cùng**.
+- 3 ID Toán 9 (`QUA12V1_121–123`) có **một trang SGK gốc hỗ trợ kiến thức nền**, nhưng chưa có S1 trực tiếp chứng minh các cấu trúc tương giao/tiếp xúc tương ứng.
+- 12 ID Toán 6 (`NUM02V1_121–132`) **chưa mở được trang SGK gốc cần thiết**. Các trang chụp lại ở website ngoài nhà xuất bản chỉ là tham khảo thứ cấp cho tới khi xác minh bản chính.
+
+Tổng có **6 trang in trên sách được quan sát trực tiếp** (5 trang Toán 7 + 1 trang Toán 9). Vẫn chỉ có **9/24 ID có cơ sở đối chiếu theo bài tập/khái niệm ở trang gốc đủ gần để rà từng câu**; ba ID Toán 9 có bằng chứng nền đơn lẻ, không làm thay đổi số 9 này.
+
+Hồ sơ JSON đối chứng bổ sung: `TEMP_R33_G9_P5_PUBLISHER_CONCEPT_ONLY_OBSERVATION_20261018.json`. CI source-lock riêng ảnh trang và mã danh sách 3 ID, cấm tự cấp PASS hoặc thay đổi tầng/credit.
