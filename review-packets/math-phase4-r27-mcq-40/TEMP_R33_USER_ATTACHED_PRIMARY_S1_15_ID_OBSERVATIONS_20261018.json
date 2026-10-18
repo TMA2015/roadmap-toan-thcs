@@ -1,0 +1,418 @@
+{
+  "schema": "math-r33-attachment-original-s1-15-target-review-v1",
+  "packet_id": "MATH-R27-NEW-MCQ-40-20261018",
+  "review_date": "2026-10-18",
+  "scope": "12 G6 rounding/estimation IDs and 3 G9 parabol/line IDs from original two attached PDF scans",
+  "provenance": "Two attached, user-provided KNTT PDF volumes inspected visually in the active chat session; binaries remain conversation attachments, not committed to repo; GitHub CI can validate declared hashes and record shape but cannot re-open the PDFs.",
+  "source_integrity": "sha256_hex_of_exact_uploaded_pdf_bytes",
+  "pdf_republication_authorized": false,
+  "source_scan_access_now_confirmed": true,
+  "all_15_target_ids_have_direct_page_visual_basis": true,
+  "all_15_item_citations_finally_approved": false,
+  "academic_pass_authorized": false,
+  "curriculum_relayer_authorized": false,
+  "production_skill_counter_authorized": false,
+  "learner_data_write_authorized": false,
+  "out_of_scope_16_original_r27_ids_unchanged": true,
+  "source_files": {
+    "G6T2": {
+      "original_filename": "sach-giao-khoa-toan-6-tap-2-ket-noi-tri-thuc-voi-cuoc-song.pdf",
+      "sha256": "774c04c28d425cc2ece06915db655e2b74e6d922ffa9546af2fe300813acde6c",
+      "size_bytes": 22110049,
+      "pdf_pages": 113,
+      "page_to_pdf_page_offset": 1,
+      "scope_printed_pages": [
+        35,
+        36,
+        37,
+        38
+      ],
+      "observations": {
+        "35": "Bài 30 Mục 1: định nghĩa quy tắc làm tròn số thập phân dương; làm tròn đến hàng đơn vị, xử lý chữ số tiếp sau và thay bằng 0",
+        "36": "Ví dụ 1 làm tròn 24,037 đến hàng phần mười; 2156,8 đến hàng chục; Luyện tập và Vận dụng 1 làm tròn 479633 đến nghìn",
+        "37": "Ví dụ 2 ước lượng 65000 x xấp xỉ 3 kg; Bài 7.12 làm tròn số 387,0094; 7.13 ước lượng tổng 3 số; 7.14 chia đoạn thẳng rồi làm tròn; 7.16 ước lượng ngân sách",
+        "38": "Bài 31: Một số bài toán về tỉ số và tỉ số phần trăm; KHÔNG thuộc Bài 30"
+      }
+    },
+    "G9T2": {
+      "original_filename": "sach-giao-khoa-toan-9-tap-2-ket-noi-tri-thuc-voi-cuoc-song.pdf",
+      "sha256": "eda1f0014afff53915190cf893345221b1a5bfa35407d58cec67b527655b597c",
+      "size_bytes": 23432709,
+      "pdf_pages": 135,
+      "page_to_pdf_page_offset": 2,
+      "scope_printed_pages": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        113,
+        114
+      ],
+      "observations": {
+        "113": "Hoạt động trải nghiệm GeoGebra: vẽ hàm y=ax² và đường thẳng y=ax+b; dùng lệnh Intersect để tìm giao điểm",
+        "114": "Thực hành 3: cho đường thẳng y=2x+sqrt(3) và parabol y=x², yêu cầu vẽ cùng mặt phẳng và tìm tọa độ giao điểm; không trình bày tiêu chí tiếp xúc nghiệm kép",
+        "4-9": "Bài 18: hàm số y=ax², bảng giá trị, hình dạng đồ thị parabol",
+        "10-17": "Bài 19: phương trình bậc hai, giải và công thức nghiệm, nghiệm kép khi Delta=0 (Ví dụ 6 trang 14)"
+      }
+    }
+  },
+  "rows": [
+    {
+      "question_id": "NUM02V1_121",
+      "source_key": "G6T2",
+      "printed_pages": [
+        35,
+        36
+      ],
+      "pdf_pages": [
+        36,
+        37
+      ],
+      "r27_task": "Làm tròn 5,83 đến hàng phần mười",
+      "s1_detailed_observation": "Ví dụ 1 trang 36 làm tròn 24,037 đến hàng phần mười bằng quy tắc trang 35; cùng phép làm tròn, khác số.",
+      "evidence_type_candidate": "STRUCTURAL_CLONE_CANDIDATE",
+      "source_class": "S1_USER_PROVIDED_ORIGINAL_KNTT_SCAN",
+      "original_page_visual_checked": true,
+      "exact_match_with_SGK_exercise": false,
+      "curricular_layer_decision": "PENDING_OWNER_ACADEMIC_REVIEW",
+      "reviewer_verdict_not_auto_accepted": true,
+      "academic_pass_authorized": false
+    },
+    {
+      "question_id": "NUM02V1_122",
+      "source_key": "G6T2",
+      "printed_pages": [
+        35,
+        36
+      ],
+      "pdf_pages": [
+        36,
+        37
+      ],
+      "r27_task": "Làm tròn 12,349 đến hàng phần trăm",
+      "s1_detailed_observation": "Trang 35 quy tắc làm tròn một số thập phân đến hàng chỉ định; Ví dụ 1 trang 36 đến hàng phần mười chứ không minh họa trực tiếp hàng phần trăm.",
+      "evidence_type_candidate": "CONCEPT_BASE_DIRECT_RULE",
+      "source_class": "S1_USER_PROVIDED_ORIGINAL_KNTT_SCAN",
+      "original_page_visual_checked": true,
+      "exact_match_with_SGK_exercise": false,
+      "curricular_layer_decision": "PENDING_OWNER_ACADEMIC_REVIEW",
+      "reviewer_verdict_not_auto_accepted": true,
+      "academic_pass_authorized": false
+    },
+    {
+      "question_id": "NUM02V1_123",
+      "source_key": "G6T2",
+      "printed_pages": [
+        35,
+        36
+      ],
+      "pdf_pages": [
+        36,
+        37
+      ],
+      "r27_task": "Làm tròn 4,265 đến hàng phần trăm",
+      "s1_detailed_observation": "Trang 35 quy tắc chữ số kế tiếp bằng 5 thì tăng 1; Ví dụ 1 trang 36 sử dụng quy tắc ở vị trí khác.",
+      "evidence_type_candidate": "CONCEPT_BASE_DIRECT_RULE",
+      "source_class": "S1_USER_PROVIDED_ORIGINAL_KNTT_SCAN",
+      "original_page_visual_checked": true,
+      "exact_match_with_SGK_exercise": false,
+      "curricular_layer_decision": "PENDING_OWNER_ACADEMIC_REVIEW",
+      "reviewer_verdict_not_auto_accepted": true,
+      "academic_pass_authorized": false
+    },
+    {
+      "question_id": "NUM02V1_124",
+      "source_key": "G6T2",
+      "printed_pages": [
+        35,
+        36
+      ],
+      "pdf_pages": [
+        36,
+        37
+      ],
+      "r27_task": "Làm tròn 0,996 đến hàng phần trăm",
+      "s1_detailed_observation": "Trang 35 quy tắc làm tròn bao quát trường hợp nhớ hàng, không có ví dụ 0,996 thành 1,00 tại trang được đối chiếu.",
+      "evidence_type_candidate": "CONCEPT_BASE_DIRECT_RULE",
+      "source_class": "S1_USER_PROVIDED_ORIGINAL_KNTT_SCAN",
+      "original_page_visual_checked": true,
+      "exact_match_with_SGK_exercise": false,
+      "curricular_layer_decision": "PENDING_OWNER_ACADEMIC_REVIEW",
+      "reviewer_verdict_not_auto_accepted": true,
+      "academic_pass_authorized": false
+    },
+    {
+      "question_id": "NUM02V1_125",
+      "source_key": "G6T2",
+      "printed_pages": [
+        35,
+        36
+      ],
+      "pdf_pages": [
+        36,
+        37
+      ],
+      "r27_task": "Làm tròn 73,486 đến hàng đơn vị",
+      "s1_detailed_observation": "Trang 35 tình huống trực quan 6,2 thành 6 khi làm tròn đến đơn vị và quy tắc giữ nguyên nếu chữ số tiếp sau <5.",
+      "evidence_type_candidate": "STRUCTURAL_CLONE_CANDIDATE",
+      "source_class": "S1_USER_PROVIDED_ORIGINAL_KNTT_SCAN",
+      "original_page_visual_checked": true,
+      "exact_match_with_SGK_exercise": false,
+      "curricular_layer_decision": "PENDING_OWNER_ACADEMIC_REVIEW",
+      "reviewer_verdict_not_auto_accepted": true,
+      "academic_pass_authorized": false
+    },
+    {
+      "question_id": "NUM02V1_126",
+      "source_key": "G6T2",
+      "printed_pages": [
+        35,
+        36
+      ],
+      "pdf_pages": [
+        36,
+        37
+      ],
+      "r27_task": "Làm tròn 73,586 đến hàng đơn vị",
+      "s1_detailed_observation": "Trang 35 ví dụ 4,8 thành 5 khi làm tròn đến đơn vị và quy tắc tăng 1 nếu chữ số tiếp sau >=5.",
+      "evidence_type_candidate": "STRUCTURAL_CLONE_CANDIDATE",
+      "source_class": "S1_USER_PROVIDED_ORIGINAL_KNTT_SCAN",
+      "original_page_visual_checked": true,
+      "exact_match_with_SGK_exercise": false,
+      "curricular_layer_decision": "PENDING_OWNER_ACADEMIC_REVIEW",
+      "reviewer_verdict_not_auto_accepted": true,
+      "academic_pass_authorized": false
+    },
+    {
+      "question_id": "NUM02V1_127",
+      "source_key": "G6T2",
+      "printed_pages": [
+        35,
+        37
+      ],
+      "pdf_pages": [
+        36,
+        38
+      ],
+      "r27_task": "Làm tròn độ dài 2,746 m đến hàng phần trăm",
+      "s1_detailed_observation": "Trang 35 quy tắc làm tròn; Bài 7.14 trang 37 chia đoạn thẳng dài 6,32 m làm bốn đoạn rồi mới làm tròn đến hàng phần mười: không trùng cấu trúc bài một-bước.",
+      "evidence_type_candidate": "CONCEPT_BASE_NOT_EXERCISE_CLONE",
+      "source_class": "S1_USER_PROVIDED_ORIGINAL_KNTT_SCAN",
+      "original_page_visual_checked": true,
+      "exact_match_with_SGK_exercise": false,
+      "curricular_layer_decision": "PENDING_OWNER_ACADEMIC_REVIEW",
+      "reviewer_verdict_not_auto_accepted": true,
+      "academic_pass_authorized": false
+    },
+    {
+      "question_id": "NUM02V1_128",
+      "source_key": "G6T2",
+      "printed_pages": [
+        35,
+        36,
+        37
+      ],
+      "pdf_pages": [
+        36,
+        37,
+        38
+      ],
+      "r27_task": "Làm tròn giá 48650 đồng đến nghìn đồng",
+      "s1_detailed_observation": "Trang 36 Vận dụng 1 làm tròn số 479633 đến hàng nghìn, cùng thao tác làm tròn số nguyên; Bài 7.16 trang 37 là ước lượng chi phí nhiều món, khác cấu trúc.",
+      "evidence_type_candidate": "STRUCTURAL_CLONE_VAN_DUNG_1_CANDIDATE",
+      "source_class": "S1_USER_PROVIDED_ORIGINAL_KNTT_SCAN",
+      "original_page_visual_checked": true,
+      "exact_match_with_SGK_exercise": false,
+      "curricular_layer_decision": "PENDING_OWNER_ACADEMIC_REVIEW",
+      "reviewer_verdict_not_auto_accepted": true,
+      "academic_pass_authorized": false
+    },
+    {
+      "question_id": "NUM02V1_129",
+      "source_key": "G6T2",
+      "printed_pages": [
+        36,
+        37
+      ],
+      "pdf_pages": [
+        37,
+        38
+      ],
+      "r27_task": "Ước lượng 19,8+30,3 bằng làm tròn hai số",
+      "s1_detailed_observation": "Trang 36 Mục 2 ước lượng; Bài 7.13 trang 37 ước lượng một tổng ba số để chọn kết quả, khác số hạng và cơ chế câu hỏi.",
+      "evidence_type_candidate": "CONCEPT_BASE_WITH_ADDITION_ESTIMATION_EXERCISE",
+      "source_class": "S1_USER_PROVIDED_ORIGINAL_KNTT_SCAN",
+      "original_page_visual_checked": true,
+      "exact_match_with_SGK_exercise": false,
+      "curricular_layer_decision": "PENDING_OWNER_ACADEMIC_REVIEW",
+      "reviewer_verdict_not_auto_accepted": true,
+      "academic_pass_authorized": false
+    },
+    {
+      "question_id": "NUM02V1_130",
+      "source_key": "G6T2",
+      "printed_pages": [
+        36,
+        37
+      ],
+      "pdf_pages": [
+        37,
+        38
+      ],
+      "r27_task": "Ước lượng 4,98×20,1 bằng làm tròn hai thừa số",
+      "s1_detailed_observation": "Trang 37 Ví dụ 2 ước lượng khối lượng táo 2,8 kg thành 3 kg rồi nhân 65000 đồng/kg, cùng ý tưởng ước lượng tích nhưng không làm tròn đồng thời cả hai thừa số; Bài 7.13 là phép cộng, không nên viện dẫn làm structural clone.",
+      "evidence_type_candidate": "CONCEPT_BASE_WITH_MULTIPLICATION_ESTIMATION_EXAMPLE",
+      "source_class": "S1_USER_PROVIDED_ORIGINAL_KNTT_SCAN",
+      "original_page_visual_checked": true,
+      "exact_match_with_SGK_exercise": false,
+      "curricular_layer_decision": "PENDING_OWNER_ACADEMIC_REVIEW",
+      "reviewer_verdict_not_auto_accepted": true,
+      "academic_pass_authorized": false
+    },
+    {
+      "question_id": "NUM02V1_131",
+      "source_key": "G6T2",
+      "printed_pages": [
+        35
+      ],
+      "pdf_pages": [
+        36
+      ],
+      "r27_task": "Giải thích vì sao 6,241 làm tròn đến hàng phần trăm bằng 6,24",
+      "s1_detailed_observation": "Trang 35 khung quy tắc nhìn chữ số ở ngay bên phải hàng làm tròn; lý do áp dụng trực tiếp.",
+      "evidence_type_candidate": "CONCEPT_BASE_DIRECT_RULE",
+      "source_class": "S1_USER_PROVIDED_ORIGINAL_KNTT_SCAN",
+      "original_page_visual_checked": true,
+      "exact_match_with_SGK_exercise": false,
+      "curricular_layer_decision": "PENDING_OWNER_ACADEMIC_REVIEW",
+      "reviewer_verdict_not_auto_accepted": true,
+      "academic_pass_authorized": false
+    },
+    {
+      "question_id": "NUM02V1_132",
+      "source_key": "G6T2",
+      "printed_pages": [
+        35,
+        36,
+        37,
+        38
+      ],
+      "pdf_pages": [
+        36,
+        37,
+        38,
+        39
+      ],
+      "r27_task": "Nhận diện số làm tròn đến hàng phần mười được 6,4",
+      "s1_detailed_observation": "Trang 37 Bài 7.12 yêu cầu làm tròn thuận số 387,0094, còn R27 chọn số từ kết quả đã làm tròn (dạng đảo); trang 38 bắt đầu Bài 31, không thể gắn Bài 30 tới trang 38.",
+      "evidence_type_candidate": "CONCEPT_BASE_NOT_INVERSE_STRUCTURAL_CLONE",
+      "source_class": "S1_USER_PROVIDED_ORIGINAL_KNTT_SCAN",
+      "original_page_visual_checked": true,
+      "exact_match_with_SGK_exercise": false,
+      "curricular_layer_decision": "PENDING_OWNER_ACADEMIC_REVIEW",
+      "reviewer_verdict_not_auto_accepted": true,
+      "academic_pass_authorized": false
+    },
+    {
+      "question_id": "QUA12V1_121",
+      "source_key": "G9T2",
+      "printed_pages": [
+        4,
+        5,
+        6,
+        10,
+        13,
+        113,
+        114
+      ],
+      "pdf_pages": [
+        6,
+        7,
+        8,
+        12,
+        15,
+        115,
+        116
+      ],
+      "r27_task": "Lập phương trình hoành độ giao điểm y=x² và y=3x+4",
+      "s1_detailed_observation": "Bài 18 trang 4–9 dạy y=ax²; Bài 19 trang 10–17 dạy phương trình bậc hai; trang 113–114 tìm giao điểm bằng GeoGebra, không đặt phương trình x²=3x+4 ở các bài đã đối chiếu.",
+      "evidence_type_candidate": "MULTI_CONCEPT_BASE_WITH_S1_INTERSECTION_ACTIVITY",
+      "source_class": "S1_USER_PROVIDED_ORIGINAL_KNTT_SCAN",
+      "original_page_visual_checked": true,
+      "exact_match_with_SGK_exercise": false,
+      "curricular_layer_decision": "PENDING_OWNER_ACADEMIC_REVIEW",
+      "reviewer_verdict_not_auto_accepted": true,
+      "academic_pass_authorized": false
+    },
+    {
+      "question_id": "QUA12V1_122",
+      "source_key": "G9T2",
+      "printed_pages": [
+        4,
+        6,
+        10,
+        12,
+        13,
+        113,
+        114
+      ],
+      "pdf_pages": [
+        6,
+        8,
+        12,
+        14,
+        15,
+        115,
+        116
+      ],
+      "r27_task": "Giải hoành độ hai giao điểm y=x² và y=x+2",
+      "s1_detailed_observation": "Trang 113–114 yêu cầu tìm tọa độ giao điểm bằng phần mềm GeoGebra; Bài 19 dạy giải phương trình bậc hai nhưng Thực hành 3 không đưa lời giải thủ công x²=x+2.",
+      "evidence_type_candidate": "MULTI_CONCEPT_BASE_NOT_IDENTICAL_METHOD",
+      "source_class": "S1_USER_PROVIDED_ORIGINAL_KNTT_SCAN",
+      "original_page_visual_checked": true,
+      "exact_match_with_SGK_exercise": false,
+      "curricular_layer_decision": "PENDING_OWNER_ACADEMIC_REVIEW",
+      "reviewer_verdict_not_auto_accepted": true,
+      "academic_pass_authorized": false
+    },
+    {
+      "question_id": "QUA12V1_123",
+      "source_key": "G9T2",
+      "printed_pages": [
+        4,
+        6,
+        13,
+        14,
+        113,
+        114
+      ],
+      "pdf_pages": [
+        6,
+        8,
+        15,
+        16,
+        115,
+        116
+      ],
+      "r27_task": "Tiếp xúc y=2x−1 và y=x² nhờ phương trình có nghiệm kép",
+      "s1_detailed_observation": "Bài 19 trang 14 Ví dụ 6 nêu Delta=0 => nghiệm kép của phương trình bậc hai; trang 113–114 có tìm giao điểm đồ thị. Chưa có minh họa trực tiếp định lí tiếp xúc parabol–đường thẳng thông qua nghiệm kép trong các đoạn S1 này.",
+      "evidence_type_candidate": "COMPOSITE_CONCEPT_BASE_NO_DIRECT_TANGENCY_EXERCISE",
+      "source_class": "S1_USER_PROVIDED_ORIGINAL_KNTT_SCAN",
+      "original_page_visual_checked": true,
+      "exact_match_with_SGK_exercise": false,
+      "curricular_layer_decision": "PENDING_OWNER_ACADEMIC_REVIEW",
+      "reviewer_verdict_not_auto_accepted": true,
+      "academic_pass_authorized": false
+    }
+  ]
+}

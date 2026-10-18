@@ -1,0 +1,177 @@
+{
+  "schema": "math-r33-secondary-evidence-repair-observations-v1",
+  "packet_id": "MATH-R27-NEW-MCQ-40-20261018",
+  "scope": "16 priority flags in the 24 R32 target IDs; remaining 8 still require primary S1 review.",
+  "evidence_authority": "SECONDARY_PUBLIC_REFERENCE_ONLY",
+  "review_status": "S1_PRIMARY_UNVERIFIED",
+  "external_references_not_S1_signoff": true,
+  "owner_academic_approval": false,
+  "production_counter_authorized": false,
+  "original_R27_items_modified": false,
+  "reviewer_R32_claims_automatically_accepted": false,
+  "source": "Source-locked R27/R30/R31 repository packets; user-pasted R32 claims; S2 public pages explicitly linked.",
+  "observations": [
+    {
+      "question_id": "NUM02V1_127",
+      "concern": "R32 cites Vận dụng 1 (p36) and Bài 7.14 (p37); both include extra steps/context absent from straightforward rounding of one measured length.",
+      "editorial_candidate_not_approved": "Consider CONCEPT_BASE for rounding measurements; STRUCTURAL_CLONE requires a closer S1 task.",
+      "secondary_reference_urls": [
+        "https://loigiaihay.com/tra-loi-van-dung-1-trang-36-sgk-toan-6-ket-noi-tri-thuc-voi-cuoc-song-a94999.html",
+        "https://vndoc.com/toan-lop-6-bai-30-lam-tron-va-uoc-luong-ket-noi-tri-thuc-244696"
+      ],
+      "primary_S1_page_scan_verified": false,
+      "academic_verdict": "INSUFFICIENT_EVIDENCE_FOR_R33_SIGNOFF"
+    },
+    {
+      "question_id": "NUM02V1_128",
+      "concern": "Bài 7.16 (p37) asks budgeting/estimating several purchases, not rounding one VND price to nearest thousand.",
+      "editorial_candidate_not_approved": "Check for direct S1 price-rounding example; otherwise cite Bài 30 rounding rule as CONCEPT_BASE.",
+      "secondary_reference_urls": [
+        "https://vndoc.com/toan-lop-6-bai-30-lam-tron-va-uoc-luong-ket-noi-tri-thuc-244696"
+      ],
+      "primary_S1_page_scan_verified": false,
+      "academic_verdict": "INSUFFICIENT_EVIDENCE_FOR_R33_SIGNOFF"
+    },
+    {
+      "question_id": "NUM02V1_129",
+      "concern": "Bài 7.13 (p37) estimates a 3-term sum to identify a candidate answer; R27 estimates a 2-term sum after fixed rounding.",
+      "editorial_candidate_not_approved": "Classify same addition-estimation FAMILY but verify STRUCTURAL_CLONE granularity, else CONCEPT_BASE.",
+      "secondary_reference_urls": [
+        "https://sachbaitap.com/giai-bai-712-713-714-715-716-trang-37-sgk-toan-6-ket-noi-tri-thuc-tap-2-c158a24770.html"
+      ],
+      "primary_S1_page_scan_verified": false,
+      "academic_verdict": "INSUFFICIENT_EVIDENCE_FOR_R33_SIGNOFF"
+    },
+    {
+      "question_id": "NUM02V1_130",
+      "concern": "R32 cites Bài 7.13 (p37) on addition to justify estimation of a PRODUCT.",
+      "editorial_candidate_not_approved": "Find a product-estimation example in original S1; otherwise retain Bài 30 concept only and remove 7.13 as structural clone.",
+      "secondary_reference_urls": [
+        "https://vndoc.com/toan-lop-6-bai-30-lam-tron-va-uoc-luong-ket-noi-tri-thuc-244696"
+      ],
+      "primary_S1_page_scan_verified": false,
+      "academic_verdict": "INSUFFICIENT_EVIDENCE_FOR_R33_SIGNOFF"
+    },
+    {
+      "question_id": "NUM02V1_132",
+      "concern": "R32 span 37–38 crosses into Bài 31; cited Bài 7.12 p37 is FORWARD rounding while R27 uses INVERSE recognition.",
+      "editorial_candidate_not_approved": "Candidate Bài 30 p35–37, p37 Bài 7.12 as CONCEPT_BASE, not confirmed inverse STRUCTURAL_CLONE.",
+      "secondary_reference_urls": [
+        "https://loigiaihay.com/giai-bai-712-trang-37-sgk-toan-6-ket-noi-tri-thuc-voi-cuoc-song-a87681.html"
+      ],
+      "primary_S1_page_scan_verified": false,
+      "academic_verdict": "INSUFFICIENT_EVIDENCE_FOR_R33_SIGNOFF"
+    },
+    {
+      "question_id": "NUM02V1_145",
+      "concern": "R32 REASON field truncated by pasted Markdown | symbols. Claim references Bài 2.16 without preserved full reasoning.",
+      "editorial_candidate_not_approved": "Re-submit intact citation and compare Bài 7 Mục 3 direct |-12| calculation.",
+      "secondary_reference_urls": [
+        "https://loigiaihay.com/giai-bai-218-trang-36-sgk-toan-7-tap-1-ket-noi-tri-thuc-a105488.html"
+      ],
+      "primary_S1_page_scan_verified": false,
+      "academic_verdict": "INSUFFICIENT_EVIDENCE_FOR_R33_SIGNOFF"
+    },
+    {
+      "question_id": "NUM02V1_146",
+      "concern": "R32 REASON truncated. Refers to Bài 2.18 where all solutions to |x|=2.5 are sought; R27 MCQ asks one candidate having |x|=7.",
+      "editorial_candidate_not_approved": "Check STRUCTURAL_CLONE vs CONCEPT_BASE for positive absolute value preimage under asymmetric MCQ options.",
+      "secondary_reference_urls": [
+        "https://loigiaihay.com/giai-bai-218-trang-36-sgk-toan-7-tap-1-ket-noi-tri-thuc-a105488.html"
+      ],
+      "primary_S1_page_scan_verified": false,
+      "academic_verdict": "INSUFFICIENT_EVIDENCE_FOR_R33_SIGNOFF"
+    },
+    {
+      "question_id": "NUM02V1_147",
+      "concern": "R32 marks EXACT_MATCH with Bài 2.18 (|x|=2.5), but R27 uses |x|=4 and asks a multiple-choice proposition; REASON truncated.",
+      "editorial_candidate_not_approved": "Propose STRUCTURAL_CLONE, not EXACT_MATCH, based on S2 pending direct S1 confirmation.",
+      "secondary_reference_urls": [
+        "https://loigiaihay.com/giai-bai-218-trang-36-sgk-toan-7-tap-1-ket-noi-tri-thuc-a105488.html"
+      ],
+      "primary_S1_page_scan_verified": false,
+      "academic_verdict": "INSUFFICIENT_EVIDENCE_FOR_R33_SIGNOFF"
+    },
+    {
+      "question_id": "ALG04V2_133",
+      "concern": "R32 Bài 7.32a locator page 40–42; independent references place Bài 7.32 at page 43; SGK example degree differs.",
+      "editorial_candidate_not_approved": "Separate Bài 28 rule pp40–42 from Bài 7.32a p43; compare exact reasoning structure.",
+      "secondary_reference_urls": [
+        "https://hayhochoi.vn/bai-732-trang-43-toan-7-tap-2-ket-noi-tri-thuc.html"
+      ],
+      "primary_S1_page_scan_verified": false,
+      "academic_verdict": "INSUFFICIENT_EVIDENCE_FOR_R33_SIGNOFF"
+    },
+    {
+      "question_id": "ALG04V2_134",
+      "concern": "R32 cites Bài 7.39a inside pp41–43; public crosscheck places Bài 7.39a at p45; polynomial form differs.",
+      "editorial_candidate_not_approved": "Separate Luyện tập 2b p41 from Bài 7.39a p45; use nearest same-structure reference.",
+      "secondary_reference_urls": [
+        "https://loigiaihay.com/giai-bai-739-trang-45-sgk-toan-7-tap-2-ket-noi-tri-thuc-a110381.html"
+      ],
+      "primary_S1_page_scan_verified": false,
+      "academic_verdict": "INSUFFICIENT_EVIDENCE_FOR_R33_SIGNOFF"
+    },
+    {
+      "question_id": "ALG04V2_135",
+      "concern": "R32 places Bài 7.32 within pp40–42 although exercise appears on p43.",
+      "editorial_candidate_not_approved": "Separate Bài 28 algorithm pp40–42 and Bài 7.32 p43; verify CLONE level.",
+      "secondary_reference_urls": [
+        "https://hayhochoi.vn/bai-732-trang-43-toan-7-tap-2-ket-noi-tri-thuc.html"
+      ],
+      "primary_S1_page_scan_verified": false,
+      "academic_verdict": "INSUFFICIENT_EVIDENCE_FOR_R33_SIGNOFF"
+    },
+    {
+      "question_id": "ALG04V2_136",
+      "concern": "R32 claims exact match with Bài 7.39a on p43; S2 puts exactly (x^3-8):(x-2) in Bài 7.39a p45. R27 adds MCQ options.",
+      "editorial_candidate_not_approved": "Candidate p45, Luyện tập chung, EXACT_MATH_EXPRESSION with MCQ adaptation; require S1 before EXACT_MATCH claim.",
+      "secondary_reference_urls": [
+        "https://loigiaihay.com/giai-bai-739-trang-45-sgk-toan-7-tap-2-ket-noi-tri-thuc-a110381.html",
+        "https://baitapsgk.com/lop-7/toan-lop-7-sach-ket-noi-tri-thuc/bai-7-39-trang-45-toan-7-tap-2-thuc-hien-cac-phep-tinh-sau-a-x3-8-x-2.html"
+      ],
+      "primary_S1_page_scan_verified": false,
+      "academic_verdict": "INSUFFICIENT_EVIDENCE_FOR_R33_SIGNOFF"
+    },
+    {
+      "question_id": "ALG04V2_137",
+      "concern": "R32 cites Bài 7.32b in pp40–42; public crosscheck p43. Its fourth-degree dividend differs from R27's third-degree dividend.",
+      "editorial_candidate_not_approved": "Treat Bài 7.32b p43 as candidate procedure analogy, verify whether STRUCTURAL_CLONE or CONCEPT_BASE.",
+      "secondary_reference_urls": [
+        "https://hayhochoi.vn/bai-732-trang-43-toan-7-tap-2-ket-noi-tri-thuc.html"
+      ],
+      "primary_S1_page_scan_verified": false,
+      "academic_verdict": "INSUFFICIENT_EVIDENCE_FOR_R33_SIGNOFF"
+    },
+    {
+      "question_id": "QUA12V1_121",
+      "concern": "R32 conflates Bài 18/19 pp11–17 with GeoGebra p114; TH3 p114 asks graph and intersection via software, not necessarily algebraic equation setup.",
+      "editorial_candidate_not_approved": "Separate Bài18 pp4–9, Bài19 pp10–17, TH3 p114; Entrance10 remains proposed, not approved.",
+      "secondary_reference_urls": [
+        "https://vietjack.com/toan-9-kn/thuc-hanh-3-trang-114-toan-9-tap-2.jsp"
+      ],
+      "primary_S1_page_scan_verified": false,
+      "academic_verdict": "INSUFFICIENT_EVIDENCE_FOR_R33_SIGNOFF"
+    },
+    {
+      "question_id": "QUA12V1_122",
+      "concern": "R32 calls intersection solving Entrance10; TH3 explicitly includes finding intersections but uses GeoGebra, while R27 solves quadratic by hand.",
+      "editorial_candidate_not_approved": "Independent layer assessment: S1 Core concepts vs optional algebraic transfer; require S1 and S3 for any exam-specific claims.",
+      "secondary_reference_urls": [
+        "https://vietjack.com/toan-9-kn/thuc-hanh-3-trang-114-toan-9-tap-2.jsp"
+      ],
+      "primary_S1_page_scan_verified": false,
+      "academic_verdict": "INSUFFICIENT_EVIDENCE_FOR_R33_SIGNOFF"
+    },
+    {
+      "question_id": "QUA12V1_123",
+      "concern": "R32 cites GeoGebra intersection TH3 p114 for tangent-by-double-root criterion, which is not directly stated in the displayed TH3 exercise.",
+      "editorial_candidate_not_approved": "Require direct S1 tangency evidence or mark insufficient for Core; Entrance10 is only a candidate pending academic and S3.",
+      "secondary_reference_urls": [
+        "https://vietjack.com/toan-9-kn/thuc-hanh-3-trang-114-toan-9-tap-2.jsp"
+      ],
+      "primary_S1_page_scan_verified": false,
+      "academic_verdict": "INSUFFICIENT_EVIDENCE_FOR_R33_SIGNOFF"
+    }
+  ]
+}
