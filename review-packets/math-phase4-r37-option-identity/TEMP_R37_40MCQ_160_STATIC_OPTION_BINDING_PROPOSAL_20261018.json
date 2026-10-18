@@ -1,0 +1,1303 @@
+{
+  "schema": "math-r37-r27-40-provisional-authored-option-bindings-v1",
+  "packet_id": "MATH-R27-NEW-MCQ-40-20261018",
+  "prepared_date": "2026-10-18",
+  "approval_status": "QA_STATIC_DESIGN_UNAPPROVED",
+  "source_snapshot": "HISTORICAL_R27_OPTIONS_WITH_SINGLE_APPROVED_R34_LIVE_STEM",
+  "authored_slot_definition": "Position in a verified pinned canonical bank chunk at initial proposal, never a display/shuffle position",
+  "identity_scheme": "OPT_<EXACT_ITEM_ID>_V1_S<AUTHORED_SLOT>",
+  "live_r34_stem_exception": "QUA12V1_121",
+  "live_r34_bank_git_blob": "89b50fb32c6ebd04d57e41f6c2d5ae1f70384c08",
+  "source_sha256_definition": "sha256(JSON.stringify(current entire exact question record))",
+  "source_sha256_is_git_blob_sha1": false,
+  "unique_items": 40,
+  "unique_options": 160,
+  "canonical_bank_metadata_modified": false,
+  "owner_option_identity_approved": false,
+  "production_r19_event_writer_authorized": false,
+  "source_reviewed_skill_family_mapping_authorized": false,
+  "real_learner_data_write_authorized": false,
+  "history_backfill_authorized": false,
+  "entries": [
+    {
+      "item_id": "NUM02V1_121",
+      "topic_id": "CT02",
+      "canonical_bank_file": "02-so-va-phep-tinh-v1-05.json",
+      "historical_bank_git_blob": "74e9be4dedcc5c39376455a1c428f1f3ed2bceae",
+      "authored_choices": [
+        {
+          "authored_slot": 0,
+          "option_id": "OPT_NUM02V1_121_V1_S0",
+          "text": "5,8",
+          "correct": true
+        },
+        {
+          "authored_slot": 1,
+          "option_id": "OPT_NUM02V1_121_V1_S1",
+          "text": "5,9",
+          "correct": false
+        },
+        {
+          "authored_slot": 2,
+          "option_id": "OPT_NUM02V1_121_V1_S2",
+          "text": "5,83",
+          "correct": false
+        },
+        {
+          "authored_slot": 3,
+          "option_id": "OPT_NUM02V1_121_V1_S3",
+          "text": "6,0",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "item_id": "NUM02V1_122",
+      "topic_id": "CT02",
+      "canonical_bank_file": "02-so-va-phep-tinh-v1-05.json",
+      "historical_bank_git_blob": "74e9be4dedcc5c39376455a1c428f1f3ed2bceae",
+      "authored_choices": [
+        {
+          "authored_slot": 0,
+          "option_id": "OPT_NUM02V1_122_V1_S0",
+          "text": "12,34",
+          "correct": false
+        },
+        {
+          "authored_slot": 1,
+          "option_id": "OPT_NUM02V1_122_V1_S1",
+          "text": "12,35",
+          "correct": true
+        },
+        {
+          "authored_slot": 2,
+          "option_id": "OPT_NUM02V1_122_V1_S2",
+          "text": "12,3",
+          "correct": false
+        },
+        {
+          "authored_slot": 3,
+          "option_id": "OPT_NUM02V1_122_V1_S3",
+          "text": "12,349",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "item_id": "NUM02V1_123",
+      "topic_id": "CT02",
+      "canonical_bank_file": "02-so-va-phep-tinh-v1-05.json",
+      "historical_bank_git_blob": "74e9be4dedcc5c39376455a1c428f1f3ed2bceae",
+      "authored_choices": [
+        {
+          "authored_slot": 0,
+          "option_id": "OPT_NUM02V1_123_V1_S0",
+          "text": "4,26",
+          "correct": false
+        },
+        {
+          "authored_slot": 1,
+          "option_id": "OPT_NUM02V1_123_V1_S1",
+          "text": "4,27",
+          "correct": true
+        },
+        {
+          "authored_slot": 2,
+          "option_id": "OPT_NUM02V1_123_V1_S2",
+          "text": "4,3",
+          "correct": false
+        },
+        {
+          "authored_slot": 3,
+          "option_id": "OPT_NUM02V1_123_V1_S3",
+          "text": "4,265",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "item_id": "NUM02V1_124",
+      "topic_id": "CT02",
+      "canonical_bank_file": "02-so-va-phep-tinh-v1-05.json",
+      "historical_bank_git_blob": "74e9be4dedcc5c39376455a1c428f1f3ed2bceae",
+      "authored_choices": [
+        {
+          "authored_slot": 0,
+          "option_id": "OPT_NUM02V1_124_V1_S0",
+          "text": "0,99",
+          "correct": false
+        },
+        {
+          "authored_slot": 1,
+          "option_id": "OPT_NUM02V1_124_V1_S1",
+          "text": "1,00",
+          "correct": true
+        },
+        {
+          "authored_slot": 2,
+          "option_id": "OPT_NUM02V1_124_V1_S2",
+          "text": "0,996",
+          "correct": false
+        },
+        {
+          "authored_slot": 3,
+          "option_id": "OPT_NUM02V1_124_V1_S3",
+          "text": "1,06",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "item_id": "NUM02V1_125",
+      "topic_id": "CT02",
+      "canonical_bank_file": "02-so-va-phep-tinh-v1-05.json",
+      "historical_bank_git_blob": "74e9be4dedcc5c39376455a1c428f1f3ed2bceae",
+      "authored_choices": [
+        {
+          "authored_slot": 0,
+          "option_id": "OPT_NUM02V1_125_V1_S0",
+          "text": "73",
+          "correct": true
+        },
+        {
+          "authored_slot": 1,
+          "option_id": "OPT_NUM02V1_125_V1_S1",
+          "text": "74",
+          "correct": false
+        },
+        {
+          "authored_slot": 2,
+          "option_id": "OPT_NUM02V1_125_V1_S2",
+          "text": "73,5",
+          "correct": false
+        },
+        {
+          "authored_slot": 3,
+          "option_id": "OPT_NUM02V1_125_V1_S3",
+          "text": "74,5",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "item_id": "NUM02V1_126",
+      "topic_id": "CT02",
+      "canonical_bank_file": "02-so-va-phep-tinh-v1-05.json",
+      "historical_bank_git_blob": "74e9be4dedcc5c39376455a1c428f1f3ed2bceae",
+      "authored_choices": [
+        {
+          "authored_slot": 0,
+          "option_id": "OPT_NUM02V1_126_V1_S0",
+          "text": "73",
+          "correct": false
+        },
+        {
+          "authored_slot": 1,
+          "option_id": "OPT_NUM02V1_126_V1_S1",
+          "text": "74",
+          "correct": true
+        },
+        {
+          "authored_slot": 2,
+          "option_id": "OPT_NUM02V1_126_V1_S2",
+          "text": "73,6",
+          "correct": false
+        },
+        {
+          "authored_slot": 3,
+          "option_id": "OPT_NUM02V1_126_V1_S3",
+          "text": "74,6",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "item_id": "NUM02V1_127",
+      "topic_id": "CT02",
+      "canonical_bank_file": "02-so-va-phep-tinh-v1-05.json",
+      "historical_bank_git_blob": "74e9be4dedcc5c39376455a1c428f1f3ed2bceae",
+      "authored_choices": [
+        {
+          "authored_slot": 0,
+          "option_id": "OPT_NUM02V1_127_V1_S0",
+          "text": "2,74 m",
+          "correct": false
+        },
+        {
+          "authored_slot": 1,
+          "option_id": "OPT_NUM02V1_127_V1_S1",
+          "text": "2,75 m",
+          "correct": true
+        },
+        {
+          "authored_slot": 2,
+          "option_id": "OPT_NUM02V1_127_V1_S2",
+          "text": "2,7 m",
+          "correct": false
+        },
+        {
+          "authored_slot": 3,
+          "option_id": "OPT_NUM02V1_127_V1_S3",
+          "text": "2,746 m",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "item_id": "NUM02V1_128",
+      "topic_id": "CT02",
+      "canonical_bank_file": "02-so-va-phep-tinh-v1-05.json",
+      "historical_bank_git_blob": "74e9be4dedcc5c39376455a1c428f1f3ed2bceae",
+      "authored_choices": [
+        {
+          "authored_slot": 0,
+          "option_id": "OPT_NUM02V1_128_V1_S0",
+          "text": "48.000 đồng",
+          "correct": false
+        },
+        {
+          "authored_slot": 1,
+          "option_id": "OPT_NUM02V1_128_V1_S1",
+          "text": "49.000 đồng",
+          "correct": true
+        },
+        {
+          "authored_slot": 2,
+          "option_id": "OPT_NUM02V1_128_V1_S2",
+          "text": "48.650 đồng",
+          "correct": false
+        },
+        {
+          "authored_slot": 3,
+          "option_id": "OPT_NUM02V1_128_V1_S3",
+          "text": "50.000 đồng",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "item_id": "NUM02V1_129",
+      "topic_id": "CT02",
+      "canonical_bank_file": "02-so-va-phep-tinh-v1-05.json",
+      "historical_bank_git_blob": "74e9be4dedcc5c39376455a1c428f1f3ed2bceae",
+      "authored_choices": [
+        {
+          "authored_slot": 0,
+          "option_id": "OPT_NUM02V1_129_V1_S0",
+          "text": "40",
+          "correct": false
+        },
+        {
+          "authored_slot": 1,
+          "option_id": "OPT_NUM02V1_129_V1_S1",
+          "text": "49",
+          "correct": false
+        },
+        {
+          "authored_slot": 2,
+          "option_id": "OPT_NUM02V1_129_V1_S2",
+          "text": "50",
+          "correct": true
+        },
+        {
+          "authored_slot": 3,
+          "option_id": "OPT_NUM02V1_129_V1_S3",
+          "text": "51",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "item_id": "NUM02V1_130",
+      "topic_id": "CT02",
+      "canonical_bank_file": "02-so-va-phep-tinh-v1-05.json",
+      "historical_bank_git_blob": "74e9be4dedcc5c39376455a1c428f1f3ed2bceae",
+      "authored_choices": [
+        {
+          "authored_slot": 0,
+          "option_id": "OPT_NUM02V1_130_V1_S0",
+          "text": "80",
+          "correct": false
+        },
+        {
+          "authored_slot": 1,
+          "option_id": "OPT_NUM02V1_130_V1_S1",
+          "text": "90",
+          "correct": false
+        },
+        {
+          "authored_slot": 2,
+          "option_id": "OPT_NUM02V1_130_V1_S2",
+          "text": "100",
+          "correct": true
+        },
+        {
+          "authored_slot": 3,
+          "option_id": "OPT_NUM02V1_130_V1_S3",
+          "text": "110",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "item_id": "NUM02V1_131",
+      "topic_id": "CT02",
+      "canonical_bank_file": "02-so-va-phep-tinh-v1-05.json",
+      "historical_bank_git_blob": "74e9be4dedcc5c39376455a1c428f1f3ed2bceae",
+      "authored_choices": [
+        {
+          "authored_slot": 0,
+          "option_id": "OPT_NUM02V1_131_V1_S0",
+          "text": "Vì chữ số hàng phần nghìn là 1 < 5 nên giữ nguyên hàng phần trăm.",
+          "correct": true
+        },
+        {
+          "authored_slot": 1,
+          "option_id": "OPT_NUM02V1_131_V1_S1",
+          "text": "Vì luôn bỏ tất cả chữ số sau hàng phần trăm.",
+          "correct": false
+        },
+        {
+          "authored_slot": 2,
+          "option_id": "OPT_NUM02V1_131_V1_S2",
+          "text": "Vì chữ số hàng phần mười là 2 < 5.",
+          "correct": false
+        },
+        {
+          "authored_slot": 3,
+          "option_id": "OPT_NUM02V1_131_V1_S3",
+          "text": "Vì 6,241 nhỏ hơn 6,25.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "item_id": "NUM02V1_132",
+      "topic_id": "CT02",
+      "canonical_bank_file": "02-so-va-phep-tinh-v1-05.json",
+      "historical_bank_git_blob": "74e9be4dedcc5c39376455a1c428f1f3ed2bceae",
+      "authored_choices": [
+        {
+          "authored_slot": 0,
+          "option_id": "OPT_NUM02V1_132_V1_S0",
+          "text": "6,34",
+          "correct": false
+        },
+        {
+          "authored_slot": 1,
+          "option_id": "OPT_NUM02V1_132_V1_S1",
+          "text": "6,36",
+          "correct": true
+        },
+        {
+          "authored_slot": 2,
+          "option_id": "OPT_NUM02V1_132_V1_S2",
+          "text": "6,45",
+          "correct": false
+        },
+        {
+          "authored_slot": 3,
+          "option_id": "OPT_NUM02V1_132_V1_S3",
+          "text": "6,52",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "item_id": "NUM02V1_133",
+      "topic_id": "CT02",
+      "canonical_bank_file": "02-so-va-phep-tinh-v1-06.json",
+      "historical_bank_git_blob": "c39c177609cd5440de98b81461896c80f7166121",
+      "authored_choices": [
+        {
+          "authored_slot": 0,
+          "option_id": "OPT_NUM02V1_133_V1_S0",
+          "text": "\\(-\\frac1{10}\\)",
+          "correct": true
+        },
+        {
+          "authored_slot": 1,
+          "option_id": "OPT_NUM02V1_133_V1_S1",
+          "text": "\\(\\frac1{10}\\)",
+          "correct": false
+        },
+        {
+          "authored_slot": 2,
+          "option_id": "OPT_NUM02V1_133_V1_S2",
+          "text": "\\(-\\frac7{10}\\)",
+          "correct": false
+        },
+        {
+          "authored_slot": 3,
+          "option_id": "OPT_NUM02V1_133_V1_S3",
+          "text": "\\(\\frac7{10}\\)",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "item_id": "NUM02V1_134",
+      "topic_id": "CT02",
+      "canonical_bank_file": "02-so-va-phep-tinh-v1-06.json",
+      "historical_bank_git_blob": "c39c177609cd5440de98b81461896c80f7166121",
+      "authored_choices": [
+        {
+          "authored_slot": 0,
+          "option_id": "OPT_NUM02V1_134_V1_S0",
+          "text": "\\(1\\)",
+          "correct": true
+        },
+        {
+          "authored_slot": 1,
+          "option_id": "OPT_NUM02V1_134_V1_S1",
+          "text": "\\(\\frac59\\)",
+          "correct": false
+        },
+        {
+          "authored_slot": 2,
+          "option_id": "OPT_NUM02V1_134_V1_S2",
+          "text": "\\(-1\\)",
+          "correct": false
+        },
+        {
+          "authored_slot": 3,
+          "option_id": "OPT_NUM02V1_134_V1_S3",
+          "text": "\\(\\frac19\\)",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "item_id": "NUM02V1_135",
+      "topic_id": "CT02",
+      "canonical_bank_file": "02-so-va-phep-tinh-v1-06.json",
+      "historical_bank_git_blob": "c39c177609cd5440de98b81461896c80f7166121",
+      "authored_choices": [
+        {
+          "authored_slot": 0,
+          "option_id": "OPT_NUM02V1_135_V1_S0",
+          "text": "\\(-\\frac34\\)",
+          "correct": true
+        },
+        {
+          "authored_slot": 1,
+          "option_id": "OPT_NUM02V1_135_V1_S1",
+          "text": "\\(\\frac34\\)",
+          "correct": false
+        },
+        {
+          "authored_slot": 2,
+          "option_id": "OPT_NUM02V1_135_V1_S2",
+          "text": "\\(-\\frac{45}{16}\\)",
+          "correct": false
+        },
+        {
+          "authored_slot": 3,
+          "option_id": "OPT_NUM02V1_135_V1_S3",
+          "text": "\\(-\\frac12\\)",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "item_id": "NUM02V1_136",
+      "topic_id": "CT02",
+      "canonical_bank_file": "02-so-va-phep-tinh-v1-06.json",
+      "historical_bank_git_blob": "c39c177609cd5440de98b81461896c80f7166121",
+      "authored_choices": [
+        {
+          "authored_slot": 0,
+          "option_id": "OPT_NUM02V1_136_V1_S0",
+          "text": "\\(-\\frac23\\)",
+          "correct": true
+        },
+        {
+          "authored_slot": 1,
+          "option_id": "OPT_NUM02V1_136_V1_S1",
+          "text": "\\(\\frac23\\)",
+          "correct": false
+        },
+        {
+          "authored_slot": 2,
+          "option_id": "OPT_NUM02V1_136_V1_S2",
+          "text": "\\(-\\frac{27}{128}\\)",
+          "correct": false
+        },
+        {
+          "authored_slot": 3,
+          "option_id": "OPT_NUM02V1_136_V1_S3",
+          "text": "\\(-\\frac32\\)",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "item_id": "NUM02V1_137",
+      "topic_id": "CT02",
+      "canonical_bank_file": "02-so-va-phep-tinh-v1-06.json",
+      "historical_bank_git_blob": "c39c177609cd5440de98b81461896c80f7166121",
+      "authored_choices": [
+        {
+          "authored_slot": 0,
+          "option_id": "OPT_NUM02V1_137_V1_S0",
+          "text": "\\(\\frac32\\)",
+          "correct": true
+        },
+        {
+          "authored_slot": 1,
+          "option_id": "OPT_NUM02V1_137_V1_S1",
+          "text": "\\(\\frac12\\)",
+          "correct": false
+        },
+        {
+          "authored_slot": 2,
+          "option_id": "OPT_NUM02V1_137_V1_S2",
+          "text": "\\(-\\frac32\\)",
+          "correct": false
+        },
+        {
+          "authored_slot": 3,
+          "option_id": "OPT_NUM02V1_137_V1_S3",
+          "text": "\\(0\\)",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "item_id": "NUM02V1_138",
+      "topic_id": "CT02",
+      "canonical_bank_file": "02-so-va-phep-tinh-v1-06.json",
+      "historical_bank_git_blob": "c39c177609cd5440de98b81461896c80f7166121",
+      "authored_choices": [
+        {
+          "authored_slot": 0,
+          "option_id": "OPT_NUM02V1_138_V1_S0",
+          "text": "\\(-\\frac18\\)",
+          "correct": true
+        },
+        {
+          "authored_slot": 1,
+          "option_id": "OPT_NUM02V1_138_V1_S1",
+          "text": "\\(\\frac18\\)",
+          "correct": false
+        },
+        {
+          "authored_slot": 2,
+          "option_id": "OPT_NUM02V1_138_V1_S2",
+          "text": "\\(-\\frac16\\)",
+          "correct": false
+        },
+        {
+          "authored_slot": 3,
+          "option_id": "OPT_NUM02V1_138_V1_S3",
+          "text": "\\(\\frac16\\)",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "item_id": "NUM02V1_139",
+      "topic_id": "CT02",
+      "canonical_bank_file": "02-so-va-phep-tinh-v1-06.json",
+      "historical_bank_git_blob": "c39c177609cd5440de98b81461896c80f7166121",
+      "authored_choices": [
+        {
+          "authored_slot": 0,
+          "option_id": "OPT_NUM02V1_139_V1_S0",
+          "text": "\\(\\sqrt3\\)",
+          "correct": true
+        },
+        {
+          "authored_slot": 1,
+          "option_id": "OPT_NUM02V1_139_V1_S1",
+          "text": "\\(0,75\\)",
+          "correct": false
+        },
+        {
+          "authored_slot": 2,
+          "option_id": "OPT_NUM02V1_139_V1_S2",
+          "text": "\\(-2\\)",
+          "correct": false
+        },
+        {
+          "authored_slot": 3,
+          "option_id": "OPT_NUM02V1_139_V1_S3",
+          "text": "\\(0,(6)\\)",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "item_id": "NUM02V1_140",
+      "topic_id": "CT02",
+      "canonical_bank_file": "02-so-va-phep-tinh-v1-06.json",
+      "historical_bank_git_blob": "c39c177609cd5440de98b81461896c80f7166121",
+      "authored_choices": [
+        {
+          "authored_slot": 0,
+          "option_id": "OPT_NUM02V1_140_V1_S0",
+          "text": "Số vô tỉ có biểu diễn thập phân vô hạn không tuần hoàn.",
+          "correct": true
+        },
+        {
+          "authored_slot": 1,
+          "option_id": "OPT_NUM02V1_140_V1_S1",
+          "text": "Mọi số thập phân vô hạn đều vô tỉ.",
+          "correct": false
+        },
+        {
+          "authored_slot": 2,
+          "option_id": "OPT_NUM02V1_140_V1_S2",
+          "text": "Mọi căn bậc hai đều vô tỉ.",
+          "correct": false
+        },
+        {
+          "authored_slot": 3,
+          "option_id": "OPT_NUM02V1_140_V1_S3",
+          "text": "Số vô tỉ không thuộc tập số thực.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "item_id": "NUM02V1_141",
+      "topic_id": "CT02",
+      "canonical_bank_file": "02-so-va-phep-tinh-v1-06.json",
+      "historical_bank_git_blob": "c39c177609cd5440de98b81461896c80f7166121",
+      "authored_choices": [
+        {
+          "authored_slot": 0,
+          "option_id": "OPT_NUM02V1_141_V1_S0",
+          "text": "1",
+          "correct": true
+        },
+        {
+          "authored_slot": 1,
+          "option_id": "OPT_NUM02V1_141_V1_S1",
+          "text": "2",
+          "correct": false
+        },
+        {
+          "authored_slot": 2,
+          "option_id": "OPT_NUM02V1_141_V1_S2",
+          "text": "3",
+          "correct": false
+        },
+        {
+          "authored_slot": 3,
+          "option_id": "OPT_NUM02V1_141_V1_S3",
+          "text": "4",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "item_id": "NUM02V1_142",
+      "topic_id": "CT02",
+      "canonical_bank_file": "02-so-va-phep-tinh-v1-06.json",
+      "historical_bank_git_blob": "c39c177609cd5440de98b81461896c80f7166121",
+      "authored_choices": [
+        {
+          "authored_slot": 0,
+          "option_id": "OPT_NUM02V1_142_V1_S0",
+          "text": "11",
+          "correct": true
+        },
+        {
+          "authored_slot": 1,
+          "option_id": "OPT_NUM02V1_142_V1_S1",
+          "text": "-11",
+          "correct": false
+        },
+        {
+          "authored_slot": 2,
+          "option_id": "OPT_NUM02V1_142_V1_S2",
+          "text": "±11",
+          "correct": false
+        },
+        {
+          "authored_slot": 3,
+          "option_id": "OPT_NUM02V1_142_V1_S3",
+          "text": "121",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "item_id": "NUM02V1_143",
+      "topic_id": "CT02",
+      "canonical_bank_file": "02-so-va-phep-tinh-v1-06.json",
+      "historical_bank_git_blob": "c39c177609cd5440de98b81461896c80f7166121",
+      "authored_choices": [
+        {
+          "authored_slot": 0,
+          "option_id": "OPT_NUM02V1_143_V1_S0",
+          "text": "\\(\\frac57\\)",
+          "correct": true
+        },
+        {
+          "authored_slot": 1,
+          "option_id": "OPT_NUM02V1_143_V1_S1",
+          "text": "\\(-\\frac57\\)",
+          "correct": false
+        },
+        {
+          "authored_slot": 2,
+          "option_id": "OPT_NUM02V1_143_V1_S2",
+          "text": "\\(\\frac{25}{7}\\)",
+          "correct": false
+        },
+        {
+          "authored_slot": 3,
+          "option_id": "OPT_NUM02V1_143_V1_S3",
+          "text": "\\(\\frac5{49}\\)",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "item_id": "NUM02V1_144",
+      "topic_id": "CT02",
+      "canonical_bank_file": "02-so-va-phep-tinh-v1-06.json",
+      "historical_bank_git_blob": "c39c177609cd5440de98b81461896c80f7166121",
+      "authored_choices": [
+        {
+          "authored_slot": 0,
+          "option_id": "OPT_NUM02V1_144_V1_S0",
+          "text": "4",
+          "correct": true
+        },
+        {
+          "authored_slot": 1,
+          "option_id": "OPT_NUM02V1_144_V1_S1",
+          "text": "-4",
+          "correct": false
+        },
+        {
+          "authored_slot": 2,
+          "option_id": "OPT_NUM02V1_144_V1_S2",
+          "text": "±4",
+          "correct": false
+        },
+        {
+          "authored_slot": 3,
+          "option_id": "OPT_NUM02V1_144_V1_S3",
+          "text": "8",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "item_id": "NUM02V1_145",
+      "topic_id": "CT02",
+      "canonical_bank_file": "02-so-va-phep-tinh-v1-07.json",
+      "historical_bank_git_blob": "71b6fe79a5a5778dd9dcdefa00681e6f73f8b23e",
+      "authored_choices": [
+        {
+          "authored_slot": 0,
+          "option_id": "OPT_NUM02V1_145_V1_S0",
+          "text": "12",
+          "correct": true
+        },
+        {
+          "authored_slot": 1,
+          "option_id": "OPT_NUM02V1_145_V1_S1",
+          "text": "−12",
+          "correct": false
+        },
+        {
+          "authored_slot": 2,
+          "option_id": "OPT_NUM02V1_145_V1_S2",
+          "text": "0",
+          "correct": false
+        },
+        {
+          "authored_slot": 3,
+          "option_id": "OPT_NUM02V1_145_V1_S3",
+          "text": "24",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "item_id": "NUM02V1_146",
+      "topic_id": "CT02",
+      "canonical_bank_file": "02-so-va-phep-tinh-v1-07.json",
+      "historical_bank_git_blob": "71b6fe79a5a5778dd9dcdefa00681e6f73f8b23e",
+      "authored_choices": [
+        {
+          "authored_slot": 0,
+          "option_id": "OPT_NUM02V1_146_V1_S0",
+          "text": "−7",
+          "correct": true
+        },
+        {
+          "authored_slot": 1,
+          "option_id": "OPT_NUM02V1_146_V1_S1",
+          "text": "8",
+          "correct": false
+        },
+        {
+          "authored_slot": 2,
+          "option_id": "OPT_NUM02V1_146_V1_S2",
+          "text": "0",
+          "correct": false
+        },
+        {
+          "authored_slot": 3,
+          "option_id": "OPT_NUM02V1_146_V1_S3",
+          "text": "14",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "item_id": "NUM02V1_147",
+      "topic_id": "CT02",
+      "canonical_bank_file": "02-so-va-phep-tinh-v1-07.json",
+      "historical_bank_git_blob": "71b6fe79a5a5778dd9dcdefa00681e6f73f8b23e",
+      "authored_choices": [
+        {
+          "authored_slot": 0,
+          "option_id": "OPT_NUM02V1_147_V1_S0",
+          "text": "x=4 hoặc x=−4",
+          "correct": true
+        },
+        {
+          "authored_slot": 1,
+          "option_id": "OPT_NUM02V1_147_V1_S1",
+          "text": "Chỉ x=4",
+          "correct": false
+        },
+        {
+          "authored_slot": 2,
+          "option_id": "OPT_NUM02V1_147_V1_S2",
+          "text": "Chỉ x=−4",
+          "correct": false
+        },
+        {
+          "authored_slot": 3,
+          "option_id": "OPT_NUM02V1_147_V1_S3",
+          "text": "Không có nghiệm",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "item_id": "RAT03V1_121",
+      "topic_id": "CT03",
+      "canonical_bank_file": "03-ti-le-ti-le-thuc-v1-05.json",
+      "historical_bank_git_blob": "759fd83900fa5b64d5db7f6deb2197c343c46732",
+      "authored_choices": [
+        {
+          "authored_slot": 0,
+          "option_id": "OPT_RAT03V1_121_V1_S0",
+          "text": "750 g",
+          "correct": true
+        },
+        {
+          "authored_slot": 1,
+          "option_id": "OPT_RAT03V1_121_V1_S1",
+          "text": "600 g",
+          "correct": false
+        },
+        {
+          "authored_slot": 2,
+          "option_id": "OPT_RAT03V1_121_V1_S2",
+          "text": "900 g",
+          "correct": false
+        },
+        {
+          "authored_slot": 3,
+          "option_id": "OPT_RAT03V1_121_V1_S3",
+          "text": "1200 g",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "item_id": "RAT03V1_122",
+      "topic_id": "CT03",
+      "canonical_bank_file": "03-ti-le-ti-le-thuc-v1-05.json",
+      "historical_bank_git_blob": "759fd83900fa5b64d5db7f6deb2197c343c46732",
+      "authored_choices": [
+        {
+          "authored_slot": 0,
+          "option_id": "OPT_RAT03V1_122_V1_S0",
+          "text": "1,5 km",
+          "correct": true
+        },
+        {
+          "authored_slot": 1,
+          "option_id": "OPT_RAT03V1_122_V1_S1",
+          "text": "150 km",
+          "correct": false
+        },
+        {
+          "authored_slot": 2,
+          "option_id": "OPT_RAT03V1_122_V1_S2",
+          "text": "15 km",
+          "correct": false
+        },
+        {
+          "authored_slot": 3,
+          "option_id": "OPT_RAT03V1_122_V1_S3",
+          "text": "0,15 km",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "item_id": "RAT03V1_123",
+      "topic_id": "CT03",
+      "canonical_bank_file": "03-ti-le-ti-le-thuc-v1-05.json",
+      "historical_bank_git_blob": "759fd83900fa5b64d5db7f6deb2197c343c46732",
+      "authored_choices": [
+        {
+          "authored_slot": 0,
+          "option_id": "OPT_RAT03V1_123_V1_S0",
+          "text": "96 nghìn đồng",
+          "correct": true
+        },
+        {
+          "authored_slot": 1,
+          "option_id": "OPT_RAT03V1_123_V1_S1",
+          "text": "72 nghìn đồng",
+          "correct": false
+        },
+        {
+          "authored_slot": 2,
+          "option_id": "OPT_RAT03V1_123_V1_S2",
+          "text": "100 nghìn đồng",
+          "correct": false
+        },
+        {
+          "authored_slot": 3,
+          "option_id": "OPT_RAT03V1_123_V1_S3",
+          "text": "120 nghìn đồng",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "item_id": "RAT03V1_124",
+      "topic_id": "CT03",
+      "canonical_bank_file": "03-ti-le-ti-le-thuc-v1-05.json",
+      "historical_bank_git_blob": "759fd83900fa5b64d5db7f6deb2197c343c46732",
+      "authored_choices": [
+        {
+          "authored_slot": 0,
+          "option_id": "OPT_RAT03V1_124_V1_S0",
+          "text": "1:25",
+          "correct": true
+        },
+        {
+          "authored_slot": 1,
+          "option_id": "OPT_RAT03V1_124_V1_S1",
+          "text": "1:4",
+          "correct": false
+        },
+        {
+          "authored_slot": 2,
+          "option_id": "OPT_RAT03V1_124_V1_S2",
+          "text": "4:1",
+          "correct": false
+        },
+        {
+          "authored_slot": 3,
+          "option_id": "OPT_RAT03V1_124_V1_S3",
+          "text": "1:250",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "item_id": "ALG04V2_133",
+      "topic_id": "CT04",
+      "canonical_bank_file": "04-bieu-thuc-dai-so-v2-06.json",
+      "historical_bank_git_blob": "34e52b7900f77815e0bff79ba82fdb491d6794b3",
+      "authored_choices": [
+        {
+          "authored_slot": 0,
+          "option_id": "OPT_ALG04V2_133_V1_S0",
+          "text": "\\(x+2\\)",
+          "correct": true
+        },
+        {
+          "authored_slot": 1,
+          "option_id": "OPT_ALG04V2_133_V1_S1",
+          "text": "\\(x+1\\)",
+          "correct": false
+        },
+        {
+          "authored_slot": 2,
+          "option_id": "OPT_ALG04V2_133_V1_S2",
+          "text": "\\(x-2\\)",
+          "correct": false
+        },
+        {
+          "authored_slot": 3,
+          "option_id": "OPT_ALG04V2_133_V1_S3",
+          "text": "\\(x^2+2\\)",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "item_id": "ALG04V2_134",
+      "topic_id": "CT04",
+      "canonical_bank_file": "04-bieu-thuc-dai-so-v2-06.json",
+      "historical_bank_git_blob": "34e52b7900f77815e0bff79ba82fdb491d6794b3",
+      "authored_choices": [
+        {
+          "authored_slot": 0,
+          "option_id": "OPT_ALG04V2_134_V1_S0",
+          "text": "\\(x+2\\)",
+          "correct": true
+        },
+        {
+          "authored_slot": 1,
+          "option_id": "OPT_ALG04V2_134_V1_S1",
+          "text": "\\(x-2\\)",
+          "correct": false
+        },
+        {
+          "authored_slot": 2,
+          "option_id": "OPT_ALG04V2_134_V1_S2",
+          "text": "\\(x^2+2\\)",
+          "correct": false
+        },
+        {
+          "authored_slot": 3,
+          "option_id": "OPT_ALG04V2_134_V1_S3",
+          "text": "\\(1\\)",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "item_id": "ALG04V2_135",
+      "topic_id": "CT04",
+      "canonical_bank_file": "04-bieu-thuc-dai-so-v2-06.json",
+      "historical_bank_git_blob": "34e52b7900f77815e0bff79ba82fdb491d6794b3",
+      "authored_choices": [
+        {
+          "authored_slot": 0,
+          "option_id": "OPT_ALG04V2_135_V1_S0",
+          "text": "\\(x+2\\)",
+          "correct": true
+        },
+        {
+          "authored_slot": 1,
+          "option_id": "OPT_ALG04V2_135_V1_S1",
+          "text": "\\(2x+2\\)",
+          "correct": false
+        },
+        {
+          "authored_slot": 2,
+          "option_id": "OPT_ALG04V2_135_V1_S2",
+          "text": "\\(x+1\\)",
+          "correct": false
+        },
+        {
+          "authored_slot": 3,
+          "option_id": "OPT_ALG04V2_135_V1_S3",
+          "text": "\\(x-2\\)",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "item_id": "ALG04V2_136",
+      "topic_id": "CT04",
+      "canonical_bank_file": "04-bieu-thuc-dai-so-v2-06.json",
+      "historical_bank_git_blob": "34e52b7900f77815e0bff79ba82fdb491d6794b3",
+      "authored_choices": [
+        {
+          "authored_slot": 0,
+          "option_id": "OPT_ALG04V2_136_V1_S0",
+          "text": "\\(x^2+2x+4\\)",
+          "correct": true
+        },
+        {
+          "authored_slot": 1,
+          "option_id": "OPT_ALG04V2_136_V1_S1",
+          "text": "\\(x^2-2x+4\\)",
+          "correct": false
+        },
+        {
+          "authored_slot": 2,
+          "option_id": "OPT_ALG04V2_136_V1_S2",
+          "text": "\\(x^2+4\\)",
+          "correct": false
+        },
+        {
+          "authored_slot": 3,
+          "option_id": "OPT_ALG04V2_136_V1_S3",
+          "text": "\\(x^2+2\\)",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "item_id": "ALG04V2_137",
+      "topic_id": "CT04",
+      "canonical_bank_file": "04-bieu-thuc-dai-so-v2-06.json",
+      "historical_bank_git_blob": "34e52b7900f77815e0bff79ba82fdb491d6794b3",
+      "authored_choices": [
+        {
+          "authored_slot": 0,
+          "option_id": "OPT_ALG04V2_137_V1_S0",
+          "text": "\\(x^2-1\\)",
+          "correct": true
+        },
+        {
+          "authored_slot": 1,
+          "option_id": "OPT_ALG04V2_137_V1_S1",
+          "text": "\\(x^2+1\\)",
+          "correct": false
+        },
+        {
+          "authored_slot": 2,
+          "option_id": "OPT_ALG04V2_137_V1_S2",
+          "text": "\\(x^2-x-1\\)",
+          "correct": false
+        },
+        {
+          "authored_slot": 3,
+          "option_id": "OPT_ALG04V2_137_V1_S3",
+          "text": "\\(x^2+x-1\\)",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "item_id": "ALG04V2_138",
+      "topic_id": "CT04",
+      "canonical_bank_file": "04-bieu-thuc-dai-so-v2-06.json",
+      "historical_bank_git_blob": "34e52b7900f77815e0bff79ba82fdb491d6794b3",
+      "authored_choices": [
+        {
+          "authored_slot": 0,
+          "option_id": "OPT_ALG04V2_138_V1_S0",
+          "text": "\\(x^2+2x+1\\)",
+          "correct": true
+        },
+        {
+          "authored_slot": 1,
+          "option_id": "OPT_ALG04V2_138_V1_S1",
+          "text": "\\(x^2-2x+1\\)",
+          "correct": false
+        },
+        {
+          "authored_slot": 2,
+          "option_id": "OPT_ALG04V2_138_V1_S2",
+          "text": "\\(x-3\\)",
+          "correct": false
+        },
+        {
+          "authored_slot": 3,
+          "option_id": "OPT_ALG04V2_138_V1_S3",
+          "text": "\\(x^3-x^2-5x-3\\)",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "item_id": "QUA12V1_121",
+      "topic_id": "CT12",
+      "canonical_bank_file": "12-phuong-trinh-bac-hai-viete-v1-05.json",
+      "historical_bank_git_blob": "22c73f3d24020a7db1ead9b8b90c6488c8379ce0",
+      "authored_choices": [
+        {
+          "authored_slot": 0,
+          "option_id": "OPT_QUA12V1_121_V1_S0",
+          "text": "x²−3x−4=0",
+          "correct": true
+        },
+        {
+          "authored_slot": 1,
+          "option_id": "OPT_QUA12V1_121_V1_S1",
+          "text": "x²+3x+4=0",
+          "correct": false
+        },
+        {
+          "authored_slot": 2,
+          "option_id": "OPT_QUA12V1_121_V1_S2",
+          "text": "x²−3x+4=0",
+          "correct": false
+        },
+        {
+          "authored_slot": 3,
+          "option_id": "OPT_QUA12V1_121_V1_S3",
+          "text": "x²+3x−4=0",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "item_id": "QUA12V1_122",
+      "topic_id": "CT12",
+      "canonical_bank_file": "12-phuong-trinh-bac-hai-viete-v1-05.json",
+      "historical_bank_git_blob": "22c73f3d24020a7db1ead9b8b90c6488c8379ce0",
+      "authored_choices": [
+        {
+          "authored_slot": 0,
+          "option_id": "OPT_QUA12V1_122_V1_S0",
+          "text": "−1 và 2",
+          "correct": true
+        },
+        {
+          "authored_slot": 1,
+          "option_id": "OPT_QUA12V1_122_V1_S1",
+          "text": "1 và 2",
+          "correct": false
+        },
+        {
+          "authored_slot": 2,
+          "option_id": "OPT_QUA12V1_122_V1_S2",
+          "text": "−2 và 1",
+          "correct": false
+        },
+        {
+          "authored_slot": 3,
+          "option_id": "OPT_QUA12V1_122_V1_S3",
+          "text": "−1 và −2",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "item_id": "QUA12V1_123",
+      "topic_id": "CT12",
+      "canonical_bank_file": "12-phuong-trinh-bac-hai-viete-v1-05.json",
+      "historical_bank_git_blob": "22c73f3d24020a7db1ead9b8b90c6488c8379ce0",
+      "authored_choices": [
+        {
+          "authored_slot": 0,
+          "option_id": "OPT_QUA12V1_123_V1_S0",
+          "text": "(x−1)²=0 có nghiệm kép",
+          "correct": true
+        },
+        {
+          "authored_slot": 1,
+          "option_id": "OPT_QUA12V1_123_V1_S1",
+          "text": "x²+2x−1=0 có hai nghiệm",
+          "correct": false
+        },
+        {
+          "authored_slot": 2,
+          "option_id": "OPT_QUA12V1_123_V1_S2",
+          "text": "x²−2x−1=0 vô nghiệm",
+          "correct": false
+        },
+        {
+          "authored_slot": 3,
+          "option_id": "OPT_QUA12V1_123_V1_S3",
+          "text": "x²−1=0 có hai nghiệm",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}
