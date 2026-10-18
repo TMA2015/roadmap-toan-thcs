@@ -1,0 +1,205 @@
+{
+  "schema": "math-r35-notebooklm-user-pasted-verdict-transcription-v1",
+  "packet_id": "MATH-R35-R27-REMAINING-16-20261018",
+  "provenance": "Structured per-item transcription of the owner's inline-pasted NotebookLM report in the conversation; NOT a byte-identical original NotebookLM export",
+  "source_type": "USER_PASTED_NOTEBOOKLM_REPORT",
+  "original_file_bytes_available": false,
+  "reviewer_total_input_ids": 16,
+  "reviewer_total_output_verdicts": 16,
+  "reviewer_verdict_counts": {
+    "PASS": 16,
+    "REVISE": 0,
+    "INSUFFICIENT_EVIDENCE": 0
+  },
+  "reviewer_reported_summary_evidence": {
+    "STRUCTURAL_CLONE": 13,
+    "CONCEPT_BASE": 3,
+    "EXACT_MATCH": 0
+  },
+  "reviewer_reported_summary_concept_ids": [
+    "NUM02V1_139",
+    "NUM02V1_140",
+    "NUM02V1_144"
+  ],
+  "computed_per_row_evidence_counts": {
+    "STRUCTURAL_CLONE": 14,
+    "CONCEPT_BASE": 2,
+    "EXACT_MATCH": 0
+  },
+  "reported_summary_row_mismatch": true,
+  "mismatch_explanation": "NUM02V1_144 is STRUCTURAL_CLONE in per-ID row 12 but CONCEPT_BASE in summary parenthetical; actual detailed table contains 14 structural clones and 2 concept bases.",
+  "reviewer_reported_layer_counts": {
+    "KNTT-Core": 16
+  },
+  "math_result_verification": "all_16_basic_results_and_unique_options_independently_checked_no_counterexample_identified",
+  "source_S1_authority_note": "NotebookLM citations are claimed S1 references, not yet an item-by-item same-method independent comparison against publisher original pages.",
+  "academic_pass_authorized": false,
+  "owner_final_academic_signoff": false,
+  "canonical_source_type_layer_writes_authorized": false,
+  "production_skill_counter_authorized": false,
+  "historical_mastery_backfill_authorized": false,
+  "deploy_release_merge_authorized": false,
+  "source_question_options_answer_edit_authorized": false,
+  "rows": [
+    {
+      "item_id": "NUM02V1_133",
+      "evidence_type_in_table": "STRUCTURAL_CLONE",
+      "reviewer_layer_claim": "KNTT-Core",
+      "reviewer_verdict": "PASS",
+      "reviewer_answer_index": 0,
+      "sgk_locator_claim": "T1 Bài 2 tr10–11; Bài 1.7a tr13",
+      "reviewer_reason": "Cộng hai phân số khác mẫu, đáp án 0.",
+      "academic_owner_approved": false
+    },
+    {
+      "item_id": "NUM02V1_134",
+      "evidence_type_in_table": "STRUCTURAL_CLONE",
+      "reviewer_layer_claim": "KNTT-Core",
+      "reviewer_verdict": "PASS",
+      "reviewer_answer_index": 0,
+      "sgk_locator_claim": "T1 Bài 2 tr10–11",
+      "reviewer_reason": "Trừ số âm, đáp án 0.",
+      "academic_owner_approved": false
+    },
+    {
+      "item_id": "NUM02V1_135",
+      "evidence_type_in_table": "STRUCTURAL_CLONE",
+      "reviewer_layer_claim": "KNTT-Core",
+      "reviewer_verdict": "PASS",
+      "reviewer_answer_index": 0,
+      "sgk_locator_claim": "T1 Bài 2 tr12–13",
+      "reviewer_reason": "Nhân số hữu tỉ khác dấu, đáp án 0.",
+      "academic_owner_approved": false
+    },
+    {
+      "item_id": "NUM02V1_136",
+      "evidence_type_in_table": "STRUCTURAL_CLONE",
+      "reviewer_layer_claim": "KNTT-Core",
+      "reviewer_verdict": "PASS",
+      "reviewer_answer_index": 0,
+      "sgk_locator_claim": "T1 Bài 2 tr12–13",
+      "reviewer_reason": "Chia số hữu tỉ bằng nhân nghịch đảo, đáp án 0.",
+      "academic_owner_approved": false
+    },
+    {
+      "item_id": "NUM02V1_137",
+      "evidence_type_in_table": "STRUCTURAL_CLONE",
+      "reviewer_layer_claim": "KNTT-Core",
+      "reviewer_verdict": "PASS",
+      "reviewer_answer_index": 0,
+      "sgk_locator_claim": "T1 Bài 2 tr11–12; Bài 4 tr20",
+      "reviewer_reason": "Nhân trước trừ sau, đáp án 0.",
+      "academic_owner_approved": false
+    },
+    {
+      "item_id": "NUM02V1_138",
+      "evidence_type_in_table": "STRUCTURAL_CLONE",
+      "reviewer_layer_claim": "KNTT-Core",
+      "reviewer_verdict": "PASS",
+      "reviewer_answer_index": 0,
+      "sgk_locator_claim": "T1 Bài 3 tr16–18",
+      "reviewer_reason": "Lũy thừa bậc lẻ của số âm, đáp án 0.",
+      "academic_owner_approved": false
+    },
+    {
+      "item_id": "NUM02V1_139",
+      "evidence_type_in_table": "CONCEPT_BASE",
+      "reviewer_layer_claim": "KNTT-Core",
+      "reviewer_verdict": "PASS",
+      "reviewer_answer_index": 0,
+      "sgk_locator_claim": "T1 Bài 6 tr29–30",
+      "reviewer_reason": "Nhận biết số vô tỉ căn ba, đáp án 0.",
+      "academic_owner_approved": false
+    },
+    {
+      "item_id": "NUM02V1_140",
+      "evidence_type_in_table": "CONCEPT_BASE",
+      "reviewer_layer_claim": "KNTT-Core",
+      "reviewer_verdict": "PASS",
+      "reviewer_answer_index": 0,
+      "sgk_locator_claim": "T1 Bài 6 tr29–30; Bài 7 tr33–34",
+      "reviewer_reason": "Định nghĩa số vô tỉ, phân biệt tập số thực, đáp án 0.",
+      "academic_owner_approved": false
+    },
+    {
+      "item_id": "NUM02V1_141",
+      "evidence_type_in_table": "STRUCTURAL_CLONE",
+      "reviewer_layer_claim": "KNTT-Core",
+      "reviewer_verdict": "PASS",
+      "reviewer_answer_index": 0,
+      "sgk_locator_claim": "T1 Bài 6 tr29–30; Bài 2.13 tr36",
+      "reviewer_reason": "Đếm một số vô tỉ trong bốn số, đáp án 0.",
+      "academic_owner_approved": false
+    },
+    {
+      "item_id": "NUM02V1_142",
+      "evidence_type_in_table": "STRUCTURAL_CLONE",
+      "reviewer_layer_claim": "KNTT-Core",
+      "reviewer_verdict": "PASS",
+      "reviewer_answer_index": 0,
+      "sgk_locator_claim": "T1 Bài 6 tr30; Bài 2.7d tr32",
+      "reviewer_reason": "Căn bậc hai số học của 121, đáp án 0.",
+      "academic_owner_approved": false
+    },
+    {
+      "item_id": "NUM02V1_143",
+      "evidence_type_in_table": "STRUCTURAL_CLONE",
+      "reviewer_layer_claim": "KNTT-Core",
+      "reviewer_verdict": "PASS",
+      "reviewer_answer_index": 0,
+      "sgk_locator_claim": "T1 Bài 6 tr30",
+      "reviewer_reason": "Căn bậc hai số học của phân số, đáp án 0.",
+      "academic_owner_approved": false
+    },
+    {
+      "item_id": "NUM02V1_144",
+      "evidence_type_in_table": "STRUCTURAL_CLONE",
+      "reviewer_layer_claim": "KNTT-Core",
+      "reviewer_verdict": "PASS",
+      "reviewer_answer_index": 0,
+      "sgk_locator_claim": "T1 Bài 6 tr30; Luyện tập 1a",
+      "reviewer_reason": "x=√16, không phải ±4, đáp án 0.",
+      "academic_owner_approved": false
+    },
+    {
+      "item_id": "RAT03V1_121",
+      "evidence_type_in_table": "STRUCTURAL_CLONE",
+      "reviewer_layer_claim": "KNTT-Core",
+      "reviewer_verdict": "PASS",
+      "reviewer_answer_index": 0,
+      "sgk_locator_claim": "T2 Bài 22 tr11–13",
+      "reviewer_reason": "Tỉ lệ thuận lượng bột theo số người, đáp án 0.",
+      "academic_owner_approved": false
+    },
+    {
+      "item_id": "RAT03V1_122",
+      "evidence_type_in_table": "STRUCTURAL_CLONE",
+      "reviewer_layer_claim": "KNTT-Core",
+      "reviewer_verdict": "PASS",
+      "reviewer_answer_index": 0,
+      "sgk_locator_claim": "T2 Bài 20 tr4; Bài 22 tr11–13",
+      "reviewer_reason": "Bản đồ và đổi đơn vị, đáp án 0.",
+      "academic_owner_approved": false
+    },
+    {
+      "item_id": "RAT03V1_123",
+      "evidence_type_in_table": "STRUCTURAL_CLONE",
+      "reviewer_layer_claim": "KNTT-Core",
+      "reviewer_verdict": "PASS",
+      "reviewer_answer_index": 0,
+      "sgk_locator_claim": "T2 Bài 22 tr11–13",
+      "reviewer_reason": "Tỉ lệ thuận đơn giá theo số lượng, đáp án 0.",
+      "academic_owner_approved": false
+    },
+    {
+      "item_id": "RAT03V1_124",
+      "evidence_type_in_table": "STRUCTURAL_CLONE",
+      "reviewer_layer_claim": "KNTT-Core",
+      "reviewer_verdict": "PASS",
+      "reviewer_answer_index": 0,
+      "sgk_locator_claim": "T2 Bài 20 tr4–5",
+      "reviewer_reason": "Tỉ lệ mô hình và vật thật, đáp án 0.",
+      "academic_owner_approved": false
+    }
+  ]
+}
