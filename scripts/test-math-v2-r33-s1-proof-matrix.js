@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 "use strict";
 const assert=require("node:assert/strict"),fs=require("node:fs");
-const {audit,TARGETS,FLAGGED,RECEIPT,PIN,PRIMARY_RECEIPT,PRIMARY_PIN}=require("./prototypes/math-v2-r33-s1-proof-matrix.js");
+const {audit,TARGETS,FLAGGED,RECEIPT,PIN,PRIMARY_RECEIPT,PRIMARY_PIN,G9_CONCEPT_RECEIPT,G9_CONCEPT_PIN}=require("./prototypes/math-v2-r33-s1-proof-matrix.js");
 const a=audit();
 assert.equal(a.schema,"math-v2-r33-provisional-24-row-S1-evidence-matrix-v1");
 assert.equal(a.input_rows,24);
@@ -12,6 +12,12 @@ assert.equal(a.first_party_pages_directly_viewed,5);
 assert.equal(a.first_party_page_observed_item_count,9);
 assert.equal(a.items_still_without_first_party_page_basis,15);
 assert.equal(a.primary_page_observation_receipt_pin,PRIMARY_PIN);
+assert.equal(a.G9_foundational_page_only_item_count,3);
+assert.equal(a.G9_foundational_page_receipt_pin,G9_CONCEPT_PIN);
+assert.deepEqual(a.rows.filter(x=>x.publisher_G9_foundational_page_only_observed)
+ .map(x=>x.question_id),["QUA12V1_121","QUA12V1_122","QUA12V1_123"]);
+assert(a.rows.filter(x=>x.publisher_G9_foundational_page_only_observed).every(x=>
+ !x.first_party_publisher_page_observed&&x.final_citation_verdict==="INSUFFICIENT_EVIDENCE"));
 assert.deepEqual(a.rows.filter(x=>x.first_party_publisher_page_observed).map(x=>x.question_id),[
  "NUM02V1_145","NUM02V1_146","NUM02V1_147",
  "ALG04V2_133","ALG04V2_134","ALG04V2_135","ALG04V2_136","ALG04V2_137","ALG04V2_138"
@@ -55,6 +61,16 @@ primaryBadSource.printed_page_sources.T7T2_P45.observed_page_image="https://exam
 assert.throws(()=>audit({overridePrimary:primaryBadSource}),/R33_INVALID_PUBLISHER_PAGE_LOCATORS/);
 assert.equal(a.safeguards.original_S1_pages_examined_for_subset,true);
 assert.equal(a.safeguards.all_original_S1_citations_validated,false);
+const g9=JSON.parse(fs.readFileSync(G9_CONCEPT_RECEIPT,"utf8"));
+const fakeG9=structuredClone(g9);
+fakeG9.curriculum_layer_approved="KNTT-Core";
+assert.throws(()=>audit({overrideG9Concept:fakeG9}),/R33_INVALID_G9_CONCEPT_OBSERVATION/);
+const fakeG9Pass=structuredClone(g9);
+fakeG9Pass.per_item_final_S1_verdict="PASS";
+assert.throws(()=>audit({overrideG9Concept:fakeG9Pass}),/R33_INVALID_G9_CONCEPT_OBSERVATION/);
+const fakeG9Lesson=structuredClone(g9);
+fakeG9Lesson.page_source_comprehensive_for_lesson=true;
+assert.throws(()=>audit({overrideG9Concept:fakeG9Lesson}),/R33_INVALID_G9_CONCEPT_OBSERVATION/);
 const src=fs.readFileSync("scripts/prototypes/math-v2-r33-s1-proof-matrix.js","utf8");
 assert(!/localStorage|indexedDB|sessionStorage|sendBeacon/.test(src));
 assert(!/writeFile|appendFile|unlinkSync|renameSync|rmSync/.test(src));
