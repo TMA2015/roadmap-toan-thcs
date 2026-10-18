@@ -72,7 +72,10 @@ function audit({root=process.cwd(),registryOverride=null}={}){
     JSON.stringify({...live,question:h.question.question})===JSON.stringify(h.question),
     "R34_APPROVED_WORDING_BRIDGE_CHANGED");
   }else{
-   assert(bank.sha===h.source_git_blob_sha&&
+   // The R34 bank blob changes for every sibling in that three-item chunk.
+  // Each sibling record itself must remain exactly equal to its historical R27 record.
+  assert((bank.sha===h.source_git_blob_sha||
+    (h.source_file===R34_WORDING.source_file&&bank.sha===R34_WORDING.live_blob_sha))&&
     JSON.stringify(live)===JSON.stringify(h.question),
     "CURRENT_SOURCE_CHANGED_"+h.id);
   }
