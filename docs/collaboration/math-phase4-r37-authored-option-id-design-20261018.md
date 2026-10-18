@@ -44,3 +44,24 @@ The read-only prototype `math-v2-r37-static-option-identity-review.js` and test:
 - `MERGE_AUTHORIZED_BY_GREEN_CI=false`
 
 The R37 Draft PR may serve as a design review and QA evidence packet, but *not* as permission for production schema edits. The next decision should approve or reject this scheme before writing actual `option_ids` to live banks.
+
+
+## Additional Skill Family mapping risk found in the existing 131-family registry
+
+A separate read-only comparison of the eight original R27 legacy tag groups against `skill-taxonomy-v2-registry-r1.json` (blob `90e58fa666a0cea4ae41ff7ef82a3cbf80ca11e4`) reveals **academic item-layer PASS does not imply an existing exact assessed-family row**:
+
+| Group | # | Registry candidate and existing relationship | Current gate |
+|---|---:|---|---|
+| CT02 `lam-tron-so` | 12 | `NUM-SETS` includes it as a *diagnostic subskill*, no exact legacy mapping | **REVIEW** |
+| CT02 `phep-tinh-so-huu-ti` | 6 | `NUM-FRACTION-OPS` includes it as a diagnostic subskill, no exact legacy mapping | **REVIEW** |
+| CT02 `so-vo-ti` | 3 | `NUM-SETS` diagnostic subskill, no exact legacy mapping | **REVIEW** |
+| CT02 `can-bac-hai-so-hoc` | 3 | No exact family diagnostic subskill. Existing `can-bac-hai` mapping is `SUPPORTING_SKILL` with `family_id=null` | **NO ASSESSED FAMILY HOLD** |
+| CT02 `gia-tri-tuyet-doi` | 3 | Exact `NUM-ABS` / `ASSESSED_SKILL` / Core legacy mapping | **CANDIDATE ONLY** |
+| CT03 `mo-hinh-ti-le` | 4 | Exact old `RATIO-MODEL` / `ASSESSED_SKILL`, but **Entrance10** while owner approved these 4 questions **KNTT-Core** | **LAYER CONFLICT HOLD** |
+| CT04 `chia-da-thuc-mot-bien` | 6 | `ALG-DIV-MONOMIAL` diagnostic subskill but not exact legacy mapping | **REVIEW** |
+| CT12 `lien-he-do-thi` | 3 | Exact `QUAD-GRAPH` / `ASSESSED_SKILL` / Entrance10 legacy mapping | **CANDIDATE ONLY** |
+
+**Illustrative resolution for review, not a new approval:** the four CT03 word problems have materially different reasoning. `RAT03V1_121` (baking quantity) and `RAT03V1_123` (unit price) use **direct proportionality** (candidate `RATIO-DIRECT`, KNTT-Core); `RAT03V1_122` (map scale) and `RAT03V1_124` (model scale) use **basic ratio/scale** (candidate `RATIO-BASIC`, KNTT-Core). This split better respects the owner's *item* layer approval than importing the older tag's Entrance10 family into all four. It must receive independent per-item Skill Family review and owner authorization before it can change policy or award credit.
+
+**Readiness status:** exactly **0/40 new MCQs may automatically earn a reviewed Skill credit** merely from the mappings described here, including the 6 with exact legacy mapping. R37's 160 proposed stable option tokens solve only a *necessary identity precondition* in a QA simulation, not the independent source-to-Skill Family, retry/durability, device validation, or owner approval gates.
+
