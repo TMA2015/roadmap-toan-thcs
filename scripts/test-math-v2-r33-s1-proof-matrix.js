@@ -8,7 +8,10 @@ assert.equal(a.input_rows,24);
 const editorialPath="review-packets/math-phase4-r27-mcq-40/TEMP_R33_OWNER_EDITORIAL_24_ID_METADATA_DECISION_MATRIX_20261018.md";
 const editorial=fs.readFileSync(editorialPath,"utf8");
 assert(editorial.includes("EDITORIAL_CANDIDATE_NOT_ACADEMICALLY_APPROVED"));
-const editorialRows=editorial.split("\n")
+const decisionTable=editorial.split("## Proposed per-item citation and classification")[1]
+ .split("## Do not silently import")[0];
+const editorialRows=decisionTable.split("
+")
  .filter(line=>/^\| `(?:NUM02V1_|ALG04V2_|QUA12V1_)\d+` \|/.test(line))
  .map(line=>{
   const cells=line.split("|").map(x=>x.trim());
