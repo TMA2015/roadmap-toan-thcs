@@ -96,7 +96,7 @@ function evaluate(review,source=inspect()){
     entry.source_references.every(x=>SOURCE_CLASSES.has(x.source_class)),
     "UNUSABLE_SOURCE_"+entry.question_id);
   }
-  if(entry.verdict!=="PASS")problems.push({
+  if(entry.verdict==="REVISE"||entry.verdict==="INSUFFICIENT_EVIDENCE")problems.push({
    question_id:entry.question_id,status:entry.verdict,reason:entry.issue});
  }
  requireOk(seen.size===source.rows.length,"MISSING_REVIEW_IDS");
