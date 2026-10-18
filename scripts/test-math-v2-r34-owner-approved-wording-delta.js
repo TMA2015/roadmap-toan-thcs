@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 "use strict";
 const assert=require("node:assert/strict"),fs=require("node:fs");
-const {audit,FILE,FINGERPRINT}=require("./prototypes/math-v2-r34-owner-approved-wording-delta.js");
+const {audit,FILE,FINGERPRINT,RECORD_PINS}=require("./prototypes/math-v2-r34-owner-approved-wording-delta.js");
 const {R34_WORDING,PINS,inspect:inspectR27,historicalBytesForR27}=
  require("./prototypes/math-v2-r27-mcq-source-review.js");
 const {gitBlob}=require("./prototypes/math-v2-source-locked-skill-audit-r22.js");
@@ -14,6 +14,8 @@ assert.equal(a.answer_index,0);
 assert.equal(a.current_record_sha256.length,64);
 assert.equal(a.old_record_sha256.length,64);
 assert.notEqual(a.old_record_sha256,a.current_record_sha256);
+assert.equal(a.old_record_sha256,RECORD_PINS.original);
+assert.equal(a.current_record_sha256,RECORD_PINS.approved);
 assert.equal(a.all_4_options_unchanged,true);
 assert.equal(a.other_2_questions_unchanged,true);
 assert.equal(a.all_40_historical_R27_ids_source_locked,true);
