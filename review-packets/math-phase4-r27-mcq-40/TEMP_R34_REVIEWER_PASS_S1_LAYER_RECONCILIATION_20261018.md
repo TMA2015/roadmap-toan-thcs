@@ -30,6 +30,23 @@ The NotebookLM prose asserts that this problem form is compulsory in *most* offi
 
 An S1 `CITATION=PASS` can be accepted as *accurate prerequisite page references* without treating the same pages as evidence of an exact or same-step clone. Academic correctness and layer classification are distinct gates.
 
+## B2. Targeted authentic S3 source check (two official exam documents; not a prevalence sample)
+
+Two externally published **official exam documents** were inspected, kept in distinct locality/year strata (not blended as a representative sample):
+
+| Exam document | Actual task | Relevance to R34 | Source provenance |
+|---|---|---|---|
+| TP.HCM, general Grade-10 entrance, **07/06/2024**, *official examination* | Bài 1(b) asks to find the coordinates of intersections of parabol `y=−x²` and line `y=−3x+2` **by calculation**, which requires equating the two function expressions | **Positive S3 authentic example** of the composite line–parabol intersection method; NOT identical question or numbers to R34 | [Official paper facsimile published by Thanh Niên](https://images2.thanhnien.vn/528068263637045248/2024/6/11/de-thi-ts10-nam-hoc-2024-2025-mon-toan-1718094330432471608733.pdf), printed page 1, Bài 1; original paper visibly labeled *Sở GDĐT TP.HCM — ĐỀ CHÍNH THỨC* |
+| Hà Nội, general Grade-10 entrance, **08/06/2025**, *official examination* | Full two-page paper does **not** include a line–parabol intersection task | **Negative S3 verified example**; mathematical prerequisites (quadratic equations, etc.) appear elsewhere but not the composite intersection exercise | [Sở GDĐT Hà Nội source article](https://hanoi.edu.vn/phong-quan-ly-thi-va-kdcl/ha-noi-cong-bo-de-thi-va-dap-an-cac-mon-toan-ngu-van-ngoai-ngu-khong-chuyen-ky/ctfull/552/16329), attached [official PDF](https://quantrisgd.shieldix.app/data/doc/2025/hanoi/qlt_kdcl/2025_6/11/1-detoankhong-chuyen_116202515.pdf), pages 1–2 |
+
+**Bounded inference:** These are **2 deliberately selected examples from different cities/years**, not a population sample; a crude count `1/2` is **not** a nationwide rate and must not be used to claim “most,” “mandatory,” or school-wide exam frequency. The positive paper demonstrates *authentic transfer/exam use* for an algebraic intersection problem; the negative paper demonstrates it is *not universal*. No assertion about specialist-school papers or mock papers is inferred.
+
+**Master Plan v1.2.1:** `Entrance10` is defined as *transfer, applications, Grade-10 entrance preparation*. It **does not require** the item to occur in most official papers, and exam frequency does not redefine `KNTT-Core`. Therefore **`Entrance10` is a plausible editorial layer candidate for R34 on the basis of composite method and one authentic S3 example**, but the choice between `Core-Support` and `Entrance10` must be made through the Project Owner's curriculum-layer gate. The existing recorded `approved_primary_layer=null` remains correct; the report's unsubstantiated nationwide frequency sentence stays rejected.
+
+The S3 exam example does **not** change the **S1 textbook evidence-type** conclusion: original KNTT Grade-9 textbook examples observed so far show foundational function/quadratic methods and GeoGebra intersection activity; `STRUCTURAL_CLONE` remains unverified as a same-manual-method *SGK* clone. Candidate `CONCEPT_BASE` remains unchanged.
+
+---
+
 ## C. Decision matrix (this reconciliation)
 
 | Gate | Status | Application |
