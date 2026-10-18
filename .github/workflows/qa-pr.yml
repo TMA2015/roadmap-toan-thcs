@@ -380,6 +380,8 @@ jobs:
           node scripts/test-math-v2-r35-notebooklm-16-verdict-intake.js
           node --check scripts/prototypes/math-v2-r35-owner-16-academic-signoff.js
           node scripts/test-math-v2-r35-owner-16-academic-signoff.js
+          node --check scripts/prototypes/math-v2-r36-r27-40-option-provenance-preflight.js
+          node scripts/test-math-v2-r36-r27-40-option-provenance-preflight.js
           node --check scripts/prototypes/math-v2-r34-owner-approved-wording-delta.js
           node scripts/test-math-v2-r34-owner-approved-wording-delta.js
           node --check scripts/prototypes/math-v2-r34-notebooklm-verdict-reconciliation.js
