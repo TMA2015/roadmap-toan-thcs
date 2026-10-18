@@ -363,6 +363,8 @@ jobs:
           node scripts/test-math-v2-r29-notebooklm-receipt-audit.js
           node --check scripts/prototypes/math-v2-r30-notebooklm-s1-erratum-intake.js
           node scripts/test-math-v2-r30-notebooklm-s1-erratum-intake.js
+          node --check scripts/prototypes/math-v2-r31-s1-page-boundary-audit.js
+          node scripts/test-math-v2-r31-s1-page-boundary-audit.js
           node --check scripts/prototypes/math-v2-real-journal-bridge-r7.js
       - name: Validate CĐ25 display math source
         run: node scripts/test-topic25-math-render.js
