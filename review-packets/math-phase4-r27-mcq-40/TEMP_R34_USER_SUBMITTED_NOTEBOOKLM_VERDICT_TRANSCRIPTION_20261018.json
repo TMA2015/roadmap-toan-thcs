@@ -1,0 +1,52 @@
+{
+  "schema": "math-r34-notebooklm-user-submitted-single-item-verdict-transcription-v1",
+  "packet_id": "MATH-R34-QUA12V1_121-POST-REVISION-20261018",
+  "provenance": "Structured transcription from Project Owner's inline-pasted NotebookLM independent review report in the current conversation; original NotebookLM-generated file bytes unavailable. Do not claim this JSON is the byte-exact original report.",
+  "provenance_type": "USER_PASTED_NOTEBOOKLM_REPORT",
+  "original_report_file_attached": false,
+  "report_filename_mentioned_in_user_text": "TEMP_R34_NOTEBOOKLM_SINGLE_ITEM_POST_REVISION_REVIEW_2026101.md",
+  "report_filename_claim_note": "Reviewer textual filename omits a final digit; actual R34 source-locked review packet in repo ends 20261018.md. Filename mismatch is editorial only; ID and hashes match.",
+  "expected_ids": [
+    "QUA12V1_121"
+  ],
+  "total_input_ids": 1,
+  "total_output_verdicts": 1,
+  "source_bank_blob_sha": "89b50fb32c6ebd04d57e41f6c2d5ae1f70384c08",
+  "source_record_sha256": "6c7e6d4d8f66802da30d1f6d9829fffdee4f814aba94745a0d62b0a6d80b467c",
+  "verdict": {
+    "item_id": "QUA12V1_121",
+    "content_correctness": "PASS",
+    "answer_uniqueness": "PASS",
+    "explanation": "PASS",
+    "s1_citation": "PASS",
+    "evidence_type": "STRUCTURAL_CLONE",
+    "primary_layer_proposal": "Entrance10",
+    "overall_item_verdict": "PASS",
+    "s1_page_and_activity": "SGK Toán 9 Tập 2 KNTT, Bài 18 (pp. 4–9), Bài 19 (pp. 10–17) & Hoạt động thực hành GeoGebra (p. 114)",
+    "rationale": "Biến đổi hoành độ giao điểm x² = 3x + 4 <=> x² - 3x - 4 = 0 chính xác 100%. Đã khắc phục triệt để lỗi đa đáp án đúng ở đề cũ (loại bỏ bẫy trùng số nghiệm ở phương án D). Đáp án duy nhất A (index 0).",
+    "requested_action": "NONE"
+  },
+  "reported_supporting_claims": {
+    "old_question_two_correct_options_A_D_on_real_root_count": true,
+    "corrected_question_option_A_unique": true,
+    "four_original_options_unchanged": true,
+    "canonical_answer_index": 0,
+    "explanation_unchanged": true,
+    "SGK_foundation_Bai_18_Bai_19": true,
+    "GeoGebra_intersection_practice": true,
+    "claims_structural_clone_based_on_composite_grade9_concepts": true,
+    "claims_entrance10_central_mandatory_in_most_official_exams": true,
+    "authentic_exam_S3_corpus_provided": false,
+    "direct_same_reasoning_manual_SGK_exercise_identified": false
+  },
+  "reported_authorizations": {
+    "academic_pass_authorized": false,
+    "production_skill_counter_authorized": false,
+    "release_authorized": false
+  },
+  "intake_status": "REVIEWER_VERDICT_RECEIVED_NOT_OWNER_ACADEMICALLY_ACCEPTED",
+  "derived_decision_at_intake": "DO_NOT_AUTO_APPLY_EVIDENCE_TYPE_OR_ENTRANCE10",
+  "question_text_modified_by_this_receipt": false,
+  "learner_data_modified": false,
+  "taxonomy_modified": false
+}
