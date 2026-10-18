@@ -359,6 +359,8 @@ jobs:
           node scripts/test-math-v2-r27-mcq-source-review.js
           node --check scripts/prototypes/math-v2-r28-verdict-intake-gate.js
           node scripts/test-math-v2-r28-verdict-intake-gate.js
+          node --check scripts/prototypes/math-v2-r29-notebooklm-receipt-audit.js
+          node scripts/test-math-v2-r29-notebooklm-receipt-audit.js
           node --check scripts/prototypes/math-v2-real-journal-bridge-r7.js
       - name: Validate CĐ25 display math source
         run: node scripts/test-topic25-math-render.js
