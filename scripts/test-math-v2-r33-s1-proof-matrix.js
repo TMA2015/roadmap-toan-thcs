@@ -8,6 +8,25 @@ assert.equal(a.input_rows,24);
 const editorialPath="review-packets/math-phase4-r27-mcq-40/TEMP_R33_OWNER_EDITORIAL_24_ID_METADATA_DECISION_MATRIX_20261018.md";
 const editorial=fs.readFileSync(editorialPath,"utf8");
 assert(editorial.includes("EDITORIAL_CANDIDATE_NOT_ACADEMICALLY_APPROVED"));
+// Known semantic uniqueness blocker: R27 structurally checks only distinct option strings.
+const {inspect:inspectR27}=require("./prototypes/math-v2-r27-mcq-source-review.js");
+const r27item=inspectR27().rows.find(r=>r.id==="QUA12V1_121")?.question;
+assert(r27item,"R27 QUA12V1_121 source present");
+assert.equal(r27item.answer,0);
+assert.equal(r27item.question,
+ "Số giao điểm của parabol y=x² và đường thẳng y=3x+4 bằng số nghiệm thực của phương trình nào?");
+assert.equal(r27item.options[0],"x²−3x−4=0");
+assert.equal(r27item.options[3],"x²+3x−4=0");
+const discriminant=(a,b,c)=>b*b-4*a*c;
+assert.equal(discriminant(1,-3,-4),25);
+assert.equal(discriminant(1,3,-4),25);
+const p0=fs.readFileSync("review-packets/math-phase4-r27-mcq-40/TEMP_R33_P0_QUA12V1_121_NONUNIQUE_REAL_ROOT_COUNT_20261018.md","utf8");
+assert(p0.includes("P0_ACADEMIC_MCQ_AMBIGUITY")&&
+ p0.includes("REVISION_PROPOSED_NOT_APPLIED")&&
+ p0.includes("ACADEMIC_PASS_AUTHORIZED=false")&&
+ p0.includes("CONTEN"+"T_REVISION_AUTHORIZED=false"));
+assert(editorial.includes("P0_QUA12V1_121_NONUNIQUE_MCQ_BLOCKER")&&
+ editorial.includes("do not claim 24/24 MCQ correctness"));
 const decisionTable=editorial.split("## Proposed per-item citation and classification")[1]
  .split("## Do not silently import")[0];
 const editorialRows=decisionTable.split("\n")
