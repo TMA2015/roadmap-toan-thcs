@@ -119,7 +119,6 @@ function renderPacket(result){
   "",
   "**File:** "+tick(q.source_file)+"  ",
   "**Source SHA:** "+tick(q.source_git_blob_sha)+"  ",
-  "**Question SHA-256:** "+tick(q.record_sha256)+"  ",
   "**Nhãn nguồn chưa duyệt:** "+tick(q.source_legacy_skill_tag_not_reviewed),
   "",
   BT.repeat(3)+"json",
