@@ -13,6 +13,10 @@ const PRIMARY_RECEIPT="review-packets/math-phase4-r27-mcq-40/TEMP_R33_NXBGD_ORIG
 const PRIMARY_PIN="1acde19b575a177e33fc00c3b66854b730f329d7";
 const G9_CONCEPT_RECEIPT="review-packets/math-phase4-r27-mcq-40/TEMP_R33_G9_P5_PUBLISHER_CONCEPT_ONLY_OBSERVATION_20261018.json";
 const G9_CONCEPT_PIN="bcc33ddd7b51caeadcfa59ae8bf3f9baa8033b41";
+const USER_S1_RECEIPT="review-packets/math-phase4-r27-mcq-40/TEMP_R33_USER_ATTACHED_PRIMARY_S1_15_ID_OBSERVATIONS_20261018.json";
+const USER_S1_PIN="28e601cc8bac9fb61df3c18e1289316c9d3d27e7";
+const G6_PDF_SHA256="774c04c28d425cc2ece06915db655e2b74e6d922ffa9546af2fe300813acde6c";
+const G9_PDF_SHA256="eda1f0014afff53915190cf893345221b1a5bfa35407d58cec67b527655b597c";
 const TARGETS=Object.freeze([
  ...Array.from({length:12},(_,i)=>"NUM02V1_"+(121+i)),
  ...Array.from({length:3},(_,i)=>"NUM02V1_"+(145+i)),
@@ -27,7 +31,7 @@ const FLAGGED=Object.freeze([
 ]);
 const requireOk=(ok,what)=>{if(!ok)throw Error("R33_"+what);};
 function audit({root=process.cwd(),readBytes=rel=>fs.readFileSync(path.join(root,rel)),
- override=null,overridePrimary=null,overrideG9Concept=null}={}){
+ override=null,overridePrimary=null,overrideG9Concept=null,overrideUserS1=null}={}){
  const source=inspect({root});
  const prev=baselineR31({root});
  const raw=readBytes(RECEIPT);
@@ -122,8 +126,56 @@ function audit({root=process.cwd(),readBytes=rel=>fs.readFileSync(path.join(root
   g9.source_images_redistributed===false,
   "INVALID_G9_CONCEPT_OBSERVATION");
  const g9PartialSet=new Set(g9.affected_ids);
+ const userRaw=readBytes(USER_S1_RECEIPT);
+ requireOk(gitBlob(userRaw)===USER_S1_PIN,"USER_PRIMARY_S1_RECEIPT_CHANGED");
+ const attachment=overrideUserS1||JSON.parse(userRaw.toString("utf8"));
+ requireOk(attachment.schema==="math-r33-attachment-original-s1-15-target-review-v1"&&
+  attachment.packet_id===source.packet_id&&
+  attachment.source_integrity==="sha256_hex_of_exact_uploaded_pdf_bytes"&&
+  attachment.source_scan_access_now_confirmed===true&&
+  attachment.all_15_target_ids_have_direct_page_visual_basis===true&&
+  attachment.pdf_republication_authorized===false&&
+  attachment.all_15_item_citations_finally_approved===false&&
+  attachment.academic_pass_authorized===false&&
+  attachment.curriculum_relayer_authorized===false&&
+  attachment.production_skill_counter_authorized===false&&
+  attachment.learner_data_write_authorized===false&&
+  attachment.out_of_scope_16_original_r27_ids_unchanged===true,"INVALID_ATTACHED_S1_RECEIPT");
+ const files=attachment.source_files;
+ requireOk(Object.keys(files).length===2&&
+  files.G6T2.sha256===G6_PDF_SHA256&&files.G6T2.pdf_pages===113&&
+  files.G6T2.size_bytes===22110049&&files.G6T2.page_to_pdf_page_offset===1&&
+  files.G9T2.sha256===G9_PDF_SHA256&&files.G9T2.pdf_pages===135&&
+  files.G9T2.size_bytes===23432709&&files.G9T2.page_to_pdf_page_offset===2,
+  "ATTACHMENT_PDF_FILE_METADATA_CHANGED");
+ const userRows=attachment.rows;
+ const expectedUserIds=[
+  ...Array.from({length:12},(_,i)=>"NUM02V1_"+(121+i)),
+  "QUA12V1_121","QUA12V1_122","QUA12V1_123"];
+ requireOk(Array.isArray(userRows)&&userRows.length===15&&
+  new Set(userRows.map(x=>x.question_id)).size===15&&
+  expectedUserIds.every(id=>userRows.some(x=>x.question_id===id))&&
+  userRows.every(x=>{
+   const book=files[x.source_key];
+   return !!book&&x.source_class==="S1_USER_PROVIDED_ORIGINAL_KNTT_SCAN"&&
+    Array.isArray(x.printed_pages)&&x.printed_pages.length>0&&
+    x.printed_pages.every(p=>Number.isInteger(p)&&
+     (x.source_key==="G6T2"?(p>=35&&p<=38):(p>=4&&p<=17||p===113||p===114)))&&
+    Array.isArray(x.pdf_pages)&&
+    x.pdf_pages.length===x.printed_pages.length&&
+    x.pdf_pages.every((p,i)=>p===x.printed_pages[i]+book.page_to_pdf_page_offset)&&
+    x.original_page_visual_checked===true&&
+    x.exact_match_with_SGK_exercise===false&&
+    x.curricular_layer_decision==="PENDING_OWNER_ACADEMIC_REVIEW"&&
+    x.reviewer_verdict_not_auto_accepted===true&&
+    x.academic_pass_authorized===false&&
+    typeof x.s1_detailed_observation==="string"&&x.s1_detailed_observation.length>=60;
+  }),"INVALID_ATTACHED_S1_ITEM_LOCATORS");
+ const attachedById=new Map(userRows.map(x=>[x.question_id,x]));
+ requireOk(primary.rows.every(x=>!attachedById.has(x.question_id)),
+  "PRIMARY_SOURCE_SETS_OVERLAP");
  const rows=TARGETS.map(id=>{
-  const q=bank.get(id),flag=flagMap.get(id),observation=primaryMap.get(id);
+  const q=bank.get(id),flag=flagMap.get(id),observation=primaryMap.get(id),attached=attachedById.get(id);
   return {
    question_id:id,source_file:q.source_file,
    source_git_blob_sha:q.source_git_blob_sha,
@@ -133,6 +185,13 @@ function audit({root=process.cwd(),readBytes=rel=>fs.readFileSync(path.join(root
    editorial_candidate_not_approved:flag?.editorial_candidate_not_approved||null,
    reference_urls_secondary_only:flag?.secondary_reference_urls||[],
    first_party_publisher_page_observed:!!observation,
+   user_attached_original_SGK_page_observed:!!attached,
+   user_attached_SGK_source_key:attached?.source_key||null,
+   user_attached_SGK_printed_pages:attached?.printed_pages||[],
+   user_attached_SGK_pdf_pages:attached?.pdf_pages||[],
+   user_attached_SGK_item_comparison:attached?.s1_detailed_observation||null,
+   evidence_type_candidate_not_approved_from_uploaded_source:
+     attached?.evidence_type_candidate||null,
    publisher_G9_foundational_page_only_observed:g9PartialSet.has(id),
    observed_primary_page_keys:observation?.source_keys||[],
    S1_observed_question_comparison:observation?.observed_comparison||null,
@@ -150,6 +209,12 @@ function audit({root=process.cwd(),readBytes=rel=>fs.readFileSync(path.join(root
   first_party_pages_directly_viewed:5,
   items_still_without_first_party_page_basis:15,
   primary_page_observation_receipt_pin:PRIMARY_PIN,
+  uploaded_primary_S1_receipt_pin:USER_S1_PIN,
+  uploaded_primary_S1_PDF_sha256:[G6_PDF_SHA256,G9_PDF_SHA256],
+  attached_primary_S1_page_observed_item_count:attachedById.size,
+  direct_S1_page_observed_coverage_count:TARGETS.filter(id=>
+    primaryMap.has(id)||attachedById.has(id)).length,
+  user_uploaded_PDF_binary_available_to_public_CI:false,
   G9_foundational_page_only_item_count:g9PartialSet.size,
   no_publisher_page_observed_item_count:TARGETS.filter(id=>!primaryMap.has(id)&&!g9PartialSet.has(id)).length,
   G9_foundational_page_receipt_pin:G9_CONCEPT_PIN,
@@ -160,14 +225,19 @@ function audit({root=process.cwd(),readBytes=rel=>fs.readFileSync(path.join(root
    taxonomy_modified:false,student_history_written:false,
    mastery_or_readiness_awarded:false,automatic_curriculum_relayer:false,
    original_S1_pages_examined_for_subset:true,
+   user_uploaded_S1_pages_examined_for_remaining_15:true,
+   all_24_items_have_some_direct_S1_page_basis:true,
    all_original_S1_citations_validated:false,final_release_authorized:false}
  });
 }
-module.exports={audit,TARGETS,FLAGGED,RECEIPT,PIN,PRIMARY_RECEIPT,PRIMARY_PIN,G9_CONCEPT_RECEIPT,G9_CONCEPT_PIN};
+module.exports={audit,TARGETS,FLAGGED,RECEIPT,PIN,PRIMARY_RECEIPT,PRIMARY_PIN,G9_CONCEPT_RECEIPT,G9_CONCEPT_PIN,USER_S1_RECEIPT,USER_S1_PIN,G6_PDF_SHA256,G9_PDF_SHA256};
 if(require.main===module){
  const r=audit();
  console.log(JSON.stringify({schema:r.schema,status:"R33_24_ROWS_S1_AWAITED",
   targets:r.input_rows,priority:r.flagged_priority_ids,
-  routine:r.residual_primary_S1_ids,first_party_observed:r.first_party_page_observed_item_count,g9_partial:r.G9_foundational_page_only_item_count,academic_S1_accepted:r.academic_S1_accepted,
+  routine:r.residual_primary_S1_ids,
+  direct_S1_pages_for_items:r.direct_S1_page_observed_coverage_count,
+  newly_source_reviewed:r.attached_primary_S1_page_observed_item_count,
+  academic_S1_accepted:r.academic_S1_accepted,
   safeguards:r.safeguards},null,2));
 }
