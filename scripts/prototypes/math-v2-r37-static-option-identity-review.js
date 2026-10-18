@@ -49,8 +49,28 @@ function audit({root=process.cwd(),readBytes=rel=>fs.readFileSync(path.join(root
   p.live_r34_stem_exception==="QUA12V1_121"&&
   p.live_r34_bank_git_blob===R34_WORDING.live_blob_sha,
   "UNAPPROVED_IDENTITY_AUTHORITY");
+ const approvals=[
+  ["review-packets/math-phase4-r27-mcq-40/TEMP_R33_OWNER_APPROVED_21_CORE_ITEM_ACADEMIC_SIGNOFF_20261018.json",
+   "56135833a3d8764169719dded28be6b9c0b29eed","approved_items","item_id",21],
+  ["review-packets/math-phase4-r27-mcq-40/TEMP_R33_OWNER_APPROVED_CT12_CONCEPT_BASE_ENTRANCE10_20261018.json",
+   "35204f5baa654850c4b424dffb659bd89056b1be","approved_items","id",3],
+  ["review-packets/math-phase4-r35-remaining-16/TEMP_R35_OWNER_APPROVED_16_KNTT_CORE_ACADEMIC_SIGNOFF_20261018.json",
+   "100635e3f4ac6229fb39549368eedb9922304af5","approved_items","item_id",16]
+ ];
+ const ownerApproved=[];
+ for(const [file,pin,key,idKey,count] of approvals){
+  const bytes=readBytes(file);
+  fail(gitBlob(bytes)===pin,"ACADEMIC_APPROVAL_PIN_CHANGED");
+  const record=JSON.parse(bytes.toString("utf8"));
+  fail(Array.isArray(record[key])&&record[key].length===count,
+   "ACADEMIC_APPROVAL_COUNT_CHANGED");
+  ownerApproved.push(...record[key].map(row=>row[idKey]));
+ }
+ fail(ownerApproved.length===40&&new Set(ownerApproved).size===40,
+  "ACADEMIC_APPROVAL_PARTITION_CHANGED");
  const r27=inspect({root,readBytes});
- fail(r27.rows.length===40&&r27.total===40&&p.entries?.length===40,
+ fail(r27.rows.length===40&&r27.total===40&&p.entries?.length===40&&
+  r27.rows.every(row=>ownerApproved.includes(row.id)),
   "R27_SOURCE_SCOPE_CHANGED");
  const byId=new Map(r27.rows.map(x=>[x.id,x]));
  const allOptionIds=new Set(),records=[],fileCache=new Map(),currentDigests=new Set();
