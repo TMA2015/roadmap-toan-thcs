@@ -1,13 +1,28 @@
 #!/usr/bin/env node
 "use strict";
 const assert=require("node:assert/strict"),fs=require("node:fs");
-const {audit,TARGETS,FLAGGED,RECEIPT,PIN,PRIMARY_RECEIPT,PRIMARY_PIN,G9_CONCEPT_RECEIPT,G9_CONCEPT_PIN}=require("./prototypes/math-v2-r33-s1-proof-matrix.js");
+const {audit,TARGETS,FLAGGED,RECEIPT,PIN,PRIMARY_RECEIPT,PRIMARY_PIN,G9_CONCEPT_RECEIPT,G9_CONCEPT_PIN,USER_S1_RECEIPT,USER_S1_PIN,G6_PDF_SHA256,G9_PDF_SHA256}=require("./prototypes/math-v2-r33-s1-proof-matrix.js");
 const a=audit();
 assert.equal(a.schema,"math-v2-r33-provisional-24-row-S1-evidence-matrix-v1");
 assert.equal(a.input_rows,24);
 assert.equal(a.flagged_priority_ids,16);
 assert.equal(a.residual_primary_S1_ids,8);
 assert.equal(a.academic_S1_accepted,0);
+assert.equal(a.uploaded_primary_S1_receipt_pin,USER_S1_PIN);
+assert.deepEqual(a.uploaded_primary_S1_PDF_sha256,[G6_PDF_SHA256,G9_PDF_SHA256]);
+assert.equal(a.attached_primary_S1_page_observed_item_count,15);
+assert.equal(a.direct_S1_page_observed_coverage_count,24);
+assert.equal(a.user_uploaded_PDF_binary_available_to_public_CI,false);
+assert(a.rows.every(x=>x.user_attached_original_SGK_page_observed||
+ x.first_party_publisher_page_observed));
+assert.equal(a.rows.filter(x=>x.user_attached_original_SGK_page_observed).length,15);
+assert(a.rows.filter(x=>x.user_attached_original_SGK_page_observed).every(x=>
+ x.user_attached_SGK_pdf_pages.length>0&&
+ x.evidence_type_candidate_not_approved_from_uploaded_source.length>0&&
+ x.user_attached_SGK_item_comparison.length>60));
+assert.equal(a.safeguards.user_uploaded_S1_pages_examined_for_remaining_15,true);
+assert.equal(a.safeguards.all_24_items_have_some_direct_S1_page_basis,true);
+assert.equal(a.safeguards.all_original_S1_citations_validated,false);
 assert.equal(a.first_party_pages_directly_viewed,5);
 assert.equal(a.first_party_page_observed_item_count,9);
 assert.equal(a.items_still_without_first_party_page_basis,15);
@@ -73,6 +88,22 @@ assert.throws(()=>audit({overrideG9Concept:fakeG9Pass}),/R33_INVALID_G9_CONCEPT_
 const fakeG9Lesson=structuredClone(g9);
 fakeG9Lesson.page_source_comprehensive_for_lesson=true;
 assert.throws(()=>audit({overrideG9Concept:fakeG9Lesson}),/R33_INVALID_G9_CONCEPT_OBSERVATION/);
+const uploaded=JSON.parse(fs.readFileSync(USER_S1_RECEIPT,"utf8"));
+const incorrect=structuredClone(uploaded);
+incorrect.rows[0].pdf_pages=[35];
+assert.throws(()=>audit({overrideUserS1:incorrect}),/R33_INVALID_ATTACHED_S1_ITEM_LOCATORS/);
+const fakeApproval=structuredClone(uploaded);
+fakeApproval.academic_pass_authorized=true;
+assert.throws(()=>audit({overrideUserS1:fakeApproval}),/R33_INVALID_ATTACHED_S1_RECEIPT/);
+const corruptPdfDigest=structuredClone(uploaded);
+corruptPdfDigest.source_files.G6T2.sha256="0".repeat(64);
+assert.throws(()=>audit({overrideUserS1:corruptPdfDigest}),/R33_ATTACHMENT_PDF_FILE_METADATA_CHANGED/);
+const dup=structuredClone(uploaded);
+dup.rows[1].question_id=dup.rows[0].question_id;
+assert.throws(()=>audit({overrideUserS1:dup}),/R33_INVALID_ATTACHED_S1_ITEM_LOCATORS/);
+const autoLayer=structuredClone(uploaded);
+autoLayer.rows[14].curricular_layer_decision="Entrance10";
+assert.throws(()=>audit({overrideUserS1:autoLayer}),/R33_INVALID_ATTACHED_S1_ITEM_LOCATORS/);
 const src=fs.readFileSync("scripts/prototypes/math-v2-r33-s1-proof-matrix.js","utf8");
 assert(!/localStorage|indexedDB|sessionStorage|sendBeacon/.test(src));
 assert(!/writeFile|appendFile|unlinkSync|renameSync|rmSync/.test(src));
@@ -80,4 +111,4 @@ assert(!fs.readFileSync("mkdocs.yml","utf8").includes("math-v2-r33-s1-proof-matr
 assert(!fs.readFileSync("docs/assets/javascripts/practice-engine-v2.js","utf8")
  .includes("math-v2-r33-s1-proof-matrix.js"));
 console.log("PASS R33: 24/24 IDs source-locked; 16 priority S2 flags, 8 routine S1 checks; "+
- "9 item links to 5 inspected official SGK pages; zero academic approval and learner mutation");
+ "24/24 S1 page bases across publisher and user PDFs (15 new); zero academic approval and learner mutation");
