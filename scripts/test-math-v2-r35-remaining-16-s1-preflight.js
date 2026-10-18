@@ -21,7 +21,7 @@ assert(result.rows.every(r=>r.original_answer===0));
 const packet=fs.readFileSync(SOURCE,"utf8");
 const invalid=packet.replace("### NUM02V1_133 — CT02","### NUM02V1_132 — CT02");
 assert.throws(()=>audit({packetOverride:invalid}),/R35_ORDER_OR_APPROVAL_OVERLAP/);
-const changed=packet.replace("Tính \\(-\\frac25+\\frac3{10}\\).","Tính \\(-\\frac25+\\frac4{10}\\).");
+const changed=packet.replace('"answer": 0','"answer": 1');
 assert.notEqual(changed,packet);
 assert.throws(()=>audit({packetOverride:changed}),/R35_R27_ITEM_CONTENT_CHANGED_NUM02V1_133/);
 const wrongSGK=packet.replace("SGK Toán 7 Tập 1 KNTT, Bài 2:", "SGK Toán 9 Tập 1 KNTT, Bài 2:");
