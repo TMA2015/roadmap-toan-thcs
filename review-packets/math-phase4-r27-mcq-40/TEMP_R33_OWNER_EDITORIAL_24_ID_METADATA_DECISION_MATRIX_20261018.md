@@ -3,7 +3,7 @@
 **Packet ID:** `MATH-R27-NEW-MCQ-40-20261018`  
 **Scope:** exactly 24 R30/R31/R32 targeted IDs, original other 16 preserved.  
 **Prepared from:** R27 source-locked questions; official publisher Toán 7 page observations; user-uploaded scanned Toán 6 tập 2 (SHA-256 `774c04c28d425cc2ece06915db655e2b74e6d922ffa9546af2fe300813acde6c`) and Toán 9 tập 2 (SHA-256 `eda1f0014afff53915190cf893345221b1a5bfa35407d58cec67b527655b597c`); Master Plan v1.2.1; academic review rules v1.2.  
-**Status:** `EDITORIAL_CANDIDATE_NOT_ACADEMICALLY_APPROVED`. These rows **do not** change practice-bank metadata, exam layering, scores, or production.
+**Status:** `EDITORIAL_CANDIDATE_NOT_ACADEMICALLY_APPROVED` — `P0_QUA12V1_121_NONUNIQUE_MCQ_BLOCKER`. These rows **do not** change practice-bank metadata, exam layering, scores, or production.
 
 ## Definition of evidence categories
 
@@ -60,7 +60,7 @@ A math technique being *derived from Core knowledge* does not automatically mean
 
 ## Mathematical validation of R27 bank (preliminary content check)
 
-Read each of the 24 R27 prompts, four options, zero-index answer keys, and explanations. The supplied keys and equations are mutually consistent, with a unique best option in every reviewed MCQ. No requested source-repair task authorizes alterations to the item text, option IDs or order, answers or explanations. An independent item-level academic verdict and owner sign-off remain separate.
+Reviewed all 24 R27 prompts, zero-index keys, options, and explanations. **Correction of an earlier overbroad assertion:** `QUA12V1_121` is **ambiguous as currently phrased**. It asks which equation has the same NUMBER of real solutions as the intersection count. Both option index `0` (`x²−3x−4=0`) and option index `3` (`x²+3x−4=0`) have discriminant `25` and therefore two real roots. The intended unique **abscissa equation** is option 0, but that is not exactly what the existing count-worded question asks. Mark this item `REVISE_REQUIRED` / `P0_UNIQUE_ANSWER`, do not claim 24/24 MCQ correctness. See `TEMP_R33_P0_QUA12V1_121_NONUNIQUE_REAL_ROOT_COUNT_20261018.md`. Proposed minimal wording: **“Phương trình hoành độ giao điểm của parabol y=x² và đường thẳng y=3x+4 là phương trình nào?”** Preserve options and key pending owner approval. **A future approved wording change is a content change and must update the immutable record SHA with dedicated regression QA**, not merely citation metadata. Other 23 answers have no similar ambiguity identified in this focused check; this is not an independent 23-item Academic PASS. No content, answers, option IDs or learner state has yet been changed.
 
 ## Explicit approval checklist (not yet completed)
 
@@ -70,6 +70,7 @@ Read each of the 24 R27 prompts, four options, zero-index answer keys, and expla
 - [x] Mathematical answer choices / explanations cross-checked in R27 packet.
 - [ ] Project Owner approves or corrects the proposed metadata for each ID.
 - [ ] Project Owner decides CT12 single primary layer after independent review (and any required authentic S3 provenance).
+- [ ] **P0**: Approve and apply a minimal question-text revision to `QUA12V1_121`, then update its exact record SHA and repeat uniqueness/regression QA. Do not pretend it is metadata-only.
 - [ ] Apply **only approved** metadata to canonical item records with SHA crosscheck and regression QA.
 - [ ] Separately authorize any effect on Skill/Readiness/Mastery — **currently NOT authorized**.
 
