@@ -151,6 +151,7 @@ function audit({root=process.cwd(),readBytes=rel=>fs.readFileSync(path.join(root
   items_still_without_first_party_page_basis:15,
   primary_page_observation_receipt_pin:PRIMARY_PIN,
   G9_foundational_page_only_item_count:g9PartialSet.size,
+  no_publisher_page_observed_item_count:TARGETS.filter(id=>!primaryMap.has(id)&&!g9PartialSet.has(id)).length,
   G9_foundational_page_receipt_pin:G9_CONCEPT_PIN,
   academic_S1_accepted:0,reviewer_R32_pass_claims_not_imported:true,
   source_R27_originals_verified:source.total===40,
