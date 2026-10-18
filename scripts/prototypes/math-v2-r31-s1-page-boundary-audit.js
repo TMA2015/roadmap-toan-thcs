@@ -74,8 +74,13 @@ function audit({root=process.cwd(),readBytes}={}){
   requireOk(!!group&&!!bounds&&existing.has(row.question_id),
    "UNKNOWN_ID_OR_GROUP_"+row.question_id);
   const claim=row.notebooklm_corrected_S1_claim,range=pageRange(claim);
-  requireOk(bounds.lessons.every(n=>claim.includes("Bài "+n))&&
-   claim.includes(bounds.book.replace("KNTT ","").replace("Toán ","Toán ")),
+  const part=/Toán (\d) KNTT tập (\d)/.exec(bounds.book);
+  requireOk(!!part,"INVALID_REFERENCE_BOOK_SCHEMA");
+  const textbookName="Toán "+part[1]+" T"+part[2]+" KNTT";
+  const lessonOk=bounds.lessons.length===2?
+   claim.includes("Bài "+bounds.lessons.join(" & ")):
+   bounds.lessons.every(n=>claim.includes("Bài "+n));
+  requireOk(lessonOk&&claim.includes(textbookName),
    "REPORTED_S1_BOOK_OR_LESSONS_CHANGED_"+row.question_id);
   // Exact page of the particular new MCQ isn't supplied as SGK exercise;
   // judge only whether a CANDIDATE range falls inside the public
