@@ -41,6 +41,9 @@ for(const entry of result.entries){
   assert.equal(rendered.filter(x=>x.correct).length,1);
  }
 }
+const academicReceipt="review-packets/math-phase4-r27-mcq-40/TEMP_R33_OWNER_APPROVED_21_CORE_ITEM_ACADEMIC_SIGNOFF_20261018.json";
+assert.throws(()=>audit({readBytes:rel=>rel===academicReceipt?
+ Buffer.from('{"fake":true}'):fs.readFileSync(rel)}),/R37_ACADEMIC_APPROVAL_PIN_CHANGED/);
 const original=JSON.parse(fs.readFileSync(PROPOSAL,"utf8"));
 const changedText=structuredClone(original);
 changedText.entries[0].authored_choices[0].text="UNREVIEWED_COPY_EDIT";
