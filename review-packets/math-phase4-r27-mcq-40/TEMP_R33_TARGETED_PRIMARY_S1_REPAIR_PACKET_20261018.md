@@ -7,6 +7,18 @@
 **Scope:** 24 R30/R31/R32 IDs. The other 16 of the original R27 40 items remain untouched.  
 **Source distinction:** Facts below from GitHub R27 question packet plus *S2 public educational references*. They are **not** authenticated primary SGK/SBT scans and cannot authorize Core, PASS, or Entrance10 by themselves.
 
+## 0. STATUS UPDATE — direct S1 now available; mathematical P0 now known
+
+**Superseding addendum, 2026-10-18:** The primary-source-access limitation in the *original* R33 packet below is historical. The owner has supplied actual scanned KNTT Toán 6 T2 and Toán 9 T2 PDFs, verified by SHA-256 and directly inspected; publisher e-book Toán 7 pages had previously been inspected. See `TEMP_R33_DIRECT_ATTACHED_SGK_24_ID_AUDIT_UPDATE_20261018.md` and `TEMP_R33_OWNER_EDITORIAL_24_ID_METADATA_DECISION_MATRIX_20261018.md`. **24/24 IDs now have S1 page bases for detailed comparison; 0/24 Academic PASS have been authorized.**
+
+**New mathematical P0:** `QUA12V1_121` is *not a valid single-answer MCQ under its current count-of-roots wording*: equation at answer index 0 and distractor index 3 each have 2 real roots. This counterexample is documented in `TEMP_R33_P0_QUA12V1_121_NONUNIQUE_REAL_ROOT_COUNT_20261018.md`. The recommended rewrite changes question text, NOT merely S1 citation metadata, and requires independent academic approval + new source record hash/QA. **All independent reviewers must evaluate the mathematical P0 in addition to S1 citation/layer decisions**; previous all-24 mathematical PASS claims are withdrawn.
+
+For a new NotebookLM review, use the **current 24-ID decision matrix**, the **R27 exact 40-MCQ source**, both owner-provided original SGK scans, and official Toán 7 source pages as batch evidence. Follow permanent Master Plan v1.2.1 and NotebookLM Math Review Rules v1.2. Evaluate all 24 per ID; separately report `CONTENT_CORRECTNESS`, `ANSWER_UNIQUENESS`, `S1_CITATION_ACCURACY`, `EVIDENCE_TYPE`, `CURRICULUM_LAYER`, and `VERDICT`. Do not mark a citation-supported item PASS if its MCQ construction is ambiguous. Keep Core vs Core-Support vs Entrance10 distinctions: S1 determines Core, and S3 is required for assertions about exam frequency or authentic exam occurrence, not necessarily for a content author's preliminary transfer-layer *proposal*. All implementation changes remain blocked until approved.
+
+The historical S2-only conclusions in the original sections below explain why R33 began; **do not use those initial limitations as the current source availability**.
+
+---
+
 ## 1. Findings to resolve
 
 | ID | Risk in NotebookLM R32 | Proposed editorial action (**not applied**) |
