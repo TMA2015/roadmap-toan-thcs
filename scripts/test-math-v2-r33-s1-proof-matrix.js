@@ -13,6 +13,8 @@ assert.equal(a.first_party_page_observed_item_count,9);
 assert.equal(a.items_still_without_first_party_page_basis,15);
 assert.equal(a.primary_page_observation_receipt_pin,PRIMARY_PIN);
 assert.equal(a.G9_foundational_page_only_item_count,3);
+assert.equal(a.no_publisher_page_observed_item_count,12);
+assert.equal(a.first_party_page_observed_item_count+a.G9_foundational_page_only_item_count+a.no_publisher_page_observed_item_count,24);
 assert.equal(a.G9_foundational_page_receipt_pin,G9_CONCEPT_PIN);
 assert.deepEqual(a.rows.filter(x=>x.publisher_G9_foundational_page_only_observed)
  .map(x=>x.question_id),["QUA12V1_121","QUA12V1_122","QUA12V1_123"]);
