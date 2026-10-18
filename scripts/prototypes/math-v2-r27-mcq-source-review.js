@@ -16,6 +16,32 @@ const PINS=Object.freeze({
  "04-bieu-thuc-dai-so-v2-06.json":"34e52b7900f77815e0bff79ba82fdb491d6794b3",
  "12-phuong-trinh-bac-hai-viete-v1-05.json":"22c73f3d24020a7db1ead9b8b90c6488c8379ce0"
 });
+/* R34 approved live wording delta. R27 remains an IMMUTABLE historical snapshot:
+ * reconstruct the old bytes only when the NEW bank is exactly the approved
+ * single-string edit and both Git blob SHAs match. Never rewrite R27's PINS.
+ */
+const R34_WORDING=Object.freeze({
+ source_file:"12-phuong-trinh-bac-hai-viete-v1-05.json",
+ question_id:"QUA12V1_121",
+ old:"Số giao điểm của parabol y=x² và đường thẳng y=3x+4 bằng số nghiệm thực của phương trình nào?",
+ approved:"Phương trình hoành độ giao điểm của parabol y=x² và đường thẳng y=3x+4 là phương trình nào?",
+ live_blob_sha:"89b50fb32c6ebd04d57e41f6c2d5ae1f70384c08"
+});
+function historicalBytesForR27(filename,liveBytes){
+ const sha=gitBlob(liveBytes);
+ if(sha===PINS[filename])return {bytes:liveBytes,live_sha:sha,source_reconstructed:false};
+ fail(filename===R34_WORDING.source_file&&sha===R34_WORDING.live_blob_sha,
+  "CHANGED_BANK_"+filename);
+ const text=liveBytes.toString("utf8");
+ const approvedQuote=JSON.stringify(R34_WORDING.approved);
+ fail(text.split(approvedQuote).length===2,"APPROVED_DELTA_OCCURRENCE_INVALID");
+ const restored=Buffer.from(text.replace(approvedQuote,JSON.stringify(R34_WORDING.old)));
+ fail(gitBlob(restored)===PINS[filename],
+  "APPROVED_DELTA_DOES_NOT_RESTORE_R27_ORIGINAL");
+ const live=JSON.parse(text),q=live.questions.find(x=>x.id===R34_WORDING.question_id);
+ fail(q&&q.question===R34_WORDING.approved,"APPROVED_DELTA_ID_MISSING");
+ return {bytes:restored,live_sha:sha,source_reconstructed:true};
+}
 const EXPECTED_GROUPS=Object.freeze({
  "CT02|lam-tron-so":12,"CT02|phep-tinh-so-huu-ti":6,
  "CT02|so-vo-ti":3,"CT02|can-bac-hai-so-hoc":3,
@@ -36,16 +62,20 @@ function inspect({root=process.cwd(),readBytes=rel=>fs.readFileSync(path.join(ro
   fail(i.kind==="MCQ"&&i.receipt===null,"WRONG_EVIDENCE_LANE_"+i.question_id);
   fail(Object.hasOwn(PINS,i.source_file),"UNPINNED_BANK_"+i.source_file);
   if(!sources.has(i.source_file)){
-   const raw=readBytes(BANK+i.source_file),sha=gitBlob(raw);
+   const currentRaw=readBytes(BANK+i.source_file);
+   const historical=historicalBytesForR27(i.source_file,currentRaw);
+   const sha=gitBlob(historical.bytes);
    fail(sha===PINS[i.source_file],"CHANGED_BANK_"+i.source_file);
-   const questions=JSON.parse(raw.toString("utf8")).questions;
+   const questions=JSON.parse(historical.bytes.toString("utf8")).questions;
    fail(Array.isArray(questions),"INVALID_BANK_"+i.source_file);
    const byId=new Map(questions.map(q=>[q.id,q]));
    fail(byId.size===questions.length,"DUPLICATE_SOURCE_IDS_"+i.source_file);
-   sources.set(i.source_file,{sha,byId});
+   sources.set(i.source_file,{sha,byId,live_sha:historical.live_sha,source_reconstructed:historical.source_reconstructed});
   }
   const bank=sources.get(i.source_file),q=bank.byId.get(i.question_id);
-  fail(bank.sha===i.source_git_blob_sha,"R26_SHA_DISAGREES_"+i.question_id);
+  // R26 sees the *current* live manifest bytes; R27 sees the original review
+  // snapshot. Both are separately pinned, and they must never be conflated.
+  fail(bank.live_sha===i.source_git_blob_sha,"R26_SHA_DISAGREES_"+i.question_id);
   fail(q&&!seen.has(q.id),"ITEM_MISSING_OR_DUPLICATED_"+i.question_id);
   seen.add(q.id);
   fail(typeof q.question==="string"&&!!q.question.trim()&&
@@ -128,7 +158,7 @@ function renderPacket(result){
  );
  return lines.join("\n")+"\n";
 }
-module.exports={inspect,renderPacket,PINS,EXPECTED_GROUPS};
+module.exports={inspect,renderPacket,PINS,EXPECTED_GROUPS,R34_WORDING,historicalBytesForR27};
 if(require.main===module){
  const inventory=inspect();
  if(process.argv.includes("--packet"))process.stdout.write(renderPacket(inventory));
