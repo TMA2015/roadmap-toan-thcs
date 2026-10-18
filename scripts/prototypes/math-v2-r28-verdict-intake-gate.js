@@ -120,6 +120,10 @@ function evaluate(review,source=inspect()){
 }
 module.exports={template,evaluate,SCHEMA};
 if(require.main===module){
+ if(process.argv.includes("--template")){
+  process.stdout.write(JSON.stringify(template(),null,2)+"\n");
+  process.exit(0);
+ }
  const v=template();
  const result=evaluate(v);
  console.log(JSON.stringify({diagnostic:result,
