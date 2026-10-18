@@ -1,8 +1,8 @@
 # NOTEBOOKLM REVIEW WORKFLOW — DURABLE OPERATING RULES
 
 **Project:** Self-Learning Math  
-**Version:** 1.0  
-**Date:** 2026-10-10  
+**Version:** 1.1  
+**Date:** 2026-10-18  
 **Status:** Owner-approved durable workflow
 
 ## 1. Reviewer policy
@@ -52,6 +52,12 @@ When the repository source is JSON:
 - preserve IDs, counts, provenance, boundaries, and other review-critical information;
 - do not silently change the meaning during conversion.
 
+### Mandatory TEMP_ naming for batch files (Owner confirmation, 2026-10-18)
+
+**Every temporary source prepared for NotebookLM must have a filename starting with `TEMP_` (uppercase, at the beginning of the basename).** Example: `TEMP_NOTEBOOKLM_R38_SOURCE_A_REGISTRY_131_FAMILIES_20261018.md`.
+
+Permanent project sources (Master Plan, Review Rules, approved source frameworks) **must not** be renamed with `TEMP_`. This visible naming boundary prevents confusion between permanent and disposable batch sources. Any batch artifact created under an older filename must be renamed before delivery. For multiple sources, name the handoff ZIP `TEMP_<PACKET_ID>_NOTEBOOKLM_SOURCES.zip` and keep each member filename beginning with `TEMP_`.
+
 ## 4. ZIP rule
 
 When a review requires more than one **new batch source**, create **one ZIP** containing all new batch-source files needed for that review.
@@ -62,7 +68,14 @@ The ZIP must:
 - not duplicate SGK/PDF sources already present in NotebookLM;
 - avoid unrelated helper files that could be mistaken for review Sources.
 
-If there is only one new batch source, a direct file link is acceptable.
+**Delivery is mandatory and depends on the number of new batch sources:**
+
+- **Exactly one new source:** send the owner **one direct download link** to the `TEMP_*.md` file, plus the brief NotebookLM prompt. **No ZIP needed**.
+- **Two or more new sources:** create **one downloadable ZIP**, and send its single download link plus the brief NotebookLM prompt. **Do not send the owner a set of separate source-file links as a substitute for the ZIP**.
+- The ZIP contains only the required `TEMP_*.md` (or another genuinely appropriate NotebookLM-friendly non-JSON source format), without unrelated JSON/JS, fixed sources, old packets, or extra metadata.
+- If a ZIP cannot be created or its contents verified, say so plainly; do not present a list of links as though the requested ZIP were supplied.
+
+In either case, provide the actual ready-to-download artifact; a prompt alone is **not** an acceptable handoff.
 
 ## 5. Prompt rule
 
@@ -71,8 +84,8 @@ The NotebookLM prompt must always be sent **directly in the ChatGPT message**, n
 Prompts must be concise.
 
 Default target:
-- roughly 5–10 short lines;
-- normally no more than about 1,200 characters;
+- **3–5 short lines**, usually **300–600 characters** in Vietnamese;
+- avoid long prompts that NotebookLM's chat input may reject; put full rubric in the `TEMP_*.md` packet, not in the prompt;
 - reference the packet for detailed rules instead of repeating the packet.
 
 A prompt should normally contain only:
@@ -114,6 +127,9 @@ Before handing files to the owner, verify:
 - no JSON is being requested as a NotebookLM Source;
 - source files are readable in NotebookLM-compatible formats;
 - the ZIP contains the exact new files required;
+- **each temporary source basename begins with `TEMP_`**; unchanged permanent sources do not;
+- **one new source means a direct file download link; two or more means one verified ZIP**;
+- the prompt is brief and is included in the same ChatGPT response as the actual download;
 - filenames in the prompt/packet match the delivered filenames.
 
 ## 9. Durable default
