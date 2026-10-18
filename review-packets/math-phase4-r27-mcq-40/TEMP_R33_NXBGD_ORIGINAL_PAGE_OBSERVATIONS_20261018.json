@@ -1,0 +1,174 @@
+{
+  "schema": "math-r33-nxbgd-original-page-observation-v1",
+  "packet_id": "MATH-R27-NEW-MCQ-40-20261018",
+  "date": "2026-10-18",
+  "publisher": "Nhà xuất bản Giáo dục Việt Nam (taphuan.nxbgd.vn)",
+  "provenance": "Direct visual inspection of specific publisher hosted textbook page images; not a downloaded or cryptographically pinned primary textbook PDF.",
+  "source_class": "S1_PUBLISHER_EBOOK_PAGE_OBSERVED",
+  "source_images_redistributed": false,
+  "page_image_filename_index_may_differ_from_printed_page": true,
+  "primary_observed_page_count": 5,
+  "items_with_first_party_page_basis": 9,
+  "remaining_24_target_ids_without_first_party_page_basis": 15,
+  "academic_pass_authorized": false,
+  "layer_change_authorized": false,
+  "production_skill_counter_authorized": false,
+  "original_questions_changed": false,
+  "printed_page_sources": {
+    "T7T1_P36": {
+      "book": "Toán 7 KNTT tập 1",
+      "printed_page": 36,
+      "book_viewer": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-toan-7-tap-mot.4714106181",
+      "observed_page_image": "https://cdn3.olm.vn/upload/taphuan/2026/0413/4714106181-page-37-1776051685659.png",
+      "observed_section": "Bài 7, Mục giá trị tuyệt đối; Luyện tập 4; Bài 2.16; Bài 2.18",
+      "primary_page_viewed": true
+    },
+    "T7T2_P41": {
+      "book": "Toán 7 KNTT tập 2",
+      "printed_page": 41,
+      "book_viewer": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-toan-7-tap-hai.4700015846",
+      "observed_page_image": "https://cdn3.olm.vn/upload/taphuan/4700015846-page-42-1775788577960.png",
+      "observed_section": "Bài 28, chia hết đa thức; Luyện tập 2b (9x²−4):(3x+2)",
+      "primary_page_viewed": true
+    },
+    "T7T2_P42": {
+      "book": "Toán 7 KNTT tập 2",
+      "printed_page": 42,
+      "book_viewer": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-toan-7-tap-hai.4700015846",
+      "observed_page_image": "https://cdn3.olm.vn/upload/taphuan/4700015846-page-43-1775788578266.png",
+      "observed_section": "Bài 28, Mục 3 chia có dư; A=BQ+R; Luyện tập 3",
+      "primary_page_viewed": true
+    },
+    "T7T2_P43": {
+      "book": "Toán 7 KNTT tập 2",
+      "printed_page": 43,
+      "book_viewer": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-toan-7-tap-hai.4700015846",
+      "observed_page_image": "https://cdn3.olm.vn/upload/taphuan/4700015846-page-44-1775788578536.png",
+      "observed_section": "Bài 7.32a, b: phép chia đa thức bằng cách đặt tính chia",
+      "primary_page_viewed": true
+    },
+    "T7T2_P45": {
+      "book": "Toán 7 KNTT tập 2",
+      "printed_page": 45,
+      "book_viewer": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-toan-7-tap-hai.4700015846",
+      "observed_page_image": "https://cdn3.olm.vn/upload/taphuan/4700015846-page-46-1775788579132.png",
+      "observed_section": "Luyện tập chung, Bài 7.39a: (x³−8):(x−2)",
+      "primary_page_viewed": true
+    }
+  },
+  "rows": [
+    {
+      "question_id": "NUM02V1_145",
+      "source_keys": [
+        "T7T1_P36"
+      ],
+      "observed_comparison": "Luyện tập 4 có |−11|; R27 có |−12|. Hai bài khác dữ liệu, cùng thao tác tính giá trị tuyệt đối.",
+      "evidence_interpretation_candidate": "STRUCTURAL_CLONE_CANDIDATE_NOT_APPROVED",
+      "primary_page_observed": true,
+      "exact_item_match_approved": false,
+      "academic_verdict_approved": false,
+      "curriculum_layer_approved": false
+    },
+    {
+      "question_id": "NUM02V1_146",
+      "source_keys": [
+        "T7T1_P36"
+      ],
+      "observed_comparison": "Bài 2.18 xét tất cả số x có |x|=2,5; R27 hỏi chọn một số có giá trị tuyệt đối bằng 7.",
+      "evidence_interpretation_candidate": "CONCEPT_BASE_OR_STRUCTURAL_CLONE_PENDING",
+      "primary_page_observed": true,
+      "exact_item_match_approved": false,
+      "academic_verdict_approved": false,
+      "curriculum_layer_approved": false
+    },
+    {
+      "question_id": "NUM02V1_147",
+      "source_keys": [
+        "T7T1_P36"
+      ],
+      "observed_comparison": "Bài 2.18 ghi |x|=2,5; R27 ghi |x|=4 ở dạng trắc nghiệm, không thể EXACT_MATCH nguyên văn.",
+      "evidence_interpretation_candidate": "STRUCTURAL_CLONE_CANDIDATE_NOT_EXACT_MATCH",
+      "primary_page_observed": true,
+      "exact_item_match_approved": false,
+      "academic_verdict_approved": false,
+      "curriculum_layer_approved": false
+    },
+    {
+      "question_id": "ALG04V2_133",
+      "source_keys": [
+        "T7T2_P41",
+        "T7T2_P43"
+      ],
+      "observed_comparison": "Bài 28 p41 là thuật toán chia; Bài 7.32a p43 là phép chia bậc 3 cho bậc 1. R27 chia bậc 2 cho bậc 1.",
+      "evidence_interpretation_candidate": "SHARED_DIVISION_METHOD_PENDING_STRICT_CLONE",
+      "primary_page_observed": true,
+      "exact_item_match_approved": false,
+      "academic_verdict_approved": false,
+      "curriculum_layer_approved": false
+    },
+    {
+      "question_id": "ALG04V2_134",
+      "source_keys": [
+        "T7T2_P41",
+        "T7T2_P45"
+      ],
+      "observed_comparison": "Luyện tập 2b p41 (9x²−4):(3x+2) là cùng cấu trúc hiệu hai bình phương; 7.39a nằm p45, không phải p43.",
+      "evidence_interpretation_candidate": "STRUCTURAL_CLONE_CANDIDATE_FROM_LUYEN_TAP_2B",
+      "primary_page_observed": true,
+      "exact_item_match_approved": false,
+      "academic_verdict_approved": false,
+      "curriculum_layer_approved": false
+    },
+    {
+      "question_id": "ALG04V2_135",
+      "source_keys": [
+        "T7T2_P41",
+        "T7T2_P43"
+      ],
+      "observed_comparison": "Thuật toán chia đa thức ở p41; Bài 7.32 ở p43; trang 40–42 không chứa Bài 7.32 như R32 trích.",
+      "evidence_interpretation_candidate": "CONCEPT_AND_EXERCISE_LOCATOR_CORRECTION",
+      "primary_page_observed": true,
+      "exact_item_match_approved": false,
+      "academic_verdict_approved": false,
+      "curriculum_layer_approved": false
+    },
+    {
+      "question_id": "ALG04V2_136",
+      "source_keys": [
+        "T7T2_P45"
+      ],
+      "observed_comparison": "Trang 45 Bài 7.39a ghi đúng biểu thức (x³−8):(x−2); R27 chuyển thành MCQ với phương án và lời giải.",
+      "evidence_interpretation_candidate": "EXACT_MATH_EXPRESSION_WITH_MCQ_ADAPTATION_NOT_EXACT_WHOLE_ITEM",
+      "primary_page_observed": true,
+      "exact_item_match_approved": false,
+      "academic_verdict_approved": false,
+      "curriculum_layer_approved": false
+    },
+    {
+      "question_id": "ALG04V2_137",
+      "source_keys": [
+        "T7T2_P41",
+        "T7T2_P43"
+      ],
+      "observed_comparison": "Bài 7.32b p43 chia đa thức bậc 4 cho đa thức bậc 2, khác R27 chia bậc 3 cho bậc 1; chỉ cùng phương pháp chung.",
+      "evidence_interpretation_candidate": "CONCEPT_BASE_CANDIDATE_PENDING_S1_COMPARISON",
+      "primary_page_observed": true,
+      "exact_item_match_approved": false,
+      "academic_verdict_approved": false,
+      "curriculum_layer_approved": false
+    },
+    {
+      "question_id": "ALG04V2_138",
+      "source_keys": [
+        "T7T2_P41",
+        "T7T2_P42"
+      ],
+      "observed_comparison": "Trang 41 có A=B·Q cho chia hết; trang 42 có A=B·Q+R; phù hợp định nghĩa phép chia hết dạng tích.",
+      "evidence_interpretation_candidate": "CONCEPT_BASE_CANDIDATE",
+      "primary_page_observed": true,
+      "exact_item_match_approved": false,
+      "academic_verdict_approved": false,
+      "curriculum_layer_approved": false
+    }
+  ]
+}
