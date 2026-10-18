@@ -37,6 +37,20 @@ assert.deepEqual(current.questions.slice(1),before.questions.slice(1));
 assert.equal(current.questions[0].question,R34_WORDING.approved);
 assert.equal(FINGERPRINT(current.questions[0]),a.current_record_sha256);
 assert.equal(FINGERPRINT(before.questions[0]),a.old_record_sha256);
+// Keep the one-ID independent reviewer packet exactly tied to the amended live candidate.
+const reviewPacketPath="review-packets/math-phase4-r27-mcq-40/TEMP_R34_NOTEBOOKLM_SINGLE_ITEM_POST_REVISION_REVIEW_20261018.md";
+const reviewPacket=fs.readFileSync(reviewPacketPath,"utf8");
+assert(reviewPacket.includes("MATH-R34-QUA12V1_121-POST-REVISION-20261018"));
+assert(reviewPacket.includes("TOTAL_INPUT_IDS|1")&&
+ reviewPacket.includes("TOTAL_OUTPUT_VERDICTS|1"));
+assert(reviewPacket.includes(R34_WORDING.approved));
+assert(reviewPacket.includes("SOURCE_BANK_BLOB|"+a.approved_live_git_blob_sha));
+assert(reviewPacket.includes("SOURCE_RECORD_SHA256|"+a.current_record_sha256));
+assert(reviewPacket.includes("ACADEMIC_PASS_AUTHORIZED|FALSE")&&
+ reviewPacket.includes("PRODUCTION_SKILL_COUNTER_AUTHORIZED|FALSE")&&
+ reviewPacket.includes("RELEASE_AUTHORIZED|FALSE"));
+for(const option of current.questions[0].options)assert(reviewPacket.includes(option));
+assert(reviewPacket.includes("ACADEMIC_HOLD_POST_REVISION"));
 const baseline=inspectR27();
 assert.equal(baseline.rows.length,40);
 assert.equal(baseline.rows.find(x=>x.id==="QUA12V1_121").question.question,R34_WORDING.old);
