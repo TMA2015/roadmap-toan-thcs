@@ -10,8 +10,7 @@ const editorial=fs.readFileSync(editorialPath,"utf8");
 assert(editorial.includes("EDITORIAL_CANDIDATE_NOT_ACADEMICALLY_APPROVED"));
 const decisionTable=editorial.split("## Proposed per-item citation and classification")[1]
  .split("## Do not silently import")[0];
-const editorialRows=decisionTable.split("
-")
+const editorialRows=decisionTable.split("\n")
  .filter(line=>/^\| `(?:NUM02V1_|ALG04V2_|QUA12V1_)\d+` \|/.test(line))
  .map(line=>{
   const cells=line.split("|").map(x=>x.trim());
