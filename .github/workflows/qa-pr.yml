@@ -382,6 +382,8 @@ jobs:
           node scripts/test-math-v2-r35-owner-16-academic-signoff.js
           node --check scripts/prototypes/math-v2-r38-40mcq-skill-family-compatibility.js
           node scripts/test-math-v2-r38-40mcq-skill-family-compatibility.js
+          node --check scripts/prototypes/math-v2-r38-notebooklm-family-registry-reconciliation.js
+          node scripts/test-math-v2-r38-notebooklm-family-registry-reconciliation.js
           node --check scripts/prototypes/math-v2-r34-owner-approved-wording-delta.js
           node scripts/test-math-v2-r34-owner-approved-wording-delta.js
           node --check scripts/prototypes/math-v2-r34-notebooklm-verdict-reconciliation.js
