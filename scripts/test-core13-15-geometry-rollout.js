@@ -35,7 +35,7 @@ const originalCt13Headings=source=>{
 // so edits outside the bounded teaching block fail without repinning SHA.
 const waveCOriginal=(topic,source)=>{
  const cfg={
-  "14":{sha:"831debd90537352bb67fa53732b8cd813cc60b3e",
+  "14":{sha:"f9fae782453f7126b39f123d728188d49787c149",
    begin:"#### Hai trường hợp thường dùng thêm cho tam giác vuông",
    end:"## 🔗 4. Kiến thức liên quan"},
   "15":{sha:"3a478a322abfbb1530802d2c1afe54046ee22eb5",
