@@ -187,6 +187,11 @@ jobs:
       - name: Validate Skill Taxonomy v2 I6B public learner release
         run: |
           node scripts/test-skill-map-v2-i6b-public.js
+      - name: Validate one live Practice counter cutover
+        run: |
+          node --check docs/assets/javascripts/practice-engine-v2.js
+          node --check docs/assets/javascripts/skill-map-v2-preview.js
+          node scripts/test-math-one-practice-counter-20261019.js
       - name: Validate read-only Skill Priority R1 owner preview
         run: |
           node --check docs/assets/javascripts/skill-priority-preview-r1.js
