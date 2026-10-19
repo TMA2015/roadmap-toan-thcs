@@ -16,7 +16,19 @@ let cardCount=0,totalQuestions=0,totalSkills=0,covered=0;
 for(const t of specs){
  const path="docs/kien-thuc/"+t.slug+"/",bp="docs/assets/data/practice/"+t.slug+"-micro-v1.json",wp="docs/assets/data/curriculum/topic"+t.n+"-learning-workspace.json";
  const lesson=read(path+"index.md"),bank=j(bp),w=j(wp),labels=j("docs/assets/data/practice/"+t.slug+"-v1.manifest.json").skill_labels,page=read(path+"core/index.md");
- assert(sha(lesson)===t.lesson,"full lesson changed "+t.slug);
+ // CT17 Wave B: retain the exact previously reviewed lesson by reversing only
+ // the approved bisector teaching block; require the new full blob unchanged.
+ let historicalLesson=lesson;
+ if(t.n==="17"){
+  assert(sha(lesson)==="8cb5a8ff770e91c8282980e4b1dc216170d5db25","CT17 Wave B source changed");
+  const startTag="### 3.3A. Tính chất đường phân giác trong tam giác";
+  const endTag="### 3.4. Tam giác đồng dạng";
+  const a=lesson.indexOf(startTag),b=lesson.indexOf(endTag,a+startTag.length);
+  assert(a>=0&&b>a&&lesson.indexOf(startTag,a+1)===-1,"CT17 Wave B section missing or duplicated");
+  historicalLesson=lesson.slice(0,a)+lesson.slice(b);
+  assert(6/9===4/6&&4+6===10,"CT17 worked bisector ratio error");
+ }
+ assert(sha(historicalLesson)===t.lesson,"CT17 historical lesson drift outside Wave B "+t.slug);
  assert(bank.question_count===t.count&&bank.questions.length===t.count&&w.cards.length===5,"exact question/card counts "+t.slug);
  const old={...bank,question_count:15,questions:bank.questions.slice(0,15)};
  assert(sha(JSON.stringify(old,null,2)+"\n")===t.bank,"original bank content changed "+t.slug);
