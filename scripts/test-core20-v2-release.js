@@ -15,7 +15,15 @@ const originalLessonHash="8a279134ebf5e2f3083d56783d2fdd095be78f18";
 const originalWorkspaceHash="774997cd9ac4d2efc1c53c17c0de48e6fcdba497";
 const originalBankHash="d61845552c9a484ab9b220606ff20c9a9e6a7046";
 const reviewSourceHash="1b22f297e57eeee65c43575c4a81fd06c8e7eede";
-ok(blob(read(lesson))===originalLessonHash,"original full lesson blob must not change");
+// Preserve the frozen source while permitting ONLY the reviewed Wave B appendix.
+const currentLesson=read(lesson);
+ok(blob(currentLesson)==="60f16771736ba62bd697c224bd43eaed469e1692","CT20 Wave B source changed");
+const startTag="### 3.5A. Từ mục tiêu chứng minh đến chuỗi căn cứ: thẳng hàng và đồng quy";
+const endTag="### Infographic – Chuỗi suy luận";
+const a=currentLesson.indexOf(startTag),b=currentLesson.indexOf(endTag,a+startTag.length);
+ok(a>=0&&b>a&&currentLesson.indexOf(startTag,a+1)===-1,"CT20 Wave B proof section missing or duplicated");
+ok(blob(currentLesson.slice(0,a)+currentLesson.slice(b))===originalLessonHash,"CT20 historical lesson drift outside Wave B");
+ok(currentLesson.includes("OA = OB")&&currentLesson.includes("OA = OC")&&currentLesson.includes("OB = OC"),"CT20 concurrence proof needs three equal distances");
 ok(blob(read(legacyPath))===originalWorkspaceHash,"original five-card workspace blob must not change");
 const first15={...bank,question_count:15,questions:bank.questions.slice(0,15)};
 ok(blob(JSON.stringify(first15,null,2)+"\n")===originalBankHash,"all original fifteen question records and top-level bank fields preserved");
