@@ -27,12 +27,12 @@ const cases=[
     "topic": "09",
     "slug": "09-he-phuong-trinh",
     "oldSha": "07fec7c41abda3714e9ce528076d4930d507d5a3",
-    "newSha": "710fa479fda50a9fd87b8c4c90e0c7297ad04d9b",
-    "start": "### 3.4A. Một hệ, hai phương pháp — hiểu cách chọn và kiểm tra",
+    "newSha": "48775e9882404d9a0f7d6fa73d745f8425a7f92b",
+    "start": "### 3.4A. Cùng một hệ, so sánh phương pháp thế và cộng đại số",
     "end": "### 3.5. Số nghiệm của hệ",
     "checks": [
-      "**Thế**",
-      "**Cộng đại số**",
+      "phương pháp thế",
+      "phương pháp cộng đại số",
       "3x=9",
       "(3;2)"
     ]
