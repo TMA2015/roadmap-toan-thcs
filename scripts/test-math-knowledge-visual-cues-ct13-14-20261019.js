@@ -20,5 +20,5 @@ assert.ok(p13.includes("góc đồng vị"),"Proof diagram needs corresponding a
 const p14=part(ct14,"#### Hai trường hợp thường dùng thêm cho tam giác vuông","## 🔗 4. Kiến thức liên quan");
 for(const text of ["góc vuông tại \`A\`, \`D\`","\`BC = EF\`","\`AB = DE\`","\`∠B = ∠E\`","dùng một hình khác","không gộp cả hai bộ điều kiện"])
  assert.ok(p14.includes(text.replaceAll("\\`","`")),"CT14 cue needs distinct corresponding conditions: "+text);
-assert.ok(!/^## /m.test(p13)||!/^## /m.test(p14),"P2 cue must preserve accordion H2 boundaries");
+assert.ok(!/^## /m.test(p13)&&!/^## /m.test(p14),"P2 cue must preserve both accordion H2 boundaries");
 console.log("PASS P2 CT13/CT14: diagram cues mark hypotheses, separate congruence cases and pin full lesson SHA.");
