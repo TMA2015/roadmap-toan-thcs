@@ -174,6 +174,18 @@ Vị trí của `H`:
 - tam giác vuông: tại đỉnh góc vuông;
 - tam giác tù: nằm ngoài tam giác.
 
+#### Phân biệt đường cao và đường trung trực — cùng vuông góc nhưng khác điểm đi qua
+
+| Tiêu chí | Đường cao từ `A` trong tam giác `ABC` | Đường trung trực của `BC` |
+|---|---|---|
+| Vuông góc với | Đường thẳng `BC` | Đường thẳng `BC` |
+| Bắt buộc đi qua | **Đỉnh `A`** | **Trung điểm `M` của `BC`** |
+| Có nhất thiết trùng nhau? | Không | Không; chỉ trùng nếu đường cao đi qua trung điểm của `BC` |
+
+**Ví dụ phân biệt.** Cho `BC = 8 cm`; chân đường cao từ `A` là `H ∈ BC`, với `BH = 3 cm` và `HC = 5 cm`. Vì `AH ⟂ BC`, nên `AH` là đường cao. Nhưng `BH ≠ HC`, nên `H` **không phải trung điểm** của `BC`. Đường trung trực của `BC` phải vuông góc `BC` tại `M` với `BM = MC = 4 cm`. Vì `H ≠ M`, đường thẳng `AH` không phải đường trung trực.
+
+**Mẹo tự kiểm tra:** Chỉ thấy vuông góc là chưa đủ. Muốn kết luận *đường cao*, hỏi “có đi qua đỉnh không?”; muốn kết luận *đường trung trực*, hỏi “có đi qua trung điểm không?”.
+
 ### Infographic 2 – Trọng tâm và trực tâm
 
 ![Infographic trọng tâm và trực tâm Chuyên đề 15](../../assets/infographics/15/15-02-trong-tam-truc-tam.svg)
