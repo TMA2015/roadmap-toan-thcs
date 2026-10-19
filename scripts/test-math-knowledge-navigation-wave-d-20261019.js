@@ -16,7 +16,7 @@ const cases = [
     oldSha:"fd8797b765c10d974c3491e84ee40dafbd0fcb7f",
     start:"### 3.8A. Tra cứu ngược — khi chưa hiểu, nên mở chuyên đề nào?",
     end:"\n---\n\n## 🔗 4. Kiến thức liên quan",
-    beforeStart:1,
+    beforeStart:2,
     minimumLinks:12
   },
   {
