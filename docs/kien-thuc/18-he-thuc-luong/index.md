@@ -193,6 +193,32 @@ Ngoài ra:
 
 ![Hệ thức giữa mỗi cạnh góc vuông và hình chiếu của nó trên cạnh huyền](../../assets/geometry/18/18-he-thuc-canh-hinh-chieu-v1.svg)
 
+### 3.2A. Hiểu và suy ra hệ thức đường cao (mở rộng)
+
+Trong tam giác `ABC` vuông tại `A`, `AH` là đường cao xuống cạnh huyền `BC`. Ngoài các hệ thức ở mục 3.2, ta có thể **tự suy ra**:
+
+`1/AH² = 1/AB² + 1/AC²`.
+
+**Vì sao đúng?** Diện tích tam giác vuông có thể tính theo hai cách, vì thế:
+
+`AB × AC / 2 = AH × BC / 2`, tức `AH = AB × AC / BC`.
+
+Suy ra:
+
+`1/AH² = BC²/(AB² × AC²)`.
+
+Áp dụng Pythagore `BC² = AB² + AC²`:
+
+`1/AH² = (AB² + AC²)/(AB² × AC²) = 1/AB² + 1/AC²`.
+
+**Ví dụ có kiểm tra.** Nếu `AB = 6 cm`, `AC = 8 cm` thì `BC = 10 cm` và `AH = 6 × 8 / 10 = 4,8 cm`. Kiểm tra:
+
+`1/AH² = 1/4,8² = 25/576` và `1/AB² + 1/AC² = 1/36 + 1/64 = 25/576`.
+
+**Khi nào nên dùng?** Khi biết hai cạnh góc vuông và cần đường cao, công thức `AH = AB × AC / BC` thường thuận tiện hơn; công thức nghịch đảo giúp liên hệ ba độ dài và tự kiểm tra kết quả. Đây là **hệ quả suy ra từ kiến thức đã học**, không phải công thức bắt buộc phải học thuộc thêm.
+
+> Điều kiện không thể bỏ: tam giác phải **vuông tại `A`** và `AH` phải là **đường cao xuống cạnh huyền**, nên các độ dài `AB`, `AC`, `AH` đều dương.
+
 ### Infographic – Hệ thức đường cao
 
 ![Hệ thức đường cao trong tam giác vuông](../../assets/infographics/18/18-02-he-thuc-duong-cao.svg)

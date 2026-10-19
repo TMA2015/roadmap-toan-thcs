@@ -342,6 +342,18 @@ Không cần tính riêng từng nghiệm.
 
 ---
 
+### Dạng 5A – Vì sao phải có \(P\ne0\) khi lấy nghịch đảo nghiệm?
+
+Trong công thức \(\dfrac1{x_1}+\dfrac1{x_2}=\dfrac{S}{P}\), với \(S=x_1+x_2\), \(P=x_1x_2\), **\(P\ne0\) nghĩa là cả hai nghiệm đều khác 0**. Nếu \(P=0\), ít nhất một nghiệm bằng 0 nên biểu thức nghịch đảo không có nghĩa.
+
+**Phản ví dụ:** Phương trình \(x^2-5x=0\) có hai nghiệm \(x_1=0\), \(x_2=5\).
+
+- Theo Viète: **\(S=5\), \(P=0\)**.
+- Biểu thức \(\dfrac1{x_1}+\dfrac1{x_2}\) **không xác định**, vì \(1/x_1=1/0\).
+- Viết \(S/P=5/0\) **không cho một số hợp lệ**; không thể kết luận “bằng vô cực”.
+
+**Cách tự kiểm tra:** Khi đề yêu cầu biểu thức chứa \(1/x_i\), trước hết kiểm tra phương trình **có các nghiệm thực theo yêu cầu** và \(P\ne0\). Nếu không, phải dừng hoặc xét riêng trường hợp đó.
+
 ### Dạng 6 – Tìm tham số từ điều kiện về nghiệm
 
 Ví dụ:

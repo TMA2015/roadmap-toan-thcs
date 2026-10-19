@@ -20,7 +20,7 @@ for(const slug of expectedRoutes)assert(js.includes('"'+slug+'"')&&routes.includ
 let cards=0,questions=0,declared=0,covered=0,addition=0;
 for(const t of specs){
  const root="docs/kien-thuc/"+t.slug+"/",bp="docs/assets/data/practice/"+t.slug+"-micro-v1.json",wp="docs/assets/data/curriculum/topic"+t.n+"-learning-workspace.json",p=read(bp),bank=JSON.parse(p),w=json(wp),lesson=read(root+"index.md"),page=read(root+"core/index.md"),labels=json("docs/assets/data/practice/"+t.manifest).skill_labels;
- assert(gitSha(lesson)===t.lesson,"source lesson changed "+t.slug);
+ assert(gitSha(require("./test-math-knowledge-depth-wave-g-20261019.js").restoreHistoricalSource(root+"index.md",lesson))===t.lesson,"historical source lesson changed outside Wave G "+t.slug);
  if(t.n==="12") assert(bank.questions?.length===19&&bank.question_count===19&&w.cards?.length===6,"reviewed append count "+t.slug);
  else assert(bank.questions?.length===t.count&&bank.question_count===t.count&&w.cards?.length===5,"exact count "+t.slug);
  const reconstructed={...bank,question_count:15,questions:bank.questions.slice(0,15)};

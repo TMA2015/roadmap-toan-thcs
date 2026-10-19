@@ -283,6 +283,30 @@ vì `-2 + (-3) = -5` và `(-2)(-3) = 6`.
 
 > Không nên thử cặp số một cách máy móc trong mọi bài. Kỹ thuật này chỉ nên dùng khi cặp `p, q` dễ nhận ra; sau khi phân tích phải nhân trở lại để kiểm tra.
 
+### 3.6A. Tách hạng tử khi hệ số của \(x^2\) khác 1 (mở rộng)
+
+Mục 3.6 đã hướng dẫn dạng \(x^2+bx+c\). Với tam thức \(ax^2+bx+c\), \(a\ne0\), nếu tìm được hai số \(p,q\) sao cho:
+
+\[
+p+q=b,\qquad pq=ac,
+\]
+
+thì có thể tách \(bx=px+qx\) rồi **nhóm để xuất hiện một nhân tử chung**. Hãy hiểu đây là cách tìm phép nhóm phù hợp, **không phải công thức tự động phân tích được mọi tam thức**.
+
+**Ví dụ từng bước:** Phân tích \(6x^2+11x+3\) thành nhân tử.
+
+1. Xác định \(a=6,\ b=11,\ c=3\) và \(ac=18\).
+2. Tìm hai số có **tổng 11, tích 18**: chọn \(p=9,\ q=2\).
+3. Tách hạng tử giữa: \(6x^2+11x+3=6x^2+9x+2x+3\).
+4. Nhóm: \(3x(2x+3)+(2x+3)\).
+5. Đặt nhân tử chung: **\((3x+1)(2x+3)\)**.
+
+**Kiểm tra bằng nhân ngược:** \((3x+1)(2x+3)=6x^2+9x+2x+3=6x^2+11x+3\), đúng biểu thức ban đầu.
+
+**Vì sao quy tắc \(pq=ac\) có ích?** Ta đang tìm cách viết \(ax^2+px+qx+c\) thành hai nhóm có **cùng nhị thức**. Nếu không tìm được \(p,q\) phù hợp, đừng thử số mãi: hãy xem có nhân tử chung hoặc hằng đẳng thức hay không và chọn phương pháp khác.
+
+> Đây là kỹ thuật **bổ trợ/vận dụng**, không phải yêu cầu rằng mọi tam thức đều phải phân tích được thành nhân tử với hệ số nguyên.
+
 ### 3.7. Phương pháp 4 – Phối hợp nhiều phương pháp
 
 Nhiều bài không thể giải chỉ bằng một bước.

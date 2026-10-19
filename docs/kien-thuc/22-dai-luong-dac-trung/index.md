@@ -266,6 +266,30 @@ trung bình là `12,4`, nhưng trung vị vẫn là `8`.
 
 Vì vậy, trong dữ liệu có ngoại lai, **trung vị thường mô tả mức điển hình tốt hơn trung bình**.
 
+### 3.6A. Phương sai và độ lệch chuẩn — nhìn sâu hơn số trung bình (mở rộng Toán 10)
+
+**Khoảng biến thiên** chỉ dùng hai giá trị lớn nhất và nhỏ nhất. Để xét các giá trị phân tán quanh trung bình \(\bar x\) đến đâu, ta có thể dùng **phương sai** và **độ lệch chuẩn**.
+
+Với toàn bộ bộ dữ liệu \(x_1,\ldots,x_n\), \(n>0\), đặt:
+
+\[
+s^2=\frac{(x_1-\bar x)^2+\cdots+(x_n-\bar x)^2}{n},\qquad s=\sqrt{s^2}.
+\]
+
+- **Phương sai** là trung bình của các bình phương độ lệch so với \(\bar x\), nên không âm và có đơn vị bình phương.
+- **Độ lệch chuẩn** lấy căn bậc hai của phương sai; nó có **cùng đơn vị** với dữ liệu ban đầu. Khi so sánh dữ liệu cùng thang đo, độ lệch chuẩn lớn hơn thường có nghĩa là dữ liệu phân tán hơn.
+
+**Ví dụ — hai bộ dữ liệu có cùng số trung bình:**
+
+| Nhóm | Bốn quan sát | Trung bình | Phương sai | Độ lệch chuẩn |
+|---|---|---:|---:|---:|
+| A | \(5,5,7,7\) | \(6\) | \((1+1+1+1)/4=1\) | \(1\) |
+| B | \(4,4,8,8\) | \(6\) | \((4+4+4+4)/4=4\) | \(2\) |
+
+Cả hai có **trung bình 6**, nhưng các quan sát trong nhóm B cách trung bình xa hơn. Do đó, **chỉ biết số trung bình chưa đủ** để mô tả đặc điểm phân tán của dữ liệu.
+
+> **Phân tầng:** Đây là kiến thức **tự chọn chuẩn bị Toán 10**, không phải yêu cầu bắt buộc của phần ôn thi vào lớp 10. Công thức chia cho \(n\) dùng để mô tả **toàn bộ bộ dữ liệu đang xét**, không phải công thức ước lượng phương sai mẫu chia \(n-1\).
+
 ### 3.7. Chọn đại lượng nào?
 
 | Mục tiêu | Đại lượng ưu tiên |

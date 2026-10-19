@@ -292,6 +292,20 @@ Dấu hiệu nhận biết:
 - hình thoi có một góc vuông;
 - hình thoi có hai đường chéo bằng nhau.
 
+### 3.6A. Trung tuyến ứng với cạnh huyền — liên kết với hình chữ nhật
+
+Cho tam giác `ABC` vuông tại `A`, `M` là **trung điểm cạnh huyền `BC`**. Khi đó:
+
+`AM = BM = CM = BC/2`.
+
+**Vì sao đúng?** Lấy điểm `D` đối xứng với `A` qua `M`. Trong tứ giác `ABDC`, hai đường chéo `AD` và `BC` cắt nhau tại trung điểm mỗi đường, nên `ABDC` là hình bình hành. Vì `∠BAC = 90°`, đây là **hình chữ nhật**, nên hai đường chéo bằng nhau: `AD = BC`. Do đó `AM = AD/2 = BC/2`.
+
+**Định lý đảo:** Nếu `M` là trung điểm `BC` và `AM = BC/2`, thì tam giác `ABC` vuông tại `A`. Có thể kiểm tra bằng cách dựng `D` như trên: hình bình hành `ABDC` có hai đường chéo bằng nhau (`AD = 2AM = BC`) nên là hình chữ nhật.
+
+**Ví dụ nhanh:** Nếu `ABC` vuông tại `A`, `BC = 10 cm` và `M` là trung điểm `BC`, thì `AM = 5 cm`. Ngược lại, nếu tam giác `ABC` có `BM = MC = 5 cm` và `AM = 5 cm`, thì `∠A = 90°`.
+
+> **Bẫy nhận biết hình thang cân:** Với quy ước hình thang có **ít nhất một cặp cạnh đối song song** đang dùng trong bài, hình bình hành xiên (không phải hình chữ nhật) cũng có hai cạnh bên bằng nhau nhưng **hai góc kề một đáy không bằng nhau**. Vì thế, không được kết luận hình thang cân chỉ từ “hai cạnh bên bằng nhau”; cần kiểm tra đúng dấu hiệu nhận biết.
+
 ### Infographic 3 – Hình chữ nhật, hình thoi và hình vuông
 
 ![Infographic hình chữ nhật, hình thoi và hình vuông – Chuyên đề 16](../../assets/infographics/16/16-03-chu-nhat-thoi-vuong.svg)
