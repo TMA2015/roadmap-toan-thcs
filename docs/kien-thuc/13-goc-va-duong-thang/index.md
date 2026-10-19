@@ -383,6 +383,8 @@ Căn cứ có thể là giả thiết, định nghĩa, tính chất/định lí 
 
 **Bài toán:** Cho ba đường thẳng \(a,b,c\) với \(a\parallel b\) và \(c\perp a\). Chứng minh \(c\perp b\).
 
+> **Gợi ý tự phác hình:** Vẽ hai đường thẳng \(a,b\) song song; vẽ đường \(c\) cắt \(a\) tại \(M\), cắt \(b\) tại \(N\). **Chỉ đánh dấu góc vuông tại \(M\)** theo giả thiết \(c\perp a\). Chưa đánh dấu góc vuông tại \(N\), vì \(c\perp b\) chính là **kết luận cần chứng minh**. Khi lập luận, tìm cặp góc đồng vị tạo bởi \(c\) và hai đường song song.
+
 | Thành phần | Nội dung |
 |---|---|
 | **Giả thiết (GT)** | \(a\parallel b\), \(c\perp a\) |

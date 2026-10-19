@@ -376,6 +376,8 @@ Hai tam giác vuông có cạnh huyền và một cạnh góc vuông tương ứ
 
 Xét hai tam giác `ABC`, `DEF` **vuông lần lượt tại `A` và `D`**. Ngoài trường hợp cạnh huyền – cạnh góc vuông đã học, có hai cách nhận biết thuận tiện:
 
+> **Gợi ý tự phác hình:** Vẽ riêng hai tam giác vuông `ABC` và `DEF`, đánh dấu góc vuông tại `A`, `D`. Với **cạnh huyền – góc nhọn**, đánh dấu `BC = EF` và `∠B = ∠E`. Với **cạnh góc vuông – góc nhọn kề**, dùng một hình khác và đánh dấu `AB = DE` cùng `∠B = ∠E`. **Chỉ đánh dấu dữ kiện của từng trường hợp**, không gộp cả hai bộ điều kiện lên một hình.
+
 | Dữ kiện tương ứng | Vì sao đủ để kết luận bằng nhau? |
 |---|---|
 | `BC = EF` (cạnh huyền) và `∠B = ∠E` (góc nhọn) | Hai góc vuông đã bằng nhau; thêm một góc nhọn và cạnh huyền tương ứng xác định được hai tam giác bằng nhau |

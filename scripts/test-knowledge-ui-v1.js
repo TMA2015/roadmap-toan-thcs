@@ -20,3 +20,5 @@ require("./test-math-knowledge-integrated-a-f-20261019.js");
 
 require("./test-math-knowledge-depth-wave-g-20261019.js").checkWaveG();
 require("./test-math-knowledge-integrated-a-g-20261019.js");
+
+require("./test-math-knowledge-visual-cues-ct13-14-20261019.js");
