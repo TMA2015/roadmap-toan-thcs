@@ -14,7 +14,7 @@ for(const [num,slug,fragment] of topics){
 const svg=read("docs/assets/infographics/10/10-03-ham-bac-nhat-duong-thang.svg");
 assert.ok(svg.includes("Nếu b = 0: B(1;a)."),"CT10 special case removed");
 const g9=read("scripts/test-kntt-dimension-coverage-g9-v1.js");
-assert.ok(g9.includes('blob(lock.path==="docs/kien-thuc/21-thong-ke/index.md"?historicalLongformText(lock):historicalLongformSource(lock))'),"Lost combined CT21/CT23 original-source reconstruction");
+for(const marker of ["historicalLongformText(lock)","historicalLongformSource(lock)","restoreHistoricalSource(lock.path,longform)"])assert.ok(g9.includes(marker),"Lost combined CT12/CT21/CT23 original-source reconstruction: "+marker);
 const geometry=read("scripts/test-core16-18-geometry-rollout.js");
 for(const t of ["waveCOriginal16(lesson)","CT17 Wave B source changed","historicalCt18(lesson)"])assert.ok(geometry.includes(t),"Lost combined CT16–18 source lock: "+t);
 for(const letter of "abcdef"){
