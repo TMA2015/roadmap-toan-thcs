@@ -14,4 +14,4 @@ assert((library.match(/class="library-topic-tile"/g)||[]).length===25,"all 25 di
 assert(script.includes("roadmap.ui.focus.v1")&&script.includes("aria-pressed")&&script.includes("updateFocus(readFocus())"),"focus persistence and state");
 assert(css.includes("body.roadmap-focus-mode .md-sidebar--primary")&&css.includes("body.roadmap-focus-mode .md-sidebar--secondary"),"focus sidebars");
 console.log("PASS: 25-topic finder, shared lesson route, scroll-position bar, no learning-data writes.");
-require("./test-math-knowledge-depth-wave-g-20261019.js");
+require("./test-math-knowledge-depth-wave-g-20261019.js").checkWaveG();
