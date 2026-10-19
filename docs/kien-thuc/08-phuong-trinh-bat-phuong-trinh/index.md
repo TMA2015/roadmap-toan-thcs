@@ -172,6 +172,21 @@ Hình trên giúp phân biệt nhanh:
 
 > Khi biểu diễn trên trục số, cần kiểm tra đồng thời **mốc biên** và **hướng của tập nghiệm**; chỉ đúng một trong hai vẫn là sai.
 
+### 3.5A. Vì sao không được nhân với biểu thức chưa biết dấu? (mở rộng)
+
+Quy tắc đổi chiều bất phương trình dựa trên thứ tự số: **nhân với số âm làm đảo chiều**, còn biểu thức chứa ẩn có thể dương hoặc âm tùy giá trị của ẩn.
+
+**Phản ví dụ:** Xét bất phương trình \(\dfrac{x}{x-1}>1\).
+
+1. Điều kiện xác định: **\(x\ne1\)**.
+2. Chuyển vế mà **không nhân với \(x-1\)**: \(\dfrac{x}{x-1}-1=\dfrac{1}{x-1}>0\).
+3. Tử số 1 dương, nên phân thức dương khi **\(x-1>0\)**. Kết luận **\(x>1\)**.
+4. Thử lại: với \(x=2\), \(2>1\) đúng; với \(x=0\), \(0>1\) sai.
+
+**Sai lầm:** Nếu nhân hai vế với \(x-1\) và **luôn giữ chiều**, ta được \(x>x-1\), tưởng rằng mọi \(x\ne1\) đều là nghiệm. Nhưng ở \(x=0\), số nhân bằng \(-1\), nên phải **đổi chiều**; cách nhân đó không tương đương.
+
+> Đây là **ví dụ mở rộng**. Ở mức cơ bản, hãy chỉ nhân/chia bất phương trình với **số đã biết dấu**. Nếu thừa số chứa ẩn chưa rõ dấu, cần xét dấu hoặc tách trường hợp.
+
 ### 3.6. Ứng dụng – lập bất phương trình từ bài toán
 
 Khi một bài toán có các từ như **không vượt quá**, **ít nhất**, **tối đa**, **tối thiểu**, dữ kiện thường dẫn đến một bất phương trình.
