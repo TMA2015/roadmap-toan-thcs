@@ -54,9 +54,9 @@ GÓC VÀ QUAN HỆ GIỮA CÁC ĐƯỜNG THẲNG
 
 ---
 
-## Minh họa trực quan
+### Minh họa trực quan
 
-### 1. Góc đối đỉnh
+#### 1. Góc đối đỉnh
 
 <p align="center">
   <img src="../../assets/geometry/13/13-goc-doi-dinh-v1.svg"
@@ -66,7 +66,7 @@ GÓC VÀ QUAN HỆ GIỮA CÁC ĐƯỜNG THẲNG
 
 > Khi hai đường thẳng cắt nhau, hai góc đối đỉnh bằng nhau.
 
-### 2. Hai đường thẳng song song và một đường cắt
+#### 2. Hai đường thẳng song song và một đường cắt
 
 <p align="center">
   <img src="../../assets/geometry/13/13-hai-duong-song-song-duong-cat-v1.svg"
@@ -76,7 +76,7 @@ GÓC VÀ QUAN HỆ GIỮA CÁC ĐƯỜNG THẲNG
 
 > Hình này giúp nhận biết cấu hình cơ bản gồm hai đường thẳng song song và một đường thẳng cắt chúng.
 
-### 3. Góc so le trong
+#### 3. Góc so le trong
 
 <p align="center">
   <img src="../../assets/geometry/13/13-goc-so-le-trong-v1.svg"
@@ -112,9 +112,9 @@ Sau khi hoàn thành chuyên đề, học sinh cần có thể:
 
 ![Infographic quan hệ góc, song song và vuông góc Chuyên đề 13](../../assets/infographics/13/13-02-goc-song-song-vuong-goc.svg)
 
-## 3.1. Điểm, đường thẳng, tia và đoạn thẳng
+### 3.1. Điểm, đường thẳng, tia và đoạn thẳng
 
-### Điểm và đường thẳng
+#### Điểm và đường thẳng
 
 Nếu điểm `A` nằm trên đường thẳng `d`, viết:
 
@@ -126,7 +126,7 @@ Nếu điểm `B` không nằm trên `d`, viết:
 
 Qua hai điểm phân biệt xác định được một và chỉ một đường thẳng.
 
-### Tia
+#### Tia
 
 Tia `Ox` có gốc là `O` và kéo dài vô hạn theo một phía.
 
@@ -136,13 +136,13 @@ Hai tia `Ox` và `Oy` là **hai tia đối nhau** nếu:
 - nằm trên cùng một đường thẳng;
 - đi về hai phía ngược nhau.
 
-### Đoạn thẳng
+#### Đoạn thẳng
 
 Đoạn thẳng `AB` gồm hai đầu mút `A`, `B` và các điểm nằm giữa chúng.
 
 Độ dài đoạn thẳng được ký hiệu `AB` khi không gây nhầm lẫn với tên đoạn thẳng.
 
-### Trung điểm
+#### Trung điểm
 
 Điểm `M` là trung điểm của `AB` khi đồng thời:
 
@@ -153,7 +153,7 @@ Hai tia `Ox` và `Oy` là **hai tia đối nhau** nếu:
 
 ---
 
-## 3.2. Góc và số đo góc
+### 3.2. Góc và số đo góc
 
 Góc `xOy` có:
 
@@ -164,7 +164,7 @@ Số đo góc thường viết:
 
 `∠xOy = 60°`
 
-### Phân loại góc
+#### Phân loại góc
 
 | Loại góc | Điều kiện |
 |---|---:|
@@ -175,9 +175,9 @@ Số đo góc thường viết:
 
 ---
 
-## 3.3. Hai góc kề nhau, phụ nhau, bù nhau
+### 3.3. Hai góc kề nhau, phụ nhau, bù nhau
 
-### Hai góc kề nhau
+#### Hai góc kề nhau
 
 Hai góc có:
 
@@ -185,7 +185,7 @@ Hai góc có:
 - chung một cạnh;
 - phần trong không giao nhau.
 
-### Hai góc phụ nhau
+#### Hai góc phụ nhau
 
 Hai góc phụ nhau khi tổng số đo bằng `90°`.
 
@@ -193,11 +193,11 @@ Ví dụ:
 
 `35° + 55° = 90°`
 
-### Hai góc bù nhau
+#### Hai góc bù nhau
 
 Hai góc bù nhau khi tổng số đo bằng `180°`.
 
-### Hai góc kề bù
+#### Hai góc kề bù
 
 Nếu hai góc vừa kề nhau vừa có tổng bằng `180°`, chúng là hai góc kề bù.
 
@@ -207,7 +207,7 @@ Nếu `Ox` và `Oy` là hai tia đối nhau, tia `Oz` nằm giữa hai tia đó 
 
 ---
 
-## 3.4. Tia phân giác của một góc
+### 3.4. Tia phân giác của một góc
 
 Tia `Oz` là tia phân giác của `∠xOy` khi:
 
@@ -226,11 +226,11 @@ Nếu `∠xOy = 80°` và `Oz` là tia phân giác thì:
 
 ---
 
-## 3.5. Góc đối đỉnh
+### 3.5. Góc đối đỉnh
 
 Khi hai đường thẳng cắt nhau, hai góc có các cạnh tương ứng là hai cặp tia đối nhau gọi là **hai góc đối đỉnh**.
 
-### Tính chất
+#### Tính chất
 
 **Hai góc đối đỉnh thì bằng nhau.**
 
@@ -246,7 +246,7 @@ Nếu `∠1 = 70°` thì góc đối đỉnh với nó cũng bằng `70°`; hai 
 
 ---
 
-## 3.6. Hai đường thẳng vuông góc
+### 3.6. Hai đường thẳng vuông góc
 
 Hai đường thẳng `a` và `b` vuông góc nếu chúng cắt nhau và tạo thành một góc vuông.
 
@@ -258,7 +258,7 @@ Nếu một trong bốn góc tại giao điểm bằng `90°` thì cả bốn g�
 
 ---
 
-## 3.7. Hai đường thẳng song song
+### 3.7. Hai đường thẳng song song
 
 Hai đường thẳng phân biệt cùng nằm trong một mặt phẳng và không có điểm chung gọi là hai đường thẳng song song.
 
@@ -268,18 +268,18 @@ Ký hiệu:
 
 Khi một đường thẳng `c` cắt hai đường thẳng `a`, `b`, ta có các cặp góc quan trọng.
 
-### Góc so le trong
+#### Góc so le trong
 
 Hai góc nằm:
 
 - phía trong giữa `a` và `b`;
 - ở hai phía khác nhau của đường cắt.
 
-### Góc đồng vị
+#### Góc đồng vị
 
 Hai góc ở vị trí tương ứng giống nhau tại hai giao điểm.
 
-### Góc trong cùng phía
+#### Góc trong cùng phía
 
 Hai góc:
 
@@ -288,7 +288,7 @@ Hai góc:
 
 ---
 
-## 3.8. Tính chất của hai đường thẳng song song
+### 3.8. Tính chất của hai đường thẳng song song
 
 Nếu `a ∥ b` và `c` cắt `a`, `b` thì:
 
@@ -306,7 +306,7 @@ quan hệ góc
 
 ---
 
-## 3.9. Dấu hiệu nhận biết hai đường thẳng song song
+### 3.9. Dấu hiệu nhận biết hai đường thẳng song song
 
 Nếu đường thẳng `c` cắt `a`, `b` và có một trong các điều kiện sau thì `a ∥ b`:
 
@@ -326,9 +326,9 @@ a ∥ b
 
 ---
 
-## 3.10. Quan hệ giữa vuông góc và song song
+### 3.10. Quan hệ giữa vuông góc và song song
 
-### Tính chất 1
+#### Tính chất 1
 
 Nếu hai đường thẳng phân biệt `a`, `b` cùng vuông góc với đường thẳng `c`:
 
@@ -338,7 +338,7 @@ thì:
 
 `a ∥ b`.
 
-### Tính chất 2
+#### Tính chất 2
 
 Nếu:
 
@@ -350,13 +350,13 @@ thì:
 
 Hai tính chất này được dùng rất nhiều trong chứng minh tam giác, tứ giác và hình học tổng hợp.
 
-## 3.11. Tiên đề Euclid về đường thẳng song song
+### 3.11. Tiên đề Euclid về đường thẳng song song
 
 Qua một điểm \(M\) nằm ngoài đường thẳng \(a\), có **một và chỉ một** đường thẳng đi qua \(M\) và song song với \(a\).
 
 Điểm cần nhớ là **tính duy nhất**: nếu hai đường \(b,c\) cùng đi qua \(M\) và đều song song với \(a\), thì \(b\) và \(c\) phải là cùng một đường thẳng.
 
-## 3.12. Định lí – giả thiết – kết luận – bước đầu chứng minh
+### 3.12. Định lí – giả thiết – kết luận – bước đầu chứng minh
 
 Một định lí thường có thể đọc dưới dạng:
 
@@ -381,13 +381,13 @@ Căn cứ có thể là giả thiết, định nghĩa, tính chất/định lí 
 
 ## 🔗 4. Kiến thức liên quan
 
-## Kiến thức nên biết trước
+### Kiến thức nên biết trước
 
 - Cách đo độ dài và số đo góc.
 - Phép cộng, trừ số tự nhiên và số hữu tỉ đơn giản.
 - Khái niệm cơ bản về điểm và đoạn thẳng.
 
-## Chuyên đề sử dụng trực tiếp kiến thức này
+### Chuyên đề sử dụng trực tiếp kiến thức này
 
 - [14. Tam giác](../14-tam-giac/index.md)
 - [15. Các đường đồng quy trong tam giác](../15-duong-dong-quy/index.md)
@@ -403,19 +403,19 @@ Căn cứ có thể là giả thiết, định nghĩa, tính chất/định lí 
 
 ![Infographic dạng bài và chuỗi suy luận Chuyên đề 13](../../assets/infographics/13/13-03-dang-bai-chuoi-suy-luan.svg)
 
-## Dạng 1 – Tính góc kề bù
+### Dạng 1 – Tính góc kề bù
 
-### Dấu hiệu nhận biết
+#### Dấu hiệu nhận biết
 
 Có một góc đã biết và hai góc kề nhau tạo thành góc bẹt.
 
-### Phương pháp
+#### Phương pháp
 
 Dùng:
 
 `α + β = 180°`
 
-### Ví dụ
+#### Ví dụ
 
 Nếu `∠xOz = 125°` và `Ox`, `Oy` là hai tia đối nhau thì:
 
@@ -423,18 +423,18 @@ Nếu `∠xOz = 125°` và `Ox`, `Oy` là hai tia đối nhau thì:
 
 ---
 
-## Dạng 2 – Tính góc đối đỉnh
+### Dạng 2 – Tính góc đối đỉnh
 
-### Dấu hiệu nhận biết
+#### Dấu hiệu nhận biết
 
 Hai đường thẳng cắt nhau.
 
-### Phương pháp
+#### Phương pháp
 
 - Góc đối đỉnh bằng nhau.
 - Góc kề bù có tổng `180°`.
 
-### Ví dụ
+#### Ví dụ
 
 Một góc bằng `68°`.
 
@@ -443,7 +443,7 @@ Một góc bằng `68°`.
 
 ---
 
-## Dạng 3 – Tính góc có tia phân giác
+### Dạng 3 – Tính góc có tia phân giác
 
 Nếu `Oz` là tia phân giác của `∠xOy` thì:
 
@@ -459,7 +459,7 @@ suy ra:
 
 ---
 
-## Dạng 4 – Chứng minh một tia là phân giác
+### Dạng 4 – Chứng minh một tia là phân giác
 
 Muốn chứng minh `Oz` là phân giác của `∠xOy`, cần chứng minh:
 
@@ -470,16 +470,16 @@ Không được chỉ chứng minh hai góc bằng nhau mà bỏ điều kiện 
 
 ---
 
-## Dạng 5 – Tính góc khi có hai đường thẳng song song
+### Dạng 5 – Tính góc khi có hai đường thẳng song song
 
-### Quy trình
+#### Quy trình
 
 1. Xác định cặp góc cần dùng.
 2. Gọi đúng tên quan hệ: so le trong, đồng vị, trong cùng phía.
 3. Dùng tính chất song song.
 4. Nếu cần, kết hợp kề bù hoặc đối đỉnh.
 
-### Ví dụ
+#### Ví dụ
 
 Nếu `a ∥ b` và một góc đồng vị bằng `72°`, góc đồng vị tương ứng cũng bằng `72°`.
 
@@ -489,16 +489,16 @@ Góc kề bù với nó bằng:
 
 ---
 
-## Dạng 6 – Chứng minh hai đường thẳng song song
+### Dạng 6 – Chứng minh hai đường thẳng song song
 
-### Dấu hiệu thường dùng
+#### Dấu hiệu thường dùng
 
 - So le trong bằng nhau.
 - Đồng vị bằng nhau.
 - Trong cùng phía bù nhau.
 - Hai đường thẳng phân biệt cùng vuông góc với đường thẳng thứ ba.
 
-### Cách trình bày mẫu
+#### Cách trình bày mẫu
 
 > Ta có `∠A = ∠B`. Hai góc này ở vị trí so le trong. Do đó `a ∥ b`.
 
@@ -506,7 +506,7 @@ Phần quan trọng không chỉ là hai góc bằng nhau mà còn phải **nêu
 
 ---
 
-## Dạng 7 – Chứng minh hai đường thẳng vuông góc
+### Dạng 7 – Chứng minh hai đường thẳng vuông góc
 
 Có thể dùng một trong các hướng:
 
@@ -516,7 +516,7 @@ Có thể dùng một trong các hướng:
 
 ---
 
-## Dạng 8 – Chuỗi tính nhiều góc
+### Dạng 8 – Chuỗi tính nhiều góc
 
 Một bài có thể yêu cầu:
 
@@ -531,7 +531,7 @@ Cách làm tốt nhất:
 
 ---
 
-## Dạng 9 – Bài có tham số
+### Dạng 9 – Bài có tham số
 
 Ví dụ:
 
@@ -551,7 +551,7 @@ Sau đó thay lại để tìm số đo góc.
 
 ---
 
-## Dạng 10 – Bài chứng minh tổng hợp ngắn
+### Dạng 10 – Bài chứng minh tổng hợp ngắn
 
 Thường kết hợp:
 
@@ -606,11 +606,11 @@ Thường xuất hiện dưới dạng bước trung gian trong hình học tổ
 
 ## ⚠️ 7. Lỗi sai thường gặp
 
-## ❌ Lỗi 1: Thấy hai góc bằng nhau là kết luận song song
+### ❌ Lỗi 1: Thấy hai góc bằng nhau là kết luận song song
 
 Sai vì cần biết hai góc đó nằm ở vị trí nào.
 
-### Cách tránh
+#### Cách tránh
 
 Phải viết rõ:
 
@@ -618,9 +618,9 @@ Phải viết rõ:
 
 ---
 
-## ❌ Lỗi 2: Nhầm so le trong với đồng vị
+### ❌ Lỗi 2: Nhầm so le trong với đồng vị
 
-### Cách tránh
+#### Cách tránh
 
 Quan sát ba yếu tố:
 
@@ -630,25 +630,25 @@ Quan sát ba yếu tố:
 
 ---
 
-## ❌ Lỗi 3: Quên góc kề bù có tổng 180°
+### ❌ Lỗi 3: Quên góc kề bù có tổng 180°
 
 Học sinh đôi khi nhầm với hai góc phụ nhau có tổng `90°`.
 
 ---
 
-## ❌ Lỗi 4: Dùng góc đối đỉnh khi hai đường không thực sự cắt nhau
+### ❌ Lỗi 4: Dùng góc đối đỉnh khi hai đường không thực sự cắt nhau
 
 Góc đối đỉnh chỉ xuất hiện khi có **hai đường thẳng cắt nhau**.
 
 ---
 
-## ❌ Lỗi 5: Kết luận tia phân giác chỉ vì hai góc bằng nhau
+### ❌ Lỗi 5: Kết luận tia phân giác chỉ vì hai góc bằng nhau
 
 Cần thêm điều kiện tia nằm trong góc.
 
 ---
 
-## ❌ Lỗi 6: Nhìn hình để kết luận
+### ❌ Lỗi 6: Nhìn hình để kết luận
 
 Hình vẽ chỉ minh họa, không phải căn cứ chứng minh.
 
@@ -656,7 +656,7 @@ Ví dụ: hai đường nhìn có vẻ song song nhưng đề chưa cho và chư
 
 ---
 
-## ❌ Lỗi 7: Không ghi căn cứ
+### ❌ Lỗi 7: Không ghi căn cứ
 
 Không nên viết:
 
