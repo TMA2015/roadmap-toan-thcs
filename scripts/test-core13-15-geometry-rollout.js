@@ -3,6 +3,33 @@
 const fs=require("fs"),crypto=require("crypto");
 const read=p=>fs.readFileSync(p,"utf8"),json=p=>JSON.parse(read(p)),ok=(v,m)=>{if(!v)throw Error(m)};
 const gitSha=s=>crypto.createHash("sha1").update(Buffer.concat([Buffer.from("blob "+Buffer.byteLength(s)+"\0"),Buffer.from(s)])).digest("hex");
+// CT13 presentation-only correction: reconstruct the EXACT reviewed original
+// from the newer hierarchy. The historical SHA remains frozen; changing any
+// teaching words, math, examples, or unrelated Markdown still fails this gate.
+const originalCt13Headings=source=>{
+ let section=0,nested=false;
+ return source.split("\\n").map(line=>{
+  if(/^## /.test(line)){
+   const number=line.match(/(?:^|\\s)(1[01]|[1-9])\\.\\s/);
+   section=number?Number(number[1]):0;
+   nested=false;
+   return line;
+  }
+  if(/^### /.test(line)){
+   const child=
+    (section===1&&line==="### Minh họa trực quan")||
+    (section===3&&/^### 3\\.\\d+\\./.test(line))||
+    (section===4&&/^(### Kiến thức nên biết trước|### Chuyên đề sử dụng trực tiếp kiến thức này)$/.test(line))||
+    (section===5&&/^### Dạng \\d+/.test(line))||
+    (section===7&&/^### ❌ Lỗi \\d+:/.test(line));
+   nested=child;
+   return child?"##"+line.slice(3):line;
+  }
+  if(nested&&/^#### /.test(line))return "###"+line.slice(4);
+  return line;
+ }).join("\\n");
+};
+
 const specs=[
 {n:"13",slug:"13-goc-va-duong-thang",lesson:"87808197120ef356c7f839cb8322f307ea32eb15",bank:"566cd1e0f1e7e873b1ef74afe3617a3792d0cd62",count:23,declared:21,add:[
  ["GEO13MICRO_016","geo13-core-1","tia"],["GEO13MICRO_017","geo13-core-1","tia-doi"],["GEO13MICRO_018","geo13-core-1","doan-thang-do-dai"],["GEO13MICRO_019","geo13-core-2","do-goc"],["GEO13MICRO_020","geo13-core-2","phan-loai-goc"],["GEO13MICRO_021","geo13-core-2","goc-phu-bu"],["GEO13MICRO_022","geo13-core-2","nhan-dang-goc-dac-biet"]]},
@@ -17,7 +44,7 @@ let total=0,declared=0,covered=0,appended=0;
 for(const t of specs){
  const root="docs/kien-thuc/"+t.slug+"/",bp="docs/assets/data/practice/"+t.slug+"-micro-v1.json";
  const lesson=read(root+"index.md"),bank=json(bp),ws=json("docs/assets/data/curriculum/topic"+t.n+"-learning-workspace.json"),manifest=json("docs/assets/data/practice/"+t.slug+"-v1.manifest.json"),page=read(root+"core/index.md");
- ok(gitSha(lesson)===t.lesson,"source full lesson changed "+t.slug);
+ ok(gitSha(t.n==="13"?originalCt13Headings(lesson):lesson)===t.lesson,"source full lesson changed beyond approved CT13 heading-only correction "+t.slug);
  ok(bank.question_count===t.count&&bank.questions.length===t.count&&ws.cards.length===5,"counts "+t.slug);
  ok(gitSha(JSON.stringify({...bank,question_count:15,questions:bank.questions.slice(0,15)},null,2)+"\n")===t.bank,"original fifteen items must be byte-equivalent as JSON "+t.slug);
  ok(new Set(bank.questions.map(q=>q.id)).size===t.count,"no duplicate IDs "+t.slug);
