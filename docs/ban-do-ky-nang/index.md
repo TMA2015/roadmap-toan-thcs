@@ -10,7 +10,7 @@ Bản đồ kỹ năng giúp em **tìm lại kiến thức cần học và xem n
     - **Lượt luyện tập** là số lần trả lời câu hỏi, có bao gồm lượt làm lại. Đây không phải số câu hỏi độc nhất.
     - Các **kỹ năng thành phần** hiển thị số đúng/tổng theo nhãn bài tập, để em biết đã thực hành kiến thức nào. Một câu hỏi có thể liên quan đến nhiều kỹ năng; **không cộng các dòng đó** thành số lần làm bài.
     - **Chưa có dữ liệu** không có nghĩa là em yếu hoặc chương trình thiếu kiến thức. Em vẫn học và làm bài bình thường, kể cả khi câu hỏi chưa có Family chính xác.
-    - **Nhãn cần đối chiếu** là số nhóm đã có lượt luyện nhưng chưa thể gắn duy nhất vào Family theo danh mục hiện hành. Những lượt luyện ấy vẫn được tính trong tổng Practice.
+    - Những câu hỏi chưa có Family rõ ràng vẫn được tính trong tổng lượt luyện tập. Trên bản đồ, hệ thống chỉ hiện liên hệ kiến thức đủ chắc chắn.
     - Mọi số liệu chỉ phản ánh hoạt động luyện tập, **không phải điểm thành thạo, Readiness hoặc đánh giá bài tự luận**.
 
 !!! note "Kiến thức và việc học quan trọng hơn bộ đếm"
