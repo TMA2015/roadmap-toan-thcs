@@ -277,7 +277,7 @@ for (const file of fs.readdirSync(jsRoot).filter((name) => name.endsWith(".js"))
     assert(!content.includes("taxonomy-v2-runtime/"), "I4 preview must not load compiled item policies directly");
     assert(!content.includes("localStorage.setItem"), "I4 preview must remain read-only");
   } else if (file === authorizedDashboard) {
-    assert(content.includes(proposedStore), "Math dashboard must read the isolated Taxonomy store");
+    assert(!content.includes(proposedStore), "learner dashboard must not read a second Practice counter");
     assert(!content.includes("taxonomy-v2-runtime/"), "Math dashboard must never load item policies");
     assert(!content.includes("setItem(") && !content.includes("removeItem("), "Math dashboard must remain read-only");
   } else if (file === authorizedPortableBackup) {

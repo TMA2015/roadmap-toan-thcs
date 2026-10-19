@@ -12,7 +12,6 @@
   const summarize=(storage)=>{
     const practice=parse(storage,"toan-thcs-practice-v1");
     const readiness=parse(storage,"toan-thcs-assessment-v1");
-    const taxonomy=parse(storage,"toan-thcs-taxonomy-v2-evidence-v1");
     const p=safeObj(practice.value);
     const questionRows=Object.entries(safeObj(p.questions)).map(([id,v])=>({id,attempted:safeNum(v?.attempted),correct:safeNum(v?.correct)}));
     const attempted=questionRows.reduce((n,q)=>n+q.attempted,0);
@@ -27,14 +26,10 @@
         readiness_state:a.readiness_state||""
       })):[]
     ).sort((a,b)=>Date.parse(b.at||"")-Date.parse(a.at||""));
-    const t=safeObj(taxonomy.value);
-    const validUnits=Object.values(safeObj(t.independent_units)).filter(v=>v&&typeof v==="object");
-    const familyIds=new Set(validUnits.map(v=>v.family_id).filter(Boolean));
     return {
-      source_states:{practice:practice.state,readiness:readiness.state,taxonomy:taxonomy.state},
+      source_states:{practice:practice.state,readiness:readiness.state},
       practice:{attempted,correct,unique_questions:questionRows.filter(x=>x.attempted>0).length,skills:tags},
-      readiness:{submitted:assessments.length,distinct_assessments:new Set(assessments.map(a=>a.id)).size,recent:assessments.slice(0,5)},
-      independent:{units:validUnits.length,correct:validUnits.filter(v=>v.correct===true).length,families:familyIds.size}
+      readiness:{submitted:assessments.length,distinct_assessments:new Set(assessments.map(a=>a.id)).size,recent:assessments.slice(0,5)}
     };
   };
   const api=Object.freeze({summarize});

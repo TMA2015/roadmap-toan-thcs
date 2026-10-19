@@ -40,7 +40,7 @@ assert.ok(page.includes('data-skill-map-v2-mode="learner"'));
 
 const source = read("docs/assets/javascripts/skill-map-v2-preview.js");
 assert.ok(!source.includes("localStorage.setItem"), "I6 Skill Map must remain read-only");
-assert.ok(source.includes("Tỷ lệ đúng quan sát"));
+assert.ok(source.includes("Đã thực hành "), "learner Skill Map shows Practice activity instead of pseudo-mastery percentage");
 assert.ok(source.includes("Dữ liệu còn ít"));
 assert.ok(source.includes("Chưa có bằng chứng"));
 assert.ok(!source.includes("data-readiness-gate"));
