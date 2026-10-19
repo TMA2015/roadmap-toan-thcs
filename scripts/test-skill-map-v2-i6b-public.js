@@ -14,7 +14,7 @@ const page = read("docs/ban-do-ky-nang/index.md");
 assert.ok(page.includes("# Bản đồ kỹ năng"));
 assert.ok(page.includes('data-skill-map-v2-mode="learner"'));
 assert.ok(page.includes('data-assets-base="../assets/"'));
-assert.ok(page.includes("Nhãn cần đối chiếu"));
+assert.ok(page.includes("Những câu hỏi chưa có Family"));
 assert.ok(page.includes("cùng một nguồn Practice"));
 assert.ok(!page.includes("Controlled"));
 assert.ok(!page.includes("I6"));
