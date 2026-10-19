@@ -187,6 +187,9 @@ jobs:
       - name: Validate Skill Taxonomy v2 I6B public learner release
         run: |
           node scripts/test-skill-map-v2-i6b-public.js
+      - name: Validate CT13 lesson accordion hierarchy
+        run: |
+          node scripts/test-topic13-learning-accordion-hierarchy-20261019.js
       - name: Validate read-only Skill Priority R1 owner preview
         run: |
           node --check docs/assets/javascripts/skill-priority-preview-r1.js
@@ -448,6 +451,7 @@ jobs:
           python scripts/test-help-disclosure-toggle-browser.py
           python scripts/test-topic08-academic-depth-p1a-browser.py
           python scripts/test-topic09-navigation-reading-browser.py
+          python scripts/test-topic13-learning-accordion-browser-20261019.py
           python scripts/test-topic09-p1c1-variant-browser.py
           python scripts/test-topic09-p1c2-browser.py
           python scripts/test-written-exercise-library-browser.py
