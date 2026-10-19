@@ -246,11 +246,17 @@
       evidence_accuracy: null, recent_events: 0,
       assisted_recent_events: 0, latest_at: null, observed_topics: []
     }]));
+    // Known R38 academic disputes: a legacy tag alone cannot authorize
+    // a Family, even when Registry lists exactly one similarly named Family.
+    // Keep its Practice total, but do not show a misleading Family attribution.
+    const disputedTags = new Set(["mo-hinh-ti-le", "chia-da-thuc-mot-bien"]);
     let unmatched = 0;
     let matched = 0;
     for (const r of legacyRows(practice).filter((r) => r.attempted > 0)) {
       const targets = candidates.get(r.tag);
-      if (!targets || targets.size !== 1) { unmatched += 1; continue; }
+      if (disputedTags.has(r.tag) || !targets || targets.size !== 1) {
+        unmatched += 1; continue;
+      }
       const family = summaries.get([...targets][0]);
       if (!family) { unmatched += 1; continue; }
       family.practice_subskills.push(r);
