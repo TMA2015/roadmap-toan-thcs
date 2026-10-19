@@ -8,9 +8,9 @@ const gitSha=s=>crypto.createHash("sha1").update(Buffer.concat([Buffer.from("blo
 // teaching words, math, examples, or unrelated Markdown still fails this gate.
 const originalCt13Headings=source=>{
  let section=0,nested=false;
- return source.split("\\n").map(line=>{
+ return source.split("\n").map(line=>{
   if(/^## /.test(line)){
-   const number=line.match(/(?:^|\\s)(1[01]|[1-9])\\.\\s/);
+   const number=line.match(/(?:^|\s)(1[01]|[1-9])\.\s/);
    section=number?Number(number[1]):0;
    nested=false;
    return line;
@@ -18,16 +18,16 @@ const originalCt13Headings=source=>{
   if(/^### /.test(line)){
    const child=
     (section===1&&line==="### Minh họa trực quan")||
-    (section===3&&/^### 3\\.\\d+\\./.test(line))||
+    (section===3&&/^### 3\.\d+\./.test(line))||
     (section===4&&/^(### Kiến thức nên biết trước|### Chuyên đề sử dụng trực tiếp kiến thức này)$/.test(line))||
-    (section===5&&/^### Dạng \\d+/.test(line))||
-    (section===7&&/^### ❌ Lỗi \\d+:/.test(line));
+    (section===5&&/^### Dạng \d+/.test(line))||
+    (section===7&&/^### ❌ Lỗi \d+:/.test(line));
    nested=child;
    return child?"##"+line.slice(3):line;
   }
   if(nested&&/^#### /.test(line))return "###"+line.slice(4);
   return line;
- }).join("\\n");
+ }).join("\n");
 };
 
 const specs=[
