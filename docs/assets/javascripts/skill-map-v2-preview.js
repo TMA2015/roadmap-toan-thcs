@@ -250,6 +250,12 @@
     // a Family, even when Registry lists exactly one similarly named Family.
     // Keep its Practice total, but do not show a misleading Family attribution.
     const disputedTags = new Set(["mo-hinh-ti-le", "chia-da-thuc-mot-bien"]);
+    const labels = new Map((registry?.legacy_mappings || []).filter(
+      (r) => r?.legacy_id && r?.label
+    ).map((r) => [r.legacy_id, r.label]));
+    labels.set("lam-tron-so", "Làm tròn số");
+    labels.set("so-vo-ti", "Số vô tỉ");
+    labels.set("phep-tinh-so-huu-ti", "Phép tính số hữu tỉ");
     let unmatched = 0;
     let matched = 0;
     for (const r of legacyRows(practice).filter((r) => r.attempted > 0)) {
@@ -259,7 +265,7 @@
       }
       const family = summaries.get([...targets][0]);
       if (!family) { unmatched += 1; continue; }
-      family.practice_subskills.push(r);
+      family.practice_subskills.push({ ...r, label: labels.get(r.tag) || r.tag.replace(/-/g, " ") });
       matched += 1;
     }
     const questions = Object.values(practice.questions).filter(
@@ -375,7 +381,7 @@
         ["Lượt luyện tập", this.evidence.totals.practice_attempted],
         ["Lượt làm đúng", this.evidence.totals.practice_correct],
         ["Nhóm kỹ năng đã luyện", this.evidence.totals.practiced_families],
-        ["Nhãn cần đối chiếu", this.evidence.totals.unmatched_skill_tags]
+        ["Câu đã thực hành", this.evidence.totals.practiced_questions]
       ] : [
         ["Đơn vị độc lập", this.evidence.totals.independent_units],
         ["Đúng trên đơn vị độc lập", this.evidence.totals.independent_correct],
@@ -517,7 +523,7 @@
           const metrics = el("div", "skill-map-v2-metrics");
           for (const skill of skills) {
             metrics.append(el("span", "skill-map-v2-metric",
-              skill.tag.replace(/-/g, " ") + ": " +
+              skill.label + ": " +
               skill.correct + "/" + skill.attempted + " đúng" +
               (skill.hinted_attempts > 0 ? " · có gợi ý" : "")));
           }
