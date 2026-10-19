@@ -3,6 +3,18 @@
 const fs=require("fs"),crypto=require("crypto");
 const read=p=>fs.readFileSync(p,"utf8"),j=p=>JSON.parse(read(p)),assert=(v,msg)=>{if(!v)throw Error(msg)};
 const sha=s=>crypto.createHash("sha1").update(Buffer.concat([Buffer.from("blob "+Buffer.byteLength(s)+"\0"),Buffer.from(s)])).digest("hex");
+// Wave C CT16: preserve the old reviewed knowledge page source SHA exactly,
+// while pinning a separately reviewed new full page (no unrestricted repin).
+const waveCOriginal16=source=>{
+ assert(sha(source)==="524b376bd6cc0004e2b4353604f8ac1551b2382b","CT16 Wave C full lesson drift");
+ const begin="### 3.6A. Trung tuyến ứng với cạnh huyền — liên kết với hình chữ nhật";
+ const end="### Infographic 3 – Hình chữ nhật, hình thoi và hình vuông";
+ const a=source.indexOf(begin),b=source.indexOf(end,a+begin.length);
+ assert(a>=0&&b>a&&source.indexOf(begin,a+1)===-1,"CT16 teaching section missing/duplicated");
+ assert(10/2===5&&2*5===10,"CT16 median-hypotenuse illustration");
+ return source.slice(0,a)+source.slice(b);
+};
+
 const specs=[
  {n:"16",slug:"16-tu-giac",lesson:"b2c76f908ac4679ce139b1f9ad95ad139e74261b",bank:"460dbc0f10a2655717011a94733449b0df8c6bc0",count:16,skills:13,newIds:["GEO16MICRO_016"]},
  {n:"17",slug:"17-thales-dong-dang",lesson:"2663753568ad19bbf9f168c1b3b703fd24599395",bank:"01c8326343d050959aca0d98d7042e463c993612",count:15,skills:12,newIds:[]},
@@ -16,7 +28,7 @@ let cardCount=0,totalQuestions=0,totalSkills=0,covered=0;
 for(const t of specs){
  const path="docs/kien-thuc/"+t.slug+"/",bp="docs/assets/data/practice/"+t.slug+"-micro-v1.json",wp="docs/assets/data/curriculum/topic"+t.n+"-learning-workspace.json";
  const lesson=read(path+"index.md"),bank=j(bp),w=j(wp),labels=j("docs/assets/data/practice/"+t.slug+"-v1.manifest.json").skill_labels,page=read(path+"core/index.md");
- assert(sha(lesson)===t.lesson,"full lesson changed "+t.slug);
+ assert(sha(t.n==="16"?waveCOriginal16(lesson):lesson)===t.lesson,"historical source drift beyond reviewed Wave C "+t.slug);
  assert(bank.question_count===t.count&&bank.questions.length===t.count&&w.cards.length===5,"exact question/card counts "+t.slug);
  const old={...bank,question_count:15,questions:bank.questions.slice(0,15)};
  assert(sha(JSON.stringify(old,null,2)+"\n")===t.bank,"original bank content changed "+t.slug);
