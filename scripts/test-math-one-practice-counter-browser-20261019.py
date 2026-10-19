@@ -149,9 +149,9 @@ with sync_playwright() as pw:
     assert "3" in cards.nth(0).inner_text()
     assert "2" in cards.nth(1).inner_text()
     assert "Làm tròn số: 1/1 đúng" in skill_map.locator('[data-family-id="NUM-SETS"]').inner_text()
-    assert "hang tu dong dang: 0/1 đúng" in skill_map.locator(
+    assert "Hạng tử đồng dạng: 0/1 đúng" in skill_map.locator(
         '[data-family-id="ALG-SIMPLIFY-ADD-SUB"]').inner_text()
-    assert skill_map.locator('[data-skill-map-legacy]').count() == 0
+    assert skill_map.locator('.skill-map-v2-legacy').count() == 0
     assert_shadow_untouched(page)
 
     # Reopening the map and dashboard does not increment or modify Practice.
