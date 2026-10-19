@@ -1,0 +1,3494 @@
+{
+  "schema": "primary-skill-overlay-core08-s2-phase-d-r1",
+  "status": "NOTEBOOKLM_PASS_CLEARED_FOR_CT08_S2_RECONCILIATION",
+  "as_of": "2026-10-02",
+  "topic": "08-phuong-trinh-bat-phuong-trinh",
+  "source_manifest": "docs/assets/data/practice/08-phuong-trinh-bat-phuong-trinh-v1.manifest.json",
+  "source_manifest_blob": "2c6da84472485b3f13805785cd3ff9f039dace13",
+  "source_files": {
+    "08-phuong-trinh-bat-phuong-trinh-v1-01.json": {
+      "blob": "fcc302b520bdedd1bddc7194d195fda5b9893b0a",
+      "question_count": 30
+    },
+    "08-phuong-trinh-bat-phuong-trinh-v1-02.json": {
+      "blob": "717e6988da610c382e744118fe4aca0c20d40244",
+      "question_count": 30
+    },
+    "08-phuong-trinh-bat-phuong-trinh-v1-03.json": {
+      "blob": "ad5ad4937bc971d3a85a894a838cd559671df4da",
+      "question_count": 30
+    },
+    "08-phuong-trinh-bat-phuong-trinh-v1-04.json": {
+      "blob": "06ee1a503f03de3495db198594a5d560ec366813",
+      "question_count": 30
+    },
+    "08-phuong-trinh-bat-phuong-trinh-v1-05.json": {
+      "blob": "29a6b1d992b8e28bb352b07ca56dbd9d537406b5",
+      "question_count": 12
+    }
+  },
+  "academic_basis": {
+    "s2_family_packet": "MATH-SKILL-S2-PROVISIONAL-FAMILY-R1-20261002 NotebookLM PASS 29/29",
+    "full_bank_required": true
+  },
+  "rules": {
+    "one_primary_max_per_mcq": true,
+    "supporting_subskills_not_separate_learner_mastery": true,
+    "modeling_mcq_is_partial_evidence_only": true,
+    "written_required_for_full_modeling_certification": true,
+    "cross_batch_product_equation_relation_preserved": true,
+    "legacy_question_content_answer_tags_immutable": true,
+    "clone_family_not_multiple_independent_mastery_events": true,
+    "runtime_enabled": false,
+    "no_history_backfill": true
+  },
+  "summary": {
+    "questions": 132,
+    "mapped_primary": 132,
+    "formative_only_without_primary": 0,
+    "primary_counts": {
+      "nghiem-phuong-trinh": 6,
+      "pt-bac-nhat": 28,
+      "pt-tich": 12,
+      "dkxd-phuong-trinh-mau": 8,
+      "khu-mau-phuong-trinh": 12,
+      "doi-chieu-nghiem": 6,
+      "bpt-bac-nhat": 14,
+      "doi-chieu-bpt": 8,
+      "bieu-dien-tap-nghiem": 6,
+      "giao-tap-nghiem": 6,
+      "lap-phuong-trinh": 6,
+      "lap-bat-phuong-trinh": 4,
+      "tham-so-co-ban": 4,
+      "bat-dang-thuc": 4,
+      "tinh-chat-thu-tu-phep-cong": 4,
+      "tinh-chat-thu-tu-phep-nhan": 4
+    },
+    "family_counts": {
+      "EQ-BASIC": 46,
+      "EQ-RATIONAL": 26,
+      "INEQ-SOLVE": 34,
+      "EQ-MODEL": 6,
+      "INEQ-MODEL": 4,
+      "EQ-PARAM": 4,
+      "INEQ-ORDER": 12
+    },
+    "clone_families": [
+      {
+        "id": "EQ08-SOLUTION-CONCEPT-001-006",
+        "count": 6,
+        "ids": [
+          "EQ08V1_001",
+          "EQ08V1_002",
+          "EQ08V1_003",
+          "EQ08V1_004",
+          "EQ08V1_005",
+          "EQ08V1_006"
+        ]
+      },
+      {
+        "id": "EQ08-LINEAR-SIMPLE-007-022",
+        "count": 16,
+        "ids": [
+          "EQ08V1_007",
+          "EQ08V1_008",
+          "EQ08V1_009",
+          "EQ08V1_010",
+          "EQ08V1_011",
+          "EQ08V1_012",
+          "EQ08V1_013",
+          "EQ08V1_014",
+          "EQ08V1_015",
+          "EQ08V1_016",
+          "EQ08V1_017",
+          "EQ08V1_018",
+          "EQ08V1_019",
+          "EQ08V1_020",
+          "EQ08V1_021",
+          "EQ08V1_022"
+        ]
+      },
+      {
+        "id": "EQ08-LINEAR-MULTISTEP-023-034",
+        "count": 12,
+        "ids": [
+          "EQ08V1_023",
+          "EQ08V1_024",
+          "EQ08V1_025",
+          "EQ08V1_026",
+          "EQ08V1_027",
+          "EQ08V1_028",
+          "EQ08V1_029",
+          "EQ08V1_030",
+          "EQ08V1_031",
+          "EQ08V1_032",
+          "EQ08V1_033",
+          "EQ08V1_034"
+        ]
+      },
+      {
+        "id": "EQ08-PRODUCT-035-046",
+        "count": 12,
+        "ids": [
+          "EQ08V1_035",
+          "EQ08V1_036",
+          "EQ08V1_037",
+          "EQ08V1_038",
+          "EQ08V1_039",
+          "EQ08V1_040",
+          "EQ08V1_041",
+          "EQ08V1_042",
+          "EQ08V1_043",
+          "EQ08V1_044",
+          "EQ08V1_045",
+          "EQ08V1_046"
+        ]
+      },
+      {
+        "id": "EQ08-RATIONAL-DOMAIN-047-054",
+        "count": 8,
+        "ids": [
+          "EQ08V1_047",
+          "EQ08V1_048",
+          "EQ08V1_049",
+          "EQ08V1_050",
+          "EQ08V1_051",
+          "EQ08V1_052",
+          "EQ08V1_053",
+          "EQ08V1_054"
+        ]
+      },
+      {
+        "id": "EQ08-RATIONAL-RECIPROCAL-055-060",
+        "count": 6,
+        "ids": [
+          "EQ08V1_055",
+          "EQ08V1_056",
+          "EQ08V1_057",
+          "EQ08V1_058",
+          "EQ08V1_059",
+          "EQ08V1_060"
+        ]
+      },
+      {
+        "id": "EQ08-RATIONAL-LINEAR-061-066",
+        "count": 6,
+        "ids": [
+          "EQ08V1_061",
+          "EQ08V1_062",
+          "EQ08V1_063",
+          "EQ08V1_064",
+          "EQ08V1_065",
+          "EQ08V1_066"
+        ]
+      },
+      {
+        "id": "EQ08-RATIONAL-REJECT-067-072",
+        "count": 6,
+        "ids": [
+          "EQ08V1_067",
+          "EQ08V1_068",
+          "EQ08V1_069",
+          "EQ08V1_070",
+          "EQ08V1_071",
+          "EQ08V1_072"
+        ]
+      },
+      {
+        "id": "EQ08-INEQ-SIMPLE-073-086",
+        "count": 14,
+        "ids": [
+          "EQ08V1_073",
+          "EQ08V1_074",
+          "EQ08V1_075",
+          "EQ08V1_076",
+          "EQ08V1_077",
+          "EQ08V1_078",
+          "EQ08V1_079",
+          "EQ08V1_080",
+          "EQ08V1_081",
+          "EQ08V1_082",
+          "EQ08V1_083",
+          "EQ08V1_084",
+          "EQ08V1_085",
+          "EQ08V1_086"
+        ]
+      },
+      {
+        "id": "EQ08-INEQ-FLIP-087-094",
+        "count": 8,
+        "ids": [
+          "EQ08V1_087",
+          "EQ08V1_088",
+          "EQ08V1_089",
+          "EQ08V1_090",
+          "EQ08V1_091",
+          "EQ08V1_092",
+          "EQ08V1_093",
+          "EQ08V1_094"
+        ]
+      },
+      {
+        "id": "EQ08-NUMBERLINE-095-100",
+        "count": 6,
+        "ids": [
+          "EQ08V1_095",
+          "EQ08V1_096",
+          "EQ08V1_097",
+          "EQ08V1_098",
+          "EQ08V1_099",
+          "EQ08V1_100"
+        ]
+      },
+      {
+        "id": "EQ08-INTERSECTION-101-106",
+        "count": 6,
+        "ids": [
+          "EQ08V1_101",
+          "EQ08V1_102",
+          "EQ08V1_103",
+          "EQ08V1_104",
+          "EQ08V1_105",
+          "EQ08V1_106"
+        ]
+      },
+      {
+        "id": "EQ08-INEQ-MODEL-113-116",
+        "count": 4,
+        "ids": [
+          "EQ08V1_113",
+          "EQ08V1_114",
+          "EQ08V1_115",
+          "EQ08V1_116"
+        ]
+      },
+      {
+        "id": "EQ08-PARAM-117-120",
+        "count": 4,
+        "ids": [
+          "EQ08V1_117",
+          "EQ08V1_118",
+          "EQ08V1_119",
+          "EQ08V1_120"
+        ]
+      },
+      {
+        "id": "EQ08-ORDER-ADD-125-128",
+        "count": 4,
+        "ids": [
+          "EQ08V1_125",
+          "EQ08V1_126",
+          "EQ08V1_127",
+          "EQ08V1_128"
+        ]
+      },
+      {
+        "id": "EQ08-ORDER-MULTIPLY-129-132",
+        "count": 4,
+        "ids": [
+          "EQ08V1_129",
+          "EQ08V1_130",
+          "EQ08V1_131",
+          "EQ08V1_132"
+        ]
+      }
+    ],
+    "runtime_enabled": 0
+  },
+  "items": [
+    {
+      "question_id": "EQ08V1_001",
+      "source_file": "08-phuong-trinh-bat-phuong-trinh-v1-01.json",
+      "legacy_skill_tags": [
+        "nghiem-phuong-trinh"
+      ],
+      "canonical_assessed_skill_candidate": "nghiem-phuong-trinh",
+      "learner_family_candidate": "EQ-BASIC",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "metadata_only_tags": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "EQ08-SOLUTION-CONCEPT-001-006",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Nhận xét đúng về phương trình \\(2x+1=7\\) là:",
+      "correct_option": "\\(x=3\\) là một nghiệm vì thay vào làm hai vế bằng nhau.",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "EQ08V1_002",
+      "source_file": "08-phuong-trinh-bat-phuong-trinh-v1-01.json",
+      "legacy_skill_tags": [
+        "nghiem-phuong-trinh"
+      ],
+      "canonical_assessed_skill_candidate": "nghiem-phuong-trinh",
+      "learner_family_candidate": "EQ-BASIC",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "metadata_only_tags": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "EQ08-SOLUTION-CONCEPT-001-006",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Nhận xét đúng về phương trình \\(3x-5=10\\) là:",
+      "correct_option": "\\(x=5\\) là một nghiệm vì thay vào làm hai vế bằng nhau.",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "EQ08V1_003",
+      "source_file": "08-phuong-trinh-bat-phuong-trinh-v1-01.json",
+      "legacy_skill_tags": [
+        "nghiem-phuong-trinh"
+      ],
+      "canonical_assessed_skill_candidate": "nghiem-phuong-trinh",
+      "learner_family_candidate": "EQ-BASIC",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "metadata_only_tags": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "EQ08-SOLUTION-CONCEPT-001-006",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Nhận xét đúng về phương trình \\(x^2-4=0\\) là:",
+      "correct_option": "\\(x=2\\) là một nghiệm vì thay vào làm hai vế bằng nhau.",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "EQ08V1_004",
+      "source_file": "08-phuong-trinh-bat-phuong-trinh-v1-01.json",
+      "legacy_skill_tags": [
+        "nghiem-phuong-trinh"
+      ],
+      "canonical_assessed_skill_candidate": "nghiem-phuong-trinh",
+      "learner_family_candidate": "EQ-BASIC",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "metadata_only_tags": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "EQ08-SOLUTION-CONCEPT-001-006",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Nhận xét đúng về phương trình \\(5-x=1\\) là:",
+      "correct_option": "\\(x=4\\) là một nghiệm vì thay vào làm hai vế bằng nhau.",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "EQ08V1_005",
+      "source_file": "08-phuong-trinh-bat-phuong-trinh-v1-01.json",
+      "legacy_skill_tags": [
+        "nghiem-phuong-trinh"
+      ],
+      "canonical_assessed_skill_candidate": "nghiem-phuong-trinh",
+      "learner_family_candidate": "EQ-BASIC",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "metadata_only_tags": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "EQ08-SOLUTION-CONCEPT-001-006",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Nhận xét đúng về phương trình \\(4x=20\\) là:",
+      "correct_option": "\\(x=5\\) là một nghiệm vì thay vào làm hai vế bằng nhau.",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "EQ08V1_006",
+      "source_file": "08-phuong-trinh-bat-phuong-trinh-v1-01.json",
+      "legacy_skill_tags": [
+        "nghiem-phuong-trinh"
+      ],
+      "canonical_assessed_skill_candidate": "nghiem-phuong-trinh",
+      "learner_family_candidate": "EQ-BASIC",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "metadata_only_tags": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "EQ08-SOLUTION-CONCEPT-001-006",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Nhận xét đúng về phương trình \\(x(x-3)=0\\) là:",
+      "correct_option": "\\(x=0\\) là một nghiệm vì thay vào làm hai vế bằng nhau.",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "EQ08V1_007",
+      "source_file": "08-phuong-trinh-bat-phuong-trinh-v1-01.json",
+      "legacy_skill_tags": [
+        "pt-bac-nhat"
+      ],
+      "canonical_assessed_skill_candidate": "pt-bac-nhat",
+      "learner_family_candidate": "EQ-BASIC",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "metadata_only_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "EQ08-LINEAR-SIMPLE-007-022",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Giải phương trình \\(2x-8=-10\\).",
+      "correct_option": "\\(x=-1\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "EQ08V1_008",
+      "source_file": "08-phuong-trinh-bat-phuong-trinh-v1-01.json",
+      "legacy_skill_tags": [
+        "pt-bac-nhat"
+      ],
+      "canonical_assessed_skill_candidate": "pt-bac-nhat",
+      "learner_family_candidate": "EQ-BASIC",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "metadata_only_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "EQ08-LINEAR-SIMPLE-007-022",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Giải phương trình \\(3x+2=-13\\).",
+      "correct_option": "\\(x=-5\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "EQ08V1_009",
+      "source_file": "08-phuong-trinh-bat-phuong-trinh-v1-01.json",
+      "legacy_skill_tags": [
+        "pt-bac-nhat"
+      ],
+      "canonical_assessed_skill_candidate": "pt-bac-nhat",
+      "learner_family_candidate": "EQ-BASIC",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "metadata_only_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "EQ08-LINEAR-SIMPLE-007-022",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Giải phương trình \\(3x-8=4\\).",
+      "correct_option": "\\(x=4\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "EQ08V1_010",
+      "source_file": "08-phuong-trinh-bat-phuong-trinh-v1-01.json",
+      "legacy_skill_tags": [
+        "pt-bac-nhat"
+      ],
+      "canonical_assessed_skill_candidate": "pt-bac-nhat",
+      "learner_family_candidate": "EQ-BASIC",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "metadata_only_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "EQ08-LINEAR-SIMPLE-007-022",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Giải phương trình \\(2x+4=-4\\).",
+      "correct_option": "\\(x=-4\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "EQ08V1_011",
+      "source_file": "08-phuong-trinh-bat-phuong-trinh-v1-01.json",
+      "legacy_skill_tags": [
+        "pt-bac-nhat"
+      ],
+      "canonical_assessed_skill_candidate": "pt-bac-nhat",
+      "learner_family_candidate": "EQ-BASIC",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "metadata_only_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "EQ08-LINEAR-SIMPLE-007-022",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Giải phương trình \\(6x+2=-28\\).",
+      "correct_option": "\\(x=-5\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "EQ08V1_012",
+      "source_file": "08-phuong-trinh-bat-phuong-trinh-v1-01.json",
+      "legacy_skill_tags": [
+        "pt-bac-nhat"
+      ],
+      "canonical_assessed_skill_candidate": "pt-bac-nhat",
+      "learner_family_candidate": "EQ-BASIC",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "metadata_only_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "EQ08-LINEAR-SIMPLE-007-022",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Giải phương trình \\(3x+7=1\\).",
+      "correct_option": "\\(x=-2\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "EQ08V1_013",
+      "source_file": "08-phuong-trinh-bat-phuong-trinh-v1-01.json",
+      "legacy_skill_tags": [
+        "pt-bac-nhat"
+      ],
+      "canonical_assessed_skill_candidate": "pt-bac-nhat",
+      "learner_family_candidate": "EQ-BASIC",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "metadata_only_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "EQ08-LINEAR-SIMPLE-007-022",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Giải phương trình \\(3x+2=14\\).",
+      "correct_option": "\\(x=4\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "EQ08V1_014",
+      "source_file": "08-phuong-trinh-bat-phuong-trinh-v1-01.json",
+      "legacy_skill_tags": [
+        "pt-bac-nhat"
+      ],
+      "canonical_assessed_skill_candidate": "pt-bac-nhat",
+      "learner_family_candidate": "EQ-BASIC",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "metadata_only_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "EQ08-LINEAR-SIMPLE-007-022",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Giải phương trình \\(4x+4=16\\).",
+      "correct_option": "\\(x=3\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "EQ08V1_015",
+      "source_file": "08-phuong-trinh-bat-phuong-trinh-v1-01.json",
+      "legacy_skill_tags": [
+        "pt-bac-nhat"
+      ],
+      "canonical_assessed_skill_candidate": "pt-bac-nhat",
+      "learner_family_candidate": "EQ-BASIC",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "metadata_only_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "EQ08-LINEAR-SIMPLE-007-022",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Giải phương trình \\(7x-3=11\\).",
+      "correct_option": "\\(x=2\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "EQ08V1_016",
+      "source_file": "08-phuong-trinh-bat-phuong-trinh-v1-01.json",
+      "legacy_skill_tags": [
+        "pt-bac-nhat"
+      ],
+      "canonical_assessed_skill_candidate": "pt-bac-nhat",
+      "learner_family_candidate": "EQ-BASIC",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "metadata_only_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "EQ08-LINEAR-SIMPLE-007-022",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Giải phương trình \\(6x-8=22\\).",
+      "correct_option": "\\(x=5\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "EQ08V1_017",
+      "source_file": "08-phuong-trinh-bat-phuong-trinh-v1-01.json",
+      "legacy_skill_tags": [
+        "pt-bac-nhat"
+      ],
+      "canonical_assessed_skill_candidate": "pt-bac-nhat",
+      "learner_family_candidate": "EQ-BASIC",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "metadata_only_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "EQ08-LINEAR-SIMPLE-007-022",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Giải phương trình \\(4x+4=-16\\).",
+      "correct_option": "\\(x=-5\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "EQ08V1_018",
+      "source_file": "08-phuong-trinh-bat-phuong-trinh-v1-01.json",
+      "legacy_skill_tags": [
+        "pt-bac-nhat"
+      ],
+      "canonical_assessed_skill_candidate": "pt-bac-nhat",
+      "learner_family_candidate": "EQ-BASIC",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "metadata_only_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "EQ08-LINEAR-SIMPLE-007-022",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Giải phương trình \\(2x+7=17\\).",
+      "correct_option": "\\(x=5\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "EQ08V1_019",
+      "source_file": "08-phuong-trinh-bat-phuong-trinh-v1-01.json",
+      "legacy_skill_tags": [
+        "pt-bac-nhat"
+      ],
+      "canonical_assessed_skill_candidate": "pt-bac-nhat",
+      "learner_family_candidate": "EQ-BASIC",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "metadata_only_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "EQ08-LINEAR-SIMPLE-007-022",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Giải phương trình \\(2x+4=14\\).",
+      "correct_option": "\\(x=5\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "EQ08V1_020",
+      "source_file": "08-phuong-trinh-bat-phuong-trinh-v1-01.json",
+      "legacy_skill_tags": [
+        "pt-bac-nhat"
+      ],
+      "canonical_assessed_skill_candidate": "pt-bac-nhat",
+      "learner_family_candidate": "EQ-BASIC",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "metadata_only_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "EQ08-LINEAR-SIMPLE-007-022",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Giải phương trình \\(4x-3=-19\\).",
+      "correct_option": "\\(x=-4\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "EQ08V1_021",
+      "source_file": "08-phuong-trinh-bat-phuong-trinh-v1-01.json",
+      "legacy_skill_tags": [
+        "pt-bac-nhat"
+      ],
+      "canonical_assessed_skill_candidate": "pt-bac-nhat",
+      "learner_family_candidate": "EQ-BASIC",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "metadata_only_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "EQ08-LINEAR-SIMPLE-007-022",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Giải phương trình \\(7x-5=-19\\).",
+      "correct_option": "\\(x=-2\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "EQ08V1_022",
+      "source_file": "08-phuong-trinh-bat-phuong-trinh-v1-01.json",
+      "legacy_skill_tags": [
+        "pt-bac-nhat"
+      ],
+      "canonical_assessed_skill_candidate": "pt-bac-nhat",
+      "learner_family_candidate": "EQ-BASIC",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "metadata_only_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "EQ08-LINEAR-SIMPLE-007-022",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Giải phương trình \\(2x+2=0\\).",
+      "correct_option": "\\(x=-1\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "EQ08V1_023",
+      "source_file": "08-phuong-trinh-bat-phuong-trinh-v1-01.json",
+      "legacy_skill_tags": [
+        "bien-doi-pt-nhieu-buoc",
+        "pt-bac-nhat"
+      ],
+      "canonical_assessed_skill_candidate": "pt-bac-nhat",
+      "learner_family_candidate": "EQ-BASIC",
+      "supporting_skills": [
+        "bien-doi-pt-nhieu-buoc"
+      ],
+      "context_tags": [],
+      "method_tags": [],
+      "metadata_only_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "EQ08-LINEAR-MULTISTEP-023-034",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Giải phương trình \\(2(x-1)+2(x+2)=10\\).",
+      "correct_option": "\\(x=2\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "EQ08V1_024",
+      "source_file": "08-phuong-trinh-bat-phuong-trinh-v1-01.json",
+      "legacy_skill_tags": [
+        "bien-doi-pt-nhieu-buoc",
+        "pt-bac-nhat"
+      ],
+      "canonical_assessed_skill_candidate": "pt-bac-nhat",
+      "learner_family_candidate": "EQ-BASIC",
+      "supporting_skills": [
+        "bien-doi-pt-nhieu-buoc"
+      ],
+      "context_tags": [],
+      "method_tags": [],
+      "metadata_only_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "EQ08-LINEAR-MULTISTEP-023-034",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Giải phương trình \\(4(x-4)+3(x+2)=-31\\).",
+      "correct_option": "\\(x=-3\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "EQ08V1_025",
+      "source_file": "08-phuong-trinh-bat-phuong-trinh-v1-01.json",
+      "legacy_skill_tags": [
+        "bien-doi-pt-nhieu-buoc",
+        "pt-bac-nhat"
+      ],
+      "canonical_assessed_skill_candidate": "pt-bac-nhat",
+      "learner_family_candidate": "EQ-BASIC",
+      "supporting_skills": [
+        "bien-doi-pt-nhieu-buoc"
+      ],
+      "context_tags": [],
+      "method_tags": [],
+      "metadata_only_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "EQ08-LINEAR-MULTISTEP-023-034",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Giải phương trình \\(4(x-4)+2(x+2)=0\\).",
+      "correct_option": "\\(x=2\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "EQ08V1_026",
+      "source_file": "08-phuong-trinh-bat-phuong-trinh-v1-01.json",
+      "legacy_skill_tags": [
+        "bien-doi-pt-nhieu-buoc",
+        "pt-bac-nhat"
+      ],
+      "canonical_assessed_skill_candidate": "pt-bac-nhat",
+      "learner_family_candidate": "EQ-BASIC",
+      "supporting_skills": [
+        "bien-doi-pt-nhieu-buoc"
+      ],
+      "context_tags": [],
+      "method_tags": [],
+      "metadata_only_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "EQ08-LINEAR-MULTISTEP-023-034",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Giải phương trình \\(4(x-3)+2(x+1)=-22\\).",
+      "correct_option": "\\(x=-2\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "EQ08V1_027",
+      "source_file": "08-phuong-trinh-bat-phuong-trinh-v1-01.json",
+      "legacy_skill_tags": [
+        "bien-doi-pt-nhieu-buoc",
+        "pt-bac-nhat"
+      ],
+      "canonical_assessed_skill_candidate": "pt-bac-nhat",
+      "learner_family_candidate": "EQ-BASIC",
+      "supporting_skills": [
+        "bien-doi-pt-nhieu-buoc"
+      ],
+      "context_tags": [],
+      "method_tags": [],
+      "metadata_only_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "EQ08-LINEAR-MULTISTEP-023-034",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Giải phương trình \\(3(x-3)+2(x+2)=15\\).",
+      "correct_option": "\\(x=4\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "EQ08V1_028",
+      "source_file": "08-phuong-trinh-bat-phuong-trinh-v1-01.json",
+      "legacy_skill_tags": [
+        "bien-doi-pt-nhieu-buoc",
+        "pt-bac-nhat"
+      ],
+      "canonical_assessed_skill_candidate": "pt-bac-nhat",
+      "learner_family_candidate": "EQ-BASIC",
+      "supporting_skills": [
+        "bien-doi-pt-nhieu-buoc"
+      ],
+      "context_tags": [],
+      "method_tags": [],
+      "metadata_only_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "EQ08-LINEAR-MULTISTEP-023-034",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Giải phương trình \\(3(x-4)+2(x+3)=-1\\).",
+      "correct_option": "\\(x=1\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "EQ08V1_029",
+      "source_file": "08-phuong-trinh-bat-phuong-trinh-v1-01.json",
+      "legacy_skill_tags": [
+        "bien-doi-pt-nhieu-buoc",
+        "pt-bac-nhat"
+      ],
+      "canonical_assessed_skill_candidate": "pt-bac-nhat",
+      "learner_family_candidate": "EQ-BASIC",
+      "supporting_skills": [
+        "bien-doi-pt-nhieu-buoc"
+      ],
+      "context_tags": [],
+      "method_tags": [],
+      "metadata_only_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "EQ08-LINEAR-MULTISTEP-023-034",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Giải phương trình \\(4(x-2)+1(x+2)=-21\\).",
+      "correct_option": "\\(x=-3\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "EQ08V1_030",
+      "source_file": "08-phuong-trinh-bat-phuong-trinh-v1-01.json",
+      "legacy_skill_tags": [
+        "bien-doi-pt-nhieu-buoc",
+        "pt-bac-nhat"
+      ],
+      "canonical_assessed_skill_candidate": "pt-bac-nhat",
+      "learner_family_candidate": "EQ-BASIC",
+      "supporting_skills": [
+        "bien-doi-pt-nhieu-buoc"
+      ],
+      "context_tags": [],
+      "method_tags": [],
+      "metadata_only_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "EQ08-LINEAR-MULTISTEP-023-034",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Giải phương trình \\(2(x-3)+3(x+3)=28\\).",
+      "correct_option": "\\(x=5\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "EQ08V1_031",
+      "source_file": "08-phuong-trinh-bat-phuong-trinh-v1-02.json",
+      "legacy_skill_tags": [
+        "bien-doi-pt-nhieu-buoc",
+        "pt-bac-nhat"
+      ],
+      "canonical_assessed_skill_candidate": "pt-bac-nhat",
+      "learner_family_candidate": "EQ-BASIC",
+      "supporting_skills": [
+        "bien-doi-pt-nhieu-buoc"
+      ],
+      "context_tags": [],
+      "method_tags": [],
+      "metadata_only_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "EQ08-LINEAR-MULTISTEP-023-034",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Giải phương trình \\(4(x-1)+1(x+3)=9\\).",
+      "correct_option": "\\(x=2\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "EQ08V1_032",
+      "source_file": "08-phuong-trinh-bat-phuong-trinh-v1-02.json",
+      "legacy_skill_tags": [
+        "bien-doi-pt-nhieu-buoc",
+        "pt-bac-nhat"
+      ],
+      "canonical_assessed_skill_candidate": "pt-bac-nhat",
+      "learner_family_candidate": "EQ-BASIC",
+      "supporting_skills": [
+        "bien-doi-pt-nhieu-buoc"
+      ],
+      "context_tags": [],
+      "method_tags": [],
+      "metadata_only_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "EQ08-LINEAR-MULTISTEP-023-034",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Giải phương trình \\(4(x-2)+1(x+1)=-12\\).",
+      "correct_option": "\\(x=-1\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "EQ08V1_033",
+      "source_file": "08-phuong-trinh-bat-phuong-trinh-v1-02.json",
+      "legacy_skill_tags": [
+        "bien-doi-pt-nhieu-buoc",
+        "pt-bac-nhat"
+      ],
+      "canonical_assessed_skill_candidate": "pt-bac-nhat",
+      "learner_family_candidate": "EQ-BASIC",
+      "supporting_skills": [
+        "bien-doi-pt-nhieu-buoc"
+      ],
+      "context_tags": [],
+      "method_tags": [],
+      "metadata_only_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "EQ08-LINEAR-MULTISTEP-023-034",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Giải phương trình \\(2(x-4)+1(x+1)=-1\\).",
+      "correct_option": "\\(x=2\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "EQ08V1_034",
+      "source_file": "08-phuong-trinh-bat-phuong-trinh-v1-02.json",
+      "legacy_skill_tags": [
+        "bien-doi-pt-nhieu-buoc",
+        "pt-bac-nhat"
+      ],
+      "canonical_assessed_skill_candidate": "pt-bac-nhat",
+      "learner_family_candidate": "EQ-BASIC",
+      "supporting_skills": [
+        "bien-doi-pt-nhieu-buoc"
+      ],
+      "context_tags": [],
+      "method_tags": [],
+      "metadata_only_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "EQ08-LINEAR-MULTISTEP-023-034",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Giải phương trình \\(4(x-1)+1(x+2)=18\\).",
+      "correct_option": "\\(x=4\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "EQ08V1_035",
+      "source_file": "08-phuong-trinh-bat-phuong-trinh-v1-02.json",
+      "legacy_skill_tags": [
+        "pt-tich"
+      ],
+      "canonical_assessed_skill_candidate": "pt-tich",
+      "learner_family_candidate": "EQ-BASIC",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "metadata_only_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "EQ08-PRODUCT-035-046",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Giải phương trình \\((x-0)(x-5)=0\\).",
+      "correct_option": "\\(x=0\\;\\text{hoặc}\\;x=5\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "EQ08V1_036",
+      "source_file": "08-phuong-trinh-bat-phuong-trinh-v1-02.json",
+      "legacy_skill_tags": [
+        "pt-tich"
+      ],
+      "canonical_assessed_skill_candidate": "pt-tich",
+      "learner_family_candidate": "EQ-BASIC",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "metadata_only_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "EQ08-PRODUCT-035-046",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Giải phương trình \\((x+1)(x-3)=0\\).",
+      "correct_option": "\\(x=-1\\;\\text{hoặc}\\;x=3\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "EQ08V1_037",
+      "source_file": "08-phuong-trinh-bat-phuong-trinh-v1-02.json",
+      "legacy_skill_tags": [
+        "pt-tich"
+      ],
+      "canonical_assessed_skill_candidate": "pt-tich",
+      "learner_family_candidate": "EQ-BASIC",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "metadata_only_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "EQ08-PRODUCT-035-046",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Giải phương trình \\((x-2)(x-6)=0\\).",
+      "correct_option": "\\(x=2\\;\\text{hoặc}\\;x=6\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "EQ08V1_038",
+      "source_file": "08-phuong-trinh-bat-phuong-trinh-v1-02.json",
+      "legacy_skill_tags": [
+        "pt-tich"
+      ],
+      "canonical_assessed_skill_candidate": "pt-tich",
+      "learner_family_candidate": "EQ-BASIC",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "metadata_only_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "EQ08-PRODUCT-035-046",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Giải phương trình \\((x+4)(x-1)=0\\).",
+      "correct_option": "\\(x=-4\\;\\text{hoặc}\\;x=1\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "EQ08V1_039",
+      "source_file": "08-phuong-trinh-bat-phuong-trinh-v1-02.json",
+      "legacy_skill_tags": [
+        "pt-tich"
+      ],
+      "canonical_assessed_skill_candidate": "pt-tich",
+      "learner_family_candidate": "EQ-BASIC",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "metadata_only_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "EQ08-PRODUCT-035-046",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Giải phương trình \\((x-3)(x-7)=0\\).",
+      "correct_option": "\\(x=3\\;\\text{hoặc}\\;x=7\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "EQ08V1_040",
+      "source_file": "08-phuong-trinh-bat-phuong-trinh-v1-02.json",
+      "legacy_skill_tags": [
+        "pt-tich"
+      ],
+      "canonical_assessed_skill_candidate": "pt-tich",
+      "learner_family_candidate": "EQ-BASIC",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "metadata_only_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "EQ08-PRODUCT-035-046",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Giải phương trình \\((x+2)(x-4)=0\\).",
+      "correct_option": "\\(x=-2\\;\\text{hoặc}\\;x=4\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "EQ08V1_041",
+      "source_file": "08-phuong-trinh-bat-phuong-trinh-v1-02.json",
+      "legacy_skill_tags": [
+        "pt-tich"
+      ],
+      "canonical_assessed_skill_candidate": "pt-tich",
+      "learner_family_candidate": "EQ-BASIC",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "metadata_only_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "EQ08-PRODUCT-035-046",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Giải phương trình \\((x-1)(x-5)=0\\).",
+      "correct_option": "\\(x=1\\;\\text{hoặc}\\;x=5\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "EQ08V1_042",
+      "source_file": "08-phuong-trinh-bat-phuong-trinh-v1-02.json",
+      "legacy_skill_tags": [
+        "pt-tich"
+      ],
+      "canonical_assessed_skill_candidate": "pt-tich",
+      "learner_family_candidate": "EQ-BASIC",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "metadata_only_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "EQ08-PRODUCT-035-046",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Giải phương trình \\((x+3)(x-2)=0\\).",
+      "correct_option": "\\(x=-3\\;\\text{hoặc}\\;x=2\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "EQ08V1_043",
+      "source_file": "08-phuong-trinh-bat-phuong-trinh-v1-02.json",
+      "legacy_skill_tags": [
+        "pt-tich"
+      ],
+      "canonical_assessed_skill_candidate": "pt-tich",
+      "learner_family_candidate": "EQ-BASIC",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "metadata_only_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "EQ08-PRODUCT-035-046",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Giải phương trình \\((x-4)(x-8)=0\\).",
+      "correct_option": "\\(x=4\\;\\text{hoặc}\\;x=8\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "EQ08V1_044",
+      "source_file": "08-phuong-trinh-bat-phuong-trinh-v1-02.json",
+      "legacy_skill_tags": [
+        "pt-tich"
+      ],
+      "canonical_assessed_skill_candidate": "pt-tich",
+      "learner_family_candidate": "EQ-BASIC",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "metadata_only_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "EQ08-PRODUCT-035-046",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Giải phương trình \\((x+5)(x+1)=0\\).",
+      "correct_option": "\\(x=-5\\;\\text{hoặc}\\;x=-1\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "EQ08V1_045",
+      "source_file": "08-phuong-trinh-bat-phuong-trinh-v1-02.json",
+      "legacy_skill_tags": [
+        "pt-tich"
+      ],
+      "canonical_assessed_skill_candidate": "pt-tich",
+      "learner_family_candidate": "EQ-BASIC",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "metadata_only_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "EQ08-PRODUCT-035-046",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Giải phương trình \\((x-0)(x+6)=0\\).",
+      "correct_option": "\\(x=0\\;\\text{hoặc}\\;x=-6\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "EQ08V1_046",
+      "source_file": "08-phuong-trinh-bat-phuong-trinh-v1-02.json",
+      "legacy_skill_tags": [
+        "pt-tich"
+      ],
+      "canonical_assessed_skill_candidate": "pt-tich",
+      "learner_family_candidate": "EQ-BASIC",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "metadata_only_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "EQ08-PRODUCT-035-046",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Giải phương trình \\((x+2)(x+7)=0\\).",
+      "correct_option": "\\(x=-2\\;\\text{hoặc}\\;x=-7\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "EQ08V1_047",
+      "source_file": "08-phuong-trinh-bat-phuong-trinh-v1-02.json",
+      "legacy_skill_tags": [
+        "dkxd-phuong-trinh-mau"
+      ],
+      "canonical_assessed_skill_candidate": "dkxd-phuong-trinh-mau",
+      "learner_family_candidate": "EQ-RATIONAL",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "metadata_only_tags": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "EQ08-RATIONAL-DOMAIN-047-054",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Điều kiện xác định của phương trình \\(\\frac{x+1}{x--4}=2\\) là:",
+      "correct_option": "\\(x\\ne -4\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "EQ08V1_048",
+      "source_file": "08-phuong-trinh-bat-phuong-trinh-v1-02.json",
+      "legacy_skill_tags": [
+        "dkxd-phuong-trinh-mau"
+      ],
+      "canonical_assessed_skill_candidate": "dkxd-phuong-trinh-mau",
+      "learner_family_candidate": "EQ-RATIONAL",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "metadata_only_tags": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "EQ08-RATIONAL-DOMAIN-047-054",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Điều kiện xác định của phương trình \\(\\frac{x+1}{x--3}=2\\) là:",
+      "correct_option": "\\(x\\ne -3\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "EQ08V1_049",
+      "source_file": "08-phuong-trinh-bat-phuong-trinh-v1-02.json",
+      "legacy_skill_tags": [
+        "dkxd-phuong-trinh-mau"
+      ],
+      "canonical_assessed_skill_candidate": "dkxd-phuong-trinh-mau",
+      "learner_family_candidate": "EQ-RATIONAL",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "metadata_only_tags": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "EQ08-RATIONAL-DOMAIN-047-054",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Điều kiện xác định của phương trình \\(\\frac{x+1}{x--2}=2\\) là:",
+      "correct_option": "\\(x\\ne -2\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "EQ08V1_050",
+      "source_file": "08-phuong-trinh-bat-phuong-trinh-v1-02.json",
+      "legacy_skill_tags": [
+        "dkxd-phuong-trinh-mau"
+      ],
+      "canonical_assessed_skill_candidate": "dkxd-phuong-trinh-mau",
+      "learner_family_candidate": "EQ-RATIONAL",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "metadata_only_tags": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "EQ08-RATIONAL-DOMAIN-047-054",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Điều kiện xác định của phương trình \\(\\frac{x+1}{x--1}=2\\) là:",
+      "correct_option": "\\(x\\ne -1\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "EQ08V1_051",
+      "source_file": "08-phuong-trinh-bat-phuong-trinh-v1-02.json",
+      "legacy_skill_tags": [
+        "dkxd-phuong-trinh-mau"
+      ],
+      "canonical_assessed_skill_candidate": "dkxd-phuong-trinh-mau",
+      "learner_family_candidate": "EQ-RATIONAL",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "metadata_only_tags": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "EQ08-RATIONAL-DOMAIN-047-054",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Điều kiện xác định của phương trình \\(\\frac{x+1}{x-1}=2\\) là:",
+      "correct_option": "\\(x\\ne 1\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "EQ08V1_052",
+      "source_file": "08-phuong-trinh-bat-phuong-trinh-v1-02.json",
+      "legacy_skill_tags": [
+        "dkxd-phuong-trinh-mau"
+      ],
+      "canonical_assessed_skill_candidate": "dkxd-phuong-trinh-mau",
+      "learner_family_candidate": "EQ-RATIONAL",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "metadata_only_tags": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "EQ08-RATIONAL-DOMAIN-047-054",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Điều kiện xác định của phương trình \\(\\frac{x+1}{x-2}=2\\) là:",
+      "correct_option": "\\(x\\ne 2\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "EQ08V1_053",
+      "source_file": "08-phuong-trinh-bat-phuong-trinh-v1-02.json",
+      "legacy_skill_tags": [
+        "dkxd-phuong-trinh-mau"
+      ],
+      "canonical_assessed_skill_candidate": "dkxd-phuong-trinh-mau",
+      "learner_family_candidate": "EQ-RATIONAL",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "metadata_only_tags": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "EQ08-RATIONAL-DOMAIN-047-054",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Điều kiện xác định của phương trình \\(\\frac{x+1}{x-3}=2\\) là:",
+      "correct_option": "\\(x\\ne 3\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "EQ08V1_054",
+      "source_file": "08-phuong-trinh-bat-phuong-trinh-v1-02.json",
+      "legacy_skill_tags": [
+        "dkxd-phuong-trinh-mau"
+      ],
+      "canonical_assessed_skill_candidate": "dkxd-phuong-trinh-mau",
+      "learner_family_candidate": "EQ-RATIONAL",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "metadata_only_tags": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "EQ08-RATIONAL-DOMAIN-047-054",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Điều kiện xác định của phương trình \\(\\frac{x+1}{x-4}=2\\) là:",
+      "correct_option": "\\(x\\ne 4\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "EQ08V1_055",
+      "source_file": "08-phuong-trinh-bat-phuong-trinh-v1-02.json",
+      "legacy_skill_tags": [
+        "khu-mau-phuong-trinh",
+        "dkxd-phuong-trinh-mau"
+      ],
+      "canonical_assessed_skill_candidate": "khu-mau-phuong-trinh",
+      "learner_family_candidate": "EQ-RATIONAL",
+      "supporting_skills": [
+        "dkxd-phuong-trinh-mau"
+      ],
+      "context_tags": [],
+      "method_tags": [],
+      "metadata_only_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "EQ08-RATIONAL-RECIPROCAL-055-060",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Giải phương trình \\(\\frac1{x-1}=3\\).",
+      "correct_option": "\\(x=\\frac{4}{3}\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "EQ08V1_056",
+      "source_file": "08-phuong-trinh-bat-phuong-trinh-v1-02.json",
+      "legacy_skill_tags": [
+        "khu-mau-phuong-trinh",
+        "dkxd-phuong-trinh-mau"
+      ],
+      "canonical_assessed_skill_candidate": "khu-mau-phuong-trinh",
+      "learner_family_candidate": "EQ-RATIONAL",
+      "supporting_skills": [
+        "dkxd-phuong-trinh-mau"
+      ],
+      "context_tags": [],
+      "method_tags": [],
+      "metadata_only_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "EQ08-RATIONAL-RECIPROCAL-055-060",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Giải phương trình \\(\\frac1{x-2}=3\\).",
+      "correct_option": "\\(x=\\frac{7}{3}\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "EQ08V1_057",
+      "source_file": "08-phuong-trinh-bat-phuong-trinh-v1-02.json",
+      "legacy_skill_tags": [
+        "khu-mau-phuong-trinh",
+        "dkxd-phuong-trinh-mau"
+      ],
+      "canonical_assessed_skill_candidate": "khu-mau-phuong-trinh",
+      "learner_family_candidate": "EQ-RATIONAL",
+      "supporting_skills": [
+        "dkxd-phuong-trinh-mau"
+      ],
+      "context_tags": [],
+      "method_tags": [],
+      "metadata_only_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "EQ08-RATIONAL-RECIPROCAL-055-060",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Giải phương trình \\(\\frac1{x-3}=2\\).",
+      "correct_option": "\\(x=\\frac{7}{2}\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "EQ08V1_058",
+      "source_file": "08-phuong-trinh-bat-phuong-trinh-v1-02.json",
+      "legacy_skill_tags": [
+        "khu-mau-phuong-trinh",
+        "dkxd-phuong-trinh-mau"
+      ],
+      "canonical_assessed_skill_candidate": "khu-mau-phuong-trinh",
+      "learner_family_candidate": "EQ-RATIONAL",
+      "supporting_skills": [
+        "dkxd-phuong-trinh-mau"
+      ],
+      "context_tags": [],
+      "method_tags": [],
+      "metadata_only_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "EQ08-RATIONAL-RECIPROCAL-055-060",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Giải phương trình \\(\\frac1{x-4}=2\\).",
+      "correct_option": "\\(x=\\frac{9}{2}\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "EQ08V1_059",
+      "source_file": "08-phuong-trinh-bat-phuong-trinh-v1-02.json",
+      "legacy_skill_tags": [
+        "khu-mau-phuong-trinh",
+        "dkxd-phuong-trinh-mau"
+      ],
+      "canonical_assessed_skill_candidate": "khu-mau-phuong-trinh",
+      "learner_family_candidate": "EQ-RATIONAL",
+      "supporting_skills": [
+        "dkxd-phuong-trinh-mau"
+      ],
+      "context_tags": [],
+      "method_tags": [],
+      "metadata_only_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "EQ08-RATIONAL-RECIPROCAL-055-060",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Giải phương trình \\(\\frac1{x-5}=3\\).",
+      "correct_option": "\\(x=\\frac{16}{3}\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "EQ08V1_060",
+      "source_file": "08-phuong-trinh-bat-phuong-trinh-v1-02.json",
+      "legacy_skill_tags": [
+        "khu-mau-phuong-trinh",
+        "dkxd-phuong-trinh-mau"
+      ],
+      "canonical_assessed_skill_candidate": "khu-mau-phuong-trinh",
+      "learner_family_candidate": "EQ-RATIONAL",
+      "supporting_skills": [
+        "dkxd-phuong-trinh-mau"
+      ],
+      "context_tags": [],
+      "method_tags": [],
+      "metadata_only_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "EQ08-RATIONAL-RECIPROCAL-055-060",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Giải phương trình \\(\\frac1{x-6}=3\\).",
+      "correct_option": "\\(x=\\frac{19}{3}\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "EQ08V1_061",
+      "source_file": "08-phuong-trinh-bat-phuong-trinh-v1-03.json",
+      "legacy_skill_tags": [
+        "khu-mau-phuong-trinh",
+        "dkxd-phuong-trinh-mau"
+      ],
+      "canonical_assessed_skill_candidate": "khu-mau-phuong-trinh",
+      "learner_family_candidate": "EQ-RATIONAL",
+      "supporting_skills": [
+        "dkxd-phuong-trinh-mau"
+      ],
+      "context_tags": [],
+      "method_tags": [],
+      "metadata_only_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "EQ08-RATIONAL-LINEAR-061-066",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Giải phương trình \\(\\frac{x+3}{x-1}=4\\).",
+      "correct_option": "\\(x=\\frac{7}{3}\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "EQ08V1_062",
+      "source_file": "08-phuong-trinh-bat-phuong-trinh-v1-03.json",
+      "legacy_skill_tags": [
+        "khu-mau-phuong-trinh",
+        "dkxd-phuong-trinh-mau"
+      ],
+      "canonical_assessed_skill_candidate": "khu-mau-phuong-trinh",
+      "learner_family_candidate": "EQ-RATIONAL",
+      "supporting_skills": [
+        "dkxd-phuong-trinh-mau"
+      ],
+      "context_tags": [],
+      "method_tags": [],
+      "metadata_only_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "EQ08-RATIONAL-LINEAR-061-066",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Giải phương trình \\(\\frac{x+3}{x-2}=4\\).",
+      "correct_option": "\\(x=\\frac{11}{3}\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "EQ08V1_063",
+      "source_file": "08-phuong-trinh-bat-phuong-trinh-v1-03.json",
+      "legacy_skill_tags": [
+        "khu-mau-phuong-trinh",
+        "dkxd-phuong-trinh-mau"
+      ],
+      "canonical_assessed_skill_candidate": "khu-mau-phuong-trinh",
+      "learner_family_candidate": "EQ-RATIONAL",
+      "supporting_skills": [
+        "dkxd-phuong-trinh-mau"
+      ],
+      "context_tags": [],
+      "method_tags": [],
+      "metadata_only_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "EQ08-RATIONAL-LINEAR-061-066",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Giải phương trình \\(\\frac{x+1}{x-3}=3\\).",
+      "correct_option": "\\(x=5\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "EQ08V1_064",
+      "source_file": "08-phuong-trinh-bat-phuong-trinh-v1-03.json",
+      "legacy_skill_tags": [
+        "khu-mau-phuong-trinh",
+        "dkxd-phuong-trinh-mau"
+      ],
+      "canonical_assessed_skill_candidate": "khu-mau-phuong-trinh",
+      "learner_family_candidate": "EQ-RATIONAL",
+      "supporting_skills": [
+        "dkxd-phuong-trinh-mau"
+      ],
+      "context_tags": [],
+      "method_tags": [],
+      "metadata_only_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "EQ08-RATIONAL-LINEAR-061-066",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Giải phương trình \\(\\frac{x+4}{x-4}=4\\).",
+      "correct_option": "\\(x=\\frac{20}{3}\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "EQ08V1_065",
+      "source_file": "08-phuong-trinh-bat-phuong-trinh-v1-03.json",
+      "legacy_skill_tags": [
+        "khu-mau-phuong-trinh",
+        "dkxd-phuong-trinh-mau"
+      ],
+      "canonical_assessed_skill_candidate": "khu-mau-phuong-trinh",
+      "learner_family_candidate": "EQ-RATIONAL",
+      "supporting_skills": [
+        "dkxd-phuong-trinh-mau"
+      ],
+      "context_tags": [],
+      "method_tags": [],
+      "metadata_only_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "EQ08-RATIONAL-LINEAR-061-066",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Giải phương trình \\(\\frac{x+1}{x-5}=2\\).",
+      "correct_option": "\\(x=11\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "EQ08V1_066",
+      "source_file": "08-phuong-trinh-bat-phuong-trinh-v1-03.json",
+      "legacy_skill_tags": [
+        "khu-mau-phuong-trinh",
+        "dkxd-phuong-trinh-mau"
+      ],
+      "canonical_assessed_skill_candidate": "khu-mau-phuong-trinh",
+      "learner_family_candidate": "EQ-RATIONAL",
+      "supporting_skills": [
+        "dkxd-phuong-trinh-mau"
+      ],
+      "context_tags": [],
+      "method_tags": [],
+      "metadata_only_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "EQ08-RATIONAL-LINEAR-061-066",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Giải phương trình \\(\\frac{x+4}{x-6}=3\\).",
+      "correct_option": "\\(x=11\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "EQ08V1_067",
+      "source_file": "08-phuong-trinh-bat-phuong-trinh-v1-03.json",
+      "legacy_skill_tags": [
+        "doi-chieu-nghiem",
+        "dkxd-phuong-trinh-mau"
+      ],
+      "canonical_assessed_skill_candidate": "doi-chieu-nghiem",
+      "learner_family_candidate": "EQ-RATIONAL",
+      "supporting_skills": [
+        "dkxd-phuong-trinh-mau"
+      ],
+      "context_tags": [],
+      "method_tags": [],
+      "metadata_only_tags": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "EQ08-RATIONAL-REJECT-067-072",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Trong quá trình giải \\(\\frac{x^2-4}{x-2}=0\\), nhận xét nào đúng?",
+      "correct_option": "\\(x=2\\) bị loại vì làm mẫu bằng 0.",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "EQ08V1_068",
+      "source_file": "08-phuong-trinh-bat-phuong-trinh-v1-03.json",
+      "legacy_skill_tags": [
+        "doi-chieu-nghiem",
+        "dkxd-phuong-trinh-mau"
+      ],
+      "canonical_assessed_skill_candidate": "doi-chieu-nghiem",
+      "learner_family_candidate": "EQ-RATIONAL",
+      "supporting_skills": [
+        "dkxd-phuong-trinh-mau"
+      ],
+      "context_tags": [],
+      "method_tags": [],
+      "metadata_only_tags": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "EQ08-RATIONAL-REJECT-067-072",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Trong quá trình giải \\(\\frac{x-3}{x-3}=1\\), nhận xét nào đúng?",
+      "correct_option": "\\(x=3\\) bị loại vì biểu thức ban đầu không xác định.",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "EQ08V1_069",
+      "source_file": "08-phuong-trinh-bat-phuong-trinh-v1-03.json",
+      "legacy_skill_tags": [
+        "doi-chieu-nghiem",
+        "dkxd-phuong-trinh-mau"
+      ],
+      "canonical_assessed_skill_candidate": "doi-chieu-nghiem",
+      "learner_family_candidate": "EQ-RATIONAL",
+      "supporting_skills": [
+        "dkxd-phuong-trinh-mau"
+      ],
+      "context_tags": [],
+      "method_tags": [],
+      "metadata_only_tags": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "EQ08-RATIONAL-REJECT-067-072",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Trong quá trình giải \\(\\frac{x+1}{x+1}=1\\), nhận xét nào đúng?",
+      "correct_option": "\\(x=-1\\) bị loại vì mẫu bằng 0.",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "EQ08V1_070",
+      "source_file": "08-phuong-trinh-bat-phuong-trinh-v1-03.json",
+      "legacy_skill_tags": [
+        "doi-chieu-nghiem",
+        "dkxd-phuong-trinh-mau"
+      ],
+      "canonical_assessed_skill_candidate": "doi-chieu-nghiem",
+      "learner_family_candidate": "EQ-RATIONAL",
+      "supporting_skills": [
+        "dkxd-phuong-trinh-mau"
+      ],
+      "context_tags": [],
+      "method_tags": [],
+      "metadata_only_tags": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "EQ08-RATIONAL-REJECT-067-072",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Trong quá trình giải \\(\\frac{x^2-9}{x-3}=6\\), nhận xét nào đúng?",
+      "correct_option": "\\(x=3\\) bị loại dù biểu thức rút gọn cho x+3=6.",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "EQ08V1_071",
+      "source_file": "08-phuong-trinh-bat-phuong-trinh-v1-03.json",
+      "legacy_skill_tags": [
+        "doi-chieu-nghiem",
+        "dkxd-phuong-trinh-mau"
+      ],
+      "canonical_assessed_skill_candidate": "doi-chieu-nghiem",
+      "learner_family_candidate": "EQ-RATIONAL",
+      "supporting_skills": [
+        "dkxd-phuong-trinh-mau"
+      ],
+      "context_tags": [],
+      "method_tags": [],
+      "metadata_only_tags": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "EQ08-RATIONAL-REJECT-067-072",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Trong quá trình giải \\(\\frac{x(x-2)}{x}=0\\), nhận xét nào đúng?",
+      "correct_option": "\\(x=0\\) bị loại vì mẫu x bằng 0.",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "EQ08V1_072",
+      "source_file": "08-phuong-trinh-bat-phuong-trinh-v1-03.json",
+      "legacy_skill_tags": [
+        "doi-chieu-nghiem",
+        "dkxd-phuong-trinh-mau"
+      ],
+      "canonical_assessed_skill_candidate": "doi-chieu-nghiem",
+      "learner_family_candidate": "EQ-RATIONAL",
+      "supporting_skills": [
+        "dkxd-phuong-trinh-mau"
+      ],
+      "context_tags": [],
+      "method_tags": [],
+      "metadata_only_tags": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "EQ08-RATIONAL-REJECT-067-072",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Trong quá trình giải \\(\\frac{(x-5)(x+1)}{x-5}=6\\), nhận xét nào đúng?",
+      "correct_option": "\\(x=5\\) bị loại vì mẫu ban đầu bằng 0.",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "EQ08V1_073",
+      "source_file": "08-phuong-trinh-bat-phuong-trinh-v1-03.json",
+      "legacy_skill_tags": [
+        "bpt-bac-nhat"
+      ],
+      "canonical_assessed_skill_candidate": "bpt-bac-nhat",
+      "learner_family_candidate": "INEQ-SOLVE",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "metadata_only_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "EQ08-INEQ-SIMPLE-073-086",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Giải bất phương trình \\(3x-6 \\le -12\\).",
+      "correct_option": "\\(x \\le -2\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "EQ08V1_074",
+      "source_file": "08-phuong-trinh-bat-phuong-trinh-v1-03.json",
+      "legacy_skill_tags": [
+        "bpt-bac-nhat"
+      ],
+      "canonical_assessed_skill_candidate": "bpt-bac-nhat",
+      "learner_family_candidate": "INEQ-SOLVE",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "metadata_only_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "EQ08-INEQ-SIMPLE-073-086",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Giải bất phương trình \\(3x-6 \\ge -3\\).",
+      "correct_option": "\\(x \\ge 1\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "EQ08V1_075",
+      "source_file": "08-phuong-trinh-bat-phuong-trinh-v1-03.json",
+      "legacy_skill_tags": [
+        "bpt-bac-nhat"
+      ],
+      "canonical_assessed_skill_candidate": "bpt-bac-nhat",
+      "learner_family_candidate": "INEQ-SOLVE",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "metadata_only_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "EQ08-INEQ-SIMPLE-073-086",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Giải bất phương trình \\(3x+7 > 13\\).",
+      "correct_option": "\\(x > 2\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "EQ08V1_076",
+      "source_file": "08-phuong-trinh-bat-phuong-trinh-v1-03.json",
+      "legacy_skill_tags": [
+        "bpt-bac-nhat"
+      ],
+      "canonical_assessed_skill_candidate": "bpt-bac-nhat",
+      "learner_family_candidate": "INEQ-SOLVE",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "metadata_only_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "EQ08-INEQ-SIMPLE-073-086",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Giải bất phương trình \\(3x+5 > 11\\).",
+      "correct_option": "\\(x > 2\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "EQ08V1_077",
+      "source_file": "08-phuong-trinh-bat-phuong-trinh-v1-03.json",
+      "legacy_skill_tags": [
+        "bpt-bac-nhat"
+      ],
+      "canonical_assessed_skill_candidate": "bpt-bac-nhat",
+      "learner_family_candidate": "INEQ-SOLVE",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "metadata_only_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "EQ08-INEQ-SIMPLE-073-086",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Giải bất phương trình \\(3x+7 < -5\\).",
+      "correct_option": "\\(x < -4\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "EQ08V1_078",
+      "source_file": "08-phuong-trinh-bat-phuong-trinh-v1-03.json",
+      "legacy_skill_tags": [
+        "bpt-bac-nhat"
+      ],
+      "canonical_assessed_skill_candidate": "bpt-bac-nhat",
+      "learner_family_candidate": "INEQ-SOLVE",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "metadata_only_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "EQ08-INEQ-SIMPLE-073-086",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Giải bất phương trình \\(5x+5 < 25\\).",
+      "correct_option": "\\(x < 4\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "EQ08V1_079",
+      "source_file": "08-phuong-trinh-bat-phuong-trinh-v1-03.json",
+      "legacy_skill_tags": [
+        "bpt-bac-nhat"
+      ],
+      "canonical_assessed_skill_candidate": "bpt-bac-nhat",
+      "learner_family_candidate": "INEQ-SOLVE",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "metadata_only_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "EQ08-INEQ-SIMPLE-073-086",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Giải bất phương trình \\(2x-6 < -14\\).",
+      "correct_option": "\\(x < -4\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "EQ08V1_080",
+      "source_file": "08-phuong-trinh-bat-phuong-trinh-v1-03.json",
+      "legacy_skill_tags": [
+        "bpt-bac-nhat"
+      ],
+      "canonical_assessed_skill_candidate": "bpt-bac-nhat",
+      "learner_family_candidate": "INEQ-SOLVE",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "metadata_only_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "EQ08-INEQ-SIMPLE-073-086",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Giải bất phương trình \\(3x+5 > 14\\).",
+      "correct_option": "\\(x > 3\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "EQ08V1_081",
+      "source_file": "08-phuong-trinh-bat-phuong-trinh-v1-03.json",
+      "legacy_skill_tags": [
+        "bpt-bac-nhat"
+      ],
+      "canonical_assessed_skill_candidate": "bpt-bac-nhat",
+      "learner_family_candidate": "INEQ-SOLVE",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "metadata_only_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "EQ08-INEQ-SIMPLE-073-086",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Giải bất phương trình \\(2x-3 \\le 3\\).",
+      "correct_option": "\\(x \\le 3\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "EQ08V1_082",
+      "source_file": "08-phuong-trinh-bat-phuong-trinh-v1-03.json",
+      "legacy_skill_tags": [
+        "bpt-bac-nhat"
+      ],
+      "canonical_assessed_skill_candidate": "bpt-bac-nhat",
+      "learner_family_candidate": "INEQ-SOLVE",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "metadata_only_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "EQ08-INEQ-SIMPLE-073-086",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Giải bất phương trình \\(4x-3 \\ge 5\\).",
+      "correct_option": "\\(x \\ge 2\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "EQ08V1_083",
+      "source_file": "08-phuong-trinh-bat-phuong-trinh-v1-03.json",
+      "legacy_skill_tags": [
+        "bpt-bac-nhat"
+      ],
+      "canonical_assessed_skill_candidate": "bpt-bac-nhat",
+      "learner_family_candidate": "INEQ-SOLVE",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "metadata_only_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "EQ08-INEQ-SIMPLE-073-086",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Giải bất phương trình \\(6x-6 < -30\\).",
+      "correct_option": "\\(x < -4\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "EQ08V1_084",
+      "source_file": "08-phuong-trinh-bat-phuong-trinh-v1-03.json",
+      "legacy_skill_tags": [
+        "bpt-bac-nhat"
+      ],
+      "canonical_assessed_skill_candidate": "bpt-bac-nhat",
+      "learner_family_candidate": "INEQ-SOLVE",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "metadata_only_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "EQ08-INEQ-SIMPLE-073-086",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Giải bất phương trình \\(4x+2 < 22\\).",
+      "correct_option": "\\(x < 5\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "EQ08V1_085",
+      "source_file": "08-phuong-trinh-bat-phuong-trinh-v1-03.json",
+      "legacy_skill_tags": [
+        "bpt-bac-nhat"
+      ],
+      "canonical_assessed_skill_candidate": "bpt-bac-nhat",
+      "learner_family_candidate": "INEQ-SOLVE",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "metadata_only_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "EQ08-INEQ-SIMPLE-073-086",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Giải bất phương trình \\(4x+7 < 11\\).",
+      "correct_option": "\\(x < 1\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "EQ08V1_086",
+      "source_file": "08-phuong-trinh-bat-phuong-trinh-v1-03.json",
+      "legacy_skill_tags": [
+        "bpt-bac-nhat"
+      ],
+      "canonical_assessed_skill_candidate": "bpt-bac-nhat",
+      "learner_family_candidate": "INEQ-SOLVE",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "metadata_only_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "EQ08-INEQ-SIMPLE-073-086",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Giải bất phương trình \\(2x+7 \\ge 9\\).",
+      "correct_option": "\\(x \\ge 1\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "EQ08V1_087",
+      "source_file": "08-phuong-trinh-bat-phuong-trinh-v1-03.json",
+      "legacy_skill_tags": [
+        "doi-chieu-bpt",
+        "bpt-bac-nhat"
+      ],
+      "canonical_assessed_skill_candidate": "doi-chieu-bpt",
+      "learner_family_candidate": "INEQ-SOLVE",
+      "supporting_skills": [
+        "bpt-bac-nhat"
+      ],
+      "context_tags": [],
+      "method_tags": [],
+      "metadata_only_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "EQ08-INEQ-FLIP-087-094",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Giải bất phương trình \\(-3x > 12\\).",
+      "correct_option": "\\(x < -4\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "EQ08V1_088",
+      "source_file": "08-phuong-trinh-bat-phuong-trinh-v1-03.json",
+      "legacy_skill_tags": [
+        "doi-chieu-bpt",
+        "bpt-bac-nhat"
+      ],
+      "canonical_assessed_skill_candidate": "doi-chieu-bpt",
+      "learner_family_candidate": "INEQ-SOLVE",
+      "supporting_skills": [
+        "bpt-bac-nhat"
+      ],
+      "context_tags": [],
+      "method_tags": [],
+      "metadata_only_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "EQ08-INEQ-FLIP-087-094",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Giải bất phương trình \\(-2x \\ge 4\\).",
+      "correct_option": "\\(x \\le -2\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "EQ08V1_089",
+      "source_file": "08-phuong-trinh-bat-phuong-trinh-v1-03.json",
+      "legacy_skill_tags": [
+        "doi-chieu-bpt",
+        "bpt-bac-nhat"
+      ],
+      "canonical_assessed_skill_candidate": "doi-chieu-bpt",
+      "learner_family_candidate": "INEQ-SOLVE",
+      "supporting_skills": [
+        "bpt-bac-nhat"
+      ],
+      "context_tags": [],
+      "method_tags": [],
+      "metadata_only_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "EQ08-INEQ-FLIP-087-094",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Giải bất phương trình \\(-3x \\le -3\\).",
+      "correct_option": "\\(x \\ge 1\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "EQ08V1_090",
+      "source_file": "08-phuong-trinh-bat-phuong-trinh-v1-03.json",
+      "legacy_skill_tags": [
+        "doi-chieu-bpt",
+        "bpt-bac-nhat"
+      ],
+      "canonical_assessed_skill_candidate": "doi-chieu-bpt",
+      "learner_family_candidate": "INEQ-SOLVE",
+      "supporting_skills": [
+        "bpt-bac-nhat"
+      ],
+      "context_tags": [],
+      "method_tags": [],
+      "metadata_only_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "EQ08-INEQ-FLIP-087-094",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Giải bất phương trình \\(-2x > 8\\).",
+      "correct_option": "\\(x < -4\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "EQ08V1_091",
+      "source_file": "08-phuong-trinh-bat-phuong-trinh-v1-04.json",
+      "legacy_skill_tags": [
+        "doi-chieu-bpt",
+        "bpt-bac-nhat"
+      ],
+      "canonical_assessed_skill_candidate": "doi-chieu-bpt",
+      "learner_family_candidate": "INEQ-SOLVE",
+      "supporting_skills": [
+        "bpt-bac-nhat"
+      ],
+      "context_tags": [],
+      "method_tags": [],
+      "metadata_only_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "EQ08-INEQ-FLIP-087-094",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Giải bất phương trình \\(-4x \\ge -12\\).",
+      "correct_option": "\\(x \\le 3\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "EQ08V1_092",
+      "source_file": "08-phuong-trinh-bat-phuong-trinh-v1-04.json",
+      "legacy_skill_tags": [
+        "doi-chieu-bpt",
+        "bpt-bac-nhat"
+      ],
+      "canonical_assessed_skill_candidate": "doi-chieu-bpt",
+      "learner_family_candidate": "INEQ-SOLVE",
+      "supporting_skills": [
+        "bpt-bac-nhat"
+      ],
+      "context_tags": [],
+      "method_tags": [],
+      "metadata_only_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "EQ08-INEQ-FLIP-087-094",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Giải bất phương trình \\(-2x \\le 2\\).",
+      "correct_option": "\\(x \\ge -1\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "EQ08V1_093",
+      "source_file": "08-phuong-trinh-bat-phuong-trinh-v1-04.json",
+      "legacy_skill_tags": [
+        "doi-chieu-bpt",
+        "bpt-bac-nhat"
+      ],
+      "canonical_assessed_skill_candidate": "doi-chieu-bpt",
+      "learner_family_candidate": "INEQ-SOLVE",
+      "supporting_skills": [
+        "bpt-bac-nhat"
+      ],
+      "context_tags": [],
+      "method_tags": [],
+      "metadata_only_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "EQ08-INEQ-FLIP-087-094",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Giải bất phương trình \\(-2x \\ge -4\\).",
+      "correct_option": "\\(x \\le 2\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "EQ08V1_094",
+      "source_file": "08-phuong-trinh-bat-phuong-trinh-v1-04.json",
+      "legacy_skill_tags": [
+        "doi-chieu-bpt",
+        "bpt-bac-nhat"
+      ],
+      "canonical_assessed_skill_candidate": "doi-chieu-bpt",
+      "learner_family_candidate": "INEQ-SOLVE",
+      "supporting_skills": [
+        "bpt-bac-nhat"
+      ],
+      "context_tags": [],
+      "method_tags": [],
+      "metadata_only_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "EQ08-INEQ-FLIP-087-094",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Giải bất phương trình \\(-4x \\ge -4\\).",
+      "correct_option": "\\(x \\le 1\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "EQ08V1_095",
+      "source_file": "08-phuong-trinh-bat-phuong-trinh-v1-04.json",
+      "legacy_skill_tags": [
+        "bieu-dien-tap-nghiem"
+      ],
+      "canonical_assessed_skill_candidate": "bieu-dien-tap-nghiem",
+      "learner_family_candidate": "INEQ-SOLVE",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "metadata_only_tags": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "EQ08-NUMBERLINE-095-100",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Cách biểu diễn đúng tập nghiệm \\(x>2\\) trên trục số là:",
+      "correct_option": "Điểm 2 không lấy, tô về phía bên phải.",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "EQ08V1_096",
+      "source_file": "08-phuong-trinh-bat-phuong-trinh-v1-04.json",
+      "legacy_skill_tags": [
+        "bieu-dien-tap-nghiem"
+      ],
+      "canonical_assessed_skill_candidate": "bieu-dien-tap-nghiem",
+      "learner_family_candidate": "INEQ-SOLVE",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "metadata_only_tags": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "EQ08-NUMBERLINE-095-100",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Cách biểu diễn đúng tập nghiệm \\(x\\ge -1\\) trên trục số là:",
+      "correct_option": "Điểm -1 được lấy, tô về phía bên phải.",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "EQ08V1_097",
+      "source_file": "08-phuong-trinh-bat-phuong-trinh-v1-04.json",
+      "legacy_skill_tags": [
+        "bieu-dien-tap-nghiem"
+      ],
+      "canonical_assessed_skill_candidate": "bieu-dien-tap-nghiem",
+      "learner_family_candidate": "INEQ-SOLVE",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "metadata_only_tags": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "EQ08-NUMBERLINE-095-100",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Cách biểu diễn đúng tập nghiệm \\(x<3\\) trên trục số là:",
+      "correct_option": "Điểm 3 không lấy, tô về phía bên trái.",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "EQ08V1_098",
+      "source_file": "08-phuong-trinh-bat-phuong-trinh-v1-04.json",
+      "legacy_skill_tags": [
+        "bieu-dien-tap-nghiem"
+      ],
+      "canonical_assessed_skill_candidate": "bieu-dien-tap-nghiem",
+      "learner_family_candidate": "INEQ-SOLVE",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "metadata_only_tags": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "EQ08-NUMBERLINE-095-100",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Cách biểu diễn đúng tập nghiệm \\(x\\le0\\) trên trục số là:",
+      "correct_option": "Điểm 0 được lấy, tô về phía bên trái.",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "EQ08V1_099",
+      "source_file": "08-phuong-trinh-bat-phuong-trinh-v1-04.json",
+      "legacy_skill_tags": [
+        "bieu-dien-tap-nghiem"
+      ],
+      "canonical_assessed_skill_candidate": "bieu-dien-tap-nghiem",
+      "learner_family_candidate": "INEQ-SOLVE",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "metadata_only_tags": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "EQ08-NUMBERLINE-095-100",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Cách biểu diễn đúng tập nghiệm \\(x>-4\\) trên trục số là:",
+      "correct_option": "Điểm -4 không lấy, tô về phía bên phải.",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "EQ08V1_100",
+      "source_file": "08-phuong-trinh-bat-phuong-trinh-v1-04.json",
+      "legacy_skill_tags": [
+        "bieu-dien-tap-nghiem"
+      ],
+      "canonical_assessed_skill_candidate": "bieu-dien-tap-nghiem",
+      "learner_family_candidate": "INEQ-SOLVE",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "metadata_only_tags": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "EQ08-NUMBERLINE-095-100",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Cách biểu diễn đúng tập nghiệm \\(x\\le5\\) trên trục số là:",
+      "correct_option": "Điểm 5 được lấy, tô về phía bên trái.",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "EQ08V1_101",
+      "source_file": "08-phuong-trinh-bat-phuong-trinh-v1-04.json",
+      "legacy_skill_tags": [
+        "giao-tap-nghiem"
+      ],
+      "canonical_assessed_skill_candidate": "giao-tap-nghiem",
+      "learner_family_candidate": "INEQ-SOLVE",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "metadata_only_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "EQ08-INTERSECTION-101-106",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Tìm giao của hai điều kiện \\(x>1\\) và \\(x\\le5\\).",
+      "correct_option": "\\(1<x\\le5\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "EQ08V1_102",
+      "source_file": "08-phuong-trinh-bat-phuong-trinh-v1-04.json",
+      "legacy_skill_tags": [
+        "giao-tap-nghiem"
+      ],
+      "canonical_assessed_skill_candidate": "giao-tap-nghiem",
+      "learner_family_candidate": "INEQ-SOLVE",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "metadata_only_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "EQ08-INTERSECTION-101-106",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Tìm giao của hai điều kiện \\(x\\ge-2\\) và \\(x<3\\).",
+      "correct_option": "\\(-2\\le x<3\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "EQ08V1_103",
+      "source_file": "08-phuong-trinh-bat-phuong-trinh-v1-04.json",
+      "legacy_skill_tags": [
+        "giao-tap-nghiem"
+      ],
+      "canonical_assessed_skill_candidate": "giao-tap-nghiem",
+      "learner_family_candidate": "INEQ-SOLVE",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "metadata_only_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "EQ08-INTERSECTION-101-106",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Tìm giao của hai điều kiện \\(x>-4\\) và \\(x<0\\).",
+      "correct_option": "\\(-4<x<0\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "EQ08V1_104",
+      "source_file": "08-phuong-trinh-bat-phuong-trinh-v1-04.json",
+      "legacy_skill_tags": [
+        "giao-tap-nghiem"
+      ],
+      "canonical_assessed_skill_candidate": "giao-tap-nghiem",
+      "learner_family_candidate": "INEQ-SOLVE",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "metadata_only_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "EQ08-INTERSECTION-101-106",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Tìm giao của hai điều kiện \\(x\\ge1\\) và \\(x\\le1\\).",
+      "correct_option": "\\(x=1\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "EQ08V1_105",
+      "source_file": "08-phuong-trinh-bat-phuong-trinh-v1-04.json",
+      "legacy_skill_tags": [
+        "giao-tap-nghiem"
+      ],
+      "canonical_assessed_skill_candidate": "giao-tap-nghiem",
+      "learner_family_candidate": "INEQ-SOLVE",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "metadata_only_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "EQ08-INTERSECTION-101-106",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Tìm giao của hai điều kiện \\(x>2\\) và \\(x>5\\).",
+      "correct_option": "\\(x>5\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "EQ08V1_106",
+      "source_file": "08-phuong-trinh-bat-phuong-trinh-v1-04.json",
+      "legacy_skill_tags": [
+        "giao-tap-nghiem"
+      ],
+      "canonical_assessed_skill_candidate": "giao-tap-nghiem",
+      "learner_family_candidate": "INEQ-SOLVE",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "metadata_only_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "EQ08-INTERSECTION-101-106",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Tìm giao của hai điều kiện \\(x<4\\) và \\(x\\le2\\).",
+      "correct_option": "\\(x\\le2\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "EQ08V1_107",
+      "source_file": "08-phuong-trinh-bat-phuong-trinh-v1-04.json",
+      "legacy_skill_tags": [
+        "lap-phuong-trinh"
+      ],
+      "canonical_assessed_skill_candidate": "lap-phuong-trinh",
+      "learner_family_candidate": "EQ-MODEL",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "metadata_only_tags": [],
+      "observable_evidence_class": "MCQ_MODELING_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": null,
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Tổng của một số và 7 bằng 19. Số đó là:",
+      "correct_option": "12",
+      "note": "Final-answer MCQ supports modeling evidence but cannot certify the full equation-construction process; written evidence remains required for full skill certification.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "EQ08V1_108",
+      "source_file": "08-phuong-trinh-bat-phuong-trinh-v1-04.json",
+      "legacy_skill_tags": [
+        "lap-phuong-trinh"
+      ],
+      "canonical_assessed_skill_candidate": "lap-phuong-trinh",
+      "learner_family_candidate": "EQ-MODEL",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "metadata_only_tags": [],
+      "observable_evidence_class": "MCQ_MODELING_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": null,
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Một số gấp 3 lần rồi bớt 5 được 16. Số đó là:",
+      "correct_option": "7",
+      "note": "Final-answer MCQ supports modeling evidence but cannot certify the full equation-construction process; written evidence remains required for full skill certification.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "EQ08V1_109",
+      "source_file": "08-phuong-trinh-bat-phuong-trinh-v1-04.json",
+      "legacy_skill_tags": [
+        "lap-phuong-trinh"
+      ],
+      "canonical_assessed_skill_candidate": "lap-phuong-trinh",
+      "learner_family_candidate": "EQ-MODEL",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "metadata_only_tags": [],
+      "observable_evidence_class": "MCQ_MODELING_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": null,
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hai lần một số cộng 4 bằng 18. Số đó là:",
+      "correct_option": "7",
+      "note": "Final-answer MCQ supports modeling evidence but cannot certify the full equation-construction process; written evidence remains required for full skill certification.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "EQ08V1_110",
+      "source_file": "08-phuong-trinh-bat-phuong-trinh-v1-04.json",
+      "legacy_skill_tags": [
+        "lap-phuong-trinh"
+      ],
+      "canonical_assessed_skill_candidate": "lap-phuong-trinh",
+      "learner_family_candidate": "EQ-MODEL",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "metadata_only_tags": [],
+      "observable_evidence_class": "MCQ_MODELING_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": null,
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Mẹ hơn con 24 tuổi và tổng tuổi hai mẹ con là 50. Tuổi con là:",
+      "correct_option": "13",
+      "note": "Final-answer MCQ supports modeling evidence but cannot certify the full equation-construction process; written evidence remains required for full skill certification.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "EQ08V1_111",
+      "source_file": "08-phuong-trinh-bat-phuong-trinh-v1-04.json",
+      "legacy_skill_tags": [
+        "lap-phuong-trinh"
+      ],
+      "canonical_assessed_skill_candidate": "lap-phuong-trinh",
+      "learner_family_candidate": "EQ-MODEL",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "metadata_only_tags": [],
+      "observable_evidence_class": "MCQ_MODELING_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": null,
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Chu vi hình chữ nhật là 30 cm, chiều dài hơn chiều rộng 3 cm. Chiều rộng là:",
+      "correct_option": "6",
+      "note": "Final-answer MCQ supports modeling evidence but cannot certify the full equation-construction process; written evidence remains required for full skill certification.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "EQ08V1_112",
+      "source_file": "08-phuong-trinh-bat-phuong-trinh-v1-04.json",
+      "legacy_skill_tags": [
+        "lap-phuong-trinh"
+      ],
+      "canonical_assessed_skill_candidate": "lap-phuong-trinh",
+      "learner_family_candidate": "EQ-MODEL",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "metadata_only_tags": [],
+      "observable_evidence_class": "MCQ_MODELING_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": null,
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Một số khi chia cho 4 rồi cộng 3 được 8. Số đó là:",
+      "correct_option": "20",
+      "note": "Final-answer MCQ supports modeling evidence but cannot certify the full equation-construction process; written evidence remains required for full skill certification.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "EQ08V1_113",
+      "source_file": "08-phuong-trinh-bat-phuong-trinh-v1-04.json",
+      "legacy_skill_tags": [
+        "lap-bat-phuong-trinh"
+      ],
+      "canonical_assessed_skill_candidate": "lap-bat-phuong-trinh",
+      "learner_family_candidate": "INEQ-MODEL",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "metadata_only_tags": [],
+      "observable_evidence_class": "MCQ_MODELING_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "EQ08-INEQ-MODEL-113-116",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Bạn có 200.000 đồng, đã dùng 60.000 đồng. Mỗi vé giá 35.000 đồng. Số vé tối đa có thể mua là:",
+      "correct_option": "4",
+      "note": "Final-answer MCQ supports modeling evidence but cannot certify the full inequality-construction process; written evidence remains required for full skill certification.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "EQ08V1_114",
+      "source_file": "08-phuong-trinh-bat-phuong-trinh-v1-04.json",
+      "legacy_skill_tags": [
+        "lap-bat-phuong-trinh"
+      ],
+      "canonical_assessed_skill_candidate": "lap-bat-phuong-trinh",
+      "learner_family_candidate": "INEQ-MODEL",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "metadata_only_tags": [],
+      "observable_evidence_class": "MCQ_MODELING_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "EQ08-INEQ-MODEL-113-116",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Một thang máy chịu tối đa 600 kg. Đã có 3 người tổng 210 kg; mỗi kiện hàng 65 kg. Số kiện tối đa là:",
+      "correct_option": "6",
+      "note": "Final-answer MCQ supports modeling evidence but cannot certify the full inequality-construction process; written evidence remains required for full skill certification.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "EQ08V1_115",
+      "source_file": "08-phuong-trinh-bat-phuong-trinh-v1-04.json",
+      "legacy_skill_tags": [
+        "lap-bat-phuong-trinh"
+      ],
+      "canonical_assessed_skill_candidate": "lap-bat-phuong-trinh",
+      "learner_family_candidate": "INEQ-MODEL",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "metadata_only_tags": [],
+      "observable_evidence_class": "MCQ_MODELING_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "EQ08-INEQ-MODEL-113-116",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Bạn cần ít nhất 120 điểm, đã có 78 điểm. Mỗi bài đúng thêm 7 điểm. Cần đúng ít nhất bao nhiêu bài nữa?",
+      "correct_option": "6",
+      "note": "Final-answer MCQ supports modeling evidence but cannot certify the full inequality-construction process; written evidence remains required for full skill certification.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "EQ08V1_116",
+      "source_file": "08-phuong-trinh-bat-phuong-trinh-v1-04.json",
+      "legacy_skill_tags": [
+        "lap-bat-phuong-trinh"
+      ],
+      "canonical_assessed_skill_candidate": "lap-bat-phuong-trinh",
+      "learner_family_candidate": "INEQ-MODEL",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "metadata_only_tags": [],
+      "observable_evidence_class": "MCQ_MODELING_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "EQ08-INEQ-MODEL-113-116",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Một xe chở tối đa 1000 kg, hàng hiện có 640 kg. Mỗi thùng 45 kg. Chở thêm tối đa bao nhiêu thùng?",
+      "correct_option": "8",
+      "note": "Final-answer MCQ supports modeling evidence but cannot certify the full inequality-construction process; written evidence remains required for full skill certification.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "EQ08V1_117",
+      "source_file": "08-phuong-trinh-bat-phuong-trinh-v1-04.json",
+      "legacy_skill_tags": [
+        "tham-so-co-ban"
+      ],
+      "canonical_assessed_skill_candidate": "tham-so-co-ban",
+      "learner_family_candidate": "EQ-PARAM",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "metadata_only_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "EQ08-PARAM-117-120",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Biện luận cơ bản phương trình \\((m-1)x=2m+3\\).",
+      "correct_option": "Khi \\(m\\ne1\\), phương trình có nghiệm duy nhất; khi \\(m=1\\), phương trình vô nghiệm.",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "EQ08V1_118",
+      "source_file": "08-phuong-trinh-bat-phuong-trinh-v1-04.json",
+      "legacy_skill_tags": [
+        "tham-so-co-ban"
+      ],
+      "canonical_assessed_skill_candidate": "tham-so-co-ban",
+      "learner_family_candidate": "EQ-PARAM",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "metadata_only_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "EQ08-PARAM-117-120",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Biện luận cơ bản phương trình \\((m-2)x=m+1\\).",
+      "correct_option": "Khi \\(m=2\\), phương trình vô nghiệm; khi \\(m\\ne2\\), có nghiệm duy nhất.",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "EQ08V1_119",
+      "source_file": "08-phuong-trinh-bat-phuong-trinh-v1-04.json",
+      "legacy_skill_tags": [
+        "tham-so-co-ban"
+      ],
+      "canonical_assessed_skill_candidate": "tham-so-co-ban",
+      "learner_family_candidate": "EQ-PARAM",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "metadata_only_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "EQ08-PARAM-117-120",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Biện luận cơ bản phương trình \\(mx=0\\).",
+      "correct_option": "Nếu \\(m=0\\), mọi x đều là nghiệm; nếu \\(m\\ne0\\), nghiệm duy nhất là \\(x=0\\).",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "EQ08V1_120",
+      "source_file": "08-phuong-trinh-bat-phuong-trinh-v1-04.json",
+      "legacy_skill_tags": [
+        "tham-so-co-ban"
+      ],
+      "canonical_assessed_skill_candidate": "tham-so-co-ban",
+      "learner_family_candidate": "EQ-PARAM",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "metadata_only_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "EQ08-PARAM-117-120",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Biện luận cơ bản phương trình \\((m+3)x=m+3\\).",
+      "correct_option": "Nếu \\(m=-3\\), mọi x đều là nghiệm; nếu \\(m\\ne-3\\), nghiệm duy nhất là \\(x=1\\).",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "EQ08V1_121",
+      "source_file": "08-phuong-trinh-bat-phuong-trinh-v1-05.json",
+      "legacy_skill_tags": [
+        "bat-dang-thuc"
+      ],
+      "canonical_assessed_skill_candidate": "bat-dang-thuc",
+      "learner_family_candidate": "INEQ-ORDER",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "metadata_only_tags": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": null,
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Bất đẳng thức nào biểu diễn đúng câu “x lớn hơn 3”?",
+      "correct_option": "\\(x>3\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "EQ08V1_122",
+      "source_file": "08-phuong-trinh-bat-phuong-trinh-v1-05.json",
+      "legacy_skill_tags": [
+        "bat-dang-thuc"
+      ],
+      "canonical_assessed_skill_candidate": "bat-dang-thuc",
+      "learner_family_candidate": "INEQ-ORDER",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "metadata_only_tags": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": null,
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Khẳng định nào đúng?",
+      "correct_option": "\\(-4<1\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "EQ08V1_123",
+      "source_file": "08-phuong-trinh-bat-phuong-trinh-v1-05.json",
+      "legacy_skill_tags": [
+        "bat-dang-thuc"
+      ],
+      "canonical_assessed_skill_candidate": "bat-dang-thuc",
+      "learner_family_candidate": "INEQ-ORDER",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "metadata_only_tags": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": null,
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Bất đẳng thức \\(2x+1\\le7\\) có nghĩa là:",
+      "correct_option": "\\(2x+1\\) nhỏ hơn hoặc bằng 7.",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "EQ08V1_124",
+      "source_file": "08-phuong-trinh-bat-phuong-trinh-v1-05.json",
+      "legacy_skill_tags": [
+        "bat-dang-thuc"
+      ],
+      "canonical_assessed_skill_candidate": "bat-dang-thuc",
+      "learner_family_candidate": "INEQ-ORDER",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "metadata_only_tags": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": null,
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Nếu \\(a=b\\) thì phát biểu nào KHÔNG phải là bất đẳng thức nghiêm đúng giữa a và b?",
+      "correct_option": "\\(a<b\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "EQ08V1_125",
+      "source_file": "08-phuong-trinh-bat-phuong-trinh-v1-05.json",
+      "legacy_skill_tags": [
+        "tinh-chat-thu-tu-phep-cong"
+      ],
+      "canonical_assessed_skill_candidate": "tinh-chat-thu-tu-phep-cong",
+      "learner_family_candidate": "INEQ-ORDER",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "metadata_only_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "EQ08-ORDER-ADD-125-128",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Nếu \\(a<b\\), khi cộng 5 vào hai vế ta được:",
+      "correct_option": "\\(a+5<b+5\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "EQ08V1_126",
+      "source_file": "08-phuong-trinh-bat-phuong-trinh-v1-05.json",
+      "legacy_skill_tags": [
+        "tinh-chat-thu-tu-phep-cong"
+      ],
+      "canonical_assessed_skill_candidate": "tinh-chat-thu-tu-phep-cong",
+      "learner_family_candidate": "INEQ-ORDER",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "metadata_only_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "EQ08-ORDER-ADD-125-128",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Từ \\(x-3<2\\), cộng 3 vào hai vế ta được:",
+      "correct_option": "\\(x<5\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "EQ08V1_127",
+      "source_file": "08-phuong-trinh-bat-phuong-trinh-v1-05.json",
+      "legacy_skill_tags": [
+        "tinh-chat-thu-tu-phep-cong"
+      ],
+      "canonical_assessed_skill_candidate": "tinh-chat-thu-tu-phep-cong",
+      "learner_family_candidate": "INEQ-ORDER",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "metadata_only_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "EQ08-ORDER-ADD-125-128",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Từ \\(-2<4\\), khẳng định nào đúng sau khi cộng 7 vào hai vế?",
+      "correct_option": "\\(5<11\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "EQ08V1_128",
+      "source_file": "08-phuong-trinh-bat-phuong-trinh-v1-05.json",
+      "legacy_skill_tags": [
+        "tinh-chat-thu-tu-phep-cong"
+      ],
+      "canonical_assessed_skill_candidate": "tinh-chat-thu-tu-phep-cong",
+      "learner_family_candidate": "INEQ-ORDER",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "metadata_only_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "EQ08-ORDER-ADD-125-128",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Nếu \\(m\\le n\\), phép biến đổi nào luôn đúng?",
+      "correct_option": "\\(m-c\\le n-c\\) với mọi c",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "EQ08V1_129",
+      "source_file": "08-phuong-trinh-bat-phuong-trinh-v1-05.json",
+      "legacy_skill_tags": [
+        "tinh-chat-thu-tu-phep-nhan"
+      ],
+      "canonical_assessed_skill_candidate": "tinh-chat-thu-tu-phep-nhan",
+      "learner_family_candidate": "INEQ-ORDER",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "metadata_only_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "EQ08-ORDER-MULTIPLY-129-132",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Nếu \\(a<b\\) và \\(c>0\\), khẳng định đúng là:",
+      "correct_option": "\\(ac<bc\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "EQ08V1_130",
+      "source_file": "08-phuong-trinh-bat-phuong-trinh-v1-05.json",
+      "legacy_skill_tags": [
+        "tinh-chat-thu-tu-phep-nhan"
+      ],
+      "canonical_assessed_skill_candidate": "tinh-chat-thu-tu-phep-nhan",
+      "learner_family_candidate": "INEQ-ORDER",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "metadata_only_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "EQ08-ORDER-MULTIPLY-129-132",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Nếu \\(a<b\\) và \\(c<0\\), khẳng định đúng là:",
+      "correct_option": "\\(ac>bc\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "EQ08V1_131",
+      "source_file": "08-phuong-trinh-bat-phuong-trinh-v1-05.json",
+      "legacy_skill_tags": [
+        "tinh-chat-thu-tu-phep-nhan"
+      ],
+      "canonical_assessed_skill_candidate": "tinh-chat-thu-tu-phep-nhan",
+      "learner_family_candidate": "INEQ-ORDER",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "metadata_only_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "EQ08-ORDER-MULTIPLY-129-132",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Từ \\(-2x<6\\), chia hai vế cho \\(-2\\) ta được:",
+      "correct_option": "\\(x>-3\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "EQ08V1_132",
+      "source_file": "08-phuong-trinh-bat-phuong-trinh-v1-05.json",
+      "legacy_skill_tags": [
+        "tinh-chat-thu-tu-phep-nhan"
+      ],
+      "canonical_assessed_skill_candidate": "tinh-chat-thu-tu-phep-nhan",
+      "learner_family_candidate": "INEQ-ORDER",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "metadata_only_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "EQ08-ORDER-MULTIPLY-129-132",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Từ \\(3x\\ge9\\), chia hai vế cho 3 ta được:",
+      "correct_option": "\\(x\\ge3\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    }
+  ],
+  "academic_review": {
+    "reviewer": "NotebookLM",
+    "result": "PASS",
+    "coverage": {
+      "expected": 132,
+      "reviewed": 132,
+      "revisions": 0,
+      "missing": 0
+    },
+    "clone_families": {
+      "expected": 16,
+      "pass": 16,
+      "revise": 0
+    },
+    "counts_verified": {
+      "mapped_primary": 132,
+      "formative_only": 0,
+      "primary_counts": {
+        "nghiem-phuong-trinh": 6,
+        "pt-bac-nhat": 28,
+        "pt-tich": 12,
+        "dkxd-phuong-trinh-mau": 8,
+        "khu-mau-phuong-trinh": 12,
+        "doi-chieu-nghiem": 6,
+        "bpt-bac-nhat": 14,
+        "doi-chieu-bpt": 8,
+        "bieu-dien-tap-nghiem": 6,
+        "giao-tap-nghiem": 6,
+        "lap-phuong-trinh": 6,
+        "lap-bat-phuong-trinh": 4,
+        "tham-so-co-ban": 4,
+        "bat-dang-thuc": 4,
+        "tinh-chat-thu-tu-phep-cong": 4,
+        "tinh-chat-thu-tu-phep-nhan": 4
+      }
+    },
+    "architecture_checks": {
+      "expected": 10,
+      "pass": 10
+    },
+    "authorization": "CLEARED_FOR_CT08_S2_RECONCILIATION",
+    "reviewed_at": "2026-10-02",
+    "runtime_activation_authorized": false
+  }
+}
