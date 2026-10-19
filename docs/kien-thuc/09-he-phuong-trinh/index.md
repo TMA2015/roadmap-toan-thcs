@@ -324,27 +324,24 @@ Không có quy định bắt buộc phải dùng một phương pháp cố đị
 
 ---
 
-### 3.4A. Một hệ, hai phương pháp — hiểu cách chọn và kiểm tra
+### 3.4A. Cùng một hệ, so sánh phương pháp thế và cộng đại số
 
-Cùng một hệ phải có **cùng tập nghiệm** dù giải bằng thế hay cộng đại số. Xét:
+Ở phần **Phương pháp thế** ngay phía trên, ta đã giải hệ \(x+y=5,\ 2x-y=4\) và tìm được \((x;y)=(3;2)\). Hãy **giải lại chính hệ đó bằng phương pháp cộng đại số**, rồi so sánh:
 
-\[
-\begin{cases}
-x+y=5,\\
-2x-y=4.
-\end{cases}
-\]
+1. Hai hệ số của \(y\) là \(1\) và \(-1\), nên khi cộng **toàn bộ hai vế** của hai phương trình, ẩn \(y\) bị khử:
+   \[
+   (x+y)+(2x-y)=5+4\quad\Rightarrow\quad 3x=9.
+   \]
+2. Suy ra \(x=3\). Thế vào \(x+y=5\), được \(y=2\).
+3. **Kiểm tra trên hệ ban đầu:** \(3+2=5\) và \(2\cdot3-2=4\).
 
-| Cách giải | Các bước chính |
-|---|---|
-| **Thế** | Từ \(x+y=5\), suy ra \(y=5-x\). Thế vào phương trình còn lại: \(2x-(5-x)=4\), tức \(3x=9\), nên \(x=3\) và \(y=2\). |
-| **Cộng đại số** | Cộng nguyên hai phương trình: \((x+y)+(2x-y)=5+4\). Khử \(y\), được \(3x=9\), nên \(x=3\) và \(y=2\). |
+| Cần so sánh | Dùng phương pháp thế (ví dụ trước) | Dùng phương pháp cộng đại số (ở đây) |
+|---|---|---|
+| Bước đầu tiên | Từ \(x+y=5\), rút \(y=5-x\) | Cộng hai phương trình để khử \(y\) |
+| Kết quả | \((3;2)\) | \((3;2)\) |
+| Khi nào thuận tiện? | Khi dễ biểu diễn một ẩn theo ẩn kia | Khi hệ số một ẩn dễ triệt tiêu |
 
-**Vì sao nên chọn cộng đại số ở đây?** Hai hệ số của \(y\) là \(1\) và \(-1\), nên chỉ cần cộng đã khử được ẩn. Tuy nhiên, phương pháp thế vẫn **đúng**, chỉ dài hơn.
-
-**Tự kiểm tra:** Thay \((x;y)=(3;2)\) vào **cả hai phương trình gốc**: \(3+2=5\) và \(2\cdot3-2=4\). Vậy nghiệm của hệ là **\((3;2)\)**.
-
-> Mục tiêu không phải dùng phương pháp “được gọi tên trong đề” mà là chọn phép biến đổi **đúng, rõ và ít rủi ro sai dấu**.
+**Điểm cần hiểu:** Hai phương pháp không phải hai loại nghiệm khác nhau; cả hai chỉ là những phép biến đổi đúng để tìm **cùng một cặp số thỏa đồng thời cả hai phương trình**. Với hệ này, cộng đại số ít bước hơn, nhưng dùng thế vẫn hoàn toàn đúng.
 
 ### 3.5. Số nghiệm của hệ
 
