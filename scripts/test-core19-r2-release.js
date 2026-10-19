@@ -5,7 +5,16 @@ const read=p=>fs.readFileSync(p,"utf8"),json=p=>JSON.parse(read(p)),ok=(v,m)=>{i
 const blob=s=>crypto.createHash("sha1").update(Buffer.concat([Buffer.from("blob "+Buffer.byteLength(s)+"\\0".replace("\\0","\0")),Buffer.from(s)])).digest("hex");
 const root="docs/kien-thuc/19-duong-tron/",w=json("docs/assets/data/curriculum/topic19-learning-workspace.json"),bank=json("docs/assets/data/practice/19-duong-tron-micro-v1.json");
 const original={...bank,question_count:15,questions:bank.questions.slice(0,15)};
-ok(blob(read(root+"index.md"))==="75c9baa052c1ef91bee54e65edcb3dee513007d2","unchanged source lesson");
+// Historical reviewed CT19 source remains immutable. Only the bounded Wave E
+// optional angle comparison may be added; check complete new SHA as well.
+const lesson19=read(root+"index.md");
+ok(blob(lesson19)==="b8c3a27f1fc7358ee7da5aeca3235e8fd1433e56","CT19 Wave E full source drift");
+const aMark="### 3.4A. Góc có đỉnh bên trong hoặc bên ngoài đường tròn (mở rộng)";
+const zMark="### 3.5. Hai dây cắt nhau";
+const aPos=lesson19.indexOf(aMark),zPos=lesson19.indexOf(zMark,aPos+aMark.length);
+ok(aPos>=0&&zPos>aPos&&lesson19.indexOf(aMark,aPos+1)===-1,"CT19 Wave E section anchors");
+ok(blob(lesson19.slice(0,aPos)+lesson19.slice(zPos))==="75c9baa052c1ef91bee54e65edcb3dee513007d2","CT19 original reviewed lesson drift");
+ok((100+60)/2===80&&(140-40)/2===50,"CT19 internal/external angle oracles");
 ok(blob(JSON.stringify(original,null,2)+"\n")==="91e61257efa72ef0691eb5db1af42c7b2cd287ff","original fifteen records unchanged as Git blob");
 ok(bank.questions.length===17&&bank.question_count===17&&w.cards.length===5,"five cards and 17 questions");
 ok(JSON.stringify(bank.questions.slice(15).map(x=>x.id))===JSON.stringify(["GEO19MICRO_016","GEO19MICRO_017"]),"append-only canonical ID");

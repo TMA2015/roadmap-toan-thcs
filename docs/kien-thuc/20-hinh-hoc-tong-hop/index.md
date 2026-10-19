@@ -294,6 +294,26 @@ hãy thử:
 2. tìm hai tam giác đồng dạng tạo ra tỉ lệ đó;
 3. hoặc kiểm tra cấu hình hai dây cắt nhau / tiếp tuyến – cát tuyến.
 
+### 3.5A. Từ mục tiêu chứng minh đến chuỗi căn cứ: thẳng hàng và đồng quy
+
+Bên cạnh các chuỗi nội tiếp → đồng dạng → hệ thức tích, hãy xác định **đích cần chứng minh** trước khi chọn công cụ:
+
+| Mục tiêu | Cách tìm căn cứ |
+|---|---|
+| Ba điểm thẳng hàng | Chứng minh hai đường qua cùng một điểm trùng nhau; hoặc chứng minh một góc bẹt |
+| Ba đường đồng quy | Lấy giao điểm của hai đường rồi chứng minh điểm đó cũng nằm trên đường thứ ba |
+
+**Ví dụ 1 — Chứng minh thẳng hàng bằng tính duy nhất của đường song song.** Cho `d` là một đường thẳng không đi qua `A`, ba điểm `A, B, C` phân biệt, `AB ∥ d` và `AC ∥ d`. Qua `A` chỉ có **một** đường thẳng song song với `d` (tiên đề Euclid). Vì thế `AB` và `AC` là cùng một đường thẳng, suy ra `A, B, C` thẳng hàng.
+
+**Ví dụ 2 — Chứng minh đồng quy bằng tính chất đường trung trực.** Trong tam giác `ABC`, gọi `O` là giao điểm đường trung trực của `AB` và đường trung trực của `AC`.
+
+1. Vì `O` thuộc trung trực `AB` nên `OA = OB`.
+2. Vì `O` thuộc trung trực `AC` nên `OA = OC`.
+3. Suy ra `OB = OC`, nên `O` cũng thuộc trung trực `BC`.
+4. Vậy ba đường trung trực của tam giác **đồng quy tại `O`**.
+
+**Tự kiểm tra lời chứng minh:** Căn cứ nào được cho sẵn? Kết quả trung gian nào đã chứng minh? Bước cuối có thật sự suy ra đúng điều phải chứng minh, hay chỉ là điều nhìn thấy trên hình?
+
 ### Infographic – Chuỗi suy luận
 
 ![Infographic các chuỗi suy luận mẫu trong hình học tổng hợp](../../assets/infographics/20/20-03-chuoi-suy-luan.svg)
