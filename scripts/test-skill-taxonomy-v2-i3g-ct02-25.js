@@ -209,10 +209,9 @@ for (const id of ["STA21V1_001","STAT22V1_001","PRO23V1__001","MOD24V1__001","RE
 }
 
 const practice = read("docs/assets/javascripts/practice-engine-v2.js").toString("utf8");
-const legacyAt = practice.indexOf("RoadmapLearnerEvidence.recordAnswer");
-const g2At = practice.indexOf("RoadmapCanonicalEvidenceObserver?.captureAttempt");
-const tv2At = practice.indexOf("RoadmapTaxonomyV2Observer?.captureAttempt");
-assert.ok(legacyAt >= 0 && g2At > legacyAt && tv2At > g2At, "shadow capture order changed");
+assert.ok(practice.includes("RoadmapLearnerEvidence.recordAnswer"), "Practice counter writer missing");
+assert.ok(!practice.includes("RoadmapCanonicalEvidenceObserver?.captureAttempt"), "G2 duplicate live write returned");
+assert.ok(!practice.includes("RoadmapTaxonomyV2Observer?.captureAttempt"), "Taxonomy duplicate live write returned");
 
 const observerSource = read("docs/assets/javascripts/taxonomy-v2-evidence-observer-v1.js").toString("utf8");
 assert.ok(observerSource.includes("taxonomy-v2-runtime/i3g-ct02-25-r1.json"));
