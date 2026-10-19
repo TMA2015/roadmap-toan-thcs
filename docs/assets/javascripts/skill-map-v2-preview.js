@@ -194,7 +194,10 @@
     return (Array.isArray(families) ? families : []).filter((family) => {
       if (layer !== "ALL" && family.layer !== layer) return false;
       if (topic !== "ALL" && !(Array.isArray(family.topics) && family.topics.includes(topic))) return false;
-      if (evidenceOnly && safeNumber(evidence.get(family.family_id)?.independent_units) <= 0) return false;
+      if (evidenceOnly && !(
+        safeNumber(evidence.get(family.family_id)?.independent_units) > 0 ||
+        (evidence.get(family.family_id)?.practice_subskills?.length || 0) > 0
+      )) return false;
       return true;
     });
   };
@@ -223,6 +226,57 @@
     })).sort((a, b) => b.attempted - a.attempted || a.tag.localeCompare(b.tag, "vi"));
   };
 
+  // The learner Skill Map is a READ-ONLY projection of the same Practice
+  // counters used for feedback and remediation. These legacy diagnostic tags
+  // are *not* assessed Family credits. Match only unambiguous registry
+  // subskills and never sum tags into a pseudo-count of unique attempts.
+  const summarizePracticeOnly = (registry, raw) => {
+    const practice = normalizedLegacy(raw);
+    const families = Array.isArray(registry?.families) ? registry.families : [];
+    const candidates = new Map();
+    for (const family of families) {
+      for (const tag of new Set(family?.diagnostic_subskills || [])) {
+        if (!candidates.has(tag)) candidates.set(tag, new Set());
+        candidates.get(tag).add(family.family_id);
+      }
+    }
+    const summaries = new Map(families.map((f) => [f.family_id, {
+      family_id: f.family_id, practice_subskills: [],
+      independent_units: 0, independent_correct: 0,
+      evidence_accuracy: null, recent_events: 0,
+      assisted_recent_events: 0, latest_at: null, observed_topics: []
+    }]));
+    let unmatched = 0;
+    let matched = 0;
+    for (const r of legacyRows(practice).filter((r) => r.attempted > 0)) {
+      const targets = candidates.get(r.tag);
+      if (!targets || targets.size !== 1) { unmatched += 1; continue; }
+      const family = summaries.get([...targets][0]);
+      if (!family) { unmatched += 1; continue; }
+      family.practice_subskills.push(r);
+      matched += 1;
+    }
+    const questions = Object.values(practice.questions).filter(
+      (v) => v && typeof v === "object" && safeNumber(v.attempted) > 0
+    );
+    return {
+      summaries,
+      totals: {
+        practice_attempted: questions.reduce((n, q) => n + safeNumber(q.attempted), 0),
+        practice_correct: questions.reduce((n, q) => n + safeNumber(q.correct), 0),
+        practiced_questions: questions.length,
+        matched_skill_tags: matched,
+        unmatched_skill_tags: unmatched,
+        practiced_families: [...summaries.values()].filter(
+          (r) => r.practice_subskills.length > 0
+        ).length,
+        recent_events: 0, seen_questions: 0, independent_units: 0,
+        independent_correct: 0, assisted_recent_events: 0,
+        evidence_families: 0, no_evidence_families: families.length
+      }
+    };
+  };
+
   const logic = Object.freeze({
     STORE_KEY,
     LEGACY_KEY,
@@ -242,6 +296,7 @@
     filterFamilies,
     familySort,
     legacyRows,
+    summarizePracticeOnly,
     parseStored
   });
   if (typeof module !== "undefined" && module.exports) module.exports = logic;
@@ -279,9 +334,13 @@
       this.assetsBase = new URL(root.dataset.assetsBase || "../../assets/", document.baseURI);
       this.topicMeta = topicMetaFromSpine(spine);
       this.storage = storage;
-      this.store = normalizedStore(parseStored(storage, STORE_KEY, {}));
       this.legacy = normalizedLegacy(parseStored(storage, LEGACY_KEY, {}));
-      this.evidence = summarizeEvidence(registry, this.store);
+      this.store = this.mode === "owner"
+        ? normalizedStore(parseStored(storage, STORE_KEY, {}))
+        : normalizedStore({});
+      this.evidence = this.mode === "learner"
+        ? summarizePracticeOnly(registry, this.legacy)
+        : summarizeEvidence(registry, this.store);
       this.filters = { layer: "ALL", topic: "ALL", evidenceOnly: false, evidence: this.evidence.summaries };
       this.render();
     }
@@ -295,7 +354,7 @@
       if (learnerMode) {
         intro.append(
           el("strong", "", "Bản đồ kỹ năng"),
-          el("p", "", "Trang này giúp em xem dữ liệu luyện tập đã ghi nhận. Đây là xu hướng luyện tập, không phải kết luận thành thạo hay điểm sẵn sàng.")
+          el("p", "", "Trang này chỉ đọc thống kê Practice của thiết bị hiện tại. Nhãn kỹ năng giúp tìm nội dung để ôn; không phải điểm thành thạo hay kết quả Readiness.")
         );
       } else {
         intro.append(
@@ -307,10 +366,10 @@
 
       const totals = el("section", "skill-map-v2-totals");
       const totalCards = learnerMode ? [
-        ["Lượt luyện độc lập", this.evidence.totals.independent_units],
-        ["Lượt làm đúng", this.evidence.totals.independent_correct],
-        ["Kỹ năng đã có dữ liệu", this.evidence.totals.evidence_families],
-        ["Kỹ năng chưa có dữ liệu", this.evidence.totals.no_evidence_families]
+        ["Lượt luyện tập", this.evidence.totals.practice_attempted],
+        ["Lượt làm đúng", this.evidence.totals.practice_correct],
+        ["Nhóm kỹ năng đã luyện", this.evidence.totals.practiced_families],
+        ["Nhãn cần đối chiếu", this.evidence.totals.unmatched_skill_tags]
       ] : [
         ["Đơn vị độc lập", this.evidence.totals.independent_units],
         ["Đúng trên đơn vị độc lập", this.evidence.totals.independent_correct],
@@ -357,7 +416,7 @@
       this.list = el("div", "skill-map-v2-list");
       this.root.append(this.list);
       this.renderFamilies();
-      this.renderLegacy();
+      if (!learnerMode) this.renderLegacy();
     }
 
     renderFamilies() {
@@ -443,27 +502,26 @@
         "Chuyên đề: " + topics.map((id) => TOPIC_LABELS[id] || id).join(" · ")));
 
       if (this.mode === "learner") {
-        const display = evidenceDisplay(summary);
-        card.dataset.evidenceState = display.state;
-        if (summary.independent_units > 0) {
-          const status = el("p", "skill-map-v2-status " + (display.show_percent ? "is-trend" : "is-sparse"), display.label);
+        const skills = Array.isArray(summary.practice_subskills)
+          ? summary.practice_subskills : [];
+        if (skills.length) {
+          card.dataset.evidenceState = "PRACTICE_ONLY";
+          card.append(el("p", "skill-map-v2-status is-trend",
+            "Đã thực hành " + skills.length + " kỹ năng thành phần"));
           const metrics = el("div", "skill-map-v2-metrics");
-          metrics.append(
-            el("span", "skill-map-v2-metric", summary.independent_units + " lượt luyện độc lập"),
-            el("span", "skill-map-v2-metric", summary.independent_correct + "/" + summary.independent_units + " đúng")
-          );
-          if (display.show_percent) {
-            metrics.append(el("span", "skill-map-v2-metric", "Tỷ lệ đúng quan sát " + formatPercent(display.evidence_accuracy)));
+          for (const skill of skills) {
+            metrics.append(el("span", "skill-map-v2-metric",
+              skill.tag.replace(/-/g, " ") + ": " +
+              skill.correct + "/" + skill.attempted + " đúng" +
+              (skill.hinted_attempts > 0 ? " · có gợi ý" : "")));
           }
-          card.append(status, metrics);
-          card.append(el("p", "skill-map-v2-recent", "Lần luyện gần nhất: " + formatDate(summary.latest_at)));
-        } else if (NO_DIRECT_EVIDENCE_FAMILIES.has(family.family_id)) {
-          card.dataset.evidenceState = "NO_DIRECT_EVIDENCE";
-          card.append(el("p", "skill-map-v2-no-evidence",
-            "Hiện chưa có bài luyện trực tiếp cho kỹ năng này. Trạng thái này không có nghĩa là em yếu."));
+          card.append(metrics);
+          card.append(el("p", "skill-map-v2-recent",
+            "Đây là số lượt luyện theo nhãn câu hỏi, có thể gồm lượt làm lại. Không cộng các nhãn thành số lần làm bài duy nhất."));
         } else {
+          card.dataset.evidenceState = "NO_PRACTICE";
           card.append(el("p", "skill-map-v2-no-evidence",
-            "Chưa có bằng chứng. Trạng thái này không có nghĩa là em yếu; hãy luyện tập để bắt đầu ghi nhận xu hướng."));
+            "Chưa có dữ liệu Practice đối chiếu chắc chắn với nhóm này. Em vẫn có thể học và luyện tập bình thường."));
         }
       } else if (summary.independent_units > 0) {
         const metrics = el("div", "skill-map-v2-metrics");
