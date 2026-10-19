@@ -413,7 +413,7 @@ Quy tắc:
 
 `A/B : C/D = A/B · D/C`
 
-Ngoài điều kiện các mẫu khác `0`, cần thêm điều kiện **phân thức bị chia khác `0`**.
+Ngoài điều kiện các mẫu thức `B`, `D` khác `0`, **phân thức chia `C/D` cũng phải khác `0`** (nghĩa là `C ≠ 0`).
 
 Ví dụ:
 
