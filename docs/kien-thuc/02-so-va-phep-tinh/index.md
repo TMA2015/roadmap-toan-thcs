@@ -258,6 +258,26 @@ nên:
 BCNN(60,84) = 2²·3·5·7 = 420
 ```
 
+### 3.8A. Chọn ƯCLN hay BCNN — hiểu qua cùng hai số
+
+**Câu hỏi quyết định không phải là có hai số nào, mà là đang tìm “lớn nhất để chia đều” hay “nhỏ nhất để cùng lặp lại”.**
+
+Cùng dùng hai số \(24\) và \(36\):
+
+| Tình huống | Vì sao dùng công cụ đó? | Kết quả |
+|---|---|---|
+| Có 24 bút xanh và 36 bút đỏ. Chia thành **nhiều túi giống nhau nhất**, không dư bút, mỗi túi đều có cả hai màu. | Số túi phải là **ước chung** của 24 và 36; để số túi lớn nhất, lấy **ƯCLN**. | \(\operatorname{ƯCLN}(24,36)=12\) túi; mỗi túi có 2 bút xanh và 3 bút đỏ. |
+| Hai đèn nháy sau mỗi 24 giây và 36 giây, vừa nháy cùng lúc. Hỏi sau ít nhất bao nhiêu giây lại cùng nháy? | Thời điểm cùng nháy phải là **bội chung dương** của 24 và 36; để sớm nhất, lấy **BCNN**. | \(\operatorname{BCNN}(24,36)=72\) giây. |
+
+**Tự kiểm tra bằng phân tích thừa số nguyên tố:**
+
+- \(24=2^3\cdot3\), \(36=2^2\cdot3^2\).
+- ƯCLN lấy **số mũ nhỏ nhất** của các thừa số chung: \(2^2\cdot3=12\).
+- BCNN lấy **số mũ lớn nhất** của tất cả thừa số xuất hiện: \(2^3\cdot3^2=72\).
+- Kiểm tra: 12 chia hết cả 24 và 36 theo nghĩa **24 và 36 đều chia hết cho 12**; 72 **chia hết cho cả 24 và 36**.
+
+> **Bẫy hay gặp:** “Chia thành các nhóm” chưa tự động có nghĩa là ƯCLN. Phải xem đề hỏi **số nhóm lớn nhất**, kích thước mỗi nhóm, hay một đại lượng khác. Trước khi tính, hãy nói rõ đáp số sẽ là **số túi**, **số giây**, hay một đại lượng gì.
+
 ### 3.9. Phân số
 
 Hai phân số bằng nhau nếu:
