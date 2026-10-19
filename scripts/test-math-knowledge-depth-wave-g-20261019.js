@@ -70,7 +70,7 @@ const cases=[
     "topic": "13",
     "slug": "13-goc-va-duong-thang",
     "oldSha": "de46a556f863f76474e2d226428a74ba865bb069",
-    "newSha": "6c11f4fa4860960b553858fe1237976543b7d74c",
+    "newSha": "3438f2fa81dfaf9be6e48b0c71035386c09c0b73",
     "start": "### 3.12A. Một mẫu chứng minh hoàn chỉnh: giả thiết, kết luận, căn cứ",
     "end": "## 🔗 4. Kiến thức liên quan",
     "checks": [
