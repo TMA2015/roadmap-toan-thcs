@@ -471,11 +471,3 @@ jobs:
           python scripts/test-math-w2a-rich-practice-wave1-browser.py
           python scripts/test-math-w2b-rich-practice-wave1-browser.py
           python scripts/test-a25-learner-navigation-r1-browser.py
-      - name: Upload reviewed knowledge P2 viewport screenshots
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: knowledge-p2-ct13-14-responsive-previews
-          path: previews/knowledge-p2-*.png
-          if-no-files-found: ignore
-          retention-days: 7
