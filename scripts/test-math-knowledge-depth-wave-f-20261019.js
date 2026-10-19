@@ -15,7 +15,7 @@ const cases=[
   newSha:"a5ab9fe7e0fbf8186928e6bb7357578b485b67b3",
   begin:"### 3.8A. Chọn ƯCLN hay BCNN — hiểu qua cùng hai số",
   end:"### 3.9. Phân số",
-  checks:["24 bút xanh","36 bút đỏ","12 túi","72","ƯCLN","BCNN"]},
+  checks:["24 bút xanh","36 bút đỏ","mỗi túi có 2 bút xanh","72","ƯCLN","BCNN"]},
  {topic:"03",slug:"03-ti-le-ti-le-thuc",
   oldSha:"b501e304c0f4b9bda16205f80aef9ae6105c4319",
   newSha:"8276948e101e99ad73e5d3282b79678320a1e976",
