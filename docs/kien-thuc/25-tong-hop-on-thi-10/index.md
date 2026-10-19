@@ -365,6 +365,30 @@ Mỗi loại lỗi cần một cách sửa khác nhau.
 
 ![Infographic chu trình luyện đề và sổ lỗi sai – Chuyên đề 25](../../assets/infographics/25/25-03-luyen-de-so-loi.svg)
 
+### 3.5A. Từ bước giải sai đến đúng chuyên đề cần học lại
+
+Khi chữa một đề tổng hợp, hãy ghi rõ **bước đầu tiên mình chưa hiểu hoặc làm sai**, thay vì ghi chung chung “sai đại số” hay “sai hình”. Bảng dưới đây chỉ là **tình huống minh họa để tra cứu**, không phải thống kê về tần suất câu hỏi trong đề thi của bất cứ địa phương nào.
+
+| Bước giải đang sai | Tra cứu kiến thức trực tiếp | Nếu còn thiếu nền, mở thêm |
+|---|---|---|
+| Rút gọn phân thức làm mất điều kiện xác định | [CĐ07 – Phân thức](../07-phan-thuc-dai-so/index.md) | [CĐ05 – Hằng đẳng thức](../05-7-hang-dang-thuc/index.md), [CĐ06 – Phân tích nhân tử](../06-phan-tich-da-thuc/index.md) |
+| Giải phương trình hoặc bất phương trình sai dấu | [CĐ08 – Phương trình, bất phương trình](../08-phuong-trinh-bat-phuong-trinh/index.md) | [CĐ04 – Biểu thức đại số](../04-bieu-thuc-dai-so/index.md) |
+| Giải hệ sai khi thế hoặc cộng đại số | [CĐ09 – Hệ phương trình](../09-he-phuong-trinh/index.md) | [CĐ08 – Phương trình](../08-phuong-trinh-bat-phuong-trinh/index.md) |
+| Dùng Viète nhưng quên điều kiện của biểu thức có nghiệm ở mẫu | [CĐ12 – Phương trình bậc hai, Viète](../12-phuong-trinh-bac-hai-viete/index.md) | [CĐ07 – Phân thức](../07-phan-thuc-dai-so/index.md) |
+| Chứng minh hình học nhưng không tìm được hai tam giác đồng dạng | [CĐ17 – Thales, đồng dạng](../17-thales-dong-dang/index.md) | [CĐ13 – Góc](../13-goc-va-duong-thang/index.md), [CĐ14 – Tam giác](../14-tam-giac/index.md) |
+| Dùng góc nội tiếp hoặc tiếp tuyến chưa có căn cứ | [CĐ19 – Đường tròn](../19-duong-tron/index.md) | [CĐ20 – Hình học tổng hợp](../20-hinh-hoc-tong-hop/index.md) để học chuỗi chứng minh |
+| Bài toán thực tế có nghiệm đại số nhưng nghiệm không phù hợp bối cảnh | [CĐ24 – Mô hình hóa](../24-bai-toan-thuc-te/index.md) | [CĐ08 – Phương trình](../08-phuong-trinh-bat-phuong-trinh/index.md) hoặc [CĐ09 – Hệ phương trình](../09-he-phuong-trinh/index.md) |
+
+**Ví dụ ghi sổ lỗi sai có thể tự làm theo**
+
+1. **Bước sai:** Vẽ đồ thị \(y=2x\) bằng hai giao điểm với trục tọa độ. Cả hai đều là \(O(0;0)\), nên học sinh kết luận “không thể vẽ”.
+2. **Chuyên đề cần mở:** [CĐ10 – Hàm số và đồ thị](../10-ham-so-do-thi/index.md), phần **trường hợp đặc biệt \(y=ax\)** và cách chọn **hai điểm phân biệt**.
+3. **Nguyên nhân:** Đã dùng máy móc hai giao điểm với trục khi \(b=0\), không kiểm tra hai điểm có khác nhau hay không.
+4. **Cách sửa:** Giữ \(O(0;0)\), chọn thêm \(A(1;2)\); đường thẳng qua \(O,A\) chính là đồ thị \(y=2x\).
+5. **Tự kiểm tra sau vài ngày:** Không nhìn lời giải, tự vẽ \(y=-3x\) bằng hai điểm khác nhau. Nếu vẫn vướng, quay lại đúng mục kiến thức trên.
+
+**Nguyên tắc:** Một câu tổng hợp có thể sử dụng nhiều chuyên đề. Ưu tiên quay lại **kiến thức liên quan đến bước sai đầu tiên**, hiểu lý do và xem ví dụ mẫu, rồi làm lại câu; không gán tất cả lỗi cho một chuyên đề chỉ vì câu hỏi có tên dạng bài đó.
+
 ### 3.6. Chiến lược làm bài
 
 Nguyên tắc chung:

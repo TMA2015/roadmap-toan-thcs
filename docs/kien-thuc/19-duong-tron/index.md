@@ -243,6 +243,22 @@ Một số dấu hiệu thường dùng để chứng minh tứ giác nội ti�
 
 ![Infographic góc, cung và tứ giác nội tiếp Chuyên đề 19](../../assets/infographics/19/19-02-goc-cung-noi-tiep.svg)
 
+### 3.4A. Góc có đỉnh bên trong hoặc bên ngoài đường tròn (mở rộng)
+
+Không phải mọi góc có hai cạnh cắt đường tròn đều là **góc nội tiếp**. Trước khi áp dụng công thức, hãy xem **đỉnh góc nằm ở đâu**:
+
+| Vị trí đỉnh góc | Cấu hình | Công thức số đo |
+|---|---|---|
+| **Trên đường tròn** | Góc nội tiếp | Bằng **một nửa** số đo cung bị chắn |
+| **Bên trong đường tròn** | Hai dây `AB`, `CD` cắt nhau tại `I` | `∠AIC = (sđ cung AC + sđ cung BD)/2` |
+| **Bên ngoài đường tròn** | Hai cát tuyến `PAB`, `PCD`, trong đó `A, C` là giao điểm gần `P` | `∠APC = (sđ cung BD − sđ cung AC)/2`, với cung xa `BD` lớn hơn cung gần `AC` |
+
+**Ví dụ 1 — Giao điểm ở trong.** Nếu hai dây `AB`, `CD` cắt tại `I`, hai cung `AC` và `BD` bị chắn bởi góc `AIC` và góc đối đỉnh có số đo lần lượt là `100°`, `60°`, thì `∠AIC = (100° + 60°)/2 = 80°`.
+
+**Ví dụ 2 — Giao điểm ở ngoài.** Từ `P` kẻ hai cát tuyến qua `A,B` và `C,D`, với `A,C` gần `P` hơn. Nếu cung xa `BD` bằng `140°` và cung gần `AC` bằng `40°`, thì `∠APC = (140° − 40°)/2 = 50°`.
+
+**Tự kiểm tra:** Công thức **tổng hai cung** dành cho đỉnh *bên trong*; công thức **hiệu hai cung** dành cho đỉnh *bên ngoài*. Phải xác định đúng cung bị chắn của góc đang xét và góc đối đỉnh, không chọn cung theo cảm tính. Đây là **công cụ mở rộng** khi gặp cấu hình phù hợp, không phải yêu cầu mới của phần kiến thức nền tảng.
+
 ### 3.5. Hai dây cắt nhau
 
 Nếu hai dây `AB`, `CD` cắt nhau tại `I` bên trong đường tròn:

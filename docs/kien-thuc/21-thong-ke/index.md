@@ -192,6 +192,26 @@ Ví dụ:
 
 Một dữ liệu có thể là số hoặc phân loại.
 
+### 3.1A. Nhận diện kiểu dữ liệu trước khi lập bảng và biểu đồ
+
+Không phải cứ nhìn thấy chữ số thì dữ liệu đã là một **đại lượng đo được**. Cần hỏi: *Giá trị này dùng để phân loại, đếm hay đo lường?*
+
+| Kiểu dữ liệu | Ví dụ | Cách hiểu |
+|---|---|---|
+| **Định tính** (phân loại) | Màu áo: xanh, đỏ; mức xếp loại: tốt, khá, đạt | Mô tả **nhóm hoặc loại**; một số loại có thể sắp theo thứ tự, nhưng không cộng/trừ các nhãn |
+| **Định lượng rời rạc** | Số anh chị em: `0, 1, 2, ...` | Thu được bằng **đếm**; chỉ có những giá trị phù hợp đơn vị đếm |
+| **Định lượng liên tục** | Chiều cao `151,5 cm`, khối lượng `42,3 kg` | Thu được bằng **đo lường**; phép đo thực tế được ghi với độ chính xác nhất định |
+| **Mã định danh** | Số áo cầu thủ, mã học sinh | Dù viết bằng chữ số, nó chỉ dùng **nhận diện**, không phải số lượng để cộng hay tính trung bình |
+
+**Ví dụ phân biệt:** Khảo sát một lớp về **phương tiện đi học** và **thời gian đi học (phút)**. Phương tiện là dữ liệu định tính; thời gian là dữ liệu định lượng. Vì vậy, ta có thể lập bảng tần số cho *xe đạp, đi bộ, xe buýt*, nhưng **không được tính thời gian đi học trung bình từ các nhãn phương tiện**.
+
+**Từ loại dữ liệu đến cách trình bày:**
+- Với dữ liệu phân loại, thường dùng bảng tần số, biểu đồ cột hoặc quạt tròn khi các nhóm tạo thành một tổng thể.
+- Với số lượng đếm được, có thể lập bảng tần số theo từng giá trị.
+- Với nhiều số đo liên tục, có thể cần ghép nhóm theo **khoảng không chồng lấn**, như mục 3.6B.
+
+> **Tự kiểm tra:** “Số” trên nhãn có thật sự mang nghĩa độ lớn không? Nếu đổi mã học sinh từ `12` thành `120` mà không thay đổi người được ghi nhận, đó không phải sự tăng gấp 10 lần một đại lượng đo.
+
 ### 3.2. Tần số
 
 **Tần số** của một giá trị là số lần giá trị đó xuất hiện.

@@ -210,6 +210,27 @@ nên:
 x = 24, y = 36, z = 60
 ```
 
+### 3.4A. Dãy tỉ số bằng nhau khi đề cho tổng có hệ số (mở rộng)
+
+Công thức dãy tỉ số ở mục 3.4 không chỉ dùng khi biết \(x+y\). Nếu
+
+\[
+\frac{x}{a}=\frac{y}{b}=k\quad (a,b\ne0),
+\]
+
+thì \(x=ak,\ y=bk\). Với các hệ số \(m,n\), ta có **\(mx+ny=(ma+nb)k\)**. Nếu \(ma+nb\ne0\), có thể tìm \(k\) từ biểu thức ghép hệ số đó.
+
+**Ví dụ từng bước:** Cho \(x/2=y/3\) và \(2x+3y=26\). Tìm \(x,y\).
+
+1. Đặt \(x/2=y/3=k\), suy ra \(x=2k\), \(y=3k\).
+2. Thay vào điều kiện còn lại: \(2(2k)+3(3k)=26\), tức \(13k=26\).
+3. Suy ra \(k=2\), nên **\(x=4,\ y=6\)**.
+4. Kiểm tra: \(4/2=6/3=2\) và \(2\cdot4+3\cdot6=26\).
+
+**Vì sao phải giữ hệ số?** Điều kiện \(2x+3y=26\) **không phải** \(x+y=26\). Không được tự đổi một tổng có hệ số thành tổng không có hệ số rồi dùng công thức dãy tỉ số.
+
+> Đây là một cách **vận dụng đại số từ kiến thức tỉ lệ thức**, không cần ghi nhớ một quy tắc mới. Nếu hệ số trước \(k\) bằng 0, phải xét lại điều kiện thay vì chia cho 0.
+
 ### 3.5. Đại lượng tỉ lệ thuận
 
 Hai đại lượng `x` và `y` tỉ lệ thuận nếu:

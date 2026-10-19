@@ -16,4 +16,10 @@ for(const [id,slug,layer] of [[24,"24-bai-toan-thuc-te","Core-Support"],[25,"25-
  ok(ids.size===15&&(w.extensions||[]).every(x=>x.gates_core===false),"no gating "+id);
  ok(txt("docs/kien-thuc/"+slug+"/index.md").includes("Learning Journey")&&txt("docs/assets/javascripts/topic-workspace-v1.js").includes('"'+slug+'":{number:'),"UI wiring "+id);
 }
+// Contextual acceptability is stronger than merely checking a positive root.
+const ct24=txt("docs/kien-thuc/24-bai-toan-thuc-te/index.md");
+ok(ct24.includes("### 3.10A. Ví dụ kiểm tra nghiệm theo điều kiện thực tế"),"CT24 Wave B teaching section missing");
+ok(ct24.includes("x = 16")&&ct24.includes("0 < x < 10"),"CT24 positive root must be rejected by context");
+const roots=[4,16];
+ok(roots.every(x=>x*(20-x)===64)&&roots.filter(x=>x>0&&x<10).length===1,"CT24 example solution error");
 if(errors.length){console.error(errors.join("\n"));process.exit(1)}console.log("PASS CĐ24–25: ten cards, thirty non-gating micro items, unchanged original 240 questions.");
