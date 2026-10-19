@@ -169,7 +169,7 @@ for (const file of fs.readdirSync(jsRoot).filter((name) => name.endsWith(".js"))
     assert(content.includes(registryName), "authorized I4 preview must read the durable 131-family registry");
     assert(!content.includes("localStorage.setItem"), "I4 preview must remain read-only");
   } else if (file === authorizedDashboard) {
-    assert(content.includes(proposedStore), "Math dashboard must read the isolated Taxonomy v2 store");
+    assert(!content.includes(proposedStore), "learner Math dashboard must not use a second Practice counter");
     assert(!content.includes(registryName), "Math dashboard must not load registry for grading");
     assert(!content.includes("setItem(") && !content.includes("removeItem("), "Math dashboard must be read-only");
   } else if (file === authorizedPortableBackup) {

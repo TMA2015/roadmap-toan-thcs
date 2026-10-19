@@ -242,10 +242,9 @@ for (const id of ["GEO13V1_001","TRI14V1_001","CTR15V1_001","QUAD16V1_001","GEO1
 }
 
 const practice = read("docs/assets/javascripts/practice-engine-v2.js").toString("utf8");
-const legacyAt = practice.indexOf("RoadmapLearnerEvidence.recordAnswer");
-const g2At = practice.indexOf("RoadmapCanonicalEvidenceObserver?.captureAttempt");
-const tv2At = practice.indexOf("RoadmapTaxonomyV2Observer?.captureAttempt");
-assert.ok(legacyAt >= 0 && g2At > legacyAt && tv2At > g2At, "shadow capture order changed");
+assert.ok(practice.includes("RoadmapLearnerEvidence.recordAnswer"), "single Practice writer must remain");
+assert.ok(!practice.includes("RoadmapCanonicalEvidenceObserver?.captureAttempt"), "no second G2 Practice write");
+assert.ok(!practice.includes("RoadmapTaxonomyV2Observer?.captureAttempt"), "no second Taxonomy Practice write");
 
 const observerSource = read("docs/assets/javascripts/taxonomy-v2-evidence-observer-v1.js").toString("utf8");
 assert.ok(observerSource.includes("taxonomy-v2-runtime/i3g-ct02-25-r1.json"));

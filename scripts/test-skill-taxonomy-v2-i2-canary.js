@@ -196,14 +196,13 @@ assert.equal(g2.runtime_rules.mastery_threshold, null);
 assert.equal(g2.runtime_rules.core_readiness_credit, false);
 assert.notEqual(g2.production_store.key, obs.STORE_KEY);
 
-// Practice integration must keep both shadow lanes after the legacy write.
+// Historical observer algorithms remain separately QA-testable; only one live Practice write is allowed.
 const practice = read("docs/assets/javascripts/practice-engine-v2.js").toString("utf8");
-const legacyAt = practice.indexOf("RoadmapLearnerEvidence.recordAnswer");
-const g2At = practice.indexOf("RoadmapCanonicalEvidenceObserver?.captureAttempt");
-const tv2At = practice.indexOf("RoadmapTaxonomyV2Observer?.captureAttempt");
-assert.ok(legacyAt >= 0 && g2At > legacyAt && tv2At > g2At, "shadow capture order changed");
+assert.ok(practice.includes("RoadmapLearnerEvidence.recordAnswer"), "Practice counter writer missing");
+assert.ok(!practice.includes("RoadmapCanonicalEvidenceObserver?.captureAttempt"), "G2 duplicate live write returned");
+assert.ok(!practice.includes("RoadmapTaxonomyV2Observer?.captureAttempt"), "Taxonomy duplicate live write returned");
 
 console.log("PASS Taxonomy v2 I2 policy: 12 active + 2 NO_FAMILY guards / 4 families / max 8 units.");
 console.log("PASS I2 assistance, clone, repeat and negative-evidence semantics.");
-console.log("PASS source locks, I1 reconciliation, legacy-first order and G2 isolation.");
+console.log("PASS source locks, I1 reconciliation and no duplicate live Practice observer writes.");
 console.log("PASS Taxonomy v2 store remains shadow-only with no mastery or Readiness credit.");

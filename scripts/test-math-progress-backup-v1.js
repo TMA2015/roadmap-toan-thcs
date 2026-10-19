@@ -71,9 +71,8 @@ const samples={
   assert.equal(d.practice.correct,2);
   assert.equal(d.practice.unique_questions,2);
   assert.equal(d.readiness.submitted,1);
-  assert.equal(d.independent.units,1);
-  assert.equal(d.independent.correct,1);
-  assert.equal(d.independent.families,1);
+  assert.equal(d.independent,undefined,"dashboard must not duplicate the Practice Skill counter");
+  assert.equal(d.source_states.taxonomy,undefined,"dashboard must not load dormant Taxonomy evidence");
   assert.equal(Dashboard.summarize(new MemoryStorage()).practice.attempted,0);
   assert.equal(Dashboard.summarize(new MemoryStorage()).source_states.practice,"empty");
   assert.equal(Dashboard.summarize(new MemoryStorage()).source_states.readiness,"empty");
@@ -94,5 +93,5 @@ const samples={
   assert.ok(nav.includes("Tiến độ học tập: tien-do-hoc-tap/index.md"));
   assert.ok(!fs.readFileSync("docs/assets/javascripts/math-progress-dashboard-v1.js","utf8").includes("setItem("));
   console.log("PASS: versioned SHA-256 backup, allowlist, cross-device restore, conflict preview/replace gate, corruption reject and quota rollback.");
-  console.log("PASS: dashboard descriptively reads separate Practice, Readiness and independent evidence without writing or regrading.");
+  console.log("PASS: dashboard reads one Practice counter and separate Readiness without writing or regrading.");
 })().catch(e=>{console.error(e);process.exitCode=1;});
