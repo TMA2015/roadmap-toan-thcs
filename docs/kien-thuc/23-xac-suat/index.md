@@ -263,6 +263,24 @@ Luôn có:
 `0 ≤ P(A) ≤ 1`
 
 
+#### Hiểu sâu (mở rộng): Vì sao không thể chia đều cho 11 tổng của hai xúc xắc?
+
+Gieo **hai xúc xắc cân đối và phân biệt**. Tổng số chấm có thể nhận 11 giá trị, từ `2` đến `12`, nhưng **11 giá trị tổng này không đồng khả năng**:
+
+- Tổng bằng `2` chỉ có một cách: `(1;1)`.
+- Tổng bằng `7` có sáu cách: `(1;6)`, `(2;5)`, `(3;4)`, `(4;3)`, `(5;2)`, `(6;1)`.
+
+Nếu coi 11 tổng là 11 kết quả đồng khả năng rồi tính `P(tổng = 2) = 1/11` thì **sai**.
+
+Cách đếm đúng là lấy **cặp có thứ tự (mặt xúc xắc thứ nhất; mặt xúc xắc thứ hai)** làm kết quả. Có `6 × 6 = 36` cặp đồng khả năng, nên:
+
+- `P(tổng = 2) = 1/36`.
+- `P(tổng = 7) = 6/36 = 1/6`.
+
+**Tự kiểm tra:** Trước khi dùng `n(A)/n(Ω)`, hãy hỏi: *Các kết quả mình đang đếm có thực sự đồng khả năng không?*
+
+---
+
 ### 3.4A. Xác suất thực nghiệm
 
 Thực hiện cùng một phép thử `n` lần. Nếu biến cố `A` xảy ra `m` lần thì **xác suất thực nghiệm** của `A` trong loạt thử đó là:
