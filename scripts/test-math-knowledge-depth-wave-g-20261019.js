@@ -128,4 +128,4 @@ function checkWaveG(){
  console.log("PASS: Wave G 6 topic content locks, old frozen SHA, correct math, no H2 accordion changes.");
 }
 if(require.main===module)checkWaveG();
-module.exports={restoreHistoricalSource};
+module.exports={restoreHistoricalSource,checkWaveG};
