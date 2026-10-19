@@ -274,7 +274,7 @@ Cùng dùng hai số \(24\) và \(36\):
 - \(24=2^3\cdot3\), \(36=2^2\cdot3^2\).
 - ƯCLN lấy **số mũ nhỏ nhất** của các thừa số chung: \(2^2\cdot3=12\).
 - BCNN lấy **số mũ lớn nhất** của tất cả thừa số xuất hiện: \(2^3\cdot3^2=72\).
-- Kiểm tra: 12 chia hết cả 24 và 36 theo nghĩa **24 và 36 đều chia hết cho 12**; 72 **chia hết cho cả 24 và 36**.
+- Kiểm tra: **12 là ước chung** vì cả 24 và 36 đều chia hết cho 12; **72 là bội chung** vì 72 chia hết cho cả 24 và 36.
 
 > **Bẫy hay gặp:** “Chia thành các nhóm” chưa tự động có nghĩa là ƯCLN. Phải xem đề hỏi **số nhóm lớn nhất**, kích thước mỗi nhóm, hay một đại lượng khác. Trước khi tính, hãy nói rõ đáp số sẽ là **số túi**, **số giây**, hay một đại lượng gì.
 
