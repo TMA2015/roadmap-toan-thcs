@@ -324,6 +324,28 @@ Không có quy định bắt buộc phải dùng một phương pháp cố đị
 
 ---
 
+### 3.4A. Một hệ, hai phương pháp — hiểu cách chọn và kiểm tra
+
+Cùng một hệ phải có **cùng tập nghiệm** dù giải bằng thế hay cộng đại số. Xét:
+
+\[
+\begin{cases}
+x+y=5,\\
+2x-y=4.
+\end{cases}
+\]
+
+| Cách giải | Các bước chính |
+|---|---|
+| **Thế** | Từ \(x+y=5\), suy ra \(y=5-x\). Thế vào phương trình còn lại: \(2x-(5-x)=4\), tức \(3x=9\), nên \(x=3\) và \(y=2\). |
+| **Cộng đại số** | Cộng nguyên hai phương trình: \((x+y)+(2x-y)=5+4\). Khử \(y\), được \(3x=9\), nên \(x=3\) và \(y=2\). |
+
+**Vì sao nên chọn cộng đại số ở đây?** Hai hệ số của \(y\) là \(1\) và \(-1\), nên chỉ cần cộng đã khử được ẩn. Tuy nhiên, phương pháp thế vẫn **đúng**, chỉ dài hơn.
+
+**Tự kiểm tra:** Thay \((x;y)=(3;2)\) vào **cả hai phương trình gốc**: \(3+2=5\) và \(2\cdot3-2=4\). Vậy nghiệm của hệ là **\((3;2)\)**.
+
+> Mục tiêu không phải dùng phương pháp “được gọi tên trong đề” mà là chọn phép biến đổi **đúng, rõ và ít rủi ro sai dấu**.
+
 ### 3.5. Số nghiệm của hệ
 
 Xét hệ:

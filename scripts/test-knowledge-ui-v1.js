@@ -17,3 +17,6 @@ console.log("PASS: 25-topic finder, shared lesson route, scroll-position bar, no
 require("./test-math-knowledge-navigation-wave-d-20261019.js");
 
 require("./test-math-knowledge-integrated-a-f-20261019.js");
+
+require("./test-math-knowledge-depth-wave-g-20261019.js").checkWaveG();
+require("./test-math-knowledge-integrated-a-g-20261019.js");

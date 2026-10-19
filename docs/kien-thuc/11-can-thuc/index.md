@@ -146,6 +146,27 @@ nhưng phải kèm điều kiện `A ≥ 0`, `B ≥ 0`.
 
 ![Infographic biến đổi và rút gọn căn thức](../../assets/infographics/11/11-03-bien-doi-rut-gon.svg)
 
+### 3.3B. Nhận diện hằng đẳng thức trong căn lồng căn (mở rộng)
+
+Đôi khi biểu thức dưới dấu căn là **bình phương một tổng**. Liên hệ trực tiếp với [CĐ05 – Hằng đẳng thức](../05-7-hang-dang-thuc/index.md):
+
+\[
+(\sqrt a+\sqrt b)^2=a+b+2\sqrt{ab}\qquad(a,b\ge0).
+\]
+
+**Ví dụ:** Rút gọn \(\sqrt{5+2\sqrt6}\).
+
+1. Nhận thấy \(5=2+3\), \(6=2\cdot3\).
+2. Dùng hằng đẳng thức: \((\sqrt2+\sqrt3)^2=2+3+2\sqrt6=5+2\sqrt6\).
+3. Vì \(\sqrt2+\sqrt3>0\), suy ra:
+   \[
+   \sqrt{5+2\sqrt6}=|\sqrt2+\sqrt3|=\sqrt2+\sqrt3.
+   \]
+
+**Tự kiểm tra:** Bình phương kết quả phải được \(5+2\sqrt6\). Bước xét dấu không được bỏ: với số thực \(A\), quy tắc luôn đúng là **\(\sqrt{A^2}=|A|\)**.
+
+> Đây là **ví dụ kết nối mở rộng**, không phải thuật toán áp dụng được cho mọi căn lồng căn.
+
 ### 3.4. Khai phương một tích
 
 Với `A ≥ 0, B ≥ 0`:

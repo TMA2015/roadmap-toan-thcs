@@ -91,7 +91,9 @@ function historicalLongformText(lock){
  return lesson.slice(0,a)+lesson.slice(b);
 }
 for(const lock of Object.values(a.source_locks.longform_sources)){
-  assert.equal(blob(lock.path==="docs/kien-thuc/21-thong-ke/index.md"?historicalLongformText(lock):historicalLongformSource(lock)),lock.sha,"source drift beyond reviewed Wave A: "+lock.path);
+  const longform=lock.path==="docs/kien-thuc/21-thong-ke/index.md"?historicalLongformText(lock):historicalLongformSource(lock);
+  const historical=require("./test-math-knowledge-depth-wave-g-20261019.js").restoreHistoricalSource(lock.path,longform);
+  assert.equal(blob(historical),lock.sha,"source drift beyond reviewed Waves A/E/G: "+lock.path);
 }
 for(const [topic,ev] of Object.entries(a.source_locks.topic_evidence)){
   for(const k of ["workspace","micro","manifest","assessment"]){

@@ -63,7 +63,7 @@ let total=0,declared=0,covered=0,appended=0;
 for(const t of specs){
  const root="docs/kien-thuc/"+t.slug+"/",bp="docs/assets/data/practice/"+t.slug+"-micro-v1.json";
  const lesson=read(root+"index.md"),bank=json(bp),ws=json("docs/assets/data/curriculum/topic"+t.n+"-learning-workspace.json"),manifest=json("docs/assets/data/practice/"+t.slug+"-v1.manifest.json"),page=read(root+"core/index.md");
- ok(gitSha(t.n==="13"?originalCt13Headings(lesson):waveCOriginal(t.n,lesson))===t.lesson,"historical lesson drift beyond approved presentation/pedagogy "+t.slug);
+ ok(gitSha(t.n==="13"?originalCt13Headings(require("./test-math-knowledge-depth-wave-g-20261019.js").restoreHistoricalSource(root+"index.md",lesson)):waveCOriginal(t.n,lesson))===t.lesson,"historical lesson drift beyond approved presentation/pedagogy plus Wave G "+t.slug);
  ok(bank.question_count===t.count&&bank.questions.length===t.count&&ws.cards.length===5,"counts "+t.slug);
  ok(gitSha(JSON.stringify({...bank,question_count:15,questions:bank.questions.slice(0,15)},null,2)+"\n")===t.bank,"original fifteen items must be byte-equivalent as JSON "+t.slug);
  ok(new Set(bank.questions.map(q=>q.id)).size===t.count,"no duplicate IDs "+t.slug);
