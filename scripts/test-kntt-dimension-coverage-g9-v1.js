@@ -45,7 +45,7 @@ for(const lock of [a.source_locks.coverage_matrix,a.source_locks.grade9_reconcil
   assert.ok((current.exercises||[]).filter(e=>e.academic_review?.status==="APPROVED").length>=54,"approved Written baseline regressed");
 }
 for(const lock of Object.values(a.source_locks.longform_sources)){
-  assert.equal(blob(read(lock.path)),lock.sha,"source drift: "+lock.path);
+  assert.equal(blob(lock.path==="docs/kien-thuc/12-phuong-trinh-bac-hai-viete/index.md"?require("./test-math-knowledge-depth-wave-g-20261019.js").restoreHistoricalSource(lock.path,read(lock.path)):read(lock.path)),lock.sha,"source drift outside Wave G: "+lock.path);
 }
 for(const [topic,ev] of Object.entries(a.source_locks.topic_evidence)){
   for(const k of ["workspace","micro","manifest","assessment"]){

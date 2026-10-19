@@ -379,6 +379,27 @@ Căn cứ có thể là giả thiết, định nghĩa, tính chất/định lí 
 
 ---
 
+### 3.12A. Một mẫu chứng minh hoàn chỉnh: giả thiết, kết luận, căn cứ
+
+**Bài toán:** Cho ba đường thẳng \(a,b,c\) với \(a\parallel b\) và \(c\perp a\). Chứng minh \(c\perp b\).
+
+| Thành phần | Nội dung |
+|---|---|
+| **Giả thiết (GT)** | \(a\parallel b\), \(c\perp a\) |
+| **Kết luận (KL)** | \(c\perp b\) |
+
+**Lập luận từng bước:**
+
+1. Vì \(c\perp a\) (**giả thiết**), góc tạo bởi \(c\) và \(a\) là \(90^\circ\) (**định nghĩa vuông góc**).
+2. Vì \(a\parallel b\) (**giả thiết**), hai góc **đồng vị tương ứng** do đường thẳng \(c\) cắt \(a,b\) bằng nhau (**tính chất hai đường song song**).
+3. Suy ra góc tương ứng giữa \(c\) và \(b\) cũng bằng \(90^\circ\), nên **\(c\perp b\)** (**định nghĩa vuông góc**).
+
+**Tự kiểm tra:** Đâu là điều đề đã cho? Bước nào sử dụng tính chất đã học? Bước kết luận có thực sự suy ra từ hai bước trên, hay chỉ dựa vào việc nhìn hình thấy có vẻ vuông góc?
+
+> Đây là **mẫu trình bày một chứng minh**, không phải tính chất mới cần học thuộc. Khi tự viết, hãy ghi đủ giả thiết, bước trung gian, căn cứ và kết luận.
+
+---
+
 ## 🔗 4. Kiến thức liên quan
 
 ### Kiến thức nên biết trước
