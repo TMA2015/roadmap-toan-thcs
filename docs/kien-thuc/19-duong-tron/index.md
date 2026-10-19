@@ -253,7 +253,7 @@ Không phải mọi góc có hai cạnh cắt đường tròn đều là **góc 
 | **Bên trong đường tròn** | Hai dây `AB`, `CD` cắt nhau tại `I` | `∠AIC = (sđ cung AC + sđ cung BD)/2` |
 | **Bên ngoài đường tròn** | Hai cát tuyến `PAB`, `PCD`, trong đó `A, C` là giao điểm gần `P` | `∠APC = (sđ cung BD − sđ cung AC)/2`, với cung xa `BD` lớn hơn cung gần `AC` |
 
-**Ví dụ 1 — Giao điểm ở trong.** Nếu hai dây `AB`, `CD` cắt tại `I`, hai cung `AC` và `BD` bị chắn bởi góc `AIC` và góc đối đỉnh có số đo lần lượt là `100°`, `60°), thì `∠AIC = (100° + 60°)/2 = 80°`.
+**Ví dụ 1 — Giao điểm ở trong.** Nếu hai dây `AB`, `CD` cắt tại `I`, hai cung `AC` và `BD` bị chắn bởi góc `AIC` và góc đối đỉnh có số đo lần lượt là `100°`, `60°`, thì `∠AIC = (100° + 60°)/2 = 80°`.
 
 **Ví dụ 2 — Giao điểm ở ngoài.** Từ `P` kẻ hai cát tuyến qua `A,B` và `C,D`, với `A,C` gần `P` hơn. Nếu cung xa `BD` bằng `140°` và cung gần `AC` bằng `40°`, thì `∠APC = (140° − 40°)/2 = 50°`.
 
