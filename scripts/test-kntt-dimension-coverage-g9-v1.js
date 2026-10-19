@@ -44,8 +44,24 @@ for(const lock of [a.source_locks.coverage_matrix,a.source_locks.grade9_reconcil
   assert.ok((current.exercises||[]).length>=54,"Written Library historical baseline regressed");
   assert.ok((current.exercises||[]).filter(e=>e.academic_review?.status==="APPROVED").length>=54,"approved Written baseline regressed");
 }
+// Wave E allows one self-contained CT21 teaching appendix, while reconstructing
+// the exact historical Grade-9 longform source for the frozen independent audit.
+function historicalLongformText(lock){
+ const lesson=read(lock.path);
+ if(lock.path!=="docs/kien-thuc/21-thong-ke/index.md")return lesson;
+ assert.equal(blob(lesson),"27b0938c5ee263a8c60dd73cf6d42d3d52d0d89a","CT21 Wave E full source drift");
+ const start="### 3.1A. Nhận diện kiểu dữ liệu trước khi lập bảng và biểu đồ";
+ const end="### 3.2. Tần số";
+ const a=lesson.indexOf(start),b=lesson.indexOf(end,a+start.length);
+ assert.ok(a>=0&&b>a&&lesson.indexOf(start,a+1)===-1,"CT21 Wave E example missing or duplicated");
+ const appendix=lesson.slice(a,b);
+ for(const phrase of ["**Định tính**","**Định lượng rời rạc**","**Định lượng liên tục**","**Mã định danh**","mã học sinh","tần số"]){
+  assert.ok(appendix.includes(phrase),"CT21 Wave E category removed: "+phrase);
+ }
+ return lesson.slice(0,a)+lesson.slice(b);
+}
 for(const lock of Object.values(a.source_locks.longform_sources)){
-  assert.equal(blob(read(lock.path)),lock.sha,"source drift: "+lock.path);
+  assert.equal(blob(historicalLongformText(lock)),lock.sha,"source drift outside Wave E: "+lock.path);
 }
 for(const [topic,ev] of Object.entries(a.source_locks.topic_evidence)){
   for(const k of ["workspace","micro","manifest","assessment"]){
