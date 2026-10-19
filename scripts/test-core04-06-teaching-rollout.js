@@ -70,3 +70,4 @@ for(const x of [-4,-2,0,1,3])for(const y of [-2,0,1,5]){
  assert(eq((x-4)*(x+1),x*x-3*x-4),"CĐ06 card5");
 }
 console.log("PASS: 15 source-linked self-audited baseline teaching cards and 45 original micro questions are preserved; later Grade-7 append-only cards/questions do not alter the historical baseline.");
+require("./test-math-knowledge-depth-wave-f-20261019.js");
