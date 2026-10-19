@@ -44,8 +44,38 @@ for(const lock of [a.source_locks.coverage_matrix,a.source_locks.grade9_reconcil
   assert.ok((current.exercises||[]).length>=54,"Written Library historical baseline regressed");
   assert.ok((current.exercises||[]).filter(e=>e.academic_review?.status==="APPROVED").length>=54,"approved Written baseline regressed");
 }
+// The independent knowledge-depth Wave A adds one optional, source-reviewed
+// two-dice counterexample to CT23. Reconstruct the EXACT pre-wave lesson before
+// checking the historical source lock; do not repin historical academic evidence.
+// The additional block is separately bounded and checked for mathematical facts.
+function historicalLongformSource(lock){
+  const text=read(lock.path);
+  if(lock.path!=="docs/kien-thuc/23-xac-suat/index.md")return text;
+  const startTag="#### Hiểu sâu (mở rộng): Vì sao không thể chia đều cho 11 tổng của hai xúc xắc?";
+  const nextTag="### 3.4A. Xác suất thực nghiệm";
+  const start=text.indexOf(startTag);
+  assert.ok(start>=0,"CT23 reviewed Wave A example missing");
+  assert.equal(text.indexOf(startTag,start+1),-1,"CT23 duplicated Wave A example");
+  const end=text.indexOf(nextTag,start+startTag.length);
+  assert.ok(end>start,"CT23 Wave A must remain inside section 3.4");
+  const addition=text.slice(start,end);
+  assert.equal(addition.length,756,"CT23 Wave A approved example length drift");
+  for(const evidence of [
+    "11 giá trị tổng này không đồng khả năng",
+    "Tổng bằng `2` chỉ có một cách: `(1;1)`.",
+    "Tổng bằng `7` có sáu cách:",
+    "`(1;6)`, `(2;5)`, `(3;4)`, `(4;3)`, `(5;2)`, `(6;1)`",
+    "`P(tổng = 2) = 1/11` thì **sai**",
+    "`6 × 6 = 36` cặp đồng khả năng",
+    "`P(tổng = 2) = 1/36`",
+    "`P(tổng = 7) = 6/36 = 1/6`",
+    "Các kết quả mình đang đếm có thực sự đồng khả năng không?"
+  ]) assert.ok(addition.includes(evidence),"CT23 Wave A mathematics changed: "+evidence);
+  assert.match(addition,/\n\n---\n\n$/,"CT23 section separator drift");
+  return text.slice(0,start)+text.slice(end);
+}
 for(const lock of Object.values(a.source_locks.longform_sources)){
-  assert.equal(blob(read(lock.path)),lock.sha,"source drift: "+lock.path);
+  assert.equal(blob(historicalLongformSource(lock)),lock.sha,"source drift beyond reviewed Wave A: "+lock.path);
 }
 for(const [topic,ev] of Object.entries(a.source_locks.topic_evidence)){
   for(const k of ["workspace","micro","manifest","assessment"]){
