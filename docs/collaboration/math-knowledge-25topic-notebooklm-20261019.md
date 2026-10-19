@@ -2,6 +2,8 @@
 
 **Trạng thái:** DRAFT · chưa được NotebookLM phản biện độc lập · không phải chứng nhận PASS.
 
+**Ghi chú kỹ thuật:** Chỉ các **đường dẫn liên kết** trong phần trích được điều chỉnh theo vị trí của hồ sơ trong `docs/collaboration`, để vẫn mở đúng trang kiến thức; lời văn, công thức và ví dụ giữ nguyên từ PR.
+
 **Nguồn được trích:** [Draft PR #535](https://github.com/TMA2015/roadmap-toan-thcs/pull/535), Git commit `91ea4fbbb1648edcd00589f7ee94e720a4ef0aff` (sau khi đã rút gọn ví dụ trùng lặp CĐ09). Các đoạn dưới đây được trích **nguyên văn từ diff Markdown của nhánh tích hợp**; những phần không sửa của các bài học **không được chép lại**.
 
 **Phạm vi:** Chỉ phần **01 · Đọc & hiểu** của 25 chuyên đề. Trong 25 chuyên đề, 24 chuyên đề có đoạn Markdown bổ sung/sửa; CĐ10 sửa trực tiếp infographic SVG. Không được coi đây là kiểm thử Core, Practice, Skill, Readiness, đề thi hay toàn bộ trải nghiệm động.
@@ -42,14 +44,14 @@ Không cần đọc lại toàn bộ Roadmap mỗi khi gặp khó. Hãy tìm đ�
 
 | Khi gặp khó ở... | Trang kiến thức cần mở trước | Nếu vẫn vướng, xem lại nền |
 |---|---|---|
-| Rút gọn phân thức nhưng quên điều kiện hoặc không tìm được nhân tử chung | [CĐ07 – Phân thức](../07-phan-thuc-dai-so/index.md) | [CĐ06 – Phân tích đa thức](../06-phan-tich-da-thuc/index.md) |
-| Giải phương trình sai ở bước chuyển vế, đổi dấu hoặc gộp hạng tử | [CĐ08 – Phương trình](../08-phuong-trinh-bat-phuong-trinh/index.md) | [CĐ04 – Biểu thức đại số](../04-bieu-thuc-dai-so/index.md) |
-| Chưa biết chọn cặp tam giác để chứng minh đồng dạng | [CĐ17 – Thales và đồng dạng](../17-thales-dong-dang/index.md) | [CĐ13 – Góc](../13-goc-va-duong-thang/index.md), [CĐ14 – Tam giác](../14-tam-giac/index.md) |
-| Nhầm tâm nội tiếp với ngoại tiếp, hoặc đường cao với trung trực | [CĐ15 – Các đường đặc biệt](../15-duong-dong-quy/index.md) | [CĐ14 – Tam giác](../14-tam-giac/index.md) |
-| Không biết phải liệt kê những kết quả nào để tính xác suất | [CĐ23 – Xác suất](../23-xac-suat/index.md) | [CĐ02 – Số và phép tính](../02-so-va-phep-tinh/index.md) nếu vướng cách đếm đơn giản |
-| Giải được phương trình nhưng không biết nghiệm có hợp lý với bài toán thực tế | [CĐ24 – Mô hình hóa](../24-bai-toan-thuc-te/index.md) | [CĐ08 – Phương trình](../08-phuong-trinh-bat-phuong-trinh/index.md) hoặc [CĐ09 – Hệ phương trình](../09-he-phuong-trinh/index.md) |
+| Rút gọn phân thức nhưng quên điều kiện hoặc không tìm được nhân tử chung | [CĐ07 – Phân thức](../kien-thuc/07-phan-thuc-dai-so/index.md) | [CĐ06 – Phân tích đa thức](../kien-thuc/06-phan-tich-da-thuc/index.md) |
+| Giải phương trình sai ở bước chuyển vế, đổi dấu hoặc gộp hạng tử | [CĐ08 – Phương trình](../kien-thuc/08-phuong-trinh-bat-phuong-trinh/index.md) | [CĐ04 – Biểu thức đại số](../kien-thuc/04-bieu-thuc-dai-so/index.md) |
+| Chưa biết chọn cặp tam giác để chứng minh đồng dạng | [CĐ17 – Thales và đồng dạng](../kien-thuc/17-thales-dong-dang/index.md) | [CĐ13 – Góc](../kien-thuc/13-goc-va-duong-thang/index.md), [CĐ14 – Tam giác](../kien-thuc/14-tam-giac/index.md) |
+| Nhầm tâm nội tiếp với ngoại tiếp, hoặc đường cao với trung trực | [CĐ15 – Các đường đặc biệt](../kien-thuc/15-duong-dong-quy/index.md) | [CĐ14 – Tam giác](../kien-thuc/14-tam-giac/index.md) |
+| Không biết phải liệt kê những kết quả nào để tính xác suất | [CĐ23 – Xác suất](../kien-thuc/23-xac-suat/index.md) | [CĐ02 – Số và phép tính](../kien-thuc/02-so-va-phep-tinh/index.md) nếu vướng cách đếm đơn giản |
+| Giải được phương trình nhưng không biết nghiệm có hợp lý với bài toán thực tế | [CĐ24 – Mô hình hóa](../kien-thuc/24-bai-toan-thuc-te/index.md) | [CĐ08 – Phương trình](../kien-thuc/08-phuong-trinh-bat-phuong-trinh/index.md) hoặc [CĐ09 – Hệ phương trình](../kien-thuc/09-he-phuong-trinh/index.md) |
 
-**Ví dụ tìm lại kiến thức theo hai bước.** Với phân thức \((x^2-4)/(x^2-2x)\), học sinh nên mở [CĐ07](../07-phan-thuc-dai-so/index.md) để xác định điều kiện \(x\ne0,2\) trước khi rút gọn. Nếu không nhớ \(x^2-4=(x-2)(x+2)\), hãy quay lại [CĐ05 – Hằng đẳng thức](../05-7-hang-dang-thuc/index.md) và [CĐ06 – Phân tích đa thức](../06-phan-tich-da-thuc/index.md). Rút gọn được \((x+2)/x\), nhưng vẫn phải **giữ điều kiện gốc** \(x\ne0,2\).
+**Ví dụ tìm lại kiến thức theo hai bước.** Với phân thức \((x^2-4)/(x^2-2x)\), học sinh nên mở [CĐ07](../kien-thuc/07-phan-thuc-dai-so/index.md) để xác định điều kiện \(x\ne0,2\) trước khi rút gọn. Nếu không nhớ \(x^2-4=(x-2)(x+2)\), hãy quay lại [CĐ05 – Hằng đẳng thức](../kien-thuc/05-7-hang-dang-thuc/index.md) và [CĐ06 – Phân tích đa thức](../kien-thuc/06-phan-tich-da-thuc/index.md). Rút gọn được \((x+2)/x\), nhưng vẫn phải **giữ điều kiện gốc** \(x\ne0,2\).
 
 > Đây là **gợi ý tra cứu**, không phải chẩn đoán tự động hay thứ tự học bắt buộc. Một lỗi có thể do nhiều nguyên nhân; chỉ quay lại kiến thức nền mà mình thực sự chưa hiểu.
 
@@ -269,7 +271,7 @@ Nguồn nhánh tích hợp: [docs/kien-thuc/11-can-thuc/index.md](https://github
 
 ### 3.3B. Nhận diện hằng đẳng thức trong căn lồng căn (mở rộng)
 
-Đôi khi biểu thức dưới dấu căn là **bình phương một tổng**. Liên hệ trực tiếp với [CĐ05 – Hằng đẳng thức](../05-7-hang-dang-thuc/index.md):
+Đôi khi biểu thức dưới dấu căn là **bình phương một tổng**. Liên hệ trực tiếp với [CĐ05 – Hằng đẳng thức](../kien-thuc/05-7-hang-dang-thuc/index.md):
 
 \[
 (\sqrt a+\sqrt b)^2=a+b+2\sqrt{ab}\qquad(a,b\ge0).
@@ -649,18 +651,18 @@ Khi chữa một đề tổng hợp, hãy ghi rõ **bước đầu tiên mình c
 
 | Bước giải đang sai | Tra cứu kiến thức trực tiếp | Nếu còn thiếu nền, mở thêm |
 |---|---|---|
-| Rút gọn phân thức làm mất điều kiện xác định | [CĐ07 – Phân thức](../07-phan-thuc-dai-so/index.md) | [CĐ05 – Hằng đẳng thức](../05-7-hang-dang-thuc/index.md), [CĐ06 – Phân tích nhân tử](../06-phan-tich-da-thuc/index.md) |
-| Giải phương trình hoặc bất phương trình sai dấu | [CĐ08 – Phương trình, bất phương trình](../08-phuong-trinh-bat-phuong-trinh/index.md) | [CĐ04 – Biểu thức đại số](../04-bieu-thuc-dai-so/index.md) |
-| Giải hệ sai khi thế hoặc cộng đại số | [CĐ09 – Hệ phương trình](../09-he-phuong-trinh/index.md) | [CĐ08 – Phương trình](../08-phuong-trinh-bat-phuong-trinh/index.md) |
-| Dùng Viète nhưng quên điều kiện của biểu thức có nghiệm ở mẫu | [CĐ12 – Phương trình bậc hai, Viète](../12-phuong-trinh-bac-hai-viete/index.md) | [CĐ07 – Phân thức](../07-phan-thuc-dai-so/index.md) |
-| Chứng minh hình học nhưng không tìm được hai tam giác đồng dạng | [CĐ17 – Thales, đồng dạng](../17-thales-dong-dang/index.md) | [CĐ13 – Góc](../13-goc-va-duong-thang/index.md), [CĐ14 – Tam giác](../14-tam-giac/index.md) |
-| Dùng góc nội tiếp hoặc tiếp tuyến chưa có căn cứ | [CĐ19 – Đường tròn](../19-duong-tron/index.md) | [CĐ20 – Hình học tổng hợp](../20-hinh-hoc-tong-hop/index.md) để học chuỗi chứng minh |
-| Bài toán thực tế có nghiệm đại số nhưng nghiệm không phù hợp bối cảnh | [CĐ24 – Mô hình hóa](../24-bai-toan-thuc-te/index.md) | [CĐ08 – Phương trình](../08-phuong-trinh-bat-phuong-trinh/index.md) hoặc [CĐ09 – Hệ phương trình](../09-he-phuong-trinh/index.md) |
+| Rút gọn phân thức làm mất điều kiện xác định | [CĐ07 – Phân thức](../kien-thuc/07-phan-thuc-dai-so/index.md) | [CĐ05 – Hằng đẳng thức](../kien-thuc/05-7-hang-dang-thuc/index.md), [CĐ06 – Phân tích nhân tử](../kien-thuc/06-phan-tich-da-thuc/index.md) |
+| Giải phương trình hoặc bất phương trình sai dấu | [CĐ08 – Phương trình, bất phương trình](../kien-thuc/08-phuong-trinh-bat-phuong-trinh/index.md) | [CĐ04 – Biểu thức đại số](../kien-thuc/04-bieu-thuc-dai-so/index.md) |
+| Giải hệ sai khi thế hoặc cộng đại số | [CĐ09 – Hệ phương trình](../kien-thuc/09-he-phuong-trinh/index.md) | [CĐ08 – Phương trình](../kien-thuc/08-phuong-trinh-bat-phuong-trinh/index.md) |
+| Dùng Viète nhưng quên điều kiện của biểu thức có nghiệm ở mẫu | [CĐ12 – Phương trình bậc hai, Viète](../kien-thuc/12-phuong-trinh-bac-hai-viete/index.md) | [CĐ07 – Phân thức](../kien-thuc/07-phan-thuc-dai-so/index.md) |
+| Chứng minh hình học nhưng không tìm được hai tam giác đồng dạng | [CĐ17 – Thales, đồng dạng](../kien-thuc/17-thales-dong-dang/index.md) | [CĐ13 – Góc](../kien-thuc/13-goc-va-duong-thang/index.md), [CĐ14 – Tam giác](../kien-thuc/14-tam-giac/index.md) |
+| Dùng góc nội tiếp hoặc tiếp tuyến chưa có căn cứ | [CĐ19 – Đường tròn](../kien-thuc/19-duong-tron/index.md) | [CĐ20 – Hình học tổng hợp](../kien-thuc/20-hinh-hoc-tong-hop/index.md) để học chuỗi chứng minh |
+| Bài toán thực tế có nghiệm đại số nhưng nghiệm không phù hợp bối cảnh | [CĐ24 – Mô hình hóa](../kien-thuc/24-bai-toan-thuc-te/index.md) | [CĐ08 – Phương trình](../kien-thuc/08-phuong-trinh-bat-phuong-trinh/index.md) hoặc [CĐ09 – Hệ phương trình](../kien-thuc/09-he-phuong-trinh/index.md) |
 
 **Ví dụ ghi sổ lỗi sai có thể tự làm theo**
 
 1. **Bước sai:** Vẽ đồ thị \(y=2x\) bằng hai giao điểm với trục tọa độ. Cả hai đều là \(O(0;0)\), nên học sinh kết luận “không thể vẽ”.
-2. **Chuyên đề cần mở:** [CĐ10 – Hàm số và đồ thị](../10-ham-so-do-thi/index.md), phần **trường hợp đặc biệt \(y=ax\)** và cách chọn **hai điểm phân biệt**.
+2. **Chuyên đề cần mở:** [CĐ10 – Hàm số và đồ thị](../kien-thuc/10-ham-so-do-thi/index.md), phần **trường hợp đặc biệt \(y=ax\)** và cách chọn **hai điểm phân biệt**.
 3. **Nguyên nhân:** Đã dùng máy móc hai giao điểm với trục khi \(b=0\), không kiểm tra hai điểm có khác nhau hay không.
 4. **Cách sửa:** Giữ \(O(0;0)\), chọn thêm \(A(1;2)\); đường thẳng qua \(O,A\) chính là đồ thị \(y=2x\).
 5. **Tự kiểm tra sau vài ngày:** Không nhìn lời giải, tự vẽ \(y=-3x\) bằng hai điểm khác nhau. Nếu vẫn vướng, quay lại đúng mục kiến thức trên.
