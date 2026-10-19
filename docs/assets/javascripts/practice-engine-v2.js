@@ -1283,36 +1283,10 @@
         persistence = saveStats(this.stats);
       }
 
-      // Phase G1 shadow capture: preserve the existing Practice write as the
-      // primary path. Canonical capture is asynchronous and fail-open; it must
-      // never block, rollback or alter legacy Practice stats/remediation.
-      if (!question.response_type) try {
-        window.RoadmapCanonicalEvidenceObserver?.captureAttempt?.({
-          question,
-          correct,
-          hintsUsed,
-          fullSolutionViewed,
-          selectedIndex,
-          practiceMode: this.mode
-        });
-      } catch (_) {
-        // Intentionally ignore canonical observer failures in the Practice lane.
-      }
-
-      // Skill Taxonomy v2 I2 canary is a separate shadow lane. It runs only
-      // after the legacy Practice write and is independently fail-open.
-      if (!question.response_type) try {
-        window.RoadmapTaxonomyV2Observer?.captureAttempt?.({
-          question,
-          correct,
-          hintsUsed,
-          fullSolutionViewed,
-          selectedIndex,
-          practiceMode: this.mode
-        });
-      } catch (_) {
-        // Intentionally ignore Taxonomy v2 observer failures in the Practice lane.
-      }
+      // ONE active Practice counter: RoadmapLearnerEvidence is the only
+      // learner-facing formative writer. Historical G2/Taxonomy observers
+      // remain available for isolated QA but must not duplicate live attempts.
+      // Missing/unreviewed Family is never a reason to block ordinary Practice.
 
       // Phase 4 R5: observer-only hook after the original Practice write succeeded.
       // No R5 bridge is loaded on learner pages. Errors must never regrade,

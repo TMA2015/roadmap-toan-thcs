@@ -187,6 +187,11 @@ jobs:
       - name: Validate Skill Taxonomy v2 I6B public learner release
         run: |
           node scripts/test-skill-map-v2-i6b-public.js
+      - name: Validate one live Practice counter cutover
+        run: |
+          node --check docs/assets/javascripts/practice-engine-v2.js
+          node --check docs/assets/javascripts/skill-map-v2-preview.js
+          node scripts/test-math-one-practice-counter-20261019.js
       - name: Validate CT13 lesson accordion hierarchy
         run: |
           node scripts/test-topic13-learning-accordion-hierarchy-20261019.js
@@ -418,11 +423,8 @@ jobs:
           python scripts/test-core20-v2-browser.py
           python scripts/test-canonical-evidence-pilot-browser.py
           python scripts/test-canonical-evidence-pilot-v2-browser.py
-          python scripts/test-canonical-evidence-g1-browser.py
-          python scripts/test-skill-taxonomy-v2-i3g-browser.py
           python scripts/test-skill-map-v2-preview-browser.py
-          python scripts/test-skill-map-v2-i6-controlled-browser.py
-          python scripts/test-skill-map-v2-i6b-public-browser.py
+          python scripts/test-math-one-practice-counter-browser-20261019.py
           python scripts/test-skill-priority-preview-r1-browser.py
           python scripts/test-release-readiness-r1-browser.py
           python scripts/test-release-readiness-a2-feedback-no-ai-browser.py

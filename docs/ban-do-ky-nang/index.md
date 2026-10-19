@@ -1,25 +1,19 @@
 # Bản đồ kỹ năng
 
-Bản đồ kỹ năng giúp em xem những kỹ năng đã được ghi nhận qua quá trình luyện tập và tìm nhanh chuyên đề cần học tiếp.
+Bản đồ kỹ năng giúp em **tìm lại kiến thức cần học và xem những nội dung đã luyện tập**. Dữ liệu luyện tập trên trang này và trong bảng tiến độ đều đọc từ **cùng một nguồn Practice trên thiết bị hiện tại**.
 
 <div class="skill-map-v2-preview" data-skill-map-v2-controlled data-skill-map-v2-mode="learner" data-assets-base="../assets/" aria-live="polite">
 Đang tải Bản đồ kỹ năng…
 </div>
 
 !!! info "Cách đọc"
-    - **Chưa có bằng chứng**: chưa có lượt luyện độc lập cho kỹ năng này. Điều đó không có nghĩa là em yếu.
-    - Một số kỹ năng hiện **chưa có bài luyện trực tiếp** trong ngân hàng; hệ thống sẽ nói rõ thay vì yêu cầu một tỷ lệ không thể có.
-    - **Dữ liệu còn ít**: mới có 1–2 lượt luyện độc lập. Hệ thống chỉ hiển thị số đúng/tổng, chưa dùng phần trăm để kết luận.
-    - **Đã có dữ liệu để xem xu hướng**: từ 3 lượt luyện độc lập trở lên, phần trăm có thể được hiển thị như một số liệu mô tả cùng mẫu số.
-    - Một lần làm sai độc lập vẫn là dữ liệu thật và không bị xóa khi em làm đúng ở lần khác.
-    - Lượt có gợi ý hoặc xem lời giải không trở thành bằng chứng độc lập.
+    - **Lượt luyện tập** là số lần trả lời câu hỏi, có bao gồm lượt làm lại. Đây không phải số câu hỏi độc nhất.
+    - Các **kỹ năng thành phần** hiển thị số đúng/tổng theo nhãn bài tập, để em biết đã thực hành kiến thức nào. Một câu hỏi có thể liên quan đến nhiều kỹ năng; **không cộng các dòng đó** thành số lần làm bài.
+    - **Chưa có dữ liệu** không có nghĩa là em yếu hoặc chương trình thiếu kiến thức. Em vẫn học và làm bài bình thường, kể cả khi câu hỏi chưa có Family chính xác.
+    - Những câu hỏi chưa có Family rõ ràng vẫn được tính trong tổng lượt luyện tập. Trên bản đồ, hệ thống chỉ hiện liên hệ kiến thức đủ chắc chắn.
+    - Mọi số liệu chỉ phản ánh hoạt động luyện tập, **không phải điểm thành thạo, Readiness hoặc đánh giá bài tự luận**.
 
-!!! note "Điều Bản đồ kỹ năng chưa kết luận"
-    - Bản đồ này không gắn nhãn **thành thạo / yếu**.
-    - Bản đồ này chưa chấm **mức độ sẵn sàng tổng thể**.
-    - Kết quả cũ không bị chấm lại hay thay đổi.
-    - Với chứng minh, mô hình hóa, dựng hình hoặc suy luận nhiều bước, trắc nghiệm chỉ là một phần bằng chứng và không thay thế bài tự luận.
-    - Các phần Ôn thi vào 10, Cầu nối THPT và Chuyên/Thử thách không làm giảm trạng thái của phần kiến thức cốt lõi.
-
-!!! note "Thống kê luyện tập cũ"
-    Phần thống kê luyện tập cũ vẫn được giữ riêng ở cuối trang để đối chiếu và không được cộng gộp vào Bản đồ kỹ năng mới.
+!!! note "Kiến thức và việc học quan trọng hơn bộ đếm"
+    - Chọn **Học chuyên đề** để đọc lý thuyết, ví dụ và ôn kiến thức tiên quyết; chọn **Luyện tập** để thực hành.
+    - Em có thể vào Học theo lớp (KNTT) hoặc một trong 25 chuyên đề mà không cần chờ hệ thống ghi đủ Skill.
+    - Bài toán tổng hợp, chứng minh, lập luận và mô hình hóa còn cần luyện tự luận; không thể đánh giá đầy đủ chỉ bằng số câu trắc nghiệm đúng.

@@ -58,5 +58,10 @@ assert(config.includes("assets/stylesheets/practice-rich-answer-v1.css"));
 const engine=read("docs/assets/javascripts/practice-engine-v2.js");
 assert(engine.includes("this.record(question, correct, this.hintLevel, null, this.fullSolutionViewed)"));
 assert(engine.includes("this.renderRichAnswerFields(question)"));
-assert(engine.includes("if (!question.response_type) try {"),"legacy observers must not silently misclassify rich answers");
+assert(engine.includes("this.record(question, correct, this.hintLevel, null, this.fullSolutionViewed)"),
+  "rich answer must still be saved through Practice");
+assert(!engine.includes("RoadmapCanonicalEvidenceObserver?.captureAttempt"),
+  "rich answer must not leak into the old G2 shadow lane");
+assert(!engine.includes("RoadmapTaxonomyV2Observer?.captureAttempt"),
+  "rich answer must not leak into the old Taxonomy shadow lane");
 console.log("PASS W1 rich Practice pilot: 3 new immutable IDs, 3 unchanged old manifests, numeric/rational/3-field exact grading and invalid-input guard.");
