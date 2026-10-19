@@ -3,6 +3,31 @@
 const fs=require("fs"),crypto=require("crypto");
 const read=p=>fs.readFileSync(p,"utf8"),j=p=>JSON.parse(read(p)),assert=(v,msg)=>{if(!v)throw Error(msg)};
 const sha=s=>crypto.createHash("sha1").update(Buffer.concat([Buffer.from("blob "+Buffer.byteLength(s)+"\0"),Buffer.from(s)])).digest("hex");
+// Wave C CT16: preserve the old reviewed knowledge page source SHA exactly,
+// while pinning a separately reviewed new full page (no unrestricted repin).
+const waveCOriginal16=source=>{
+ assert(sha(source)==="524b376bd6cc0004e2b4353604f8ac1551b2382b","CT16 Wave C full lesson drift");
+ const begin="### 3.6A. Trung tuyến ứng với cạnh huyền — liên kết với hình chữ nhật";
+ const end="### Infographic 3 – Hình chữ nhật, hình thoi và hình vuông";
+ const a=source.indexOf(begin),b=source.indexOf(end,a+begin.length);
+ assert(a>=0&&b>a&&source.indexOf(begin,a+1)===-1,"CT16 teaching section missing/duplicated");
+ assert(10/2===5&&2*5===10,"CT16 median-hypotenuse illustration");
+ return source.slice(0,a)+source.slice(b);
+};
+
+// Wave E preserves the frozen CT18 lesson while allowing only its exact reviewed
+// explanatory section. All pre-existing educational words must hash to the old SHA.
+const historicalCt18=source=>{
+ assert(sha(source)==="10ccdd5acb458ee7485420b7093954b47ac497a8","CT18 Wave E full source drift");
+ const begin="### 3.2A. Hiểu và suy ra hệ thức đường cao (mở rộng)";
+ const end="### Infographic – Hệ thức đường cao";
+ const i=source.indexOf(begin),j=source.indexOf(end,i+begin.length);
+ assert(i>=0&&j>i&&source.indexOf(begin,i+1)===-1,"CT18 Wave E explanation missing or duplicated");
+ const AB=6,AC=8,BC=Math.hypot(AB,AC),AH=AB*AC/BC;
+ assert(BC===10&&AH===4.8&&Math.abs(1/AH**2-(1/AB**2+1/AC**2))<1e-12,"CT18 reciprocal altitude math");
+ return source.slice(0,i)+source.slice(j);
+};
+
 const specs=[
  {n:"16",slug:"16-tu-giac",lesson:"b2c76f908ac4679ce139b1f9ad95ad139e74261b",bank:"460dbc0f10a2655717011a94733449b0df8c6bc0",count:16,skills:13,newIds:["GEO16MICRO_016"]},
  {n:"17",slug:"17-thales-dong-dang",lesson:"2663753568ad19bbf9f168c1b3b703fd24599395",bank:"01c8326343d050959aca0d98d7042e463c993612",count:15,skills:12,newIds:[]},
@@ -16,7 +41,21 @@ let cardCount=0,totalQuestions=0,totalSkills=0,covered=0;
 for(const t of specs){
  const path="docs/kien-thuc/"+t.slug+"/",bp="docs/assets/data/practice/"+t.slug+"-micro-v1.json",wp="docs/assets/data/curriculum/topic"+t.n+"-learning-workspace.json";
  const lesson=read(path+"index.md"),bank=j(bp),w=j(wp),labels=j("docs/assets/data/practice/"+t.slug+"-v1.manifest.json").skill_labels,page=read(path+"core/index.md");
- assert(sha(lesson)===t.lesson,"full lesson changed "+t.slug);
+ // CT17 Wave B: retain the exact previously reviewed lesson by reversing only
+ // the approved bisector teaching block; require the new full blob unchanged.
+ let historicalLesson=lesson;
+ if(t.n==="17"){
+  assert(sha(lesson)==="8cb5a8ff770e91c8282980e4b1dc216170d5db25","CT17 Wave B source changed");
+  const startTag="### 3.3A. Tính chất đường phân giác trong tam giác";
+  const endTag="### 3.4. Tam giác đồng dạng";
+  const a=lesson.indexOf(startTag),b=lesson.indexOf(endTag,a+startTag.length);
+  assert(a>=0&&b>a&&lesson.indexOf(startTag,a+1)===-1,"CT17 Wave B section missing or duplicated");
+  historicalLesson=lesson.slice(0,a)+lesson.slice(b);
+  assert(6/9===4/6&&4+6===10,"CT17 worked bisector ratio error");
+ }
+ if(t.n==="16") historicalLesson=waveCOriginal16(lesson);
+ if(t.n==="18") historicalLesson=historicalCt18(lesson);
+ assert(sha(historicalLesson)===t.lesson,"CT16–18 frozen source drift across approved waves "+t.slug);
  assert(bank.question_count===t.count&&bank.questions.length===t.count&&w.cards.length===5,"exact question/card counts "+t.slug);
  const old={...bank,question_count:15,questions:bank.questions.slice(0,15)};
  assert(sha(JSON.stringify(old,null,2)+"\n")===t.bank,"original bank content changed "+t.slug);

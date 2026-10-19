@@ -216,6 +216,25 @@ Một dạng đảo thường dùng:
 
 ![Định lý Thales và đường trung bình trong tam giác](../../assets/infographics/17/17-02-thales-duong-trung-binh.svg)
 
+### 3.3A. Tính chất đường phân giác trong tam giác
+
+Trong tam giác `ABC`, lấy `D` **nằm trên cạnh `BC`**. Nếu `AD` là tia phân giác của góc `BAC`, thì:
+
+`BD/DC = AB/AC`
+
+Nói cách khác, **đường phân giác chia cạnh đối diện theo tỉ lệ hai cạnh kề**. Đây là mối liên hệ giữa kiến thức về góc (CĐ13) và tỉ lệ đoạn thẳng (CĐ17).
+
+**Ví dụ từng bước.** Cho `AB = 6 cm`, `AC = 9 cm`, `BC = 10 cm`, `AD` là đường phân giác góc `A` với `D ∈ BC`. Tính `BD`, `DC`.
+
+1. Vì `AD` là phân giác nên `BD/DC = AB/AC = 6/9 = 2/3`.
+2. Đồng thời `BD + DC = BC = 10`.
+3. Chia `BC` thành `2 + 3 = 5` phần bằng nhau: `BD = 10 × 2/5 = 4 cm`, `DC = 10 × 3/5 = 6 cm`.
+4. Kiểm tra: `4/6 = 6/9` và `4 + 6 = 10`.
+
+**Vì sao đúng?** Có thể chứng minh từ định lý Thales: qua `C` kẻ đường thẳng song song với `AD`, cắt tia `BA` tại `E` (với `A` nằm giữa `B`, `E`). Khi đó `∠ACE = ∠CAD`, `∠CEA = ∠DAB`. Vì `AD` là phân giác nên tam giác `ACE` cân tại `A`, suy ra `AE = AC`. Áp dụng Thales trong tam giác `BCE` với `AD ∥ CE`: `BD/DC = BA/AE = BA/AC`.
+
+> **Điều kiện trước khi áp dụng:** Phải có `D` trên cạnh `BC` và `AD` là phân giác của **góc trong** tại `A`. Không lấy tỉ lệ từ hình vẽ chỉ vì đoạn thẳng trông giống đường phân giác. Phân giác ngoài là cấu hình khác, không dùng ngay công thức này.
+
 ### 3.4. Tam giác đồng dạng
 
 Nếu `△ABC ∼ △DEF` thì:

@@ -406,6 +406,18 @@ Sau khi có đáp số, cần kiểm tra:
 - có cần làm tròn không;
 - câu trả lời có đúng đại lượng đề hỏi không.
 
+### 3.10A. Ví dụ kiểm tra nghiệm theo điều kiện thực tế
+
+**Bài toán.** Một mảnh vườn hình chữ nhật có chu vi `40 m`, diện tích `64 m²`. Tìm chiều rộng và chiều dài, biết **chiều rộng nhỏ hơn chiều dài**.
+
+1. **Đặt ẩn và điều kiện:** Gọi `x` (m) là chiều rộng. Vì nửa chu vi bằng `20 m`, chiều dài là `20 − x`. Điều kiện `x > 0` và `x < 20 − x`, hay **`0 < x < 10`**.
+2. **Lập mô hình:** Diện tích `x(20 − x) = 64`, hay `x² − 20x + 64 = 0`.
+3. **Giải phương trình:** `(x − 4)(x − 16) = 0`, nên `x = 4` hoặc `x = 16`.
+4. **Đối chiếu ngữ cảnh:** `x = 4` thỏa `0 < x < 10`. **`x = 16` tuy dương nhưng phải loại**, vì khi ấy cạnh gọi là “chiều rộng” lại lớn hơn cạnh còn lại.
+5. **Kết luận:** Chiều rộng `4 m`, chiều dài `16 m`; kiểm tra `2(4 + 16) = 40` và `4 × 16 = 64`.
+
+**Bài học:** Điều kiện `x > 0` đôi khi **chưa đủ**. Điều kiện đúng phải được suy ra từ *đại lượng đang gọi là ẩn và quan hệ thực tế trong đề*; không tự áp một bảng điều kiện cố định cho mọi bài toán.
+
 ### 3.11. Bảng chọn mô hình
 
 | Dấu hiệu trong đề | Mô hình nên dùng |

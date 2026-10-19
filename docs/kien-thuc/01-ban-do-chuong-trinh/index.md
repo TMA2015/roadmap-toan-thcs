@@ -187,6 +187,24 @@ Nguyên tắc:
 5. nếu đạt, chuyển tiếp;
 6. khi vào giai đoạn thi, ưu tiên theo đề địa phương và kết quả luyện đề.
 
+
+### 3.8A. Tra cứu ngược — khi chưa hiểu, nên mở chuyên đề nào?
+
+Không cần đọc lại toàn bộ Roadmap mỗi khi gặp khó. Hãy tìm đúng **thao tác đang vướng**, mở chuyên đề giải thích thao tác đó, rồi quay lại kiến thức nền **chỉ khi cần**.
+
+| Khi gặp khó ở... | Trang kiến thức cần mở trước | Nếu vẫn vướng, xem lại nền |
+|---|---|---|
+| Rút gọn phân thức nhưng quên điều kiện hoặc không tìm được nhân tử chung | [CĐ07 – Phân thức](../07-phan-thuc-dai-so/index.md) | [CĐ06 – Phân tích đa thức](../06-phan-tich-da-thuc/index.md) |
+| Giải phương trình sai ở bước chuyển vế, đổi dấu hoặc gộp hạng tử | [CĐ08 – Phương trình](../08-phuong-trinh-bat-phuong-trinh/index.md) | [CĐ04 – Biểu thức đại số](../04-bieu-thuc-dai-so/index.md) |
+| Chưa biết chọn cặp tam giác để chứng minh đồng dạng | [CĐ17 – Thales và đồng dạng](../17-thales-dong-dang/index.md) | [CĐ13 – Góc](../13-goc-va-duong-thang/index.md), [CĐ14 – Tam giác](../14-tam-giac/index.md) |
+| Nhầm tâm nội tiếp với ngoại tiếp, hoặc đường cao với trung trực | [CĐ15 – Các đường đặc biệt](../15-duong-dong-quy/index.md) | [CĐ14 – Tam giác](../14-tam-giac/index.md) |
+| Không biết phải liệt kê những kết quả nào để tính xác suất | [CĐ23 – Xác suất](../23-xac-suat/index.md) | [CĐ02 – Số và phép tính](../02-so-va-phep-tinh/index.md) nếu vướng cách đếm đơn giản |
+| Giải được phương trình nhưng không biết nghiệm có hợp lý với bài toán thực tế | [CĐ24 – Mô hình hóa](../24-bai-toan-thuc-te/index.md) | [CĐ08 – Phương trình](../08-phuong-trinh-bat-phuong-trinh/index.md) hoặc [CĐ09 – Hệ phương trình](../09-he-phuong-trinh/index.md) |
+
+**Ví dụ tìm lại kiến thức theo hai bước.** Với phân thức \((x^2-4)/(x^2-2x)\), học sinh nên mở [CĐ07](../07-phan-thuc-dai-so/index.md) để xác định điều kiện \(x\ne0,2\) trước khi rút gọn. Nếu không nhớ \(x^2-4=(x-2)(x+2)\), hãy quay lại [CĐ05 – Hằng đẳng thức](../05-7-hang-dang-thuc/index.md) và [CĐ06 – Phân tích đa thức](../06-phan-tich-da-thuc/index.md). Rút gọn được \((x+2)/x\), nhưng vẫn phải **giữ điều kiện gốc** \(x\ne0,2\).
+
+> Đây là **gợi ý tra cứu**, không phải chẩn đoán tự động hay thứ tự học bắt buộc. Một lỗi có thể do nhiều nguyên nhân; chỉ quay lại kiến thức nền mà mình thực sự chưa hiểu.
+
 ---
 
 ## 🔗 4. Kiến thức liên quan

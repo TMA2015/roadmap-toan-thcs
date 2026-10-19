@@ -104,6 +104,20 @@ Bậc của đa thức khác 0 là bậc lớn nhất của các hạng tử sau
 
 ---
 
+### 3.2A. Vì sao phải thu gọn trước khi xác định bậc?
+
+Định nghĩa bậc của đa thức ở mục 3.2 có một điều kiện rất quan trọng: **xét đa thức sau khi gộp các hạng tử đồng dạng**. Bậc cao nhất nhìn thấy lúc đầu có thể biến mất.
+
+**Ví dụ:** Xét \(P(x)=4x^3-4x^3+3x^2-2x+1\).
+
+1. Nhận ra hai hạng tử \(4x^3\) và \(-4x^3\) triệt tiêu.
+2. Thu gọn: \(P(x)=3x^2-2x+1\).
+3. Hạng tử có bậc lớn nhất lúc này là \(3x^2\), nên **bậc của \(P\) là 2, không phải 3**.
+
+**Trường hợp đặc biệt:** \(Q(x)=(x+1)-(x+1)=0\) là **đa thức không**. Không thể kết luận \(Q\) có bậc 1 chỉ vì trước khi thu gọn có hạng tử \(x\); theo quy ước đang dùng, đa thức không **không có bậc**.
+
+**Tự kiểm tra:** Khi đề hỏi bậc, hãy tự hỏi: “Đã mở ngoặc và thu gọn hoàn toàn chưa? Hạng tử có số mũ cao nhất có còn hệ số khác 0 không?”
+
 ### 3.3. Các phép biến đổi quan trọng
 
 #### Thu gọn đơn thức
