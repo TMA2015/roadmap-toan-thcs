@@ -10,16 +10,16 @@ assert(a.includes("EXPECTED=2")&&a.includes("REVIEWED=2")&&a.includes("OVERALL|P
 assert(b.includes("EXPECTED=14")&&b.includes("REVIEWED=14")&&b.includes("OVERALL|PASS_FOR_PLACEMENT_REVIEW"));
 for(const id of ["WX07-ENT-001","WX07-CH-001"])
  assert(a.includes(id+" | MATH:PASS | HINTS:PASS | SOLUTION:PASS | RUBRIC:PASS | GRADE_AND_LAYER:PASS | DISTINCT_FROM_CANONICAL_WX:PASS | PRECISE_REVISION:none | ITEM_VERDICT:PASS"),"reviewer row "+id);
-assert.equal(xs.length,69);
-assert.equal(d.published_scope.exercise_count,69);
-assert.equal(new Set(xs.map(x=>x.exercise_id)).size,69);
+assert(xs.length>=69,"retain at least W3C historical 69 Written records");
+assert.equal(d.published_scope.exercise_count,xs.length);
+assert.equal(new Set(xs.map(x=>x.exercise_id)).size,xs.length);
 assert.equal(d.auto_readiness_credit,false);
 assert.equal(d.self_marking_only,true);
 const old=JSON.stringify(xs.slice(0,67));let h=0xcbf29ce484222325n;
 for(let i=0;i<old.length;i++)h=BigInt.asUintN(64,(h^BigInt(old.charCodeAt(i)))*0x100000001b3n);
 assert.equal(h.toString(16).padStart(16,"0"),"c11a3f5c994eebd8","historical 67 records changed");
-assert.deepEqual(xs.slice(67).map(x=>x.exercise_id),["WX07-ENT-001","WX07-CH-001"]);
-assert.deepEqual(d.published_scope.batches.at(-1),{batch_id:"CT05_07_W3C_WR_AUTHORING_R1",packet_id:"MATH-CT05-07-W3C-WR-AUTHORING-R1",count:2,status:"PUBLISHED"});
+assert.deepEqual(xs.slice(67,69).map(x=>x.exercise_id),["WX07-ENT-001","WX07-CH-001"]);
+assert(d.published_scope.batches.some(x=>x.batch_id==="CT05_07_W3C_WR_AUTHORING_R1"&&x.packet_id==="MATH-CT05-07-W3C-WR-AUTHORING-R1"&&x.count===2&&x.status==="PUBLISHED"));
 const allowed=new Set(["dieu-kien-xac-dinh","phan-tich-da-thuc","rut-gon-phan-thuc","quy-dong-mau-thuc","cong-tru-phan-thuc"]);
 for(const [i,original,layer,level,label] of [[67,"07-ENT-01","Entrance10","ENTRANCE10","Ôn thi vào 10"],[68,"07-CH-01","Specialized-Challenge","CHALLENGE","Thử thách"]]){
  const x=xs[i];
