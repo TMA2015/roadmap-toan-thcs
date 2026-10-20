@@ -100,10 +100,10 @@ const w3cReceiptIds=[...receipt3c.matchAll(/^(0[67]-(?:WR|ENT|CH)-\d+) \| MATH:P
 const w3cReconIds=[...reconciliation3c.matchAll(/^\| `(0[67]-(?:WR|ENT|CH)-\d+)` \|/gm)].map(x=>x[1]);
 assert.deepEqual(w3cReceiptIds,groups.W3C,"W3C source 14 verdict order incomplete");
 assert.deepEqual(w3cReconIds,groups.W3C,"W3C 14 source-to-live triage order incomplete");
-assert.equal(library.length,67,"W3C review-only: canonical 67 Written entries preserved");
+assert.equal(library.length,69,"W3C Owner-authorized reviewed release: 67 historical + 2 approved");
 for(const [id,legacy] of [["WX07-ENT-001","07-ENT-01"],["WX07-CH-001","07-CH-01"]]){
  assert(authoring3c.includes(id)&&authoring3c.includes(legacy),"W3C written authoring proposal missing "+id);
- assert(!library.some(x=>x.exercise_id===id),"Unreviewed W3C authoring leaked to live library: "+id);
+ assert.equal(library.filter(x=>x.exercise_id===id).length,1,"Owner-approved W3C authoring absent/duplicated: "+id);
 }
 assert(authoring3c.includes("NOT APPROVED FOR PUBLICATION"),"W3C paper draft accidentally approved");
 const authoringVerdict3c=read("MATH-CT05-07-W3C-WR-AUTHORING-R1_NOTEBOOKLM_VERDICT_RECEIPT.md");
@@ -123,6 +123,6 @@ for(const [list,id,tokens] of [[live6,"FAC06V1_065",["x^{2} + 5 x + 6","t√°ch h·
  for(const tok of tokens)assert(items[0].question.includes(tok),"W3C active-bank overlap changed "+id+" "+tok);
 }
 assert.equal((2**2+1)/(2**2-1),5/3,"W3C challenge exemplar x=2 check");
-console.log("PASS W3C: 14/14 placement + 2/2 authoring PASS receipts, 240 Practice/67 WX unchanged, release NOT authorized.");
+console.log("PASS W3C: 14/14 placement + 2/2 authoring PASS receipts, owner-authorized append-only 67+2 WX, 240 Practice unchanged.");
 
-console.log("PASS 40-item W3A/W3B/W3C source-locked partition: W3C 14/14 placement PASS received, two new W3C written authoring drafts remain unpublished.");
+console.log("PASS 40-item W3A/W3B/W3C source-locked partition: W3C 14/14 placement PASS and W3C two-WX reviewed release.");

@@ -1,0 +1,64 @@
+#!/usr/bin/env node
+"use strict";
+const assert=require("node:assert/strict"),fs=require("node:fs"),crypto=require("node:crypto");
+const read=p=>fs.readFileSync(p,"utf8");
+const d=JSON.parse(read("docs/assets/data/written-exercises/written-exercise-library-v1.json"));
+const xs=d.exercises,p="review-packets/math-content-cleanup/";
+const a=read(p+"MATH-CT05-07-W3C-WR-AUTHORING-R1_NOTEBOOKLM_VERDICT_RECEIPT.md");
+const b=read(p+"MATH-CT05-07-W3C-20261020_NOTEBOOKLM_VERDICT_RECEIPT.md");
+assert(a.includes("EXPECTED=2")&&a.includes("REVIEWED=2")&&a.includes("OVERALL|PASS_FOR_AUTHORING_REVIEW"));
+assert(b.includes("EXPECTED=14")&&b.includes("REVIEWED=14")&&b.includes("OVERALL|PASS_FOR_PLACEMENT_REVIEW"));
+for(const id of ["WX07-ENT-001","WX07-CH-001"])
+ assert(a.includes(id+" | MATH:PASS | HINTS:PASS | SOLUTION:PASS | RUBRIC:PASS | GRADE_AND_LAYER:PASS | DISTINCT_FROM_CANONICAL_WX:PASS | PRECISE_REVISION:none | ITEM_VERDICT:PASS"),"reviewer row "+id);
+assert.equal(xs.length,69);
+assert.equal(d.published_scope.exercise_count,69);
+assert.equal(new Set(xs.map(x=>x.exercise_id)).size,69);
+assert.equal(d.auto_readiness_credit,false);
+assert.equal(d.self_marking_only,true);
+const old=JSON.stringify(xs.slice(0,67));let h=0xcbf29ce484222325n;
+for(let i=0;i<old.length;i++)h=BigInt.asUintN(64,(h^BigInt(old.charCodeAt(i)))*0x100000001b3n);
+assert.equal(h.toString(16).padStart(16,"0"),"c11a3f5c994eebd8","historical 67 records changed");
+assert.deepEqual(xs.slice(67).map(x=>x.exercise_id),["WX07-ENT-001","WX07-CH-001"]);
+assert.deepEqual(d.published_scope.batches.at(-1),{batch_id:"CT05_07_W3C_WR_AUTHORING_R1",packet_id:"MATH-CT05-07-W3C-WR-AUTHORING-R1",count:2,status:"PUBLISHED"});
+const allowed=new Set(["dieu-kien-xac-dinh","phan-tich-da-thuc","rut-gon-phan-thuc","quy-dong-mau-thuc","cong-tru-phan-thuc"]);
+for(const [i,original,layer,level,label] of [[67,"07-ENT-01","Entrance10","ENTRANCE10","Ôn thi vào 10"],[68,"07-CH-01","Specialized-Challenge","CHALLENGE","Thử thách"]]){
+ const x=xs[i];
+ assert.equal(x.exercise_kind,"anchor");
+ assert.equal(x.topic_id,"CT07");
+ assert.equal(x.learning_layer,layer);
+ assert.equal(x.level,level);
+ assert.equal(x.learner_label,label);
+ assert.equal(x.gates_core,false);
+ assert.equal(x.auto_readiness_credit,false);
+ assert.deepEqual(x.grade_overlay,[8]);
+ assert.deepEqual(x.source_refs,["docs/kien-thuc/07-phan-thuc-dai-so/bai-tap.md#"+original]);
+ assert.equal(x.academic_review.status,"APPROVED");
+ assert.equal(x.academic_review.method,"NOTEBOOKLM_OWNER_SUBMITTED");
+ assert.equal(x.academic_review.packet_id,"MATH-CT05-07-W3C-WR-AUTHORING-R1");
+ assert.equal(x.academic_review.receipt,p+"MATH-CT05-07-W3C-WR-AUTHORING-R1_NOTEBOOKLM_VERDICT_RECEIPT.md");
+ assert(x.skills.every(s=>allowed.has(s)),"new skill tag not permitted");
+ assert.equal(x.hint_steps.length,3);
+ assert.equal(x.solution_steps.length,4);
+ assert.deepEqual(x.solution_steps.map(y=>y.step_id),["S1","S2","S3","S4"]);
+ assert.equal(x.rubric_total,4);
+ assert.deepEqual(x.rubric.map(y=>y.points),[1,1,1.5,0.5]);
+ assert.equal(x.rubric.reduce((v,y)=>v+y.points,0),4);
+ assert(x.common_mistakes.length>=3);
+ assert(x.full_solution_markdown&&x.method_rationale_markdown&&x.remediation_markdown);
+ assert(x.remediation_links.every(y=>y.href.startsWith("../kien-thuc/")));
+}
+const ent=xs[67],challenge=xs[68];
+assert(ent.problem_markdown.includes("tất cả")&&ent.full_solution_markdown.includes("-3,-1,1,3"),"integer divisor argument");
+for(const [x,y]of [[-1,0],[1,-2],[3,4],[5,2]])assert(Math.abs((x+1)/(x-2)-y)<1e-12,"integer input back-check "+x);
+assert(challenge.problem_markdown.includes("Tự chọn")&&challenge.problem_markdown.includes("ít nhất ba phép tính")&&challenge.problem_markdown.includes("Trước khi giải"));
+assert(challenge.problem_markdown.includes("không phải đáp án duy nhất"),"student-choice vs fixed example");
+assert(challenge.full_solution_markdown.toLowerCase().includes("ví dụ")&&challenge.full_solution_markdown.includes("x\\ne\\pm1"));
+const x=2,raw=((x*x-1)/(x-1)**2)/((x+1)/(x-1))+(1/(x-1)-1/(x+1));
+assert(Math.abs(raw-5/3)<1e-12);
+assert(Math.abs((x*x+1)/(x*x-1)-5/3)<1e-12);
+const source=Buffer.from(read("docs/kien-thuc/07-phan-thuc-dai-so/bai-tap.md"));
+const blob=crypto.createHash("sha1").update(Buffer.from("blob "+source.length+"\0")).update(source).digest("hex");
+assert.equal(blob,"80b8620ada44de09ddf34e8c60c57a42adf44b6d","historical source was rewritten");
+for(const slug of ["06-phan-tich-da-thuc","07-phan-thuc-dai-so"])
+ assert.equal([1,2,3,4].flatMap(i=>JSON.parse(read("docs/assets/data/practice/"+slug+"-v1-0"+i+".json")).questions).length,120);
+console.log("PASS W3C: 67 old WX immutable; exact 2 new reviewed anchors; 3 hints, 4pt rubrics; 240 MCQs and old CT07 source protected; no readiness/skills automation.");

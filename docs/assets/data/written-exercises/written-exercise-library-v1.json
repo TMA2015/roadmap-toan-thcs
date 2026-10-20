@@ -6482,6 +6482,216 @@
       "remediation_markdown": "Ôn CĐ05 Core về lập phương của một tổng, dấu âm trước lũy thừa bậc lẻ và đặt nhân tử chung. Đây là bài thử thách tự chọn; chưa giải được không có nghĩa là yếu Core.",
       "gates_core": false,
       "auto_readiness_credit": false
+    },
+    {
+      "exercise_kind": "anchor",
+      "topic_id": "CT07",
+      "topic_slug": "07-phan-thuc-dai-so",
+      "topic_title": "Phân thức đại số",
+      "grade_overlay": [
+        8
+      ],
+      "figure_uri": null,
+      "figure_alt": null,
+      "rubric_total": 4,
+      "remediation_links": [
+        {
+          "label": "Ôn CĐ07 – Core phân thức đại số",
+          "href": "../kien-thuc/07-phan-thuc-dai-so/core/"
+        },
+        {
+          "label": "Luyện thêm CĐ07",
+          "href": "../kien-thuc/07-phan-thuc-dai-so/bai-tap/"
+        }
+      ],
+      "academic_review": {
+        "status": "APPROVED",
+        "method": "NOTEBOOKLM_OWNER_SUBMITTED",
+        "packet_id": "MATH-CT05-07-W3C-WR-AUTHORING-R1",
+        "receipt": "review-packets/math-content-cleanup/MATH-CT05-07-W3C-WR-AUTHORING-R1_NOTEBOOKLM_VERDICT_RECEIPT.md"
+      },
+      "gates_core": false,
+      "auto_readiness_credit": false,
+      "exercise_id": "WX07-ENT-001",
+      "problem_type_id": "rat-integer-argument",
+      "problem_type_title": "Tìm giá trị nguyên của biến để phân thức nguyên",
+      "title": "Tìm giá trị nguyên của x để phân thức nhận giá trị nguyên",
+      "learning_layer": "Entrance10",
+      "level": "ENTRANCE10",
+      "learner_label": "Ôn thi vào 10",
+      "skills": [
+        "dieu-kien-xac-dinh",
+        "rut-gon-phan-thuc"
+      ],
+      "prerequisites": [
+        "dieu-kien-xac-dinh",
+        "rut-gon-phan-thuc"
+      ],
+      "estimated_minutes": 12,
+      "problem_markdown": "Cho $x\\in\\mathbb Z$ và phân thức\n\n$$A=\\frac{x+1}{x-2}.$$\n\nTìm **tất cả** giá trị nguyên của $x$ để $A$ là số nguyên. Ghi điều kiện xác định, giải thích vì sao **không được bỏ sót ước âm**, và kiểm tra kết quả.",
+      "hint_steps": [
+        "Trước khi xét tính nguyên, mẫu $x-2$ phải thỏa mãn điều kiện gì?",
+        "Viết $x+1=(x-2)+3$, rồi tách $A$ thành một số nguyên cộng với một phân thức có tử không đổi.",
+        "Nếu $A$ nguyên và $x$ nguyên, $x-2$ phải là **ước nguyên khác 0 của 3**. Hãy liệt kê đủ ước dương **và âm**."
+      ],
+      "solution_steps": [
+        {
+          "step_id": "S1",
+          "title": "Điều kiện xác định",
+          "content_markdown": "$x-2\\ne 0$, nên $x\\ne2$; đồng thời đề cho $x\\in\\mathbb Z$."
+        },
+        {
+          "step_id": "S2",
+          "title": "Tách phần nguyên",
+          "content_markdown": "$$A=\\frac{(x-2)+3}{x-2}=1+\\frac3{x-2}.$$"
+        },
+        {
+          "step_id": "S3",
+          "title": "Biện luận điều kiện cần và đủ",
+          "content_markdown": "Với $x\\in\\mathbb Z$, $A\\in\\mathbb Z$ khi và chỉ khi $x-2$ là ước nguyên khác $0$ của $3$:\n\n$$x-2\\in\\{-3,-1,1,3\\}.$$\n\nSuy ra $x\\in\\{-1,1,3,5\\}$. Tất cả đều khác $2$."
+        },
+        {
+          "step_id": "S4",
+          "title": "Thử lại và kết luận",
+          "content_markdown": "Với $x=-1,1,3,5$, giá trị $A$ lần lượt là $0,-2,4,2$, đều nguyên. Vậy\n\n$$\\boxed{x\\in\\{-1,1,3,5\\}}.$$"
+        }
+      ],
+      "full_solution_markdown": "**Bước 1 — Điều kiện xác định.** $x-2\\ne0$, nên $x\\ne2$.\n\n**Bước 2 — Tách phần nguyên.**\n\n$$A=\\frac{(x-2)+3}{x-2}=1+\\frac3{x-2}.$$\n\n**Bước 3 — Điều kiện cần và đủ.** Vì $x\\in\\mathbb Z$, $A$ nguyên khi và chỉ khi $x-2$ là một ước nguyên khác $0$ của $3$:\n\n$$x-2\\in\\{-3,-1,1,3\\}.$$\n\nSuy ra $x\\in\\{-1,1,3,5\\}$, không giá trị nào bằng $2$.\n\n**Bước 4 — Kiểm tra và kết luận.** Tương ứng $A=0,-2,4,2$, đều nguyên. Do đó\n\n$$\\boxed{x\\in\\{-1,1,3,5\\}}.$$",
+      "method_rationale_markdown": "Tách $A$ thành $1+\\frac3{x-2}$ để chuyển điều kiện phân thức nguyên sang điều kiện **ước nguyên**. Phải xét đủ ước dương và âm, đồng thời giữ điều kiện $x\\ne2$.",
+      "rubric": [
+        {
+          "criterion": "Ghi đúng $x\\in\\mathbb Z$, điều kiện $x\\ne2$ và ý nghĩa mẫu khác $0$.",
+          "points": 1
+        },
+        {
+          "criterion": "Viết đúng $A=1+\\frac3{x-2}$.",
+          "points": 1
+        },
+        {
+          "criterion": "Lập đúng điều kiện ước nguyên khác $0$ và xét đủ $\\{-3,-1,1,3\\}$.",
+          "points": 1.5
+        },
+        {
+          "criterion": "Nêu đủ bốn giá trị $x$, đối chiếu ĐKXĐ và kết luận.",
+          "points": 0.5
+        }
+      ],
+      "common_mistakes": [
+        "Bỏ điều kiện $x\\ne2$ trước khi xét $A$ nguyên.",
+        "Chỉ liệt kê các ước dương $1,3$, bỏ sót $-1,-3$.",
+        "Tách sai $x+1=(x-2)+3$, dẫn đến biện luận sai."
+      ],
+      "remediation_markdown": "Ôn CĐ07 Core về điều kiện xác định, rút gọn phân thức; ôn tập ước nguyên gồm cả số âm và số dương.",
+      "source_refs": [
+        "docs/kien-thuc/07-phan-thuc-dai-so/bai-tap.md#07-ENT-01"
+      ]
+    },
+    {
+      "exercise_kind": "anchor",
+      "topic_id": "CT07",
+      "topic_slug": "07-phan-thuc-dai-so",
+      "topic_title": "Phân thức đại số",
+      "grade_overlay": [
+        8
+      ],
+      "figure_uri": null,
+      "figure_alt": null,
+      "rubric_total": 4,
+      "remediation_links": [
+        {
+          "label": "Ôn CĐ07 – Core phân thức đại số",
+          "href": "../kien-thuc/07-phan-thuc-dai-so/core/"
+        },
+        {
+          "label": "Luyện thêm CĐ07",
+          "href": "../kien-thuc/07-phan-thuc-dai-so/bai-tap/"
+        }
+      ],
+      "academic_review": {
+        "status": "APPROVED",
+        "method": "NOTEBOOKLM_OWNER_SUBMITTED",
+        "packet_id": "MATH-CT05-07-W3C-WR-AUTHORING-R1",
+        "receipt": "review-packets/math-content-cleanup/MATH-CT05-07-W3C-WR-AUTHORING-R1_NOTEBOOKLM_VERDICT_RECEIPT.md"
+      },
+      "gates_core": false,
+      "auto_readiness_credit": false,
+      "exercise_id": "WX07-CH-001",
+      "problem_type_id": "rat-self-designed-strategy",
+      "problem_type_title": "Tự thiết kế biểu thức hữu tỉ và lập kế hoạch biến đổi",
+      "title": "Tự thiết kế biểu thức và lập kế hoạch biến đổi phân thức",
+      "learning_layer": "Specialized-Challenge",
+      "level": "CHALLENGE",
+      "learner_label": "Thử thách",
+      "skills": [
+        "dieu-kien-xac-dinh",
+        "phan-tich-da-thuc",
+        "rut-gon-phan-thuc",
+        "quy-dong-mau-thuc",
+        "cong-tru-phan-thuc"
+      ],
+      "prerequisites": [
+        "hang-dang-thuc",
+        "phan-tich-da-thuc",
+        "dieu-kien-xac-dinh"
+      ],
+      "estimated_minutes": 18,
+      "problem_markdown": "Tự chọn **một biểu thức phân thức có ngoặc và ít nhất ba phép tính phân thức** (trong các phép cộng, trừ, nhân, chia). Trước khi giải, hãy viết **kế hoạch biến đổi** theo thứ tự hợp lý. Sau đó:\n\n1. Ghi đầy đủ điều kiện xác định của **biểu thức ban đầu**, kể cả điều kiện phân thức chia khác $0$ nếu có.\n2. Thực hiện biến đổi, không triệt tiêu tùy tiện qua dấu cộng/trừ; giải thích vì sao thứ tự đã chọn hợp lý.\n3. Trình bày kết quả cùng điều kiện ban đầu và tự kiểm tra lại.\n\n**Em có thể chọn biểu thức riêng; lời giải mẫu chỉ là một ví dụ để đối chiếu sau khi thử sức, không phải đáp án duy nhất.**",
+      "hint_steps": [
+        "Kiểm tra từng mẫu trong biểu thức em tự chọn và, nếu có phép chia, bảo đảm **phân thức làm số chia khác $0$**. Ghi ĐKXĐ trước mọi phép rút gọn.",
+        "Phân tích tử/mẫu thành nhân tử nếu có thể. Nên xử lý các phép nhân/chia trong ngoặc, sau đó mới quy đồng cộng/trừ khi cần.",
+        "Viết kế hoạch ngắn: “Giữ ĐKXĐ → phân tích → rút gọn tích/thương → cộng/trừ → kiểm tra kết quả và điều kiện”. Đừng triệt tiêu qua dấu cộng/trừ."
+      ],
+      "solution_steps": [
+        {
+          "step_id": "S1",
+          "title": "Ví dụ minh họa — ĐKXĐ ban đầu",
+          "content_markdown": "**Đây chỉ là một biểu thức mẫu, không phải đề bắt buộc:**\n\n$$E=\\left(\\frac{x^2-1}{(x-1)^2}:\\frac{x+1}{x-1}\\right)+\\left(\\frac1{x-1}-\\frac1{x+1}\\right).$$\n\nCác mẫu thức và số chia yêu cầu $x\\ne1$, $x\\ne-1$; riêng $\\frac{x+1}{x-1}$ làm số chia phải khác $0$. Vì vậy **ĐKXĐ gốc** là $x\\ne\\pm1$."
+        },
+        {
+          "step_id": "S2",
+          "title": "Lập kế hoạch trước khi tính",
+          "content_markdown": "Dùng $x^2-1=(x-1)(x+1)$. Làm phép chia trong ngoặc thứ nhất, phép trừ trong ngoặc thứ hai, sau đó cộng các kết quả. Giữ nguyên miền xác định $x\\ne\\pm1$ xuyên suốt."
+        },
+        {
+          "step_id": "S3",
+          "title": "Thực hiện biến đổi",
+          "content_markdown": "Với $x\\ne\\pm1$:\n\n$$\\frac{x^2-1}{(x-1)^2}:\\frac{x+1}{x-1}=\\frac{(x-1)(x+1)}{(x-1)^2}\\cdot\\frac{x-1}{x+1}=1.$$\n\n$$\\frac1{x-1}-\\frac1{x+1}=\\frac{(x+1)-(x-1)}{(x-1)(x+1)}=\\frac2{x^2-1}.$$"
+        },
+        {
+          "step_id": "S4",
+          "title": "Kết luận và kiểm tra",
+          "content_markdown": "$$E=1+\\frac2{x^2-1}=\\boxed{\\frac{x^2+1}{x^2-1}},\\qquad x\\ne\\pm1.$$\n\nThử $x=2$: cả biểu thức ban đầu và kết quả đều bằng $\\frac53$; phép thử hỗ trợ, không thay thế biến đổi đại số. Với biểu thức do **em tự chọn**, kết quả có thể khác ví dụ."
+        }
+      ],
+      "full_solution_markdown": "**Một ví dụ minh họa để tự đối chiếu — không phải biểu thức bắt buộc.** Em cần tự chọn biểu thức có ngoặc và ít nhất ba phép tính phân thức, viết kế hoạch riêng **trước khi biến đổi**.\n\nChọn\n\n$$E=\\left(\\frac{x^2-1}{(x-1)^2}:\\frac{x+1}{x-1}\\right)+\\left(\\frac1{x-1}-\\frac1{x+1}\\right).$$\n\n**Bước 1 — ĐKXĐ gốc.** Các mẫu thức yêu cầu $x\\ne1,-1$; phân thức chia $\\frac{x+1}{x-1}$ phải khác $0$, nên $x\\ne-1$. Vậy $\\boxed{x\\ne\\pm1}$.\n\n**Bước 2 — Kế hoạch trước khi tính.** Phân tích $x^2-1$; xử lý phép chia trong ngoặc đầu, phép trừ trong ngoặc sau, rồi cộng; giữ nguyên miền xác định.\n\n**Bước 3 — Biến đổi.** Với $x\\ne\\pm1$:\n\n$$\\frac{x^2-1}{(x-1)^2}:\\frac{x+1}{x-1}=\\frac{(x-1)(x+1)}{(x-1)^2}\\cdot\\frac{x-1}{x+1}=1.$$\n\n$$\\frac1{x-1}-\\frac1{x+1}=\\frac{(x+1)-(x-1)}{(x-1)(x+1)}=\\frac2{x^2-1}.$$\n\n**Bước 4 — Kết luận và thử số.**\n\n$$E=1+\\frac2{x^2-1}=\\boxed{\\frac{x^2+1}{x^2-1}},\\quad x\\ne\\pm1.$$\n\nVới $x=2$, cả hai biểu thức đều bằng $\\frac53$. Phép thử chỉ hỗ trợ kiểm tra, không thay thế chứng minh. **Bài của em có thể cho một kết quả khác vì em tự chọn biểu thức.**",
+      "method_rationale_markdown": "Bài mở nhằm đánh giá năng lực **tự thiết kế biểu thức**, nhận diện ràng buộc miền xác định (đặc biệt số chia không được bằng 0), **lập kế hoạch trước khi giải**, rồi giải thích và tự kiểm tra. Ví dụ chỉ giúp đối chiếu phương pháp.",
+      "rubric": [
+        {
+          "criterion": "Biểu thức do học sinh tự chọn có ngoặc, ít nhất ba phép tính phân thức; ghi đủ ĐKXĐ gốc, kể cả số chia khác 0 nếu có.",
+          "points": 1
+        },
+        {
+          "criterion": "Viết kế hoạch biến đổi hợp lý và rõ ràng **trước khi tính**, nêu bước phân tích/rút gọn và thời điểm kết hợp các phân thức.",
+          "points": 1
+        },
+        {
+          "criterion": "Biến đổi chính xác biểu thức do học sinh tự chọn; giữ điều kiện mẫu/số chia, không triệt tiêu qua phép cộng/trừ.",
+          "points": 1.5
+        },
+        {
+          "criterion": "Kết luận kết quả kèm ĐKXĐ ban đầu và nêu một cách kiểm tra hoặc lý giải phù hợp.",
+          "points": 0.5
+        }
+      ],
+      "common_mistakes": [
+        "Triệt tiêu các hạng tử qua dấu cộng/trừ thay vì chỉ triệt tiêu nhân tử chung hợp lệ.",
+        "Bỏ điều kiện số chia là phân thức khác 0 hoặc đánh mất các giá trị bị loại sau khi rút gọn.",
+        "Quy đồng mẫu quá sớm khi chưa rút gọn tích/thương trong ngoặc; không viết kế hoạch trước."
+      ],
+      "remediation_markdown": "Ôn CĐ07 Core về điều kiện xác định, phép nhân/chia, phép cộng/trừ và đổi dấu; luyện ghi kế hoạch biến đổi trước khi thao tác. Bài thử thách tự chọn không chặn hoàn thành Core.",
+      "source_refs": [
+        "docs/kien-thuc/07-phan-thuc-dai-so/bai-tap.md#07-CH-01"
+      ]
     }
   ],
   "extension_policy": [
@@ -6516,7 +6726,7 @@
       "CT23",
       "CT24"
     ],
-    "exercise_count": 67,
+    "exercise_count": 69,
     "batches": [
       {
         "batch_id": "PILOT_R1",
@@ -6599,6 +6809,12 @@
       {
         "batch_id": "CT05_07_W3B_WR_AUTHORING_R1",
         "packet_id": "MATH-CT05-07-W3B-WR-AUTHORING-R1",
+        "count": 2,
+        "status": "PUBLISHED"
+      },
+      {
+        "batch_id": "CT05_07_W3C_WR_AUTHORING_R1",
+        "packet_id": "MATH-CT05-07-W3C-WR-AUTHORING-R1",
         "count": 2,
         "status": "PUBLISHED"
       }

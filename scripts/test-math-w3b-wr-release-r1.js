@@ -10,8 +10,8 @@ const receipt=read("review-packets/math-content-cleanup/MATH-CT05-07-W3B-WR-AUTH
 assert(receipt.includes("PACKET_ID|MATH-CT05-07-W3B-WR-AUTHORING-R1"));
 assert(receipt.includes("EXPECTED=2")&&receipt.includes("REVIEWED=2"));
 assert(receipt.includes("OVERALL|PASS_FOR_AUTHORING_REVIEW"));
-assert.equal(xs.length,67,"exact append-only W3B release: 65+2");
-assert.equal(data.published_scope?.exercise_count,67,"published count should follow two new items");
+assert(xs.length>=67,"W3B original two published anchors must survive future append-only releases");
+assert(data.published_scope?.exercise_count>=67,"published count must preserve W3B 65+2");
 assert.equal(data.auto_readiness_credit,false);
 assert.equal(data.self_marking_only,true);
 const historical=JSON.stringify(xs.slice(0,65));
@@ -21,8 +21,8 @@ let h=0xcbf29ce484222325n;
 for(let i=0;i<historical.length;i++)
  h=BigInt.asUintN(64,(h^BigInt(historical.charCodeAt(i)))*0x100000001b3n);
 assert.equal(h.toString(16).padStart(16,"0"),"9d6647fc5958345d","historical canonical 65 records drifted");
-assert.deepEqual(xs.slice(65).map(x=>x.exercise_id),["WX05-ENT-002","WX05-CH-001"],"reviewed append IDs and order");
-assert.equal(new Set(xs.map(x=>x.exercise_id)).size,67,"canonical IDs must be unique");
+assert.deepEqual(xs.slice(65,67).map(x=>x.exercise_id),["WX05-ENT-002","WX05-CH-001"],"reviewed W3B append IDs and original order");
+assert.equal(new Set(xs.map(x=>x.exercise_id)).size,xs.length,"canonical IDs must be unique");
 const batch=data.published_scope?.batches?.find(x=>x.batch_id==="CT05_07_W3B_WR_AUTHORING_R1");
 assert.deepEqual(batch,{batch_id:"CT05_07_W3B_WR_AUTHORING_R1",packet_id:"MATH-CT05-07-W3B-WR-AUTHORING-R1",count:2,status:"PUBLISHED"});
 for(const [id,source,hints,layer,level,label] of [

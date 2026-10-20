@@ -21,7 +21,7 @@ with sync_playwright() as pw:
         page.locator('a.math-library-entry[href="tu-luan/"]').first.click()
         page.wait_for_url("**/luyen-tap/tu-luan/")
         page.wait_for_function("document.querySelector('[data-written-exercise-library]')?.dataset.ready==='1'",timeout=18000)
-        assert page.locator(".written-exercise-card").count()==67
+        assert page.locator(".written-exercise-card").count()==69
         assert page.locator(".written-exercise-card#wx05-ent-001").count()==1
         assert page.locator(".written-exercise-card#wx06-ch-001").count()==1
         assert page.locator('select[aria-label="Lọc theo chuyên đề"]').count()==1
@@ -41,6 +41,6 @@ with sync_playwright() as pw:
         page.wait_for_url("**/roadmap/",timeout=10000)
         assert page.get_by_role("heading",name="Bản đồ học tập Toán THCS").count()==1
         assert not errors,(width,errors)
-        print("PASS learner navigation/library R2",width,"px, 67 Written items (65 historical + 2 W3B reviewed) + legacy filtered redirects")
+        print("PASS learner navigation/library R2",width,"px, 69 Written items (67 pre-W3C historical + 2 W3C reviewed) + legacy filtered redirects")
         ctx.close()
     browser.close()
