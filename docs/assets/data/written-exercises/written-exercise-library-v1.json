@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "catalog_id": "MATH-WRITTEN-EXERCISE-LIBRARY-V1",
-  "snapshot_date": "2026-10-20",
+  "snapshot_date": "2026-10-21",
   "status": "ACTIVE_APPEND_ONLY",
   "auto_readiness_credit": false,
   "self_marking_only": true,
@@ -6692,6 +6692,526 @@
       "source_refs": [
         "docs/kien-thuc/07-phan-thuc-dai-so/bai-tap.md#07-CH-01"
       ]
+    },
+    {
+      "exercise_id": "WX08-EQI-003",
+      "exercise_kind": "standard",
+      "topic_id": "CT08",
+      "topic_slug": "08-phuong-trinh-bat-phuong-trinh",
+      "topic_title": "Phương trình và bất phương trình",
+      "problem_type_id": "equation-zero-product-two-branches",
+      "problem_type_title": "Phương trình tích: giải đủ nhánh nghiệm và kiểm tra",
+      "title": "Không bỏ sót nghiệm âm khi giải phương trình tích",
+      "learning_layer": "KNTT-Core",
+      "level": "CORE_BASE",
+      "learner_label": "Luyện cơ bản",
+      "grade_overlay": [
+        8
+      ],
+      "skills": [
+        "pt-tich",
+        "doi-chieu-nghiem"
+      ],
+      "prerequisites": [
+        "pt-bac-nhat"
+      ],
+      "estimated_minutes": 8,
+      "problem_markdown": "Giải phương trình\n$$(x-4)(2x+1)=0.$$\nHãy trình bày **đủ hai trường hợp** theo tính chất tích bằng $0$, viết tập nghiệm và **thử lại cả hai nghiệm** vào phương trình ban đầu.",
+      "figure_uri": null,
+      "figure_alt": null,
+      "hint_steps": [
+        "Nếu tích hai biểu thức bằng $0$, thì điều gì đúng với ít nhất một thừa số?",
+        "Xét riêng hai trường hợp $x-4=0$ và $2x+1=0$.",
+        "Sau khi tìm nghiệm, thử cả hai giá trị vào tích ban đầu để kiểm tra."
+      ],
+      "solution_steps": [
+        {
+          "step_id": "S1",
+          "title": "Áp dụng tính chất tích bằng 0",
+          "content_markdown": "Ta có $$(x-4)(2x+1)=0\\iff x-4=0\\quad\\text{hoặc}\\quad 2x+1=0.$$"
+        },
+        {
+          "step_id": "S2",
+          "title": "Giải từng nhánh",
+          "content_markdown": "Từ $x-4=0$ suy ra $x=4$. Từ $2x+1=0$ suy ra $x=-\\frac12$."
+        },
+        {
+          "step_id": "S3",
+          "title": "Kiểm tra và kết luận",
+          "content_markdown": "Thay $x=4$ được $(4-4)(2\\cdot4+1)=0$. Thay $x=-\\frac12$ được $\\left(-\\frac12-4\\right)\\left(2\\cdot(-\\frac12)+1\\right)=0$. Vậy $$\\boxed{S=\\left\\{-\\frac12,4\\right\\}}.$$"
+        }
+      ],
+      "full_solution_markdown": "**Bước 1 — Áp dụng tính chất tích bằng 0.** Ta có $$(x-4)(2x+1)=0\\iff x-4=0\\quad\\text{hoặc}\\quad 2x+1=0.$$\n\n**Bước 2 — Giải từng nhánh.** Từ $x-4=0$ suy ra $x=4$. Từ $2x+1=0$ suy ra $x=-\\frac12$.\n\n**Bước 3 — Kiểm tra và kết luận.** Thay $x=4$ được $(4-4)(2\\cdot4+1)=0$. Thay $x=-\\frac12$ được $\\left(-\\frac12-4\\right)\\left(2\\cdot(-\\frac12)+1\\right)=0$. Vậy $$\\boxed{S=\\left\\{-\\frac12,4\\right\\}}.$$",
+      "method_rationale_markdown": "Một tích bằng không khi ít nhất một nhân tử bằng không; cần giải đủ các nhánh thay vì tùy ý chọn một nghiệm.",
+      "rubric": [
+        {
+          "criterion": "Dùng đúng tính chất tích bằng $0$ và nêu hai nhánh.",
+          "points": 1
+        },
+        {
+          "criterion": "Giải đúng $x-4=0\\Rightarrow x=4$.",
+          "points": 1
+        },
+        {
+          "criterion": "Giải đúng $2x+1=0\\Rightarrow x=-\\frac12$.",
+          "points": 1
+        },
+        {
+          "criterion": "Thử lại cả hai nghiệm và kết luận tập nghiệm đầy đủ.",
+          "points": 1
+        }
+      ],
+      "rubric_total": 4,
+      "common_mistakes": [
+        "Chỉ giải một nhánh, bỏ sót nghiệm.",
+        "Giải sai dấu và ghi $x=\\frac12$.",
+        "Tìm được nghiệm nhưng không ghi đủ tập nghiệm và bước kiểm tra."
+      ],
+      "remediation_markdown": "Ôn lại phương trình bậc nhất và tính chất tích bằng không; luyện viết câu kết luận kèm toàn bộ nghiệm.",
+      "remediation_links": [
+        {
+          "label": "Ôn kiến thức CĐ08",
+          "href": "../kien-thuc/08-phuong-trinh-bat-phuong-trinh/core/"
+        },
+        {
+          "label": "Luyện tập CĐ08",
+          "href": "../kien-thuc/08-phuong-trinh-bat-phuong-trinh/bai-tap/"
+        }
+      ],
+      "source_refs": [
+        "docs/kien-thuc/08-phuong-trinh-bat-phuong-trinh/bai-tap.md#08-WR-03"
+      ],
+      "academic_review": {
+        "status": "APPROVED",
+        "method": "NOTEBOOKLM_OWNER_SUBMITTED",
+        "packet_id": "MATH-W4-CT08-12-8SOURCE-CONVERSION-R0-20261020",
+        "receipt": "review-packets/math-source-conversion/W4_CT08-12_NOTEBOOKLM_INDEPENDENT_VERDICT_RECEIPT_20261020.md",
+        "publication_gate": "OWNER_RELEASE_APPROVED_20261021"
+      },
+      "gates_core": false,
+      "auto_readiness_credit": false,
+      "written_role": "ROUTINE_PRACTICE"
+    },
+    {
+      "exercise_id": "WX09-SYS-009",
+      "exercise_kind": "anchor",
+      "topic_id": "CT09",
+      "topic_slug": "09-he-phuong-trinh",
+      "topic_title": "Hệ phương trình bậc nhất hai ẩn",
+      "problem_type_id": "system-clear-denominator-substitute-verify",
+      "problem_type_title": "Khử mẫu hệ phương trình, phép thế và kiểm nghiệm",
+      "title": "Khử mẫu và kiểm tra cặp nghiệm phân số",
+      "learning_layer": "KNTT-Core",
+      "level": "CORE_APPLY",
+      "learner_label": "Củng cố",
+      "grade_overlay": [
+        9
+      ],
+      "skills": [
+        "bien-doi-truoc-giai",
+        "giai-he-the",
+        "kiem-tra-nghiem-he"
+      ],
+      "prerequisites": [
+        "pt-bac-nhat",
+        "phep-tinh-so-huu-ti"
+      ],
+      "estimated_minutes": 12,
+      "problem_markdown": "Giải hệ phương trình\n$$\\begin{cases}\\dfrac{x}{2}+\\dfrac{y}{3}=2,\\\\x-y=1.\\end{cases}$$\nHãy khử mẫu **đúng cả hai hạng tử**, chọn cách giải thuận tiện và **thử lại** nghiệm vào **cả hai phương trình ban đầu**.",
+      "figure_uri": null,
+      "figure_alt": null,
+      "hint_steps": [
+        "Nhân hai vế của phương trình đầu với bội chung $6$.",
+        "Từ $x-y=1$ suy ra $x=y+1$; thế vào phương trình đầu đã khử mẫu.",
+        "Thay cặp nghiệm phân số vào *cả hai* phương trình gốc, không chỉ hệ sau biến đổi."
+      ],
+      "solution_steps": [
+        {
+          "step_id": "S1",
+          "title": "Khử mẫu",
+          "content_markdown": "Nhân phương trình đầu với $6$ được $3x+2y=12$. Hệ tương đương với $\\begin{cases}3x+2y=12,\\\\x-y=1.\\end{cases}$"
+        },
+        {
+          "step_id": "S2",
+          "title": "Chọn phương pháp thế",
+          "content_markdown": "Từ $x-y=1$ suy ra $x=y+1$. Thế vào phương trình $3x+2y=12$ ta có $3(y+1)+2y=12$, nên $5y=9$ và $y=\\frac95$."
+        },
+        {
+          "step_id": "S3",
+          "title": "Tìm ẩn còn lại",
+          "content_markdown": "$x=y+1=\\frac95+1=\\frac{14}{5}$."
+        },
+        {
+          "step_id": "S4",
+          "title": "Kiểm tra trong hệ ban đầu",
+          "content_markdown": "$\\frac{14/5}{2}+\\frac{9/5}{3}=\\frac75+\\frac35=2$ và $\\frac{14}{5}-\\frac95=1$. Vậy nghiệm là $$\\boxed{(x;y)=\\left(\\frac{14}{5};\\frac95\\right)}.$$"
+        }
+      ],
+      "full_solution_markdown": "**Bước 1 — Khử mẫu.** Nhân phương trình đầu với $6$ được $3x+2y=12$. Hệ tương đương với $\\begin{cases}3x+2y=12,\\\\x-y=1.\\end{cases}$\n\n**Bước 2 — Chọn phương pháp thế.** Từ $x-y=1$ suy ra $x=y+1$. Thế vào phương trình $3x+2y=12$ ta có $3(y+1)+2y=12$, nên $5y=9$ và $y=\\frac95$.\n\n**Bước 3 — Tìm ẩn còn lại.** $x=y+1=\\frac95+1=\\frac{14}{5}$.\n\n**Bước 4 — Kiểm tra trong hệ ban đầu.** $\\frac{14/5}{2}+\\frac{9/5}{3}=\\frac75+\\frac35=2$ và $\\frac{14}{5}-\\frac95=1$. Vậy nghiệm là $$\\boxed{(x;y)=\\left(\\frac{14}{5};\\frac95\\right)}.$$",
+      "method_rationale_markdown": "Khử mẫu bằng phép nhân với hằng số khác 0 để giảm lỗi, rồi chọn thế vì hệ có phương trình $x-y=1$ dễ biểu diễn một ẩn.",
+      "rubric": [
+        {
+          "criterion": "Khử mẫu đúng thành $3x+2y=12$.",
+          "points": 1
+        },
+        {
+          "criterion": "Chọn phép thế $x=y+1$ và lập phương trình đúng.",
+          "points": 1
+        },
+        {
+          "criterion": "Tìm đúng $x=\\frac{14}{5}$ và $y=\\frac95$.",
+          "points": 1
+        },
+        {
+          "criterion": "Kiểm tra cặp nghiệm trong cả hai phương trình ban đầu và kết luận.",
+          "points": 1
+        }
+      ],
+      "rubric_total": 4,
+      "common_mistakes": [
+        "Chỉ nhân một hạng tử của phương trình đầu với 6.",
+        "Sai dấu khi chuyển $x-y=1$.",
+        "Dừng sau khi kiểm tra một phương trình."
+      ],
+      "remediation_markdown": "Ôn quy tắc khử mẫu với phân số và phương pháp thế; luyện thay cặp nghiệm vào hai phương trình.",
+      "remediation_links": [
+        {
+          "label": "Ôn kiến thức CĐ09",
+          "href": "../kien-thuc/09-he-phuong-trinh/core/"
+        },
+        {
+          "label": "Luyện tập CĐ09",
+          "href": "../kien-thuc/09-he-phuong-trinh/bai-tap/"
+        }
+      ],
+      "source_refs": [
+        "docs/kien-thuc/09-he-phuong-trinh/bai-tap.md#09-WR-05"
+      ],
+      "academic_review": {
+        "status": "APPROVED",
+        "method": "NOTEBOOKLM_OWNER_SUBMITTED",
+        "packet_id": "MATH-W4-CT08-12-8SOURCE-CONVERSION-R0-20261020",
+        "receipt": "review-packets/math-source-conversion/W4_CT08-12_NOTEBOOKLM_INDEPENDENT_VERDICT_RECEIPT_20261020.md",
+        "publication_gate": "OWNER_RELEASE_APPROVED_20261021"
+      },
+      "gates_core": false,
+      "auto_readiness_credit": false,
+      "written_role": "DEEP_ANCHOR"
+    },
+    {
+      "exercise_id": "WX10-FUN-003",
+      "exercise_kind": "anchor",
+      "topic_id": "CT10",
+      "topic_slug": "10-ham-so-do-thi",
+      "topic_title": "Hàm số và đồ thị",
+      "problem_type_id": "linear-lines-intersection-system-transfer",
+      "problem_type_title": "Giao điểm hai đồ thị và nghiệm của hệ",
+      "title": "Tìm đủ hai tọa độ giao điểm của hai đường thẳng",
+      "learning_layer": "Entrance10",
+      "level": "ENTRANCE10",
+      "learner_label": "Ôn thi vào 10",
+      "grade_overlay": [
+        9
+      ],
+      "skills": [
+        "giao-diem-do-thi",
+        "lien-he-he-phuong-trinh"
+      ],
+      "prerequisites": [
+        "ham-bac-nhat",
+        "giai-he-the"
+      ],
+      "estimated_minutes": 10,
+      "problem_markdown": "Cho hai đường thẳng\n$$d_1:y=x+2,\\qquad d_2:y=-x+4.$$\nTìm giao điểm $I$ của $d_1$ và $d_2$. **Giải thích** vì sao tọa độ $I$ đồng thời là nghiệm của hệ phương trình biểu diễn hai đường thẳng. Kiểm tra kết quả bằng cách thay lại.",
+      "figure_uri": null,
+      "figure_alt": null,
+      "hint_steps": [
+        "Tại giao điểm, hai biểu thức của $y$ phải bằng nhau.",
+        "Giải $x+2=-x+4$, sau đó tìm tung độ từ một phương trình.",
+        "Thử tọa độ vừa tìm vào cả $d_1$ và $d_2$."
+      ],
+      "solution_steps": [
+        {
+          "step_id": "S1",
+          "title": "Lập phương trình hoành độ",
+          "content_markdown": "Tại giao điểm, $x+2=-x+4$."
+        },
+        {
+          "step_id": "S2",
+          "title": "Giải tìm hoành độ",
+          "content_markdown": "$2x=2$ nên $x=1$."
+        },
+        {
+          "step_id": "S3",
+          "title": "Tìm tung độ",
+          "content_markdown": "Thay $x=1$ vào $d_1$, ta có $y=1+2=3$."
+        },
+        {
+          "step_id": "S4",
+          "title": "Kiểm tra và liên hệ nghiệm hệ",
+          "content_markdown": "Trên $d_2$, $-1+4=3$, nên $I(1;3)$ thuộc cả hai đường thẳng. Cặp $(1;3)$ là nghiệm chung của hai phương trình; giao điểm là $$\\boxed{I(1;3)}.$$"
+        }
+      ],
+      "full_solution_markdown": "**Bước 1 — Lập phương trình hoành độ.** Tại giao điểm, $x+2=-x+4$.\n\n**Bước 2 — Giải tìm hoành độ.** $2x=2$ nên $x=1$.\n\n**Bước 3 — Tìm tung độ.** Thay $x=1$ vào $d_1$, ta có $y=1+2=3$.\n\n**Bước 4 — Kiểm tra và liên hệ nghiệm hệ.** Trên $d_2$, $-1+4=3$, nên $I(1;3)$ thuộc cả hai đường thẳng. Cặp $(1;3)$ là nghiệm chung của hai phương trình; giao điểm là $$\\boxed{I(1;3)}.$$",
+      "method_rationale_markdown": "Giao điểm phải thỏa đồng thời cả hai phương trình đường thẳng; vì vậy tìm giao điểm là giải hệ.",
+      "rubric": [
+        {
+          "criterion": "Đặt đúng hai biểu thức tung độ bằng nhau.",
+          "points": 1
+        },
+        {
+          "criterion": "Tìm được hoành độ $x=1$.",
+          "points": 1
+        },
+        {
+          "criterion": "Tìm được tung độ $y=3$.",
+          "points": 1
+        },
+        {
+          "criterion": "Kiểm tra cả hai đường và kết luận chính xác tọa độ giao điểm.",
+          "points": 1
+        }
+      ],
+      "rubric_total": 4,
+      "common_mistakes": [
+        "Dừng lại sau khi có hoành độ mà quên tìm tung độ.",
+        "Nhầm tọa độ $(1;3)$ thành $(3;1)$.",
+        "Chỉ kiểm tra một đường."
+      ],
+      "remediation_markdown": "Ôn giá trị hàm số và tọa độ điểm thuộc đồ thị trước khi tìm giao điểm.",
+      "remediation_links": [
+        {
+          "label": "Ôn kiến thức CĐ10",
+          "href": "../kien-thuc/10-ham-so-do-thi/core/"
+        },
+        {
+          "label": "Luyện tập CĐ10",
+          "href": "../kien-thuc/10-ham-so-do-thi/bai-tap/"
+        }
+      ],
+      "source_refs": [
+        "docs/kien-thuc/10-ham-so-do-thi/bai-tap.md#10-ENT-02"
+      ],
+      "academic_review": {
+        "status": "APPROVED",
+        "method": "NOTEBOOKLM_OWNER_SUBMITTED",
+        "packet_id": "MATH-W4-CT08-12-8SOURCE-CONVERSION-R0-20261020",
+        "receipt": "review-packets/math-source-conversion/W4_CT08-12_NOTEBOOKLM_INDEPENDENT_VERDICT_RECEIPT_20261020.md",
+        "publication_gate": "OWNER_RELEASE_APPROVED_20261021"
+      },
+      "gates_core": false,
+      "auto_readiness_credit": false,
+      "written_role": "TRANSFER"
+    },
+    {
+      "exercise_id": "WX11-RAD-004",
+      "exercise_kind": "anchor",
+      "topic_id": "CT11",
+      "topic_slug": "11-can-thuc",
+      "topic_title": "Căn thức và biến đổi căn thức",
+      "problem_type_id": "radical-equation-domain-extraneous-check",
+      "problem_type_title": "Phương trình chứa căn và loại nghiệm ngoại lai",
+      "title": "Bình phương đúng điều kiện, không nhận nghiệm ngoại lai",
+      "learning_layer": "Entrance10",
+      "level": "ENTRANCE10",
+      "learner_label": "Ôn thi vào 10",
+      "grade_overlay": [
+        9
+      ],
+      "skills": [
+        "dkxd-can",
+        "tim-x-can"
+      ],
+      "prerequisites": [
+        "pt-bac-hai",
+        "can-bac-hai-so-hoc"
+      ],
+      "estimated_minutes": 12,
+      "problem_markdown": "Giải phương trình\n$$\\sqrt{x+1}=x-1.$$\nTrước khi bình phương, hãy nêu điều kiện cần thiết đối với cả hai vế; sau khi giải phương trình mới, **thử lại mọi ứng viên** và nêu rõ nghiệm bị loại.",
+      "figure_uri": null,
+      "figure_alt": null,
+      "hint_steps": [
+        "Vế trái luôn không âm, nên cần $x-1\\ge0$; điều kiện $\\sqrt{x+1}$ xác định có yếu hơn không?",
+        "Bình phương để được $x+1=(x-1)^2$, rồi chuyển vế phân tích nhân tử.",
+        "Kiểm tra hai ứng viên $0$ và $3$ bằng điều kiện và phương trình gốc."
+      ],
+      "solution_steps": [
+        {
+          "step_id": "S1",
+          "title": "Điều kiện",
+          "content_markdown": "Vì $\\sqrt{x+1}\\ge0$, cần $x-1\\ge0$, tức $x\\ge1$ (khi đó $x+1\\ge0$ tự thỏa mãn)."
+        },
+        {
+          "step_id": "S2",
+          "title": "Bình phương và biến đổi",
+          "content_markdown": "Với $x\\ge1$, bình phương cho $x+1=(x-1)^2=x^2-2x+1$, suy ra $x^2-3x=0$ hay $x(x-3)=0$."
+        },
+        {
+          "step_id": "S3",
+          "title": "Xét ứng viên",
+          "content_markdown": "Hai ứng viên là $x=0$ và $x=3$. Giá trị $x=0$ không thỏa $x\\ge1$ nên loại. Giá trị $x=3$ thỏa điều kiện."
+        },
+        {
+          "step_id": "S4",
+          "title": "Thử lại và kết luận",
+          "content_markdown": "Với $x=3$, $\\sqrt{3+1}=2=3-1$, nên $$\\boxed{S=\\{3\\}}.$$"
+        }
+      ],
+      "full_solution_markdown": "**Bước 1 — Điều kiện.** Vì $\\sqrt{x+1}\\ge0$, cần $x-1\\ge0$, tức $x\\ge1$ (khi đó $x+1\\ge0$ tự thỏa mãn).\n\n**Bước 2 — Bình phương và biến đổi.** Với $x\\ge1$, bình phương cho $x+1=(x-1)^2=x^2-2x+1$, suy ra $x^2-3x=0$ hay $x(x-3)=0$.\n\n**Bước 3 — Xét ứng viên.** Hai ứng viên là $x=0$ và $x=3$. Giá trị $x=0$ không thỏa $x\\ge1$ nên loại. Giá trị $x=3$ thỏa điều kiện.\n\n**Bước 4 — Thử lại và kết luận.** Với $x=3$, $\\sqrt{3+1}=2=3-1$, nên $$\\boxed{S=\\{3\\}}.$$",
+      "method_rationale_markdown": "Bình phương phương trình có thể tạo nghiệm ngoại lai; điều kiện vế phải không âm và bước thử lại là bắt buộc.",
+      "rubric": [
+        {
+          "criterion": "Ghi đúng điều kiện $x\\ge1$.",
+          "points": 1
+        },
+        {
+          "criterion": "Bình phương và chuyển về $x(x-3)=0$.",
+          "points": 1
+        },
+        {
+          "criterion": "Tìm ứng viên $0,3$ và loại $x=0$.",
+          "points": 1
+        },
+        {
+          "criterion": "Thử lại $x=3$ vào phương trình gốc và kết luận tập nghiệm.",
+          "points": 1
+        }
+      ],
+      "rubric_total": 4,
+      "common_mistakes": [
+        "Chỉ xét $x+1ge0$ mà quên $x-1ge0$.",
+        "Nhận nghiệm ngoại lai $x=0$ do không thử lại.",
+        "Sử dụng dấu tương đương không kèm điều kiện."
+      ],
+      "remediation_markdown": "Ôn điều kiện xác định của căn bậc hai, phép bình phương có điều kiện và kỹ năng thử nghiệm sau biến đổi.",
+      "remediation_links": [
+        {
+          "label": "Ôn kiến thức CĐ11",
+          "href": "../kien-thuc/11-can-thuc/core/"
+        },
+        {
+          "label": "Luyện tập CĐ11",
+          "href": "../kien-thuc/11-can-thuc/bai-tap/"
+        }
+      ],
+      "source_refs": [
+        "docs/kien-thuc/11-can-thuc/bai-tap.md#11-ENT-01"
+      ],
+      "academic_review": {
+        "status": "APPROVED",
+        "method": "NOTEBOOKLM_OWNER_SUBMITTED",
+        "packet_id": "MATH-W4-CT08-12-8SOURCE-CONVERSION-R0-20261020",
+        "receipt": "review-packets/math-source-conversion/W4_CT08-12_NOTEBOOKLM_INDEPENDENT_VERDICT_RECEIPT_20261020.md",
+        "publication_gate": "OWNER_RELEASE_APPROVED_20261021"
+      },
+      "gates_core": false,
+      "auto_readiness_credit": false,
+      "written_role": "DEEP_ANCHOR"
+    },
+    {
+      "exercise_id": "WX12-QUA-003",
+      "exercise_kind": "anchor",
+      "topic_id": "CT12",
+      "topic_slug": "12-phuong-trinh-bac-hai-viete",
+      "topic_title": "Phương trình bậc hai & Viète",
+      "problem_type_id": "quadratic-viete-sign-without-roots",
+      "problem_type_title": "Xét dấu nghiệm bằng tích Viète không giải nghiệm",
+      "title": "Xét dấu hai nghiệm không cần giải phương trình",
+      "learning_layer": "Entrance10",
+      "level": "ENTRANCE10",
+      "learner_label": "Ôn thi vào 10",
+      "grade_overlay": [
+        9
+      ],
+      "skills": [
+        "tong-tich-nghiem",
+        "dau-nghiem"
+      ],
+      "prerequisites": [
+        "nhan-dang-pt-bac-hai",
+        "so-nghiem-delta"
+      ],
+      "estimated_minutes": 9,
+      "problem_markdown": "Cho phương trình\n$$x^2+x-6=0$$\ncó hai nghiệm thực $x_1,x_2$. **Không giải riêng hai nghiệm**, hãy dùng hệ thức Viète để xét dấu của $x_1,x_2$. Nêu lý do từ dấu của tích; có thể kiểm tra điều kiện có hai nghiệm thực bằng $\\Delta$.",
+      "figure_uri": null,
+      "figure_alt": null,
+      "hint_steps": [
+        "Theo Viète, tích hai nghiệm của $ax^2+bx+c=0$ là $P=\\frac ca$.",
+        "Với phương trình đã cho, $a=1$, $c=-6$. Dấu của $P$ nói gì về dấu hai nghiệm?",
+        "Nếu muốn kiểm tra tính tồn tại hai nghiệm thực, tính $\\Delta=b^2-4ac$."
+      ],
+      "solution_steps": [
+        {
+          "step_id": "S1",
+          "title": "Nhận diện hệ số",
+          "content_markdown": "$a=1$, $b=1$, $c=-6$."
+        },
+        {
+          "step_id": "S2",
+          "title": "Áp dụng Viète",
+          "content_markdown": "Theo Viète, $P=x_1x_2=\\frac ca=\\frac{-6}{1}=-6<0$."
+        },
+        {
+          "step_id": "S3",
+          "title": "Kết luận dấu nghiệm",
+          "content_markdown": "Tích của hai số thực âm khi và chỉ khi hai số trái dấu. Do đó một nghiệm âm và một nghiệm dương, không cần tìm giá trị từng nghiệm."
+        },
+        {
+          "step_id": "S4",
+          "title": "Kiểm tra sự tồn tại hai nghiệm thực",
+          "content_markdown": "$\\Delta=b^2-4ac=1-4\\cdot1\\cdot(-6)=25>0$, đúng là phương trình có hai nghiệm thực phân biệt."
+        }
+      ],
+      "full_solution_markdown": "**Bước 1 — Nhận diện hệ số.** $a=1$, $b=1$, $c=-6$.\n\n**Bước 2 — Áp dụng Viète.** Theo Viète, $P=x_1x_2=\\frac ca=\\frac{-6}{1}=-6<0$.\n\n**Bước 3 — Kết luận dấu nghiệm.** Tích của hai số thực âm khi và chỉ khi hai số trái dấu. Do đó một nghiệm âm và một nghiệm dương, không cần tìm giá trị từng nghiệm.\n\n**Bước 4 — Kiểm tra sự tồn tại hai nghiệm thực.** $\\Delta=b^2-4ac=1-4\\cdot1\\cdot(-6)=25>0$, đúng là phương trình có hai nghiệm thực phân biệt.",
+      "method_rationale_markdown": "Viète giúp suy ra dấu nghiệm bằng tích $x_1x_2$ mà không cần giải để biết giá trị cụ thể; đây là kỹ năng chuyển giao cho bài toán tham số.",
+      "rubric": [
+        {
+          "criterion": "Xác định đúng $a=1$ và $c=-6$.",
+          "points": 1
+        },
+        {
+          "criterion": "Tính đúng $P=x_1x_2=-6<0$ theo Viète.",
+          "points": 1
+        },
+        {
+          "criterion": "Giải thích tích âm suy ra hai nghiệm trái dấu.",
+          "points": 1
+        },
+        {
+          "criterion": "Kết luận bằng Viète mà không giải riêng hai nghiệm.",
+          "points": 1
+        }
+      ],
+      "rubric_total": 4,
+      "common_mistakes": [
+        "Dựa vào dấu tổng nghiệm thay vì dấu tích để kết luận hai nghiệm đều âm.",
+        "Giải riêng hai nghiệm, không đáp ứng yêu cầu chứng minh bằng Viète.",
+        "Nhầm $P=-c/a$."
+      ],
+      "remediation_markdown": "Ôn lại tổng và tích hai nghiệm theo Viète, phân biệt suy luận từ dấu tổng với suy luận từ dấu tích.",
+      "remediation_links": [
+        {
+          "label": "Ôn kiến thức CĐ12",
+          "href": "../kien-thuc/12-phuong-trinh-bac-hai-viete/core/"
+        },
+        {
+          "label": "Luyện tập CĐ12",
+          "href": "../kien-thuc/12-phuong-trinh-bac-hai-viete/bai-tap/"
+        }
+      ],
+      "source_refs": [
+        "docs/kien-thuc/12-phuong-trinh-bac-hai-viete/bai-tap.md#12-ENT-02"
+      ],
+      "academic_review": {
+        "status": "APPROVED",
+        "method": "NOTEBOOKLM_OWNER_SUBMITTED",
+        "packet_id": "MATH-W4-CT08-12-8SOURCE-CONVERSION-R0-20261020",
+        "receipt": "review-packets/math-source-conversion/W4_CT08-12_NOTEBOOKLM_INDEPENDENT_VERDICT_RECEIPT_20261020.md",
+        "publication_gate": "OWNER_RELEASE_APPROVED_20261021"
+      },
+      "gates_core": false,
+      "auto_readiness_credit": false,
+      "written_role": "TRANSFER"
     }
   ],
   "extension_policy": [
@@ -6726,7 +7246,7 @@
       "CT23",
       "CT24"
     ],
-    "exercise_count": 69,
+    "exercise_count": 74,
     "batches": [
       {
         "batch_id": "PILOT_R1",
@@ -6816,6 +7336,12 @@
         "batch_id": "CT05_07_W3C_WR_AUTHORING_R1",
         "packet_id": "MATH-CT05-07-W3C-WR-AUTHORING-R1",
         "count": 2,
+        "status": "PUBLISHED"
+      },
+      {
+        "batch_id": "W4_CT08_12_WRITTEN_R1",
+        "packet_id": "MATH-W4-CT08-12-8SOURCE-CONVERSION-R0-20261020",
+        "count": 5,
         "status": "PUBLISHED"
       }
     ],

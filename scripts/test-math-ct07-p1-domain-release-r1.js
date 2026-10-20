@@ -45,8 +45,18 @@ const receipt=fs.readFileSync("review-packets/math-content-cleanup/MATH-CT05-07-
 assert(receipt.includes("OVERALL|PASS_FOR_AUTHORING_REVIEW"));
 assert(receipt.includes("EXPECTED=1")&&receipt.includes("REVIEWED=1"));
 const written=parse("docs/assets/data/written-exercises/written-exercise-library-v1.json");
-assert.equal(written.exercises.length,69);
-assert.equal(blob(read("docs/assets/data/written-exercises/written-exercise-library-v1.json")),"eed3fa0cbae29fd4fdb9daaeac9ef36c3744b665","Published 69 Written content must remain unchanged");
+assert(written.exercises.length>=69,"historical 69 Written entries must not be removed");
+const historic=JSON.parse(JSON.stringify(written));
+historic.exercises=historic.exercises.slice(0,69);
+historic.published_scope.exercise_count=69;
+historic.snapshot_date="2026-10-20";
+const appended=historic.published_scope.batches.filter(x=>x.batch_id==="W4_CT08_12_WRITTEN_R1");
+assert(appended.length<=1);
+if(appended.length) {
+ assert(appended[0].count===5 && appended[0].status==="PUBLISHED" && written.exercises.length===74,"W4 five Owner-approved additions and no other changes");
+ historic.published_scope.batches=historic.published_scope.batches.filter(x=>x.batch_id!=="W4_CT08_12_WRITTEN_R1");
+}
+assert.equal(blob(Buffer.from(JSON.stringify(historic,null,2)+"\n")),"eed3fa0cbae29fd4fdb9daaeac9ef36c3744b665","Historical 69 Written JSON records + metadata must remain unchanged");
 for(const topic of ["05-7-hang-dang-thuc","06-phan-tich-da-thuc"]){
  assert.equal([1,2,3,4].flatMap(i=>parse(dir+topic+"-v1-0"+i+".json").questions).length,120);
 }

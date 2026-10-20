@@ -1,11 +1,17 @@
 #!/usr/bin/env python3
 """Two library paths: desktop/390px, controlled grade tabs, canonical WX/A25 links, no learner history writes."""
 import shutil
+import json
 from playwright.sync_api import sync_playwright
 
 CHROME=shutil.which("google-chrome") or shutil.which("chromium")
 assert CHROME, "Chromium required"
 BASE="http://127.0.0.1:8765/"
+with open("docs/assets/data/written-exercises/written-exercise-library-v1.json",encoding="utf-8") as file:
+    wx=json.load(file)["exercises"]
+w4_anchor_ids={"WX09-SYS-009","WX10-FUN-003","WX11-RAD-004","WX12-QUA-003"}
+assert {x["exercise_id"] for x in wx if x["exercise_id"] in w4_anchor_ids}==w4_anchor_ids
+assert all(x["exercise_kind"]=="anchor" and x["academic_review"]["status"]=="APPROVED" for x in wx if x["exercise_id"] in w4_anchor_ids)
 
 with sync_playwright() as pw:
     browser=pw.chromium.launch(executable_path=CHROME,headless=True,args=["--no-sandbox","--disable-dev-shm-usage"])
@@ -24,7 +30,7 @@ with sync_playwright() as pw:
         root=page.locator("[data-model-examples-library]")
         page.wait_for_function("document.querySelector('[data-model-examples-library]')?.dataset.ready==='1'",timeout=18000)
         cards=root.locator(".model-library-card")
-        assert cards.count()==27,(width,"16 reviewed WX + 11 A25")
+        assert cards.count()==27+len(w4_anchor_ids),(width,"16 historic approved deep WX + 4 reviewed W4 anchors + 11 A25")
         grade=root.get_by_label("Lọc bài mẫu theo lớp")
         group=root.get_by_label("Lọc nhóm bài mẫu")
         grade.select_option("6")
@@ -44,7 +50,9 @@ with sync_playwright() as pw:
         target=cards.first.locator(".model-library-link")
         assert "/kien-thuc/25-tong-hop-on-thi-10/" in target.get_attribute("href")
         group.select_option("wx")
-        assert cards.count()==6,(width,"G9 deep WX count")
+        assert cards.count()==6+len(w4_anchor_ids),(width,"G9 historic six deep WX plus W4 reviewed anchor additions")
+        w4_links=cards.locator(".model-library-link").evaluate_all("(nodes)=>nodes.map(n=>n.getAttribute('href'))")
+        assert all(any(("#"+item_id.lower()) in href for href in w4_links) for item_id in w4_anchor_ids),(width,"four reviewed W4 Grade9 deep model links")
         target=cards.first.locator(".model-library-link")
         assert "luyen-tap/tu-luan/?kind=anchor#wx09-" in target.get_attribute("href")
         target.click()
