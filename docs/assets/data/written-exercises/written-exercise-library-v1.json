@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "catalog_id": "MATH-WRITTEN-EXERCISE-LIBRARY-V1",
-  "snapshot_date": "2026-10-17",
+  "snapshot_date": "2026-10-20",
   "status": "ACTIVE_APPEND_ONLY",
   "auto_readiness_credit": false,
   "self_marking_only": true,
@@ -6274,6 +6274,214 @@
       "remediation_markdown": "Ôn bình phương của một tổng và hiệu hai bình phương, sau đó thử phân tích ngược từ hai nhân tử.",
       "gates_core": false,
       "auto_readiness_credit": false
+    },
+    {
+      "exercise_id": "WX05-ENT-002",
+      "exercise_kind": "anchor",
+      "topic_id": "CT05",
+      "topic_slug": "05-7-hang-dang-thuc",
+      "topic_title": "7 hằng đẳng thức đáng nhớ",
+      "problem_type_id": "sum-product-sum-of-squares",
+      "problem_type_title": "Tính tổng bình phương từ tổng và tích đã biết",
+      "title": "Tính x² + y² mà không cần tìm riêng x, y",
+      "learning_layer": "Entrance10",
+      "level": "ENTRANCE10",
+      "learner_label": "Ôn thi vào 10",
+      "grade_overlay": [
+        8
+      ],
+      "skills": [
+        "binh-phuong-tong",
+        "rut-gon-hdt"
+      ],
+      "prerequisites": [
+        "binh-phuong-tong",
+        "bien-doi-dang-thuc",
+        "phep-tinh-so-nguyen"
+      ],
+      "estimated_minutes": 10,
+      "problem_markdown": "Biết $x+y=10$ và $xy=21$. **Không cần tìm riêng $x$ và $y$**, hãy tính $x^2+y^2$, nêu hằng đẳng thức được dùng và trình bày các bước tính.",
+      "figure_uri": null,
+      "figure_alt": null,
+      "solution_steps": [
+        {
+          "step_id": "S1",
+          "title": "Viết bình phương một tổng",
+          "content_markdown": "$(x+y)^2=x^2+2xy+y^2$."
+        },
+        {
+          "step_id": "S2",
+          "title": "Biến đổi",
+          "content_markdown": "Suy ra $x^2+y^2=(x+y)^2-2xy$."
+        },
+        {
+          "step_id": "S3",
+          "title": "Thay số",
+          "content_markdown": "$x^2+y^2=10^2-2\\cdot21=100-42=58$."
+        },
+        {
+          "step_id": "S4",
+          "title": "Kết luận",
+          "content_markdown": "$x^2+y^2=\\boxed{58}$. Không cần xác định riêng hai biến."
+        }
+      ],
+      "rubric": [
+        {
+          "criterion": "Viết đúng hằng đẳng thức $(x+y)^2=x^2+2xy+y^2$.",
+          "points": 1
+        },
+        {
+          "criterion": "Biến đổi đúng $x^2+y^2=(x+y)^2-2xy$.",
+          "points": 1
+        },
+        {
+          "criterion": "Thay số và tính $100-42=58$ chính xác.",
+          "points": 1.5
+        },
+        {
+          "criterion": "Kết luận rõ kết quả; không suy diễn thêm dữ kiện.",
+          "points": 0.5
+        }
+      ],
+      "rubric_total": 4,
+      "common_mistakes": [
+        "Cho rằng $x^2+y^2=(x+y)^2$ và bỏ qua tích $xy$.",
+        "Quên hệ số $2$ trước $xy$.",
+        "Tự giải tìm riêng $x,y$ dù đề không yêu cầu."
+      ],
+      "remediation_links": [
+        {
+          "label": "Ôn CĐ05 – Hằng đẳng thức Core",
+          "href": "../kien-thuc/05-7-hang-dang-thuc/core/"
+        },
+        {
+          "label": "Luyện thêm CT05",
+          "href": "../kien-thuc/05-7-hang-dang-thuc/bai-tap/"
+        }
+      ],
+      "source_refs": [
+        "docs/kien-thuc/05-7-hang-dang-thuc/bai-tap.md#05-ENT-02"
+      ],
+      "academic_review": {
+        "status": "APPROVED",
+        "method": "NOTEBOOKLM_OWNER_SUBMITTED",
+        "packet_id": "MATH-CT05-07-W3B-WR-AUTHORING-R1",
+        "receipt": "review-packets/math-content-cleanup/MATH-CT05-07-W3B-WR-AUTHORING-R1_NOTEBOOKLM_VERDICT_RECEIPT.md"
+      },
+      "hint_steps": [
+        "Có hằng đẳng thức nào liên hệ $(x+y)^2$, $x^2+y^2$ và tích $xy$?",
+        "Từ $(x+y)^2=x^2+2xy+y^2$, hãy chuyển vế để biểu diễn $x^2+y^2$ theo tổng và tích đã biết. Sau đó mới thay số."
+      ],
+      "full_solution_markdown": "1. Bình phương tổng: $(x+y)^2=x^2+2xy+y^2$.\n2. Suy ra $x^2+y^2=(x+y)^2-2xy$.\n3. Thay $x+y=10$, $xy=21$: $x^2+y^2=10^2-2\\cdot21=100-42=58$.\n4. Kết luận: $x^2+y^2=\\boxed{58}$. Không cần xác định riêng hai biến.",
+      "method_rationale_markdown": "Dùng trực tiếp hằng đẳng thức bình phương của một tổng để tính đại lượng cần tìm từ tổng và tích đã biết, tránh giải riêng $x$ và $y$ khi không cần thiết.",
+      "remediation_markdown": "Ôn CĐ05 Core về bình phương của một tổng và luyện lại cách chuyển vế. Phân biệt $(x+y)^2$ với $x^2+y^2$; luôn nhớ hạng tử $2xy$.",
+      "gates_core": false,
+      "auto_readiness_credit": false
+    },
+    {
+      "exercise_id": "WX05-CH-001",
+      "exercise_kind": "anchor",
+      "topic_id": "CT05",
+      "topic_slug": "05-7-hang-dang-thuc",
+      "topic_title": "7 hằng đẳng thức đáng nhớ",
+      "problem_type_id": "constrained-three-variable-cubic-identity",
+      "problem_type_title": "Chứng minh đẳng thức lập phương ba biến có giả thiết",
+      "title": "Chứng minh tổng ba lập phương khi a + b + c = 0",
+      "learning_layer": "Specialized-Challenge",
+      "level": "CHALLENGE",
+      "learner_label": "Thử thách",
+      "grade_overlay": [
+        8
+      ],
+      "skills": [
+        "lap-phuong-tong",
+        "rut-gon-hdt",
+        "dat-nhan-tu-chung"
+      ],
+      "prerequisites": [
+        "lap-phuong-tong",
+        "dau-am-luy-thua",
+        "dat-nhan-tu-chung"
+      ],
+      "estimated_minutes": 14,
+      "problem_markdown": "Cho $a,b,c$ là các số thực thỏa mãn $a+b+c=0$. Chứng minh $a^3+b^3+c^3=3abc$. **Nêu rõ nơi sử dụng giả thiết** trong lời chứng minh.",
+      "figure_uri": null,
+      "figure_alt": null,
+      "solution_steps": [
+        {
+          "step_id": "S1",
+          "title": "Dùng giả thiết",
+          "content_markdown": "Vì $a+b+c=0$, ta có $c=-(a+b)$."
+        },
+        {
+          "step_id": "S2",
+          "title": "Thế vào tổng lập phương",
+          "content_markdown": "$a^3+b^3+c^3=a^3+b^3-(a+b)^3$."
+        },
+        {
+          "step_id": "S3",
+          "title": "Khai triển và đặt nhân tử chung",
+          "content_markdown": "$(a+b)^3=a^3+3a^2b+3ab^2+b^3$, do đó $a^3+b^3+c^3=-3a^2b-3ab^2=-3ab(a+b)$."
+        },
+        {
+          "step_id": "S4",
+          "title": "Kết luận",
+          "content_markdown": "Vì $a+b=-c$, suy ra $-3ab(a+b)=-3ab(-c)=3abc$. Điều phải chứng minh."
+        }
+      ],
+      "rubric": [
+        {
+          "criterion": "Rút đúng $c=-(a+b)$ từ giả thiết và thế vào tổng lập phương.",
+          "points": 1
+        },
+        {
+          "criterion": "Khai triển $(a+b)^3$, thu gọn đúng dấu và hệ số.",
+          "points": 1.5
+        },
+        {
+          "criterion": "Đặt nhân tử đúng $-3ab(a+b)$.",
+          "points": 1
+        },
+        {
+          "criterion": "Dùng lại $a+b=-c$ và kết luận $=3abc$.",
+          "points": 0.5
+        }
+      ],
+      "rubric_total": 4,
+      "common_mistakes": [
+        "Nhầm $[-(a+b)]^3=(a+b)^3$ (sai dấu).",
+        "Quên các hạng tử giữa $3a^2b$ và $3ab^2$ khi khai triển.",
+        "Khẳng định đẳng thức đúng vô điều kiện và quên giả thiết $a+b+c=0$."
+      ],
+      "remediation_links": [
+        {
+          "label": "Ôn CĐ05 – Hằng đẳng thức Core",
+          "href": "../kien-thuc/05-7-hang-dang-thuc/core/"
+        },
+        {
+          "label": "Luyện thêm CT05",
+          "href": "../kien-thuc/05-7-hang-dang-thuc/bai-tap/"
+        }
+      ],
+      "source_refs": [
+        "docs/kien-thuc/05-7-hang-dang-thuc/bai-tap.md#05-CH-01"
+      ],
+      "academic_review": {
+        "status": "APPROVED",
+        "method": "NOTEBOOKLM_OWNER_SUBMITTED",
+        "packet_id": "MATH-CT05-07-W3B-WR-AUTHORING-R1",
+        "receipt": "review-packets/math-content-cleanup/MATH-CT05-07-W3B-WR-AUTHORING-R1_NOTEBOOKLM_VERDICT_RECEIPT.md"
+      },
+      "hint_steps": [
+        "Từ giả thiết $a+b+c=0$, hãy biểu diễn một biến theo hai biến còn lại.",
+        "Thay $c=-(a+b)$ vào $a^3+b^3+c^3$, chú ý $[-(a+b)]^3=-(a+b)^3$.",
+        "Khai triển lập phương, thu gọn, rồi đặt nhân tử chung để xuất hiện lại biểu thức $c=-(a+b)$."
+      ],
+      "full_solution_markdown": "1. Vì $a+b+c=0$, ta có $c=-(a+b)$.\n2. Do đó $a^3+b^3+c^3=a^3+b^3-(a+b)^3$.\n3. Khai triển $(a+b)^3=a^3+3a^2b+3ab^2+b^3$, suy ra $a^3+b^3+c^3=-3a^2b-3ab^2=-3ab(a+b)$.\n4. Theo giả thiết, $a+b=-c$, nên $-3ab(a+b)=-3ab(-c)=3abc$. **Điều phải chứng minh.**",
+      "method_rationale_markdown": "Thế $c=-(a+b)$ đưa bài toán ba biến về khai triển lập phương một tổng; đặt nhân tử chung rồi dùng lại giả thiết để kết thúc chứng minh.",
+      "remediation_markdown": "Ôn CĐ05 Core về lập phương của một tổng, dấu âm trước lũy thừa bậc lẻ và đặt nhân tử chung. Đây là bài thử thách tự chọn; chưa giải được không có nghĩa là yếu Core.",
+      "gates_core": false,
+      "auto_readiness_credit": false
     }
   ],
   "extension_policy": [
@@ -6308,7 +6516,7 @@
       "CT23",
       "CT24"
     ],
-    "exercise_count": 65,
+    "exercise_count": 67,
     "batches": [
       {
         "batch_id": "PILOT_R1",
@@ -6385,6 +6593,12 @@
       {
         "batch_id": "CT05_07_W3A_WR_R1",
         "packet_id": "MATH-CT05-07-W3A-WR-R1-20261016",
+        "count": 2,
+        "status": "PUBLISHED"
+      },
+      {
+        "batch_id": "CT05_07_W3B_WR_AUTHORING_R1",
+        "packet_id": "MATH-CT05-07-W3B-WR-AUTHORING-R1",
         "count": 2,
         "status": "PUBLISHED"
       }
