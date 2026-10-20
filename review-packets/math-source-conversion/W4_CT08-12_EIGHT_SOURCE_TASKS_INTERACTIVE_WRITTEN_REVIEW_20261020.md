@@ -52,7 +52,7 @@ Giải \((x-4)(2x+1)=0\).
     \]
 ~~~
 
-**Dispostion:** `WRITTEN_CANDIDATE` · CT08 KNTT-Core / ROUTINE_PRACTICE · `equation-zero-product-two-branches`.
+**Disposition:** `WRITTEN_CANDIDATE` · CT08 KNTT-Core / ROUTINE_PRACTICE · `equation-zero-product-two-branches`.
 
 **Why this task, not a numerical clone:** Đã có 12 MCQ dạng pt-tich, nhưng hai bài Written CT08 hiện không yêu cầu trình bày đủ các nhánh nghiệm và kiểm tra lại.
 
@@ -90,7 +90,7 @@ Một số cộng 7 rồi nhân 2 được 30. Tìm số đó.
     \]
 ~~~
 
-**Dispostion:** `REUSE_INTERACTIVE_NO_NEW_MCQ` · CT08 KNTT-Core / existing interactive Practice · `word-to-equation-order`.
+**Disposition:** `REUSE_INTERACTIVE_NO_NEW_MCQ` · CT08 KNTT-Core / existing interactive Practice · `word-to-equation-order`.
 
 **Why this task, not a numerical clone:** MCQ được tái sử dụng có chung năng lực lập phương trình từ thao tác nối tiếp, nhưng KHÔNG phải cùng nguyên văn hoặc cùng số liệu bài nguồn.
 
@@ -128,7 +128,7 @@ Một hệ biểu diễn hai đường thẳng song song phân biệt. Hệ có 
     Hai đường song song phân biệt không có giao điểm, nên hệ vô nghiệm.
 ~~~
 
-**Dispostion:** `REUSE_INTERACTIVE_NO_NEW_MCQ` · CT09 KNTT-Core / existing interactive Practice · `parallel-distinct-system-interpretation`.
+**Disposition:** `REUSE_INTERACTIVE_NO_NEW_MCQ` · CT09 KNTT-Core / existing interactive Practice · `parallel-distinct-system-interpretation`.
 
 **Why this task, not a numerical clone:** MCQ đã có biểu thức (x+y=2,,2x+2y=5) minh họa trực tiếp hệ hai đường thẳng song song phân biệt. Không cần phát sinh thêm một câu trùng.
 
@@ -172,7 +172,7 @@ Giải hệ \(\frac{x}{2}+\frac{y}{3}=2,\ x-y=1\).
     \]
 ~~~
 
-**Dispostion:** `WRITTEN_CANDIDATE` · CT09 KNTT-Core / DEEP_ANCHOR · `system-clear-denominator-substitute-verify`.
+**Disposition:** `WRITTEN_CANDIDATE` · CT09 KNTT-Core / DEEP_ANCHOR · `system-clear-denominator-substitute-verify`.
 
 **Why this task, not a numerical clone:** 8 WX09 đã có giải hệ và mô hình hóa, nhưng không có anchor chuyên biệt yêu cầu khử mẫu, chọn thế, rồi kiểm nghiệm cặp phân số ở hai phương trình ban đầu.
 
@@ -211,7 +211,7 @@ Tìm giao điểm \(y=x+2\) và \(y=-x+4\).
     Giao điểm là \(I(1;3)\).
 ~~~
 
-**Dispostion:** `WRITTEN_CANDIDATE` · CT10 Entrance10 / TRANSFER · `line-intersection-by-equating-functions`.
+**Disposition:** `WRITTEN_CANDIDATE` · CT10 Entrance10 / TRANSFER · `line-intersection-by-equating-functions`.
 
 **Why this task, not a numerical clone:** WX10 hiện có một anchor về hệ số góc/giao trục và một anchor về parabol; chưa có Written trình bày cả hoành/tung độ giao điểm hai đường và ý nghĩa nghiệm hệ.
 
@@ -249,7 +249,7 @@ Tính \(\sqrt[3]{-216}\) và rút gọn \(\sqrt[3]{8x^3}\) với \(x\in\mathbb R
     \]
 ~~~
 
-**Dispostion:** `WRITTEN_CANDIDATE` · CT11 KNTT-Core / ROUTINE_PRACTICE · `real-cube-root-negative-variable`.
+**Disposition:** `WRITTEN_CANDIDATE` · CT11 KNTT-Core / ROUTINE_PRACTICE · `real-cube-root-negative-variable`.
 
 **Why this task, not a numerical clone:** 12 MCQ về căn bậc ba và 3 WX11 về căn bậc hai; chưa có Written riêng yêu cầu giải thích (sqrt[3]{x^3}=x) với (xinmathbb R). Độ khó thấp; cho phép NotebookLM kết luận REUSE thay vì thêm WX.
 
@@ -289,7 +289,7 @@ Giải \(\sqrt{x+1}=x-1\).
     Chỉ \(x=3\) thỏa.
 ~~~
 
-**Dispostion:** `WRITTEN_CANDIDATE` · CT11 Entrance10 / DEEP_ANCHOR · `radical-equation-square-and-check`.
+**Disposition:** `WRITTEN_CANDIDATE` · CT11 Entrance10 / DEEP_ANCHOR · `radical-equation-square-and-check`.
 
 **Why this task, not a numerical clone:** 3 MCQ tìm x từ căn có mức thao tác nhanh, nhưng không có Written CT11 chuyên biệt yêu cầu miền (xge1), bình phương tương đương có điều kiện, kiểm tra nghiệm ngoại lai.
 
@@ -328,7 +328,7 @@ Cho \(x^2+x-6=0\) có hai nghiệm thực. Xét dấu hai nghiệm bằng Viète
     nên hai nghiệm trái dấu.
 ~~~
 
-**Dispostion:** `WRITTEN_CANDIDATE` · CT12 Entrance10 / TRANSFER · `viete-root-sign-without-solving`.
+**Disposition:** `WRITTEN_CANDIDATE` · CT12 Entrance10 / TRANSFER · `viete-root-sign-without-solving`.
 
 **Why this task, not a numerical clone:** 6 MCQ dấu nghiệm và 2 WX12 giải phương trình/lập phương trình Viète; chưa có Written yêu cầu kết luận dấu nghiệm mà **không giải riêng nghiệm** và giải thích điều kiện tồn tại hai nghiệm thực.
 
