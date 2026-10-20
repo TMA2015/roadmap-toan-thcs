@@ -206,7 +206,13 @@ const richWave3Path="docs/assets/data/practice/04-bieu-thuc-dai-so-rich-w1-wave3
 const richWave3Count=exists(richWave3Path)?(read(richWave3Path).questions||[]).length:0;
 const richWave4Path="docs/assets/data/practice/21-thong-ke-rich-w1-wave4-v1.json";
 const richWave4Count=exists(richWave4Path)?(read(richWave4Path).questions||[]).length:0;
-assert.equal(practiceQuestions,3153+implementationDelta+richPilotCount+richWave2Count+richWave3Count+richWave4Count+1+1);
+// Exactly one Owner-approved, independently reviewed CT07 P1 MCQ extension.
+const ct07ApprovedExtra=read("docs/assets/data/practice/07-phan-thuc-dai-so-v1-05.json").questions;
+assert.deepEqual(ct07ApprovedExtra.map(q=>q.id),["RAT07V1_121"]);
+assert.equal(ct07ApprovedExtra[0].authoring_review?.status,"PASS");
+assert.equal(ct07ApprovedExtra[0].authoring_review?.packet_id,
+ "MATH-CT05-07-W3-D1D6-P1-MINIMAL-DELTA-R0-20261020");
+assert.equal(practiceQuestions,3153+implementationDelta+richPilotCount+richWave2Count+richWave3Count+richWave4Count+1+1+ct07ApprovedExtra.length);
 assert.equal(writtenCoverageR1Baseline.length,54);
 assert.equal((anchors.anchors||[]).length,11);
 const out=process.argv[2];

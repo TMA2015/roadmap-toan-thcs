@@ -16,7 +16,7 @@ assert.equal(r.source_verified_reviewed_exception.reviewed_notation,4);
 assert.equal(r.source_verified_reviewed_exception.reviewed_additive_group_metadata,120);
 assert.equal(r.shadow_family_candidate_count,2900);
 assert.equal(r.hold_for_policy_pin_regeneration,150);
-assert.equal(r.new_catalog_items_excluded,59);
+assert.equal(r.new_catalog_items_excluded,60);
 assert.equal(r.source_files.length,5);
 assert.equal(r.source_files.reduce((n,x)=>n+x.item_count,0),150);
 assert.equal(r.source_files.reduce((n,x)=>n+x.notation_only,0),4);

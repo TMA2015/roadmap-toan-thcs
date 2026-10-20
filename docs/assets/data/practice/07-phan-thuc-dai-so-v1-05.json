@@ -1,0 +1,44 @@
+{
+  "version": 2,
+  "schema": "practice-question-chunk-v1",
+  "bank_id": "RAT07-V1-05",
+  "topic": {
+    "id": "07-phan-thuc-dai-so",
+    "title": "Phân thức đại số"
+  },
+  "questions": [
+    {
+      "id": "RAT07V1_121",
+      "question": "Cho \\(Q=\\frac{x^2-1}{x^2+2x+1}:\\frac{x-1}{x+1}\\), với \\(x\\in\\mathbb R\\). **Điều kiện xác định đầy đủ của biểu thức ban đầu** là gì?",
+      "options": [
+        "\\(x\\ne-1\\).",
+        "\\(x\\ne1\\).",
+        "\\(x\\ne-1\\) và \\(x\\ne1\\).",
+        "Mọi \\(x\\in\\mathbb R\\)."
+      ],
+      "answer": 2,
+      "tags": {
+        "topic": "phan-thuc-dai-so",
+        "skill": [
+          "dieu-kien-xac-dinh",
+          "chia-phan-thuc"
+        ],
+        "type": "giu-dieu-kien"
+      },
+      "difficulty": "intermediate",
+      "explanation": "Điều kiện xác định ban đầu: mẫu \\(x^2+2x+1=(x+1)^2\\ne0\\) và mẫu số chia \\(x+1\\ne0\\), nên \\(x\\ne-1\\). Riêng **phân thức làm số chia phải khác 0**, tức \\(\\frac{x-1}{x+1}\\ne0\\), suy ra thêm \\(x\\ne1\\). Do đó đáp án C: \\(x\\ne-1\\) và \\(x\\ne1\\). Biểu thức rút gọn bằng \\(1\\) chỉ trên miền đã xác định; không được nhận lại giá trị bị loại.",
+      "hints": [
+        "Ghi các điều kiện để mẫu thức ban đầu khác \\(0\\); kiểm tra riêng **phân thức đứng sau dấu chia phải khác \\(0\\)**, không chỉ mẫu thức của nó."
+      ],
+      "authoring_review": {
+        "status": "PASS",
+        "method": "INDEPENDENT_NOTEBOOKLM_CONTENT_REVIEW",
+        "packet_id": "MATH-CT05-07-W3-D1D6-P1-MINIMAL-DELTA-R0-20261020",
+        "receipt": "review-packets/math-content-cleanup/MATH-CT05-07-W3-P1-MCQ-R1-RESULT.md",
+        "original_candidate_id": "P1-CT07-DIV-DOMAIN-R0",
+        "source_item_id": "07-WR-09",
+        "clearance": "ACADEMIC_AUTHORING_ONLY_OWNER_PUBLICATION_APPROVED_20261020"
+      }
+    }
+  ]
+}

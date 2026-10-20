@@ -51,6 +51,21 @@ function classify(item,{receiptText,ct09Row,extension,ct09ChunkSha}){
  requireSafe(Array.isArray(q.options)&&q.options.length>=2&&
    Number.isInteger(q.answer)&&q.answer>=0&&q.answer<q.options.length,
    "MCQ_CONTRACT_INVALID_"+q.id);
+ if(topic_id==="CT07" && q.id==="RAT07V1_121"){
+   const rec="review-packets/math-content-cleanup/MATH-CT05-07-W3-P1-MCQ-R1-RESULT.md";
+   const verdict=receiptText(rec);
+   requireSafe(source_file==="07-phan-thuc-dai-so-v1-05.json" &&
+     q.authoring_review?.status==="PASS" &&
+     q.authoring_review?.packet_id===
+       "MATH-CT05-07-W3-D1D6-P1-MINIMAL-DELTA-R0-20261020" &&
+     verdict.includes("CANDIDATE_ID|P1-CT07-DIV-DOMAIN-R0") &&
+     verdict.includes("OVERALL|PASS_FOR_AUTHORING_REVIEW"),
+     "CT07_P1_INDEPENDENT_AUTHORING_RECEIPT_MISSING");
+   return {kind:"MCQ",prior_review_status:"CT07_P1_AUTHORING_PASS_NO_CREDIT",
+     receipt:rec,source_item_id:"07-WR-09",wave:"CT07_P1",
+     exact_taxonomy_mapping_approved:false,stable_option_identity_approved:false,
+     mastery_or_readiness_approved:false};
+ }
  if(topic_id==="CT09"){
    const row=ct09Row.get(q.id);
    requireSafe(!!row&&source_file===extension.source_file.name &&
@@ -82,9 +97,9 @@ function auditNewItems({root=process.cwd(),auditR23=auditManifests}={}){
  const json=rel=>JSON.parse(repoRead(rel).toString("utf8"));
  const r23=auditR23({root});
  requireSafe(r23.summary.historic_policy_rows===3114 &&
-   r23.summary.candidate_questions===3173 &&
-   r23.summary.new_unreviewed_ids===59 &&
-   r23.summary.mcq_new_items===49 && r23.summary.rich_new_items===10 &&
+   r23.summary.candidate_questions===3174 &&
+   r23.summary.new_unreviewed_ids===60 &&
+   r23.summary.mcq_new_items===50 && r23.summary.rich_new_items===10 &&
    r23.summary.shared_policy_ids===3114 && r23.summary.missing_policy_ids===0,
    "BASE_CATALOG_CHANGED");
  const ext=json(CT09EXT);
@@ -143,19 +158,20 @@ function auditNewItems({root=process.cwd(),auditR23=auditManifests}={}){
    if(q.prior_review_status==="NO_ITEM_SPECIFIC_REVIEW_RECEIPT_LINKED_BY_R26")
      group.other_mcq_without_item_receipt++;
  }
- requireSafe(output.length===59 &&
-    output.filter(q=>q.kind==="MCQ").length===49 &&
+ requireSafe(output.length===60 &&
+    output.filter(q=>q.kind==="MCQ").length===50 &&
     output.filter(q=>q.kind==="RICH_TYPED").length===10 &&
     output.filter(q=>q.prior_review_status==="CT09_P1C2_EXACT_SOURCE_REVIEWED").length===9 &&
     output.filter(q=>q.prior_review_status==="PRIOR_WAVE_REVIEW_OR_RELEASE_REFERENCED").length===10 &&
     output.filter(q=>q.prior_review_status==="NO_ITEM_SPECIFIC_REVIEW_RECEIPT_LINKED_BY_R26").length===40,
+     output.filter(q=>q.prior_review_status==="CT07_P1_AUTHORING_PASS_NO_CREDIT").length===1,
     "REVIEW_BUCKETS_CHANGED");
- requireSafe(Object.keys(groups).length===6,"NEW_TOPIC_DISTRIBUTION_CHANGED");
+ requireSafe(Object.keys(groups).length===7,"NEW_TOPIC_DISTRIBUTION_CHANGED");
  return Object.freeze({
    schema:"math-phase4-r26-practice-new-item-register-qa-v1",
    status:"SOURCE_RECEIPT_CLASSIFICATION_QA_ONLY",
    source_r23:"scripts/prototypes/math-v2-practice-manifest-drift-r23.js",
-   total:59,mcq:49,rich:10,
+   total:60,mcq:50,rich:10,
    known_ct09_exact_reviewed:9,rich_prior_review_or_release_linked:10,
    mcq_without_item_specific_receipt_link:40,
    topic_groups:groups,
@@ -169,6 +185,6 @@ function auditNewItems({root=process.cwd(),auditR23=auditManifests}={}){
 module.exports={auditNewItems,classify,richSources};
 if(require.main===module){
  const r=auditNewItems();
- console.log("PASS R26 59-item exact candidate register; QA only and no Skill credit");
+ console.log("PASS R26 60-item candidate register: one independently authoring-reviewed CT07 MCQ; no Skill credit");
  console.log(JSON.stringify(r,null,2));
 }

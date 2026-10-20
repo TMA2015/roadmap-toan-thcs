@@ -35,11 +35,21 @@ function reconcile({root=process.cwd(),readBytes=(rel)=>fs.readFileSync(path.joi
    base.no_family_rows===214 && base.held_rows===150,
    "BASELINE_DRIFT_NOT_REVIEWED");
  const candidate=auditManifests({root});
+ // Academic-authoring PASS + Owner publication approval permit one visible
+ // Practice MCQ, never historical source-policy/Skill/Mastery credit.
+ const add=json(BANK+"07-phan-thuc-dai-so-v1-05.json").questions;
+ need(add.length===1 && add[0].id==="RAT07V1_121" &&
+   add[0].authoring_review?.status==="PASS" &&
+   add[0].authoring_review?.packet_id===
+     "MATH-CT05-07-W3-D1D6-P1-MINIMAL-DELTA-R0-20261020" &&
+   readBytes("review-packets/math-content-cleanup/MATH-CT05-07-W3-P1-MCQ-R1-RESULT.md")
+    .toString("utf8").includes("OVERALL|PASS_FOR_AUTHORING_REVIEW"),
+   "CT07_P1_ONE_APPROVED_MCQ_NOT_VERIFIED");
  need(candidate.summary.historic_policy_rows===3114&&
    candidate.summary.shared_policy_ids===3114&&
-   candidate.summary.candidate_questions===3173&&
-   candidate.summary.new_unreviewed_ids===59&&
-   candidate.summary.mcq_new_items===49&&
+   candidate.summary.candidate_questions===3174&&
+   candidate.summary.new_unreviewed_ids===60&&
+   candidate.summary.mcq_new_items===50&&
    candidate.summary.rich_new_items===10,
    "NEW_PRACTICE_CATALOG_DRIFT_NOT_REVIEWED");
  const index=json(INDEX),lock08=json(LOCK08),lock09=json(LOCK09);
@@ -133,7 +143,7 @@ function reconcile({root=process.cwd(),readBytes=(rel)=>fs.readFileSync(path.joi
    shadow_family_candidate_count:2750+150,
    formative_no_family:214,
    hold_for_policy_pin_regeneration:150,
-   new_catalog_items_excluded:59,
+   new_catalog_items_excluded:60,
    source_files:detail,
    guards:{learner_data_read:false,learner_data_written:false,
      revised_taxonomy_policy_written:false,new_source_pins_authorized:false,

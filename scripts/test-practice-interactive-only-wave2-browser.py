@@ -30,7 +30,8 @@ with sync_playwright() as pw:
             assert page.locator('[data-practice-bank-v2]').count()==1,slug
             page.locator('[data-practice-bank-v2] .practice-option').first.wait_for(state="visible",timeout=18000)
             assert page.locator(".practice-title").count()==1,slug
-            assert page.locator(".practice-subtitle").inner_text().strip()=="Bộ đề 120 câu",slug
+            expected = 121 if slug == "07-phan-thuc-dai-so" else 120
+            assert page.locator(".practice-subtitle").inner_text().strip()==f"Bộ đề {expected} câu",slug
             assert page.locator('.practice-progress').inner_text().strip().startswith("Câu 1/10"),slug
             assert page.locator('.md-content__inner h2').filter(has_text="Luyện tập tương tác").count()==0,slug
             assert page.locator('[data-legacy-exercises]').count()==0,slug
@@ -39,6 +40,6 @@ with sync_playwright() as pw:
             assert "Xem lời giải" not in text and "Theo dõi sau khi luyện" not in text,slug
             assert page.evaluate("localStorage.getItem('math-wave2-readonly')")=="preserved"
         assert not errors,(width,errors)
-        print("PASS CT05–07 Practice",width,"px, 120-question banks, no old paper blocks")
+        print("PASS CT05–07 Practice",width,"px, 120/120/121-question banks, no old paper blocks")
         ctx.close()
     browser.close()
