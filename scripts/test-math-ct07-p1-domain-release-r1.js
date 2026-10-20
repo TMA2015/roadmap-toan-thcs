@@ -8,7 +8,7 @@ const parse=p=>JSON.parse(read(p).toString("utf8"));
 const dir="docs/assets/data/practice/";
 const prefix="07-phan-thuc-dai-so-v1-";
 const sha=["3bf6305a57286b92c9c6a2486c94eadcff0d9163","2294a3f9d93b01b70036167713a3940fea367dca","9297d644a65c09b8c8ca8cc4b3f81cc194764360","b1ba2cc3664cfc2cda13fdafe4655f744130c833"];
-const blob=b=>crypto.createHash("sha1").update(Buffer.from("blob "+b.length+"\\0")).update(b).digest("hex");
+const blob=b=>crypto.createHash("sha1").update(Buffer.concat([Buffer.from("blob "+b.length+" "),Buffer.from([0])])).update(b).digest("hex");
 const old=[];
 for(let i=1;i<=4;i++){
  const p=dir+prefix+"0"+i+".json";
@@ -46,6 +46,7 @@ assert(receipt.includes("OVERALL|PASS_FOR_AUTHORING_REVIEW"));
 assert(receipt.includes("EXPECTED=1")&&receipt.includes("REVIEWED=1"));
 const written=parse("docs/assets/data/written-exercises/written-exercise-library-v1.json");
 assert.equal(written.exercises.length,69);
+assert.equal(blob(read("docs/assets/data/written-exercises/written-exercise-library-v1.json")),"eed3fa0cbae29fd4fdb9daaeac9ef36c3744b665","Published 69 Written content must remain unchanged");
 for(const topic of ["05-7-hang-dang-thuc","06-phan-tich-da-thuc"]){
  assert.equal([1,2,3,4].flatMap(i=>parse(dir+topic+"-v1-0"+i+".json").questions).length,120);
 }
