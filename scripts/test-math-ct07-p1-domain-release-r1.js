@@ -49,10 +49,11 @@ assert(written.exercises.length>=69,"historical 69 Written entries must not be r
 const historic=JSON.parse(JSON.stringify(written));
 historic.exercises=historic.exercises.slice(0,69);
 historic.published_scope.exercise_count=69;
+historic.snapshot_date="2026-10-20";
 const appended=historic.published_scope.batches.filter(x=>x.batch_id==="W4_CT08_12_WRITTEN_R1");
 assert(appended.length<=1);
 if(appended.length) {
- assert(appended[0].count===5 && appended[0].status==="PENDING_OWNER_RELEASE_APPROVAL");
+ assert(appended[0].count===5 && appended[0].status==="PUBLISHED" && written.exercises.length===74,"W4 five Owner-approved additions and no other changes");
  historic.published_scope.batches=historic.published_scope.batches.filter(x=>x.batch_id!=="W4_CT08_12_WRITTEN_R1");
 }
 assert.equal(blob(Buffer.from(JSON.stringify(historic,null,2)+"\n")),"eed3fa0cbae29fd4fdb9daaeac9ef36c3744b665","Historical 69 Written JSON records + metadata must remain unchanged");
