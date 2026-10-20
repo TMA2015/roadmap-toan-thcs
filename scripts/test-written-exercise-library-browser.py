@@ -119,6 +119,29 @@ with sync_playwright() as p:
         new_challenge = page.locator(".written-exercise-card#wx05-ch-001")
         assert cards.count() == 1 and new_challenge.count() == 1, (device, "reviewed CT05 specialized challenge")
         assert new_challenge.locator('[data-help-target="hints"]').inner_text() == "Gợi ý 1/3"
+
+        # W3C 2/2 authoring PASS: optional CT07 Entrance10 and open-choice Challenge.
+        topic.select_option("CT07")
+        level.select_option("ENTRANCE10")
+        w3c_ent = page.locator(".written-exercise-card#wx07-ent-001")
+        assert cards.count() == 1 and w3c_ent.count() == 1, (device, "W3C integer-value entrance anchor")
+        assert w3c_ent.locator(".written-help-action").count() == 5, (device, "W3C full deep help")
+        ent_hints = w3c_ent.locator('[data-help-target="hints"]')
+        assert ent_hints.inner_text() == "Gợi ý 1/3", (device, "W3C Entrance10 three staged hints")
+        ent_hints.click()
+        ent_hints.click()
+        ent_hints.click()
+        assert w3c_ent.locator(".written-hint-step").count() == 3, (device, "W3C Entrance10 progressive hints")
+        level.select_option("CHALLENGE")
+        w3c_ch = page.locator(".written-exercise-card#wx07-ch-001")
+        assert cards.count() == 1 and w3c_ch.count() == 1, (device, "W3C open-choice challenge")
+        assert "Tự chọn" in w3c_ch.inner_text(), (device, "W3C student chooses expression")
+        assert "Trước khi giải" in w3c_ch.inner_text(), (device, "W3C plan-first requirement")
+        assert w3c_ch.locator(".written-help-action").count() == 5, (device, "W3C challenge full deep help")
+        w3c_ch.locator('[data-help-target="solution"]').click()
+        assert "ví dụ" in w3c_ch.locator('[data-help-panel="solution"]').inner_text().lower(), (device, "example not unique answer")
+        assert page.evaluate("(k) => localStorage.getItem(k)", SENTINEL_KEY) == before, (device, "W3C hints and solution do not write learner evidence")
+
         level.select_option("all")
 
 
