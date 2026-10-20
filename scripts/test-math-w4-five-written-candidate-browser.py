@@ -20,7 +20,7 @@ expected=[
     ("CT12","WX12-QUA-003","ENTRANCE10"),
 ]
 assert [(x["topic_id"],x["exercise_id"],x["level"]) for x in new]==expected
-assert all(x["academic_review"]["publication_gate"]=="OWNER_RELEASE_APPROVAL_PENDING" for x in new)
+assert all(x["academic_review"]["publication_gate"]=="OWNER_RELEASE_APPROVED_20261021" for x in new)
 
 with sync_playwright() as pw:
     browser=pw.chromium.launch(executable_path=CHROME,headless=True,args=["--no-sandbox","--disable-dev-shm-usage"])
