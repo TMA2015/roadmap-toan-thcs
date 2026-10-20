@@ -32,7 +32,11 @@ for slug, (locked_blob, manifest_name, old_items) in SOURCE.items():
     for part in manifest["sources"]:
         data = json.loads((Path("docs/assets/data/practice") / part).read_text(encoding="utf-8"))
         ids.extend(q["id"] for q in data["questions"])
-    assert len(ids) == manifest["question_count"] == 120 and len(set(ids)) == 120, slug
+    expected_count = 121 if slug == "07-phan-thuc-dai-so" else 120
+    assert len(ids) == manifest["question_count"] == expected_count and len(set(ids)) == expected_count, slug
+    if slug == "07-phan-thuc-dai-so":
+        assert ids[:120] == [f"RAT07V1_{i:03d}" for i in range(1, 121)]
+        assert ids[120:] == ["RAT07V1_121"]
     page = SimpleNamespace(file=SimpleNamespace(src_path=source_path))
     visible = on_page_markdown(md, page, None, None)
     topic = "CT" + prefix
@@ -48,7 +52,7 @@ for slug, (locked_blob, manifest_name, old_items) in SOURCE.items():
     assert '???' not in visible and "Luyện tự luận & trình bày" not in visible
     assert "Theo dõi sau khi luyện" not in visible and "Liên kết Roadmap" not in visible
     assert not any(item in visible for item in item_ids), slug
-    print(f"PASS {topic}: 120 unique interactive IDs, {len(item_ids)} preserved old IDs, one clean Practice entry")
+    print(f"PASS {topic}: {expected_count} unique interactive IDs, {len(item_ids)} preserved old IDs, one clean Practice entry")
 assert total_old_ids == 40, total_old_ids
 other = "kien-thuc/99-no-such-topic/bai-tap.md"
 assert on_page_markdown("# No pilot\n", SimpleNamespace(file=SimpleNamespace(src_path=other)), None, None) == "# No pilot\n"
