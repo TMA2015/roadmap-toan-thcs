@@ -28,10 +28,11 @@ assert.equal(new Set(all.map(x=>x.exercise_id)).size,74);
 const review=lib.published_scope.batches.at(-1);
 assert.deepEqual(review,{batch_id:"W4_CT08_12_WRITTEN_R1",
  packet_id:"MATH-W4-CT08-12-8SOURCE-CONVERSION-R0-20261020",
- count:5,status:"PENDING_OWNER_RELEASE_APPROVAL"});
+ count:5,status:"PUBLISHED"});
 const old=JSON.parse(JSON.stringify(lib));
 old.exercises=old.exercises.slice(0,69);
 old.published_scope.exercise_count=69;
+old.snapshot_date="2026-10-20";
 old.published_scope.batches.pop();
 assert.equal(blob(Buffer.from(JSON.stringify(old,null,2)+"\n")),"eed3fa0cbae29fd4fdb9daaeac9ef36c3744b665",
  "immutable 69 original Written records and original metadata changed");
@@ -39,6 +40,9 @@ const receiptPath="review-packets/math-source-conversion/W4_CT08-12_NOTEBOOKLM_I
 const receipt=text(receiptPath);
 assert(receipt.includes("OVERALL|PASS_FOR_PLACEMENT_AND_AUTHORING"));
 assert(receipt.includes("AUTHORIZATION|NO_LIVE_RELEASE"));
+const owner=text("review-packets/math-source-conversion/W4_CT08-12_OWNER_RELEASE_AUTHORIZATION_20261021.md");
+assert(owner.includes("OWNER_DECISION|APPROVE_RELEASE")&&owner.includes("APPROVAL_CONDITIONAL_ON|FULL_PR_QA_PASS"));
+for(const id of ids)assert(owner.includes(id),"Owner release does not cover "+id);
 assert(receipt.includes("REVIEWED_SOURCE_ITEMS=8"));
 for(let i=0;i<5;i++){
  const q=all[69+i],s=source[i],p="docs/kien-thuc/"+s[0]+"/bai-tap.md";
@@ -49,7 +53,7 @@ for(let i=0;i<5;i++){
  assert.equal(q.academic_review.method,"NOTEBOOKLM_OWNER_SUBMITTED");
  assert.equal(q.academic_review.receipt,receiptPath);
  assert.equal(q.academic_review.packet_id,"MATH-W4-CT08-12-8SOURCE-CONVERSION-R0-20261020");
- assert.equal(q.academic_review.publication_gate,"OWNER_RELEASE_APPROVAL_PENDING");
+ assert.equal(q.academic_review.publication_gate,"OWNER_RELEASE_APPROVED_20261021");
  assert.equal(q.auto_readiness_credit,false);
  assert.equal(q.gates_core,false);
  assert.deepEqual(q.grade_overlay,[i===0?8:9]);
