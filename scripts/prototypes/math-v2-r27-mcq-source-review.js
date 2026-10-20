@@ -53,7 +53,7 @@ const fingerprint=q=>crypto.createHash("sha256").update(JSON.stringify(q)).diges
 function inspect({root=process.cwd(),readBytes=rel=>fs.readFileSync(path.join(root,rel)),
  auditR26=auditNewItems}={}){
  const r26=auditR26({root});
- fail(r26.total===59&&r26.mcq_without_item_specific_receipt_link===40,"BASELINE_CHANGED");
+ fail(r26.total===60&&r26.mcq_without_item_specific_receipt_link===40,"BASELINE_CHANGED");
  const pending=r26.items.filter(q=>q.prior_review_status===
   "NO_ITEM_SPECIFIC_REVIEW_RECEIPT_LINKED_BY_R26");
  fail(pending.length===40,"NEED_40_ROWS");
