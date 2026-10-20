@@ -168,6 +168,8 @@ if(w4pending.length){
     &&x.auto_readiness_credit===false&&x.gates_core===false),
     "pending candidates cannot enable Core/Readiness or silently claim release");
 }
+ok(data.published_scope.batches.every(x=>x.status==="PUBLISHED"),"Owner-authorized W4 and all earlier Written batches marked published");
+ok(data.published_scope.batches.at(-1).batch_id==="W4_CT08_12_WRITTEN_R1" && data.published_scope.batches.at(-1).count===5 && data.exercises.length===74,"five exact authorized W4 Written records");
 ok(data.published_scope?.batches?.filter(x=>x.status==="PUBLISHED").length+
    w4pending.length===data.published_scope?.batches?.length,
    "all historic Written batches remain published; no unregistered pending statuses");
