@@ -65,7 +65,8 @@ const idsInRecon=[...recon.matchAll(/^\| \x60(0[56]-(?:WR|ENT|CH)-\d+)\x60 \|/gm
 assert.deepEqual(idsInReceipt,groups.W3B,"W3B independent 14-ID receipt missing or reordered");
 assert.deepEqual(idsInRecon,groups.W3B,"W3B R3 deployment reconciliation incomplete");
 for(const [label,count] of [["REUSE_EXACT_PRACTICE",3],["REUSE_WRITTEN_CONTEXT",3],["LINK_EXISTING_WX",2],["HOLD_NEW_MCQ",4]]){
-  const got=(recon.match(new RegExp("\\x60"+label+"\\x60","g"))||[]).length;
+  const rows=recon.split("\n").filter(x=>x.startsWith("| "+String.fromCharCode(96))).join("\n");
+  const got=(rows.match(new RegExp("\\x60"+label+"\\x60","g"))||[]).length;
   assert.equal(got,count,label+" partition drift");
 }
 for(const id of ["WX05-ENT-002","WX05-CH-001"]){
