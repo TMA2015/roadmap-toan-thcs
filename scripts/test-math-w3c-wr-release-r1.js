@@ -49,7 +49,7 @@ for(const [i,original,layer,level,label] of [[67,"07-ENT-01","Entrance10","ENTRA
 }
 const ent=xs[67],challenge=xs[68];
 assert(ent.problem_markdown.includes("tất cả")&&ent.full_solution_markdown.includes("-3,-1,1,3"),"integer divisor argument");
-for(const [x,y]of [[-1,0],[1,-2],[3,4],[5,2]])assert.equal((x+1)/(x-2),y);
+for(const [x,y]of [[-1,0],[1,-2],[3,4],[5,2]])assert(Math.abs((x+1)/(x-2)-y)<1e-12,"integer input back-check "+x);
 assert(challenge.problem_markdown.includes("Tự chọn")&&challenge.problem_markdown.includes("ít nhất ba phép tính")&&challenge.problem_markdown.includes("Trước khi giải"));
 assert(challenge.problem_markdown.includes("không phải đáp án duy nhất"),"student-choice vs fixed example");
 assert(challenge.full_solution_markdown.includes("Ví dụ")&&challenge.full_solution_markdown.includes("x\\ne\\pm1"));
