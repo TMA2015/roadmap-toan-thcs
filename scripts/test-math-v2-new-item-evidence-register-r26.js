@@ -12,7 +12,7 @@ assert.equal(a.rich_prior_review_or_release_linked,10);
 assert.equal(a.mcq_without_item_specific_receipt_link,40);
 assert.equal(Object.keys(richSources).length,10);
 assert.equal(a.items.length,60);
-assert.equal(new Set(a.items.map(x=>x.question_id)).size,59);
+assert.equal(new Set(a.items.map(x=>x.question_id)).size,60);
 const topicCounts={CT02:29,CT03:6,CT04:10,CT07:1,CT09:9,CT12:3,CT21:2};
 assert.deepEqual(Object.fromEntries(
  Object.entries(a.topic_groups).map(([k,v])=>[k,v.total]).sort()),topicCounts);
