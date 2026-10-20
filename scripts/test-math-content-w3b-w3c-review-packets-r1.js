@@ -100,7 +100,8 @@ const w3cReceiptIds=[...receipt3c.matchAll(/^(0[67]-(?:WR|ENT|CH)-\d+) \| MATH:P
 const w3cReconIds=[...reconciliation3c.matchAll(/^\| `(0[67]-(?:WR|ENT|CH)-\d+)` \|/gm)].map(x=>x[1]);
 assert.deepEqual(w3cReceiptIds,groups.W3C,"W3C source 14 verdict order incomplete");
 assert.deepEqual(w3cReconIds,groups.W3C,"W3C 14 source-to-live triage order incomplete");
-assert.equal(library.length,69,"W3C Owner-authorized reviewed release: 67 historical + 2 approved");
+assert(library.length>=69,"W3C Owner-authorized 69 historical records preserved before any later append");
+assert.deepEqual(library.slice(67,69).map(x=>x.exercise_id),["WX07-ENT-001","WX07-CH-001"],"W3C pair must remain in original canonical positions");
 for(const [id,legacy] of [["WX07-ENT-001","07-ENT-01"],["WX07-CH-001","07-CH-01"]]){
  assert(authoring3c.includes(id)&&authoring3c.includes(legacy),"W3C written authoring proposal missing "+id);
  assert.equal(library.filter(x=>x.exercise_id===id).length,1,"Owner-approved W3C authoring absent/duplicated: "+id);
