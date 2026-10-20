@@ -117,4 +117,4 @@ for(const [list,id,tokens] of [[live6,"FAC06V1_065",["x^{2} + 5 x + 6","t√°ch h·
 assert.equal((2**2+1)/(2**2-1),5/3,"W3C challenge exemplar x=2 check");
 console.log("PASS W3C: 14/14 owner verdict + exact live triage, 240 practice/67 WX unchanged, two authoring candidates QA only.");
 
-console.log("PASS W3A-WR/W3B/W3C: 3 written drafts, 28 remaining unique, full 40-ID source-locked partition; no live changes");
+console.log("PASS 40-item W3A/W3B/W3C source-locked partition: W3C 14/14 placement PASS received, two new W3C written authoring drafts remain unpublished.");
