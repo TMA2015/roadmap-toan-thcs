@@ -97,7 +97,7 @@ for(const [topic,ev] of Object.entries(a.source_locks.topic_evidence)){
       const historical=JSON.parse(JSON.stringify(current));
       historical.question_count=120;
       historical.sources=historical.sources.slice(0,4);
-      assert.equal(blob(JSON.stringify(historical,null,2)+"\\n"),ev[k].sha,
+      assert.equal(blob(JSON.stringify(historical,null,2)+"\n"),ev[k].sha,
         "historical Grade-8 CT07 manifest changed beyond approved append");
       const appended=json("docs/assets/data/practice/"+current.sources[4]).questions;
       assert.deepEqual(appended.map(q=>q.id),["RAT07V1_121"]);
