@@ -61,7 +61,7 @@ for(const x of data.exercises){
   }
   if(x.level==="CHALLENGE")ok(x.learning_layer==="Specialized-Challenge","challenge layer "+x.exercise_id);
   if(x.exercise_kind==="anchor"){
-    ok(Array.isArray(x.hint_steps)&&x.hint_steps.length===3,"three progressive hints "+x.exercise_id);
+    ok(Array.isArray(x.hint_steps)&&x.hint_steps.length>=2&&x.hint_steps.length<=3,"two or three reviewed progressive hints "+x.exercise_id);
     ok(String(x.full_solution_markdown||"").trim(),"full solution "+x.exercise_id);
     ok(String(x.method_rationale_markdown||"").trim(),"method rationale "+x.exercise_id);
     ok(String(x.remediation_markdown||"").trim(),"remediation markdown "+x.exercise_id);
@@ -181,7 +181,7 @@ ok(yaml.includes("written-exercise-library-v1.js"),"js wired");
 const ui=read("docs/assets/javascripts/written-exercise-library-v1.js");
 const uiCss=read("docs/assets/stylesheets/written-exercise-library-v1.css");
 ok(ui.includes("written-help-actions")&&ui.includes("dataset.helpTarget")&&ui.includes("written-help-panel"),"compact support UI wired");
-ok(ui.includes("hint_steps")&&ui.includes("Gợi ý 1/3")&&ui.includes("Ôn bù kiến thức"),"CT09 P1-B progressive help wired");
+ok(ui.includes("hint_steps")&&ui.includes("Gợi ý 1/${x.hint_steps.length}")&&ui.includes("Ôn bù kiến thức"),"CT09 P1-B progressive help wired");
 ok(ui.includes("learner_label"),"learner-facing anchor labels wired");
 ok(!ui.includes("${x.estimated_minutes} phút"),"estimated minutes hidden from learner-facing written cards");
 ok(data.exercises.every(x=>Number.isFinite(Number(x.estimated_minutes))&&Number(x.estimated_minutes)>0),"estimated minutes retained as internal scheduling metadata");

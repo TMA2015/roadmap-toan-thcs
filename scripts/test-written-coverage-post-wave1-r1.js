@@ -15,9 +15,9 @@ assert.equal(artifact.status,"RECONCILED_NO_FURTHER_R1_AUTHORING_AUTHORIZED");
 assert.equal(decision.clearance,"WRITTEN_COVERAGE_PRIORITY_R1_REVIEW_COMPLETE");
 assert.equal(impl.clearance,"WRITTEN_IMPLEMENTATION_W1_R1_CONTENT_REVIEW_COMPLETE");
 assert.equal(impl.independent_review?.verdict,"PASS");
-assert.equal(lib.exercises.length,65);
-assert.deepEqual(lib.exercises.slice(63).map(x=>x.exercise_id),["WX05-ENT-001","WX06-CH-001"]);
-assert.equal(lib.published_scope.exercise_count,65);
+assert(lib.exercises.length>=65,"preserve original 63+2 Written items");
+assert.deepEqual(lib.exercises.slice(63,65).map(x=>x.exercise_id),["WX05-ENT-001","WX06-CH-001"]);
+assert.equal(lib.published_scope.exercise_count,lib.exercises.length);
 
 const mapByLegacy=new Map();
 for(const m of reg.legacy_mappings||[]){

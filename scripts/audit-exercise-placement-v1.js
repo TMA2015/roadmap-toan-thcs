@@ -64,8 +64,8 @@ const summary={
  paperOnlyReadinessTopics:entries.filter(x=>!x.readiness.interactive).map(x=>x.topic),
  canonicalWrittenCount:written.length
 };
-assert(written.length===65,"Written catalog must reflect exact reviewed 63+2 publication");
-assert.deepStrictEqual(written.slice(63).map(x=>x.exercise_id),["WX05-ENT-001","WX06-CH-001"],"Expected two reviewed W3A-WR additions only");
+assert(written.length>=65,"Written catalog must preserve at least the 63+2 historical W3A exercises");
+assert.deepStrictEqual(written.slice(63,65).map(x=>x.exercise_id),["WX05-ENT-001","WX06-CH-001"],"Expected two reviewed historical W3A-WR additions in original positions");
 assert(summary.interactiveReadinessTopics>=20,"Unexpected Readiness drop");
 if(process.argv.includes("--json"))console.log(JSON.stringify({schema:"math-exercise-placement-inventory-r1",summary,topics:entries},null,2));
 else{

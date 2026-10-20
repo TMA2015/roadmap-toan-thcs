@@ -106,6 +106,21 @@ with sync_playwright() as p:
         topic.select_option("CT05")
         level.select_option("ENTRANCE10")
         assert page.locator(".written-exercise-card#wx05-ent-001").count() == 1, (device, "reviewed Entrance10 visible")
+        new_ent = page.locator(".written-exercise-card#wx05-ent-002")
+        assert cards.count() == 2 and new_ent.count() == 1, (device, "two reviewed CT05 Entrance10 anchors")
+        new_hint = new_ent.locator('[data-help-target="hints"]')
+        assert new_hint.inner_text() == "Gợi ý 1/2", (device, "reviewed two-hint first action")
+        new_hint.click()
+        assert new_ent.locator(".written-hint-step").count() == 1, (device, "W3B hint one")
+        new_hint.click()
+        assert new_ent.locator(".written-hint-step").count() == 2, (device, "W3B hint two")
+        assert "Đã mở 2/2" in new_hint.inner_text(), (device, "no invented third hint")
+        level.select_option("CHALLENGE")
+        new_challenge = page.locator(".written-exercise-card#wx05-ch-001")
+        assert cards.count() == 1 and new_challenge.count() == 1, (device, "reviewed CT05 specialized challenge")
+        assert new_challenge.locator('[data-help-target="hints"]').inner_text() == "Gợi ý 1/3"
+        level.select_option("all")
+
 
         topic.select_option("all")
         level.select_option("all")

@@ -43,8 +43,8 @@ for(const file of files.filter(n=>n.endsWith("-micro-v1.json")&&!loaded.has(n)))
 }
 const byId=new Map([...questions,...micro].map(x=>[x.id,x]));
 const written=parse(path.join(ROOT,"docs/assets/data/written-exercises/written-exercise-library-v1.json")).exercises;
-assert.equal(written.length,65,"W3A-WR reviewed append-only Written count");
-assert.deepEqual(written.slice(63).map(x=>x.exercise_id),["WX05-ENT-001","WX06-CH-001"],"W3A-WR exact two reviewed additions");
+assert(written.length>=65,"W3A-WR canonical historical 65 must remain");
+assert.deepEqual(written.slice(63,65).map(x=>x.exercise_id),["WX05-ENT-001","WX06-CH-001"],"W3A-WR exact two reviewed additions");
 assert.equal(new Set(written.map(x=>x.exercise_id)).size,written.length,"canonical Written IDs unique");
 const writtenById=new Map(written.map(x=>[x.exercise_id,x]));
 const entries=[

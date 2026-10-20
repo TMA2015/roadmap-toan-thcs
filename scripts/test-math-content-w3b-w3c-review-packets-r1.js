@@ -71,9 +71,12 @@ for(const [label,count] of [["REUSE_EXACT_PRACTICE",3],["REUSE_WRITTEN_CONTEXT",
 }
 for(const id of ["WX05-ENT-002","WX05-CH-001"]){
  assert(drafts.includes(id),"W3B written authoring draft missing "+id);
- assert(!library.some(x=>x.exercise_id===id),"Unreviewed W3B draft prematurely entered live library: "+id);
+ assert.equal(library.filter(x=>x.exercise_id===id).length,1,"W3B reviewed append-only Written item missing or duplicated: "+id);
 }
-assert(drafts.includes("NOT approved for publication"),"Do not conflate W3B placement and authoring PASS");
+assert(drafts.includes("NOT approved for publication"),"Historical pre-approval draft must remain immutable");
+const authoring=read("MATH-CT05-07-W3B-WR-AUTHORING-R1_NOTEBOOKLM_VERDICT_RECEIPT.md");
+assert(authoring.includes("OVERALL|PASS_FOR_AUTHORING_REVIEW"),"Authoring review PASS required");
+assert(authoring.includes("EXPECTED=2")&&authoring.includes("REVIEWED=2"),"Review 2/2 required");
 const bank05=[1,2,3,4].flatMap(n=>JSON.parse(fs.readFileSync(
   "docs/assets/data/practice/05-7-hang-dang-thuc-v1-0"+n+".json","utf8")).questions);
 for(const [id,token] of [["ID05V1_041","(x-3)^3"],["ID05V1_058","8 x^{3} - 27"],["ID05V1_091","101^2"]]){
@@ -83,6 +86,6 @@ for(const [id,token] of [["ID05V1_041","(x-3)^3"],["ID05V1_058","8 x^{3} - 27"],
 }
 assert.equal(10**2-2*21,58,"W3B transfer math oracle");
 assert.equal(7**3+3**3+(-10)**3,3*7*3*(-10),"W3B challenge math oracle with sum 0");
-console.log("PASS W3B R3 receipt + canonical reconciliation: 14/14 source IDs, 3 exact MCQs, 2 non-live written drafts, no bank append.");
+console.log("PASS W3B R3 receipt + authoring release: 14/14 source IDs, 3 exact MCQs, 2 approved written anchors, no Practice bank append.");
 
 console.log("PASS W3A-WR/W3B/W3C: 3 written drafts, 28 remaining unique, full 40-ID source-locked partition; no live changes");
