@@ -110,7 +110,7 @@ const authoringVerdict3c=read("MATH-CT05-07-W3C-WR-AUTHORING-R1_NOTEBOOKLM_VERDI
 assert(authoringVerdict3c.includes("PACKET_ID|MATH-CT05-07-W3C-WR-AUTHORING-R1"),"W3C authoring review packet mismatch");
 assert(authoringVerdict3c.includes("EXPECTED=2")&&authoringVerdict3c.includes("REVIEWED=2"),"W3C authoring 2/2 incomplete");
 assert(authoringVerdict3c.includes("OVERALL|PASS_FOR_AUTHORING_REVIEW"),"W3C authoring PASS missing");
-const authoringLines3c=[...authoringVerdict3c.matchAll(/^(WX07-(?:ENT|CH)-001) \\| MATH:PASS \\| HINTS:PASS \\| SOLUTION:PASS \\| RUBRIC:PASS \\| GRADE_AND_LAYER:PASS \\| DISTINCT_FROM_CANONICAL_WX:PASS \\| PRECISE_REVISION:none \\| ITEM_VERDICT:PASS$/gm)].map(x=>x[1]);
+const authoringLines3c=authoringVerdict3c.split("\n").filter(l=>l.startsWith("WX07-")&&l.includes(" | MATH:PASS | HINTS:PASS | SOLUTION:PASS | RUBRIC:PASS | GRADE_AND_LAYER:PASS | DISTINCT_FROM_CANONICAL_WX:PASS | PRECISE_REVISION:none | ITEM_VERDICT:PASS")).map(l=>l.split(" | ")[0]);
 assert.deepEqual(authoringLines3c,["WX07-ENT-001","WX07-CH-001"],"W3C 2 reviewed PASS rows missing or reordered");
 assert(authoringVerdict3c.includes("RELEASE NOT AUTHORIZED"),"W3C owner release gate lost");
 
