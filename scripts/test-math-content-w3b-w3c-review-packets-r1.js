@@ -53,4 +53,36 @@ assert(wr.includes("EXPECTED=3")&&wr.includes("REVIEWED=3"));
 assert(wr.includes("NOT PASSED")&&wr.includes("NO DEPLOY"));
 const library=JSON.parse(fs.readFileSync("docs/assets/data/written-exercises/written-exercise-library-v1.json","utf8")).exercises;
 assert(!library.some(x=>x.exercise_id?.startsWith("PROPOSED-")),"Draft leaked into live WX");
+// Post-review W3B R3 is a source/placement decision, not a permission
+// to change learner-facing MCQ, Written, Skill, Readiness or answer history.
+const receipt=read("MATH-CT05-07-W3B-20261019_NOTEBOOKLM_VERDICT_RECEIPT.md");
+const recon=read("MATH-CT05-07-W3B-R3_CANONICAL_RECONCILIATION.md");
+const drafts=read("MATH-CT05-07-W3B-R0_TWO_WRITTEN_AUTHORING_CANDIDATES.md");
+assert(receipt.includes("PASS_FOR_PLACEMENT_REVIEW"),"W3B verdict missing");
+assert(receipt.includes("REVIEWED=14")&&receipt.includes("EXPECTED=14"),"14-item reviewer count missing");
+const idsInReceipt=[...receipt.matchAll(/^\| (0[56]-(?:WR|ENT|CH)-\d+) \| PASS \|/gm)].map(x=>x[1]);
+const idsInRecon=[...recon.matchAll(/^\| \x60(0[56]-(?:WR|ENT|CH)-\d+)\x60 \|/gm)].map(x=>x[1]);
+assert.deepEqual(idsInReceipt,groups.W3B,"W3B independent 14-ID receipt missing or reordered");
+assert.deepEqual(idsInRecon,groups.W3B,"W3B R3 deployment reconciliation incomplete");
+for(const [label,count] of [["REUSE_EXACT_PRACTICE",3],["REUSE_WRITTEN_CONTEXT",3],["LINK_EXISTING_WX",2],["HOLD_NEW_MCQ",4]]){
+  const rows=recon.split("\n").filter(x=>x.startsWith("| "+String.fromCharCode(96))).join("\n");
+  const got=(rows.match(new RegExp("\\x60"+label+"\\x60","g"))||[]).length;
+  assert.equal(got,count,label+" partition drift");
+}
+for(const id of ["WX05-ENT-002","WX05-CH-001"]){
+ assert(drafts.includes(id),"W3B written authoring draft missing "+id);
+ assert(!library.some(x=>x.exercise_id===id),"Unreviewed W3B draft prematurely entered live library: "+id);
+}
+assert(drafts.includes("NOT approved for publication"),"Do not conflate W3B placement and authoring PASS");
+const bank05=[1,2,3,4].flatMap(n=>JSON.parse(fs.readFileSync(
+  "docs/assets/data/practice/05-7-hang-dang-thuc-v1-0"+n+".json","utf8")).questions);
+for(const [id,token] of [["ID05V1_041","(x-3)^3"],["ID05V1_058","8 x^{3} - 27"],["ID05V1_091","101^2"]]){
+ const matches=bank05.filter(x=>x.id===id);
+ assert.equal(matches.length,1,"Exact existing Practice ID missing: "+id);
+ assert(matches[0].question.includes(token),"W3B exact source prompt no longer agrees with "+id);
+}
+assert.equal(10**2-2*21,58,"W3B transfer math oracle");
+assert.equal(7**3+3**3+(-10)**3,3*7*3*(-10),"W3B challenge math oracle with sum 0");
+console.log("PASS W3B R3 receipt + canonical reconciliation: 14/14 source IDs, 3 exact MCQs, 2 non-live written drafts, no bank append.");
+
 console.log("PASS W3A-WR/W3B/W3C: 3 written drafts, 28 remaining unique, full 40-ID source-locked partition; no live changes");
