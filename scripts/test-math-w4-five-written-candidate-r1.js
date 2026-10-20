@@ -68,7 +68,7 @@ for(let i=0;i<5;i++){
 assert.equal(all[69].learning_layer,"KNTT-Core");
 assert.equal(all[70].learning_layer,"KNTT-Core");
 assert(all.slice(71).every(q=>q.learning_layer==="Entrance10"&&q.level==="ENTRANCE10"));
-for(const x of [4,-0.5])assert.equal((x-4)*(2*x+1),0);
+for(const x of [4,-0.5])assert(Math.abs((x-4)*(2*x+1))<1e-12,"both roots satisfy original product");
 const x=14/5,y=9/5;
 assert(Math.abs(x/2+y/3-2)<1e-12&&Math.abs(x-y-1)<1e-12);
 assert.equal(1+2,-1+4);
