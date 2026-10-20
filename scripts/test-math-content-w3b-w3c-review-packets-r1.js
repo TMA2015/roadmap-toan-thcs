@@ -106,6 +106,14 @@ for(const [id,legacy] of [["WX07-ENT-001","07-ENT-01"],["WX07-CH-001","07-CH-01"
  assert(!library.some(x=>x.exercise_id===id),"Unreviewed W3C authoring leaked to live library: "+id);
 }
 assert(authoring3c.includes("NOT APPROVED FOR PUBLICATION"),"W3C paper draft accidentally approved");
+const authoringVerdict3c=read("MATH-CT05-07-W3C-WR-AUTHORING-R1_NOTEBOOKLM_VERDICT_RECEIPT.md");
+assert(authoringVerdict3c.includes("PACKET_ID|MATH-CT05-07-W3C-WR-AUTHORING-R1"),"W3C authoring review packet mismatch");
+assert(authoringVerdict3c.includes("EXPECTED=2")&&authoringVerdict3c.includes("REVIEWED=2"),"W3C authoring 2/2 incomplete");
+assert(authoringVerdict3c.includes("OVERALL|PASS_FOR_AUTHORING_REVIEW"),"W3C authoring PASS missing");
+const authoringLines3c=[...authoringVerdict3c.matchAll(/^(WX07-(?:ENT|CH)-001) \\| MATH:PASS \\| HINTS:PASS \\| SOLUTION:PASS \\| RUBRIC:PASS \\| GRADE_AND_LAYER:PASS \\| DISTINCT_FROM_CANONICAL_WX:PASS \\| PRECISE_REVISION:none \\| ITEM_VERDICT:PASS$/gm)].map(x=>x[1]);
+assert.deepEqual(authoringLines3c,["WX07-ENT-001","WX07-CH-001"],"W3C 2 reviewed PASS rows missing or reordered");
+assert(authoringVerdict3c.includes("RELEASE NOT AUTHORIZED"),"W3C owner release gate lost");
+
 const live6=[1,2,3,4].flatMap(n=>JSON.parse(fs.readFileSync("docs/assets/data/practice/06-phan-tich-da-thuc-v1-0"+n+".json","utf8")).questions);
 const live7=[1,2,3,4].flatMap(n=>JSON.parse(fs.readFileSync("docs/assets/data/practice/07-phan-thuc-dai-so-v1-0"+n+".json","utf8")).questions);
 assert.equal(live6.length,120,"CT06 120 practice unchanged");
@@ -115,6 +123,6 @@ for(const [list,id,tokens] of [[live6,"FAC06V1_065",["x^{2} + 5 x + 6","t√°ch h·
  for(const tok of tokens)assert(items[0].question.includes(tok),"W3C active-bank overlap changed "+id+" "+tok);
 }
 assert.equal((2**2+1)/(2**2-1),5/3,"W3C challenge exemplar x=2 check");
-console.log("PASS W3C: 14/14 owner verdict + exact live triage, 240 practice/67 WX unchanged, two authoring candidates QA only.");
+console.log("PASS W3C: 14/14 placement + 2/2 authoring PASS receipts, 240 Practice/67 WX unchanged, release NOT authorized.");
 
 console.log("PASS 40-item W3A/W3B/W3C source-locked partition: W3C 14/14 placement PASS received, two new W3C written authoring drafts remain unpublished.");
