@@ -4,13 +4,15 @@
 **Scope:** 40 existing canonical MCQs in PR #524; 16 independent NotebookLM Family-role R1/R2 decisions + 24 currently source-verified items. **Not 40 new exercises and not an authorization of 40 assessed Family mappings.**  
 **Operational decision:** `ALL_40_NORMAL_PRACTICE_AVAILABLE`, `NO_FAMILY_DEPENDENCY_FOR_FORMATIVE_COUNTER`.  
 **Academic status:** `16_INDEPENDENT_ITEM_ROLE_REVIEWS` + `24_INTERNAL_RECONCILIATIONS_NOT_INDEPENDENT_ROLE_APPROVAL`.  
-**Production gates:** `0_NEW_ASSESSED_FAMILY_AUTHORIZATIONS`, `0_NEW_MASTER​Y_READINESS_CREDITS`, `0_REGISTRY_EDITS`, `NO_LEARNER_HISTORY_CHANGE`.
+**Production gates:** `0_NEW_ASSESSED_FAMILY_AUTHORIZATIONS`, `0_NEW_MASTERY_READINESS_CREDITS`, `0_REGISTRY_EDITS`, `NO_LEARNER_HISTORY_CHANGE`.
 
 ## Why this closes the practical blocker
 
 Owner preference is to **finish the backlog without holding exercises hostage to perfect Skill Family classification**. The pending `NUM02V1_142–144` are valid and already served in normal Practice; their previous Owner HOLD applied **only to assessed-Family credit**, not the ability to teach and practice Grade-7 square roots. The six CT04 binomial-division questions also remain **normal formative Practice**, but must not count towards the more narrowly named `ALG-DIV-MONOMIAL` ("divide polynomial by monomial") Family.
 
 This dossier does **not** claim that unsupported Family roles are independently cleared for Mastery, and it does not silently reverse previous R1/R2 academic verdicts. Instead it removes the false dependency between getting a useful **single formative Practice counter** and finishing a 131-Family assessed taxonomy.
+
+**Active manifest source check (GitHub `main`, 2026-10-20):** all six pinned source chunks appear in live Practice bank manifests: CT02 `02-so-va-phep-tinh-v1.manifest.json` (147 questions), CT03 `03-ti-le-ti-le-thuc-v1.manifest.json` (124 questions), CT04 `04-bieu-thuc-dai-so-v2.manifest.json` (138 questions), CT12 `12-phuong-trinh-bac-hai-viete-v1.manifest.json` (123 questions). This establishes inclusion in current candidate banks; it **does not independently prove** that every one of the 40 items appeared in a particular learner session. Randomly sampled sessions may not surface a specific ID immediately.
 
 **Final operational dispositions for the 40 old questions:** 31 with plausible *existing* Registry Family candidates (still not enabled/Owner-signed as assessed); 9 with **no assessed Family assignment**, still practiceable. The nine are 3 Grade-7 square-root items `NUM02V1_142–144` and all six binomial-division items `ALG04V2_133–138`.
 
@@ -133,5 +135,5 @@ FORMATIVE_ONLY_NO_ASSESSED_FAMILY=9
 OWNER_ASSESSED_MAPPING_APPROVED=0
 PRODUCTION_SKILL_FAMILY_CREDIT_ENABLED=0
 ALL_40_NORMAL_PRACTICE_AVAILABLE|YES
-OPERATIONAL_VERDICT|COMPLETE_FOR_FORMATIVE_PRACTICE_NOT_ASSESSED_MASTER​Y
+OPERATIONAL_VERDICT|COMPLETE_FOR_FORMATIVE_PRACTICE_NOT_ASSESSED_MASTERY
 ```
