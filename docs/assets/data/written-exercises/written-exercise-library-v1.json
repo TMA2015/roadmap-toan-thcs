@@ -6521,13 +6521,11 @@
       "learner_label": "Ôn thi vào 10",
       "skills": [
         "dieu-kien-xac-dinh",
-        "rut-gon-phan-thuc",
-        "tim-gia-tri-nguyen"
+        "rut-gon-phan-thuc"
       ],
       "prerequisites": [
         "dieu-kien-xac-dinh",
-        "phep-chia-co-du",
-        "uoc-nguyen"
+        "rut-gon-phan-thuc"
       ],
       "estimated_minutes": 12,
       "problem_markdown": "Cho $x\\in\\mathbb Z$ và phân thức\n\n$$A=\\frac{x+1}{x-2}.$$\n\nTìm **tất cả** giá trị nguyên của $x$ để $A$ là số nguyên. Ghi điều kiện xác định, giải thích vì sao **không được bỏ sót ước âm**, và kiểm tra kết quả.",
@@ -6628,15 +6626,13 @@
         "dieu-kien-xac-dinh",
         "phan-tich-da-thuc",
         "rut-gon-phan-thuc",
-        "nhan-chia-phan-thuc",
-        "cong-tru-phan-thuc",
-        "lap-ke-hoach-bien-doi"
+        "quy-dong-mau-thuc",
+        "cong-tru-phan-thuc"
       ],
       "prerequisites": [
-        "dieu-kien-xac-dinh",
+        "hang-dang-thuc",
         "phan-tich-da-thuc",
-        "nhan-chia-phan-thuc",
-        "cong-tru-phan-thuc"
+        "dieu-kien-xac-dinh"
       ],
       "estimated_minutes": 18,
       "problem_markdown": "Tự chọn **một biểu thức phân thức có ngoặc và ít nhất ba phép tính phân thức** (trong các phép cộng, trừ, nhân, chia). Trước khi giải, hãy viết **kế hoạch biến đổi** theo thứ tự hợp lý. Sau đó:\n\n1. Ghi đầy đủ điều kiện xác định của **biểu thức ban đầu**, kể cả điều kiện phân thức chia khác $0$ nếu có.\n2. Thực hiện biến đổi, không triệt tiêu tùy tiện qua dấu cộng/trừ; giải thích vì sao thứ tự đã chọn hợp lý.\n3. Trình bày kết quả cùng điều kiện ban đầu và tự kiểm tra lại.\n\n**Em có thể chọn biểu thức riêng; lời giải mẫu chỉ là một ví dụ để đối chiếu sau khi thử sức, không phải đáp án duy nhất.**",
