@@ -48,9 +48,9 @@ for(const e of cand.exercises){
   assert.ok(Array.isArray(e.source_refs)&&e.source_refs.length>=1);
 }
 
-assert.equal(lib.exercises.length,65);
-assert.deepEqual(lib.exercises.slice(63).map(x=>x.exercise_id),["WX05-ENT-001","WX06-CH-001"]);
-assert.equal(lib.published_scope.exercise_count,65);
+assert(lib.exercises.length>=65,"W3A historical 63+2 must remain");
+assert.deepEqual(lib.exercises.slice(63,65).map(x=>x.exercise_id),["WX05-ENT-001","WX06-CH-001"]);
+assert.equal(lib.published_scope.exercise_count,lib.exercises.length);
 const batch=lib.published_scope.batches.find(x=>x.batch_id==="WRITTEN_IMPLEMENTATION_W1_R1");
 assert.ok(batch);
 assert.equal(batch.count,9);
