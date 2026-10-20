@@ -251,6 +251,7 @@ jobs:
           node scripts/test-math-content-w3b-w3c-review-packets-r1.js
           node scripts/test-math-w3b-wr-release-r1.js
           node scripts/test-math-w3c-wr-release-r1.js
+          node scripts/test-math-w4-five-written-candidate-r1.js
           node scripts/test-math-ct07-p1-domain-release-r1.js
           node scripts/test-math-w3a-wr-verdict-gate-r1.js
       - name: Validate CT08 Academic Depth P1-A
