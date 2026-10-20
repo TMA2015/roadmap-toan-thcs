@@ -29,6 +29,12 @@
 | `06-WR-06` | ARCHIVE_DUPLICATE | Source-ref links to `WX06-FAC-002` with structural grouping focus, not necessarily identical numbers/problem | `LINK_EXISTING_WX`; old paper remains **source-locked** |
 | `06-WR-07` | CONVERT_INTERACTIVE | `x²−xy−2x+2y` not located as an exact CT06 question stem | `HOLD_NEW_MCQ`; potential targeted sign-change misconception, author only if evidence supports |
 
+**Precise reviewer micro-erratum (06-WR-07):** The submitted NotebookLM narrative flags "đặt \(+2\) ... dẫn đến \(+2(-x+y)\)" as a possible wrong sign. **This expression by itself is mathematically valid**, because \(2(-x+y)=-2(x-y)\). Indeed,
+\[
+x^2-xy-2x+2y=x(x-y)+2(-x+y)=(x-2)(x-y).
+\]
+A genuine error would be \(+2(x-y)\) **without the required sign change**. This corrects only the *reviewer's misconception example*, **not** the reviewed original problem/solution or its mathematics PASS. Do not teach a correct regrouping as an error.
+
 **Disposition partition:** **3** `REUSE_EXACT_PRACTICE` + **3** `REUSE_WRITTEN_CONTEXT` + **2** `LINK_EXISTING_WX` + **4** `HOLD_NEW_MCQ` + **2** `DRAFT_NEW_WX` = **14** unique original source IDs. The five existing canonical WX lineage links are not assumed to make all five expressions exact duplicates.
 
 ## Authoring and acceptance gates
