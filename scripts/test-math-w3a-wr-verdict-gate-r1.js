@@ -18,7 +18,7 @@ assert(gate.includes("NOT APPROVED / NO PRODUCTION CHANGE"),"historical pre-rele
 assert(gate.includes("Specialized-Challenge")&&gate.includes("pt07-core-2"));
 const library=JSON.parse(read("docs/assets/data/written-exercises/written-exercise-library-v1.json"));
 const published=library.exercises.filter(x=>["WX05-ENT-001","WX06-CH-001"].includes(x.exercise_id));
-assert.equal(library.exercises.length,65,"W3A-WR release should append only 2 to 63 historical entries");
+assert(library.exercises.length>=65,"W3A-WR release must preserve 63+2 historical entries");
 assert.deepEqual(published.map(x=>x.exercise_id),["WX05-ENT-001","WX06-CH-001"],"exact source-to-WX one-to-one");
 for(const x of published){
  assert.equal(x.academic_review?.packet_id,"MATH-CT05-07-W3A-WR-R1-20261016");
@@ -33,7 +33,7 @@ assert.equal(published[1].level,"CHALLENGE");
 assert.equal(published[1].learner_label,"Thử thách");
 assert.equal(library.auto_readiness_credit,false);
 assert.equal(library.self_marking_only,true);
-assert.equal(library.published_scope.exercise_count,65);
+assert(library.published_scope.exercise_count>=65,"W3A-WR historical count must not be reduced");
 const core=JSON.parse(read("docs/assets/data/curriculum/topic07-learning-workspace.json"));
 const existing=core.cards.find(c=>c.id==="pt07-core-2");
 assert(existing,"Existing CT07 Core card must remain");
