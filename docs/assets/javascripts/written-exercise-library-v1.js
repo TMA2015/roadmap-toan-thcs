@@ -47,7 +47,7 @@
 
     if(deep){
       const id=`${x.exercise_id.toLowerCase()}-hints`;
-      const hintButton=el("button","written-help-action","Gợi ý 1/3");
+      const hintButton=el("button","written-help-action",`Gợi ý 1/${x.hint_steps.length}`);
       hintButton.type="button";hintButton.dataset.helpTarget="hints";
       hintButton.setAttribute("aria-expanded","false");hintButton.setAttribute("aria-controls",id);
       const hintPanel=el("section","written-help-panel");
