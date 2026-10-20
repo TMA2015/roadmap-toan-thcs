@@ -8,7 +8,7 @@ const parse=p=>JSON.parse(read(p).toString("utf8"));
 const dir="docs/assets/data/practice/";
 const prefix="07-phan-thuc-dai-so-v1-";
 const sha=["3bf6305a57286b92c9c6a2486c94eadcff0d9163","2294a3f9d93b01b70036167713a3940fea367dca","9297d644a65c09b8c8ca8cc4b3f81cc194764360","b1ba2cc3664cfc2cda13fdafe4655f744130c833"];
-const blob=b=>crypto.createHash("sha1").update(Buffer.concat([Buffer.from("blob "+b.length+" "),Buffer.from([0])])).update(b).digest("hex");
+const blob=b=>crypto.createHash("sha1").update(Buffer.concat([Buffer.from("blob "+b.length),Buffer.from([0])])).update(b).digest("hex");
 const old=[];
 for(let i=1;i<=4;i++){
  const p=dir+prefix+"0"+i+".json";
