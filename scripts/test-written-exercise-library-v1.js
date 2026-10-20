@@ -156,7 +156,21 @@ ok(!page.includes("Pilot v1"),"library intro no longer pilot-labelled");
 ok(!page.includes("Hiện pilot có"),"library intro has no stale fixed pilot count");
 ok(page.includes("mở rộng dần theo từng chuyên đề"),"library intro uses durable expansion copy");
 ok(data.published_scope?.exercise_count===data.exercises.length,"published scope count follows canonical library");
-ok(data.published_scope?.batches?.every(x=>x.status==="PUBLISHED"),"all released written-library batches marked published");
+const w4pending=data.published_scope?.batches?.filter(x=>x.status!=="PUBLISHED")||[];
+if(w4pending.length){
+  ok(w4pending.length===1&&w4pending[0].batch_id==="W4_CT08_12_WRITTEN_R1"
+    &&w4pending[0].count===5&&w4pending[0].status==="PENDING_OWNER_RELEASE_APPROVAL",
+    "only exact W4 five-item draft may be pending");
+  const tail=["WX08-EQI-003","WX09-SYS-009","WX10-FUN-003","WX11-RAD-004","WX12-QUA-003"];
+  ok(JSON.stringify(data.exercises.slice(-5).map(x=>x.exercise_id))===JSON.stringify(tail),
+    "W4 pending items must match five independently reviewed candidate identities");
+  ok(data.exercises.slice(-5).every(x=>x.academic_review?.publication_gate==="OWNER_RELEASE_APPROVAL_PENDING"
+    &&x.auto_readiness_credit===false&&x.gates_core===false),
+    "pending candidates cannot enable Core/Readiness or silently claim release");
+}
+ok(data.published_scope?.batches?.filter(x=>x.status==="PUBLISHED").length+
+   w4pending.length===data.published_scope?.batches?.length,
+   "all historic Written batches remain published; no unregistered pending statuses");
 ok(data.published_scope?.batches?.some(x=>x.batch_id==="WRITTEN_IMPLEMENTATION_W1_R1"&&x.packet_id==="MATH-WRITTEN-IMPLEMENTATION-W1-R1-20261010"&&x.count===9),"Written Implementation Wave 1 release batch");
 ok(data.published_scope?.batches?.some(x=>x.batch_id==="CT09_P1B_R1"&&x.count===6),"CT09 P1-B release batch");
 ok(data.published_scope?.batches?.some(x=>x.batch_id==="G6_WRITTEN_WAVE1_R1"&&x.count===3),"Grade-6 Written Wave-1 release batch");
