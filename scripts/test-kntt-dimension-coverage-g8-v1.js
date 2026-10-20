@@ -86,6 +86,23 @@ for(const [topic,ev] of Object.entries(a.source_locks.topic_evidence)){
             assert.ok(current.questions.some(q=>q.id===id),"historical Grade-8 Topic23 Micro removed: "+id);
         }
       }
+    }else if(topic==="07-phan-thuc-dai-so" && k==="manifest"){
+      // Owner-approved P1 append adds one concept MCQ; retain the exact
+      // original Grade-8 manifest byte fingerprint by reconstructing it.
+      assert.equal(ev[k].sha,"5939cac274f5133c474423b949340d136e976e5d");
+      const current=json(ev[k].path);
+      assert.equal(current.question_count,121,"only one CT07 new P1 question is approved");
+      assert.equal(current.sources.length,5);
+      assert.equal(current.sources[4],"07-phan-thuc-dai-so-v1-05.json");
+      const historical=JSON.parse(JSON.stringify(current));
+      historical.question_count=120;
+      historical.sources=historical.sources.slice(0,4);
+      assert.equal(blob(JSON.stringify(historical,null,2)+"\\n"),ev[k].sha,
+        "historical Grade-8 CT07 manifest changed beyond approved append");
+      const appended=json("docs/assets/data/practice/"+current.sources[4]).questions;
+      assert.deepEqual(appended.map(q=>q.id),["RAT07V1_121"]);
+      assert.equal(appended[0].authoring_review?.packet_id,
+        "MATH-CT05-07-W3-D1D6-P1-MINIMAL-DELTA-R0-20261020");
     }else if(k==="assessment"){
       assertHistoricalAssessmentLock(ev[k]);
     }else{
