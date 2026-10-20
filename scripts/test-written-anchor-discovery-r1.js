@@ -29,8 +29,8 @@ assert(Array.isArray(written.exercises) && written.exercises.length > 0,
        "Existing written exercises must remain present");
 assert(written.exercises.slice(0,63).filter(x=>x.exercise_kind==="anchor").length === 10,
        "Preserve the ten historical Written deep anchors");
-assert.deepEqual(written.exercises.slice(63).filter(x=>x.exercise_kind==="anchor").map(x=>x.exercise_id),
-       ["WX05-ENT-001","WX06-CH-001"],"Only two W3A-WR reviewed deep anchors appended");
+assert.deepEqual(written.exercises.slice(63,65).filter(x=>x.exercise_kind==="anchor").map(x=>x.exercise_id),
+       ["WX05-ENT-001","WX06-CH-001"],"W3A-WR historical two anchors preserved in original positions");
 const writtenUi=read("docs/assets/javascripts/written-exercise-library-v1.js");
 assert(writtenUi.includes('kind=params.get("kind")') && writtenUi.includes('"Bài mỏ neo ("') && writtenUi.includes('"Bài mỏ neo · giải sâu"'),
        "Published Written Library must expose deep-anchor filter and learner label");
