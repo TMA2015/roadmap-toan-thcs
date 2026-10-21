@@ -4,7 +4,8 @@
 const fs=require("node:fs"),assert=require("node:assert/strict");
 const source=p=>JSON.parse(fs.readFileSync("docs/assets/"+p,"utf8"));
 const manifest=source("data/class-mixed/g6-pilot-v1.json");
-assert.equal(manifest.status,"QA_ONLY_DO_NOT_RELEASE");
+assert.equal(manifest.status,"LIVE_FORMATIVE_RELEASE");
+assert.equal(manifest.release_authority,"OWNER_CONDITIONAL_APPROVAL_20261021_SUBJECT_TO_ALL_REQUIRED_QA");
 assert.equal(manifest.grade,6);
 assert.equal(manifest.assessment_role,"formative_self_practice_not_readiness_or_mastery");
 assert.equal(manifest.topic_sources.length,6);
@@ -100,6 +101,8 @@ assert(!js.includes("toan-thcs-practice-v1"),"no shared practice-history writes"
 assert(!js.includes("toan-thcs-assessment-v1"),"no shared Readiness-history writes");
 assert(js.includes('root.dataset.initialized = "1"'),"guard repeat initialization");
 assert(js.includes("state.submitted=true"),"answer reveal only after final submit");
-assert(js.includes("QA_ONLY_DO_NOT_RELEASE"),"no live feature mode");
+assert(js.includes("LIVE_FORMATIVE_RELEASE"),"player must require exact formative release status");
+assert(!page.includes("bản kiểm thử")&&!page.includes("chưa phát hành"),"live page must not be labeled as QA-only");
+assert(!g6.includes("(bản kiểm thử)"),"Grade6 live hub label must be clear");
 assert(js.includes("typesetMath()")&&js.includes("typesetClear"),"dynamically inserted math must be rendered");
 console.log("PASS G6 mixed preview: exactly 10 reviewed Core/Grade6 items, isolated history, source keys untouched.");
