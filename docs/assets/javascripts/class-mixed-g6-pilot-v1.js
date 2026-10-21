@@ -40,7 +40,11 @@
     try {
       manifest = await loadJSON("data/class-mixed/g6-pilot-v1.json");
       if (manifest.status!=="QA_ONLY_DO_NOT_RELEASE" || manifest.grade!==6
-        || manifest.topic_sources.reduce((sum,x)=>sum+x.ids.length,0)!==10)
+        || manifest.topic_sources.reduce((sum,x)=>sum+x.ids.length,0)!==10
+        || !Array.isArray(manifest.selection_groups)
+        || manifest.selection_groups.length!==8
+        || new Set(manifest.selection_groups.flatMap(g=>g.ids)).size!==10
+        || manifest.selection_groups.flatMap(g=>g.ids).some(id=>!manifest.topic_sources.some(t=>t.ids.includes(id))))
         throw new Error("Hợp đồng dữ liệu thí điểm không hợp lệ.");
     } catch (error) {
       info.textContent="Không thể mở bài thí điểm: "+error.message;
@@ -49,34 +53,35 @@
     root.innerHTML="";
     make("p","Thử nghiệm giao diện • Lớp 6 • Tối đa 10 câu đã kiểm toán • Không phải điểm thi, Readiness hay Mastery.",root,"cmg6-note");
     const chooser=make("div",null,root,"cmg6-chooser");
-    const title=make("h2","Chọn nội dung đã học",chooser);
+    const title=make("h2","Chọn các nhóm kiến thức đã học",chooser);
     title.tabIndex=-1;
     const checks=[];
-    manifest.topic_sources.forEach(t=>{
+    manifest.selection_groups.forEach(g=>{
       const label=make("label",null,chooser,"cmg6-choice");
       const c=make("input",null,label);
-      c.type="checkbox";c.value=t.slug;
+      c.type="checkbox";c.value=g.group_id;
       checks.push(c);
-      make("span",t.label+" · "+t.ids.length+" câu mẫu",label);
+      make("span",g.label+" ("+g.lesson_scope+") · "+g.ids.length+" câu",label);
     });
     const buttons=make("div",null,root,"cmg6-buttons");
     const note=make("p","",root,"cmg6-status");
     note.setAttribute("role","status");
     const start=make("button","Bắt đầu ôn tập",buttons,"cmg6-primary");
     start.type="button";
-    const help=make("p","Chọn ít nhất hai nhóm kiến thức đã học. Khi chọn đủ sáu nhóm, bộ 10 câu có tỉ lệ 4 Nhận biết – 4 Thông hiểu – 2 Vận dụng thấp theo kiểm toán NotebookLM. Chọn ít nhóm hơn sẽ nhận bộ ngắn hơn, không giữ tỉ lệ 4–4–2 và không tự thêm kiến thức chưa học.",root,"cmg6-hint");
+    const help=make("p","Chọn nhóm kiến thức theo bài đã học, thuộc ít nhất hai chuyên đề khác nhau. Chọn đủ tám nhóm sẽ có 10 câu (4 Nhận biết – 4 Thông hiểu – 2 Vận dụng thấp theo kiểm toán NotebookLM). Chọn ít nhóm hơn sẽ có bộ ngắn hơn và không giữ tỉ lệ 4–4–2; hệ thống không tự thêm bài chưa học.",root,"cmg6-hint");
     const quiz=make("section",null,root,"cmg6-quiz");
     quiz.hidden=true;
     const state={items:[],selected:[],position:0,submitted:false,startedAt:null};
-    const picked=()=>manifest.topic_sources.filter((t,i)=>checks[i].checked);
+    const picked=()=>manifest.selection_groups.filter((g,i)=>checks[i].checked);
     const update=()=>{
-      const topics=picked();
-      const count=topics.reduce((n,x)=>n+x.ids.length,0);
-      const enough=topics.length>=2;
+      const groups=picked();
+      const count=groups.reduce((n,x)=>n+x.ids.length,0);
+      const topicCount=new Set(groups.map(g=>g.topic)).size;
+      const enough=topicCount>=2;
       start.disabled=!enough;
       note.textContent=enough
-        ? "Đã chọn "+topics.length+" nhóm đã học · bộ ôn tập "+count+" câu (tối đa 10 câu)."
-        : "Chọn ít nhất 2 nhóm đã học để ôn tổng hợp; không ép học hết cả 6 nhóm.";
+        ? "Đã chọn "+groups.length+" nhóm trong "+topicCount+" chuyên đề · bộ ôn tập "+count+" câu."
+        : "Chọn các kiến thức đã học thuộc ít nhất 2 chuyên đề khác nhau.";
     };
     checks.forEach(x=>x.addEventListener("change",update));
     update();
@@ -142,7 +147,10 @@
     };
     start.addEventListener("click",async()=>{
       start.disabled=true;note.textContent="Đang kiểm tra câu hỏi, thẻ Core và khối lớp...";
-      const selectedTopics=picked();
+      const selectedGroups=picked();
+      const selectedTopics=manifest.topic_sources.filter(t=>selectedGroups.some(g=>g.topic===t.slug));
+      const selectedIds=new Set(selectedGroups.flatMap(g=>g.ids));
+      const requiredCards=new Map(selectedGroups.flatMap(g=>g.ids.map(id=>[id,g.card_id])));
       try{
         const loaded=await Promise.all(selectedTopics.map(async t=>{
           const [micro,core]=await Promise.all([
@@ -150,11 +158,11 @@
             loadJSON("data/curriculum/topic"+t.slug.slice(0,2)+"-learning-workspace.json")
           ]);
           const cards=new Set((core.cards||[]).filter(c=>c.layer==="KNTT-Core").map(c=>c.id));
-          return t.ids.map(id=>{
+          return t.ids.filter(id=>selectedIds.has(id)).map(id=>{
             const q=(micro.questions||[]).find(x=>x.id===id);
             if(!q||q.tags?.layer!=="KNTT-Core"||q.tags?.grade!==6
               ||q.curriculum?.book!=="KNTT"||!q.curriculum?.grades?.includes(6)
-              ||!cards.has(q.card_id)||!Array.isArray(q.options)
+              ||!cards.has(q.card_id)||q.card_id!==requiredCards.get(id)||!Array.isArray(q.options)
               ||q.options.length<2||!Number.isInteger(q.answer)
               ||q.answer<0||q.answer>=q.options.length||!q.explanation)
               throw new Error("Câu "+id+" không đạt điều kiện học thuật/nguồn.");
@@ -162,8 +170,8 @@
           });
         }));
         const items=loaded.flat();
-        const expectedCount=selectedTopics.reduce((sum,t)=>sum+t.ids.length,0);
-        if(selectedTopics.length<2 || items.length!==expectedCount || items.length>10
+        const expectedCount=selectedGroups.reduce((sum,g)=>sum+g.ids.length,0);
+        if(new Set(selectedGroups.map(g=>g.topic)).size<2 || items.length!==expectedCount || items.length>10
           ||new Set(items.map(x=>x.id)).size!==items.length)
           throw new Error("Thiếu hoặc trùng câu trong bộ đề.");
         state.items=items;state.selected=Array(items.length).fill(null);
