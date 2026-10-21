@@ -5,6 +5,7 @@ const assert=require("node:assert/strict");
 const fs=require("node:fs");
 const Evidence=require("../docs/assets/javascripts/readiness-g9-evidence-qa-v1.js");
 const Backup=require("../docs/assets/javascripts/local-progress-backup-v1.js");
+const Dashboard=require("../docs/assets/javascripts/math-progress-dashboard-v1.js");
 class Storage {
   constructor(data={}){this.map=new Map(Object.entries(data));this.fail=false;}
   getItem(k){return this.map.has(k)?this.map.get(k):null;}
@@ -22,7 +23,7 @@ const make=(suffix,score)=>({
 });
 (async()=>{
   const OLD_ID="PROB23-CORE-READY-V1";
-  const oldBucket={attempts:[{id:"legacy-6-8",score:7}],best:{accuracy:.7},latest:{id:"legacy-6-8"},other:"preserve"};
+  const oldBucket={attempts:[{id:"legacy-6-8",score:7,submitted_at:"2026-10-15T00:00:00Z",correct:7,total:12}],best:{accuracy:.7},latest:{id:"legacy-6-8"},other:"preserve"};
   const oldMore={attempts:[{foo:1}],notes:{a:[3,2,1]}};
   const base={assessment_title:"legacy",assessments:{[OLD_ID]:oldBucket, "GEO17-CORE-READY-V1":oldMore}};
   const storage=new Storage({[Evidence.KEY]:JSON.stringify(base)});
@@ -41,6 +42,7 @@ const make=(suffix,score)=>({
   assert.equal(Evidence.save(storage,make("2",10)).totalAttempts,2);
   assert.equal(Evidence.save(storage,make("3",0)).totalAttempts,3);
   assert.equal(Evidence.history(storage).attempts.length,3,"no silent truncation");
+  assert.equal(Dashboard.summarize(storage).readiness.submitted,1,"Grade9 QA attempts must not inflate official Readiness dashboard");
   assert.equal(Evidence.history(storage).latest.correct,0);
   const best=JSON.parse(storage.getItem(Evidence.KEY)).assessments[Evidence.ID].best;
   assert.equal(best.accuracy,1,"best from prior successful Grade9 submission retained");
