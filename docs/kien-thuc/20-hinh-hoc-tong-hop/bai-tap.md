@@ -39,10 +39,11 @@ Lăng trụ có Pđáy=12 cm,Sđáy=6 cm²,h=10 cm. Tính Sxq,V.
     \(S_{xq}=12\cdot10=120\) cm²; \(V=6\cdot10=60\) cm³.
 
 #### 20-WR-06 · Hình chóp đều
-Chóp có p=12 cm,trung đoạn d=5 cm,Sđáy=36 cm²,h=8 cm. Tính Sxq,V.
+Cho hình chóp tứ giác đều có nửa chu vi đáy \(p=12\) cm, diện tích đáy \(S_{\text{đáy}}=36\) cm², trung đoạn \(d=5\) cm và chiều cao \(h=4\) cm. Tính diện tích xung quanh \(S_{xq}\) và thể tích \(V\).
 
 ??? example "Xem lời giải"
-    \(S_{xq}=p\cdot d=60\) cm²; \(V=\frac13\cdot36\cdot8=96\) cm³.
+    Đáy là hình vuông cạnh \(6\) cm, từ tâm đáy đến trung điểm một cạnh bằng \(3\) cm. Vì \(5^2=4^2+3^2\) nên trung đoạn và chiều cao nhất quán.
+    \(S_{xq}=p\cdot d=12\cdot5=60\) cm²; \(V=\frac13 S_{\text{đáy}}\cdot h=\frac13\cdot36\cdot4=48\) cm³.
 
 #### 20-WR-07 · Hình trụ
 Trụ r=3 cm,h=7 cm. Tính Sxq,V.

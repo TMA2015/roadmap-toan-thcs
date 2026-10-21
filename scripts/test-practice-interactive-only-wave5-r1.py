@@ -19,13 +19,31 @@ SOURCE = {
     "19-duong-tron": ("8beca6002685639a092eafcd8a65d31b1e37ef1f", "19-duong-tron-v1.manifest.json", 12, 147),
     "20-hinh-hoc-tong-hop": ("003a0aa9d733c8fb44eb2db795600bb60e499f40", "20-hinh-hoc-tong-hop-v1.manifest.json", 12, 195),
 }
+# W5/W6 independently reviewed source text corrections only; this is a restricted reversible SHA allowlist.
+# For these three historical sources, editing any other byte must fail by original Git-blob reconstruction.
+W5_W6_SOURCE_REPAIRS = {
+    "17-thales-dong-dang": ("a4a136e5377a919e990191eff2887d43ed4ebad1", "#### 17-WR-02 · Thales đảo\nAD=3,AB=5,AE=6,AC=10. Chứng minh DE∥BC.\n\n??? example \"Xem lời giải\"\n    Hai tỉ số đều 3/5 nên theo Thales đảo DE∥BC.\n\n", "#### 17-WR-02 · Thales đảo\nCho tam giác \\(ABC\\), điểm \\(D\\) thuộc cạnh \\(AB\\) và điểm \\(E\\) thuộc cạnh \\(AC\\) sao cho \\(AD=3\\), \\(AB=5\\), \\(AE=6\\), \\(AC=10\\). Chứng minh \\(DE\\parallel BC\\).\n\n??? example \"Xem lời giải\"\n    Vì \\(D\\) thuộc cạnh \\(AB\\), \\(E\\) thuộc cạnh \\(AC\\) và\n    \\[\n    \\frac{AD}{AB}=\\frac35=\\frac6{10}=\\frac{AE}{AC},\n    \\]\n    theo định lí Thales đảo, \\(DE\\parallel BC\\).\n\n"),
+    "19-duong-tron": ("19a4f67af37cef18dcdc7bb2b2f1e3f514780992", "#### 19-WR-06 · Hai đường tròn\nNêu điều kiện tiếp xúc ngoài và tiếp xúc trong theo R,r,d.\n\n??? example \"Xem lời giải\"\n    Tiếp xúc ngoài: \\(d=R+r\\). Tiếp xúc trong: \\(d=|R-r|\\).\n\n", "#### 19-WR-06 · Hai đường tròn\nCho hai đường tròn có bán kính \\(R,r>0\\), khoảng cách giữa hai tâm là \\(d\\). Nêu điều kiện để tiếp xúc ngoài và tiếp xúc trong (hai đường tròn phân biệt).\n\n??? example \"Xem lời giải\"\n    Tiếp xúc ngoài khi \\(d=R+r\\). Tiếp xúc trong khi \\(d=|R-r|>0\\) (tức \\(R\\ne r\\)). Nếu \\(R=r\\) và \\(d=0\\) thì hai đường tròn trùng nhau, không phải tiếp xúc.\n\n"),
+    "20-hinh-hoc-tong-hop": ("a3a17073239b6dfe82db99e972e7e22e5d973df3", "#### 20-WR-06 · Hình chóp đều\nChóp có p=12 cm,trung đoạn d=5 cm,Sđáy=36 cm²,h=8 cm. Tính Sxq,V.\n\n??? example \"Xem lời giải\"\n    \\(S_{xq}=p\\cdot d=60\\) cm²; \\(V=\\frac13\\cdot36\\cdot8=96\\) cm³.\n\n", "#### 20-WR-06 · Hình chóp đều\nCho hình chóp tứ giác đều có nửa chu vi đáy \\(p=12\\) cm, diện tích đáy \\(S_{\\text{đáy}}=36\\) cm², trung đoạn \\(d=5\\) cm và chiều cao \\(h=4\\) cm. Tính diện tích xung quanh \\(S_{xq}\\) và thể tích \\(V\\).\n\n??? example \"Xem lời giải\"\n    Đáy là hình vuông cạnh \\(6\\) cm, từ tâm đáy đến trung điểm một cạnh bằng \\(3\\) cm. Vì \\(5^2=4^2+3^2\\) nên trung đoạn và chiều cao nhất quán.\n    \\(S_{xq}=p\\cdot d=12\\cdot5=60\\) cm²; \\(V=\\frac13 S_{\\text{đáy}}\\cdot h=\\frac13\\cdot36\\cdot4=48\\) cm³.\n\n"),
+}
+
 total_old = total_questions = 0
 root = Path("docs/assets/data/practice")
 for slug, (blob_sha, manifest_file, paper_count, question_count) in SOURCE.items():
     path = f"kien-thuc/{slug}/bai-tap.md"
     original = (Path("docs") / path).read_bytes()
     actual = hashlib.sha1(b"blob " + str(len(original)).encode() + b"\0" + original).hexdigest()
-    assert actual == blob_sha, f"Immutable academic paper source changed: {slug}: {actual}"
+    if slug in W5_W6_SOURCE_REPAIRS:
+        repaired_blob, historical_span, corrected_span = W5_W6_SOURCE_REPAIRS[slug]
+        assert actual == repaired_blob, f"Unapproved W5/W6 source SHA: {slug}: {actual}"
+        current_text = original.decode("utf-8")
+        assert current_text.count(corrected_span) == 1
+        assert historical_span not in current_text
+        restored = current_text.replace(corrected_span, historical_span, 1).encode("utf-8")
+        restored_sha = hashlib.sha1(b"blob " + str(len(restored)).encode() + b"\0" + restored).hexdigest()
+        assert restored_sha == blob_sha, f"Historical W5/W6 {slug} source not recoverable: {restored_sha}"
+    else:
+        assert actual == blob_sha, f"Immutable academic paper source changed: {slug}: {actual}"
     paper = original.decode("utf-8")
     paper_ids = re.findall(
         r"^#{3,5}\s+(" + slug[:2] + r"-(?:WR|ENT|CH|SUP)-\d+)\b", paper, re.M
