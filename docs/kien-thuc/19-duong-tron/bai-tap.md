@@ -39,10 +39,10 @@ Nêu ba trường hợp theo d(O,d) so với R.
     Nếu d<R: cắt hai điểm; d=R: tiếp tuyến; d>R: không có điểm chung.
 
 #### 19-WR-06 · Hai đường tròn
-Nêu điều kiện tiếp xúc ngoài và tiếp xúc trong theo R,r,d.
+Cho hai đường tròn có bán kính \(R,r>0\), khoảng cách giữa hai tâm là \(d\). Nêu điều kiện để tiếp xúc ngoài và tiếp xúc trong (hai đường tròn phân biệt).
 
 ??? example "Xem lời giải"
-    Tiếp xúc ngoài: \(d=R+r\). Tiếp xúc trong: \(d=|R-r|\).
+    Tiếp xúc ngoài khi \(d=R+r\). Tiếp xúc trong khi \(d=|R-r|>0\) (tức \(R\ne r\)). Nếu \(R=r\) và \(d=0\) thì hai đường tròn trùng nhau, không phải tiếp xúc.
 
 #### 19-WR-07 · Góc nội tiếp
 Góc nội tiếp chắn cung 110°. Tính góc.
