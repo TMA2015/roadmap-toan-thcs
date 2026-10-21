@@ -479,7 +479,7 @@
         <div class="practice-remediation" hidden aria-live="polite"></div>
         <details class="practice-stats-panel">
           <summary>📊 Xem tiến độ theo kỹ năng</summary>
-          <div class="practice-stats-note">Tỉ lệ đúng gồm cả lượt có trợ giúp. Mục “tự làm” tách riêng lượt làm đúng không xem gợi ý/lời giải; dữ liệu cũ chưa phân loại sẽ được ghi rõ. Bấm kỹ năng để luyện riêng.</div>
+          <div class="practice-stats-note">Bộ mặc định ưu tiên câu từng sai/kỹ năng yếu và câu chưa làm; nút “Bộ 10 câu mới” chỉ chọn câu chưa làm. Tỉ lệ đúng gồm cả lượt có trợ giúp. Mục “tự làm” tách riêng lượt làm đúng không xem gợi ý/lời giải; dữ liệu cũ chưa phân loại sẽ được ghi rõ. Bấm kỹ năng để luyện riêng.</div>
           <div class="practice-stats"></div>
         </details>
       `;
@@ -539,8 +539,7 @@
       const questions = this.questions.filter(q => !q.response_type);
       const session = buildAdaptiveSelection(questions, this.stats, this.bank, this.sessionSize, this.recentSets);
       const unseen = questions.filter(q => !(this.stats.questions?.[q.id]?.attempted > 0)).length;
-      this.setSession(session, "normal", [],
-        "Luyện thích ứng: ưu tiên câu từng sai và kỹ năng yếu, đồng thời có câu chưa làm · còn " + unseen + " câu chưa làm.");
+      this.setSession(session, "normal", [], "Bộ đề " + questions.length + " câu");
     }
 
     startNewOnlySession() {
