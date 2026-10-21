@@ -16,11 +16,34 @@ const exactReviewedIds=[
 "NUM02MICRO_015","GEO13MICRO_019","STA21MICRO_001","PRO23MICRO_002",
 "NUM02MICRO_006","STA21MICRO_013"
 ];
-assert.equal(manifest.version,"1.1.0");
+assert.equal(manifest.version,"1.2.0");
 assert.equal(manifest.source_review,"MATH-G6-MIXED-DEPTH-21CANDIDATE-40-40-20-R0-20261021");
 const cognitive=Object.values(manifest.cognitive_levels).reduce((acc,level)=>(acc[level]=(acc[level]||0)+1,acc),{});
 assert.deepEqual(cognitive,{L1:4,L2:4,L3:2});
 assert.deepEqual(new Set(manifest.topic_sources.flatMap(t=>t.ids)),new Set(exactReviewedIds));
+assert.equal(manifest.selection_groups.length,8,"eight Core/lesson selections");
+const selectedIds=manifest.selection_groups.flatMap(g=>g.ids);
+assert.equal(selectedIds.length,10);
+assert.deepEqual(new Set(selectedIds),new Set(exactReviewedIds),"group selection must partition original ten reviewed questions");
+assert.equal(new Set(manifest.selection_groups.map(g=>g.group_id)).size,8);
+assert.equal(manifest.selection_groups.filter(g=>g.topic==="02-so-va-phep-tinh").length,2,
+ "CT02 early and late lessons must be selectable independently");
+for(const g of manifest.selection_groups){
+  assert(g.label&&g.lesson_scope&&g.card_id&&g.group_id);
+  const topic=manifest.topic_sources.find(t=>t.slug===g.topic);
+  assert(topic,"group topic must exist");
+  assert(g.ids.every(id=>topic.ids.includes(id)),"selection group cannot insert an unreviewed question");
+  const micro=source("data/practice/"+g.topic+"-micro-v1.json");
+  const workspace=source("data/curriculum/topic"+g.topic.slice(0,2)+"-learning-workspace.json");
+  const card=workspace.cards.find(c=>c.id===g.card_id);
+  assert(card&&card.layer==="KNTT-Core","group must refer to Core card "+g.group_id);
+  for(const id of g.ids){
+    const q=micro.questions.find(q=>q.id===id);
+    assert(q&&q.card_id===g.card_id,"selected question must stay within reviewed card's lesson "+id);
+    assert.equal(q.tags.grade,6);
+    assert(q.curriculum.grades.includes(6));
+  }
+}
 for(const entry of manifest.topic_sources){
  assert.equal(entry.ids.length,expectedTopicQuotas[entry.slug]);
  const micro=source("data/practice/"+entry.slug+"-micro-v1.json");
