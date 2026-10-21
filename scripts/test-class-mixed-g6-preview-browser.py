@@ -11,6 +11,10 @@ with sync_playwright() as pw:
     browser=pw.chromium.launch(executable_path=CHROME,headless=True,args=["--no-sandbox","--disable-dev-shm-usage"])
     for width,height in ((1365,900),(390,844),(820,1180)):
         context=browser.new_context(viewport={"width":width,"height":height},has_touch=(width==820),is_mobile=(width==820),device_scale_factor=2 if width==820 else 1)
+        if width==820:
+            # The learner's angle question must remain readable even when
+            # the external MathJax CDN is unavailable on a device.
+            context.route("**/mathjax@3/**",lambda route:route.abort())
         page=context.new_page()
         errors=[]
         page.on("pageerror",lambda error:errors.append(str(error)))
@@ -44,6 +48,9 @@ with sync_playwright() as pw:
         short=root.locator(".cmg6-quiz")
         short.locator(".cmg6-options input").first.wait_for(timeout=15000)
         assert "Câu 1/3" in short.inner_text()
+        assert root.locator(".cmg6-chooser").is_hidden(),"chooser must disappear while taking a quiz"
+        assert root.locator(".cmg6-buttons").is_hidden(),"Start controls must disappear while taking a quiz"
+        assert root.locator(".cmg6-hint").is_hidden(),"pre-quiz help must disappear while taking a quiz"
         assert short.locator(".cmg6-jump button").count()==3
         assert "Đáp án:" not in short.inner_text()
         for index in range(3):
@@ -66,14 +73,28 @@ with sync_playwright() as pw:
         quiz=root.locator(".cmg6-quiz")
         quiz.locator(".cmg6-options input").first.wait_for(timeout=15000)
         assert "Câu 1/10" in quiz.inner_text()
+        assert root.locator(".cmg6-chooser").is_hidden() and root.locator(".cmg6-buttons").is_hidden()
+        assert root.locator(".cmg6-hint").is_hidden()
         assert "Đáp án:" not in quiz.inner_text(),"No revealed answers before submission"
         assert quiz.locator(".cmg6-jump button").count()==10
         for i in range(10):
             quiz.locator(".cmg6-jump button").nth(i).click()
+            if i==5:  # GEO13MICRO_019 is the sixth source item, including its degree options
+                stem=quiz.locator(".cmg6-question").inner_text()
+                choices=quiz.locator(".cmg6-answer span").all_inner_texts()
+                assert "∠xOy=110°" in stem and "∠xOz=35°" in stem and "∠zOy" in stem,(width,stem)
+                assert choices==["75°","145°","55°","35°"],(width,choices)
+                assert "\\(" not in stem and "\\angle" not in stem and "\\circ" not in stem
+                assert all("\\(" not in c and "\\circ" not in c for c in choices)
             quiz.locator(".cmg6-options input").first.check()
         quiz.get_by_role("button",name="Nộp bài và xem kết quả").click()
         assert "Kết quả ôn tập:" in quiz.inner_text()
         assert quiz.locator(".cmg6-review").count()==10
+        review=quiz.locator(".cmg6-review").nth(5).inner_text()
+        assert "∠xOy=110°" in review and "∠xOz=35°" in review and "Đáp án: 75°" in review
+        assert "∠xOz+∠zOy=∠xOy" in review and "110°-35°=75°" in review,(width,review)
+        assert "\\(" not in review and "\\angle" not in review and "\\circ" not in review
+        assert root.locator(".cmg6-chooser").is_hidden() and root.locator(".cmg6-buttons").is_hidden()
         assert page.evaluate("localStorage.getItem('toan-thcs-practice-v1')")=='{"QA":123}'
         assert page.evaluate("localStorage.getItem('toan-thcs-assessment-v1')")=='{"QA":456}'
         count=page.evaluate("""() => {
