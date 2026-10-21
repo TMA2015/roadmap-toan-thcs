@@ -85,7 +85,15 @@
     };
     checks.forEach(x=>x.addEventListener("change",update));
     update();
+    const typesetMath=()=>{
+      // Questions are inserted dynamically after MkDocs' initial MathJax pass.
+      // Never expose source TeX as a permanent replacement for the learner UI.
+      const mj=window.MathJax;
+      if(mj?.typesetPromise) mj.typesetPromise([quiz]).catch(()=>{});
+    };
+    const clearMath=()=>{window.MathJax?.typesetClear?.([quiz]);};
     const showQuestion=()=>{
+      clearMath();
       quiz.innerHTML="";
       if(!state.items.length)return;
       const q=state.items[state.position],number=state.position+1;
@@ -116,6 +124,7 @@
       const submit=make("button","Nộp bài và xem kết quả",quiz,"cmg6-primary");
       submit.type="button";
       if(state.submitted){submit.remove();return;}
+      typesetMath();
       submit.addEventListener("click",()=>{
         const unanswered=state.selected.filter(x=>!Number.isInteger(x)).length;
         if(unanswered){note.textContent="Còn "+unanswered+" câu chưa chọn. Hãy hoàn thành trước khi nộp.";return;}
@@ -141,6 +150,7 @@
           link.href=new URL("../../kien-thuc/"+item.topic+"/core/",window.location.href).toString();
         });
         chooser.hidden=true;buttons.hidden=true;help.hidden=true;note.textContent="";
+        typesetMath();
         const restart=make("button","Chọn lại nội dung",quiz,"cmg6-primary");
         restart.type="button";restart.addEventListener("click",()=>window.location.reload());
       });
