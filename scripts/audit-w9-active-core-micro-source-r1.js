@@ -100,6 +100,9 @@ for(const slug of slugs){
 }
 result.anomalies=flags;
 assert.equal(result.totals.banks,22);
+assert.equal(result.totals.orphan_source_items,0,"all source Micro must be mapped in the actual runtime Core view, including CT20 v2 overlay");
+assert.equal(result.totals.missing_declared_items,0,"no learner card may point to missing questions");
+assert.equal(result.totals.declaration_item_mismatches,0,"each active Core card must match its exact reviewed Micro IDs");
 assert.equal(result.totals.core_items+result.totals.support_items,
  result.totals.items,"unexpected unclassified Micro layer");
 if(process.argv.includes("--json"))process.stdout.write(JSON.stringify(result,null,2)+"\n");
