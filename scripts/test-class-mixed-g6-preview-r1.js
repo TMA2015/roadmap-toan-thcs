@@ -10,7 +10,17 @@ assert.equal(manifest.assessment_role,"formative_self_practice_not_readiness_or_
 assert.equal(manifest.topic_sources.length,6);
 assert.equal(manifest.max_items,10);
 const ids=new Set(),stems=new Set(),originalKeys=[];
-const expectedTopicQuotas={"02-so-va-phep-tinh":3,"03-ti-le-ti-le-thuc":1,"13-goc-va-duong-thang":2,"20-hinh-hoc-tong-hop":1,"21-thong-ke":2,"23-xac-suat":1};
+const expectedTopicQuotas={"02-so-va-phep-tinh":3,"03-ti-le-ti-le-thuc":1,"13-goc-va-duong-thang":1,"20-hinh-hoc-tong-hop":1,"21-thong-ke":2,"23-xac-suat":2};
+const exactReviewedIds=[
+"NUM02MICRO_004","RAT03MICRO_001","GEO20MICRO_003","PRO23MICRO_001",
+"NUM02MICRO_015","GEO13MICRO_019","STA21MICRO_001","PRO23MICRO_002",
+"NUM02MICRO_006","STA21MICRO_013"
+];
+assert.equal(manifest.version,"1.1.0");
+assert.equal(manifest.source_review,"MATH-G6-MIXED-DEPTH-21CANDIDATE-40-40-20-R0-20261021");
+const cognitive=Object.values(manifest.cognitive_levels).reduce((acc,level)=>(acc[level]=(acc[level]||0)+1,acc),{});
+assert.deepEqual(cognitive,{L1:4,L2:4,L3:2});
+assert.deepEqual(new Set(manifest.topic_sources.flatMap(t=>t.ids)),new Set(exactReviewedIds));
 for(const entry of manifest.topic_sources){
  assert.equal(entry.ids.length,expectedTopicQuotas[entry.slug]);
  const micro=source("data/practice/"+entry.slug+"-micro-v1.json");
