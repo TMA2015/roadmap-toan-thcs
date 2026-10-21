@@ -25,10 +25,32 @@ const flags=[];
 for(const slug of slugs){
  const n=slug.slice(0,2),bankPath="docs/assets/data/practice/"+slug+"-micro-v1.json";
  const wsPath="docs/assets/data/curriculum/topic"+n+"-learning-workspace.json";
- const bank=read(bankPath),ws=read(wsPath),q=bank.questions||[],cards=ws.cards||[],byCard=new Map();
+ const bank=read(bankPath),ws=read(wsPath),q=bank.questions||[],legacyCards=ws.cards||[],byCard=new Map();
+ // Match the ACTUAL learner runtime: CT20 uses reviewed v2 Core display overlay,
+ // while its 5-card legacy workspace remains frozen for student-progress compatibility.
+ let cards=legacyCards,overlayPath=null;
+ if(slug==="20-hinh-hoc-tong-hop"){
+  overlayPath="docs/assets/data/curriculum/topic20-core-display-v2.json";
+  const view=read(overlayPath);
+  assert.equal(view.schema,"roadmap-topic-core-display-overlay-v2");
+  assert.equal(view.version,2);
+  assert.equal(view.topic,ws.topic);
+  assert.equal(view.history_policy?.migration,"none");
+  assert.equal(view.history_policy?.storage_key,"toan-thcs-practice-v1");
+  assert.equal(view.legacy_cards_read_only.length,legacyCards.length);
+  for(let i=0;i<legacyCards.length;i++){
+   assert.equal(view.legacy_cards_read_only[i].id,legacyCards[i].id);
+   assert.deepEqual(view.legacy_cards_read_only[i].original_micro_practice,legacyCards[i].micro_practice);
+   assert.equal(view.legacy_cards_read_only[i].original_skill_denominator,legacyCards[i].skills.length);
+  }
+  cards=view.cards;
+  assert.equal(cards.length,10);
+ }
  assert(Array.isArray(bank.questions)&&Array.isArray(ws.cards),"bad files "+slug);
  result.totals.banks++;result.totals.items+=q.length;
- const t={slug,source_blobs:{micro:gitBlob(bankPath),workspace:gitBlob(wsPath)},
+ const t={slug,source_blobs:{micro:gitBlob(bankPath),workspace:gitBlob(wsPath),
+   ...(overlayPath?{active_view:gitBlob(overlayPath)}:{})},
+  legacy_core_card_count:legacyCards.length,active_core_card_count:cards.length,
   micro_items:q.length,question_count_field:bank.question_count,role_totals:{},layer_totals:{},
   grade_totals:{"6":0,"7":0,"8":0,"9":0,unknown:0},cards:[],source_orphans:[]};
  for(const item of q){
