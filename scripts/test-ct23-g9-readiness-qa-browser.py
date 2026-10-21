@@ -20,8 +20,12 @@ with sync_playwright() as pw:
         quiz.locator(".r9qa-option input").first.wait_for(timeout=15000)
         assert quiz.locator(".r9qa-jump button").count() == 10
         assert "Đáp án đúng:" not in quiz.inner_text()
+        # Seed legacy independent Readiness and preserve it byte-for-byte.
+        legacy='{"assessments":{"PROB23-CORE-READY-V1":{"attempts":[{"grade":6,"correct":9}],"latest":{"correct":9}},"NUM02-CORE-READY-V1":{"best":{"accuracy":0.8}}}}'
+        page.evaluate("(raw) => localStorage.setItem('toan-thcs-assessment-v1',raw)",legacy)
         quiz.get_by_role("button", name="Nộp bài").click()
         assert "Còn 10 câu chưa chọn" in root.locator(".r9qa-status").inner_text()
+        assert page.evaluate("localStorage.getItem('toan-thcs-assessment-v1')")==legacy
         for i in range(10):
             quiz.locator(".r9qa-jump button").nth(i).click()
             quiz.locator(".r9qa-option input").first.check()
@@ -32,12 +36,26 @@ with sync_playwright() as pw:
         quiz.get_by_role("button", name="Nộp bài").click()
         assert "Kết quả kiểm thử:" in quiz.inner_text()
         assert quiz.locator(".r9qa-review").count() == 10
-        # QA must never create a Readiness result or any other student attempt.
-        # A site theme may have its own preferences; protect learner-evidence
-        # namespaces rather than asserting the whole browser storage is empty.
-        assert page.evaluate("Object.keys(localStorage).filter(k => k.startsWith('toan-thcs-')).length") == 0
-        assert page.evaluate("Object.keys(sessionStorage).filter(k => k.startsWith('toan-thcs-')).length") == 0
+        assert "Đã lưu riêng kết quả Readiness lớp 9" in quiz.inner_text()
+        snapshot=page.evaluate("""() => JSON.parse(localStorage.getItem('toan-thcs-assessment-v1'))""")
+        assert snapshot["assessments"]["PROB23-CORE-READY-V1"]=={"attempts":[{"grade":6,"correct":9}],"latest":{"correct":9}}
+        assert snapshot["assessments"]["NUM02-CORE-READY-V1"]=={"best":{"accuracy":0.8}}
+        grade9=snapshot["assessments"]["PROB23-G9-CORE-READY-V1"]
+        assert len(grade9["attempts"])==1
+        assert grade9["latest"]["grade"]==9
+        assert grade9["latest"]["form_version"]==1
+        assert grade9["latest"]["total"]==10
+        assert len(grade9["latest"]["items"])==10
+        assert grade9["latest"]["source_git_blob"]
+        assert not page.evaluate("Object.keys(localStorage).some(k => k==='toan-thcs-class-mixed-quiz-v1')")
+        # Refresh leaves prior record and makes QA latest visible (independent Grade9 bucket).
+        page.reload(wait_until="domcontentloaded")
+        root=page.locator("[data-readiness-g9-qa]")
+        root.locator(".r9qa-card").wait_for(timeout=15000)
+        assert "đã lưu 1 lượt" in root.inner_text()
+        again=page.evaluate("""() => JSON.parse(localStorage.getItem('toan-thcs-assessment-v1'))""")
+        assert len(again["assessments"]["PROB23-G9-CORE-READY-V1"]["attempts"])==1
         assert not failures, (width, failures)
-        print("PASS independent Grade9 CT23 mobile and desktop", width)
+        print("PASS Grade9 CT23 desktop/mobile independent saved evidence, old grade6–8 retained, refresh", width)
         context.close()
     browser.close()
