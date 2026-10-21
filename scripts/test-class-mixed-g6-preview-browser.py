@@ -10,7 +10,7 @@ URL=BASE+"hoc-theo-lop/on-tap-tong-hop-lop-6/"
 with sync_playwright() as pw:
     browser=pw.chromium.launch(executable_path=CHROME,headless=True,args=["--no-sandbox","--disable-dev-shm-usage"])
     for width,height in ((1365,900),(390,844),(820,1180)):
-        context=browser.new_context(viewport={"width":width,"height":height})
+        context=browser.new_context(viewport={"width":width,"height":height},has_touch=(width==820),is_mobile=(width==820),device_scale_factor=2 if width==820 else 1)
         page=context.new_page()
         errors=[]
         page.on("pageerror",lambda error:errors.append(str(error)))
@@ -19,7 +19,7 @@ with sync_playwright() as pw:
         page.locator('button[data-grade-select="6"]').click()
         hub_link=page.locator('#lop-6 a[href="on-tap-tong-hop-lop-6/"]')
         assert hub_link.is_visible()
-        hub_link.click()
+        hub_link.tap() if width==820 else hub_link.click()
         page.wait_for_url(URL,timeout=15000)
         assert page.url==URL
         root=page.locator("[data-class-mixed-g6-qa]")
