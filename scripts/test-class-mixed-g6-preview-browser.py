@@ -90,7 +90,7 @@ with sync_playwright() as pw:
         quiz.get_by_role("button",name="Nộp bài và xem kết quả").click()
         assert "Kết quả ôn tập:" in quiz.inner_text()
         assert quiz.locator(".cmg6-review").count()==10
-        review=quiz.locator(".cmg6-review").nth(5).inner_text()
+        review=quiz.locator(".cmg6-review").nth(5).text_content()  # collapsed <details> body still needs math normalization
         assert "∠xOy=110°" in review and "∠xOz=35°" in review and "Đáp án: 75°" in review
         assert "∠xOz+∠zOy=∠xOy" in review and "110°-35°=75°" in review,(width,review)
         assert "\\(" not in review and "\\angle" not in review and "\\circ" not in review
