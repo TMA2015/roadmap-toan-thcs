@@ -9,7 +9,7 @@ BASE="http://127.0.0.1:8765/"
 URL=BASE+"hoc-theo-lop/on-tap-tong-hop-lop-6/"
 with sync_playwright() as pw:
     browser=pw.chromium.launch(executable_path=CHROME,headless=True,args=["--no-sandbox","--disable-dev-shm-usage"])
-    for width,height in ((1365,900),(390,844)):
+    for width,height in ((1365,900),(390,844),(820,1180)):
         context=browser.new_context(viewport={"width":width,"height":height})
         page=context.new_page()
         errors=[]
