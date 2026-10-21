@@ -13,8 +13,14 @@ with sync_playwright() as pw:
         page = context.new_page()
         failures = []
         page.on("pageerror", lambda error: failures.append(str(error)))
-        response = page.goto(URL, wait_until="domcontentloaded")
-        assert response and response.status == 200
+        hub = page.goto("http://127.0.0.1:8765/hoc-theo-lop/", wait_until="domcontentloaded")
+        assert hub and hub.status == 200
+        page.locator('button[data-grade-select="9"]').click()
+        grade9_link = page.locator('#lop-9-chuong-8 a[href*="tu-kiem-tra-lop-9-qa/"]')
+        assert grade9_link.is_visible()
+        grade9_link.click()
+        page.wait_for_url(URL, timeout=15000)
+        assert page.url == URL
         root = page.locator("[data-readiness-g9-qa]")
         quiz = root.locator(".r9qa-card")
         quiz.locator(".r9qa-option input").first.wait_for(timeout=15000)
