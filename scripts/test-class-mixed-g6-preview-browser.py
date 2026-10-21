@@ -14,8 +14,14 @@ with sync_playwright() as pw:
         page=context.new_page()
         errors=[]
         page.on("pageerror",lambda error:errors.append(str(error)))
-        response=page.goto(URL,wait_until="domcontentloaded")
-        assert response and response.status==200
+        hub=page.goto(BASE+"hoc-theo-lop/",wait_until="domcontentloaded")
+        assert hub and hub.status==200
+        page.locator('button[data-grade-select="6"]').click()
+        hub_link=page.locator('#lop-6 a[href="on-tap-tong-hop-lop-6/"]')
+        assert hub_link.is_visible()
+        hub_link.click()
+        page.wait_for_url(URL,timeout=15000)
+        assert page.url==URL
         root=page.locator("[data-class-mixed-g6-qa]")
         root.locator("input[type=checkbox]").first.wait_for(timeout=15000)
         assert root.locator("input[type=checkbox]").count()==8
