@@ -32,7 +32,11 @@ for(const x of lib.exercises||[]){
  if(placements.length)totals.with_true_kntt_placements++;
  totals.kntt_placement_rows+=placements.length;
  for(const g of x.grade_overlay||[]){if(g in totals.grade_overlay_occurrences)totals.grade_overlay_occurrences[g]++}
- for(const p of placements){if(p.grade in totals.actual_verified_placement_rows)totals.actual_verified_placement_rows[p.grade]++}
+ for(const p of placements){
+   if(p.grade in totals.actual_verified_placement_rows)totals.actual_verified_placement_rows[p.grade]++;
+   if(!(x.grade_overlay||[]).includes(p.grade))
+     flags.push("GRADE_OVERLAY_PLACEMENT_CONTRADICTION|"+x.exercise_id+"|overlay:"+(x.grade_overlay||[]).join(",")+"|placement_grade:"+p.grade);
+ }
  const refs=(x.source_refs||[]).filter(s=>typeof s==="string");
  const cardRefs=[];
  for(const r of refs){
