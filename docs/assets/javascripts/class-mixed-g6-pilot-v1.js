@@ -64,7 +64,7 @@
     note.setAttribute("role","status");
     const start=make("button","Bắt đầu ôn tập",buttons,"cmg6-primary");
     start.type="button";
-    const help=make("p","Chọn từ hai nhóm kiến thức đã học. Bản thí điểm dùng tối đa 10 câu đã được duyệt trong sáu nhóm; nếu chỉ chọn một số nhóm, bộ đề sẽ ngắn hơn và không tự lấy kiến thức chưa học.",root,"cmg6-hint");
+    const help=make("p","Chọn ít nhất hai nhóm kiến thức đã học. Khi chọn đủ sáu nhóm, bộ 10 câu có tỉ lệ 4 Nhận biết – 4 Thông hiểu – 2 Vận dụng thấp theo kiểm toán NotebookLM. Chọn ít nhóm hơn sẽ nhận bộ ngắn hơn, không giữ tỉ lệ 4–4–2 và không tự thêm kiến thức chưa học.",root,"cmg6-hint");
     const quiz=make("section",null,root,"cmg6-quiz");
     quiz.hidden=true;
     const state={items:[],selected:[],position:0,submitted:false,startedAt:null};
