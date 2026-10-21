@@ -1,4 +1,7 @@
 /* Grade-6 mixed-Core QA pilot. Isolated namespace: no changes to Practice/Core UI. */
+/* Explicitly honor hidden= on chooser/buttons after Start: component
+   display:grid/flex otherwise overrides the browser's [hidden] UA rule. */
+.cmg6 [hidden]{display:none!important}
 .cmg6{max-width:52rem;margin:1.5rem auto;padding:1.4rem;border:1px solid var(--md-default-fg-color--lightest);border-radius:1rem}
 .cmg6-note{font-weight:650}
 .cmg6-chooser{display:grid;gap:.6rem;margin:1.2rem 0}

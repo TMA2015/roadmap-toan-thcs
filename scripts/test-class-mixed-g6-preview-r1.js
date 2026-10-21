@@ -105,4 +105,15 @@ assert(js.includes("LIVE_FORMATIVE_RELEASE"),"player must require exact formativ
 assert(!page.includes("bản kiểm thử")&&!page.includes("chưa phát hành"),"live page must not be labeled as QA-only");
 assert(!g6.includes("(bản kiểm thử)"),"Grade6 live hub label must be clear");
 assert(js.includes("typesetMath()")&&js.includes("typesetClear"),"dynamically inserted math must be rendered");
+const css=fs.readFileSync("docs/assets/stylesheets/class-mixed-g6-pilot-v1.css","utf8");
+assert(css.includes(".cmg6 [hidden]{display:none!important}"),
+ "the start chooser and buttons must be truly hidden when taking the quiz");
+assert(js.includes("const readableMathText") &&
+  js.includes('make("h3",readableMathText(q.question)') &&
+  js.includes('make("span",readableMathText(option)') &&
+  js.includes('make("p",readableMathText(item.explanation)'),
+ "question, choices and submitted review must render angle/degree symbols even without MathJax");
+const angle=source("data/practice/13-goc-va-duong-thang-micro-v1.json").questions.find(q=>q.id==="GEO13MICRO_019");
+assert(angle && angle.question.includes("\\angle") && angle.options[0].includes("\\circ"),
+ "canonical audited geometry TeX is immutable; display conversion is view-only");
 console.log("PASS G6 mixed preview: exactly 10 reviewed Core/Grade6 items, isolated history, source keys untouched.");
