@@ -106,3 +106,48 @@ AUTHORIZATION|NO_LIVE_RELEASE
 ```
 
 **This document is a technical/content planning crosswalk, not itself an independently issued academic PASS.** No automatic import, scores, question keys or learner progress can be changed on this evidence alone.
+
+
+---
+
+# ADDENDUM — a pre-existing grade-placement inconsistency, *one extra focused source*
+
+**Not part of the 18-item G7/G8/G9 depth batch:** `WX21-STA-001` already has `grade_overlay: [8]` **but** `kntt_placements: [{grade:6, chapter:9, lesson:"Bài 38–41 — Dữ liệu, bảng thống kê, biểu đồ tranh, biểu đồ cột và cột kép"}]`. This source contradiction is not evidence of a mathematics error and does not authorize an automated metadata edit.
+
+**Exact original canonical Written source** (Git blob `a8f19cea7f0f8b181e3cc1385ddbff13b75c252d`):
+
+**ID** `WX21-STA-001`; title: Từ bảng số liệu đến biểu đồ cột có thang đo rõ ràng; level: `CORE_BASE`; full source links: docs/assets/data/curriculum/topic21-learning-workspace.json#sta21-core-2, docs/assets/data/curriculum/topic21-learning-workspace.json#sta21-core-4, docs/assets/data/curriculum/topic21-learning-workspace.json#sta21-core-5, docs/kien-thuc/21-thong-ke/bai-tap.md#21-M3-09.
+
+**Problem:**
+
+Một thư viện ghi lại số lượt mượn sách theo thể loại trong một tuần:
+
+| Thể loại | Truyện | Khoa học | Lịch sử | Kỹ năng |
+|---|---:|---:|---:|---:|
+| Số lượt mượn | 24 | 18 | 12 | 16 |
+
+1. Chọn dạng biểu đồ phù hợp để so sánh bốn thể loại và giải thích ngắn gọn.
+2. Trên giấy, vẽ biểu đồ với tên biểu đồ, trục, đơn vị và thang chia hợp lý.
+3. Xác định thể loại có số lượt mượn lớn nhất, nhỏ nhất và tính chênh lệch giữa hai giá trị đó.
+4. Viết một nhận xét chỉ dựa trên số liệu đã cho.
+
+**Original full solution steps:**
+
+**S1: Chọn dạng biểu diễn** — Dữ liệu gồm bốn nhóm thể loại cần so sánh số lượt mượn, nên **biểu đồ cột** là phù hợp. Biểu đồ đoạn thẳng không phù hợp vì bốn thể loại không phải một chuỗi thời gian.
+
+**S2: Thiết lập biểu đồ** — Trục ngang ghi bốn thể loại: Truyện, Khoa học, Lịch sử, Kỹ năng. Trục dọc ghi **Số lượt mượn (lượt)**, bắt đầu từ $0$ và dùng thang chia đều đủ để biểu diễn đến $24$. Bốn cột có chiều cao lần lượt $24,18,12,16$.
+
+**S3: So sánh các giá trị** — Truyện có số lượt mượn lớn nhất: $24$ lượt. Lịch sử nhỏ nhất: $12$ lượt. Chênh lệch là
+
+$$24-12=12\text{ lượt}.$$
+
+**S4: Kết luận trong phạm vi dữ liệu** — Một nhận xét có căn cứ là: **Trong tuần được ghi nhận, sách Truyện có số lượt mượn lớn nhất và nhiều hơn sách Lịch sử 12 lượt.** Dữ liệu này không tự cho biết nguyên nhân vì sao các thể loại có số lượt mượn khác nhau.
+
+**Original self-check rubric:**
+
+- Chọn đúng biểu đồ cột và nêu được mục tiêu là so sánh các nhóm. (1 điểm)
+- Vẽ/thiết lập đúng trục, đơn vị, thang chia và bốn cột 24, 18, 12, 16. (1 điểm)
+- Xác định đúng lớn nhất 24, nhỏ nhất 12 và chênh lệch 12 lượt. (1 điểm)
+- Viết nhận xét đúng phạm vi dữ liệu, không tự suy diễn nguyên nhân. (1 điểm)
+
+**Independent S1 reviewer must answer:** Does this exact bar-chart interpretation/drawing item academically fit Grade6 KNTT Chapter9 Bài38–41, Grade8 data work, **both at different learning purposes**, or neither? Return `WX21-STA-001|MATH:...|GRADE6_PLACEMENT:VERIFIED/INSUFFICIENT_S1/REVISE|GRADE8_OVERLAY:...|ACTION:KEEP/REVISE_METADATA_AFTER_OWNER_APPROVAL/HOLD`. Do not merely choose between conflicting JSON tags; verify primary textbook lesson scope. Do not change live metadata now.
