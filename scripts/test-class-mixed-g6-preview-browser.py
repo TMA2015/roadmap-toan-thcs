@@ -18,33 +18,36 @@ with sync_playwright() as pw:
         assert response and response.status==200
         root=page.locator("[data-class-mixed-g6-qa]")
         root.locator("input[type=checkbox]").first.wait_for(timeout=15000)
-        assert root.locator("input[type=checkbox]").count()==6
+        assert root.locator("input[type=checkbox]").count()==8
         assert root.get_by_role("button",name="Bắt đầu ôn tập").is_disabled()
         page.evaluate("""() => {
           localStorage.setItem('toan-thcs-practice-v1','{\u0022QA\u0022:123}');
           localStorage.setItem('toan-thcs-assessment-v1','{\u0022QA\u0022:456}');
         }""")
-        # Only studied chapters: two groups give 4 questions, never pad
-        # with source material from the other four unselected groups.
-        root.locator("input[type=checkbox]").first.check()
+        # Selecting both early and late CT02 Core cards alone cannot count as
+        # multi-topic review; avoid promoting an unstudied later chapter.
+        root.locator("input[type=checkbox]").first.check()  # CT02 B8–12, 2 items
         assert root.get_by_role("button",name="Bắt đầu ôn tập").is_disabled()
-        root.locator("input[type=checkbox]").nth(1).check()
+        root.locator("input[type=checkbox]").nth(2).check()  # CT02 B28–31, 1 item
+        assert root.get_by_role("button",name="Bắt đầu ôn tập").is_disabled()
+        root.locator("input[type=checkbox]").nth(2).uncheck() # unstudied late lesson excluded
+        root.locator("input[type=checkbox]").nth(1).check()  # CT03, 1 item
         assert root.get_by_role("button",name="Bắt đầu ôn tập").is_enabled()
         root.get_by_role("button",name="Bắt đầu ôn tập").click()
         short=root.locator(".cmg6-quiz")
         short.locator(".cmg6-options input").first.wait_for(timeout=15000)
-        assert "Câu 1/4" in short.inner_text()
-        assert short.locator(".cmg6-jump button").count()==4
+        assert "Câu 1/3" in short.inner_text()
+        assert short.locator(".cmg6-jump button").count()==3
         assert "Đáp án:" not in short.inner_text()
-        for index in range(4):
+        for index in range(3):
             short.locator(".cmg6-jump button").nth(index).click()
             short.locator(".cmg6-options input").first.check()
         short.get_by_role("button",name="Nộp bài và xem kết quả").click()
-        assert short.locator(".cmg6-review").count()==4
+        assert short.locator(".cmg6-review").count()==3
         short_count=page.evaluate("""() => JSON.parse(localStorage.getItem('toan-thcs-class-mixed-quiz-v1')).attempts.length""")
         assert short_count==1
 
-        # Then open the full six-group cohort on the SAME disposable profile.
+        # Then open the full eight-card-group / six-topic cohort on the SAME disposable profile.
         page.goto(URL,wait_until="domcontentloaded")
         root=page.locator("[data-class-mixed-g6-qa]")
         root.locator("input[type=checkbox]").first.wait_for(timeout=15000)
