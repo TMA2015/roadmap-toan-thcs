@@ -15,10 +15,14 @@ DE∥BC, AD=4,AB=10,AC=15. Tính AE.
     AE=6.
 
 #### 17-WR-02 · Thales đảo
-AD=3,AB=5,AE=6,AC=10. Chứng minh DE∥BC.
+Cho tam giác \(ABC\), điểm \(D\) thuộc cạnh \(AB\) và điểm \(E\) thuộc cạnh \(AC\) sao cho \(AD=3\), \(AB=5\), \(AE=6\), \(AC=10\). Chứng minh \(DE\parallel BC\).
 
 ??? example "Xem lời giải"
-    Hai tỉ số đều 3/5 nên theo Thales đảo DE∥BC.
+    Vì \(D\) thuộc cạnh \(AB\), \(E\) thuộc cạnh \(AC\) và
+    \[
+    \frac{AD}{AB}=\frac35=\frac6{10}=\frac{AE}{AC},
+    \]
+    theo định lí Thales đảo, \(DE\parallel BC\).
 
 #### 17-WR-03 · Đường trung bình
 M,N là trung điểm AB,AC; BC=14. Tính MN.
