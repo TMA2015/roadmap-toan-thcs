@@ -212,6 +212,8 @@ jobs:
           node scripts/test-written-anchor-discovery-r1.js
           node scripts/audit-exercise-placement-v1.js
           node scripts/test-readiness-count-consistency-r1.js
+          node --check docs/assets/javascripts/readiness-g9-qa-v1.js
+          node scripts/test-ct23-g9-readiness-qa-r1.js
           node scripts/test-readiness-ct17-premises-r1.js
           node scripts/test-legacy-exercise-disposition-r1.js
           node --check scripts/prototypes/exact-rational-response-v0.cjs
@@ -480,3 +482,4 @@ jobs:
           python scripts/test-math-w2a-rich-practice-wave1-browser.py
           python scripts/test-math-w2b-rich-practice-wave1-browser.py
           python scripts/test-a25-learner-navigation-r1-browser.py
+          python scripts/test-ct23-g9-readiness-qa-browser.py
