@@ -68,7 +68,10 @@ const start=async()=>{
       role:"independent_grade9_readiness_qa",
       items:items.map((q,i)=>({id:q.id,selected:selected[i],correct:selected[i]===q.answer,skill:q.skill}))
     };
-    const saveResult=api.save(localStorage,attempt);
+    // localStorage getter itself can throw when browser/device storage is blocked.
+    let saveResult;
+    try{saveResult=api.save(window.localStorage,attempt);}
+    catch(_){saveResult={ok:false,reason:"STORAGE_UNAVAILABLE"};}
     quiz.replaceChildren();status.textContent="";
     text(quiz,"h3","Kết quả kiểm thử: "+score+"/10");
     text(quiz,"p","Đây là bản QA lớp 9; không tự cấp điểm Core/Skill/Mastery, không sửa kết quả lớp 6–8.");
@@ -121,7 +124,9 @@ const start=async()=>{
     next.disabled=position===9;
     button(nav,"Nộp bài",submit,"r9qa-primary");
   };
-  const existing=api.history(localStorage);
+  let existing;
+  try{existing=api.history(window.localStorage);}
+  catch(_){existing={ok:false,reason:"STORAGE_UNAVAILABLE"};}
   if(existing.ok && existing.latest){
     text(root,"p","Lịch sử QA lớp 9: đã lưu "+existing.attempts.length+
       " lượt; lần gần nhất "+existing.latest.correct+"/"+existing.latest.total+
