@@ -64,7 +64,10 @@ for(const x of cand.candidates){
 }
 
 const allLiveAssessmentFiles=fs.readdirSync("docs/assets/data/assessment")
-  .filter(n=>/^\d\d-.*-core-v1\.json$/.test(n));
+  // Historical W1 audit covers 21 TOPIC banks, not the new independent
+  // Grade9-only CT23 Readiness (which has its own IDs, scope and audit).
+  .filter(n=>/^\d\d-.*-core-v1\.json$/.test(n) &&
+    n!=="23-xac-suat-g9-core-v1.json");
 let liveCount=0;
 for(const name of allLiveAssessmentFiles)liveCount+=read("docs/assets/data/assessment/"+name).items.length;
 assert.equal(liveCount,237,"18 approved items must append to the 219-item live baseline");
