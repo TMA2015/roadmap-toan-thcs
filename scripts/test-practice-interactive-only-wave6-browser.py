@@ -31,7 +31,7 @@ with sync_playwright() as pw:
             assert page.locator('[data-practice-bank-v2]').count()==1,slug
             page.locator('[data-practice-bank-v2] .practice-option').first.wait_for(state="visible",timeout=18000)
             assert page.locator(".practice-title").count()==1,slug
-            assert page.locator(".practice-subtitle").inner_text().strip()=="Bộ đề 120 câu",slug
+            assert page.locator(".practice-subtitle").inner_text().strip().startswith("Luyện thích ứng:"),slug
             assert page.locator(".practice-progress").inner_text().strip().startswith("Câu 1/10"),slug
             assert page.locator("[data-practice-level-focus]").count()==0,slug
             assert page.locator(".md-content__inner h2").filter(has_text="Luyện tập tương tác").count()==0,slug
