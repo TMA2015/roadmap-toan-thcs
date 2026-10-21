@@ -47,7 +47,7 @@
       return;
     }
     root.innerHTML="";
-    make("p","Thử nghiệm giao diện • Lớp 6 • 10 câu đã kiểm toán • Không phải điểm thi, Readiness hay Mastery.",root,"cmg6-note");
+    make("p","Thử nghiệm giao diện • Lớp 6 • Tối đa 10 câu đã kiểm toán • Không phải điểm thi, Readiness hay Mastery.",root,"cmg6-note");
     const chooser=make("div",null,root,"cmg6-chooser");
     const title=make("h2","Chọn nội dung đã học",chooser);
     title.tabIndex=-1;
@@ -64,17 +64,19 @@
     note.setAttribute("role","status");
     const start=make("button","Bắt đầu ôn tập",buttons,"cmg6-primary");
     start.type="button";
-    const help=make("p","Đợt thí điểm có đúng 10 câu đã được duyệt, phân bổ trong 6 nhóm. Chỉ khi đã học cả 6 nhóm mới có thể lập bộ đủ 10 câu. Các phiên bản sau sẽ có ngân hàng lớn hơn để chọn theo chương.",root,"cmg6-hint");
+    const help=make("p","Chọn từ hai nhóm kiến thức đã học. Bản thí điểm dùng tối đa 10 câu đã được duyệt trong sáu nhóm; nếu chỉ chọn một số nhóm, bộ đề sẽ ngắn hơn và không tự lấy kiến thức chưa học.",root,"cmg6-hint");
     const quiz=make("section",null,root,"cmg6-quiz");
     quiz.hidden=true;
     const state={items:[],selected:[],position:0,submitted:false,startedAt:null};
     const picked=()=>manifest.topic_sources.filter((t,i)=>checks[i].checked);
     const update=()=>{
-      const count=picked().reduce((n,x)=>n+x.ids.length,0);
-      const enough=count===10;
+      const topics=picked();
+      const count=topics.reduce((n,x)=>n+x.ids.length,0);
+      const enough=topics.length>=2;
       start.disabled=!enough;
-      note.textContent=enough?"Đã chọn đủ 10 câu của 6 nhóm kiến thức.":
-        "Đang chọn "+count+"/10 câu đã duyệt. Bản thí điểm cần chọn đủ 6 nhóm để bắt đầu.";
+      note.textContent=enough
+        ? "Đã chọn "+topics.length+" nhóm đã học · bộ ôn tập "+count+" câu (tối đa 10 câu)."
+        : "Chọn ít nhất 2 nhóm đã học để ôn tổng hợp; không ép học hết cả 6 nhóm.";
     };
     checks.forEach(x=>x.addEventListener("change",update));
     update();
@@ -160,7 +162,9 @@
           });
         }));
         const items=loaded.flat();
-        if(items.length!==10||new Set(items.map(x=>x.id)).size!==10)
+        const expectedCount=selectedTopics.reduce((sum,t)=>sum+t.ids.length,0);
+        if(selectedTopics.length<2 || items.length!==expectedCount || items.length>10
+          ||new Set(items.map(x=>x.id)).size!==items.length)
           throw new Error("Thiếu hoặc trùng câu trong bộ đề.");
         state.items=items;state.selected=Array(items.length).fill(null);
         state.startedAt=new Date().toISOString();
