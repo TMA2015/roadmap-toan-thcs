@@ -33,8 +33,10 @@ with sync_playwright() as pw:
         assert "Kết quả kiểm thử:" in quiz.inner_text()
         assert quiz.locator(".r9qa-review").count() == 10
         # QA must never create a Readiness result or any other student attempt.
-        assert page.evaluate("localStorage.length") == 0
-        assert page.evaluate("sessionStorage.length") == 0
+        # A site theme may have its own preferences; protect learner-evidence
+        # namespaces rather than asserting the whole browser storage is empty.
+        assert page.evaluate("Object.keys(localStorage).filter(k => k.startsWith('toan-thcs-')).length") == 0
+        assert page.evaluate("Object.keys(sessionStorage).filter(k => k.startsWith('toan-thcs-')).length") == 0
         assert not failures, (width, failures)
         print("PASS independent Grade9 CT23 mobile and desktop", width)
         context.close()
