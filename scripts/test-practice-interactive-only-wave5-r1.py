@@ -25,7 +25,31 @@ for slug, (blob_sha, manifest_file, paper_count, question_count) in SOURCE.items
     path = f"kien-thuc/{slug}/bai-tap.md"
     original = (Path("docs") / path).read_bytes()
     actual = hashlib.sha1(b"blob " + str(len(original)).encode() + b"\0" + original).hexdigest()
-    assert actual == blob_sha, f"Immutable academic paper source changed: {slug}: {actual}"
+    if slug == "17-thales-dong-dang":
+        # W5 NotebookLM reviewed correction: permit exactly one reversible source repair.
+        # Never replace the old lock with a new SHA without recovering original content.
+        assert actual == "a4a136e5377a919e990191eff2887d43ed4ebad1", (slug, actual)
+        old_span = r"""#### 17-WR-02 · Thales đảo
+AD=3,AB=5,AE=6,AC=10. Chứng minh DE∥BC.
+
+??? example "Xem lời giải"
+    Hai tỉ số đều 3/5 nên theo Thales đảo DE∥BC."""
+        new_span = r"""#### 17-WR-02 · Thales đảo
+Cho tam giác \(ABC\), điểm \(D\) thuộc cạnh \(AB\) và điểm \(E\) thuộc cạnh \(AC\) sao cho \(AD=3\), \(AB=5\), \(AE=6\), \(AC=10\). Chứng minh \(DE\parallel BC\).
+
+??? example "Xem lời giải"
+    Vì \(D\) thuộc cạnh \(AB\), \(E\) thuộc cạnh \(AC\) và
+    \[
+    \frac{AD}{AB}=\frac35=\frac6{10}=\frac{AE}{AC},
+    \]
+    theo định lí Thales đảo, \(DE\parallel BC\)."""
+        text = original.decode("utf-8")
+        assert text.count(new_span) == 1 and old_span not in text, "Unexpected W5 CT17 edited span"
+        recovered = text.replace(new_span, old_span, 1).encode("utf-8")
+        recovered_sha = hashlib.sha1(b"blob " + str(len(recovered)).encode() + b"\0" + recovered).hexdigest()
+        assert recovered_sha == blob_sha, f"Historical CT17 source not recoverable: {recovered_sha}"
+    else:
+        assert actual == blob_sha, f"Immutable academic paper source changed: {slug}: {actual}"
     paper = original.decode("utf-8")
     paper_ids = re.findall(
         r"^#{3,5}\s+(" + slug[:2] + r"-(?:WR|ENT|CH|SUP)-\d+)\b", paper, re.M
