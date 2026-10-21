@@ -8,7 +8,7 @@ assert BROWSER
 URL = "http://127.0.0.1:8765/kien-thuc/23-xac-suat/tu-kiem-tra-lop-9-qa/"
 with sync_playwright() as pw:
     browser = pw.chromium.launch(executable_path=BROWSER, headless=True, args=["--no-sandbox"])
-    for width, height in ((1365, 900), (390, 844)):
+    for width, height in ((1365, 900), (390, 844), (820, 1180)):
         context = browser.new_context(viewport={"width": width, "height": height})
         page = context.new_page()
         failures = []
