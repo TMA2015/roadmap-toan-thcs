@@ -35,7 +35,7 @@ assert(adaptive.every(x=>!recent.flat().includes(x.id)),"avoid two most recent s
 assert(new Set(adaptive.map(x=>x.tags.skill[0])).size>=2,"avoid all-ten same skill");
 assert.equal(JSON.stringify(stats),serial,"no student history mutation");
 saveRecentSets(bank,[...recent,adaptive.map(x=>x.id)]);
-assert.deepEqual(Array.from(loadRecentSets(bank),set=>Array.from(set)),[recent[1],adaptive.map(x=>x.id)]);
+assert.deepEqual(Array.from(loadRecentSets(bank),set=>Array.from(set)),[recent[1],Array.from(adaptive,x=>x.id)]);
 const next=buildAdaptiveSelection(q,stats,bank,10,loadRecentSets(bank));
 assert(next.every(x=>!adaptive.some(y=>y.id===x.id)),"avoid immediate repeated practice set");
 const unseen=q.filter(x=>!stats.questions[x.id]?.attempted);
