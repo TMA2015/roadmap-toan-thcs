@@ -24,7 +24,10 @@ for(const m of reg.legacy_mappings||[]){
 
 const rows=new Map((reg.families||[]).map(f=>[f.family_id,{family_id:f.family_id,layer:f.layer,count:0,item_ids:[]}]));
 const assessmentDir="docs/assets/data/assessment";
-// This archived R1 cohort is 21 topical assessments (237 items); the new\n// Grade9-only CT23 independent check is not a 22nd topic assessment.\nconst files=fs.readdirSync(assessmentDir).filter(n=>/^\d\d-.*-core-v1\.json$/.test(n) &&\n  n!=="23-xac-suat-g9-core-v1.json").sort();
+// This archived R1 cohort is 21 topical assessments (237 items); the new
+// Grade9-only CT23 independent check is not a 22nd topic assessment.
+const files=fs.readdirSync(assessmentDir).filter(n=>/^\d\d-.*-core-v1\.json$/.test(n) &&
+  n!=="23-xac-suat-g9-core-v1.json").sort();
 let total=0,exact=0;
 const ambiguous=[],unresolved=[];
 
