@@ -6,7 +6,7 @@ hide:
 
 # Ôn tập tổng hợp · Lớp 6
 
-**Bản kiểm thử chưa phát hành:** Bộ 10 câu KNTT-Core thuộc 6 chuyên đề được NotebookLM đề xuất với phân bố 4 Nhận biết – 4 Thông hiểu – 2 Vận dụng thấp. Có thể chọn ít nhất 2 nhóm đã học để luyện bộ ngắn hơn; khi đó tỉ lệ độ khó không cố định. Đây là **ôn tập hình thành kiến thức**, không phải bài thi chuẩn hóa hay chứng nhận Mastery.
+**Bản kiểm thử chưa phát hành:** Bộ 10 câu KNTT-Core thuộc 6 chuyên đề được NotebookLM đề xuất với phân bố 4 Nhận biết – 4 Thông hiểu – 2 Vận dụng thấp. Học sinh chọn từng nhóm kiến thức/thẻ Core đã học, thuộc **ít nhất hai chuyên đề**. Chẳng hạn, Bài 8–12 và Bài 28–31 của cùng chuyên đề Số và phép tính được chọn **độc lập**; nhóm chưa học sẽ không xuất hiện trong bộ đề. Khi chọn ít hơn 8 nhóm, số câu và tỉ lệ độ khó thay đổi. Đây là **ôn tập hình thành kiến thức**, không phải bài thi chuẩn hóa hay chứng nhận Mastery.
 
 <div data-class-mixed-g6-qa></div>
 
