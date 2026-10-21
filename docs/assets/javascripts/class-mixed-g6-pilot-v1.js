@@ -136,6 +136,7 @@
           started_at:state.startedAt,submitted_at:new Date().toISOString(),
           role:"formative_class_mixed_not_readiness"};
         const persisted=writeHistory(entry);
+        clearMath();
         quiz.innerHTML="";
         make("h3","Kết quả ôn tập: "+score+"/"+state.items.length,quiz);
         make("p","Đây là điểm tự luyện, không tự động cộng vào Core Readiness hoặc Mastery.",quiz);
