@@ -1,7 +1,7 @@
 {
   "schema": "math-class-mixed-qa-source-v1",
   "version": "1.3.0",
-  "status": "QA_ONLY_DO_NOT_RELEASE",
+  "status": "LIVE_FORMATIVE_RELEASE",
   "grade": 6,
   "title": "Ôn tập tổng hợp theo lớp — thí điểm lớp 6",
   "assessment_role": "formative_self_practice_not_readiness_or_mastery",
@@ -55,7 +55,7 @@
       ]
     }
   ],
-  "notes": "Exactly ten unchanged Grade6 KNTT-Core Micro source IDs across six subject topics; NotebookLM's 2026-10-21 targeted 5-source recheck reclassified STA21MICRO_013 as L2 and recommends replacing only its QA manifest reference with NUM02MICRO_032 (L3, Grade6 Bài 27). The full ten has L1/L2/L3=4/4/2 according to that reviewed classification, NOT every shorter learner-selected subset. Eight independent Core lesson groups across six topics; Bài 8–12, Bài 27 and Bài 28–31 of CT02 can be selected separately so unstudied lessons are never silently added. Existing canonical Micro sources/answers and past learner attempts are unchanged. Formative only; NO LIVE RELEASE, no Readiness/Mastery/Skill credit.",
+  "notes": "Exactly ten unchanged Grade6 KNTT-Core Micro source IDs across six subject topics; NotebookLM's 2026-10-21 targeted 5-source recheck reclassified STA21MICRO_013 as L2 and recommends replacing only its QA manifest reference with NUM02MICRO_032 (L3, Grade6 Bài 27). The full ten has L1/L2/L3=4/4/2 according to that reviewed classification, NOT every shorter learner-selected subset. Eight independent Core lesson groups across six topics; Bài 8–12, Bài 27 and Bài 28–31 of CT02 can be selected separately so unstudied lessons are never silently added. Existing canonical Micro sources/answers and past learner attempts are unchanged. Formative-only learner feature; intended live release ONLY after all required QA gates and final authorized merge. No Readiness/Mastery/Skill credit.",
   "cognitive_review_status": "NOTEBOOKLM_L3_5SOURCE_RECHECK_PASS__QA_ONLY_NO_LIVE_RELEASE",
   "cognitive_levels": {
     "NUM02MICRO_004": "L1",
@@ -152,5 +152,6 @@
         "PRO23MICRO_002"
       ]
     }
-  ]
+  ],
+  "release_authority": "OWNER_CONDITIONAL_APPROVAL_20261021_SUBJECT_TO_ALL_REQUIRED_QA"
 }
