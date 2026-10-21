@@ -39,7 +39,7 @@
     let manifest;
     try {
       manifest = await loadJSON("data/class-mixed/g6-pilot-v1.json");
-      if (manifest.status!=="QA_ONLY_DO_NOT_RELEASE" || manifest.grade!==6
+      if (manifest.status!=="LIVE_FORMATIVE_RELEASE" || manifest.grade!==6
         || manifest.topic_sources.reduce((sum,x)=>sum+x.ids.length,0)!==10
         || !Array.isArray(manifest.selection_groups)
         || manifest.selection_groups.length!==8
@@ -51,7 +51,7 @@
       return;
     }
     root.innerHTML="";
-    make("p","Thử nghiệm giao diện • Lớp 6 • Tối đa 10 câu đã kiểm toán • Không phải điểm thi, Readiness hay Mastery.",root,"cmg6-note");
+    make("p","Ôn tập tổng hợp lớp 6 • Chọn đúng các nhóm đã học • Tối đa 10 câu • Không phải điểm thi, Readiness hay Mastery.",root,"cmg6-note");
     const chooser=make("div",null,root,"cmg6-chooser");
     const title=make("h2","Chọn các nhóm kiến thức đã học",chooser);
     title.tabIndex=-1;
