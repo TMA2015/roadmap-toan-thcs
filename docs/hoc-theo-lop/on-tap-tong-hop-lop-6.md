@@ -6,7 +6,7 @@ hide:
 
 # Ôn tập tổng hợp · Lớp 6
 
-**Bản kiểm thử chưa phát hành:** 10 câu KNTT-Core đã được NotebookLM kiểm toán, thuộc 6 chuyên đề. Dùng để kiểm thử cách làm bài và phản hồi; chưa phải đề đánh giá chính thức theo tỉ lệ 40–40–20.
+**Bản kiểm thử chưa phát hành:** Bộ 10 câu KNTT-Core thuộc 6 chuyên đề được NotebookLM đề xuất với phân bố 4 Nhận biết – 4 Thông hiểu – 2 Vận dụng thấp. Có thể chọn ít nhất 2 nhóm đã học để luyện bộ ngắn hơn; khi đó tỉ lệ độ khó không cố định. Đây là **ôn tập hình thành kiến thức**, không phải bài thi chuẩn hóa hay chứng nhận Mastery.
 
 <div data-class-mixed-g6-qa></div>
 
