@@ -1,7 +1,6 @@
 (() => {
   "use strict";
   const KEY = "toan-thcs-class-mixed-quiz-v1"; // independent namespace; never Practice/Readiness/Mastery
-  const LIMIT = 50;
   const resource = path => new URL("../../assets/" + path, window.location.href).toString();
   const make = (tag, text, parent, className) => {
     const el = document.createElement(tag);
@@ -26,7 +25,7 @@
           return {ok:false,why:"Định dạng lịch sử hiện có không phù hợp; chưa ghi đè."};
       }
       const next = {schema:"math-class-mixed-history-v1",version:1,
-        attempts:[...current.attempts,entry].slice(-LIMIT)};
+        attempts:[...current.attempts,entry]};
       localStorage.setItem(KEY,JSON.stringify(next));
       return {ok:true};
     } catch (_) {return {ok:false,why:"Thiết bị không cho phép lưu lịch sử."};}
