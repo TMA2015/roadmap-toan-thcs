@@ -1,0 +1,328 @@
+{
+  "schema": "roadmap-readiness-assessment-v1",
+  "version": 1,
+  "release_status": "QA_ONLY_NO_LIVE_RELEASE",
+  "assessment_id": "PROB23-G9-CORE-READY-V1",
+  "title": "Tự kiểm tra Core — Chuyên đề 23 · Xác suất lớp 9 (QA)",
+  "topic": {
+    "id": "23-xac-suat",
+    "title": "Chuyên đề 23 – Xác suất"
+  },
+  "grade_scope": [
+    9
+  ],
+  "layer": "KNTT-Core",
+  "academic_review": {
+    "packet_id": "MATH-CT23-G9-NEW-READINESS-TEN-ITEM-AUTHORING-R0-20261021",
+    "verdict": "PASS",
+    "authorization": "NO_LIVE_RELEASE",
+    "source_git_blob": "a42270de82c7d124db1195474ed9b537a8b69857"
+  },
+  "skill_labels": {
+    "khong-gian-mau": "Không gian mẫu nhiều bước",
+    "bien-co": "Biến cố nhiều bước",
+    "xac-suat-co-dien": "Xác suất cổ điển",
+    "kiem-tra-xac-suat": "Kiểm tra kết quả xác suất"
+  },
+  "policy": {
+    "feedback": "after_submit",
+    "hints": false,
+    "tutor": false,
+    "hard_gate": false,
+    "allow_partial_submit": false,
+    "target_minutes": 20
+  },
+  "readiness": {
+    "ready_threshold": 0.8,
+    "minimum_answered_ratio": 1,
+    "hard_gate": false,
+    "states": [
+      "READY",
+      "REVIEW_RECOMMENDED",
+      "MORE_EVIDENCE_NEEDED"
+    ]
+  },
+  "items": [
+    {
+      "id": "PRO23G9READY_001",
+      "type": "mcq",
+      "skill": "khong-gian-mau",
+      "points": 1,
+      "card_id": "prob23-core-g9-6",
+      "cognitive_level": "L1",
+      "question": "Tung đồng xu cân đối hai lần và quay vòng quay có bốn ô A,B,C,D bằng nhau. Các kết quả phân biệt theo thứ tự các bước. Không gian mẫu có bao nhiêu kết quả?",
+      "options": [
+        "8",
+        "12",
+        "16",
+        "24"
+      ],
+      "answer": 2,
+      "explanation": "Hai lần tung có 2×2=4 kết quả; vòng quay có 4 nên có 4×4=16 kết quả.",
+      "source_micro_id": "PRO23MICRO_021",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          9
+        ],
+        "level": "core",
+        "lessons": [
+          "Lớp 9 · Bài 25"
+        ]
+      }
+    },
+    {
+      "id": "PRO23G9READY_002",
+      "type": "mcq",
+      "skill": "xac-suat-co-dien",
+      "points": 1,
+      "card_id": "prob23-core-g9-6",
+      "cognitive_level": "L2",
+      "question": "Gieo hai xúc xắc cân đối phân biệt (đỏ và xanh), mỗi chiếc có sáu mặt. Xác suất để hai xúc xắc ra cùng số chấm bằng bao nhiêu?",
+      "options": [
+        "1/12",
+        "1/6",
+        "1/3",
+        "1/2"
+      ],
+      "answer": 1,
+      "explanation": "Có 36 cặp có thứ tự đồng khả năng, 6 cặp cùng số. Xác suất 6/36=1/6.",
+      "source_micro_id": "PRO23MICRO_022",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          9
+        ],
+        "level": "core",
+        "lessons": [
+          "Lớp 9 · Bài 25"
+        ]
+      }
+    },
+    {
+      "id": "PRO23G9READY_003",
+      "type": "mcq",
+      "skill": "bien-co",
+      "points": 1,
+      "card_id": "prob23-core-g9-6",
+      "cognitive_level": "L2",
+      "question": "Tung đồng xu cân đối rồi quay vòng quay có năm ô bằng nhau ghi 1,2,3,4,5. Xác suất đồng xu ra sấp và vòng quay ra số lẻ bằng bao nhiêu?",
+      "options": [
+        "1/5",
+        "3/5",
+        "3/10",
+        "1/2"
+      ],
+      "answer": 2,
+      "explanation": "Trong 10 kết quả đồng khả năng, có 3 kết quả (sấp,1),(sấp,3),(sấp,5); xác suất 3/10.",
+      "source_micro_id": "PRO23MICRO_023",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          9
+        ],
+        "level": "core",
+        "lessons": [
+          "Lớp 9 · Bài 25"
+        ]
+      }
+    },
+    {
+      "id": "PRO23G9READY_004",
+      "type": "mcq",
+      "skill": "xac-suat-co-dien",
+      "points": 1,
+      "card_id": "prob23-core-g9-6",
+      "cognitive_level": "L2",
+      "question": "Tung một đồng xu cân đối ba lần liên tiếp. Xác suất xuất hiện đúng hai lần mặt ngửa bằng bao nhiêu?",
+      "options": [
+        "1/8",
+        "1/4",
+        "3/8",
+        "1/2"
+      ],
+      "answer": 2,
+      "explanation": "Có 8 chuỗi đồng khả năng, 3 chuỗi thuận lợi NNS, NSN, SNN nên xác suất 3/8.",
+      "source_micro_id": "PRO23MICRO_024",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          9
+        ],
+        "level": "core",
+        "lessons": [
+          "Lớp 9 · Bài 25"
+        ]
+      }
+    },
+    {
+      "id": "PRO23G9READY_005",
+      "type": "mcq",
+      "skill": "xac-suat-co-dien",
+      "points": 1,
+      "card_id": "prob23-core-g9-7",
+      "cognitive_level": "L2",
+      "question": "Hộp có 4 thẻ đỏ và 3 thẻ xanh cùng hình dạng. Rút ngẫu nhiên hai thẻ liên tiếp không hoàn lại. Xác suất cả hai đều xanh bằng bao nhiêu?",
+      "options": [
+        "1/7",
+        "3/7",
+        "2/7",
+        "1/6"
+      ],
+      "answer": 0,
+      "explanation": "P(xanh,xanh)=3/7×2/6=1/7; mẫu số lần hai là 6 vì không hoàn lại.",
+      "source_micro_id": "PRO23MICRO_025",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          9
+        ],
+        "level": "core",
+        "lessons": [
+          "Lớp 9 · Bài 26"
+        ]
+      }
+    },
+    {
+      "id": "PRO23G9READY_006",
+      "type": "mcq",
+      "skill": "kiem-tra-xac-suat",
+      "points": 1,
+      "card_id": "prob23-core-g9-7",
+      "cognitive_level": "L1",
+      "question": "Hộp có 4 thẻ đỏ và 2 thẻ xanh. Rút ngẫu nhiên một thẻ, không hoàn lại; biết thẻ đầu tiên là xanh. Xác suất lần hai rút đỏ bằng bao nhiêu?",
+      "options": [
+        "2/5",
+        "1/2",
+        "4/5",
+        "2/3"
+      ],
+      "answer": 2,
+      "explanation": "Còn 4 thẻ đỏ và 1 xanh trong 5 thẻ; xác suất 4/5, không phải 4/6.",
+      "source_micro_id": "PRO23MICRO_026",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          9
+        ],
+        "level": "core",
+        "lessons": [
+          "Lớp 9 · Bài 26"
+        ]
+      }
+    },
+    {
+      "id": "PRO23G9READY_007",
+      "type": "mcq",
+      "skill": "xac-suat-co-dien",
+      "points": 1,
+      "card_id": "prob23-core-g9-7",
+      "cognitive_level": "L3",
+      "question": "Hộp có 3 bi xanh và 2 bi vàng giống nhau về kích thước. Rút ngẫu nhiên hai viên liên tiếp, không hoàn lại. Xác suất hai viên khác màu bằng bao nhiêu?",
+      "options": [
+        "6/25",
+        "3/5",
+        "1/2",
+        "2/5"
+      ],
+      "answer": 1,
+      "explanation": "Có hai thứ tự rời nhau: xanh–vàng 3/5×2/4=3/10 và vàng–xanh 2/5×3/4=3/10. Tổng 3/5.",
+      "source_micro_id": "PRO23MICRO_027",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          9
+        ],
+        "level": "core",
+        "lessons": [
+          "Lớp 9 · Bài 26"
+        ]
+      }
+    },
+    {
+      "id": "PRO23G9READY_008",
+      "type": "mcq",
+      "skill": "kiem-tra-xac-suat",
+      "points": 1,
+      "card_id": "prob23-core-g9-7",
+      "cognitive_level": "L2",
+      "question": "Một bạn lập được không gian mẫu 12 kết quả đồng khả năng nhưng đếm biến cố A có 15 kết quả, cho rằng P(A)=15/12. Nhận định nào đúng?",
+      "options": [
+        "P=15/12 hợp lệ khi nhiều lần thử",
+        "Cần đảo thành 12/15",
+        "Biến cố không thể có 15 kết quả trong không gian mẫu 12; phải đếm lại",
+        "P>1 được phép nếu các bước phụ thuộc"
+      ],
+      "answer": 2,
+      "explanation": "Biến cố là tập con của không gian mẫu nên số thuận lợi không thể vượt tổng số; mọi xác suất ≤1.",
+      "source_micro_id": "PRO23MICRO_028",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          9
+        ],
+        "level": "core",
+        "lessons": [
+          "Lớp 9 · Bài 26"
+        ]
+      }
+    },
+    {
+      "id": "PRO23G9READY_009",
+      "type": "mcq",
+      "skill": "khong-gian-mau",
+      "points": 1,
+      "card_id": "prob23-core-g9-6",
+      "cognitive_level": "L3",
+      "question": "Quay vòng quay ba ô bằng nhau 1,2,3 rồi tung đồng xu cân đối hai lần theo thứ tự. Xác suất vòng quay ra 2 và hai mặt đồng xu khác nhau bằng bao nhiêu?",
+      "options": [
+        "1/3",
+        "1/6",
+        "1/12",
+        "1/4"
+      ],
+      "answer": 1,
+      "explanation": "Có 3×2×2=12 kết quả đồng khả năng; 2 thuận lợi (2,N,S) và (2,S,N); xác suất 2/12=1/6.",
+      "source_micro_id": "PRO23MICRO_021",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          9
+        ],
+        "level": "core",
+        "lessons": [
+          "Lớp 9 · Bài 25"
+        ]
+      }
+    },
+    {
+      "id": "PRO23G9READY_010",
+      "type": "mcq",
+      "skill": "xac-suat-co-dien",
+      "points": 1,
+      "card_id": "prob23-core-g9-7",
+      "cognitive_level": "L3",
+      "question": "Hộp có 4 bi đỏ và 2 bi xanh giống nhau về kích thước. Rút ngẫu nhiên hai viên liên tiếp không hoàn lại. Xác suất có ít nhất một viên xanh bằng bao nhiêu?",
+      "options": [
+        "1/3",
+        "3/5",
+        "2/5",
+        "4/5"
+      ],
+      "answer": 1,
+      "explanation": "Biến cố đối là cả hai đỏ: 4/6×3/5=2/5; vậy có ít nhất một xanh là 1−2/5=3/5.",
+      "source_micro_id": "PRO23MICRO_025",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          9
+        ],
+        "level": "core",
+        "lessons": [
+          "Lớp 9 · Bài 26"
+        ]
+      }
+    }
+  ],
+  "next_topic": null
+}
