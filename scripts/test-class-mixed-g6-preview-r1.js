@@ -10,14 +10,17 @@ assert.equal(manifest.assessment_role,"formative_self_practice_not_readiness_or_
 assert.equal(manifest.topic_sources.length,6);
 assert.equal(manifest.max_items,10);
 const ids=new Set(),stems=new Set(),originalKeys=[];
-const expectedTopicQuotas={"02-so-va-phep-tinh":3,"03-ti-le-ti-le-thuc":1,"13-goc-va-duong-thang":1,"20-hinh-hoc-tong-hop":1,"21-thong-ke":2,"23-xac-suat":2};
+const expectedTopicQuotas={"02-so-va-phep-tinh":4,"03-ti-le-ti-le-thuc":1,"13-goc-va-duong-thang":1,"20-hinh-hoc-tong-hop":1,"21-thong-ke":1,"23-xac-suat":2};
 const exactReviewedIds=[
 "NUM02MICRO_004","RAT03MICRO_001","GEO20MICRO_003","PRO23MICRO_001",
 "NUM02MICRO_015","GEO13MICRO_019","STA21MICRO_001","PRO23MICRO_002",
-"NUM02MICRO_006","STA21MICRO_013"
+"NUM02MICRO_006","NUM02MICRO_032"
 ];
-assert.equal(manifest.version,"1.2.0");
-assert.equal(manifest.source_review,"MATH-G6-MIXED-DEPTH-21CANDIDATE-40-40-20-R0-20261021");
+assert.equal(manifest.version,"1.3.0");
+assert.equal(manifest.source_review,"MATH-G6-MIXED-L3-5SOURCE-RECHECK-R1-20261021");
+assert.equal(manifest.cognitive_review_status,"NOTEBOOKLM_L3_5SOURCE_RECHECK_PASS__QA_ONLY_NO_LIVE_RELEASE");
+assert.equal(manifest.cognitive_levels.NUM02MICRO_032,"L3");
+assert(!Object.hasOwn(manifest.cognitive_levels,"STA21MICRO_013"),"correct L2 CĐ21 item cannot be mislabeled L3 in ten-item candidate");
 const cognitive=Object.values(manifest.cognitive_levels).reduce((acc,level)=>(acc[level]=(acc[level]||0)+1,acc),{});
 assert.deepEqual(cognitive,{L1:4,L2:4,L3:2});
 assert.deepEqual(new Set(manifest.topic_sources.flatMap(t=>t.ids)),new Set(exactReviewedIds));
@@ -26,8 +29,14 @@ const selectedIds=manifest.selection_groups.flatMap(g=>g.ids);
 assert.equal(selectedIds.length,10);
 assert.deepEqual(new Set(selectedIds),new Set(exactReviewedIds),"group selection must partition original ten reviewed questions");
 assert.equal(new Set(manifest.selection_groups.map(g=>g.group_id)).size,8);
-assert.equal(manifest.selection_groups.filter(g=>g.topic==="02-so-va-phep-tinh").length,2,
- "CT02 early and late lessons must be selectable independently");
+assert.equal(manifest.selection_groups.filter(g=>g.topic==="02-so-va-phep-tinh").length,3,
+ "CT02 divisibility B8–12, inverse fraction B27, decimals B28–31 must be selectable independently");
+const fractionGroup=manifest.selection_groups.find(g=>g.group_id==="g6-fractions-b27");
+assert(fractionGroup && fractionGroup.card_id==="num02-g6-core-4" && fractionGroup.lesson_scope==="Bài 27" &&
+  fractionGroup.ids.length===1 && fractionGroup.ids[0]==="NUM02MICRO_032","Bài 27 must be its own learner-selectable Core lesson");
+assert(!selectedIds.includes("STA21MICRO_013"),"old Grade6 statistics item remains in canonical bank, not this QA set");
+assert.deepEqual(new Set(manifest.selection_groups.map(g=>g.topic)),
+  new Set(manifest.topic_sources.map(t=>t.slug)),"all six topic families remain");
 for(const g of manifest.selection_groups){
   assert(g.label&&g.lesson_scope&&g.card_id&&g.group_id);
   const topic=manifest.topic_sources.find(t=>t.slug===g.topic);
@@ -66,9 +75,17 @@ for(const entry of manifest.topic_sources){
    assert(!stems.has(stem),id+" duplicate stem");
    stems.add(stem);
    originalKeys.push([id,q.answer]);
+   if(id==="NUM02MICRO_032"){
+     assert.equal(q.card_id,"num02-g6-core-4");
+     assert.equal(q.curriculum.lesson,"Bài 27");
+     assert.equal(q.answer,0,"approved canonical Grade6 fraction item key must not change");
+     assert.deepEqual(q.options,["24 cây","13,5 cây","21 cây","72 cây"]);
+     assert(q.question.includes("18 cây")&&q.question.includes("3/4"),"approved original problem context retained");
+   }
  }
 }
 assert.equal(ids.size,10);
+assert.equal(originalKeys.length,10,"all original source keys were read unchanged");
 const page=fs.readFileSync("docs/hoc-theo-lop/on-tap-tong-hop-lop-6.md","utf8");
 const js=fs.readFileSync("docs/assets/javascripts/class-mixed-g6-pilot-v1.js","utf8");
 assert(page.includes("data-class-mixed-g6-qa"));
