@@ -25,6 +25,7 @@ with sync_playwright() as pw:
         root=page.locator("[data-class-mixed-g6-qa]")
         root.locator("input[type=checkbox]").first.wait_for(timeout=15000)
         assert root.locator("input[type=checkbox]").count()==8
+        assert "Bài 27" in root.locator(".cmg6-choice").nth(6).inner_text(),"independent Grade6 fraction lesson is visible"
         assert root.get_by_role("button",name="Bắt đầu ôn tập").is_disabled()
         page.evaluate("""() => {
           localStorage.setItem('toan-thcs-practice-v1','{\u0022QA\u0022:123}');
@@ -52,6 +53,8 @@ with sync_playwright() as pw:
         assert short.locator(".cmg6-review").count()==3
         short_count=page.evaluate("""() => JSON.parse(localStorage.getItem('toan-thcs-class-mixed-quiz-v1')).attempts.length""")
         assert short_count==1
+        short_ids=page.evaluate("""() => JSON.parse(localStorage.getItem('toan-thcs-class-mixed-quiz-v1')).attempts[0].source_ids""")
+        assert set(short_ids)=={"NUM02MICRO_004","NUM02MICRO_006","RAT03MICRO_001"},"no unstudied Bài 27/28–31 item may enter short selection"
 
         # Then open the full eight-card-group / six-topic cohort on the SAME disposable profile.
         page.goto(URL,wait_until="domcontentloaded")
@@ -78,6 +81,9 @@ with sync_playwright() as pw:
           return x.schema==='math-class-mixed-history-v1' ? x.attempts.length : -1;
         }""")
         assert count==2
+        full_ids=page.evaluate("""() => JSON.parse(localStorage.getItem('toan-thcs-class-mixed-quiz-v1')).attempts[1].source_ids""")
+        assert len(full_ids)==10 and "NUM02MICRO_032" in full_ids and "STA21MICRO_013" not in full_ids
+        assert len(set(full_ids))==10,"ten unique reviewed originals only"
         assert not errors,(width,errors)
         print("PASS G6 mixed Core source/submit/isolated-history/mobile preview",width)
         context.close()
