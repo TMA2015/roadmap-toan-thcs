@@ -12,6 +12,29 @@ const READINESS_W1_NEW_LABELS=new Set(["bcnn","rut-gon-phan-so","he-so-ti-le-thu
 function assertHistoricalAssessmentLock(lock){
   const currentText=read(lock.path);
   const current=JSON.parse(currentText);
+  // Owner-directed CT17 correction: preserve the exact historical Grade-8 blob
+  // after reversing ONLY the four independently identified incomplete premises.
+  if(lock.path==="docs/assets/data/assessment/17-thales-dong-dang-core-v1.json"){
+    assert.equal(lock.sha,"c41dfb3e95c1ab8298d546a914b2adda88757d17");
+    assert.equal(blob(currentText),"2daa14678a75159421ee3b5a9110544da41db572",
+      "unapproved CT17 readiness content change");
+    const original={
+      "GEO17READY_001":["DE∥BC. Hệ thức:","Thales thuận."],
+      "GEO17READY_002":["AD/AB=AE/AC suy ra:","Thales đảo."],
+      "GEO17READY_004":["AD phân giác góc A. Hệ thức:","Định lý phân giác."],
+      "GEO17READY_006":["Hai góc tương ứng bằng →","g-g."]
+    };
+    assert.equal(current.items.length,10);
+    for(const [id,[question,explanation]] of Object.entries(original)){
+      const item=current.items.find(q=>q.id===id);
+      assert.ok(item,id+" missing");
+      item.question=question;
+      item.explanation=explanation;
+    }
+    assert.equal(blob(JSON.stringify(current,null,2)+"\n"),lock.sha,
+      "CT17 readiness changed outside the four exact source wording fields");
+    return;
+  }
   const hasWave1=(current.items||[]).some(q=>q.authoring_review?.packet_id===READINESS_W1_PACKET);
   if(!hasWave1){
     assert.equal(blob(currentText),lock.sha,"source drift: "+lock.path);
