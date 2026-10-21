@@ -522,10 +522,6 @@
       this.focusSkills = focusSkills;
       this.root.dataset.sessionQuestionIds = session.map((question) => question.id).join(",");
       this.root.dataset.sessionVariantGroups = session.map(questionVariantGroup).filter(Boolean).join(",");
-      if (session.length && ["normal", "new", "weak", "skill"].includes(mode)) {
-        this.recentSets = [...this.recentSets, session.map(q => q.id)].slice(-2);
-        saveRecentSets(this.bank, this.recentSets);
-      }
       this.index = 0;
       this.score = 0;
       this.answered = false;
@@ -1556,6 +1552,12 @@
     }
 
     renderSummary() {
+      // Cache a recently COMPLETED set only. Incomplete sessions must remain
+      // deterministic across reload so pending atomic answers can be replayed.
+      if (this.session.length && ["normal", "new", "weak", "skill"].includes(this.mode)) {
+        this.recentSets = [...this.recentSets, this.session.map(q => q.id)].slice(-2);
+        saveRecentSets(this.bank, this.recentSets);
+      }
       const recoveryEvent = this.recordRecoveryResult();
       const percent = Math.round((this.score / this.session.length) * 100);
       this.progressEl.textContent = `Hoàn thành · ${this.score}/${this.session.length} câu đúng`;
