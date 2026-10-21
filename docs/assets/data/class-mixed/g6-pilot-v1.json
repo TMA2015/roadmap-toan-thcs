@@ -1,20 +1,20 @@
 {
   "schema": "math-class-mixed-qa-source-v1",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "status": "QA_ONLY_DO_NOT_RELEASE",
   "grade": 6,
   "title": "Ôn tập tổng hợp theo lớp — thí điểm lớp 6",
   "assessment_role": "formative_self_practice_not_readiness_or_mastery",
-  "source_review": "MATH-CLASS-G6-MIXED-CORE-10SOURCE-R0-20261021",
+  "source_review": "MATH-G6-MIXED-DEPTH-21CANDIDATE-40-40-20-R0-20261021",
   "max_items": 10,
   "topic_sources": [
     {
       "slug": "02-so-va-phep-tinh",
       "label": "Số và phép tính",
       "ids": [
-        "NUM02MICRO_001",
-        "NUM02MICRO_002",
-        "NUM02MICRO_003"
+        "NUM02MICRO_004",
+        "NUM02MICRO_015",
+        "NUM02MICRO_006"
       ]
     },
     {
@@ -28,15 +28,14 @@
       "slug": "13-goc-va-duong-thang",
       "label": "Góc và đường thẳng",
       "ids": [
-        "GEO13MICRO_001",
-        "GEO13MICRO_002"
+        "GEO13MICRO_019"
       ]
     },
     {
       "slug": "20-hinh-hoc-tong-hop",
       "label": "Hình phẳng và đo lường",
       "ids": [
-        "GEO20MICRO_001"
+        "GEO20MICRO_003"
       ]
     },
     {
@@ -44,16 +43,30 @@
       "label": "Thống kê",
       "ids": [
         "STA21MICRO_001",
-        "STA21MICRO_004"
+        "STA21MICRO_013"
       ]
     },
     {
       "slug": "23-xac-suat",
       "label": "Xác suất",
       "ids": [
-        "PRO23MICRO_001"
+        "PRO23MICRO_001",
+        "PRO23MICRO_002"
       ]
     }
   ],
-  "notes": "Only ten existing independently reviewed Grade6 KNTT-Core Micro source IDs. Not a 4/4/2 diagnostic; no grade7+ substitution, no automatic Readiness/Mastery or exam credit."
+  "notes": "Exactly 10 existing NotebookLM-reviewed Grade-6 KNTT-Core Micro source IDs, six topics. Full six-topic cohort 4 L1 / 4 L2 / 2 L3 *according to reviewer*; subset selection may be shorter and not 4/4/2. STA21MICRO_013 L3 depth label warrants follow-up despite reviewer PASS. Formative only, never independent Readiness/Mastery, no grade7+ source.",
+  "cognitive_review_status": "NOTEBOOKLM_PASS_FOR_FORMATIVE_PILOT__STA21MICRO_013_L3_CHALLENGE_RECHECK",
+  "cognitive_levels": {
+    "NUM02MICRO_004": "L1",
+    "RAT03MICRO_001": "L1",
+    "GEO20MICRO_003": "L1",
+    "PRO23MICRO_001": "L1",
+    "NUM02MICRO_015": "L2",
+    "GEO13MICRO_019": "L2",
+    "STA21MICRO_001": "L2",
+    "PRO23MICRO_002": "L2",
+    "NUM02MICRO_006": "L3",
+    "STA21MICRO_013": "L3"
+  }
 }
