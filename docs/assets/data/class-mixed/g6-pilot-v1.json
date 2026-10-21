@@ -1,6 +1,6 @@
 {
   "schema": "math-class-mixed-qa-source-v1",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "status": "QA_ONLY_DO_NOT_RELEASE",
   "grade": 6,
   "title": "Ôn tập tổng hợp theo lớp — thí điểm lớp 6",
@@ -55,7 +55,7 @@
       ]
     }
   ],
-  "notes": "Exactly 10 existing NotebookLM-reviewed Grade-6 KNTT-Core Micro source IDs, six topics. Full six-topic cohort 4 L1 / 4 L2 / 2 L3 *according to reviewer*; subset selection may be shorter and not 4/4/2. STA21MICRO_013 L3 depth label warrants follow-up despite reviewer PASS. Formative only, never independent Readiness/Mastery, no grade7+ source.",
+  "notes": "Exactly 10 existing NotebookLM-reviewed Grade-6 KNTT-Core Micro source IDs, six topics. Full six-topic cohort 4 L1 / 4 L2 / 2 L3 *according to reviewer*; subset selection may be shorter and not 4/4/2. STA21MICRO_013 L3 depth label warrants follow-up despite reviewer PASS. Formative only, never independent Readiness/Mastery, no grade7+ source. R1.2 UX groups by reviewed Grade6 Core-card lesson scope (8 groups, 6 subject topics) and requires 2 distinct topics; does not imply official KNTT chapter labels for broad mixed-grade cards.",
   "cognitive_review_status": "NOTEBOOKLM_PASS_FOR_FORMATIVE_PILOT__STA21MICRO_013_L3_CHALLENGE_RECHECK",
   "cognitive_levels": {
     "NUM02MICRO_004": "L1",
@@ -68,5 +68,89 @@
     "PRO23MICRO_002": "L2",
     "NUM02MICRO_006": "L3",
     "STA21MICRO_013": "L3"
-  }
+  },
+  "selection_groups": [
+    {
+      "group_id": "g6-divisibility-b8-12",
+      "topic": "02-so-va-phep-tinh",
+      "card_id": "num02-g6-core-2",
+      "label": "Chia hết, số nguyên tố, ƯCLN và BCNN",
+      "lesson_scope": "Bài 8–12",
+      "ids": [
+        "NUM02MICRO_004",
+        "NUM02MICRO_006"
+      ]
+    },
+    {
+      "group_id": "g6-ratio-percent",
+      "topic": "03-ti-le-ti-le-thuc",
+      "card_id": "rat03-core-g6-1",
+      "label": "Tỉ số và phần trăm",
+      "lesson_scope": "Tỉ số và phần trăm",
+      "ids": [
+        "RAT03MICRO_001"
+      ]
+    },
+    {
+      "group_id": "g6-decimals-b28-31",
+      "topic": "02-so-va-phep-tinh",
+      "card_id": "num02-g6-core-5",
+      "label": "Số thập phân, làm tròn, phần trăm",
+      "lesson_scope": "Bài 28–31",
+      "ids": [
+        "NUM02MICRO_015"
+      ]
+    },
+    {
+      "group_id": "g6-angles-b36-37",
+      "topic": "13-goc-va-duong-thang",
+      "card_id": "geo13-core-2",
+      "label": "Góc và quan hệ góc",
+      "lesson_scope": "Bài 36–37",
+      "ids": [
+        "GEO13MICRO_019"
+      ]
+    },
+    {
+      "group_id": "g6-shapes",
+      "topic": "20-hinh-hoc-tong-hop",
+      "card_id": "geo20-core-1",
+      "label": "Hình phẳng và đo lường — Core lớp 6",
+      "lesson_scope": "Đo lường và hình phẳng",
+      "ids": [
+        "GEO20MICRO_003"
+      ]
+    },
+    {
+      "group_id": "g6-data-b38",
+      "topic": "21-thong-ke",
+      "card_id": "sta21-core-1",
+      "label": "Dữ liệu và thu thập dữ liệu",
+      "lesson_scope": "Bài 38",
+      "ids": [
+        "STA21MICRO_001"
+      ]
+    },
+    {
+      "group_id": "g6-data-conclusion-b41",
+      "topic": "21-thong-ke",
+      "card_id": "sta21-core-5",
+      "label": "Đọc số liệu và kết luận",
+      "lesson_scope": "Bài 41",
+      "ids": [
+        "STA21MICRO_013"
+      ]
+    },
+    {
+      "group_id": "g6-probability-b42-43",
+      "topic": "23-xac-suat",
+      "card_id": "prob23-core-1",
+      "label": "Kết quả phép thử và xác suất thực nghiệm",
+      "lesson_scope": "Bài 42–43",
+      "ids": [
+        "PRO23MICRO_001",
+        "PRO23MICRO_002"
+      ]
+    }
+  ]
 }
