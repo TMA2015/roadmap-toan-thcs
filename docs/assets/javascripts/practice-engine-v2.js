@@ -346,6 +346,79 @@
     return shuffle(selected).slice(0, sessionSize);
   };
 
+
+  // Selection-only policy: preserve question ID, answer keys, and v1 grading/history.
+  // This cache stores only the IDs SHOWN in the last two sets, per tab and per bank.
+  // It is never learner performance data and never changes Readiness or Mastery.
+  const RECENT_SETS_PREFIX = "toan-thcs-practice-recent-sets-v1:";
+  const recentSetsKey = (bank) => RECENT_SETS_PREFIX + String(bank?.bank_id || bank?.topic?.id || "unknown");
+  const loadRecentSets = (bank) => {
+    try {
+      const value = JSON.parse(sessionStorage.getItem(recentSetsKey(bank)) || "[]");
+      return Array.isArray(value) ? value.filter(Array.isArray).slice(-2).map(set => set.filter(id => typeof id === "string")) : [];
+    } catch (_) { return []; }
+  };
+  const saveRecentSets = (bank, history) => {
+    try { sessionStorage.setItem(recentSetsKey(bank), JSON.stringify(history.slice(-2))); }
+    catch (_) { /* optional repetition preference; learner evidence is untouched */ }
+  };
+
+  const buildAdaptiveSelection = (questions, stats, bank, sessionSize, recentSets = []) => {
+    const count = Math.min(Math.max(0, sessionSize), questions.length);
+    if (!count) return [];
+    const recent = new Set(recentSets.flat());
+    const used = new Set(), variants = new Set(), selected = [];
+    const skillHits = new Map(), groupHits = new Map();
+    const groups = new Map();
+    (bank.skill_groups || []).forEach(group => (group.skills || []).forEach(skill => groups.set(skill, group.id)));
+    const qSkills = q => questionSkills(q);
+    const quality = q => {
+      const primary = qSkills(q)[0] || "__unmapped__";
+      const rec = stats.questions?.[q.id];
+      return (recent.has(q.id) ? 1000 : 0)
+        + (skillHits.get(primary) || 0) * 13
+        + (groupHits.get(groups.get(primary) || primary) || 0) * 5
+        + (rec?.attempted && accuracy(rec) >= 0.8 ? 2 : 0);
+    };
+    const take = (pool, quota) => {
+      const goal = Math.min(count, selected.length + Math.max(0, quota));
+      while (selected.length < goal) {
+        let available = pool.filter(q => !used.has(q.id));
+        if (!available.length) break;
+        const variantSafe = available.filter(q => !questionVariantGroup(q) || !variants.has(questionVariantGroup(q)));
+        if (variantSafe.length) available = variantSafe;
+        // Prefer a never-shown-in-recent-sets question when alternatives exist.
+        const notRecent = available.filter(q => !recent.has(q.id));
+        if (notRecent.length) available = notRecent;
+        const lowest = Math.min(...available.map(quality));
+        const tied = available.filter(q => quality(q) === lowest);
+        const question = tied[Math.floor(Math.random() * tied.length)];
+        selected.push(question);
+        used.add(question.id);
+        const variant = questionVariantGroup(question);
+        if (variant) variants.add(variant);
+        const primary = qSkills(question)[0] || "__unmapped__";
+        skillHits.set(primary, (skillHits.get(primary) || 0) + 1);
+        const group = groups.get(primary) || primary;
+        groupHits.set(group, (groupHits.get(group) || 0) + 1);
+      }
+    };
+    const unseen = questions.filter(q => !(stats.questions?.[q.id]?.attempted > 0));
+    const weakSkills = new Set(rankWeakSkills(stats, Object.keys(bank.skill_labels || {}), 
+      (bank.skill_groups || []).flatMap(g => g.skills || [])).slice(0, 4));
+    const weak = questions.filter(q => {
+      const rec = stats.questions?.[q.id];
+      return (rec?.attempted > 0 && rec.correct < rec.attempted) || qSkills(q).some(skill => weakSkills.has(skill));
+    });
+    const freshQuota = Math.min(unseen.length, Math.max(1, Math.ceil(count * 0.3)));
+    const weakQuota = Math.min(weak.length, Math.ceil(count * 0.5), count - freshQuota);
+    take(weak, weakQuota);
+    // Always reserve exposure to questions never answered, even for weak learners.
+    take(unseen, freshQuota);
+    take(questions, count);
+    return shuffle(selected);
+  };
+
   class PracticeEngineV2 {
     constructor(root, bank) {
       this.root = root;
@@ -371,6 +444,7 @@
       this.hintButton = null;
       this.geminiPending = false;
       this.mode = "normal";
+      this.recentSets = loadRecentSets(bank);
       this.focusSkills = [];
       this.renderShell();
       loadKnowledgeGraph().then((graph) => {
@@ -425,7 +499,7 @@
       this.tutorEl = this.root.querySelector(".practice-tutor");
 
       const normalBtn = createButton("Bộ 10 câu mới", "practice-btn-secondary");
-      normalBtn.addEventListener("click", () => this.startNormalSession());
+      normalBtn.addEventListener("click", () => this.startNewOnlySession());
       const weakBtn = createButton("Luyện điểm yếu", "practice-btn-secondary");
       weakBtn.addEventListener("click", () => this.startWeakSession());
       this.toolbarActionsEl.append(normalBtn, weakBtn);
@@ -447,6 +521,10 @@
       this.focusSkills = focusSkills;
       this.root.dataset.sessionQuestionIds = session.map((question) => question.id).join(",");
       this.root.dataset.sessionVariantGroups = session.map(questionVariantGroup).filter(Boolean).join(",");
+      if (session.length && ["normal", "new", "weak", "skill"].includes(mode)) {
+        this.recentSets = [...this.recentSets, session.map(q => q.id)].slice(-2);
+        saveRecentSets(this.bank, this.recentSets);
+      }
       this.index = 0;
       this.score = 0;
       this.answered = false;
@@ -457,16 +535,21 @@
 
     startNormalSession() {
       this.stats = loadStats();
-      // Keep legacy 10-question choice sessions unchanged during the opt-in rich pilot.
-      const legacyQuestions = this.questions.filter(q => !q.response_type);
-      const pool = weightedQuestionPool(legacyQuestions, this.stats);
-      const session = buildDiverseSession(pool, Math.min(this.sessionSize, pool.length));
-      this.setSession(
-        session,
-        "normal",
-        [],
-        `Bộ đề ${legacyQuestions.length} câu`
-      );
+      const questions = this.questions.filter(q => !q.response_type);
+      const session = buildAdaptiveSelection(questions, this.stats, this.bank, this.sessionSize, this.recentSets);
+      const unseen = questions.filter(q => !(this.stats.questions?.[q.id]?.attempted > 0)).length;
+      this.setSession(session, "normal", [],
+        "Luyện thích ứng: ưu tiên câu từng sai và kỹ năng yếu, đồng thời có câu chưa làm · còn " + unseen + " câu chưa làm.");
+    }
+
+    startNewOnlySession() {
+      this.stats = loadStats();
+      const unseen = this.questions.filter(q => !q.response_type && !(this.stats.questions?.[q.id]?.attempted > 0));
+      const session = buildAdaptiveSelection(unseen, this.stats, this.bank, this.sessionSize, this.recentSets);
+      this.setSession(session, "new", [],
+        session.length
+          ? "Bộ câu chưa làm · " + session.length + " câu mới (còn " + unseen.length + " trong ngân hàng)."
+          : "Bạn đã làm hết câu trắc nghiệm trong ngân hàng này. Hãy chọn Luyện điểm yếu hoặc luyện lại kiến thức.");
     }
 
     startWeakSession() {
@@ -542,7 +625,9 @@
 
     renderQuestion() {
       if (!this.session.length) {
-        this.cardEl.innerHTML = "<p>Chưa có câu hỏi phù hợp trong ngân hàng.</p>";
+        this.cardEl.textContent = this.mode === "new"
+          ? "Không còn câu chưa làm. Chọn Luyện điểm yếu hoặc mở một bộ luyện thích ứng."
+          : "Chưa có câu hỏi phù hợp trong ngân hàng.";
         return;
       }
       if (this.index >= this.session.length) {
@@ -1491,11 +1576,13 @@
         : "Hãy xem bảng tiến độ, chọn kỹ năng cần luyện hoặc dùng “Luyện điểm yếu”.";
       this.actionsEl.innerHTML = "";
 
-      const restartBtn = createButton("Làm bộ 10 câu mới", "practice-btn-primary");
+      const restartBtn = createButton("Luyện tiếp · ưu tiên điểm yếu", "practice-btn-primary");
       restartBtn.addEventListener("click", () => this.startNormalSession());
+      const newBtn = createButton("Bộ 10 câu mới", "practice-btn-secondary");
+      newBtn.addEventListener("click", () => this.startNewOnlySession());
       const weakBtn = createButton("Luyện điểm yếu", "practice-btn-secondary");
       weakBtn.addEventListener("click", () => this.startWeakSession());
-      this.actionsEl.append(restartBtn, weakBtn);
+      this.actionsEl.append(restartBtn, newBtn, weakBtn);
       this.renderStats();
       this.renderRemediation(this.focusSkills);
     }
