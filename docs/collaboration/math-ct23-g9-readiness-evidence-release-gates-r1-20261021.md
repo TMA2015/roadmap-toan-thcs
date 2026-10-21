@@ -32,11 +32,22 @@
 | Devices | CI Playwright 1365px/390px plus **owner manual iPad check** (touch, scrolling, focus, text size) |
 | Release | Exact-head PR Quality PASS, specific Owner assent to **this** live release, then verify Pages deploy + source blobs |
 
+## R2 implementation note — Draft QA, not a live release (2026-10-21)
+
+The QA-only preview was extended to **persist submitted Grade9 results only** under the **already-backed-up** `toan-thcs-assessment-v1` container, new unique `assessments.PROB23-G9-CORE-READY-V1` bucket. This choice avoids an orphan standalone key and reuses the existing SHA-256 local Progress Backup allowlist. Existing Grade6–8 or other assessment bucket values are copied without scoring or modification.
+
+- Pure evidence module `docs/assets/javascripts/readiness-g9-evidence-qa-v1.js`: validates the old store shape, rejects corrupt/unknown Grade9 history, writes only the Grade9 key, version/grade/source/ID annotated, unique attempt ID, **idempotent duplicate attempt ID**, no silent 20-attempt truncation, preserve old `latest`/`best` of unrelated assessments. Storage failure yields an explicit warning without falsely claiming saved.
+- Player `readiness-g9-qa-v1.js`: Final Submit only, full ten answers required, in-memory feedback plus attempt persistence; Grade9 result preview after reload, separate `READY` screen at 8/10; **does not call `MathV2CanaryBridgeR5.captureReadiness`** and never credits general CT23 Mastery/Skill.
+- `scripts/test-ct23-g9-readiness-evidence-r2.js`: verifies eight/ten, ten/ten and zero/ten scores, exact legacy bucket equality, duplicate replay, corrupt store and quota failure, old backup round-trip, restore-in-missing mode no overwrite.
+- `scripts/test-ct23-g9-readiness-qa-browser.py`: verifies old Grade6–8 data preserved after new Grade9 submission, one independent Grade9 record, refresh reading history at desktop (1365px) and mobile (390px).
+- **Release status remains NO_LIVE_RELEASE.** Route stays unlinked and `docs/assets/data/qa/` cannot be treated as a production approved release; user/iPad QA, grade9-only entry point and explicit release authorization remain pending.
+- As with local-only Progress Backup, this protects data **on the current browser**, not cross-device synchronization automatically; transferring between devices requires explicit backup/export and restore.
+
 ## 4. Current verified vs pending
 
 - Independent NotebookLM ten-item academic `OVERALL|PASS`: **DONE**.
-- QA-only source mapping + zero-persistence player and 1365/390 browser QA: **DONE**, verified [CI run 39564889865](https://github.com/TMA2015/roadmap-toan-thcs/actions/runs/39564889865).
-- Official Grade9-only route, versioned durable evidence, backup/restore and bridge isolation: **PENDING**.
+- QA-only source mapping and original zero-persistence preview: **DONE**, previously verified [CI run 39564889865](https://github.com/TMA2015/roadmap-toan-thcs/actions/runs/39564889865). **R2 now adds protected Grade9 persistence; latest-head QA must pass independently.**
+- Grade9 versioned local evidence/bucket isolation and existing backup/restore: **IMPLEMENTED IN DRAFT / QA PENDING**. Official Grade9-only learner route and optional integration with general readiness progress: **NOT YET IMPLEMENTED**.
 - Owner manual iPad QA and permission to merge/publish: **PENDING**.
 
 **DO NOT mark Draft #561 as production READY or merge based on academic PASS alone.** PR #559 (Grade6 mixed Core) also remains independent and Draft; its formative marks must never become Grade9 Readiness.
