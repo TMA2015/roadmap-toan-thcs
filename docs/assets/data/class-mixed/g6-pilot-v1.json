@@ -1,11 +1,11 @@
 {
   "schema": "math-class-mixed-qa-source-v1",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "status": "QA_ONLY_DO_NOT_RELEASE",
   "grade": 6,
   "title": "Ôn tập tổng hợp theo lớp — thí điểm lớp 6",
   "assessment_role": "formative_self_practice_not_readiness_or_mastery",
-  "source_review": "MATH-G6-MIXED-DEPTH-21CANDIDATE-40-40-20-R0-20261021",
+  "source_review": "MATH-G6-MIXED-L3-5SOURCE-RECHECK-R1-20261021",
   "max_items": 10,
   "topic_sources": [
     {
@@ -14,7 +14,8 @@
       "ids": [
         "NUM02MICRO_004",
         "NUM02MICRO_015",
-        "NUM02MICRO_006"
+        "NUM02MICRO_006",
+        "NUM02MICRO_032"
       ]
     },
     {
@@ -42,8 +43,7 @@
       "slug": "21-thong-ke",
       "label": "Thống kê",
       "ids": [
-        "STA21MICRO_001",
-        "STA21MICRO_013"
+        "STA21MICRO_001"
       ]
     },
     {
@@ -55,8 +55,8 @@
       ]
     }
   ],
-  "notes": "Exactly 10 existing NotebookLM-reviewed Grade-6 KNTT-Core Micro source IDs, six topics. Full six-topic cohort 4 L1 / 4 L2 / 2 L3 *according to reviewer*; subset selection may be shorter and not 4/4/2. STA21MICRO_013 L3 depth label warrants follow-up despite reviewer PASS. Formative only, never independent Readiness/Mastery, no grade7+ source. R1.2 UX groups by reviewed Grade6 Core-card lesson scope (8 groups, 6 subject topics) and requires 2 distinct topics; does not imply official KNTT chapter labels for broad mixed-grade cards.",
-  "cognitive_review_status": "NOTEBOOKLM_PASS_FOR_FORMATIVE_PILOT__STA21MICRO_013_L3_CHALLENGE_RECHECK",
+  "notes": "Exactly ten unchanged Grade6 KNTT-Core Micro source IDs across six subject topics; NotebookLM's 2026-10-21 targeted 5-source recheck reclassified STA21MICRO_013 as L2 and recommends replacing only its QA manifest reference with NUM02MICRO_032 (L3, Grade6 Bài 27). The full ten has L1/L2/L3=4/4/2 according to that reviewed classification, NOT every shorter learner-selected subset. Eight independent Core lesson groups across six topics; Bài 8–12, Bài 27 and Bài 28–31 of CT02 can be selected separately so unstudied lessons are never silently added. Existing canonical Micro sources/answers and past learner attempts are unchanged. Formative only; NO LIVE RELEASE, no Readiness/Mastery/Skill credit.",
+  "cognitive_review_status": "NOTEBOOKLM_L3_5SOURCE_RECHECK_PASS__QA_ONLY_NO_LIVE_RELEASE",
   "cognitive_levels": {
     "NUM02MICRO_004": "L1",
     "RAT03MICRO_001": "L1",
@@ -67,7 +67,7 @@
     "STA21MICRO_001": "L2",
     "PRO23MICRO_002": "L2",
     "NUM02MICRO_006": "L3",
-    "STA21MICRO_013": "L3"
+    "NUM02MICRO_032": "L3"
   },
   "selection_groups": [
     {
@@ -132,13 +132,13 @@
       ]
     },
     {
-      "group_id": "g6-data-conclusion-b41",
-      "topic": "21-thong-ke",
-      "card_id": "sta21-core-5",
-      "label": "Đọc số liệu và kết luận",
-      "lesson_scope": "Bài 41",
+      "group_id": "g6-fractions-b27",
+      "topic": "02-so-va-phep-tinh",
+      "card_id": "num02-g6-core-4",
+      "label": "Tìm một số biết giá trị phân số",
+      "lesson_scope": "Bài 27",
       "ids": [
-        "STA21MICRO_013"
+        "NUM02MICRO_032"
       ]
     },
     {
