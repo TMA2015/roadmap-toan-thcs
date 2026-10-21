@@ -17,7 +17,7 @@ const result={packet_id:"MATH-W9-ACTIVE-CORE-MICRO-SOURCE-EVIDENCE-R1-20261021",
   coverage_kind:"IMPLEMENTATION_SOURCE_ALIGNMENT_NOT_KNTT_S1_COMPLETENESS",
   topics:[],anomalies:[],totals:{topics:slugs.length,banks:0,items:0,core_items:0,support_items:0,
     grade6:0,grade7:0,grade8:0,grade9:0,grade_unknown:0,
-    core_cards:0,support_cards:0,core_cards_base_trap_apply:0,core_cards_missing_triad:0,
+    core_cards:0,support_cards:0,supplemental_core_cards:0,core_cards_base_trap_apply:0,core_cards_missing_triad:0,
     grade_unspecified_core_cards:0,lesson_generic_core_cards:0,orphan_source_items:0,
     declaration_item_mismatches:0,missing_declared_items:0,duplicate_ids:0}};
 const allIds=new Map();
@@ -74,11 +74,13 @@ for(const slug of slugs){
   const roles=Object.fromEntries(["base","trap","apply","coverage"].map(k=>[k,actual.filter(q=>q.micro_role===k).length]));
   const hasTriad=roles.base>0&&roles.trap>0&&roles.apply>0;
   const isCore=card.layer==="KNTT-Core";
+  const supplementalOverlay=overlayPath!==null&&!legacyCards.some(c=>c.id===card.id);
   const lessons=card.kntt_lessons||[];
   const broad=lessons.length===0||lessons.some(x=>/^(Core|Nền tảng|Lớp \d+\s*→\s*\d+)$/i.test(String(x).trim()));
   if(isCore){
    result.totals.core_cards++;
-   if(hasTriad)result.totals.core_cards_base_trap_apply++;
+   if(supplementalOverlay)result.totals.supplemental_core_cards++;
+   else if(hasTriad)result.totals.core_cards_base_trap_apply++;
    else {result.totals.core_cards_missing_triad++;flags.push("TRIAD_MISSING:"+slug+":"+card.id)}
    if(!card.grades?.length)result.totals.grade_unspecified_core_cards++;
    if(broad)result.totals.lesson_generic_core_cards++;
@@ -89,7 +91,7 @@ for(const slug of slugs){
   if(invalidGrade.length)flags.push("GRADE_CARD_MISMATCH:"+slug+":"+card.id+":"+invalidGrade.join(","));
   t.cards.push({id:card.id,layer:card.layer,grades:card.grades||[],kntt_lessons:lessons,
    card_skill_count:card.skills?.length||0,source_items:actual.length,roles,
-   has_base_trap_apply:hasTriad,lesson_reference_broad:broad,
+   has_base_trap_apply:hasTriad,supplemental_overlay:supplementalOverlay,lesson_reference_broad:broad,
    declaration_exact:!missing.length&&!extra.length,missing_from_bank:missing,extra_in_bank:extra,source_grade_mismatch:invalidGrade});
  }
  t.source_orphans=[...byCard.keys()].filter(id=>!cards.some(c=>c.id===id));
@@ -101,6 +103,10 @@ for(const slug of slugs){
 result.anomalies=flags;
 assert.equal(result.totals.banks,22);
 assert.equal(result.totals.orphan_source_items,0,"all source Micro must be mapped in the actual runtime Core view, including CT20 v2 overlay");
+assert.equal(result.totals.supplemental_core_cards,5,"CT20 v2 must retain exactly five coverage-specific supplement cards");
+assert.equal(result.totals.core_cards_missing_triad,0,"each original primary teaching card retains a base/trap/apply learning cycle");
+assert.equal(result.totals.core_cards_base_trap_apply,115,"original primary card inventory must remain 115");
+
 assert.equal(result.totals.missing_declared_items,0,"no learner card may point to missing questions");
 assert.equal(result.totals.declaration_item_mismatches,0,"each active Core card must match its exact reviewed Micro IDs");
 assert.equal(result.totals.core_items+result.totals.support_items,
