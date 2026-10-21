@@ -14,6 +14,10 @@ class MemoryStorage {
 const json=o=>JSON.stringify(o);
 const samples={
   "toan-thcs-practice-v1":json({questions:{"Q-01":{attempted:2,correct:1},"Q-02":{attempted:1,correct:1}},tags:{"NUM-ORDER":{attempted:3,correct:2}}}),
+  "toan-thcs-class-mixed-quiz-v1":json({schema:"math-class-mixed-history-v1",version:1,attempts:[
+    {attempt_id:"G6-QA-001",grade:6,role:"formative_class_mixed_not_readiness",form_version:"1.2.0",
+     source_ids:["NUM02MICRO_004","NUM02MICRO_006","RAT03MICRO_001"],answer_indices:[1,0,0],
+     correct:2,total:3,started_at:"2026-10-21T00:00:00.000Z",submitted_at:"2026-10-21T00:05:00.000Z"}]}),
   "toan-thcs-assessment-v1":json({assessments:{"A-01":{attempts:[{submitted_at:"2026-10-11T10:00:00Z",correct:3,total:5}]}}}),
   "toan-thcs-taxonomy-v2-evidence-v1":json({schema:"taxonomy-v2-evidence-store-v1",recent_events:[],seen_questions:{},independent_units:{"unit01":{family_id:"NUM-ORDER",correct:true}}}),
   "toan-thcs-canonical-evidence-v2":json({schema:"canonical-skill-evidence-store-v2",recent_events:[],seen_questions:{},independent_units:{}}),
@@ -57,6 +61,15 @@ const samples={
   await assert.rejects(()=>Core.validateBackup(tampered),/SHA-256/);
   const alien=JSON.parse(JSON.stringify(backup));alien.entries["unapproved-key"]="{}";
   await assert.rejects(()=>Core.validateBackup(alien),/không được hỗ trợ/);
+  // New formative class-composite evidence must back up intact without
+  // entering historical Practice or independent Readiness buckets.
+  assert(Core.KEYS.includes("toan-thcs-class-mixed-quiz-v1"));
+  assert.equal(backup.entries["toan-thcs-class-mixed-quiz-v1"],samples["toan-thcs-class-mixed-quiz-v1"]);
+  assert.equal(migrated.getItem("toan-thcs-class-mixed-quiz-v1"),samples["toan-thcs-class-mixed-quiz-v1"]);
+  const malformedMixed=new MemoryStorage({...samples,
+    "toan-thcs-class-mixed-quiz-v1":json({schema:"math-class-mixed-history-v1",version:1,attempts:[{grade:9}]})});
+  await assert.rejects(()=>Core.buildBackup(malformedMixed),/Ôn tập tổng hợp lớp 6/);
+  assert.equal(malformedMixed.getItem("toan-thcs-assessment-v1"),samples["toan-thcs-assessment-v1"]);
   const malformed=new MemoryStorage({...samples,"toan-thcs-assessment-v1":"{broken"});
   await assert.rejects(()=>Core.buildBackup(malformed),/Không đọc được/);
 
