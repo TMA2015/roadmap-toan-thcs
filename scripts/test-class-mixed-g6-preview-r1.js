@@ -79,4 +79,5 @@ assert(!js.includes("toan-thcs-assessment-v1"),"no shared Readiness-history writ
 assert(js.includes('root.dataset.initialized = "1"'),"guard repeat initialization");
 assert(js.includes("state.submitted=true"),"answer reveal only after final submit");
 assert(js.includes("QA_ONLY_DO_NOT_RELEASE"),"no live feature mode");
+assert(js.includes("typesetMath()")&&js.includes("typesetClear"),"dynamically inserted math must be rendered");
 console.log("PASS G6 mixed preview: exactly 10 reviewed Core/Grade6 items, isolated history, source keys untouched.");
