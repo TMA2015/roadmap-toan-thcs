@@ -1,6 +1,7 @@
 (() => {
 "use strict";
-// Academic QA preview ONLY: deliberately no local/session storage or scoring APIs.
+// Academic QA preview only: save only under independent Grade9 assessment ID.
+// Do not call the shared Readiness bridge or mutate other assessment buckets.
 const selector="[data-readiness-g9-qa]";
 const text=(parent,tag,value,cls)=>{
   const n=document.createElement(tag);
@@ -37,9 +38,14 @@ const start=async()=>{
         !Number.isInteger(q.answer)||q.answer<0||q.answer>=q.options.length))
       throw new Error("Nguồn chưa đủ điều kiện QA chỉ dành lớp 9.");
   }catch(err){status.textContent="Không mở được bài QA: "+err.message;return;}
+  const api=window.MathCT23G9EvidenceQA;
+  if(!api||api.ID!==bank.assessment_id){
+    status.textContent="Chưa khởi tạo được bộ lưu kết quả QA lớp 9.";return;
+  }
   const items=bank.items,selected=Array(items.length).fill(null);
   let position=0,submitted=false;
-  status.textContent="Bản kiểm thử riêng của lớp 9. Không cập nhật điểm Readiness, Skill, Mastery hoặc lịch sử học tập.";
+  const startedAt=Date.now();
+  status.textContent="Bản QA riêng lớp 9: kết quả chỉ lưu trong bucket Readiness lớp 9, không cấp điểm Core/Skill/Mastery.";
   const quiz=text(root,"section",null,"r9qa-card");
   const submit=()=>{
     if(submitted)return;
@@ -50,9 +56,24 @@ const start=async()=>{
     }
     submitted=true;
     const score=items.reduce((n,q,i)=>n+(selected[i]===q.answer?1:0),0);
+    const submittedAt=new Date().toISOString();
+    const attempt={
+      assessment_id:bank.assessment_id,grade:9,form_version:bank.version,
+      source_git_blob:bank.academic_review.source_git_blob,
+      attempt_id:"CT23-G9-"+Date.now()+"-"+Math.random().toString(36).slice(2,9),
+      started_at:new Date(startedAt).toISOString(),submitted_at:submittedAt,
+      duration_seconds:Math.floor((Date.now()-startedAt)/1000),
+      total:10,answered:10,correct:score,accuracy:score/10,
+      readiness_state:score>=8?"READY":"REVIEW_RECOMMENDED",
+      role:"independent_grade9_readiness_qa",
+      items:items.map((q,i)=>({id:q.id,selected:selected[i],correct:selected[i]===q.answer,skill:q.skill}))
+    };
+    const saveResult=api.save(localStorage,attempt);
     quiz.replaceChildren();status.textContent="";
     text(quiz,"h3","Kết quả kiểm thử: "+score+"/10");
-    text(quiz,"p","Không lưu điểm hoặc cấp trạng thái READY, Skill hay Mastery. Đây không phải lịch sử Tự kiểm tra của học sinh.");
+    text(quiz,"p","Đây là bản QA lớp 9; không tự cấp điểm Core/Skill/Mastery, không sửa kết quả lớp 6–8.");
+    if(saveResult.ok) text(quiz,"p","Đã lưu riêng kết quả Readiness lớp 9 trên thiết bị. Có thể sao lưu qua công cụ Sao lưu tiến độ hiện có.","r9qa-status");
+    else text(quiz,"p","Không lưu được lượt QA này ("+saveResult.reason+"). Kết quả trên màn hình chưa có trong lịch sử; dữ liệu cũ không bị ghi đè.","r9qa-status");
     const weak={};
     items.forEach((q,i)=>{
       const correct=selected[i]===q.answer;
@@ -68,6 +89,7 @@ const start=async()=>{
     else text(quiz,"p","Đã trả lời đúng cả 10 câu trong bản QA.");
     const link=text(quiz,"a","Ôn lại thẻ Core CĐ23 lớp 9");
     link.href=new URL("../core/",window.location.href).href;
+    button(quiz,"Làm lại bài 10 câu",()=>window.location.reload(),"r9qa-primary");
   };
   const render=()=>{
     quiz.replaceChildren();
@@ -99,6 +121,14 @@ const start=async()=>{
     next.disabled=position===9;
     button(nav,"Nộp bài",submit,"r9qa-primary");
   };
+  const existing=api.history(localStorage);
+  if(existing.ok && existing.latest){
+    text(root,"p","Lịch sử QA lớp 9: đã lưu "+existing.attempts.length+
+      " lượt; lần gần nhất "+existing.latest.correct+"/"+existing.latest.total+
+      " ("+existing.latest.submitted_at.slice(0,10)+").","r9qa-status");
+  }else if(!existing.ok){
+    text(root,"p","Dữ liệu Readiness cũ đang lỗi định dạng; hệ thống sẽ chặn ghi đè để bảo toàn dữ liệu.","r9qa-status");
+  }
   render();
 };
 if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",start);
