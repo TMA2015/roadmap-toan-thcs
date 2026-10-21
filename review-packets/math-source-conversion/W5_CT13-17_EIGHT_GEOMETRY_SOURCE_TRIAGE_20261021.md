@@ -12,7 +12,7 @@
 - One Knowledge Graph, two paths (KNTT Grade/Chapter/Lesson and 25-topic spine), one canonical Written Library, stable IDs; same item accessed by placements, never cloned.
 - Original source pages and current 74 Written are evidence; **not** proof of official S1 textbook grade mapping. Any proposed KNTT-Core/Challenge classification needs explicit S1 corroboration when in doubt.
 - Check mathematics, hypotheses, geometry diagrams, full argument, misconceptions, pedagogical value, source fidelity, existing-Written and existing-MCQ near-clones.
-- Prior existing 74 Written catalog has been read, but the **entire current live interactive MCQ question-by-question overlap is NOT yet source-verified for this W5 packet**. Do not claim duplication is absent or approve deployment on a comparison of titles alone.
+- The current 74-Written catalog was read, and 672 active Practice + 86 Learn/Micro question records were source-locked for a targeted skill/prompt overlap preflight in Section 3A. This is **not** an independent academic verdict and is **not** an exhaustive semantic duplicate proof; do not assume all mathematical equivalences are found or approve deployment from these checks.
 - Suggested outcomes: `NEW_WRITTEN_CANDIDATE`, `REUSE_EXISTING_WRITTEN`, `REUSE_EXISTING_INTERACTIVE`, `RETAIN_SOURCE_OR_CORE_ONLY`, `REVISE_SOURCE_FIRST`, `HOLD_INSUFFICIENT_EVIDENCE`.
 - A short routine question is not automatically a new standalone Written anchor. Optional Challenge/Entrance10 must never gate Core. Paper rubrics are self-check only: no Mastery/Readiness auto-credit.
 - **No edits to 74 Written, MCQs, original source pages, Core Cards, app, Skill/Readiness/Mastery, learner attempts, storage, CI or deployment in this review packet.** No release authority inferred from NotebookLM PASS.
@@ -29,7 +29,7 @@
 
 ## 3 · Current 74-Written overlap inventory (15 records in CT13–17)
 
-The following is a **title/structure preflight**, not a claim of exact-stem or MCQ non-overlap:
+The following is a **catalog title/structure preflight**; see the source-locked Practice/Micro overlap audit in Section 3A for actual matching question IDs:
 
 | Canonical Written ID | Topic | Published title / type |
 |---|---|---|
@@ -48,6 +48,70 @@ The following is a **title/structure preflight**, not a claim of exact-stem or M
 | `WX16-QUAD-003` | CT16 | Chứng minh hình bình hành trước rồi mới nâng cấp thành hình thoi — Từ hai đường chéo cắt nhau tại trung điểm và vuông góc đến hình thoi |
 | `WX16-QUAD-004` | CT16 | Dùng dấu hiệu hình thang cân rồi tính hai góc còn lại — Nhận biết hình thang cân từ hai góc kề một đáy |
 | `WX17-SIM-003` | CT17 | Từ tỉ số phân giác đến hai độ dài cụ thể — Tính hai đoạn do đường phân giác chia cạnh đối diện |
+
+## 3A · Source-locked interactive overlap QA (2026-10-21; **not** independent academic review)
+
+Current `main` active Practice manifests were opened and their **24 referenced original JSON shards were read and parsed**. The five canonical Practice banks contain `156+140+124+120+132=672` questions. Separate Learn/Core micro-practice files contain `23+17+15+16+15=86` questions, assessed only as an extra overlap check, **not** added to the 672 main-bank count. Manifest/source locks are below. All reviewed records remain untouched. This is a tagged + targeted prompt-comparison preflight; **not an exhaustive semantic isomorphism proof of every pair across 758 items**.
+
+### Exact reviewed manifest and micro file receipts
+
+| CT | Live Practice manifest SHA / questions | Micro source SHA / questions |
+|---|---|---|
+| 13 | `4b6a44701d6fe413e333349a799aaa7911390b70` / 156 | `f72d903efc35768cdabdfc65b65fa45129e5d515` / 23 |
+| 14 | `ee2c1dae38314e8dd220a20a106ba227f26aa9c2` / 140 | `08a1e69399443340dddc033c2eadc286c716daa9` / 17 |
+| 15 | `37fc0edeed7de731a34fc0ccacccfc735d29f985` / 124 | `9e36e342ede18aa3317bb3d7e00f365fd1217b87` / 15 |
+| 16 | `e63b621e30628616f559a3fd7518f0c90a3e5ed6` / 120 | `3947efce07ae2426b6e73ed8bbf962907b07dd33` / 16 |
+| 17 | `3295479db8646dd050ddd7854f116dd9cc7c3b1b` / 132 | `01c8326343d050959aca0d98d7042e463c993612` / 15 |
+
+### All 24 exact active Practice shard SHA receipts
+
+| CT | Shard number | Git blob SHA | Count |
+|---|---:|---|---:|
+| 13 | 01 | `73ec4573662c38ce66978d0f8929445e66b8fc2d` | 30 |
+| 13 | 02 | `83ec2afdaf6db290e33fdd21e8a16f3668483dca` | 30 |
+| 13 | 03 | `ed4317db4a0c0466a18d7a9a39ee44e8a2df39af` | 30 |
+| 13 | 04 | `bb4ed15ef7a06021587511437734ee6d0ae2539b` | 30 |
+| 13 | 05 | `2b09b1cd610d7b2203e6cd311092c00b1a953f82` | 36 |
+| 14 | 01 | `3db987fb469a7ef89a35a7f78ebffd8b750bb6d1` | 30 |
+| 14 | 02 | `2843852e803418281fd6f06a933ca4d56f46153f` | 30 |
+| 14 | 03 | `5022d434d903aaec82012027402a8457fa8bf6b0` | 30 |
+| 14 | 04 | `c12b47a53adef1416668dce83a68d6095a8b7f41` | 30 |
+| 14 | 05 | `2f22700b3403f9f40e3de29fb772418caece5bca` | 20 |
+| 15 | 01 | `8ba7947a535622be4a9b3505b6db7550265a08bf` | 30 |
+| 15 | 02 | `d7c1efcdd3b0c6c670487875029a56a8a1d493bf` | 30 |
+| 15 | 03 | `15d3ee970d6de97ef7675debe8401dcfeb0692c1` | 30 |
+| 15 | 04 | `c8fd5367d1d3ff716faa5c5eedf04315f2f11a68` | 30 |
+| 15 | 05 | `3dcbbf288e2d99b1c5cfb75335d4e20fcacc7544` | 4 |
+| 16 | 01 | `0b70aa2d697250b9c8810e1713919404119c1ff4` | 30 |
+| 16 | 02 | `70f6608bdabb5f37ffb5490caa701cdeba057b80` | 30 |
+| 16 | 03 | `39ef7869550abeaa40cf150fde7c61622fd760cf` | 30 |
+| 16 | 04 | `9e12ff68a0e10e789a249c64ef297ac95e6414ce` | 30 |
+| 17 | 01 | `44225bdea6fe999dc9e25f7103a0b73a0da10d6b` | 30 |
+| 17 | 02 | `16f128998ae8f85eccbd6bb7c6971611cc1df50f` | 30 |
+| 17 | 03 | `40c65446ec5229db48f5d2e265617d1458f62701` | 30 |
+| 17 | 04 | `ec68bea63f5aebdd3d009dae473edf7112c797ea` | 30 |
+| 17 | 05 | `db6cde6130fc051fab1d0f7be35802d084dffc5c` | 12 |
+
+### Specific overlap evidence — compare mathematical task, not metadata alone
+
+| Original W5 ID | Existing canonical active question(s) | Grounded overlap finding / remaining question for reviewer |
+|---|---|---|
+| `13-WR-09` | `GEO13V1_147`; also `GEO13V1_145–148`, micro `GEO13MICRO_012` | `GEO13V1_147` states **the same b,c through M parallel to a** and correct conclusion b,c coincide. Current source Written adds an explanatory proof; decide whether this is substantive enough beyond Core Card/existing quiz. |
+| `14-WR-10` | `TRI14V1_115–120`; micro `GEO14MICRO_013/015` | Six MCQs repeat the same right-triangle hypotenuse/one-leg congruence structure with changed lengths. Original `14-WR-10` merely asks to state a conclusion, not a full distinct proof. |
+| `15-WR-08` | `CTR15V1_123`; micro `GEO15MICRO_014` | `CTR15V1_123` explicitly distinguishes **four separate three-line concurrency families** from the false "all twelve concurrent" claim; same misconception as source. |
+| `15-CH-01` | `CTR15V1_124`; micro `GEO15MICRO_015` | Same **equilateral-triangle counterexample** to four centers always being distinct. Optional challenge layer must not be promoted to KNTT-Core merely because related MCQ tags are Core. |
+| `16-WR-08` | `QUAD16V1_107,108,113`; micro `GEO16MICRO_014` | `QUAD16V1_113` checks the **same proposition**: square is both rectangle and rhombus. Original adds a one- or two-step justification, not obviously a distinct Written anchor. |
+| `16-WR-10` | `QUAD16V1_119` plus `QUAD16V1_057–066,115–120` | `QUAD16V1_119` shows diagonal bisection is a **parallelogram criterion**, not enough for rectangle. No identical original question was established; possible added value only if requiring a valid counterexample and full necessary/sufficient reasoning. |
+| `17-WR-02` | `GEO17V1_002` and seven more `thales-dao` MCQs, micro `GEO17MICRO_002`, existing canonical Written `WX17-SIM-001` | Existing analogous MCQs **explicitly give D on AB and E on AC**, unlike the original `17-WR-02` which supplies only lengths. **Missing incidence/order is a correctness barrier**; identical skill is not identical original problem. Reviewer must not supply absent assumptions silently. |
+| `17-WR-08` | `GEO17V1_008` and eight more `dong-dang-ccc` MCQs, micro `GEO17MICRO_012` | `GEO17V1_008` has **exactly the same two side triples (3,4,5) and (6,8,10)** and asks for the same c-c-c similarity judgment. Difference is original source asks for a worked proof. Check whether a full-proof prompt merits a new canonical written item instead of linking the existing source with support. |
+
+### Preflight interpretation, not a final verdict
+
+- 13-WR-09, 14-WR-10, 15-WR-08, 15-CH-01, 16-WR-08, 17-WR-08 have **material existing-question overlap**. Even if their mathematics is true, `MATH:PASS` alone is not justification for eight new Written records.
+- `16-WR-10` has related diagnostic questions but is a possible proof/counterexample differentiation; any genuinely distinct authored task would require a separate authored source, academic check and Owner decision.
+- `17-WR-02` requires precise mathematical hypothesis repair before any transfer; the missing assumptions are documented as an issue with the **existing** source, which this PR deliberately does not edit.
+- A reviewer may find **zero** additional Written items academically warranted. This is a valid useful outcome; never inflate counts.
+- Source SHA and counts verify which **live JSON bytes** were inspected; they do not independently verify S1 textbook placement or certify S3 exam frequency.
 
 ## 4 · Exact source text of 8 selected original tasks
 
