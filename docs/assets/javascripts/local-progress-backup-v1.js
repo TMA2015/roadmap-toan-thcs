@@ -5,7 +5,7 @@
   const APP="self-learning-math";
   const MAX_BYTES=12*1024*1024;
   const STATIC_KEYS=[
-    "toan-thcs-practice-v1","toan-thcs-remediation-v1",
+    "toan-thcs-practice-v1","toan-thcs-class-mixed-quiz-v1","toan-thcs-remediation-v1",
     "toan-thcs-assessment-v1","toan-thcs-assessment-v2",
     "toan-thcs-taxonomy-v2-evidence-v1",
     "toan-thcs-canonical-evidence-v1","toan-thcs-canonical-evidence-v2",
@@ -24,6 +24,21 @@
     if(key==="roadmap:exam-history-v1"){if(!Array.isArray(v))throw Error("Lịch sử đề thi không hợp lệ");return;}
     if(!object(v))throw Error("Dữ liệu "+key+" không phải đối tượng");
     if(key==="toan-thcs-practice-v1"&&(!object(v.questions)||!object(v.tags)))throw Error("Dữ liệu Practice thiếu questions/tags");
+    if(key==="toan-thcs-class-mixed-quiz-v1"){
+      if(v.schema!=="math-class-mixed-history-v1"||v.version!==1||!Array.isArray(v.attempts))
+        throw Error("Lịch sử Ôn tập tổng hợp lớp 6 sai phiên bản");
+      for(const a of v.attempts){
+        if(!object(a)||typeof a.attempt_id!=="string"||!a.attempt_id
+          ||a.grade!==6||a.role!=="formative_class_mixed_not_readiness"
+          ||typeof a.form_version!=="string"
+          ||!Array.isArray(a.source_ids)||!Array.isArray(a.answer_indices)
+          ||a.source_ids.length!==a.answer_indices.length
+          ||!Number.isInteger(a.total)||a.total!==a.source_ids.length
+          ||!Number.isInteger(a.correct)||a.correct<0||a.correct>a.total
+          ||typeof a.submitted_at!=="string")
+          throw Error("Lịch sử Ôn tập tổng hợp lớp 6 có lượt làm không hợp lệ");
+      }
+    }
     if(key==="toan-thcs-assessment-v1"&&!object(v.assessments))throw Error("Readiness thiếu assessments");
     if(key==="toan-thcs-remediation-v1"&&!Array.isArray(v.events))throw Error("Remediation thiếu events");
     const schemas={
