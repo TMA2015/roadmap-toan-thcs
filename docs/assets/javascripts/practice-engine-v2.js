@@ -367,6 +367,7 @@
     const count = Math.min(Math.max(0, sessionSize), questions.length);
     if (!count) return [];
     const recent = new Set(recentSets.flat());
+    const canAvoidRecent = questions.filter(q => !recent.has(q.id)).length >= count;
     const used = new Set(), variants = new Set(), selected = [];
     const skillHits = new Map(), groupHits = new Map();
     const groups = new Map();
@@ -383,7 +384,7 @@
     const take = (pool, quota) => {
       const goal = Math.min(count, selected.length + Math.max(0, quota));
       while (selected.length < goal) {
-        let available = pool.filter(q => !used.has(q.id));
+        let available = pool.filter(q => !used.has(q.id) && (!canAvoidRecent || !recent.has(q.id)));
         if (!available.length) break;
         const variantSafe = available.filter(q => !questionVariantGroup(q) || !variants.has(questionVariantGroup(q)));
         if (variantSafe.length) available = variantSafe;
