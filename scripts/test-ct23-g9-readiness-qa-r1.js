@@ -46,4 +46,12 @@ assert(evidence.includes("attempts=[...before.attempts,attempt]"),"do not trunca
 assert(page.includes("readiness-g9-evidence-qa-v1.js"));
 assert(js.includes("NO_LIVE_RELEASE")&&js.includes("QA_ONLY_NO_LIVE_RELEASE"));
 assert(page.includes("data-readiness-g9-qa"));
+const hub=fs.readFileSync("docs/hoc-theo-lop/index.md","utf8");
+const g9=hub.match(/<section class="class-grade-panel" data-grade-panel="9"[\s\S]*?<\/section>/)?.[0]||"";
+assert(g9.includes('id="lop-9-chuong-8"'));
+assert(g9.includes('href="../kien-thuc/23-xac-suat/tu-kiem-tra-lop-9-qa/"'));
+for(const grade of [6,7,8]){
+  const panel=hub.match(new RegExp('<section class="class-grade-panel" data-grade-panel="'+grade+'"[\\s\\S]*?<\\/section>'))?.[0]||"";
+  assert(!panel.includes("tu-kiem-tra-lop-9-qa/"),"Grade9 check cannot be linked in Grade "+grade);
+}
 console.log("PASS CT23-G9: 10 exact reviewed IDs/keys, Grade9 independent persisted bucket, old 12-item bank unchanged; no Mastery bridge.");
