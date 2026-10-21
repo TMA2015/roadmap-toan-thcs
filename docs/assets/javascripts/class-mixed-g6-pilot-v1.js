@@ -9,6 +9,16 @@
     if (parent) parent.appendChild(el);
     return el;
   };
+  // The reviewed Grade6 angle item uses inline TeX for angle/degree. Its
+  // learner-facing text must stay readable even if the external MathJax CDN
+  // is blocked, late or unavailable. Keep original source strings untouched.
+  // Defer other TeX expressions to MathJax rather than guessing their meaning.
+  const readableMathText = value => String(value).replace(/\\\(([\s\S]*?)\\\)/g, (original, expression) => {
+    if (!/\\(?:angle|circ)\b/.test(expression) || /\\(?!angle\b|circ\b)/.test(expression))
+      return original;
+    return expression.trim().replace(/\\angle\s*/g, "∠")
+      .replace(/\^\s*\\circ\b/g, "°").replace(/\\circ\b/g, "°");
+  });
   const loadJSON = async path => {
     const response = await fetch(resource(path), {cache:"no-cache"});
     if (!response.ok) throw new Error("Không đọc được nguồn " + path);
@@ -98,7 +108,7 @@
       if(!state.items.length)return;
       const q=state.items[state.position],number=state.position+1;
       make("p","Câu "+number+"/"+state.items.length+" • "+q.sourceLabel,quiz,"cmg6-progress");
-      make("h3",q.question,quiz,"cmg6-question");
+      make("h3",readableMathText(q.question),quiz,"cmg6-question");
       const field=make("fieldset",null,quiz,"cmg6-options");
       make("legend","Chọn một đáp án (có thể sửa trước khi nộp)",field);
       q.options.forEach((option,index)=>{
@@ -107,7 +117,7 @@
         radio.checked=state.selected[state.position]===index;
         radio.disabled=state.submitted;
         radio.addEventListener("change",()=>{state.selected[state.position]=index;showQuestion();});
-        make("span",option,label);
+        make("span",readableMathText(option),label);
       });
       const nav=make("nav",null,quiz,"cmg6-nav");
       const prev=make("button","Câu trước",nav);prev.type="button";prev.disabled=state.position===0;
@@ -144,9 +154,9 @@
         state.items.forEach((item,i)=>{
           const row=make("details",null,quiz,"cmg6-review");
           make("summary","Câu "+(i+1)+" · "+(state.selected[i]===item.answer?"Đúng":"Cần ôn thêm")+" · "+item.sourceLabel,row);
-          make("p",item.question,row);
-          make("p","Đáp án: "+item.options[item.answer],row);
-          make("p",item.explanation,row);
+          make("p",readableMathText(item.question),row);
+          make("p","Đáp án: "+readableMathText(item.options[item.answer]),row);
+          make("p",readableMathText(item.explanation),row);
           const link=make("a","Ôn thẻ Core liên quan",row);
           link.href=new URL("../../kien-thuc/"+item.topic+"/core/",window.location.href).toString();
         });
