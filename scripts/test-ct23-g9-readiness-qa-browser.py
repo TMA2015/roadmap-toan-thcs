@@ -9,7 +9,7 @@ URL = "http://127.0.0.1:8765/kien-thuc/23-xac-suat/tu-kiem-tra-lop-9-qa/"
 with sync_playwright() as pw:
     browser = pw.chromium.launch(executable_path=BROWSER, headless=True, args=["--no-sandbox"])
     for width, height in ((1365, 900), (390, 844), (820, 1180)):
-        context = browser.new_context(viewport={"width": width, "height": height})
+        context = browser.new_context(viewport={"width": width, "height": height}, has_touch=(width==820), is_mobile=(width==820), device_scale_factor=2 if width==820 else 1)
         page = context.new_page()
         failures = []
         page.on("pageerror", lambda error: failures.append(str(error)))
@@ -18,7 +18,7 @@ with sync_playwright() as pw:
         page.locator('button[data-grade-select="9"]').click()
         grade9_link = page.locator('#lop-9-chuong-8 a[href*="tu-kiem-tra-lop-9-qa/"]')
         assert grade9_link.is_visible()
-        grade9_link.click()
+        grade9_link.tap() if width==820 else grade9_link.click()
         page.wait_for_url(URL, timeout=15000)
         assert page.url == URL
         root = page.locator("[data-readiness-g9-qa]")
