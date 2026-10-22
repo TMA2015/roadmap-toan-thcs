@@ -7338,6 +7338,100 @@
       "gates_core": false,
       "auto_readiness_credit": false,
       "written_role": "TRANSFER"
+    },
+    {
+      "exercise_kind": "anchor",
+      "exercise_id": "WX02-NUM-004",
+      "topic_id": "CT02",
+      "topic_slug": "02-so-va-phep-tinh",
+      "topic_title": "Số và phép tính",
+      "problem_type_id": "absolute-value-numberline-connected-distances",
+      "problem_type_title": "Sắp xếp điểm trên trục số, tính khoảng cách và kết hợp độ dài",
+      "title": "Từ vị trí số nguyên đến hai cách tính độ dài đoạn thẳng",
+      "learning_layer": "KNTT-Core",
+      "level": "CORE_BASE",
+      "learner_label": "Nền tảng · Tự luận nhiều bước",
+      "grade_overlay": [
+        6
+      ],
+      "skills": [
+        "gia-tri-tuyet-doi",
+        "so-nguyen-phep-tinh"
+      ],
+      "prerequisites": [
+        "tap-hop-so"
+      ],
+      "estimated_minutes": 10,
+      "problem_markdown": "Trên trục số, ba điểm $A$, $B$, $C$ lần lượt biểu diễn các số $-6$, $-1$ và $4$. Điểm $O$ biểu diễn số $0$.\n\n1. Sắp xếp $A,B,O,C$ theo thứ tự từ trái sang phải và giải thích.\n2. Tìm các khoảng cách $OA$, $OC$, $AB$, $BC$ (đơn vị trên trục số).\n3. Tính $AC$ theo hai cách: (i) trực tiếp dựa vào vị trí các điểm; (ii) dựa vào $AB$ và $BC$. Giải thích vì sao hai kết quả bằng nhau.",
+      "hint_steps": [
+        "Xác định thứ tự của các số $-6,-1,0,4$.",
+        "Khoảng cách trên trục số không âm; đếm các đoạn đơn vị hoặc lấy giá trị tuyệt đối của hiệu hai tọa độ.",
+        "Điểm $B$ có nằm giữa $A$ và $C$ không? Khi nào $AB+BC=AC$?"
+      ],
+      "full_solution_markdown": "**Bước 1 — Xác định thứ tự.** Vì $-6<-1<0<4$ nên các điểm theo thứ tự từ trái sang phải là $A,B,O,C$.\n\n**Bước 2 — Tính khoảng cách với gốc.** Ta có $OA=|-6|=6$ và $OC=|4|=4$ (đơn vị).\n\n**Bước 3 — Độ dài hai đoạn liên tiếp.** $AB=|-1-(-6)|=5$ và $BC=|4-(-1)|=5$ (đơn vị).\n\n**Bước 4 — Tính $AC$ trực tiếp.** $AC=|4-(-6)|=10$ (đơn vị).\n\n**Bước 5 — Kiểm chứng bằng phép cộng đoạn thẳng.** Do $-6<-1<4$ nên $B$ nằm giữa $A$ và $C$. Vì vậy $AB+BC=AC=5+5=10$ (đơn vị), khớp với cách tính trực tiếp.",
+      "method_rationale_markdown": "Trên trục số, thứ tự các tọa độ quyết định điểm nào nằm giữa. Khoảng cách là đại lượng không âm, nên phải lấy độ lớn của hiệu hai tọa độ hoặc đếm đoạn đơn vị. Hai cách tính $AC$ cho phép tự kiểm tra lời giải. Chỉ được dùng $AB+BC=AC$ sau khi biết $B$ nằm giữa $A$ và $C$.",
+      "rubric": [
+        {
+          "criterion": "Sắp xếp đúng $A,B,O,C$ và giải thích từ $-6<-1<0<4$.",
+          "points": 1
+        },
+        {
+          "criterion": "Tính đúng $OA=6$, $OC=4$ và ghi đơn vị.",
+          "points": 1
+        },
+        {
+          "criterion": "Tính đúng $AB=5$, $BC=5$ từ tọa độ.",
+          "points": 1
+        },
+        {
+          "criterion": "Tính trực tiếp đúng $AC=10$.",
+          "points": 1
+        },
+        {
+          "criterion": "Giải thích $B$ nằm giữa $A,C$ và áp dụng đúng $AB+BC=AC$.",
+          "points": 1
+        }
+      ],
+      "rubric_total": 5,
+      "common_mistakes": [
+        "Viết $OA=-6$ do nhầm tọa độ điểm $A$ với khoảng cách.",
+        "Tính $BC=4+(-1)=3$ vì quên quy tắc trừ số âm.",
+        "Áp dụng $AB+BC=AC$ mà không chứng minh hoặc nhận biết $B$ nằm giữa $A$ và $C$."
+      ],
+      "remediation_markdown": "Nếu nhầm tọa độ và khoảng cách: ôn cách biểu diễn số nguyên và giá trị tuyệt đối ở CĐ02, Bài 13. Nếu trừ số âm sai: ôn phép cộng và trừ số nguyên ở Bài 14. Thử lại với hai số đối nhau $-3$ và $3$ rồi chuyển sang ba điểm.",
+      "remediation_links": [
+        {
+          "label": "Ôn CĐ02 — Số nguyên và giá trị tuyệt đối",
+          "href": "../kien-thuc/02-so-va-phep-tinh/core/"
+        },
+        {
+          "label": "Luyện thêm CĐ02",
+          "href": "../kien-thuc/02-so-va-phep-tinh/bai-tap/"
+        }
+      ],
+      "figure_uri": null,
+      "figure_alt": null,
+      "source_refs": [
+        "docs/assets/data/curriculum/topic02-learning-workspace.json#num02-g6-core-3",
+        "docs/assets/data/practice/02-so-va-phep-tinh-micro-v1.json#NUM02MICRO_019",
+        "docs/assets/data/practice/02-so-va-phep-tinh-micro-v1.json#NUM02MICRO_065",
+        "docs/assets/data/practice/02-so-va-phep-tinh-micro-v1.json#NUM02MICRO_066",
+        "docs/assets/data/practice/02-so-va-phep-tinh-micro-v1.json#NUM02MICRO_067"
+      ],
+      "academic_review": {
+        "status": "APPROVED",
+        "method": "INDEPENDENT_NOTEBOOKLM_MATH_AND_KNTT_S1_FOLLOWUP",
+        "packet_id": "MATH-W9-CONSOLIDATED-NOTEBOOKLM-ONE-UPLOAD-R1-20261021",
+        "receipt": "review-packets/math-w9-core-coverage/02_NOTEBOOKLM_W9_S1_RECHECK_OWNER_RECEIPT_20261022.md",
+        "release_gate": "OWNER_NO_LIVE_RELEASE"
+      },
+      "kntt_placements": [
+        {
+          "grade": 6,
+          "chapter": 3,
+          "lesson": "Bài 13–14 — Số nguyên, giá trị tuyệt đối và phép tính"
+        }
+      ]
     }
   ],
   "extension_policy": [
