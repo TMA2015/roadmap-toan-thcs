@@ -1,27 +1,22 @@
 #!/usr/bin/env node
 "use strict";
 // Candidate-only behavioral QA: staged standard-item hints must not replace solutions.
-const fs=require("fs"),vm=require("vm");
+const fs=require("fs"),vm=require("vm"),crypto=require("crypto");
 const assert=(ok,msg)=>{if(!ok)throw Error(msg);};
-const data=JSON.parse(fs.readFileSync("docs/assets/data/written-exercises/written-exercise-library-v1.json","utf8"));
-const byId=new Map(data.exercises.map(x=>[x.exercise_id,x]));
+const raw=fs.readFileSync("docs/assets/data/written-exercises/written-exercise-library-v1.json","utf8");
+const sha=crypto.createHash("sha1").update("blob "+Buffer.byteLength(raw)+"\0").update(raw).digest("hex");
+const canonical=JSON.parse(raw);
+const overlay=JSON.parse(fs.readFileSync("docs/assets/data/written-exercises/written-p2-hints-overlay-v1.json","utf8"));
+assert(sha==="5141a40bf1b8f8763257857d3b805d681a0956fa","immutable catalog blob SHA mismatch");
+assert(overlay.source_catalog_blob_sha===sha,"overlay references wrong catalog source SHA");
+assert(overlay.release_state==="CANDIDATE_NOT_PUBLISHED","overlay cannot claim published status");
+assert(overlay.changes?.length===3,"must have exactly three overlay entries");
 const candidates=["WX16-QUAD-001","WX07-RAT-001","WX19-CIR-002"];
 const expected=[
   ["Trong tứ giác ABCD, AB và CD là hai cạnh ở vị trí nào? Có dấu hiệu nào dùng một cặp cạnh đối vừa song song vừa bằng nhau?","Sau khi xác định được ABCD thuộc họ hình bình hành, hãy dùng giả thiết về góc 90° để nhận biết trường hợp đặc biệt hơn."],
   ["Trước khi rút gọn, phân thức ban đầu có nghĩa với những giá trị x nào? Hãy xem các nhân tử của mẫu ban đầu.","Tử số gợi nhớ hằng đẳng thức nào? Sau khi khử nhân tử chung, những điều kiện nào của biểu thức ban đầu vẫn phải giữ?"],
   ["Hai góc BAD và BCD ở vị trí nào trong tứ giác lồi? Tính tổng số đo của chúng rồi tìm dấu hiệu nhận biết phù hợp.","Chỉ sau khi chứng minh được tứ giác nội tiếp, em mới được dùng quan hệ gì giữa hai góc ABC và ADC?"]
 ];
-assert(data.exercises.length===75,"candidate keeps exactly 75 canonical exercises");
-assert(new Set(data.exercises.map(x=>x.exercise_id)).size===75,"no duplicate exercise IDs");
-for(let i=0;i<candidates.length;i++){
-  const x=byId.get(candidates[i]);
-  assert(x&&x.exercise_kind==="standard","must preserve standard type "+candidates[i]);
-  assert(JSON.stringify(x.hint_steps)===JSON.stringify(expected[i]),"reviewed hint text mismatch "+candidates[i]);
-  assert(x.solution_steps?.length===4,"existing 4-step solution preserved "+candidates[i]);
-  assert(!x.full_solution_markdown,"do not duplicate full solution for standard "+candidates[i]);
-}
-const allHintItems=data.exercises.filter(x=>Array.isArray(x.hint_steps)&&x.hint_steps.length);
-assert(allHintItems.length===25,"existing 22 hint items + 3 P2 candidates expected");
 // Tiny DOM stub validates actual button behavior with Node built-ins (no browser dependencies).
 class FakeNode{
   constructor(tag){this.tagName=tag;this.children=[];this.attributes={};this.dataset={};this.textContent="";this.hidden=false;
@@ -38,10 +33,36 @@ const context={document,window,location:{pathname:"/roadmap-toan-thcs/luyen-tap/
 let js=fs.readFileSync("docs/assets/javascripts/written-exercise-library-v1.js","utf8");
 const anchor="  const initLibrary=async()=>{";
 assert(js.includes(anchor),"renderer test instrumentation anchor missing");
-js=js.replace(anchor,"  globalThis.__testMakeHelpPanel=makeHelpPanel;\n"+anchor);
+js=js.replace(anchor,"  globalThis.__testMakeHelpPanel=makeHelpPanel;\\n  globalThis.__testApplyReviewedHints=applyReviewedHints;\\n"+anchor);
 vm.runInNewContext(js,context,{filename:"written-exercise-library-v1.js"});
-const make=context.__testMakeHelpPanel;
-assert(typeof make==="function","failed to capture help panel factory");
+const make=context.__testMakeHelpPanel,apply=context.__testApplyReviewedHints;
+assert(typeof make==="function"&&typeof apply==="function","failed to capture renderer and overlay functions");
+assert(js.includes("try{data=await loadLibraryData();}"),"library does not fetch optional overlay");
+const data=apply(canonical,overlay);
+assert(data!==canonical,"valid optional P2 overlay was not applied");
+assert(data.exercises.length===canonical.exercises.length,"overlay changed number of exercises");
+assert(!canonical.exercises.some(x=>candidates.includes(x.exercise_id)&&x.hint_steps?.length),"canonical historical records were mutated");
+const byId=new Map(data.exercises.map(x=>[x.exercise_id,x]));
+const badOverlay=JSON.parse(JSON.stringify(overlay));
+badOverlay.source_catalog_blob_sha="INVALID";
+assert(apply(canonical,badOverlay)===canonical,"wrong source SHA must fall back");
+badOverlay.source_catalog_blob_sha=sha;badOverlay.changes[0].hint_steps=["tiny"];
+assert(apply(canonical,badOverlay)===canonical,"invalid hints must fall back");
+const missingOverlay=JSON.parse(JSON.stringify(overlay));missingOverlay.changes[1].exercise_id="WX_DOES_NOT_EXIST";
+assert(apply(canonical,missingOverlay)===canonical,"unknown exercise ID must fall back");
+assert(apply({...canonical,snapshot_date:"2001-01-01"},overlay).snapshot_date==="2001-01-01","stale catalog must fail closed");
+assert(data.exercises.length===75,"candidate keeps exactly 75 canonical exercises");
+assert(new Set(data.exercises.map(x=>x.exercise_id)).size===75,"no duplicate exercise IDs");
+for(let i=0;i<candidates.length;i++){
+  const x=byId.get(candidates[i]);
+  assert(x&&x.exercise_kind==="standard","must preserve standard type "+candidates[i]);
+  assert(JSON.stringify(x.hint_steps)===JSON.stringify(expected[i]),"reviewed hint text mismatch "+candidates[i]);
+  assert(x.solution_steps?.length===4,"existing 4-step solution preserved "+candidates[i]);
+  assert(!x.full_solution_markdown,"do not duplicate full solution for standard "+candidates[i]);
+}
+const allHintItems=data.exercises.filter(x=>Array.isArray(x.hint_steps)&&x.hint_steps.length);
+assert(allHintItems.length===25,"existing 22 hint items + 3 P2 candidates expected");
+
 const visit=(n,f)=>{f(n);for(const c of n.children)visit(c,f);};
 const find=(n,p)=>{let found;visit(n,x=>{if(!found&&p(x))found=x;});return found;};
 const button=(n,key)=>find(n,x=>x.tagName==="button"&&x.dataset.helpTarget===key);
