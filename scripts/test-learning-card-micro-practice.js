@@ -47,8 +47,18 @@ for (const card of workspace.cards || []) {
   if (qs.slice(0,3).map(q => q.micro_role).join(",") !== "base,trap,apply") errors.push(`${card.id}: first three must preserve base,trap,apply order`);
   const extras = qs.slice(3);
   const approvedWave2 = extras.filter(q => q.authoring_review?.packet_id === "MATH-KNTT-G7-REPAIR-W2-R1-20261008");
-  const otherExtras = extras.filter(q => q.authoring_review?.packet_id !== "MATH-KNTT-G7-REPAIR-W2-R1-20261008");
+  const W9_PACKET="MATH-W9-CONSOLIDATED-NOTEBOOKLM-ONE-UPLOAD-R1-20261021";
+  const approvedW9 = extras.filter(q => q.authoring_review?.packet_id === W9_PACKET);
+  const otherExtras = extras.filter(q => !["MATH-KNTT-G7-REPAIR-W2-R1-20261008", W9_PACKET].includes(q.authoring_review?.packet_id));
   if (otherExtras.some(q => q.micro_role !== "coverage")) errors.push(`${card.id}: extra questions must be marked coverage`);
+  if (approvedW9.length) {
+    if (card.id!=="num02-g6-core-3" ||
+      approvedW9.map(q=>q.id).join(",")!=="NUM02MICRO_065,NUM02MICRO_066,NUM02MICRO_067" ||
+      approvedW9.map(q=>q.micro_role).join(",")!=="base,trap,apply" ||
+      approvedW9.some(q=>q.authoring_review?.status!=="PASS" ||
+        q.tags?.grade!==6 || q.tags?.skill?.[0]!=="gia-tri-tuyet-doi"))
+      errors.push(`${card.id}: W9 three independent-reviewed absolute-value source IDs / roles not exact`);
+  }
   if (approvedWave2.length) {
     const roles = approvedWave2.map(q => q.micro_role).join(",");
     if (!["coverage","base,trap,apply,coverage"].includes(roles)) errors.push(`${card.id}: approved Wave-2 diagnostic batch has invalid role sequence`);
