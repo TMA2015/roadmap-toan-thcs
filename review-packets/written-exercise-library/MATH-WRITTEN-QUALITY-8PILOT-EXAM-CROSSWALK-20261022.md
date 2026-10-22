@@ -39,3 +39,16 @@ The source PDF G6 HK2 `de-kiem-tra-hoc-ki-2-toan-6-de-so-1-ket-noi-tri-thuc-1713
 - Any future new/changed content requires correct original math, self-check rubric and non-spoiling hints; if it uses source inspiration, author original numbers/contexts/proofs and do not publish the source paper itself.
 - The existing eight-ID NotebookLM review packet remains unchanged. External source evidence is a **supplemental input**, not independent approval; verdict still pending.
 - **No production code, catalog item, ID, student record, Readiness or rubric semantic changes in this phase.**
+
+
+## 4. Eight-item structural self-study preflight, checked against the canonical GitHub catalog
+
+Catalog blob: `5141a40bf1b8f8763257857d3b805d681a0956fa`. The eight selected IDs are present and unique in that catalog.
+
+- **All 8**: nonempty source refs, catalog KNTT placement, fully worked solution representation (four explanation steps on each of 6 standard items, full worked solutions on 2 anchors), nonempty common-error list, remediation, and rubric points summing to the declared total.
+- **2 anchors** (`WX02-NUM-003`, `WX09-SYS-003`): three progressive hints each, explicit why-this-method explanation, five-point self-check rubric each.
+- **6 standard exercises** (`WX02-NUM-001`, `WX13-LIN-001`, `WX03-RAT-002`, `WX16-QUAD-001`, `WX07-RAT-001`, `WX19-CIR-002`): complete 4-step `solution_steps`, but **no dedicated `hint_steps`**. This is not an error by itself: review selective non-spoiling hints at genuine reasoning bottlenecks only.
+- **0/8 catalog figure references**. For geometry items (`WX13-LIN-001`, `WX16-QUAD-001`, `WX19-CIR-002`), independently decide whether a diagram or an explicit student drawing instruction would improve learning; do not impose figures on every exercise or permit diagrams to create unstated assumptions.
+- Spot-checked calculation/proof paths: G6 GCD(36,48)=12 and fraction plan 120/remaining 18; G7 parallel-line converse and four-person/15-day to six-person/10-day inverse relation; G8 parallelogram→rectangle and rational domain `x≠0,3`; G9 ticket system 24/16 and cyclic quadrilateral opposite-angle 62°. **No apparent P0 arithmetic/logic contradiction in these spot checks**, but the result is **not a fresh full independent academic PASS**; verify source authority, lesson placement and pedagogical efficacy separately.
+
+**Pilot decision gate:** `PREFLIGHT_STRUCTURAL_OK | DEEP_PEDAGOGICAL_REVIEW_PENDING | NOTEBOOKLM_VERDICT_PENDING | NO_CONTENT_WRITE`.
