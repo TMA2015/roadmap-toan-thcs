@@ -19,9 +19,51 @@
     return catalogPromise;
   };
 
+  // Keep the canonical 75-item catalog immutable: P2 prompts are a separate,
+  // source-locked optional teaching overlay, applied in memory on library pages.
+  // Bad, missing or mismatched data fails closed to the unchanged catalog.
+  const applyReviewedHints=(data,overlay)=>{
+    const expectedIds=["WX16-QUAD-001","WX07-RAT-001","WX19-CIR-002"];
+    if(!data||data.catalog_id!=="MATH-WRITTEN-EXERCISE-LIBRARY-V1"||
+       data.snapshot_date!=="2026-10-21"||!Array.isArray(data.exercises)||data.exercises.length!==75||
+       !overlay||overlay.schema_version!=="1.0.0"||
+       overlay.source_catalog_blob_sha!=="5141a40bf1b8f8763257857d3b805d681a0956fa"||
+       overlay.source_catalog_snapshot_date!==data.snapshot_date||
+       overlay.source_catalog_exercise_count!==data.exercises.length||
+       overlay.source_packet_id!=="MATH-WRITTEN-QUALITY-8PILOT-20261022-R0"||
+       !Array.isArray(overlay.changes)||overlay.changes.length!==expectedIds.length)return data;
+    const existing=new Map(data.exercises.map(x=>[x.exercise_id,x]));
+    const additions=new Map();
+    for(const change of overlay.changes){
+      if(!change||!expectedIds.includes(change.exercise_id)||additions.has(change.exercise_id)||
+         !Array.isArray(change.hint_steps)||change.hint_steps.length!==2||
+         !change.hint_steps.every(h=>typeof h==="string"&&h.trim().length>=20))return data;
+      const original=existing.get(change.exercise_id);
+      if(!original||original.exercise_kind!=="standard"||
+         !Array.isArray(original.solution_steps)||original.solution_steps.length<3||
+         (Array.isArray(original.hint_steps)&&original.hint_steps.length))return data;
+      additions.set(change.exercise_id,change.hint_steps.slice());
+    }
+    if(expectedIds.some(id=>!additions.has(id)))return data;
+    return {...data,exercises:data.exercises.map(x=>
+      additions.has(x.exercise_id)?{...x,hint_steps:additions.get(x.exercise_id)}:x)};
+  };
+
+  const loadLibraryData=async()=>{
+    const canonical=await loadCatalog();
+    try{
+      const response=await fetch(base()+"assets/data/written-exercises/written-p2-hints-overlay-v1.json",{cache:"no-cache"});
+      if(!response.ok)return canonical;
+      return applyReviewedHints(canonical,await response.json());
+    }catch(_){return canonical;}
+  };
+
   const makeHelpPanel=(card,x)=>{
-    const deep=Array.isArray(x.hint_steps)&&x.hint_steps.length>0;
-    const wrap=el("div",deep?"written-help is-deep-anchor":"written-help");
+    // Keep legacy progressive-help behavior for existing reviewed records.
+    // New standard items with only solution_steps can show hints without losing their solution.
+    const hasHints=Array.isArray(x.hint_steps)&&x.hint_steps.length>0;
+    const deep=x.exercise_kind==="anchor"||(hasHints&&Boolean(String(x.full_solution_markdown||"").trim()));
+    const wrap=el("div",deep?"written-help is-deep-anchor":hasHints?"written-help has-staged-hints":"written-help");
     const actions=el("div","written-help-actions");
     actions.setAttribute("role","group");
     actions.setAttribute("aria-label","Hỗ trợ cho "+x.exercise_id);
@@ -45,7 +87,7 @@
       return {button,panel};
     };
 
-    if(deep){
+    if(hasHints){
       const id=`${x.exercise_id.toLowerCase()}-hints`;
       const hintButton=el("button","written-help-action",`Gợi ý 1/${x.hint_steps.length}`);
       hintButton.type="button";hintButton.dataset.helpTarget="hints";
@@ -70,6 +112,9 @@
       });
       actions.appendChild(hintButton);panels.appendChild(hintPanel);
 
+    }
+
+    if(deep){
       addDisclosure("solution","Lời giải",()=>{
         const body=el("div","written-disclosure-body");
         const rich=el("div","written-rich");renderRich(rich,x.full_solution_markdown||"");body.appendChild(rich);
@@ -121,7 +166,7 @@
     if(!root||root.dataset.ready==="1"||root.dataset.ready==="loading")return;
     root.dataset.ready="loading";
     let data;
-    try{data=await loadCatalog();}
+    try{data=await loadLibraryData();}
     catch(err){
       root.dataset.ready="failed";
       root.replaceChildren(el("p","written-library-error","Không tải được thư viện bài tập. Hãy thử tải lại trang."));
