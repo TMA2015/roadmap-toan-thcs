@@ -21,7 +21,7 @@ const oldRecords=JSON.parse(JSON.stringify(xs.slice(0,67)));
 const w9Placement=new Set(["WX03-RAT-001","WX03-RAT-002","WX13-LIN-001","WX14-TRI-001","WX14-TRI-002","WX15-CEN-002","WX04-ALG-003","WX05-IDN-001","WX06-FAC-001","WX07-RAT-001","WX16-QUAD-001","WX17-SIM-001","WX09-SYS-003","WX10-FUN-002","WX11-RAD-001","WX12-QUA-001","WX18-TRI-002","WX19-CIR-002"]);
 for(const x of oldRecords){
  if(w9Placement.has(x.exercise_id))delete x.kntt_placements;
- if(x.exercise_id==="WX21-STA-001")x.grade_overlay=[8];
+ if(x.exercise_id==="WX21-STA-001"){x.grade_overlay=[8];x.kntt_placements=[{grade:6,chapter:9,lesson:"Bài 38–41 — Dữ liệu, bảng thống kê, biểu đồ tranh, biểu đồ cột và cột kép"}];}
 }
 const old=JSON.stringify(oldRecords);let h=0xcbf29ce484222325n;
 for(let i=0;i<old.length;i++)h=BigInt.asUintN(64,(h^BigInt(old.charCodeAt(i)))*0x100000001b3n);
