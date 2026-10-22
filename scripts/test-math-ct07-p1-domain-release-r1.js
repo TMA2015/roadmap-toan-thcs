@@ -51,7 +51,7 @@ historic.exercises=historic.exercises.slice(0,69);
 const w9Ids=new Set(["WX03-RAT-001","WX03-RAT-002","WX13-LIN-001","WX14-TRI-001","WX14-TRI-002","WX15-CEN-002","WX04-ALG-003","WX05-IDN-001","WX06-FAC-001","WX07-RAT-001","WX16-QUAD-001","WX17-SIM-001","WX09-SYS-003","WX10-FUN-002","WX11-RAD-001","WX12-QUA-001","WX18-TRI-002","WX19-CIR-002"]);
 for(const item of historic.exercises){
   if(w9Ids.has(item.exercise_id))delete item.kntt_placements;
-  if(item.exercise_id==="WX21-STA-001")item.grade_overlay=[8];
+  if(item.exercise_id==="WX21-STA-001"){item.grade_overlay=[8];item.kntt_placements=[{grade:6,chapter:9,lesson:"Bài 38–41 — Dữ liệu, bảng thống kê, biểu đồ tranh, biểu đồ cột và cột kép"}];}
 }
 delete historic.candidate_scope;
 historic.published_scope.exercise_count=69;
