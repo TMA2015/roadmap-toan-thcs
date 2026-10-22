@@ -1,0 +1,10 @@
+BỘ B02 - DÙNG TRỰC TIẾP, KHÔNG CẦN TỰ ĐIỀN TEMPLATE
+
+1. Giữ nguồn cố định Master Plan Toán v1.1 và Notebook Math Permanent v1.1.
+2. Bỏ chọn/xóa nguồn B01 (01_UPLOAD_TO_SOURCES_B01.md). Tải DUY NHẤT file 01_UPLOAD_TO_SOURCES_B02.md vào Sources.
+3. Mở 02_COPY_TO_CHAT_B02.txt và dán NGUYÊN VĂN vào Chat NotebookLM. Không đưa file prompt vào Sources.
+4. Nếu báo cáo dừng giữa chừng, mở 03_CONTINUE_ONLY_IF_TRUNCATED.txt rồi dán vào Chat; không cần nếu B02 đã đủ 39 ID.
+5. Khi đủ kết quả, sao chép nguyên văn phản hồi (nếu có nhiều phần, gửi lần lượt toàn bộ) cho ChatGPT. Không tự tạo JSON hay sửa kết quả.
+6. File 04_HUONG_DAN_KHONG_UPLOAD.txt chỉ để đọc. Sau B02, bỏ nguồn tạm và chờ gói B03 mới.
+
+LƯU Ý: ĐỪNG NẠP lại toàn bộ 5 file ngân hàng nguồn/queue/register; chúng đã được ghép đầy đủ, khóa SHA vào MỘT file 01...
