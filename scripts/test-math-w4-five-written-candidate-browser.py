@@ -10,7 +10,7 @@ assert CHROME, "Chromium required"
 BASE="http://127.0.0.1:8765/luyen-tap/tu-luan/"
 with open("docs/assets/data/written-exercises/written-exercise-library-v1.json",encoding="utf-8") as fh:
     bank=json.load(fh)
-assert len(bank["exercises"])==75 and bank["published_scope"]["exercise_count"]==74
+assert len(bank["exercises"])==75 and bank["published_scope"]["exercise_count"]==75
 new=bank["exercises"][69:74]  # preserve five reviewed W4 records; W9 additional candidate is separate
 expected=[
     ("CT08","WX08-EQI-003","CORE_BASE"),
@@ -34,7 +34,7 @@ with sync_playwright() as pw:
         root.wait_for(state="visible",timeout=15000)
         page.wait_for_function("document.querySelector('[data-written-exercise-library]')?.dataset.ready==='1'",timeout=15000)
         cards=page.locator(".written-exercise-card")
-        assert cards.count()==75,(device,"five W4 published cards, 69 older cards, one W9 gated candidate")
+        assert cards.count()==75,(device,"five W4 published cards, 69 older cards, one later Owner-approved W9 Written")
         assert page.locator(".written-exercise-card#wx07-ent-001").count()==1,(device,"historical W3 card preserved")
         page.evaluate("localStorage.setItem('w4-qa-sentinel','DO_NOT_TOUCH')")
         topic=page.locator('select[aria-label="Lọc theo chuyên đề"]')
