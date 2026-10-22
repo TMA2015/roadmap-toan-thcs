@@ -26,7 +26,7 @@ const W9placementIds=new Set([
 ]);
 for(const e of original65){
  if(W9placementIds.has(e.exercise_id))delete e.kntt_placements;
- if(e.exercise_id==="WX21-STA-001")e.grade_overlay=[8];
+ if(e.exercise_id==="WX21-STA-001"){e.grade_overlay=[8];e.kntt_placements=[{grade:6,chapter:9,lesson:"Bài 38–41 — Dữ liệu, bảng thống kê, biểu đồ tranh, biểu đồ cột và cột kép"}];}
 }
 const historical=JSON.stringify(original65);
 // Pinned FNV1a64 fingerprint of every field of the 65 pre-W3B canonical entries.
