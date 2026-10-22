@@ -19,18 +19,32 @@ const source=[
 ["11-can-thuc","11-ENT-01","8814674a67c9f576df49284282bd1fa16cfbba7c"],
 ["12-phuong-trinh-bac-hai-viete","12-ENT-02","8199916e355e8d1a617ef8687c4f442e6c6e48d1"]
 ];
-assert.equal(all.length,74);
+assert.equal(all.length,75); // W4 exact 74 released + one Owner-gated W9 appended Written
 assert.equal(lib.published_scope.exercise_count,74);
 assert.equal(lib.auto_readiness_credit,false);
 assert.equal(lib.self_marking_only,true);
-assert.deepEqual(all.slice(69).map(x=>x.exercise_id),ids);
-assert.equal(new Set(all.map(x=>x.exercise_id)).size,74);
+assert.deepEqual(all.slice(69,74).map(x=>x.exercise_id),ids);
+assert.equal(new Set(all.map(x=>x.exercise_id)).size,75);
 const review=lib.published_scope.batches.at(-1);
 assert.deepEqual(review,{batch_id:"W4_CT08_12_WRITTEN_R1",
  packet_id:"MATH-W4-CT08-12-8SOURCE-CONVERSION-R0-20261020",
  count:5,status:"PUBLISHED"});
 const old=JSON.parse(JSON.stringify(lib));
 old.exercises=old.exercises.slice(0,69);
+// Reconstruct the original W4 source BEFORE the later independent W9 S1
+// metadata-only placements, while keeping prior eight Grade6 true placements.
+const reviewedW9=new Set([
+ "WX03-RAT-001","WX03-RAT-002","WX13-LIN-001","WX14-TRI-001",
+ "WX14-TRI-002","WX15-CEN-002","WX04-ALG-003","WX05-IDN-001",
+ "WX06-FAC-001","WX07-RAT-001","WX16-QUAD-001","WX17-SIM-001",
+ "WX09-SYS-003","WX10-FUN-002","WX11-RAD-001","WX12-QUA-001",
+ "WX18-TRI-002","WX19-CIR-002"
+]);
+for(const e of old.exercises){
+ if(reviewedW9.has(e.exercise_id))delete e.kntt_placements;
+ if(e.exercise_id==="WX21-STA-001")e.grade_overlay=[8];
+}
+delete old.candidate_scope;
 old.published_scope.exercise_count=69;
 old.snapshot_date="2026-10-20";
 old.published_scope.batches.pop();
