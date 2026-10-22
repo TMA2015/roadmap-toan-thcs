@@ -7423,7 +7423,7 @@
         "method": "INDEPENDENT_NOTEBOOKLM_MATH_AND_KNTT_S1_FOLLOWUP",
         "packet_id": "MATH-W9-CONSOLIDATED-NOTEBOOKLM-ONE-UPLOAD-R1-20261021",
         "receipt": "review-packets/math-w9-core-coverage/02_NOTEBOOKLM_W9_S1_RECHECK_OWNER_RECEIPT_20261022.md",
-        "release_gate": "OWNER_NO_LIVE_RELEASE"
+        "release_gate": "OWNER_RELEASE_APPROVED_20261022"
       },
       "kntt_placements": [
         {
@@ -7466,7 +7466,7 @@
       "CT23",
       "CT24"
     ],
-    "exercise_count": 74,
+    "exercise_count": 75,
     "batches": [
       {
         "batch_id": "PILOT_R1",
@@ -7563,18 +7563,15 @@
         "packet_id": "MATH-W4-CT08-12-8SOURCE-CONVERSION-R0-20261020",
         "count": 5,
         "status": "PUBLISHED"
+      },
+      {
+        "batch_id": "W9_G6_NUMABS_WRITTEN_20261022",
+        "packet_id": "MATH-W9-CONSOLIDATED-NOTEBOOKLM-ONE-UPLOAD-R1-20261021",
+        "count": 1,
+        "status": "PUBLISHED",
+        "owner_release_authorization": "OWNER_APPROVED_RELEASE_20261022"
       }
     ],
     "rule": "Append-only publication of academically reviewed written exercises; self-marking only."
-  },
-  "candidate_scope": {
-    "packet_id": "MATH-W9-CONSOLIDATED-NOTEBOOKLM-ONE-UPLOAD-R1-20261021",
-    "review_status": "ACADEMIC_PASS__OWNER_RELEASE_APPROVAL_PENDING",
-    "new_exercise_count": 1,
-    "exercise_ids": [
-      "WX02-NUM-004"
-    ],
-    "owner_release_authorization": "NO_LIVE_RELEASE",
-    "historical_published_exercises": 74
   }
 }
