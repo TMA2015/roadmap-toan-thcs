@@ -25,14 +25,16 @@ const mapSkills=new Set(mapping.chapters.flatMap(c=>c.lessons).filter(l=>l.roadm
 ok(mapSkills.has("tap-hop") && mapSkills.has("so-thap-phan") && mapSkills.has("so-nguyen-truc-so"),"grade6 mapping was consulted");
 const byId=new Map(bank.questions.map(q=>[q.id,q])),seen=new Set(),assessed=new Set();
 const microAnswers=["7","24","20","423","29","12","5","12","3 °C","3/4","1/4","5/6","0,85","50","108 000 đồng"];
-const expectedCardCounts=[10,11,10,12,9];
+const expectedCardCounts=[10,11,13,12,9]; // original [10,11,10,12,9] + exact W9 S1 candidate append
 for (const [i,card] of grade6Cards.entries()){
  ok(card.layer==="KNTT-Core" && JSON.stringify(card.grades)==="[6]" && card.micro_practice.length===expectedCardCounts[i],"card scope and reviewed coverage count "+card.id);
  ok(card.kntt_lessons.length && card.kntt_lessons.every(x=>x.includes("Lớp 6")),"explicit class label "+card.id);
  ok(card.teaching_copy?.key_idea && card.teaching_copy?.worked_example?.solution && card.teaching_copy?.misconception,"explanation "+card.id);
  for (const [j,id] of card.micro_practice.entries()){
   const q=byId.get(id);ok(q && !seen.has(id),"unique referenced micro "+id);seen.add(id);
-  ok(q.card_id===card.id && (j<3?q.micro_role===["base","trap","apply"][j]:q.micro_role==="coverage"),"role / card mapping "+id);
+  const historicalRole=j<3?q.micro_role===["base","trap","apply"][j]:q.micro_role==="coverage";
+  const addedW9Role=i===2&&j>=10&&q.micro_role===["base","trap","apply"][j-10];
+  ok(q.card_id===card.id && (addedW9Role||historicalRole),"role / card mapping "+id);
   ok(q.tags.layer==="KNTT-Core" && q.tags.grade===6 && JSON.stringify(q.curriculum.grades)==="[6]","micro class scope "+id);
   const lessonLocal=q.evidence_role==="LESSON_LOCAL_CORE_FORMATIVE";
   const localDeclared=new Set([...(card.lesson_local_concepts||[]),...(card.lesson_local_problem_types||[])].map(x=>x.id));
@@ -41,7 +43,7 @@ for (const [i,card] of grade6Cards.entries()){
   ok(q.hints.length>=2 && q.explanation,"two-level hints and explanation "+id);
  }
 }
-ok(seen.size===52,"every micro is attached to exactly one card");
+ok(seen.size===55,"52 original Grade6 Micro IDs + 3 reviewed W9 S1 candidate IDs each attached exactly once");
 const readinessAnswers=["0","−2","315","31","−8","6","7/10","1/2","0,85","340 000 đồng"];
 for (const [i,q] of assessment.items.slice(0,10).entries()){
  ok(!assessed.has(q.id),"unique readiness ID "+q.id);assessed.add(q.id);

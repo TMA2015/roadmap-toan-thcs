@@ -33,7 +33,8 @@ assert.ok(library.exercises.length>=50);
 assert.equal(library.auto_readiness_credit,false);
 assert.equal(library.self_marking_only,true);
 assert.ok(library.exercises.filter(x=>x.kntt_placements).length>=4);
-assert.deepEqual(byId["WX21-STA-001"].kntt_placements,[{grade:6,chapter:9,lesson:"Bài 38–41 — Dữ liệu, bảng thống kê, biểu đồ tranh, biểu đồ cột và cột kép"}]);
+// The historical Grade6 placement was broadly Bài38–41; an additional Owner-supplied W9 S1 review independently narrows the SAME record to Bài40.
+assert.deepEqual(byId["WX21-STA-001"].kntt_placements,[{grade:6,chapter:9,lesson:"Bài 40 — Biểu đồ cột"}]);
 
 for(const [id,p] of Object.entries(expected)){
   const item=byId[id];

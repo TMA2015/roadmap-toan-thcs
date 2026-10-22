@@ -143,8 +143,11 @@ assert.deepEqual(g8.semantic_reconciliation?.remaining_review_queue,[]);
 
 const written=json(a.source_locks.written_library.path);
 const g8Written=(written.exercises||[]).filter(ex=>(ex.kntt_placements||[]).some(p=>p.grade===8));
-assert.equal(g8Written.length,0);
-assert.equal(a.summary.written_grade8_kntt_item_count,0);
+// Historical Grade8 audit snapshot had ZERO grade-placed Written entries.
+// W9 adds six independent S1-reviewed placements without rewriting this old snapshot.
+assert.deepEqual(g8Written.map(x=>x.exercise_id).sort(),
+  ["WX04-ALG-003","WX05-IDN-001","WX06-FAC-001","WX07-RAT-001","WX16-QUAD-001","WX17-SIM-001"].sort());
+assert.equal(a.summary.written_grade8_kntt_item_count,0,"historical Grade8 R1 audit remains unchanged");
 
 const counts={};
 for(const row of a.rows){

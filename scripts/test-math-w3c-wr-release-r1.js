@@ -11,11 +11,25 @@ assert(b.includes("EXPECTED=14")&&b.includes("REVIEWED=14")&&b.includes("OVERALL
 for(const id of ["WX07-ENT-001","WX07-CH-001"])
  assert(a.includes(id+" | MATH:PASS | HINTS:PASS | SOLUTION:PASS | RUBRIC:PASS | GRADE_AND_LAYER:PASS | DISTINCT_FROM_CANONICAL_WX:PASS | PRECISE_REVISION:none | ITEM_VERDICT:PASS"),"reviewer row "+id);
 assert(xs.length>=69,"retain at least W3C historical 69 Written records");
-assert.equal(d.published_scope.exercise_count,xs.length);
+assert.equal(d.published_scope.exercise_count,xs.length-(d.candidate_scope?.new_exercise_count||0),
+  "W3C historically published count excludes W9 gated candidate");
+// The original W3C audit remains immutable while the separately approved
+// W9 release is now published and has no pending candidate scope.
+assert.equal(d.candidate_scope,undefined,"no W9 pending candidate after Owner approval");
+assert(d.published_scope.batches.some(x=>x.batch_id==="W9_G6_NUMABS_WRITTEN_20261022"&&
+ x.count===1&&x.status==="PUBLISHED"&&
+ x.owner_release_authorization==="OWNER_APPROVED_RELEASE_20261022"),
+ "one later Owner-approved W9 Written batch registered");
 assert.equal(new Set(xs.map(x=>x.exercise_id)).size,xs.length);
 assert.equal(d.auto_readiness_credit,false);
 assert.equal(d.self_marking_only,true);
-const old=JSON.stringify(xs.slice(0,67));let h=0xcbf29ce484222325n;
+const oldRecords=JSON.parse(JSON.stringify(xs.slice(0,67)));
+const w9Placement=new Set(["WX03-RAT-001","WX03-RAT-002","WX13-LIN-001","WX14-TRI-001","WX14-TRI-002","WX15-CEN-002","WX04-ALG-003","WX05-IDN-001","WX06-FAC-001","WX07-RAT-001","WX16-QUAD-001","WX17-SIM-001","WX09-SYS-003","WX10-FUN-002","WX11-RAD-001","WX12-QUA-001","WX18-TRI-002","WX19-CIR-002"]);
+for(const x of oldRecords){
+ if(w9Placement.has(x.exercise_id))delete x.kntt_placements;
+ if(x.exercise_id==="WX21-STA-001"){x.grade_overlay=[8];x.kntt_placements=[{grade:6,chapter:9,lesson:"Bài 38–41 — Dữ liệu, bảng thống kê, biểu đồ tranh, biểu đồ cột và cột kép"}];}
+}
+const old=JSON.stringify(oldRecords);let h=0xcbf29ce484222325n;
 for(let i=0;i<old.length;i++)h=BigInt.asUintN(64,(h^BigInt(old.charCodeAt(i)))*0x100000001b3n);
 assert.equal(h.toString(16).padStart(16,"0"),"c11a3f5c994eebd8","historical 67 records changed");
 assert.deepEqual(xs.slice(67,69).map(x=>x.exercise_id),["WX07-ENT-001","WX07-CH-001"]);

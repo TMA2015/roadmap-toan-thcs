@@ -107,7 +107,14 @@ assert.equal(counts.READINESS.REVIEWED_STRUCTURED_READINESS,1);
 assert.equal(counts.READINESS.PENDING_REVIEW,0);
 
 const written=json(a.source_locks.written_library.path);
-assert.equal((written.exercises||[]).filter(e=>e.kntt_placements).length,8);
+// Historical Grade6 audit independently reviewed eight items. W9 adds
+// six Grade7 + six Grade8 + six Grade9 placements and one NEW Grade6 item
+// on a separate academic S1 receipt; do not rewrite the old audit summary.
+const currentPlaced=(written.exercises||[]).filter(e=>e.kntt_placements?.length);
+assert.equal(currentPlaced.length,27);
+for(const [grade,expected] of [[6,9],[7,6],[8,6],[9,6]])
+  assert.equal(currentPlaced.filter(e=>e.kntt_placements.some(p=>p.grade===grade)).length,expected,
+    "separate W9 current grade placement census");
 assert.equal(a.summary.written_library_kntt_placement_count,8);
 assert.equal(a.summary.written_library_kntt_item_count,8);
 assert.equal(a.summary.written_library_kntt_placement_row_count,9);

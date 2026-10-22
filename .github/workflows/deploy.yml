@@ -188,5 +188,8 @@ jobs:
       - name: Validate CĐ25 built display math
         run: node scripts/test-topic25-math-render.js --built
 
+      - name: Block unapproved W9 Written candidate from production Pages
+        run: node scripts/guard-w9-candidate-publication-r1.js --deploy
+
       - name: Deploy to GitHub Pages
         run: mkdocs gh-deploy --force

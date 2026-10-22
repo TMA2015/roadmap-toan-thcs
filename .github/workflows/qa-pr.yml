@@ -286,6 +286,13 @@ jobs:
       - name: Validate Written implementation Wave 1 R1
         run: node scripts/test-written-implementation-wave1-r1.js
 
+      - name: Validate W9 source-preserving reviewed Written and NUM-ABS candidate
+        run: |
+          node --check docs/assets/javascripts/written-exercise-library-v1.js
+          node scripts/test-w9-reviewed-written-numabs-candidate-r1.js
+          node scripts/guard-w9-candidate-publication-r1.js --release-check
+          node scripts/guard-w9-candidate-publication-r1.js --deploy
+
       - name: Validate Written coverage priority R1 review
         run: node scripts/test-written-coverage-priority-r1.js
 
@@ -467,6 +474,7 @@ jobs:
           python scripts/test-topic09-p1c1-variant-browser.py
           python scripts/test-topic09-p1c2-browser.py
           python scripts/test-written-exercise-library-browser.py
+          python scripts/test-w9-reviewed-written-grade-browser-r1.py
           python scripts/test-math-w4-five-written-candidate-browser.py
           python scripts/test-library-two-paths-r1-browser.py
           python scripts/test-math-learner-nav-library-r2-browser.py

@@ -14,7 +14,21 @@ assert(xs.length>=67,"W3B original two published anchors must survive future app
 assert(data.published_scope?.exercise_count>=67,"published count must preserve W3B 65+2");
 assert.equal(data.auto_readiness_credit,false);
 assert.equal(data.self_marking_only,true);
-const historical=JSON.stringify(xs.slice(0,65));
+// Reconstruct W3B's exact immutable 65-item baseline, undoing ONLY the
+// independently S1-reviewed W9 classroom placement metadata (not old math).
+const original65=JSON.parse(JSON.stringify(xs.slice(0,65)));
+const W9placementIds=new Set([
+ "WX03-RAT-001","WX03-RAT-002","WX13-LIN-001","WX14-TRI-001",
+ "WX14-TRI-002","WX15-CEN-002","WX04-ALG-003","WX05-IDN-001",
+ "WX06-FAC-001","WX07-RAT-001","WX16-QUAD-001","WX17-SIM-001",
+ "WX09-SYS-003","WX10-FUN-002","WX11-RAD-001","WX12-QUA-001",
+ "WX18-TRI-002","WX19-CIR-002"
+]);
+for(const e of original65){
+ if(W9placementIds.has(e.exercise_id))delete e.kntt_placements;
+ if(e.exercise_id==="WX21-STA-001"){e.grade_overlay=[8];e.kntt_placements=[{grade:6,chapter:9,lesson:"Bài 38–41 — Dữ liệu, bảng thống kê, biểu đồ tranh, biểu đồ cột và cột kép"}];}
+}
+const historical=JSON.stringify(original65);
 // Pinned FNV1a64 fingerprint of every field of the 65 pre-W3B canonical entries.
 // The old records, identities and source_refs must remain byte-equivalent in JSON form.
 let h=0xcbf29ce484222325n;
