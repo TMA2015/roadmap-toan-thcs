@@ -33,7 +33,7 @@ const context={document,window,location:{pathname:"/roadmap-toan-thcs/luyen-tap/
 let js=fs.readFileSync("docs/assets/javascripts/written-exercise-library-v1.js","utf8");
 const anchor="  const initLibrary=async()=>{";
 assert(js.includes(anchor),"renderer test instrumentation anchor missing");
-js=js.replace(anchor,"  globalThis.__testMakeHelpPanel=makeHelpPanel;\\n  globalThis.__testApplyReviewedHints=applyReviewedHints;\\n"+anchor);
+js=js.replace(anchor,"  globalThis.__testMakeHelpPanel=makeHelpPanel;\n  globalThis.__testApplyReviewedHints=applyReviewedHints;\n"+anchor);
 vm.runInNewContext(js,context,{filename:"written-exercise-library-v1.js"});
 const make=context.__testMakeHelpPanel,apply=context.__testApplyReviewedHints;
 assert(typeof make==="function"&&typeof apply==="function","failed to capture renderer and overlay functions");
