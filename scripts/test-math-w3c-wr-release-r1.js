@@ -13,7 +13,13 @@ for(const id of ["WX07-ENT-001","WX07-CH-001"])
 assert(xs.length>=69,"retain at least W3C historical 69 Written records");
 assert.equal(d.published_scope.exercise_count,xs.length-(d.candidate_scope?.new_exercise_count||0),
   "W3C historically published count excludes W9 gated candidate");
-assert.equal(d.candidate_scope?.owner_release_authorization,"NO_LIVE_RELEASE");
+// The original W3C audit remains immutable while the separately approved
+// W9 release is now published and has no pending candidate scope.
+assert.equal(d.candidate_scope,undefined,"no W9 pending candidate after Owner approval");
+assert(d.published_scope.batches.some(x=>x.batch_id==="W9_G6_NUMABS_WRITTEN_20261022"&&
+ x.count===1&&x.status==="PUBLISHED"&&
+ x.owner_release_authorization==="OWNER_APPROVED_RELEASE_20261022"),
+ "one later Owner-approved W9 Written batch registered");
 assert.equal(new Set(xs.map(x=>x.exercise_id)).size,xs.length);
 assert.equal(d.auto_readiness_credit,false);
 assert.equal(d.self_marking_only,true);
