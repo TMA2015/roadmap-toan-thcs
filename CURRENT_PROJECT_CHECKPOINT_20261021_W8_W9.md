@@ -91,3 +91,26 @@
 **Other outputs:** `WX21-STA-001` has Grade8 overlay/Grade6 recorded placement discrepancy; NotebookLM states bar-chart work is Grade6 Core, but still needs source-cited S1 proof before metadata-only update. `RATIO-MODEL` Grade7 Core vs historical Entrance10 taxonomy requires distinct scope and S1-backed crosswalk; `QUAD-GRAPH` optional Entrance10. No live release permission, no re-ID, no edit to prior learner attempts.
 
 **Owner collaboration:** One short, copy-ready targeted NotebookLM follow-up prompt only when needed, no giant boilerplate, keep study progress checkpoints durable and independent academic vs technical gates separate.
+
+## 9. W9 independent S1 PASS and owner-gated implementation candidate — 2026-10-22
+
+**Owner supplied the second independent NotebookLM S1-check report.** With 5 permanent project Markdown sources + all 8 KNTT SGK PDF volumes + one W9 temporary packet selected (14 selected sources), NotebookLM returned:
+- `PACKET_ID|MATH-W9-CONSOLIDATED-NOTEBOOKLM-ONE-UPLOAD-R1-20261021`
+- `MATH_PASS_WRITTEN_COUNT|18`, `KNTT_PLACEMENT_VERIFIED_COUNT|18`, `KNTT_PLACEMENT_INSUFFICIENT_S1_COUNT|0`
+- 3 proposed Grade6 NUM-ABS MCQs and 1 Written PASS; `NUMABS_GRADE6_CURRICULUM_SCOPE|VERIFIED:G6_T1_ChIII_Bai13_Bai14`
+- `WX21-STA-001` should have Grade6 ChIX Bài40 as canonical grade placement, Grade8 as potential refresher only.
+- Ordinary Grade7 direct/inverse proportion modelling remains `KNTT-Core` (Bài22–23); optional Grade9 `QUAD-GRAPH` stays `Entrance10`, not Core.
+- `ACADEMIC_OVERALL|PASS` **but `AUTHORIZATION|NO_LIVE_RELEASE`**.
+
+**Provenance caution:** This is the **independent review result supplied by Owner**; this GitHub checkpoint has not independently opened the original 8 PDFs to replay page numbers. The exact item lesson/page claims and machine-readable verdict are stored in W9 review Draft [#566](https://github.com/TMA2015/roadmap-toan-thcs/pull/566) and separately in implementation Draft [#567](https://github.com/TMA2015/roadmap-toan-thcs/pull/567) as `review-packets/math-w9-core-coverage/02_NOTEBOOKLM_W9_S1_RECHECK_OWNER_RECEIPT_20261022.md`.
+
+**W9 implementation Draft [#567](https://github.com/TMA2015/roadmap-toan-thcs/pull/567):** Owner-gated engineering candidate, not live. Planned coherent delta:
+- add `kntt_placements` for the 18 S1-reviewed original Written IDs, preserve their math, solutions, rubrics and IDs;
+- reconcile `WX21-STA-001` advisory Grade8 to Grade6 while retaining its recorded Grade6 Chapter9 placement;
+- append `NUM02MICRO_065..067` to Grade6 integer/absolute-value card and add one fully worked `WX02-NUM-004` Written;
+- Grade→Chapter→Lesson filters use genuine `kntt_placements`, NOT advisory `grade_overlay`; topic/skill and canonical deep links remain;
+- preserve original 74 Written and 64 NUM02 source-math payloads, 237 topical Readiness and independent Grade6 mixed quiz results; `published_scope.exercise_count=74` plus a distinct **candidate-only** 75th Written with `NO_LIVE_RELEASE`.
+- Candidate CI includes regression tests and desktop/phone/tablet-emulated browser cases; **check exact-head run before claiming PASS**, because some historical tests lock the previous whole-file source SHA/old zero placements and require explicit baseline reconstruction rather than weakening protection.
+- **DO NOT merge or publish Draft #567 until Owner authorizes one coherent W9 release**, production candidate scope promoted deliberately, and final exact-head CI/physical device review completed. Grade9 Readiness Draft #565 remains a separate release decision.
+
+**Collaboration rule:** Owner prefers big coherent waves, not many tiny prompts and `tiếp tục` loops; checkpoint update is a durability measure, not an invitation for repeated manual supervision.
