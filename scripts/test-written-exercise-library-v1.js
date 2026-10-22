@@ -155,7 +155,15 @@ ok(page.includes("data-written-exercise-library"),"library page mount");
 ok(!page.includes("Pilot v1"),"library intro no longer pilot-labelled");
 ok(!page.includes("Hiện pilot có"),"library intro has no stale fixed pilot count");
 ok(page.includes("mở rộng dần theo từng chuyên đề"),"library intro uses durable expansion copy");
-ok(data.published_scope?.exercise_count===data.exercises.length,"published scope count follows canonical library");
+const pendingWritten=data.candidate_scope?.new_exercise_count||0;
+ok(data.published_scope?.exercise_count===data.exercises.length-pendingWritten,
+  "published scope exactly equals authorized historical Written items, excluding Owner-gated W9 candidate");
+if(pendingWritten){
+  ok(pendingWritten===1&&data.candidate_scope?.owner_release_authorization==="NO_LIVE_RELEASE"&&
+    JSON.stringify(data.candidate_scope.exercise_ids)===JSON.stringify(["WX02-NUM-004"])&&
+    data.exercises.at(-1).exercise_id==="WX02-NUM-004",
+    "W9 candidate has unique append-only ID and explicit publication gate");
+}
 const w4pending=data.published_scope?.batches?.filter(x=>x.status!=="PUBLISHED")||[];
 if(w4pending.length){
   ok(w4pending.length===1&&w4pending[0].batch_id==="W4_CT08_12_WRITTEN_R1"
@@ -169,7 +177,7 @@ if(w4pending.length){
     "pending candidates cannot enable Core/Readiness or silently claim release");
 }
 ok(data.published_scope.batches.every(x=>x.status==="PUBLISHED"),"Owner-authorized W4 and all earlier Written batches marked published");
-ok(data.published_scope.batches.at(-1).batch_id==="W4_CT08_12_WRITTEN_R1" && data.published_scope.batches.at(-1).count===5 && data.exercises.length===74,"five exact authorized W4 Written records");
+ok(data.published_scope.batches.at(-1).batch_id==="W4_CT08_12_WRITTEN_R1" && data.published_scope.batches.at(-1).count===5 && data.exercises.slice(0,74).length===74,"five exact authorized W4 Written records");
 ok(data.published_scope?.batches?.filter(x=>x.status==="PUBLISHED").length+
    w4pending.length===data.published_scope?.batches?.length,
    "all historic Written batches remain published; no unregistered pending statuses");
