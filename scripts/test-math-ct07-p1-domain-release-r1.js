@@ -48,12 +48,18 @@ const written=parse("docs/assets/data/written-exercises/written-exercise-library
 assert(written.exercises.length>=69,"historical 69 Written entries must not be removed");
 const historic=JSON.parse(JSON.stringify(written));
 historic.exercises=historic.exercises.slice(0,69);
+const w9Ids=new Set(["WX03-RAT-001","WX03-RAT-002","WX13-LIN-001","WX14-TRI-001","WX14-TRI-002","WX15-CEN-002","WX04-ALG-003","WX05-IDN-001","WX06-FAC-001","WX07-RAT-001","WX16-QUAD-001","WX17-SIM-001","WX09-SYS-003","WX10-FUN-002","WX11-RAD-001","WX12-QUA-001","WX18-TRI-002","WX19-CIR-002"]);
+for(const item of historic.exercises){
+  if(w9Ids.has(item.exercise_id))delete item.kntt_placements;
+  if(item.exercise_id==="WX21-STA-001")item.grade_overlay=[8];
+}
+delete historic.candidate_scope;
 historic.published_scope.exercise_count=69;
 historic.snapshot_date="2026-10-20";
 const appended=historic.published_scope.batches.filter(x=>x.batch_id==="W4_CT08_12_WRITTEN_R1");
 assert(appended.length<=1);
 if(appended.length) {
- assert(appended[0].count===5 && appended[0].status==="PUBLISHED" && written.exercises.length===74,"W4 five Owner-approved additions and no other changes");
+ assert(appended[0].count===5 && appended[0].status==="PUBLISHED" && written.exercises.length===75 && written.published_scope.exercise_count===74 && written.candidate_scope?.new_exercise_count===1,"W4 exact five published additions plus distinct Owner-gated W9 item");
  historic.published_scope.batches=historic.published_scope.batches.filter(x=>x.batch_id!=="W4_CT08_12_WRITTEN_R1");
 }
 assert.equal(blob(Buffer.from(JSON.stringify(historic,null,2)+"\n")),"eed3fa0cbae29fd4fdb9daaeac9ef36c3744b665","Historical 69 Written JSON records + metadata must remain unchanged");
