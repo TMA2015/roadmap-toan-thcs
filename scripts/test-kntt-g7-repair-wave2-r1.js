@@ -34,6 +34,22 @@ for(const [path,lock] of Object.entries(artifact.source_locks)){
     for(const id of ["STA21MICRO_021","STA21MICRO_022","STA21MICRO_023","STA21MICRO_024"]){
       assert.ok(current.questions.some(q=>q.id===id),"historical Wave-2 Topic21 Micro removed: "+id);
     }
+  }else if(path.endsWith("topic02-learning-workspace.json")){
+    // W9 append-only Grade6 content is not a mutation of historical Grade7 source.
+    const original=json(path);
+    const card=original.cards.find(c=>c.id==="num02-g6-core-3");
+    assert.deepEqual(card.micro_practice.slice(-3),["NUM02MICRO_065","NUM02MICRO_066","NUM02MICRO_067"]);
+    card.micro_practice=card.micro_practice.slice(0,-3);
+    assert.match(original.qa_notes.at(-1),/W9 S1 Math PASS/);
+    original.qa_notes.pop();
+    assert.equal(blob(JSON.stringify(original,null,2)+"\n"),lock.sha,"historical Grade7 W2 Core workspace drift");
+  }else if(path.endsWith("02-so-va-phep-tinh-micro-v1.json")){
+    const original=json(path);
+    assert.deepEqual(original.questions.slice(64).map(q=>q.id),
+      ["NUM02MICRO_065","NUM02MICRO_066","NUM02MICRO_067"]);
+    original.questions=original.questions.slice(0,64);
+    original.question_count=64;
+    assert.equal(blob(JSON.stringify(original,null,2)+"\n"),lock.sha,"historical Grade7 W2 Micro bank drift");
   }else{
     assert.equal(blob(read(path)),lock.sha,"source drift: "+path);
   }
@@ -58,7 +74,8 @@ for(const c of [card4,card23]){
 }
 
 assert.equal(m2.question_count,m2.questions.length);
-assert.equal(m2.question_count,64);
+assert.equal(m2.questions.slice(0,64).length,64,"W2 64 historical questions preserved");
+assert.equal(m2.question_count,67,"W9 three append-only NUM02 candidates");
 assert.equal(m3.question_count,m3.questions.length);
 assert.equal(m3.question_count,19);
 assert.equal(m21.question_count,m21.questions.length);
