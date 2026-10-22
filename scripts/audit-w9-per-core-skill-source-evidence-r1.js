@@ -17,7 +17,7 @@ const census={packet_id:"MATH-W9-PER-CORE-SKILL-DIRECT-MICRO-EVIDENCE-R1-2026102
  state:"SOURCE_TAG_CENSUS_NOT_KNTT_S1_VERDICT",topics:[],skill_evidence:[],
  totals:{banks:0,core_cards:0,declared_skill_occurrences:0,no_direct_skill_tag:0,
  one_direct_skill_tag:0,two_plus_direct_skill_tags:0,distinct_problem_type_zero:0,
- total_unlisted_skill_tag_occurrences:0,source_question_ids:0}};
+ total_unlisted_core_skill_tag_occurrences:0,support_skill_tags_not_in_core_denominator:0,source_question_ids:0}};
 for(const slug of slugs){
  const bankPath="docs/assets/data/practice/"+slug+"-micro-v1.json";
  const wsPath="docs/assets/data/curriculum/topic"+slug.slice(0,2)+"-learning-workspace.json";
@@ -33,7 +33,7 @@ for(const slug of slugs){
   cards=view.cards;
  }
  const topic={slug,source_blobs:{bank:blob(bankPath),workspace:blob(wsPath),...(overlay?{runtime_overlay:blob(overlay)}:{})},
-   active_core_cards:0,declared_skills:0,no_direct:0,one_direct:0,two_plus:0,unlisted_micro_skill_tags:[]};
+   active_core_cards:0,declared_skills:0,no_direct:0,one_direct:0,two_plus:0,unlisted_micro_skill_tags:[],support_outside_core_denominator:[]};
  census.totals.banks++;census.totals.source_question_ids+=q.size;
  for(const card of cards.filter(c=>c.layer==="KNTT-Core")){
   topic.active_core_cards++;census.totals.core_cards++;
@@ -46,7 +46,13 @@ for(const slug of slugs){
   const itemGrades=[...new Set(items.map(x=>x.tags?.grade).filter(x=>Number.isInteger(x)))].sort();
   for(const item of items){
    for(const sk of item.tags?.skill||[]){
-    if(!declared.includes(sk))topic.unlisted_micro_skill_tags.push({card_id:card.id,question_id:item.id,skill:sk});
+    if(!declared.includes(sk)){
+      const ref={card_id:card.id,question_id:item.id,skill:sk,layer:item.tags?.layer,
+        evidence_role:item.evidence_role,gates_core:item.gates_core};
+      if(item.tags?.layer==="Core-Support"&&item.gates_core===false)
+       topic.support_outside_core_denominator.push(ref);
+      else topic.unlisted_micro_skill_tags.push(ref);
+    }
    }
   }
   for(const skill of declared){
@@ -62,7 +68,8 @@ for(const slug of slugs){
    else {census.totals.two_plus_direct_skill_tags++;topic.two_plus++}
   }
  }
- census.totals.total_unlisted_skill_tag_occurrences+=topic.unlisted_micro_skill_tags.length;
+ census.totals.total_unlisted_core_skill_tag_occurrences+=topic.unlisted_micro_skill_tags.length;
+ census.totals.support_skill_tags_not_in_core_denominator+=topic.support_outside_core_denominator.length;
  census.topics.push(topic);
 }
 assert.equal(census.totals.banks,22);
@@ -78,12 +85,15 @@ else{
  console.log("SKILL_SUMMARY|"+JSON.stringify(census.totals));
  for(const t of census.topics)console.log("TOPIC_SKILLS|"+t.slug+"|CARDS:"+t.active_core_cards+
    "|DECLARED:"+t.declared_skills+"|NO_DIRECT:"+t.no_direct+"|ONE_DIRECT:"+t.one_direct+
-   "|TWO_PLUS:"+t.two_plus+"|UNLISTED:"+t.unlisted_micro_skill_tags.length);
+   "|TWO_PLUS:"+t.two_plus+"|UNLISTED_CORE:"+t.unlisted_micro_skill_tags.length+
+   "|SUPPORT_OUTSIDE_CORE:"+t.support_outside_core_denominator.length);
  for(const v of gaps)console.log("SKILL_NO_DIRECT|"+v.slug+"|"+v.card_id+"|"+v.skill+
    "|GRADE_TAGS:"+v.grade_tags.join(",")+"|LESSONS:"+v.lesson_labels.join(";"));
  for(const v of singles)console.log("SKILL_ONE_DIRECT|"+v.slug+"|"+v.card_id+"|"+v.skill+
    "|SOURCE:"+v.question_ids.join(",")+"|LESSONS:"+v.lesson_labels.join(";"));
  for(const t of census.topics)for(const i of t.unlisted_micro_skill_tags)
-   console.log("SKILL_UNLISTED|"+t.slug+"|"+i.card_id+"|"+i.question_id+"|"+i.skill);
+   console.log("SKILL_UNLISTED_CORE|"+t.slug+"|"+i.card_id+"|"+i.question_id+"|"+i.skill);
+ for(const t of census.topics)for(const i of t.support_outside_core_denominator)
+   console.log("SKILL_SUPPORT_NON_GATING|"+t.slug+"|"+i.card_id+"|"+i.question_id+"|"+i.skill);
  console.log("AUDIT_STATUS|CANDIDATE_TRIAGE_ONLY_REQUIRES_SOURCE_STEM_AND_S1_REVIEW");
 }
