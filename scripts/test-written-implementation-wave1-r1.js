@@ -38,7 +38,15 @@ for(const e of cand.exercises){
   assert.equal(e.academic_review.method,"NOTEBOOKLM_R1");
   assert.equal(e.academic_review.receipt,"review-packets/written-implementation-wave1-r1/01_NOTEBOOKLM_RESULT_R1.md");
   const live=liveById.get(e.exercise_id);
-  assert.deepEqual(live,e);
+  const mathAndOldMetadata={...live};
+  // W9 S1 independently reviewed exact grade/chapter placement AFTER this
+  // historical Wave1 item was authored; no source math or old field changed.
+  if(live.kntt_placements){
+    assert(live.kntt_placements.length===1&&[7,8,9].includes(live.kntt_placements[0].grade),
+      "later grade-specific W9 placement must be separate");
+    delete mathAndOldMetadata.kntt_placements;
+  }
+  assert.deepEqual(mathAndOldMetadata,e);
   assert.ok(e.problem_markdown?.length>20);
   assert.ok(Array.isArray(e.solution_steps)&&e.solution_steps.length>=3);
   assert.ok(Array.isArray(e.rubric)&&e.rubric.length>=3);
