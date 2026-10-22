@@ -15,10 +15,17 @@ assert.equal(lock.meta.source_num02_blob,"61c1e4ef1e2f0d44476c6f34f48fd7bbcce246
 assert.equal(lock.historic_written_math.length,74);
 assert.equal(lock.historic_micro.length,64);
 assert.equal(lib.exercises.length,75);
-assert.equal(lib.published_scope.exercise_count,74);
-assert.equal(lib.candidate_scope.new_exercise_count,1);
-assert.equal(lib.candidate_scope.owner_release_authorization,"NO_LIVE_RELEASE");
-assert.deepEqual(lib.candidate_scope.exercise_ids,["WX02-NUM-004"]);
+assert.equal(lib.published_scope.exercise_count,75);
+assert.equal(lib.candidate_scope,undefined,"Owner-approved W9 Written must have no pending candidate");
+const batch=lib.published_scope.batches.at(-1);
+assert.deepEqual(batch,{
+ batch_id:"W9_G6_NUMABS_WRITTEN_20261022",
+ packet_id:"MATH-W9-CONSOLIDATED-NOTEBOOKLM-ONE-UPLOAD-R1-20261021",
+ count:1,status:"PUBLISHED",owner_release_authorization:"OWNER_APPROVED_RELEASE_20261022"
+});
+const owner=fs.readFileSync("review-packets/math-w9-core-coverage/04_W9_OWNER_RELEASE_APPROVAL_20261022.md","utf8");
+assert(owner.includes("OWNER_DECISION|APPROVE_W9_RELEASE"));
+assert(owner.includes("W8_GRADE9_READINESS_RELEASE|NOT_AUTHORIZED"));
 assert.equal(lib.auto_readiness_credit,false);
 const byId=new Map(lib.exercises.map(e=>[e.exercise_id,e]));
 assert.equal(byId.size,75);
@@ -60,7 +67,7 @@ assert.equal(added.rubric_total,5);
 assert.equal(added.rubric.reduce((n,q)=>n+q.points,0),5);
 assert(added.full_solution_markdown.includes("AB+BC=AC"));
 assert.equal(added.academic_review.status,"APPROVED");
-assert.equal(added.academic_review.release_gate,"OWNER_NO_LIVE_RELEASE");
+assert.equal(added.academic_review.release_gate,"OWNER_RELEASE_APPROVED_20261022");
 assert.equal(added.academic_review.packet_id,lock.meta.receipt);
 assert.equal(lib.exercises.filter(e=>e.kntt_placements?.length).length,27);
 assert.equal(bank.question_count,67);
@@ -90,4 +97,4 @@ for(const e of lib.exercises)for(const p of e.kntt_placements||[]){
 for(const marker of ["kntt_placements","gradeSelect.addEventListener","chapterSelect.addEventListener","lessonSelect.addEventListener"])assert(ui.includes(marker));
 assert(!ui.includes("grade_overlay.includes"),"school grade must not be inferred from grade_overlay");
 assert(receipt.includes("AUTHORIZATION|NO_LIVE_RELEASE"));
-console.log("PASS W9: 18 reviewed placements, 74 original Written mathematical payloads untouched; one gated new Written and 3 new Grade6 Micro; 64 Micro originals byte-content preserved.");
+console.log("PASS W9: 18 reviewed placements, 74 original Written mathematical payloads untouched; one Owner-approved published Written and 3 new Grade6 Micro; 64 Micro originals byte-content preserved.");
