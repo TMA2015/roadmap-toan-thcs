@@ -130,10 +130,39 @@
 
     const params=new URLSearchParams(location.search);
     let topic=params.get("topic")||"all",level=params.get("level")||"all",type=params.get("type")||"all",kind=params.get("kind")||"all",term="";
+    // Only academically reviewed kntt_placements define school-grade discovery.
+    // grade_overlay is advisory and MUST NEVER become a classroom placement.
+    let grade=params.get("grade")||"all",chapter=params.get("chapter")||"all",lesson=params.get("lesson")||"all";
+    const placements=x=>Array.isArray(x.kntt_placements)?x.kntt_placements.filter(p=>Number.isInteger(p.grade)&&Number.isInteger(p.chapter)&&typeof p.lesson==="string"):[];
+
     const shell=el("div","written-library-shell");
     const intro=el("div","written-library-note");
     intro.innerHTML="<strong>Làm trên giấy trước.</strong> Chỉ mở hướng dẫn khi em đã tự thử. Rubric dùng để tự đối chiếu, không tạo điểm Readiness.";
     const controls=el("div","written-library-controls");
+    const select=(name)=>{const x=document.createElement("select");x.className="written-library-select";x.setAttribute("aria-label",name);return x;};
+    const fillOptions=(node,entries,value)=>{
+      node.replaceChildren();
+      entries.forEach(([v,t])=>{const opt=el("option","",t);opt.value=String(v);node.appendChild(opt)});
+      node.value=entries.some(([v])=>String(v)===String(value))?String(value):"all";
+      return node.value;
+    };
+    const gradeSelect=select("Lọc bài tự luận theo lớp đã xác minh SGK");
+    const chapterSelect=select("Lọc bài tự luận theo chương KNTT");
+    const lessonSelect=select("Lọc bài tự luận theo bài học KNTT");
+    const verifiedGrades=[...new Set(data.exercises.flatMap(x=>placements(x).map(p=>p.grade)))].sort();
+    grade=fillOptions(gradeSelect,[["all","Tất cả lớp (bao gồm bài chưa xếp lớp)"],...verifiedGrades.map(g=>[g,"Lớp "+g+" · SGK KNTT"])],grade);
+    const resetChapters=()=>{
+      const chapters=[...new Set(data.exercises.flatMap(x=>placements(x).filter(p=>String(p.grade)===String(grade)).map(p=>p.chapter)))].sort((a,b)=>a-b);
+      chapter=fillOptions(chapterSelect,[["all","Tất cả chương"],...chapters.map(c=>[c,"Chương "+c])],chapter);
+      chapterSelect.disabled=grade==="all";
+    };
+    const resetLessons=()=>{
+      const lessons=[...new Set(data.exercises.flatMap(x=>placements(x).filter(p=>String(p.grade)===String(grade)&&String(p.chapter)===String(chapter)).map(p=>p.lesson)))].sort((a,b)=>a.localeCompare(b,"vi"));
+      lesson=fillOptions(lessonSelect,[["all","Tất cả bài học"],...lessons.map(t=>[t,t])],lesson);
+      lessonSelect.disabled=grade==="all"||chapter==="all";
+    };
+    resetChapters();resetLessons();
+
     const search=el("input","written-library-search");
     search.type="search";search.placeholder="Tìm theo dạng bài, kỹ năng hoặc ID…";search.setAttribute("aria-label","Tìm bài tự luận");
 
@@ -158,7 +187,10 @@
     if([...typeSelect.options].some(o=>o.value===type))typeSelect.value=type;else type="all";
     if([...levelSelect.options].some(o=>o.value===level))levelSelect.value=level;else level="all";
     if([...kindSelect.options].some(o=>o.value===kind))kindSelect.value=kind;else kind="all";
-    controls.append(search,topicSelect,typeSelect,levelSelect,kindSelect);
+    controls.append(search,gradeSelect,chapterSelect,lessonSelect,topicSelect,typeSelect,levelSelect,kindSelect);
+    const curriculumNote=el("p","written-library-verified-note",
+      "Lọc theo lớp/chương chỉ sử dụng vị trí SGK đã được kiểm định; những bài chưa xếp lớp vẫn xem được khi chọn “Tất cả lớp” hoặc theo chuyên đề.");
+
     const count=el("p","written-library-count");
     const results=el("div","written-library-results");
 
@@ -170,6 +202,9 @@
         (type==="all"||x.problem_type_id===type)&&
         (level==="all"||x.level===level)&&
         (kind==="all"||x.exercise_kind===kind)&&
+        (grade==="all"||placements(x).some(p=>String(p.grade)===String(grade)&&
+          (chapter==="all"||String(p.chapter)===String(chapter))&&
+          (lesson==="all"||p.lesson===lesson)))&&
         [x.exercise_id,x.title,x.problem_type_title,...x.skills].join(" ").toLowerCase().includes(q)
       );
       count.textContent=`${list.length} bài đang hiển thị · Thư viện hiện có ${data.exercises.length} bài.`;
@@ -182,6 +217,9 @@
         const metaValues=x.learner_label?[x.exercise_id,x.topic_id,x.learner_label]:[x.exercise_id,x.topic_id,x.learning_layer,x.level];
         metaValues.forEach(t=>meta.appendChild(el("span","written-chip",t)));
         if(x.exercise_kind==="anchor")meta.appendChild(el("span","written-chip","Bài mỏ neo · giải sâu"));
+        if(placements(x).length){
+          const p=placements(x)[0];meta.appendChild(el("span","written-chip","KNTT lớp "+p.grade+" · Chương "+p.chapter));
+        }
         top.append(meta,el("h2","",x.title),el("p","written-exercise-type",x.problem_type_title));
 
         const prompt=el("div","written-exercise-problem");
@@ -204,11 +242,14 @@
     };
 
     search.addEventListener("input",()=>{term=search.value.trim();render();});
+    gradeSelect.addEventListener("change",()=>{grade=gradeSelect.value;chapter="all";lesson="all";resetChapters();resetLessons();render();});
+    chapterSelect.addEventListener("change",()=>{chapter=chapterSelect.value;lesson="all";resetLessons();render();});
+    lessonSelect.addEventListener("change",()=>{lesson=lessonSelect.value;render();});
     topicSelect.addEventListener("change",()=>{topic=topicSelect.value;render();});
     typeSelect.addEventListener("change",()=>{type=typeSelect.value;render();});
     levelSelect.addEventListener("change",()=>{level=levelSelect.value;render();});
     kindSelect.addEventListener("change",()=>{kind=kindSelect.value;render();});
-    shell.append(intro,controls,count,results);
+    shell.append(intro,controls,curriculumNote,count,results);
     root.replaceChildren(shell);root.dataset.ready="1";render();
     // New library example-page deep links target the existing WX source card.
     // The catalog is asynchronous, so browser-native initial hash scrolling alone is not enough.
