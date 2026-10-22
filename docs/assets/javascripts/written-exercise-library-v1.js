@@ -20,10 +20,10 @@
   };
 
   const makeHelpPanel=(card,x)=>{
-    // A standard problem may have staged hints and still use solution_steps.
-    // The anchor-specific full_solution_markdown path is selected by exercise_kind.
-    const deep=x.exercise_kind==="anchor";
+    // Keep legacy progressive-help behavior for existing reviewed records.
+    // New standard items with only solution_steps can show hints without losing their solution.
     const hasHints=Array.isArray(x.hint_steps)&&x.hint_steps.length>0;
+    const deep=x.exercise_kind==="anchor"||(hasHints&&Boolean(String(x.full_solution_markdown||"").trim()));
     const wrap=el("div",deep?"written-help is-deep-anchor":"written-help");
     const actions=el("div","written-help-actions");
     actions.setAttribute("role","group");
