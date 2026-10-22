@@ -63,7 +63,7 @@
     // New standard items with only solution_steps can show hints without losing their solution.
     const hasHints=Array.isArray(x.hint_steps)&&x.hint_steps.length>0;
     const deep=x.exercise_kind==="anchor"||(hasHints&&Boolean(String(x.full_solution_markdown||"").trim()));
-    const wrap=el("div",deep?"written-help is-deep-anchor":"written-help");
+    const wrap=el("div",deep?"written-help is-deep-anchor":hasHints?"written-help has-staged-hints":"written-help");
     const actions=el("div","written-help-actions");
     actions.setAttribute("role","group");
     actions.setAttribute("aria-label","Hỗ trợ cho "+x.exercise_id);
