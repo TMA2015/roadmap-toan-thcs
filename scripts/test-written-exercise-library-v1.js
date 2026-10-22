@@ -156,6 +156,8 @@ ok(!page.includes("Pilot v1"),"library intro no longer pilot-labelled");
 ok(!page.includes("Hiện pilot có"),"library intro has no stale fixed pilot count");
 ok(page.includes("mở rộng dần theo từng chuyên đề"),"library intro uses durable expansion copy");
 const pendingWritten=data.candidate_scope?.new_exercise_count||0;
+ok(!data.candidate_scope,"Owner approved W9: no unpublished candidates remain");
+ok(data.published_scope.exercise_count===75,"W9 75 approved Written now published");
 ok(data.published_scope?.exercise_count===data.exercises.length-pendingWritten,
   "published scope exactly equals authorized historical Written items, excluding Owner-gated W9 candidate");
 if(pendingWritten){
@@ -177,7 +179,11 @@ if(w4pending.length){
     "pending candidates cannot enable Core/Readiness or silently claim release");
 }
 ok(data.published_scope.batches.every(x=>x.status==="PUBLISHED"),"Owner-authorized W4 and all earlier Written batches marked published");
-ok(data.published_scope.batches.at(-1).batch_id==="W4_CT08_12_WRITTEN_R1" && data.published_scope.batches.at(-1).count===5 && data.exercises.slice(0,74).length===74,"five exact authorized W4 Written records");
+ok(data.published_scope.batches.at(-2).batch_id==="W4_CT08_12_WRITTEN_R1" && data.published_scope.batches.at(-2).count===5 && data.exercises.slice(0,74).length===74,"five exact authorized W4 Written records");
+ok(data.published_scope.batches.at(-1).batch_id==="W9_G6_NUMABS_WRITTEN_20261022" &&
+   data.published_scope.batches.at(-1).count===1 && data.published_scope.batches.at(-1).status==="PUBLISHED" &&
+   data.published_scope.batches.at(-1).owner_release_authorization==="OWNER_APPROVED_RELEASE_20261022",
+   "exact Owner-approved W9 single Written release ledger entry");
 ok(data.published_scope?.batches?.filter(x=>x.status==="PUBLISHED").length+
    w4pending.length===data.published_scope?.batches?.length,
    "all historic Written batches remain published; no unregistered pending statuses");
