@@ -60,7 +60,8 @@ with sync_playwright() as p:
         page.evaluate("([k,v]) => localStorage.setItem(k,v)", [SENTINEL_KEY, json.dumps({"stable": True})])
         before = page.evaluate("(k) => localStorage.getItem(k)", SENTINEL_KEY)
 
-        first = page.locator(".written-exercise-card").first
+        # Keep the old three-action regression on an unchanged standard item.
+        first = page.locator(".written-exercise-card#wx02-num-001")
         actions = first.locator(".written-help-action")
         assert actions.count() == 3, (device, "three compact help actions")
         boxes = actions.evaluate_all("(nodes) => nodes.map(n => n.getBoundingClientRect())")
@@ -81,6 +82,28 @@ with sync_playwright() as p:
         assert solution_button.get_attribute("aria-expanded") == "false" and solution_panel.is_hidden(), (device, "solution closes independently")
         after = page.evaluate("(k) => localStorage.getItem(k)", SENTINEL_KEY)
         assert after == before, (device, "help panels do not write progress")
+
+        # The three source-preserving P2 overlays intentionally give standard
+        # exercises four actions: two sequential hints + original 4-step
+        # solution + rubric + mistakes. Existing standard items retain three.
+        for p2_id in ["wx16-quad-001", "wx07-rat-001", "wx19-cir-002"]:
+            p2 = page.locator(".written-exercise-card#" + p2_id)
+            p2_actions = p2.locator(".written-help-action")
+            assert p2_actions.count() == 4, (device, p2_id, "four P2 actions")
+            tops = p2_actions.evaluate_all("(nodes) => nodes.map(n => Math.round(n.getBoundingClientRect().top))")
+            expected_rows = 2 if width <= 760 else 1
+            assert len(set(tops)) == expected_rows, (device, p2_id, "P2 help layout", tops)
+            hint = p2.locator('[data-help-target="hints"]')
+            assert hint.inner_text() == "Gợi ý 1/2", (device, p2_id, "hint initial state")
+            assert p2.locator(".written-hint-step").count() == 0, (device, p2_id, "no pre-revealed hints")
+            hint.click()
+            assert p2.locator(".written-hint-step").count() == 1, (device, p2_id, "first hint only")
+            hint.click()
+            assert p2.locator(".written-hint-step").count() == 2, (device, p2_id, "second hint")
+            p2.locator('[data-help-target="solution"]').click()
+            assert p2.locator('[data-help-panel="solution"] .written-solution-step').count() == 4, (device, p2_id, "four original steps preserved")
+            assert p2.locator('[data-help-target="rubric"]').count() == 1, (device, p2_id, "rubric preserved")
+            assert page.evaluate("(k) => localStorage.getItem(k)", SENTINEL_KEY) == before, (device, p2_id, "no history write")
 
         topic = page.locator('select[aria-label="Lọc theo chuyên đề"]')
         topic_values = topic.locator("option").evaluate_all("(nodes) => nodes.map(n => n.value)")
@@ -271,11 +294,32 @@ with sync_playwright() as p:
             new_topic_page.close()
         context.close()
 
+    # Targeted iPad-width smoke test; avoid replaying the full topic traversal.
+    ipad = browser.new_context(viewport={"width": 820, "height": 1180})
+    tablet_page = ipad.new_page()
+    tablet_page.goto(BASE + "luyen-tap/tu-luan/", wait_until="networkidle")
+    tablet_page.wait_for_function(
+        "document.querySelector('[data-written-exercise-library]')?.dataset.ready === '1'",
+        timeout=15000,
+    )
+    assert tablet_page.locator(".written-exercise-card").count() == EXPECTED_CARD_COUNT, "iPad unchanged catalog count"
+    for p2_id in ["wx16-quad-001", "wx07-rat-001", "wx19-cir-002"]:
+        card = tablet_page.locator(".written-exercise-card#" + p2_id)
+        actions = card.locator(".written-help-action")
+        assert actions.count() == 4, ("iPad", p2_id, "four P2 actions")
+        tops = actions.evaluate_all("(nodes) => nodes.map(n => Math.round(n.getBoundingClientRect().top))")
+        assert len(set(tops)) == 1, ("iPad", p2_id, "single-row help")
+        card.locator('[data-help-target="hints"]').click()
+        assert card.locator(".written-hint-step").count() == 1, ("iPad", p2_id, "first hint")
+        card.locator('[data-help-target="solution"]').click()
+        assert card.locator('[data-help-panel="solution"] .written-solution-step').count() == 4, ("iPad", p2_id, "solution preserved")
+    ipad.close()
+
     browser.close()
 
 print(f"PASS: Written Exercise Library renders {EXPECTED_CARD_COUNT} canonical published items on desktop/mobile.")
 print("PASS: topic/level/search filters, geometry figure and MathJax work.")
-print("PASS: compact 3-action help row is presentation-only with no localStorage write.")
+print("PASS: unchanged 3-action row and 3 P2 four-action hint ladders on desktop/mobile/iPad, no localStorage writes.")
 print("PASS: quick shortcut and topic deep link open the written library with CT07 auto-filter.")
 
 print("PASS: CT09 P1-B six deep anchors expose progressive hints and friendly learner labels without evidence writes.")
