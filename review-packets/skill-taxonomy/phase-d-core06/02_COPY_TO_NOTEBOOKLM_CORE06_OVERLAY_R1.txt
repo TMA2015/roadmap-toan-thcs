@@ -1,0 +1,31 @@
+Bạn đang phản biện độc lập Skill Taxonomy Phase D cho Self-Learning Math, phạm vi toàn bộ CĐ06.
+
+Chỉ dùng source “01_UPLOAD_TO_NOTEBOOKLM_CORE06_OVERLAY_R1.md”, packet MATH-SKILL-CORE06-OVERLAY-R1-20260930, exact Git blob dff6013a0062e2a81dfafbe35280b4e52ab620c0.
+
+Hãy kiểm đủ 120/120 question mappings FAC06V1_001–120 và 17 clone-family candidates.
+
+Nguyên tắc:
+- tối đa 1 canonical assessed skill / question;
+- primary skill phải theo requested output, không phải mọi tag/phương pháp xuất hiện;
+- supporting/parent/task metadata không được tính mastery độc lập từ cùng một answer;
+- observable_evidence_class phải phản ánh đúng giới hạn của MCQ;
+- PENDING/application/proof-like items không được ép thành counter chỉ để đủ coverage;
+- clone family dùng de-dup evidence tương lai, không xóa câu luyện tập.
+
+Kiểm kỹ:
+- 013–020 = doi-dau-nhan-tu-chung primary + nhan-tu-chung supporting;
+- 043,049,051,052 = tong-hai-lap-phuong; 044–048,050 = hieu-hai-lap-phuong; tong-hieu-lap-phuong chỉ metadata;
+- 077–092 = phan-tich-da-thuc-hoan-toan primary candidate, nhưng FORMATIVE_ONLY_STEPWISE_EVIDENCE_REQUIRED;
+- 093–100 = NO primary, MCQ_RECOGNITION_ONLY, pending kiem-tra-phan-tich;
+- 101–112 = giai-pt-bang-nhan-tu primary, MCQ_FINAL_ANSWER_ONLY;
+- 113–116 = NO primary, MCQ_ARGUMENT_RECOGNITION_ONLY, written proof required;
+- 117–120 = NO primary, MCQ_FINAL_ANSWER_ONLY, method not observed.
+
+Trả đúng:
+1) Packet ID + verdict PASS / REVISIONS_REQUIRED / INSUFFICIENT_EVIDENCE.
+2) Coverage 120/120.
+3) Revision table ONLY: ID | field | current | corrected | reason. Nếu không có ghi 0 revisions.
+4) Clone-family table 17 dòng PASS/REVISE + membership.
+5) Xác nhận riêng cho 013–020, 043–052, 077–092, 093–100, 101–112, 113–116, 117–120.
+6) Final counts theo canonical assessed skill + formative-only.
+7) Xác nhận không runtime, không sửa legacy tags, không backfill/regrade lịch sử, không Core Readiness credit, không đặt mastery threshold.
