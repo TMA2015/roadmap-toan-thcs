@@ -19,13 +19,13 @@ const source=[
 ["11-can-thuc","11-ENT-01","8814674a67c9f576df49284282bd1fa16cfbba7c"],
 ["12-phuong-trinh-bac-hai-viete","12-ENT-02","8199916e355e8d1a617ef8687c4f442e6c6e48d1"]
 ];
-assert.equal(all.length,75); // W4 exact 74 released + one Owner-gated W9 appended Written
-assert.equal(lib.published_scope.exercise_count,74);
+assert.equal(all.length,75); // W4 74 released plus one subsequently approved W9 Written
+assert.equal(lib.published_scope.exercise_count,75);
 assert.equal(lib.auto_readiness_credit,false);
 assert.equal(lib.self_marking_only,true);
 assert.deepEqual(all.slice(69,74).map(x=>x.exercise_id),ids);
 assert.equal(new Set(all.map(x=>x.exercise_id)).size,75);
-const review=lib.published_scope.batches.at(-1);
+const review=lib.published_scope.batches.at(-2);
 assert.deepEqual(review,{batch_id:"W4_CT08_12_WRITTEN_R1",
  packet_id:"MATH-W4-CT08-12-8SOURCE-CONVERSION-R0-20261020",
  count:5,status:"PUBLISHED"});
@@ -47,7 +47,9 @@ for(const e of old.exercises){
 delete old.candidate_scope;
 old.published_scope.exercise_count=69;
 old.snapshot_date="2026-10-20";
-old.published_scope.batches.pop();
+assert.equal(old.published_scope.batches.at(-1).batch_id,"W9_G6_NUMABS_WRITTEN_20261022");
+old.published_scope.batches.pop(); // W9 newer release
+old.published_scope.batches.pop(); // W4 reviewed release
 assert.equal(blob(Buffer.from(JSON.stringify(old,null,2)+"\n")),"eed3fa0cbae29fd4fdb9daaeac9ef36c3744b665",
  "immutable 69 original Written records and original metadata changed");
 const receiptPath="review-packets/math-source-conversion/W4_CT08-12_NOTEBOOKLM_INDEPENDENT_VERDICT_RECEIPT_20261020.md";
@@ -99,4 +101,4 @@ const b=json("docs/assets/data/practice/09-he-phuong-trinh-v1-02.json");
 assert(a.questions.some(q=>q.id==="EQ08V1_108"));
 assert(b.questions.some(q=>q.id==="SYS09V1_033"));
 assert(!all.some(q=>q.source_refs?.some(p=>p.endsWith("#11-WR-10"))),"simple cube root was explicitly rejected as Written");
-console.log("PASS W4 candidate: 69 original WX SHA-locked; five append-only source-locked self-check items; independent 8/8 PASS; release pending; 3 MCQ reuses unchanged.");
+console.log("PASS W4 candidate: 69 original WX SHA-locked; five append-only source-locked self-check items; independent 8/8 PASS; release already Owner-approved; 3 MCQ reuses unchanged.");
