@@ -1,0 +1,1192 @@
+{
+  "schema": "math-skill-taxonomy-review-final-ledger-v1",
+  "packet_id": "MATH-SKILL-TAXONOMY-B07-20260928",
+  "source_main_sha": "88143e6b2690edfe721f8d74d2dbcb251bc55ab3",
+  "source_staging_sha": "4c059bc165b25fae61810e8eb2c4a938cfc3862b",
+  "scope_statement": "59 selected original CĐ24 questions, not all 135 questions in CĐ24 bank",
+  "status": "PROPOSAL_ONLY",
+  "complete": true,
+  "reviewed_count": 59,
+  "unique_count": 59,
+  "missing_ids": [],
+  "reviewer_status_counts": {
+    "PASS": 58,
+    "REVISION_REQUIRED": 1,
+    "INSUFFICIENT_EVIDENCE": 0,
+    "NOT_REVIEWED": 0
+  },
+  "independent_reconciliation_counts": {
+    "PASS": 57,
+    "REVISION_REQUIRED": 2,
+    "INSUFFICIENT_EVIDENCE": 0,
+    "NOT_REVIEWED": 0
+  },
+  "original_answer_index_counts": {
+    "0": 56,
+    "1": 3
+  },
+  "answer_index_one_ids": [
+    "MOD24V1__122",
+    "MOD24V1__125",
+    "MOD24V1__126"
+  ],
+  "exact_clone_groups": [
+    {
+      "group": "B07_EXACT_01",
+      "items": [
+        "MOD24MICRO_001",
+        "MOD24V1__001"
+      ],
+      "compared_fields": [
+        "question",
+        "options",
+        "answer",
+        "explanation"
+      ],
+      "exact": true
+    },
+    {
+      "group": "B07_EXACT_02",
+      "items": [
+        "MOD24MICRO_002",
+        "MOD24V1__002"
+      ],
+      "compared_fields": [
+        "question",
+        "options",
+        "answer",
+        "explanation"
+      ],
+      "exact": true
+    },
+    {
+      "group": "B07_EXACT_03",
+      "items": [
+        "MOD24MICRO_003",
+        "MOD24V1__003"
+      ],
+      "compared_fields": [
+        "question",
+        "options",
+        "answer",
+        "explanation"
+      ],
+      "exact": true
+    },
+    {
+      "group": "B07_EXACT_04",
+      "items": [
+        "MOD24MICRO_004",
+        "MOD24V1__011"
+      ],
+      "compared_fields": [
+        "question",
+        "options",
+        "answer",
+        "explanation"
+      ],
+      "exact": true
+    },
+    {
+      "group": "B07_EXACT_05",
+      "items": [
+        "MOD24MICRO_005",
+        "MOD24V1__012"
+      ],
+      "compared_fields": [
+        "question",
+        "options",
+        "answer",
+        "explanation"
+      ],
+      "exact": true
+    },
+    {
+      "group": "B07_EXACT_06",
+      "items": [
+        "MOD24MICRO_006",
+        "MOD24V1__013"
+      ],
+      "compared_fields": [
+        "question",
+        "options",
+        "answer",
+        "explanation"
+      ],
+      "exact": true
+    },
+    {
+      "group": "B07_EXACT_07",
+      "items": [
+        "MOD24MICRO_013",
+        "MOD24V1__111"
+      ],
+      "compared_fields": [
+        "question",
+        "options",
+        "answer",
+        "explanation"
+      ],
+      "exact": true
+    },
+    {
+      "group": "B07_EXACT_08",
+      "items": [
+        "MOD24MICRO_014",
+        "MOD24V1__112"
+      ],
+      "compared_fields": [
+        "question",
+        "options",
+        "answer",
+        "explanation"
+      ],
+      "exact": true
+    },
+    {
+      "group": "B07_EXACT_09",
+      "items": [
+        "MOD24MICRO_015",
+        "MOD24V1__113"
+      ],
+      "compared_fields": [
+        "question",
+        "options",
+        "answer",
+        "explanation"
+      ],
+      "exact": true
+    }
+  ],
+  "original_sources": [
+    {
+      "p": "docs/assets/data/practice/24-bai-toan-thuc-te-micro-v1.json",
+      "sha": "0c11446a01aec62e32b2320f0f537dd52133906a",
+      "count": 15
+    },
+    {
+      "p": "docs/assets/data/practice/24-bai-toan-thuc-te-v1-01.json",
+      "sha": "2099b3e03210d58c7dca4e55fc8e2d88f0db5d06",
+      "count": 30
+    },
+    {
+      "p": "docs/assets/data/practice/24-bai-toan-thuc-te-v1-02.json",
+      "sha": "03535d510cd91cd52df48312325536edc5bb4423",
+      "count": 30
+    },
+    {
+      "p": "docs/assets/data/practice/24-bai-toan-thuc-te-v1-03.json",
+      "sha": "d3054fdb6da255cfd7cf571015e0a10f2903f467",
+      "count": 30
+    },
+    {
+      "p": "docs/assets/data/practice/24-bai-toan-thuc-te-v1-04.json",
+      "sha": "3c3fbe1af4a978b95bd4d7f20bcdea132fd63df8",
+      "count": 30
+    }
+  ],
+  "phases": [
+    {
+      "phase": "A",
+      "expected": 26,
+      "reviewed": 26,
+      "status_counts": {
+        "PASS": 26,
+        "REVISION_REQUIRED": 0
+      },
+      "item_ids": [
+        "MOD24MICRO_001",
+        "MOD24MICRO_002",
+        "MOD24MICRO_003",
+        "MOD24MICRO_004",
+        "MOD24MICRO_005",
+        "MOD24MICRO_006",
+        "MOD24V1__001",
+        "MOD24V1__002",
+        "MOD24V1__003",
+        "MOD24V1__004",
+        "MOD24V1__005",
+        "MOD24V1__006",
+        "MOD24V1__007",
+        "MOD24V1__008",
+        "MOD24V1__009",
+        "MOD24V1__010",
+        "MOD24V1__011",
+        "MOD24V1__012",
+        "MOD24V1__013",
+        "MOD24V1__014",
+        "MOD24V1__015",
+        "MOD24V1__016",
+        "MOD24V1__017",
+        "MOD24V1__018",
+        "MOD24V1__019",
+        "MOD24V1__020"
+      ]
+    },
+    {
+      "phase": "B",
+      "expected": 13,
+      "reviewed": 13,
+      "status_counts": {
+        "PASS": 13,
+        "REVISION_REQUIRED": 0
+      },
+      "item_ids": [
+        "MOD24MICRO_013",
+        "MOD24MICRO_014",
+        "MOD24MICRO_015",
+        "MOD24V1__111",
+        "MOD24V1__112",
+        "MOD24V1__113",
+        "MOD24V1__114",
+        "MOD24V1__115",
+        "MOD24V1__116",
+        "MOD24V1__117",
+        "MOD24V1__118",
+        "MOD24V1__125",
+        "MOD24V1__126"
+      ]
+    },
+    {
+      "phase": "C",
+      "expected": 20,
+      "reviewed": 20,
+      "status_counts": {
+        "PASS": 18,
+        "REVISION_REQUIRED": 2
+      },
+      "item_ids": [
+        "MOD24V1__021",
+        "MOD24V1__022",
+        "MOD24V1__023",
+        "MOD24V1__024",
+        "MOD24V1__025",
+        "MOD24V1__026",
+        "MOD24V1__027",
+        "MOD24V1__028",
+        "MOD24V1__121",
+        "MOD24V1__122",
+        "MOD24V1__031",
+        "MOD24V1__032",
+        "MOD24V1__033",
+        "MOD24V1__034",
+        "MOD24V1__035",
+        "MOD24V1__036",
+        "MOD24V1__037",
+        "MOD24V1__038",
+        "MOD24V1__039",
+        "MOD24V1__040"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "MOD24MICRO_001",
+      "phase": "A",
+      "source_path": "docs/assets/data/practice/24-bai-toan-thuc-te-micro-v1.json",
+      "source_sha": "0c11446a01aec62e32b2320f0f537dd52133906a",
+      "original_tags": [
+        "doc-de-du-kien"
+      ],
+      "original_answer_index": 0,
+      "reviewer_status": "PASS",
+      "reconciled_status": "PASS",
+      "clone_group": "B07_EXACT_01",
+      "evidence_type": "multiple_choice_recognition_or_selected_result",
+      "independent_written_mastery": false
+    },
+    {
+      "id": "MOD24MICRO_002",
+      "phase": "A",
+      "source_path": "docs/assets/data/practice/24-bai-toan-thuc-te-micro-v1.json",
+      "source_sha": "0c11446a01aec62e32b2320f0f537dd52133906a",
+      "original_tags": [
+        "doc-de-du-kien"
+      ],
+      "original_answer_index": 0,
+      "reviewer_status": "PASS",
+      "reconciled_status": "PASS",
+      "clone_group": "B07_EXACT_02",
+      "evidence_type": "multiple_choice_recognition_or_selected_result",
+      "independent_written_mastery": false
+    },
+    {
+      "id": "MOD24MICRO_003",
+      "phase": "A",
+      "source_path": "docs/assets/data/practice/24-bai-toan-thuc-te-micro-v1.json",
+      "source_sha": "0c11446a01aec62e32b2320f0f537dd52133906a",
+      "original_tags": [
+        "doc-de-du-kien"
+      ],
+      "original_answer_index": 0,
+      "reviewer_status": "PASS",
+      "reconciled_status": "PASS",
+      "clone_group": "B07_EXACT_03",
+      "evidence_type": "multiple_choice_recognition_or_selected_result",
+      "independent_written_mastery": false
+    },
+    {
+      "id": "MOD24MICRO_004",
+      "phase": "A",
+      "source_path": "docs/assets/data/practice/24-bai-toan-thuc-te-micro-v1.json",
+      "source_sha": "0c11446a01aec62e32b2320f0f537dd52133906a",
+      "original_tags": [
+        "doi-don-vi"
+      ],
+      "original_answer_index": 0,
+      "reviewer_status": "PASS",
+      "reconciled_status": "PASS",
+      "clone_group": "B07_EXACT_04",
+      "evidence_type": "multiple_choice_recognition_or_selected_result",
+      "independent_written_mastery": false
+    },
+    {
+      "id": "MOD24MICRO_005",
+      "phase": "A",
+      "source_path": "docs/assets/data/practice/24-bai-toan-thuc-te-micro-v1.json",
+      "source_sha": "0c11446a01aec62e32b2320f0f537dd52133906a",
+      "original_tags": [
+        "doi-don-vi"
+      ],
+      "original_answer_index": 0,
+      "reviewer_status": "PASS",
+      "reconciled_status": "PASS",
+      "clone_group": "B07_EXACT_05",
+      "evidence_type": "multiple_choice_recognition_or_selected_result",
+      "independent_written_mastery": false
+    },
+    {
+      "id": "MOD24MICRO_006",
+      "phase": "A",
+      "source_path": "docs/assets/data/practice/24-bai-toan-thuc-te-micro-v1.json",
+      "source_sha": "0c11446a01aec62e32b2320f0f537dd52133906a",
+      "original_tags": [
+        "doi-don-vi"
+      ],
+      "original_answer_index": 0,
+      "reviewer_status": "PASS",
+      "reconciled_status": "PASS",
+      "clone_group": "B07_EXACT_06",
+      "evidence_type": "multiple_choice_recognition_or_selected_result",
+      "independent_written_mastery": false
+    },
+    {
+      "id": "MOD24V1__001",
+      "phase": "A",
+      "source_path": "docs/assets/data/practice/24-bai-toan-thuc-te-v1-01.json",
+      "source_sha": "2099b3e03210d58c7dca4e55fc8e2d88f0db5d06",
+      "original_tags": [
+        "doc-de-du-kien"
+      ],
+      "original_answer_index": 0,
+      "reviewer_status": "PASS",
+      "reconciled_status": "PASS",
+      "clone_group": "B07_EXACT_01",
+      "evidence_type": "multiple_choice_recognition_or_selected_result",
+      "independent_written_mastery": false
+    },
+    {
+      "id": "MOD24V1__002",
+      "phase": "A",
+      "source_path": "docs/assets/data/practice/24-bai-toan-thuc-te-v1-01.json",
+      "source_sha": "2099b3e03210d58c7dca4e55fc8e2d88f0db5d06",
+      "original_tags": [
+        "doc-de-du-kien"
+      ],
+      "original_answer_index": 0,
+      "reviewer_status": "PASS",
+      "reconciled_status": "PASS",
+      "clone_group": "B07_EXACT_02",
+      "evidence_type": "multiple_choice_recognition_or_selected_result",
+      "independent_written_mastery": false
+    },
+    {
+      "id": "MOD24V1__003",
+      "phase": "A",
+      "source_path": "docs/assets/data/practice/24-bai-toan-thuc-te-v1-01.json",
+      "source_sha": "2099b3e03210d58c7dca4e55fc8e2d88f0db5d06",
+      "original_tags": [
+        "doc-de-du-kien"
+      ],
+      "original_answer_index": 0,
+      "reviewer_status": "PASS",
+      "reconciled_status": "PASS",
+      "clone_group": "B07_EXACT_03",
+      "evidence_type": "multiple_choice_recognition_or_selected_result",
+      "independent_written_mastery": false
+    },
+    {
+      "id": "MOD24V1__004",
+      "phase": "A",
+      "source_path": "docs/assets/data/practice/24-bai-toan-thuc-te-v1-01.json",
+      "source_sha": "2099b3e03210d58c7dca4e55fc8e2d88f0db5d06",
+      "original_tags": [
+        "doc-de-du-kien"
+      ],
+      "original_answer_index": 0,
+      "reviewer_status": "PASS",
+      "reconciled_status": "PASS",
+      "clone_group": null,
+      "evidence_type": "multiple_choice_recognition_or_selected_result",
+      "independent_written_mastery": false
+    },
+    {
+      "id": "MOD24V1__005",
+      "phase": "A",
+      "source_path": "docs/assets/data/practice/24-bai-toan-thuc-te-v1-01.json",
+      "source_sha": "2099b3e03210d58c7dca4e55fc8e2d88f0db5d06",
+      "original_tags": [
+        "doc-de-du-kien"
+      ],
+      "original_answer_index": 0,
+      "reviewer_status": "PASS",
+      "reconciled_status": "PASS",
+      "clone_group": null,
+      "evidence_type": "multiple_choice_recognition_or_selected_result",
+      "independent_written_mastery": false
+    },
+    {
+      "id": "MOD24V1__006",
+      "phase": "A",
+      "source_path": "docs/assets/data/practice/24-bai-toan-thuc-te-v1-01.json",
+      "source_sha": "2099b3e03210d58c7dca4e55fc8e2d88f0db5d06",
+      "original_tags": [
+        "doc-de-du-kien"
+      ],
+      "original_answer_index": 0,
+      "reviewer_status": "PASS",
+      "reconciled_status": "PASS",
+      "clone_group": null,
+      "evidence_type": "multiple_choice_recognition_or_selected_result",
+      "independent_written_mastery": false
+    },
+    {
+      "id": "MOD24V1__007",
+      "phase": "A",
+      "source_path": "docs/assets/data/practice/24-bai-toan-thuc-te-v1-01.json",
+      "source_sha": "2099b3e03210d58c7dca4e55fc8e2d88f0db5d06",
+      "original_tags": [
+        "doc-de-du-kien"
+      ],
+      "original_answer_index": 0,
+      "reviewer_status": "PASS",
+      "reconciled_status": "PASS",
+      "clone_group": null,
+      "evidence_type": "multiple_choice_recognition_or_selected_result",
+      "independent_written_mastery": false
+    },
+    {
+      "id": "MOD24V1__008",
+      "phase": "A",
+      "source_path": "docs/assets/data/practice/24-bai-toan-thuc-te-v1-01.json",
+      "source_sha": "2099b3e03210d58c7dca4e55fc8e2d88f0db5d06",
+      "original_tags": [
+        "doc-de-du-kien"
+      ],
+      "original_answer_index": 0,
+      "reviewer_status": "PASS",
+      "reconciled_status": "PASS",
+      "clone_group": null,
+      "evidence_type": "multiple_choice_recognition_or_selected_result",
+      "independent_written_mastery": false
+    },
+    {
+      "id": "MOD24V1__009",
+      "phase": "A",
+      "source_path": "docs/assets/data/practice/24-bai-toan-thuc-te-v1-01.json",
+      "source_sha": "2099b3e03210d58c7dca4e55fc8e2d88f0db5d06",
+      "original_tags": [
+        "doc-de-du-kien"
+      ],
+      "original_answer_index": 0,
+      "reviewer_status": "PASS",
+      "reconciled_status": "PASS",
+      "clone_group": null,
+      "evidence_type": "multiple_choice_recognition_or_selected_result",
+      "independent_written_mastery": false
+    },
+    {
+      "id": "MOD24V1__010",
+      "phase": "A",
+      "source_path": "docs/assets/data/practice/24-bai-toan-thuc-te-v1-01.json",
+      "source_sha": "2099b3e03210d58c7dca4e55fc8e2d88f0db5d06",
+      "original_tags": [
+        "doc-de-du-kien"
+      ],
+      "original_answer_index": 0,
+      "reviewer_status": "PASS",
+      "reconciled_status": "PASS",
+      "clone_group": null,
+      "evidence_type": "multiple_choice_recognition_or_selected_result",
+      "independent_written_mastery": false
+    },
+    {
+      "id": "MOD24V1__011",
+      "phase": "A",
+      "source_path": "docs/assets/data/practice/24-bai-toan-thuc-te-v1-01.json",
+      "source_sha": "2099b3e03210d58c7dca4e55fc8e2d88f0db5d06",
+      "original_tags": [
+        "doi-don-vi"
+      ],
+      "original_answer_index": 0,
+      "reviewer_status": "PASS",
+      "reconciled_status": "PASS",
+      "clone_group": "B07_EXACT_04",
+      "evidence_type": "multiple_choice_recognition_or_selected_result",
+      "independent_written_mastery": false
+    },
+    {
+      "id": "MOD24V1__012",
+      "phase": "A",
+      "source_path": "docs/assets/data/practice/24-bai-toan-thuc-te-v1-01.json",
+      "source_sha": "2099b3e03210d58c7dca4e55fc8e2d88f0db5d06",
+      "original_tags": [
+        "doi-don-vi"
+      ],
+      "original_answer_index": 0,
+      "reviewer_status": "PASS",
+      "reconciled_status": "PASS",
+      "clone_group": "B07_EXACT_05",
+      "evidence_type": "multiple_choice_recognition_or_selected_result",
+      "independent_written_mastery": false
+    },
+    {
+      "id": "MOD24V1__013",
+      "phase": "A",
+      "source_path": "docs/assets/data/practice/24-bai-toan-thuc-te-v1-01.json",
+      "source_sha": "2099b3e03210d58c7dca4e55fc8e2d88f0db5d06",
+      "original_tags": [
+        "doi-don-vi"
+      ],
+      "original_answer_index": 0,
+      "reviewer_status": "PASS",
+      "reconciled_status": "PASS",
+      "clone_group": "B07_EXACT_06",
+      "evidence_type": "multiple_choice_recognition_or_selected_result",
+      "independent_written_mastery": false
+    },
+    {
+      "id": "MOD24V1__014",
+      "phase": "A",
+      "source_path": "docs/assets/data/practice/24-bai-toan-thuc-te-v1-01.json",
+      "source_sha": "2099b3e03210d58c7dca4e55fc8e2d88f0db5d06",
+      "original_tags": [
+        "doi-don-vi"
+      ],
+      "original_answer_index": 0,
+      "reviewer_status": "PASS",
+      "reconciled_status": "PASS",
+      "clone_group": null,
+      "evidence_type": "multiple_choice_recognition_or_selected_result",
+      "independent_written_mastery": false
+    },
+    {
+      "id": "MOD24V1__015",
+      "phase": "A",
+      "source_path": "docs/assets/data/practice/24-bai-toan-thuc-te-v1-01.json",
+      "source_sha": "2099b3e03210d58c7dca4e55fc8e2d88f0db5d06",
+      "original_tags": [
+        "doi-don-vi"
+      ],
+      "original_answer_index": 0,
+      "reviewer_status": "PASS",
+      "reconciled_status": "PASS",
+      "clone_group": null,
+      "evidence_type": "multiple_choice_recognition_or_selected_result",
+      "independent_written_mastery": false
+    },
+    {
+      "id": "MOD24V1__016",
+      "phase": "A",
+      "source_path": "docs/assets/data/practice/24-bai-toan-thuc-te-v1-01.json",
+      "source_sha": "2099b3e03210d58c7dca4e55fc8e2d88f0db5d06",
+      "original_tags": [
+        "doi-don-vi"
+      ],
+      "original_answer_index": 0,
+      "reviewer_status": "PASS",
+      "reconciled_status": "PASS",
+      "clone_group": null,
+      "evidence_type": "multiple_choice_recognition_or_selected_result",
+      "independent_written_mastery": false
+    },
+    {
+      "id": "MOD24V1__017",
+      "phase": "A",
+      "source_path": "docs/assets/data/practice/24-bai-toan-thuc-te-v1-01.json",
+      "source_sha": "2099b3e03210d58c7dca4e55fc8e2d88f0db5d06",
+      "original_tags": [
+        "doi-don-vi"
+      ],
+      "original_answer_index": 0,
+      "reviewer_status": "PASS",
+      "reconciled_status": "PASS",
+      "clone_group": null,
+      "evidence_type": "multiple_choice_recognition_or_selected_result",
+      "independent_written_mastery": false
+    },
+    {
+      "id": "MOD24V1__018",
+      "phase": "A",
+      "source_path": "docs/assets/data/practice/24-bai-toan-thuc-te-v1-01.json",
+      "source_sha": "2099b3e03210d58c7dca4e55fc8e2d88f0db5d06",
+      "original_tags": [
+        "doi-don-vi"
+      ],
+      "original_answer_index": 0,
+      "reviewer_status": "PASS",
+      "reconciled_status": "PASS",
+      "clone_group": null,
+      "evidence_type": "multiple_choice_recognition_or_selected_result",
+      "independent_written_mastery": false
+    },
+    {
+      "id": "MOD24V1__019",
+      "phase": "A",
+      "source_path": "docs/assets/data/practice/24-bai-toan-thuc-te-v1-01.json",
+      "source_sha": "2099b3e03210d58c7dca4e55fc8e2d88f0db5d06",
+      "original_tags": [
+        "doi-don-vi"
+      ],
+      "original_answer_index": 0,
+      "reviewer_status": "PASS",
+      "reconciled_status": "PASS",
+      "clone_group": null,
+      "evidence_type": "multiple_choice_recognition_or_selected_result",
+      "independent_written_mastery": false
+    },
+    {
+      "id": "MOD24V1__020",
+      "phase": "A",
+      "source_path": "docs/assets/data/practice/24-bai-toan-thuc-te-v1-01.json",
+      "source_sha": "2099b3e03210d58c7dca4e55fc8e2d88f0db5d06",
+      "original_tags": [
+        "doi-don-vi"
+      ],
+      "original_answer_index": 0,
+      "reviewer_status": "PASS",
+      "reconciled_status": "PASS",
+      "clone_group": null,
+      "evidence_type": "multiple_choice_recognition_or_selected_result",
+      "independent_written_mastery": false
+    },
+    {
+      "id": "MOD24MICRO_013",
+      "phase": "B",
+      "source_path": "docs/assets/data/practice/24-bai-toan-thuc-te-micro-v1.json",
+      "source_sha": "0c11446a01aec62e32b2320f0f537dd52133906a",
+      "original_tags": [
+        "kiem-tra-ket-luan"
+      ],
+      "original_answer_index": 0,
+      "reviewer_status": "PASS",
+      "reconciled_status": "PASS",
+      "clone_group": "B07_EXACT_07",
+      "evidence_type": "multiple_choice_recognition_or_selected_result",
+      "independent_written_mastery": false
+    },
+    {
+      "id": "MOD24MICRO_014",
+      "phase": "B",
+      "source_path": "docs/assets/data/practice/24-bai-toan-thuc-te-micro-v1.json",
+      "source_sha": "0c11446a01aec62e32b2320f0f537dd52133906a",
+      "original_tags": [
+        "kiem-tra-ket-luan"
+      ],
+      "original_answer_index": 0,
+      "reviewer_status": "PASS",
+      "reconciled_status": "PASS",
+      "clone_group": "B07_EXACT_08",
+      "evidence_type": "multiple_choice_recognition_or_selected_result",
+      "independent_written_mastery": false
+    },
+    {
+      "id": "MOD24MICRO_015",
+      "phase": "B",
+      "source_path": "docs/assets/data/practice/24-bai-toan-thuc-te-micro-v1.json",
+      "source_sha": "0c11446a01aec62e32b2320f0f537dd52133906a",
+      "original_tags": [
+        "kiem-tra-ket-luan"
+      ],
+      "original_answer_index": 0,
+      "reviewer_status": "PASS",
+      "reconciled_status": "PASS",
+      "clone_group": "B07_EXACT_09",
+      "evidence_type": "multiple_choice_recognition_or_selected_result",
+      "independent_written_mastery": false
+    },
+    {
+      "id": "MOD24V1__111",
+      "phase": "B",
+      "source_path": "docs/assets/data/practice/24-bai-toan-thuc-te-v1-04.json",
+      "source_sha": "3c3fbe1af4a978b95bd4d7f20bcdea132fd63df8",
+      "original_tags": [
+        "kiem-tra-ket-luan"
+      ],
+      "original_answer_index": 0,
+      "reviewer_status": "PASS",
+      "reconciled_status": "PASS",
+      "clone_group": "B07_EXACT_07",
+      "evidence_type": "multiple_choice_recognition_or_selected_result",
+      "independent_written_mastery": false
+    },
+    {
+      "id": "MOD24V1__112",
+      "phase": "B",
+      "source_path": "docs/assets/data/practice/24-bai-toan-thuc-te-v1-04.json",
+      "source_sha": "3c3fbe1af4a978b95bd4d7f20bcdea132fd63df8",
+      "original_tags": [
+        "kiem-tra-ket-luan"
+      ],
+      "original_answer_index": 0,
+      "reviewer_status": "PASS",
+      "reconciled_status": "PASS",
+      "clone_group": "B07_EXACT_08",
+      "evidence_type": "multiple_choice_recognition_or_selected_result",
+      "independent_written_mastery": false
+    },
+    {
+      "id": "MOD24V1__113",
+      "phase": "B",
+      "source_path": "docs/assets/data/practice/24-bai-toan-thuc-te-v1-04.json",
+      "source_sha": "3c3fbe1af4a978b95bd4d7f20bcdea132fd63df8",
+      "original_tags": [
+        "kiem-tra-ket-luan"
+      ],
+      "original_answer_index": 0,
+      "reviewer_status": "PASS",
+      "reconciled_status": "PASS",
+      "clone_group": "B07_EXACT_09",
+      "evidence_type": "multiple_choice_recognition_or_selected_result",
+      "independent_written_mastery": false
+    },
+    {
+      "id": "MOD24V1__114",
+      "phase": "B",
+      "source_path": "docs/assets/data/practice/24-bai-toan-thuc-te-v1-04.json",
+      "source_sha": "3c3fbe1af4a978b95bd4d7f20bcdea132fd63df8",
+      "original_tags": [
+        "kiem-tra-ket-luan"
+      ],
+      "original_answer_index": 0,
+      "reviewer_status": "PASS",
+      "reconciled_status": "PASS",
+      "clone_group": null,
+      "evidence_type": "multiple_choice_recognition_or_selected_result",
+      "independent_written_mastery": false
+    },
+    {
+      "id": "MOD24V1__115",
+      "phase": "B",
+      "source_path": "docs/assets/data/practice/24-bai-toan-thuc-te-v1-04.json",
+      "source_sha": "3c3fbe1af4a978b95bd4d7f20bcdea132fd63df8",
+      "original_tags": [
+        "kiem-tra-ket-luan"
+      ],
+      "original_answer_index": 0,
+      "reviewer_status": "PASS",
+      "reconciled_status": "PASS",
+      "clone_group": null,
+      "evidence_type": "multiple_choice_recognition_or_selected_result",
+      "independent_written_mastery": false
+    },
+    {
+      "id": "MOD24V1__116",
+      "phase": "B",
+      "source_path": "docs/assets/data/practice/24-bai-toan-thuc-te-v1-04.json",
+      "source_sha": "3c3fbe1af4a978b95bd4d7f20bcdea132fd63df8",
+      "original_tags": [
+        "kiem-tra-ket-luan"
+      ],
+      "original_answer_index": 0,
+      "reviewer_status": "PASS",
+      "reconciled_status": "PASS",
+      "clone_group": null,
+      "evidence_type": "multiple_choice_recognition_or_selected_result",
+      "independent_written_mastery": false
+    },
+    {
+      "id": "MOD24V1__117",
+      "phase": "B",
+      "source_path": "docs/assets/data/practice/24-bai-toan-thuc-te-v1-04.json",
+      "source_sha": "3c3fbe1af4a978b95bd4d7f20bcdea132fd63df8",
+      "original_tags": [
+        "kiem-tra-ket-luan"
+      ],
+      "original_answer_index": 0,
+      "reviewer_status": "PASS",
+      "reconciled_status": "PASS",
+      "clone_group": null,
+      "evidence_type": "multiple_choice_recognition_or_selected_result",
+      "independent_written_mastery": false
+    },
+    {
+      "id": "MOD24V1__118",
+      "phase": "B",
+      "source_path": "docs/assets/data/practice/24-bai-toan-thuc-te-v1-04.json",
+      "source_sha": "3c3fbe1af4a978b95bd4d7f20bcdea132fd63df8",
+      "original_tags": [
+        "kiem-tra-ket-luan"
+      ],
+      "original_answer_index": 0,
+      "reviewer_status": "PASS",
+      "reconciled_status": "PASS",
+      "clone_group": null,
+      "evidence_type": "multiple_choice_recognition_or_selected_result",
+      "independent_written_mastery": false
+    },
+    {
+      "id": "MOD24V1__125",
+      "phase": "B",
+      "source_path": "docs/assets/data/practice/24-bai-toan-thuc-te-v1-04.json",
+      "source_sha": "3c3fbe1af4a978b95bd4d7f20bcdea132fd63df8",
+      "original_tags": [
+        "kiem-tra-ket-luan"
+      ],
+      "original_answer_index": 1,
+      "reviewer_status": "PASS",
+      "reconciled_status": "PASS",
+      "clone_group": null,
+      "evidence_type": "multiple_choice_recognition_or_selected_result",
+      "independent_written_mastery": false
+    },
+    {
+      "id": "MOD24V1__126",
+      "phase": "B",
+      "source_path": "docs/assets/data/practice/24-bai-toan-thuc-te-v1-04.json",
+      "source_sha": "3c3fbe1af4a978b95bd4d7f20bcdea132fd63df8",
+      "original_tags": [
+        "kiem-tra-ket-luan"
+      ],
+      "original_answer_index": 1,
+      "reviewer_status": "PASS",
+      "reconciled_status": "PASS",
+      "clone_group": null,
+      "evidence_type": "multiple_choice_recognition_or_selected_result",
+      "independent_written_mastery": false
+    },
+    {
+      "id": "MOD24V1__021",
+      "phase": "C",
+      "source_path": "docs/assets/data/practice/24-bai-toan-thuc-te-v1-01.json",
+      "source_sha": "2099b3e03210d58c7dca4e55fc8e2d88f0db5d06",
+      "original_tags": [
+        "chuyen-dong"
+      ],
+      "original_answer_index": 0,
+      "reviewer_status": "PASS",
+      "reconciled_status": "PASS",
+      "clone_group": null,
+      "evidence_type": "multiple_choice_recognition_or_selected_result",
+      "independent_written_mastery": false
+    },
+    {
+      "id": "MOD24V1__022",
+      "phase": "C",
+      "source_path": "docs/assets/data/practice/24-bai-toan-thuc-te-v1-01.json",
+      "source_sha": "2099b3e03210d58c7dca4e55fc8e2d88f0db5d06",
+      "original_tags": [
+        "chuyen-dong"
+      ],
+      "original_answer_index": 0,
+      "reviewer_status": "PASS",
+      "reconciled_status": "PASS",
+      "clone_group": null,
+      "evidence_type": "multiple_choice_recognition_or_selected_result",
+      "independent_written_mastery": false
+    },
+    {
+      "id": "MOD24V1__023",
+      "phase": "C",
+      "source_path": "docs/assets/data/practice/24-bai-toan-thuc-te-v1-01.json",
+      "source_sha": "2099b3e03210d58c7dca4e55fc8e2d88f0db5d06",
+      "original_tags": [
+        "chuyen-dong"
+      ],
+      "original_answer_index": 0,
+      "reviewer_status": "PASS",
+      "reconciled_status": "PASS",
+      "clone_group": null,
+      "evidence_type": "multiple_choice_recognition_or_selected_result",
+      "independent_written_mastery": false
+    },
+    {
+      "id": "MOD24V1__024",
+      "phase": "C",
+      "source_path": "docs/assets/data/practice/24-bai-toan-thuc-te-v1-01.json",
+      "source_sha": "2099b3e03210d58c7dca4e55fc8e2d88f0db5d06",
+      "original_tags": [
+        "chuyen-dong"
+      ],
+      "original_answer_index": 0,
+      "reviewer_status": "REVISION_REQUIRED",
+      "reconciled_status": "REVISION_REQUIRED",
+      "clone_group": null,
+      "evidence_type": "multiple_choice_recognition_or_selected_result",
+      "independent_written_mastery": false
+    },
+    {
+      "id": "MOD24V1__025",
+      "phase": "C",
+      "source_path": "docs/assets/data/practice/24-bai-toan-thuc-te-v1-01.json",
+      "source_sha": "2099b3e03210d58c7dca4e55fc8e2d88f0db5d06",
+      "original_tags": [
+        "chuyen-dong"
+      ],
+      "original_answer_index": 0,
+      "reviewer_status": "PASS",
+      "reconciled_status": "PASS",
+      "clone_group": null,
+      "evidence_type": "multiple_choice_recognition_or_selected_result",
+      "independent_written_mastery": false
+    },
+    {
+      "id": "MOD24V1__026",
+      "phase": "C",
+      "source_path": "docs/assets/data/practice/24-bai-toan-thuc-te-v1-01.json",
+      "source_sha": "2099b3e03210d58c7dca4e55fc8e2d88f0db5d06",
+      "original_tags": [
+        "chuyen-dong"
+      ],
+      "original_answer_index": 0,
+      "reviewer_status": "PASS",
+      "reconciled_status": "PASS",
+      "clone_group": null,
+      "evidence_type": "multiple_choice_recognition_or_selected_result",
+      "independent_written_mastery": false
+    },
+    {
+      "id": "MOD24V1__027",
+      "phase": "C",
+      "source_path": "docs/assets/data/practice/24-bai-toan-thuc-te-v1-01.json",
+      "source_sha": "2099b3e03210d58c7dca4e55fc8e2d88f0db5d06",
+      "original_tags": [
+        "chuyen-dong"
+      ],
+      "original_answer_index": 0,
+      "reviewer_status": "PASS",
+      "reconciled_status": "PASS",
+      "clone_group": null,
+      "evidence_type": "multiple_choice_recognition_or_selected_result",
+      "independent_written_mastery": false
+    },
+    {
+      "id": "MOD24V1__028",
+      "phase": "C",
+      "source_path": "docs/assets/data/practice/24-bai-toan-thuc-te-v1-01.json",
+      "source_sha": "2099b3e03210d58c7dca4e55fc8e2d88f0db5d06",
+      "original_tags": [
+        "chuyen-dong"
+      ],
+      "original_answer_index": 0,
+      "reviewer_status": "PASS",
+      "reconciled_status": "PASS",
+      "clone_group": null,
+      "evidence_type": "multiple_choice_recognition_or_selected_result",
+      "independent_written_mastery": false
+    },
+    {
+      "id": "MOD24V1__121",
+      "phase": "C",
+      "source_path": "docs/assets/data/practice/24-bai-toan-thuc-te-v1-01.json",
+      "source_sha": "2099b3e03210d58c7dca4e55fc8e2d88f0db5d06",
+      "original_tags": [
+        "chuyen-dong"
+      ],
+      "original_answer_index": 0,
+      "reviewer_status": "PASS",
+      "reconciled_status": "PASS",
+      "clone_group": null,
+      "evidence_type": "multiple_choice_recognition_or_selected_result",
+      "independent_written_mastery": false
+    },
+    {
+      "id": "MOD24V1__122",
+      "phase": "C",
+      "source_path": "docs/assets/data/practice/24-bai-toan-thuc-te-v1-01.json",
+      "source_sha": "2099b3e03210d58c7dca4e55fc8e2d88f0db5d06",
+      "original_tags": [
+        "chuyen-dong"
+      ],
+      "original_answer_index": 1,
+      "reviewer_status": "PASS",
+      "reconciled_status": "PASS",
+      "clone_group": null,
+      "evidence_type": "multiple_choice_recognition_or_selected_result",
+      "independent_written_mastery": false
+    },
+    {
+      "id": "MOD24V1__031",
+      "phase": "C",
+      "source_path": "docs/assets/data/practice/24-bai-toan-thuc-te-v1-02.json",
+      "source_sha": "03535d510cd91cd52df48312325536edc5bb4423",
+      "original_tags": [
+        "nang-suat"
+      ],
+      "original_answer_index": 0,
+      "reviewer_status": "PASS",
+      "reconciled_status": "PASS",
+      "clone_group": null,
+      "evidence_type": "multiple_choice_recognition_or_selected_result",
+      "independent_written_mastery": false
+    },
+    {
+      "id": "MOD24V1__032",
+      "phase": "C",
+      "source_path": "docs/assets/data/practice/24-bai-toan-thuc-te-v1-02.json",
+      "source_sha": "03535d510cd91cd52df48312325536edc5bb4423",
+      "original_tags": [
+        "nang-suat"
+      ],
+      "original_answer_index": 0,
+      "reviewer_status": "PASS",
+      "reconciled_status": "PASS",
+      "clone_group": null,
+      "evidence_type": "multiple_choice_recognition_or_selected_result",
+      "independent_written_mastery": false
+    },
+    {
+      "id": "MOD24V1__033",
+      "phase": "C",
+      "source_path": "docs/assets/data/practice/24-bai-toan-thuc-te-v1-02.json",
+      "source_sha": "03535d510cd91cd52df48312325536edc5bb4423",
+      "original_tags": [
+        "nang-suat"
+      ],
+      "original_answer_index": 0,
+      "reviewer_status": "PASS",
+      "reconciled_status": "PASS",
+      "clone_group": null,
+      "evidence_type": "multiple_choice_recognition_or_selected_result",
+      "independent_written_mastery": false
+    },
+    {
+      "id": "MOD24V1__034",
+      "phase": "C",
+      "source_path": "docs/assets/data/practice/24-bai-toan-thuc-te-v1-02.json",
+      "source_sha": "03535d510cd91cd52df48312325536edc5bb4423",
+      "original_tags": [
+        "nang-suat"
+      ],
+      "original_answer_index": 0,
+      "reviewer_status": "PASS",
+      "reconciled_status": "PASS",
+      "clone_group": null,
+      "evidence_type": "multiple_choice_recognition_or_selected_result",
+      "independent_written_mastery": false
+    },
+    {
+      "id": "MOD24V1__035",
+      "phase": "C",
+      "source_path": "docs/assets/data/practice/24-bai-toan-thuc-te-v1-02.json",
+      "source_sha": "03535d510cd91cd52df48312325536edc5bb4423",
+      "original_tags": [
+        "nang-suat"
+      ],
+      "original_answer_index": 0,
+      "reviewer_status": "PASS",
+      "reconciled_status": "PASS",
+      "clone_group": null,
+      "evidence_type": "multiple_choice_recognition_or_selected_result",
+      "independent_written_mastery": false
+    },
+    {
+      "id": "MOD24V1__036",
+      "phase": "C",
+      "source_path": "docs/assets/data/practice/24-bai-toan-thuc-te-v1-02.json",
+      "source_sha": "03535d510cd91cd52df48312325536edc5bb4423",
+      "original_tags": [
+        "nang-suat"
+      ],
+      "original_answer_index": 0,
+      "reviewer_status": "PASS",
+      "reconciled_status": "PASS",
+      "clone_group": null,
+      "evidence_type": "multiple_choice_recognition_or_selected_result",
+      "independent_written_mastery": false
+    },
+    {
+      "id": "MOD24V1__037",
+      "phase": "C",
+      "source_path": "docs/assets/data/practice/24-bai-toan-thuc-te-v1-02.json",
+      "source_sha": "03535d510cd91cd52df48312325536edc5bb4423",
+      "original_tags": [
+        "nang-suat"
+      ],
+      "original_answer_index": 0,
+      "reviewer_status": "PASS",
+      "reconciled_status": "PASS",
+      "clone_group": null,
+      "evidence_type": "multiple_choice_recognition_or_selected_result",
+      "independent_written_mastery": false
+    },
+    {
+      "id": "MOD24V1__038",
+      "phase": "C",
+      "source_path": "docs/assets/data/practice/24-bai-toan-thuc-te-v1-02.json",
+      "source_sha": "03535d510cd91cd52df48312325536edc5bb4423",
+      "original_tags": [
+        "nang-suat"
+      ],
+      "original_answer_index": 0,
+      "reviewer_status": "PASS",
+      "reconciled_status": "PASS",
+      "clone_group": null,
+      "evidence_type": "multiple_choice_recognition_or_selected_result",
+      "independent_written_mastery": false
+    },
+    {
+      "id": "MOD24V1__039",
+      "phase": "C",
+      "source_path": "docs/assets/data/practice/24-bai-toan-thuc-te-v1-02.json",
+      "source_sha": "03535d510cd91cd52df48312325536edc5bb4423",
+      "original_tags": [
+        "nang-suat"
+      ],
+      "original_answer_index": 0,
+      "reviewer_status": "PASS",
+      "reconciled_status": "PASS",
+      "clone_group": null,
+      "evidence_type": "multiple_choice_recognition_or_selected_result",
+      "independent_written_mastery": false
+    },
+    {
+      "id": "MOD24V1__040",
+      "phase": "C",
+      "source_path": "docs/assets/data/practice/24-bai-toan-thuc-te-v1-02.json",
+      "source_sha": "03535d510cd91cd52df48312325536edc5bb4423",
+      "original_tags": [
+        "nang-suat"
+      ],
+      "original_answer_index": 0,
+      "reviewer_status": "PASS",
+      "reconciled_status": "REVISION_REQUIRED",
+      "clone_group": null,
+      "evidence_type": "multiple_choice_recognition_or_selected_result",
+      "independent_written_mastery": false
+    }
+  ],
+  "academic_defects": [
+    {
+      "id": "MOD24V1__024",
+      "type": "AMBIGUOUS_WORDING",
+      "explanation": "120 km could describe entire journey or first half; only total 120km yields 2.5h.",
+      "fix_draft_pr": 155
+    },
+    {
+      "id": "MOD24V1__040",
+      "type": "MISSING_SINGLE_JOB_TIME_BOUND",
+      "explanation": "2/x fraction after 2h of one task requires x>=2; x>0 admits task finished sooner.",
+      "fix_draft_pr": 155
+    }
+  ],
+  "reviewer_microtest_issue": {
+    "phase": "B",
+    "type": "NON_DIAGNOSTIC_ROUNDING_EXAMPLE",
+    "explanation": "Both rounding strategies in the suggested three-amount example equal 37,000 VND; revise before importing."
+  },
+  "implementation_status": "NOT_IMPLEMENTED",
+  "runtime_enabled": false,
+  "core_readiness_credit": false,
+  "legacy_ids_tags_counters_changed": false
+}

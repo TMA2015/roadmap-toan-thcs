@@ -1,0 +1,9 @@
+# TOÁN THCS — checkpoint tạm dừng sau B07-A (28/09/2026)
+
+**STOP POINT:** `MATH-SKILL-TAXONOMY-B07-20260928`, Phase A audited 26/26. Next action is **B07 Phase B (13 IDs)** using existing `03_COPY_TO_CHAT_B07_PHASE_B.txt`, then **Phase C (20 IDs)** with `04_COPY_TO_CHAT_B07_PHASE_C.txt`. Keep SAME three NotebookLM sources (permanent v1.1×2 and source B07). These prompts are unchanged and already in ZIP; don't ask the owner to rerun Phase A or download a replacement packet. Quota will refresh later; no background work assumed.
+
+**Repo:** `TMA2015/roadmap-toan-thcs`. Locked baseline main `88143e6b2690edfe721f8d74d2dbcb251bc55ab3`. Review assets in draft PR #154. Draft PR #152 B06 71-item reconciliation: independently flagged two CĐ24 defects `MOD24V1__058` (two equivalent answer choices) and `MOD24V1__069` (no feasible integer quantities). Separate draft academic fix PR #153 exists and passes CI; not merged/deployed. B05 isolated notation fix draft PR #151 also not merged. Do not infer current main changed without fetch.
+
+**Skills:** Report PASS = question/math/answer review, not independent mastery or Core Readiness. Context tags are not automatically assessed atomic skills. Preserve IDs (including MOD24V1__ double underscore), original legacy tags, and historical localStorage counters. Clone groups are formative and cannot be counted as independent evidence without further design.
+
+**Resumption order:** Receive Pha B file → verify item-level coverage and audit mathematical exceptions → write receipt to PR #154 → use original Pha C prompt → receive Pha C file → verify item-level coverage, source SHA and math (especially MOD24V1__024 ambiguity and indices 1 on MOD24V1__122/__125/__126) → B07 final ledger → only then move to next taxonomy design. The user is switching to the separate English project chat during the pause. Do not merge/deploy any PR without explicit authorization.
