@@ -66,3 +66,8 @@
 .written-hint-step h3,.written-anchor-method h3{margin:.1rem 0 .35rem;font-size:.82rem}
 .written-anchor-method{margin-top:.8rem;padding-top:.75rem;border-top:1px solid var(--md-default-fg-color--lightest)}
 @media (max-width:760px){.written-help.is-deep-anchor .written-help-actions{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+/* W9 reviewed-only KNTT Grade → Chapter → Lesson discovery; accessible on iPad. */
+.written-library-verified-note{font-size:.77rem;opacity:.75;line-height:1.55;margin:.25rem 0 .7rem}
+.written-library-select:disabled{opacity:.6;cursor:not-allowed}
+@media(min-width:761px){.written-library-controls{grid-template-columns:minmax(12rem,2fr) repeat(3,minmax(9rem,1fr))}}
