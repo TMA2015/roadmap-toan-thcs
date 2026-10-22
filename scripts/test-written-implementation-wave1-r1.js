@@ -58,7 +58,7 @@ for(const e of cand.exercises){
 
 assert(lib.exercises.length>=65,"W3A historical 63+2 must remain");
 assert.deepEqual(lib.exercises.slice(63,65).map(x=>x.exercise_id),["WX05-ENT-001","WX06-CH-001"]);
-assert.equal(lib.published_scope.exercise_count,lib.exercises.length);
+assert.equal(lib.published_scope.exercise_count,lib.exercises.length-(lib.candidate_scope?.new_exercise_count||0),"published Written exclude one W9 Owner-gated candidate");
 const batch=lib.published_scope.batches.find(x=>x.batch_id==="WRITTEN_IMPLEMENTATION_W1_R1");
 assert.ok(batch);
 assert.equal(batch.count,9);
