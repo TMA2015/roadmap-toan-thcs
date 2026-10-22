@@ -49,7 +49,16 @@ for(const w of [w2,w23]){
  for(const c of w.cards){
   const ids=c.micro_practice,base=ids.slice(0,3).map(id=>by.get(id));
   ok(base.map(q=>q?.micro_role).join(",")==="base,trap,apply","base/trap/apply preserved "+c.id);
-  ok(ids.slice(3).every(id=>by.get(id)?.micro_role==="coverage"),"extra items coverage-only "+c.id);
+  // Original gap/coverage items must stay coverage-only; exception is
+   // the independently approved W9 Grade6 absolute-value base/trap/apply trio.
+   const W9ids=["NUM02MICRO_065","NUM02MICRO_066","NUM02MICRO_067"];
+   const w9=ids.filter(id=>W9ids.includes(id));
+   const frozen=ids.slice(3).filter(id=>!W9ids.includes(id));
+   ok(frozen.every(id=>by.get(id)?.micro_role==="coverage"),"old extras remain coverage-only "+c.id);
+   if(w9.length)ok(c.id==="num02-g6-core-3"&&
+      w9.join(",")===W9ids.join(",")&&
+      w9.map(id=>by.get(id)?.micro_role).join(",")==="base,trap,apply",
+      "W9 exact reviewed absolute-value trio roles");
  }
 }
 const skillCoverage=(w,b)=>{const q=new Map(b.questions.map(x=>[x.id,x]));return w.cards.flatMap(c=>c.skills.filter(s=>!c.micro_practice.some(id=>q.get(id)?.tags?.skill?.[0]===s)).map(s=>c.id+":"+s));};
