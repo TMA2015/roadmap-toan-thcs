@@ -20,7 +20,10 @@
   };
 
   const makeHelpPanel=(card,x)=>{
-    const deep=Array.isArray(x.hint_steps)&&x.hint_steps.length>0;
+    // A standard problem may have staged hints and still use solution_steps.
+    // The anchor-specific full_solution_markdown path is selected by exercise_kind.
+    const deep=x.exercise_kind==="anchor";
+    const hasHints=Array.isArray(x.hint_steps)&&x.hint_steps.length>0;
     const wrap=el("div",deep?"written-help is-deep-anchor":"written-help");
     const actions=el("div","written-help-actions");
     actions.setAttribute("role","group");
@@ -45,7 +48,7 @@
       return {button,panel};
     };
 
-    if(deep){
+    if(hasHints){
       const id=`${x.exercise_id.toLowerCase()}-hints`;
       const hintButton=el("button","written-help-action",`Gợi ý 1/${x.hint_steps.length}`);
       hintButton.type="button";hintButton.dataset.helpTarget="hints";
@@ -70,6 +73,9 @@
       });
       actions.appendChild(hintButton);panels.appendChild(hintPanel);
 
+    }
+
+    if(deep){
       addDisclosure("solution","Lời giải",()=>{
         const body=el("div","written-disclosure-body");
         const rich=el("div","written-rich");renderRich(rich,x.full_solution_markdown||"");body.appendChild(rich);
