@@ -21,7 +21,7 @@ with sync_playwright() as pw:
         page.locator('a.math-library-entry[href="tu-luan/"]').first.click()
         page.wait_for_url("**/luyen-tap/tu-luan/")
         page.wait_for_function("document.querySelector('[data-written-exercise-library]')?.dataset.ready==='1'",timeout=18000)
-        assert page.locator(".written-exercise-card").count()==74, "69 historical plus exactly five Owner-approved W4 items"
+        assert page.locator(".written-exercise-card").count()==75, "69 historical plus five Owner-approved W4 records and one separate Owner-gated W9 draft"
         for id in ("wx08-eqi-003","wx09-sys-009","wx10-fun-003","wx11-rad-004","wx12-qua-003"):
             assert page.locator(".written-exercise-card#"+id).count()==1, "missing W4 authored card "+id
         assert page.locator(".written-exercise-card#wx05-ent-001").count()==1
@@ -43,6 +43,6 @@ with sync_playwright() as pw:
         page.wait_for_url("**/roadmap/",timeout=10000)
         assert page.get_by_role("heading",name="Bản đồ học tập Toán THCS").count()==1
         assert not errors,(width,errors)
-        print("PASS learner navigation/library R2",width,"px, 69 Written items (67 pre-W3C historical + 2 W3C reviewed) + legacy filtered redirects")
+        print("PASS learner navigation/library R2",width,"px, preserved 74 published source records + one W9 gated candidate and legacy redirects")
         ctx.close()
     browser.close()
