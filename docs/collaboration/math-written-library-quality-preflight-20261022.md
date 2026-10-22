@@ -1,5 +1,8 @@
 # Self-Learning Math — Written Exercise Library Quality Preflight R0
 
+> **SOURCE RECOVERY UPDATE — 2026-10-22:** The owner has re-uploaded four ZIP archives. A byte-level inventory now covers **79 files** (78 PDF + 1 DOC), **79 distinct SHA-256 digests**, **2,042 PDF pages**; 45 compiled semester-test PDFs, 4 semester review documents, 9 topic/reference files, 16 entrance mock/reference collections and 5 admission-test-labelled files. Class-7 HK1, Class-9 semester exams are absent from these archives. All 45 semester papers are branded Loigiaihay.com in their first page; do not call them official school test frequencies. One **confirmed mismatch**: G6 HK2 Test #1, page 1 question 3 has even dice count 14+9=23/50 (option D), but page 3 answer key says B and the explanation discusses an unrelated flower survey. See `docs/collaboration/math-semester-source-corpus-audit-20261022.md`. The earlier source-unavailable warning below is preserved as the pre-recovery checkpoint and is **now superseded**.
+
+
 **Date:** 2026-10-22  
 **Scope:** QA-only / documentary; **no learner-facing content, runtime, IDs, progress, Readiness or history changes**  
 **Repository baseline:** `main` at read time; canonical JSON file `docs/assets/data/written-exercises/written-exercise-library-v1.json`, exact Git blob SHA `5141a40bf1b8f8763257857d3b805d681a0956fa`  
