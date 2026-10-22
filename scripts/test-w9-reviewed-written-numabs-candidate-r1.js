@@ -46,6 +46,7 @@ const sta=byId.get("WX21-STA-001");
 assert.deepEqual(sta.grade_overlay,[6]);
 assert.equal(sta.kntt_placements[0].grade,6);
 assert.equal(sta.kntt_placements[0].chapter,9);
+assert.equal(sta.kntt_placements[0].lesson,"Bài 40 — Biểu đồ cột");
 const added=byId.get("WX02-NUM-004");
 assert(added,"new Written missing");
 assert.equal(added.exercise_kind,"anchor");
