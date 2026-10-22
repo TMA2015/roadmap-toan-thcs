@@ -17,7 +17,7 @@ assert.equal(impl.clearance,"WRITTEN_IMPLEMENTATION_W1_R1_CONTENT_REVIEW_COMPLET
 assert.equal(impl.independent_review?.verdict,"PASS");
 assert(lib.exercises.length>=65,"preserve original 63+2 Written items");
 assert.deepEqual(lib.exercises.slice(63,65).map(x=>x.exercise_id),["WX05-ENT-001","WX06-CH-001"]);
-assert.equal(lib.published_scope.exercise_count,lib.exercises.length);
+assert.equal(lib.published_scope.exercise_count,lib.exercises.length-(lib.candidate_scope?.new_exercise_count||0),"historical Wave1 published scope excludes newer W9 Owner-gated candidate");
 
 const mapByLegacy=new Map();
 for(const m of reg.legacy_mappings||[]){
