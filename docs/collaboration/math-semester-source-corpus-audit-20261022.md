@@ -5,6 +5,25 @@
 **Purpose:** use supplied term exams and related references as independent **structural coverage** evidence for the canonical Written Exercise Library, not as new master curriculum or as blindly trusted answer keys.  
 **Boundary:** documentary-only; no raw copyrighted PDFs imported to the public repository, no live content/ID/filter/learner-history/Readiness change.
 
+## 0. Google Drive source availability verification (owner link, 2026-10-22)
+
+The owner provided a direct **Google Drive folder link** for the four archival ZIPs. Connected Google Drive `list_folder` returned precisely four ZIP entries: Grade 6, Grade 7, Grade 8 and Grade 9/Entrance10. Each is separately present, readable to the connected account and marked `can_download=true`. **Exact byte sizes** matched the corresponding four uploaded ZIP files:
+
+| ZIP | Google Drive `size` (bytes) | Current conversation upload size (bytes) | Check |
+|---|---:|---:|---|
+| Grade 6 | 28,343,022 | 28,343,022 | `SIZE_EQUAL` |
+| Grade 7 | 8,688,819 | 8,688,819 | `SIZE_EQUAL` |
+| Grade 8 | 12,095,214 | 12,095,214 | `SIZE_EQUAL` |
+| Grade 9 / Entrance10 | 42,216,194 | 42,216,194 | `SIZE_EQUAL` |
+
+**Privacy boundary:** The Drive folder/file IDs and user-supplied private URLs are deliberately **not reproduced in this public repository**. The source URLs remain with the owner in the ChatGPT conversation/connected Drive.
+
+**Integrity limitation:** Size equality is not cryptographic proof that a Drive file equals the upload. A fresh Drive byte-stream hash was **not obtained**. Current source authority for the 79-file analysis remains the four directly uploaded ZIPs whose local full SHA-256 hashes are recorded below.
+
+**Full uploaded-corpus manifest QA:** All 79 manifest rows were reconciled against ZIP member names, uncompressed byte lengths and computed per-file SHA-256. Result: `ROWS=79 | MISSING=0 | UNEXPECTED=0 | HASH_MISMATCH=0`. This establishes internal consistency of the local downloaded/uploads corpus; no claim about unseen Drive byte hashes.
+
+**Eight pilot examples:** See `review-packets/written-exercise-library/MATH-WRITTEN-QUALITY-8PILOT-EXAM-CROSSWALK-20261022.md` for source filenames, content-hash prefixes, page numbers, exact/adjacent/broad-only relation labels and protected next steps.
+
 ## 1. Exact archive inventory
 
 The owner re-uploaded four ZIP archives to the ongoing Math review. All archive entries were inspected; PDF page counts used PyMuPDF; 79 SHA-256 hashes were computed from **file contents** (not just filenames). Results below supersede the older remembered 80-document / 2,051-page figure.
