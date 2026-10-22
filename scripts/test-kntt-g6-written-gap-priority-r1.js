@@ -29,7 +29,8 @@ assert.equal(a.implementation.new_wave1_items_authored,0);
 const lib=json("docs/assets/data/written-exercises/written-exercise-library-v1.json");
 const wx1=lib.exercises.find(x=>x.exercise_id==="WX21-STA-001");
 const wx2=lib.exercises.find(x=>x.exercise_id==="WX21-STA-002");
-assert.deepEqual(wx1.kntt_placements,[{grade:6,chapter:9,lesson:"Bài 38–41 — Dữ liệu, bảng thống kê, biểu đồ tranh, biểu đồ cột và cột kép"}]);
+// Historical R1 allowed reuse within Bài38–41; newer independent W9 S1 review narrows exact placement to Bài40.
+assert.deepEqual(wx1.kntt_placements,[{grade:6,chapter:9,lesson:"Bài 40 — Biểu đồ cột"}]);
 assert.ok(!wx2.kntt_placements,"WX21-STA-002 must not receive a Grade-6 placement");
 const audit=json("docs/assets/data/curriculum/kntt-dimension-coverage-g6-v1.json");
 assert.ok(audit.summary.written_library_kntt_item_count>=4);
