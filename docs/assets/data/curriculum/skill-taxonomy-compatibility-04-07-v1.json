@@ -1,0 +1,593 @@
+{
+  "schema": "skill-taxonomy-compatibility-04-07-v1",
+  "status": "DESIGN_ONLY_RUNTIME_DISABLED",
+  "as_of": "2026-09-30",
+  "scope": "CĐ04–07 compatibility design after Phase B PASS",
+  "storage": {
+    "legacy_storage_key": "toan-thcs-practice-v1",
+    "canonical_evidence_storage_key": "toan-thcs-assessment-v2",
+    "migration_mode": "NO_BACKFILL_NO_REWRITE",
+    "legacy_store_remains_untouched": true,
+    "dual_write_enabled": false
+  },
+  "evidence_event_contract": {
+    "status": "NOT_RUNTIME_ENABLED",
+    "one_assessed_skill_per_event": true,
+    "supporting_method_context_category_tags_are_metadata_only": true,
+    "clone_family_can_limit_independent_evidence_count_in_future_policy": true,
+    "correct_answer_does_not_equal_mastery": true,
+    "mastery_threshold": null,
+    "historical_events_generated_from_legacy_counts": false,
+    "required_fields_future": [
+      "event_id",
+      "question_id",
+      "canonical_skill_id",
+      "topic",
+      "evidence_class",
+      "clone_family",
+      "correct",
+      "attempted_at",
+      "content_version"
+    ]
+  },
+  "mapping_coverage": {
+    "legacy_code_semantics_reviewed": "52/52",
+    "full_question_primary_mapping": "INCOMPLETE",
+    "phase_a_question_decisions": "39 source-locked items",
+    "representative_existing_pilot": "10 unchanged source questions + separate diagnostic micro items",
+    "release_blocker": "Do not enable canonical counters until question-level primary mapping is completed and QA'd for the intended pilot scope."
+  },
+  "shared_concept_policy": {
+    "dieu-kien-xac-dinh": {
+      "canonical_id": "dieu-kien-xac-dinh",
+      "topics": [
+        "04-bieu-thuc-dai-so",
+        "07-phan-thuc-dai-so"
+      ],
+      "merge_decision": "MERGE_ONE_CONCEPT",
+      "aggregate_old_history": false
+    },
+    "hieu-hai-binh-phuong": {
+      "canonical_id": "hieu-hai-binh-phuong",
+      "topics": [
+        "05-7-hang-dang-thuc",
+        "06-phan-tich-da-thuc"
+      ],
+      "merge_decision": "MERGE_ONE_CONCEPT",
+      "aggregate_old_history": false
+    },
+    "binh-phuong-hoan-chinh": {
+      "canonical_id": "binh-phuong-hoan-chinh",
+      "topics": [
+        "05-7-hang-dang-thuc",
+        "06-phan-tich-da-thuc"
+      ],
+      "merge_decision": "MERGE_ONE_CONCEPT",
+      "aggregate_old_history": false
+    }
+  },
+  "legacy_code_mappings": [
+    {
+      "legacy_code": "bai-toan-thuc-te",
+      "canonical_id": "bai-toan-thuc-te",
+      "semantic_kind": "context",
+      "learner_counter_status": "NO",
+      "compatibility_behavior": "KEEP_AS_METADATA; NEVER_DIRECT_MASTERY_COUNTER",
+      "shared_concept": false,
+      "runtime_enabled": false
+    },
+    {
+      "legacy_code": "bien-doi-nhieu-buoc",
+      "canonical_id": "bien-doi-nhieu-buoc",
+      "semantic_kind": "task_family",
+      "learner_counter_status": "PENDING",
+      "compatibility_behavior": "KEEP_LEGACY_TAG; FORMATIVE_ONLY_UNTIL_SEPARATE_APPROVAL",
+      "shared_concept": false,
+      "runtime_enabled": false
+    },
+    {
+      "legacy_code": "bieu-thuc-nhieu-phep-tinh",
+      "canonical_id": "bieu-thuc-nhieu-phep-tinh",
+      "semantic_kind": "composite_skill",
+      "learner_counter_status": "PENDING",
+      "compatibility_behavior": "KEEP_LEGACY_TAG; FORMATIVE_ONLY_UNTIL_SEPARATE_APPROVAL",
+      "shared_concept": false,
+      "runtime_enabled": false
+    },
+    {
+      "legacy_code": "binh-phuong-hieu",
+      "canonical_id": "binh-phuong-hieu",
+      "semantic_kind": "skill",
+      "learner_counter_status": "YES",
+      "compatibility_behavior": "KEEP_LEGACY_TAG; FUTURE_V2_EVIDENCE_ONLY_AFTER_PRIMARY_ITEM_MAPPING; NO_BACKFILL",
+      "shared_concept": false,
+      "runtime_enabled": false
+    },
+    {
+      "legacy_code": "binh-phuong-hoan-chinh",
+      "canonical_id": "binh-phuong-hoan-chinh",
+      "semantic_kind": "skill",
+      "learner_counter_status": "YES",
+      "compatibility_behavior": "KEEP_LEGACY_TAG; FUTURE_V2_EVIDENCE_ONLY_AFTER_PRIMARY_ITEM_MAPPING; NO_BACKFILL",
+      "shared_concept": true,
+      "runtime_enabled": false
+    },
+    {
+      "legacy_code": "binh-phuong-tong",
+      "canonical_id": "binh-phuong-tong",
+      "semantic_kind": "skill",
+      "learner_counter_status": "YES",
+      "compatibility_behavior": "KEEP_LEGACY_TAG; FUTURE_V2_EVIDENCE_ONLY_AFTER_PRIMARY_ITEM_MAPPING; NO_BACKFILL",
+      "shared_concept": false,
+      "runtime_enabled": false
+    },
+    {
+      "legacy_code": "bo-ngoac-dau",
+      "canonical_id": "bo-ngoac-dau",
+      "semantic_kind": "skill",
+      "learner_counter_status": "YES",
+      "compatibility_behavior": "KEEP_LEGACY_TAG; FUTURE_V2_EVIDENCE_ONLY_AFTER_PRIMARY_ITEM_MAPPING; NO_BACKFILL",
+      "shared_concept": false,
+      "runtime_enabled": false
+    },
+    {
+      "legacy_code": "chia-da-thuc-cho-don-thuc",
+      "canonical_id": "chia-da-thuc-cho-don-thuc",
+      "semantic_kind": "skill",
+      "learner_counter_status": "YES",
+      "compatibility_behavior": "KEEP_LEGACY_TAG; FUTURE_V2_EVIDENCE_ONLY_AFTER_PRIMARY_ITEM_MAPPING; NO_BACKFILL",
+      "shared_concept": false,
+      "runtime_enabled": false
+    },
+    {
+      "legacy_code": "chia-phan-thuc",
+      "canonical_id": "chia-phan-thuc",
+      "semantic_kind": "skill",
+      "learner_counter_status": "YES",
+      "compatibility_behavior": "KEEP_LEGACY_TAG; FUTURE_V2_EVIDENCE_ONLY_AFTER_PRIMARY_ITEM_MAPPING; NO_BACKFILL",
+      "shared_concept": false,
+      "runtime_enabled": false
+    },
+    {
+      "legacy_code": "chung-minh-hdt",
+      "canonical_id": "chung-minh-hdt",
+      "semantic_kind": "skill",
+      "learner_counter_status": "YES",
+      "compatibility_behavior": "KEEP_LEGACY_TAG; FUTURE_V2_EVIDENCE_ONLY_AFTER_PRIMARY_ITEM_MAPPING; NO_BACKFILL",
+      "shared_concept": false,
+      "runtime_enabled": false
+    },
+    {
+      "legacy_code": "cong-tru-da-thuc",
+      "canonical_id": "cong-tru-da-thuc",
+      "semantic_kind": "skill",
+      "learner_counter_status": "YES",
+      "compatibility_behavior": "KEEP_LEGACY_TAG; FUTURE_V2_EVIDENCE_ONLY_AFTER_PRIMARY_ITEM_MAPPING; NO_BACKFILL",
+      "shared_concept": false,
+      "runtime_enabled": false
+    },
+    {
+      "legacy_code": "cong-tru-phan-thuc",
+      "canonical_id": "cong-tru-phan-thuc",
+      "semantic_kind": "skill",
+      "learner_counter_status": "YES",
+      "compatibility_behavior": "KEEP_LEGACY_TAG; FUTURE_V2_EVIDENCE_ONLY_AFTER_PRIMARY_ITEM_MAPPING; NO_BACKFILL",
+      "shared_concept": false,
+      "runtime_enabled": false
+    },
+    {
+      "legacy_code": "dieu-kien-xac-dinh",
+      "canonical_id": "dieu-kien-xac-dinh",
+      "semantic_kind": "skill",
+      "learner_counter_status": "YES",
+      "compatibility_behavior": "KEEP_LEGACY_TAG; FUTURE_V2_EVIDENCE_ONLY_AFTER_PRIMARY_ITEM_MAPPING; NO_BACKFILL",
+      "shared_concept": true,
+      "runtime_enabled": false
+    },
+    {
+      "legacy_code": "doi-dau-nhan-tu-chung",
+      "canonical_id": "doi-dau-nhan-tu-chung",
+      "semantic_kind": "diagnostic_skill",
+      "learner_counter_status": "YES",
+      "compatibility_behavior": "KEEP_LEGACY_TAG; FUTURE_V2_EVIDENCE_ONLY_AFTER_PRIMARY_ITEM_MAPPING; NO_BACKFILL",
+      "shared_concept": false,
+      "runtime_enabled": false
+    },
+    {
+      "legacy_code": "doi-dau-phan-thuc",
+      "canonical_id": "doi-dau-phan-thuc",
+      "semantic_kind": "skill",
+      "learner_counter_status": "YES",
+      "compatibility_behavior": "KEEP_LEGACY_TAG; FUTURE_V2_EVIDENCE_ONLY_AFTER_PRIMARY_ITEM_MAPPING; NO_BACKFILL",
+      "shared_concept": false,
+      "runtime_enabled": false
+    },
+    {
+      "legacy_code": "giai-phuong-trinh-hdt",
+      "canonical_id": "giai-phuong-trinh-hdt",
+      "semantic_kind": "composite_skill",
+      "learner_counter_status": "PENDING",
+      "compatibility_behavior": "KEEP_LEGACY_TAG; FORMATIVE_ONLY_UNTIL_SEPARATE_APPROVAL",
+      "shared_concept": false,
+      "runtime_enabled": false
+    },
+    {
+      "legacy_code": "giai-pt-bang-nhan-tu",
+      "canonical_id": "giai-pt-bang-nhan-tu",
+      "semantic_kind": "skill",
+      "learner_counter_status": "YES",
+      "compatibility_behavior": "KEEP_LEGACY_TAG; FUTURE_V2_EVIDENCE_ONLY_AFTER_PRIMARY_ITEM_MAPPING; NO_BACKFILL",
+      "shared_concept": false,
+      "runtime_enabled": false
+    },
+    {
+      "legacy_code": "giu-dieu-kien-ban-dau",
+      "canonical_id": "giu-dieu-kien-ban-dau",
+      "semantic_kind": "diagnostic_skill",
+      "learner_counter_status": "YES",
+      "compatibility_behavior": "KEEP_LEGACY_TAG; FUTURE_V2_EVIDENCE_ONLY_AFTER_PRIMARY_ITEM_MAPPING; NO_BACKFILL",
+      "shared_concept": false,
+      "runtime_enabled": false
+    },
+    {
+      "legacy_code": "hai-phan-thuc-bang-nhau",
+      "canonical_id": "hai-phan-thuc-bang-nhau",
+      "semantic_kind": "skill",
+      "learner_counter_status": "YES",
+      "compatibility_behavior": "KEEP_LEGACY_TAG; FUTURE_V2_EVIDENCE_ONLY_AFTER_PRIMARY_ITEM_MAPPING; NO_BACKFILL",
+      "shared_concept": false,
+      "runtime_enabled": false
+    },
+    {
+      "legacy_code": "hang-tu-dong-dang",
+      "canonical_id": "hang-tu-dong-dang",
+      "semantic_kind": "skill",
+      "learner_counter_status": "YES",
+      "compatibility_behavior": "KEEP_LEGACY_TAG; FUTURE_V2_EVIDENCE_ONLY_AFTER_PRIMARY_ITEM_MAPPING; NO_BACKFILL",
+      "shared_concept": false,
+      "runtime_enabled": false
+    },
+    {
+      "legacy_code": "he-so-bac",
+      "canonical_id": "he-so-bac",
+      "semantic_kind": "skill",
+      "learner_counter_status": "YES",
+      "compatibility_behavior": "KEEP_LEGACY_TAG; FUTURE_V2_EVIDENCE_ONLY_AFTER_PRIMARY_ITEM_MAPPING; NO_BACKFILL",
+      "shared_concept": false,
+      "runtime_enabled": false
+    },
+    {
+      "legacy_code": "hieu-hai-binh-phuong",
+      "canonical_id": "hieu-hai-binh-phuong",
+      "semantic_kind": "skill",
+      "learner_counter_status": "YES",
+      "compatibility_behavior": "KEEP_LEGACY_TAG; FUTURE_V2_EVIDENCE_ONLY_AFTER_PRIMARY_ITEM_MAPPING; NO_BACKFILL",
+      "shared_concept": true,
+      "runtime_enabled": false
+    },
+    {
+      "legacy_code": "hieu-hai-lap-phuong",
+      "canonical_id": "hieu-hai-lap-phuong",
+      "semantic_kind": "skill",
+      "learner_counter_status": "YES",
+      "compatibility_behavior": "KEEP_LEGACY_TAG; FUTURE_V2_EVIDENCE_ONLY_AFTER_PRIMARY_ITEM_MAPPING; NO_BACKFILL",
+      "shared_concept": false,
+      "runtime_enabled": false
+    },
+    {
+      "legacy_code": "kiem-tra-phan-tich",
+      "canonical_id": "kiem-tra-phan-tich",
+      "semantic_kind": "task_family",
+      "learner_counter_status": "PENDING",
+      "compatibility_behavior": "KEEP_LEGACY_TAG; FORMATIVE_ONLY_UNTIL_SEPARATE_APPROVAL",
+      "shared_concept": false,
+      "runtime_enabled": false
+    },
+    {
+      "legacy_code": "lap-bieu-thuc",
+      "canonical_id": "lap-bieu-thuc",
+      "semantic_kind": "skill",
+      "learner_counter_status": "YES",
+      "compatibility_behavior": "KEEP_LEGACY_TAG; FUTURE_V2_EVIDENCE_ONLY_AFTER_PRIMARY_ITEM_MAPPING; NO_BACKFILL",
+      "shared_concept": false,
+      "runtime_enabled": false
+    },
+    {
+      "legacy_code": "lap-phuong-hieu",
+      "canonical_id": "lap-phuong-hieu",
+      "semantic_kind": "skill",
+      "learner_counter_status": "YES",
+      "compatibility_behavior": "KEEP_LEGACY_TAG; FUTURE_V2_EVIDENCE_ONLY_AFTER_PRIMARY_ITEM_MAPPING; NO_BACKFILL",
+      "shared_concept": false,
+      "runtime_enabled": false
+    },
+    {
+      "legacy_code": "lap-phuong-tong",
+      "canonical_id": "lap-phuong-tong",
+      "semantic_kind": "skill",
+      "learner_counter_status": "YES",
+      "compatibility_behavior": "KEEP_LEGACY_TAG; FUTURE_V2_EVIDENCE_ONLY_AFTER_PRIMARY_ITEM_MAPPING; NO_BACKFILL",
+      "shared_concept": false,
+      "runtime_enabled": false
+    },
+    {
+      "legacy_code": "nhan-biet-da-thuc",
+      "canonical_id": "nhan-biet-da-thuc",
+      "semantic_kind": "skill",
+      "learner_counter_status": "YES",
+      "compatibility_behavior": "KEEP_LEGACY_TAG; FUTURE_V2_EVIDENCE_ONLY_AFTER_PRIMARY_ITEM_MAPPING; NO_BACKFILL",
+      "shared_concept": false,
+      "runtime_enabled": false
+    },
+    {
+      "legacy_code": "nhan-biet-don-thuc",
+      "canonical_id": "nhan-biet-don-thuc",
+      "semantic_kind": "skill",
+      "learner_counter_status": "YES",
+      "compatibility_behavior": "KEEP_LEGACY_TAG; FUTURE_V2_EVIDENCE_ONLY_AFTER_PRIMARY_ITEM_MAPPING; NO_BACKFILL",
+      "shared_concept": false,
+      "runtime_enabled": false
+    },
+    {
+      "legacy_code": "nhan-biet-phan-thuc",
+      "canonical_id": "nhan-biet-phan-thuc",
+      "semantic_kind": "skill",
+      "learner_counter_status": "YES",
+      "compatibility_behavior": "KEEP_LEGACY_TAG; FUTURE_V2_EVIDENCE_ONLY_AFTER_PRIMARY_ITEM_MAPPING; NO_BACKFILL",
+      "shared_concept": false,
+      "runtime_enabled": false
+    },
+    {
+      "legacy_code": "nhan-bieu-thuc",
+      "canonical_id": "nhan-bieu-thuc",
+      "semantic_kind": "skill",
+      "learner_counter_status": "YES",
+      "compatibility_behavior": "KEEP_LEGACY_TAG; FUTURE_V2_EVIDENCE_ONLY_AFTER_PRIMARY_ITEM_MAPPING; NO_BACKFILL",
+      "shared_concept": false,
+      "runtime_enabled": false
+    },
+    {
+      "legacy_code": "nhan-dang-hdt",
+      "canonical_id": "nhan-dang-hdt",
+      "semantic_kind": "parent_category",
+      "learner_counter_status": "NO",
+      "compatibility_behavior": "KEEP_AS_METADATA; NEVER_DIRECT_MASTERY_COUNTER",
+      "shared_concept": false,
+      "runtime_enabled": false
+    },
+    {
+      "legacy_code": "nhan-dang-lap-phuong",
+      "canonical_id": "nhan-dang-lap-phuong",
+      "semantic_kind": "diagnostic_skill",
+      "learner_counter_status": "YES",
+      "compatibility_behavior": "KEEP_LEGACY_TAG; FUTURE_V2_EVIDENCE_ONLY_AFTER_PRIMARY_ITEM_MAPPING; NO_BACKFILL",
+      "shared_concept": false,
+      "runtime_enabled": false
+    },
+    {
+      "legacy_code": "nhan-phan-thuc",
+      "canonical_id": "nhan-phan-thuc",
+      "semantic_kind": "skill",
+      "learner_counter_status": "YES",
+      "compatibility_behavior": "KEEP_LEGACY_TAG; FUTURE_V2_EVIDENCE_ONLY_AFTER_PRIMARY_ITEM_MAPPING; NO_BACKFILL",
+      "shared_concept": false,
+      "runtime_enabled": false
+    },
+    {
+      "legacy_code": "nhan-tu-chung",
+      "canonical_id": "nhan-tu-chung",
+      "semantic_kind": "skill",
+      "learner_counter_status": "YES",
+      "compatibility_behavior": "KEEP_LEGACY_TAG; FUTURE_V2_EVIDENCE_ONLY_AFTER_PRIMARY_ITEM_MAPPING; NO_BACKFILL",
+      "shared_concept": false,
+      "runtime_enabled": false
+    },
+    {
+      "legacy_code": "nhom-hang-tu",
+      "canonical_id": "nhom-hang-tu",
+      "semantic_kind": "skill",
+      "learner_counter_status": "YES",
+      "compatibility_behavior": "KEEP_LEGACY_TAG; FUTURE_V2_EVIDENCE_ONLY_AFTER_PRIMARY_ITEM_MAPPING; NO_BACKFILL",
+      "shared_concept": false,
+      "runtime_enabled": false
+    },
+    {
+      "legacy_code": "phan-tich-hdt",
+      "canonical_id": "phan-tich-hdt",
+      "semantic_kind": "parent_category",
+      "learner_counter_status": "NO",
+      "compatibility_behavior": "KEEP_AS_METADATA; NEVER_DIRECT_MASTERY_COUNTER",
+      "shared_concept": false,
+      "runtime_enabled": false
+    },
+    {
+      "legacy_code": "phan-tich-tu-mau",
+      "canonical_id": "phan-tich-tu-mau",
+      "semantic_kind": "skill",
+      "learner_counter_status": "YES",
+      "compatibility_behavior": "KEEP_LEGACY_TAG; FUTURE_V2_EVIDENCE_ONLY_AFTER_PRIMARY_ITEM_MAPPING; NO_BACKFILL",
+      "shared_concept": false,
+      "runtime_enabled": false
+    },
+    {
+      "legacy_code": "phoi-hop-phuong-phap",
+      "canonical_id": "phoi-hop-phuong-phap",
+      "semantic_kind": "parent_category",
+      "learner_counter_status": "NO",
+      "compatibility_behavior": "KEEP_AS_METADATA; NEVER_DIRECT_MASTERY_COUNTER",
+      "shared_concept": false,
+      "runtime_enabled": false
+    },
+    {
+      "legacy_code": "quy-dong-mau-thuc",
+      "canonical_id": "quy-dong-mau-thuc",
+      "semantic_kind": "skill",
+      "learner_counter_status": "YES",
+      "compatibility_behavior": "KEEP_LEGACY_TAG; FUTURE_V2_EVIDENCE_ONLY_AFTER_PRIMARY_ITEM_MAPPING; NO_BACKFILL",
+      "shared_concept": false,
+      "runtime_enabled": false
+    },
+    {
+      "legacy_code": "rut-gon-hdt",
+      "canonical_id": "rut-gon-hdt",
+      "semantic_kind": "task_family",
+      "learner_counter_status": "PENDING",
+      "compatibility_behavior": "KEEP_LEGACY_TAG; FORMATIVE_ONLY_UNTIL_SEPARATE_APPROVAL",
+      "shared_concept": false,
+      "runtime_enabled": false
+    },
+    {
+      "legacy_code": "rut-gon-phan-thuc",
+      "canonical_id": "rut-gon-phan-thuc",
+      "semantic_kind": "skill",
+      "learner_counter_status": "YES",
+      "compatibility_behavior": "KEEP_LEGACY_TAG; FUTURE_V2_EVIDENCE_ONLY_AFTER_PRIMARY_ITEM_MAPPING; NO_BACKFILL",
+      "shared_concept": false,
+      "runtime_enabled": false
+    },
+    {
+      "legacy_code": "tach-hang-tu-giua",
+      "canonical_id": "tach-hang-tu-giua",
+      "semantic_kind": "skill",
+      "learner_counter_status": "YES",
+      "compatibility_behavior": "KEEP_LEGACY_TAG; FUTURE_V2_EVIDENCE_ONLY_AFTER_PRIMARY_ITEM_MAPPING; NO_BACKFILL",
+      "shared_concept": false,
+      "runtime_enabled": false
+    },
+    {
+      "legacy_code": "thu-gon-da-thuc",
+      "canonical_id": "thu-gon-da-thuc",
+      "semantic_kind": "skill",
+      "learner_counter_status": "YES",
+      "compatibility_behavior": "KEEP_LEGACY_TAG; FUTURE_V2_EVIDENCE_ONLY_AFTER_PRIMARY_ITEM_MAPPING; NO_BACKFILL",
+      "shared_concept": false,
+      "runtime_enabled": false
+    },
+    {
+      "legacy_code": "tim-gia-tri-nguyen",
+      "canonical_id": "tim-gia-tri-nguyen",
+      "semantic_kind": "extension_skill",
+      "learner_counter_status": "PENDING",
+      "compatibility_behavior": "KEEP_LEGACY_TAG; FORMATIVE_ONLY_UNTIL_SEPARATE_APPROVAL",
+      "shared_concept": false,
+      "runtime_enabled": false
+    },
+    {
+      "legacy_code": "tinh-gia-tri-bieu-thuc",
+      "canonical_id": "tinh-gia-tri-bieu-thuc",
+      "semantic_kind": "skill",
+      "learner_counter_status": "YES",
+      "compatibility_behavior": "KEEP_LEGACY_TAG; FUTURE_V2_EVIDENCE_ONLY_AFTER_PRIMARY_ITEM_MAPPING; NO_BACKFILL",
+      "shared_concept": false,
+      "runtime_enabled": false
+    },
+    {
+      "legacy_code": "tinh-gia-tri-phan-thuc",
+      "canonical_id": "tinh-gia-tri-phan-thuc",
+      "semantic_kind": "skill",
+      "learner_counter_status": "YES",
+      "compatibility_behavior": "KEEP_LEGACY_TAG; FUTURE_V2_EVIDENCE_ONLY_AFTER_PRIMARY_ITEM_MAPPING; NO_BACKFILL",
+      "shared_concept": false,
+      "runtime_enabled": false
+    },
+    {
+      "legacy_code": "tinh-nhanh-hdt",
+      "canonical_id": "tinh-nhanh-hdt",
+      "semantic_kind": "task_family",
+      "learner_counter_status": "PENDING",
+      "compatibility_behavior": "KEEP_LEGACY_TAG; FORMATIVE_ONLY_UNTIL_SEPARATE_APPROVAL",
+      "shared_concept": false,
+      "runtime_enabled": false
+    },
+    {
+      "legacy_code": "tinh-phan-phoi",
+      "canonical_id": "tinh-phan-phoi",
+      "semantic_kind": "method",
+      "learner_counter_status": "NO",
+      "compatibility_behavior": "KEEP_AS_METADATA; NEVER_DIRECT_MASTERY_COUNTER",
+      "shared_concept": false,
+      "runtime_enabled": false
+    },
+    {
+      "legacy_code": "tong-hai-lap-phuong",
+      "canonical_id": "tong-hai-lap-phuong",
+      "semantic_kind": "skill",
+      "learner_counter_status": "YES",
+      "compatibility_behavior": "KEEP_LEGACY_TAG; FUTURE_V2_EVIDENCE_ONLY_AFTER_PRIMARY_ITEM_MAPPING; NO_BACKFILL",
+      "shared_concept": false,
+      "runtime_enabled": false
+    },
+    {
+      "legacy_code": "tong-hieu-lap-phuong",
+      "canonical_id": "tong-hieu-lap-phuong",
+      "semantic_kind": "parent_category",
+      "learner_counter_status": "NO",
+      "compatibility_behavior": "KEEP_AS_METADATA; NEVER_DIRECT_MASTERY_COUNTER",
+      "shared_concept": false,
+      "runtime_enabled": false
+    },
+    {
+      "legacy_code": "ung-dung-phan-tich",
+      "canonical_id": "ung-dung-phan-tich",
+      "semantic_kind": "parent_category",
+      "learner_counter_status": "NO",
+      "compatibility_behavior": "KEEP_AS_METADATA; NEVER_DIRECT_MASTERY_COUNTER",
+      "shared_concept": false,
+      "runtime_enabled": false
+    }
+  ],
+  "reviewed_item_overlays": [
+    {
+      "source_items": [
+        "FAC06V1_077",
+        "FAC06V1_078",
+        "FAC06V1_079",
+        "FAC06V1_080",
+        "FAC06V1_081",
+        "FAC06V1_082",
+        "FAC06V1_083",
+        "FAC06V1_084",
+        "FAC06V1_085",
+        "FAC06V1_086",
+        "FAC06V1_087",
+        "FAC06V1_088",
+        "FAC06V1_089",
+        "FAC06V1_090",
+        "FAC06V1_091",
+        "FAC06V1_092"
+      ],
+      "legacy_tag": "phoi-hop-phuong-phap",
+      "canonical_skill_candidate": "phan-tich-da-thuc-hoan-toan",
+      "evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "credit_mode": "FORMATIVE_ONLY_STEPWISE_EVIDENCE_REQUIRED",
+      "runtime_enabled": false,
+      "rule": "This overlay applies only to FAC06V1_077–092; it is not a global alias for phoi-hop-phuong-phap."
+    }
+  ],
+  "non_counter_nodes": [
+    "bai-toan-thuc-te",
+    "nhan-dang-hdt",
+    "phan-tich-hdt",
+    "phoi-hop-phuong-phap",
+    "tinh-phan-phoi",
+    "tong-hieu-lap-phuong",
+    "ung-dung-phan-tich"
+  ],
+  "pending_counter_nodes": [
+    "bien-doi-nhieu-buoc",
+    "bieu-thuc-nhieu-phep-tinh",
+    "giai-phuong-trinh-hdt",
+    "kiem-tra-phan-tich",
+    "rut-gon-hdt",
+    "tim-gia-tri-nguyen",
+    "tinh-nhanh-hdt",
+    "phan-tich-da-thuc-hoan-toan"
+  ],
+  "safety": [
+    "Do not reinterpret legacy tag statistics as canonical mastery.",
+    "Do not combine multiple tags on one old question into multiple canonical evidence events.",
+    "Do not create historical v2 events from localStorage.",
+    "Do not show NO/PENDING nodes as mastered learner counters.",
+    "Do not set a mastery threshold in this phase."
+  ]
+}
