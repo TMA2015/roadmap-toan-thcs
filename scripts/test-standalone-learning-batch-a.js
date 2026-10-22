@@ -69,6 +69,7 @@ for(const [num,slug,layer,wsSha,bankSha,label,expectedCount] of specs){
  const expanded23=slug==="23-xac-suat";
  const baselineCards=expanded02
    ? w.cards.filter(card=>/^num02-g6-core-[1-5]$/.test(card.id))
+        .map(card=>({...card,micro_practice:(card.micro_practice||[]).filter(id=>Number(id.split("_").pop())<=52)}))
    : expanded21
      ? w.cards.filter(card=>["sta21-core-1","sta21-core-2","sta21-core-3","sta21-core-4","sta21-core-5"].includes(card.id))
          .map(card=>({...card,micro_practice:(card.micro_practice||[]).filter(id=>Number(id.split("_").pop())<=20)}))
