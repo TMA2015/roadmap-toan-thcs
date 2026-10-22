@@ -1,0 +1,630 @@
+{
+  "schema": "math-skill-overlay-proposal-v1",
+  "packet_id": "MATH-SKILL-TAXONOMY-B06-20260928",
+  "source_main_sha": "88143e6b2690edfe721f8d74d2dbcb251bc55ab3",
+  "phase": "B",
+  "status": "PROPOSAL_ONLY",
+  "implementation_status": "NOT_IMPLEMENTED",
+  "count": 35,
+  "source_banks": [
+    {
+      "path": "docs/assets/data/practice/09-he-phuong-trinh-micro-v1.json",
+      "sha": "39b7154b7da71b818a367fdfe1d869caaa1bbfbd"
+    },
+    {
+      "path": "docs/assets/data/practice/09-he-phuong-trinh-v1-03.json",
+      "sha": "18e4f5e4d00956e3f6a0a979cf5d59f5afb506e3"
+    },
+    {
+      "path": "docs/assets/data/practice/09-he-phuong-trinh-v1-04.json",
+      "sha": "09e3c0269d42addb9a21b3fecf6fe4c3e811ce2f"
+    }
+  ],
+  "items": [
+    {
+      "item_id": "SYS09MICRO_013",
+      "legacy_tags": [
+        "lap-he-bai-toan"
+      ],
+      "assessed_target_candidate": "full_system_recognition",
+      "context_candidate": "number_sum_difference",
+      "clone_cluster_candidate": "SYS09_NUM_SUM_DIFF",
+      "evidence_mode": "multiple_choice_recognition",
+      "independent_written_model_evidence": false,
+      "dependent_system_flag": false,
+      "source_bank_sha": "39b7154b7da71b818a367fdfe1d869caaa1bbfbd",
+      "learner_counter_migration": "NONE",
+      "runtime_enabled": false,
+      "core_readiness_credit": false
+    },
+    {
+      "item_id": "SYS09MICRO_014",
+      "legacy_tags": [
+        "bai-toan-so"
+      ],
+      "assessed_target_candidate": "component_expression_recognition",
+      "context_candidate": "place_value_two_digit_number",
+      "clone_cluster_candidate": null,
+      "evidence_mode": "multiple_choice_recognition",
+      "independent_written_model_evidence": false,
+      "dependent_system_flag": false,
+      "source_bank_sha": "39b7154b7da71b818a367fdfe1d869caaa1bbfbd",
+      "learner_counter_migration": "NONE",
+      "runtime_enabled": false,
+      "core_readiness_credit": false
+    },
+    {
+      "item_id": "SYS09MICRO_015",
+      "legacy_tags": [
+        "chuyen-dong-he"
+      ],
+      "assessed_target_candidate": "single_equation_recognition",
+      "context_candidate": "opposite_direction_motion",
+      "clone_cluster_candidate": null,
+      "evidence_mode": "multiple_choice_recognition",
+      "independent_written_model_evidence": false,
+      "dependent_system_flag": false,
+      "source_bank_sha": "39b7154b7da71b818a367fdfe1d869caaa1bbfbd",
+      "learner_counter_migration": "NONE",
+      "runtime_enabled": false,
+      "core_readiness_credit": false
+    },
+    {
+      "item_id": "SYS09V1_089",
+      "legacy_tags": [
+        "lap-he-bai-toan",
+        "bai-toan-so"
+      ],
+      "assessed_target_candidate": "full_system_recognition",
+      "context_candidate": "number_sum_difference",
+      "clone_cluster_candidate": "SYS09_NUM_SUM_DIFF",
+      "evidence_mode": "multiple_choice_recognition",
+      "independent_written_model_evidence": false,
+      "dependent_system_flag": false,
+      "source_bank_sha": "18e4f5e4d00956e3f6a0a979cf5d59f5afb506e3",
+      "learner_counter_migration": "NONE",
+      "runtime_enabled": false,
+      "core_readiness_credit": false
+    },
+    {
+      "item_id": "SYS09V1_090",
+      "legacy_tags": [
+        "lap-he-bai-toan",
+        "bai-toan-so"
+      ],
+      "assessed_target_candidate": "full_system_recognition",
+      "context_candidate": "number_sum_difference",
+      "clone_cluster_candidate": "SYS09_NUM_SUM_DIFF",
+      "evidence_mode": "multiple_choice_recognition",
+      "independent_written_model_evidence": false,
+      "dependent_system_flag": false,
+      "source_bank_sha": "18e4f5e4d00956e3f6a0a979cf5d59f5afb506e3",
+      "learner_counter_migration": "NONE",
+      "runtime_enabled": false,
+      "core_readiness_credit": false
+    },
+    {
+      "item_id": "SYS09V1_091",
+      "legacy_tags": [
+        "lap-he-bai-toan",
+        "bai-toan-so"
+      ],
+      "assessed_target_candidate": "full_system_recognition",
+      "context_candidate": "number_sum_difference",
+      "clone_cluster_candidate": "SYS09_NUM_SUM_DIFF",
+      "evidence_mode": "multiple_choice_recognition",
+      "independent_written_model_evidence": false,
+      "dependent_system_flag": false,
+      "source_bank_sha": "09e3c0269d42addb9a21b3fecf6fe4c3e811ce2f",
+      "learner_counter_migration": "NONE",
+      "runtime_enabled": false,
+      "core_readiness_credit": false
+    },
+    {
+      "item_id": "SYS09V1_092",
+      "legacy_tags": [
+        "lap-he-bai-toan",
+        "bai-toan-so"
+      ],
+      "assessed_target_candidate": "full_system_recognition",
+      "context_candidate": "number_sum_difference",
+      "clone_cluster_candidate": "SYS09_NUM_SUM_DIFF",
+      "evidence_mode": "multiple_choice_recognition",
+      "independent_written_model_evidence": false,
+      "dependent_system_flag": false,
+      "source_bank_sha": "09e3c0269d42addb9a21b3fecf6fe4c3e811ce2f",
+      "learner_counter_migration": "NONE",
+      "runtime_enabled": false,
+      "core_readiness_credit": false
+    },
+    {
+      "item_id": "SYS09V1_093",
+      "legacy_tags": [
+        "lap-he-bai-toan",
+        "bai-toan-so"
+      ],
+      "assessed_target_candidate": "full_system_recognition",
+      "context_candidate": "number_sum_difference",
+      "clone_cluster_candidate": "SYS09_NUM_SUM_DIFF",
+      "evidence_mode": "multiple_choice_recognition",
+      "independent_written_model_evidence": false,
+      "dependent_system_flag": false,
+      "source_bank_sha": "09e3c0269d42addb9a21b3fecf6fe4c3e811ce2f",
+      "learner_counter_migration": "NONE",
+      "runtime_enabled": false,
+      "core_readiness_credit": false
+    },
+    {
+      "item_id": "SYS09V1_094",
+      "legacy_tags": [
+        "lap-he-bai-toan",
+        "bai-toan-so"
+      ],
+      "assessed_target_candidate": "full_system_recognition",
+      "context_candidate": "number_sum_difference",
+      "clone_cluster_candidate": "SYS09_NUM_SUM_DIFF",
+      "evidence_mode": "multiple_choice_recognition",
+      "independent_written_model_evidence": false,
+      "dependent_system_flag": false,
+      "source_bank_sha": "09e3c0269d42addb9a21b3fecf6fe4c3e811ce2f",
+      "learner_counter_migration": "NONE",
+      "runtime_enabled": false,
+      "core_readiness_credit": false
+    },
+    {
+      "item_id": "SYS09V1_095",
+      "legacy_tags": [
+        "lap-he-bai-toan",
+        "bai-toan-so"
+      ],
+      "assessed_target_candidate": "full_system_recognition",
+      "context_candidate": "number_sum_difference",
+      "clone_cluster_candidate": "SYS09_NUM_SUM_DIFF",
+      "evidence_mode": "multiple_choice_recognition",
+      "independent_written_model_evidence": false,
+      "dependent_system_flag": false,
+      "source_bank_sha": "09e3c0269d42addb9a21b3fecf6fe4c3e811ce2f",
+      "learner_counter_migration": "NONE",
+      "runtime_enabled": false,
+      "core_readiness_credit": false
+    },
+    {
+      "item_id": "SYS09V1_096",
+      "legacy_tags": [
+        "lap-he-bai-toan",
+        "bai-toan-so"
+      ],
+      "assessed_target_candidate": "full_system_recognition",
+      "context_candidate": "number_sum_difference",
+      "clone_cluster_candidate": "SYS09_NUM_SUM_DIFF",
+      "evidence_mode": "multiple_choice_recognition",
+      "independent_written_model_evidence": false,
+      "dependent_system_flag": false,
+      "source_bank_sha": "09e3c0269d42addb9a21b3fecf6fe4c3e811ce2f",
+      "learner_counter_migration": "NONE",
+      "runtime_enabled": false,
+      "core_readiness_credit": false
+    },
+    {
+      "item_id": "SYS09V1_097",
+      "legacy_tags": [
+        "lap-he-bai-toan",
+        "bai-toan-so"
+      ],
+      "assessed_target_candidate": "full_system_recognition",
+      "context_candidate": "number_sum_difference",
+      "clone_cluster_candidate": "SYS09_NUM_SUM_DIFF",
+      "evidence_mode": "multiple_choice_recognition",
+      "independent_written_model_evidence": false,
+      "dependent_system_flag": false,
+      "source_bank_sha": "09e3c0269d42addb9a21b3fecf6fe4c3e811ce2f",
+      "learner_counter_migration": "NONE",
+      "runtime_enabled": false,
+      "core_readiness_credit": false
+    },
+    {
+      "item_id": "SYS09V1_098",
+      "legacy_tags": [
+        "lap-he-bai-toan",
+        "bai-toan-so"
+      ],
+      "assessed_target_candidate": "full_system_recognition",
+      "context_candidate": "number_sum_difference",
+      "clone_cluster_candidate": "SYS09_NUM_SUM_DIFF",
+      "evidence_mode": "multiple_choice_recognition",
+      "independent_written_model_evidence": false,
+      "dependent_system_flag": false,
+      "source_bank_sha": "09e3c0269d42addb9a21b3fecf6fe4c3e811ce2f",
+      "learner_counter_migration": "NONE",
+      "runtime_enabled": false,
+      "core_readiness_credit": false
+    },
+    {
+      "item_id": "SYS09V1_099",
+      "legacy_tags": [
+        "lap-he-bai-toan",
+        "bai-toan-so"
+      ],
+      "assessed_target_candidate": "full_system_recognition",
+      "context_candidate": "number_sum_difference",
+      "clone_cluster_candidate": "SYS09_NUM_SUM_DIFF",
+      "evidence_mode": "multiple_choice_recognition",
+      "independent_written_model_evidence": false,
+      "dependent_system_flag": false,
+      "source_bank_sha": "09e3c0269d42addb9a21b3fecf6fe4c3e811ce2f",
+      "learner_counter_migration": "NONE",
+      "runtime_enabled": false,
+      "core_readiness_credit": false
+    },
+    {
+      "item_id": "SYS09V1_100",
+      "legacy_tags": [
+        "lap-he-bai-toan",
+        "bai-toan-so"
+      ],
+      "assessed_target_candidate": "full_system_recognition",
+      "context_candidate": "number_sum_difference",
+      "clone_cluster_candidate": "SYS09_NUM_SUM_DIFF",
+      "evidence_mode": "multiple_choice_recognition",
+      "independent_written_model_evidence": false,
+      "dependent_system_flag": false,
+      "source_bank_sha": "09e3c0269d42addb9a21b3fecf6fe4c3e811ce2f",
+      "learner_counter_migration": "NONE",
+      "runtime_enabled": false,
+      "core_readiness_credit": false
+    },
+    {
+      "item_id": "SYS09V1_101",
+      "legacy_tags": [
+        "lap-he-bai-toan",
+        "chuyen-dong-he"
+      ],
+      "assessed_target_candidate": "full_system_recognition",
+      "context_candidate": "opposite_direction_motion",
+      "clone_cluster_candidate": "SYS09_MOTION_OPP",
+      "evidence_mode": "multiple_choice_recognition",
+      "independent_written_model_evidence": false,
+      "dependent_system_flag": false,
+      "source_bank_sha": "09e3c0269d42addb9a21b3fecf6fe4c3e811ce2f",
+      "learner_counter_migration": "NONE",
+      "runtime_enabled": false,
+      "core_readiness_credit": false
+    },
+    {
+      "item_id": "SYS09V1_102",
+      "legacy_tags": [
+        "lap-he-bai-toan",
+        "chuyen-dong-he"
+      ],
+      "assessed_target_candidate": "full_system_recognition",
+      "context_candidate": "opposite_direction_motion",
+      "clone_cluster_candidate": "SYS09_MOTION_OPP",
+      "evidence_mode": "multiple_choice_recognition",
+      "independent_written_model_evidence": false,
+      "dependent_system_flag": false,
+      "source_bank_sha": "09e3c0269d42addb9a21b3fecf6fe4c3e811ce2f",
+      "learner_counter_migration": "NONE",
+      "runtime_enabled": false,
+      "core_readiness_credit": false
+    },
+    {
+      "item_id": "SYS09V1_103",
+      "legacy_tags": [
+        "lap-he-bai-toan",
+        "chuyen-dong-he"
+      ],
+      "assessed_target_candidate": "full_system_recognition",
+      "context_candidate": "opposite_direction_motion",
+      "clone_cluster_candidate": "SYS09_MOTION_OPP",
+      "evidence_mode": "multiple_choice_recognition",
+      "independent_written_model_evidence": false,
+      "dependent_system_flag": false,
+      "source_bank_sha": "09e3c0269d42addb9a21b3fecf6fe4c3e811ce2f",
+      "learner_counter_migration": "NONE",
+      "runtime_enabled": false,
+      "core_readiness_credit": false
+    },
+    {
+      "item_id": "SYS09V1_104",
+      "legacy_tags": [
+        "lap-he-bai-toan",
+        "chuyen-dong-he"
+      ],
+      "assessed_target_candidate": "full_system_recognition",
+      "context_candidate": "opposite_direction_motion",
+      "clone_cluster_candidate": "SYS09_MOTION_OPP",
+      "evidence_mode": "multiple_choice_recognition",
+      "independent_written_model_evidence": false,
+      "dependent_system_flag": false,
+      "source_bank_sha": "09e3c0269d42addb9a21b3fecf6fe4c3e811ce2f",
+      "learner_counter_migration": "NONE",
+      "runtime_enabled": false,
+      "core_readiness_credit": false
+    },
+    {
+      "item_id": "SYS09V1_105",
+      "legacy_tags": [
+        "lap-he-bai-toan",
+        "chuyen-dong-he"
+      ],
+      "assessed_target_candidate": "full_system_recognition",
+      "context_candidate": "opposite_direction_motion",
+      "clone_cluster_candidate": "SYS09_MOTION_OPP",
+      "evidence_mode": "multiple_choice_recognition",
+      "independent_written_model_evidence": false,
+      "dependent_system_flag": false,
+      "source_bank_sha": "09e3c0269d42addb9a21b3fecf6fe4c3e811ce2f",
+      "learner_counter_migration": "NONE",
+      "runtime_enabled": false,
+      "core_readiness_credit": false
+    },
+    {
+      "item_id": "SYS09V1_106",
+      "legacy_tags": [
+        "lap-he-bai-toan",
+        "chuyen-dong-he"
+      ],
+      "assessed_target_candidate": "full_system_recognition",
+      "context_candidate": "opposite_direction_motion",
+      "clone_cluster_candidate": "SYS09_MOTION_OPP",
+      "evidence_mode": "multiple_choice_recognition",
+      "independent_written_model_evidence": false,
+      "dependent_system_flag": false,
+      "source_bank_sha": "09e3c0269d42addb9a21b3fecf6fe4c3e811ce2f",
+      "learner_counter_migration": "NONE",
+      "runtime_enabled": false,
+      "core_readiness_credit": false
+    },
+    {
+      "item_id": "SYS09V1_107",
+      "legacy_tags": [
+        "lap-he-bai-toan",
+        "chuyen-dong-he"
+      ],
+      "assessed_target_candidate": "full_system_recognition",
+      "context_candidate": "opposite_direction_motion",
+      "clone_cluster_candidate": "SYS09_MOTION_OPP",
+      "evidence_mode": "multiple_choice_recognition",
+      "independent_written_model_evidence": false,
+      "dependent_system_flag": false,
+      "source_bank_sha": "09e3c0269d42addb9a21b3fecf6fe4c3e811ce2f",
+      "learner_counter_migration": "NONE",
+      "runtime_enabled": false,
+      "core_readiness_credit": false
+    },
+    {
+      "item_id": "SYS09V1_108",
+      "legacy_tags": [
+        "lap-he-bai-toan",
+        "chuyen-dong-he"
+      ],
+      "assessed_target_candidate": "full_system_recognition",
+      "context_candidate": "opposite_direction_motion",
+      "clone_cluster_candidate": "SYS09_MOTION_OPP",
+      "evidence_mode": "multiple_choice_recognition",
+      "independent_written_model_evidence": false,
+      "dependent_system_flag": false,
+      "source_bank_sha": "09e3c0269d42addb9a21b3fecf6fe4c3e811ce2f",
+      "learner_counter_migration": "NONE",
+      "runtime_enabled": false,
+      "core_readiness_credit": false
+    },
+    {
+      "item_id": "SYS09V1_109",
+      "legacy_tags": [
+        "lap-he-bai-toan",
+        "chuyen-dong-he"
+      ],
+      "assessed_target_candidate": "full_system_recognition",
+      "context_candidate": "opposite_direction_motion",
+      "clone_cluster_candidate": "SYS09_MOTION_OPP",
+      "evidence_mode": "multiple_choice_recognition",
+      "independent_written_model_evidence": false,
+      "dependent_system_flag": false,
+      "source_bank_sha": "09e3c0269d42addb9a21b3fecf6fe4c3e811ce2f",
+      "learner_counter_migration": "NONE",
+      "runtime_enabled": false,
+      "core_readiness_credit": false
+    },
+    {
+      "item_id": "SYS09V1_110",
+      "legacy_tags": [
+        "lap-he-bai-toan",
+        "chuyen-dong-he"
+      ],
+      "assessed_target_candidate": "full_system_recognition",
+      "context_candidate": "opposite_direction_motion",
+      "clone_cluster_candidate": "SYS09_MOTION_OPP",
+      "evidence_mode": "multiple_choice_recognition",
+      "independent_written_model_evidence": false,
+      "dependent_system_flag": false,
+      "source_bank_sha": "09e3c0269d42addb9a21b3fecf6fe4c3e811ce2f",
+      "learner_counter_migration": "NONE",
+      "runtime_enabled": false,
+      "core_readiness_credit": false
+    },
+    {
+      "item_id": "SYS09V1_111",
+      "legacy_tags": [
+        "lap-he-bai-toan",
+        "nang-suat-he"
+      ],
+      "assessed_target_candidate": "full_system_recognition",
+      "context_candidate": "sales_quantity_and_revenue",
+      "clone_cluster_candidate": "SYS09_REVENUE",
+      "evidence_mode": "multiple_choice_recognition",
+      "independent_written_model_evidence": false,
+      "dependent_system_flag": false,
+      "source_bank_sha": "09e3c0269d42addb9a21b3fecf6fe4c3e811ce2f",
+      "learner_counter_migration": "NONE",
+      "runtime_enabled": false,
+      "core_readiness_credit": false
+    },
+    {
+      "item_id": "SYS09V1_112",
+      "legacy_tags": [
+        "lap-he-bai-toan",
+        "nang-suat-he"
+      ],
+      "assessed_target_candidate": "full_system_recognition",
+      "context_candidate": "sales_quantity_and_revenue",
+      "clone_cluster_candidate": "SYS09_REVENUE",
+      "evidence_mode": "multiple_choice_recognition",
+      "independent_written_model_evidence": false,
+      "dependent_system_flag": false,
+      "source_bank_sha": "09e3c0269d42addb9a21b3fecf6fe4c3e811ce2f",
+      "learner_counter_migration": "NONE",
+      "runtime_enabled": false,
+      "core_readiness_credit": false
+    },
+    {
+      "item_id": "SYS09V1_113",
+      "legacy_tags": [
+        "lap-he-bai-toan",
+        "nang-suat-he"
+      ],
+      "assessed_target_candidate": "full_system_recognition",
+      "context_candidate": "sales_quantity_and_revenue",
+      "clone_cluster_candidate": "SYS09_REVENUE",
+      "evidence_mode": "multiple_choice_recognition",
+      "independent_written_model_evidence": false,
+      "dependent_system_flag": false,
+      "source_bank_sha": "09e3c0269d42addb9a21b3fecf6fe4c3e811ce2f",
+      "learner_counter_migration": "NONE",
+      "runtime_enabled": false,
+      "core_readiness_credit": false
+    },
+    {
+      "item_id": "SYS09V1_114",
+      "legacy_tags": [
+        "lap-he-bai-toan",
+        "nang-suat-he"
+      ],
+      "assessed_target_candidate": "full_system_recognition",
+      "context_candidate": "sales_quantity_and_revenue",
+      "clone_cluster_candidate": "SYS09_REVENUE",
+      "evidence_mode": "multiple_choice_recognition",
+      "independent_written_model_evidence": false,
+      "dependent_system_flag": false,
+      "source_bank_sha": "09e3c0269d42addb9a21b3fecf6fe4c3e811ce2f",
+      "learner_counter_migration": "NONE",
+      "runtime_enabled": false,
+      "core_readiness_credit": false
+    },
+    {
+      "item_id": "SYS09V1_115",
+      "legacy_tags": [
+        "lap-he-bai-toan",
+        "nang-suat-he"
+      ],
+      "assessed_target_candidate": "full_system_recognition",
+      "context_candidate": "sales_quantity_and_revenue",
+      "clone_cluster_candidate": "SYS09_REVENUE",
+      "evidence_mode": "multiple_choice_recognition",
+      "independent_written_model_evidence": false,
+      "dependent_system_flag": true,
+      "source_bank_sha": "09e3c0269d42addb9a21b3fecf6fe4c3e811ce2f",
+      "learner_counter_migration": "NONE",
+      "runtime_enabled": false,
+      "core_readiness_credit": false
+    },
+    {
+      "item_id": "SYS09V1_116",
+      "legacy_tags": [
+        "lap-he-bai-toan",
+        "nang-suat-he"
+      ],
+      "assessed_target_candidate": "full_system_recognition",
+      "context_candidate": "sales_quantity_and_revenue",
+      "clone_cluster_candidate": "SYS09_REVENUE",
+      "evidence_mode": "multiple_choice_recognition",
+      "independent_written_model_evidence": false,
+      "dependent_system_flag": true,
+      "source_bank_sha": "09e3c0269d42addb9a21b3fecf6fe4c3e811ce2f",
+      "learner_counter_migration": "NONE",
+      "runtime_enabled": false,
+      "core_readiness_credit": false
+    },
+    {
+      "item_id": "SYS09V1_117",
+      "legacy_tags": [
+        "lap-he-bai-toan",
+        "nang-suat-he"
+      ],
+      "assessed_target_candidate": "full_system_recognition",
+      "context_candidate": "sales_quantity_and_revenue",
+      "clone_cluster_candidate": "SYS09_REVENUE",
+      "evidence_mode": "multiple_choice_recognition",
+      "independent_written_model_evidence": false,
+      "dependent_system_flag": false,
+      "source_bank_sha": "09e3c0269d42addb9a21b3fecf6fe4c3e811ce2f",
+      "learner_counter_migration": "NONE",
+      "runtime_enabled": false,
+      "core_readiness_credit": false
+    },
+    {
+      "item_id": "SYS09V1_118",
+      "legacy_tags": [
+        "lap-he-bai-toan",
+        "nang-suat-he"
+      ],
+      "assessed_target_candidate": "full_system_recognition",
+      "context_candidate": "sales_quantity_and_revenue",
+      "clone_cluster_candidate": "SYS09_REVENUE",
+      "evidence_mode": "multiple_choice_recognition",
+      "independent_written_model_evidence": false,
+      "dependent_system_flag": false,
+      "source_bank_sha": "09e3c0269d42addb9a21b3fecf6fe4c3e811ce2f",
+      "learner_counter_migration": "NONE",
+      "runtime_enabled": false,
+      "core_readiness_credit": false
+    },
+    {
+      "item_id": "SYS09V1_119",
+      "legacy_tags": [
+        "lap-he-bai-toan",
+        "nang-suat-he"
+      ],
+      "assessed_target_candidate": "full_system_recognition",
+      "context_candidate": "sales_quantity_and_revenue",
+      "clone_cluster_candidate": "SYS09_REVENUE",
+      "evidence_mode": "multiple_choice_recognition",
+      "independent_written_model_evidence": false,
+      "dependent_system_flag": false,
+      "source_bank_sha": "09e3c0269d42addb9a21b3fecf6fe4c3e811ce2f",
+      "learner_counter_migration": "NONE",
+      "runtime_enabled": false,
+      "core_readiness_credit": false
+    },
+    {
+      "item_id": "SYS09V1_120",
+      "legacy_tags": [
+        "lap-he-bai-toan",
+        "nang-suat-he"
+      ],
+      "assessed_target_candidate": "full_system_recognition",
+      "context_candidate": "sales_quantity_and_revenue",
+      "clone_cluster_candidate": "SYS09_REVENUE",
+      "evidence_mode": "multiple_choice_recognition",
+      "independent_written_model_evidence": false,
+      "dependent_system_flag": false,
+      "source_bank_sha": "09e3c0269d42addb9a21b3fecf6fe4c3e811ce2f",
+      "learner_counter_migration": "NONE",
+      "runtime_enabled": false,
+      "core_readiness_credit": false
+    }
+  ],
+  "clone_counts": {
+    "SYS09_NUM_SUM_DIFF": 13,
+    "SYS09_MOTION_OPP": 10,
+    "SYS09_REVENUE": 10
+  },
+  "safety": {
+    "original_ids_unchanged": true,
+    "original_skill_tags_unchanged": true,
+    "old_counters_unchanged": true,
+    "legacy_counter_alias_merge": false,
+    "runtime_enabled": false,
+    "core_readiness_credit": false
+  }
+}

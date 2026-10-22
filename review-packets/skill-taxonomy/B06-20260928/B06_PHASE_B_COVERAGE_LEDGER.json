@@ -1,0 +1,73 @@
+{
+  "schema": "skill-taxonomy-review-reconciliation-v1",
+  "packet_id": "MATH-SKILL-TAXONOMY-B06-20260928",
+  "source_main_sha": "88143e6b2690edfe721f8d74d2dbcb251bc55ab3",
+  "phase": "B",
+  "review_scope_count": 35,
+  "reviewed_ids": [
+    "SYS09MICRO_013",
+    "SYS09MICRO_014",
+    "SYS09MICRO_015",
+    "SYS09V1_089",
+    "SYS09V1_090",
+    "SYS09V1_091",
+    "SYS09V1_092",
+    "SYS09V1_093",
+    "SYS09V1_094",
+    "SYS09V1_095",
+    "SYS09V1_096",
+    "SYS09V1_097",
+    "SYS09V1_098",
+    "SYS09V1_099",
+    "SYS09V1_100",
+    "SYS09V1_101",
+    "SYS09V1_102",
+    "SYS09V1_103",
+    "SYS09V1_104",
+    "SYS09V1_105",
+    "SYS09V1_106",
+    "SYS09V1_107",
+    "SYS09V1_108",
+    "SYS09V1_109",
+    "SYS09V1_110",
+    "SYS09V1_111",
+    "SYS09V1_112",
+    "SYS09V1_113",
+    "SYS09V1_114",
+    "SYS09V1_115",
+    "SYS09V1_116",
+    "SYS09V1_117",
+    "SYS09V1_118",
+    "SYS09V1_119",
+    "SYS09V1_120"
+  ],
+  "missing_ids": [],
+  "duplicate_ids": [],
+  "unexpected_ids": [],
+  "reviewer_status_counts": {
+    "PASS": 35,
+    "REVISION_REQUIRED": 0,
+    "INSUFFICIENT_EVIDENCE": 0,
+    "NOT_REVIEWED": 0
+  },
+  "coverage_source": "Initial NotebookLM 24 complete rows plus follow-up 11 rows; not one native complete report JSON",
+  "reconciliation_status": "CONTENT_REVIEWED_WITH_TAXONOMY_AND_REVIEWER_QUALIFICATIONS",
+  "status": "PROPOSAL_ONLY",
+  "source_banks": [
+    {
+      "path": "docs/assets/data/practice/09-he-phuong-trinh-micro-v1.json",
+      "sha": "39b7154b7da71b818a367fdfe1d869caaa1bbfbd"
+    },
+    {
+      "path": "docs/assets/data/practice/09-he-phuong-trinh-v1-03.json",
+      "sha": "18e4f5e4d00956e3f6a0a979cf5d59f5afb506e3"
+    },
+    {
+      "path": "docs/assets/data/practice/09-he-phuong-trinh-v1-04.json",
+      "sha": "09e3c0269d42addb9a21b3fecf6fe4c3e811ce2f"
+    }
+  ],
+  "correct_staging_sha": "b65389c9f63c2137a0872321d4170a84ab9f8e86",
+  "initial_report_incorrect_staging_sha": "b65389c9f63c2137a08723f870014cf53bfed9",
+  "implementation_status": "NOT_IMPLEMENTED"
+}

@@ -1,0 +1,10 @@
+TIẾP TỤC B06 — PHA B (CĐ09) CHỈ 11 ID CÒN THIẾU. Giữ nguyên 3 Sources đang chọn: Master Plan Toán v1.1, Notebook Math Permanent v1.1 và 01_UPLOAD_TO_SOURCES_B06.md. KHÔNG tải nguồn mới, KHÔNG chạy lại 24 câu đã có, KHÔNG chuyển sang Pha C.
+
+Bản báo cáo trước bị cắt tại dòng 25 (SYS09V1_110). Hãy đọc mục C,D của nguồn B06 và kiểm định đúng các ID:
+SYS09V1_110, SYS09V1_111, SYS09V1_112, SYS09V1_113, SYS09V1_114, SYS09V1_115, SYS09V1_116, SYS09V1_117, SYS09V1_118, SYS09V1_119, SYS09V1_120.
+
+Chỉ in MỘT bảng 11 dòng: ID | status toán/đáp án | đích đo THẬT (chọn hệ có sẵn = full_system_recognition, không phải tự lập hệ) | tag/context/clone | vấn đề và đề xuất. Kiểm tra 111–120: bối cảnh số lượng/giá/doanh thu, dù legacy tag ghi nang-suat-he. Đặc biệt ở 115 và 116 hai phương trình phụ thuộc nhau, không xác định duy nhất số lượng từng loại; cần phân biệt câu hỏi chọn hệ đúng với yêu cầu giải có nghiệm duy nhất. Kiểm tra distractors và tính đúng đáp án theo source SHA.
+
+LƯU Ý: Staging SHA CĐ09 đúng trong source B06 là b65389c9f63c2137a0872321d4170a84ab9f8e86; mã b65389c9f63c2137a08723f870014cf53bfed9 trong câu trả lời trước là lỗi chép metadata. Main SHA vẫn là 88143e6b2690edfe721f8d74d2dbcb251bc55ab3.
+
+Kết thúc bằng JSON NGẮN chỉ cho 11 ID: packet_id, source_main_sha, phase="B-continuation", reviewed_ids, missing_ids, duplicate_ids, unexpected_ids, status_counts (tổng đúng 11), priority_findings, status="PROPOSAL_ONLY". Không tái in 35 dòng hay tự suy ra 35/35 PASS. Gửi phần này để ChatGPT hợp nhất 24+11.
