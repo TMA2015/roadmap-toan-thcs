@@ -42,7 +42,7 @@ const reviewedW9=new Set([
 ]);
 for(const e of old.exercises){
  if(reviewedW9.has(e.exercise_id))delete e.kntt_placements;
- if(e.exercise_id==="WX21-STA-001")e.grade_overlay=[8];
+ if(e.exercise_id==="WX21-STA-001"){e.grade_overlay=[8];e.kntt_placements=[{grade:6,chapter:9,lesson:"Bài 38–41 — Dữ liệu, bảng thống kê, biểu đồ tranh, biểu đồ cột và cột kép"}];}
 }
 delete old.candidate_scope;
 old.published_scope.exercise_count=69;
