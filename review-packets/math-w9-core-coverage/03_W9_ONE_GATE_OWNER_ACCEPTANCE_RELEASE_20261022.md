@@ -1,3 +1,19 @@
+## RELEASE AUTHORIZATION UPDATE — 22 October 2026
+
+**Supersedes the pending-authorization status in the original acceptance checklist below.** Project Owner has explicitly said **“đồng ý phát hành toàn bộ gói W9”** in the active Math App conversation.
+
+- `OWNER_DECISION|APPROVE_W9_RELEASE` — archived source: `04_W9_OWNER_RELEASE_APPROVAL_20261022.md`.
+- `WRITTEN_LIBRARY_PUBLISHED|75` (original 74 preserved; new `WX02-NUM-004` now included).
+- `W9_NEW_WRITTEN_BATCH|W9_G6_NUMABS_WRITTEN_20261022|PUBLISHED|1`.
+- `CANDIDATE_SCOPE|ABSENT` — original independent NotebookLM report with `NO_LIVE_RELEASE` remains intact as a historical academic receipt, while this **later explicit Owner approval** overrides only the **release gate**.
+- `W8_GRADE9_READINESS|NOT_AUTHORIZED` — separate Draft #565, excluded.
+- `TECHNICAL_RELEASE_GATES|EXACT_HEAD_PR_CI_THEN_MAIN_GITHUB_PAGES_DEPLOY`.
+- `PHYSICAL_IPAD_ACCEPTANCE|PENDING_OWNER_POST_RELEASE`.
+
+**The remaining checklist content is retained as the pre-approval QA plan**, not a statement that W9 still lacks authorization.
+
+---
+
 # W9 — Single Owner Acceptance / Release Decision
 
 **Review packet:** MATH-W9-CONSOLIDATED-NOTEBOOKLM-ONE-UPLOAD-R1-20261021  
