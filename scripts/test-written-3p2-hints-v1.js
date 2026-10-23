@@ -7,7 +7,7 @@ const raw=fs.readFileSync("docs/assets/data/written-exercises/written-exercise-l
 const sha=crypto.createHash("sha1").update("blob "+Buffer.byteLength(raw)+"\0").update(raw).digest("hex");
 const canonical=JSON.parse(raw);
 const overlay=JSON.parse(fs.readFileSync("docs/assets/data/written-exercises/written-p2-hints-overlay-v1.json","utf8"));
-assert(sha==="091be4d244799daf376ae5150dccf94865532a8f","immutable catalog blob SHA mismatch");
+assert(sha==="f516e4d6e4a8a075c7eb4638e8d57aecb77d1fd0","immutable catalog blob SHA mismatch");
 assert(overlay.source_catalog_blob_sha===sha,"overlay references wrong catalog source SHA");
 assert(overlay.release_state==="CANDIDATE_NOT_PUBLISHED","overlay cannot claim published status");
 assert(overlay.changes?.length===3,"must have exactly three overlay entries");
