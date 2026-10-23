@@ -3,8 +3,8 @@
 **PACKET_ID:** MATH-WRITTEN-GAP9-20261023-R0  
 **STATUS:** AUTHOR_DRAFT_ONLY / NOT_YET_NOTEBOOKLM_REVIEWED / NOT_APPROVED / NO_DEPLOY  
 **EXPECTED:** 9 candidate IDs; not canonical WX IDs.  
-**Source-catalog lock:** 75 exercise IDs in \`docs/assets/data/written-exercises/written-exercise-library-v1.json\`, Git blob \`5141a40bf1b8f8763257857d3b805d681a0956fa\`.  
-**Starting gap audit:** \`docs/collaboration/math-written-75-vs-79-exam-reasoning-coverage-audit-20261023.md\`.  
+**Source-catalog lock:** 75 exercise IDs in `docs/assets/data/written-exercises/written-exercise-library-v1.json`, Git blob `5141a40bf1b8f8763257857d3b805d681a0956fa`.  
+**Starting gap audit:** `docs/collaboration/math-written-75-vs-79-exam-reasoning-coverage-audit-20261023.md`.  
 **Source classes:** S2 = compiled/teacher-authored semester papers; S3 = entrance-labelled PDFs, authenticity not yet independently validated. **S1 exact school placement awaits textbooks**.  
 **Task:** judge actual mathematical correctness, genuine structural novelty versus 75 existing records (including cross-topic comparisons), teaching support, wording, level/layer, and source boundary. Do not rubber-stamp because author called a question P1.
 
@@ -20,7 +20,7 @@ For this packet, provisional grade is for **review routing only**. It is NOT a r
 
 - **Review grade/layer:** G6 / proposed KNTT-Core, exact S1 lesson unresolved.
 - **Problem family:** BCNN + dư giống nhau + kiểm tra điều kiện bổ sung và chặn miền.
-- **Source inspiration (S2):** G6 HK1 đề biên soạn số 4, \`de-kiem-tra-hoc-ki-1-toan-6-de-so-4-ket-noi-tri-thuc-1669285094.pdf\`, printed page 2, Bài 3. Original parameters not reused.
+- **Source inspiration (S2):** G6 HK1 đề biên soạn số 4, `de-kiem-tra-hoc-ki-1-toan-6-de-so-4-ket-noi-tri-thuc-1669285094.pdf`, printed page 2, Bài 3. Original parameters not reused.
 - **Nearest existing:** WX02-NUM-001 uses **ƯCLN** to divide equal gifts; this candidate instead reverses row-division conditions using **BCNN and a remainder**, then checks a second divisor.
 
 **Đề bài.** Một câu lạc bộ có số thành viên nhiều hơn 150 nhưng ít hơn 550. Khi xếp thành các hàng **12 người, 15 người hoặc 18 người**, lần nào cũng **thừa đúng 4 người**. Khi xếp thành các hàng **7 người** thì vừa đủ, không thừa. Hỏi câu lạc bộ có bao nhiêu thành viên? Giải thích vì sao số tìm được là duy nhất trong khoảng đã cho.
@@ -39,7 +39,7 @@ For this packet, provisional grade is for **review routing only**. It is NOT a r
 ## G6-02 — Giải ngược qua phần còn lại (CAND-G6-02)
 
 - **Review grade/layer:** G6 / proposed KNTT-Core; exact S1 placement unresolved.
-- **Source inspiration (S2):** G6 HK2 đề biên soạn số 1, \`de-kiem-tra-hoc-ki-2-toan-6-de-so-1-ket-noi-tri-thuc-1713575020.pdf\`, printed page 2, Bài 3.
+- **Source inspiration (S2):** G6 HK2 đề biên soạn số 1, `de-kiem-tra-hoc-ki-2-toan-6-de-so-1-ket-noi-tri-thuc-1713575020.pdf`, printed page 2, Bài 3.
 - **Nearest existing:** WX02-NUM-003 tính hai lần trên cùng **số sách theo kế hoạch**. Candidate này dùng phân số thứ hai của **phần còn lại**, rồi giải lùi từ số cuối.
 
 **Đề bài.** Kho sách của trường chuyển đi \(\frac14\) số sách ban đầu trong đợt I. Trong đợt II, kho chuyển tiếp \(\frac25\) **số sách còn lại sau đợt I**. Sau hai đợt, kho còn **90 cuốn**. Hỏi lúc đầu kho có bao nhiêu cuốn sách và mỗi đợt chuyển đi bao nhiêu cuốn?
@@ -58,7 +58,7 @@ For this packet, provisional grade is for **review routing only**. It is NOT a r
 ## G7-01 — Ba đội có khối lượng bằng nhau, biết hiệu (CAND-G7-01)
 
 - **Review grade/layer:** G7 / proposed KNTT-Core; S1 lesson unresolved.
-- **Source inspiration (S2):** G7 HK2 đề biên soạn số 1, \`de-kiem-tra-hoc-ki-2-toan-7-de-so-1-ket-noi-tri-thuc-1746416741.pdf\`, printed page 2, Bài 2. Parameters/time and known-difference pair are original.
+- **Source inspiration (S2):** G7 HK2 đề biên soạn số 1, `de-kiem-tra-hoc-ki-2-toan-7-de-so-1-ket-noi-tri-thuc-1746416741.pdf`, printed page 2, Bài 2. Parameters/time and known-difference pair are original.
 - **Nearest existing:** WX03-RAT-002 only compares two workforce/time values given total fixed; current author concept draft elsewhere used a **total** of three teams. This asks for **three unknowns and a difference**, a different closure equation.
 
 **Đề bài.** Ba đội A, B, C nhận ba phần việc có **khối lượng bằng nhau**. Mỗi công nhân có năng suất như nhau và không thay đổi trong quá trình làm; mỗi đội giữ nguyên số công nhân. Đội A cần **3 ngày**, đội B **5 ngày**, đội C **6 ngày** để hoàn thành. Biết đội A có **nhiều hơn đội C 10 công nhân**. Tính số công nhân từng đội và kiểm tra đáp số.
@@ -76,7 +76,7 @@ For this packet, provisional grade is for **review routing only**. It is NOT a r
 ## G7-02 — Tam giác cân: hai nhánh chứng minh liên kết (CAND-G7-02)
 
 - **Review grade/layer:** G7 / proposed KNTT-Core, **S1 verify all invoked theorems**.
-- **Source inspiration (S2):** G7 HK2 đề biên soạn số 1, \`de-kiem-tra-hoc-ki-2-toan-7-de-so-1-ket-noi-tri-thuc-1746416741.pdf\`, page 2, Bài 4 (multi-conclusion geometry); construction is original.
+- **Source inspiration (S2):** G7 HK2 đề biên soạn số 1, `de-kiem-tra-hoc-ki-2-toan-7-de-so-1-ket-noi-tri-thuc-1746416741.pdf`, page 2, Bài 4 (multi-conclusion geometry); construction is original.
 - **Nearest existing:** WX14-TRI-001 proves a median is altitude; WX14-TRI-002 derives one pair of equal segments. Here the learner must **carry an established angle fact** into another congruence and prove a distinct parallel line.
 
 **Đề bài.** Cho tam giác \(ABC\) cân tại \(A\) (\(AB=AC\)), \(M\) là trung điểm của \(BC\). Lấy \(D\) nằm **giữa** A và B, lấy \(E\) nằm **giữa** A và C sao cho \(AD=AE\). Hãy vẽ hình và chứng minh:
@@ -100,7 +100,7 @@ For this packet, provisional grade is for **review routing only**. It is NOT a r
 ## G8-01 — Kế hoạch sản xuất: ngày ít hơn nhưng số lượng nhiều hơn (CAND-G8-01)
 
 - **Review grade/layer:** G8 / proposed KNTT-Core, actual S1 placement unresolved.
-- **Source inspiration (S2):** G8 HK2 đề biên soạn số 2, \`de-thi-hoc-ki-2-toan-8-de-so-2-ket-noi-tri-thuc-1715132790.pdf\`, printed page 4, Bài 2. Original chronology and parameters.
+- **Source inspiration (S2):** G8 HK2 đề biên soạn số 2, `de-thi-hoc-ki-2-toan-8-de-so-2-ket-noi-tri-thuc-1715132790.pdf`, printed page 4, Bài 2. Original chronology and parameters.
 - **Nearest existing:** WX24-MOD-001 changes travel speed/time for a fixed journey, WX09-SYS-006 solves fixed productivity of two machines. Here the **planned total and actual total differ**, and daily production changes after an initial phase.
 
 **Đề bài.** Một tổ dự định làm việc **15 ngày**, mỗi ngày sản xuất cùng một số sản phẩm. Thực tế, trong **5 ngày đầu** tổ làm đúng kế hoạch; trong **9 ngày tiếp theo**, nhờ cải tiến, số sản phẩm làm mỗi ngày **tăng 25% so với mức kế hoạch**. Tổ kết thúc sau **14 ngày**, làm được **nhiều hơn 25 sản phẩm so với toàn bộ kế hoạch 15 ngày**. Hỏi kế hoạch mỗi ngày làm bao nhiêu sản phẩm và thực tế đã làm tổng cộng bao nhiêu sản phẩm?
@@ -118,7 +118,7 @@ For this packet, provisional grade is for **review routing only**. It is NOT a r
 ## G8-02 — Hình chóp đều: chiều cao thật khác đường cao mặt bên (CAND-G8-02)
 
 - **Review grade/layer:** G8 / proposed KNTT-Core, exact S1 section unresolved.
-- **Source inspiration (S2):** G8 HK2 đề số 2, \`...1715132790.pdf\`, printed page 4 Bài 3 (hình chóp); G8 HK2 đề số 3, \`de-thi-hoc-ki-2-toan-8-de-so-3-ket-noi-tri-thuc-1745390509.pdf\`, printed page 5 Bài 3. Original numbers and requirement combine geometric reasoning with both surface and volume.
+- **Source inspiration (S2):** G8 HK2 đề số 2, `...1715132790.pdf`, printed page 4 Bài 3 (hình chóp); G8 HK2 đề số 3, `de-thi-hoc-ki-2-toan-8-de-so-3-ket-noi-tri-thuc-1745390509.pdf`, printed page 5 Bài 3. Original numbers and requirement combine geometric reasoning with both surface and volume.
 - **Nearest existing:** WX20-GEO-001 hình hộp chữ nhật, WX20-GEO-002 hình nón. Neither chooses the **slant height of a square pyramid face** from a right triangle in a new shape.
 
 **Đề bài.** Mô hình mái che có dạng **hình chóp tứ giác đều** \(S.ABCD\), đáy là hình vuông cạnh **10 cm**, đỉnh S nằm thẳng trên tâm O của đáy và \(SO=12\) cm. Gọi M là trung điểm AB; mái có **4 mặt bên tam giác và không có đáy**. Bỏ qua đường viền và nếp gấp.
@@ -139,7 +139,7 @@ For this packet, provisional grade is for **review routing only**. It is NOT a r
 ## G9-01 — Tần số ghép nhóm và ngưỡng cộng nhiều nhóm (CAND-G9-01)
 
 - **Review grade/layer:** G9 / proposed KNTT-Core or Entrance10 context depending on S1; **do not fix layer until S1**.
-- **Source inspiration (labelled entrance PDF, S3 status not independently authenticated):** \`de-thi-vao-10-mon-toan-ha-noi-2026-co-dap-an-va-loi-giai-chi-tiet-1780208820.pdf\`, printed page 1 Câu I.1 (frequency table).
+- **Source inspiration (labelled entrance PDF, S3 status not independently authenticated):** `de-thi-vao-10-mon-toan-ha-noi-2026-co-dap-an-va-loi-giai-chi-tiet-1780208820.pdf`, printed page 1 Câu I.1 (frequency table).
 - **Nearest existing:** WX21-STA-001/002 use raw category/bar values, not adjacent **half-open numerical bins** and relative frequencies.
 
 **Đề bài.** Một thư viện khảo sát **80 học sinh** về thời gian đọc sách trong tuần (giờ) và lập bảng:
@@ -165,7 +165,7 @@ For this packet, provisional grade is for **review routing only**. It is NOT a r
 ## G9-02 — Đường tròn + đường cao + đồng dạng (CAND-G9-02)
 
 - **Review grade/layer:** G9 / proposed Entrance10 transfer; need S1 concept mapping, no grade placement until verified.
-- **Source inspiration (entrance-labelled PDF; authenticity unverified independently):** \`de-thi-vao-10-mon-toan-ha-noi-2026-co-dap-an-va-loi-giai-chi-tiet-1780208820.pdf\`, printed page 2 Câu IV.2. Geometry configuration intentionally distinct.
+- **Source inspiration (entrance-labelled PDF; authenticity unverified independently):** `de-thi-vao-10-mon-toan-ha-noi-2026-co-dap-an-va-loi-giai-chi-tiet-1780208820.pdf`, printed page 2 Câu IV.2. Geometry configuration intentionally distinct.
 - **Nearest existing:** WX19-CIR-002 establishes cyclicity by opposite-angle sum then computes one angle; WX19-CIR-003 computes inscribed angles. This requires a **right-angle cyclicity proof and independent transfer to triangle similarity plus length**.
 
 **Đề bài.** Cho tam giác \(ABC\) **có ba góc nhọn**, hai đường cao \(BD\perp AC\) tại \(D\in AC\) và \(CE\perp AB\) tại \(E\in AB\). (Vẽ hình đủ rõ và dùng đúng chân đường cao.)
@@ -189,7 +189,7 @@ Trong tam giác vuông ABD, \(AD=AB\cos\angle BAC\); trong tam giác vuông ACE,
 ## G9-03 — Hình trụ, mức đầy 75%, số lượt nguyên tối thiểu (CAND-G9-03)
 
 - **Review grade/layer:** G9 / proposed Entrance10 transfer; S1 proof required for Core grade placement.
-- **Source inspiration (entrance-labelled PDF, S3 unverified independently):** \`de-thi-vao-10-mon-toan-ha-noi-2026-co-dap-an-va-loi-giai-chi-tiet-1780208820.pdf\`, printed page 2 Câu IV.1. Original dimensions, proportion and context.
+- **Source inspiration (entrance-labelled PDF, S3 unverified independently):** `de-thi-vao-10-mon-toan-ha-noi-2026-co-dap-an-va-loi-giai-chi-tiet-1780208820.pdf`, printed page 2 Câu IV.1. Original dimensions, proportion and context.
 - **Nearest existing:** WX20-GEO-001 computes a box's volume; WX20-GEO-002 computes a cone's volume. Neither includes **cylindrical capacity, percent fill and ceiling integer rounds**.
 
 **Đề bài.** Một bình đựng nước có dạng **hình trụ**, bán kính đáy **10 cm**, chiều cao **30 cm**. Lấy \(\pi\approx3{,}14\), xem thành bình có độ dày không đáng kể.
