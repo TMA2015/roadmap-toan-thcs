@@ -43,7 +43,7 @@ with sync_playwright() as pw:
         group.select_option("wx")
         assert cards.count()==8,(width,"six historical Grade8 anchors plus two reviewed GAP9 new anchors")
         links=cards.locator(".model-library-link").evaluate_all("(nodes)=>nodes.map(n=>n.getAttribute('href'))")
-        assert {h.split("#")[-1] for h in links}=={"wx05-ent-001","wx06-ch-001","wx05-ent-002","wx05-ch-001","wx07-ent-001","wx07-ch-001"},(width,"G8 reviewed W3A/W3B anchors linked")
+        assert {h.split("#")[-1] for h in links}=={"wx05-ent-001","wx06-ch-001","wx05-ent-002","wx05-ch-001","wx07-ent-001","wx07-ch-001","wx24-mod-003","wx20-geo-004"},(width,"G8 reviewed W3A/W3B anchors linked")
         group.select_option("a25")
         grade.select_option("9")
         assert cards.count()==11,(width,"A25 entrance set")
