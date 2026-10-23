@@ -29,6 +29,8 @@ jobs:
         run: python check_roadmap_dependencies.py
       - name: Validate KNTT Coverage Matrix 6-9
         run: node scripts/test-kntt-coverage-matrix-6-9-v1.js
+      - name: Audit live KNTT lesson D1-D6 source evidence (78 rows, no content changes)
+        run: node scripts/audit-post87-kntt-lesson-evidence-r1.js --emit-json
       - name: Validate Grade 6 KNTT reconciliation R1
         run: node scripts/test-kntt-grade6-reconciliation-r1.js
       - name: Validate Grade 7 KNTT reconciliation R2
