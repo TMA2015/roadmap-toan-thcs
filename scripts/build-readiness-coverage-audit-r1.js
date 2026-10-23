@@ -10,7 +10,12 @@ const reg=read("docs/assets/data/curriculum/skill-taxonomy-v2-registry-r1.json")
 const expected=read("docs/assets/data/curriculum/readiness-coverage-audit-r1.json");
 const assessmentDir=path.join(root,"docs/assets/data/assessment");
 const files=fs.readdirSync(assessmentDir)
-  .filter(n=>/^\d\d-.*-core-v1\.json$/.test(n))
+  // This historical R1 baseline is exactly 21 topical banks / 219 core questions.
+  // Grade9 CT23 is a new *independent* grade-scoped assessment with its own
+  // immutable IDs, tests and evidence lane; do not count it as a 22nd topic
+  // or rewrite the previously independently reviewed baseline.
+  .filter(n=>/^\d\d-.*-core-v1\.json$/.test(n) &&
+    n!=="23-xac-suat-g9-core-v1.json")
   .sort();
 
 const mapByLegacy=new Map();

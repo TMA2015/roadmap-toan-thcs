@@ -280,6 +280,13 @@ jobs:
       - name: Validate official Hanoi exam-frequency seed R1
         run: node scripts/test-exam-frequency-hanoi-seed-r1.js
 
+      - name: Validate W8 independent Grade9 Readiness candidate and evidence
+        run: |
+          node --check docs/assets/javascripts/readiness-g9-v1.js
+          node --check docs/assets/javascripts/readiness-g9-evidence-v1.js
+          node scripts/test-w8-g9-readiness-release-r1.js
+          node scripts/test-w8-g9-readiness-evidence-r1.js
+
       - name: Validate Practice Implementation Wave 1 candidate
         run: node scripts/test-practice-implementation-wave1-r1.js
 
@@ -495,3 +502,4 @@ jobs:
           python scripts/test-math-w2b-rich-practice-wave1-browser.py
           python scripts/test-a25-learner-navigation-r1-browser.py
           python scripts/test-class-mixed-g6-preview-browser.py
+          python scripts/test-w8-g9-readiness-browser-r1.py
