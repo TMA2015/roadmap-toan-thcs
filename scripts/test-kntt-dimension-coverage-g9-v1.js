@@ -166,10 +166,13 @@ assert.deepEqual(g9.semantic_reconciliation?.remaining_review_queue,[]);
 
 const written=json(a.source_locks.written_library.path);
 const g9Written=(written.exercises||[]).filter(ex=>(ex.kntt_placements||[]).some(p=>p.grade===9));
-// Old Grade9 audit snapshot had no placed Written rows. W9's separate S1
-// review later mapped exactly these six existing IDs without changing that snapshot.
-assert.deepEqual(g9Written.map(x=>x.exercise_id).sort(),
-  ["WX09-SYS-003","WX10-FUN-002","WX11-RAD-001","WX12-QUA-001","WX18-TRI-002","WX19-CIR-002"].sort());
+// Preserve six historical W9 S1 placements; GAP9 draft adds two distinct
+// academically reviewed Grade9 KNTT-Core placements, not a historical audit rewrite.
+const historicalSix=["WX09-SYS-003","WX10-FUN-002","WX11-RAD-001","WX12-QUA-001","WX18-TRI-002","WX19-CIR-002"];
+assert.deepEqual(g9Written.filter(x=>!["WX20-GEO-005","WX21-STA-003"].includes(x.exercise_id))
+  .map(x=>x.exercise_id).sort(),historicalSix.sort());
+assert.deepEqual(g9Written.filter(x=>["WX20-GEO-005","WX21-STA-003"].includes(x.exercise_id))
+  .map(x=>x.exercise_id).sort(),["WX20-GEO-005","WX21-STA-003"].sort());
 assert.equal(a.summary.written_grade9_kntt_item_count,0,"preserve historical Grade9 inventory baseline");
 
 const counts={};
