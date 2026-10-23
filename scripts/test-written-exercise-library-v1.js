@@ -52,6 +52,12 @@ for(const topic of ["CT02","CT03","CT04","CT05","CT06","CT07","CT08","CT09","CT1
   ok(items.some(x=>x.level==="CORE_APPLY"),topic+" CORE_APPLY");
 }
 for(const x of data.exercises){
+  // Renderer selects progressive-help mode whenever hint_steps is nonempty,
+  // including on standard items. In that mode it reads full_solution_markdown;
+  // without that field the learner would see an empty solution panel.
+  if(Array.isArray(x.hint_steps)&&x.hint_steps.length>0){
+    ok(String(x.full_solution_markdown||"").trim(),"hint-mode complete solution "+x.exercise_id);
+  }
   ok(x.exercise_kind==="standard"||x.exercise_kind==="anchor","kind "+x.exercise_id);
   ok(["KNTT-Core","Core-Support","Entrance10","Specialized-Challenge"].includes(x.learning_layer),"layer "+x.exercise_id);
   if(x.learning_layer==="Specialized-Challenge"){
