@@ -9,10 +9,10 @@ assert BROWSER, "Chromium required"
 BASE="http://127.0.0.1:8765/luyen-tap/tu-luan/"
 with open("docs/assets/data/written-exercises/written-exercise-library-v1.json",encoding="utf-8") as fh:
     lib=json.load(fh)
-assert len(lib["exercises"])==75
+assert len(lib["exercises"])==84
 by_id={e["exercise_id"]:e for e in lib["exercises"]}
 grade_counts={g:sum(any(p["grade"]==g for p in e.get("kntt_placements",[])) for e in lib["exercises"]) for g in (6,7,8,9)}
-assert grade_counts=={6:9,7:6,8:6,9:6},grade_counts
+assert grade_counts=={6:11,7:8,8:8,9:8},grade_counts
 
 with sync_playwright() as p:
     browser=p.chromium.launch(executable_path=BROWSER,headless=True,args=["--no-sandbox","--disable-dev-shm-usage"])
@@ -22,7 +22,7 @@ with sync_playwright() as p:
         page.goto(BASE,wait_until="networkidle")
         page.wait_for_function("document.querySelector('[data-written-exercise-library]')?.dataset.ready === '1'",timeout=15000)
         cards=page.locator(".written-exercise-card")
-        assert cards.count()==75,(label,"all 75 candidates accessible")
+        assert cards.count()==84,(label,"75 unchanged historical + 9 reviewed new items accessible")
         grade=page.locator('select[aria-label="Lọc bài tự luận theo lớp đã xác minh SGK"]')
         chapter=page.locator('select[aria-label="Lọc bài tự luận theo chương KNTT"]')
         lesson=page.locator('select[aria-label="Lọc bài tự luận theo bài học KNTT"]')
@@ -36,7 +36,7 @@ with sync_playwright() as p:
             assert all(("KNTT lớp "+str(g)) in x for x in page.locator(".written-exercise-meta").all_inner_texts())
         grade.select_option("7")
         chapter.select_option("6")
-        assert cards.count()==2,(label,"two reviewed G7 ratio Written")
+        assert cards.count()==3,(label,"two W9 G7 ratio plus one GAP9 three-team item")
         lesson.select_option("Bài 23 — Đại lượng tỉ lệ nghịch")
         assert cards.count()==1 and page.locator("#wx03-rat-002").count()==1,(label,"exact G7 lesson")
         grade.select_option("8")
@@ -59,7 +59,7 @@ with sync_playwright() as p:
         assert new.locator('[data-help-panel="solution"]').is_visible(),(label,"worked solution")
         assert page.evaluate("localStorage.getItem('w9-sentinel')")=="unmodified",(label,"no history writes")
         grade.select_option("all")
-        assert chapter.is_disabled() and lesson.is_disabled() and cards.count()==75,(label,"restore all")
+        assert chapter.is_disabled() and lesson.is_disabled() and cards.count()==84,(label,"restore all")
         topic=page.locator('select[aria-label="Lọc theo chuyên đề"]')
         topic.select_option("CT02")
         assert page.locator("#wx02-num-004").count()==1,(label,"same canonical item via topic route")

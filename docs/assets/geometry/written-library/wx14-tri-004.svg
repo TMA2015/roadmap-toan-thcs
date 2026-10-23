@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 344" role="img" aria-labelledby="title desc">
+<title id="title">Tam giác ABC cân tại A, với các điểm D E và trung điểm M</title>
+<desc id="desc">Tam giác ABC cân tại A. M ở giữa BC. D nằm giữa A và B, E nằm giữa A và C, có AD bằng AE. Vẽ các đoạn DE, AM, DM, EM để quan sát đề bài; hình không đánh dấu kết luận cần chứng minh.</desc>
+<style>
+  .line{fill:none;stroke:#263238;stroke-width:2.5;stroke-linejoin:round;stroke-linecap:round}
+  .aux{fill:none;stroke:#607d8b;stroke-width:1.8;stroke-linecap:round}
+  .pt{fill:#263238}
+  .label{font:16px system-ui,sans-serif;fill:#172033}
+  .note{font:13px system-ui,sans-serif;fill:#455a64}
+</style>
+<path class="line" d="M220 52 L76 298 L364 298 Z"/>
+<path class="line" d="M146 178 L294 178"/>
+<path class="aux" d="M220 52 L220 298 M146 178 L220 298 L294 178"/>
+<circle class="pt" cx="220" cy="52" r="3.2"/><circle class="pt" cx="76" cy="298" r="3.2"/><circle class="pt" cx="364" cy="298" r="3.2"/>
+<circle class="pt" cx="146" cy="178" r="3.2"/><circle class="pt" cx="294" cy="178" r="3.2"/><circle class="pt" cx="220" cy="298" r="3.2"/>
+<text class="label" x="213" y="38">A</text><text class="label" x="57" y="322">B</text><text class="label" x="370" y="322">C</text>
+<text class="label" x="128" y="179">D</text><text class="label" x="300" y="179">E</text><text class="label" x="212" y="323">M</text>
+<text class="note" x="16" y="24">AB = AC</text><text class="note" x="16" y="42">AD = AE; BM = MC</text>
+</svg>

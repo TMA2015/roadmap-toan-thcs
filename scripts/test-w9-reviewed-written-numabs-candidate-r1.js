@@ -14,10 +14,10 @@ assert.equal(lock.meta.source_written_blob,"a8f19cea7f0f8b181e3cc1385ddbff13b75c
 assert.equal(lock.meta.source_num02_blob,"61c1e4ef1e2f0d44476c6f34f48fd7bbcce24622");
 assert.equal(lock.historic_written_math.length,74);
 assert.equal(lock.historic_micro.length,64);
-assert.equal(lib.exercises.length,75);
-assert.equal(lib.published_scope.exercise_count,75);
+assert.equal(lib.exercises.length,84);
+assert.equal(lib.published_scope.exercise_count,84);
 assert.equal(lib.candidate_scope,undefined,"Owner-approved W9 Written must have no pending candidate");
-const batch=lib.published_scope.batches.at(-1);
+const batch=lib.published_scope.batches.at(-2);
 assert.deepEqual(batch,{
  batch_id:"W9_G6_NUMABS_WRITTEN_20261022",
  packet_id:"MATH-W9-CONSOLIDATED-NOTEBOOKLM-ONE-UPLOAD-R1-20261021",
@@ -28,7 +28,7 @@ assert(owner.includes("OWNER_DECISION|APPROVE_W9_RELEASE"));
 assert(owner.includes("W8_GRADE9_READINESS_RELEASE|NOT_AUTHORIZED"));
 assert.equal(lib.auto_readiness_credit,false);
 const byId=new Map(lib.exercises.map(e=>[e.exercise_id,e]));
-assert.equal(byId.size,75);
+assert.equal(byId.size,84);
 for(const [id,digest] of lock.historic_written_math){
  const e=byId.get(id);assert(e,"lost canonical item "+id);
  assert.equal(mathHash(e),digest,"changed original problem/solution/rubric "+id);
@@ -69,7 +69,7 @@ assert(added.full_solution_markdown.includes("AB+BC=AC"));
 assert.equal(added.academic_review.status,"APPROVED");
 assert.equal(added.academic_review.release_gate,"OWNER_RELEASE_APPROVED_20261022");
 assert.equal(added.academic_review.packet_id,lock.meta.receipt);
-assert.equal(lib.exercises.filter(e=>e.kntt_placements?.length).length,27);
+assert.equal(lib.exercises.filter(e=>e.kntt_placements?.length).length,35);
 assert.equal(bank.question_count,67);
 assert.equal(bank.questions.length,67);
 const qmap=new Map(bank.questions.map(q=>[q.id,q]));

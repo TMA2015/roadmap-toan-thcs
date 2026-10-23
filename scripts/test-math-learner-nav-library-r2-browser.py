@@ -21,7 +21,7 @@ with sync_playwright() as pw:
         page.locator('a.math-library-entry[href="tu-luan/"]').first.click()
         page.wait_for_url("**/luyen-tap/tu-luan/")
         page.wait_for_function("document.querySelector('[data-written-exercise-library]')?.dataset.ready==='1'",timeout=18000)
-        assert page.locator(".written-exercise-card").count()==75, "69 historical plus five Owner-approved W4 records and one subsequently Owner-approved W9 Written"
+        assert page.locator(".written-exercise-card").count()==84, "75 protected historical plus 9 newly owner-approved GAP9 Written"
         for id in ("wx08-eqi-003","wx09-sys-009","wx10-fun-003","wx11-rad-004","wx12-qua-003"):
             assert page.locator(".written-exercise-card#"+id).count()==1, "missing W4 authored card "+id
         assert page.locator(".written-exercise-card#wx05-ent-001").count()==1

@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "catalog_id": "MATH-WRITTEN-EXERCISE-LIBRARY-V1",
-  "snapshot_date": "2026-10-21",
+  "snapshot_date": "2026-10-23",
   "status": "ACTIVE_APPEND_ONLY",
   "auto_readiness_credit": false,
   "self_marking_only": true,
@@ -7432,6 +7432,897 @@
           "lesson": "Bài 13–14 — Số nguyên, giá trị tuyệt đối và phép tính"
         }
       ]
+    },
+    {
+      "exercise_id": "WX02-NUM-005",
+      "exercise_kind": "anchor",
+      "topic_id": "CT02",
+      "topic_slug": "02-so-va-phep-tinh",
+      "topic_title": "Số và phép tính",
+      "problem_type_id": "g6-lcm-same-remainder-bounds",
+      "problem_type_title": "Ba điều kiện xếp hàng",
+      "title": "Ba điều kiện xếp hàng",
+      "learning_layer": "KNTT-Core",
+      "level": "CORE_APPLY",
+      "learner_label": "Củng cố",
+      "grade_overlay": [
+        6
+      ],
+      "skills": [
+        "bcnn",
+        "dau-hieu-chia-het",
+        "chia-co-du",
+        "chon-nghiem-trong-khoang"
+      ],
+      "prerequisites": [
+        "bcnn",
+        "uoc-boi"
+      ],
+      "estimated_minutes": 15,
+      "problem_markdown": "Một câu lạc bộ có số thành viên nhiều hơn 150 nhưng ít hơn 550. Khi xếp thành các hàng **12 người, 15 người hoặc 18 người**, lần nào cũng **thừa đúng 4 người**. Khi xếp thành các hàng **7 người** thì vừa đủ, không thừa. Hỏi câu lạc bộ có bao nhiêu thành viên? Giải thích vì sao số tìm được là duy nhất trong khoảng đã cho.",
+      "figure_uri": null,
+      "figure_alt": null,
+      "hint_steps": [
+        "Nếu bớt 4 thành viên thì số còn lại chia hết đồng thời cho những số nào?",
+        "Tìm tất cả số trong khoảng có dạng bội chung + 4 rồi kiểm tra điều kiện hàng 7."
+      ],
+      "full_solution_markdown": "Gọi số thành viên là N. N−4 chia hết 12, 15 và 18. BCNN(12,15,18)=180; vậy N=180k+4, k nguyên. Từ 150<N<550, ta được N∈{184,364,544}. Ba số này khi chia 7 có số dư lần lượt 2,0,5. Vậy N=364. Chỉ có một ứng viên thỏa tất cả điều kiện, nên nghiệm duy nhất.",
+      "solution_steps": [
+        {
+          "step_id": "S1",
+          "title": "Bài giải chi tiết",
+          "content_markdown": "Gọi số thành viên là N. N−4 chia hết 12, 15 và 18. BCNN(12,15,18)=180; vậy N=180k+4, k nguyên. Từ 150<N<550, ta được N∈{184,364,544}. Ba số này khi chia 7 có số dư lần lượt 2,0,5. Vậy N=364. Chỉ có một ứng viên thỏa tất cả điều kiện, nên nghiệm duy nhất."
+        }
+      ],
+      "method_rationale_markdown": "Điều kiện “cùng dư” quy về bội chung; điều kiện “vừa đủ” lọc các ứng viên, không phải chia quà đều theo ƯCLN.",
+      "rubric": [
+        {
+          "criterion": "biến đổi điều kiện dư thành BCNN",
+          "points": 1
+        },
+        {
+          "criterion": "tìm BCNN=180",
+          "points": 1
+        },
+        {
+          "criterion": "lọc đúng 3 ứng viên theo khoảng",
+          "points": 1
+        },
+        {
+          "criterion": "kiểm tra 7 và kết luận duy nhất",
+          "points": 1
+        }
+      ],
+      "rubric_total": 4,
+      "common_mistakes": [
+        "dùng ƯCLN thay BCNN.",
+        "quên cộng lại 4.",
+        "tìm 364 đúng nhưng không chứng minh duy nhất."
+      ],
+      "remediation_markdown": "WX02-NUM-001 cho phân biệt ƯCLN với BCNN, sau đó học BCNN và tính chia hết trong SGK G6.",
+      "remediation_links": [
+        {
+          "label": "Ôn lại kiến thức cùng chuyên đề",
+          "href": "../kien-thuc/02-so-va-phep-tinh/"
+        },
+        {
+          "label": "Luyện tập thêm cùng chuyên đề",
+          "href": "../kien-thuc/02-so-va-phep-tinh/bai-tap/"
+        }
+      ],
+      "source_refs": [
+        "review-packets/written-exercise-library/MATH-WRITTEN-GAP9-20261023-AUTHORING-REVIEW.md#g6-01"
+      ],
+      "academic_review": {
+        "status": "APPROVED",
+        "method": "NOTEBOOKLM_OWNER_SUBMITTED",
+        "packet_id": "MATH-WRITTEN-GAP9-20261023-R0",
+        "receipt": "review-packets/written-exercise-library/MATH-WRITTEN-GAP9-20261023-NOTEBOOKLM_OWNER_VERDICT.md",
+        "publication_gate": "OWNER_RELEASE_APPROVED_20261023"
+      },
+      "gates_core": false,
+      "auto_readiness_credit": false,
+      "written_role": "DEEP_ANCHOR",
+      "kntt_placements": [
+        {
+          "grade": 6,
+          "chapter": 2,
+          "lesson": "Bài 12 — Bội chung. Bội chung nhỏ nhất"
+        }
+      ]
+    },
+    {
+      "exercise_id": "WX02-NUM-006",
+      "exercise_kind": "anchor",
+      "topic_id": "CT02",
+      "topic_slug": "02-so-va-phep-tinh",
+      "topic_title": "Số và phép tính",
+      "problem_type_id": "g6-fraction-successive-remaining-base",
+      "problem_type_title": "Giải ngược qua phần còn lại",
+      "title": "Giải ngược qua phần còn lại",
+      "learning_layer": "KNTT-Core",
+      "level": "CORE_APPLY",
+      "learner_label": "Củng cố",
+      "grade_overlay": [
+        6
+      ],
+      "skills": [
+        "phep-tinh-phan-so",
+        "tim-mot-so-biet-phan-so",
+        "moc-tham-chieu-thay-doi"
+      ],
+      "prerequisites": [
+        "phep-tinh-phan-so"
+      ],
+      "estimated_minutes": 12,
+      "problem_markdown": "Kho sách của trường chuyển đi \\(\\frac14\\) số sách ban đầu trong đợt I. Trong đợt II, kho chuyển tiếp \\(\\frac25\\) **số sách còn lại sau đợt I**. Sau hai đợt, kho còn **90 cuốn**. Hỏi lúc đầu kho có bao nhiêu cuốn sách và mỗi đợt chuyển đi bao nhiêu cuốn?",
+      "figure_uri": null,
+      "figure_alt": null,
+      "hint_steps": [
+        "90 cuốn là bao nhiêu phần của số sách *sau đợt I*, không phải phần của số ban đầu?",
+        "Từ số sách sau đợt I, hãy làm tiếp phép tính ngược để tìm số ban đầu."
+      ],
+      "full_solution_markdown": "Sau đợt II còn \\(1-\\frac25=\\frac35\\) số sách sau đợt I, nên sau đợt I có \\(90:\\frac35=150\\) cuốn. Đây là \\(\\frac34\\) số sách ban đầu, nên lúc đầu có \\(150:\\frac34=200\\) cuốn. Đợt I chuyển \\(200-150=50\\) cuốn; đợt II chuyển \\(150-90=60\\) cuốn. Kiểm tra \\(50+60+90=200\\), \\(60=\\frac25\\cdot150\\).",
+      "solution_steps": [
+        {
+          "step_id": "S1",
+          "title": "Bài giải chi tiết",
+          "content_markdown": "Sau đợt II còn \\(1-\\frac25=\\frac35\\) số sách sau đợt I, nên sau đợt I có \\(90:\\frac35=150\\) cuốn. Đây là \\(\\frac34\\) số sách ban đầu, nên lúc đầu có \\(150:\\frac34=200\\) cuốn. Đợt I chuyển \\(200-150=50\\) cuốn; đợt II chuyển \\(150-90=60\\) cuốn. Kiểm tra \\(50+60+90=200\\), \\(60=\\frac25\\cdot150\\)."
+        }
+      ],
+      "method_rationale_markdown": "Mỗi đợt có một mốc tham chiếu khác nhau; giải ngược an toàn hơn cộng \\(\\frac14+\\frac25\\).",
+      "rubric": [
+        {
+          "criterion": "nhận đúng phần còn lại đợt II",
+          "points": 1
+        },
+        {
+          "criterion": "tìm 150",
+          "points": 1
+        },
+        {
+          "criterion": "tìm 200",
+          "points": 1
+        },
+        {
+          "criterion": "tính 50 và 60, kiểm tra mốc",
+          "points": 1
+        }
+      ],
+      "rubric_total": 4,
+      "common_mistakes": [
+        "lấy \\(\\frac25\\) của ban đầu.",
+        "cộng \\(\\frac14+\\frac25\\).",
+        "nhầm số sách đợt II với số còn sau đợt II."
+      ],
+      "remediation_markdown": "WX02-NUM-003, phân biệt “biết giá trị một phần để tìm toàn bộ” và “tìm một phần của toàn bộ”.",
+      "remediation_links": [
+        {
+          "label": "Ôn lại kiến thức cùng chuyên đề",
+          "href": "../kien-thuc/02-so-va-phep-tinh/"
+        },
+        {
+          "label": "Luyện tập thêm cùng chuyên đề",
+          "href": "../kien-thuc/02-so-va-phep-tinh/bai-tap/"
+        }
+      ],
+      "source_refs": [
+        "review-packets/written-exercise-library/MATH-WRITTEN-GAP9-20261023-AUTHORING-REVIEW.md#g6-02"
+      ],
+      "academic_review": {
+        "status": "APPROVED",
+        "method": "NOTEBOOKLM_OWNER_SUBMITTED",
+        "packet_id": "MATH-WRITTEN-GAP9-20261023-R0",
+        "receipt": "review-packets/written-exercise-library/MATH-WRITTEN-GAP9-20261023-NOTEBOOKLM_OWNER_VERDICT.md",
+        "publication_gate": "OWNER_RELEASE_APPROVED_20261023"
+      },
+      "gates_core": false,
+      "auto_readiness_credit": false,
+      "written_role": "DEEP_ANCHOR",
+      "kntt_placements": [
+        {
+          "grade": 6,
+          "chapter": 6,
+          "lesson": "Bài 27 — Hai bài toán về phân số"
+        }
+      ]
+    },
+    {
+      "exercise_id": "WX03-RAT-003",
+      "exercise_kind": "anchor",
+      "topic_id": "CT03",
+      "topic_slug": "03-ti-le-ti-le-thuc",
+      "topic_title": "Tỉ lệ – Tỉ lệ thức – Đại lượng tỉ lệ",
+      "problem_type_id": "g7-inverse-three-teams-difference",
+      "problem_type_title": "Ba đội có khối lượng bằng nhau, biết hiệu",
+      "title": "Ba đội có khối lượng bằng nhau, biết hiệu",
+      "learning_layer": "KNTT-Core",
+      "level": "CORE_APPLY",
+      "learner_label": "Củng cố",
+      "grade_overlay": [
+        7
+      ],
+      "skills": [
+        "ti-le-nghich",
+        "day-ti-so-bang-nhau",
+        "bai-toan-hieu"
+      ],
+      "prerequisites": [
+        "ti-le-nghich"
+      ],
+      "estimated_minutes": 14,
+      "problem_markdown": "Ba đội A, B, C nhận ba phần việc có **khối lượng bằng nhau**. Mỗi công nhân có năng suất như nhau và không thay đổi trong quá trình làm; mỗi đội giữ nguyên số công nhân. Đội A cần **3 ngày**, đội B **5 ngày**, đội C **6 ngày** để hoàn thành. Biết đội A có **nhiều hơn đội C 10 công nhân**. Tính số công nhân từng đội và kiểm tra đáp số.",
+      "figure_uri": null,
+      "figure_alt": null,
+      "hint_steps": [
+        "Tại sao số người nhân số ngày phải bằng nhau giữa ba đội?",
+        "Viết tỉ số số người tỉ lệ nghịch với \\(3:5:6\\) rồi dùng **hiệu A−C**, không dùng tổng."
+      ],
+      "full_solution_markdown": "Gọi a,b,c là số công nhân. Cùng năng suất và cùng công việc nên \\(3a=5b=6c\\), suy ra \\(a:b:c=\\frac13:\\frac15:\\frac16=10:6:5\\). Đặt \\(a=10k,b=6k,c=5k\\), \\(k>0\\). Do \\(a-c=10\\), \\(5k=10\\), \\(k=2\\). Vậy đội A **20**, B **12**, C **10** người. Kiểm tra \\(3\\cdot20=5\\cdot12=6\\cdot10=60\\) người-ngày; \\(20-10=10\\).",
+      "solution_steps": [
+        {
+          "step_id": "S1",
+          "title": "Bài giải chi tiết",
+          "content_markdown": "Gọi a,b,c là số công nhân. Cùng năng suất và cùng công việc nên \\(3a=5b=6c\\), suy ra \\(a:b:c=\\frac13:\\frac15:\\frac16=10:6:5\\). Đặt \\(a=10k,b=6k,c=5k\\), \\(k>0\\). Do \\(a-c=10\\), \\(5k=10\\), \\(k=2\\). Vậy đội A **20**, B **12**, C **10** người. Kiểm tra \\(3\\cdot20=5\\cdot12=6\\cdot10=60\\) người-ngày; \\(20-10=10\\)."
+        }
+      ],
+      "method_rationale_markdown": "Hãy đọc dữ kiện, chọn đúng phép biến đổi hoặc định lý, giải theo từng bước và đối chiếu lại mọi giả thiết trước khi kết luận.",
+      "rubric": [
+        {
+          "criterion": "nhận biết và giải thích nghịch đảo người–ngày",
+          "points": 1
+        },
+        {
+          "criterion": "lập \\(3a=5b=6c\\)",
+          "points": 1
+        },
+        {
+          "criterion": "chuyển đúng tỉ số \\(10:6:5\\)",
+          "points": 1
+        },
+        {
+          "criterion": "áp dụng hiệu, ba đáp số và kiểm tra",
+          "points": 1
+        }
+      ],
+      "rubric_total": 4,
+      "common_mistakes": [
+        "dùng tỉ số thuận \\(3:5:6\\).",
+        "dùng tổng ba đội dù đề chỉ cho hiệu.",
+        "tính được số thực không kiểm tra số người nguyên dương."
+      ],
+      "remediation_markdown": "WX03-RAT-002 trước khi giải dãy tỉ số.",
+      "remediation_links": [
+        {
+          "label": "Ôn lại kiến thức cùng chuyên đề",
+          "href": "../kien-thuc/03-ti-le-ti-le-thuc/"
+        },
+        {
+          "label": "Luyện tập thêm cùng chuyên đề",
+          "href": "../kien-thuc/03-ti-le-ti-le-thuc/bai-tap/"
+        }
+      ],
+      "source_refs": [
+        "review-packets/written-exercise-library/MATH-WRITTEN-GAP9-20261023-AUTHORING-REVIEW.md#g7-01"
+      ],
+      "academic_review": {
+        "status": "APPROVED",
+        "method": "NOTEBOOKLM_OWNER_SUBMITTED",
+        "packet_id": "MATH-WRITTEN-GAP9-20261023-R0",
+        "receipt": "review-packets/written-exercise-library/MATH-WRITTEN-GAP9-20261023-NOTEBOOKLM_OWNER_VERDICT.md",
+        "publication_gate": "OWNER_RELEASE_APPROVED_20261023"
+      },
+      "gates_core": false,
+      "auto_readiness_credit": false,
+      "written_role": "DEEP_ANCHOR",
+      "kntt_placements": [
+        {
+          "grade": 7,
+          "chapter": 6,
+          "lesson": "Bài 21 và Bài 23 — Dãy tỉ số bằng nhau; Đại lượng tỉ lệ nghịch"
+        }
+      ]
+    },
+    {
+      "exercise_id": "WX14-TRI-004",
+      "exercise_kind": "anchor",
+      "topic_id": "CT14",
+      "topic_slug": "14-tam-giac",
+      "topic_title": "Tam giác",
+      "problem_type_id": "g7-congruence-parallel-multibranch",
+      "problem_type_title": "Tam giác cân: hai nhánh chứng minh liên kết",
+      "title": "Tam giác cân: hai nhánh chứng minh liên kết",
+      "learning_layer": "KNTT-Core",
+      "level": "CORE_APPLY",
+      "learner_label": "Củng cố",
+      "grade_overlay": [
+        7
+      ],
+      "skills": [
+        "tam-giac-bang-nhau-ccc",
+        "tam-giac-bang-nhau-cgc",
+        "tam-giac-can",
+        "dau-hieu-song-song",
+        "vuong-goc"
+      ],
+      "prerequisites": [
+        "tam-giac-can",
+        "tam-giac-bang-nhau-ccc",
+        "goc-dong-vi"
+      ],
+      "estimated_minutes": 18,
+      "problem_markdown": "Cho tam giác \\(ABC\\) cân tại \\(A\\) (\\(AB=AC\\)), \\(M\\) là trung điểm của \\(BC\\). Lấy \\(D\\) nằm **giữa** A và B, lấy \\(E\\) nằm **giữa** A và C sao cho \\(AD=AE\\). Hãy vẽ hình và chứng minh:\n1. \\(AM\\perp BC\\) và \\(\\angle BAM=\\angle MAC\\).\n2. \\(DE\\parallel BC\\).\n3. \\(MD=ME\\) và \\(AM\\perp DE\\).",
+      "figure_uri": "../assets/geometry/written-library/wx14-tri-004.svg",
+      "figure_alt": "Tam giác ABC cân tại A, D trên AB, E trên AC với AD=AE, M là trung điểm BC; các đoạn AM, DE, DM, EM chỉ để định hướng, chưa khẳng định kết luận.",
+      "hint_steps": [
+        "Để chứng minh hai góc ở A bằng nhau, xét hai tam giác nào có ba cặp cạnh bằng nhau?",
+        "Tam giác ADE cân và tam giác ABC cân có cùng góc ở A; so sánh góc ở đáy của chúng.",
+        "Muốn chứng minh \\(MD=ME\\), xét cặp tam giác chứa cạnh chung \\(AM\\)."
+      ],
+      "full_solution_markdown": "1. \\(BM=CM,\\ AB=AC,\\ AM\\) chung, do đó \\(\\triangle ABM=\\triangle ACM\\) (c.c.c.). Suy ra \\(\\angle BAM=\\angle MAC\\) và \\(\\angle BMA=\\angle AMC\\). Vì B,M,C thẳng hàng nên hai góc cuối kề bù và bằng nhau, đều 90°, vậy \\(AM\\perp BC\\).\n2. \\(\\triangle ADE\\) cân tại A vì \\(AD=AE\\), \\(\\triangle ABC\\) cân tại A; cả hai có góc đỉnh \\(\\angle DAE=\\angle BAC\\). Do đó \\(\\angle ADE=\\angle ABC\\) (góc đáy bằng \\((180^\\circ-\\angle A)/2\\)). Vì A,D,B thẳng hàng và hai góc ở vị trí đồng vị theo cát tuyến AB, suy ra \\(DE\\parallel BC\\).\n3. Xét \\(\\triangle ADM\\) và \\(\\triangle AEM\\): \\(AD=AE\\), \\(AM\\) chung và \\(\\angle DAM=\\angle MAE\\) từ câu 1, nên bằng nhau (c.g.c.). Suy ra \\(MD=ME\\). Kết hợp \\(AM\\perp BC\\) ở câu 1 với \\(DE\\parallel BC\\) ở câu 2, suy ra \\(AM\\perp DE\\).",
+      "solution_steps": [
+        {
+          "step_id": "S1",
+          "title": "Bài giải chi tiết",
+          "content_markdown": "1. \\(BM=CM,\\ AB=AC,\\ AM\\) chung, do đó \\(\\triangle ABM=\\triangle ACM\\) (c.c.c.). Suy ra \\(\\angle BAM=\\angle MAC\\) và \\(\\angle BMA=\\angle AMC\\). Vì B,M,C thẳng hàng nên hai góc cuối kề bù và bằng nhau, đều 90°, vậy \\(AM\\perp BC\\).\n2. \\(\\triangle ADE\\) cân tại A vì \\(AD=AE\\), \\(\\triangle ABC\\) cân tại A; cả hai có góc đỉnh \\(\\angle DAE=\\angle BAC\\). Do đó \\(\\angle ADE=\\angle ABC\\) (góc đáy bằng \\((180^\\circ-\\angle A)/2\\)). Vì A,D,B thẳng hàng và hai góc ở vị trí đồng vị theo cát tuyến AB, suy ra \\(DE\\parallel BC\\).\n3. Xét \\(\\triangle ADM\\) và \\(\\triangle AEM\\): \\(AD=AE\\), \\(AM\\) chung và \\(\\angle DAM=\\angle MAE\\) từ câu 1, nên bằng nhau (c.g.c.). Suy ra \\(MD=ME\\). Kết hợp \\(AM\\perp BC\\) ở câu 1 với \\(DE\\parallel BC\\) ở câu 2, suy ra \\(AM\\perp DE\\)."
+        }
+      ],
+      "method_rationale_markdown": "Hãy đọc dữ kiện, chọn đúng phép biến đổi hoặc định lý, giải theo từng bước và đối chiếu lại mọi giả thiết trước khi kết luận.",
+      "rubric": [
+        {
+          "criterion": "vẽ hình đúng điều kiện",
+          "points": 0.5
+        },
+        {
+          "criterion": "chứng minh hai tam giác ABM/ACM bằng nhau và kết luận góc",
+          "points": 1.5
+        },
+        {
+          "criterion": "suy ra đường cao AM",
+          "points": 0.5
+        },
+        {
+          "criterion": "suy ra DE song song qua góc đáy",
+          "points": 1
+        },
+        {
+          "criterion": "chứng minh MD=ME và AM⊥DE, nêu các căn cứ",
+          "points": 1.5
+        }
+      ],
+      "rubric_total": 5,
+      "common_mistakes": [
+        "dùng định lý Thalès đảo khi chưa kiểm tra lớp/học phần.",
+        "suy DE∥BC chỉ do hình “trông song song”.",
+        "chứng minh \\(\\triangle ADM\\cong\\triangle AEM\\) mà chưa có căn cứ góc ở A."
+      ],
+      "remediation_markdown": "WX14-TRI-001, WX14-TRI-002, WX13-LIN-001/002.",
+      "remediation_links": [
+        {
+          "label": "Ôn lại kiến thức cùng chuyên đề",
+          "href": "../kien-thuc/14-tam-giac/"
+        },
+        {
+          "label": "Luyện tập thêm cùng chuyên đề",
+          "href": "../kien-thuc/14-tam-giac/bai-tap/"
+        }
+      ],
+      "source_refs": [
+        "review-packets/written-exercise-library/MATH-WRITTEN-GAP9-20261023-AUTHORING-REVIEW.md#g7-02"
+      ],
+      "academic_review": {
+        "status": "APPROVED",
+        "method": "NOTEBOOKLM_OWNER_SUBMITTED",
+        "packet_id": "MATH-WRITTEN-GAP9-20261023-R0",
+        "receipt": "review-packets/written-exercise-library/MATH-WRITTEN-GAP9-20261023-NOTEBOOKLM_OWNER_VERDICT.md",
+        "publication_gate": "OWNER_RELEASE_APPROVED_20261023"
+      },
+      "gates_core": false,
+      "auto_readiness_credit": false,
+      "written_role": "DEEP_ANCHOR",
+      "kntt_placements": [
+        {
+          "grade": 7,
+          "chapter": 4,
+          "lesson": "Bài 13–16 — Hai tam giác bằng nhau; Tam giác cân (kết hợp góc và song song Chương III)"
+        }
+      ]
+    },
+    {
+      "exercise_id": "WX24-MOD-003",
+      "exercise_kind": "anchor",
+      "topic_id": "CT24",
+      "topic_slug": "24-bai-toan-thuc-te",
+      "topic_title": "Bài toán thực tế",
+      "problem_type_id": "g8-two-phase-production-plan-vs-actual",
+      "problem_type_title": "Kế hoạch sản xuất: ngày ít hơn nhưng số lượng nhiều hơn",
+      "title": "Kế hoạch sản xuất: ngày ít hơn nhưng số lượng nhiều hơn",
+      "learning_layer": "KNTT-Core",
+      "level": "CORE_APPLY",
+      "learner_label": "Củng cố",
+      "grade_overlay": [
+        8
+      ],
+      "skills": [
+        "lap-phuong-trinh",
+        "phan-tram",
+        "nang-suat-theo-giai-doan",
+        "kiem-tra-nghiem"
+      ],
+      "prerequisites": [
+        "lap-phuong-trinh",
+        "phan-tram"
+      ],
+      "estimated_minutes": 14,
+      "problem_markdown": "Một tổ dự định làm việc **15 ngày**, mỗi ngày sản xuất cùng một số sản phẩm. Thực tế, trong **5 ngày đầu** tổ làm đúng kế hoạch; trong **9 ngày tiếp theo**, nhờ cải tiến, số sản phẩm làm mỗi ngày **tăng 25% so với mức kế hoạch**. Tổ kết thúc sau **14 ngày**, làm được **nhiều hơn 25 sản phẩm so với toàn bộ kế hoạch 15 ngày**. Hỏi kế hoạch mỗi ngày làm bao nhiêu sản phẩm và thực tế đã làm tổng cộng bao nhiêu sản phẩm?",
+      "figure_uri": null,
+      "figure_alt": null,
+      "hint_steps": [
+        "Gọi x là mức sản phẩm/ngày theo kế hoạch: kế hoạch toàn đợt là bao nhiêu?",
+        "Ở 9 ngày sau, số lượng mỗi ngày là x hay \\(1{,}25x\\)? So sánh hai tổng."
+      ],
+      "full_solution_markdown": "Gọi x là sản phẩm/ngày theo kế hoạch, \\(x>0\\). Theo kế hoạch có \\(15x\\) sản phẩm. Thực tế làm \\(5x+9\\cdot1{,}25x=16{,}25x\\). Vì vượt kế hoạch 25 sản phẩm nên \\(16{,}25x=15x+25\\), suy ra \\(1{,}25x=25\\), \\(x=20\\). Thực tế \\(5\\cdot20+9\\cdot25=325\\) sản phẩm; kế hoạch 300, đúng vượt 25 và giảm 1 ngày.",
+      "solution_steps": [
+        {
+          "step_id": "S1",
+          "title": "Bài giải chi tiết",
+          "content_markdown": "Gọi x là sản phẩm/ngày theo kế hoạch, \\(x>0\\). Theo kế hoạch có \\(15x\\) sản phẩm. Thực tế làm \\(5x+9\\cdot1{,}25x=16{,}25x\\). Vì vượt kế hoạch 25 sản phẩm nên \\(16{,}25x=15x+25\\), suy ra \\(1{,}25x=25\\), \\(x=20\\). Thực tế \\(5\\cdot20+9\\cdot25=325\\) sản phẩm; kế hoạch 300, đúng vượt 25 và giảm 1 ngày."
+        }
+      ],
+      "method_rationale_markdown": "Hãy đọc dữ kiện, chọn đúng phép biến đổi hoặc định lý, giải theo từng bước và đối chiếu lại mọi giả thiết trước khi kết luận.",
+      "rubric": [
+        {
+          "criterion": "gọi ẩn và lập tổng kế hoạch",
+          "points": 1
+        },
+        {
+          "criterion": "viết đúng mức tăng 25% và tổng 14 ngày",
+          "points": 1
+        },
+        {
+          "criterion": "lập/giải phương trình",
+          "points": 1
+        },
+        {
+          "criterion": "kiểm tra 300 so với 325, đơn vị",
+          "points": 1
+        }
+      ],
+      "rubric_total": 4,
+      "common_mistakes": [
+        "nhân mức tăng 25% vào cả 14 ngày.",
+        "so với kế hoạch 14 thay vì 15 ngày.",
+        "hiểu “vượt 25” là thêm 25 mỗi ngày."
+      ],
+      "remediation_markdown": "WX24-MOD-001 (đặt ẩn mô hình hóa), WX03-RAT-002 (điều kiện tỉ lệ), phần phương trình bậc nhất CT08.",
+      "remediation_links": [
+        {
+          "label": "Ôn lại kiến thức cùng chuyên đề",
+          "href": "../kien-thuc/24-bai-toan-thuc-te/"
+        },
+        {
+          "label": "Luyện tập thêm cùng chuyên đề",
+          "href": "../kien-thuc/24-bai-toan-thuc-te/bai-tap/"
+        }
+      ],
+      "source_refs": [
+        "review-packets/written-exercise-library/MATH-WRITTEN-GAP9-20261023-AUTHORING-REVIEW.md#g8-01"
+      ],
+      "academic_review": {
+        "status": "APPROVED",
+        "method": "NOTEBOOKLM_OWNER_SUBMITTED",
+        "packet_id": "MATH-WRITTEN-GAP9-20261023-R0",
+        "receipt": "review-packets/written-exercise-library/MATH-WRITTEN-GAP9-20261023-NOTEBOOKLM_OWNER_VERDICT.md",
+        "publication_gate": "OWNER_RELEASE_APPROVED_20261023"
+      },
+      "gates_core": false,
+      "auto_readiness_credit": false,
+      "written_role": "DEEP_ANCHOR",
+      "kntt_placements": [
+        {
+          "grade": 8,
+          "chapter": 7,
+          "lesson": "Bài 26 — Giải bài toán bằng cách lập phương trình"
+        }
+      ]
+    },
+    {
+      "exercise_id": "WX20-GEO-004",
+      "exercise_kind": "anchor",
+      "topic_id": "CT20",
+      "topic_slug": "20-hinh-hoc-tong-hop",
+      "topic_title": "Hình học tổng hợp, đo lường và hình khối",
+      "problem_type_id": "g8-square-pyramid-slantheight-area-volume",
+      "problem_type_title": "Hình chóp đều: chiều cao thật khác đường cao mặt bên",
+      "title": "Hình chóp đều: chiều cao thật khác đường cao mặt bên",
+      "learning_layer": "KNTT-Core",
+      "level": "CORE_APPLY",
+      "learner_label": "Củng cố",
+      "grade_overlay": [
+        8
+      ],
+      "skills": [
+        "hinh-chop-tu-giac-deu",
+        "pythagore",
+        "dien-tich-xung-quanh",
+        "the-tich-hinh-chop"
+      ],
+      "prerequisites": [
+        "pythagore",
+        "dien-tich-tam-giac"
+      ],
+      "estimated_minutes": 14,
+      "problem_markdown": "Mô hình mái che có dạng **hình chóp tứ giác đều** \\(S.ABCD\\), đáy là hình vuông cạnh **10 cm**, đỉnh S nằm thẳng trên tâm O của đáy và \\(SO=12\\) cm. Gọi M là trung điểm AB; mái có **4 mặt bên tam giác và không có đáy**. Bỏ qua đường viền và nếp gấp.\n1. Tính độ dài \\(SM\\), đường cao của mặt bên \\(SAB\\).\n2. Tính diện tích vật liệu làm 4 mặt bên.\n3. Nếu mô hình được đóng kín đáy, tính thể tích hình chóp bên trong.",
+      "figure_uri": null,
+      "figure_alt": null,
+      "hint_steps": [
+        "Từ tâm hình vuông đến trung điểm cạnh dài bao nhiêu? Tam giác SOM thuộc loại gì?",
+        "Để tính diện tích **mặt bên**, phải dùng SM hay SO? Thể tích lại dùng chiều cao nào?"
+      ],
+      "full_solution_markdown": "Trong hình vuông cạnh 10, \\(OM=5\\) cm. Do \\(SO\\perp (ABCD)\\), tam giác SOM vuông tại O, nên \\(SM=\\sqrt{12^2+5^2}=13\\) cm. Diện tích một mặt bên là \\(\\frac12\\cdot10\\cdot13=65\\) cm²; 4 mặt bên là \\(4\\cdot65=260\\) cm². Diện tích đáy \\(10^2=100\\) cm²; thể tích hình chóp \\(V=\\frac13\\cdot100\\cdot12=400\\) cm³. Không cộng đáy vào lượng vật liệu mái.",
+      "solution_steps": [
+        {
+          "step_id": "S1",
+          "title": "Bài giải chi tiết",
+          "content_markdown": "Trong hình vuông cạnh 10, \\(OM=5\\) cm. Do \\(SO\\perp (ABCD)\\), tam giác SOM vuông tại O, nên \\(SM=\\sqrt{12^2+5^2}=13\\) cm. Diện tích một mặt bên là \\(\\frac12\\cdot10\\cdot13=65\\) cm²; 4 mặt bên là \\(4\\cdot65=260\\) cm². Diện tích đáy \\(10^2=100\\) cm²; thể tích hình chóp \\(V=\\frac13\\cdot100\\cdot12=400\\) cm³. Không cộng đáy vào lượng vật liệu mái."
+        }
+      ],
+      "method_rationale_markdown": "Hãy đọc dữ kiện, chọn đúng phép biến đổi hoặc định lý, giải theo từng bước và đối chiếu lại mọi giả thiết trước khi kết luận.",
+      "rubric": [
+        {
+          "criterion": "xác định OM và đúng tam giác vuông",
+          "points": 1
+        },
+        {
+          "criterion": "tính SM=13",
+          "points": 1
+        },
+        {
+          "criterion": "diện tích 4 mặt bên 260 cm²",
+          "points": 1
+        },
+        {
+          "criterion": "thể tích 400 cm³ với SO đúng",
+          "points": 1
+        }
+      ],
+      "rubric_total": 4,
+      "common_mistakes": [
+        "dùng SO=12 làm chiều cao mặt bên.",
+        "tính vật liệu gồm cả đáy.",
+        "tính thể tích như hình lăng trụ."
+      ],
+      "remediation_markdown": "WX20-GEO-001/002 (phân biệt đại lượng dài, diện tích và thể tích); hình chóp đều SGK G8 (S1 cần đối chiếu).",
+      "remediation_links": [
+        {
+          "label": "Ôn lại kiến thức cùng chuyên đề",
+          "href": "../kien-thuc/20-hinh-hoc-tong-hop/"
+        },
+        {
+          "label": "Luyện tập thêm cùng chuyên đề",
+          "href": "../kien-thuc/20-hinh-hoc-tong-hop/bai-tap/"
+        }
+      ],
+      "source_refs": [
+        "review-packets/written-exercise-library/MATH-WRITTEN-GAP9-20261023-AUTHORING-REVIEW.md#g8-02"
+      ],
+      "academic_review": {
+        "status": "APPROVED",
+        "method": "NOTEBOOKLM_OWNER_SUBMITTED",
+        "packet_id": "MATH-WRITTEN-GAP9-20261023-R0",
+        "receipt": "review-packets/written-exercise-library/MATH-WRITTEN-GAP9-20261023-NOTEBOOKLM_OWNER_VERDICT.md",
+        "publication_gate": "OWNER_RELEASE_APPROVED_20261023"
+      },
+      "gates_core": false,
+      "auto_readiness_credit": false,
+      "written_role": "DEEP_ANCHOR",
+      "kntt_placements": [
+        {
+          "grade": 8,
+          "chapter": 10,
+          "lesson": "Bài 39 — Hình chóp tứ giác đều"
+        }
+      ]
+    },
+    {
+      "exercise_id": "WX21-STA-003",
+      "exercise_kind": "anchor",
+      "topic_id": "CT21",
+      "topic_slug": "21-thong-ke",
+      "topic_title": "Thống kê và thu thập dữ liệu",
+      "problem_type_id": "g9-grouped-frequency-relative-threshold",
+      "problem_type_title": "Tần số ghép nhóm và ngưỡng cộng nhiều nhóm",
+      "title": "Tần số ghép nhóm và ngưỡng cộng nhiều nhóm",
+      "learning_layer": "KNTT-Core",
+      "level": "CORE_APPLY",
+      "learner_label": "Củng cố",
+      "grade_overlay": [
+        9
+      ],
+      "skills": [
+        "bang-tan-so-ghep-nhom",
+        "tan-so-tuong-doi",
+        "nhan-xet-so-lieu"
+      ],
+      "prerequisites": [
+        "bang-tan-so",
+        "phan-tram"
+      ],
+      "estimated_minutes": 12,
+      "problem_markdown": "Một thư viện khảo sát **80 học sinh** về thời gian đọc sách trong tuần (giờ) và lập bảng:\n\n| Số giờ đọc | [0;2) | [2;4) | [4;6) | [6;8) |\n|---|---:|---:|---:|---:|\n| Số học sinh | 12 | 20 | 28 | 20 |\n\n1. Xác định **tần số** và **tần số tương đối** của nhóm \\([4;6)\\).\n2. Tính tỉ lệ học sinh đọc **ít nhất 4 giờ** mỗi tuần trong bảng.\n3. Giải thích tại sao bảng **không cho biết chính xác** bao nhiêu học sinh đọc đúng 5 giờ.",
+      "figure_uri": null,
+      "figure_alt": null,
+      "hint_steps": [
+        "Tần số là một số đếm; tần số tương đối phải chia cho cỡ mẫu nào?",
+        "“Ít nhất 4 giờ” bao gồm trọn vẹn những nhóm nào?"
+      ],
+      "full_solution_markdown": "Nhóm [4;6) có tần số 28; tần số tương đối \\(28/80=35\\%\\). Học sinh có ít nhất 4 giờ là những nhóm [4;6), [6;8): \\(28+20=48\\), chiếm \\(48/80=60\\%\\). Nhóm [4;6) gộp mọi giá trị từ 4 đến dưới 6; không biết tần số riêng của đúng 5 giờ.",
+      "solution_steps": [
+        {
+          "step_id": "S1",
+          "title": "Bài giải chi tiết",
+          "content_markdown": "Nhóm [4;6) có tần số 28; tần số tương đối \\(28/80=35\\%\\). Học sinh có ít nhất 4 giờ là những nhóm [4;6), [6;8): \\(28+20=48\\), chiếm \\(48/80=60\\%\\). Nhóm [4;6) gộp mọi giá trị từ 4 đến dưới 6; không biết tần số riêng của đúng 5 giờ."
+        }
+      ],
+      "method_rationale_markdown": "Hãy đọc dữ kiện, chọn đúng phép biến đổi hoặc định lý, giải theo từng bước và đối chiếu lại mọi giả thiết trước khi kết luận.",
+      "rubric": [
+        {
+          "criterion": "xác định 28",
+          "points": 1
+        },
+        {
+          "criterion": "tính 35%",
+          "points": 1
+        },
+        {
+          "criterion": "cộng đúng hai nhóm và 60%",
+          "points": 1
+        },
+        {
+          "criterion": "giải thích giới hạn dữ liệu ghép nhóm",
+          "points": 1
+        }
+      ],
+      "rubric_total": 4,
+      "common_mistakes": [
+        "lấy phần trăm chia theo số nhóm thay vì 80.",
+        "cộng nhóm [2;4) vào “ít nhất 4”.",
+        "cho rằng cả 28 bạn đều đọc 5 giờ."
+      ],
+      "remediation_markdown": "WX21-STA-001/002 (đọc bảng/biểu đồ); SGK G9 phần bảng tần số ghép nhóm S1.",
+      "remediation_links": [
+        {
+          "label": "Ôn lại kiến thức cùng chuyên đề",
+          "href": "../kien-thuc/21-thong-ke/"
+        },
+        {
+          "label": "Luyện tập thêm cùng chuyên đề",
+          "href": "../kien-thuc/21-thong-ke/bai-tap/"
+        }
+      ],
+      "source_refs": [
+        "review-packets/written-exercise-library/MATH-WRITTEN-GAP9-20261023-AUTHORING-REVIEW.md#g9-01"
+      ],
+      "academic_review": {
+        "status": "APPROVED",
+        "method": "NOTEBOOKLM_OWNER_SUBMITTED",
+        "packet_id": "MATH-WRITTEN-GAP9-20261023-R0",
+        "receipt": "review-packets/written-exercise-library/MATH-WRITTEN-GAP9-20261023-NOTEBOOKLM_OWNER_VERDICT.md",
+        "publication_gate": "OWNER_RELEASE_APPROVED_20261023"
+      },
+      "gates_core": false,
+      "auto_readiness_credit": false,
+      "written_role": "DEEP_ANCHOR",
+      "kntt_placements": [
+        {
+          "grade": 9,
+          "chapter": 7,
+          "lesson": "Bài 24 — Bảng tần số, tần số tương đối ghép nhóm và biểu đồ"
+        }
+      ]
+    },
+    {
+      "exercise_id": "WX19-CIR-005",
+      "exercise_kind": "anchor",
+      "topic_id": "CT19",
+      "topic_slug": "19-duong-tron",
+      "topic_title": "Đường tròn",
+      "problem_type_id": "g9-cyclic-altitudes-similarity-length",
+      "problem_type_title": "Đường tròn + đường cao + đồng dạng",
+      "title": "Đường tròn + đường cao + đồng dạng",
+      "learning_layer": "Entrance10",
+      "level": "ENTRANCE10",
+      "learner_label": "Ôn thi vào 10",
+      "grade_overlay": [
+        9
+      ],
+      "skills": [
+        "tu-giac-noi-tiep",
+        "duong-tron-duong-kinh",
+        "tam-giac-dong-dang",
+        "cos",
+        "lap-luan-hinh-hoc-nhieu-buoc"
+      ],
+      "prerequisites": [
+        "tu-giac-noi-tiep",
+        "dong-dang-gg",
+        "cos"
+      ],
+      "estimated_minutes": 20,
+      "problem_markdown": "Cho tam giác \\(ABC\\) **có ba góc nhọn**, hai đường cao \\(BD\\perp AC\\) tại \\(D\\in AC\\) và \\(CE\\perp AB\\) tại \\(E\\in AB\\). (Vẽ hình đủ rõ và dùng đúng chân đường cao.)\n1. Chứng minh bốn điểm \\(B,C,D,E\\) cùng thuộc một đường tròn; xác định đường kính của đường tròn ấy.\n2. Chứng minh \\(\\triangle ADE\\sim\\triangle ABC\\), ghi rõ các cặp cạnh tương ứng. **Có thể** sử dụng góc nội tiếp hoặc các tam giác vuông để chứng minh.\n3. Biết \\(\\angle BAC=60^\\circ\\) và \\(BC=12\\) cm. Tính \\(DE\\).",
+      "figure_uri": null,
+      "figure_alt": null,
+      "hint_steps": [
+        "Tìm hai góc vuông cùng chắn một đoạn thẳng cố định.",
+        "Trong các tam giác vuông ABD và ACE, so sánh \\(AD/AB\\) với \\(AE/AC\\).",
+        "Sau khi đồng dạng, xem tỉ số \\(DE/BC\\) bằng tỉ số nào liên quan đến \\(\\cos\\angle A\\)."
+      ],
+      "full_solution_markdown": "Vì \\(BD\\perp AC\\) và \\(D\\in AC\\) nên \\(\\angle BDC=90^\\circ\\); vì \\(CE\\perp AB\\) và \\(E\\in AB\\), \\(\\angle BEC=90^\\circ\\). Suy ra D,E cùng thuộc đường tròn đường kính BC, cùng với B,C.\nTrong tam giác vuông ABD, \\(AD=AB\\cos\\angle BAC\\); trong tam giác vuông ACE, \\(AE=AC\\cos\\angle BAC\\). Vì A nhọn, \\(\\cos A>0\\), nên \\(AD/AB=AE/AC=\\cos A\\). Lại có \\(\\angle DAE=\\angle BAC\\), suy ra \\(\\triangle ADE\\sim\\triangle ABC\\) (c.g.c.), ứng A↔A, D↔B, E↔C. Vì thế \\(DE/BC=\\cos A\\). Với \\(\\angle A=60^\\circ\\), \\(DE=12\\cos60^\\circ=6\\) cm.",
+      "solution_steps": [
+        {
+          "step_id": "S1",
+          "title": "Bài giải chi tiết",
+          "content_markdown": "Vì \\(BD\\perp AC\\) và \\(D\\in AC\\) nên \\(\\angle BDC=90^\\circ\\); vì \\(CE\\perp AB\\) và \\(E\\in AB\\), \\(\\angle BEC=90^\\circ\\). Suy ra D,E cùng thuộc đường tròn đường kính BC, cùng với B,C.\nTrong tam giác vuông ABD, \\(AD=AB\\cos\\angle BAC\\); trong tam giác vuông ACE, \\(AE=AC\\cos\\angle BAC\\). Vì A nhọn, \\(\\cos A>0\\), nên \\(AD/AB=AE/AC=\\cos A\\). Lại có \\(\\angle DAE=\\angle BAC\\), suy ra \\(\\triangle ADE\\sim\\triangle ABC\\) (c.g.c.), ứng A↔A, D↔B, E↔C. Vì thế \\(DE/BC=\\cos A\\). Với \\(\\angle A=60^\\circ\\), \\(DE=12\\cos60^\\circ=6\\) cm."
+        }
+      ],
+      "method_rationale_markdown": "Hãy đọc dữ kiện, chọn đúng phép biến đổi hoặc định lý, giải theo từng bước và đối chiếu lại mọi giả thiết trước khi kết luận.",
+      "rubric": [
+        {
+          "criterion": "dựng hình và hai góc vuông đúng",
+          "points": 1
+        },
+        {
+          "criterion": "xác định đường tròn đường kính BC",
+          "points": 1
+        },
+        {
+          "criterion": "lập đúng hai tỉ số từ tam giác vuông",
+          "points": 1
+        },
+        {
+          "criterion": "chứng minh đồng dạng và xác định tương ứng",
+          "points": 1
+        },
+        {
+          "criterion": "tính DE=6, đơn vị",
+          "points": 1
+        }
+      ],
+      "rubric_total": 5,
+      "common_mistakes": [
+        "khẳng định B,C,D,E nội tiếp chỉ vì “có bốn điểm”.",
+        "dùng sai tỉ số khi đồng dạng.",
+        "quên chỉ rõ hai tam giác vuông trước khi dùng cos."
+      ],
+      "remediation_markdown": "WX19-CIR-002/003 và WX17-SIM-002, WX18-TRI-001.",
+      "remediation_links": [
+        {
+          "label": "Ôn lại kiến thức cùng chuyên đề",
+          "href": "../kien-thuc/19-duong-tron/"
+        },
+        {
+          "label": "Luyện tập thêm cùng chuyên đề",
+          "href": "../kien-thuc/19-duong-tron/bai-tap/"
+        }
+      ],
+      "source_refs": [
+        "review-packets/written-exercise-library/MATH-WRITTEN-GAP9-20261023-AUTHORING-REVIEW.md#g9-02"
+      ],
+      "academic_review": {
+        "status": "APPROVED",
+        "method": "NOTEBOOKLM_OWNER_SUBMITTED",
+        "packet_id": "MATH-WRITTEN-GAP9-20261023-R0",
+        "receipt": "review-packets/written-exercise-library/MATH-WRITTEN-GAP9-20261023-NOTEBOOKLM_OWNER_VERDICT.md",
+        "publication_gate": "OWNER_RELEASE_APPROVED_20261023"
+      },
+      "gates_core": false,
+      "auto_readiness_credit": false,
+      "written_role": "DEEP_ANCHOR"
+    },
+    {
+      "exercise_id": "WX20-GEO-005",
+      "exercise_kind": "anchor",
+      "topic_id": "CT20",
+      "topic_slug": "20-hinh-hoc-tong-hop",
+      "topic_title": "Hình học tổng hợp, đo lường và hình khối",
+      "problem_type_id": "g9-cylinder-percent-volume-minimum-trips",
+      "problem_type_title": "Hình trụ, mức đầy 75%, số lượt nguyên tối thiểu",
+      "title": "Hình trụ, mức đầy 75%, số lượt nguyên tối thiểu",
+      "learning_layer": "KNTT-Core",
+      "level": "CORE_APPLY",
+      "learner_label": "Củng cố",
+      "grade_overlay": [
+        9
+      ],
+      "skills": [
+        "dien-tich-xung-quanh-hinh-tru",
+        "the-tich-hinh-tru",
+        "phan-tram",
+        "don-vi-the-tich",
+        "lam-tron-len-thuc-te"
+      ],
+      "prerequisites": [
+        "hinh-tru",
+        "phan-tram",
+        "doi-don-vi"
+      ],
+      "estimated_minutes": 14,
+      "problem_markdown": "Một bình đựng nước có dạng **hình trụ**, bán kính đáy **10 cm**, chiều cao **30 cm**. Lấy \\(\\pi\\approx3{,}14\\), xem thành bình có độ dày không đáng kể.\n1. Tính **diện tích xung quanh** của bình.\n2. Mỗi lần múc, người dùng chỉ đổ lượng nước bằng **75% thể tích bình** vào một bể rỗng dung tích **100 lít**. Cần **ít nhất bao nhiêu lần múc** để đủ nước cho bể? Giả sử các lượt sau giống nhau, riêng lượt cuối có thể không cần đổ hết bình. Biết \\(1\\) lít \\(=1000\\) cm³.\n3. Kiểm tra rằng số lượt ít hơn một đơn vị là không đủ.",
+      "figure_uri": null,
+      "figure_alt": null,
+      "hint_steps": [
+        "Diện tích xung quanh dùng bán kính và chiều cao theo phép nhân nào?",
+        "Đổi thể tích hình trụ ra lít, tính 75%, rồi thử hai số nguyên liên tiếp thay vì chỉ làm tròn số thập phân."
+      ],
+      "full_solution_markdown": "Diện tích xung quanh \\(S_{xq}=2\\pi rh=2\\cdot3{,}14\\cdot10\\cdot30=1884\\) cm². Thể tích bình \\(V=\\pi r^2h=3{,}14\\cdot100\\cdot30=9420\\) cm³ \\(=9{,}42\\) lít. Mỗi lượt chuyển \\(0{,}75\\cdot9{,}42=7{,}065\\) lít. Cần \\(100/7{,}065\\approx14{,}154\\) lượt, vậy số lượt nguyên tối thiểu là **15**. Kiểm tra \\(14\\cdot7{,}065=98{,}91<100\\), còn \\(15\\cdot7{,}065=105{,}975\\ge100\\); lượt cuối chỉ cần đổ phần còn thiếu.",
+      "solution_steps": [
+        {
+          "step_id": "S1",
+          "title": "Bài giải chi tiết",
+          "content_markdown": "Diện tích xung quanh \\(S_{xq}=2\\pi rh=2\\cdot3{,}14\\cdot10\\cdot30=1884\\) cm². Thể tích bình \\(V=\\pi r^2h=3{,}14\\cdot100\\cdot30=9420\\) cm³ \\(=9{,}42\\) lít. Mỗi lượt chuyển \\(0{,}75\\cdot9{,}42=7{,}065\\) lít. Cần \\(100/7{,}065\\approx14{,}154\\) lượt, vậy số lượt nguyên tối thiểu là **15**. Kiểm tra \\(14\\cdot7{,}065=98{,}91<100\\), còn \\(15\\cdot7{,}065=105{,}975\\ge100\\); lượt cuối chỉ cần đổ phần còn thiếu."
+        }
+      ],
+      "method_rationale_markdown": "Hãy đọc dữ kiện, chọn đúng phép biến đổi hoặc định lý, giải theo từng bước và đối chiếu lại mọi giả thiết trước khi kết luận.",
+      "rubric": [
+        {
+          "criterion": "đúng \\(S_{xq}=1884\\) cm²",
+          "points": 1
+        },
+        {
+          "criterion": "đúng \\(V=9{,}42\\) lít",
+          "points": 1
+        },
+        {
+          "criterion": "đúng mỗi lượt 7,065 lít",
+          "points": 1
+        },
+        {
+          "criterion": "suy ra 15 lượt nguyên",
+          "points": 1
+        },
+        {
+          "criterion": "chứng minh 14 lượt chưa đủ bằng bất đẳng thức",
+          "points": 1
+        }
+      ],
+      "rubric_total": 5,
+      "common_mistakes": [
+        "dùng 75% diện tích thay vì thể tích.",
+        "quên 1000 cm³/lít.",
+        "làm tròn **xuống** 14 lượt.",
+        "lẫn mặt đáy với xung quanh."
+      ],
+      "remediation_markdown": "WX20-GEO-001/002; công thức hình trụ và chuyển đơn vị thể tích.",
+      "remediation_links": [
+        {
+          "label": "Ôn lại kiến thức cùng chuyên đề",
+          "href": "../kien-thuc/20-hinh-hoc-tong-hop/"
+        },
+        {
+          "label": "Luyện tập thêm cùng chuyên đề",
+          "href": "../kien-thuc/20-hinh-hoc-tong-hop/bai-tap/"
+        }
+      ],
+      "source_refs": [
+        "review-packets/written-exercise-library/MATH-WRITTEN-GAP9-20261023-AUTHORING-REVIEW.md#g9-03"
+      ],
+      "academic_review": {
+        "status": "APPROVED",
+        "method": "NOTEBOOKLM_OWNER_SUBMITTED",
+        "packet_id": "MATH-WRITTEN-GAP9-20261023-R0",
+        "receipt": "review-packets/written-exercise-library/MATH-WRITTEN-GAP9-20261023-NOTEBOOKLM_OWNER_VERDICT.md",
+        "publication_gate": "OWNER_RELEASE_APPROVED_20261023"
+      },
+      "gates_core": false,
+      "auto_readiness_credit": false,
+      "written_role": "DEEP_ANCHOR",
+      "kntt_placements": [
+        {
+          "grade": 9,
+          "chapter": 10,
+          "lesson": "Bài 31 — Hình trụ và hình nón"
+        }
+      ]
     }
   ],
   "extension_policy": [
@@ -7466,7 +8357,7 @@
       "CT23",
       "CT24"
     ],
-    "exercise_count": 75,
+    "exercise_count": 84,
     "batches": [
       {
         "batch_id": "PILOT_R1",
@@ -7570,6 +8461,13 @@
         "count": 1,
         "status": "PUBLISHED",
         "owner_release_authorization": "OWNER_APPROVED_RELEASE_20261022"
+      },
+      {
+        "batch_id": "GAP9_NEW_STRUCTURES_20261023",
+        "packet_id": "MATH-WRITTEN-GAP9-20261023-R0",
+        "count": 9,
+        "status": "PUBLISHED",
+        "owner_release_authorization": "OWNER_APPROVED_RELEASE_20261023"
       }
     ],
     "rule": "Append-only publication of academically reviewed written exercises; self-marking only."

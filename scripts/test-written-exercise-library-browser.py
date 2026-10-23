@@ -115,7 +115,8 @@ with sync_playwright() as p:
 
         level = page.locator('select[aria-label="Lọc theo mức"]')
         level.select_option("CORE_APPLY")
-        assert cards.count() == 1, (device, "CT14 apply filter")
+        assert cards.count() == 2, (device, "CT14 apply includes reviewed G7 chained proof")
+        assert page.locator(".written-exercise-card#wx14-tri-004").count() == 1
         assert page.locator(".written-exercise-card#wx14-tri-002").count() == 1
 
         # Reviewed W3A-WR additions must be discoverable at both desktop and 390px.
