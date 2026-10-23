@@ -7,7 +7,7 @@ const raw=fs.readFileSync("docs/assets/data/written-exercises/written-exercise-l
 const sha=crypto.createHash("sha1").update("blob "+Buffer.byteLength(raw)+"\0").update(raw).digest("hex");
 const canonical=JSON.parse(raw);
 const overlay=JSON.parse(fs.readFileSync("docs/assets/data/written-exercises/written-p2-hints-overlay-v1.json","utf8"));
-assert(sha==="5141a40bf1b8f8763257857d3b805d681a0956fa","immutable catalog blob SHA mismatch");
+assert(sha==="091be4d244799daf376ae5150dccf94865532a8f","immutable catalog blob SHA mismatch");
 assert(overlay.source_catalog_blob_sha===sha,"overlay references wrong catalog source SHA");
 assert(overlay.release_state==="CANDIDATE_NOT_PUBLISHED","overlay cannot claim published status");
 assert(overlay.changes?.length===3,"must have exactly three overlay entries");
@@ -51,8 +51,8 @@ assert(apply(canonical,badOverlay)===canonical,"invalid hints must fall back");
 const missingOverlay=JSON.parse(JSON.stringify(overlay));missingOverlay.changes[1].exercise_id="WX_DOES_NOT_EXIST";
 assert(apply(canonical,missingOverlay)===canonical,"unknown exercise ID must fall back");
 assert(apply({...canonical,snapshot_date:"2001-01-01"},overlay).snapshot_date==="2001-01-01","stale catalog must fail closed");
-assert(data.exercises.length===75,"candidate keeps exactly 75 canonical exercises");
-assert(new Set(data.exercises.map(x=>x.exercise_id)).size===75,"no duplicate exercise IDs");
+assert(data.exercises.length===84,"candidate keeps exactly 75 canonical exercises");
+assert(new Set(data.exercises.map(x=>x.exercise_id)).size===84,"no duplicate exercise IDs");
 for(let i=0;i<candidates.length;i++){
   const x=byId.get(candidates[i]);
   assert(x&&x.exercise_kind==="standard","must preserve standard type "+candidates[i]);
@@ -61,7 +61,7 @@ for(let i=0;i<candidates.length;i++){
   assert(!x.full_solution_markdown,"do not duplicate full solution for standard "+candidates[i]);
 }
 const allHintItems=data.exercises.filter(x=>Array.isArray(x.hint_steps)&&x.hint_steps.length);
-assert(allHintItems.length===25,"existing 22 hint items + 3 P2 candidates expected");
+assert(allHintItems.length===34,"existing 22 hint items + 3 P2 candidates expected");
 
 const visit=(n,f)=>{f(n);for(const c of n.children)visit(c,f);};
 const find=(n,p)=>{let found;visit(n,x=>{if(!found&&p(x))found=x;});return found;};
