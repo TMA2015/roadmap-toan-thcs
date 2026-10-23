@@ -59,8 +59,8 @@ historic.snapshot_date="2026-10-20";
 const appended=historic.published_scope.batches.filter(x=>x.batch_id==="W4_CT08_12_WRITTEN_R1");
 assert(appended.length<=1);
 if(appended.length) {
- assert(appended[0].count===5 && appended[0].status==="PUBLISHED" && written.exercises.length===84 && written.published_scope.exercise_count===84 && !written.candidate_scope,"W4 five published plus independent later approved W9 Written");
- historic.published_scope.batches=historic.published_scope.batches.filter(x=>!["W4_CT08_12_WRITTEN_R1","W9_G6_NUMABS_WRITTEN_20261022","GAP9_NEW_STRUCTURES_20261023"].includes(x.batch_id));
+ assert(appended[0].count===5 && appended[0].status==="PUBLISHED" && written.exercises.length===87 && written.published_scope.exercise_count===87 && !written.candidate_scope,"W4 five published plus independent later approved W9 Written");
+ historic.published_scope.batches=historic.published_scope.batches.filter(x=>!["W4_CT08_12_WRITTEN_R1","W9_G6_NUMABS_WRITTEN_20261022","GAP9_NEW_STRUCTURES_20261023","GAP3_NEW_STRUCTURES_20261023"].includes(x.batch_id));
 }
 assert.equal(blob(Buffer.from(JSON.stringify(historic,null,2)+"\n")),"eed3fa0cbae29fd4fdb9daaeac9ef36c3744b665","Historical 69 Written JSON records + metadata must remain unchanged");
 for(const topic of ["05-7-hang-dang-thuc","06-phan-tich-da-thuc"]){
