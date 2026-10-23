@@ -104,5 +104,10 @@ const report={
  "No demonstration of learner A2 understanding, no Mastery credits, no new content authorization.",
  "No file writes, no learner interaction, no manifest mutation."]
 };
+const snapshot="review-packets/math-post87-curriculum-ux/01_LIVE_78_ROW_SOURCE_EVIDENCE_MATRIX_R1.json";
+if(process.argv.includes("--verify-snapshot")){
+ assert(exists(snapshot),"source-locked 78-row audit artifact missing");
+ assert.deepEqual(read(snapshot),report,"current-source D1–D6 snapshot diverges: review and regenerate, never silently fix scores");
+}
 if(process.argv.includes("--emit-json"))console.log("MATH_POST87_SNAPSHOT_JSON|"+JSON.stringify(report));
 else console.log("PASS POST87 source-backed 78 KNTT rows; "+JSON.stringify(report.summary));
