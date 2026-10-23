@@ -19,15 +19,15 @@
     return catalogPromise;
   };
 
-  // Keep the canonical 75-item catalog immutable: P2 prompts are a separate,
+  // Keep the canonical catalog immutable: P2 prompts are a separate,
   // source-locked optional teaching overlay, applied in memory on library pages.
   // Bad, missing or mismatched data fails closed to the unchanged catalog.
   const applyReviewedHints=(data,overlay)=>{
     const expectedIds=["WX16-QUAD-001","WX07-RAT-001","WX19-CIR-002"];
     if(!data||data.catalog_id!=="MATH-WRITTEN-EXERCISE-LIBRARY-V1"||
-       data.snapshot_date!=="2026-10-23"||!Array.isArray(data.exercises)||data.exercises.length!==84||
+       data.snapshot_date!=="2026-10-23"||!Array.isArray(data.exercises)||data.exercises.length!==87||
        !overlay||overlay.schema_version!=="1.0.0"||
-       overlay.source_catalog_blob_sha!=="85d8301daca7819009ba47eabf63080d586e9dc9"||
+       overlay.source_catalog_blob_sha!=="52da473e93101830ecbdb7ee6bb57c876586130f"||
        overlay.source_catalog_snapshot_date!==data.snapshot_date||
        overlay.source_catalog_exercise_count!==data.exercises.length||
        overlay.source_packet_id!=="MATH-WRITTEN-QUALITY-8PILOT-20261022-R0"||
