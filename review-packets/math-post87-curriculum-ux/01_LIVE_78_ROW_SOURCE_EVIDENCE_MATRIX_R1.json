@@ -1,0 +1,4953 @@
+{
+  "schema": "post87-kntt-lesson-evidence-r1",
+  "source": "current main data snapshot, no learner instrumentation",
+  "as_of": "2026-10-23",
+  "guard": {
+    "written_count": 87,
+    "curriculum_rows": 78,
+    "chapters": 39,
+    "assessment_is_not_lessons": true,
+    "zero_written_is_not_an_error": true
+  },
+  "summary": {
+    "learn": {
+      "CARD_WITH_LESSON_RANGE_OVERLAP": 40,
+      "SHARED_TOPIC_TEACHING_ONLY": 11,
+      "GRADE_OR_LESSON_CONTEXT_CARD": 27
+    },
+    "micro": {
+      "CARD_WITH_LESSON_RANGE_OVERLAP": 40,
+      "GRADE_OR_LESSON_CONTEXT_MICRO": 32,
+      "SHARED_TOPIC_MICRO_ONLY": 6
+    },
+    "practice": {
+      "TOPIC_BANK_PRESENT_NOT_LESSON_VERIFIED": 78
+    },
+    "written": {
+      "NO_PLACED_ITEM_REQUIRED_BY_DEFAULT": 45,
+      "REVIEWED_ITEM_KNTT_PLACEMENT_INTERSECTS": 33
+    },
+    "readiness": {
+      "GRADE_SCOPE_ITEMS_NOT_LESSON_VERIFIED": 21,
+      "TOPIC_ITEMS_NOT_LESSON_VERIFIED": 57
+    },
+    "rows_per_grade": {
+      "6": 31,
+      "7": 21,
+      "8": 16,
+      "9": 10
+    }
+  },
+  "rows": [
+    {
+      "grade": 6,
+      "chapter": 1,
+      "chapter_title": "Tập hợp các số tự nhiên",
+      "lesson_ref": "Bài 1-3",
+      "lesson_summary": "Tập hợp; cách ghi và thứ tự số tự nhiên",
+      "primary_topics": [
+        "02-so-va-phep-tinh"
+      ],
+      "learn": {
+        "status": "CARD_WITH_LESSON_RANGE_OVERLAP",
+        "cards": [
+          "num02-g6-core-1"
+        ],
+        "source_scope": "WORKSPACE_PLUS_CT20_OVERLAY; not full content review"
+      },
+      "micro": {
+        "status": "CARD_WITH_LESSON_RANGE_OVERLAP",
+        "cards": [
+          "num02-g6-core-1"
+        ]
+      },
+      "practice": {
+        "status": "TOPIC_BANK_PRESENT_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "02-so-va-phep-tinh",
+            "manifest": "02-so-va-phep-tinh-v4.manifest.json",
+            "questions": 149
+          }
+        ]
+      },
+      "written": {
+        "status": "NO_PLACED_ITEM_REQUIRED_BY_DEFAULT",
+        "item_ids": []
+      },
+      "readiness": {
+        "status": "GRADE_SCOPE_ITEMS_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "02-so-va-phep-tinh",
+            "items": 18,
+            "gradeScope": [
+              6
+            ]
+          }
+        ]
+      },
+      "source_evidence": [
+        {
+          "topic": "02-so-va-phep-tinh",
+          "workspace": true,
+          "cards": 8,
+          "microBank": true,
+          "microCount": 67,
+          "hasPracticeManifest": true,
+          "hasReadiness": true
+        }
+      ]
+    },
+    {
+      "grade": 6,
+      "chapter": 1,
+      "chapter_title": "Tập hợp các số tự nhiên",
+      "lesson_ref": "Bài 4-5",
+      "lesson_summary": "Cộng, trừ, nhân, chia số tự nhiên và tính chất",
+      "primary_topics": [
+        "02-so-va-phep-tinh"
+      ],
+      "learn": {
+        "status": "CARD_WITH_LESSON_RANGE_OVERLAP",
+        "cards": [
+          "num02-g6-core-1"
+        ],
+        "source_scope": "WORKSPACE_PLUS_CT20_OVERLAY; not full content review"
+      },
+      "micro": {
+        "status": "CARD_WITH_LESSON_RANGE_OVERLAP",
+        "cards": [
+          "num02-g6-core-1"
+        ]
+      },
+      "practice": {
+        "status": "TOPIC_BANK_PRESENT_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "02-so-va-phep-tinh",
+            "manifest": "02-so-va-phep-tinh-v4.manifest.json",
+            "questions": 149
+          }
+        ]
+      },
+      "written": {
+        "status": "NO_PLACED_ITEM_REQUIRED_BY_DEFAULT",
+        "item_ids": []
+      },
+      "readiness": {
+        "status": "GRADE_SCOPE_ITEMS_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "02-so-va-phep-tinh",
+            "items": 18,
+            "gradeScope": [
+              6
+            ]
+          }
+        ]
+      },
+      "source_evidence": [
+        {
+          "topic": "02-so-va-phep-tinh",
+          "workspace": true,
+          "cards": 8,
+          "microBank": true,
+          "microCount": 67,
+          "hasPracticeManifest": true,
+          "hasReadiness": true
+        }
+      ]
+    },
+    {
+      "grade": 6,
+      "chapter": 1,
+      "chapter_title": "Tập hợp các số tự nhiên",
+      "lesson_ref": "Bài 6",
+      "lesson_summary": "Lũy thừa với số mũ tự nhiên",
+      "primary_topics": [
+        "02-so-va-phep-tinh"
+      ],
+      "learn": {
+        "status": "CARD_WITH_LESSON_RANGE_OVERLAP",
+        "cards": [
+          "num02-g6-core-1"
+        ],
+        "source_scope": "WORKSPACE_PLUS_CT20_OVERLAY; not full content review"
+      },
+      "micro": {
+        "status": "CARD_WITH_LESSON_RANGE_OVERLAP",
+        "cards": [
+          "num02-g6-core-1"
+        ]
+      },
+      "practice": {
+        "status": "TOPIC_BANK_PRESENT_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "02-so-va-phep-tinh",
+            "manifest": "02-so-va-phep-tinh-v4.manifest.json",
+            "questions": 149
+          }
+        ]
+      },
+      "written": {
+        "status": "NO_PLACED_ITEM_REQUIRED_BY_DEFAULT",
+        "item_ids": []
+      },
+      "readiness": {
+        "status": "GRADE_SCOPE_ITEMS_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "02-so-va-phep-tinh",
+            "items": 18,
+            "gradeScope": [
+              6
+            ]
+          }
+        ]
+      },
+      "source_evidence": [
+        {
+          "topic": "02-so-va-phep-tinh",
+          "workspace": true,
+          "cards": 8,
+          "microBank": true,
+          "microCount": 67,
+          "hasPracticeManifest": true,
+          "hasReadiness": true
+        }
+      ]
+    },
+    {
+      "grade": 6,
+      "chapter": 1,
+      "chapter_title": "Tập hợp các số tự nhiên",
+      "lesson_ref": "Bài 7",
+      "lesson_summary": "Thứ tự thực hiện phép tính",
+      "primary_topics": [
+        "02-so-va-phep-tinh"
+      ],
+      "learn": {
+        "status": "CARD_WITH_LESSON_RANGE_OVERLAP",
+        "cards": [
+          "num02-g6-core-1"
+        ],
+        "source_scope": "WORKSPACE_PLUS_CT20_OVERLAY; not full content review"
+      },
+      "micro": {
+        "status": "CARD_WITH_LESSON_RANGE_OVERLAP",
+        "cards": [
+          "num02-g6-core-1"
+        ]
+      },
+      "practice": {
+        "status": "TOPIC_BANK_PRESENT_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "02-so-va-phep-tinh",
+            "manifest": "02-so-va-phep-tinh-v4.manifest.json",
+            "questions": 149
+          }
+        ]
+      },
+      "written": {
+        "status": "NO_PLACED_ITEM_REQUIRED_BY_DEFAULT",
+        "item_ids": []
+      },
+      "readiness": {
+        "status": "GRADE_SCOPE_ITEMS_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "02-so-va-phep-tinh",
+            "items": 18,
+            "gradeScope": [
+              6
+            ]
+          }
+        ]
+      },
+      "source_evidence": [
+        {
+          "topic": "02-so-va-phep-tinh",
+          "workspace": true,
+          "cards": 8,
+          "microBank": true,
+          "microCount": 67,
+          "hasPracticeManifest": true,
+          "hasReadiness": true
+        }
+      ]
+    },
+    {
+      "grade": 6,
+      "chapter": 2,
+      "chapter_title": "Tính chia hết trong tập hợp các số tự nhiên",
+      "lesson_ref": "Bài 8",
+      "lesson_summary": "Quan hệ chia hết và tính chất",
+      "primary_topics": [
+        "02-so-va-phep-tinh"
+      ],
+      "learn": {
+        "status": "CARD_WITH_LESSON_RANGE_OVERLAP",
+        "cards": [
+          "num02-g6-core-2"
+        ],
+        "source_scope": "WORKSPACE_PLUS_CT20_OVERLAY; not full content review"
+      },
+      "micro": {
+        "status": "CARD_WITH_LESSON_RANGE_OVERLAP",
+        "cards": [
+          "num02-g6-core-2"
+        ]
+      },
+      "practice": {
+        "status": "TOPIC_BANK_PRESENT_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "02-so-va-phep-tinh",
+            "manifest": "02-so-va-phep-tinh-v4.manifest.json",
+            "questions": 149
+          }
+        ]
+      },
+      "written": {
+        "status": "NO_PLACED_ITEM_REQUIRED_BY_DEFAULT",
+        "item_ids": []
+      },
+      "readiness": {
+        "status": "GRADE_SCOPE_ITEMS_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "02-so-va-phep-tinh",
+            "items": 18,
+            "gradeScope": [
+              6
+            ]
+          }
+        ]
+      },
+      "source_evidence": [
+        {
+          "topic": "02-so-va-phep-tinh",
+          "workspace": true,
+          "cards": 8,
+          "microBank": true,
+          "microCount": 67,
+          "hasPracticeManifest": true,
+          "hasReadiness": true
+        }
+      ]
+    },
+    {
+      "grade": 6,
+      "chapter": 2,
+      "chapter_title": "Tính chia hết trong tập hợp các số tự nhiên",
+      "lesson_ref": "Bài 9",
+      "lesson_summary": "Dấu hiệu chia hết",
+      "primary_topics": [
+        "02-so-va-phep-tinh"
+      ],
+      "learn": {
+        "status": "CARD_WITH_LESSON_RANGE_OVERLAP",
+        "cards": [
+          "num02-g6-core-2"
+        ],
+        "source_scope": "WORKSPACE_PLUS_CT20_OVERLAY; not full content review"
+      },
+      "micro": {
+        "status": "CARD_WITH_LESSON_RANGE_OVERLAP",
+        "cards": [
+          "num02-g6-core-2"
+        ]
+      },
+      "practice": {
+        "status": "TOPIC_BANK_PRESENT_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "02-so-va-phep-tinh",
+            "manifest": "02-so-va-phep-tinh-v4.manifest.json",
+            "questions": 149
+          }
+        ]
+      },
+      "written": {
+        "status": "NO_PLACED_ITEM_REQUIRED_BY_DEFAULT",
+        "item_ids": []
+      },
+      "readiness": {
+        "status": "GRADE_SCOPE_ITEMS_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "02-so-va-phep-tinh",
+            "items": 18,
+            "gradeScope": [
+              6
+            ]
+          }
+        ]
+      },
+      "source_evidence": [
+        {
+          "topic": "02-so-va-phep-tinh",
+          "workspace": true,
+          "cards": 8,
+          "microBank": true,
+          "microCount": 67,
+          "hasPracticeManifest": true,
+          "hasReadiness": true
+        }
+      ]
+    },
+    {
+      "grade": 6,
+      "chapter": 2,
+      "chapter_title": "Tính chia hết trong tập hợp các số tự nhiên",
+      "lesson_ref": "Bài 10",
+      "lesson_summary": "Số nguyên tố và hợp số; phân tích ra thừa số nguyên tố",
+      "primary_topics": [
+        "02-so-va-phep-tinh"
+      ],
+      "learn": {
+        "status": "CARD_WITH_LESSON_RANGE_OVERLAP",
+        "cards": [
+          "num02-g6-core-2"
+        ],
+        "source_scope": "WORKSPACE_PLUS_CT20_OVERLAY; not full content review"
+      },
+      "micro": {
+        "status": "CARD_WITH_LESSON_RANGE_OVERLAP",
+        "cards": [
+          "num02-g6-core-2"
+        ]
+      },
+      "practice": {
+        "status": "TOPIC_BANK_PRESENT_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "02-so-va-phep-tinh",
+            "manifest": "02-so-va-phep-tinh-v4.manifest.json",
+            "questions": 149
+          }
+        ]
+      },
+      "written": {
+        "status": "NO_PLACED_ITEM_REQUIRED_BY_DEFAULT",
+        "item_ids": []
+      },
+      "readiness": {
+        "status": "GRADE_SCOPE_ITEMS_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "02-so-va-phep-tinh",
+            "items": 18,
+            "gradeScope": [
+              6
+            ]
+          }
+        ]
+      },
+      "source_evidence": [
+        {
+          "topic": "02-so-va-phep-tinh",
+          "workspace": true,
+          "cards": 8,
+          "microBank": true,
+          "microCount": 67,
+          "hasPracticeManifest": true,
+          "hasReadiness": true
+        }
+      ]
+    },
+    {
+      "grade": 6,
+      "chapter": 2,
+      "chapter_title": "Tính chia hết trong tập hợp các số tự nhiên",
+      "lesson_ref": "Bài 11-12",
+      "lesson_summary": "Ước chung, ƯCLN; bội chung, BCNN và ứng dụng",
+      "primary_topics": [
+        "02-so-va-phep-tinh"
+      ],
+      "learn": {
+        "status": "CARD_WITH_LESSON_RANGE_OVERLAP",
+        "cards": [
+          "num02-g6-core-2"
+        ],
+        "source_scope": "WORKSPACE_PLUS_CT20_OVERLAY; not full content review"
+      },
+      "micro": {
+        "status": "CARD_WITH_LESSON_RANGE_OVERLAP",
+        "cards": [
+          "num02-g6-core-2"
+        ]
+      },
+      "practice": {
+        "status": "TOPIC_BANK_PRESENT_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "02-so-va-phep-tinh",
+            "manifest": "02-so-va-phep-tinh-v4.manifest.json",
+            "questions": 149
+          }
+        ]
+      },
+      "written": {
+        "status": "REVIEWED_ITEM_KNTT_PLACEMENT_INTERSECTS",
+        "item_ids": [
+          "WX02-NUM-001",
+          "WX02-NUM-005"
+        ]
+      },
+      "readiness": {
+        "status": "GRADE_SCOPE_ITEMS_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "02-so-va-phep-tinh",
+            "items": 18,
+            "gradeScope": [
+              6
+            ]
+          }
+        ]
+      },
+      "source_evidence": [
+        {
+          "topic": "02-so-va-phep-tinh",
+          "workspace": true,
+          "cards": 8,
+          "microBank": true,
+          "microCount": 67,
+          "hasPracticeManifest": true,
+          "hasReadiness": true
+        }
+      ]
+    },
+    {
+      "grade": 6,
+      "chapter": 3,
+      "chapter_title": "Số nguyên",
+      "lesson_ref": "Bài 13",
+      "lesson_summary": "Tập hợp số nguyên, số đối, trục số, thứ tự và giá trị tuyệt đối",
+      "primary_topics": [
+        "02-so-va-phep-tinh"
+      ],
+      "learn": {
+        "status": "CARD_WITH_LESSON_RANGE_OVERLAP",
+        "cards": [
+          "num02-g6-core-3"
+        ],
+        "source_scope": "WORKSPACE_PLUS_CT20_OVERLAY; not full content review"
+      },
+      "micro": {
+        "status": "CARD_WITH_LESSON_RANGE_OVERLAP",
+        "cards": [
+          "num02-g6-core-3"
+        ]
+      },
+      "practice": {
+        "status": "TOPIC_BANK_PRESENT_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "02-so-va-phep-tinh",
+            "manifest": "02-so-va-phep-tinh-v4.manifest.json",
+            "questions": 149
+          }
+        ]
+      },
+      "written": {
+        "status": "REVIEWED_ITEM_KNTT_PLACEMENT_INTERSECTS",
+        "item_ids": [
+          "WX02-NUM-004"
+        ]
+      },
+      "readiness": {
+        "status": "GRADE_SCOPE_ITEMS_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "02-so-va-phep-tinh",
+            "items": 18,
+            "gradeScope": [
+              6
+            ]
+          }
+        ]
+      },
+      "source_evidence": [
+        {
+          "topic": "02-so-va-phep-tinh",
+          "workspace": true,
+          "cards": 8,
+          "microBank": true,
+          "microCount": 67,
+          "hasPracticeManifest": true,
+          "hasReadiness": true
+        }
+      ]
+    },
+    {
+      "grade": 6,
+      "chapter": 3,
+      "chapter_title": "Số nguyên",
+      "lesson_ref": "Bài 14",
+      "lesson_summary": "Cộng và trừ số nguyên",
+      "primary_topics": [
+        "02-so-va-phep-tinh"
+      ],
+      "learn": {
+        "status": "CARD_WITH_LESSON_RANGE_OVERLAP",
+        "cards": [
+          "num02-g6-core-3"
+        ],
+        "source_scope": "WORKSPACE_PLUS_CT20_OVERLAY; not full content review"
+      },
+      "micro": {
+        "status": "CARD_WITH_LESSON_RANGE_OVERLAP",
+        "cards": [
+          "num02-g6-core-3"
+        ]
+      },
+      "practice": {
+        "status": "TOPIC_BANK_PRESENT_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "02-so-va-phep-tinh",
+            "manifest": "02-so-va-phep-tinh-v4.manifest.json",
+            "questions": 149
+          }
+        ]
+      },
+      "written": {
+        "status": "REVIEWED_ITEM_KNTT_PLACEMENT_INTERSECTS",
+        "item_ids": [
+          "WX02-NUM-004"
+        ]
+      },
+      "readiness": {
+        "status": "GRADE_SCOPE_ITEMS_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "02-so-va-phep-tinh",
+            "items": 18,
+            "gradeScope": [
+              6
+            ]
+          }
+        ]
+      },
+      "source_evidence": [
+        {
+          "topic": "02-so-va-phep-tinh",
+          "workspace": true,
+          "cards": 8,
+          "microBank": true,
+          "microCount": 67,
+          "hasPracticeManifest": true,
+          "hasReadiness": true
+        }
+      ]
+    },
+    {
+      "grade": 6,
+      "chapter": 3,
+      "chapter_title": "Số nguyên",
+      "lesson_ref": "Bài 15",
+      "lesson_summary": "Quy tắc dấu ngoặc",
+      "primary_topics": [
+        "02-so-va-phep-tinh"
+      ],
+      "learn": {
+        "status": "CARD_WITH_LESSON_RANGE_OVERLAP",
+        "cards": [
+          "num02-g6-core-3"
+        ],
+        "source_scope": "WORKSPACE_PLUS_CT20_OVERLAY; not full content review"
+      },
+      "micro": {
+        "status": "CARD_WITH_LESSON_RANGE_OVERLAP",
+        "cards": [
+          "num02-g6-core-3"
+        ]
+      },
+      "practice": {
+        "status": "TOPIC_BANK_PRESENT_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "02-so-va-phep-tinh",
+            "manifest": "02-so-va-phep-tinh-v4.manifest.json",
+            "questions": 149
+          }
+        ]
+      },
+      "written": {
+        "status": "NO_PLACED_ITEM_REQUIRED_BY_DEFAULT",
+        "item_ids": []
+      },
+      "readiness": {
+        "status": "GRADE_SCOPE_ITEMS_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "02-so-va-phep-tinh",
+            "items": 18,
+            "gradeScope": [
+              6
+            ]
+          }
+        ]
+      },
+      "source_evidence": [
+        {
+          "topic": "02-so-va-phep-tinh",
+          "workspace": true,
+          "cards": 8,
+          "microBank": true,
+          "microCount": 67,
+          "hasPracticeManifest": true,
+          "hasReadiness": true
+        }
+      ]
+    },
+    {
+      "grade": 6,
+      "chapter": 3,
+      "chapter_title": "Số nguyên",
+      "lesson_ref": "Bài 16",
+      "lesson_summary": "Nhân số nguyên",
+      "primary_topics": [
+        "02-so-va-phep-tinh"
+      ],
+      "learn": {
+        "status": "CARD_WITH_LESSON_RANGE_OVERLAP",
+        "cards": [
+          "num02-g6-core-3"
+        ],
+        "source_scope": "WORKSPACE_PLUS_CT20_OVERLAY; not full content review"
+      },
+      "micro": {
+        "status": "CARD_WITH_LESSON_RANGE_OVERLAP",
+        "cards": [
+          "num02-g6-core-3"
+        ]
+      },
+      "practice": {
+        "status": "TOPIC_BANK_PRESENT_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "02-so-va-phep-tinh",
+            "manifest": "02-so-va-phep-tinh-v4.manifest.json",
+            "questions": 149
+          }
+        ]
+      },
+      "written": {
+        "status": "NO_PLACED_ITEM_REQUIRED_BY_DEFAULT",
+        "item_ids": []
+      },
+      "readiness": {
+        "status": "GRADE_SCOPE_ITEMS_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "02-so-va-phep-tinh",
+            "items": 18,
+            "gradeScope": [
+              6
+            ]
+          }
+        ]
+      },
+      "source_evidence": [
+        {
+          "topic": "02-so-va-phep-tinh",
+          "workspace": true,
+          "cards": 8,
+          "microBank": true,
+          "microCount": 67,
+          "hasPracticeManifest": true,
+          "hasReadiness": true
+        }
+      ]
+    },
+    {
+      "grade": 6,
+      "chapter": 3,
+      "chapter_title": "Số nguyên",
+      "lesson_ref": "Bài 17",
+      "lesson_summary": "Phép chia hết; ước và bội của một số nguyên",
+      "primary_topics": [
+        "02-so-va-phep-tinh"
+      ],
+      "learn": {
+        "status": "CARD_WITH_LESSON_RANGE_OVERLAP",
+        "cards": [
+          "num02-g6-core-3"
+        ],
+        "source_scope": "WORKSPACE_PLUS_CT20_OVERLAY; not full content review"
+      },
+      "micro": {
+        "status": "CARD_WITH_LESSON_RANGE_OVERLAP",
+        "cards": [
+          "num02-g6-core-3"
+        ]
+      },
+      "practice": {
+        "status": "TOPIC_BANK_PRESENT_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "02-so-va-phep-tinh",
+            "manifest": "02-so-va-phep-tinh-v4.manifest.json",
+            "questions": 149
+          }
+        ]
+      },
+      "written": {
+        "status": "NO_PLACED_ITEM_REQUIRED_BY_DEFAULT",
+        "item_ids": []
+      },
+      "readiness": {
+        "status": "GRADE_SCOPE_ITEMS_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "02-so-va-phep-tinh",
+            "items": 18,
+            "gradeScope": [
+              6
+            ]
+          }
+        ]
+      },
+      "source_evidence": [
+        {
+          "topic": "02-so-va-phep-tinh",
+          "workspace": true,
+          "cards": 8,
+          "microBank": true,
+          "microCount": 67,
+          "hasPracticeManifest": true,
+          "hasReadiness": true
+        }
+      ]
+    },
+    {
+      "grade": 6,
+      "chapter": 4,
+      "chapter_title": "Một số hình phẳng trong thực tiễn",
+      "lesson_ref": "Bài 18",
+      "lesson_summary": "Tam giác đều, hình vuông, lục giác đều: nhận biết và tính chất trực quan",
+      "primary_topics": [
+        "20-hinh-hoc-tong-hop"
+      ],
+      "learn": {
+        "status": "SHARED_TOPIC_TEACHING_ONLY",
+        "cards": [],
+        "source_scope": "WORKSPACE_PLUS_CT20_OVERLAY; not full content review"
+      },
+      "micro": {
+        "status": "GRADE_OR_LESSON_CONTEXT_MICRO",
+        "cards": [
+          "geo20-core-1",
+          "geo20-core-2",
+          "geo20-core-3",
+          "geo20-core-4",
+          "geo20-core-5"
+        ]
+      },
+      "practice": {
+        "status": "TOPIC_BANK_PRESENT_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "20-hinh-hoc-tong-hop",
+            "manifest": "20-hinh-hoc-tong-hop-v1.manifest.json",
+            "questions": 195
+          }
+        ]
+      },
+      "written": {
+        "status": "NO_PLACED_ITEM_REQUIRED_BY_DEFAULT",
+        "item_ids": []
+      },
+      "readiness": {
+        "status": "TOPIC_ITEMS_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "20-hinh-hoc-tong-hop",
+            "items": 12,
+            "gradeScope": null
+          }
+        ]
+      },
+      "source_evidence": [
+        {
+          "topic": "20-hinh-hoc-tong-hop",
+          "workspace": true,
+          "cards": 5,
+          "microBank": true,
+          "microCount": 29,
+          "hasPracticeManifest": true,
+          "hasReadiness": true
+        }
+      ]
+    },
+    {
+      "grade": 6,
+      "chapter": 4,
+      "chapter_title": "Một số hình phẳng trong thực tiễn",
+      "lesson_ref": "Bài 19",
+      "lesson_summary": "Hình chữ nhật, hình thoi, hình bình hành, hình thang cân: nhận biết và tính chất trực quan",
+      "primary_topics": [
+        "20-hinh-hoc-tong-hop"
+      ],
+      "learn": {
+        "status": "SHARED_TOPIC_TEACHING_ONLY",
+        "cards": [],
+        "source_scope": "WORKSPACE_PLUS_CT20_OVERLAY; not full content review"
+      },
+      "micro": {
+        "status": "GRADE_OR_LESSON_CONTEXT_MICRO",
+        "cards": [
+          "geo20-core-1",
+          "geo20-core-2",
+          "geo20-core-3",
+          "geo20-core-4",
+          "geo20-core-5"
+        ]
+      },
+      "practice": {
+        "status": "TOPIC_BANK_PRESENT_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "20-hinh-hoc-tong-hop",
+            "manifest": "20-hinh-hoc-tong-hop-v1.manifest.json",
+            "questions": 195
+          }
+        ]
+      },
+      "written": {
+        "status": "NO_PLACED_ITEM_REQUIRED_BY_DEFAULT",
+        "item_ids": []
+      },
+      "readiness": {
+        "status": "TOPIC_ITEMS_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "20-hinh-hoc-tong-hop",
+            "items": 12,
+            "gradeScope": null
+          }
+        ]
+      },
+      "source_evidence": [
+        {
+          "topic": "20-hinh-hoc-tong-hop",
+          "workspace": true,
+          "cards": 5,
+          "microBank": true,
+          "microCount": 29,
+          "hasPracticeManifest": true,
+          "hasReadiness": true
+        }
+      ]
+    },
+    {
+      "grade": 6,
+      "chapter": 4,
+      "chapter_title": "Một số hình phẳng trong thực tiễn",
+      "lesson_ref": "Bài 20",
+      "lesson_summary": "Chu vi và diện tích một số tứ giác đã học",
+      "primary_topics": [
+        "20-hinh-hoc-tong-hop"
+      ],
+      "learn": {
+        "status": "SHARED_TOPIC_TEACHING_ONLY",
+        "cards": [],
+        "source_scope": "WORKSPACE_PLUS_CT20_OVERLAY; not full content review"
+      },
+      "micro": {
+        "status": "GRADE_OR_LESSON_CONTEXT_MICRO",
+        "cards": [
+          "geo20-core-1",
+          "geo20-core-2",
+          "geo20-core-3",
+          "geo20-core-4",
+          "geo20-core-5"
+        ]
+      },
+      "practice": {
+        "status": "TOPIC_BANK_PRESENT_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "20-hinh-hoc-tong-hop",
+            "manifest": "20-hinh-hoc-tong-hop-v1.manifest.json",
+            "questions": 195
+          }
+        ]
+      },
+      "written": {
+        "status": "REVIEWED_ITEM_KNTT_PLACEMENT_INTERSECTS",
+        "item_ids": [
+          "WX20-GEO-003",
+          "WX20-GEO-006"
+        ]
+      },
+      "readiness": {
+        "status": "TOPIC_ITEMS_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "20-hinh-hoc-tong-hop",
+            "items": 12,
+            "gradeScope": null
+          }
+        ]
+      },
+      "source_evidence": [
+        {
+          "topic": "20-hinh-hoc-tong-hop",
+          "workspace": true,
+          "cards": 5,
+          "microBank": true,
+          "microCount": 29,
+          "hasPracticeManifest": true,
+          "hasReadiness": true
+        }
+      ]
+    },
+    {
+      "grade": 6,
+      "chapter": 5,
+      "chapter_title": "Tính đối xứng của hình phẳng trong tự nhiên",
+      "lesson_ref": "Bài 21",
+      "lesson_summary": "Hình có trục đối xứng",
+      "primary_topics": [
+        "20-hinh-hoc-tong-hop"
+      ],
+      "learn": {
+        "status": "SHARED_TOPIC_TEACHING_ONLY",
+        "cards": [],
+        "source_scope": "WORKSPACE_PLUS_CT20_OVERLAY; not full content review"
+      },
+      "micro": {
+        "status": "GRADE_OR_LESSON_CONTEXT_MICRO",
+        "cards": [
+          "geo20-core-1",
+          "geo20-core-2",
+          "geo20-core-3",
+          "geo20-core-4",
+          "geo20-core-5"
+        ]
+      },
+      "practice": {
+        "status": "TOPIC_BANK_PRESENT_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "20-hinh-hoc-tong-hop",
+            "manifest": "20-hinh-hoc-tong-hop-v1.manifest.json",
+            "questions": 195
+          }
+        ]
+      },
+      "written": {
+        "status": "NO_PLACED_ITEM_REQUIRED_BY_DEFAULT",
+        "item_ids": []
+      },
+      "readiness": {
+        "status": "TOPIC_ITEMS_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "20-hinh-hoc-tong-hop",
+            "items": 12,
+            "gradeScope": null
+          }
+        ]
+      },
+      "source_evidence": [
+        {
+          "topic": "20-hinh-hoc-tong-hop",
+          "workspace": true,
+          "cards": 5,
+          "microBank": true,
+          "microCount": 29,
+          "hasPracticeManifest": true,
+          "hasReadiness": true
+        }
+      ]
+    },
+    {
+      "grade": 6,
+      "chapter": 5,
+      "chapter_title": "Tính đối xứng của hình phẳng trong tự nhiên",
+      "lesson_ref": "Bài 22",
+      "lesson_summary": "Hình có tâm đối xứng",
+      "primary_topics": [
+        "20-hinh-hoc-tong-hop"
+      ],
+      "learn": {
+        "status": "SHARED_TOPIC_TEACHING_ONLY",
+        "cards": [],
+        "source_scope": "WORKSPACE_PLUS_CT20_OVERLAY; not full content review"
+      },
+      "micro": {
+        "status": "GRADE_OR_LESSON_CONTEXT_MICRO",
+        "cards": [
+          "geo20-core-1",
+          "geo20-core-2",
+          "geo20-core-3",
+          "geo20-core-4",
+          "geo20-core-5"
+        ]
+      },
+      "practice": {
+        "status": "TOPIC_BANK_PRESENT_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "20-hinh-hoc-tong-hop",
+            "manifest": "20-hinh-hoc-tong-hop-v1.manifest.json",
+            "questions": 195
+          }
+        ]
+      },
+      "written": {
+        "status": "NO_PLACED_ITEM_REQUIRED_BY_DEFAULT",
+        "item_ids": []
+      },
+      "readiness": {
+        "status": "TOPIC_ITEMS_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "20-hinh-hoc-tong-hop",
+            "items": 12,
+            "gradeScope": null
+          }
+        ]
+      },
+      "source_evidence": [
+        {
+          "topic": "20-hinh-hoc-tong-hop",
+          "workspace": true,
+          "cards": 5,
+          "microBank": true,
+          "microCount": 29,
+          "hasPracticeManifest": true,
+          "hasReadiness": true
+        }
+      ]
+    },
+    {
+      "grade": 6,
+      "chapter": 6,
+      "chapter_title": "Phân số",
+      "lesson_ref": "Bài 23-24",
+      "lesson_summary": "Mở rộng phân số, phân số bằng nhau; so sánh phân số; hỗn số dương",
+      "primary_topics": [
+        "02-so-va-phep-tinh"
+      ],
+      "learn": {
+        "status": "CARD_WITH_LESSON_RANGE_OVERLAP",
+        "cards": [
+          "num02-g6-core-4"
+        ],
+        "source_scope": "WORKSPACE_PLUS_CT20_OVERLAY; not full content review"
+      },
+      "micro": {
+        "status": "CARD_WITH_LESSON_RANGE_OVERLAP",
+        "cards": [
+          "num02-g6-core-4"
+        ]
+      },
+      "practice": {
+        "status": "TOPIC_BANK_PRESENT_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "02-so-va-phep-tinh",
+            "manifest": "02-so-va-phep-tinh-v4.manifest.json",
+            "questions": 149
+          }
+        ]
+      },
+      "written": {
+        "status": "NO_PLACED_ITEM_REQUIRED_BY_DEFAULT",
+        "item_ids": []
+      },
+      "readiness": {
+        "status": "GRADE_SCOPE_ITEMS_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "02-so-va-phep-tinh",
+            "items": 18,
+            "gradeScope": [
+              6
+            ]
+          }
+        ]
+      },
+      "source_evidence": [
+        {
+          "topic": "02-so-va-phep-tinh",
+          "workspace": true,
+          "cards": 8,
+          "microBank": true,
+          "microCount": 67,
+          "hasPracticeManifest": true,
+          "hasReadiness": true
+        }
+      ]
+    },
+    {
+      "grade": 6,
+      "chapter": 6,
+      "chapter_title": "Phân số",
+      "lesson_ref": "Bài 25-26",
+      "lesson_summary": "Cộng, trừ, nhân, chia phân số",
+      "primary_topics": [
+        "02-so-va-phep-tinh"
+      ],
+      "learn": {
+        "status": "CARD_WITH_LESSON_RANGE_OVERLAP",
+        "cards": [
+          "num02-g6-core-4"
+        ],
+        "source_scope": "WORKSPACE_PLUS_CT20_OVERLAY; not full content review"
+      },
+      "micro": {
+        "status": "CARD_WITH_LESSON_RANGE_OVERLAP",
+        "cards": [
+          "num02-g6-core-4"
+        ]
+      },
+      "practice": {
+        "status": "TOPIC_BANK_PRESENT_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "02-so-va-phep-tinh",
+            "manifest": "02-so-va-phep-tinh-v4.manifest.json",
+            "questions": 149
+          }
+        ]
+      },
+      "written": {
+        "status": "NO_PLACED_ITEM_REQUIRED_BY_DEFAULT",
+        "item_ids": []
+      },
+      "readiness": {
+        "status": "GRADE_SCOPE_ITEMS_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "02-so-va-phep-tinh",
+            "items": 18,
+            "gradeScope": [
+              6
+            ]
+          }
+        ]
+      },
+      "source_evidence": [
+        {
+          "topic": "02-so-va-phep-tinh",
+          "workspace": true,
+          "cards": 8,
+          "microBank": true,
+          "microCount": 67,
+          "hasPracticeManifest": true,
+          "hasReadiness": true
+        }
+      ]
+    },
+    {
+      "grade": 6,
+      "chapter": 6,
+      "chapter_title": "Phân số",
+      "lesson_ref": "Bài 27",
+      "lesson_summary": "Hai bài toán về phân số",
+      "primary_topics": [
+        "02-so-va-phep-tinh"
+      ],
+      "learn": {
+        "status": "CARD_WITH_LESSON_RANGE_OVERLAP",
+        "cards": [
+          "num02-g6-core-4"
+        ],
+        "source_scope": "WORKSPACE_PLUS_CT20_OVERLAY; not full content review"
+      },
+      "micro": {
+        "status": "CARD_WITH_LESSON_RANGE_OVERLAP",
+        "cards": [
+          "num02-g6-core-4"
+        ]
+      },
+      "practice": {
+        "status": "TOPIC_BANK_PRESENT_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "02-so-va-phep-tinh",
+            "manifest": "02-so-va-phep-tinh-v4.manifest.json",
+            "questions": 149
+          }
+        ]
+      },
+      "written": {
+        "status": "REVIEWED_ITEM_KNTT_PLACEMENT_INTERSECTS",
+        "item_ids": [
+          "WX02-NUM-003",
+          "WX02-NUM-006"
+        ]
+      },
+      "readiness": {
+        "status": "GRADE_SCOPE_ITEMS_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "02-so-va-phep-tinh",
+            "items": 18,
+            "gradeScope": [
+              6
+            ]
+          }
+        ]
+      },
+      "source_evidence": [
+        {
+          "topic": "02-so-va-phep-tinh",
+          "workspace": true,
+          "cards": 8,
+          "microBank": true,
+          "microCount": 67,
+          "hasPracticeManifest": true,
+          "hasReadiness": true
+        }
+      ]
+    },
+    {
+      "grade": 6,
+      "chapter": 7,
+      "chapter_title": "Số thập phân",
+      "lesson_ref": "Bài 28-29",
+      "lesson_summary": "Số thập phân và tính toán với số thập phân",
+      "primary_topics": [
+        "02-so-va-phep-tinh"
+      ],
+      "learn": {
+        "status": "CARD_WITH_LESSON_RANGE_OVERLAP",
+        "cards": [
+          "num02-g6-core-5"
+        ],
+        "source_scope": "WORKSPACE_PLUS_CT20_OVERLAY; not full content review"
+      },
+      "micro": {
+        "status": "CARD_WITH_LESSON_RANGE_OVERLAP",
+        "cards": [
+          "num02-g6-core-5"
+        ]
+      },
+      "practice": {
+        "status": "TOPIC_BANK_PRESENT_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "02-so-va-phep-tinh",
+            "manifest": "02-so-va-phep-tinh-v4.manifest.json",
+            "questions": 149
+          }
+        ]
+      },
+      "written": {
+        "status": "NO_PLACED_ITEM_REQUIRED_BY_DEFAULT",
+        "item_ids": []
+      },
+      "readiness": {
+        "status": "GRADE_SCOPE_ITEMS_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "02-so-va-phep-tinh",
+            "items": 18,
+            "gradeScope": [
+              6
+            ]
+          }
+        ]
+      },
+      "source_evidence": [
+        {
+          "topic": "02-so-va-phep-tinh",
+          "workspace": true,
+          "cards": 8,
+          "microBank": true,
+          "microCount": 67,
+          "hasPracticeManifest": true,
+          "hasReadiness": true
+        }
+      ]
+    },
+    {
+      "grade": 6,
+      "chapter": 7,
+      "chapter_title": "Số thập phân",
+      "lesson_ref": "Bài 30",
+      "lesson_summary": "Làm tròn và ước lượng",
+      "primary_topics": [
+        "02-so-va-phep-tinh"
+      ],
+      "learn": {
+        "status": "CARD_WITH_LESSON_RANGE_OVERLAP",
+        "cards": [
+          "num02-g6-core-5"
+        ],
+        "source_scope": "WORKSPACE_PLUS_CT20_OVERLAY; not full content review"
+      },
+      "micro": {
+        "status": "CARD_WITH_LESSON_RANGE_OVERLAP",
+        "cards": [
+          "num02-g6-core-5"
+        ]
+      },
+      "practice": {
+        "status": "TOPIC_BANK_PRESENT_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "02-so-va-phep-tinh",
+            "manifest": "02-so-va-phep-tinh-v4.manifest.json",
+            "questions": 149
+          }
+        ]
+      },
+      "written": {
+        "status": "NO_PLACED_ITEM_REQUIRED_BY_DEFAULT",
+        "item_ids": []
+      },
+      "readiness": {
+        "status": "GRADE_SCOPE_ITEMS_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "02-so-va-phep-tinh",
+            "items": 18,
+            "gradeScope": [
+              6
+            ]
+          }
+        ]
+      },
+      "source_evidence": [
+        {
+          "topic": "02-so-va-phep-tinh",
+          "workspace": true,
+          "cards": 8,
+          "microBank": true,
+          "microCount": 67,
+          "hasPracticeManifest": true,
+          "hasReadiness": true
+        }
+      ]
+    },
+    {
+      "grade": 6,
+      "chapter": 7,
+      "chapter_title": "Số thập phân",
+      "lesson_ref": "Bài 31",
+      "lesson_summary": "Tỉ số và tỉ số phần trăm; bài toán phần trăm",
+      "primary_topics": [
+        "03-ti-le-ti-le-thuc"
+      ],
+      "learn": {
+        "status": "GRADE_OR_LESSON_CONTEXT_CARD",
+        "cards": [
+          "rat03-core-g6-1"
+        ],
+        "source_scope": "WORKSPACE_PLUS_CT20_OVERLAY; not full content review"
+      },
+      "micro": {
+        "status": "GRADE_OR_LESSON_CONTEXT_MICRO",
+        "cards": [
+          "rat03-core-g6-1"
+        ]
+      },
+      "practice": {
+        "status": "TOPIC_BANK_PRESENT_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "03-ti-le-ti-le-thuc",
+            "manifest": "03-ti-le-ti-le-thuc-v4.manifest.json",
+            "questions": 126
+          }
+        ]
+      },
+      "written": {
+        "status": "REVIEWED_ITEM_KNTT_PLACEMENT_INTERSECTS",
+        "item_ids": [
+          "WX02-NUM-002"
+        ]
+      },
+      "readiness": {
+        "status": "GRADE_SCOPE_ITEMS_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "03-ti-le-ti-le-thuc",
+            "items": 11,
+            "gradeScope": [
+              6,
+              7
+            ]
+          }
+        ]
+      },
+      "source_evidence": [
+        {
+          "topic": "03-ti-le-ti-le-thuc",
+          "workspace": true,
+          "cards": 6,
+          "microBank": true,
+          "microCount": 19,
+          "hasPracticeManifest": true,
+          "hasReadiness": true
+        }
+      ]
+    },
+    {
+      "grade": 6,
+      "chapter": 8,
+      "chapter_title": "Những hình học cơ bản",
+      "lesson_ref": "Bài 32",
+      "lesson_summary": "Điểm và đường thẳng",
+      "primary_topics": [
+        "13-goc-va-duong-thang"
+      ],
+      "learn": {
+        "status": "CARD_WITH_LESSON_RANGE_OVERLAP",
+        "cards": [
+          "geo13-core-1"
+        ],
+        "source_scope": "WORKSPACE_PLUS_CT20_OVERLAY; not full content review"
+      },
+      "micro": {
+        "status": "CARD_WITH_LESSON_RANGE_OVERLAP",
+        "cards": [
+          "geo13-core-1"
+        ]
+      },
+      "practice": {
+        "status": "TOPIC_BANK_PRESENT_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "13-goc-va-duong-thang",
+            "manifest": "13-goc-va-duong-thang-v1.manifest.json",
+            "questions": 156
+          }
+        ]
+      },
+      "written": {
+        "status": "NO_PLACED_ITEM_REQUIRED_BY_DEFAULT",
+        "item_ids": []
+      },
+      "readiness": {
+        "status": "TOPIC_ITEMS_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "13-goc-va-duong-thang",
+            "items": 11,
+            "gradeScope": null
+          }
+        ]
+      },
+      "source_evidence": [
+        {
+          "topic": "13-goc-va-duong-thang",
+          "workspace": true,
+          "cards": 5,
+          "microBank": true,
+          "microCount": 23,
+          "hasPracticeManifest": true,
+          "hasReadiness": true
+        }
+      ]
+    },
+    {
+      "grade": 6,
+      "chapter": 8,
+      "chapter_title": "Những hình học cơ bản",
+      "lesson_ref": "Bài 33",
+      "lesson_summary": "Điểm nằm giữa hai điểm; tia",
+      "primary_topics": [
+        "13-goc-va-duong-thang"
+      ],
+      "learn": {
+        "status": "CARD_WITH_LESSON_RANGE_OVERLAP",
+        "cards": [
+          "geo13-core-1"
+        ],
+        "source_scope": "WORKSPACE_PLUS_CT20_OVERLAY; not full content review"
+      },
+      "micro": {
+        "status": "CARD_WITH_LESSON_RANGE_OVERLAP",
+        "cards": [
+          "geo13-core-1"
+        ]
+      },
+      "practice": {
+        "status": "TOPIC_BANK_PRESENT_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "13-goc-va-duong-thang",
+            "manifest": "13-goc-va-duong-thang-v1.manifest.json",
+            "questions": 156
+          }
+        ]
+      },
+      "written": {
+        "status": "NO_PLACED_ITEM_REQUIRED_BY_DEFAULT",
+        "item_ids": []
+      },
+      "readiness": {
+        "status": "TOPIC_ITEMS_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "13-goc-va-duong-thang",
+            "items": 11,
+            "gradeScope": null
+          }
+        ]
+      },
+      "source_evidence": [
+        {
+          "topic": "13-goc-va-duong-thang",
+          "workspace": true,
+          "cards": 5,
+          "microBank": true,
+          "microCount": 23,
+          "hasPracticeManifest": true,
+          "hasReadiness": true
+        }
+      ]
+    },
+    {
+      "grade": 6,
+      "chapter": 8,
+      "chapter_title": "Những hình học cơ bản",
+      "lesson_ref": "Bài 34-35",
+      "lesson_summary": "Đoạn thẳng, độ dài đoạn thẳng, trung điểm",
+      "primary_topics": [
+        "13-goc-va-duong-thang"
+      ],
+      "learn": {
+        "status": "CARD_WITH_LESSON_RANGE_OVERLAP",
+        "cards": [
+          "geo13-core-1"
+        ],
+        "source_scope": "WORKSPACE_PLUS_CT20_OVERLAY; not full content review"
+      },
+      "micro": {
+        "status": "CARD_WITH_LESSON_RANGE_OVERLAP",
+        "cards": [
+          "geo13-core-1"
+        ]
+      },
+      "practice": {
+        "status": "TOPIC_BANK_PRESENT_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "13-goc-va-duong-thang",
+            "manifest": "13-goc-va-duong-thang-v1.manifest.json",
+            "questions": 156
+          }
+        ]
+      },
+      "written": {
+        "status": "REVIEWED_ITEM_KNTT_PLACEMENT_INTERSECTS",
+        "item_ids": [
+          "WX13-LIN-003"
+        ]
+      },
+      "readiness": {
+        "status": "TOPIC_ITEMS_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "13-goc-va-duong-thang",
+            "items": 11,
+            "gradeScope": null
+          }
+        ]
+      },
+      "source_evidence": [
+        {
+          "topic": "13-goc-va-duong-thang",
+          "workspace": true,
+          "cards": 5,
+          "microBank": true,
+          "microCount": 23,
+          "hasPracticeManifest": true,
+          "hasReadiness": true
+        }
+      ]
+    },
+    {
+      "grade": 6,
+      "chapter": 8,
+      "chapter_title": "Những hình học cơ bản",
+      "lesson_ref": "Bài 36-37",
+      "lesson_summary": "Góc, số đo góc, góc nhọn/vuông/tù/bẹt",
+      "primary_topics": [
+        "13-goc-va-duong-thang"
+      ],
+      "learn": {
+        "status": "CARD_WITH_LESSON_RANGE_OVERLAP",
+        "cards": [
+          "geo13-core-2"
+        ],
+        "source_scope": "WORKSPACE_PLUS_CT20_OVERLAY; not full content review"
+      },
+      "micro": {
+        "status": "CARD_WITH_LESSON_RANGE_OVERLAP",
+        "cards": [
+          "geo13-core-2"
+        ]
+      },
+      "practice": {
+        "status": "TOPIC_BANK_PRESENT_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "13-goc-va-duong-thang",
+            "manifest": "13-goc-va-duong-thang-v1.manifest.json",
+            "questions": 156
+          }
+        ]
+      },
+      "written": {
+        "status": "REVIEWED_ITEM_KNTT_PLACEMENT_INTERSECTS",
+        "item_ids": [
+          "WX13-LIN-003"
+        ]
+      },
+      "readiness": {
+        "status": "TOPIC_ITEMS_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "13-goc-va-duong-thang",
+            "items": 11,
+            "gradeScope": null
+          }
+        ]
+      },
+      "source_evidence": [
+        {
+          "topic": "13-goc-va-duong-thang",
+          "workspace": true,
+          "cards": 5,
+          "microBank": true,
+          "microCount": 23,
+          "hasPracticeManifest": true,
+          "hasReadiness": true
+        }
+      ]
+    },
+    {
+      "grade": 6,
+      "chapter": 9,
+      "chapter_title": "Dữ liệu và xác suất thực nghiệm",
+      "lesson_ref": "Bài 38-41",
+      "lesson_summary": "Dữ liệu, thu thập dữ liệu, bảng thống kê, biểu đồ tranh, biểu đồ cột và cột kép",
+      "primary_topics": [
+        "21-thong-ke"
+      ],
+      "learn": {
+        "status": "CARD_WITH_LESSON_RANGE_OVERLAP",
+        "cards": [
+          "sta21-core-1",
+          "sta21-core-2",
+          "sta21-core-5"
+        ],
+        "source_scope": "WORKSPACE_PLUS_CT20_OVERLAY; not full content review"
+      },
+      "micro": {
+        "status": "CARD_WITH_LESSON_RANGE_OVERLAP",
+        "cards": [
+          "sta21-core-1",
+          "sta21-core-2",
+          "sta21-core-5"
+        ]
+      },
+      "practice": {
+        "status": "TOPIC_BANK_PRESENT_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "21-thong-ke",
+            "manifest": "21-thong-ke-v2.manifest.json",
+            "questions": 134
+          }
+        ]
+      },
+      "written": {
+        "status": "REVIEWED_ITEM_KNTT_PLACEMENT_INTERSECTS",
+        "item_ids": [
+          "WX21-STA-001"
+        ]
+      },
+      "readiness": {
+        "status": "TOPIC_ITEMS_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "21-thong-ke",
+            "items": 16,
+            "gradeScope": null
+          }
+        ]
+      },
+      "source_evidence": [
+        {
+          "topic": "21-thong-ke",
+          "workspace": true,
+          "cards": 7,
+          "microBank": true,
+          "microCount": 32,
+          "hasPracticeManifest": true,
+          "hasReadiness": true
+        }
+      ]
+    },
+    {
+      "grade": 6,
+      "chapter": 9,
+      "chapter_title": "Dữ liệu và xác suất thực nghiệm",
+      "lesson_ref": "Bài 42",
+      "lesson_summary": "Kết quả có thể và sự kiện trong trò chơi, thí nghiệm",
+      "primary_topics": [
+        "23-xac-suat"
+      ],
+      "learn": {
+        "status": "CARD_WITH_LESSON_RANGE_OVERLAP",
+        "cards": [
+          "prob23-core-1"
+        ],
+        "source_scope": "WORKSPACE_PLUS_CT20_OVERLAY; not full content review"
+      },
+      "micro": {
+        "status": "CARD_WITH_LESSON_RANGE_OVERLAP",
+        "cards": [
+          "prob23-core-1"
+        ]
+      },
+      "practice": {
+        "status": "TOPIC_BANK_PRESENT_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "23-xac-suat",
+            "manifest": "23-xac-suat-v1.manifest.json",
+            "questions": 120
+          }
+        ]
+      },
+      "written": {
+        "status": "REVIEWED_ITEM_KNTT_PLACEMENT_INTERSECTS",
+        "item_ids": [
+          "WX23-PRO-003"
+        ]
+      },
+      "readiness": {
+        "status": "TOPIC_ITEMS_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "23-xac-suat",
+            "items": 12,
+            "gradeScope": null
+          }
+        ]
+      },
+      "source_evidence": [
+        {
+          "topic": "23-xac-suat",
+          "workspace": true,
+          "cards": 7,
+          "microBank": true,
+          "microCount": 28,
+          "hasPracticeManifest": true,
+          "hasReadiness": true
+        }
+      ]
+    },
+    {
+      "grade": 6,
+      "chapter": 9,
+      "chapter_title": "Dữ liệu và xác suất thực nghiệm",
+      "lesson_ref": "Bài 43",
+      "lesson_summary": "Xác suất thực nghiệm",
+      "primary_topics": [
+        "23-xac-suat"
+      ],
+      "learn": {
+        "status": "CARD_WITH_LESSON_RANGE_OVERLAP",
+        "cards": [
+          "prob23-core-1"
+        ],
+        "source_scope": "WORKSPACE_PLUS_CT20_OVERLAY; not full content review"
+      },
+      "micro": {
+        "status": "CARD_WITH_LESSON_RANGE_OVERLAP",
+        "cards": [
+          "prob23-core-1"
+        ]
+      },
+      "practice": {
+        "status": "TOPIC_BANK_PRESENT_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "23-xac-suat",
+            "manifest": "23-xac-suat-v1.manifest.json",
+            "questions": 120
+          }
+        ]
+      },
+      "written": {
+        "status": "REVIEWED_ITEM_KNTT_PLACEMENT_INTERSECTS",
+        "item_ids": [
+          "WX23-PRO-001"
+        ]
+      },
+      "readiness": {
+        "status": "TOPIC_ITEMS_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "23-xac-suat",
+            "items": 12,
+            "gradeScope": null
+          }
+        ]
+      },
+      "source_evidence": [
+        {
+          "topic": "23-xac-suat",
+          "workspace": true,
+          "cards": 7,
+          "microBank": true,
+          "microCount": 28,
+          "hasPracticeManifest": true,
+          "hasReadiness": true
+        }
+      ]
+    },
+    {
+      "grade": 7,
+      "chapter": 1,
+      "chapter_title": "Số hữu tỉ",
+      "lesson_ref": "Bài 1-3",
+      "lesson_summary": "Tập hợp số hữu tỉ; cộng, trừ, nhân, chia số hữu tỉ; lũy thừa với số mũ tự nhiên của số hữu tỉ.",
+      "primary_topics": [
+        "02-so-va-phep-tinh"
+      ],
+      "learn": {
+        "status": "CARD_WITH_LESSON_RANGE_OVERLAP",
+        "cards": [
+          "num02-g7-core-1"
+        ],
+        "source_scope": "WORKSPACE_PLUS_CT20_OVERLAY; not full content review"
+      },
+      "micro": {
+        "status": "CARD_WITH_LESSON_RANGE_OVERLAP",
+        "cards": [
+          "num02-g7-core-1"
+        ]
+      },
+      "practice": {
+        "status": "TOPIC_BANK_PRESENT_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "02-so-va-phep-tinh",
+            "manifest": "02-so-va-phep-tinh-v4.manifest.json",
+            "questions": 149
+          }
+        ]
+      },
+      "written": {
+        "status": "NO_PLACED_ITEM_REQUIRED_BY_DEFAULT",
+        "item_ids": []
+      },
+      "readiness": {
+        "status": "TOPIC_ITEMS_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "02-so-va-phep-tinh",
+            "items": 18,
+            "gradeScope": [
+              6
+            ]
+          }
+        ]
+      },
+      "source_evidence": [
+        {
+          "topic": "02-so-va-phep-tinh",
+          "workspace": true,
+          "cards": 8,
+          "microBank": true,
+          "microCount": 67,
+          "hasPracticeManifest": true,
+          "hasReadiness": true
+        }
+      ]
+    },
+    {
+      "grade": 7,
+      "chapter": 1,
+      "chapter_title": "Số hữu tỉ",
+      "lesson_ref": "Bài 4",
+      "lesson_summary": "Thứ tự thực hiện phép tính; quy tắc chuyển vế trong các bài toán tìm số hữu tỉ chưa biết.",
+      "primary_topics": [
+        "02-so-va-phep-tinh"
+      ],
+      "learn": {
+        "status": "CARD_WITH_LESSON_RANGE_OVERLAP",
+        "cards": [
+          "num02-g7-core-3"
+        ],
+        "source_scope": "WORKSPACE_PLUS_CT20_OVERLAY; not full content review"
+      },
+      "micro": {
+        "status": "CARD_WITH_LESSON_RANGE_OVERLAP",
+        "cards": [
+          "num02-g7-core-3"
+        ]
+      },
+      "practice": {
+        "status": "TOPIC_BANK_PRESENT_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "02-so-va-phep-tinh",
+            "manifest": "02-so-va-phep-tinh-v4.manifest.json",
+            "questions": 149
+          }
+        ]
+      },
+      "written": {
+        "status": "NO_PLACED_ITEM_REQUIRED_BY_DEFAULT",
+        "item_ids": []
+      },
+      "readiness": {
+        "status": "TOPIC_ITEMS_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "02-so-va-phep-tinh",
+            "items": 18,
+            "gradeScope": [
+              6
+            ]
+          }
+        ]
+      },
+      "source_evidence": [
+        {
+          "topic": "02-so-va-phep-tinh",
+          "workspace": true,
+          "cards": 8,
+          "microBank": true,
+          "microCount": 67,
+          "hasPracticeManifest": true,
+          "hasReadiness": true
+        }
+      ]
+    },
+    {
+      "grade": 7,
+      "chapter": 2,
+      "chapter_title": "Số thực",
+      "lesson_ref": "Bài 5-7",
+      "lesson_summary": "Số thập phân vô hạn tuần hoàn; số vô tỉ; căn bậc hai số học; tập hợp số thực.",
+      "primary_topics": [
+        "02-so-va-phep-tinh"
+      ],
+      "learn": {
+        "status": "CARD_WITH_LESSON_RANGE_OVERLAP",
+        "cards": [
+          "num02-g7-core-2"
+        ],
+        "source_scope": "WORKSPACE_PLUS_CT20_OVERLAY; not full content review"
+      },
+      "micro": {
+        "status": "CARD_WITH_LESSON_RANGE_OVERLAP",
+        "cards": [
+          "num02-g7-core-2"
+        ]
+      },
+      "practice": {
+        "status": "TOPIC_BANK_PRESENT_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "02-so-va-phep-tinh",
+            "manifest": "02-so-va-phep-tinh-v4.manifest.json",
+            "questions": 149
+          }
+        ]
+      },
+      "written": {
+        "status": "NO_PLACED_ITEM_REQUIRED_BY_DEFAULT",
+        "item_ids": []
+      },
+      "readiness": {
+        "status": "TOPIC_ITEMS_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "02-so-va-phep-tinh",
+            "items": 18,
+            "gradeScope": [
+              6
+            ]
+          }
+        ]
+      },
+      "source_evidence": [
+        {
+          "topic": "02-so-va-phep-tinh",
+          "workspace": true,
+          "cards": 8,
+          "microBank": true,
+          "microCount": 67,
+          "hasPracticeManifest": true,
+          "hasReadiness": true
+        }
+      ]
+    },
+    {
+      "grade": 7,
+      "chapter": 3,
+      "chapter_title": "Góc và đường thẳng song song",
+      "lesson_ref": "Bài 8",
+      "lesson_summary": "Góc ở vị trí đặc biệt và tia phân giác của một góc.",
+      "primary_topics": [
+        "13-goc-va-duong-thang"
+      ],
+      "learn": {
+        "status": "CARD_WITH_LESSON_RANGE_OVERLAP",
+        "cards": [
+          "geo13-core-2"
+        ],
+        "source_scope": "WORKSPACE_PLUS_CT20_OVERLAY; not full content review"
+      },
+      "micro": {
+        "status": "CARD_WITH_LESSON_RANGE_OVERLAP",
+        "cards": [
+          "geo13-core-2"
+        ]
+      },
+      "practice": {
+        "status": "TOPIC_BANK_PRESENT_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "13-goc-va-duong-thang",
+            "manifest": "13-goc-va-duong-thang-v1.manifest.json",
+            "questions": 156
+          }
+        ]
+      },
+      "written": {
+        "status": "NO_PLACED_ITEM_REQUIRED_BY_DEFAULT",
+        "item_ids": []
+      },
+      "readiness": {
+        "status": "TOPIC_ITEMS_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "13-goc-va-duong-thang",
+            "items": 11,
+            "gradeScope": null
+          }
+        ]
+      },
+      "source_evidence": [
+        {
+          "topic": "13-goc-va-duong-thang",
+          "workspace": true,
+          "cards": 5,
+          "microBank": true,
+          "microCount": 23,
+          "hasPracticeManifest": true,
+          "hasReadiness": true
+        }
+      ]
+    },
+    {
+      "grade": 7,
+      "chapter": 3,
+      "chapter_title": "Góc và đường thẳng song song",
+      "lesson_ref": "Bài 9-10",
+      "lesson_summary": "Dấu hiệu nhận biết hai đường thẳng song song; tiên đề Euclid; tính chất của hai đường thẳng song song.",
+      "primary_topics": [
+        "13-goc-va-duong-thang"
+      ],
+      "learn": {
+        "status": "CARD_WITH_LESSON_RANGE_OVERLAP",
+        "cards": [
+          "geo13-core-3",
+          "geo13-core-4"
+        ],
+        "source_scope": "WORKSPACE_PLUS_CT20_OVERLAY; not full content review"
+      },
+      "micro": {
+        "status": "CARD_WITH_LESSON_RANGE_OVERLAP",
+        "cards": [
+          "geo13-core-3",
+          "geo13-core-4"
+        ]
+      },
+      "practice": {
+        "status": "TOPIC_BANK_PRESENT_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "13-goc-va-duong-thang",
+            "manifest": "13-goc-va-duong-thang-v1.manifest.json",
+            "questions": 156
+          }
+        ]
+      },
+      "written": {
+        "status": "REVIEWED_ITEM_KNTT_PLACEMENT_INTERSECTS",
+        "item_ids": [
+          "WX13-LIN-001"
+        ]
+      },
+      "readiness": {
+        "status": "TOPIC_ITEMS_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "13-goc-va-duong-thang",
+            "items": 11,
+            "gradeScope": null
+          }
+        ]
+      },
+      "source_evidence": [
+        {
+          "topic": "13-goc-va-duong-thang",
+          "workspace": true,
+          "cards": 5,
+          "microBank": true,
+          "microCount": 23,
+          "hasPracticeManifest": true,
+          "hasReadiness": true
+        }
+      ]
+    },
+    {
+      "grade": 7,
+      "chapter": 3,
+      "chapter_title": "Góc và đường thẳng song song",
+      "lesson_ref": "Bài 11",
+      "lesson_summary": "Khái niệm định lí; giả thiết, kết luận; bước đầu chứng minh định lí.",
+      "primary_topics": [
+        "13-goc-va-duong-thang"
+      ],
+      "learn": {
+        "status": "CARD_WITH_LESSON_RANGE_OVERLAP",
+        "cards": [
+          "geo13-core-5"
+        ],
+        "source_scope": "WORKSPACE_PLUS_CT20_OVERLAY; not full content review"
+      },
+      "micro": {
+        "status": "CARD_WITH_LESSON_RANGE_OVERLAP",
+        "cards": [
+          "geo13-core-5"
+        ]
+      },
+      "practice": {
+        "status": "TOPIC_BANK_PRESENT_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "13-goc-va-duong-thang",
+            "manifest": "13-goc-va-duong-thang-v1.manifest.json",
+            "questions": 156
+          }
+        ]
+      },
+      "written": {
+        "status": "NO_PLACED_ITEM_REQUIRED_BY_DEFAULT",
+        "item_ids": []
+      },
+      "readiness": {
+        "status": "TOPIC_ITEMS_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "13-goc-va-duong-thang",
+            "items": 11,
+            "gradeScope": null
+          }
+        ]
+      },
+      "source_evidence": [
+        {
+          "topic": "13-goc-va-duong-thang",
+          "workspace": true,
+          "cards": 5,
+          "microBank": true,
+          "microCount": 23,
+          "hasPracticeManifest": true,
+          "hasReadiness": true
+        }
+      ]
+    },
+    {
+      "grade": 7,
+      "chapter": 4,
+      "chapter_title": "Tam giác bằng nhau",
+      "lesson_ref": "Bài 12",
+      "lesson_summary": "Tổng các góc trong một tam giác.",
+      "primary_topics": [
+        "14-tam-giac"
+      ],
+      "learn": {
+        "status": "GRADE_OR_LESSON_CONTEXT_CARD",
+        "cards": [
+          "geo14-core-1",
+          "geo14-core-2",
+          "geo14-core-3",
+          "geo14-core-4",
+          "geo14-core-5"
+        ],
+        "source_scope": "WORKSPACE_PLUS_CT20_OVERLAY; not full content review"
+      },
+      "micro": {
+        "status": "GRADE_OR_LESSON_CONTEXT_MICRO",
+        "cards": [
+          "geo14-core-1",
+          "geo14-core-2",
+          "geo14-core-3",
+          "geo14-core-4",
+          "geo14-core-5"
+        ]
+      },
+      "practice": {
+        "status": "TOPIC_BANK_PRESENT_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "14-tam-giac",
+            "manifest": "14-tam-giac-v1.manifest.json",
+            "questions": 140
+          }
+        ]
+      },
+      "written": {
+        "status": "NO_PLACED_ITEM_REQUIRED_BY_DEFAULT",
+        "item_ids": []
+      },
+      "readiness": {
+        "status": "TOPIC_ITEMS_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "14-tam-giac",
+            "items": 11,
+            "gradeScope": null
+          }
+        ]
+      },
+      "source_evidence": [
+        {
+          "topic": "14-tam-giac",
+          "workspace": true,
+          "cards": 5,
+          "microBank": true,
+          "microCount": 17,
+          "hasPracticeManifest": true,
+          "hasReadiness": true
+        }
+      ]
+    },
+    {
+      "grade": 7,
+      "chapter": 4,
+      "chapter_title": "Tam giác bằng nhau",
+      "lesson_ref": "Bài 13-15",
+      "lesson_summary": "Hai tam giác bằng nhau; các trường hợp c-c-c, c-g-c, g-c-g và các trường hợp bằng nhau của tam giác vuông.",
+      "primary_topics": [
+        "14-tam-giac"
+      ],
+      "learn": {
+        "status": "GRADE_OR_LESSON_CONTEXT_CARD",
+        "cards": [
+          "geo14-core-1",
+          "geo14-core-2",
+          "geo14-core-3",
+          "geo14-core-4",
+          "geo14-core-5"
+        ],
+        "source_scope": "WORKSPACE_PLUS_CT20_OVERLAY; not full content review"
+      },
+      "micro": {
+        "status": "GRADE_OR_LESSON_CONTEXT_MICRO",
+        "cards": [
+          "geo14-core-1",
+          "geo14-core-2",
+          "geo14-core-3",
+          "geo14-core-4",
+          "geo14-core-5"
+        ]
+      },
+      "practice": {
+        "status": "TOPIC_BANK_PRESENT_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "14-tam-giac",
+            "manifest": "14-tam-giac-v1.manifest.json",
+            "questions": 140
+          }
+        ]
+      },
+      "written": {
+        "status": "REVIEWED_ITEM_KNTT_PLACEMENT_INTERSECTS",
+        "item_ids": [
+          "WX14-TRI-001",
+          "WX14-TRI-002",
+          "WX14-TRI-004"
+        ]
+      },
+      "readiness": {
+        "status": "TOPIC_ITEMS_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "14-tam-giac",
+            "items": 11,
+            "gradeScope": null
+          }
+        ]
+      },
+      "source_evidence": [
+        {
+          "topic": "14-tam-giac",
+          "workspace": true,
+          "cards": 5,
+          "microBank": true,
+          "microCount": 17,
+          "hasPracticeManifest": true,
+          "hasReadiness": true
+        }
+      ]
+    },
+    {
+      "grade": 7,
+      "chapter": 4,
+      "chapter_title": "Tam giác bằng nhau",
+      "lesson_ref": "Bài 16",
+      "lesson_summary": "Tam giác cân; đường trung trực của đoạn thẳng và tính chất cách đều hai đầu mút.",
+      "primary_topics": [
+        "14-tam-giac"
+      ],
+      "learn": {
+        "status": "GRADE_OR_LESSON_CONTEXT_CARD",
+        "cards": [
+          "geo14-core-1",
+          "geo14-core-2",
+          "geo14-core-3",
+          "geo14-core-4",
+          "geo14-core-5"
+        ],
+        "source_scope": "WORKSPACE_PLUS_CT20_OVERLAY; not full content review"
+      },
+      "micro": {
+        "status": "GRADE_OR_LESSON_CONTEXT_MICRO",
+        "cards": [
+          "geo14-core-1",
+          "geo14-core-2",
+          "geo14-core-3",
+          "geo14-core-4",
+          "geo14-core-5"
+        ]
+      },
+      "practice": {
+        "status": "TOPIC_BANK_PRESENT_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "14-tam-giac",
+            "manifest": "14-tam-giac-v1.manifest.json",
+            "questions": 140
+          }
+        ]
+      },
+      "written": {
+        "status": "REVIEWED_ITEM_KNTT_PLACEMENT_INTERSECTS",
+        "item_ids": [
+          "WX14-TRI-001",
+          "WX14-TRI-004"
+        ]
+      },
+      "readiness": {
+        "status": "TOPIC_ITEMS_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "14-tam-giac",
+            "items": 11,
+            "gradeScope": null
+          }
+        ]
+      },
+      "source_evidence": [
+        {
+          "topic": "14-tam-giac",
+          "workspace": true,
+          "cards": 5,
+          "microBank": true,
+          "microCount": 17,
+          "hasPracticeManifest": true,
+          "hasReadiness": true
+        }
+      ]
+    },
+    {
+      "grade": 7,
+      "chapter": 5,
+      "chapter_title": "Thu thập và biểu diễn dữ liệu",
+      "lesson_ref": "Bài 17",
+      "lesson_summary": "Thu thập và phân loại dữ liệu.",
+      "primary_topics": [
+        "21-thong-ke"
+      ],
+      "learn": {
+        "status": "CARD_WITH_LESSON_RANGE_OVERLAP",
+        "cards": [
+          "sta21-core-1"
+        ],
+        "source_scope": "WORKSPACE_PLUS_CT20_OVERLAY; not full content review"
+      },
+      "micro": {
+        "status": "CARD_WITH_LESSON_RANGE_OVERLAP",
+        "cards": [
+          "sta21-core-1"
+        ]
+      },
+      "practice": {
+        "status": "TOPIC_BANK_PRESENT_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "21-thong-ke",
+            "manifest": "21-thong-ke-v2.manifest.json",
+            "questions": 134
+          }
+        ]
+      },
+      "written": {
+        "status": "NO_PLACED_ITEM_REQUIRED_BY_DEFAULT",
+        "item_ids": []
+      },
+      "readiness": {
+        "status": "TOPIC_ITEMS_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "21-thong-ke",
+            "items": 16,
+            "gradeScope": null
+          }
+        ]
+      },
+      "source_evidence": [
+        {
+          "topic": "21-thong-ke",
+          "workspace": true,
+          "cards": 7,
+          "microBank": true,
+          "microCount": 32,
+          "hasPracticeManifest": true,
+          "hasReadiness": true
+        }
+      ]
+    },
+    {
+      "grade": 7,
+      "chapter": 5,
+      "chapter_title": "Thu thập và biểu diễn dữ liệu",
+      "lesson_ref": "Bài 18-19",
+      "lesson_summary": "Biểu đồ hình quạt tròn và biểu đồ đoạn thẳng; đọc, biểu diễn và nhận xét dữ liệu.",
+      "primary_topics": [
+        "21-thong-ke"
+      ],
+      "learn": {
+        "status": "CARD_WITH_LESSON_RANGE_OVERLAP",
+        "cards": [
+          "sta21-core-3",
+          "sta21-core-4",
+          "sta21-core-5"
+        ],
+        "source_scope": "WORKSPACE_PLUS_CT20_OVERLAY; not full content review"
+      },
+      "micro": {
+        "status": "CARD_WITH_LESSON_RANGE_OVERLAP",
+        "cards": [
+          "sta21-core-3",
+          "sta21-core-4",
+          "sta21-core-5"
+        ]
+      },
+      "practice": {
+        "status": "TOPIC_BANK_PRESENT_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "21-thong-ke",
+            "manifest": "21-thong-ke-v2.manifest.json",
+            "questions": 134
+          }
+        ]
+      },
+      "written": {
+        "status": "NO_PLACED_ITEM_REQUIRED_BY_DEFAULT",
+        "item_ids": []
+      },
+      "readiness": {
+        "status": "TOPIC_ITEMS_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "21-thong-ke",
+            "items": 16,
+            "gradeScope": null
+          }
+        ]
+      },
+      "source_evidence": [
+        {
+          "topic": "21-thong-ke",
+          "workspace": true,
+          "cards": 7,
+          "microBank": true,
+          "microCount": 32,
+          "hasPracticeManifest": true,
+          "hasReadiness": true
+        }
+      ]
+    },
+    {
+      "grade": 7,
+      "chapter": 6,
+      "chapter_title": "Tỉ lệ thức và đại lượng tỉ lệ",
+      "lesson_ref": "Bài 20-21",
+      "lesson_summary": "Tỉ lệ thức; tính chất dãy tỉ số bằng nhau.",
+      "primary_topics": [
+        "03-ti-le-ti-le-thuc"
+      ],
+      "learn": {
+        "status": "GRADE_OR_LESSON_CONTEXT_CARD",
+        "cards": [
+          "rat03-core-g7-2",
+          "rat03-core-g7-3",
+          "rat03-core-g7-4",
+          "rat03-core-g7-5",
+          "rat03-core-g7-6"
+        ],
+        "source_scope": "WORKSPACE_PLUS_CT20_OVERLAY; not full content review"
+      },
+      "micro": {
+        "status": "GRADE_OR_LESSON_CONTEXT_MICRO",
+        "cards": [
+          "rat03-core-g7-2",
+          "rat03-core-g7-3",
+          "rat03-core-g7-4",
+          "rat03-core-g7-5",
+          "rat03-core-g7-6"
+        ]
+      },
+      "practice": {
+        "status": "TOPIC_BANK_PRESENT_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "03-ti-le-ti-le-thuc",
+            "manifest": "03-ti-le-ti-le-thuc-v4.manifest.json",
+            "questions": 126
+          }
+        ]
+      },
+      "written": {
+        "status": "REVIEWED_ITEM_KNTT_PLACEMENT_INTERSECTS",
+        "item_ids": [
+          "WX03-RAT-001",
+          "WX03-RAT-003"
+        ]
+      },
+      "readiness": {
+        "status": "GRADE_SCOPE_ITEMS_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "03-ti-le-ti-le-thuc",
+            "items": 11,
+            "gradeScope": [
+              6,
+              7
+            ]
+          }
+        ]
+      },
+      "source_evidence": [
+        {
+          "topic": "03-ti-le-ti-le-thuc",
+          "workspace": true,
+          "cards": 6,
+          "microBank": true,
+          "microCount": 19,
+          "hasPracticeManifest": true,
+          "hasReadiness": true
+        }
+      ]
+    },
+    {
+      "grade": 7,
+      "chapter": 6,
+      "chapter_title": "Tỉ lệ thức và đại lượng tỉ lệ",
+      "lesson_ref": "Bài 22-23",
+      "lesson_summary": "Đại lượng tỉ lệ thuận, tỉ lệ nghịch và các bài toán ứng dụng.",
+      "primary_topics": [
+        "03-ti-le-ti-le-thuc"
+      ],
+      "learn": {
+        "status": "CARD_WITH_LESSON_RANGE_OVERLAP",
+        "cards": [
+          "rat03-core-g7-6"
+        ],
+        "source_scope": "WORKSPACE_PLUS_CT20_OVERLAY; not full content review"
+      },
+      "micro": {
+        "status": "CARD_WITH_LESSON_RANGE_OVERLAP",
+        "cards": [
+          "rat03-core-g7-6"
+        ]
+      },
+      "practice": {
+        "status": "TOPIC_BANK_PRESENT_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "03-ti-le-ti-le-thuc",
+            "manifest": "03-ti-le-ti-le-thuc-v4.manifest.json",
+            "questions": 126
+          }
+        ]
+      },
+      "written": {
+        "status": "REVIEWED_ITEM_KNTT_PLACEMENT_INTERSECTS",
+        "item_ids": [
+          "WX03-RAT-002",
+          "WX03-RAT-003"
+        ]
+      },
+      "readiness": {
+        "status": "GRADE_SCOPE_ITEMS_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "03-ti-le-ti-le-thuc",
+            "items": 11,
+            "gradeScope": [
+              6,
+              7
+            ]
+          }
+        ]
+      },
+      "source_evidence": [
+        {
+          "topic": "03-ti-le-ti-le-thuc",
+          "workspace": true,
+          "cards": 6,
+          "microBank": true,
+          "microCount": 19,
+          "hasPracticeManifest": true,
+          "hasReadiness": true
+        }
+      ]
+    },
+    {
+      "grade": 7,
+      "chapter": 7,
+      "chapter_title": "Biểu thức đại số và đa thức một biến",
+      "lesson_ref": "Bài 24-25",
+      "lesson_summary": "Biểu thức đại số; giá trị biểu thức; đa thức một biến, hệ số và bậc.",
+      "primary_topics": [
+        "04-bieu-thuc-dai-so"
+      ],
+      "learn": {
+        "status": "GRADE_OR_LESSON_CONTEXT_CARD",
+        "cards": [
+          "alg04-core-1",
+          "alg04-g7-core-6"
+        ],
+        "source_scope": "WORKSPACE_PLUS_CT20_OVERLAY; not full content review"
+      },
+      "micro": {
+        "status": "GRADE_OR_LESSON_CONTEXT_MICRO",
+        "cards": [
+          "alg04-core-1",
+          "alg04-g7-core-6"
+        ]
+      },
+      "practice": {
+        "status": "TOPIC_BANK_PRESENT_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "04-bieu-thuc-dai-so",
+            "manifest": "04-bieu-thuc-dai-so-v6.manifest.json",
+            "questions": 142
+          }
+        ]
+      },
+      "written": {
+        "status": "NO_PLACED_ITEM_REQUIRED_BY_DEFAULT",
+        "item_ids": []
+      },
+      "readiness": {
+        "status": "TOPIC_ITEMS_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "04-bieu-thuc-dai-so",
+            "items": 10,
+            "gradeScope": null
+          }
+        ]
+      },
+      "source_evidence": [
+        {
+          "topic": "04-bieu-thuc-dai-so",
+          "workspace": true,
+          "cards": 6,
+          "microBank": true,
+          "microCount": 19,
+          "hasPracticeManifest": true,
+          "hasReadiness": true
+        }
+      ]
+    },
+    {
+      "grade": 7,
+      "chapter": 7,
+      "chapter_title": "Biểu thức đại số và đa thức một biến",
+      "lesson_ref": "Bài 26-28",
+      "lesson_summary": "Cộng, trừ, nhân và chia đa thức một biến.",
+      "primary_topics": [
+        "04-bieu-thuc-dai-so"
+      ],
+      "learn": {
+        "status": "CARD_WITH_LESSON_RANGE_OVERLAP",
+        "cards": [
+          "alg04-g7-core-6"
+        ],
+        "source_scope": "WORKSPACE_PLUS_CT20_OVERLAY; not full content review"
+      },
+      "micro": {
+        "status": "CARD_WITH_LESSON_RANGE_OVERLAP",
+        "cards": [
+          "alg04-g7-core-6"
+        ]
+      },
+      "practice": {
+        "status": "TOPIC_BANK_PRESENT_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "04-bieu-thuc-dai-so",
+            "manifest": "04-bieu-thuc-dai-so-v6.manifest.json",
+            "questions": 142
+          }
+        ]
+      },
+      "written": {
+        "status": "REVIEWED_ITEM_KNTT_PLACEMENT_INTERSECTS",
+        "item_ids": [
+          "WX04-ALG-004"
+        ]
+      },
+      "readiness": {
+        "status": "TOPIC_ITEMS_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "04-bieu-thuc-dai-so",
+            "items": 10,
+            "gradeScope": null
+          }
+        ]
+      },
+      "source_evidence": [
+        {
+          "topic": "04-bieu-thuc-dai-so",
+          "workspace": true,
+          "cards": 6,
+          "microBank": true,
+          "microCount": 19,
+          "hasPracticeManifest": true,
+          "hasReadiness": true
+        }
+      ]
+    },
+    {
+      "grade": 7,
+      "chapter": 8,
+      "chapter_title": "Làm quen với biến cố và xác suất của biến cố",
+      "lesson_ref": "Bài 29",
+      "lesson_summary": "Làm quen với biến cố; biến cố chắc chắn, không thể và ngẫu nhiên trong các tình huống đơn giản.",
+      "primary_topics": [
+        "23-xac-suat"
+      ],
+      "learn": {
+        "status": "CARD_WITH_LESSON_RANGE_OVERLAP",
+        "cards": [
+          "prob23-core-2"
+        ],
+        "source_scope": "WORKSPACE_PLUS_CT20_OVERLAY; not full content review"
+      },
+      "micro": {
+        "status": "CARD_WITH_LESSON_RANGE_OVERLAP",
+        "cards": [
+          "prob23-core-2"
+        ]
+      },
+      "practice": {
+        "status": "TOPIC_BANK_PRESENT_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "23-xac-suat",
+            "manifest": "23-xac-suat-v1.manifest.json",
+            "questions": 120
+          }
+        ]
+      },
+      "written": {
+        "status": "NO_PLACED_ITEM_REQUIRED_BY_DEFAULT",
+        "item_ids": []
+      },
+      "readiness": {
+        "status": "TOPIC_ITEMS_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "23-xac-suat",
+            "items": 12,
+            "gradeScope": null
+          }
+        ]
+      },
+      "source_evidence": [
+        {
+          "topic": "23-xac-suat",
+          "workspace": true,
+          "cards": 7,
+          "microBank": true,
+          "microCount": 28,
+          "hasPracticeManifest": true,
+          "hasReadiness": true
+        }
+      ]
+    },
+    {
+      "grade": 7,
+      "chapter": 8,
+      "chapter_title": "Làm quen với biến cố và xác suất của biến cố",
+      "lesson_ref": "Bài 30",
+      "lesson_summary": "Làm quen với xác suất của biến cố trong các mô hình đơn giản.",
+      "primary_topics": [
+        "23-xac-suat"
+      ],
+      "learn": {
+        "status": "CARD_WITH_LESSON_RANGE_OVERLAP",
+        "cards": [
+          "prob23-core-3"
+        ],
+        "source_scope": "WORKSPACE_PLUS_CT20_OVERLAY; not full content review"
+      },
+      "micro": {
+        "status": "CARD_WITH_LESSON_RANGE_OVERLAP",
+        "cards": [
+          "prob23-core-3"
+        ]
+      },
+      "practice": {
+        "status": "TOPIC_BANK_PRESENT_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "23-xac-suat",
+            "manifest": "23-xac-suat-v1.manifest.json",
+            "questions": 120
+          }
+        ]
+      },
+      "written": {
+        "status": "NO_PLACED_ITEM_REQUIRED_BY_DEFAULT",
+        "item_ids": []
+      },
+      "readiness": {
+        "status": "TOPIC_ITEMS_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "23-xac-suat",
+            "items": 12,
+            "gradeScope": null
+          }
+        ]
+      },
+      "source_evidence": [
+        {
+          "topic": "23-xac-suat",
+          "workspace": true,
+          "cards": 7,
+          "microBank": true,
+          "microCount": 28,
+          "hasPracticeManifest": true,
+          "hasReadiness": true
+        }
+      ]
+    },
+    {
+      "grade": 7,
+      "chapter": 9,
+      "chapter_title": "Quan hệ giữa các yếu tố trong một tam giác",
+      "lesson_ref": "Bài 31-33",
+      "lesson_summary": "Quan hệ góc–cạnh đối diện; đường vuông góc và đường xiên; bất đẳng thức tam giác.",
+      "primary_topics": [
+        "14-tam-giac"
+      ],
+      "learn": {
+        "status": "GRADE_OR_LESSON_CONTEXT_CARD",
+        "cards": [
+          "geo14-core-1",
+          "geo14-core-2",
+          "geo14-core-3",
+          "geo14-core-4",
+          "geo14-core-5"
+        ],
+        "source_scope": "WORKSPACE_PLUS_CT20_OVERLAY; not full content review"
+      },
+      "micro": {
+        "status": "GRADE_OR_LESSON_CONTEXT_MICRO",
+        "cards": [
+          "geo14-core-1",
+          "geo14-core-2",
+          "geo14-core-3",
+          "geo14-core-4",
+          "geo14-core-5"
+        ]
+      },
+      "practice": {
+        "status": "TOPIC_BANK_PRESENT_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "14-tam-giac",
+            "manifest": "14-tam-giac-v1.manifest.json",
+            "questions": 140
+          }
+        ]
+      },
+      "written": {
+        "status": "NO_PLACED_ITEM_REQUIRED_BY_DEFAULT",
+        "item_ids": []
+      },
+      "readiness": {
+        "status": "TOPIC_ITEMS_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "14-tam-giac",
+            "items": 11,
+            "gradeScope": null
+          }
+        ]
+      },
+      "source_evidence": [
+        {
+          "topic": "14-tam-giac",
+          "workspace": true,
+          "cards": 5,
+          "microBank": true,
+          "microCount": 17,
+          "hasPracticeManifest": true,
+          "hasReadiness": true
+        }
+      ]
+    },
+    {
+      "grade": 7,
+      "chapter": 9,
+      "chapter_title": "Quan hệ giữa các yếu tố trong một tam giác",
+      "lesson_ref": "Bài 34-35",
+      "lesson_summary": "Sự đồng quy và tính chất cơ bản của trung tuyến, phân giác, trung trực, đường cao.",
+      "primary_topics": [
+        "15-duong-dong-quy"
+      ],
+      "learn": {
+        "status": "GRADE_OR_LESSON_CONTEXT_CARD",
+        "cards": [
+          "geo15-core-1",
+          "geo15-core-2",
+          "geo15-core-3",
+          "geo15-core-4",
+          "geo15-core-5"
+        ],
+        "source_scope": "WORKSPACE_PLUS_CT20_OVERLAY; not full content review"
+      },
+      "micro": {
+        "status": "GRADE_OR_LESSON_CONTEXT_MICRO",
+        "cards": [
+          "geo15-core-1",
+          "geo15-core-2",
+          "geo15-core-3",
+          "geo15-core-4",
+          "geo15-core-5"
+        ]
+      },
+      "practice": {
+        "status": "TOPIC_BANK_PRESENT_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "15-duong-dong-quy",
+            "manifest": "15-duong-dong-quy-v1.manifest.json",
+            "questions": 124
+          }
+        ]
+      },
+      "written": {
+        "status": "REVIEWED_ITEM_KNTT_PLACEMENT_INTERSECTS",
+        "item_ids": [
+          "WX15-CEN-002"
+        ]
+      },
+      "readiness": {
+        "status": "TOPIC_ITEMS_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "15-duong-dong-quy",
+            "items": 10,
+            "gradeScope": null
+          }
+        ]
+      },
+      "source_evidence": [
+        {
+          "topic": "15-duong-dong-quy",
+          "workspace": true,
+          "cards": 5,
+          "microBank": true,
+          "microCount": 15,
+          "hasPracticeManifest": true,
+          "hasReadiness": true
+        }
+      ]
+    },
+    {
+      "grade": 7,
+      "chapter": 10,
+      "chapter_title": "Một số hình khối trong thực tiễn",
+      "lesson_ref": "Bài 36",
+      "lesson_summary": "Hình hộp chữ nhật và hình lập phương; yếu tố hình, diện tích xung quanh/toàn phần và thể tích.",
+      "primary_topics": [
+        "20-hinh-hoc-tong-hop"
+      ],
+      "learn": {
+        "status": "SHARED_TOPIC_TEACHING_ONLY",
+        "cards": [],
+        "source_scope": "WORKSPACE_PLUS_CT20_OVERLAY; not full content review"
+      },
+      "micro": {
+        "status": "SHARED_TOPIC_MICRO_ONLY",
+        "cards": []
+      },
+      "practice": {
+        "status": "TOPIC_BANK_PRESENT_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "20-hinh-hoc-tong-hop",
+            "manifest": "20-hinh-hoc-tong-hop-v1.manifest.json",
+            "questions": 195
+          }
+        ]
+      },
+      "written": {
+        "status": "NO_PLACED_ITEM_REQUIRED_BY_DEFAULT",
+        "item_ids": []
+      },
+      "readiness": {
+        "status": "TOPIC_ITEMS_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "20-hinh-hoc-tong-hop",
+            "items": 12,
+            "gradeScope": null
+          }
+        ]
+      },
+      "source_evidence": [
+        {
+          "topic": "20-hinh-hoc-tong-hop",
+          "workspace": true,
+          "cards": 5,
+          "microBank": true,
+          "microCount": 29,
+          "hasPracticeManifest": true,
+          "hasReadiness": true
+        }
+      ]
+    },
+    {
+      "grade": 7,
+      "chapter": 10,
+      "chapter_title": "Một số hình khối trong thực tiễn",
+      "lesson_ref": "Bài 37",
+      "lesson_summary": "Hình lăng trụ đứng tam giác, tứ giác; yếu tố hình, diện tích xung quanh và thể tích; vận dụng thực tế.",
+      "primary_topics": [
+        "20-hinh-hoc-tong-hop"
+      ],
+      "learn": {
+        "status": "SHARED_TOPIC_TEACHING_ONLY",
+        "cards": [],
+        "source_scope": "WORKSPACE_PLUS_CT20_OVERLAY; not full content review"
+      },
+      "micro": {
+        "status": "SHARED_TOPIC_MICRO_ONLY",
+        "cards": []
+      },
+      "practice": {
+        "status": "TOPIC_BANK_PRESENT_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "20-hinh-hoc-tong-hop",
+            "manifest": "20-hinh-hoc-tong-hop-v1.manifest.json",
+            "questions": 195
+          }
+        ]
+      },
+      "written": {
+        "status": "NO_PLACED_ITEM_REQUIRED_BY_DEFAULT",
+        "item_ids": []
+      },
+      "readiness": {
+        "status": "TOPIC_ITEMS_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "20-hinh-hoc-tong-hop",
+            "items": 12,
+            "gradeScope": null
+          }
+        ]
+      },
+      "source_evidence": [
+        {
+          "topic": "20-hinh-hoc-tong-hop",
+          "workspace": true,
+          "cards": 5,
+          "microBank": true,
+          "microCount": 29,
+          "hasPracticeManifest": true,
+          "hasReadiness": true
+        }
+      ]
+    },
+    {
+      "grade": 8,
+      "chapter": 1,
+      "chapter_title": "Đa thức",
+      "lesson_ref": "Bài 1-5",
+      "lesson_summary": "Đơn thức và đa thức nhiều biến; hệ số, bậc, hạng tử đồng dạng; thu gọn; cộng, trừ, nhân đa thức; chia đa thức cho đơn thức.",
+      "primary_topics": [
+        "04-bieu-thuc-dai-so"
+      ],
+      "learn": {
+        "status": "GRADE_OR_LESSON_CONTEXT_CARD",
+        "cards": [
+          "alg04-core-5"
+        ],
+        "source_scope": "WORKSPACE_PLUS_CT20_OVERLAY; not full content review"
+      },
+      "micro": {
+        "status": "GRADE_OR_LESSON_CONTEXT_MICRO",
+        "cards": [
+          "alg04-core-5"
+        ]
+      },
+      "practice": {
+        "status": "TOPIC_BANK_PRESENT_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "04-bieu-thuc-dai-so",
+            "manifest": "04-bieu-thuc-dai-so-v6.manifest.json",
+            "questions": 142
+          }
+        ]
+      },
+      "written": {
+        "status": "REVIEWED_ITEM_KNTT_PLACEMENT_INTERSECTS",
+        "item_ids": [
+          "WX04-ALG-003"
+        ]
+      },
+      "readiness": {
+        "status": "TOPIC_ITEMS_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "04-bieu-thuc-dai-so",
+            "items": 10,
+            "gradeScope": null
+          }
+        ]
+      },
+      "source_evidence": [
+        {
+          "topic": "04-bieu-thuc-dai-so",
+          "workspace": true,
+          "cards": 6,
+          "microBank": true,
+          "microCount": 19,
+          "hasPracticeManifest": true,
+          "hasReadiness": true
+        }
+      ]
+    },
+    {
+      "grade": 8,
+      "chapter": 2,
+      "chapter_title": "Hằng đẳng thức đáng nhớ và ứng dụng",
+      "lesson_ref": "Bài 6-8",
+      "lesson_summary": "Nhận dạng, khai triển, biến đổi và vận dụng 7 hằng đẳng thức đáng nhớ.",
+      "primary_topics": [
+        "05-7-hang-dang-thuc"
+      ],
+      "learn": {
+        "status": "SHARED_TOPIC_TEACHING_ONLY",
+        "cards": [
+          "id05-core-1",
+          "id05-core-2",
+          "id05-core-3",
+          "id05-core-4",
+          "id05-core-5"
+        ],
+        "source_scope": "WORKSPACE_PLUS_CT20_OVERLAY; not full content review"
+      },
+      "micro": {
+        "status": "SHARED_TOPIC_MICRO_ONLY",
+        "cards": []
+      },
+      "practice": {
+        "status": "TOPIC_BANK_PRESENT_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "05-7-hang-dang-thuc",
+            "manifest": "05-7-hang-dang-thuc-v1.manifest.json",
+            "questions": 120
+          }
+        ]
+      },
+      "written": {
+        "status": "REVIEWED_ITEM_KNTT_PLACEMENT_INTERSECTS",
+        "item_ids": [
+          "WX05-IDN-001"
+        ]
+      },
+      "readiness": {
+        "status": "TOPIC_ITEMS_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "05-7-hang-dang-thuc",
+            "items": 10,
+            "gradeScope": null
+          }
+        ]
+      },
+      "source_evidence": [
+        {
+          "topic": "05-7-hang-dang-thuc",
+          "workspace": true,
+          "cards": 5,
+          "microBank": true,
+          "microCount": 15,
+          "hasPracticeManifest": true,
+          "hasReadiness": true
+        }
+      ]
+    },
+    {
+      "grade": 8,
+      "chapter": 2,
+      "chapter_title": "Hằng đẳng thức đáng nhớ và ứng dụng",
+      "lesson_ref": "Bài 9",
+      "lesson_summary": "Phân tích đa thức thành nhân tử bằng đặt nhân tử chung, nhóm hạng tử, dùng hằng đẳng thức và phối hợp các phương pháp ở mức KNTT Core.",
+      "primary_topics": [
+        "06-phan-tich-da-thuc"
+      ],
+      "learn": {
+        "status": "SHARED_TOPIC_TEACHING_ONLY",
+        "cards": [
+          "fac06-core-1",
+          "fac06-core-2",
+          "fac06-core-3",
+          "fac06-core-4",
+          "fac06-core-5"
+        ],
+        "source_scope": "WORKSPACE_PLUS_CT20_OVERLAY; not full content review"
+      },
+      "micro": {
+        "status": "SHARED_TOPIC_MICRO_ONLY",
+        "cards": []
+      },
+      "practice": {
+        "status": "TOPIC_BANK_PRESENT_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "06-phan-tich-da-thuc",
+            "manifest": "06-phan-tich-da-thuc-v1.manifest.json",
+            "questions": 120
+          }
+        ]
+      },
+      "written": {
+        "status": "REVIEWED_ITEM_KNTT_PLACEMENT_INTERSECTS",
+        "item_ids": [
+          "WX06-FAC-001"
+        ]
+      },
+      "readiness": {
+        "status": "TOPIC_ITEMS_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "06-phan-tich-da-thuc",
+            "items": 10,
+            "gradeScope": null
+          }
+        ]
+      },
+      "source_evidence": [
+        {
+          "topic": "06-phan-tich-da-thuc",
+          "workspace": true,
+          "cards": 5,
+          "microBank": true,
+          "microCount": 15,
+          "hasPracticeManifest": true,
+          "hasReadiness": true
+        }
+      ]
+    },
+    {
+      "grade": 8,
+      "chapter": 3,
+      "chapter_title": "Tứ giác",
+      "lesson_ref": "Bài 10-14",
+      "lesson_summary": "Tứ giác và tổng góc; hình thang cân, hình bình hành, hình chữ nhật, hình thoi, hình vuông: tính chất, dấu hiệu nhận biết và quan hệ bao hàm.",
+      "primary_topics": [
+        "16-tu-giac"
+      ],
+      "learn": {
+        "status": "GRADE_OR_LESSON_CONTEXT_CARD",
+        "cards": [
+          "geo16-core-1",
+          "geo16-core-2",
+          "geo16-core-3",
+          "geo16-core-4",
+          "geo16-core-5"
+        ],
+        "source_scope": "WORKSPACE_PLUS_CT20_OVERLAY; not full content review"
+      },
+      "micro": {
+        "status": "GRADE_OR_LESSON_CONTEXT_MICRO",
+        "cards": [
+          "geo16-core-1",
+          "geo16-core-2",
+          "geo16-core-3",
+          "geo16-core-4",
+          "geo16-core-5"
+        ]
+      },
+      "practice": {
+        "status": "TOPIC_BANK_PRESENT_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "16-tu-giac",
+            "manifest": "16-tu-giac-v1.manifest.json",
+            "questions": 120
+          }
+        ]
+      },
+      "written": {
+        "status": "REVIEWED_ITEM_KNTT_PLACEMENT_INTERSECTS",
+        "item_ids": [
+          "WX16-QUAD-001"
+        ]
+      },
+      "readiness": {
+        "status": "TOPIC_ITEMS_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "16-tu-giac",
+            "items": 10,
+            "gradeScope": null
+          }
+        ]
+      },
+      "source_evidence": [
+        {
+          "topic": "16-tu-giac",
+          "workspace": true,
+          "cards": 5,
+          "microBank": true,
+          "microCount": 16,
+          "hasPracticeManifest": true,
+          "hasReadiness": true
+        }
+      ]
+    },
+    {
+      "grade": 8,
+      "chapter": 4,
+      "chapter_title": "Định lí Thalès",
+      "lesson_ref": "Bài 15-16",
+      "lesson_summary": "Định lí Thalès thuận, đảo; tỉ lệ đoạn thẳng; đường trung bình của tam giác.",
+      "primary_topics": [
+        "17-thales-dong-dang"
+      ],
+      "learn": {
+        "status": "GRADE_OR_LESSON_CONTEXT_CARD",
+        "cards": [
+          "geo17-core-1",
+          "geo17-core-2",
+          "geo17-core-3",
+          "geo17-core-4",
+          "geo17-core-5"
+        ],
+        "source_scope": "WORKSPACE_PLUS_CT20_OVERLAY; not full content review"
+      },
+      "micro": {
+        "status": "GRADE_OR_LESSON_CONTEXT_MICRO",
+        "cards": [
+          "geo17-core-1",
+          "geo17-core-2",
+          "geo17-core-3",
+          "geo17-core-4",
+          "geo17-core-5"
+        ]
+      },
+      "practice": {
+        "status": "TOPIC_BANK_PRESENT_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "17-thales-dong-dang",
+            "manifest": "17-thales-dong-dang-v1.manifest.json",
+            "questions": 132
+          }
+        ]
+      },
+      "written": {
+        "status": "REVIEWED_ITEM_KNTT_PLACEMENT_INTERSECTS",
+        "item_ids": [
+          "WX17-SIM-001",
+          "WX16-QUAD-005"
+        ]
+      },
+      "readiness": {
+        "status": "TOPIC_ITEMS_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "17-thales-dong-dang",
+            "items": 10,
+            "gradeScope": null
+          }
+        ]
+      },
+      "source_evidence": [
+        {
+          "topic": "17-thales-dong-dang",
+          "workspace": true,
+          "cards": 5,
+          "microBank": true,
+          "microCount": 15,
+          "hasPracticeManifest": true,
+          "hasReadiness": true
+        }
+      ]
+    },
+    {
+      "grade": 8,
+      "chapter": 4,
+      "chapter_title": "Định lí Thalès",
+      "lesson_ref": "Bài 17",
+      "lesson_summary": "Tính chất đường phân giác trong tam giác và sử dụng tỉ lệ đoạn thẳng.",
+      "primary_topics": [
+        "17-thales-dong-dang"
+      ],
+      "learn": {
+        "status": "GRADE_OR_LESSON_CONTEXT_CARD",
+        "cards": [
+          "geo17-core-1",
+          "geo17-core-2",
+          "geo17-core-3",
+          "geo17-core-4",
+          "geo17-core-5"
+        ],
+        "source_scope": "WORKSPACE_PLUS_CT20_OVERLAY; not full content review"
+      },
+      "micro": {
+        "status": "GRADE_OR_LESSON_CONTEXT_MICRO",
+        "cards": [
+          "geo17-core-1",
+          "geo17-core-2",
+          "geo17-core-3",
+          "geo17-core-4",
+          "geo17-core-5"
+        ]
+      },
+      "practice": {
+        "status": "TOPIC_BANK_PRESENT_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "17-thales-dong-dang",
+            "manifest": "17-thales-dong-dang-v1.manifest.json",
+            "questions": 132
+          }
+        ]
+      },
+      "written": {
+        "status": "NO_PLACED_ITEM_REQUIRED_BY_DEFAULT",
+        "item_ids": []
+      },
+      "readiness": {
+        "status": "TOPIC_ITEMS_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "17-thales-dong-dang",
+            "items": 10,
+            "gradeScope": null
+          }
+        ]
+      },
+      "source_evidence": [
+        {
+          "topic": "17-thales-dong-dang",
+          "workspace": true,
+          "cards": 5,
+          "microBank": true,
+          "microCount": 15,
+          "hasPracticeManifest": true,
+          "hasReadiness": true
+        }
+      ]
+    },
+    {
+      "grade": 8,
+      "chapter": 5,
+      "chapter_title": "Dữ liệu và biểu đồ",
+      "lesson_ref": "Bài 18-20",
+      "lesson_summary": "Thu thập, phân loại, biểu diễn và phân tích dữ liệu; chọn/đọc/chuyển dạng biểu đồ; nhận xét số liệu từ biểu đồ.",
+      "primary_topics": [
+        "21-thong-ke"
+      ],
+      "learn": {
+        "status": "CARD_WITH_LESSON_RANGE_OVERLAP",
+        "cards": [
+          "sta21-core-2",
+          "sta21-core-3",
+          "sta21-core-4",
+          "sta21-core-5"
+        ],
+        "source_scope": "WORKSPACE_PLUS_CT20_OVERLAY; not full content review"
+      },
+      "micro": {
+        "status": "CARD_WITH_LESSON_RANGE_OVERLAP",
+        "cards": [
+          "sta21-core-2",
+          "sta21-core-3",
+          "sta21-core-4",
+          "sta21-core-5"
+        ]
+      },
+      "practice": {
+        "status": "TOPIC_BANK_PRESENT_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "21-thong-ke",
+            "manifest": "21-thong-ke-v2.manifest.json",
+            "questions": 134
+          }
+        ]
+      },
+      "written": {
+        "status": "NO_PLACED_ITEM_REQUIRED_BY_DEFAULT",
+        "item_ids": []
+      },
+      "readiness": {
+        "status": "TOPIC_ITEMS_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "21-thong-ke",
+            "items": 16,
+            "gradeScope": null
+          }
+        ]
+      },
+      "source_evidence": [
+        {
+          "topic": "21-thong-ke",
+          "workspace": true,
+          "cards": 7,
+          "microBank": true,
+          "microCount": 32,
+          "hasPracticeManifest": true,
+          "hasReadiness": true
+        }
+      ]
+    },
+    {
+      "grade": 8,
+      "chapter": 6,
+      "chapter_title": "Phân thức đại số",
+      "lesson_ref": "Bài 21-24",
+      "lesson_summary": "Phân thức đại số; điều kiện mẫu khác 0; tính chất cơ bản; rút gọn, quy đồng; cộng, trừ, nhân, chia phân thức.",
+      "primary_topics": [
+        "07-phan-thuc-dai-so"
+      ],
+      "learn": {
+        "status": "GRADE_OR_LESSON_CONTEXT_CARD",
+        "cards": [
+          "pt07-core-1",
+          "pt07-core-2",
+          "pt07-core-3",
+          "pt07-core-4",
+          "pt07-core-5"
+        ],
+        "source_scope": "WORKSPACE_PLUS_CT20_OVERLAY; not full content review"
+      },
+      "micro": {
+        "status": "GRADE_OR_LESSON_CONTEXT_MICRO",
+        "cards": [
+          "pt07-core-1",
+          "pt07-core-2",
+          "pt07-core-3",
+          "pt07-core-4",
+          "pt07-core-5"
+        ]
+      },
+      "practice": {
+        "status": "TOPIC_BANK_PRESENT_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "07-phan-thuc-dai-so",
+            "manifest": "07-phan-thuc-dai-so-v1.manifest.json",
+            "questions": 121
+          }
+        ]
+      },
+      "written": {
+        "status": "REVIEWED_ITEM_KNTT_PLACEMENT_INTERSECTS",
+        "item_ids": [
+          "WX07-RAT-001"
+        ]
+      },
+      "readiness": {
+        "status": "TOPIC_ITEMS_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "07-phan-thuc-dai-so",
+            "items": 11,
+            "gradeScope": null
+          }
+        ]
+      },
+      "source_evidence": [
+        {
+          "topic": "07-phan-thuc-dai-so",
+          "workspace": true,
+          "cards": 5,
+          "microBank": true,
+          "microCount": 18,
+          "hasPracticeManifest": true,
+          "hasReadiness": true
+        }
+      ]
+    },
+    {
+      "grade": 8,
+      "chapter": 7,
+      "chapter_title": "Phương trình bậc nhất và hàm số bậc nhất",
+      "lesson_ref": "Bài 25-26",
+      "lesson_summary": "Khái niệm và nghiệm phương trình bậc nhất một ẩn; biến đổi về ax+b=0; giải bài toán bằng cách lập phương trình.",
+      "primary_topics": [
+        "08-phuong-trinh-bat-phuong-trinh"
+      ],
+      "learn": {
+        "status": "GRADE_OR_LESSON_CONTEXT_CARD",
+        "cards": [
+          "eq08-core-1"
+        ],
+        "source_scope": "WORKSPACE_PLUS_CT20_OVERLAY; not full content review"
+      },
+      "micro": {
+        "status": "GRADE_OR_LESSON_CONTEXT_MICRO",
+        "cards": [
+          "eq08-core-1"
+        ]
+      },
+      "practice": {
+        "status": "TOPIC_BANK_PRESENT_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "08-phuong-trinh-bat-phuong-trinh",
+            "manifest": "08-phuong-trinh-bat-phuong-trinh-v1.manifest.json",
+            "questions": 132
+          }
+        ]
+      },
+      "written": {
+        "status": "REVIEWED_ITEM_KNTT_PLACEMENT_INTERSECTS",
+        "item_ids": [
+          "WX24-MOD-003"
+        ]
+      },
+      "readiness": {
+        "status": "TOPIC_ITEMS_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "08-phuong-trinh-bat-phuong-trinh",
+            "items": 11,
+            "gradeScope": null
+          }
+        ]
+      },
+      "source_evidence": [
+        {
+          "topic": "08-phuong-trinh-bat-phuong-trinh",
+          "workspace": true,
+          "cards": 5,
+          "microBank": true,
+          "microCount": 16,
+          "hasPracticeManifest": true,
+          "hasReadiness": true
+        }
+      ]
+    },
+    {
+      "grade": 8,
+      "chapter": 7,
+      "chapter_title": "Phương trình bậc nhất và hàm số bậc nhất",
+      "lesson_ref": "Bài 27-29",
+      "lesson_summary": "Khái niệm hàm số; giá trị và bảng giá trị; điểm/đồ thị; hàm số bậc nhất y=ax+b và đồ thị; hệ số góc.",
+      "primary_topics": [
+        "10-ham-so-do-thi"
+      ],
+      "learn": {
+        "status": "GRADE_OR_LESSON_CONTEXT_CARD",
+        "cards": [
+          "fun10-core-1",
+          "fun10-core-2",
+          "fun10-core-3",
+          "fun10-core-4"
+        ],
+        "source_scope": "WORKSPACE_PLUS_CT20_OVERLAY; not full content review"
+      },
+      "micro": {
+        "status": "GRADE_OR_LESSON_CONTEXT_MICRO",
+        "cards": [
+          "fun10-core-1",
+          "fun10-core-2",
+          "fun10-core-3",
+          "fun10-core-4"
+        ]
+      },
+      "practice": {
+        "status": "TOPIC_BANK_PRESENT_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "10-ham-so-do-thi",
+            "manifest": "10-ham-so-do-thi-v1.manifest.json",
+            "questions": 120
+          }
+        ]
+      },
+      "written": {
+        "status": "NO_PLACED_ITEM_REQUIRED_BY_DEFAULT",
+        "item_ids": []
+      },
+      "readiness": {
+        "status": "TOPIC_ITEMS_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "10-ham-so-do-thi",
+            "items": 10,
+            "gradeScope": null
+          }
+        ]
+      },
+      "source_evidence": [
+        {
+          "topic": "10-ham-so-do-thi",
+          "workspace": true,
+          "cards": 5,
+          "microBank": true,
+          "microCount": 15,
+          "hasPracticeManifest": true,
+          "hasReadiness": true
+        }
+      ]
+    },
+    {
+      "grade": 8,
+      "chapter": 8,
+      "chapter_title": "Mở đầu về tính xác suất của biến cố",
+      "lesson_ref": "Bài 30",
+      "lesson_summary": "Kết quả có thể của hành động/thực nghiệm và kết quả thuận lợi cho một biến cố.",
+      "primary_topics": [
+        "23-xac-suat"
+      ],
+      "learn": {
+        "status": "CARD_WITH_LESSON_RANGE_OVERLAP",
+        "cards": [
+          "prob23-core-4"
+        ],
+        "source_scope": "WORKSPACE_PLUS_CT20_OVERLAY; not full content review"
+      },
+      "micro": {
+        "status": "CARD_WITH_LESSON_RANGE_OVERLAP",
+        "cards": [
+          "prob23-core-4"
+        ]
+      },
+      "practice": {
+        "status": "TOPIC_BANK_PRESENT_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "23-xac-suat",
+            "manifest": "23-xac-suat-v1.manifest.json",
+            "questions": 120
+          }
+        ]
+      },
+      "written": {
+        "status": "NO_PLACED_ITEM_REQUIRED_BY_DEFAULT",
+        "item_ids": []
+      },
+      "readiness": {
+        "status": "TOPIC_ITEMS_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "23-xac-suat",
+            "items": 12,
+            "gradeScope": null
+          }
+        ]
+      },
+      "source_evidence": [
+        {
+          "topic": "23-xac-suat",
+          "workspace": true,
+          "cards": 7,
+          "microBank": true,
+          "microCount": 28,
+          "hasPracticeManifest": true,
+          "hasReadiness": true
+        }
+      ]
+    },
+    {
+      "grade": 8,
+      "chapter": 8,
+      "chapter_title": "Mở đầu về tính xác suất của biến cố",
+      "lesson_ref": "Bài 31-32",
+      "lesson_summary": "Tính xác suất của biến cố bằng tỉ số trong mô hình đơn giản; liên hệ xác suất thực nghiệm với xác suất.",
+      "primary_topics": [
+        "23-xac-suat"
+      ],
+      "learn": {
+        "status": "CARD_WITH_LESSON_RANGE_OVERLAP",
+        "cards": [
+          "prob23-core-5"
+        ],
+        "source_scope": "WORKSPACE_PLUS_CT20_OVERLAY; not full content review"
+      },
+      "micro": {
+        "status": "CARD_WITH_LESSON_RANGE_OVERLAP",
+        "cards": [
+          "prob23-core-5"
+        ]
+      },
+      "practice": {
+        "status": "TOPIC_BANK_PRESENT_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "23-xac-suat",
+            "manifest": "23-xac-suat-v1.manifest.json",
+            "questions": 120
+          }
+        ]
+      },
+      "written": {
+        "status": "NO_PLACED_ITEM_REQUIRED_BY_DEFAULT",
+        "item_ids": []
+      },
+      "readiness": {
+        "status": "TOPIC_ITEMS_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "23-xac-suat",
+            "items": 12,
+            "gradeScope": null
+          }
+        ]
+      },
+      "source_evidence": [
+        {
+          "topic": "23-xac-suat",
+          "workspace": true,
+          "cards": 7,
+          "microBank": true,
+          "microCount": 28,
+          "hasPracticeManifest": true,
+          "hasReadiness": true
+        }
+      ]
+    },
+    {
+      "grade": 8,
+      "chapter": 9,
+      "chapter_title": "Tam giác đồng dạng",
+      "lesson_ref": "Bài 33-34, 36",
+      "lesson_summary": "Hai tam giác đồng dạng; ba trường hợp đồng dạng; đồng dạng của tam giác vuông; thứ tự tương ứng và tính độ dài.",
+      "primary_topics": [
+        "17-thales-dong-dang"
+      ],
+      "learn": {
+        "status": "GRADE_OR_LESSON_CONTEXT_CARD",
+        "cards": [
+          "geo17-core-1",
+          "geo17-core-2",
+          "geo17-core-3",
+          "geo17-core-4",
+          "geo17-core-5"
+        ],
+        "source_scope": "WORKSPACE_PLUS_CT20_OVERLAY; not full content review"
+      },
+      "micro": {
+        "status": "GRADE_OR_LESSON_CONTEXT_MICRO",
+        "cards": [
+          "geo17-core-1",
+          "geo17-core-2",
+          "geo17-core-3",
+          "geo17-core-4",
+          "geo17-core-5"
+        ]
+      },
+      "practice": {
+        "status": "TOPIC_BANK_PRESENT_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "17-thales-dong-dang",
+            "manifest": "17-thales-dong-dang-v1.manifest.json",
+            "questions": 132
+          }
+        ]
+      },
+      "written": {
+        "status": "NO_PLACED_ITEM_REQUIRED_BY_DEFAULT",
+        "item_ids": []
+      },
+      "readiness": {
+        "status": "TOPIC_ITEMS_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "17-thales-dong-dang",
+            "items": 10,
+            "gradeScope": null
+          }
+        ]
+      },
+      "source_evidence": [
+        {
+          "topic": "17-thales-dong-dang",
+          "workspace": true,
+          "cards": 5,
+          "microBank": true,
+          "microCount": 15,
+          "hasPracticeManifest": true,
+          "hasReadiness": true
+        }
+      ]
+    },
+    {
+      "grade": 8,
+      "chapter": 9,
+      "chapter_title": "Tam giác đồng dạng",
+      "lesson_ref": "Bài 35",
+      "lesson_summary": "Định lí Pythagore thuận và đảo, tính độ dài trong tam giác vuông.",
+      "primary_topics": [
+        "18-he-thuc-luong"
+      ],
+      "learn": {
+        "status": "GRADE_OR_LESSON_CONTEXT_CARD",
+        "cards": [
+          "geo18-core-1"
+        ],
+        "source_scope": "WORKSPACE_PLUS_CT20_OVERLAY; not full content review"
+      },
+      "micro": {
+        "status": "GRADE_OR_LESSON_CONTEXT_MICRO",
+        "cards": [
+          "geo18-core-1"
+        ]
+      },
+      "practice": {
+        "status": "TOPIC_BANK_PRESENT_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "18-he-thuc-luong",
+            "manifest": "18-he-thuc-luong-v1.manifest.json",
+            "questions": 132
+          }
+        ]
+      },
+      "written": {
+        "status": "NO_PLACED_ITEM_REQUIRED_BY_DEFAULT",
+        "item_ids": []
+      },
+      "readiness": {
+        "status": "TOPIC_ITEMS_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "18-he-thuc-luong",
+            "items": 10,
+            "gradeScope": null
+          }
+        ]
+      },
+      "source_evidence": [
+        {
+          "topic": "18-he-thuc-luong",
+          "workspace": true,
+          "cards": 5,
+          "microBank": true,
+          "microCount": 15,
+          "hasPracticeManifest": true,
+          "hasReadiness": true
+        }
+      ]
+    },
+    {
+      "grade": 8,
+      "chapter": 9,
+      "chapter_title": "Tam giác đồng dạng",
+      "lesson_ref": "Bài 37",
+      "lesson_summary": "Nhận biết và mô tả hình đồng dạng ở mức KNTT lớp 8.",
+      "primary_topics": [
+        "17-thales-dong-dang"
+      ],
+      "learn": {
+        "status": "GRADE_OR_LESSON_CONTEXT_CARD",
+        "cards": [
+          "geo17-core-1",
+          "geo17-core-2",
+          "geo17-core-3",
+          "geo17-core-4",
+          "geo17-core-5"
+        ],
+        "source_scope": "WORKSPACE_PLUS_CT20_OVERLAY; not full content review"
+      },
+      "micro": {
+        "status": "GRADE_OR_LESSON_CONTEXT_MICRO",
+        "cards": [
+          "geo17-core-1",
+          "geo17-core-2",
+          "geo17-core-3",
+          "geo17-core-4",
+          "geo17-core-5"
+        ]
+      },
+      "practice": {
+        "status": "TOPIC_BANK_PRESENT_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "17-thales-dong-dang",
+            "manifest": "17-thales-dong-dang-v1.manifest.json",
+            "questions": 132
+          }
+        ]
+      },
+      "written": {
+        "status": "NO_PLACED_ITEM_REQUIRED_BY_DEFAULT",
+        "item_ids": []
+      },
+      "readiness": {
+        "status": "TOPIC_ITEMS_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "17-thales-dong-dang",
+            "items": 10,
+            "gradeScope": null
+          }
+        ]
+      },
+      "source_evidence": [
+        {
+          "topic": "17-thales-dong-dang",
+          "workspace": true,
+          "cards": 5,
+          "microBank": true,
+          "microCount": 15,
+          "hasPracticeManifest": true,
+          "hasReadiness": true
+        }
+      ]
+    },
+    {
+      "grade": 8,
+      "chapter": 10,
+      "chapter_title": "Một số hình khối trong thực tiễn",
+      "lesson_ref": "Bài 38-39",
+      "lesson_summary": "Hình chóp tam giác đều, hình chóp tứ giác đều; nhận biết yếu tố hình; diện tích xung quanh và thể tích.",
+      "primary_topics": [
+        "20-hinh-hoc-tong-hop"
+      ],
+      "learn": {
+        "status": "SHARED_TOPIC_TEACHING_ONLY",
+        "cards": [],
+        "source_scope": "WORKSPACE_PLUS_CT20_OVERLAY; not full content review"
+      },
+      "micro": {
+        "status": "SHARED_TOPIC_MICRO_ONLY",
+        "cards": []
+      },
+      "practice": {
+        "status": "TOPIC_BANK_PRESENT_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "20-hinh-hoc-tong-hop",
+            "manifest": "20-hinh-hoc-tong-hop-v1.manifest.json",
+            "questions": 195
+          }
+        ]
+      },
+      "written": {
+        "status": "REVIEWED_ITEM_KNTT_PLACEMENT_INTERSECTS",
+        "item_ids": [
+          "WX20-GEO-004"
+        ]
+      },
+      "readiness": {
+        "status": "TOPIC_ITEMS_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "20-hinh-hoc-tong-hop",
+            "items": 12,
+            "gradeScope": null
+          }
+        ]
+      },
+      "source_evidence": [
+        {
+          "topic": "20-hinh-hoc-tong-hop",
+          "workspace": true,
+          "cards": 5,
+          "microBank": true,
+          "microCount": 29,
+          "hasPracticeManifest": true,
+          "hasReadiness": true
+        }
+      ]
+    },
+    {
+      "grade": 9,
+      "chapter": 1,
+      "chapter_title": "Phương trình và hệ hai phương trình bậc nhất hai ẩn",
+      "lesson_ref": "CHAPTER_LEVEL",
+      "lesson_summary": "Phương trình và hệ hai phương trình bậc nhất hai ẩn",
+      "primary_topics": [
+        "09-he-phuong-trinh",
+        "24-bai-toan-thuc-te"
+      ],
+      "learn": {
+        "status": "GRADE_OR_LESSON_CONTEXT_CARD",
+        "cards": [
+          "sys09-core-1"
+        ],
+        "source_scope": "WORKSPACE_PLUS_CT20_OVERLAY; not full content review"
+      },
+      "micro": {
+        "status": "GRADE_OR_LESSON_CONTEXT_MICRO",
+        "cards": [
+          "sys09-core-1"
+        ]
+      },
+      "practice": {
+        "status": "TOPIC_BANK_PRESENT_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "09-he-phuong-trinh",
+            "manifest": "09-he-phuong-trinh-v1.manifest.json",
+            "questions": 129
+          },
+          {
+            "topic": "24-bai-toan-thuc-te",
+            "manifest": "24-bai-toan-thuc-te-v1.manifest.json",
+            "questions": 120
+          }
+        ]
+      },
+      "written": {
+        "status": "REVIEWED_ITEM_KNTT_PLACEMENT_INTERSECTS",
+        "item_ids": [
+          "WX09-SYS-003"
+        ]
+      },
+      "readiness": {
+        "status": "TOPIC_ITEMS_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "09-he-phuong-trinh",
+            "items": 11,
+            "gradeScope": null
+          }
+        ]
+      },
+      "source_evidence": [
+        {
+          "topic": "09-he-phuong-trinh",
+          "workspace": true,
+          "cards": 5,
+          "microBank": true,
+          "microCount": 17,
+          "hasPracticeManifest": true,
+          "hasReadiness": true
+        },
+        {
+          "topic": "24-bai-toan-thuc-te",
+          "workspace": true,
+          "cards": 5,
+          "microBank": true,
+          "microCount": 15,
+          "hasPracticeManifest": true,
+          "hasReadiness": false
+        }
+      ]
+    },
+    {
+      "grade": 9,
+      "chapter": 2,
+      "chapter_title": "Phương trình và bất phương trình bậc nhất một ẩn",
+      "lesson_ref": "CHAPTER_LEVEL",
+      "lesson_summary": "Phương trình và bất phương trình bậc nhất một ẩn",
+      "primary_topics": [
+        "08-phuong-trinh-bat-phuong-trinh"
+      ],
+      "learn": {
+        "status": "GRADE_OR_LESSON_CONTEXT_CARD",
+        "cards": [
+          "eq08-core-3",
+          "eq08-core-4"
+        ],
+        "source_scope": "WORKSPACE_PLUS_CT20_OVERLAY; not full content review"
+      },
+      "micro": {
+        "status": "GRADE_OR_LESSON_CONTEXT_MICRO",
+        "cards": [
+          "eq08-core-3",
+          "eq08-core-4"
+        ]
+      },
+      "practice": {
+        "status": "TOPIC_BANK_PRESENT_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "08-phuong-trinh-bat-phuong-trinh",
+            "manifest": "08-phuong-trinh-bat-phuong-trinh-v1.manifest.json",
+            "questions": 132
+          }
+        ]
+      },
+      "written": {
+        "status": "NO_PLACED_ITEM_REQUIRED_BY_DEFAULT",
+        "item_ids": []
+      },
+      "readiness": {
+        "status": "TOPIC_ITEMS_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "08-phuong-trinh-bat-phuong-trinh",
+            "items": 11,
+            "gradeScope": null
+          }
+        ]
+      },
+      "source_evidence": [
+        {
+          "topic": "08-phuong-trinh-bat-phuong-trinh",
+          "workspace": true,
+          "cards": 5,
+          "microBank": true,
+          "microCount": 16,
+          "hasPracticeManifest": true,
+          "hasReadiness": true
+        }
+      ]
+    },
+    {
+      "grade": 9,
+      "chapter": 3,
+      "chapter_title": "Căn bậc hai và căn bậc ba",
+      "lesson_ref": "CHAPTER_LEVEL",
+      "lesson_summary": "Căn bậc hai và căn bậc ba",
+      "primary_topics": [
+        "11-can-thuc"
+      ],
+      "learn": {
+        "status": "GRADE_OR_LESSON_CONTEXT_CARD",
+        "cards": [
+          "rad11-core-1",
+          "rad11-core-2",
+          "rad11-core-3",
+          "rad11-core-4",
+          "rad11-core-5"
+        ],
+        "source_scope": "WORKSPACE_PLUS_CT20_OVERLAY; not full content review"
+      },
+      "micro": {
+        "status": "GRADE_OR_LESSON_CONTEXT_MICRO",
+        "cards": [
+          "rad11-core-1",
+          "rad11-core-2",
+          "rad11-core-3",
+          "rad11-core-4",
+          "rad11-core-5"
+        ]
+      },
+      "practice": {
+        "status": "TOPIC_BANK_PRESENT_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "11-can-thuc",
+            "manifest": "11-can-thuc-v1.manifest.json",
+            "questions": 132
+          }
+        ]
+      },
+      "written": {
+        "status": "REVIEWED_ITEM_KNTT_PLACEMENT_INTERSECTS",
+        "item_ids": [
+          "WX11-RAD-001"
+        ]
+      },
+      "readiness": {
+        "status": "TOPIC_ITEMS_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "11-can-thuc",
+            "items": 11,
+            "gradeScope": null
+          }
+        ]
+      },
+      "source_evidence": [
+        {
+          "topic": "11-can-thuc",
+          "workspace": true,
+          "cards": 5,
+          "microBank": true,
+          "microCount": 16,
+          "hasPracticeManifest": true,
+          "hasReadiness": true
+        }
+      ]
+    },
+    {
+      "grade": 9,
+      "chapter": 4,
+      "chapter_title": "Hệ thức lượng trong tam giác vuông",
+      "lesson_ref": "CHAPTER_LEVEL",
+      "lesson_summary": "Hệ thức lượng trong tam giác vuông",
+      "primary_topics": [
+        "18-he-thuc-luong",
+        "24-bai-toan-thuc-te"
+      ],
+      "learn": {
+        "status": "GRADE_OR_LESSON_CONTEXT_CARD",
+        "cards": [
+          "geo18-core-2",
+          "geo18-core-3",
+          "geo18-core-4",
+          "geo18-core-5"
+        ],
+        "source_scope": "WORKSPACE_PLUS_CT20_OVERLAY; not full content review"
+      },
+      "micro": {
+        "status": "GRADE_OR_LESSON_CONTEXT_MICRO",
+        "cards": [
+          "geo18-core-2",
+          "geo18-core-3",
+          "geo18-core-4",
+          "geo18-core-5"
+        ]
+      },
+      "practice": {
+        "status": "TOPIC_BANK_PRESENT_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "18-he-thuc-luong",
+            "manifest": "18-he-thuc-luong-v1.manifest.json",
+            "questions": 132
+          },
+          {
+            "topic": "24-bai-toan-thuc-te",
+            "manifest": "24-bai-toan-thuc-te-v1.manifest.json",
+            "questions": 120
+          }
+        ]
+      },
+      "written": {
+        "status": "REVIEWED_ITEM_KNTT_PLACEMENT_INTERSECTS",
+        "item_ids": [
+          "WX18-TRI-002"
+        ]
+      },
+      "readiness": {
+        "status": "TOPIC_ITEMS_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "18-he-thuc-luong",
+            "items": 10,
+            "gradeScope": null
+          }
+        ]
+      },
+      "source_evidence": [
+        {
+          "topic": "18-he-thuc-luong",
+          "workspace": true,
+          "cards": 5,
+          "microBank": true,
+          "microCount": 15,
+          "hasPracticeManifest": true,
+          "hasReadiness": true
+        },
+        {
+          "topic": "24-bai-toan-thuc-te",
+          "workspace": true,
+          "cards": 5,
+          "microBank": true,
+          "microCount": 15,
+          "hasPracticeManifest": true,
+          "hasReadiness": false
+        }
+      ]
+    },
+    {
+      "grade": 9,
+      "chapter": 5,
+      "chapter_title": "Đường tròn",
+      "lesson_ref": "CHAPTER_LEVEL",
+      "lesson_summary": "Đường tròn",
+      "primary_topics": [
+        "19-duong-tron"
+      ],
+      "learn": {
+        "status": "GRADE_OR_LESSON_CONTEXT_CARD",
+        "cards": [
+          "geo19-core-1",
+          "geo19-core-2",
+          "geo19-core-3",
+          "geo19-core-4",
+          "geo19-core-5"
+        ],
+        "source_scope": "WORKSPACE_PLUS_CT20_OVERLAY; not full content review"
+      },
+      "micro": {
+        "status": "GRADE_OR_LESSON_CONTEXT_MICRO",
+        "cards": [
+          "geo19-core-1",
+          "geo19-core-2",
+          "geo19-core-3",
+          "geo19-core-4",
+          "geo19-core-5"
+        ]
+      },
+      "practice": {
+        "status": "TOPIC_BANK_PRESENT_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "19-duong-tron",
+            "manifest": "19-duong-tron-v1.manifest.json",
+            "questions": 147
+          }
+        ]
+      },
+      "written": {
+        "status": "NO_PLACED_ITEM_REQUIRED_BY_DEFAULT",
+        "item_ids": []
+      },
+      "readiness": {
+        "status": "TOPIC_ITEMS_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "19-duong-tron",
+            "items": 12,
+            "gradeScope": null
+          }
+        ]
+      },
+      "source_evidence": [
+        {
+          "topic": "19-duong-tron",
+          "workspace": true,
+          "cards": 5,
+          "microBank": true,
+          "microCount": 17,
+          "hasPracticeManifest": true,
+          "hasReadiness": true
+        }
+      ]
+    },
+    {
+      "grade": 9,
+      "chapter": 6,
+      "chapter_title": "Hàm số y=ax² và phương trình bậc hai",
+      "lesson_ref": "CHAPTER_LEVEL",
+      "lesson_summary": "Hàm số y=ax² và phương trình bậc hai",
+      "primary_topics": [
+        "10-ham-so-do-thi",
+        "12-phuong-trinh-bac-hai-viete",
+        "24-bai-toan-thuc-te"
+      ],
+      "learn": {
+        "status": "GRADE_OR_LESSON_CONTEXT_CARD",
+        "cards": [
+          "fun10-core-5",
+          "qua12-core-1",
+          "qua12-core-2",
+          "qua12-core-3",
+          "qua12-core-4",
+          "qua12-core-5",
+          "qua12-core-g9-6"
+        ],
+        "source_scope": "WORKSPACE_PLUS_CT20_OVERLAY; not full content review"
+      },
+      "micro": {
+        "status": "GRADE_OR_LESSON_CONTEXT_MICRO",
+        "cards": [
+          "fun10-core-5",
+          "qua12-core-1",
+          "qua12-core-2",
+          "qua12-core-3",
+          "qua12-core-4",
+          "qua12-core-5",
+          "qua12-core-g9-6"
+        ]
+      },
+      "practice": {
+        "status": "TOPIC_BANK_PRESENT_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "10-ham-so-do-thi",
+            "manifest": "10-ham-so-do-thi-v1.manifest.json",
+            "questions": 120
+          },
+          {
+            "topic": "12-phuong-trinh-bac-hai-viete",
+            "manifest": "12-phuong-trinh-bac-hai-viete-v1.manifest.json",
+            "questions": 123
+          },
+          {
+            "topic": "24-bai-toan-thuc-te",
+            "manifest": "24-bai-toan-thuc-te-v1.manifest.json",
+            "questions": 120
+          }
+        ]
+      },
+      "written": {
+        "status": "REVIEWED_ITEM_KNTT_PLACEMENT_INTERSECTS",
+        "item_ids": [
+          "WX10-FUN-002",
+          "WX12-QUA-001"
+        ]
+      },
+      "readiness": {
+        "status": "TOPIC_ITEMS_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "10-ham-so-do-thi",
+            "items": 10,
+            "gradeScope": null
+          },
+          {
+            "topic": "12-phuong-trinh-bac-hai-viete",
+            "items": 10,
+            "gradeScope": null
+          }
+        ]
+      },
+      "source_evidence": [
+        {
+          "topic": "10-ham-so-do-thi",
+          "workspace": true,
+          "cards": 5,
+          "microBank": true,
+          "microCount": 15,
+          "hasPracticeManifest": true,
+          "hasReadiness": true
+        },
+        {
+          "topic": "12-phuong-trinh-bac-hai-viete",
+          "workspace": true,
+          "cards": 6,
+          "microBank": true,
+          "microCount": 19,
+          "hasPracticeManifest": true,
+          "hasReadiness": true
+        },
+        {
+          "topic": "24-bai-toan-thuc-te",
+          "workspace": true,
+          "cards": 5,
+          "microBank": true,
+          "microCount": 15,
+          "hasPracticeManifest": true,
+          "hasReadiness": false
+        }
+      ]
+    },
+    {
+      "grade": 9,
+      "chapter": 7,
+      "chapter_title": "Tần số và tần số tương đối",
+      "lesson_ref": "CHAPTER_LEVEL",
+      "lesson_summary": "Tần số và tần số tương đối",
+      "primary_topics": [
+        "21-thong-ke"
+      ],
+      "learn": {
+        "status": "GRADE_OR_LESSON_CONTEXT_CARD",
+        "cards": [
+          "sta21-core-g9-6",
+          "sta21-core-g9-7"
+        ],
+        "source_scope": "WORKSPACE_PLUS_CT20_OVERLAY; not full content review"
+      },
+      "micro": {
+        "status": "GRADE_OR_LESSON_CONTEXT_MICRO",
+        "cards": [
+          "sta21-core-g9-6",
+          "sta21-core-g9-7"
+        ]
+      },
+      "practice": {
+        "status": "TOPIC_BANK_PRESENT_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "21-thong-ke",
+            "manifest": "21-thong-ke-v2.manifest.json",
+            "questions": 134
+          }
+        ]
+      },
+      "written": {
+        "status": "REVIEWED_ITEM_KNTT_PLACEMENT_INTERSECTS",
+        "item_ids": [
+          "WX21-STA-003"
+        ]
+      },
+      "readiness": {
+        "status": "TOPIC_ITEMS_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "21-thong-ke",
+            "items": 16,
+            "gradeScope": null
+          }
+        ]
+      },
+      "source_evidence": [
+        {
+          "topic": "21-thong-ke",
+          "workspace": true,
+          "cards": 7,
+          "microBank": true,
+          "microCount": 32,
+          "hasPracticeManifest": true,
+          "hasReadiness": true
+        }
+      ]
+    },
+    {
+      "grade": 9,
+      "chapter": 8,
+      "chapter_title": "Xác suất của biến cố trong một số mô hình xác suất đơn giản",
+      "lesson_ref": "CHAPTER_LEVEL",
+      "lesson_summary": "Xác suất của biến cố trong một số mô hình xác suất đơn giản",
+      "primary_topics": [
+        "23-xac-suat"
+      ],
+      "learn": {
+        "status": "GRADE_OR_LESSON_CONTEXT_CARD",
+        "cards": [
+          "prob23-core-g9-6",
+          "prob23-core-g9-7"
+        ],
+        "source_scope": "WORKSPACE_PLUS_CT20_OVERLAY; not full content review"
+      },
+      "micro": {
+        "status": "GRADE_OR_LESSON_CONTEXT_MICRO",
+        "cards": [
+          "prob23-core-g9-6",
+          "prob23-core-g9-7"
+        ]
+      },
+      "practice": {
+        "status": "TOPIC_BANK_PRESENT_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "23-xac-suat",
+            "manifest": "23-xac-suat-v1.manifest.json",
+            "questions": 120
+          }
+        ]
+      },
+      "written": {
+        "status": "NO_PLACED_ITEM_REQUIRED_BY_DEFAULT",
+        "item_ids": []
+      },
+      "readiness": {
+        "status": "TOPIC_ITEMS_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "23-xac-suat",
+            "items": 12,
+            "gradeScope": null
+          }
+        ]
+      },
+      "source_evidence": [
+        {
+          "topic": "23-xac-suat",
+          "workspace": true,
+          "cards": 7,
+          "microBank": true,
+          "microCount": 28,
+          "hasPracticeManifest": true,
+          "hasReadiness": true
+        }
+      ]
+    },
+    {
+      "grade": 9,
+      "chapter": 9,
+      "chapter_title": "Đường tròn ngoại tiếp và đường tròn nội tiếp",
+      "lesson_ref": "CHAPTER_LEVEL",
+      "lesson_summary": "Đường tròn ngoại tiếp và đường tròn nội tiếp",
+      "primary_topics": [
+        "19-duong-tron"
+      ],
+      "learn": {
+        "status": "GRADE_OR_LESSON_CONTEXT_CARD",
+        "cards": [
+          "geo19-core-1",
+          "geo19-core-2",
+          "geo19-core-3",
+          "geo19-core-4",
+          "geo19-core-5"
+        ],
+        "source_scope": "WORKSPACE_PLUS_CT20_OVERLAY; not full content review"
+      },
+      "micro": {
+        "status": "GRADE_OR_LESSON_CONTEXT_MICRO",
+        "cards": [
+          "geo19-core-1",
+          "geo19-core-2",
+          "geo19-core-3",
+          "geo19-core-4",
+          "geo19-core-5"
+        ]
+      },
+      "practice": {
+        "status": "TOPIC_BANK_PRESENT_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "19-duong-tron",
+            "manifest": "19-duong-tron-v1.manifest.json",
+            "questions": 147
+          }
+        ]
+      },
+      "written": {
+        "status": "REVIEWED_ITEM_KNTT_PLACEMENT_INTERSECTS",
+        "item_ids": [
+          "WX19-CIR-002"
+        ]
+      },
+      "readiness": {
+        "status": "TOPIC_ITEMS_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "19-duong-tron",
+            "items": 12,
+            "gradeScope": null
+          }
+        ]
+      },
+      "source_evidence": [
+        {
+          "topic": "19-duong-tron",
+          "workspace": true,
+          "cards": 5,
+          "microBank": true,
+          "microCount": 17,
+          "hasPracticeManifest": true,
+          "hasReadiness": true
+        }
+      ]
+    },
+    {
+      "grade": 9,
+      "chapter": 10,
+      "chapter_title": "Một số hình khối trong thực tiễn",
+      "lesson_ref": "CHAPTER_LEVEL",
+      "lesson_summary": "Một số hình khối trong thực tiễn",
+      "primary_topics": [
+        "20-hinh-hoc-tong-hop",
+        "24-bai-toan-thuc-te"
+      ],
+      "learn": {
+        "status": "SHARED_TOPIC_TEACHING_ONLY",
+        "cards": [
+          "topic24-journey-1",
+          "topic24-journey-2",
+          "topic24-journey-3",
+          "topic24-journey-4",
+          "topic24-journey-5"
+        ],
+        "source_scope": "WORKSPACE_PLUS_CT20_OVERLAY; not full content review"
+      },
+      "micro": {
+        "status": "SHARED_TOPIC_MICRO_ONLY",
+        "cards": []
+      },
+      "practice": {
+        "status": "TOPIC_BANK_PRESENT_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "20-hinh-hoc-tong-hop",
+            "manifest": "20-hinh-hoc-tong-hop-v1.manifest.json",
+            "questions": 195
+          },
+          {
+            "topic": "24-bai-toan-thuc-te",
+            "manifest": "24-bai-toan-thuc-te-v1.manifest.json",
+            "questions": 120
+          }
+        ]
+      },
+      "written": {
+        "status": "REVIEWED_ITEM_KNTT_PLACEMENT_INTERSECTS",
+        "item_ids": [
+          "WX20-GEO-005"
+        ]
+      },
+      "readiness": {
+        "status": "TOPIC_ITEMS_NOT_LESSON_VERIFIED",
+        "sources": [
+          {
+            "topic": "20-hinh-hoc-tong-hop",
+            "items": 12,
+            "gradeScope": null
+          }
+        ]
+      },
+      "source_evidence": [
+        {
+          "topic": "20-hinh-hoc-tong-hop",
+          "workspace": true,
+          "cards": 5,
+          "microBank": true,
+          "microCount": 29,
+          "hasPracticeManifest": true,
+          "hasReadiness": true
+        },
+        {
+          "topic": "24-bai-toan-thuc-te",
+          "workspace": true,
+          "cards": 5,
+          "microBank": true,
+          "microCount": 15,
+          "hasPracticeManifest": true,
+          "hasReadiness": false
+        }
+      ]
+    }
+  ],
+  "limits": [
+    "CARD_WITH_LESSON_RANGE_OVERLAP may cover many lessons and is not each lesson's content quality PASS.",
+    "Grade9 rows are chapter-level; a chapter-level Written match does not verify every sublesson.",
+    "Topic Bank and Readiness presence never certify lesson-specific practice or score.",
+    "No demonstration of learner A2 understanding, no Mastery credits, no new content authorization.",
+    "No file writes, no learner interaction, no manifest mutation."
+  ]
+}
