@@ -25,9 +25,9 @@
   const applyReviewedHints=(data,overlay)=>{
     const expectedIds=["WX16-QUAD-001","WX07-RAT-001","WX19-CIR-002"];
     if(!data||data.catalog_id!=="MATH-WRITTEN-EXERCISE-LIBRARY-V1"||
-       data.snapshot_date!=="2026-10-23"||!Array.isArray(data.exercises)||data.exercises.length!==84||
+       data.snapshot_date!=="2026-10-21"||!Array.isArray(data.exercises)||data.exercises.length!==75||
        !overlay||overlay.schema_version!=="1.0.0"||
-       overlay.source_catalog_blob_sha!=="f516e4d6e4a8a075c7eb4638e8d57aecb77d1fd0"||
+       overlay.source_catalog_blob_sha!=="5141a40bf1b8f8763257857d3b805d681a0956fa"||
        overlay.source_catalog_snapshot_date!==data.snapshot_date||
        overlay.source_catalog_exercise_count!==data.exercises.length||
        overlay.source_packet_id!=="MATH-WRITTEN-QUALITY-8PILOT-20261022-R0"||
