@@ -157,7 +157,7 @@ ok(!page.includes("Hiện pilot có"),"library intro has no stale fixed pilot co
 ok(page.includes("mở rộng dần theo từng chuyên đề"),"library intro uses durable expansion copy");
 const pendingWritten=data.candidate_scope?.new_exercise_count||0;
 ok(!data.candidate_scope,"Owner approved W9: no unpublished candidates remain");
-ok(data.published_scope.exercise_count===75,"W9 75 approved Written now published");
+ok(data.published_scope.exercise_count===84,"GAP9 84 owner-approved Written now published");
 ok(data.published_scope?.exercise_count===data.exercises.length-pendingWritten,
   "published scope exactly equals authorized historical Written items, excluding Owner-gated W9 candidate");
 if(pendingWritten){
