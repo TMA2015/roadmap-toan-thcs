@@ -21,7 +21,8 @@
       assisted:safeNum(v?.hinted_attempts)
     })).filter(r=>r.attempted>0).sort((a,b)=>b.attempted-a.attempted||a.id.localeCompare(b.id));
     const assessments=Object.entries(safeObj(readiness.value?.assessments)).flatMap(([id,v])=>
-      Array.isArray(v?.attempts)?v.attempts.filter(a=>a&&typeof a.submitted_at==="string").map(a=>({
+      Array.isArray(v?.attempts)?v.attempts.filter(a=>a&&typeof a.submitted_at==="string"&&
+        !(id==="PROB23-G9-CORE-READY-V1"&&a.role==="independent_grade9_readiness_qa")).map(a=>({
         id,at:a.submitted_at,correct:safeNum(a.correct),total:safeNum(a.total),
         readiness_state:a.readiness_state||""
       })):[]
