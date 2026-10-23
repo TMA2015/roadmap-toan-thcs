@@ -1,65 +1,53 @@
-# Self-Learning Math — THPT R1 source availability and fail-closed intake
+# Self-Learning Math — THPT R1: SGK source intake FOUND, TOC verified
 
 **Packet:** MATH-THPT-SOURCE-INTAKE-R1-20261023  
 **Date:** 2026-10-23  
-**State:** RESEARCH_ONLY / SOURCE_INTAKE_PARTIAL / SGK_HOLD / NO_LESSON_AUTHORING / NO_DEPLOY  
-**Baseline:** THCS `main@680e248d4d2cff59fa69b4cbd1fe2be1083f8d1f` after PR #572 post-87 audit closure.
+**State:** RESEARCH_ONLY / SGK_6_OF_6_ACQUIRED / TOC_24_CHAPTER_79_LESSON_VERIFIED / OUTCOME_MAPPING_NOT_REVIEWED / NO_DEPLOY  
+**Baseline:** THCS `main@680e248d4d2cff59fa69b4cbd1fe2be1083f8d1f` after PR #572.
 
-## 1. What R1 actually verified
+> **Correction of the initial R1 intake:** The earlier draft marked six high-school SGK volumes NOT_ACQUIRED after searching the wrong Drive path. Owner pointed to `App Toán` → shortcut `FULL BỘ SGK TOAN KNTT LOP 6 ĐẾN 12 - HOT 26-27`. The linked root contains all Grade 6–12 volumes; all **six** Grade 10–12 scanned PDFs were acquired directly and their contents pages visually inspected. Older `SGK_HOLD` / `NOT_ACQUIRED` statements are **superseded**. Acquisition is resolved; **full per-lesson learning-outcome verification is still pending**.
 
-This is an **availability/provenance check**, not the promised grade 10–12 S1 curriculum mapping.
+## 1. S1 SGK receipts: six PDFs fetched from owner-provided Drive
 
-| Source | Source authority | Observed 2026-10-23 | Permitted use |
-| --- | --- | --- | --- |
-| Chương trình GDPT **môn Toán** attached to TT 32/2018/TT-BGDĐT (26 Dec 2018) | S1 normative programme | Public education-school government portal identifies the Math-specific programme and PDF attachment; full PDF pages and precise class 10–12 outcomes **not independently read/verified** in this R1 | Record provenance and locate precise programme; do not yet assert page-level outcomes |
-| Chương trình GDPT tổng thể | S1 general framework | Official ministry publication located in R0; **not the same document as the subject-specific Math programme** | Cross-cutting principles only; not a substitute for Math's class-by-class objectives |
-| KNTT Toán 10 SGK tập 1/2 | S1 textbook, needed | Connected Drive folder titled `KNTT TOAN 10` was found; **zero files returned** by an exact parent-folder listing; targeted title searches did not establish both volumes | HOLD all book-specific lesson names, ranges, page citations and KNTT-Core placement |
-| KNTT Toán 11/12 SGK tập 1/2 | S1 textbook, needed | Targeted connected Drive title searches did not identify verified matching six-volume stock; **not proof the files do not exist elsewhere** | HOLD class 11/12 KNTT placement |
-| Chuyên đề học tập lựa chọn lớp 10–12 | S1 for optional source/layer decisions | No original corresponding KNTT books/page mappings verified | Keep elective/specialist layer separate, HOLD placements |
-| Official 2025+ THPT examination structure | S3 assessment-policy evidence | Cục Quản lý chất lượng's official HTML announcement gives MCQ, 4-part True/False and short-answer response types, Math 90 minutes; the 34-question figure was a **published demonstration** and explicitly could change | Version the assessment format by effective year; never redefine curriculum Core |
+These SHA-256 hashes are of the **exact PDF bytes inspected**, not of any external website. No private Google Drive IDs, links, owner identity or copyrighted textbook pages are committed here.
 
-**Public, provenance-identified entry pages** (URLs are public, no private Drive links or IDs):
+| Source | PDF bytes | PDF pages | SHA-256 | TOC PDF page (1-based) |
+| --- | ---: | ---: | --- | ---: |
+| S1-KNTT-G10-V1 | 22956643 | 106 | `3cbb335780dc0f2f4a034a55eb542e3bbe67693412b10a90ca1dffe9ea50eac2` | 5 |
+| S1-KNTT-G10-V2 | 21979142 | 102 | `ee8a00392e1c9fc5b213e574666cf1f8487548737e138573f28a988c640fafe6` | 4 |
+| S1-KNTT-G11-V1 | 21327856 | 134 | `4492122eb2c9df626582d37b5c3d0e6513d66ca68d80d8a1e69577aa8b706828` | 5 |
+| S1-KNTT-G11-V2 | 18642213 | 114 | `14ec0da7fa3d7c7365ed7f64599fc1e26484eccf1557301c57012ae64338e491` | 4 |
+| S1-KNTT-G12-V1 | 15988398 | 104 | `faeb554bea9cf81189c5e790b1b1edb42f50b3648694acc80dc99682ada3f1fd` | 6 |
+| S1-KNTT-G12-V2 | 15891463 | 99 | `3c642f2e80d86d699ea62bbcabd0c3074fd5118def96e4b3b8ce1f9ead7f97bb` | 5 |
 
-- Math subject programme attachment index at public school education portal: https://thcsandong.haiphong.edu.vn/van-ban-bo-gddt/chuong-trinh-giao-duc-pho-thong-mon-toan-ban-hanh-kem-theo-thong-tu-so-322018tt/vbct/20343/91425
-- Official 2018 *general* programme PDF used in R0 (not the subject-specific Math programme): https://moet.gov.vn/content/tintuc/Lists/News/Attachments/8421/chuong-trinh-tong-the-ctgdpt-2018.pdf
-- Cục Quản lý chất lượng, 2025 exam format: https://vqa.moet.gov.vn/vi/news/thong-bao/cau-truc-dinh-dang-de-thi-tot-nghiep-thpt-tu-nam-2025-74.html
+**Document characteristics:** all six are scanned/image-backed PDF; `pdftotext` yielded no extractable text in initial pages. Direct rendered PDF images were used to inspect the TOC. TOC observations: G10 nine chapters, 27 lesson numbers (1–27); G11 nine chapters, 33 lessons (1–33); G12 six chapters, 19 lessons (1–19). **24 chapters / 79 lessons total**, excluding end-of-chapter reviews, experiences and supplementary books. This is **TOC verified**, not a full-page accuracy/curriculum audit or claim of every content sheet being human checked.
 
-These public pages locate documents. They **do not** substitute for inspecting the original, accessible, edition-verified six KNTT books and the Math subject-programme pages. Educational portal metadata may contain typos (e.g., date fields); treat the signed original as authoritative.
+**Related owner-provided sources:** connected folder inventory shows Grade 10 and 11 SBT volumes 1 and 2. Grade 9/12 SBT not observed in the same direct folders; no negative assertion about other storage. Original formal `Chuyên đề học tập` textbooks for Grade 10–12 are **not yet independently identified**, and are not silently conflated with the product's cross-grade topic spine.
 
-## 2. Required six-volume SGK intake inventory
+## 2. Exact SGK chapters (read from the original six TOCs)
 
-| ID | Source required | Availability in this R1 | Chapter/lesson/page verification |
-| --- | --- | --- | --- |
-| S1-KNTT-G10-V1 | KNTT Toán 10 tập 1 | NOT_ACQUIRED | NOT_REVIEWED |
-| S1-KNTT-G10-V2 | KNTT Toán 10 tập 2 | NOT_ACQUIRED | NOT_REVIEWED |
-| S1-KNTT-G11-V1 | KNTT Toán 11 tập 1 | NOT_ACQUIRED | NOT_REVIEWED |
-| S1-KNTT-G11-V2 | KNTT Toán 11 tập 2 | NOT_ACQUIRED | NOT_REVIEWED |
-| S1-KNTT-G12-V1 | KNTT Toán 12 tập 1 | NOT_ACQUIRED | NOT_REVIEWED |
-| S1-KNTT-G12-V2 | KNTT Toán 12 tập 2 | NOT_ACQUIRED | NOT_REVIEWED |
+| Grade | Chapters |
+| --- | --- |
+| 10 | I Mệnh đề và tập hợp; II Bất phương trình và hệ bất phương trình bậc nhất hai ẩn; III Hệ thức lượng trong tam giác; IV Vectơ; V Các số đặc trưng của mẫu số liệu không ghép nhóm; VI Hàm số, đồ thị và ứng dụng; VII Phương pháp tọa độ trong mặt phẳng; VIII Đại số tổ hợp; IX Tính xác suất theo định nghĩa cổ điển |
+| 11 | I Hàm số lượng giác và phương trình lượng giác; II Dãy số, cấp số cộng và cấp số nhân; III Các số đặc trưng đo xu thế trung tâm của mẫu số liệu ghép nhóm; IV Quan hệ song song trong không gian; V Giới hạn, hàm số liên tục; VI Hàm số mũ và hàm số lôgarit; VII Quan hệ vuông góc trong không gian; VIII Các quy tắc tính xác suất; IX Đạo hàm |
+| 12 | I Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số; II Vectơ và hệ trục tọa độ trong không gian; III Các số đặc trưng đo mức độ phân tán của mẫu số liệu ghép nhóm; IV Nguyên hàm và tích phân; V Phương pháp tọa độ trong không gian; VI Xác suất có điều kiện |
 
-"NOT_ACQUIRED" means **not verified as source and not processed for this packet**; it does not allege that the owner has no such file anywhere. Do not include user-private Drive file IDs, content or share URLs in repository provenance.
+This TOC receipt supports a **provisional curriculum placement framework**, `docs/collaboration/math-thpt-provisional-31-topic-spine-r1-20261023.md`, NOT an academically approved 31-topic taxonomy.
 
-## 3. Fail-closed academic mapping protocol
+## 3. Other authority / protection
 
-Before creating any class 10 Core Card, question, written item, published navigation or pilot, require:
+- **S1 programme:** the *subject-specific* `Chương trình GDPT môn Toán` promulgated with TT 32/2018/TT-BGDĐT is **not** the same as the general `Chương trình tổng thể`. Precise outcome references for each lesson/year remain **NOT_REVIEWED**; do not manufacture them.
+- **S2:** external sites were used for background navigation during early scoping. The final 24 chapter titles in this document come from **the owner's SGK PDF TOC**, not third-party listings.
+- **S3:** exam format 2025+ officially announces MCQ, four-substatement True/False, short answer; Math time 90 min. The published demonstration-question count may change; never encode it as permanent. Official source: https://vqa.moet.gov.vn/vi/news/thong-bao/cau-truc-dinh-dang-de-thi-tot-nghiep-thpt-tu-nam-2025-74.html
+- THCS protected: 87 approved Written, no historical re-grade, no student writes, no automatic Mastery/Readiness from practice or paper. THPT canonical IDs and learner evidence remain isolated.
+- Do not publish or redistribute original SGK PDF or substantial copied pages. No new site, hosting, auth or paid API for this research.
 
-1. Verify the subject-specific **Chương trình GDPT môn Toán** applicable source, text, year, and precise class 10–12 outcome references.
-2. Acquire the appropriate original **KNTT SGK** volume with publisher/edition, grade, volume, chapter, lesson, page references; verify mathematical conditions in context. Distinguish core textbook pages from selectable supplementary specialist books.
-3. Build the `grade → chapter → lesson → canonical skill` mapping with source page references and explicit `KNTT-Core`/support/optional/exam role.
-4. Separately record the `grade9 prerequisite → grade10 skill` bridge as prerequisites, **not** duplicate THCS/THPT Skill identity or retrospective evidence.
-5. Obtain source-locked, item-by-item NotebookLM academic review with expected IDs; classify PASS/REVISE/INSUFFICIENT_EVIDENCE/NOT_REVIEWED. Academic PASS alone never authorizes production.
-6. Only then design a **small Grade 10 pilot** (candidate: propositions/sets *if source verified*, not an approved placement), preserving the shared golden Learn → Practice → independent Readiness boundaries and separate Written self-check.
+## 4. Next academic gate after SGK acquisition
 
-## 4. Product & data isolation
+1. Construct a **79-row** `grade → SGK volume/chapter/lesson → concept/skill candidate` table with exact textbook printed pages from each lesson, then map specific `GDPT môn Toán` learning outcomes. Do not infer full scope from chapter title alone.
+2. Resolve grade 9 → grade 10 prerequisite links as links, not duplicate tested credit.
+3. Run independent NotebookLM source-locked review on this table and provisional topic spine, reconcile coverage and duplicates. **Academic PASS is not publication authority**.
+4. Owner compares the independent Gemini topic set with our proposed 31-topic draft: KEEP/MERGE/SPLIT/OPTIONAL/HOLD.
+5. After owner accepts a durable THPT Master Plan, design the first small Grade 10 lesson pilot with source-locked content, full D1–D6 review and PC/iPad QA.
 
-- Proposed THPT architecture: **one THPT knowledge/skill graph** with two learning paths (KNTT course map and cross-grade topic spine), as a research hypothesis **not** a product release decision.
-- Separate class 10–12 canonical skill/item identities and learner-evidence namespace from THCS. Never infer completion of THPT from THCS scores or backfill/migrate historical attempts.
-- Three exam-question contracts should be investigated as separate versions: MCQ; four independent True/False propositions; numeric/short answer with exact tolerance/format rules. These are **future technical design questions**, not active assessors.
-- Preserve free-first/local-first, no forced account, no paid APIs, PC/iPad support. Do not create a repository, site, Firebase app, auth pipeline or new deployment in this research wave.
-- No mass-generated lessons or unverified exam-frequency statements; no republication of copyrighted textbook pages.
-
-## 5. Exact next gate
-
-**S1_HOLD**: Acquire and verify at least the **Math subject programme** plus the first authentic Toán 10 KNTT volume before an official source-mapped Grade 10 pilot can begin. All six volumes are required before claiming an overall 10–12 course-coverage map.
-
-Until then: `NO_THPT_LESSONS`, `NO_THPT_QUESTION_BANK`, `NO_THPT_RELEASE`, `THCS_PRODUCTION_UNCHANGED`. This source-gate document is allowed as a **Draft research PR only**, not a product activation.
+**Current authorization:** `SGK_FOUND`, `TOC_VERIFIED`, `PROVISIONAL_SPINE_FOR_COMPARISON`; **NOT** `THPT_CORE_COVERAGE_PASS`, `CONTENT_AUTHORING_CLEARANCE` or `LIVE_RELEASE`.
