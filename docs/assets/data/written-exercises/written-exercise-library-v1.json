@@ -8323,6 +8323,315 @@
           "lesson": "Bài 31 — Hình trụ và hình nón"
         }
       ]
+    },
+    {
+      "exercise_id": "WX20-GEO-006",
+      "exercise_kind": "anchor",
+      "topic_id": "CT20",
+      "topic_slug": "20-hinh-hoc-tong-hop",
+      "topic_title": "Hình học tổng hợp, đo lường và hình khối",
+      "problem_type_id": "g6-corner-notch-area-perimeter-invariance",
+      "problem_type_title": "Khoét một góc sân: diện tích đổi, chu vi có đổi?",
+      "title": "Khoét một góc sân: diện tích đổi, chu vi có đổi?",
+      "learning_layer": "KNTT-Core",
+      "level": "CORE_APPLY",
+      "learner_label": "Củng cố",
+      "grade_overlay": [
+        6
+      ],
+      "skills": [
+        "dien-tich-hinh-ghep",
+        "chu-vi-da-giac",
+        "phan-ra-hinh",
+        "chi-phi-theo-dien-tich"
+      ],
+      "prerequisites": [],
+      "estimated_minutes": 18,
+      "problem_markdown": "Một sân ban đầu là **hình chữ nhật dài 24 m, rộng 18 m**. Người ta **bỏ đi một hình chữ nhật 8 m × 6 m ở góc trên bên phải**, sát **cạnh trên và cạnh bên phải** của sân. Phần sân còn lại có hình chữ L. Hai cạnh mới xuất hiện tại chỗ khoét cũng thuộc **mép sân**.\n\n1. **Vẽ phác hình** và tính diện tích sân còn lại bằng **hai cách khác nhau**: lấy diện tích lớn trừ đi diện tích bỏ đi, và chia phần còn lại thành hai hình chữ nhật.\n2. Tính **chu vi dọc toàn bộ mép** của phần sân hình chữ L (bao gồm hai cạnh lõm mới). So sánh với chu vi sân lúc chưa khoét. Giải thích vì sao hai chu vi bằng hoặc khác nhau.\n3. Nếu chi phí lát sân là **125 000 đồng/m²**, cần trả bao nhiêu tiền để lát phần còn lại? Tiết kiệm bao nhiêu so với lát cả sân ban đầu? Bỏ qua hao hụt.",
+      "figure_uri": "../assets/geometry/written-library/wx20-geo-006.svg",
+      "figure_alt": "Sân hình chữ L, khoét một góc trên phải của sân chữ nhật ban đầu 24 m × 18 m; phần khoét 8 m × 6 m.",
+      "hint_steps": [
+        "Hình chữ L có thể xem là một hình chữ nhật lớn **bớt đi** một hình chữ nhật nhỏ. Em có thể tìm thêm cách **chia** hình chữ L thành hai hình chữ nhật không chồng lên nhau không?",
+        "Khi khoét ở góc, hai đoạn của mép ngoài bị mất có những độ dài nào? Hai đoạn mép **lõm** mới xuất hiện có tổng độ dài ra sao?",
+        "Chi phí lát tính theo **diện tích**, không theo chu vi. Khoản tiết kiệm liên quan phần diện tích nào?"
+      ],
+      "full_solution_markdown": "Diện tích hình chữ nhật ban đầu là `24 × 18 = 432 m²`. Phần bỏ đi có diện tích `8 × 6 = 48 m²`. Vậy sân còn `432 − 48 = 384 m²`.\n\n**Kiểm tra bằng cách thứ hai:** Tách sân chữ L thành hình chữ nhật bên trái `16 × 18 = 288 m²` và hình chữ nhật phía dưới bên phải `8 × 12 = 96 m²`. Tổng `288 + 96 = 384 m²`, khớp phép trừ.\n\nChu vi hình chữ nhật gốc là `2 × (24 + 18) = 84 m`. Đi một vòng mép sân mới theo thứ tự từ góc dưới trái: `24 + 12 + 8 + 6 + 16 + 18 = 84 m`. Chu vi **không đổi** vì hai đoạn mép ngoài bị mất (dài 8 m và 6 m) được thay bằng đúng hai đoạn mép lõm cũng dài 8 m và 6 m. Kết luận này phụ thuộc **khoét tại góc** như đề cho, không được khái quát cho mọi cách cắt hình.\n\nChi phí lát phần còn lại: `384 × 125 000 = 48 000 000 đồng`. Số tiền tiết kiệm so với lát nguyên sân: `48 × 125 000 = 6 000 000 đồng`. Có thể kiểm tra chi phí cả sân: `432 × 125 000 = 54 000 000 đồng`, hiệu đúng `6 000 000 đồng`.",
+      "solution_steps": [
+        {
+          "step_id": "S1",
+          "title": "Lời giải từng bước",
+          "content_markdown": "Diện tích hình chữ nhật ban đầu là `24 × 18 = 432 m²`. Phần bỏ đi có diện tích `8 × 6 = 48 m²`. Vậy sân còn `432 − 48 = 384 m²`.\n\n**Kiểm tra bằng cách thứ hai:** Tách sân chữ L thành hình chữ nhật bên trái `16 × 18 = 288 m²` và hình chữ nhật phía dưới bên phải `8 × 12 = 96 m²`. Tổng `288 + 96 = 384 m²`, khớp phép trừ.\n\nChu vi hình chữ nhật gốc là `2 × (24 + 18) = 84 m`. Đi một vòng mép sân mới theo thứ tự từ góc dưới trái: `24 + 12 + 8 + 6 + 16 + 18 = 84 m`. Chu vi **không đổi** vì hai đoạn mép ngoài bị mất (dài 8 m và 6 m) được thay bằng đúng hai đoạn mép lõm cũng dài 8 m và 6 m. Kết luận này phụ thuộc **khoét tại góc** như đề cho, không được khái quát cho mọi cách cắt hình.\n\nChi phí lát phần còn lại: `384 × 125 000 = 48 000 000 đồng`. Số tiền tiết kiệm so với lát nguyên sân: `48 × 125 000 = 6 000 000 đồng`. Có thể kiểm tra chi phí cả sân: `432 × 125 000 = 54 000 000 đồng`, hiệu đúng `6 000 000 đồng`."
+        }
+      ],
+      "method_rationale_markdown": "**Reasoning signature:** đọc mô tả khoét góc → quyết định **trừ hai diện tích** hoặc **ghép hai hình** → theo dõi **biên lõm thay biên ngoài** → kiểm tra chu vi **không đổi dù diện tích giảm** → đổi diện tích thành giá tiền và tiết kiệm. `WX20-GEO-003` dạy lựa chọn chu vi/diện tích trên một sân còn nguyên và trừ cổng; không có suy luận về **bảo toàn độ dài mép** hay hai phép tách diện tích. Cùng kỹ năng đo lường nhưng khác cấu trúc, đáng giữ cả hai nếu S1/D4 đạt.",
+      "rubric": [
+        {
+          "criterion": "phác đúng hình, hai kích thước phần lõm rõ ràng",
+          "points": 0.5
+        },
+        {
+          "criterion": "tính diện tích bằng phép trừ và đơn vị",
+          "points": 1
+        },
+        {
+          "criterion": "kiểm tra bằng hai hình chữ nhật, không chồng phần",
+          "points": 1
+        },
+        {
+          "criterion": "tính chu vi mới bằng cách liệt kê đủ 6 đoạn",
+          "points": 1
+        },
+        {
+          "criterion": "giải thích phép thay thế 2 đoạn 8 m và 6 m khiến chu vi bằng chu vi cũ",
+          "points": 1
+        },
+        {
+          "criterion": "chi phí 48 triệu và tiết kiệm 6 triệu, đơn vị đúng",
+          "points": 1.5
+        }
+      ],
+      "rubric_total": 6,
+      "common_mistakes": [
+        "trừ `2(8+6)` khỏi chu vi mà không cộng hai cạnh lõm",
+        "nhân chu vi với giá tiền theo m²",
+        "cộng diện tích hai hình nhỏ có phần giao",
+        "cho rằng chu vi luôn không đổi khi bỏ bất kì phần nào."
+      ],
+      "remediation_markdown": "`WX20-GEO-003` để phân biệt diện tích/chu vi, sau đó kiểm tra chu vi đa giác bằng cách đi hết đường biên một vòng.",
+      "remediation_links": [
+        {
+          "label": "Ôn lại kiến thức cùng chuyên đề",
+          "href": "../kien-thuc/20-hinh-hoc-tong-hop/"
+        },
+        {
+          "label": "Luyện tập thêm cùng chuyên đề",
+          "href": "../kien-thuc/20-hinh-hoc-tong-hop/bai-tap/"
+        }
+      ],
+      "source_refs": [
+        "review-packets/written-exercise-library/MATH-WRITTEN-GAP3-20261023-ONEPASS-NOTEBOOKLM.md#cand-g6-area-01"
+      ],
+      "academic_review": {
+        "status": "APPROVED",
+        "method": "NOTEBOOKLM_OWNER_SUBMITTED",
+        "packet_id": "MATH-WRITTEN-GAP3-20261023-R0",
+        "receipt": "review-packets/written-exercise-library/MATH-WRITTEN-GAP3-20261023-NOTEBOOKLM_OWNER_VERDICT.md",
+        "publication_gate": "OWNER_RELEASE_APPROVED_20261023"
+      },
+      "gates_core": false,
+      "auto_readiness_credit": false,
+      "written_role": "DEEP_ANCHOR",
+      "kntt_placements": [
+        {
+          "grade": 6,
+          "chapter": 4,
+          "lesson": "Bài 20 — Chu vi và diện tích của một số tứ giác đã học"
+        }
+      ]
+    },
+    {
+      "exercise_id": "WX04-ALG-004",
+      "exercise_kind": "anchor",
+      "topic_id": "CT04",
+      "topic_slug": "04-bieu-thuc-dai-so",
+      "topic_title": "Biểu thức và biến đổi đại số",
+      "problem_type_id": "g7-polynomials-two-intermediates-solve",
+      "problem_type_title": "Hai phép kết hợp đa thức rồi tìm ẩn",
+      "title": "Hai phép kết hợp đa thức rồi tìm ẩn",
+      "learning_layer": "KNTT-Core",
+      "level": "CORE_APPLY",
+      "learner_label": "Củng cố",
+      "grade_overlay": [
+        7
+      ],
+      "skills": [
+        "cong-tru-da-thuc",
+        "bo-ngoac-dau",
+        "thu-gon-da-thuc",
+        "tim-an-tu-bieu-thuc"
+      ],
+      "prerequisites": [],
+      "estimated_minutes": 15,
+      "problem_markdown": "Cho hai đa thức một biến:\n\n\\[\nA(x)=2x^2-x+3,\\qquad B(x)=x^2+2x-4.\n\\]\n\n1. Tính và thu gọn `S(x)=A(x)+B(x)` và `D(x)=A(x)-B(x)`. Khi trừ, hãy viết bước bỏ ngoặc.\n2. Đặt `T(x)=S(x)-3D(x)`. Thu gọn `T(x)` và cho biết vì sao các hạng tử chứa \\(x^2\\) **triệt tiêu**.\n3. Tìm giá trị \\(x\\) để `T(x)=8`, rồi **thay ngược vào biểu thức gốc** kiểm tra.",
+      "figure_uri": null,
+      "figure_alt": null,
+      "hint_steps": [
+        "Hãy viết rõ dấu trừ trước **toàn bộ** đa thức \\(B\\) khi tính \\(D\\).",
+        "Thực hiện \\(S-3D\\) từng bước, chú ý hệ số của các hạng tử cùng bậc.",
+        "Sau khi biểu thức chỉ còn bậc nhất, điều kiện \\(T=8\\) trở thành phương trình nào? Dùng \\(A,B\\) gốc để kiểm tra."
+      ],
+      "full_solution_markdown": "\\[\n\\begin{aligned}\nS(x)&=(2x^2-x+3)+(x^2+2x-4)\\\\\n&=3x^2+x-1.\n\\end{aligned}\n\\]\n\nVới hiệu hai đa thức, dấu trừ phải đổi dấu tất cả hạng tử của \\(B\\):\n\n\\[\n\\begin{aligned}\nD(x)&=(2x^2-x+3)-(x^2+2x-4)\\\\\n&=2x^2-x+3-x^2-2x+4\\\\\n&=x^2-3x+7.\n\\end{aligned}\n\\]\n\n\\[\n\\begin{aligned}\nT(x)&=(3x^2+x-1)-3(x^2-3x+7)\\\\\n&=3x^2+x-1-3x^2+9x-21\\\\\n&=10x-22.\n\\end{aligned}\n\\]\n\nHai hạng tử \\(3x^2\\) và \\(-3x^2\\) đối nhau nên triệt tiêu. Từ \\(T(x)=8\\):\n\n\\[\n10x-22=8\\Longrightarrow 10x=30\\Longrightarrow \\boxed{x=3}.\n\\]\n\nKiểm tra độc lập tại \\(x=3\\): \\(A(3)=18\\), \\(B(3)=11\\); do đó \\(S(3)=29\\), \\(D(3)=7\\), \\(S(3)-3D(3)=29-21=8\\), thỏa điều kiện.\n\n**Cách nhìn thứ hai (chỉ sau khi học sinh tự giải):** \\(S-3D=(A+B)-3(A-B)=-2A+4B\\). Thế trực tiếp \\(A,B\\) vào sẽ triệt tiêu hệ số bậc hai tương tự, giúp tự kiểm tra nhưng **không thay thế** yêu cầu trình bày \\(S,D\\) ở câu 1.",
+      "solution_steps": [
+        {
+          "step_id": "S1",
+          "title": "Lời giải từng bước",
+          "content_markdown": "\\[\n\\begin{aligned}\nS(x)&=(2x^2-x+3)+(x^2+2x-4)\\\\\n&=3x^2+x-1.\n\\end{aligned}\n\\]\n\nVới hiệu hai đa thức, dấu trừ phải đổi dấu tất cả hạng tử của \\(B\\):\n\n\\[\n\\begin{aligned}\nD(x)&=(2x^2-x+3)-(x^2+2x-4)\\\\\n&=2x^2-x+3-x^2-2x+4\\\\\n&=x^2-3x+7.\n\\end{aligned}\n\\]\n\n\\[\n\\begin{aligned}\nT(x)&=(3x^2+x-1)-3(x^2-3x+7)\\\\\n&=3x^2+x-1-3x^2+9x-21\\\\\n&=10x-22.\n\\end{aligned}\n\\]\n\nHai hạng tử \\(3x^2\\) và \\(-3x^2\\) đối nhau nên triệt tiêu. Từ \\(T(x)=8\\):\n\n\\[\n10x-22=8\\Longrightarrow 10x=30\\Longrightarrow \\boxed{x=3}.\n\\]\n\nKiểm tra độc lập tại \\(x=3\\): \\(A(3)=18\\), \\(B(3)=11\\); do đó \\(S(3)=29\\), \\(D(3)=7\\), \\(S(3)-3D(3)=29-21=8\\), thỏa điều kiện.\n\n**Cách nhìn thứ hai (chỉ sau khi học sinh tự giải):** \\(S-3D=(A+B)-3(A-B)=-2A+4B\\). Thế trực tiếp \\(A,B\\) vào sẽ triệt tiêu hệ số bậc hai tương tự, giúp tự kiểm tra nhưng **không thay thế** yêu cầu trình bày \\(S,D\\) ở câu 1."
+        }
+      ],
+      "method_rationale_markdown": "**Reasoning signature:** trừ hai đa thức với dấu ngoặc → tạo **hai trung gian** \\(S,D\\) → kết hợp theo trọng số khiến hạng tử bậc hai triệt tiêu → **điều kiện đầu ra** xác định ẩn → thế lại dữ kiện gốc. `WX04-ALG-001` chỉ trừ; `WX04-ALG-003` thu gọn rồi **tính tại x cho sẵn**. Cần khẳng định S1 trước khi định tuyến cho lớp 7, kể cả khi kỹ thuật cuối dễ.",
+      "rubric": [
+        {
+          "criterion": "tính \\(S\\) đúng",
+          "points": 1
+        },
+        {
+          "criterion": "bỏ ngoặc và tính \\(D\\) đúng",
+          "points": 1
+        },
+        {
+          "criterion": "phân phối hệ số \\(-3\\) và thu gọn \\(T\\) đúng",
+          "points": 1
+        },
+        {
+          "criterion": "nêu rõ nguyên nhân triệt tiêu \\(x^2\\) và giải \\(x=3\\)",
+          "points": 1
+        },
+        {
+          "criterion": "thay vào \\(A,B\\) gốc để kiểm tra \\(T=8\\)",
+          "points": 1
+        }
+      ],
+      "rubric_total": 5,
+      "common_mistakes": [
+        "chỉ đổi dấu một hạng tử của \\(B\\)",
+        "khi nhân \\(-3D\\) không nhân đủ 3 hạng tử",
+        "thay \\(x=8\\) do nhầm \\(T=8\\)",
+        "chỉ thử nghiệm ở biểu thức đã biến đổi mà không kiểm tra dữ kiện gốc."
+      ],
+      "remediation_markdown": "`WX04-ALG-001` (bỏ ngoặc và đổi dấu), `WX04-ALG-003` (kiểm tra lại giá trị biểu thức). Nếu S1 xác định vị trí lớp 7, gắn đúng bài SGK tương ứng; **không** dựa vào tên file đề thi để suy chương.",
+      "remediation_links": [
+        {
+          "label": "Ôn lại kiến thức cùng chuyên đề",
+          "href": "../kien-thuc/04-bieu-thuc-dai-so/"
+        },
+        {
+          "label": "Luyện tập thêm cùng chuyên đề",
+          "href": "../kien-thuc/04-bieu-thuc-dai-so/bai-tap/"
+        }
+      ],
+      "source_refs": [
+        "review-packets/written-exercise-library/MATH-WRITTEN-GAP3-20261023-ONEPASS-NOTEBOOKLM.md#cand-g7-poly-01"
+      ],
+      "academic_review": {
+        "status": "APPROVED",
+        "method": "NOTEBOOKLM_OWNER_SUBMITTED",
+        "packet_id": "MATH-WRITTEN-GAP3-20261023-R0",
+        "receipt": "review-packets/written-exercise-library/MATH-WRITTEN-GAP3-20261023-NOTEBOOKLM_OWNER_VERDICT.md",
+        "publication_gate": "OWNER_RELEASE_APPROVED_20261023"
+      },
+      "gates_core": false,
+      "auto_readiness_credit": false,
+      "written_role": "DEEP_ANCHOR",
+      "kntt_placements": [
+        {
+          "grade": 7,
+          "chapter": 7,
+          "lesson": "Bài 26 — Phép cộng và phép trừ đa thức một biến"
+        }
+      ]
+    },
+    {
+      "exercise_id": "WX16-QUAD-005",
+      "exercise_kind": "anchor",
+      "topic_id": "CT16",
+      "topic_slug": "16-tu-giac",
+      "topic_title": "Tứ giác và các hình đặc biệt",
+      "problem_type_id": "g8-rectangle-midpoint-rhombus-area-perimeter",
+      "problem_type_title": "Từ bốn trung điểm đến hình thoi, diện tích và bất đẳng thức",
+      "title": "Từ bốn trung điểm đến hình thoi, diện tích và bất đẳng thức",
+      "learning_layer": "KNTT-Core",
+      "level": "CORE_APPLY",
+      "learner_label": "Củng cố",
+      "grade_overlay": [
+        8
+      ],
+      "skills": [
+        "duong-trung-binh-tam-giac",
+        "hbh-dau-hieu",
+        "hthoi-dau-hieu",
+        "dien-tich-hinh-ghep",
+        "bat-dang-thuc-tam-giac"
+      ],
+      "prerequisites": [],
+      "estimated_minutes": 22,
+      "problem_markdown": "Cho **hình chữ nhật \\(ABCD\\)** có \\(AB=12\\text{ cm}\\), \\(BC=8\\text{ cm}\\). Gọi \\(E,F,G,H\\) lần lượt là **trung điểm** của các cạnh \\(AB,BC,CD,DA\\). Nối \\(E,F,G,H\\) theo thứ tự và vẽ hai đường chéo \\(AC,BD\\).\n\n1. Chứng minh \\(EFGH\\) là **hình bình hành**, ghi rõ các tam giác dùng định lí đường trung bình.\n2. Chứng minh \\(EFGH\\) là **hình thoi**. Không được chỉ căn cứ hình vẽ hoặc giả định trước \\(EF=FG\\).\n3. Tính **diện tích** hình thoi \\(EFGH\\) bằng cách lấy diện tích hình chữ nhật trừ đi bốn tam giác ở các góc.\n4. Chứng minh **chu vi hình thoi nhỏ hơn chu vi hình chữ nhật**, **không dùng** số gần đúng cho đường chéo.",
+      "figure_uri": "../assets/geometry/written-library/wx16-quad-005.svg",
+      "figure_alt": "Hình chữ nhật ABCD dài 12 cm rộng 8 cm; E, F, G, H là trung điểm tương ứng của AB, BC, CD, DA; các đoạn EFGH, AC, BD đã được nối.",
+      "hint_steps": [
+        "Trong các tam giác \\(ABC\\) và \\(ADC\\), những đoạn nối hai trung điểm nào **song song với cùng một đường chéo**?",
+        "Khi đã có hình bình hành, em cần so sánh **hai cạnh kề**. Trong một hình chữ nhật, hai đường chéo có quan hệ gì?",
+        "Sau khi đã biết độ dài một cạnh \\(EF\\) liên hệ với \\(AC\\), hãy so sánh \\(AC\\) với \\(AB+BC\\) bằng một bất đẳng thức trong **tam giác \\(ABC\\)**."
+      ],
+      "full_solution_markdown": "Trong tam giác \\(ABC\\), vì \\(E\\) là trung điểm \\(AB\\) và \\(F\\) là trung điểm \\(BC\\), theo định lí đường trung bình:\n\n\\[\nEF\\parallel AC,\\qquad EF=\\tfrac12 AC.\n\\]\n\nTrong tam giác \\(ADC\\), \\(H\\) là trung điểm \\(AD\\), \\(G\\) là trung điểm \\(DC\\), nên:\n\n\\[\nHG\\parallel AC,\\qquad HG=\\tfrac12 AC.\n\\]\n\nSuy ra \\(EF\\parallel HG\\) và \\(EF=HG\\). Tứ giác \\(EFGH\\) có một cặp cạnh đối vừa song song vừa bằng nhau, **nên \\(EFGH\\) là hình bình hành**.\n\nTrong tam giác \\(BCD\\), \\(F,G\\) là trung điểm của \\(BC,CD\\), nên \\(FG=\\tfrac12 BD\\). Vì \\(ABCD\\) là hình chữ nhật, \\(AC=BD\\). Từ \\(EF=\\tfrac12 AC\\) suy ra \\(EF=FG\\). Một hình bình hành có **hai cạnh kề bằng nhau** là hình thoi. Vậy \\(EFGH\\) là hình thoi. Lưu ý: đề **không** yêu cầu hay cho phép suy ra hình vuông.\n\nDiện tích hình chữ nhật \\(ABCD\\) là \\(12\\times 8=96\\text{ cm}^2\\). Bốn tam giác vuông \\(AEH,BEF,CFG,DGH\\) đều có hai cạnh góc vuông bằng \\(6\\) cm và \\(4\\) cm; mỗi tam giác có diện tích \\(\\frac12\\times6\\times4=12\\text{ cm}^2\\). Vậy\n\n\\[\nS_{EFGH}=96-4\\times12=\\boxed{48\\text{ cm}^2}.\n\\]\n\nChu vi hình thoi \\(P_{EFGH}=4EF=2AC\\). Theo bất đẳng thức tam giác trong tam giác \\(ABC\\), \\(AC<AB+BC\\) (tam giác không suy biến). Do đó:\n\n\\[\nP_{EFGH}=2AC<2(AB+BC)=P_{ABCD}=\\boxed{40\\text{ cm}}.\n\\]\n\nNếu muốn kiểm tra bằng số, \\(AC=\\sqrt{12^2+8^2}=4\\sqrt{13}\\), nên \\(P_{EFGH}=8\\sqrt{13}\\text{ cm}<40\\text{ cm}\\). Phép tính gần đúng **không** phải cơ sở của chứng minh.",
+      "solution_steps": [
+        {
+          "step_id": "S1",
+          "title": "Lời giải từng bước",
+          "content_markdown": "Trong tam giác \\(ABC\\), vì \\(E\\) là trung điểm \\(AB\\) và \\(F\\) là trung điểm \\(BC\\), theo định lí đường trung bình:\n\n\\[\nEF\\parallel AC,\\qquad EF=\\tfrac12 AC.\n\\]\n\nTrong tam giác \\(ADC\\), \\(H\\) là trung điểm \\(AD\\), \\(G\\) là trung điểm \\(DC\\), nên:\n\n\\[\nHG\\parallel AC,\\qquad HG=\\tfrac12 AC.\n\\]\n\nSuy ra \\(EF\\parallel HG\\) và \\(EF=HG\\). Tứ giác \\(EFGH\\) có một cặp cạnh đối vừa song song vừa bằng nhau, **nên \\(EFGH\\) là hình bình hành**.\n\nTrong tam giác \\(BCD\\), \\(F,G\\) là trung điểm của \\(BC,CD\\), nên \\(FG=\\tfrac12 BD\\). Vì \\(ABCD\\) là hình chữ nhật, \\(AC=BD\\). Từ \\(EF=\\tfrac12 AC\\) suy ra \\(EF=FG\\). Một hình bình hành có **hai cạnh kề bằng nhau** là hình thoi. Vậy \\(EFGH\\) là hình thoi. Lưu ý: đề **không** yêu cầu hay cho phép suy ra hình vuông.\n\nDiện tích hình chữ nhật \\(ABCD\\) là \\(12\\times 8=96\\text{ cm}^2\\). Bốn tam giác vuông \\(AEH,BEF,CFG,DGH\\) đều có hai cạnh góc vuông bằng \\(6\\) cm và \\(4\\) cm; mỗi tam giác có diện tích \\(\\frac12\\times6\\times4=12\\text{ cm}^2\\). Vậy\n\n\\[\nS_{EFGH}=96-4\\times12=\\boxed{48\\text{ cm}^2}.\n\\]\n\nChu vi hình thoi \\(P_{EFGH}=4EF=2AC\\). Theo bất đẳng thức tam giác trong tam giác \\(ABC\\), \\(AC<AB+BC\\) (tam giác không suy biến). Do đó:\n\n\\[\nP_{EFGH}=2AC<2(AB+BC)=P_{ABCD}=\\boxed{40\\text{ cm}}.\n\\]\n\nNếu muốn kiểm tra bằng số, \\(AC=\\sqrt{12^2+8^2}=4\\sqrt{13}\\), nên \\(P_{EFGH}=8\\sqrt{13}\\text{ cm}<40\\text{ cm}\\). Phép tính gần đúng **không** phải cơ sở của chứng minh."
+        }
+      ],
+      "method_rationale_markdown": "**Reasoning signature:** dựng tứ giác **mới** từ bốn trung điểm → chọn **hai tam giác khác nhau** để chứng minh một cặp cạnh đối song song, bằng nhau → **thêm** quan hệ đường trung bình qua đường chéo thứ hai và tính chất hình chữ nhật để nhận hình thoi → bỏ bốn tam giác góc để tính diện tích → bất đẳng thức tam giác để so sánh **hai chu vi**. Không phải thay số trong `WX16-QUAD-002/003` (đó là dấu hiệu từ **chính đường chéo của tứ giác gốc**). So sánh cũng với `WX14-TRI-004`: cả hai có nhiều kết luận nhưng không cùng mô hình định lí.",
+      "rubric": [
+        {
+          "criterion": "vẽ các trung điểm và hình \\(EFGH\\) đúng",
+          "points": 0.5
+        },
+        {
+          "criterion": "chỉ rõ \\(EF,HG\\) và hai quan hệ đường trung bình, từ đó suy hình bình hành",
+          "points": 1.5
+        },
+        {
+          "criterion": "so sánh \\(FG\\) với \\(EF\\) nhờ \\(AC=BD\\) và suy hình thoi",
+          "points": 1.5
+        },
+        {
+          "criterion": "trừ đúng 4 diện tích tam giác để được \\(48\\text{ cm}^2\\)",
+          "points": 1
+        },
+        {
+          "criterion": "chứng minh \\(2AC<2(AB+BC)\\) bằng bất đẳng thức tam giác, nêu rõ chu vi",
+          "points": 1.5
+        }
+      ],
+      "rubric_total": 6,
+      "common_mistakes": [
+        "nhầm \\(EFGH\\) là hình vuông vì nhìn hình đối xứng",
+        "suy \\(EF=FG\\) chỉ bằng trực giác",
+        "đặt sai cặp tam giác khi dùng đường trung bình",
+        "chỉ trừ hai thay vì bốn tam giác góc",
+        "sử dụng số gần đúng để “chứng minh” bất đẳng thức."
+      ],
+      "remediation_markdown": "`WX16-QUAD-001/003` (điều kiện hình bình hành/hình thoi), `WX14-TRI-003` (bất đẳng thức tam giác) và phần định lí đường trung bình theo S1 sau khi kiểm toán.",
+      "remediation_links": [
+        {
+          "label": "Ôn lại kiến thức cùng chuyên đề",
+          "href": "../kien-thuc/16-tu-giac/"
+        },
+        {
+          "label": "Luyện tập thêm cùng chuyên đề",
+          "href": "../kien-thuc/16-tu-giac/bai-tap/"
+        }
+      ],
+      "source_refs": [
+        "review-packets/written-exercise-library/MATH-WRITTEN-GAP3-20261023-ONEPASS-NOTEBOOKLM.md#cand-g8-mid-01"
+      ],
+      "academic_review": {
+        "status": "APPROVED",
+        "method": "NOTEBOOKLM_OWNER_SUBMITTED",
+        "packet_id": "MATH-WRITTEN-GAP3-20261023-R0",
+        "receipt": "review-packets/written-exercise-library/MATH-WRITTEN-GAP3-20261023-NOTEBOOKLM_OWNER_VERDICT.md",
+        "publication_gate": "OWNER_RELEASE_APPROVED_20261023"
+      },
+      "gates_core": false,
+      "auto_readiness_credit": false,
+      "written_role": "DEEP_ANCHOR",
+      "kntt_placements": [
+        {
+          "grade": 8,
+          "chapter": 4,
+          "lesson": "Bài 16 — Đường trung bình của tam giác (vận dụng hình chữ nhật Bài 13, hình thoi Bài 14 Chương III)"
+        }
+      ]
     }
   ],
   "extension_policy": [
@@ -8357,7 +8666,7 @@
       "CT23",
       "CT24"
     ],
-    "exercise_count": 84,
+    "exercise_count": 87,
     "batches": [
       {
         "batch_id": "PILOT_R1",
@@ -8466,6 +8775,13 @@
         "batch_id": "GAP9_NEW_STRUCTURES_20261023",
         "packet_id": "MATH-WRITTEN-GAP9-20261023-R0",
         "count": 9,
+        "status": "PUBLISHED",
+        "owner_release_authorization": "OWNER_APPROVED_RELEASE_20261023"
+      },
+      {
+        "batch_id": "GAP3_NEW_STRUCTURES_20261023",
+        "packet_id": "MATH-WRITTEN-GAP3-20261023-R0",
+        "count": 3,
         "status": "PUBLISHED",
         "owner_release_authorization": "OWNER_APPROVED_RELEASE_20261023"
       }

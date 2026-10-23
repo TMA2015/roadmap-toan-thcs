@@ -5,8 +5,8 @@ const read=p=>fs.readFileSync(p,"utf8");
 const raw=read("docs/assets/data/written-exercises/written-exercise-library-v1.json");
 const deployedSha=crypto.createHash("sha1").update("blob "+Buffer.byteLength(raw)+"\0").update(raw).digest("hex");
 const canonical=JSON.parse(raw),old=canonical.exercises.slice(0,75);
-assert.equal(canonical.exercises.length,84);
-assert.equal(canonical.published_scope.exercise_count,84);
+assert.equal(canonical.exercises.length,87);
+assert.equal(canonical.published_scope.exercise_count,87);
 assert.equal(canonical.auto_readiness_credit,false);
 assert.equal(canonical.self_marking_only,true);
 let h=0xcbf29ce484222325n;
@@ -22,8 +22,8 @@ const v=read("review-packets/written-exercise-library/MATH-WRITTEN-GAP9-20261023
 assert(v.includes("EXPECTED|9")&&v.includes("REVIEWED|9")&&v.includes("OVERALL|PASS")&&v.includes("AUTHORIZATION|REVIEW_ONLY_NO_DEPLOY"));
 const ids=["WX02-NUM-005","WX02-NUM-006","WX03-RAT-003","WX14-TRI-004","WX24-MOD-003","WX20-GEO-004","WX21-STA-003","WX19-CIR-005","WX20-GEO-005"];
 const cids=["CAND-G6-01","CAND-G6-02","CAND-G7-01","CAND-G7-02","CAND-G8-01","CAND-G8-02","CAND-G9-01","CAND-G9-02","CAND-G9-03"];
-assert.deepEqual(canonical.exercises.slice(75).map(x=>x.exercise_id),ids);
-assert.equal(new Set(canonical.exercises.map(x=>x.exercise_id)).size,84);
+assert.deepEqual(canonical.exercises.slice(75,84).map(x=>x.exercise_id),ids);
+assert.equal(new Set(canonical.exercises.map(x=>x.exercise_id)).size,87);
 assert.deepEqual(st.candidates.map(x=>x.exercise_id),ids);
 const headings=[...p.matchAll(/^## (G[6789]-0[123]) — ([^\n]+)$/gm)];assert.equal(headings.length,9);
 for(let i=0;i<9;i++){
@@ -51,7 +51,7 @@ const batch=canonical.published_scope.batches.find(x=>x.batch_id==="GAP9_NEW_STR
 assert(batch?.status==="PUBLISHED"&&batch.count===9&&batch.owner_release_authorization==="OWNER_APPROVED_RELEASE_20261023");
 const overlay=JSON.parse(read("docs/assets/data/written-exercises/written-p2-hints-overlay-v1.json"));
 assert.equal(overlay.source_catalog_blob_sha,deployedSha,"previous P2 hints must match published catalog");
-assert.equal(overlay.source_catalog_exercise_count,84);
+assert.equal(overlay.source_catalog_exercise_count,87);
 assert.equal(overlay.source_catalog_snapshot_date,canonical.snapshot_date);
 assert.deepEqual(overlay.changes.map(x=>x.exercise_id).sort(),["WX07-RAT-001","WX16-QUAD-001","WX19-CIR-002"].sort());
 console.log("PASS GAP9 release: 84 canonical with 75 frozen, 9 exact reviewed originals, owner authorization, geometry diagram and 3 legacy P2 hint ladders");

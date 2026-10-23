@@ -110,8 +110,8 @@ const written=json(a.source_locks.written_library.path);
 // Preserve the historical Grade6 audit. W9 had 27 placed entries; eight
 // owner-authorized GAP9 entries add two verified placements per grade.
 const currentPlaced=(written.exercises||[]).filter(e=>e.kntt_placements?.length);
-assert.equal(currentPlaced.length,35,"W9 27 + approved GAP9 8 placements");
-for(const [grade,expected] of [[6,11],[7,8],[8,8],[9,8]])
+assert.equal(currentPlaced.length,38,"W9 27 + GAP9 8 + GAP3 3 approved placements");
+for(const [grade,expected] of [[6,12],[7,9],[8,9],[9,8]])
   assert.equal(currentPlaced.filter(e=>e.kntt_placements.some(p=>p.grade===grade)).length,expected,
     "separate W9 current grade placement census");
 assert.equal(a.summary.written_library_kntt_placement_count,8);

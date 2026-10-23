@@ -145,7 +145,7 @@ const written=json(a.source_locks.written_library.path);
 const g8Written=(written.exercises||[]).filter(ex=>(ex.kntt_placements||[]).some(p=>p.grade===8));
 // Preserve historical Grade8 audit snapshot, plus two separately approved GAP9 S1 items.
 assert.deepEqual(g8Written.map(x=>x.exercise_id).sort(),
-  ["WX04-ALG-003","WX05-IDN-001","WX06-FAC-001","WX07-RAT-001","WX16-QUAD-001","WX17-SIM-001","WX20-GEO-004","WX24-MOD-003"].sort());
+  ["WX04-ALG-003","WX05-IDN-001","WX06-FAC-001","WX07-RAT-001","WX16-QUAD-001","WX17-SIM-001","WX20-GEO-004","WX24-MOD-003","WX16-QUAD-005"].sort());
 assert.equal(a.summary.written_grade8_kntt_item_count,0,"historical Grade8 R1 audit remains unchanged");
 
 const counts={};
