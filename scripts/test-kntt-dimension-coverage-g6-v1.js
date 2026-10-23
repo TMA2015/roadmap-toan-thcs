@@ -107,14 +107,15 @@ assert.equal(counts.READINESS.REVIEWED_STRUCTURED_READINESS,1);
 assert.equal(counts.READINESS.PENDING_REVIEW,0);
 
 const written=json(a.source_locks.written_library.path);
-// Historical Grade6 audit independently reviewed eight items. W9 adds
-// six Grade7 + six Grade8 + six Grade9 placements and one NEW Grade6 item
-// on a separate academic S1 receipt; do not rewrite the old audit summary.
+// Historical Grade6 audit independently reviewed eight items; its snapshot
+// stays frozen. W9 subsequently established 27 source-reviewed placements.
+// GAP9 adds 8 separately reviewed S1 placements (2 per grade, Entrance10
+// transfer has no formal lesson placement). Never revise historical audit.
 const currentPlaced=(written.exercises||[]).filter(e=>e.kntt_placements?.length);
-assert.equal(currentPlaced.length,27);
-for(const [grade,expected] of [[6,9],[7,6],[8,6],[9,6]])
+assert.equal(currentPlaced.length,35,"27 W9 + 8 GAP9 reviewed KNTT placements");
+for(const [grade,expected] of [[6,11],[7,8],[8,8],[9,8]])
   assert.equal(currentPlaced.filter(e=>e.kntt_placements.some(p=>p.grade===grade)).length,expected,
-    "separate W9 current grade placement census");
+    "W9 historical placement census plus separate GAP9 S1-reviewed additions");
 assert.equal(a.summary.written_library_kntt_placement_count,8);
 assert.equal(a.summary.written_library_kntt_item_count,8);
 assert.equal(a.summary.written_library_kntt_placement_row_count,9);
