@@ -179,11 +179,16 @@ if(w4pending.length){
     "pending candidates cannot enable Core/Readiness or silently claim release");
 }
 ok(data.published_scope.batches.every(x=>x.status==="PUBLISHED"),"Owner-authorized W4 and all earlier Written batches marked published");
-ok(data.published_scope.batches.at(-2).batch_id==="W4_CT08_12_WRITTEN_R1" && data.published_scope.batches.at(-2).count===5 && data.exercises.slice(0,74).length===74,"five exact authorized W4 Written records");
-ok(data.published_scope.batches.at(-1).batch_id==="W9_G6_NUMABS_WRITTEN_20261022" &&
-   data.published_scope.batches.at(-1).count===1 && data.published_scope.batches.at(-1).status==="PUBLISHED" &&
-   data.published_scope.batches.at(-1).owner_release_authorization==="OWNER_APPROVED_RELEASE_20261022",
+ok(data.published_scope.batches.at(-3).batch_id==="W4_CT08_12_WRITTEN_R1" && data.published_scope.batches.at(-3).count===5 && data.exercises.slice(0,74).length===74,"five exact authorized W4 Written records");
+ok(data.published_scope.batches.at(-2).batch_id==="W9_G6_NUMABS_WRITTEN_20261022" &&
+   data.published_scope.batches.at(-2).count===1 && data.published_scope.batches.at(-2).status==="PUBLISHED" &&
+   data.published_scope.batches.at(-2).owner_release_authorization==="OWNER_APPROVED_RELEASE_20261022",
    "exact Owner-approved W9 single Written release ledger entry");
+ok(data.published_scope.batches.at(-1).batch_id==="GAP9_NEW_STRUCTURES_20261023"&&
+   data.published_scope.batches.at(-1).count===9&&
+   data.published_scope.batches.at(-1).status==="PUBLISHED"&&
+   data.published_scope.batches.at(-1).owner_release_authorization==="OWNER_APPROVED_RELEASE_20261023",
+   "owner-authorized GAP9 adds exactly nine reviewed items without disturbing W4/W9");
 ok(data.published_scope?.batches?.filter(x=>x.status==="PUBLISHED").length+
    w4pending.length===data.published_scope?.batches?.length,
    "all historic Written batches remain published; no unregistered pending statuses");
