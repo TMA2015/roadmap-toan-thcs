@@ -58,14 +58,24 @@
         const labels=content.closest(".tabbed-set")?.querySelectorAll(".tabbed-labels label");
         if(labels && idx>=0 && labels[idx]){
           const previousHash=location.hash;
+          // The URL can refer to the OTHER independent tab group. Save the
+          // actual selected tab here so Back restores the learner's reading
+          // position, not just the previous hash.
+          const priorIndex=[...labels].findIndex(l=>document.getElementById(l.htmlFor)?.checked);
+          const priorTab=priorIndex>=0?{zone:outer?.id,index:priorIndex}:null;
           event.preventDefault();
           event.stopPropagation(); // source heading navigation is ours, not Material's
           openSourceTab(labels[idx]);
           const sourceHash="#"+encodeURIComponent(id);
-          // Preserve the real previous tab in Back history even if Material
-          // synchronously replaced its native #__tabbed_* hash on change.
-          if(location.hash!==previousHash)history.replaceState(history.state,"",previousHash);
-          if(previousHash!==sourceHash)history.pushState({mkSource:id},"",sourceHash);
+          // Preserve the previous entry's URL and selected tab even if
+          // Material synchronously replaced the native #__tabbed_* hash.
+          if(previousHash!==sourceHash){
+            const oldState=history.state;
+            const state=oldState&&typeof oldState==="object"?{...oldState}:{};
+            if(priorTab)state.mkPriorTab=priorTab;
+            history.replaceState(state,"",previousHash);
+            history.pushState({mkSource:id},"",sourceHash);
+          }
           requestAnimationFrame(()=>node.scrollIntoView({block:"start"}));
         }
       }
@@ -164,7 +174,10 @@
           const hash=location.hash.match(new RegExp("^#"+key+"-(\\d+)$"));
           const nativeIndex=inputs.findIndex(input=>location.hash==="#"+input.id);
           const currentIndex=inputs.findIndex(input=>input.checked);
-          const index=hash?Math.max(0,Math.min(labels.length-1,+hash[1]-1)):
+          const prior=history.state?.mkPriorTab;
+          const saved=prior?.zone===zone&&Number.isInteger(prior.index)?prior.index:null;
+          const index=saved!==null?Math.max(0,Math.min(labels.length-1,saved)):
+            hash?Math.max(0,Math.min(labels.length-1,+hash[1]-1)):
             nativeIndex>=0?nativeIndex:Math.max(0,currentIndex);
           choose(index);
         }
