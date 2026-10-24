@@ -89,6 +89,51 @@ for(const [topic,revision] of plans){
    assert.deepEqual(candHeads,origHeads,"Full heading order changed in "+topic);
  }
  checkWrittenLinks(candidate,topic);
+ // R22 targeted infographic editorial parity: the CT05 text-only posters are
+ // hidden from the learner view, but their unique recognition/decision cues
+ // must remain readable in the native HTML content. This is NOT a blanket
+ // scholarly approval of all 80 hidden infographic instances.
+ if(topic==="05-7-hang-dang-thuc"){
+   const svgMethod=fs.readFileSync(path.join("docs","assets","infographics","05",
+     "05-04-dang-bai-loi-sai.svg"),"utf8");
+   const svgCubes=fs.readFileSync(path.join("docs","assets","infographics","05",
+     "05-03-nhom-lap-phuong.svg"),"utf8");
+   assert(svgMethod.includes("Quy trình:"),"CT05 source method poster changed; re-audit");
+   assert(svgCubes.includes("Hai hạng tử"),"CT05 source cube poster changed; re-audit");
+   assert(candidate.includes("**Quy trình chọn công thức:** Nhìn cấu trúc"),
+     "CT05 method-selection workflow from hidden poster was lost");
+   assert(candidate.includes("**Hai hạng tử là lập phương**"),
+     "CT05 two-term cube recognition from hidden poster was lost");
+   assert(candidate.includes("**Bốn hạng tử có hệ số theo mẫu 1–3–3–1**"),
+     "CT05 four-term cube recognition from hidden poster was lost");
+   assert(candidate.includes("**Chú ý:** Đây chỉ là dấu hiệu gợi ý"),
+     "CT05 cube recognition must not be mistaken for sufficient proof");
+ }
+ // R22 scoped checks: retain the only instructional details that were
+ // conveyed by CT21/CT23 text-heavy infographic posters, without re-displaying
+ // those posters or weakening the original equiprobability condition.
+ if(topic==="21-thong-ke"){
+   const svg=fs.readFileSync(path.join("docs","assets","infographics","21",
+     "21-03-bieu-do-chat-luong-loi-sai.svg"),"utf8");
+   assert(svg.includes("Không suy luận vượt quá điều dữ liệu thực sự cho biết"),
+     "CT21 source infographic changed; re-audit before release");
+   assert(candidate.includes("**không suy luận vượt quá phạm vi khảo sát**"),
+     "CT21 infographic-only interpretation caution missing in native reading");
+   assert(candidate.includes("**tên, trục, đơn vị, thang chia**"),
+     "CT21 chart-reading checks missing in native reading");
+ }
+ if(topic==="23-xac-suat"){
+   const svg=fs.readFileSync(path.join("docs","assets","infographics","23",
+     "23-02-khong-gian-mau-bien-co.svg"),"utf8");
+   assert(svg.includes("Các kết quả có thật sự đồng khả năng không"),
+     "CT23 source infographic changed; re-audit before release");
+   assert(candidate.includes("**Kiểm tra trước khi dùng công thức cổ điển:**"),
+     "CT23 hidden poster checks missing in native reading");
+   assert(candidate.includes("**đếm trùng**") && candidate.includes("**đồng khả năng**"),
+     "CT23 sample-space and equiprobability checks lost");
+   assert(candidate.includes("**chưa đủ** để dùng"),
+     "CT23 must distinguish complete enumeration from equiprobability");
+ }
  const src=imgs(source),dst=imgs(candidate);
  const kept=src.filter(x=>dst.includes(x)),hidden=src.filter(x=>!dst.includes(x));
  const added=dst.filter(x=>!src.includes(x));

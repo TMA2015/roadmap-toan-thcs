@@ -264,6 +264,14 @@ Luôn có:
 
 `0 ≤ P(A) ≤ 1`
 
+**Kiểm tra trước khi dùng công thức cổ điển:**
+
+| **Không gian mẫu** | **Điều kiện và kết quả** |
+|:---|:---|
+| Đã liệt kê **đủ** kết quả chưa? Có **đếm trùng** không? | Các kết quả có **đồng khả năng** không? Xác suất tính được có nằm trong **[0; 1]** không? |
+
+Đếm đủ và không trùng vẫn **chưa đủ** để dùng `n(A)/n(Ω)` nếu các kết quả không đồng khả năng.
+
 
 #### Hiểu sâu (mở rộng): Vì sao không thể chia đều cho 11 tổng của hai xúc xắc?
 

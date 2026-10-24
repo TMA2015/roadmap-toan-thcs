@@ -286,6 +286,7 @@ Hằng đẳng thức là công cụ trực tiếp cho:
 
 ## 🧩 5. Các dạng bài cần nắm vững
 
+**Quy trình chọn công thức:** Nhìn cấu trúc → xác định đúng \(A,B\) → chọn hằng đẳng thức → kiểm tra dấu → thu gọn → kiểm tra kết quả. Đây là trình tự tự kiểm tra, không phải một phép chứng minh thay thế lời giải.
 
 ### Dạng 1 – Khai triển bằng hằng đẳng thức
 
@@ -372,6 +373,13 @@ $$
 ### Dạng 4 – Tổng hoặc hiệu hai lập phương
 
 **Dấu hiệu:** hai hạng tử đều viết được dưới dạng lập phương.
+
+| Nhìn cấu trúc | Hướng nhận dạng cần kiểm tra |
+|---|---|
+| **Hai hạng tử là lập phương** | Xét \(A^3+B^3\) hoặc \(A^3-B^3\). |
+| **Bốn hạng tử có hệ số theo mẫu 1–3–3–1** | Xét \((A+B)^3\) hoặc \((A-B)^3\), rồi kiểm tra dấu. |
+
+**Chú ý:** Đây chỉ là dấu hiệu gợi ý; phải xác định đúng \(A,B\) và kiểm tra từng hạng tử trước khi dùng công thức.
 
 Ví dụ:
 

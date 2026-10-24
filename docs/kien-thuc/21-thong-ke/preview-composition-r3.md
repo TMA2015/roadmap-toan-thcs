@@ -359,6 +359,8 @@ Khi đánh giá dữ liệu cần xem xét:
 
 > Một bảng số liệu được ghi đúng chưa chắc đã đại diện tốt cho toàn bộ nhóm cần nghiên cứu nếu cách chọn mẫu bị thiên lệch.
 
+**Khi đọc biểu đồ:** Kiểm tra **tên, trục, đơn vị, thang chia** trước khi so sánh; chỉ nhận xét những gì dữ liệu thực sự cho biết, **không suy luận vượt quá phạm vi khảo sát**. Kết luận nên gắn với ngữ cảnh thay vì chỉ chép lại một con số.
+
 ### 3.8. Bảng chọn cách biểu diễn
 
 | Mục tiêu | Cách biểu diễn phù hợp |
