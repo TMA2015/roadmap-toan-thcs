@@ -1,5 +1,3 @@
-<link rel="stylesheet" href="../../assets/stylesheets/math-knowledge-composition-v1.css">
-
 # Chuyên đề 21 – Thống kê và thu thập dữ liệu
 
 > **Trạng thái:** Đã kiểm định nội dung học thuật; cấu trúc Roadmap chuẩn 11 mục.
@@ -14,6 +12,9 @@
 
 ## 🧭 1. Bản đồ kiến thức
 
+### Infographic tổng quan
+
+![Infographic tổng quan Chuyên đề 21 – Thống kê và thu thập dữ liệu](../../assets/infographics/21/21-01-tong-quan.svg)
 
 ```text
 THỐNG KÊ & THU THẬP DỮ LIỆU
@@ -233,20 +234,15 @@ Nếu muốn biểu diễn theo phần trăm:
 
 ### 3.4. Bảng tần số và bảng tần suất
 
-Quy trình lập bảng:
+Quy trình:
+1. liệt kê các giá trị khác nhau;
+2. đếm số lần xuất hiện;
+3. kiểm tra tổng tần số;
+4. nếu cần, tính tần suất.
 
-| **Bước 1** | **Bước 2** | **Bước 3** | **Bước 4 (khi cần)** |
-|:---|:---|:---|:---|
-| Liệt kê các giá trị khác nhau. | Đếm số lần xuất hiện. | Kiểm tra tổng tần số. | Tính tần suất. |
+### Infographic – Tần số và tần suất
 
-**Trình tự:** Bước 1 → Bước 2 → Bước 3 → Bước 4 (nếu cần).
-
-
-
-<div class="math-composition"><nav class="math-related-practice" aria-label="Bài tập liên quan đến nội dung vừa học">
-<span>Thực hành kiến thức này:</span>
-<a href="bai-tap/?mode=remediation&amp;focus=bang-tan-so">Luyện ngay →</a>
-</nav></div>
+![Infographic tần số và tần suất Chuyên đề 21](../../assets/infographics/21/21-02-tan-so-tan-suat.svg)
 
 ### 3.5. Biểu đồ cột
 
@@ -381,6 +377,9 @@ Khi đánh giá dữ liệu cần xem xét:
 
 ## 🧩 5. Các dạng bài cần nắm vững
 
+### Infographic – Biểu đồ, chất lượng dữ liệu và lỗi sai
+
+![Infographic biểu đồ, chất lượng dữ liệu và lỗi sai Chuyên đề 21](../../assets/infographics/21/21-03-bieu-do-chat-luong-loi-sai.svg)
 
 ### Dạng 1. Đọc bảng dữ liệu
 
