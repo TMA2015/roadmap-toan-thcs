@@ -89,7 +89,9 @@ with sync_playwright() as pw:
      target=heading.get_attribute("id")
      tabs.first.click()
      previous_hash=page.evaluate("location.hash")
-     before=page.evaluate("history.length")
+     # history.length is NOT a push counter: Back above leaves a forward
+     # entry, and pushState may replace that entry without changing length.
+     # Assert the actual Back/Forward journey instead of a false delta.
      page.evaluate("""id => {
        const link=document.createElement('a');
        link.href='#'+encodeURIComponent(id);
@@ -97,18 +99,12 @@ with sync_playwright() as pw:
      }""",target)
      assert page.evaluate("decodeURIComponent(location.hash.slice(1))")==target,(slug,zone,"source hash lost")
      assert tabs.nth(1).get_attribute("aria-selected")=="true",(slug,zone,"source tab not revealed")
-     after=page.evaluate("history.length")
-     current_hash=page.evaluate("location.hash")
-     dom=page.evaluate("""id => {
-       const n=document.getElementById(id), b=n?.closest('.tabbed-block'), c=b?.parentElement;
-       return {targetTag:n?.tagName,block:!!b,blockIndex:c?[...c.children].indexOf(b):-1,
-         labels:c?.closest('.tabbed-set')?.querySelectorAll('.tabbed-labels label').length||0,
-         clickedHash:location.hash,href:'#'+encodeURIComponent(id)};
-     }""",target)
-     assert after==before+1,(slug,zone,"source-anchor history delta",before,after,previous_hash,current_hash,dom)
      page.go_back(wait_until="domcontentloaded")
      assert page.evaluate("location.hash")==previous_hash,(slug,zone,"Back hash")
      assert tabs.first.get_attribute("aria-selected")=="true",(slug,zone,"Back tab")
+     page.go_forward(wait_until="domcontentloaded")
+     assert page.evaluate("decodeURIComponent(location.hash.slice(1))")==target,(slug,zone,"Forward source hash")
+     assert tabs.nth(1).get_attribute("aria-selected")=="true",(slug,zone,"Forward source tab")
      page.goto(BASE+slug+"/#"+target,wait_until="domcontentloaded")
      root=page.locator(".md-content__inner.math-knowledge-r19")
      root.wait_for(state="visible",timeout=15000)
