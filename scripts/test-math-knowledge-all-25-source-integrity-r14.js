@@ -23,6 +23,32 @@ const plans=[
  ["23-xac-suat","r3"],["24-bai-toan-thuc-te","r13"],
  ["25-tong-hop-on-thi-10","r13"]
 ];
+// Fast referential integrity: candidates may link only to real approved Written records.
+// Keep this in the existing 25-topic gate; no second academic review is required.
+const writtenBank=JSON.parse(fs.readFileSync(
+ path.join("docs","assets","data","written-exercises","written-exercise-library-v1.json"),"utf8"));
+const writtenById=new Map(writtenBank.exercises.map(x=>[x.exercise_id.toLowerCase(),x]));
+assert.equal(writtenById.size,writtenBank.exercises.length,"Duplicate canonical Written ID");
+let verifiedWrittenLinks=0;
+function checkWrittenLinks(candidate,topic){
+ const html=[...candidate.matchAll(/\\bhref\\s*=\\s*["']([^"']+)["']/g)].map(m=>m[1]);
+ const md=[...candidate.matchAll(/\\]\(([^)]+)\)/g)].map(m=>m[1]);
+ for(const raw of [...html,...md]){
+   const href=raw.replaceAll("&amp;","&");
+   if(!href.includes("luyen-tap/tu-luan/"))continue;
+   const hash=href.match(/#(wx\\d{2}-[a-z0-9-]+)/i);
+   if(!hash)continue; // A general Written-library link is legitimate.
+   const id=hash[1].toLowerCase();
+   const item=writtenById.get(id);
+   assert(item,"Preview has noncanonical Written link "+id+" in "+topic);
+   const expected="CT"+topic.slice(0,2);
+   assert.equal(item.topic_id,expected,"Written link is attached to wrong topic: "+id);
+   const filter=href.match(/[?&]topic=(CT\\d{2})/i);
+   if(filter)assert.equal(filter[1].toUpperCase(),expected,"Written topic filter mismatch for "+id);
+   assert.equal(item.academic_review?.status,"APPROVED","Written destination not academically approved: "+id);
+   verifiedWrittenLinks++;
+ }
+}
 function heads(s){
  return [...s.matchAll(/^#{2,5} ([^\n]+)$/gm)].map(x=>x[1]).filter(x=>!x.startsWith("Infographic"));
 }
@@ -62,6 +88,7 @@ for(const [topic,revision] of plans){
  }else{
    assert.deepEqual(candHeads,origHeads,"Full heading order changed in "+topic);
  }
+ checkWrittenLinks(candidate,topic);
  const src=imgs(source),dst=imgs(candidate);
  const kept=src.filter(x=>dst.includes(x)),hidden=src.filter(x=>!dst.includes(x));
  const added=dst.filter(x=>!src.includes(x));
@@ -73,5 +100,6 @@ for(const [topic,revision] of plans){
 }
 assert.deepEqual([sourceImages,keptImages,hiddenImages,newImages],[159,79,80,2],
   "R14 image-display inventory changed: re-audit infographic source before any release");
+console.log("PASS source-checked candidate Written deep links",verifiedWrittenLinks,"approved links");
 console.log("PASS R14 25 source candidates / CT02 semantic reflow / CT10 5+5 tabs");
 console.log(JSON.stringify({total:plans.length,sourceImages,keptImages,hiddenImages,newImages,receipt}));
