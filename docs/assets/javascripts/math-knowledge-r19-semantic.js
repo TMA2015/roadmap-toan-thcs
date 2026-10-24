@@ -41,7 +41,9 @@
     // Reveal their content-family tab before the browser tries to scroll.
     document.addEventListener("click",event=>{
       const a=event.target.closest?.('a[href^="#"]');
-      if(!a||event.defaultPrevented||event.button!==0||event.ctrlKey||event.metaKey||event.altKey||event.shiftKey)return;
+      // Material may preemptively mark same-page links defaultPrevented.
+      // We still need to reveal the source heading and own its one Back step.
+      if(!a||event.button!==0||event.ctrlKey||event.metaKey||event.altKey||event.shiftKey)return;
       const id=decodeURIComponent(a.getAttribute("href").slice(1));
       const node=document.getElementById(id);
       if(!node)return;
