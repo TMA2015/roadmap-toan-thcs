@@ -98,3 +98,17 @@ This validates **the exact corrections and interactions in the standalone previe
 - Full solution/figures/maths fact/source anchors first, then layout. No arbitrary compression of exam problem types; no claims about completion rates or SAT/ACT correlation.
 - Do not infer `Luyện ngay` is now standardized across the **entire** website. At this step, standardized in the **R6 CT10 entrance10 table** only. Other topics/buttons require a separate UI copy audit.
 - Tech release requires current GitHub Actions CI PASS **for the exact PR head SHA** + screenshot QA at desktop, iPad, phone, no original-route regression, and explicit Owner release authorization.
+
+
+## R19 execution contract — owner final approval 2026-10-24
+
+**Build until finished; do not replace the approved semantic design with generic navigation.** R4 CT10 is the overall layout reference; corrected render R3 is the large/clear typography and side-by-side math reference. One official learner page per topic, no preview chooser.
+
+1. Audit 25 originals individually. Build a table per topic: §3 concept subparts and pedagogical tab groups; §5 method/exam types and pedagogical tab groups; all infographic propositions vs source prose; unique diagrams/graphs to retain; contextual Practice skill and approved Written deep links; Grade 10 exam-type rows where actually present. CT01 map is special.
+2. Preserve topic intro/map/objectives visible before §3; independently tab §3 and §5. Tab count is semantic, never globally fixed to 5. Avoid vertical stacking when compact side-by-side formulas, condition/example comparison, short process arrows or tables convey the same meaning more clearly; do not flatten proof dependencies.
+3. Infographic = useful visual reasoning, not duplicated prose poster. Check outdated infographic statements against current canonical content; integrate valid unique facts into HTML/compact visual, then hide only genuinely redundant text-poster images; keep essential geometry, coordinate graphs, data charts, probability trees, and genuinely useful overview maps. Fix mismatched scale, fonts, captions and mobile legibility. Do not delete source SVGs as an automatic bulk cleanup.
+4. Ensure method/exam contextual `Luyện ngay` links use verified existing skill routes; approved canonical Written IDs only; missing targets are disabled/plain text, never fabricated. Readiness independent; do not touch question keys, bank, progress, auth or learner evidence.
+5. First verify authentic live-source pilots, then systematically apply to remaining 25 with parity/visual/browser QA on PC/tablet/phone, keyboard, back/hash, MathJax, dark, print, and diagrams. Academic claims or source SHA edits require explicit parity evidence. A CI PASS is not by itself owner visual acceptance. Release only after meeting agreed appearance and safety gates. Do not interrupt owner for routine continuation messages.
+6. Once THCS UI is complete and deployed, review lessons learned and plan THPT **content-first, diagrams-only-when-they-teach** workflow. THPT is not part of this PR.
+
+Reference uploads provided by owner: `math_topic_cd10_infographic_alignment_r4(2).html` and `math_knowledge_corrected_render_r3(2).html` (conversation attachments; not automatically repository assets).
