@@ -41,7 +41,7 @@
     // Reveal their content-family tab before the browser tries to scroll.
     document.addEventListener("click",event=>{
       const a=event.target.closest?.('a[href^="#"]');
-      if(!a)return;
+      if(!a||event.defaultPrevented||event.button!==0||event.ctrlKey||event.metaKey||event.altKey||event.shiftKey)return;
       const id=decodeURIComponent(a.getAttribute("href").slice(1));
       const node=document.getElementById(id);
       if(!node)return;
@@ -54,6 +54,13 @@
         const labels=content.closest(".tabbed-set")?.querySelectorAll(".tabbed-labels label");
         if(labels && idx>=0 && labels[idx]){
           openSourceTab(labels[idx]);
+          // Material's native tab labels can replace the URL hash instead of
+          // creating a source-heading Back step. Own this one anchor navigation:
+          // exactly one history entry, no extra #mk-* entry, then scroll.
+          event.preventDefault();
+          const sourceHash="#"+encodeURIComponent(id);
+          if(location.hash!==sourceHash)history.pushState({mkSource:id},"",sourceHash);
+          requestAnimationFrame(()=>node.scrollIntoView({block:"start"}));
         }
       }
     },true);
@@ -146,7 +153,14 @@
           next.addEventListener("click",()=>choose(i+1,true,true));
           footer.append(prev,counter,next);panels[i].appendChild(footer);footers.push(footer);
         });
-        function restore(){const hash=location.hash.match(new RegExp("^#"+key+"-(\\d+)$"));choose(hash?Math.max(0,Math.min(labels.length-1,+hash[1]-1)):inputs.findIndex(x=>x.checked)||0)}
+        function restore(){
+          const hash=location.hash.match(new RegExp("^#"+key+"-(\\d+)$"));
+          const nativeIndex=inputs.findIndex(input=>location.hash==="#"+input.id);
+          const currentIndex=inputs.findIndex(input=>input.checked);
+          const index=hash?Math.max(0,Math.min(labels.length-1,+hash[1]-1)):
+            nativeIndex>=0?nativeIndex:Math.max(0,currentIndex);
+          choose(index);
+        }
         window.addEventListener("popstate",restore);window.addEventListener("hashchange",restore);
         restore();
       }
