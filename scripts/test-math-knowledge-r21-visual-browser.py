@@ -54,6 +54,11 @@ with sync_playwright() as pw:
             assert active!=regular,(slug,device,"selected tab not visually distinguishable",active,regular)
             assert initial.evaluate("(el)=>parseFloat(getComputedStyle(el).minHeight)")>=44,(slug,device,"tab touch target")
             tabs.nth(1).click()
+            # Native tabs have a deliberately subtle 160ms CSS color transition.
+            # Assert radio state immediately; read *settled* visual color afterward.
+            radio=core.locator(".tabbed-set > input[type=radio]").nth(1)
+            assert radio.is_checked(),(slug,device,"new tab was not selected")
+            page.wait_for_timeout(250)
             changed=tabs.nth(1).evaluate("(el)=>getComputedStyle(el).color")
             assert changed==active,(slug,device,"selected color did not follow active tab",changed,active)
             h3=core.locator(".tabbed-block h3").first
