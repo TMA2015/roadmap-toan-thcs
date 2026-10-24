@@ -57,3 +57,15 @@ These changes are deliberate **URL-path rewrites**, not new problem keys, bank m
 - Avoid `git reset --hard` / force pushing `main`, changing canonical bank IDs or dropping old deep links.
 
 **Status phrase:** `RELEASE_CANDIDATE_R15_DRAFT / NONDEPLOYED / EXACT_HEAD_CI_PENDING / ACADEMIC_AND_VISUAL_APPROVAL_PENDING`.
+
+
+## R15 gate correction — Grade-9 immutable source locks (2026-10-24)
+
+**Blocking CI finding on first R15 attempt:** existing Grade-9 reconciliation requires **the complete canonical CT21 Markdown byte-for-byte** (git blob SHA `27b0938c5ee263a8c60dd73cf6d42d3d52d0d89a`). The audited Grade-9 inventory also source-locks CT23 through its reviewed Wave A mathematical example and historical source. Changing these `index.md` files for UI-only reasons would violate existing academic governance even when example content seems preserved.
+
+**Action taken:** On this separate Draft staging branch both CT21 and CT23 `index.md` files were **restored exactly to current main**. Their R3 design preview files remain untouched in Draft PR #574 for eventual source-aware review. **Only CT05 and CT14 remain proposed for actual final-route modification** in this R15 Draft PR. No academic protection assertion is weakened, deleted, or replaced.
+
+- Updated `scripts/test-math-knowledge-r15-final-route-built.js`: real final-path deep links and math images for CT05/14; explicit SHA checks that CT21/23 remain unchanged.
+- Updated `scripts/test-math-knowledge-r15-final-route-browser.py`: six scenarios (two topics × 1365/820/390) rather than twelve.
+- CT21/23 are **not** part of release wave 1 even after CT05/14 gain technical PASS; require separate approved academic source revision process or a demonstrably acceptable read-only rendering-layer design reviewed against these locks.
+- This appendix **supersedes** earlier R15 description of four topics as active release candidates. Two-topic academic-safe candidate is the only current scope. Original four-topic branch name remains as historical identifier; PR title/body specify active two-topic scope.
