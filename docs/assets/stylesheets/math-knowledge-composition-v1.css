@@ -75,3 +75,16 @@
   .md-typeset .math-composition .math-process-step{break-inside:avoid;}
   .md-typeset .math-composition .math-process-arrow{transform:none;}
 }
+
+.md-typeset .math-composition .math-related-practice{
+  border:1px solid var(--mc-line);border-radius:.7rem;background:var(--mc-soft);
+  padding:.7rem .85rem;display:flex;align-items:center;flex-wrap:wrap;gap:.55rem .7rem;
+  margin:.8rem 0 1.25rem;
+}
+.md-typeset .math-composition .math-related-practice>span{font-size:.85rem;font-weight:700;color:var(--mc-ink);}
+.md-typeset .math-composition .math-related-practice>a{
+  display:inline-flex;align-items:center;min-height:44px;padding:.42rem .7rem;
+  border:1px solid var(--mc-line);border-radius:.45rem;background:var(--mc-card);
+  font-size:.82rem;font-weight:700;text-decoration:none;overflow-wrap:anywhere;
+}
+.md-typeset .math-composition .math-related-practice>a:hover{border-color:var(--mc-accent);}
