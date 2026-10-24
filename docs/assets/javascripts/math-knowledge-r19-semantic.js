@@ -29,7 +29,13 @@
     // navigation must create exactly one Back step (and direct hashes none).
     function openSourceTab(label){
       revealingSourceHash=true;
-      try{label.click()}finally{revealingSourceHash=false}
+      try{
+        // Programmatic source-heading reveal must not synthesize a label click:
+        // MkDocs/native label listeners may add their own history entries.
+        // Use the semantic tab controller directly once initialized.
+        if(typeof label.__mathKnowledgeR19Reveal==="function")label.__mathKnowledgeR19Reveal();
+        else label.click(); // CT10 owns its separate, already-approved controller.
+      }finally{revealingSourceHash=false}
     }
     // Legacy source H3 anchors must remain usable from the Material right TOC.
     // Reveal their content-family tab before the browser tries to scroll.
@@ -67,7 +73,7 @@
     }
     window.addEventListener("hashchange",revealSourceHash);
     window.addEventListener("popstate",revealSourceHash);
-    revealSourceHash();
+    // Initial source hash is resolved AFTER R19 tab controllers are installed.
     const map=root.querySelector("#map .topic-learning-card-body");
     if(map&&!map.querySelector(".mk-map-source")){
       const code=map.querySelector("pre");
@@ -113,6 +119,7 @@
         }
         const pages=panels,footers=[];
         labels.forEach((l,i)=>{
+          l.__mathKnowledgeR19Reveal=()=>choose(i,false,false);
           l.setAttribute("role","tab");
           l.id=key+"-tab-"+(i+1);
           l.setAttribute("aria-controls",key+"-panel-"+(i+1));
@@ -144,6 +151,7 @@
         restore();
       }
     }
+    revealSourceHash();
     const last=root.querySelector("details.topic-learning-card#finish");
     if(last&&!root.querySelector(".mk-next-steps")){
       const box=document.createElement("section");box.className="mk-next-steps";
