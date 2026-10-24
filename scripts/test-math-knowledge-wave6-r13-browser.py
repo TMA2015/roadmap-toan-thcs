@@ -40,7 +40,7 @@ with sync_playwright() as pw:
                 assert body.get_by_text("Luyện ngay",exact=False).count()>=6,f"{topic}: CT10 exam actions missing"
             else:
                 nav=body.locator(".math-related-practice")
-                assert nav.count()==cfg["actions"],f"{topic}: practice panel count"
+                assert nav.count()==(1 if cfg["actions"] else 0),f"{topic}: practice panel count"
                 if cfg["actions"]:
                     assert nav.evaluate("(el)=>getComputedStyle(el).display")=="flex",f"{topic}: CSS not applied"
                     links=nav.locator("a")
