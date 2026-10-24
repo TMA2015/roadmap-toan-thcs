@@ -63,6 +63,13 @@
     });
     const route=()=>{
       const hash=location.hash.match(/^#ct10-(kt|db)-(\d+)$/);
+      const prior=history.state?.mkPriorTab;
+      // A source-heading Back may return to a hash belonging to the other
+      // independent group; restore the group's actual prior selection too.
+      if(prior && (prior.zone==="core"||prior.zone==="types") && Number.isInteger(prior.index)){
+        const saved=groups.find(g=>g.key===(prior.zone==="core"?"kt":"db"));
+        if(saved){replay=true;select(saved,prior.index,false,false,false);replay=false;}
+      }
       if(!hash)return;
       const group=groups.find(g=>g.key===hash[1]),n=Number(hash[2])-1;
       if(!group)return;
