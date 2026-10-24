@@ -167,7 +167,7 @@ def on_page_markdown(markdown, page, config, files):
         return _interactive_only_pilot(markdown, src_path)
     if src_path in _NEXT_PILOT_PRACTICE:
         return _interactive_only_next_pilot(src_path)
-    if re.fullmatch(r"kien-thuc/\\d\\d-[^/]+/index\\.md", src_path):
+    if re.fullmatch(r"kien-thuc/\d\d-[^/]+/index\.md", src_path):
         # MkDocs loads hooks by absolute filepath, without exposing the hooks package.
         # Load sibling editor by explicit file location (keeps source documents intact).
         import importlib.util
