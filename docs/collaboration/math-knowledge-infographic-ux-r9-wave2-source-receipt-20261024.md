@@ -30,7 +30,7 @@ Link discipline: each deep link opens a *real existing skill/approved Written it
 
 ## Technical contract and known risk
 
-1. Markdown preview files are extra child pages under `docs/kien-thuc/<topic>/preview-composition-r9.md`, not active `index.md`. Links to assets from their built URL require one more `../` than original source. Source SVG `![...](../../assets/)` references therefore changed to preview-specific `../../../assets/` (the original assets aren't edited).
+1. Markdown preview files are extra child pages under `docs/kien-thuc/<topic>/preview-composition-r9.md`, not active `index.md`. Links to assets from their built URL require one more `../` than original source. Markdown SVG references must stay **source-relative** as `../../assets/` in the topic folder. MkDocs resolves/rewrites them for the generated preview URL; using preview-URL-relative `../../../assets/` in Markdown caused strict-build warnings and was corrected. Raw HTML `<img src>` would require an independently resolved output URL. Original assets aren't edited.
 2. Page-specific stylesheet `math-knowledge-composition-v1.css` only on preview; no global CSS or theme mutation.
 3. New/converted formulae use Markdown MathJax-supported inline notation within tables rather than math commands written inside raw HTML that GitHub fails to typeset.
 4. New CI coverage in `scripts/test-math-knowledge-native-render-r3.js` verifies all **eight** full-source preview routes on real `mkdocs build --strict` HTML, including CSS files, image path existence, built math wrappers, retained SVGs, absence of known orphaned captions and existing learning-action labels.
