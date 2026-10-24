@@ -72,9 +72,9 @@ Sau khi hoàn thành chuyên đề, học sinh cần có thể:
 
 ### 3.1. Bình phương của một tổng
 
-$
+$$
 (A+B)^2=A^2+2AB+B^2
-$
+$$
 
 ![Hình vuông cạnh a cộng b được chia thành a², hai hình chữ nhật ab và b²](../../assets/infographics/05/05-05-mo-hinh-dien-tich-binh-phuong-r2.svg)
 
