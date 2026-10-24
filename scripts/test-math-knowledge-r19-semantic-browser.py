@@ -99,7 +99,13 @@ with sync_playwright() as pw:
      assert tabs.nth(1).get_attribute("aria-selected")=="true",(slug,zone,"source tab not revealed")
      after=page.evaluate("history.length")
      current_hash=page.evaluate("location.hash")
-     assert after==before+1,(slug,zone,"source-anchor history delta",before,after,previous_hash,current_hash)
+     dom=page.evaluate("""id => {
+       const n=document.getElementById(id), b=n?.closest('.tabbed-block'), c=b?.parentElement;
+       return {targetTag:n?.tagName,block:!!b,blockIndex:c?[...c.children].indexOf(b):-1,
+         labels:c?.closest('.tabbed-set')?.querySelectorAll('.tabbed-labels label').length||0,
+         clickedHash:location.hash,href:'#'+encodeURIComponent(id)};
+     }""",target)
+     assert after==before+1,(slug,zone,"source-anchor history delta",before,after,previous_hash,current_hash,dom)
      page.go_back(wait_until="domcontentloaded")
      assert page.evaluate("location.hash")==previous_hash,(slug,zone,"Back hash")
      assert tabs.first.get_attribute("aria-selected")=="true",(slug,zone,"Back tab")
