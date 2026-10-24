@@ -39,7 +39,9 @@
     }
     // Legacy source H3 anchors must remain usable from the Material right TOC.
     // Reveal their content-family tab before the browser tries to scroll.
-    document.addEventListener("click",event=>{
+    // Capture at window BEFORE Material's document-level click/hash handlers.
+    // Otherwise Material can replace the hash before our source-anchor handler.
+    window.addEventListener("click",event=>{
       const a=event.target.closest?.('a[href^="#"]');
       // Material may preemptively mark same-page links defaultPrevented.
       // We still need to reveal the source heading and own its one Back step.
@@ -55,13 +57,15 @@
         const idx=[...content.children].indexOf(block);
         const labels=content.closest(".tabbed-set")?.querySelectorAll(".tabbed-labels label");
         if(labels && idx>=0 && labels[idx]){
-          openSourceTab(labels[idx]);
-          // Material's native tab labels can replace the URL hash instead of
-          // creating a source-heading Back step. Own this one anchor navigation:
-          // exactly one history entry, no extra #mk-* entry, then scroll.
+          const previousHash=location.hash;
           event.preventDefault();
+          event.stopPropagation(); // source heading navigation is ours, not Material's
+          openSourceTab(labels[idx]);
           const sourceHash="#"+encodeURIComponent(id);
-          if(location.hash!==sourceHash)history.pushState({mkSource:id},"",sourceHash);
+          // Preserve the real previous tab in Back history even if Material
+          // synchronously replaced its native #__tabbed_* hash on change.
+          if(location.hash!==previousHash)history.replaceState(history.state,"",previousHash);
+          if(previousHash!==sourceHash)history.pushState({mkSource:id},"",sourceHash);
           requestAnimationFrame(()=>node.scrollIntoView({block:"start"}));
         }
       }
