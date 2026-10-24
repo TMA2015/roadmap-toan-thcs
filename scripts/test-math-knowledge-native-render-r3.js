@@ -73,7 +73,10 @@ for(const p of plans){
  }
  if(p.version==="r13"){
    const actualNavCount=(html.match(/class=["']math-related-practice["']/g)||[]).length;
-   assert(actualNavCount === (p.actions||0),"R13 practice links wrong: "+p.topic);
+   const expectedPanels=p.actions>0?1:0;
+   assert(actualNavCount===expectedPanels,"R13 practice panel count wrong: "+p.topic);
+   const actualActions=(html.match(/<a[^>]+href=["'][^"']+["'][^>]*>(?:Luyện ngay|Làm tự luận)[^<]*<\/a>/g)||[]).length;
+   assert(actualActions >= p.actions,"R13 practice action links missing: "+p.topic);
    if(p.actions>0)assert(html.includes("Luyện ngay"),"R13 missing Practice CTA "+p.topic);
    if(p.actions===2)assert(html.includes("Làm tự luận"),"R13 missing approved Written CTA "+p.topic);
  }
