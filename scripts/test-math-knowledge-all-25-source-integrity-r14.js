@@ -89,6 +89,32 @@ for(const [topic,revision] of plans){
    assert.deepEqual(candHeads,origHeads,"Full heading order changed in "+topic);
  }
  checkWrittenLinks(candidate,topic);
+ // R23 source-to-HTML parity: two additional hidden text-heavy posters contain
+ // useful *questions / modelling categories* not represented explicitly before.
+ // Preserve those ideas as compact native text, not another poster image.
+ if(topic==="07-phan-thuc-dai-so"){
+   const svg=fs.readFileSync(path.join("docs","assets","infographics","07",
+     "07-04-dang-bai-loi-sai.svg"),"utf8");
+   assert(svg.includes("Em có thể giải thích vì sao một giá trị bị loại"),
+     "CT07 source reflection prompts changed; re-audit");
+   assert(candidate.includes("**Tự đối chiếu tư duy trước khi luyện tập**"),
+     "CT07 useful old-poster reflection prompts missing");
+   assert(candidate.includes("**vẫn bị loại sau khi rút gọn**") &&
+     candidate.includes("**rút gọn trước**"),
+     "CT07 lost original-domain and method-choice prompts");
+ }
+ if(topic==="09-he-phuong-trinh"){
+   const svg=fs.readFileSync(path.join("docs","assets","infographics","09",
+     "09-03-bai-toan-thuc-te-loi-sai.svg"),"utf8");
+   assert(svg.includes("Số học, tuổi, mua bán, phần trăm") &&
+     svg.includes("Hình học và hai đại lượng"),
+     "CT09 original problem-family poster changed; re-audit");
+   assert(candidate.includes("**số học**, **tuổi** và **hình học**"),
+     "CT09 modelling families from hidden poster missing");
+   assert(candidate.includes("**tại cùng một thời điểm**") &&
+     candidate.includes("**cùng đơn vị**"),
+     "CT09 age/geometry interpretation cues missing");
+ }
  const src=imgs(source),dst=imgs(candidate);
  const kept=src.filter(x=>dst.includes(x)),hidden=src.filter(x=>!dst.includes(x));
  const added=dst.filter(x=>!src.includes(x));
