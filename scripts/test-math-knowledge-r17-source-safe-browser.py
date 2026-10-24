@@ -31,6 +31,14 @@ with sync_playwright() as pw:
             assert response and response.status==200,(topic,"original route unavailable")
             content=page.locator(".md-content__inner.md-typeset")
             content.wait_for(state="visible",timeout=12000)
+            # The existing learner UI contains 11 native <details> lesson accordions.
+            # CT05's two-direction comparison lives in section 4 (initially collapsed).
+            lesson_section="links" if cfg["kind"]=="compare" else "core"
+            section=page.locator("details.topic-learning-card#"+lesson_section)
+            section.locator("summary").wait_for(state="visible",timeout=12000)
+            if section.get_attribute("open") is None:
+                section.locator("summary").click()
+            assert section.get_attribute("open") is not None,(topic,"lesson section failed to open")
             selector=".mk-r17-compare" if cfg["kind"]=="compare" else ".mk-r17-logic-pairs"
             card=page.locator(selector)
             card.wait_for(state="visible",timeout=12000)
