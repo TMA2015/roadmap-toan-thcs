@@ -431,6 +431,9 @@ jobs:
 
       - name: Validate native Knowledge previews (math, visuals, real asset links)
         run: node scripts/test-math-knowledge-native-render-r3.js
+      - name: Validate Entrance10 exact practice and Written links (R20)
+        run: node scripts/test-math-knowledge-entrance10-r20.js
+
       - name: Validate CĐ25 built display math
         run: node scripts/test-topic25-math-render.js --built
       - name: Validate built topic navigation
@@ -453,6 +456,7 @@ jobs:
           python scripts/test-math-knowledge-p2-ct13-14-responsive-browser-20261019.py
           python scripts/test-math-knowledge-r17-source-safe-browser.py
           python scripts/test-math-knowledge-r19-semantic-browser.py
+          python scripts/test-math-knowledge-entrance10-r20-browser.py
           python scripts/test-practice-interactive-only-wave6-browser.py
           python scripts/capture-ui-previews.py
           python scripts/test-topic25-student-browser.py
