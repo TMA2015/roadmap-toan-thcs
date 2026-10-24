@@ -1,5 +1,3 @@
-<link rel="stylesheet" href="../../assets/stylesheets/math-knowledge-composition-v1.css">
-
 # Chuyên đề 14 – Tam giác
 
 
@@ -16,7 +14,9 @@
 
 ## 🧭 1. Bản đồ kiến thức
 
-> **Bản đồ dưới đây:** cho thấy mạch kiến thức từ cạnh, góc đến các tính chất và chứng minh bằng nhau.
+![Infographic tổng quan Chuyên đề 14](../../assets/infographics/14/14-01-tong-quan.svg)
+
+> **Xem nhanh:** dùng infographic để nhìn toàn cảnh các mạch góc, cạnh, tam giác đặc biệt và hai tam giác bằng nhau trước khi học chi tiết.
 
 ```text
 TAM GIÁC
@@ -87,17 +87,23 @@ Sau khi hoàn thành chuyên đề, học sinh cần:
 
 ## 📖 3. Kiến thức cốt lõi
 
-Kiến thức phần này gồm tổng góc, quan hệ cạnh–góc đối diện và điều kiện tồn tại tam giác; ví dụ và hình minh họa nằm đúng tại nội dung cần học.
+![Infographic góc, cạnh và bất đẳng thức tam giác](../../assets/infographics/14/14-02-goc-canh-bat-dang-thuc.svg)
+
+> Infographic này tóm tắt ba công cụ nền: tổng góc, quan hệ cạnh–góc đối diện và điều kiện tồn tại tam giác.
 
 ### 3.1. Tam giác và ký hiệu
 
-Tam giác `ABC` được tạo bởi ba điểm `A, B, C` không thẳng hàng. Ba cạnh và ba góc có thể nhìn song song:
+Tam giác `ABC` được tạo bởi ba điểm `A, B, C` không thẳng hàng và ba đoạn thẳng:
 
-| **Ba cạnh của tam giác** | **Ba góc của tam giác** |
-|:---|:---|
-| $AB,\ BC,\ CA$ | $\angle A=\angle BAC$ |
-| | $\angle B=\angle ABC$ |
-| | $\angle C=\angle ACB$ |
+- `AB`
+- `BC`
+- `CA`
+
+Ba góc tương ứng là:
+
+- `∠A = ∠BAC`
+- `∠B = ∠ABC`
+- `∠C = ∠ACB`
 
 Chu vi:
 
@@ -172,13 +178,6 @@ Ngược lại, nếu `BC > AC` thì `∠A > ∠B`.
 
 ---
 
-
-<div class="math-composition"><nav class="math-related-practice" aria-label="Bài tập liên quan đến nội dung vừa học">
-<span>Thực hành kiến thức này:</span>
-<a href="bai-tap/?mode=remediation&amp;focus=so-sanh-canh-goc">Luyện ngay →</a>
-<a href="../../luyen-tap/tu-luan/?topic=CT14#wx14-tri-003">Làm tự luận · WX14-TRI-003 →</a>
-</nav></div>
-
 ### 3.6. Bất đẳng thức tam giác
 
 Trong một tam giác, tổng độ dài hai cạnh bất kỳ lớn hơn cạnh còn lại:
@@ -203,7 +202,7 @@ Ba đoạn `3 cm, 4 cm, 8 cm` không lập thành tam giác vì:
 
 ### 3.6A. Đường vuông góc, đường xiên và đường trung trực
 
-Từ điểm $A$ ngoài đường thẳng $d$, nếu $AH\perp d$ và $B\in d, B\ne H$, thì:
+Từ điểm \(A\) ngoài đường thẳng \(d\), nếu \(AH\perp d\) và \(B\in d, B\ne H\), thì:
 
 \[
 AH<AB.
@@ -211,16 +210,18 @@ AH<AB.
 
 Nói cách khác, đoạn vuông góc là đoạn ngắn nhất từ một điểm đến một đường thẳng.
 
-**Đường trung trực** của đoạn $AB$ là đường thẳng vuông góc với $AB$ tại trung điểm của $AB$.
+**Đường trung trực** của đoạn \(AB\) là đường thẳng vuông góc với \(AB\) tại trung điểm của \(AB\).
 
 Tính chất hai chiều:
 
-- nếu $P$ nằm trên trung trực $AB$ thì $PA=PB$;
-- nếu $PA=PB$ thì $P$ nằm trên trung trực $AB$.
+- nếu \(P\) nằm trên trung trực \(AB\) thì \(PA=PB\);
+- nếu \(PA=PB\) thì \(P\) nằm trên trung trực \(AB\).
 
 > Đây là Core lớp 7; không được thay bằng việc nhìn hình thấy hai đoạn “có vẻ bằng nhau”.
 
-**Ghi nhớ khi nhận dạng:** phân biệt tam giác cân, đều, vuông và hai chiều của định lý Pythagore.
+![Infographic tam giác đặc biệt và Pythagore](../../assets/infographics/14/14-03-tam-giac-dac-biet-pythagore.svg)
+
+> Dùng bản này để phân biệt nhanh tam giác cân, đều, vuông và hai chiều của định lý Pythagore.
 
 ### 3.7. Tam giác đặc biệt
 
@@ -303,6 +304,8 @@ Tam giác có các cạnh `3, 4, 5` là tam giác vuông vì:
 
 ---
 
+![Infographic hai tam giác bằng nhau](../../assets/infographics/14/14-04-hai-tam-giac-bang-nhau.svg)
+
 > Trước khi chứng minh, hãy xác định cặp tam giác chứa hai yếu tố cần so sánh rồi chọn đúng trường hợp bằng nhau.
 
 ### 3.8. Hai tam giác bằng nhau
@@ -323,7 +326,7 @@ thì thứ tự chữ cái phải thể hiện đúng sự tương ứng:
 
 ### 3.8A. Thứ tự đỉnh tương ứng
 
-Khi viết $\triangle ABC=\triangle DEF$, thứ tự chữ phải biểu diễn đúng:
+Khi viết \(\triangle ABC=\triangle DEF\), thứ tự chữ phải biểu diễn đúng:
 
 \[
 A\leftrightarrow D,\quad B\leftrightarrow E,\quad C\leftrightarrow F.
