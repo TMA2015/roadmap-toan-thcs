@@ -500,12 +500,3 @@ jobs:
           python scripts/test-math-w2b-rich-practice-wave1-browser.py
           python scripts/test-a25-learner-navigation-r1-browser.py
           python scripts/test-class-mixed-g6-preview-browser.py
-
-      - name: Publish R9 responsive screenshots
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: math-r9-knowledge-preview-screenshots
-          path: previews/math-r9-*.png
-          retention-days: 7
-          if-no-files-found: warn
