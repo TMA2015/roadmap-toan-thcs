@@ -24,7 +24,7 @@
     }
     // Legacy source H3 anchors must remain usable from the Material right TOC.
     // Reveal their content-family tab before the browser tries to scroll.
-    root.addEventListener("click",event=>{
+    document.addEventListener("click",event=>{
       const a=event.target.closest?.('a[href^="#"]');
       if(!a)return;
       const id=decodeURIComponent(a.getAttribute("href").slice(1));
