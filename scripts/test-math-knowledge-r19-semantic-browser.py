@@ -57,25 +57,23 @@ with sync_playwright() as pw:
    if db.count()>1:
     db.nth(1).click()
     assert db.nth(1).get_attribute("aria-selected")=="true",(slug,"switch failed")
-    if True:
-     # Clicking an already selected deep link must not add a phantom Back entry (including CT10).
-     before=page.evaluate("history.length")
-     db.nth(1).click()
-     assert page.evaluate("history.length")==before,(slug,device,"duplicate tab history")
-    if True:
-     # Both CT10 and the other ARIA label-tabs need Enter/Space/arrow keys.
-     db.first.focus()
-     page.keyboard.press("Enter")
-     assert db.first.get_attribute("aria-selected")=="true",(slug,device,"Enter did not select tab")
-     db.nth(1).focus()
-     page.keyboard.press("Space")
-     assert db.nth(1).get_attribute("aria-selected")=="true",(slug,device,"Space did not select tab")
-     page.keyboard.press("Home")
-     assert db.first.get_attribute("aria-selected")=="true",(slug,device,"Home did not select tab")
-     page.keyboard.press("End")
-     assert db.last.get_attribute("aria-selected")=="true",(slug,device,"End did not select tab")
-     page.go_back(wait_until="domcontentloaded")
-     assert db.first.get_attribute("aria-selected")=="true",(slug,device,"Back did not restore tab")
+    # Clicking an already selected deep link must not add a phantom Back entry (including CT10).
+    before=page.evaluate("history.length")
+    db.nth(1).click()
+    assert page.evaluate("history.length")==before,(slug,device,"duplicate tab history")
+    # Both CT10 and the other ARIA label-tabs need Enter/Space/arrow keys.
+    db.first.focus()
+    page.keyboard.press("Enter")
+    assert db.first.get_attribute("aria-selected")=="true",(slug,device,"Enter did not select tab")
+    db.nth(1).focus()
+    page.keyboard.press("Space")
+    assert db.nth(1).get_attribute("aria-selected")=="true",(slug,device,"Space did not select tab")
+    page.keyboard.press("Home")
+    assert db.first.get_attribute("aria-selected")=="true",(slug,device,"Home did not select tab")
+    page.keyboard.press("End")
+    assert db.last.get_attribute("aria-selected")=="true",(slug,device,"End did not select tab")
+    page.go_back(wait_until="domcontentloaded")
+    assert db.first.get_attribute("aria-selected")=="true",(slug,device,"Back did not restore tab")
     db.first.click()
    # A legacy source-heading anchor is one browser-history step, not two:
    # the tab reveal must not silently push a separate #mk-* entry.
