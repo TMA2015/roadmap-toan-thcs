@@ -137,7 +137,7 @@ Vì vậy:
 
 #### Trực quan – số nghiệm của hệ
 
-![Ba trường hợp hình học của hệ phương trình: cắt nhau, song song và trùng nhau](../../../assets/infographics/09/09-04-y-nghia-hinh-hoc-he.svg)
+![Ba trường hợp hình học của hệ phương trình: cắt nhau, song song và trùng nhau](../../assets/infographics/09/09-04-y-nghia-hinh-hoc-he.svg)
 
 Có thể đọc hình theo một quy tắc duy nhất:
 
