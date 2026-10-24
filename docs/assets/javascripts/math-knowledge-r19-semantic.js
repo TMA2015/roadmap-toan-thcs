@@ -22,6 +22,13 @@
     if(nav){
       nav.innerHTML='<a href="#map">Bản đồ</a><a href="#goals">Mục tiêu</a><a href="#core">Kiến thức</a><a href="#types">Dạng bài</a><a href="#practice">Luyện tập</a><a href="#check">Readiness</a>';
     }
+    let revealingSourceHash=false;
+    // A source heading is an anchor, not a new tab-history entry. Its native
+    // navigation must create exactly one Back step (and direct hashes none).
+    function openSourceTab(label){
+      revealingSourceHash=true;
+      try{label.click()}finally{revealingSourceHash=false}
+    }
     // Legacy source H3 anchors must remain usable from the Material right TOC.
     // Reveal their content-family tab before the browser tries to scroll.
     document.addEventListener("click",event=>{
@@ -38,8 +45,7 @@
         const idx=[...content.children].indexOf(block);
         const labels=content.closest(".tabbed-set")?.querySelectorAll(".tabbed-labels label");
         if(labels && idx>=0 && labels[idx]){
-          labels[idx].click();
-          history.replaceState(null,"","#"+encodeURIComponent(id));
+          openSourceTab(labels[idx]);
         }
       }
     },true);
@@ -54,8 +60,7 @@
       if(block){
         const idx=[...block.parentElement.children].indexOf(block);
         const label=block.closest(".tabbed-set")?.querySelectorAll(".tabbed-labels label")[idx];
-        if(label)label.click();
-        history.replaceState(null,"","#"+encodeURIComponent(hash));
+        if(label)openSourceTab(label);
       }
     }
     window.addEventListener("hashchange",revealSourceHash);
@@ -108,7 +113,7 @@
           panels[i].setAttribute("role","tabpanel");
           panels[i].setAttribute("aria-labelledby",l.id);
           panels[i].tabIndex=0;
-          l.addEventListener("click",()=>choose(i,true));
+          l.addEventListener("click",()=>choose(i,!revealingSourceHash));
           l.addEventListener("keydown",e=>{
             // Native <label> elements do not reliably activate with Enter/Space
             // when exposed as ARIA tabs (notably with external keyboards on iPad).
