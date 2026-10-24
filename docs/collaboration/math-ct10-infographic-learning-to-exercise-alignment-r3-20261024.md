@@ -4,6 +4,9 @@
 **Status:** SOURCE_INVENTORY_COMPLETE_FOR_CT10 / EDITORIAL_POLICY_PROPOSAL / ACADEMIC_REVIEW_NOT_COMPLETE / NO SITE DEPLOYMENT.  
 **Target:** Inspect and reconcile learning diagrams **before** rolling out the new tab UI across the curriculum. Maintain current three interactive learning roles and one canonical Written Library.
 
+
+> **R4 correction 2026-10-24 — IMPORTANT (supersedes earlier “local exercises” availability wording):** The 13 `10-WR`/`10-ENT`/`10-CH` examples named below are **present in legacy Markdown source only**, but `hooks/topic_markdown_fixes.py` replaces `docs/kien-thuc/10-ham-so-do-thi/bai-tap.md` with the interactive-only Practice player in the deployed build. They are **NOT live learner-visible named exercises** and must **never be linked as active 10-WR-xx/10-ENT-xx/10-CH-xx tasks**. Treat the type-to-legacy list below as archival coverage evidence, **not accepted live destination mapping**. Active verified destinations are the 120-question interactive Practice source with its actual skill tags and the three canonical Written IDs `WX10-FUN-001/002/003`. The current live linked-type gaps requiring a representative independent exercise are **#3, #9, #10, #11** (not merely three). R4 candidate docs separately propose 3 parameter items plus one line–parabola item; all await source review and are NOT released. 
+
 ## I. Owner-observed UX problems (confirmed examples)
 
 1. Screenshots 1–3: old text-heavy “infographic” recapitulates the same definition, value table and membership rule immediately followed by HTML theory. This increases vertical length and risks divergence.
