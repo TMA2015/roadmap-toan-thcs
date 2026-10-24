@@ -120,7 +120,7 @@ def transform(markdown, src_path):
     raw=re.sub(r"(?m)^> \*\*BẢN THỬ[^\n]*\n","",raw)
     # R16 candidate's last learner CTA is in an HTML block unsupported by
     # native Markdown. Unwrap only that exact block; preserve all Markdown links.
-    raw=re.sub(r'(?s)<div class="topic-workspace-actions" markdown>\s*(.*?)\s*</div>\s*$',
+    raw=re.sub(r'(?s)<div class="topic-workspace-actions" markdown>\s*(.*?)\s*</div>',
                lambda m: "\n\n"+m.group(1).strip()+"\n",raw)
     if version=="tabs-r6":
         return raw
