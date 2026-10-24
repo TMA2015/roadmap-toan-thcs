@@ -9,7 +9,6 @@ CHROME=shutil.which("google-chrome") or shutil.which("chromium")
 if not CHROME: raise RuntimeError("Chrome/Chromium unavailable")
 
 TOPICS={
- "05-7-hang-dang-thuc":{"diagram":"05-05-mo-hinh-dien-tich-binh-phuong-r2.svg","written":"wx05-idn-001","skill":"nhan-dang-hdt"},
  "14-tam-giac":{"diagram":"14-pythagore-v1.svg","written":"wx14-tri-003","skill":"so-sanh-canh-goc"}
 }
 SIZES={"desktop":(1365,900),"tablet-sim":(820,1180),"mobile":(390,844)}
