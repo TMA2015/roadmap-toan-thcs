@@ -65,6 +65,34 @@ with sync_playwright() as pw:
      page.go_back(wait_until="domcontentloaded")
      assert db.first.get_attribute("aria-selected")=="true",(slug,device,"Back did not restore tab")
     db.first.click()
+   # A legacy source-heading anchor is one browser-history step, not two:
+   # the tab reveal must not silently push a separate #mk-* entry.
+   if device=="desktop" and slug in ("05-7-hang-dang-thuc","14-tam-giac"):
+    for zone in ("core","types"):
+     group=root.locator("details.topic-learning-card#"+zone)
+     tabs=group.locator(".tabbed-set .tabbed-labels label")
+     if tabs.count()<2:continue
+     heading=group.locator(".tabbed-set .tabbed-content > .tabbed-block").nth(1).locator("h3[id],h4[id]").first
+     assert heading.count()==1,(slug,zone,"source-heading anchor missing")
+     target=heading.get_attribute("id")
+     tabs.first.click()
+     previous_hash=page.evaluate("location.hash")
+     before=page.evaluate("history.length")
+     page.evaluate("""id => {
+       const link=document.createElement('a');
+       link.href='#'+encodeURIComponent(id);
+       document.body.appendChild(link);link.click();link.remove();
+     }""",target)
+     assert page.evaluate("decodeURIComponent(location.hash.slice(1))")==target,(slug,zone,"source hash lost")
+     assert tabs.nth(1).get_attribute("aria-selected")=="true",(slug,zone,"source tab not revealed")
+     assert page.evaluate("history.length")==before+1,(slug,zone,"phantom Back entry")
+     page.go_back(wait_until="domcontentloaded")
+     assert page.evaluate("location.hash")==previous_hash,(slug,zone,"Back hash")
+     assert tabs.first.get_attribute("aria-selected")=="true",(slug,zone,"Back tab")
+     page.goto(BASE+slug+"/#"+target,wait_until="domcontentloaded")
+     root=page.locator(".md-content__inner.math-knowledge-r19")
+     root.wait_for(state="visible",timeout=15000)
+     assert root.locator("details#"+zone+" .tabbed-labels label").nth(1).get_attribute("aria-selected")=="true",(slug,zone,"direct source hash")
    page.close()
   ctx.close()
   print("PASS R19 Knowledge semantic tabs",device,len(items),flush=True)
