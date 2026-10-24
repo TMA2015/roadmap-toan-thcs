@@ -310,6 +310,13 @@ Khi một thí nghiệm ổn định được lặp lại nhiều lần, tần s
 
 > Hình trên nhấn mạnh một điểm quan trọng: xác suất thực nghiệm **không cần tiến về 0,5 theo một chiều**. Nó có thể lúc cao hơn, lúc thấp hơn; điều đáng chú ý là khi số lần thử lớn, mức dao động thường nhỏ hơn và giá trị có xu hướng ổn định quanh xác suất của mô hình.
 
+
+<div class="math-composition"><nav class="math-related-practice" aria-label="Bài tập liên quan đến nội dung vừa học">
+<span>Thực hành kiến thức này:</span>
+<a href="../bai-tap/?mode=remediation&amp;focus=xac-suat-thuc-nghiem">Luyện ngay →</a>
+<a href="../../../luyen-tap/tu-luan/?topic=CT23#wx23-pro-001">Làm tự luận · WX23-PRO-001 →</a>
+</nav></div>
+
 ### 3.5. Biến cố đối
 
 Nếu `A` là một biến cố thì biến cố đối của `A` là biến cố “A không xảy ra”.
