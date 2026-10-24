@@ -105,7 +105,7 @@ def section(markdown, num, groups, topic, kind):
     return markdown[:start.start()]+rendered+markdown[end:]
 
 def transform(markdown, src_path):
-    if not re.fullmatch(r"kien-thuc/\\d\\d-[^/]+/index\\.md", src_path):return markdown
+    if not re.fullmatch(r"kien-thuc/\d\d-[^/]+/index\.md", src_path):return markdown
     slug=src_path.split("/")[1]
     if slug not in PLANS:return markdown
     version,kt,methods=PLANS[slug]
