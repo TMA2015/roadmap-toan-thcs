@@ -57,13 +57,13 @@ with sync_playwright() as pw:
    if db.count()>1:
     db.nth(1).click()
     assert db.nth(1).get_attribute("aria-selected")=="true",(slug,"switch failed")
-    if slug!="10-ham-so-do-thi":
-     # Clicking an already selected deep link must not add a phantom Back entry.
+    if True:
+     # Clicking an already selected deep link must not add a phantom Back entry (including CT10).
      before=page.evaluate("history.length")
      db.nth(1).click()
      assert page.evaluate("history.length")==before,(slug,device,"duplicate tab history")
-    if slug!="10-ham-so-do-thi":
-     # ARIA tabs are labels, so keyboard Enter/Space must activate them explicitly.
+    if True:
+     # Both CT10 and the other ARIA label-tabs need Enter/Space/arrow keys.
      db.first.focus()
      page.keyboard.press("Enter")
      assert db.first.get_attribute("aria-selected")=="true",(slug,device,"Enter did not select tab")
@@ -79,7 +79,7 @@ with sync_playwright() as pw:
     db.first.click()
    # A legacy source-heading anchor is one browser-history step, not two:
    # the tab reveal must not silently push a separate #mk-* entry.
-   if device=="desktop" and slug in ("05-7-hang-dang-thuc","14-tam-giac"):
+   if device=="desktop" and slug in ("05-7-hang-dang-thuc","10-ham-so-do-thi","14-tam-giac"):
     for zone in ("core","types"):
      group=root.locator("details.topic-learning-card#"+zone)
      tabs=group.locator(".tabbed-set .tabbed-labels label")
@@ -109,7 +109,7 @@ with sync_playwright() as pw:
      root=page.locator(".md-content__inner.math-knowledge-r19")
      root.wait_for(state="visible",timeout=15000)
      assert root.locator("details#"+zone+" .tabbed-labels label").nth(1).get_attribute("aria-selected")=="true",(slug,zone,"direct source hash")
-   if device=="desktop" and slug in ("05-7-hang-dang-thuc","14-tam-giac","21-thong-ke","23-xac-suat"):
+   if device=="desktop" and slug in ("05-7-hang-dang-thuc","10-ham-so-do-thi","14-tam-giac","21-thong-ke","23-xac-suat"):
     # Printing must reveal every semantic tab, including panels hidden on screen.
     page.emulate_media(media="print")
     assert page.evaluate("""() => [...document.querySelectorAll('.math-knowledge-r19 #core .tabbed-block, .math-knowledge-r19 #types .tabbed-block')].every(el => getComputedStyle(el).display !== 'none' && getComputedStyle(el).visibility === 'visible')"""),(slug,"print hid a tab")

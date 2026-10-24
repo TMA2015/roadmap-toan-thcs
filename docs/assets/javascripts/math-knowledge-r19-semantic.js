@@ -104,7 +104,8 @@
       }
     }
     // CT10's proven two native 5-tab groups already own their pager/deeplinks.
-    if(!root.querySelector("#ct10-pilot-r4")){
+    const ct10Pilot=root.querySelector("#ct10-pilot-r4");
+    if(!ct10Pilot){
       for(const group of [core,types]){
         const set=group.querySelector(".tabbed-set");
         if(!set)continue; // CT04's honest short table need not fabricate methods.
@@ -171,7 +172,12 @@
         restore();
       }
     }
-    revealSourceHash();
+    if(ct10Pilot){
+      // CT10 owns its controller. Wait for its deferred initialization before
+      // revealing direct legacy heading hashes; never synthesize a label click.
+      window.addEventListener("math-ct10-tabs-ready",revealSourceHash,{once:true});
+      if(core.querySelector(".tabbed-labels label")?.__mathKnowledgeR19Reveal)revealSourceHash();
+    }else revealSourceHash();
     const last=root.querySelector("details.topic-learning-card#finish");
     if(last&&!root.querySelector(".mk-next-steps")){
       const box=document.createElement("section");box.className="mk-next-steps";
