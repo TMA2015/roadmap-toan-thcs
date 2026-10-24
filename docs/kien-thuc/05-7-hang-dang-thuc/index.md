@@ -1,5 +1,3 @@
-<link rel="stylesheet" href="../../assets/stylesheets/math-knowledge-composition-v1.css">
-
 # Chuyên đề 05 – 7 Hằng đẳng thức đáng nhớ
 
 
@@ -16,6 +14,9 @@
 
 ## 🧭 1. Bản đồ kiến thức
 
+### Infographic 1 – Tổng quan chuyên đề
+
+![Infographic tổng quan Chuyên đề 05 – 7 Hằng đẳng thức đáng nhớ](../../assets/infographics/05/05-01-tong-quan.svg)
 
 ```text
 7 HẰNG ĐẲNG THỨC ĐÁNG NHỚ
@@ -67,16 +68,15 @@ Sau khi hoàn thành chuyên đề, học sinh cần có thể:
 
 > **Ghi nhớ:** hằng đẳng thức là đẳng thức đúng với mọi giá trị của các biến làm cho hai vế có nghĩa. Trong các công thức dưới đây, `A` và `B` có thể là số, đơn thức hoặc biểu thức đại số.
 
+### Infographic 2 – Nhóm bình phương
+
+![Infographic nhóm bình phương](../../assets/infographics/05/05-02-nhom-binh-phuong.svg)
 
 ### 3.1. Bình phương của một tổng
 
-$
+$$
 (A+B)^2=A^2+2AB+B^2
-$
-
-![Hình vuông cạnh a cộng b được chia thành a², hai hình chữ nhật ab và b²](../../assets/infographics/05/05-05-mo-hinh-dien-tich-binh-phuong-r2.svg)
-
-*Hình diện tích giải thích hai phần $ab$ khi $a,b>0$. Công thức đại số vẫn đúng với mọi số thực.*
+$$
 
 **Cách đọc:** bình phương biểu thức thứ nhất + hai lần tích hai biểu thức + bình phương biểu thức thứ hai.
 
@@ -126,6 +126,9 @@ $$
 
 ---
 
+### Infographic 3 – Nhóm lập phương
+
+![Infographic nhóm lập phương](../../assets/infographics/05/05-03-nhom-lap-phuong.svg)
 
 ### 3.4. Lập phương của một tổng
 
@@ -249,19 +252,19 @@ $$
 
 ### 4.2. Hằng đẳng thức dùng theo hai chiều
 
-Cùng một hằng đẳng thức được dùng theo **hai chiều**. Khi khai triển, ta chuyển từ dạng tích sang tổng; khi nhận dạng, ta làm theo chiều ngược lại.
+**Chiều khai triển:**
 
-| **Chiều khai triển →** | **← Chiều nhận dạng / phân tích** |
-|:---:|:---:|
-| $(A+B)^2\rightarrow A^2+2AB+B^2$ | $A^2+2AB+B^2\rightarrow(A+B)^2$ |
+```text
+(A + B)² → A² + 2AB + B²
+```
 
-**Điểm cần nhớ:** Học sinh cần thành thạo cả hai chiều; chỉ biết khai triển là chưa đủ.
+**Chiều nhận dạng / phân tích:**
 
-<div class="math-composition"><nav class="math-related-practice" aria-label="Bài tập liên quan đến nội dung vừa học">
-<span>Thực hành kiến thức này:</span>
-<a href="bai-tap/?mode=remediation&amp;focus=nhan-dang-hdt">Luyện ngay →</a>
-<a href="../../luyen-tap/tu-luan/?topic=CT05#wx05-idn-001">Làm tự luận · WX05-IDN-001 →</a>
-</nav></div>
+```text
+A² + 2AB + B² → (A + B)²
+```
+
+Học sinh cần thành thạo cả hai chiều. Chỉ biết khai triển là chưa đủ.
 
 ### 4.3. Kiến thức cần biết trước
 
@@ -284,6 +287,9 @@ Hằng đẳng thức là công cụ trực tiếp cho:
 
 ## 🧩 5. Các dạng bài cần nắm vững
 
+### Infographic 4 – Dạng bài trọng tâm & lỗi sai
+
+![Infographic dạng bài trọng tâm và lỗi sai](../../assets/infographics/05/05-04-dang-bai-loi-sai.svg)
 
 ### Dạng 1 – Khai triển bằng hằng đẳng thức
 
@@ -340,18 +346,18 @@ $$
 
 ### Dạng 2A – Nhận diện hằng đẳng thức khi có hệ số phân số (mở rộng)
 
-Khi $A$ hoặc $B$ là một phân số chứa biến, **cách nhận diện không đổi**: trước hết xác định hai bình phương ở hai đầu, sau đó kiểm tra hạng tử giữa có bằng $\pm2AB$ không.
+Khi \(A\) hoặc \(B\) là một phân số chứa biến, **cách nhận diện không đổi**: trước hết xác định hai bình phương ở hai đầu, sau đó kiểm tra hạng tử giữa có bằng \(\pm2AB\) không.
 
-**Ví dụ theo hai chiều:** Khai triển và phân tích trở lại $\left(\frac{x}{2}-1\right)^2$.
+**Ví dụ theo hai chiều:** Khai triển và phân tích trở lại \(\left(\frac{x}{2}-1\right)^2\).
 
-1. Chọn $A=x/2$, $B=1$.
-2. Khai triển: $(A-B)^2=A^2-2AB+B^2$.
-3. Suy ra $\left(\frac{x}{2}-1\right)^2=\frac{x^2}{4}-x+1$.
-4. Đọc ngược: $\frac{x^2}{4}=(\frac{x}{2})^2$, $1=1^2$, hạng tử giữa $-x=-2\cdot\frac{x}{2}\cdot1$. Vậy $\frac{x^2}{4}-x+1=(\frac{x}{2}-1)^2$.
+1. Chọn \(A=x/2\), \(B=1\).
+2. Khai triển: \((A-B)^2=A^2-2AB+B^2\).
+3. Suy ra \(\left(\frac{x}{2}-1\right)^2=\frac{x^2}{4}-x+1\).
+4. Đọc ngược: \(\frac{x^2}{4}=(\frac{x}{2})^2\), \(1=1^2\), hạng tử giữa \(-x=-2\cdot\frac{x}{2}\cdot1\). Vậy \(\frac{x^2}{4}-x+1=(\frac{x}{2}-1)^2\).
 
-**Thử giá trị:** Với $x=2$, cả hai vế đều bằng 0. Đây là cách phát hiện nhanh lỗi quên nhân 2 trong hạng tử giữa, nhưng phép thử **không thay thế chứng minh bằng hằng đẳng thức**.
+**Thử giá trị:** Với \(x=2\), cả hai vế đều bằng 0. Đây là cách phát hiện nhanh lỗi quên nhân 2 trong hạng tử giữa, nhưng phép thử **không thay thế chứng minh bằng hằng đẳng thức**.
 
-> Đừng bỏ ngoặc quanh $x/2$ khi bình phương: $(x/2)^2=x^2/4$, không phải $x^2/2$. Ví dụ này dùng để **hiểu cấu trúc và tự kiểm tra**, không phải thêm một hằng đẳng thức thứ tám.
+> Đừng bỏ ngoặc quanh \(x/2\) khi bình phương: \((x/2)^2=x^2/4\), không phải \(x^2/2\). Ví dụ này dùng để **hiểu cấu trúc và tự kiểm tra**, không phải thêm một hằng đẳng thức thứ tám.
 
 ### Dạng 3 – Phân tích hiệu hai bình phương
 
