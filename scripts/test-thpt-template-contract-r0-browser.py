@@ -57,8 +57,8 @@ with sync_playwright() as pw:
     assert figure.count()==1,(name,device,"diagram missing/invalid scaling")
     svg_label=figure.locator(".geo-label").first
     assert svg_label.count()==1,(name,device,"diagram labels missing")
-    labelpx=svg_label.evaluate("(n)=>parseFloat(getComputedStyle(n).fontSize)")
-    assert labelpx>=20,(name,device,"SVG label too small",labelpx)
+    labelpx=svg_label.evaluate("(n)=>parseFloat(getComputedStyle(n).fontSize)*n.ownerSVGElement.getBoundingClientRect().width/640")
+    assert labelpx>=(17.0 if width<=570 else 14.0),(name,device,"rendered SVG label too small relative to body",labelpx)
     caption=root.locator(".thpt-tabpanel:not([hidden]) figcaption")
     assert caption.count()==1 and len(caption.inner_text())>20,(name,device,"diagram caption")
    if device=="desktop":
