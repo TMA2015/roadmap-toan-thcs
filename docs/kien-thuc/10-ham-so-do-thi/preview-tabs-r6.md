@@ -522,7 +522,7 @@ Sau khi hoàn thành chuyên đề, học sinh cần có thể:
 
     ---
 
-    <div class="math-topic-links"><a href="../bai-tap/">Luyện kỹ năng · tính giá trị →</a></div>
+    <div class="math-topic-links"><a href="../bai-tap/?mode=remediation&amp;focus=tinh-gia-tri-ham">Luyện ngay →</a></div>
 
     ### Dạng 2 – Kiểm tra điểm thuộc đồ thị
 
@@ -544,7 +544,7 @@ Sau khi hoàn thành chuyên đề, học sinh cần có thể:
 
     ---
 
-    <div class="math-topic-links"><a href="../bai-tap/">Luyện kỹ năng · điểm thuộc đồ thị →</a><a href="../../../luyen-tap/tu-luan/?topic=CT10#wx10-fun-002">Bài tự luận parabol WX10-FUN-002 →</a></div>
+    <div class="math-topic-links"><a href="../bai-tap/?mode=remediation&amp;focus=diem-thuoc-do-thi">Luyện ngay →</a><a href="../../../luyen-tap/tu-luan/?topic=CT10#wx10-fun-002">Bài tự luận parabol WX10-FUN-002 →</a></div>
 
     ### Dạng 3 – Tìm tham số để điểm thuộc đồ thị
 
@@ -588,7 +588,7 @@ Sau khi hoàn thành chuyên đề, học sinh cần có thể:
 
     ---
 
-    <div class="math-topic-links"><a href="../../../luyen-tap/tu-luan/?topic=CT10#wx10-fun-001">Bài tự luận WX10-FUN-001 →</a><a href="../bai-tap/">Luyện kỹ năng →</a></div>
+    <div class="math-topic-links"><a href="../../../luyen-tap/tu-luan/?topic=CT10#wx10-fun-001">Bài tự luận WX10-FUN-001 →</a><a href="../bai-tap/?mode=remediation&amp;focus=ve-do-thi-ham-bac-nhat">Luyện ngay →</a></div>
 
     ### Dạng 5 – Tìm giao điểm với các trục
 
@@ -631,7 +631,7 @@ Sau khi hoàn thành chuyên đề, học sinh cần có thể:
 
     ---
 
-    <div class="math-topic-links"><a href="../bai-tap/">Luyện kỹ năng vị trí hai đường thẳng →</a></div>
+    <div class="math-topic-links"><a href="../bai-tap/?mode=remediation&amp;focus=vi-tri-hai-duong-thang">Luyện ngay →</a></div>
 
     ### Dạng 8 – Tìm giao điểm hai đường thẳng
 
@@ -667,7 +667,7 @@ Sau khi hoàn thành chuyên đề, học sinh cần có thể:
 
     ---
 
-    <div class="math-topic-links"><a href="../bai-tap/">Đang đối chiếu bài đại diện phù hợp →</a></div>
+    <div class="math-topic-links"><span class="math-topic-pending">Chưa có bài đại diện đã xác minh</span></div>
 
     > **Bài đại diện:** Chưa xác minh được bài riêng cho dạng này trong ngân hàng đã đối chiếu. Đây là nội dung đang chờ bổ sung/kiểm định, không phải link bài đã có.
 
@@ -694,7 +694,7 @@ Sau khi hoàn thành chuyên đề, học sinh cần có thể:
 
     ---
 
-    <div class="math-topic-links"><a href="../bai-tap/">Đang đối chiếu bài đại diện phù hợp →</a></div>
+    <div class="math-topic-links"><span class="math-topic-pending">Chưa có bài đại diện đã xác minh</span></div>
 
     > **Bài đại diện:** Chưa xác minh được bài riêng cho dạng này trong ngân hàng đã đối chiếu. Đây là nội dung đang chờ bổ sung/kiểm định, không phải link bài đã có.
 
