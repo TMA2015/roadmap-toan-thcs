@@ -168,6 +168,13 @@ def on_page_markdown(markdown, page, config, files):
     if src_path in _NEXT_PILOT_PRACTICE:
         return _interactive_only_next_pilot(src_path)
     if src_path.startswith("kien-thuc/") and src_path.endswith("/index.md"):
-        from hooks.knowledge_editorial_r19 import transform
-        return transform(_unwrap_topic_actions(markdown), src_path)
+        # MkDocs loads hooks by absolute filepath, without exposing the hooks package.
+        # Load sibling editor by explicit file location (keeps source documents intact).
+        import importlib.util
+        from pathlib import Path
+        spec = importlib.util.spec_from_file_location(
+            "math_knowledge_editorial_r19", Path(__file__).with_name("knowledge_editorial_r19.py"))
+        module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(module)
+        return module.transform(_unwrap_topic_actions(markdown), src_path)
     return markdown
