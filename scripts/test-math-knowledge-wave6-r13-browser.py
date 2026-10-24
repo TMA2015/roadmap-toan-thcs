@@ -35,8 +35,14 @@ with sync_playwright() as pw:
                 assert tabsets.count()>=2,f"{topic}: both tab groups missing"
                 labels=body.locator(".tabbed-labels label")
                 assert labels.count()>=10,f"{topic}: 5+5 tab labels missing"
-                labels.nth(1).click(timeout=10000)
-                assert body.get_by_text("2x-4=0",exact=False).count()>=1,f"{topic}: worked step missing"
+                first_tabs=tabsets.nth(0).locator(".tabbed-labels label")
+                assert first_tabs.count()==5,f"{topic}: expected exactly five Knowledge tabs"
+                first_tabs.nth(2).click(timeout=10000)  # third theory tab contains the worked line example
+                worked=body.locator(".math-topic-worked-row")
+                assert worked.count()==1 and worked.is_visible(),f"{topic}: real worked example not visible in third theory tab"
+                labels_worked=worked.locator(".math-topic-worked-label")
+                assert labels_worked.count()==3 and "Bước 2" in labels_worked.nth(1).inner_text(),f"{topic}: second step not present"
+                assert worked.locator("strong").nth(1).locator(".arithmatex, mjx-container").count()>=1,f"{topic}: second-step math container missing"
                 assert body.get_by_text("Luyện ngay",exact=False).count()>=6,f"{topic}: CT10 exam actions missing"
             else:
                 nav=body.locator(".math-related-practice")
