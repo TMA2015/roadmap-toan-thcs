@@ -7,7 +7,6 @@ const path=require("node:path");
 const assert=require("node:assert/strict");
 const root=path.resolve("site");
 const topics={
- "05-7-hang-dang-thuc":{imgs:1,paper:"WX05-IDN-001",keep:"05-05-mo-hinh-dien-tich-binh-phuong-r2.svg"},
  "14-tam-giac":{imgs:2,paper:"WX14-TRI-003",keep:"14-pythagore-v1.svg"}
 };
 function resolveAsset(htmlPath,url){
@@ -56,10 +55,11 @@ function gitBlob(txt){
  return crypto.createHash("sha1").update(header+txt).digest("hex");
 }
 for(const [topic,hash] of Object.entries({
+ "05-7-hang-dang-thuc":"6e34411e59ebf8589ba8ee14f2464edd5c0e822f",
  "21-thong-ke":"27b0938c5ee263a8c60dd73cf6d42d3d52d0d89a",
  "23-xac-suat":"1b69ae97f0597a3c7b521ecb315cf2a5d3d82187"
 })){
  const src=fs.readFileSync(path.join("docs","kien-thuc",topic,"index.md"),"utf8");
  assert.equal(gitBlob(src),hash,"R15 must preserve Grade-9 protected longform "+topic);
 }
-console.log("PASS R15 CT21/CT23 Grade-9 source SHA locks");
+console.log("PASS R15 CT05/CT21/CT23 academic source SHA locks");
