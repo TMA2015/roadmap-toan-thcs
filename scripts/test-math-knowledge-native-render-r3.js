@@ -35,7 +35,7 @@ for(const p of plans){
   if(!/(?:assets\/infographics\/05\/05-05-|assets\/(?:geometry|statistics|probability)\/|math-knowledge-composition-v1\.css)/.test(u))continue;
   const clean=u.split(/[?#]/,1)[0];
   const absolute=clean.startsWith("/")
-     ?path.join(root,clean.replace(/^\/+,""))
+     ?path.join(root,clean.replace(/^\/+/,""))
      :path.resolve(path.dirname(entry),clean);
   assert(absolute.startsWith(root+path.sep),"Asset outside website output: "+u);
   assert(fs.existsSync(absolute),"Broken deployed asset in "+p.topic+": "+u+" -> "+absolute);
