@@ -92,3 +92,33 @@
  .math-knowledge-r19 .mk-map-source{display:block}
  .math-knowledge-r19 details.topic-learning-card{display:block}
 }
+
+/* R20: link each Entrance10/transfer type to its exact approved Practice/Written target.
+   Compact inline actions keep the lesson's source rows recognizable on PC/iPad/phone. */
+.math-knowledge-r19 .math-knowledge-exam-actions{
+  display:inline-flex;flex-wrap:wrap;align-items:center;gap:.35rem .45rem;
+  max-width:100%;vertical-align:middle;
+}
+.math-knowledge-r19 .math-knowledge-exam-inline{
+  display:inline;margin-inline-start:.45rem;
+}
+.math-knowledge-r19 .math-knowledge-exam-actions a{
+  display:inline-flex;align-items:center;min-height:44px;max-width:100%;
+  margin-block:.12rem;padding:.38rem .65rem;
+  border:1px solid var(--knowledge-line);border-radius:.55rem;
+  background:var(--knowledge-soft);font-size:14px;font-weight:740;
+  line-height:1.35;text-decoration:none;overflow-wrap:anywhere;
+}
+.math-knowledge-r19 .math-knowledge-exam-actions a:focus-visible{
+  outline:3px solid var(--md-accent-fg-color);outline-offset:2px;
+}
+.math-knowledge-r19 #exam table th,.math-knowledge-r19 #exam table td{
+  vertical-align:middle;
+}
+.math-knowledge-r19 #exam .math-topic-exam-pending{
+  font-size:14px;line-height:1.45;color:var(--md-default-fg-color--light);
+}
+@media(max-width:570px){
+ .math-knowledge-r19 .math-knowledge-exam-inline{display:block;margin:.2rem 0 .4rem .1rem}
+ .math-knowledge-r19 .math-knowledge-exam-actions a{font-size:14px;padding:.45rem .6rem}
+}

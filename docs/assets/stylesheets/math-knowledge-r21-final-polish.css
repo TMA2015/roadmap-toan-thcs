@@ -1,0 +1,316 @@
+/* R21 THCS final visual polish · presentation only, R4 semantics + R3 readability.
+   Scoped to real canonical Knowledge learner pages. Do not adjust banking/scoring.
+   Meaningful palette: blue navigation/key concepts, warm amber cautions, near-neutral paper.
+   Native MkDocs tab checked selectors include CT10 pilot (its own pager remains untouched).
+*/
+.md-content__inner.math-knowledge-r19{
+  --mk21-accent:#3452cc;
+  --mk21-ink:#1f2d45;
+  --mk21-soft:#f0f4fb;
+  --mk21-tint:#e9eefc;
+  --mk21-edge:#dae4f4;
+  --mk21-warning:#b77821;
+  --mk21-warning-soft:#fff8ec;
+  --mk21-on-paper:#ffffff;
+  --mk21-body:17px;
+  color:var(--md-default-fg-color);
+  font-size:var(--mk21-body);
+  line-height:1.68;
+}
+[data-md-color-scheme="slate"] .md-content__inner.math-knowledge-r19{
+  --mk21-accent:#a5baff;
+  --mk21-ink:#eef3fd;
+  --mk21-soft:#252f42;
+  --mk21-tint:#303b57;
+  --mk21-edge:#4e5a70;
+  --mk21-warning:#f0c17e;
+  --mk21-warning-soft:#403323;
+  --mk21-on-paper:#1e2532;
+}
+.md-content__inner.math-knowledge-r19 :is(#core,#types,#exam,#errors,#links) .topic-learning-card-body{
+  font-size:var(--mk21-body);
+  line-height:1.68;
+}
+.math-knowledge-r19 :is(#core,#types) .tabbed-block{
+  font-size:var(--mk21-body);
+  line-height:1.68;
+  min-width:0;
+}
+.math-knowledge-r19 :is(#core,#types) .tabbed-block :is(p,ul,ol,li,td,th){
+  font-size:inherit;
+  line-height:inherit;
+}
+/* Secondary sections follow the same hierarchy; never leave tiny H3s
+   beside oversized formulas on the same lesson page. */
+.math-knowledge-r19 :is(#exam,#errors,#links,#practice,#check,#roadmap) .topic-learning-card-body h3{
+  font-size:20px;
+  line-height:1.4;
+  font-weight:760;
+  color:var(--mk21-ink);
+}
+.math-knowledge-r19 :is(#exam,#errors,#links,#practice,#check,#roadmap) .topic-learning-card-body h4{
+  font-size:18px;
+  line-height:1.4;
+  font-weight:740;
+  color:var(--mk21-accent);
+}
+.math-knowledge-r19 :is(#core,#types) .tabbed-block h3{
+  font-size:21px;
+  font-weight:770;
+  line-height:1.38;
+  color:var(--mk21-ink);
+  letter-spacing:-.015em;
+}
+.math-knowledge-r19 :is(#core,#types) .tabbed-block h4{
+  font-size:18px;
+  font-weight:750;
+  line-height:1.4;
+  color:var(--mk21-accent);
+}
+.math-knowledge-r19 details.topic-learning-card>summary{
+  color:var(--mk21-ink);
+  font-size:clamp(19px,2vw,23px);
+  line-height:1.4;
+}
+.math-knowledge-r19 :is(#core,#types).topic-learning-card>summary{
+  color:var(--mk21-ink);
+  font-size:clamp(21px,2.2vw,24px);
+}
+/* The section-level quick navigation also needs an obvious current step. */
+.math-knowledge-r19 .topic-workspace-nav-list a{
+  min-height:44px;
+  border-radius:8px;
+  color:var(--mk21-ink);
+  font-size:14px;
+  font-weight:680;
+}
+.math-knowledge-r19 .topic-workspace-nav-list a:hover:not(.is-active){
+  color:var(--mk21-accent);
+  background:var(--mk21-soft);
+}
+.math-knowledge-r19 .topic-workspace-nav-list a.is-active,
+.math-knowledge-r19 .topic-workspace-nav-list a[aria-current="location"]{
+  color:#fff;
+  background:#3452cc;
+  font-weight:780;
+}
+.math-knowledge-r19 .topic-workspace-nav-list a:focus-visible{
+  outline:3px solid var(--mk21-accent);
+  outline-offset:2px;
+}
+.math-knowledge-r19 .topic-workspace-hero h1{
+  color:var(--mk21-ink);
+  font-size:clamp(27px,3vw,34px);
+  line-height:1.3;
+}
+.math-knowledge-r19 :is(#core,#types) .tabbed-set{
+  border:1px solid var(--mk21-edge);
+  border-radius:12px;
+  background:var(--md-default-bg-color);
+  box-shadow:0 2px 9px rgba(31,45,69,.035);
+}
+.math-knowledge-r19 :is(#core,#types) .tabbed-set .tabbed-labels{
+  padding:5px 8px 7px;
+  gap:5px;
+  background:var(--mk21-soft);
+  border-bottom:1px solid var(--mk21-edge);
+  scroll-padding-inline:16px;
+  scrollbar-width:thin;
+  scrollbar-color:color-mix(in srgb,var(--mk21-accent) 28%,var(--mk21-edge)) transparent;
+  overscroll-behavior-inline:contain;
+}
+.math-knowledge-r19 :is(#core,#types) .tabbed-set .tabbed-labels::-webkit-scrollbar{height:5px}
+.math-knowledge-r19 :is(#core,#types) .tabbed-set .tabbed-labels::-webkit-scrollbar-thumb{
+  background:color-mix(in srgb,var(--mk21-accent) 26%,var(--mk21-edge));
+  border-radius:100px;
+}
+.math-knowledge-r19 :is(#core,#types) .tabbed-labels label{
+  position:relative;
+  flex:0 0 auto;
+  min-height:48px;
+  min-width:118px;
+  max-width:228px;
+  padding:9px 12px;
+  color:var(--mk21-ink);
+  border:1px solid transparent;
+  border-radius:8px 8px 3px 3px;
+  background:transparent;
+  font-size:15px;
+  line-height:1.35;
+  font-weight:700;
+  text-align:center;
+  white-space:normal;
+  transition:background-color .16s ease,color .16s ease,border-color .16s ease;
+}
+.math-knowledge-r19 :is(#core,#types) .tabbed-labels label:hover{
+  color:var(--mk21-accent);
+  background:var(--mk21-tint);
+}
+.math-knowledge-r19 :is(#core,#types) .tabbed-set > input:nth-of-type(1):checked ~ .tabbed-labels > label:nth-child(1),
+.math-knowledge-r19 :is(#core,#types) .tabbed-set > input:nth-of-type(2):checked ~ .tabbed-labels > label:nth-child(2),
+.math-knowledge-r19 :is(#core,#types) .tabbed-set > input:nth-of-type(3):checked ~ .tabbed-labels > label:nth-child(3),
+.math-knowledge-r19 :is(#core,#types) .tabbed-set > input:nth-of-type(4):checked ~ .tabbed-labels > label:nth-child(4),
+.math-knowledge-r19 :is(#core,#types) .tabbed-set > input:nth-of-type(5):checked ~ .tabbed-labels > label:nth-child(5),
+.math-knowledge-r19 :is(#core,#types) .tabbed-set > input:nth-of-type(6):checked ~ .tabbed-labels > label:nth-child(6),
+.math-knowledge-r19 :is(#core,#types) .tabbed-set > input:nth-of-type(7):checked ~ .tabbed-labels > label:nth-child(7),
+.math-knowledge-r19 :is(#core,#types) .tabbed-set > input:nth-of-type(8):checked ~ .tabbed-labels > label:nth-child(8),
+.math-knowledge-r19 :is(#core,#types) .tabbed-set > input:nth-of-type(9):checked ~ .tabbed-labels > label:nth-child(9),
+.math-knowledge-r19 :is(#core,#types) .tabbed-set > input:nth-of-type(10):checked ~ .tabbed-labels > label:nth-child(10),
+.math-knowledge-r19 :is(#core,#types) .tabbed-set > input:nth-of-type(11):checked ~ .tabbed-labels > label:nth-child(11),
+.math-knowledge-r19 :is(#core,#types) .tabbed-set > input:nth-of-type(12):checked ~ .tabbed-labels > label:nth-child(12),
+.math-knowledge-r19 :is(#core,#types) .tabbed-labels label[aria-selected="true"]{
+  color:var(--mk21-accent);
+  background:var(--mk21-tint);
+  border-color:var(--mk21-edge);
+  border-bottom-color:transparent;
+  box-shadow:inset 0 -3px 0 var(--mk21-accent);
+  font-weight:780;
+}
+.math-knowledge-r19 :is(#core,#types) .tabbed-labels label:focus-visible{
+  outline:3px solid var(--mk21-accent);
+  outline-offset:-3px;
+}
+.math-knowledge-r19 :is(#core,#types) .tabbed-content{
+  padding:clamp(16px,2vw,24px);
+}
+.math-knowledge-r19 :is(#core,#types) .tabbed-block :is(p,ul,ol){
+  margin-block:.55rem .85rem;
+}
+.math-knowledge-r19 :is(#core,#types) .tabbed-block li{margin-block:.22rem}
+.math-knowledge-r19 :is(#core,#types) .tabbed-block :is(p,li,td,th)>code{
+  font-size:.97em;
+  font-weight:510;
+  padding:.07em .25em;
+  border-radius:4px;
+  background:color-mix(in srgb,var(--mk21-soft) 58%,transparent);
+  color:var(--mk21-ink);
+}
+.math-knowledge-r19 :is(#core,#types) .tabbed-block > .arithmatex,
+.math-knowledge-r19 :is(#core,#types) .tabbed-block > p > .arithmatex{
+  font-size:1.12em;
+}
+.math-knowledge-r19 :is(#core,#types) .tabbed-block > div.arithmatex{
+  max-width:100%;
+  overflow-x:auto;
+  padding:.35rem .4rem;
+  margin:.65rem 0 .85rem;
+  border-radius:8px;
+  background:color-mix(in srgb,var(--mk21-soft) 34%,transparent);
+}
+.math-knowledge-r19 :is(#core,#types) .tabbed-block :is(.MathJax,.mjx-container){
+  max-width:100%;
+}
+.math-knowledge-r19 :is(#core,#types) .tabbed-block .md-typeset__table{
+  max-width:100%;
+  overflow-x:auto;
+}
+.math-knowledge-r19 :is(#core,#types) .tabbed-block table:not([class]){
+  display:table;
+  width:100%;
+  max-width:100%;
+  border-collapse:separate;
+  border-spacing:0;
+  border:1px solid var(--mk21-edge);
+  border-radius:9px;
+  box-shadow:none;
+  font-size:16px;
+  line-height:1.48;
+}
+.math-knowledge-r19 :is(#core,#types) .tabbed-block table:not([class]) :is(th,td){
+  padding:.72rem .75rem;
+  font-size:16px;
+  vertical-align:middle;
+  line-height:1.5;
+}
+.math-knowledge-r19 :is(#core,#types) .tabbed-block table:not([class]) thead th{
+  background:var(--mk21-soft);
+  color:var(--mk21-ink);
+  font-weight:750;
+}
+.math-knowledge-r19 :is(#core,#types) .tabbed-block table:not([class]) td code{
+  font-family:"Cambria Math","STIX Two Math",Georgia,serif;
+  font-size:16px;
+  line-height:1.45;
+  white-space:normal;
+  overflow-wrap:anywhere;
+  color:var(--mk21-ink);
+  background:transparent;
+  padding:0;
+}
+.math-knowledge-r19 :is(#core,#types) .tabbed-block table:not([class]) td:first-child{
+  white-space:nowrap;
+}
+.math-knowledge-r19 :is(#core,#types) .tabbed-block blockquote,
+.math-knowledge-r19 :is(#core,#types) .tabbed-block .admonition.note{
+  border:0;
+  border-left:3px solid var(--mk21-accent);
+  border-radius:7px;
+  background:var(--mk21-soft);
+  color:var(--mk21-ink);
+  padding:.75rem 1rem;
+  box-shadow:none;
+  margin:1rem 0;
+}
+.math-knowledge-r19 :is(#core,#types,#exam,#errors) .admonition.warning,
+.math-knowledge-r19 :is(#core,#types,#exam,#errors) .admonition.danger{
+  border-left:3px solid var(--mk21-warning);
+  background:var(--mk21-warning-soft);
+}
+.math-knowledge-r19 #exam .math-topic-exam-pending,
+.math-knowledge-r19 :is(#core,#types) .math-topic-exam-pending{
+  display:inline-block;
+  border-left:3px solid var(--mk21-warning);
+  background:var(--mk21-warning-soft);
+  color:var(--mk21-ink);
+  border-radius:0 6px 6px 0;
+  padding:9px 12px;
+  font-size:14px;
+  line-height:1.55;
+}
+.math-knowledge-r19 :is(#core,#types,#exam) :is(.math-knowledge-method-actions,.math-knowledge-exam-actions) a{
+  border-color:var(--mk21-edge);
+  background:var(--mk21-soft);
+  color:var(--mk21-accent);
+}
+.math-knowledge-r19 .math-composition .math-compare{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:.8rem;
+}
+.math-knowledge-r19 .math-composition .math-compare>*{min-width:0}
+.math-knowledge-r19 .mk-next-steps{
+  background:var(--mk21-soft);
+  border-color:var(--mk21-edge);
+}
+@media(max-width:800px){
+  .math-knowledge-r19 :is(#core,#types) .tabbed-content{padding:14px}
+  .math-knowledge-r19 :is(#core,#types) .tabbed-labels label{max-width:195px;padding:8px 10px}
+  .math-knowledge-r19 .math-composition .math-compare{gap:.6rem}
+}
+@media(max-width:570px){
+  .math-knowledge-r19 :is(#exam,#errors,#links,#practice,#check,#roadmap) .topic-learning-card-body h3{font-size:19px}
+  .math-knowledge-r19 :is(#exam,#errors,#links,#practice,#check,#roadmap) .topic-learning-card-body h4{font-size:17px}
+  .md-content__inner.math-knowledge-r19{--mk21-body:16px;line-height:1.62}
+  .math-knowledge-r19 :is(#core,#types) .tabbed-block h3{font-size:19px}
+  .math-knowledge-r19 :is(#core,#types) .tabbed-block h4{font-size:17px}
+  .math-knowledge-r19 :is(#core,#types) .tabbed-labels label{min-width:105px;max-width:180px;font-size:14px}
+  .math-knowledge-r19 :is(#core,#types) .tabbed-content{padding:12px}
+  .math-knowledge-r19 .math-composition .math-compare{grid-template-columns:minmax(0,1fr)}
+  .math-knowledge-r19 :is(#core,#types) .tabbed-block table:not([class]) :is(th,td){
+    padding:.55rem .45rem;
+    font-size:15px;
+  }
+  .math-knowledge-r19 :is(#core,#types) .tabbed-block table:not([class]) td code{font-size:15px}
+}
+@media(prefers-reduced-motion:reduce){
+  .math-knowledge-r19 :is(#core,#types) .tabbed-labels label{transition:none}
+}
+@media print{
+  .math-knowledge-r19 :is(#core,#types) .tabbed-set{
+    box-shadow:none;
+    border:0;
+  }
+  .math-knowledge-r19 :is(#core,#types) .tabbed-content{padding:0}
+  .math-knowledge-r19 :is(#core,#types) .tabbed-block table:not([class]){break-inside:avoid}
+  .math-knowledge-r19 :is(#core,#types) .tabbed-block > div.arithmatex{background:transparent}
+}
