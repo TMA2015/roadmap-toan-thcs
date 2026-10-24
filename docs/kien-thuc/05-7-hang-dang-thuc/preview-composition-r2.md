@@ -256,6 +256,13 @@ $$
   <article><h4>← Chiều nhận dạng / phân tích</h4><div class="math-principle">\(A^2+2AB+B^2\rightarrow(A+B)^2\)</div></article>
 </div><p class="math-comparison-caption">Cần thành thạo cả hai chiều; chỉ biết khai triển là chưa đủ.</p></div>
 
+
+<div class="math-composition"><nav class="math-related-practice" aria-label="Bài tập liên quan đến nội dung vừa học">
+<span>Thực hành kiến thức này:</span>
+<a href="../bai-tap/?mode=remediation&amp;focus=nhan-dang-hdt">Luyện ngay →</a>
+<a href="../../../luyen-tap/tu-luan/?topic=CT05#wx05-idn-001">Làm tự luận · WX05-IDN-001 →</a>
+</nav></div>
+
 ### 4.3. Kiến thức cần biết trước
 
 - Phép nhân đơn thức và đa thức.
