@@ -18,7 +18,11 @@ const plans=[
   {topic:"04-bieu-thuc-dai-so",version:"r10",math:true,stale:"Dùng infographic này",phrase:"Các phép biến đổi quan trọng",tables:1},
   {topic:"07-phan-thuc-dai-so",version:"r10",math:true,minMath:2,stale:"Dùng infographic này",phrase:"Tính chất cơ bản của phân thức",tables:1},
   {topic:"08-phuong-trinh-bat-phuong-trinh",version:"r10",math:true,stale:null,phrase:"Bất đẳng thức và tính chất thứ tự",tables:1,keepAll:["08-05-truc-so-bat-phuong-trinh.svg","08-06-giao-tap-nghiem.svg"]},
-  {topic:"11-can-thuc",version:"r10",math:true,stale:"Dùng infographic này",phrase:"Điều kiện xác định",tables:1}
+  {topic:"11-can-thuc",version:"r10",math:true,stale:"Dùng infographic này",phrase:"Điều kiện xác định",tables:1},
+  {topic:"12-phuong-trinh-bac-hai-viete",version:"r11",math:true,stale:"Dùng infographic này",phrase:"Biệt thức Δ",tables:1,keep:"12-05-delta-va-giao-ox.svg"},
+  {topic:"13-goc-va-duong-thang",version:"r11",math:true,stale:null,phrase:"Dấu hiệu nhận biết hai đường thẳng song song",tables:1,keepAll:["13-goc-doi-dinh-v1.svg","13-hai-duong-song-song-duong-cat-v1.svg","13-goc-so-le-trong-v1.svg"]},
+  {topic:"15-duong-dong-quy",version:"r11",math:true,stale:null,phrase:"Cách chọn đúng tính chất",tables:1,keepAll:["15-trong-tam-v1.svg","15-truc-tam-v1.svg","15-tam-noi-tiep-v1.svg","15-tam-ngoai-tiep-v1.svg"]},
+  {topic:"16-tu-giac",version:"r11",math:false,stale:null,phrase:"Hình vuông",tables:1,keepAll:["16-hinh-thang-v1.svg","16-hinh-binh-hanh-v1.svg","16-hinh-chu-nhat-v1.svg","16-hinh-thoi-v1.svg","16-hinh-vuong-v1.svg"]}
 ]
 let count=0;
 const seen=[];
@@ -40,7 +44,7 @@ for(const p of plans){
  for(const x of html.matchAll(urlRx)){
   const u=x[1];
   if(/^(?:https?:|data:|#|mailto:)/.test(u))continue;
-  if(!/(?:assets\/infographics\/(?:02|03|05|06|08|09)\/|assets\/(?:geometry|statistics|probability)\/|math-knowledge-composition-v1\.css)/.test(u))continue;
+  if(!/(?:assets\/infographics\/(?:02|03|05|06|08|09|12)\/|assets\/(?:geometry|statistics|probability)\/|math-knowledge-composition-v1\.css)/.test(u))continue;
   const clean=u.split(/[?#]/,1)[0];
   const absolute=clean.startsWith("/")
      ?path.join(root,clean.replace(/^\/+/,""))
@@ -54,7 +58,7 @@ for(const p of plans){
  if(p.topic==="05-7-hang-dang-thuc")assert(localRefs.some(u=>u.includes("05-05-")),"Missing source-linked area SVG");
  if(p.keep)assert(localRefs.some(u=>u.includes(p.keep)),"Missing expected visual "+p.keep);
  if(p.keepAll)for(const img of p.keepAll)assert(localRefs.some(u=>u.includes(img)),"Missing visual "+img);
- if(p.version==="r9"||p.version==="r10") {
+ if(p.version==="r9"||p.version==="r10"||p.version==="r11") {
    assert(html.includes("Luyện ngay"),"Missing skill practice link "+p.topic);
    assert(html.includes("Làm tự luận"),"Missing canonical written link "+p.topic);
  }
