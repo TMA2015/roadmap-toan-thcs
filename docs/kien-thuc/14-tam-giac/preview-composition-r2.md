@@ -173,6 +173,13 @@ Ngược lại, nếu `BC > AC` thì `∠A > ∠B`.
 
 ---
 
+
+<div class="math-composition"><nav class="math-related-practice" aria-label="Bài tập liên quan đến nội dung vừa học">
+<span>Thực hành kiến thức này:</span>
+<a href="../bai-tap/?mode=remediation&amp;focus=so-sanh-canh-goc">Luyện ngay →</a>
+<a href="../../../luyen-tap/tu-luan/?topic=CT14#wx14-tri-003">Làm tự luận · WX14-TRI-003 →</a>
+</nav></div>
+
 ### 3.6. Bất đẳng thức tam giác
 
 Trong một tam giác, tổng độ dài hai cạnh bất kỳ lớn hơn cạnh còn lại:
