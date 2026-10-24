@@ -1,0 +1,198 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "roadmap-readiness-assessment-v1",
+  "title": "Roadmap Readiness Assessment v1",
+  "type": "object",
+  "required": [
+    "schema",
+    "assessment_id",
+    "topic",
+    "layer",
+    "policy",
+    "readiness",
+    "items"
+  ],
+  "properties": {
+    "schema": {
+      "const": "roadmap-readiness-assessment-v1"
+    },
+    "version": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "assessment_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "title": {
+      "type": "string"
+    },
+    "topic": {
+      "type": "object",
+      "required": [
+        "id",
+        "title"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "title": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": true
+    },
+    "layer": {
+      "enum": [
+        "KNTT-Core",
+        "Entrance10",
+        "Specialized-Challenge"
+      ]
+    },
+    "skill_labels": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string"
+      }
+    },
+    "policy": {
+      "type": "object",
+      "required": [
+        "feedback",
+        "hints",
+        "tutor",
+        "hard_gate"
+      ],
+      "properties": {
+        "feedback": {
+          "const": "after_submit"
+        },
+        "hints": {
+          "const": false
+        },
+        "tutor": {
+          "const": false
+        },
+        "hard_gate": {
+          "const": false
+        },
+        "target_minutes": {
+          "type": "number",
+          "minimum": 0
+        },
+        "allow_partial_submit": {
+          "type": "boolean"
+        }
+      },
+      "additionalProperties": true
+    },
+    "readiness": {
+      "type": "object",
+      "required": [
+        "ready_threshold",
+        "hard_gate"
+      ],
+      "properties": {
+        "ready_threshold": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "minimum_answered_ratio": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "hard_gate": {
+          "const": false
+        },
+        "states": {
+          "type": "array",
+          "items": {
+            "enum": [
+              "READY",
+              "REVIEW_RECOMMENDED",
+              "MORE_EVIDENCE_NEEDED"
+            ]
+          },
+          "uniqueItems": true
+        }
+      },
+      "additionalProperties": true
+    },
+    "items": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "type",
+          "skill",
+          "points",
+          "question",
+          "options",
+          "answer"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "type": {
+            "const": "mcq"
+          },
+          "skill": {
+            "type": "string",
+            "minLength": 1
+          },
+          "supporting_skills": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "uniqueItems": true
+          },
+          "points": {
+            "type": "number",
+            "exclusiveMinimum": 0
+          },
+          "question": {
+            "type": "string",
+            "minLength": 1
+          },
+          "options": {
+            "type": "array",
+            "minItems": 2,
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "answer": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "explanation": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": true
+      }
+    },
+    "next_topic": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "title": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": true
+}

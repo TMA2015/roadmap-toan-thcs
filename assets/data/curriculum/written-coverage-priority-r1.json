@@ -1,0 +1,67 @@
+{
+  "decision_id": "MATH-WRITTEN-COVERAGE-PRIORITY-R1-20261010",
+  "as_of": "2026-10-10",
+  "status": "ACADEMIC_PRIORITY_REVIEW_PASS",
+  "clearance": "WRITTEN_COVERAGE_PRIORITY_R1_REVIEW_COMPLETE",
+  "independent_review": {
+    "reviewer": "NotebookLM",
+    "verdict": "PASS",
+    "receipt": "review-packets/written-coverage-priority-r1/05_NOTEBOOKLM_RESULT_R1.md"
+  },
+  "add_written": [
+    "ALG-MULTIPLY",
+    "CIRCLE-ANGLES",
+    "CIRCLE-CHORD-ARC",
+    "QUAD-RHOMBUS",
+    "QUAD-TRAPEZOID",
+    "RAD-TRANSFORM",
+    "RIGHT-PYTHAGORE",
+    "SIM-MID-BISECTOR",
+    "TRI-ANGLE-SIDE"
+  ],
+  "keep_no_written": [
+    "ALG-STRUCTURE",
+    "CIRCLE-POSITION",
+    "EQ-BASIC",
+    "GEO-REGULAR-SYMM",
+    "GRAPH-POINT",
+    "NUM-ABS",
+    "NUM-FRACTION-FORM",
+    "NUM-INTEGER-OPS",
+    "NUM-ORDER",
+    "NUM-POWER",
+    "PROB-EVENT",
+    "RAD-CUBEROOT",
+    "RATEX-CONCEPT",
+    "RATEX-EVALUATE",
+    "RATEX-MULT-DIV",
+    "RATIO-BASIC",
+    "RATIO-DIRECT",
+    "RATIO-PROP",
+    "SOLID-PYRAMID",
+    "SOLID-SPHERE",
+    "STAT-ADVANCED-DATA",
+    "STAT-DATA",
+    "STAT-FREQUENCY",
+    "TRI-CONGRUENCE",
+    "TRI-ORTHOCENTER"
+  ],
+  "needs_more_evidence": [],
+  "crosswalk": {
+    "WX24-MOD-002": [
+      "SYS-MODEL",
+      "SYS-SOLVE"
+    ],
+    "WX23-PRO-003": [
+      "PROB-EVENT"
+    ]
+  },
+  "boundaries": {
+    "one_family_one_written_quota": false,
+    "new_canonical_family": false,
+    "anchors_duplicated": false,
+    "readiness_mastery_credit": false
+  },
+  "implementation_rule": "Author at most one CORE_BASE written problem per approved family in the first bounded implementation wave. A CORE_APPLY item requires a separate pedagogical justification and independent content review.",
+  "next_phase": "WRITTEN_IMPLEMENTATION_WAVE1_R1"
+}

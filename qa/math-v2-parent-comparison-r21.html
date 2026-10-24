@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>R21 · Đối chiếu bộ đếm Skill (mẫu thử)</title>
+<style>
+:root{font-family:system-ui,-apple-system,"Segoe UI",sans-serif;color:#17372b;background:#f4f8f5}
+*{box-sizing:border-box}
+body{margin:0;line-height:1.55}
+main{max-width:940px;margin:auto;padding:20px 16px 52px}
+header{background:#19533e;border-radius:18px;color:white;padding:24px}
+header h1{font-size:clamp(1.5rem,4vw,2rem);line-height:1.25;margin:6px 0}
+header p{margin:0;color:#e1f0e8}
+section{background:#fff;border:1px solid #dae7df;border-radius:16px;padding:20px;margin-top:16px}
+h2{font-size:1.18rem;margin:0 0 10px}
+p{margin:8px 0 13px}
+.notice{padding:12px 14px;border-left:4px solid #a5782e;background:#fff8e8;border-radius:7px}
+.actions{display:flex;gap:10px;flex-wrap:wrap}
+button{background:#205d46;border:1px solid #205d46;color:white;border-radius:10px;padding:10px 14px;font:inherit;font-weight:650;min-height:44px;cursor:pointer}
+button.secondary{background:#fff;color:#19553d}
+button:focus-visible{outline:3px solid #d5a33a;outline-offset:2px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:12px}
+.metric{padding:14px;background:#f7faf8;border:1px solid #dce9df;border-radius:12px;min-width:0}
+.metric strong{display:block;font-size:1.6rem;font-variant-numeric:tabular-nums}
+.metric span{font-size:.88rem;color:#53675a}
+.status{padding:12px 14px;margin-top:12px;border-radius:10px;background:#f0f4f1;border:1px solid #d6e2da}
+.status[data-state="QA_MATCH"]{background:#ebf7ee}
+.status[data-state="NOT_COMPARABLE"],.status[data-state="QA_MISMATCH"]{background:#fff7e8}
+.status[data-state="INSUFFICIENT_EVIDENCE"]{background:#fff0ed}
+table{width:100%;border-collapse:collapse;margin-top:12px}
+th,td{text-align:left;padding:9px 7px;border-bottom:1px solid #dde8e0;font-size:.93rem;overflow-wrap:anywhere}
+th:nth-child(n+2),td:nth-child(n+2){text-align:right}
+.small{font-size:.88rem;color:#50675b}
+.no-data{color:#57695f}
+@media(max-width:620px){main{padding:10px 10px 40px}header,section{padding:15px}.grid{grid-template-columns:1fr}.actions button{width:100%}th,td{font-size:.86rem;padding:8px 4px}}
+</style>
+</head>
+<body>
+<main>
+<header>
+<div>G Learning · Self-Learning Math · QA R21</div>
+<h1>Đối chiếu bộ đếm theo kỹ năng</h1>
+<p>Bản xem trước dành cho phụ huynh — kiểm tra nguyên tắc so sánh bằng dữ liệu giả lập.</p>
+</header>
+<section>
+<h2>Giới hạn của bản thử</h2>
+<p class="notice"><strong>Không sử dụng dữ liệu học thật.</strong> Trang chỉ chạy các ví dụ cố định bên dưới; không đọc, ghi hoặc chuyển đổi tiến độ trên máy, không gửi thông tin ra ngoài. Không nhập tệp sao lưu cá nhân vào đây.</p>
+<p class="small">Việc hai nơi hiển thị cùng số lượt chưa chứng minh chúng đang theo dõi cùng lượt làm bài. Chỉ kết luận khớp khi có mã chung của từng lượt trong một bộ dữ liệu mẫu đã đối chiếu đầy đủ.</p>
+</section>
+<section>
+<h2>1. Chọn tình huống để xem</h2>
+<div class="actions">
+<button id="unlinked" type="button">Hai bộ đếm bằng nhau nhưng không có liên kết</button>
+<button id="paired" class="secondary" type="button">Bộ dữ liệu mẫu có thể đối chiếu từng lượt</button>
+<button id="mismatch" class="secondary" type="button">Bộ dữ liệu mẫu có sai khác</button>
+</div>
+<div id="status" class="status" role="status" aria-live="polite" data-state="NOT_COMPARABLE">Chọn một tình huống để xem kết quả.</div>
+<div class="grid" aria-label="Hai bộ đếm">
+<div class="metric"><span>Hệ thống hiện tại v1 · Ví dụ giả lập</span><strong id="old-attempts">—</strong><span id="old-correct">Số lần trả lời đúng: —</span></div>
+<div class="metric"><span>Hệ thống mới v2 · Ví dụ giả lập</span><strong id="new-attempts">—</strong><span id="new-correct">Số lần trả lời đúng: —</span></div>
+</div>
+<p class="small" id="meaning">Không tính chênh lệch giữa hai nguồn chưa xác minh.</p>
+</section>
+<section>
+<h2>2. Phân bổ theo kỹ năng trong mẫu v2</h2>
+<p class="small">Một lượt có thể liên quan đến nhiều kỹ năng. Cộng số lượt của các kỹ năng sẽ có thể lớn hơn số câu đã làm — điều đó không có nghĩa bị đếm trùng.</p>
+<table>
+<thead><tr><th>Kỹ năng (mã mẫu)</th><th>Lượt luyện</th><th>Đúng</th></tr></thead>
+<tbody id="skill-rows"><tr><td colspan="3" class="no-data">Chưa chọn dữ liệu mẫu.</td></tr></tbody>
+</table>
+<p class="small" id="skill-note">Chỉ là số lượt luyện tập; không khẳng định học sinh đã thành thạo kỹ năng.</p>
+</section>
+<section>
+<h2>3. Những gì chưa được cộng gộp</h2>
+<p><strong>Readiness:</strong> <span id="readiness">Chưa đối chiếu</span>. <strong>Bài tự luận:</strong> <span id="written">Chưa đối chiếu</span>.</p>
+<p class="small">R20 mới thử nghiệm lưu lượt Practice. Việc hợp nhất thực tế cần mapping kỹ năng đã duyệt, kiểm tra trên PC/iPad và quyết định riêng trước khi thay bộ đếm học sinh đang dùng.</p>
+</section>
+<p class="small">R21 · Trang QA không liên kết trong menu học sinh. <a href="../">Trở về trang QA</a>.</p>
+</main>
+<script src="./math-v2-parent-comparison-r21.js"></script>
+<script>
+(() => {
+"use strict";
+const $=id=>document.getElementById(id);
+const scope="QA_R16_R19_R20_R21";
+const itemA="FAC06V1_025",itemB="FAC06V1_026";
+const idA="R20_"+"a".repeat(32),idB="R20_"+"b".repeat(32);
+const fixture="QA_R21_LINKED_DEMO";
+const events=[
+ {schema:"math-evidence-event-v2",event_id:idA,learner_scope:scope,
+  kind:"answer_attempt",evidence_class:"FORMATIVE",item_id:itemA,
+  correct:true,skill_ids:["SKILL_FRACTIONS","SKILL_NUMBERS"]},
+ {schema:"math-evidence-event-v2",event_id:idB,learner_scope:scope,
+  kind:"answer_attempt",evidence_class:"FORMATIVE",item_id:itemB,
+  correct:false,skill_ids:["SKILL_NUMBERS"]}
+];
+function scenario(name){
+ const linked=name!=="unlinked";
+ const legacy={schema:"math-v1-aggregate-synthetic-r21",
+  learner_scope:scope,fixture_id:linked?fixture:null,
+  provenance:linked?"PAIRED_FIXTURE":"UNLINKED_AGGREGATE",
+  readiness_submissions:1,
+  questions:{
+   [itemA]:{attempted:1,correct:1},
+   [itemB]:{attempted:1,correct:name==="mismatch"?1:0}
+  }};
+ const v2={schema:"math-v2-events-synthetic-r21",learner_scope:scope,
+  provenance:linked?"PAIRED_FIXTURE":"UNLINKED_JOURNAL",
+  fixture_id:linked?fixture:null,events};
+ const proof=linked?{schema:"math-r21-synthetic-common-lineage-v1",
+  synthetic_only:true,fixture_id:fixture,learner_scope:scope,
+  attempts:[{event_id:idA,item_id:itemA,correct:true},
+            {event_id:idB,item_id:itemB,correct:false}]}:null;
+ return {legacy,v2,proof};
+}
+function run(name){
+ const result=window.MathV2ParentComparisonR21.compare(scenario(name));
+ const titles={
+  NOT_COMPARABLE:"Chưa thể đối chiếu: số liệu v1 và v2 không có mã lượt chung.",
+  QA_MATCH:"Khớp trong bộ dữ liệu MẪU: từng lượt và đáp án đã được đối chiếu.",
+  QA_MISMATCH:"Không khớp trong bộ dữ liệu MẪU: có lượt hoặc đáp án không thống nhất.",
+  INSUFFICIENT_EVIDENCE:"Không đủ bằng chứng để đưa ra kết luận."
+ };
+ $("status").dataset.state=result.status;
+ $("status").textContent=titles[result.status]||"Không có kết luận.";
+ const num=n=>Number.isSafeInteger(n)?new Intl.NumberFormat("vi-VN").format(n):"—";
+ $("old-attempts").textContent=num(result.legacy?.attempted);
+ $("new-attempts").textContent=num(result.current?.attempted);
+ $("old-correct").textContent="Trả lời đúng: "+num(result.legacy?.correct);
+ $("new-correct").textContent="Trả lời đúng: "+num(result.current?.correct);
+ $("meaning").textContent=result.status==="NOT_COMPARABLE" ?
+  "Không tính chênh lệch, không xác nhận tương đương và không gộp lịch sử.":
+  "Chỉ là kết luận cho dữ liệu giả lập được chọn; không áp dụng vào tiến độ thật.";
+ $("readiness").textContent="Không thể đối chiếu với nguồn v2 R20";
+ $("written").textContent="Không tính thành điểm Readiness";
+ const tbody=$("skill-rows");tbody.replaceChildren();
+ const skills=Object.entries(result.current?.per_skill||{}).sort(([a],[b])=>a.localeCompare(b));
+ if(!skills.length){
+  const tr=document.createElement("tr"),td=document.createElement("td");
+  td.colSpan=3;td.textContent="Không có số liệu kỹ năng xác minh được.";
+  tr.append(td);tbody.append(tr);
+ }
+ for(const [skill,c] of skills){
+  const tr=document.createElement("tr");
+  for(const value of [skill,num(c.attempted),num(c.correct)]){
+   const td=document.createElement("td");td.textContent=value;tr.append(td);
+  }
+  tbody.append(tr);
+ }
+ $("skill-note").textContent="Tổng lượt câu hỏi của v2: "+num(result.current?.attempted)+
+  "; tổng lượt theo các kỹ năng có thể lớn hơn vì một câu gắn nhiều kỹ năng.";
+}
+for(const n of ["unlinked","paired","mismatch"])
+ $(n).addEventListener("click",()=>run(n));
+run("unlinked");
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,115 @@
+{
+  "protocol_version": "2.0",
+  "packet_id": "ALG-BATCH-08-10-GEMINI-REVIEW-001",
+  "task_id": "ALG-BATCH-08-10-001",
+  "context_version": "1.0.27",
+  "from": "CHATGPT",
+  "to": "GEMINI",
+  "mode": "REVIEW",
+  "scope": {
+    "layer": [
+      "KNTT-Core",
+      "Entrance10",
+      "Specialized-Challenge"
+    ],
+    "topics": [
+      "08-phuong-trinh-bat-phuong-trinh",
+      "09-he-phuong-trinh",
+      "10-ham-so-do-thi"
+    ],
+    "skills": []
+  },
+  "source_artifacts": [
+    "docs/assets/data/curriculum/algebra-batch-08-10-scope.json",
+    "docs/assets/data/curriculum/topic08-learning-workspace.json",
+    "docs/assets/data/curriculum/topic09-learning-workspace.json",
+    "docs/assets/data/curriculum/topic10-learning-workspace.json",
+    "docs/assets/data/practice/08-phuong-trinh-bat-phuong-trinh-micro-v1.json",
+    "docs/assets/data/practice/09-he-phuong-trinh-micro-v1.json",
+    "docs/assets/data/practice/10-ham-so-do-thi-micro-v1.json",
+    "docs/assets/data/assessment/08-phuong-trinh-bat-phuong-trinh-core-v1.json",
+    "docs/assets/data/assessment/09-he-phuong-trinh-core-v1.json",
+    "docs/assets/data/assessment/10-ham-so-do-thi-core-v1.json",
+    "docs/kien-thuc/08-phuong-trinh-bat-phuong-trinh/bai-tap.md",
+    "docs/kien-thuc/09-he-phuong-trinh/bai-tap.md",
+    "docs/kien-thuc/10-ham-so-do-thi/bai-tap.md"
+  ],
+  "claims": [
+    {
+      "id": "P1",
+      "status": "FACT_VERIFIED",
+      "statement": "CĐ08–CĐ10 production batch passed source-scope structural QA, strict MkDocs build, deploy workflow and gh-pages smoke checks.",
+      "evidence": [
+        "GitHub Actions run 36089873280",
+        "gh-pages artifact smoke check"
+      ]
+    },
+    {
+      "id": "P2",
+      "status": "FACT_VERIFIED",
+      "statement": "CĐ08 Practice Bank was expanded from 120 to 132 questions so all three newly modeled Grade 9 Core order-property skills have real interactive practice coverage.",
+      "evidence": [
+        "08-phuong-trinh-bat-phuong-trinh-v1.manifest.json",
+        "08-phuong-trinh-bat-phuong-trinh-v1-05.json"
+      ]
+    },
+    {
+      "id": "P3",
+      "status": "FACT_VERIFIED",
+      "statement": "Each topic now has five Core Learning Cards, 15 micro-practice items, 10 Core Readiness MCQs and 10 written Core exercises.",
+      "evidence": [
+        "scripts/test-golden-batch-08-10.js"
+      ]
+    },
+    {
+      "id": "P4",
+      "status": "TECHNICAL_PROPOSAL",
+      "statement": "Frozen Golden Template v1 and source-locked Core/Extension boundaries are not open for redesign in this review.",
+      "evidence": [
+        "golden-template-v1.json",
+        "algebra-batch-08-10-scope.json"
+      ]
+    }
+  ],
+  "proposed_changes": [
+    {
+      "artifact": "Pedagogical review only",
+      "change": "Review mathematical correctness, age-appropriate wording, distractor plausibility, misconception coverage, progression across the five cards, and quality of written solutions. Return issue-level corrections only.",
+      "rationale": "ChatGPT remains production/schema/source lead after two earlier source-scope failures in authoring relay."
+    }
+  ],
+  "tests": [
+    {
+      "id": "R1",
+      "expected": "No KNTT Core boundary changes unless backed by explicit source evidence.",
+      "result": "NOT_RUN"
+    },
+    {
+      "id": "R2",
+      "expected": "No new topic IDs, skill IDs, schema fields or engine changes proposed as if already accepted.",
+      "result": "NOT_RUN"
+    },
+    {
+      "id": "R3",
+      "expected": "Every reported math error includes the exact item ID and corrected answer/reasoning.",
+      "result": "NOT_RUN"
+    },
+    {
+      "id": "R4",
+      "expected": "Distractor critique identifies ambiguity/equivalent-answer risk by exact item ID.",
+      "result": "NOT_RUN"
+    },
+    {
+      "id": "R5",
+      "expected": "Written-solution review flags any algebraic or modeling error with exact exercise code.",
+      "result": "NOT_RUN"
+    }
+  ],
+  "uncertainties": [
+    "Gemini may suggest pedagogical improvements outside current scope; such suggestions must be labeled optional and must not be treated as accepted architecture changes."
+  ],
+  "acceptance": {
+    "verdict": "PENDING",
+    "notes": "Return ONE review packet for the deployed CĐ08–CĐ10 batch. Do not rewrite the full batch. Report only verified issues, pedagogical refinements, and optional suggestions, each tied to exact item/exercise IDs."
+  }
+}

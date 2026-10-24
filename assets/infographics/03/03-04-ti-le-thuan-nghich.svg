@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 620" role="img" aria-labelledby="title desc">
+  <title id="title">So sánh trực quan tỉ lệ thuận và tỉ lệ nghịch</title>
+  <desc id="desc">Hai khung đặt cạnh nhau. Bên trái minh họa y bằng 2x với các cặp 1,2; 2,4; 4,8 và kết luận khi x gấp đôi thì y gấp đôi. Bên phải minh họa xy bằng 8 với các cặp 1,8; 2,4; 4,2 và kết luận khi x gấp đôi thì y còn một nửa.</desc>
+
+  <rect width="1200" height="620" rx="26" fill="#ffffff"/>
+  <text x="600" y="46" text-anchor="middle" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#1f2937">Tỉ lệ thuận và tỉ lệ nghịch khác nhau thế nào?</text>
+  <text x="600" y="79" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#4b5563">Nhìn cách các cặp giá trị thay đổi để nhận ra mô hình</text>
+
+  <!-- Left panel: direct proportion -->
+  <rect x="42" y="108" width="536" height="468" rx="22" fill="#eff6ff" stroke="#93c5fd" stroke-width="2"/>
+  <text x="310" y="148" text-anchor="middle" font-family="Arial, sans-serif" font-size="27" font-weight="700" fill="#1d4ed8">TỈ LỆ THUẬN</text>
+  <text x="310" y="181" text-anchor="middle" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#1f2937">y = 2x</text>
+
+  <g font-family="Arial, sans-serif" font-size="20" fill="#1f2937">
+    <rect x="92" y="216" width="126" height="58" rx="12" fill="#ffffff" stroke="#60a5fa" stroke-width="2"/>
+    <rect x="247" y="216" width="126" height="58" rx="12" fill="#ffffff" stroke="#60a5fa" stroke-width="2"/>
+    <rect x="402" y="216" width="126" height="58" rx="12" fill="#ffffff" stroke="#60a5fa" stroke-width="2"/>
+    <text x="155" y="251" text-anchor="middle">x = 1</text>
+    <text x="310" y="251" text-anchor="middle">x = 2</text>
+    <text x="465" y="251" text-anchor="middle">x = 4</text>
+
+    <text x="232" y="251" text-anchor="middle" font-size="24" font-weight="700" fill="#2563eb">×2</text>
+    <text x="387" y="251" text-anchor="middle" font-size="24" font-weight="700" fill="#2563eb">×2</text>
+
+    <rect x="92" y="314" width="126" height="58" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+    <rect x="247" y="314" width="126" height="58" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+    <rect x="402" y="314" width="126" height="58" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+    <text x="155" y="349" text-anchor="middle" font-weight="700">y = 2</text>
+    <text x="310" y="349" text-anchor="middle" font-weight="700">y = 4</text>
+    <text x="465" y="349" text-anchor="middle" font-weight="700">y = 8</text>
+    <text x="232" y="349" text-anchor="middle" font-size="24" font-weight="700" fill="#2563eb">×2</text>
+    <text x="387" y="349" text-anchor="middle" font-size="24" font-weight="700" fill="#2563eb">×2</text>
+  </g>
+
+  <rect x="92" y="407" width="436" height="112" rx="16" fill="#ffffff" stroke="#bfdbfe"/>
+  <text x="310" y="440" text-anchor="middle" font-family="Arial, sans-serif" font-size="19" font-weight="700" fill="#1d4ed8">Đại lượng giữ nguyên: y/x = 2</text>
+  <text x="310" y="474" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" fill="#1f2937">x gấp đôi → y cũng gấp đôi</text>
+  <text x="310" y="503" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" fill="#4b5563">Hai đại lượng thay đổi cùng chiều theo cùng hệ số</text>
+
+  <!-- Right panel: inverse proportion -->
+  <rect x="622" y="108" width="536" height="468" rx="22" fill="#fff7ed" stroke="#fdba74" stroke-width="2"/>
+  <text x="890" y="148" text-anchor="middle" font-family="Arial, sans-serif" font-size="27" font-weight="700" fill="#c2410c">TỈ LỆ NGHỊCH</text>
+  <text x="890" y="181" text-anchor="middle" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#1f2937">xy = 8  ⇔  y = 8/x</text>
+
+  <g font-family="Arial, sans-serif" font-size="20" fill="#1f2937">
+    <rect x="672" y="216" width="126" height="58" rx="12" fill="#ffffff" stroke="#fb923c" stroke-width="2"/>
+    <rect x="827" y="216" width="126" height="58" rx="12" fill="#ffffff" stroke="#fb923c" stroke-width="2"/>
+    <rect x="982" y="216" width="126" height="58" rx="12" fill="#ffffff" stroke="#fb923c" stroke-width="2"/>
+    <text x="735" y="251" text-anchor="middle">x = 1</text>
+    <text x="890" y="251" text-anchor="middle">x = 2</text>
+    <text x="1045" y="251" text-anchor="middle">x = 4</text>
+    <text x="812" y="251" text-anchor="middle" font-size="24" font-weight="700" fill="#ea580c">×2</text>
+    <text x="967" y="251" text-anchor="middle" font-size="24" font-weight="700" fill="#ea580c">×2</text>
+
+    <rect x="672" y="314" width="126" height="58" rx="12" fill="#ffedd5" stroke="#ea580c" stroke-width="2"/>
+    <rect x="827" y="314" width="126" height="58" rx="12" fill="#ffedd5" stroke="#ea580c" stroke-width="2"/>
+    <rect x="982" y="314" width="126" height="58" rx="12" fill="#ffedd5" stroke="#ea580c" stroke-width="2"/>
+    <text x="735" y="349" text-anchor="middle" font-weight="700">y = 8</text>
+    <text x="890" y="349" text-anchor="middle" font-weight="700">y = 4</text>
+    <text x="1045" y="349" text-anchor="middle" font-weight="700">y = 2</text>
+    <text x="812" y="349" text-anchor="middle" font-size="24" font-weight="700" fill="#ea580c">÷2</text>
+    <text x="967" y="349" text-anchor="middle" font-size="24" font-weight="700" fill="#ea580c">÷2</text>
+  </g>
+
+  <rect x="672" y="407" width="436" height="112" rx="16" fill="#ffffff" stroke="#fed7aa"/>
+  <text x="890" y="440" text-anchor="middle" font-family="Arial, sans-serif" font-size="19" font-weight="700" fill="#c2410c">Đại lượng giữ nguyên: xy = 8</text>
+  <text x="890" y="474" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" fill="#1f2937">x gấp đôi → y còn một nửa</text>
+  <text x="890" y="503" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" fill="#4b5563">Tích hai đại lượng luôn không đổi</text>
+
+  <text x="600" y="607" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#6b7280">Mẹo kiểm tra: tỉ lệ thuận → y/x không đổi; tỉ lệ nghịch → xy không đổi.</text>
+</svg>

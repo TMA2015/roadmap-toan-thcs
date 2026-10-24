@@ -1,0 +1,172 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "skill-taxonomy-v2-topic-policy-r1",
+  "title": "Skill Taxonomy v2 Topic Policy R1",
+  "type": "object",
+  "required": [
+    "schema",
+    "version",
+    "status",
+    "topic_id",
+    "topic_slug",
+    "runtime_enabled",
+    "learner_data_write_enabled",
+    "independent_credit_authorized",
+    "source_overlay",
+    "source_files",
+    "counts",
+    "rows"
+  ],
+  "properties": {
+    "schema": {
+      "const": "skill-taxonomy-v2-topic-policy-r1"
+    },
+    "version": {
+      "const": 1
+    },
+    "status": {
+      "const": "I1_COMPILED_RUNTIME_DISABLED"
+    },
+    "topic_id": {
+      "type": "string",
+      "pattern": "^CT(?:0[2-9]|1[0-9]|2[0-5])$"
+    },
+    "topic_slug": {
+      "type": "string",
+      "minLength": 1
+    },
+    "runtime_enabled": {
+      "const": false
+    },
+    "learner_data_write_enabled": {
+      "const": false
+    },
+    "independent_credit_authorized": {
+      "const": false
+    },
+    "source_overlay": {
+      "type": "object",
+      "required": [
+        "path",
+        "ref",
+        "blob_sha",
+        "review_gate"
+      ]
+    },
+    "source_files": {
+      "type": "object",
+      "minProperties": 1
+    },
+    "counts": {
+      "type": "object",
+      "required": [
+        "questions",
+        "family_link_rows",
+        "no_family_rows"
+      ]
+    },
+    "rows": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "question_id",
+          "topic_id",
+          "source_file",
+          "source_blob",
+          "legacy_skill_tags",
+          "source_primary_id",
+          "diagnostic_skill_id",
+          "family_id",
+          "family_layer",
+          "mapping_role",
+          "policy_disposition",
+          "evidence_class",
+          "clone_family",
+          "independent_credit_authorized",
+          "runtime_enabled"
+        ],
+        "properties": {
+          "question_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "topic_id": {
+            "type": "string"
+          },
+          "source_file": {
+            "type": "string",
+            "minLength": 1
+          },
+          "source_blob": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{40}$"
+          },
+          "legacy_skill_tags": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "source_primary_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "diagnostic_skill_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "family_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "family_layer": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "mapping_role": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "policy_disposition": {
+            "enum": [
+              "FAMILY_LINK_REVIEWED",
+              "FORMATIVE_ONLY_NO_FAMILY"
+            ]
+          },
+          "evidence_class": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "clone_family": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "independent_credit_authorized": {
+            "const": false
+          },
+          "runtime_enabled": {
+            "const": false
+          }
+        },
+        "additionalProperties": true
+      }
+    }
+  },
+  "additionalProperties": true
+}

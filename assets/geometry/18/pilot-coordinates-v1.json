@@ -1,0 +1,116 @@
+{
+  "schema": "roadmap-geometry-pilot-coordinates-v1",
+  "version": 1,
+  "topic": "18-he-thuc-luong",
+  "purpose": "Verification metadata for four initial SVGs; not a replacement for frozen geometry-diagram-spec-v1 schema.",
+  "figures": [
+    {
+      "id": "18-tam-giac-vuong-doi-ke-huyen-v1",
+      "points": {
+        "A": [
+          160,
+          295
+        ],
+        "B": [
+          160,
+          105
+        ],
+        "C": [
+          465,
+          295
+        ]
+      },
+      "givens": [
+        "AB perpendicular AC",
+        "angle alpha at C"
+      ],
+      "semantic": {
+        "opposite": "AB",
+        "adjacent": "AC",
+        "hypotenuse": "BC"
+      }
+    },
+    {
+      "id": "18-duong-cao-canh-huyen-v1",
+      "points": {
+        "A": [
+          244,
+          108
+        ],
+        "B": [
+          100,
+          300
+        ],
+        "C": [
+          500,
+          300
+        ],
+        "H": [
+          244,
+          300
+        ]
+      },
+      "givens": [
+        "AB perpendicular AC",
+        "AH perpendicular BC",
+        "H between B and C"
+      ],
+      "segments": {
+        "p": "BH",
+        "q": "HC",
+        "h": "AH"
+      }
+    },
+    {
+      "id": "18-he-thuc-duong-cao-pq-v1",
+      "points": {
+        "A": [
+          244,
+          108
+        ],
+        "B": [
+          100,
+          300
+        ],
+        "C": [
+          500,
+          300
+        ],
+        "H": [
+          244,
+          300
+        ]
+      },
+      "givens": [
+        "AB perpendicular AC",
+        "AH perpendicular BC",
+        "H between B and C"
+      ],
+      "identity": "AH^2=BH*HC"
+    },
+    {
+      "id": "18-goc-nang-v1",
+      "points": {
+        "O": [
+          110,
+          310
+        ],
+        "F": [
+          510,
+          310
+        ],
+        "T": [
+          510,
+          130
+        ]
+      },
+      "givens": [
+        "OF horizontal",
+        "FT vertical",
+        "angle alpha at O between OF and OT"
+      ],
+      "identity": "tan(alpha)=FT/OF",
+      "assumption": "ignore eye height"
+    }
+  ]
+}

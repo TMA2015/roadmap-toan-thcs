@@ -1,0 +1,559 @@
+{
+  "schema": "roadmap-topic-core-display-overlay-v2",
+  "version": 2,
+  "topic": "20-hinh-hoc-tong-hop",
+  "title": "Hình học tổng hợp, đo lường và hình khối",
+  "source_workspace_blob_sha": "774997cd9ac4d2efc1c53c17c0de48e6fcdba497",
+  "source_legacy_bank_blob_sha": "d61845552c9a484ab9b220606ff20c9a9e6a7046",
+  "source_review_blob_sha": "1b22f297e57eeee65c43575c4a81fd06c8e7eede",
+  "history_policy": {
+    "migration": "none",
+    "storage_key": "toan-thcs-practice-v1",
+    "learner_records": "question ID and assessed skill unchanged",
+    "old_card_progress": "read-only baseline, never recalculated from v2 denominators",
+    "legacy_card_id_binding": "immutable",
+    "legacy_snapshot_version": 1,
+    "display_version": 2
+  },
+  "legacy_cards_read_only": [
+    {
+      "id": "geo20-core-1",
+      "original_skills": [
+        "nhan-biet-tam-giac-deu",
+        "nhan-biet-hinh-vuong",
+        "nhan-biet-luc-giac-deu",
+        "nhan-biet-tu-giac-dac-biet",
+        "chu-vi-tu-giac",
+        "dien-tich-tu-giac",
+        "do-luong-thuc-te",
+        "truc-doi-xung",
+        "tam-doi-xung"
+      ],
+      "original_micro_practice": [
+        "GEO20MICRO_001",
+        "GEO20MICRO_002",
+        "GEO20MICRO_003"
+      ],
+      "original_skill_denominator": 9
+    },
+    {
+      "id": "geo20-core-2",
+      "original_skills": [
+        "the-tich-hop-chu-nhat",
+        "dien-tich-day",
+        "doi-don-vi-do-luong",
+        "nhan-biet-hinh-hop-lap-phuong",
+        "dien-tich-xung-quanh-hop-chu-nhat",
+        "the-tich-lang-tru",
+        "nhan-biet-lang-tru-dung",
+        "dien-tich-xung-quanh-lang-tru"
+      ],
+      "original_micro_practice": [
+        "GEO20MICRO_004",
+        "GEO20MICRO_005",
+        "GEO20MICRO_006"
+      ],
+      "original_skill_denominator": 8
+    },
+    {
+      "id": "geo20-core-3",
+      "original_skills": [
+        "nhan-biet-hinh-chop-deu",
+        "dien-tich-xung-quanh-hinh-chop",
+        "the-tich-hinh-chop"
+      ],
+      "original_micro_practice": [
+        "GEO20MICRO_007",
+        "GEO20MICRO_008",
+        "GEO20MICRO_009"
+      ],
+      "original_skill_denominator": 3
+    },
+    {
+      "id": "geo20-core-4",
+      "original_skills": [
+        "nhan-biet-hinh-tru",
+        "dien-tich-xung-quanh-hinh-tru",
+        "the-tich-hinh-tru",
+        "nhan-biet-hinh-non",
+        "dien-tich-xung-quanh-hinh-non",
+        "the-tich-hinh-non"
+      ],
+      "original_micro_practice": [
+        "GEO20MICRO_010",
+        "GEO20MICRO_011",
+        "GEO20MICRO_012"
+      ],
+      "original_skill_denominator": 6
+    },
+    {
+      "id": "geo20-core-5",
+      "original_skills": [
+        "nhan-biet-hinh-cau",
+        "dien-tich-mat-cau",
+        "the-tich-hinh-cau"
+      ],
+      "original_micro_practice": [
+        "GEO20MICRO_013",
+        "GEO20MICRO_014",
+        "GEO20MICRO_015"
+      ],
+      "original_skill_denominator": 3
+    }
+  ],
+  "cards": [
+    {
+      "id": "geo20-core-1",
+      "order": 1,
+      "title": "Nhận diện tam giác đều, trục đối xứng và diện tích tứ giác",
+      "kntt_lessons": [
+        "Lớp 6–9"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "nhan-biet-tam-giac-deu",
+        "truc-doi-xung",
+        "dien-tich-tu-giac"
+      ],
+      "prerequisites": [
+        "tong-goc-tu-giac"
+      ],
+      "micro_practice": [
+        "GEO20MICRO_001",
+        "GEO20MICRO_002",
+        "GEO20MICRO_003"
+      ],
+      "legacy_card_id": "geo20-core-1",
+      "display_group_version": 2,
+      "teaching_copy": {
+        "key_idea": "Tam giác đều có ba cạnh và ba góc bằng nhau. Trục đối xứng chia hình thành hai phần phản chiếu trùng nhau; hình vuông có bốn trục. Diện tích hình chữ nhật bằng dài nhân rộng, kết quả phải dùng đơn vị diện tích.",
+        "worked_example": {
+          "problem": "Một sân hình vuông cạnh 7 m. Tính diện tích và xác định số trục đối xứng.",
+          "solution": "Bước 1: Diện tích sân là 7×7=49 m². Bước 2: Hai đường chéo và hai đường qua trung điểm các cặp cạnh đối là bốn trục đối xứng."
+        },
+        "misconception": "Nhầm bốn trục đối xứng với bốn cạnh; dùng mét thay vì mét vuông cho diện tích.",
+        "summary": "Nhận biết hình qua định nghĩa; diện tích mang đơn vị vuông.",
+        "source_reference": "docs/kien-thuc/20-hinh-hoc-tong-hop/index.md",
+        "source_sections": [
+          "3.0",
+          "3.6"
+        ],
+        "source_question_ids": [
+          "GEO20MICRO_001",
+          "GEO20MICRO_002",
+          "GEO20MICRO_003"
+        ],
+        "review_status": "SELF_AUDITED",
+        "review_method": "SOURCE_LOCKED_BOUNDED_SELF_AUDIT",
+        "academic_review_ref": "content-staging/reviews/MATH-CORE20-V2-RELEASE-RECONCILIATION-20260929.md"
+      }
+    },
+    {
+      "id": "geo20-core-1a",
+      "order": 2,
+      "title": "Hình vuông, lục giác đều, quan hệ bao hàm",
+      "kntt_lessons": [
+        "Lớp 6"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "nhan-biet-hinh-vuong",
+        "nhan-biet-luc-giac-deu",
+        "nhan-biet-tu-giac-dac-biet"
+      ],
+      "prerequisites": [
+        "tong-goc-tu-giac"
+      ],
+      "micro_practice": [
+        "GEO20MICRO_016",
+        "GEO20MICRO_017",
+        "GEO20MICRO_018"
+      ],
+      "legacy_card_id": "geo20-core-1",
+      "display_group_version": 2,
+      "teaching_copy": {
+        "key_idea": "Hình vuông vừa là hình chữ nhật vừa là hình thoi; lục giác đều có sáu cạnh và sáu góc bằng nhau. Nhận diện tứ giác cần phân biệt điều kiện đủ, quan hệ bao hàm và hình chỉ vẽ minh họa.",
+        "worked_example": {
+          "problem": "ABCD đã là hình thoi và có một góc vuông. Phân loại ABCD.",
+          "solution": "Vì hình thoi là hình bình hành, một góc vuông kéo theo bốn góc vuông; bốn cạnh bằng nhau nên ABCD là hình vuông, cũng là chữ nhật và thoi."
+        },
+        "misconception": "Hai đường chéo bằng nhau của tứ giác tùy ý chưa đủ kết luận hình vuông.",
+        "summary": "Nhớ tiền đề trước khi áp dụng dấu hiệu.",
+        "source_reference": "docs/kien-thuc/20-hinh-hoc-tong-hop/index.md",
+        "source_sections": [
+          "3.0"
+        ],
+        "source_question_ids": [
+          "GEO20MICRO_016",
+          "GEO20MICRO_017",
+          "GEO20MICRO_018"
+        ],
+        "review_status": "APPROVED",
+        "review_method": "NOTEBOOKLM_PART_B_R1_TEXT_ONLY",
+        "academic_review_ref": "content-staging/reviews/MATH-CORE20-PARTB-OWNER-REVIEW-RESULT-20260929.md",
+        "review_source_blob_sha": "1b22f297e57eeee65c43575c4a81fd06c8e7eede"
+      }
+    },
+    {
+      "id": "geo20-core-1b",
+      "order": 3,
+      "title": "Chu vi, đo lường thực tế và đối xứng tâm",
+      "kntt_lessons": [
+        "Lớp 6"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "chu-vi-tu-giac",
+        "do-luong-thuc-te",
+        "tam-doi-xung"
+      ],
+      "prerequisites": [
+        "tong-goc-tu-giac"
+      ],
+      "micro_practice": [
+        "GEO20MICRO_019",
+        "GEO20MICRO_020",
+        "GEO20MICRO_021"
+      ],
+      "legacy_card_id": "geo20-core-1",
+      "display_group_version": 2,
+      "teaching_copy": {
+        "key_idea": "Chu vi là tổng độ dài đường biên; phải đổi cùng đơn vị. Tâm đối xứng là điểm để phép quay 180° biến hình thành chính nó, khác trục đối xứng.",
+        "worked_example": {
+          "problem": "Hình thoi cạnh 5 cm. Tính chu vi và xác định tâm đối xứng.",
+          "solution": "P=4×5=20 cm; giao điểm hai đường chéo là tâm đối xứng của hình thoi."
+        },
+        "misconception": "Nhầm chu vi với nửa chu vi; xem một đỉnh là tâm đối xứng.",
+        "summary": "Đơn vị dài cho chu vi; kiểm tra đối xứng tâm bằng quay 180°.",
+        "source_reference": "docs/kien-thuc/20-hinh-hoc-tong-hop/index.md",
+        "source_sections": [
+          "3.0"
+        ],
+        "source_question_ids": [
+          "GEO20MICRO_019",
+          "GEO20MICRO_020",
+          "GEO20MICRO_021"
+        ],
+        "review_status": "APPROVED",
+        "review_method": "NOTEBOOKLM_PART_B_R1_TEXT_ONLY",
+        "academic_review_ref": "content-staging/reviews/MATH-CORE20-PARTB-OWNER-REVIEW-RESULT-20260929.md",
+        "review_source_blob_sha": "1b22f297e57eeee65c43575c4a81fd06c8e7eede"
+      }
+    },
+    {
+      "id": "geo20-core-2",
+      "order": 4,
+      "title": "Hình hộp, diện tích xung quanh hộp và lăng trụ",
+      "kntt_lessons": [
+        "Lớp 6–9"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "nhan-biet-hinh-hop-lap-phuong",
+        "dien-tich-xung-quanh-hop-chu-nhat",
+        "dien-tich-xung-quanh-lang-tru"
+      ],
+      "prerequisites": [
+        "dien-tich-tu-giac"
+      ],
+      "micro_practice": [
+        "GEO20MICRO_004",
+        "GEO20MICRO_005",
+        "GEO20MICRO_006"
+      ],
+      "legacy_card_id": "geo20-core-2",
+      "display_group_version": 2,
+      "teaching_copy": {
+        "key_idea": "Hình hộp chữ nhật có sáu mặt hình chữ nhật; hình lập phương có sáu mặt vuông. Diện tích xung quanh hộp kích thước đáy a,b và cao h là 2(a+b)h. Với lăng trụ đứng, S_xq=P_đáy×h.",
+        "worked_example": {
+          "problem": "Hộp chữ nhật đáy 2 cm×3 cm, cao 5 cm. Tính diện tích xung quanh.",
+          "solution": "Bước 1: Chu vi đáy P=2(2+3)=10 cm. Bước 2: S_xq=P×h=10×5=50 cm². Không cộng diện tích hai đáy vào diện tích xung quanh."
+        },
+        "misconception": "Nhầm diện tích xung quanh với diện tích toàn phần hoặc nhân chu vi đáy để tính thể tích.",
+        "summary": "Diện tích xung quanh = chu vi đáy × chiều cao đối với hộp và lăng trụ đứng.",
+        "source_reference": "docs/kien-thuc/20-hinh-hoc-tong-hop/index.md",
+        "source_sections": [
+          "3.6"
+        ],
+        "source_question_ids": [
+          "GEO20MICRO_004",
+          "GEO20MICRO_005",
+          "GEO20MICRO_006"
+        ],
+        "review_status": "SELF_AUDITED",
+        "review_method": "SOURCE_LOCKED_BOUNDED_SELF_AUDIT",
+        "academic_review_ref": "content-staging/reviews/MATH-CORE20-V2-RELEASE-RECONCILIATION-20260929.md"
+      }
+    },
+    {
+      "id": "geo20-core-2a",
+      "order": 5,
+      "title": "Diện tích đáy, thể tích hộp và đổi đơn vị",
+      "kntt_lessons": [
+        "Lớp 7"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "the-tich-hop-chu-nhat",
+        "dien-tich-day",
+        "doi-don-vi-do-luong"
+      ],
+      "prerequisites": [
+        "dien-tich-tu-giac"
+      ],
+      "micro_practice": [
+        "GEO20MICRO_022",
+        "GEO20MICRO_023",
+        "GEO20MICRO_024"
+      ],
+      "legacy_card_id": "geo20-core-2",
+      "display_group_version": 2,
+      "teaching_copy": {
+        "key_idea": "S_đáy=a×b; V=a×b×h. Đổi mọi kích thước về cùng đơn vị dài trước phép nhân; phân biệt đơn vị diện tích và thể tích.",
+        "worked_example": {
+          "problem": "Hộp chữ nhật đáy 40 cm × 0,5 m, cao 30 cm. Tính đáy theo m² và dung tích theo lít.",
+          "solution": "40 cm=0,4 m, 30 cm=0,3 m; S_đáy=0,4×0,5=0,2 m²; V=0,2×0,3=0,06 m³=60 lít."
+        },
+        "misconception": "Dùng hệ số đổi chiều dài cho diện tích/thể tích; bỏ đổi đơn vị.",
+        "summary": "Đổi dài trước, rồi ghi m²/m³/lít đúng chỗ.",
+        "source_reference": "docs/kien-thuc/20-hinh-hoc-tong-hop/index.md",
+        "source_sections": [
+          "3.6"
+        ],
+        "source_question_ids": [
+          "GEO20MICRO_022",
+          "GEO20MICRO_023",
+          "GEO20MICRO_024"
+        ],
+        "review_status": "APPROVED",
+        "review_method": "NOTEBOOKLM_PART_B_R1_TEXT_ONLY",
+        "academic_review_ref": "content-staging/reviews/MATH-CORE20-PARTB-OWNER-REVIEW-RESULT-20260929.md",
+        "review_source_blob_sha": "1b22f297e57eeee65c43575c4a81fd06c8e7eede"
+      }
+    },
+    {
+      "id": "geo20-core-2b",
+      "order": 6,
+      "title": "Lăng trụ đứng: nhận biết và thể tích",
+      "kntt_lessons": [
+        "Lớp 7"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "the-tich-lang-tru",
+        "nhan-biet-lang-tru-dung"
+      ],
+      "prerequisites": [
+        "dien-tich-tu-giac"
+      ],
+      "micro_practice": [
+        "GEO20MICRO_025",
+        "GEO20MICRO_026"
+      ],
+      "legacy_card_id": "geo20-core-2",
+      "display_group_version": 2,
+      "teaching_copy": {
+        "key_idea": "Lăng trụ đứng có các cạnh bên vuông góc đáy; hai đáy song song bằng nhau. V=S_đáy×h, h là khoảng cách vuông góc giữa hai mặt đáy.",
+        "worked_example": {
+          "problem": "Lăng trụ đứng đáy tam giác vuông có hai cạnh góc vuông 3 cm và 4 cm, cao 10 cm. Tính thể tích.",
+          "solution": "S_đáy=3×4/2=6 cm²; V=6×10=60 cm³. Không lấy chu vi đáy để tính thể tích."
+        },
+        "misconception": "Nhầm chu vi đáy × cao với thể tích.",
+        "summary": "Diện tích đáy × chiều cao vuông góc.",
+        "source_reference": "docs/kien-thuc/20-hinh-hoc-tong-hop/index.md",
+        "source_sections": [
+          "3.6"
+        ],
+        "source_question_ids": [
+          "GEO20MICRO_025",
+          "GEO20MICRO_026"
+        ],
+        "review_status": "APPROVED",
+        "review_method": "NOTEBOOKLM_PART_B_R1_TEXT_ONLY",
+        "academic_review_ref": "content-staging/reviews/MATH-CORE20-PARTB-OWNER-REVIEW-RESULT-20260929.md",
+        "review_source_blob_sha": "1b22f297e57eeee65c43575c4a81fd06c8e7eede"
+      }
+    },
+    {
+      "id": "geo20-core-3",
+      "order": 7,
+      "title": "Hình chóp đều",
+      "kntt_lessons": [
+        "Lớp 6–9"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "nhan-biet-hinh-chop-deu",
+        "dien-tich-xung-quanh-hinh-chop",
+        "the-tich-hinh-chop"
+      ],
+      "prerequisites": [
+        "dien-tich-day"
+      ],
+      "micro_practice": [
+        "GEO20MICRO_007",
+        "GEO20MICRO_008",
+        "GEO20MICRO_009"
+      ],
+      "legacy_card_id": "geo20-core-3",
+      "display_group_version": 2,
+      "teaching_copy": {
+        "key_idea": "Hình chóp đều có đáy là đa giác đều và các mặt bên là tam giác cân bằng nhau. S_xq=p×d với p là nửa chu vi đáy, d là trung đoạn; V=S_đáy×h/3 với h vuông góc đáy, không phải trung đoạn.",
+        "worked_example": {
+          "problem": "Hình chóp tứ giác đều đáy vuông cạnh 6 cm, trung đoạn 5 cm, cao 4 cm. Tính diện tích xung quanh và thể tích.",
+          "solution": "Bước 1: Nửa chu vi đáy p=4×6/2=12 cm. Bước 2: S_xq=p×d=12×5=60 cm². Bước 3: S_đáy=36 cm², nên V=36×4/3=48 cm³. Với đáy vuông, nửa cạnh 3, h=4, d=5 phù hợp tam giác vuông 3–4–5."
+        },
+        "misconception": "Dùng trung đoạn d thay cho chiều cao h trong công thức thể tích hoặc quên hệ số một phần ba.",
+        "summary": "Chóp đều: diện tích xung quanh dùng trung đoạn, thể tích dùng chiều cao vuông góc.",
+        "source_reference": "docs/kien-thuc/20-hinh-hoc-tong-hop/index.md",
+        "source_sections": [
+          "3.6"
+        ],
+        "source_question_ids": [
+          "GEO20MICRO_007",
+          "GEO20MICRO_008",
+          "GEO20MICRO_009"
+        ],
+        "review_status": "SELF_AUDITED",
+        "review_method": "SOURCE_LOCKED_BOUNDED_SELF_AUDIT",
+        "academic_review_ref": "content-staging/reviews/MATH-CORE20-V2-RELEASE-RECONCILIATION-20260929.md"
+      }
+    },
+    {
+      "id": "geo20-core-4",
+      "order": 8,
+      "title": "Hình trụ và hình nón – các câu gốc hỗn hợp",
+      "kntt_lessons": [
+        "Lớp 6–9"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "nhan-biet-hinh-tru",
+        "dien-tich-xung-quanh-hinh-non",
+        "the-tich-hinh-tru"
+      ],
+      "prerequisites": [
+        "do-dai-duong-tron"
+      ],
+      "micro_practice": [
+        "GEO20MICRO_010",
+        "GEO20MICRO_011",
+        "GEO20MICRO_012"
+      ],
+      "legacy_card_id": "geo20-core-4",
+      "display_group_version": 2,
+      "teaching_copy": {
+        "key_idea": "Hình trụ tròn xoay có hai đáy tròn bằng nhau; thể tích V=πr²h. Hình nón có một đáy tròn và một đỉnh; diện tích xung quanh S_xq=πrl, trong đó l là đường sinh. Không tráo đổi đại lượng chiều cao và đường sinh.",
+        "worked_example": {
+          "problem": "Một hình trụ bán kính 2 cm, cao 5 cm và một hình nón bán kính 3 cm, đường sinh 5 cm. Tính V của trụ và S_xq của nón.",
+          "solution": "Bước 1: V_trụ=π×2²×5=20π cm³. Bước 2: S_xq,nón=π×3×5=15π cm². Hai phép tính có đơn vị khác nhau vì một là thể tích, một là diện tích."
+        },
+        "misconception": "Dùng πrl cho hình trụ hoặc dùng đường sinh thay chiều cao khi tính thể tích trụ.",
+        "summary": "Trụ V dùng r,h; nón S_xq dùng r,l. Phân biệt cm² và cm³.",
+        "source_reference": "docs/kien-thuc/20-hinh-hoc-tong-hop/index.md",
+        "source_sections": [
+          "3.6"
+        ],
+        "source_question_ids": [
+          "GEO20MICRO_010",
+          "GEO20MICRO_011",
+          "GEO20MICRO_012"
+        ],
+        "review_status": "SELF_AUDITED",
+        "review_method": "SOURCE_LOCKED_BOUNDED_SELF_AUDIT",
+        "academic_review_ref": "content-staging/reviews/MATH-CORE20-V2-RELEASE-RECONCILIATION-20260929.md"
+      }
+    },
+    {
+      "id": "geo20-core-4a",
+      "order": 9,
+      "title": "Củng cố diện tích trụ, nhận biết và thể tích nón",
+      "kntt_lessons": [
+        "Lớp 9"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "dien-tich-xung-quanh-hinh-tru",
+        "nhan-biet-hinh-non",
+        "the-tich-hinh-non"
+      ],
+      "prerequisites": [
+        "do-dai-duong-tron"
+      ],
+      "micro_practice": [
+        "GEO20MICRO_027",
+        "GEO20MICRO_028",
+        "GEO20MICRO_029"
+      ],
+      "legacy_card_id": "geo20-core-4",
+      "display_group_version": 2,
+      "teaching_copy": {
+        "key_idea": "Trụ tròn xoay S_xq=2πrh; nón tròn xoay có một đáy tròn, một đỉnh, S_xq=πrl với l là đường sinh và V=πr²h/3 với h là chiều cao vuông góc.",
+        "worked_example": {
+          "problem": "Nón tròn xoay r=3 cm, h=4 cm, đường sinh l=5 cm. Tính S_xq và V.",
+          "solution": "S_xq=π·3·5=15π cm²; V=π·9·4/3=12π cm³."
+        },
+        "misconception": "Thay l vào công thức V; dùng công thức S_xq của trụ cho nón.",
+        "summary": "Nón: S_xq dùng đường sinh; V dùng đường cao.",
+        "source_reference": "docs/kien-thuc/20-hinh-hoc-tong-hop/index.md",
+        "source_sections": [
+          "3.6"
+        ],
+        "source_question_ids": [
+          "GEO20MICRO_027",
+          "GEO20MICRO_028",
+          "GEO20MICRO_029"
+        ],
+        "review_status": "APPROVED",
+        "review_method": "NOTEBOOKLM_PART_B_R1_TEXT_ONLY",
+        "academic_review_ref": "content-staging/reviews/MATH-CORE20-PARTB-OWNER-REVIEW-RESULT-20260929.md",
+        "review_source_blob_sha": "1b22f297e57eeee65c43575c4a81fd06c8e7eede"
+      }
+    },
+    {
+      "id": "geo20-core-5",
+      "order": 10,
+      "title": "Mặt cầu và hình cầu",
+      "kntt_lessons": [
+        "Lớp 6–9"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "nhan-biet-hinh-cau",
+        "dien-tich-mat-cau",
+        "the-tich-hinh-cau"
+      ],
+      "prerequisites": [
+        "dien-tich-hinh-tron"
+      ],
+      "micro_practice": [
+        "GEO20MICRO_013",
+        "GEO20MICRO_014",
+        "GEO20MICRO_015"
+      ],
+      "legacy_card_id": "geo20-core-5",
+      "display_group_version": 2,
+      "teaching_copy": {
+        "key_idea": "Mặt cầu gồm các điểm trong không gian cách tâm một khoảng R; hình cầu là phần không gian giới hạn bởi mặt cầu. Diện tích mặt cầu S=4πR², thể tích hình cầu V=4πR³/3.",
+        "worked_example": {
+          "problem": "Hình cầu bán kính 2 cm. Tính diện tích mặt cầu và thể tích hình cầu.",
+          "solution": "Bước 1: S=4π×2²=16π cm². Bước 2: V=4π×2³/3=32π/3 cm³."
+        },
+        "misconception": "Dùng công thức diện tích làm thể tích, hoặc bỏ mũ ba và hệ số 4/3.",
+        "summary": "Mặt cầu tính diện tích; hình cầu tính thể tích. Đơn vị cm² khác cm³.",
+        "source_reference": "docs/kien-thuc/20-hinh-hoc-tong-hop/index.md",
+        "source_sections": [
+          "3.6"
+        ],
+        "source_question_ids": [
+          "GEO20MICRO_013",
+          "GEO20MICRO_014",
+          "GEO20MICRO_015"
+        ],
+        "review_status": "SELF_AUDITED",
+        "review_method": "SOURCE_LOCKED_BOUNDED_SELF_AUDIT",
+        "academic_review_ref": "content-staging/reviews/MATH-CORE20-V2-RELEASE-RECONCILIATION-20260929.md"
+      }
+    }
+  ]
+}

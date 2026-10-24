@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <title>Kiểm thử bộ đếm Toán v2 · G Learning</title>
+  <style>
+    :root{font-family:system-ui,-apple-system,"Segoe UI",sans-serif;color:#17312b;background:#f2f7f4;font-size:16px}
+    *{box-sizing:border-box}
+    body{margin:0;line-height:1.55}
+    .wrap{max-width:980px;padding:24px 18px 56px;margin:auto}
+    header{padding:22px 24px;border-radius:20px;background:#174f3d;color:white}
+    header p{max-width:690px;margin:7px 0 0;color:#e1efe9}
+    .eyebrow{font-size:.84rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase}
+    h1{font-size:clamp(1.45rem,3vw,2.1rem);line-height:1.25;margin:9px 0}
+    h2{font-size:1.18rem;margin:0 0 9px}
+    p{margin:6px 0 12px}
+    .panel{background:white;border:1px solid #d6e4dc;border-radius:17px;padding:20px;margin-top:17px}
+    .small{font-size:.89rem;color:#465950}
+    .warn{border-left:4px solid #b17c2f;background:#fff8e9;padding:10px 14px;border-radius:7px}
+    .actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:12px;align-items:center}
+    button,.file-label{appearance:none;border:1px solid #2f6d50;border-radius:11px;font:inherit;font-weight:650;cursor:pointer;padding:11px 15px;min-height:45px;background:#f1f8f3;color:#194e37}
+    button.primary{background:#196343;color:white;border-color:#196343}
+    button.secondary{background:#fff;color:#325642}
+    button:disabled{opacity:.48;cursor:not-allowed}
+    button:focus-visible,input:focus-visible{outline:3px solid #da9c3c;outline-offset:3px}
+    .stats{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px;margin:15px 0}
+    .stat{border:1px solid #cfe0d5;border-radius:13px;background:#f8fbf9;padding:12px}
+    .stat strong{font-size:1.75rem;display:block;color:#185f41;font-variant-numeric:tabular-nums}
+    .stat span{display:block;font-size:.82rem;color:#465950}
+    .status{border-radius:10px;background:#eef5f0;border:1px solid #c6dcd0;min-height:48px;padding:11px 13px;margin:12px 0}
+    .status[data-kind="error"]{background:#fff2f0;border-color:#efb8ad;color:#872c21}
+    .status[data-kind="success"]{background:#eff9f0;border-color:#9dcdad;color:#235636}
+    .cols{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+    label.check{display:flex;gap:9px;align-items:flex-start;margin:10px 0;font-size:.93rem}
+    input[type=checkbox]{width:20px;height:20px;flex:0 0 auto}
+    input[type=file]{max-width:100%;font:inherit;padding:9px 0}
+    .muted-line{color:#4d6258;font-size:.9rem}
+    .step{display:inline-grid;place-items:center;width:29px;height:29px;background:#d9eddd;color:#1b5d40;border-radius:50%;margin-right:7px}
+    .foot{font-size:.86rem;color:#587065;margin-top:23px}
+    @media(max-width:700px){.wrap{padding:13px 11px 35px}.panel{padding:15px}.stats{grid-template-columns:repeat(2,minmax(0,1fr))}.stat:last-child{grid-column:1 / -1}.cols{grid-template-columns:1fr}button{width:100%}.actions{align-items:stretch}header{padding:19px}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="eyebrow">G Learning · Self-Learning Math</div>
+      <h1>Bản thử nghiệm bộ đếm v2</h1>
+      <p>Thử ghi nhận lượt học, tải lại trang và chuyển dữ liệu bằng tệp sao lưu. Dành cho phụ huynh kiểm tra trên PC hoặc iPad.</p>
+    </header>
+    <section class="panel" aria-label="Cảnh báo">
+      <p class="warn"><strong>Chỉ là dữ liệu thử nghiệm.</strong> Các nút bên dưới không làm bài Toán thật, không thay đổi điểm, lịch sử hoặc Core Readiness của học sinh. Không cần tài khoản và không gửi dữ liệu lên máy chủ.</p>
+      <p class="small">Bản này chỉ dùng kho IndexedDB thử nghiệm <code>math-v2-qa-journal-r6</code>, với hồ sơ riêng <code>QA_OWNER_R11</code>. Dữ liệu lưu trong trình duyệt đang dùng; PC và iPad chỉ trao đổi qua tệp JSON.</p>
+    </section>
+    <section class="panel">
+      <h2><span class="step">1</span> Bật thử nghiệm</h2>
+      <p>Chọn “Bắt đầu” để cho phép ghi lượt thử. Trước khi bấm, trang chỉ đọc kết quả đã thử trên thiết bị này.</p>
+      <div class="actions"><button class="primary" id="start" type="button">Bắt đầu thử nghiệm</button>
+      <button class="secondary" id="retry" type="button" disabled>Thử lưu lại lượt chưa thành công</button></div>
+      <div id="status" class="status" role="status" aria-live="polite" data-kind="info">Chưa bật ghi dữ liệu. Có thể xem số liệu bên dưới.</div>
+    </section>
+    <section class="panel">
+      <h2><span class="step">2</span> Thử ghi một hoạt động</h2>
+      <p>Chọn một tình huống giả lập. Khi ghi thành công, bộ đếm cập nhật. Nếu lỗi, trang sẽ giữ cùng mã lượt để có thể thử lưu lại mà không đếm trùng.</p>
+      <div class="actions">
+        <button id="answer-correct" type="button" disabled>Practice · Trả lời đúng</button>
+        <button id="answer-wrong" type="button" disabled>Practice · Trả lời sai</button>
+        <button id="readiness" type="button" disabled>Readiness · Nộp bài thử</button>
+        <button id="written" type="button" disabled>Written · Tự đối chiếu</button>
+      </div>
+      <div class="stats" aria-label="Bộ đếm riêng biệt">
+        <div class="stat"><strong id="stat-answer">—</strong><span>Lượt trả lời Practice</span></div>
+        <div class="stat"><strong id="stat-correct">—</strong><span>Practice đúng</span></div>
+        <div class="stat"><strong id="stat-readiness">—</strong><span>Bài Readiness đã nộp</span></div>
+        <div class="stat"><strong id="stat-written">—</strong><span>Written tự đối chiếu</span></div>
+        <div class="stat"><strong id="stat-pending">—</strong><span>Sự kiện chờ xử lý</span></div>
+      </div>
+      <p class="muted-line" id="grade-note">Readiness thử nghiệm không có bài chấm nên <strong>không tạo điểm số giả</strong>. Written không tính vào Core Readiness.</p>
+      <button class="secondary" id="refresh" type="button">Đọc lại bộ đếm</button>
+    </section>
+    <section class="panel">
+      <h2><span class="step">3</span> Sao lưu và chuyển sang thiết bị khác</h2>
+      <div class="cols">
+        <div>
+          <h3>Xuất dữ liệu thử nghiệm</h3>
+          <p class="small">Tải tệp JSON gồm nhật ký sự kiện và hàng đợi đang chờ. Có mã kiểm tra SHA-256 để nhận biết tệp đã thay đổi.</p>
+          <button id="export" class="primary" type="button">Xuất tệp sao lưu JSON</button>
+        </div>
+        <div>
+          <h3>Nhập dữ liệu thử nghiệm</h3>
+          <label for="file">Chọn tệp JSON <strong>xuất từ chính trang QA R11</strong> ở PC hoặc iPad (không cần bấm “Bắt đầu thử nghiệm” trước):</label>
+          <p class="small">Không nhập tệp sao lưu tiến độ học thật từ trang “Tiến độ học tập” vào đây. Hai loại tệp có cấu trúc riêng và không tự chuyển đổi.</p>
+          <input id="file" type="file" accept=".json,application/json">
+          <label class="check"><input type="checkbox" id="confirm-backup"><span>Tôi đã xuất và giữ bản sao lưu của dữ liệu thử nghiệm hiện tại.</span></label>
+          <label class="check"><input type="checkbox" id="confirm-replace"><span>Nếu thiết bị này đã có dữ liệu thử nghiệm, tôi đồng ý thay thế bộ dữ liệu <strong>QA</strong> đó.</span></label>
+          <button id="restore" class="primary" type="button" disabled>Kiểm tra và nhập tệp</button>
+        </div>
+      </div>
+      <p class="small">Nếu thiết bị chưa có dữ liệu thử, nhập trực tiếp không cần đánh dấu thay thế. Nếu đã có dữ liệu, phải xác nhận cả hai ô trước khi nhập; không tự trộn các lượt học từ hai thiết bị.</p>
+    </section>
+    <p class="foot">Giao diện QA R11 · Chỉ dành cho kiểm thử có kiểm soát. Muốn học thật, quay lại trang chủ Self-Learning Math. Không nhập tệp sao lưu học sinh thật vào trang này.</p>
+  </div>
+  <script src="./math-v2-canary/math-v2-idb-journal-r6.js"></script>
+  <script src="./math-v2-canary/math-v2-journal-first-submit-r8.js"></script>
+  <script src="./math-v2-canary/math-v2-journal-dashboard-projection-r9.js"></script>
+  <script src="./math-v2-canary/math-v2-journal-backup-r10.js"></script>
+  <script>
+  (() => {
+    "use strict";
+    const SCOPE="QA_OWNER_R11",PENDING_KEY="math_v2_owner_qa_r11_pending";
+    const $=id=>document.getElementById(id);
+    const actionIds=["answer-correct","answer-wrong","readiness","written"];
+    let active=false,busy=false,journal=null,writer=null,archive=null,pending=null;
+    const status=(message,kind="info")=>{$("status").textContent=message;$("status").dataset.kind=kind;};
+    const readPending=()=>{try{return JSON.parse(sessionStorage.getItem(PENDING_KEY)||"null");}catch(_){return null;}};
+    const remember=next=>{
+      pending=next;
+      try{if(next)sessionStorage.setItem(PENDING_KEY,JSON.stringify(next));
+        else sessionStorage.removeItem(PENDING_KEY);}catch(_){
+        if(next)status("Bộ nhớ tạm không khả dụng: không thể giữ lượt chưa lưu khi tải lại trang.","error");
+      }
+    };
+    pending=readPending();
+    const buttons=()=>{
+      const allow=active&&!busy;
+      $("start").disabled=active||busy;
+      for(const id of actionIds)$(id).disabled=!allow||Boolean(pending);
+      $("retry").disabled=!allow||!pending;
+      $("restore").disabled=busy||!$("file").files.length;
+      $("export").disabled=busy;
+    };
+    const count=(id,n)=>{$(id).textContent=Number.isSafeInteger(n)?new Intl.NumberFormat("vi-VN").format(n):"—";};
+    const show=async()=>{
+      const reader=journal||await window.MathV2JournalR6.createCanary({learner_scope:SCOPE,enabled:false});
+      try{
+        const events=await reader.readEvents();
+        const p=window.MathV2JournalDashboardR9.project(events,{learner_scope:SCOPE});
+        const snap=await reader.snapshot();
+        count("stat-answer",p.formative.answers);
+        count("stat-correct",p.formative.correct);
+        count("stat-readiness",p.readiness.submissions);
+        count("stat-written",p.written.self_checks);
+        count("stat-pending",snap.pending);
+        $("grade-note").textContent="Readiness: "+p.readiness.unscored+" bài chưa có điểm chấm. Written không tự tính vào Core Readiness.";
+      }finally{if(!journal)reader.close();}
+    };
+    const openQA=async()=>{
+      if(active)return;
+      journal=await window.MathV2JournalR6.createCanary({learner_scope:SCOPE,enabled:true});
+      writer=await window.MathV2JournalFirstR8.create({learner_scope:SCOPE,enabled:true});
+      archive=await window.MathV2JournalBackupR10.create({learner_scope:SCOPE,enabled:true});
+      active=true;
+    };
+    const begin=async()=>{
+      if(active)return;
+      busy=true;buttons();
+      try{
+        await openQA();
+        status(pending?"Đã bật. Có lượt thử chưa xác nhận lưu: hãy chọn Thử lưu lại.":"Đã bật ghi thử nghiệm. Có thể bấm các hoạt động giả lập.","success");
+        await show();
+      }catch(e){status("Không mở được kho thử nghiệm trên trình duyệt này: "+e.message+". Có thể thử trình duyệt thông thường, tránh chế độ riêng tư.","error");}
+      finally{busy=false;buttons();}
+    };
+    const submit=async(kind,correct)=>{
+      if(!active||busy||pending)return;
+      const id="R11_"+crypto.randomUUID().replace(/-/g,"");
+      const item=kind==="answer_attempt"?"QA_R11_PRACTICE":
+        kind==="readiness_submission"?"QA_R11_READINESS":"QA_R11_WRITTEN";
+      const intent={event_id:id,item_id:item,kind,occurred_at:new Date().toISOString()};
+      if(kind==="answer_attempt")intent.correct=correct;
+      remember(intent);
+      await retry();
+    };
+    const retry=async()=>{
+      if(!pending||!writer||busy)return;
+      busy=true;buttons();
+      try{
+        const res=await writer.submit(pending);
+        if(res.saved){
+          remember(null);
+          status(res.duplicate?"Lượt này đã có trong nhật ký; không cộng trùng.":"Đã lưu thành công vào nhật ký v2.", "success");
+        }else{
+          status("CHƯA LƯU: "+(res.reason||res.state)+". Lượt thử được giữ lại để thử lại với cùng mã ID.","error");
+        }
+        await show();
+      }catch(e){status("CHƯA LƯU: "+e.message+". Bạn có thể thử lại.","error");}
+      finally{busy=false;buttons();}
+    };
+    const ensureArchive=async()=>{
+      if(archive)return archive;
+      return window.MathV2JournalBackupR10.create({learner_scope:SCOPE,enabled:false});
+    };
+    const exportJSON=async()=>{
+      busy=true;buttons();let temp=null;
+      try{
+        temp=await ensureArchive();
+        const backup=await temp.exportBackup();
+        const blob=new Blob([JSON.stringify(backup,null,2)],{type:"application/json"});
+        const url=URL.createObjectURL(blob);
+        const link=document.createElement("a");
+        link.href=url;link.download="self-learning-math-v2-QA-"+new Date().toISOString().slice(0,10)+".json";
+        document.body.append(link);link.click();link.remove();
+        setTimeout(()=>URL.revokeObjectURL(url),2000);
+        status("Đã tạo tệp sao lưu thử nghiệm. Hãy kiểm tra tệp trong mục Tải về của thiết bị.","success");
+      }catch(e){status("Xuất dữ liệu thất bại: "+e.message,"error");}
+      finally{if(temp&&!archive)temp.close();busy=false;buttons();}
+    };
+    const restoreJSON=async()=>{
+      if(busy)return;
+      const file=$("file").files[0];
+      if(!file)return;
+      busy=true;buttons();
+      try{
+        if(file.size>2*1024*1024)throw Error("Tệp vượt quá giới hạn QA 2 MB.");
+        const raw=JSON.parse(await file.text());
+        // Reject real learner backup types BEFORE even opening a QA writer.
+        // No student entries are translated, imported or inspected beyond
+        // this declared file format marker.
+        if(raw?.schema==="self-learning-math-local-backup-v1")
+          throw Error("Đây là tệp sao lưu tiến độ học thật (Self-Learning Math v1), KHÔNG phải bản sao lưu QA R11. Không có dữ liệu nào được nhập. Hãy giữ tệp này để dùng với công cụ sao lưu của trang Tiến độ học tập; không chuyển đổi điểm học thật thành lượt QA.");
+        if(raw?.schema!=="math-v2-journal-backup-r10")
+          throw Error("Không đúng loại tệp: trang QA R11 chỉ nhận JSON xuất từ mục “Xuất tệp sao lưu JSON” của chính trang QA.");
+        // A compatible file is an explicit owner request to open only the
+        // isolated QA store; no separate Start click is required.
+        if(!active)await openQA();
+        const validated=await archive.verifyBackup(raw);
+        const current=await archive.read();
+        const occupied=current.events.length+current.pending.length>0;
+        const consent=$("confirm-backup").checked&&$("confirm-replace").checked;
+        if(occupied&&!consent)throw Error("Thiết bị đã có dữ liệu QA. Xuất sao lưu và chọn cả hai ô xác nhận trước khi thay thế.");
+        await archive.restore(raw,{replace:occupied,acknowledged:consent});
+        remember(null);
+        await show();
+        status("Đã kiểm tra SHA-256 và khôi phục "+validated.events.length+" sự kiện; "+validated.pending.length+" sự kiện đang chờ.","success");
+      }catch(e){status("Chưa nhập dữ liệu: "+e.message,"error");}
+      finally{busy=false;buttons();}
+    };
+    $("start").addEventListener("click",begin);
+    $("retry").addEventListener("click",retry);
+    $("answer-correct").addEventListener("click",()=>submit("answer_attempt",true));
+    $("answer-wrong").addEventListener("click",()=>submit("answer_attempt",false));
+    $("readiness").addEventListener("click",()=>submit("readiness_submission"));
+    $("written").addEventListener("click",()=>submit("written_self_check"));
+    $("refresh").addEventListener("click",async()=>{
+      try{await show();status("Đã đọc lại nhật ký thử nghiệm.","success");}
+      catch(e){status("Không đọc được dữ liệu: "+e.message,"error");}
+    });
+    $("export").addEventListener("click",exportJSON);
+    $("file").addEventListener("change",()=>{
+      buttons();
+      if($("file").files.length&&!active)
+        status("Đã chọn tệp JSON. Bấm “Kiểm tra và nhập tệp”; trang sẽ tự bật kho QA để kiểm tra và khôi phục.");
+    });
+    $("restore").addEventListener("click",restoreJSON);
+    buttons();
+    show().catch(e=>status("Chưa đọc được dữ liệu thử nghiệm: "+e.message,"error"));
+  })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+{
+  "schema": "practice-question-chunk-v1",
+  "version": 4,
+  "questions": [
+    {
+      "id": "NUM02-RICH-W1-02-V1",
+      "source_item_id": "02-G6-WR-03",
+      "source_lineage": "W1-R2a-reviewed-source; post-owner-QA additive typed variant; historic source preserved",
+      "response_type": "rational",
+      "answer_contract": {
+        "expected": "11/30",
+        "field_label": "Kết quả"
+      },
+      "question": "Tính 5/6 − 7/15. Nhập kết quả dưới dạng phân số.",
+      "explanation": "Quy đồng mẫu số 30: 5/6 = 25/30, 7/15 = 14/30. Vậy 25/30 − 14/30 = 11/30.",
+      "hints": [
+        "Tìm mẫu số chung của 6 và 15.",
+        "Quy đồng về mẫu số 30, sau đó trừ tử số."
+      ],
+      "difficulty": "basic",
+      "tags": {
+        "topic": "02-so-va-phep-tinh",
+        "skill": [
+          "phep-tinh-phan-so"
+        ],
+        "type": "rich-w1-typed-response",
+        "layer": "KNTT-Core",
+        "grade": 6
+      },
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core",
+        "review_packet": "MATH-EXERCISE-RECLASSIFY-W1-20261015",
+        "academic_review": "NOTEBOOKLM_R2a_20261015"
+      },
+      "authoring_review": {
+        "status": "PASS",
+        "packet_id": "MATH-EXERCISE-RECLASSIFY-W1-20261015",
+        "review_round": "R2a",
+        "scope": "SOURCE_TASK_ONLY; INPUT_MODE_TO_BE_TECH_QA"
+      },
+      "variant_group": "02-G6-WR-03-typed-v1",
+      "worked_answer": "11/30"
+    }
+  ],
+  "bank_id": "02-SO-VA-PHEP-TINH-RICH-W1-WAVE2"
+}

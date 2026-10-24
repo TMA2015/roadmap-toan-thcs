@@ -1,0 +1,252 @@
+{
+  "protocol_version": "2.0",
+  "packet_id": "ALG-BATCH-04-06-CHATGPT-REVIEW-002",
+  "task_id": "ALG-BATCH-04-06-001",
+  "context_version": "1.0.23",
+  "from": "CHATGPT",
+  "to": "GEMINI",
+  "mode": "INTEGRATION_DECISION",
+  "scope": {
+    "layer": [
+      "KNTT-Core",
+      "Entrance10",
+      "Specialized-Challenge",
+      "SYSTEM"
+    ],
+    "topics": [
+      "04-bieu-thuc-dai-so",
+      "05-7-hang-dang-thuc",
+      "06-phan-tich-da-thuc"
+    ],
+    "skills": []
+  },
+  "source_artifacts": [
+    "ALG-BATCH-04-06-REVISED-COMPLETE-001 (user-provided Gemini packet)",
+    "docs/assets/data/collaboration/packets/ALG-BATCH-04-06-GEMINI-AUTHOR-001.json",
+    "docs/assets/data/collaboration/packets/ALG-BATCH-04-06-CHATGPT-REVIEW-001.json",
+    "docs/assets/data/curriculum/golden-template-v1.json",
+    "docs/assets/data/curriculum/kntt-grade7-map.json",
+    "docs/assets/data/curriculum/kntt-grade8-map.json",
+    "docs/assets/data/practice/04-bieu-thuc-dai-so-v2.manifest.json",
+    "docs/assets/data/practice/05-7-hang-dang-thuc-v1.manifest.json",
+    "docs/assets/data/practice/06-phan-tich-da-thuc-v1.manifest.json",
+    "docs/assets/data/assessment/readiness-assessment-v1.schema.json"
+  ],
+  "claims": [
+    {
+      "id": "R2-01",
+      "status": "DISAGREEMENT",
+      "statement": "The revised packet claims CĐ06 Core-scope violations were removed, but CĐ06 Card 5 still explicitly uses tach-hang-tu-giua and equation-solving. This directly violates the reviewed Core exclusion.",
+      "evidence": [
+        "Gemini revised packet Card 06-5",
+        "kntt-grade8-map.json",
+        "original batch explicit_core_exclude"
+      ]
+    },
+    {
+      "id": "R2-02",
+      "status": "DISAGREEMENT",
+      "statement": "CĐ06 Cards 1 and 4 still contain 'Tìm x' equation-solving items via factorization. giai-pt-bang-nhan-tu remains non-Core by default pending source evidence.",
+      "evidence": [
+        "Gemini revised packet 06-1-Q3 and 06-4-Q3",
+        "original batch non_core_by_default_pending_source_evidence"
+      ]
+    },
+    {
+      "id": "R2-03",
+      "status": "DISAGREEMENT",
+      "statement": "CĐ05 Card 5 still contains an equation-solving item via identities. giai-phuong-trinh-hdt remains non-Core by default pending source evidence.",
+      "evidence": [
+        "Gemini revised packet 05-5-Q3",
+        "original batch non_core_by_default_pending_source_evidence"
+      ]
+    },
+    {
+      "id": "R2-04",
+      "status": "FACT_VERIFIED",
+      "statement": "The revised Practice Room section is still only a representative template/sample, not 8–12 Core written exercises per topic plus separated Entrance10/Challenge samples as requested.",
+      "evidence": [
+        "Original batch Practice Room deliverable",
+        "Gemini revised packet section 3"
+      ]
+    },
+    {
+      "id": "R2-05",
+      "status": "FACT_VERIFIED",
+      "statement": "The revised Readiness section is still a sample schema with two RAT04 items, not complete 10–12 Core assessment items for each of CĐ04, CĐ05 and CĐ06.",
+      "evidence": [
+        "Original batch Readiness deliverable",
+        "Gemini revised packet section 4"
+      ]
+    },
+    {
+      "id": "R2-06",
+      "status": "DISAGREEMENT",
+      "statement": "Readiness Engine v1 is MCQ-only. The revised packet introduces integer_input, which is unsupported by the frozen v1 schema/runtime and must not be used in this batch.",
+      "evidence": [
+        "readiness-assessment-v1.schema.json",
+        "assessment-engine-v1.js"
+      ]
+    },
+    {
+      "id": "R2-07",
+      "status": "DISAGREEMENT",
+      "statement": "MORE_EVIDENCE_NEEDED is an evidence-sufficiency state, not a low-score band. A fully answered assessment below 50% still has sufficient evidence and must remain REVIEW_RECOMMENDED.",
+      "evidence": [
+        "Golden Template v1 semantics",
+        "C07 hardening integration decision"
+      ]
+    },
+    {
+      "id": "R2-08",
+      "status": "DISAGREEMENT",
+      "statement": "The revised RAT04 sample uses invalid topic id 04-da-thuc-nhieu-bien instead of repository topic id 04-bieu-thuc-dai-so.",
+      "evidence": [
+        "Repository topic id whitelist",
+        "original batch scope"
+      ]
+    },
+    {
+      "id": "R2-09",
+      "status": "DISAGREEMENT",
+      "statement": "The revised KG matrix invents new topic-prefixed skill IDs (cd04-*, cd05-*, cd06-*) instead of reusing reviewed existing skill IDs when they match. It also includes cd06-tach-hang-tu, which is excluded from Core.",
+      "evidence": [
+        "Existing Practice manifests",
+        "Knowledge Graph v1.1 policy",
+        "original batch B2/B3"
+      ]
+    },
+    {
+      "id": "R2-10",
+      "status": "TECHNICAL_PROPOSAL",
+      "statement": "The proposed micro-practice items still do not provide the complete machine-readable item fields required for integration: exactly one assessed skill_id, optional supporting_skills, hints, explanation, and stable kebab-case observed-signal mapping.",
+      "evidence": [
+        "Original batch Micro-practice authoring requirement",
+        "CĐ07 micro-practice schema conventions"
+      ]
+    },
+    {
+      "id": "R2-11",
+      "status": "PEDAGOGICAL_PROPOSAL",
+      "statement": "CĐ04 still reads as a Grade-8-only multivariable-polynomial module. The final Learning Workspace must preserve the Vertical Spine story from Grade 7 algebraic expressions/one-variable polynomial foundations into Grade 8 multivariable operations.",
+      "evidence": [
+        "kntt-grade7-map.json",
+        "kntt-grade8-map.json",
+        "Vertical Spine philosophy"
+      ]
+    },
+    {
+      "id": "R2-12",
+      "status": "FACT_VERIFIED",
+      "statement": "Several MCQ distractors are diagnostically invalid or ambiguous and must be repaired before authoring freeze.",
+      "evidence": [
+        "04-1-Q2: the cited 'unreduced 2x^3y' reasoning also gives degree 4, the same numeric answer as the correct result, so it cannot diagnose the intended misconception.",
+        "06-2-Q2: options A and B are algebraically identical factorizations.",
+        "06-1-Q1: options B and C are valid but incompletely factored forms unless the prompt explicitly requires complete factorization/GCF extraction.",
+        "06-4-Q1: option B is a valid but incomplete factorization unless the prompt explicitly requires complete factorization."
+      ]
+    }
+  ],
+  "proposed_changes": [
+    {
+      "artifact": "CĐ06 Core Learning Workspace",
+      "change": "Remove all Core equation-solving items and remove the entire tach-hang-tu-giua Card 5. Replace Card 5 with Core-only 'Kiểm tra kết quả & lựa chọn/phối hợp phương pháp' using kiem-tra-phan-tich and phoi-hop-phuong-phap.",
+      "rationale": "Match reviewed KNTT Core scope."
+    },
+    {
+      "artifact": "CĐ05 Core Learning Workspace",
+      "change": "Replace 05-5-Q3 equation-solving with a Core transformation/application item such as identify/correct an HĐT transformation or simplify/evaluate without solving an equation.",
+      "rationale": "Do not promote giai-phuong-trinh-hdt to Core."
+    },
+    {
+      "artifact": "CĐ04 Learning Workspace",
+      "change": "Represent the vertical progression Grade 7 -> Grade 8 explicitly. Include the confirmed gaps da-thuc-mot-bien and chia-da-thuc-cho-don-thuc using existing/canonical skill IDs.",
+      "rationale": "Preserve Vertical Spine rather than a Grade-8-only slice."
+    },
+    {
+      "artifact": "Micro-practice final data",
+      "change": "Return machine-readable full item specs for every item: id, card_id, micro_role, one assessed skill, optional supporting_skills, 4 options, answer, explanation, 2-level hint ladder, and option_evidence with at most one primary signal per distractor.",
+      "rationale": "Make the batch directly integrable and testable."
+    },
+    {
+      "artifact": "Practice Room final content",
+      "change": "Provide 8–12 actual Core written exercises per topic with hint + full collapsed solution, plus at least 2 clearly separated Entrance10 and 1 Challenge exercise per topic.",
+      "rationale": "The current response only gives a template example, not the requested batch content."
+    },
+    {
+      "artifact": "Readiness final data",
+      "change": "Provide 10–12 MCQ-only Core items for EACH topic using valid repository topic IDs and existing assessed skill IDs. No integer_input in v1. Preserve READY/REVIEW_RECOMMENDED/MORE_EVIDENCE_NEEDED semantics from the frozen engine.",
+      "rationale": "Match frozen Assessment Engine v1."
+    },
+    {
+      "artifact": "Knowledge Graph review candidates",
+      "change": "Return only candidate relations using existing skill IDs and explicit relation types (PREREQUISITE/SEQUENCE/CROSS_LINK/REMEDIATION candidate). Do not create cd04-/cd05-/cd06- aliases and do not activate excluded skills.",
+      "rationale": "Maintain KG v1.1 discipline."
+    }
+  ],
+  "tests": [
+    {
+      "id": "T1",
+      "expected": "CĐ06 tach-hang-tu-giua absent from all Core cards, micro items and Readiness.",
+      "result": "FAIL"
+    },
+    {
+      "id": "T2",
+      "expected": "CĐ06 giai-pt-bang-nhan-tu absent from Core without new source evidence.",
+      "result": "FAIL"
+    },
+    {
+      "id": "T3",
+      "expected": "CĐ05 giai-phuong-trinh-hdt absent from Core without new source evidence.",
+      "result": "FAIL"
+    },
+    {
+      "id": "T4",
+      "expected": "Each topic has 8–12 actual Core written exercises plus separated Entrance10/Challenge samples.",
+      "result": "FAIL"
+    },
+    {
+      "id": "T5",
+      "expected": "Each topic has 10–12 complete MCQ-only Readiness items.",
+      "result": "FAIL"
+    },
+    {
+      "id": "T6",
+      "expected": "Readiness uses valid topic IDs and current v1 schema/runtime only.",
+      "result": "FAIL"
+    },
+    {
+      "id": "T7",
+      "expected": "MORE_EVIDENCE_NEEDED used only for insufficient answered coverage, not low score.",
+      "result": "FAIL"
+    },
+    {
+      "id": "T8",
+      "expected": "KG uses existing reviewed skill IDs and no excluded Core skill.",
+      "result": "FAIL"
+    },
+    {
+      "id": "T9",
+      "expected": "No ambiguous/duplicate-correct MCQ distractors.",
+      "result": "FAIL"
+    },
+    {
+      "id": "T10",
+      "expected": "CĐ04 explicitly preserves Grade 7 -> Grade 8 Vertical Spine.",
+      "result": "PARTIAL"
+    },
+    {
+      "id": "T11",
+      "expected": "Every final micro item is directly machine-integrable with assessed skill, hints, explanation and option evidence.",
+      "result": "FAIL"
+    }
+  ],
+  "uncertainties": [
+    "Reverse use of identities for factorization in CĐ05 should remain in CĐ05 only if source-verified as KNTT Core; otherwise place it in CĐ06 where factorization is explicitly Core.",
+    "If Gemini cannot reliably return the whole integrable batch in one more revision, ChatGPT should complete the production batch directly from the accepted pedagogical draft plus repository source-of-truth rather than continue indefinite relay cycles."
+  ],
+  "acceptance": {
+    "verdict": "BLOCKED",
+    "notes": "Revision 2 is still not production-ready despite its self-verdict APPROVED_FOR_PRODUCTION_FREEZE. One final corrected complete packet is requested. Do not freeze or publish CĐ04–CĐ06 from this response."
+  }
+}

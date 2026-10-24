@@ -1,0 +1,197 @@
+{
+  "schema": "roadmap-readiness-assessment-v1",
+  "version": 1,
+  "assessment_id": "QUA12-CORE-READY-V1",
+  "topic": {
+    "id": "12-phuong-trinh-bac-hai-viete",
+    "title": "Chuyên đề 12 – Phương trình bậc hai & Viète"
+  },
+  "layer": "KNTT-Core",
+  "title": "Core Readiness Check – Chuyên đề 12 – Phương trình bậc hai & Viète",
+  "skill_labels": {
+    "nhan-dang-pt-bac-hai": "Nhận dạng",
+    "he-so-abc": "Hệ số a,b,c",
+    "tinh-delta": "Tính Δ",
+    "so-nghiem-delta": "Số nghiệm",
+    "delta-phay": "Δ'",
+    "cong-thuc-nghiem": "Công thức nghiệm",
+    "giai-pt-bac-hai": "Giải phương trình",
+    "nham-nghiem": "Nhẩm nghiệm",
+    "tong-tich-nghiem": "Viète",
+    "lap-pt-tu-nghiem": "Lập phương trình"
+  },
+  "policy": {
+    "feedback": "after_submit",
+    "hints": false,
+    "tutor": false,
+    "hard_gate": false,
+    "target_minutes": 20,
+    "allow_partial_submit": true
+  },
+  "readiness": {
+    "ready_threshold": 0.8,
+    "minimum_answered_ratio": 0.8,
+    "hard_gate": false,
+    "states": [
+      "READY",
+      "REVIEW_RECOMMENDED",
+      "MORE_EVIDENCE_NEEDED"
+    ]
+  },
+  "items": [
+    {
+      "id": "QUA12READY_001",
+      "type": "mcq",
+      "skill": "he-so-abc",
+      "points": 1,
+      "question": "Với \\(2x^2-3x-1=0\\), bộ \\((a,b,c)\\) là:",
+      "options": [
+        "(2,-3,-1)",
+        "(2,3,-1)",
+        "(-2,-3,1)",
+        "(2,-3,1)"
+      ],
+      "answer": 0,
+      "explanation": "Đọc đúng dấu."
+    },
+    {
+      "id": "QUA12READY_002",
+      "type": "mcq",
+      "skill": "tinh-delta",
+      "points": 1,
+      "question": "\\(\\Delta\\) của \\(x^2-5x+6=0\\) bằng:",
+      "options": [
+        "1",
+        "25",
+        "-1",
+        "49"
+      ],
+      "answer": 0,
+      "explanation": "25-24=1."
+    },
+    {
+      "id": "QUA12READY_003",
+      "type": "mcq",
+      "skill": "so-nghiem-delta",
+      "points": 1,
+      "question": "Nếu \\(\\Delta=0\\), phương trình bậc hai có:",
+      "options": [
+        "Một nghiệm kép",
+        "Hai nghiệm phân biệt",
+        "Không có nghiệm thực",
+        "Vô số nghiệm"
+      ],
+      "answer": 0,
+      "explanation": "Δ=0 cho nghiệm kép."
+    },
+    {
+      "id": "QUA12READY_004",
+      "type": "mcq",
+      "skill": "delta-phay",
+      "points": 1,
+      "question": "Với \\(x^2-4x+3=0\\), \\(\\Delta'\\) bằng:",
+      "options": [
+        "1",
+        "4",
+        "13",
+        "-1"
+      ],
+      "answer": 0,
+      "explanation": "b'=-2; Δ'=1."
+    },
+    {
+      "id": "QUA12READY_005",
+      "type": "mcq",
+      "skill": "cong-thuc-nghiem",
+      "points": 1,
+      "question": "Trong công thức nghiệm, mẫu số là:",
+      "options": [
+        "2a",
+        "a",
+        "2b",
+        "Δ"
+      ],
+      "answer": 0,
+      "explanation": "Mẫu là 2a."
+    },
+    {
+      "id": "QUA12READY_006",
+      "type": "mcq",
+      "skill": "giai-pt-bac-hai",
+      "points": 1,
+      "question": "Giải \\(x^2-5x+6=0\\).",
+      "options": [
+        "x=2 hoặc x=3",
+        "x=-2 hoặc x=-3",
+        "x=1 hoặc x=6",
+        "x=5 hoặc x=6"
+      ],
+      "answer": 0,
+      "explanation": "(x-2)(x-3)=0."
+    },
+    {
+      "id": "QUA12READY_007",
+      "type": "mcq",
+      "skill": "nham-nghiem",
+      "points": 1,
+      "question": "Nghiệm của \\(x^2+x-6=0\\) là:",
+      "options": [
+        "2 và -3",
+        "-2 và 3",
+        "1 và -6",
+        "-1 và 6"
+      ],
+      "answer": 0,
+      "explanation": "Tổng -1, tích -6."
+    },
+    {
+      "id": "QUA12READY_008",
+      "type": "mcq",
+      "skill": "tong-tich-nghiem",
+      "points": 1,
+      "question": "Với \\(x^2-6x+8=0\\), theo Viète \\(S,P\\) là:",
+      "options": [
+        "6, 8",
+        "-6, 8",
+        "6, -8",
+        "-6, -8"
+      ],
+      "answer": 0,
+      "explanation": "S=6, P=8."
+    },
+    {
+      "id": "QUA12READY_009",
+      "type": "mcq",
+      "skill": "lap-pt-tu-nghiem",
+      "points": 1,
+      "question": "Phương trình hệ số đầu 1 có nghiệm 1 và 4 là:",
+      "options": [
+        "\\(x^2-5x+4=0\\)",
+        "\\(x^2+5x+4=0\\)",
+        "\\(x^2-4x+5=0\\)",
+        "\\(x^2-5x-4=0\\)"
+      ],
+      "answer": 0,
+      "explanation": "S=5, P=4."
+    },
+    {
+      "id": "QUA12READY_010",
+      "type": "mcq",
+      "skill": "nhan-dang-pt-bac-hai",
+      "points": 1,
+      "question": "\\((m-2)x^2+x+1=0\\) là phương trình bậc hai khi:",
+      "options": [
+        "\\(m\\ne2\\)",
+        "\\(m=2\\)",
+        "\\(m>2\\)",
+        "Mọi m"
+      ],
+      "answer": 0,
+      "explanation": "Hệ số x² phải khác 0."
+    }
+  ],
+  "next_topic": {
+    "id": "13-goc-va-duong-thang",
+    "title": "Chuyên đề 13 – Góc và đường thẳng"
+  }
+}

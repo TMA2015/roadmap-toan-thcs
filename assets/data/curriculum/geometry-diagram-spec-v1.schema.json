@@ -1,0 +1,166 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tma2015.github.io/roadmap-toan-thcs/assets/data/curriculum/geometry-diagram-spec-v1.schema.json",
+  "title": "Roadmap Geometry Diagram Spec v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "version",
+    "diagram_id",
+    "source_item_id",
+    "role",
+    "scale_mode",
+    "points",
+    "relations",
+    "accessibility"
+  ],
+  "properties": {
+    "schema": {
+      "const": "roadmap-geometry-diagram-spec-v1"
+    },
+    "version": {
+      "const": 1
+    },
+    "diagram_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_item_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "role": {
+      "enum": [
+        "supporting",
+        "essential"
+      ]
+    },
+    "scale_mode": {
+      "enum": [
+        "topological_only",
+        "not_to_scale",
+        "metric_exact",
+        "angle_exact"
+      ]
+    },
+    "coordinate_system": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "width": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "height": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "units": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "width",
+        "height"
+      ]
+    },
+    "points": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "x": {
+            "type": "number"
+          },
+          "y": {
+            "type": "number"
+          },
+          "label": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "relations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "type",
+          "entities",
+          "status"
+        ],
+        "properties": {
+          "type": {
+            "enum": [
+              "collinear",
+              "between",
+              "parallel",
+              "perpendicular",
+              "midpoint",
+              "equal_length",
+              "equal_angle",
+              "point_on_circle",
+              "tangent",
+              "intersection",
+              "cyclic",
+              "similar",
+              "congruent"
+            ]
+          },
+          "entities": {
+            "type": "array",
+            "minItems": 2,
+            "items": {
+              "type": "string"
+            }
+          },
+          "status": {
+            "enum": [
+              "given",
+              "construction",
+              "derived"
+            ]
+          },
+          "show_marker": {
+            "type": "boolean"
+          }
+        }
+      }
+    },
+    "forbidden_visual_inferences": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "accessibility": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "alt",
+        "caption"
+      ],
+      "properties": {
+        "alt": {
+          "type": "string",
+          "minLength": 1
+        },
+        "caption": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    }
+  }
+}

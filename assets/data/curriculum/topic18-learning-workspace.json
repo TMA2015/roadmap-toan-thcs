@@ -1,0 +1,253 @@
+{
+  "schema": "roadmap-topic-learning-workspace-v1",
+  "topic": "18-he-thuc-luong",
+  "title": "Hệ thức lượng trong tam giác vuông",
+  "core_progress_policy": {
+    "layer": "KNTT-Core",
+    "rule": "Only mapped Core cards contribute to readiness; support/extension content never gates Core."
+  },
+  "cards": [
+    {
+      "id": "geo18-core-1",
+      "order": 1,
+      "title": "Pythagore và nhận biết tam giác vuông",
+      "kntt_lessons": [
+        "Lớp 8–9"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "pythagore",
+        "pythagore-dao",
+        "canh-huyen"
+      ],
+      "prerequisites": [
+        "can-bac-hai-so-hoc"
+      ],
+      "micro_practice": [
+        "GEO18MICRO_001",
+        "GEO18MICRO_002",
+        "GEO18MICRO_003"
+      ],
+      "teaching_copy": {
+        "key_idea": "Định lý Pythagore chỉ áp dụng trực tiếp cho tam giác **đã biết vuông**: \\(a^2+b^2=c^2\\), c là cạnh huyền, đối diện góc vuông. Chiều đảo: nếu bình phương cạnh dài nhất bằng tổng bình phương hai cạnh còn lại thì tam giác vuông. Khi tìm cạnh góc vuông phải lấy căn bậc hai số học, không cộng hai cạnh.",
+        "worked_example": {
+          "problem": "Tam giác có ba cạnh 8, 15 và 17 cm. Kiểm tra có vuông không và xác định cạnh huyền.",
+          "solution": "Bước 1: Cạnh dài nhất là 17 cm, có \\(8^2+15^2=64+225=289\\).\nBước 2: \\(17^2=289\\), bằng tổng hai bình phương còn lại.\nBước 3: Theo Pythagore đảo, đây là tam giác vuông; cạnh huyền dài 17 cm."
+        },
+        "misconception": "Áp dụng Pythagore cho tam giác chưa chứng minh vuông, hoặc lấy cạnh không dài nhất làm cạnh huyền.",
+        "summary": "Cạnh huyền đối diện góc vuông; đảo Pythagore so với bình phương cạnh dài nhất.",
+        "source_reference": "docs/kien-thuc/18-he-thuc-luong/index.md",
+        "source_sections": [
+          "3.1"
+        ],
+        "source_question_ids": [
+          "GEO18MICRO_001",
+          "GEO18MICRO_002",
+          "GEO18MICRO_003"
+        ],
+        "review_status": "SELF_AUDITED",
+        "review_method": "SOURCE_LOCKED_BOUNDED_SELF_AUDIT",
+        "academic_review_ref": "content-staging/reviews/MATH-CORE16-18-GEOMETRY-SELF-AUDIT-20260929.md"
+      }
+    },
+    {
+      "id": "geo18-core-2",
+      "order": 2,
+      "title": "Sin và cos",
+      "kntt_lessons": [
+        "Lớp 9"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "sin",
+        "cos"
+      ],
+      "prerequisites": [
+        "ti-le-doan-thang"
+      ],
+      "micro_practice": [
+        "GEO18MICRO_004",
+        "GEO18MICRO_005",
+        "GEO18MICRO_006"
+      ],
+      "teaching_copy": {
+        "key_idea": "Trong tam giác vuông, với góc nhọn \\(\\alpha\\), cạnh đối/kề phụ thuộc vào góc đang xét; cạnh huyền luôn đối diện góc vuông. \\(\\sin\\alpha=\\frac{\\text{đối}}{\\text{huyền}}\\), \\(\\cos\\alpha=\\frac{\\text{kề}}{\\text{huyền}}\\). Hai cạnh góc vuông đổi vai trò nếu đổi từ góc nhọn này sang góc nhọn kia.",
+        "worked_example": {
+          "problem": "Tam giác ABC vuông tại A có \\(AB=5\\), \\(AC=12\\), \\(BC=13\\). Tính \\(\\sin B\\) và \\(\\cos B\\).",
+          "solution": "Bước 1: Với góc B, BC là cạnh huyền, AC là cạnh đối và AB là cạnh kề.\nBước 2: \\(\\sin B=AC/BC=12/13\\).\nBước 3: \\(\\cos B=AB/BC=5/13\\)."
+        },
+        "misconception": "Lấy AB làm cạnh đối góc B hoặc quên rằng BC mới là cạnh huyền.",
+        "summary": "Chọn đúng góc rồi gắn đối – kề – huyền trước khi lập tỉ số.",
+        "source_reference": "docs/kien-thuc/18-he-thuc-luong/index.md",
+        "source_sections": [
+          "3.3",
+          "3.4"
+        ],
+        "source_question_ids": [
+          "GEO18MICRO_004",
+          "GEO18MICRO_005",
+          "GEO18MICRO_006"
+        ],
+        "review_status": "SELF_AUDITED",
+        "review_method": "SOURCE_LOCKED_BOUNDED_SELF_AUDIT",
+        "academic_review_ref": "content-staging/reviews/MATH-CORE16-18-GEOMETRY-SELF-AUDIT-20260929.md"
+      }
+    },
+    {
+      "id": "geo18-core-3",
+      "order": 3,
+      "title": "Tan và cot",
+      "kntt_lessons": [
+        "Lớp 9"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "tan",
+        "cot"
+      ],
+      "prerequisites": [
+        "sin",
+        "cos"
+      ],
+      "micro_practice": [
+        "GEO18MICRO_007",
+        "GEO18MICRO_008",
+        "GEO18MICRO_009"
+      ],
+      "teaching_copy": {
+        "key_idea": "Với góc nhọn \\(\\alpha\\), \\(\\tan\\alpha=\\frac{\\text{đối}}{\\text{kề}}\\) và \\(\\cot\\alpha=\\frac{\\text{kề}}{\\text{đối}}=\\frac1{\\tan\\alpha}\\); các mẫu dương trong tam giác vuông không suy biến. Không lấy cạnh huyền làm mẫu của tan/cot.",
+        "worked_example": {
+          "problem": "Tam giác vuông tại A có \\(AB=9,AC=12\\). Tính \\(\\tan B\\) và \\(\\cot B\\).",
+          "solution": "Bước 1: Với B, AC=12 là cạnh đối, AB=9 là cạnh kề.\nBước 2: \\(\\tan B=AC/AB=12/9=4/3\\).\nBước 3: \\(\\cot B=AB/AC=9/12=3/4\\), kiểm tra \\(\\tan B\\cdot\\cot B=1\\)."
+        },
+        "misconception": "Đổi góc nhưng giữ nguyên tên cạnh đối/kề hoặc viết cot bằng tan.",
+        "summary": "tan = đối/kề, cot = kề/đối; hai tỉ số nghịch đảo.",
+        "source_reference": "docs/kien-thuc/18-he-thuc-luong/index.md",
+        "source_sections": [
+          "3.3",
+          "3.4"
+        ],
+        "source_question_ids": [
+          "GEO18MICRO_007",
+          "GEO18MICRO_008",
+          "GEO18MICRO_009"
+        ],
+        "review_status": "SELF_AUDITED",
+        "review_method": "SOURCE_LOCKED_BOUNDED_SELF_AUDIT",
+        "academic_review_ref": "content-staging/reviews/MATH-CORE16-18-GEOMETRY-SELF-AUDIT-20260929.md"
+      }
+    },
+    {
+      "id": "geo18-core-4",
+      "order": 4,
+      "title": "Tìm cạnh và tìm góc",
+      "kntt_lessons": [
+        "Lớp 9"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "tim-canh-luong-giac",
+        "tim-goc-luong-giac"
+      ],
+      "prerequisites": [
+        "sin",
+        "cos",
+        "tan",
+        "cot"
+      ],
+      "micro_practice": [
+        "GEO18MICRO_010",
+        "GEO18MICRO_011",
+        "GEO18MICRO_012"
+      ],
+      "teaching_copy": {
+        "key_idea": "Biết góc và một cạnh, chọn sin/cos/tan theo cặp cạnh đề cho và cần tìm. Biết hai cạnh, lập tỉ số hợp lệ rồi dùng chức năng lượng giác nghịch đảo ở **chế độ độ** để tìm góc nhọn. Góc 30°/45°/60° nên dùng các giá trị chính xác trước khi làm tròn.",
+        "worked_example": {
+          "problem": "Tam giác ABC vuông tại A, cạnh huyền BC=20 cm, \\(\\angle B=30^\\circ\\). Tính cạnh AC đối diện góc B.",
+          "solution": "Bước 1: AC là cạnh đối B, BC là cạnh huyền nên \\(\\sin B=AC/BC\\).\nBước 2: \\(AC=BC\\sin30^\\circ=20\\cdot\\frac12=10\\) cm.\nBước 3: Đối chiếu AC nhỏ hơn cạnh huyền 20 cm, hợp lý."
+        },
+        "misconception": "Dùng cos để tính cạnh đối từ cạnh huyền; nhầm chế độ radian và degree khi tính góc.",
+        "summary": "Đối/huyền dùng sin; kề/huyền dùng cos; đối/kề dùng tan.",
+        "source_reference": "docs/kien-thuc/18-he-thuc-luong/index.md",
+        "source_sections": [
+          "3.3",
+          "3.4A",
+          "3.6"
+        ],
+        "source_question_ids": [
+          "GEO18MICRO_010",
+          "GEO18MICRO_011",
+          "GEO18MICRO_012"
+        ],
+        "review_status": "SELF_AUDITED",
+        "review_method": "SOURCE_LOCKED_BOUNDED_SELF_AUDIT",
+        "academic_review_ref": "content-staging/reviews/MATH-CORE16-18-GEOMETRY-SELF-AUDIT-20260929.md"
+      }
+    },
+    {
+      "id": "geo18-core-5",
+      "order": 5,
+      "title": "Góc nâng, góc hạ và đo khoảng cách",
+      "kntt_lessons": [
+        "Lớp 9"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "goc-nang-ha",
+        "chieu-cao-khoang-cach"
+      ],
+      "prerequisites": [
+        "tim-canh-luong-giac"
+      ],
+      "micro_practice": [
+        "GEO18MICRO_013",
+        "GEO18MICRO_014",
+        "GEO18MICRO_015"
+      ],
+      "teaching_copy": {
+        "key_idea": "Góc nâng/hạ đo so với phương ngang ở **vị trí người quan sát**. Khi biết khoảng cách ngang d và góc nâng \\(\\alpha\\), độ chênh cao từ mắt tới vật bằng \\(d\\tan\\alpha\\). Nếu mắt cao h₀ so với đất, chiều cao vật bằng \\(h_0+d\\tan\\alpha\\) khi đỉnh vật ở trên tầm mắt.",
+        "worked_example": {
+          "problem": "Một người đứng cách chân tháp theo phương ngang 20 m. Mắt cao 1,5 m, góc nâng đến đỉnh tháp \\(45^\\circ\\). Giả sử chân tháp cùng cao độ với chân người, tìm chiều cao tháp.",
+          "solution": "Bước 1: Chênh cao đỉnh tháp so với tầm mắt là \\(20\\tan45^\\circ=20\\) m.\nBước 2: Cộng độ cao mắt: \\(H=20+1{,}5=21{,}5\\) m.\nBước 3: Nêu kết quả là chiều cao từ mặt đất; không bỏ sót chiều cao mắt."
+        },
+        "misconception": "Đo góc từ phương thẳng đứng hoặc quên cộng chiều cao mắt nếu đề cho.",
+        "summary": "Độ chênh cao = khoảng cách ngang × tan góc nâng; xét thêm tầm mắt.",
+        "source_reference": "docs/kien-thuc/18-he-thuc-luong/index.md",
+        "source_sections": [
+          "3.5",
+          "3.6"
+        ],
+        "source_question_ids": [
+          "GEO18MICRO_013",
+          "GEO18MICRO_014",
+          "GEO18MICRO_015"
+        ],
+        "review_status": "SELF_AUDITED",
+        "review_method": "SOURCE_LOCKED_BOUNDED_SELF_AUDIT",
+        "academic_review_ref": "content-staging/reviews/MATH-CORE16-18-GEOMETRY-SELF-AUDIT-20260929.md"
+      }
+    }
+  ],
+  "extensions": [
+    {
+      "id": "geo18-ext-1",
+      "layer": "Core-Support",
+      "title": "Cạnh đối – kề – huyền như kỹ năng hỗ trợ",
+      "gates_core": false
+    },
+    {
+      "id": "geo18-ext-2",
+      "layer": "Entrance10",
+      "title": "Hệ thức đường cao xuống cạnh huyền",
+      "gates_core": false
+    },
+    {
+      "id": "geo18-ext-3",
+      "layer": "Challenge",
+      "title": "Bài thực tế nhiều bước và mô hình hóa",
+      "gates_core": false
+    }
+  ],
+  "micro_practice_bank": "assets/data/practice/18-he-thuc-luong-micro-v1.json",
+  "geometry_contract": "assets/data/curriculum/geometry-architecture-v1.json"
+}

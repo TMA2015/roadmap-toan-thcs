@@ -1,0 +1,20 @@
+/* Practice W1 rich-response pilot, scoped to fields inside existing Practice Engine. */
+.practice-rich-answer-form{display:flex;flex-wrap:wrap;gap:.8rem;padding:.35rem 0 .65rem;align-items:flex-end}
+.practice-rich-field{display:flex;flex:1 1 145px;min-width:140px;flex-direction:column;gap:.3rem;font-size:.82rem;font-weight:650}
+.practice-rich-input{font:inherit;width:100%;min-height:2.75rem;padding:.55rem .7rem;border-radius:.5rem;border:1.5px solid var(--md-default-fg-color--light);background:var(--md-default-bg-color);color:var(--md-default-fg-color)}
+.practice-rich-input:focus-visible{outline:3px solid var(--md-accent-fg-color);outline-offset:2px}
+.practice-rich-input:disabled{opacity:.78}
+.practice-rich-answer-form button[type=submit]{min-height:2.75rem;align-self:flex-end}
+.practice-rich-input-message{flex-basis:100%;margin:.1rem 0;padding:.5rem;font-size:.8rem;border-radius:.4rem;background:var(--md-code-bg-color)}
+@media(max-width:600px){.practice-rich-field{flex-basis:100%}.practice-rich-answer-form button[type=submit]{width:100%}}
+
+/* W1 wave4: semantic keyboard-accessible two-column frequency table. */
+.practice-rich-frequency-table{width:100%;flex:1 1 100%;border-collapse:collapse;table-layout:fixed;font-size:.9rem}
+.practice-rich-frequency-table caption{text-align:left;padding:.3rem 0 .55rem;font-weight:650;color:var(--md-default-fg-color)}
+.practice-rich-frequency-table th,.practice-rich-frequency-table td{border:1px solid var(--md-default-fg-color--lightest);padding:.45rem .7rem;vertical-align:middle}
+.practice-rich-frequency-table thead th{background:var(--md-code-bg-color);font-weight:700;text-align:left}
+.practice-rich-frequency-table tbody th{text-align:left;font-weight:600;width:38%}
+.practice-rich-frequency-table td{width:62%}
+.practice-rich-frequency-table .practice-rich-input{max-width:18rem;min-height:2.45rem}
+.practice-rich-frequency-form button[type=submit]{margin-top:.15rem}
+@media(max-width:600px){.practice-rich-frequency-table th,.practice-rich-frequency-table td{padding:.35rem .4rem}.practice-rich-frequency-table .practice-rich-input{max-width:none}.practice-rich-frequency-form button[type=submit]{width:100%}}

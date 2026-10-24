@@ -1,0 +1,260 @@
+{
+  "schema": "roadmap-topic-learning-workspace-v1",
+  "topic": "06-phan-tich-da-thuc",
+  "title": "Phân tích đa thức thành nhân tử",
+  "core_progress_policy": {
+    "layer": "KNTT-Core",
+    "rule": "Only Core cards contribute to readiness. Entrance10 and Challenge never gate Core completion."
+  },
+  "cards": [
+    {
+      "id": "fac06-core-1",
+      "order": 1,
+      "title": "Đặt nhân tử chung",
+      "kntt_lessons": [
+        "Core"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "nhan-tu-chung",
+        "doi-dau-nhan-tu-chung"
+      ],
+      "prerequisites": [
+        "thu-gon-da-thuc"
+      ],
+      "micro_practice": [
+        "FAC06MICRO_001",
+        "FAC06MICRO_002",
+        "FAC06MICRO_003"
+      ],
+      "teaching_copy": {
+        "key_idea": "Đặt nhân tử chung bằng cách tìm ước chung của hệ số và phần biến với số mũ nhỏ nhất. Nếu có hai ngoặc đối nhau, nhớ \\(a-b=-(b-a)\\) để đổi dấu rồi mới nhóm thành nhân tử chung.",
+        "worked_example": {
+          "problem": "Phân tích \\(6x(x-3)+9(3-x)\\) thành nhân tử.",
+          "solution": "Bước 1: \\(3-x=-(x-3)\\), nên biểu thức bằng \\(6x(x-3)-9(x-3)\\).\nBước 2: Đặt \\((x-3)\\) chung: \\((x-3)(6x-9)\\).\nBước 3: Rút tiếp nhân tử số \\(3\\): \\(3(x-3)(2x-3)\\)."
+        },
+        "misconception": "Xem (3-x) là (x-3) mà quên dấu âm; dừng lại khi các hệ số còn nhân tử chung.",
+        "summary": "Tìm chung cả hệ số, biến và ngoặc; đổi dấu ngoặc trước khi đặt nhân tử.",
+        "source_reference": "docs/kien-thuc/06-phan-tich-da-thuc/index.md",
+        "source_sections": [
+          "3.1",
+          "3.3",
+          "Dạng 1",
+          "Dạng 2"
+        ],
+        "source_question_ids": [
+          "FAC06MICRO_001",
+          "FAC06MICRO_002",
+          "FAC06MICRO_003"
+        ],
+        "review_status": "SELF_AUDITED",
+        "review_method": "SOURCE_LOCKED_BOUNDED_SELF_AUDIT",
+        "academic_review_ref": "content-staging/reviews/MATH-CORE04-06-TEACH-SELF-AUDIT-20260929.md"
+      }
+    },
+    {
+      "id": "fac06-core-2",
+      "order": 2,
+      "title": "Dùng hằng đẳng thức",
+      "kntt_lessons": [
+        "Core"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "hieu-hai-binh-phuong",
+        "binh-phuong-hoan-chinh",
+        "tong-hieu-lap-phuong"
+      ],
+      "prerequisites": [
+        "hieu-hai-binh-phuong"
+      ],
+      "micro_practice": [
+        "FAC06MICRO_004",
+        "FAC06MICRO_005",
+        "FAC06MICRO_006"
+      ],
+      "teaching_copy": {
+        "key_idea": "Muốn dùng hằng đẳng thức để phân tích, nhận diện \\(A,B\\) trước. Các mẫu thường dùng: \\(A^2-B^2=(A-B)(A+B)\\); \\(A^2\\pm2AB+B^2=(A\\pm B)^2\\); \\(A^3\\pm B^3=(A\\pm B)(A^2\\mp AB+B^2)\\) với dấu được chọn nhất quán.",
+        "worked_example": {
+          "problem": "Phân tích \\(x^3+27\\) thành nhân tử.",
+          "solution": "Bước 1: Viết \\(x^3+27=x^3+3^3\\).\nBước 2: Dùng tổng hai lập phương \\(A^3+B^3=(A+B)(A^2-AB+B^2)\\).\nBước 3: \\(x^3+27=(x+3)(x^2-3x+9)\\)."
+        },
+        "misconception": "Nhầm tổng hai lập phương với lập phương của một tổng; đổi sai dấu hạng tử giữa.",
+        "summary": "Nhận A, B, chọn đúng công thức; tổng lập phương có hạng tử giữa mang dấu trừ.",
+        "source_reference": "docs/kien-thuc/06-phan-tich-da-thuc/index.md",
+        "source_sections": [
+          "3.4",
+          "Dạng 3",
+          "Dạng 4"
+        ],
+        "source_question_ids": [
+          "FAC06MICRO_004",
+          "FAC06MICRO_005",
+          "FAC06MICRO_006"
+        ],
+        "review_status": "SELF_AUDITED",
+        "review_method": "SOURCE_LOCKED_BOUNDED_SELF_AUDIT",
+        "academic_review_ref": "content-staging/reviews/MATH-CORE04-06-TEACH-SELF-AUDIT-20260929.md"
+      }
+    },
+    {
+      "id": "fac06-core-3",
+      "order": 3,
+      "title": "Nhóm hạng tử",
+      "kntt_lessons": [
+        "Core"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "nhom-hang-tu"
+      ],
+      "prerequisites": [
+        "nhan-tu-chung"
+      ],
+      "micro_practice": [
+        "FAC06MICRO_007",
+        "FAC06MICRO_008",
+        "FAC06MICRO_009"
+      ],
+      "teaching_copy": {
+        "key_idea": "Khi không có nhân tử chung cho toàn bộ đa thức, thử nhóm các hạng tử sao cho sau khi đặt nhân tử chung từng nhóm, các nhóm còn lại có cùng một ngoặc. Có thể đổi thứ tự hạng tử nhưng không được tự đổi dấu.",
+        "worked_example": {
+          "problem": "Phân tích \\(2ax+2ay+3bx+3by\\) thành nhân tử.",
+          "solution": "Bước 1: Nhóm \\((2ax+2ay)+(3bx+3by)\\).\nBước 2: Đặt nhân tử mỗi nhóm: \\(2a(x+y)+3b(x+y)\\).\nBước 3: Đặt \\(x+y\\) chung: \\((2a+3b)(x+y)\\)."
+        },
+        "misconception": "Nhóm sai làm hai ngoặc không giống nhau nhưng vẫn đặt nhân tử; quên một hạng tử.",
+        "summary": "Nhóm có mục đích: sau bước đặt nhân tử, hai nhóm phải xuất hiện cùng ngoặc.",
+        "source_reference": "docs/kien-thuc/06-phan-tich-da-thuc/index.md",
+        "source_sections": [
+          "3.5",
+          "Dạng 5"
+        ],
+        "source_question_ids": [
+          "FAC06MICRO_007",
+          "FAC06MICRO_008",
+          "FAC06MICRO_009"
+        ],
+        "review_status": "SELF_AUDITED",
+        "review_method": "SOURCE_LOCKED_BOUNDED_SELF_AUDIT",
+        "academic_review_ref": "content-staging/reviews/MATH-CORE04-06-TEACH-SELF-AUDIT-20260929.md"
+      }
+    },
+    {
+      "id": "fac06-core-4",
+      "order": 4,
+      "title": "Phối hợp nhiều phương pháp",
+      "kntt_lessons": [
+        "Core"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "phoi-hop-phuong-phap"
+      ],
+      "prerequisites": [
+        "nhan-tu-chung",
+        "hieu-hai-binh-phuong",
+        "nhom-hang-tu"
+      ],
+      "micro_practice": [
+        "FAC06MICRO_010",
+        "FAC06MICRO_011",
+        "FAC06MICRO_012"
+      ],
+      "teaching_copy": {
+        "key_idea": "Một biểu thức có thể cần nhiều phương pháp. Ưu tiên tìm nhân tử chung trước; sau đó quan sát hằng đẳng thức hoặc nhóm, rồi kiểm tra có phân tích tiếp được không. Không dùng kỹ thuật tách hạng tử giữa hoặc giải phương trình tích để tính là KNTT Core của chặng này.",
+        "worked_example": {
+          "problem": "Phân tích hoàn toàn \\(x^3+2x^2-9x-18\\).",
+          "solution": "Bước 1: Nhóm \\(x^2(x+2)-9(x+2)\\).\nBước 2: Đặt \\(x+2\\) chung: \\((x+2)(x^2-9)\\).\nBước 3: Dùng hiệu hai bình phương: \\((x+2)(x-3)(x+3)\\).\nBước 4: Kiểm tra bằng nhân ngược để xác nhận tích trở lại đa thức ban đầu."
+        },
+        "misconception": "Dừng ở ((x+2)(x^2-9)) dù vẫn còn hiệu hai bình phương.",
+        "summary": "Có nhân tử chung? Có hằng đẳng thức? Có thể nhóm? Đã phân tích hết chưa?",
+        "source_reference": "docs/kien-thuc/06-phan-tich-da-thuc/index.md",
+        "source_sections": [
+          "3.7",
+          "Dạng 6",
+          "Dạng 7"
+        ],
+        "source_question_ids": [
+          "FAC06MICRO_010",
+          "FAC06MICRO_011",
+          "FAC06MICRO_012"
+        ],
+        "review_status": "SELF_AUDITED",
+        "review_method": "SOURCE_LOCKED_BOUNDED_SELF_AUDIT",
+        "academic_review_ref": "content-staging/reviews/MATH-CORE04-06-TEACH-SELF-AUDIT-20260929.md"
+      }
+    },
+    {
+      "id": "fac06-core-5",
+      "order": 5,
+      "title": "Kiểm tra & chọn phương pháp",
+      "kntt_lessons": [
+        "Core"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "kiem-tra-phan-tich",
+        "phoi-hop-phuong-phap"
+      ],
+      "prerequisites": [
+        "phoi-hop-phuong-phap"
+      ],
+      "micro_practice": [
+        "FAC06MICRO_013",
+        "FAC06MICRO_014",
+        "FAC06MICRO_015"
+      ],
+      "teaching_copy": {
+        "key_idea": "Để chọn cách phân tích, xét nhân tử chung trước rồi nhận dạng hằng đẳng thức hoặc nhóm; kết quả phải là tích và phải đúng khi nhân ngược. Nếu đề yêu cầu phân tích hoàn toàn theo các phương pháp đã học, không được dừng khi còn nhân tử có thể phân tích tiếp.",
+        "worked_example": {
+          "problem": "Kiểm tra đẳng thức \\((x-4)(x+1)=x^2-3x-4\\) bằng phép nhân ngược.",
+          "solution": "Bước 1: Nhân \\(x(x+1)-4(x+1)\\).\nBước 2: \\(=x^2+x-4x-4=x^2-3x-4\\).\nBước 3: Hai vế giống nhau với mọi \\(x\\), nên cách phân tích được kiểm tra là đúng."
+        },
+        "misconception": "Chỉ nhìn hai ngoặc có vẻ hợp lý mà không nhân trở lại; dấu của hằng số bị viết sai.",
+        "summary": "Nhân ngược là cách kiểm tra trực tiếp; kết quả đúng còn phải xem có phân tích tiếp được không.",
+        "source_reference": "docs/kien-thuc/06-phan-tich-da-thuc/index.md",
+        "source_sections": [
+          "3.7",
+          "Lỗi 2",
+          "Lỗi 7"
+        ],
+        "source_question_ids": [
+          "FAC06MICRO_013",
+          "FAC06MICRO_014",
+          "FAC06MICRO_015"
+        ],
+        "review_status": "SELF_AUDITED",
+        "review_method": "SOURCE_LOCKED_BOUNDED_SELF_AUDIT",
+        "academic_review_ref": "content-staging/reviews/MATH-CORE04-06-TEACH-SELF-AUDIT-20260929.md"
+      }
+    }
+  ],
+  "extensions": [
+    {
+      "id": "fac06-ent10-1",
+      "layer": "Entrance10",
+      "title": "Tách hạng tử giữa",
+      "gates_core": false
+    },
+    {
+      "id": "fac06-ent10-2",
+      "layer": "Entrance10",
+      "title": "Giải phương trình bằng nhân tử",
+      "gates_core": false
+    },
+    {
+      "id": "fac06-challenge-1",
+      "layer": "Specialized-Challenge",
+      "title": "Phân tích bằng thêm bớt / cấu trúc nâng cao",
+      "gates_core": false
+    }
+  ],
+  "micro_practice_bank": "assets/data/practice/06-phan-tich-da-thuc-micro-v1.json",
+  "observed_signal_policy": {
+    "rule": "Signals are observations only; they never create causal remediation without sufficient learner evidence and a reviewed rule."
+  },
+  "qa_notes": [
+    "tach-hang-tu-giua and giai-pt-bang-nhan-tu are explicitly excluded from KNTT Core evidence.",
+    "Card 5 uses kiem-tra-phan-tich/phoi-hop-phuong-phap instead of middle-term splitting."
+  ]
+}

@@ -1,0 +1,268 @@
+{
+  "schema": "roadmap-topic-learning-workspace-v1",
+  "topic": "08-phuong-trinh-bat-phuong-trinh",
+  "title": "Phương trình và bất phương trình",
+  "core_progress_policy": {
+    "layer": "KNTT-Core",
+    "rule": "Only existing Core cards contribute to readiness in this version. Reviewed Core-application/Core-Support extension labels are pedagogical and remain non-gating until a separate readiness change is authorized."
+  },
+  "cards": [
+    {
+      "id": "eq08-core-1",
+      "order": 1,
+      "title": "Nghiệm & phương trình bậc nhất",
+      "kntt_lessons": [
+        "Lớp 8 → 9"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "nghiem-phuong-trinh",
+        "pt-bac-nhat",
+        "bien-doi-pt-nhieu-buoc"
+      ],
+      "prerequisites": [
+        "thu-gon-da-thuc"
+      ],
+      "micro_practice": [
+        "EQ08MICRO_001",
+        "EQ08MICRO_002",
+        "EQ08MICRO_003"
+      ],
+      "teaching_copy": {
+        "key_idea": "Nghiệm của phương trình là giá trị làm hai vế bằng nhau. Với phương trình bậc nhất \\(ax+b=0\\), \\(a\\ne0\\), ta chuyển vế rồi chia cho \\(a\\). Khi có ngoặc, phải phân phối, thu gọn hai vế trước; chỉ nhân/chia với số hoặc biểu thức đã biết khác \\(0\\).",
+        "worked_example": {
+          "problem": "Giải phương trình \\(2(x+1)+3=3x-1\\).",
+          "solution": "Bước 1: Bỏ ngoặc: \\(2x+2+3=3x-1\\).\nBước 2: Thu gọn và chuyển vế: \\(2x+5=3x-1\\), suy ra \\(x=6\\).\nBước 3: Thay lại: vế trái \\(2\\cdot7+3=17\\), vế phải \\(18-1=17\\)."
+        },
+        "misconception": "Bỏ ngoặc thiếu hạng tử, chuyển vế sai dấu hoặc chia cho hệ số có thể bằng 0.",
+        "summary": "Thu gọn → chuyển vế → chia hệ số khác 0 → thay lại kiểm tra.",
+        "source_reference": "docs/kien-thuc/08-phuong-trinh-bat-phuong-trinh/index.md",
+        "source_sections": [
+          "3.1",
+          "Ví dụ 1"
+        ],
+        "source_question_ids": [
+          "EQ08MICRO_001",
+          "EQ08MICRO_002",
+          "EQ08MICRO_003"
+        ],
+        "review_status": "SELF_AUDITED",
+        "review_method": "SOURCE_LOCKED_BOUNDED_SELF_AUDIT",
+        "academic_review_ref": "content-staging/reviews/MATH-CORE08-12-TEACH-SELF-AUDIT-20260929.md"
+      }
+    },
+    {
+      "id": "eq08-core-2",
+      "order": 2,
+      "title": "Phương trình tích & chứa mẫu",
+      "kntt_lessons": [
+        "Core"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "pt-tich",
+        "dkxd-phuong-trinh-mau",
+        "khu-mau-phuong-trinh",
+        "doi-chieu-nghiem"
+      ],
+      "prerequisites": [
+        "phan-tich-da-thuc",
+        "phan-thuc-dai-so"
+      ],
+      "micro_practice": [
+        "EQ08MICRO_004",
+        "EQ08MICRO_005",
+        "EQ08MICRO_006",
+        "EQ08MICRO_016"
+      ],
+      "teaching_copy": {
+        "key_idea": "Phương trình tích \\(A(x)B(x)=0\\) được giải bằng cách cho từng nhân tử bằng \\(0\\). Với phương trình chứa ẩn ở mẫu: tìm ĐKXĐ trước, nhân cả hai vế với mẫu chung trên miền xác định, giải rồi **đối chiếu nghiệm với điều kiện ban đầu**. Giá trị loại từ đầu không được lấy lại.",
+        "worked_example": {
+          "problem": "Giải \\(\\frac{x^2-4}{x-2}=0\\).",
+          "solution": "Bước 1: \\(x-2\\ne0\\Rightarrow x\\ne2\\).\nBước 2: Nhân hai vế với \\(x-2\\) trên miền đã xác định: \\(x^2-4=0\\).\nBước 3: \\((x-2)(x+2)=0\\Rightarrow x=2\\) hoặc \\(x=-2\\).\nBước 4: Loại \\(x=2\\) vì trái ĐKXĐ. Vậy \\(S=\\{-2\\}\\)."
+        },
+        "misconception": "Khử mẫu khi chưa ghi điều kiện, hoặc kết luận cả nghiệm ngoại lai sau khi giải phương trình tích.",
+        "summary": "ĐKXĐ → khử mẫu trên miền hợp lệ → giải → đối chiếu → kết luận.",
+        "source_reference": "docs/kien-thuc/08-phuong-trinh-bat-phuong-trinh/index.md",
+        "source_sections": [
+          "3.2",
+          "3.3"
+        ],
+        "source_question_ids": [
+          "EQ08MICRO_004",
+          "EQ08MICRO_005",
+          "EQ08MICRO_006"
+        ],
+        "review_status": "SELF_AUDITED",
+        "review_method": "SOURCE_LOCKED_BOUNDED_SELF_AUDIT",
+        "academic_review_ref": "content-staging/reviews/MATH-CORE08-12-TEACH-SELF-AUDIT-20260929.md"
+      }
+    },
+    {
+      "id": "eq08-core-3",
+      "order": 3,
+      "title": "Bất đẳng thức & tính chất thứ tự",
+      "kntt_lessons": [
+        "Lớp 9"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "bat-dang-thuc",
+        "tinh-chat-thu-tu-phep-cong",
+        "tinh-chat-thu-tu-phep-nhan"
+      ],
+      "prerequisites": [
+        "phep-tinh-so-huu-ti"
+      ],
+      "micro_practice": [
+        "EQ08MICRO_007",
+        "EQ08MICRO_008",
+        "EQ08MICRO_009"
+      ],
+      "teaching_copy": {
+        "key_idea": "Bất đẳng thức diễn tả quan hệ \\(<,>,\\le,\\ge\\). Cộng/trừ cùng một biểu thức ở hai vế giữ chiều. Nhân/chia với **số dương** giữ chiều, với **số âm** phải đổi chiều. Không nhân/chia bởi biểu thức chưa biết dấu mà không xét trường hợp.",
+        "worked_example": {
+          "problem": "Giải bất phương trình \\(-4x+5\\le13\\).",
+          "solution": "Bước 1: Trừ \\(5\\) cả hai vế: \\(-4x\\le8\\).\nBước 2: Chia cả hai vế cho số âm \\(-4\\), phải đổi chiều: \\(x\\ge-2\\).\nBước 3: Thử \\(x=-2\\) được \\(13\\le13\\), đúng; \\(x=-3\\) cho \\(17\\le13\\), sai."
+        },
+        "misconception": "Giữ nguyên chiều khi chia cho một số âm hoặc đổi chiều ngay từ bước cộng/trừ.",
+        "summary": "Cộng/trừ giữ chiều; nhân/chia số âm đổi chiều.",
+        "source_reference": "docs/kien-thuc/08-phuong-trinh-bat-phuong-trinh/index.md",
+        "source_sections": [
+          "3.4",
+          "Ví dụ 3"
+        ],
+        "source_question_ids": [
+          "EQ08MICRO_007",
+          "EQ08MICRO_008",
+          "EQ08MICRO_009"
+        ],
+        "review_status": "SELF_AUDITED",
+        "review_method": "SOURCE_LOCKED_BOUNDED_SELF_AUDIT",
+        "academic_review_ref": "content-staging/reviews/MATH-CORE08-12-TEACH-SELF-AUDIT-20260929.md"
+      }
+    },
+    {
+      "id": "eq08-core-4",
+      "order": 4,
+      "title": "Bất phương trình & tập nghiệm",
+      "kntt_lessons": [
+        "Lớp 9"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "bpt-bac-nhat",
+        "doi-chieu-bpt",
+        "bieu-dien-tap-nghiem"
+      ],
+      "prerequisites": [
+        "tinh-chat-thu-tu-phep-nhan"
+      ],
+      "micro_practice": [
+        "EQ08MICRO_010",
+        "EQ08MICRO_011",
+        "EQ08MICRO_012"
+      ],
+      "teaching_copy": {
+        "key_idea": "Giải bất phương trình bậc nhất bằng các phép biến đổi đúng chiều. Khi thể hiện trên trục số, kiểm tra **mốc biên** và **hướng**: \\(<,>\\) dùng điểm rỗng; \\(\\le,\\ge\\) dùng điểm đặc.",
+        "worked_example": {
+          "problem": "Giải \\(-3x+2\\ge8\\) và mô tả tập nghiệm trên trục số.",
+          "solution": "Bước 1: \\(-3x\\ge6\\).\nBước 2: Chia cho \\(-3\\) và đổi chiều: \\(x\\le-2\\).\nBước 3: Đặt điểm **đặc** tại \\(-2\\), tô về bên trái vì có nhận mốc."
+        },
+        "misconception": "Giải đúng bất phương trình nhưng dùng điểm rỗng thay điểm đặc hoặc tô nhầm hướng.",
+        "summary": "Kết quả đại số và hình trục số phải cùng mô tả một tập nghiệm.",
+        "source_reference": "docs/kien-thuc/08-phuong-trinh-bat-phuong-trinh/index.md",
+        "source_sections": [
+          "3.5",
+          "Trực quan – biểu diễn tập nghiệm"
+        ],
+        "source_question_ids": [
+          "EQ08MICRO_010",
+          "EQ08MICRO_011",
+          "EQ08MICRO_012"
+        ],
+        "review_status": "SELF_AUDITED",
+        "review_method": "SOURCE_LOCKED_BOUNDED_SELF_AUDIT",
+        "academic_review_ref": "content-staging/reviews/MATH-CORE08-12-TEACH-SELF-AUDIT-20260929.md"
+      }
+    },
+    {
+      "id": "eq08-core-5",
+      "order": 5,
+      "title": "Lập phương trình từ bài toán",
+      "kntt_lessons": [
+        "Ứng dụng Core"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "lap-phuong-trinh"
+      ],
+      "prerequisites": [
+        "pt-bac-nhat"
+      ],
+      "micro_practice": [
+        "EQ08MICRO_013",
+        "EQ08MICRO_014",
+        "EQ08MICRO_015"
+      ],
+      "teaching_copy": {
+        "key_idea": "Trong bài toán thực tế, đặt ẩn kèm đơn vị và điều kiện, biểu diễn các đại lượng còn lại theo ẩn, lập phương trình theo dữ kiện, giải rồi đối chiếu điều kiện và trả lời bằng lời. Không coi câu lập phương trình là nghiệm cuối cùng của bài toán.",
+        "worked_example": {
+          "problem": "Có 8 vé, vé người lớn 50 nghìn và vé trẻ em 30 nghìn. Tổng tiền là 340 nghìn. Tìm số vé mỗi loại.",
+          "solution": "Bước 1: Gọi \\(x\\) là số vé người lớn, \\(x\\) nguyên, \\(0\\le x\\le8\\); số vé trẻ em \\(8-x\\).\nBước 2: Lập \\(50x+30(8-x)=340\\) (đơn vị nghìn đồng).\nBước 3: \\(20x+240=340\\Rightarrow x=5\\); số vé trẻ em \\(8-5=3\\).\nBước 4: Hai số vé nguyên không âm, đúng tổng 8 và tổng tiền 340 nghìn."
+        },
+        "misconception": "Nhầm đơn vị, biểu diễn số vé còn lại thành (8+x), hoặc không kiểm tra tính nguyên và không âm.",
+        "summary": "Ẩn và điều kiện → phương trình theo dữ kiện → giải → kiểm tra thực tế.",
+        "source_reference": "docs/kien-thuc/08-phuong-trinh-bat-phuong-trinh/index.md",
+        "source_sections": [
+          "Mức 3 — Vận dụng",
+          "Ví dụ mẫu"
+        ],
+        "source_question_ids": [
+          "EQ08MICRO_013",
+          "EQ08MICRO_014",
+          "EQ08MICRO_015"
+        ],
+        "review_status": "SELF_AUDITED",
+        "review_method": "SOURCE_LOCKED_BOUNDED_SELF_AUDIT",
+        "academic_review_ref": "content-staging/reviews/MATH-CORE08-12-TEACH-SELF-AUDIT-20260929.md"
+      }
+    }
+  ],
+  "extensions": [
+    {
+      "id": "eq08-ent10-1",
+      "layer": "KNTT-Core",
+      "title": "Lập bất phương trình từ bài toán",
+      "gates_core": false,
+      "learner_label": "Ứng dụng",
+      "role": "application"
+    },
+    {
+      "id": "eq08-ent10-2",
+      "layer": "Core-Support",
+      "title": "Giao nhiều tập nghiệm",
+      "gates_core": false,
+      "learner_label": "Củng cố",
+      "role": "support"
+    },
+    {
+      "id": "eq08-challenge-1",
+      "layer": "Specialized-Challenge",
+      "title": "Tham số trong phương trình/bất phương trình",
+      "gates_core": false,
+      "learner_label": "Thử thách"
+    }
+  ],
+  "micro_practice_bank": "assets/data/practice/08-phuong-trinh-bat-phuong-trinh-micro-v1.json",
+  "observed_signal_policy": {
+    "rule": "Signals are observations only; they never create causal remediation without sufficient learner evidence and a reviewed rule."
+  },
+  "qa_notes": [
+    "CĐ08 preserves Grade 8 → Grade 9 Vertical Spine.",
+    "bat-dang-thuc, tinh-chat-thu-tu-phep-cong and tinh-chat-thu-tu-phep-nhan have real Practice Bank coverage before Golden rollout.",
+    "NotebookLM R1: lap-bat-phuong-trinh is KNTT-Core application; giao-tap-nghiem is Core-Support; both remain non-gating for current Core Readiness because scoring changes are out of scope.",
+    "tham-so-co-ban remains Specialized-Challenge and does not gate Core.",
+    "Taxonomy v2 is a separate protected shadow program; P1-A learner-layer corrections do not mutate its family registry or Mastery/Readiness semantics."
+  ]
+}

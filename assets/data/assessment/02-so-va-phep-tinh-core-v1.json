@@ -1,0 +1,524 @@
+{
+  "schema": "roadmap-readiness-assessment-v1",
+  "version": 1,
+  "assessment_id": "NUM02-G6-CORE-READY-V1",
+  "topic": {
+    "id": "02-so-va-phep-tinh",
+    "title": "Chuyên đề 02 · Nền tảng số học lớp 6"
+  },
+  "layer": "KNTT-Core",
+  "grade_scope": [
+    6
+  ],
+  "title": "Core Readiness Check – CĐ02 – Phần lớp 6",
+  "skill_labels": {
+    "tap-hop-so": "Tập hợp số tự nhiên",
+    "thu-tu-phep-tinh": "Thứ tự thực hiện phép tính",
+    "dau-hieu-chia-het": "Dấu hiệu chia hết",
+    "so-nguyen-to": "Số nguyên tố",
+    "so-nguyen-phep-tinh": "Phép tính số nguyên",
+    "ucln": "ƯCLN",
+    "phep-tinh-phan-so": "Phép tính phân số",
+    "so-huu-ti-thap-phan": "Phép tính số thập phân (lớp 6)",
+    "phan-tram": "Tỉ số phần trăm",
+    "luy-thua": "Lũy thừa",
+    "quy-dong-so-sanh-phan-so": "Quy đồng và so sánh phân số",
+    "gia-tri-tuyet-doi": "Giá trị tuyệt đối",
+    "bcnn": "BCNN",
+    "rut-gon-phan-so": "Rút gọn phân số"
+  },
+  "policy": {
+    "feedback": "after_submit",
+    "hints": false,
+    "tutor": false,
+    "hard_gate": false,
+    "target_minutes": 20,
+    "allow_partial_submit": true
+  },
+  "readiness": {
+    "ready_threshold": 0.8,
+    "minimum_answered_ratio": 0.8,
+    "hard_gate": false,
+    "states": [
+      "READY",
+      "REVIEW_RECOMMENDED",
+      "MORE_EVIDENCE_NEEDED"
+    ]
+  },
+  "items": [
+    {
+      "id": "NUM02G6READY_001",
+      "type": "mcq",
+      "skill": "tap-hop-so",
+      "points": 1,
+      "question": "Số nào thuộc tập hợp số tự nhiên?",
+      "options": [
+        "−1",
+        "1/2",
+        "0",
+        "−8"
+      ],
+      "answer": 2,
+      "explanation": "0 là số tự nhiên; số âm và phân số không nguyên không thuộc tập số tự nhiên.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core"
+      }
+    },
+    {
+      "id": "NUM02G6READY_002",
+      "type": "mcq",
+      "skill": "thu-tu-phep-tinh",
+      "points": 1,
+      "question": "Tính 30 − 2 × 4².",
+      "options": [
+        "−2",
+        "448",
+        "224",
+        "14"
+      ],
+      "answer": 0,
+      "explanation": "4²=16; 2×16=32; 30−32=−2.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core"
+      }
+    },
+    {
+      "id": "NUM02G6READY_003",
+      "type": "mcq",
+      "skill": "dau-hieu-chia-het",
+      "points": 1,
+      "question": "Số nào chia hết cho 9?",
+      "options": [
+        "314",
+        "312",
+        "315",
+        "317"
+      ],
+      "answer": 2,
+      "explanation": "Tổng chữ số của 315 là 3+1+5=9, chia hết cho 9.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core"
+      }
+    },
+    {
+      "id": "NUM02G6READY_004",
+      "type": "mcq",
+      "skill": "so-nguyen-to",
+      "points": 1,
+      "question": "Số nào là số nguyên tố?",
+      "options": [
+        "91",
+        "27",
+        "39",
+        "31"
+      ],
+      "answer": 3,
+      "explanation": "31 chỉ có ước dương 1 và 31; 91=7×13, 27=3³, 39=3×13.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core"
+      }
+    },
+    {
+      "id": "NUM02G6READY_005",
+      "type": "mcq",
+      "skill": "so-nguyen-phep-tinh",
+      "points": 1,
+      "question": "Tính −14 + 6.",
+      "options": [
+        "−20",
+        "−8",
+        "8",
+        "20"
+      ],
+      "answer": 1,
+      "explanation": "Hai số khác dấu: 14−6=8, giữ dấu của −14 nên kết quả −8.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core"
+      }
+    },
+    {
+      "id": "NUM02G6READY_006",
+      "type": "mcq",
+      "skill": "ucln",
+      "points": 1,
+      "question": "Tìm ƯCLN(18, 30).",
+      "options": [
+        "90",
+        "3",
+        "12",
+        "6"
+      ],
+      "answer": 3,
+      "explanation": "18=2×3², 30=2×3×5 nên ƯCLN=2×3=6.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core"
+      }
+    },
+    {
+      "id": "NUM02G6READY_007",
+      "type": "mcq",
+      "skill": "phep-tinh-phan-so",
+      "points": 1,
+      "question": "Tính 3/5 + 1/10.",
+      "options": [
+        "7/10",
+        "4/15",
+        "4/10",
+        "2/5"
+      ],
+      "answer": 0,
+      "explanation": "3/5=6/10; cộng 1/10 được 7/10.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core"
+      }
+    },
+    {
+      "id": "NUM02G6READY_008",
+      "type": "mcq",
+      "skill": "phep-tinh-phan-so",
+      "points": 1,
+      "question": "Tính 3/4 : 3/2.",
+      "options": [
+        "9/8",
+        "2",
+        "1/2",
+        "3/8"
+      ],
+      "answer": 2,
+      "explanation": "3/4 × 2/3 = 6/12 = 1/2.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core"
+      }
+    },
+    {
+      "id": "NUM02G6READY_009",
+      "type": "mcq",
+      "skill": "so-huu-ti-thap-phan",
+      "points": 1,
+      "question": "Tính 1,2 − 0,35.",
+      "options": [
+        "0,95",
+        "0,85",
+        "1,15",
+        "0,75"
+      ],
+      "answer": 1,
+      "explanation": "Viết 1,2=1,20 rồi trừ 0,35 được 0,85.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core"
+      }
+    },
+    {
+      "id": "NUM02G6READY_010",
+      "type": "mcq",
+      "skill": "phan-tram",
+      "points": 1,
+      "question": "Một món hàng giá 400 000 đồng giảm 15%. Giá mới là bao nhiêu?",
+      "options": [
+        "60 000 đồng",
+        "460 000 đồng",
+        "340 000 đồng",
+        "385 000 đồng"
+      ],
+      "answer": 2,
+      "explanation": "Tiền giảm bằng 400 000×15%=60 000 đồng; giá mới 340 000 đồng.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core"
+      }
+    },
+    {
+      "id": "NUM02G6READY_011",
+      "type": "mcq",
+      "skill": "gia-tri-tuyet-doi",
+      "points": 1,
+      "question": "Giá trị của |−12| là:",
+      "options": [
+        "−12",
+        "12",
+        "0",
+        "24"
+      ],
+      "answer": 1,
+      "explanation": "Giá trị tuyệt đối là khoảng cách tới 0 nên |−12|=12.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core"
+      },
+      "authoring_review": {
+        "status": "PASS",
+        "method": "INDEPENDENT_NOTEBOOKLM_CONTENT_REVIEW",
+        "packet_id": "MATH-PRACTICE-IMPLEMENTATION-W1-R1-20261009",
+        "clearance": "PRACTICE_IMPLEMENTATION_W1_R1_CONTENT_REVIEW_COMPLETE",
+        "review_date": "2026-10-09",
+        "receipt": "review-packets/practice-implementation-wave1-r1/03_NOTEBOOKLM_RESULT_R1.md"
+      }
+    },
+    {
+      "id": "NUM02G6READY_012",
+      "type": "mcq",
+      "skill": "luy-thua",
+      "points": 1,
+      "question": "Tính 2³·2².",
+      "options": [
+        "2⁵=32",
+        "2⁶=64",
+        "4⁵=1024",
+        "2¹=2"
+      ],
+      "answer": 0,
+      "explanation": "Cùng cơ số 2, khi nhân hai lũy thừa ta cộng số mũ: 2³·2²=2⁵=32.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core"
+      },
+      "authoring_review": {
+        "status": "PASS",
+        "method": "INDEPENDENT_NOTEBOOKLM_CONTENT_REVIEW",
+        "packet_id": "MATH-PRACTICE-IMPLEMENTATION-W1-R1-20261009",
+        "clearance": "PRACTICE_IMPLEMENTATION_W1_R1_CONTENT_REVIEW_COMPLETE",
+        "review_date": "2026-10-09",
+        "receipt": "review-packets/practice-implementation-wave1-r1/03_NOTEBOOKLM_RESULT_R1.md"
+      }
+    },
+    {
+      "id": "NUM02G6READY_013",
+      "type": "mcq",
+      "skill": "quy-dong-so-sanh-phan-so",
+      "points": 1,
+      "question": "So sánh 5/6 và 4/5.",
+      "options": [
+        "5/6 > 4/5",
+        "5/6 < 4/5",
+        "5/6 = 4/5",
+        "Không so sánh được"
+      ],
+      "answer": 0,
+      "explanation": "Quy đồng mẫu 30: 5/6=25/30 và 4/5=24/30, nên 5/6>4/5.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core"
+      },
+      "authoring_review": {
+        "status": "PASS",
+        "method": "INDEPENDENT_NOTEBOOKLM_CONTENT_REVIEW",
+        "packet_id": "MATH-PRACTICE-IMPLEMENTATION-W1-R1-20261009",
+        "clearance": "PRACTICE_IMPLEMENTATION_W1_R1_CONTENT_REVIEW_COMPLETE",
+        "review_date": "2026-10-09",
+        "receipt": "review-packets/practice-implementation-wave1-r1/03_NOTEBOOKLM_RESULT_R1.md"
+      }
+    },
+    {
+      "id": "NUM02G6READY_014",
+      "type": "mcq",
+      "skill": "thu-tu-phep-tinh",
+      "points": 1,
+      "question": "Tính \\(36-2\\times(5+3)\\).",
+      "options": [
+        "20",
+        "272",
+        "50",
+        "19"
+      ],
+      "answer": 0,
+      "explanation": "Tính trong ngoặc trước: \\(5+3=8\\). Sau đó \\(2\\times8=16\\), nên \\(36-16=20\\).",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core"
+      },
+      "authoring_review": {
+        "status": "PASS",
+        "method": "INDEPENDENT_NOTEBOOKLM_CONTENT_REVIEW",
+        "packet_id": "MATH-READINESS-IMPLEMENTATION-W1-R1-20261010",
+        "clearance": "READINESS_IMPLEMENTATION_W1_R1_CONTENT_REVIEW_COMPLETE",
+        "review_date": "2026-10-10",
+        "receipt": "review-packets/readiness-implementation-wave1-r1/03_NOTEBOOKLM_RESULT_R1.md",
+        "base_priority_clearance": "READINESS_COVERAGE_PRIORITY_R1_REVIEW_COMPLETE",
+        "priority_receipt": "review-packets/readiness-coverage-priority-r1/03_NOTEBOOKLM_RESULT_R1.md"
+      }
+    },
+    {
+      "id": "NUM02G6READY_015",
+      "type": "mcq",
+      "skill": "so-nguyen-phep-tinh",
+      "points": 1,
+      "question": "Tính \\((-6)\\times(-4)\\).",
+      "options": [
+        "24",
+        "-24",
+        "10",
+        "-10"
+      ],
+      "answer": 0,
+      "explanation": "Tích của hai số nguyên âm là số dương và \\(6\\times4=24\\), nên kết quả là \\(24\\).",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core"
+      },
+      "authoring_review": {
+        "status": "PASS",
+        "method": "INDEPENDENT_NOTEBOOKLM_CONTENT_REVIEW",
+        "packet_id": "MATH-READINESS-IMPLEMENTATION-W1-R1-20261010",
+        "clearance": "READINESS_IMPLEMENTATION_W1_R1_CONTENT_REVIEW_COMPLETE",
+        "review_date": "2026-10-10",
+        "receipt": "review-packets/readiness-implementation-wave1-r1/03_NOTEBOOKLM_RESULT_R1.md",
+        "base_priority_clearance": "READINESS_COVERAGE_PRIORITY_R1_REVIEW_COMPLETE",
+        "priority_receipt": "review-packets/readiness-coverage-priority-r1/03_NOTEBOOKLM_RESULT_R1.md"
+      }
+    },
+    {
+      "id": "NUM02G6READY_016",
+      "type": "mcq",
+      "skill": "bcnn",
+      "points": 1,
+      "question": "Tìm \\(\\operatorname{BCNN}(12,18)\\).",
+      "options": [
+        "36",
+        "6",
+        "72",
+        "216"
+      ],
+      "answer": 0,
+      "explanation": "\\(12=2^2\\cdot3\\), \\(18=2\\cdot3^2\\). Lấy số mũ lớn nhất của mỗi thừa số nguyên tố: \\(\\operatorname{BCNN}=2^2\\cdot3^2=36\\).",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core"
+      },
+      "authoring_review": {
+        "status": "PASS",
+        "method": "INDEPENDENT_NOTEBOOKLM_CONTENT_REVIEW",
+        "packet_id": "MATH-READINESS-IMPLEMENTATION-W1-R1-20261010",
+        "clearance": "READINESS_IMPLEMENTATION_W1_R1_CONTENT_REVIEW_COMPLETE",
+        "review_date": "2026-10-10",
+        "receipt": "review-packets/readiness-implementation-wave1-r1/03_NOTEBOOKLM_RESULT_R1.md",
+        "base_priority_clearance": "READINESS_COVERAGE_PRIORITY_R1_REVIEW_COMPLETE",
+        "priority_receipt": "review-packets/readiness-coverage-priority-r1/03_NOTEBOOKLM_RESULT_R1.md"
+      }
+    },
+    {
+      "id": "NUM02G6READY_017",
+      "type": "mcq",
+      "skill": "luy-thua",
+      "points": 1,
+      "question": "Tính \\(3^5:3^2\\).",
+      "options": [
+        "\\(3^3=27\\)",
+        "\\(3^7=2187\\)",
+        "\\(3^2=9\\)",
+        "\\(1\\)"
+      ],
+      "answer": 0,
+      "explanation": "Khi chia hai lũy thừa cùng cơ số khác 0, ta trừ số mũ: \\(3^5:3^2=3^{5-2}=3^3=27\\).",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core"
+      },
+      "authoring_review": {
+        "status": "PASS",
+        "method": "INDEPENDENT_NOTEBOOKLM_CONTENT_REVIEW",
+        "packet_id": "MATH-READINESS-IMPLEMENTATION-W1-R1-20261010",
+        "clearance": "READINESS_IMPLEMENTATION_W1_R1_CONTENT_REVIEW_COMPLETE",
+        "review_date": "2026-10-10",
+        "receipt": "review-packets/readiness-implementation-wave1-r1/03_NOTEBOOKLM_RESULT_R1.md",
+        "base_priority_clearance": "READINESS_COVERAGE_PRIORITY_R1_REVIEW_COMPLETE",
+        "priority_receipt": "review-packets/readiness-coverage-priority-r1/03_NOTEBOOKLM_RESULT_R1.md"
+      }
+    },
+    {
+      "id": "NUM02G6READY_018",
+      "type": "mcq",
+      "skill": "rut-gon-phan-so",
+      "points": 1,
+      "question": "Rút gọn phân số \\(\\frac{18}{24}\\) đến phân số tối giản.",
+      "options": [
+        "\\(\\frac34\\)",
+        "\\(\\frac9{12}\\)",
+        "\\(\\frac23\\)",
+        "\\(\\frac46\\)"
+      ],
+      "answer": 0,
+      "explanation": "\\(\\operatorname{ƯCLN}(18,24)=6\\). Chia cả tử và mẫu cho 6 được \\(\\frac{18}{24}=\\frac34\\), là phân số tối giản.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core"
+      },
+      "authoring_review": {
+        "status": "PASS",
+        "method": "INDEPENDENT_NOTEBOOKLM_CONTENT_REVIEW",
+        "packet_id": "MATH-READINESS-IMPLEMENTATION-W1-R1-20261010",
+        "clearance": "READINESS_IMPLEMENTATION_W1_R1_CONTENT_REVIEW_COMPLETE",
+        "review_date": "2026-10-10",
+        "receipt": "review-packets/readiness-implementation-wave1-r1/03_NOTEBOOKLM_RESULT_R1.md",
+        "base_priority_clearance": "READINESS_COVERAGE_PRIORITY_R1_REVIEW_COMPLETE",
+        "priority_receipt": "review-packets/readiness-coverage-priority-r1/03_NOTEBOOKLM_RESULT_R1.md"
+      }
+    }
+  ],
+  "next_topic": {
+    "id": "03-ti-le-ti-le-thuc",
+    "title": "CĐ03 – Tỉ số và tỉ số phần trăm (lớp 6)"
+  }
+}

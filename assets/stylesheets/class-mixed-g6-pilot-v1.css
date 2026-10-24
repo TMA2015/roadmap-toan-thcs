@@ -1,0 +1,29 @@
+/* Grade-6 mixed-Core QA pilot. Isolated namespace: no changes to Practice/Core UI. */
+/* Explicitly honor hidden= on chooser/buttons after Start: component
+   display:grid/flex otherwise overrides the browser's [hidden] UA rule. */
+.cmg6 [hidden]{display:none!important}
+.cmg6{max-width:52rem;margin:1.5rem auto;padding:1.4rem;border:1px solid var(--md-default-fg-color--lightest);border-radius:1rem}
+.cmg6-note{font-weight:650}
+.cmg6-chooser{display:grid;gap:.6rem;margin:1.2rem 0}
+.cmg6-chooser h2{margin:.2rem 0}
+.cmg6-choice,.cmg6-answer{display:flex;align-items:flex-start;gap:.65rem;cursor:pointer;padding:.75rem;border:1px solid var(--md-default-fg-color--lightest);border-radius:.65rem}
+.cmg6-choice:has(input:checked),.cmg6-answer:has(input:checked){border-color:var(--md-accent-fg-color)}
+.cmg6-choice input,.cmg6-answer input{flex:none;width:1rem;height:1rem;margin-top:.2rem}
+.cmg6-buttons,.cmg6-nav,.cmg6-jump{display:flex;gap:.6rem;flex-wrap:wrap;align-items:center}
+.cmg6 button{font:inherit;min-height:2.6rem;cursor:pointer;padding:.45rem .8rem;border:1px solid var(--md-default-fg-color--light);border-radius:.55rem}
+.cmg6 button:focus-visible,.cmg6 input:focus-visible,.cmg6 a:focus-visible{outline:3px solid var(--md-accent-fg-color);outline-offset:3px}
+.cmg6 button:disabled{cursor:not-allowed;opacity:.45}
+.cmg6 .cmg6-primary{background:var(--md-primary-fg-color);color:#fff;border:1px solid var(--md-primary-fg-color);margin:.5rem 0}
+.cmg6-jump{margin:.9rem 0}
+.cmg6-jump button{min-width:2.6rem}
+.cmg6-jump .is-current{outline:2px solid var(--md-accent-fg-color)}
+.cmg6-jump .is-answered{background:var(--md-default-fg-color--lightest)}
+.cmg6-status{min-height:1.4rem}
+.cmg6-hint{color:var(--md-default-fg-color--light)}
+.cmg6-quiz{margin-top:1.2rem}
+.cmg6-options{padding:0;border:0;display:grid;gap:.5rem}
+.cmg6-options legend{font-size:.9em;margin-bottom:.75rem}
+.cmg6-review{padding:.8rem .2rem;border-bottom:1px solid var(--md-default-fg-color--lightest)}
+.cmg6-review summary{cursor:pointer;font-weight:600}
+.cmg6-warning{color:var(--md-typeset-a-color);font-weight:bold}
+@media(max-width:600px){.cmg6{padding:.85rem}.cmg6-nav button{flex:1}.cmg6-quiz .cmg6-primary{width:100%}}

@@ -1,0 +1,252 @@
+{
+  "schema": "roadmap-topic-learning-workspace-v1",
+  "topic": "17-thales-dong-dang",
+  "title": "Thales và tam giác đồng dạng",
+  "core_progress_policy": {
+    "layer": "KNTT-Core",
+    "rule": "Only mapped Core cards contribute to readiness; support/extension content never gates Core."
+  },
+  "cards": [
+    {
+      "id": "geo17-core-1",
+      "order": 1,
+      "title": "Thales thuận, đảo và tỉ lệ",
+      "kntt_lessons": [
+        "Lớp 8"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "thales-thuan",
+        "thales-dao",
+        "ti-le-doan-thang"
+      ],
+      "prerequisites": [
+        "tinh-chat-song-song"
+      ],
+      "micro_practice": [
+        "GEO17MICRO_001",
+        "GEO17MICRO_002",
+        "GEO17MICRO_003"
+      ],
+      "teaching_copy": {
+        "key_idea": "Trong tam giác ABC, D nằm **trên đoạn** AB và E nằm **trên đoạn** AC. Nếu \\(DE\\parallel BC\\) thì \\(\\frac{AD}{AB}=\\frac{AE}{AC}\\) và \\(\\frac{AD}{DB}=\\frac{AE}{EC}\\) khi các mẫu dương. Chiều đảo: nếu hai điểm nằm đúng hai cạnh và các tỉ số tương ứng bằng nhau, suy ra \\(DE\\parallel BC\\). Không viết tỉ số theo cặp cạnh không tương ứng.",
+        "worked_example": {
+          "problem": "Trong tam giác ABC, \\(D\\in AB,E\\in AC\\), \\(AD=3,DB=2,AE=6,EC=4\\) (độ dài dương). Có thể kết luận \\(DE\\parallel BC\\) không?",
+          "solution": "Bước 1: \\(AD/DB=3/2\\) và \\(AE/EC=6/4=3/2\\).\nBước 2: D và E nằm trên hai cạnh tương ứng; các tỉ số bằng nhau.\nBước 3: Theo Thales đảo, \\(DE\\parallel BC\\)."
+        },
+        "misconception": "So sánh AD với EC hoặc bỏ qua điều kiện D, E phải nằm trên hai cạnh trong cấu hình đang xét.",
+        "summary": "Thales: ghép các đoạn tương ứng; chiều đảo cần vị trí hai điểm trên cạnh.",
+        "source_reference": "docs/kien-thuc/17-thales-dong-dang/index.md",
+        "source_sections": [
+          "3.1",
+          "3.2"
+        ],
+        "source_question_ids": [
+          "GEO17MICRO_001",
+          "GEO17MICRO_002",
+          "GEO17MICRO_003"
+        ],
+        "review_status": "SELF_AUDITED",
+        "review_method": "SOURCE_LOCKED_BOUNDED_SELF_AUDIT",
+        "academic_review_ref": "content-staging/reviews/MATH-CORE16-18-GEOMETRY-SELF-AUDIT-20260929.md"
+      }
+    },
+    {
+      "id": "geo17-core-2",
+      "order": 2,
+      "title": "Đường trung bình và phân giác",
+      "kntt_lessons": [
+        "Lớp 8"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "duong-trung-binh",
+        "tinh-chat-duong-phan-giac"
+      ],
+      "prerequisites": [
+        "trung-diem",
+        "ti-le-doan-thang"
+      ],
+      "micro_practice": [
+        "GEO17MICRO_004",
+        "GEO17MICRO_005",
+        "GEO17MICRO_006"
+      ],
+      "teaching_copy": {
+        "key_idea": "Trong tam giác ABC, M, N lần lượt là trung điểm AB và AC thì \\(MN\\parallel BC\\) và \\(MN=\\frac12 BC\\). Đường phân giác trong AD (D thuộc BC) cho \\(\\frac{BD}{DC}=\\frac{AB}{AC}\\). Hai công cụ khác nhau: trung điểm tạo đường trung bình; phân giác chia cạnh đối diện theo tỉ lệ hai cạnh kề.",
+        "worked_example": {
+          "problem": "Tam giác ABC có M, N là trung điểm AB, AC, \\(BC=14\\) cm. Đồng thời, AD là phân giác trong góc A, D trên BC và \\(AB:AC=2:3\\). Tìm MN và tỉ số BD:DC.",
+          "solution": "Bước 1: MN là đường trung bình nên \\(MN=BC/2=7\\) cm, \\(MN\\parallel BC\\).\nBước 2: Định lí phân giác trong: \\(BD/DC=AB/AC=2/3\\).\nBước 3: MN=7 cm và BD:DC=2:3 là hai kết quả từ hai giả thiết riêng; không cho rằng D là trung điểm."
+        },
+        "misconception": "Nhầm tỉ số chia cạnh của phân giác với đường trung tuyến hoặc kết luận D là trung điểm khi AB khác AC.",
+        "summary": "Trung điểm → đường trung bình bằng nửa cạnh; phân giác → tỉ số hai cạnh kề.",
+        "source_reference": "docs/kien-thuc/17-thales-dong-dang/index.md",
+        "source_sections": [
+          "3.3",
+          "3.6",
+          "Dạng 3"
+        ],
+        "source_question_ids": [
+          "GEO17MICRO_004",
+          "GEO17MICRO_005",
+          "GEO17MICRO_006"
+        ],
+        "review_status": "SELF_AUDITED",
+        "review_method": "SOURCE_LOCKED_BOUNDED_SELF_AUDIT",
+        "academic_review_ref": "content-staging/reviews/MATH-CORE16-18-GEOMETRY-SELF-AUDIT-20260929.md"
+      }
+    },
+    {
+      "id": "geo17-core-3",
+      "order": 3,
+      "title": "Nhận biết và thứ tự tương ứng",
+      "kntt_lessons": [
+        "Lớp 8"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "nhan-biet-dong-dang",
+        "thu-tu-tuong-ung"
+      ],
+      "prerequisites": [
+        "viet-tuong-ung-tam-giac-bang-nhau"
+      ],
+      "micro_practice": [
+        "GEO17MICRO_007",
+        "GEO17MICRO_008",
+        "GEO17MICRO_009"
+      ],
+      "teaching_copy": {
+        "key_idea": "Hai tam giác đồng dạng có các góc tương ứng bằng nhau, cạnh tương ứng tỉ lệ. Thứ tự trong ký hiệu \\(\\triangle ABC\\sim\\triangle DEF\\) xác định A↔D, B↔E, C↔F. Từ đó \\(AB/DE=BC/EF=AC/DF\\). Không được đổi ngẫu nhiên thứ tự khi tính độ dài.",
+        "worked_example": {
+          "problem": "Biết \\(\\triangle ABC\\sim\\triangle MNP\\), \\(AB=6\\), \\(MN=9\\), \\(AC=8\\). Tính MP.",
+          "solution": "Bước 1: Viết đúng A↔M, B↔N, C↔P nên AB↔MN và AC↔MP.\nBước 2: \\(AB/MN=AC/MP\\), tức \\(6/9=8/MP\\).\nBước 3: \\(MP=8\\cdot9/6=12\\)."
+        },
+        "misconception": "Ghép AC với NP chỉ vì cùng là cạnh còn lại hoặc dùng tỉ số đảo ở một cặp.",
+        "summary": "Viết thứ tự đỉnh tương ứng trước khi lập tỉ số cạnh.",
+        "source_reference": "docs/kien-thuc/17-thales-dong-dang/index.md",
+        "source_sections": [
+          "3.4"
+        ],
+        "source_question_ids": [
+          "GEO17MICRO_007",
+          "GEO17MICRO_008",
+          "GEO17MICRO_009"
+        ],
+        "review_status": "SELF_AUDITED",
+        "review_method": "SOURCE_LOCKED_BOUNDED_SELF_AUDIT",
+        "academic_review_ref": "content-staging/reviews/MATH-CORE16-18-GEOMETRY-SELF-AUDIT-20260929.md"
+      }
+    },
+    {
+      "id": "geo17-core-4",
+      "order": 4,
+      "title": "Ba trường hợp đồng dạng",
+      "kntt_lessons": [
+        "Lớp 8"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "dong-dang-gg",
+        "dong-dang-cgc",
+        "dong-dang-ccc"
+      ],
+      "prerequisites": [
+        "thu-tu-tuong-ung"
+      ],
+      "micro_practice": [
+        "GEO17MICRO_010",
+        "GEO17MICRO_011",
+        "GEO17MICRO_012"
+      ],
+      "teaching_copy": {
+        "key_idea": "Ba tiêu chuẩn đồng dạng: g-g (hai góc tương ứng bằng nhau); c-g-c (hai cặp cạnh tương ứng tỉ lệ và **góc xen giữa** bằng nhau); c-c-c (ba cặp cạnh tương ứng cùng một tỉ số). Không dùng chỉ hai cặp cạnh tỉ lệ và một góc không xen giữa để suy ra c-g-c.",
+        "worked_example": {
+          "problem": "Tam giác ABC và DEF có \\(AB/DE=AC/DF=2/3\\) và \\(\\angle BAC=\\angle EDF\\). Chứng minh hai tam giác đồng dạng.",
+          "solution": "Bước 1: AB↔DE, AC↔DF là hai cặp cạnh tương ứng tỉ lệ.\nBước 2: Góc BAC nằm giữa AB, AC; góc EDF nằm giữa DE, DF, và hai góc này bằng nhau.\nBước 3: Theo c-g-c, \\(\\triangle ABC\\sim\\triangle DEF\\)."
+        },
+        "misconception": "Áp dụng c-g-c khi góc đã biết không xen giữa đúng hai cạnh đưa vào tỉ số.",
+        "summary": "c-g-c đồng dạng: tỉ lệ hai cặp cạnh và bằng nhau ở góc xen giữa.",
+        "source_reference": "docs/kien-thuc/17-thales-dong-dang/index.md",
+        "source_sections": [
+          "3.5"
+        ],
+        "source_question_ids": [
+          "GEO17MICRO_010",
+          "GEO17MICRO_011",
+          "GEO17MICRO_012"
+        ],
+        "review_status": "SELF_AUDITED",
+        "review_method": "SOURCE_LOCKED_BOUNDED_SELF_AUDIT",
+        "academic_review_ref": "content-staging/reviews/MATH-CORE16-18-GEOMETRY-SELF-AUDIT-20260929.md"
+      }
+    },
+    {
+      "id": "geo17-core-5",
+      "order": 5,
+      "title": "Tính độ dài và hình đồng dạng",
+      "kntt_lessons": [
+        "Lớp 8"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "tinh-do-dai-dong-dang",
+        "hinh-dong-dang"
+      ],
+      "prerequisites": [
+        "nhan-biet-dong-dang"
+      ],
+      "micro_practice": [
+        "GEO17MICRO_013",
+        "GEO17MICRO_014",
+        "GEO17MICRO_015"
+      ],
+      "teaching_copy": {
+        "key_idea": "Từ \\(\\triangle ABC\\sim\\triangle DEF\\), các độ dài tương ứng theo cùng một hệ số k. Tỉ số chu vi cũng bằng k, tỉ số diện tích bằng \\(k^2\\); phần hệ quả đo lường được giữ làm kiến thức liên hệ, không tự tính là Core readiness nếu đang ở lớp mở rộng. Trong Core hãy lập đúng tỉ lệ cạnh để tìm độ dài.",
+        "worked_example": {
+          "problem": "Hai tam giác đồng dạng với \\(AB/DE=BC/EF=2/3\\). Biết \\(BC=10\\) cm. Tính EF và kiểm tra tỉ lệ.",
+          "solution": "Bước 1: \\(BC/EF=2/3\\).\nBước 2: \\(10/EF=2/3\\Rightarrow EF=15\\) cm.\nBước 3: \\(BC/EF=10/15=2/3\\), phù hợp tỉ số đồng dạng đã cho."
+        },
+        "misconception": "Đảo một tỉ số riêng lẻ dẫn đến EF=20/3; đưa tỉ số diện tích k² vào phép tính cạnh.",
+        "summary": "Tìm cạnh bằng đúng tỉ số cùng thứ tự của hai tam giác.",
+        "source_reference": "docs/kien-thuc/17-thales-dong-dang/index.md",
+        "source_sections": [
+          "3.4",
+          "3.5A",
+          "3.6",
+          "Dạng 5"
+        ],
+        "source_question_ids": [
+          "GEO17MICRO_013",
+          "GEO17MICRO_014",
+          "GEO17MICRO_015"
+        ],
+        "review_status": "SELF_AUDITED",
+        "review_method": "SOURCE_LOCKED_BOUNDED_SELF_AUDIT",
+        "academic_review_ref": "content-staging/reviews/MATH-CORE16-18-GEOMETRY-SELF-AUDIT-20260929.md"
+      }
+    }
+  ],
+  "extensions": [
+    {
+      "id": "geo17-ext-1",
+      "layer": "Core-Support",
+      "title": "Tỉ số chu vi, diện tích và hệ thức tích",
+      "gates_core": false
+    },
+    {
+      "id": "geo17-ext-2",
+      "layer": "Entrance10",
+      "title": "Kết hợp song song – đồng dạng trong chứng minh",
+      "gates_core": false
+    },
+    {
+      "id": "geo17-ext-3",
+      "layer": "Challenge",
+      "title": "Chuỗi đồng dạng nhiều bước",
+      "gates_core": false
+    }
+  ],
+  "micro_practice_bank": "assets/data/practice/17-thales-dong-dang-micro-v1.json",
+  "geometry_contract": "assets/data/curriculum/geometry-architecture-v1.json"
+}

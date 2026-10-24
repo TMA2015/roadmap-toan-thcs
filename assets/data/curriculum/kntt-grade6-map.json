@@ -1,0 +1,760 @@
+{
+  "version": 1,
+  "schema": "roadmap-kntt-grade-map-v1",
+  "grade": 6,
+  "book": "Kết nối tri thức",
+  "status": "reviewed",
+  "context_version": "1.0.1",
+  "source_task": "KNTT-MAP-G6-001",
+  "reviewed_by": "ChatGPT",
+  "verification_sources": [
+    {
+      "type": "publisher",
+      "title": "SGK Toán 6 - Nhà xuất bản Giáo dục Việt Nam",
+      "url": "https://taphuan.nxbgd.vn/tap-huan/chi-tiet-sach/toan-6-tap-mot-940011379.940011379"
+    },
+    {
+      "type": "toc_crosscheck",
+      "title": "Mục lục Toán 6 Kết nối tri thức",
+      "url": "https://www.vietjack.com/toan-6-ket-noi/index.jsp"
+    }
+  ],
+  "design_rules": [
+    "Giữ nguyên 25 topic ID của Roadmap.",
+    "Mapping chương trình và difficulty là hai chiều metadata khác nhau.",
+    "Không coi skill lớp sau trong cùng Practice Bank là KNTT lớp 6 Core.",
+    "Hoạt động trải nghiệm được map như support/cross-link, không tự động là mastery gate."
+  ],
+  "chapters": [
+    {
+      "chapter": 1,
+      "title": "Tập hợp các số tự nhiên",
+      "lessons": [
+        {
+          "lessons": "Bài 1-3",
+          "core": "Tập hợp; cách ghi và thứ tự số tự nhiên",
+          "roadmap": [
+            {
+              "topic_id": "02-so-va-phep-tinh",
+              "relation": "PRIMARY"
+            }
+          ],
+          "skills": [
+            "tap-hop",
+            "ghi-so-tu-nhien",
+            "thu-tu-so-tu-nhien"
+          ]
+        },
+        {
+          "lessons": "Bài 4-5",
+          "core": "Cộng, trừ, nhân, chia số tự nhiên và tính chất",
+          "roadmap": [
+            {
+              "topic_id": "02-so-va-phep-tinh",
+              "relation": "PRIMARY"
+            }
+          ],
+          "skills": [
+            "cong-tru-so-tu-nhien",
+            "nhan-chia-so-tu-nhien"
+          ]
+        },
+        {
+          "lessons": "Bài 6",
+          "core": "Lũy thừa với số mũ tự nhiên",
+          "roadmap": [
+            {
+              "topic_id": "02-so-va-phep-tinh",
+              "relation": "PRIMARY"
+            }
+          ],
+          "skills": [
+            "luy-thua"
+          ]
+        },
+        {
+          "lessons": "Bài 7",
+          "core": "Thứ tự thực hiện phép tính",
+          "roadmap": [
+            {
+              "topic_id": "02-so-va-phep-tinh",
+              "relation": "PRIMARY"
+            }
+          ],
+          "skills": [
+            "thu-tu-phep-tinh"
+          ]
+        }
+      ]
+    },
+    {
+      "chapter": 2,
+      "title": "Tính chia hết trong tập hợp các số tự nhiên",
+      "lessons": [
+        {
+          "lessons": "Bài 8",
+          "core": "Quan hệ chia hết và tính chất",
+          "roadmap": [
+            {
+              "topic_id": "02-so-va-phep-tinh",
+              "relation": "PRIMARY"
+            }
+          ],
+          "skills": [
+            "quan-he-chia-het",
+            "tinh-chat-chia-het"
+          ]
+        },
+        {
+          "lessons": "Bài 9",
+          "core": "Dấu hiệu chia hết",
+          "roadmap": [
+            {
+              "topic_id": "02-so-va-phep-tinh",
+              "relation": "PRIMARY"
+            }
+          ],
+          "skills": [
+            "dau-hieu-chia-het"
+          ]
+        },
+        {
+          "lessons": "Bài 10",
+          "core": "Số nguyên tố và hợp số; phân tích ra thừa số nguyên tố",
+          "roadmap": [
+            {
+              "topic_id": "02-so-va-phep-tinh",
+              "relation": "PRIMARY"
+            }
+          ],
+          "skills": [
+            "so-nguyen-to-hop-so",
+            "phan-tich-thua-so-nguyen-to"
+          ]
+        },
+        {
+          "lessons": "Bài 11-12",
+          "core": "Ước chung, ƯCLN; bội chung, BCNN và ứng dụng",
+          "roadmap": [
+            {
+              "topic_id": "02-so-va-phep-tinh",
+              "relation": "PRIMARY"
+            }
+          ],
+          "skills": [
+            "uoc-chung-ucln",
+            "boi-chung-bcnn",
+            "bai-toan-ucln-bcnn"
+          ]
+        }
+      ]
+    },
+    {
+      "chapter": 3,
+      "title": "Số nguyên",
+      "lessons": [
+        {
+          "lessons": "Bài 13",
+          "core": "Tập hợp số nguyên, số đối, trục số, thứ tự và giá trị tuyệt đối",
+          "roadmap": [
+            {
+              "topic_id": "02-so-va-phep-tinh",
+              "relation": "PRIMARY"
+            }
+          ],
+          "skills": [
+            "so-nguyen-truc-so",
+            "so-sanh-so-nguyen",
+            "gia-tri-tuyet-doi"
+          ]
+        },
+        {
+          "lessons": "Bài 14",
+          "core": "Cộng và trừ số nguyên",
+          "roadmap": [
+            {
+              "topic_id": "02-so-va-phep-tinh",
+              "relation": "PRIMARY"
+            }
+          ],
+          "skills": [
+            "cong-tru-so-nguyen"
+          ]
+        },
+        {
+          "lessons": "Bài 15",
+          "core": "Quy tắc dấu ngoặc",
+          "roadmap": [
+            {
+              "topic_id": "02-so-va-phep-tinh",
+              "relation": "PRIMARY"
+            }
+          ],
+          "skills": [
+            "quy-tac-dau-ngoac"
+          ]
+        },
+        {
+          "lessons": "Bài 16",
+          "core": "Nhân số nguyên",
+          "roadmap": [
+            {
+              "topic_id": "02-so-va-phep-tinh",
+              "relation": "PRIMARY"
+            }
+          ],
+          "skills": [
+            "nhan-so-nguyen"
+          ]
+        },
+        {
+          "lessons": "Bài 17",
+          "core": "Phép chia hết; ước và bội của một số nguyên",
+          "roadmap": [
+            {
+              "topic_id": "02-so-va-phep-tinh",
+              "relation": "PRIMARY"
+            }
+          ],
+          "skills": [
+            "chia-het-so-nguyen",
+            "uoc-boi-so-nguyen"
+          ]
+        }
+      ]
+    },
+    {
+      "chapter": 4,
+      "title": "Một số hình phẳng trong thực tiễn",
+      "lessons": [
+        {
+          "lessons": "Bài 18",
+          "core": "Tam giác đều, hình vuông, lục giác đều: nhận biết và tính chất trực quan",
+          "roadmap": [
+            {
+              "topic_id": "20-hinh-hoc-tong-hop",
+              "relation": "PRIMARY"
+            },
+            {
+              "topic_id": "14-tam-giac",
+              "relation": "PREREQUISITE"
+            },
+            {
+              "topic_id": "16-tu-giac",
+              "relation": "PREREQUISITE"
+            }
+          ],
+          "skills": [
+            "nhan-biet-tam-giac-deu",
+            "nhan-biet-hinh-vuong",
+            "nhan-biet-luc-giac-deu"
+          ]
+        },
+        {
+          "lessons": "Bài 19",
+          "core": "Hình chữ nhật, hình thoi, hình bình hành, hình thang cân: nhận biết và tính chất trực quan",
+          "roadmap": [
+            {
+              "topic_id": "20-hinh-hoc-tong-hop",
+              "relation": "PRIMARY"
+            },
+            {
+              "topic_id": "16-tu-giac",
+              "relation": "PREREQUISITE"
+            }
+          ],
+          "skills": [
+            "nhan-biet-tu-giac-dac-biet"
+          ]
+        },
+        {
+          "lessons": "Bài 20",
+          "core": "Chu vi và diện tích một số tứ giác đã học",
+          "roadmap": [
+            {
+              "topic_id": "20-hinh-hoc-tong-hop",
+              "relation": "PRIMARY"
+            },
+            {
+              "topic_id": "24-bai-toan-thuc-te",
+              "relation": "SECONDARY"
+            }
+          ],
+          "skills": [
+            "chu-vi-tu-giac",
+            "dien-tich-tu-giac",
+            "do-luong-thuc-te"
+          ]
+        }
+      ]
+    },
+    {
+      "chapter": 5,
+      "title": "Tính đối xứng của hình phẳng trong tự nhiên",
+      "lessons": [
+        {
+          "lessons": "Bài 21",
+          "core": "Hình có trục đối xứng",
+          "roadmap": [
+            {
+              "topic_id": "20-hinh-hoc-tong-hop",
+              "relation": "PRIMARY"
+            }
+          ],
+          "skills": [
+            "truc-doi-xung"
+          ]
+        },
+        {
+          "lessons": "Bài 22",
+          "core": "Hình có tâm đối xứng",
+          "roadmap": [
+            {
+              "topic_id": "20-hinh-hoc-tong-hop",
+              "relation": "PRIMARY"
+            }
+          ],
+          "skills": [
+            "tam-doi-xung"
+          ]
+        }
+      ]
+    },
+    {
+      "chapter": 6,
+      "title": "Phân số",
+      "lessons": [
+        {
+          "lessons": "Bài 23-24",
+          "core": "Mở rộng phân số, phân số bằng nhau; so sánh phân số; hỗn số dương",
+          "roadmap": [
+            {
+              "topic_id": "02-so-va-phep-tinh",
+              "relation": "PRIMARY"
+            }
+          ],
+          "skills": [
+            "phan-so-bang-nhau",
+            "rut-gon-phan-so",
+            "so-sanh-phan-so",
+            "hon-so-duong"
+          ]
+        },
+        {
+          "lessons": "Bài 25-26",
+          "core": "Cộng, trừ, nhân, chia phân số",
+          "roadmap": [
+            {
+              "topic_id": "02-so-va-phep-tinh",
+              "relation": "PRIMARY"
+            }
+          ],
+          "skills": [
+            "cong-tru-phan-so",
+            "nhan-chia-phan-so"
+          ]
+        },
+        {
+          "lessons": "Bài 27",
+          "core": "Hai bài toán về phân số",
+          "roadmap": [
+            {
+              "topic_id": "02-so-va-phep-tinh",
+              "relation": "PRIMARY"
+            },
+            {
+              "topic_id": "24-bai-toan-thuc-te",
+              "relation": "SECONDARY"
+            }
+          ],
+          "skills": [
+            "tim-gia-tri-phan-so-cua-so",
+            "tim-so-khi-biet-gia-tri-phan-so"
+          ]
+        }
+      ]
+    },
+    {
+      "chapter": 7,
+      "title": "Số thập phân",
+      "lessons": [
+        {
+          "lessons": "Bài 28-29",
+          "core": "Số thập phân và tính toán với số thập phân",
+          "roadmap": [
+            {
+              "topic_id": "02-so-va-phep-tinh",
+              "relation": "PRIMARY"
+            }
+          ],
+          "skills": [
+            "so-thap-phan",
+            "phep-tinh-so-thap-phan"
+          ]
+        },
+        {
+          "lessons": "Bài 30",
+          "core": "Làm tròn và ước lượng",
+          "roadmap": [
+            {
+              "topic_id": "02-so-va-phep-tinh",
+              "relation": "PRIMARY"
+            },
+            {
+              "topic_id": "24-bai-toan-thuc-te",
+              "relation": "SECONDARY"
+            }
+          ],
+          "skills": [
+            "lam-tron",
+            "uoc-luong"
+          ]
+        },
+        {
+          "lessons": "Bài 31",
+          "core": "Tỉ số và tỉ số phần trăm; bài toán phần trăm",
+          "roadmap": [
+            {
+              "topic_id": "03-ti-le-ti-le-thuc",
+              "relation": "PRIMARY"
+            },
+            {
+              "topic_id": "02-so-va-phep-tinh",
+              "relation": "SECONDARY"
+            },
+            {
+              "topic_id": "24-bai-toan-thuc-te",
+              "relation": "SECONDARY"
+            }
+          ],
+          "skills": [
+            "ti-so",
+            "ti-so-phan-tram",
+            "bai-toan-phan-tram"
+          ]
+        }
+      ]
+    },
+    {
+      "chapter": 8,
+      "title": "Những hình học cơ bản",
+      "lessons": [
+        {
+          "lessons": "Bài 32",
+          "core": "Điểm và đường thẳng",
+          "roadmap": [
+            {
+              "topic_id": "13-goc-va-duong-thang",
+              "relation": "PRIMARY"
+            }
+          ],
+          "skills": [
+            "diem-thuoc-duong"
+          ]
+        },
+        {
+          "lessons": "Bài 33",
+          "core": "Điểm nằm giữa hai điểm; tia",
+          "roadmap": [
+            {
+              "topic_id": "13-goc-va-duong-thang",
+              "relation": "PRIMARY"
+            }
+          ],
+          "skills": [
+            "diem-nam-giua",
+            "tia",
+            "tia-doi"
+          ]
+        },
+        {
+          "lessons": "Bài 34-35",
+          "core": "Đoạn thẳng, độ dài đoạn thẳng, trung điểm",
+          "roadmap": [
+            {
+              "topic_id": "13-goc-va-duong-thang",
+              "relation": "PRIMARY"
+            }
+          ],
+          "skills": [
+            "doan-thang-do-dai",
+            "trung-diem"
+          ]
+        },
+        {
+          "lessons": "Bài 36-37",
+          "core": "Góc, số đo góc, góc nhọn/vuông/tù/bẹt",
+          "roadmap": [
+            {
+              "topic_id": "13-goc-va-duong-thang",
+              "relation": "PRIMARY"
+            }
+          ],
+          "skills": [
+            "khai-niem-goc",
+            "do-goc",
+            "phan-loai-goc"
+          ]
+        }
+      ]
+    },
+    {
+      "chapter": 9,
+      "title": "Dữ liệu và xác suất thực nghiệm",
+      "lessons": [
+        {
+          "lessons": "Bài 38-41",
+          "core": "Dữ liệu, thu thập dữ liệu, bảng thống kê, biểu đồ tranh, biểu đồ cột và cột kép",
+          "roadmap": [
+            {
+              "topic_id": "21-thong-ke",
+              "relation": "PRIMARY"
+            },
+            {
+              "topic_id": "24-bai-toan-thuc-te",
+              "relation": "SECONDARY"
+            }
+          ],
+          "skills": [
+            "du-lieu",
+            "thu-thap-du-lieu",
+            "bang-thong-ke",
+            "bieu-do-tranh",
+            "doc-bieu-do-cot",
+            "doc-bieu-do-cot-kep",
+            "nhan-xet-du-lieu"
+          ]
+        },
+        {
+          "lessons": "Bài 42",
+          "core": "Kết quả có thể và sự kiện trong trò chơi, thí nghiệm",
+          "roadmap": [
+            {
+              "topic_id": "23-xac-suat",
+              "relation": "PRIMARY"
+            }
+          ],
+          "skills": [
+            "ket-qua-co-the",
+            "su-kien-don-gian"
+          ]
+        },
+        {
+          "lessons": "Bài 43",
+          "core": "Xác suất thực nghiệm",
+          "roadmap": [
+            {
+              "topic_id": "23-xac-suat",
+              "relation": "PRIMARY"
+            },
+            {
+              "topic_id": "24-bai-toan-thuc-te",
+              "relation": "SECONDARY"
+            }
+          ],
+          "skills": [
+            "xac-suat-thuc-nghiem"
+          ]
+        }
+      ]
+    }
+  ],
+  "support_activities": [
+    {
+      "activity": "Tấm thiệp và phòng học của em",
+      "roadmap": [
+        {
+          "topic_id": "20-hinh-hoc-tong-hop",
+          "relation": "SECONDARY"
+        }
+      ]
+    },
+    {
+      "activity": "Vẽ hình đơn giản với GeoGebra",
+      "roadmap": [
+        {
+          "topic_id": "20-hinh-hoc-tong-hop",
+          "relation": "SECONDARY"
+        }
+      ]
+    },
+    {
+      "activity": "Kế hoạch chi tiêu cá nhân và gia đình",
+      "roadmap": [
+        {
+          "topic_id": "24-bai-toan-thuc-te",
+          "relation": "PRIMARY"
+        },
+        {
+          "topic_id": "03-ti-le-ti-le-thuc",
+          "relation": "SECONDARY"
+        }
+      ]
+    },
+    {
+      "activity": "Hoạt động thể thao nào được yêu thích nhất trong hè?",
+      "roadmap": [
+        {
+          "topic_id": "21-thong-ke",
+          "relation": "PRIMARY"
+        },
+        {
+          "topic_id": "24-bai-toan-thuc-te",
+          "relation": "SECONDARY"
+        }
+      ]
+    }
+  ],
+  "practice_alignment": {
+    "02-so-va-phep-tinh": {
+      "existing_core_skills": [
+        "tap-hop-so",
+        "so-nguyen-phep-tinh",
+        "gia-tri-tuyet-doi",
+        "thu-tu-phep-tinh",
+        "luy-thua",
+        "dau-hieu-chia-het",
+        "so-nguyen-to",
+        "phan-tich-thua-so-nguyen-to",
+        "ucln",
+        "bcnn",
+        "rut-gon-phan-so",
+        "quy-dong-so-sanh-phan-so",
+        "phep-tinh-phan-so",
+        "so-huu-ti-thap-phan",
+        "phan-tram"
+      ],
+      "proposed_refinements": [
+        "ghi-so-tu-nhien",
+        "thu-tu-so-tu-nhien",
+        "cong-tru-so-tu-nhien",
+        "nhan-chia-so-tu-nhien",
+        "quan-he-chia-het",
+        "quy-tac-dau-ngoac",
+        "uoc-boi-so-nguyen",
+        "hon-so-duong",
+        "tim-gia-tri-phan-so-cua-so",
+        "tim-so-khi-biet-gia-tri-phan-so",
+        "lam-tron",
+        "uoc-luong"
+      ],
+      "exclude_from_grade6_core": [
+        "can-bac-hai"
+      ]
+    },
+    "03-ti-le-ti-le-thuc": {
+      "existing_core_skills": [
+        "ti-so",
+        "doi-don-vi-ti-so",
+        "ti-so-phan-tram"
+      ],
+      "proposed_refinements": [
+        "bai-toan-phan-tram"
+      ],
+      "exclude_from_grade6_core": [
+        "ti-le-thuc",
+        "tim-x-ti-le-thuc",
+        "day-ti-so-bang-nhau",
+        "chia-theo-ti-le",
+        "ti-le-thuan",
+        "he-so-ti-le-thuan",
+        "ti-le-nghich",
+        "he-so-ti-le-nghich",
+        "phan-biet-thuan-nghich"
+      ]
+    },
+    "13-goc-va-duong-thang": {
+      "existing_core_skills": [
+        "diem-thuoc-duong",
+        "tia-doi",
+        "trung-diem",
+        "phan-loai-goc"
+      ],
+      "proposed_refinements": [
+        "diem-nam-giua",
+        "tia",
+        "doan-thang-do-dai",
+        "khai-niem-goc",
+        "do-goc"
+      ],
+      "exclude_from_grade6_core": [
+        "goc-phu-bu",
+        "tia-phan-giac",
+        "goc-doi-dinh",
+        "duong-vuong-goc",
+        "goc-so-le-trong",
+        "goc-dong-vi",
+        "goc-trong-cung-phia",
+        "tinh-chat-song-song",
+        "dau-hieu-song-song",
+        "vuong-goc-song-song"
+      ]
+    },
+    "20-hinh-hoc-tong-hop": {
+      "existing_core_skills": [],
+      "proposed_refinements": [
+        "nhan-biet-tam-giac-deu",
+        "nhan-biet-hinh-vuong",
+        "nhan-biet-luc-giac-deu",
+        "nhan-biet-tu-giac-dac-biet",
+        "chu-vi-tu-giac",
+        "dien-tich-tu-giac",
+        "truc-doi-xung",
+        "tam-doi-xung"
+      ],
+      "exclude_from_grade6_core": [
+        "song-song-dong-dang",
+        "hai-goc-vuong-noi-tiep",
+        "noi-tiep-dong-dang",
+        "dong-dang-he-thuc-tich",
+        "tam-giac-vuong-dong-dang",
+        "tiep-tuyen-chung-minh",
+        "chuoi-suy-luan"
+      ]
+    },
+    "21-thong-ke": {
+      "existing_core_skills": [
+        "du-lieu-phan-loai",
+        "thu-thap-du-lieu",
+        "doc-bieu-do-cot",
+        "doc-bieu-do-cot-kep",
+        "nhan-xet-du-lieu"
+      ],
+      "proposed_refinements": [
+        "bang-thong-ke",
+        "bieu-do-tranh"
+      ],
+      "exclude_from_grade6_core": [
+        "kiem-tra-chat-luong",
+        "mau-thien-lech",
+        "bang-tan-so",
+        "tan-suat",
+        "doc-bieu-do-doan-thang",
+        "chon-bieu-do",
+        "chuyen-bang-bieu-do",
+        "don-vi-thang-do",
+        "bieu-do-quat-tron",
+        "du-lieu-ghep-nhom"
+      ]
+    },
+    "23-xac-suat": {
+      "existing_core_skills": [
+        "xac-suat-thuc-nghiem"
+      ],
+      "proposed_refinements": [
+        "ket-qua-co-the",
+        "su-kien-don-gian"
+      ],
+      "exclude_from_grade6_core": [
+        "khong-gian-mau",
+        "xac-suat-co-dien",
+        "bien-co-doi",
+        "dong-xu-nhieu-lan",
+        "xuc-xac-hai-lan",
+        "so-do-cay",
+        "nhieu-buoc-doc-lap",
+        "khong-hoan-lai"
+      ]
+    }
+  }
+}

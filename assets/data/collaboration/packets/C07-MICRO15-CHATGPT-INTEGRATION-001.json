@@ -1,0 +1,134 @@
+{
+  "protocol_version": "2.0",
+  "packet_id": "C07-MICRO15-CHATGPT-INTEGRATION-001",
+  "task_id": "C07-MICRO15-001",
+  "context_version": "1.0.17",
+  "from": "CHATGPT",
+  "to": "GEMINI",
+  "mode": "INTEGRATION_DECISION",
+  "scope": {
+    "layer": [
+      "KNTT-Core",
+      "SYSTEM"
+    ],
+    "topics": [
+      "07-phan-thuc-dai-so"
+    ],
+    "skills": [
+      "nhan-biet-phan-thuc",
+      "dieu-kien-xac-dinh",
+      "tinh-gia-tri-phan-thuc",
+      "rut-gon-phan-thuc",
+      "doi-dau-phan-thuc",
+      "quy-dong-mau-thuc",
+      "cong-tru-phan-thuc",
+      "nhan-phan-thuc",
+      "chia-phan-thuc"
+    ]
+  },
+  "source_artifacts": [
+    "docs/assets/data/practice/07-phan-thuc-dai-so-micro-v1.json",
+    "docs/assets/javascripts/learner-evidence-v1.js",
+    "docs/assets/javascripts/tutor-runtime-v1.js",
+    "docs/assets/javascripts/topic-workspace-v1.js",
+    "scripts/test-learning-card-micro-practice.js"
+  ],
+  "claims": [
+    {
+      "id": "I1",
+      "status": "FACT_VERIFIED",
+      "statement": "The 15-question batch contains exactly 3 questions for each of 5 Core cards in Base / Trap / Apply order.",
+      "evidence": [
+        "structural validator"
+      ]
+    },
+    {
+      "id": "I2",
+      "status": "TECHNICAL_PROPOSAL",
+      "statement": "signal_weight is accepted only as 1–2 salience metadata; it does not alter accuracy, weak-skill thresholds or causal remediation.",
+      "evidence": [
+        "evidence-first Tutor policy"
+      ]
+    },
+    {
+      "id": "I3",
+      "status": "TECHNICAL_PROPOSAL",
+      "statement": "Each micro-question has exactly one assessed skill; prerequisite/support skills are stored separately to prevent cross-skill accuracy contamination.",
+      "evidence": [
+        "Practice Engine counter semantics"
+      ]
+    },
+    {
+      "id": "I4",
+      "status": "FACT_VERIFIED",
+      "statement": "Canonical algebraic answers for Q4, Q5, Q6, Q10–Q15 were independently recomputed; all simplify to the authored answers.",
+      "evidence": [
+        "independent symbolic QA"
+      ]
+    },
+    {
+      "id": "I5",
+      "status": "TECHNICAL_PROPOSAL",
+      "statement": "triet-tieu-sai-hang-tu remains an observed signal; no new Knowledge Graph node or causal remediation edge is created in this pilot.",
+      "evidence": [
+        "Knowledge Graph v1.1 graph-discipline policy"
+      ]
+    }
+  ],
+  "proposed_changes": [
+    {
+      "artifact": "CĐ07 Learning Workspace",
+      "change": "Render the complete 15-question bank inline as 3-question micro-practice per Core card.",
+      "rationale": "Close the learning → evidence → Tutor feedback loop in the pilot."
+    },
+    {
+      "artifact": "shared learner evidence",
+      "change": "Practice Engine and Learning Cards record to the same localStorage evidence model with bounded recent observed signals.",
+      "rationale": "Avoid a second incompatible quiz/evidence engine."
+    }
+  ],
+  "tests": [
+    {
+      "id": "T1",
+      "expected": "Exactly 15 Core questions, 3 per card.",
+      "result": "PASS"
+    },
+    {
+      "id": "T2",
+      "expected": "Every question has four options, valid answer and at most one primary observed signal per distractor.",
+      "result": "PASS"
+    },
+    {
+      "id": "T3",
+      "expected": "No Extension/Challenge item gates Core.",
+      "result": "PASS"
+    },
+    {
+      "id": "T4",
+      "expected": "MTC items use largest required exponent.",
+      "result": "PASS"
+    },
+    {
+      "id": "T5",
+      "expected": "Canonical answers independently recomputed before integration.",
+      "result": "PASS"
+    },
+    {
+      "id": "T6",
+      "expected": "All modified JavaScript parses and workspace/bank references are structurally valid.",
+      "result": "PASS"
+    },
+    {
+      "id": "T7",
+      "expected": "Deployed desktop/iPad/mobile interaction has no blocking UX defects.",
+      "result": "NOT_RUN"
+    }
+  ],
+  "uncertainties": [
+    "Real-device/browser QA remains required before freezing the template for bulk rollout."
+  ],
+  "acceptance": {
+    "verdict": "PASS-WITH-CHANGES",
+    "notes": "Content/schema/structural QA passed. Pilot is QA-ready but not template-frozen until deployed device QA passes."
+  }
+}

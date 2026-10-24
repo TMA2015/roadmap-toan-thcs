@@ -1,0 +1,96 @@
+{
+  "version": 2,
+  "schema": "practice-bank-manifest-v1",
+  "bank_id": "CIR19-V1",
+  "topic": {
+    "id": "19-duong-tron",
+    "title": "Đường tròn"
+  },
+  "session_size": 10,
+  "question_count": 147,
+  "skill_labels": {
+    "goc-o-tam": "Góc ở tâm",
+    "goc-noi-tiep": "Góc nội tiếp",
+    "nua-duong-tron": "Góc chắn nửa đường tròn",
+    "day-va-tam": "Dây và khoảng cách đến tâm",
+    "tiep-tuyen-ban-kinh": "Tiếp tuyến và bán kính",
+    "hai-tiep-tuyen": "Hai tiếp tuyến từ một điểm",
+    "tu-giac-noi-tiep": "Tứ giác nội tiếp",
+    "dau-hieu-noi-tiep": "Dấu hiệu nội tiếp",
+    "hai-day-cat-nhau": "Hai dây cắt nhau",
+    "tiep-tuyen-cat-tuyen": "Tiếp tuyến – cát tuyến",
+    "chung-minh-tiep-tuyen": "Chứng minh tiếp tuyến",
+    "goc-cung": "Góc và cung tổng hợp",
+    "do-dai-duong-tron": "Hệ thức độ dài trong đường tròn",
+    "cung-va-day": "Quan hệ cung và dây",
+    "do-dai-cung": "Độ dài cung",
+    "dien-tich-quat-tron": "Diện tích quạt tròn",
+    "dien-tich-vanh-khuyen": "Diện tích vành khuyên",
+    "vi-tri-tuong-doi-duong-thang-duong-tron": "Vị trí tương đối đường thẳng – đường tròn",
+    "vi-tri-tuong-doi-hai-duong-tron": "Vị trí tương đối hai đường tròn",
+    "duong-tron-ngoai-tiep-tam-giac": "Đường tròn ngoại tiếp tam giác",
+    "duong-tron-noi-tiep-tam-giac": "Đường tròn nội tiếp tam giác",
+    "da-giac-deu": "Đa giác đều"
+  },
+  "skill_groups": [
+    {
+      "id": "goc-cung",
+      "label": "A. Góc, cung và dây",
+      "skills": [
+        "goc-o-tam",
+        "goc-noi-tiep",
+        "nua-duong-tron",
+        "day-va-tam",
+        "goc-cung"
+      ]
+    },
+    {
+      "id": "tiep-tuyen",
+      "label": "B. Tiếp tuyến",
+      "skills": [
+        "tiep-tuyen-ban-kinh",
+        "hai-tiep-tuyen",
+        "chung-minh-tiep-tuyen"
+      ]
+    },
+    {
+      "id": "noi-tiep",
+      "label": "C. Tứ giác nội tiếp",
+      "skills": [
+        "tu-giac-noi-tiep",
+        "dau-hieu-noi-tiep"
+      ]
+    },
+    {
+      "id": "he-thuc",
+      "label": "D. Hệ thức độ dài",
+      "skills": [
+        "hai-day-cat-nhau",
+        "tiep-tuyen-cat-tuyen",
+        "do-dai-duong-tron"
+      ]
+    },
+    {
+      "id": "kntt-core-bo-sung",
+      "label": "E. KNTT Core bổ sung lớp 9",
+      "skills": [
+        "cung-va-day",
+        "do-dai-cung",
+        "dien-tich-quat-tron",
+        "dien-tich-vanh-khuyen",
+        "vi-tri-tuong-doi-duong-thang-duong-tron",
+        "vi-tri-tuong-doi-hai-duong-tron",
+        "duong-tron-ngoai-tiep-tam-giac",
+        "duong-tron-noi-tiep-tam-giac",
+        "da-giac-deu"
+      ]
+    }
+  ],
+  "sources": [
+    "19-duong-tron-v1-01.json",
+    "19-duong-tron-v1-02.json",
+    "19-duong-tron-v1-03.json",
+    "19-duong-tron-v1-04.json",
+    "19-duong-tron-v1-05.json"
+  ]
+}
