@@ -22,7 +22,11 @@ const plans=[
   {topic:"12-phuong-trinh-bac-hai-viete",version:"r11",math:true,stale:"Dùng infographic này",phrase:"Biệt thức Δ",tables:1,keep:"12-05-delta-va-giao-ox.svg"},
   {topic:"13-goc-va-duong-thang",version:"r11",math:true,stale:null,phrase:"Dấu hiệu nhận biết hai đường thẳng song song",tables:1,keepAll:["13-goc-doi-dinh-v1.svg","13-hai-duong-song-song-duong-cat-v1.svg","13-goc-so-le-trong-v1.svg"]},
   {topic:"15-duong-dong-quy",version:"r11",math:true,stale:null,phrase:"Cách chọn đúng tính chất",tables:1,keepAll:["15-trong-tam-v1.svg","15-truc-tam-v1.svg","15-tam-noi-tiep-v1.svg","15-tam-ngoai-tiep-v1.svg"]},
-  {topic:"16-tu-giac",version:"r11",math:false,stale:null,phrase:"Hình vuông",tables:1,keepAll:["16-hinh-thang-v1.svg","16-hinh-binh-hanh-v1.svg","16-hinh-chu-nhat-v1.svg","16-hinh-thoi-v1.svg","16-hinh-vuong-v1.svg"]}
+  {topic:"16-tu-giac",version:"r11",math:false,stale:null,phrase:"Hình vuông",tables:1,keepAll:["16-hinh-thang-v1.svg","16-hinh-binh-hanh-v1.svg","16-hinh-chu-nhat-v1.svg","16-hinh-thoi-v1.svg","16-hinh-vuong-v1.svg"]},
+  {topic:"17-thales-dong-dang",version:"r12",math:false,stale:null,phrase:"Ba trường hợp đồng dạng",tables:1,keepAll:["17-thales-v1.svg","17-duong-trung-binh-v1.svg","17-tam-giac-dong-dang-v1.svg"]},
+  {topic:"18-he-thuc-luong",version:"r12",math:true,stale:null,phrase:"Tỉ số lượng giác của góc nhọn",tables:1,keepAll:["18-02-he-thuc-duong-cao.svg","18-03-ti-so-luong-giac.svg","18-ti-so-sin-cos-v1.svg","18-ti-so-tan-cot-v1.svg"]},
+  {topic:"19-duong-tron",version:"r12",math:true,stale:null,phrase:"Tứ giác nội tiếp",tables:1,keepAll:["19-goc-noi-tiep-goc-o-tam-v1.svg","19-tiep-tuyen-v1.svg","19-hai-day-cat-nhau-v1.svg","19-tiep-tuyen-cat-tuyen-v1.svg"]},
+  {topic:"20-hinh-hoc-tong-hop",version:"r12",math:true,stale:null,phrase:"Các “cầu nối” thường gặp",tables:1,keepAll:["20-02-chon-chien-luoc.svg","20-03-chuoi-suy-luan.svg","20-tu-giac-noi-tiep-v1.svg","20-hinh-non.svg","20-hinh-cau.svg"]}
 ]
 let count=0;
 const seen=[];
@@ -44,7 +48,7 @@ for(const p of plans){
  for(const x of html.matchAll(urlRx)){
   const u=x[1];
   if(/^(?:https?:|data:|#|mailto:)/.test(u))continue;
-  if(!/(?:assets\/infographics\/(?:02|03|05|06|08|09|12)\/|assets\/(?:geometry|statistics|probability)\/|math-knowledge-composition-v1\.css)/.test(u))continue;
+  if(!/(?:assets\/infographics\/(?:02|03|05|06|08|09|12|18|20)\/|assets\/(?:geometry|statistics|probability)\/|math-knowledge-composition-v1\.css)/.test(u))continue;
   const clean=u.split(/[?#]/,1)[0];
   const absolute=clean.startsWith("/")
      ?path.join(root,clean.replace(/^\/+/,""))
@@ -58,7 +62,7 @@ for(const p of plans){
  if(p.topic==="05-7-hang-dang-thuc")assert(localRefs.some(u=>u.includes("05-05-")),"Missing source-linked area SVG");
  if(p.keep)assert(localRefs.some(u=>u.includes(p.keep)),"Missing expected visual "+p.keep);
  if(p.keepAll)for(const img of p.keepAll)assert(localRefs.some(u=>u.includes(img)),"Missing visual "+img);
- if(p.version==="r9"||p.version==="r10"||p.version==="r11") {
+ if(p.version==="r9"||p.version==="r10"||p.version==="r11"||p.version==="r12") {
    assert(html.includes("Luyện ngay"),"Missing skill practice link "+p.topic);
    assert(html.includes("Làm tự luận"),"Missing canonical written link "+p.topic);
  }
