@@ -51,7 +51,10 @@ for(const [topic,revision] of plans){
    const methods=origHeads.filter(x=>/^Dạng (?:[1-9]|10|11)\s*[–-]/.test(x));
    assert.equal(theory.length,8,"CT10 main source theory count drift");
    assert.equal(methods.length,11,"CT10 main source method count drift");
-   for(const name of [...theory,...methods])assert(normalized.includes(name),"CT10 tabbed content missing "+name);
+   for(const name of [...theory,...methods]){
+     const target=name.replaceAll("`y = ax²`",String.raw`\(y = ax^2\)`);
+     assert(normalized.includes(target),"CT10 tabbed content missing "+name);
+   }
    assert.equal((candidate.match(/^=== "/gm)||[]).length,10,"CT10 must have five + five tabs");
    assert(candidate.includes("2x-4=0\\Rightarrow x=2"),"CT10 intermediate result x=2 lost");
    assert.equal((candidate.match(/class="math-topic-pending"/g)||[]).length,2,
