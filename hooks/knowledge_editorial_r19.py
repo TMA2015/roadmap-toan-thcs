@@ -124,6 +124,16 @@ def transform(markdown, src_path):
                lambda m: "\n\n"+m.group(1).strip()+"\n",raw)
     if version=="tabs-r6":
         return raw
+    # CT08 already has four authored level-tabs rather than method H3 headings.
+    # Preserve this genuine source taxonomy and attach one grounded skill per level.
+    if slug.startswith("08-"):
+        skills=("pt-bac-nhat","bien-doi-pt-nhieu-buoc","lap-phuong-trinh","tham-so-co-ban")
+        chunks=re.split(r'(?m)^(=== "Mức [1-4][^\n]*")$',raw)
+        if len(chunks)!=9:raise ValueError("R19 CT08 authored level count changed")
+        for i in range(1,8,2):
+            skill=skills[(i-1)//2]
+            chunks[i+1]+='\n\n    <div class="math-knowledge-method-actions"><a href="bai-tap/?mode=remediation&amp;focus='+skill+'">Luyện ngay →</a></div>\n'
+        raw=''.join(chunks)
     # Include every candidate source subsection exactly once in its semantic tab.
     raw=section(raw,5,methods,"CT"+slug[:2],"method")
     raw=section(raw,3,kt,"CT"+slug[:2],"knowledge")
