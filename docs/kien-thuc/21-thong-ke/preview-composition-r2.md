@@ -245,6 +245,12 @@ Quy trình lập bảng:
 </div></div>
 
 
+
+<div class="math-composition"><nav class="math-related-practice" aria-label="Bài tập liên quan đến nội dung vừa học">
+<span>Thực hành kiến thức này:</span>
+<a href="../bai-tap/?mode=remediation&amp;focus=bang-tan-so">Luyện ngay →</a>
+</nav></div>
+
 ### 3.5. Biểu đồ cột
 
 Phù hợp khi cần:
