@@ -89,6 +89,26 @@ for(const [topic,revision] of plans){
    assert.deepEqual(candHeads,origHeads,"Full heading order changed in "+topic);
  }
  checkWrittenLinks(candidate,topic);
+ // R22 targeted infographic editorial parity: the CT05 text-only posters are
+ // hidden from the learner view, but their unique recognition/decision cues
+ // must remain readable in the native HTML content. This is NOT a blanket
+ // scholarly approval of all 80 hidden infographic instances.
+ if(topic==="05-7-hang-dang-thuc"){
+   const svgMethod=fs.readFileSync(path.join("docs","assets","infographics","05",
+     "05-04-dang-bai-loi-sai.svg"),"utf8");
+   const svgCubes=fs.readFileSync(path.join("docs","assets","infographics","05",
+     "05-03-nhom-lap-phuong.svg"),"utf8");
+   assert(svgMethod.includes("Quy trình:"),"CT05 source method poster changed; re-audit");
+   assert(svgCubes.includes("Hai hạng tử"),"CT05 source cube poster changed; re-audit");
+   assert(candidate.includes("**Quy trình chọn công thức:** Nhìn cấu trúc"),
+     "CT05 method-selection workflow from hidden poster was lost");
+   assert(candidate.includes("**Hai hạng tử là lập phương**"),
+     "CT05 two-term cube recognition from hidden poster was lost");
+   assert(candidate.includes("**Bốn hạng tử có hệ số theo mẫu 1–3–3–1**"),
+     "CT05 four-term cube recognition from hidden poster was lost");
+   assert(candidate.includes("**Chú ý:** Đây chỉ là dấu hiệu gợi ý"),
+     "CT05 cube recognition must not be mistaken for sufficient proof");
+ }
  const src=imgs(source),dst=imgs(candidate);
  const kept=src.filter(x=>dst.includes(x)),hidden=src.filter(x=>!dst.includes(x));
  const added=dst.filter(x=>!src.includes(x));
