@@ -58,6 +58,13 @@ with sync_playwright() as pw:
             )
             cue = lesson.locator("blockquote").filter(has_text="Gợi ý tự phác hình")
             assert cue.count() == 1, f"{slug} {device}: missing/duplicated sketch cue"
+            # R19: the sketch belongs to one specific concept-family tab.
+            # Reveal that tab rather than treating legitimately hidden tab content as lost.
+            tabbed = cue.locator("xpath=ancestor::*[contains(concat(' ',normalize-space(@class),' '),' tabbed-block ')]")
+            if tabbed.count():
+                index = tabbed.evaluate("(node) => Array.from(node.parentNode.children).indexOf(node)")
+                tabs = lesson.locator(".tabbed-set").first.locator(".tabbed-labels label")
+                tabs.nth(index).click()
             cue.scroll_into_view_if_needed(timeout=10000)
             assert cue.is_visible(), f"{slug} {device}: sketch cue hidden"
             text = cue.inner_text()

@@ -53,6 +53,16 @@ with sync_playwright() as p:
         assert figures.count()>=3
         for i in range(figures.count()):
             figure=figures.nth(i)
+            # R19 shows lesson geometry within semantic Knowledge/Problem tabs.
+            # Exercise the actual tab and then open the original reading card.
+            panel=figure.locator("xpath=ancestor::*[contains(concat(' ',normalize-space(@class),' '),' tabbed-block ')]")
+            if panel.count():
+                index=panel.evaluate("(node)=>Array.from(node.parentElement.children).indexOf(node)")
+                group=panel.locator("xpath=ancestor::*[contains(concat(' ',normalize-space(@class),' '),' tabbed-set ')]")
+                group.locator(".tabbed-labels label").nth(index).click()
+            card=figure.locator("xpath=ancestor::details[contains(concat(' ',normalize-space(@class),' '),' topic-learning-card ')]")
+            if card.count() and card.get_attribute("open") is None:
+                card.locator("summary").click()
             figure.scroll_into_view_if_needed()
             assert figure.evaluate("(el)=>el.complete && el.naturalWidth>0 && el.naturalHeight>0")
             assert figure.evaluate("(el)=>el.getBoundingClientRect().width<=window.innerWidth+1")

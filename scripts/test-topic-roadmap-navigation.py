@@ -86,7 +86,9 @@ if "--built" in sys.argv:
             raise SystemExit(f"Built topic page missing: {path}")
         html = path.read_text(encoding="utf-8")
         if "[🎯 Sang Phòng Luyện Tập]" in html or "{ .md-button" in html:
-            raise SystemExit(f"Raw Markdown leaked into built continuation block: {path}")
+            needle = "[🎯 Sang Phòng Luyện Tập]" if "[🎯 Sang Phòng Luyện Tập]" in html else "{ .md-button"
+            pos = html.index(needle)
+            raise SystemExit(f"Raw Markdown leaked: {path} at {pos}: {html[max(0,pos-140):pos+170]!r}")
         if "/bai-tap/" not in html or "/tu-kiem-tra/" not in html:
             raise SystemExit(f"Built continuation destinations missing: {path}")
         if 'class="md-button' not in html:
