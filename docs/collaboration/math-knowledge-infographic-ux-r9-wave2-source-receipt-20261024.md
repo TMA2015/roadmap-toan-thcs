@@ -12,7 +12,7 @@ Each proposed page includes **the full original topic lesson**, with one focused
 |---|---|---|---|---|---|
 | CĐ02 Số & phép tính | `a5ab9fe7` | `docs/kien-thuc/02-so-va-phep-tinh/preview-composition-r9.md` | 02-01 tổng quan; 02-02 kiến thức; 02-03 dạng bài (**3**) | 02-04 trục số, giá trị tuyệt đối | §3.3 same-/different-sign addition and multiplication/division presented side-by-side in two small tables, same facts & worked calculations |
 | CĐ03 Tỉ lệ | `8276948e` | `docs/kien-thuc/03-ti-le-ti-le-thuc/preview-composition-r9.md` | 03-01 tổng quan; 03-02 kiến thức; 03-03 dạng bài (**3**) | 03-04 contrast of direct/inverse proportionality | §3.11 comparison labels in proper math notation and explicit nonzero ratio denominator; existing visual + table retained |
-| CĐ06 Phân tích đa thức | `866420ac` | `docs/kien-thuc/06-phan-tich-da-thuc/preview-composition-r9.md` | 06-01 tổng quan; 06-03 dạng/lỗi sai (**2**) | 06-02 choose-method decision flow | §3.7 original four short ASCII steps replaced by legible two-column checklist, **not** four mandatory solution operations |
+| CĐ06 Phân tích đa thức | `866420ac` | `docs/kien-thuc/06-phan-tich-da-thuc/preview-composition-r9.md` | 06-01 tổng quan; 06-03 dạng/lỗi sai (**2**) | 06-02 choose-method decision flow | §3.7 original four short ASCII questions expanded into **five distinct review stages** to match retained infographic: shared factor → identity → grouping → combining methods → final verification; the visual stages are checkpoints, **not** five mandatory methods per problem |
 | CĐ09 Hệ phương trình | `48775e98` | `docs/kien-thuc/09-he-phuong-trinh/preview-composition-r9.md` | 09-01 tổng quan; 09-02 text-only method recap; 09-03 thực tế/lỗi sai (**3**) | 09-04 three intersection cases graph | §3.4A same two approaches and answer, with MathJax table instead of raw code-delimiter expressions |
 
 **Wave count:** 11 text-dense infographic display instances hidden from preview; four actual mathematical SVG figures retained; all original SVG assets unchanged. This is a selected design test, not a statement that every hidden infographic is always useless; any print-sheet role should be separately source-locked and surfaced at the appropriate conclusion/recap.
@@ -43,3 +43,9 @@ Link discipline: each deep link opens a *real existing skill/approved Written it
 - Owner to judge rendered appearance **on built MkDocs output**, not GitHub blob view (which doesn't load custom CSS/MathJax). Offer the same built-preview approach used for prior R8 review.
 - If eight-page batch passes, repeat selectively for next topic group; preserve source-specific proof logic and images.
 - No merge until owner approves production promotion and final regression checks on the actual learner routes.
+
+## Wave 2 enhanced browser release gate
+
+An additional Playwright Chromium script `scripts/test-math-knowledge-wave2-r9-browser.py` runs against real `mkdocs build --strict` HTML on a local HTTP server in PR CI. For all **4 topics × 3 viewport sizes** (1365px desktop; 820px tablet simulation; 390px phone), it checks route, method text, rendered opt-in CSS, exact two real learner destination links, retained decoded SVG and absence of page-level horizontal overflow/JS errors. The workflow uploads up to eight responsive screenshots as short-lived `math-r9-knowledge-preview-screenshots` artifact (7-day retention). **Simulated tablet is not Safari on a physical iPad.**
+
+This complements — not replaces — the existing four-topic R8 source-locked checks, academic content review, Owner acceptance and baseline main-route regression suite. R9 PR status remains Draft, learner site unchanged.
