@@ -219,6 +219,7 @@ extra_css:
   - assets/stylesheets/math-progress-dashboard-v1.css
   - assets/stylesheets/complete-factorization-preview-v2.css
   - assets/stylesheets/arithmetic-template-preview-v1.css
+  - assets/stylesheets/math-knowledge-source-safe-r17.css
 
 extra_javascript:
   # Critical learner route/runtime scripts first so KNTT/Core can mount before remote MathJax or heavier observers.
@@ -252,5 +253,6 @@ extra_javascript:
   - assets/javascripts/arithmetic-template-preview-v1.js
   - assets/javascripts/sticky-nav-v1.js
   - assets/javascripts/knowledge-ui-v1.js
+  - assets/javascripts/math-knowledge-source-safe-r17.js
   - assets/javascripts/written-self-check-v1.js
   - assets/javascripts/written-exercise-library-v1.js
