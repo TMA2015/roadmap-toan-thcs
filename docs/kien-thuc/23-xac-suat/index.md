@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="../../assets/stylesheets/math-knowledge-composition-v1.css">
+
 # Chuyên đề 23 – Xác suất
 
 > **Trạng thái:** Đã kiểm định nội dung học thuật; cấu trúc Roadmap chuẩn 11 mục.
@@ -41,8 +43,6 @@ XÁC SUẤT
 Mạch tư duy trọng tâm:
 
 **xác định phép thử → liệt kê đúng không gian mẫu → mô tả biến cố → đếm kết quả thuận lợi → tính xác suất → kiểm tra kết quả nằm trong `[0,1]`.**
-
-![Infographic tổng quan Chuyên đề 23](../../assets/infographics/23/23-01-tong-quan.svg)
 
 ---
 
@@ -291,10 +291,12 @@ Ví dụ, gieo một đồng xu `50` lần và quan sát được `27` lần ng�
 
 `P_thực nghiệm(Ngửa) = 27/50 = 0,54`
 
-Cần phân biệt:
+Cần phân biệt hai cách tính:
 
-- `m/n` được tính từ **kết quả quan sát thực tế**;
-- `n(A)/n(Ω)` là xác suất theo **mô hình có các kết quả đồng khả năng**.
+| **Xác suất thực nghiệm** | **Xác suất cổ điển** |
+|:---|:---|
+| $\dfrac{m}{n}$ | $\dfrac{n(A)}{n(\Omega)}$ |
+| Tính từ **kết quả quan sát thực tế** qua $n$ lần thử. | Áp dụng khi các kết quả trong không gian mẫu **đồng khả năng**. |
 
 Khi một thí nghiệm ổn định được lặp lại nhiều lần, tần số tương đối của biến cố thường có xu hướng ổn định quanh xác suất của biến cố trong mô hình. Tuy nhiên, với một số lần thử hữu hạn, hai giá trị **không bắt buộc bằng nhau**.
 
@@ -306,7 +308,12 @@ Khi một thí nghiệm ổn định được lặp lại nhiều lần, tần s
 
 > Hình trên nhấn mạnh một điểm quan trọng: xác suất thực nghiệm **không cần tiến về 0,5 theo một chiều**. Nó có thể lúc cao hơn, lúc thấp hơn; điều đáng chú ý là khi số lần thử lớn, mức dao động thường nhỏ hơn và giá trị có xu hướng ổn định quanh xác suất của mô hình.
 
-![Infographic không gian mẫu, biến cố và xác suất cổ điển](../../assets/infographics/23/23-02-khong-gian-mau-bien-co.svg)
+
+<div class="math-composition"><nav class="math-related-practice" aria-label="Bài tập liên quan đến nội dung vừa học">
+<span>Thực hành kiến thức này:</span>
+<a href="bai-tap/?mode=remediation&amp;focus=xac-suat-thuc-nghiem">Luyện ngay →</a>
+<a href="../../luyen-tap/tu-luan/?topic=CT23#wx23-pro-001">Làm tự luận · WX23-PRO-001 →</a>
+</nav></div>
 
 ### 3.5. Biến cố đối
 
@@ -370,8 +377,6 @@ Ví dụ, khi tung một đồng xu cân đối hai lần độc lập:
 ---
 
 ## 🧩 5. Các dạng bài cần nắm vững
-
-![Infographic sơ đồ cây, biến cố đối và lỗi sai](../../assets/infographics/23/23-03-so-do-cay-bien-co-doi-loi-sai.svg)
 
 ### Dạng 1. Lập không gian mẫu
 
