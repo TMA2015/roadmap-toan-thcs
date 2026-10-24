@@ -22,6 +22,45 @@
     if(nav){
       nav.innerHTML='<a href="#map">Bản đồ</a><a href="#goals">Mục tiêu</a><a href="#core">Kiến thức</a><a href="#types">Dạng bài</a><a href="#practice">Luyện tập</a><a href="#check">Readiness</a>';
     }
+    // Legacy source H3 anchors must remain usable from the Material right TOC.
+    // Reveal their content-family tab before the browser tries to scroll.
+    root.addEventListener("click",event=>{
+      const a=event.target.closest?.('a[href^="#"]');
+      if(!a)return;
+      const id=decodeURIComponent(a.getAttribute("href").slice(1));
+      const node=document.getElementById(id);
+      if(!node)return;
+      const outer=node.closest("details.topic-learning-card");
+      if(outer)outer.open=true;
+      const block=node.closest(".tabbed-block");
+      if(block){
+        const content=block.parentElement;
+        const idx=[...content.children].indexOf(block);
+        const labels=content.closest(".tabbed-set")?.querySelectorAll(".tabbed-labels label");
+        if(labels && idx>=0 && labels[idx]){
+          labels[idx].click();
+          history.replaceState(null,"","#"+encodeURIComponent(id));
+        }
+      }
+    },true);
+    // Also support direct #source-heading URLs and Back/Forward history.
+    function revealSourceHash(){
+      const hash=decodeURIComponent(location.hash.slice(1));
+      if(!hash || /^mk-\d\d-/.test(hash))return;
+      const target=document.getElementById(hash);
+      const outer=target?.closest("details.topic-learning-card");
+      if(outer)outer.open=true;
+      const block=target?.closest(".tabbed-block");
+      if(block){
+        const idx=[...block.parentElement.children].indexOf(block);
+        const label=block.closest(".tabbed-set")?.querySelectorAll(".tabbed-labels label")[idx];
+        if(label)label.click();
+        history.replaceState(null,"","#"+encodeURIComponent(hash));
+      }
+    }
+    window.addEventListener("hashchange",revealSourceHash);
+    window.addEventListener("popstate",revealSourceHash);
+    revealSourceHash();
     const map=root.querySelector("#map .topic-learning-card-body");
     if(map&&!map.querySelector(".mk-map-source")){
       const code=map.querySelector("pre");
