@@ -109,6 +109,31 @@ for(const [topic,revision] of plans){
    assert(candidate.includes("**Chú ý:** Đây chỉ là dấu hiệu gợi ý"),
      "CT05 cube recognition must not be mistaken for sufficient proof");
  }
+ // R22 scoped checks: retain the only instructional details that were
+ // conveyed by CT21/CT23 text-heavy infographic posters, without re-displaying
+ // those posters or weakening the original equiprobability condition.
+ if(topic==="21-thong-ke"){
+   const svg=fs.readFileSync(path.join("docs","assets","infographics","21",
+     "21-03-bieu-do-chat-luong-loi-sai.svg"),"utf8");
+   assert(svg.includes("Không suy luận vượt quá điều dữ liệu thực sự cho biết"),
+     "CT21 source infographic changed; re-audit before release");
+   assert(candidate.includes("**không suy luận vượt quá phạm vi khảo sát**"),
+     "CT21 infographic-only interpretation caution missing in native reading");
+   assert(candidate.includes("**tên, trục, đơn vị, thang chia**"),
+     "CT21 chart-reading checks missing in native reading");
+ }
+ if(topic==="23-xac-suat"){
+   const svg=fs.readFileSync(path.join("docs","assets","infographics","23",
+     "23-02-khong-gian-mau-bien-co.svg"),"utf8");
+   assert(svg.includes("Các kết quả có thật sự đồng khả năng không"),
+     "CT23 source infographic changed; re-audit before release");
+   assert(candidate.includes("**Kiểm tra trước khi dùng công thức cổ điển:**"),
+     "CT23 hidden poster checks missing in native reading");
+   assert(candidate.includes("**đếm trùng**") && candidate.includes("**đồng khả năng**"),
+     "CT23 sample-space and equiprobability checks lost");
+   assert(candidate.includes("**chưa đủ** để dùng"),
+     "CT23 must distinguish complete enumeration from equiprobability");
+ }
  const src=imgs(source),dst=imgs(candidate);
  const kept=src.filter(x=>dst.includes(x)),hidden=src.filter(x=>!dst.includes(x));
  const added=dst.filter(x=>!src.includes(x));
