@@ -26,13 +26,18 @@ const plans=[
   {topic:"17-thales-dong-dang",version:"r12",math:false,stale:null,phrase:"Ba trường hợp đồng dạng",tables:1,keepAll:["17-thales-v1.svg","17-duong-trung-binh-v1.svg","17-tam-giac-dong-dang-v1.svg"]},
   {topic:"18-he-thuc-luong",version:"r12",math:true,stale:null,phrase:"Tỉ số lượng giác của góc nhọn",tables:1,keepAll:["18-02-he-thuc-duong-cao.svg","18-03-ti-so-luong-giac.svg","18-ti-so-sin-cos-v1.svg","18-ti-so-tan-cot-v1.svg"]},
   {topic:"19-duong-tron",version:"r12",math:true,stale:null,phrase:"Tứ giác nội tiếp",tables:1,keepAll:["19-goc-noi-tiep-goc-o-tam-v1.svg","19-tiep-tuyen-v1.svg","19-hai-day-cat-nhau-v1.svg","19-tiep-tuyen-cat-tuyen-v1.svg"]},
-  {topic:"20-hinh-hoc-tong-hop",version:"r12",math:true,stale:null,phrase:"Các “cầu nối” thường gặp",tables:1,keepAll:["20-02-chon-chien-luoc.svg","20-03-chuoi-suy-luan.svg","20-tu-giac-noi-tiep-v1.svg","20-hinh-non.svg","20-hinh-cau.svg"]}
+  {topic:"20-hinh-hoc-tong-hop",version:"r12",math:true,stale:null,phrase:"Các “cầu nối” thường gặp",tables:1,keepAll:["20-02-chon-chien-luoc.svg","20-03-chuoi-suy-luan.svg","20-tu-giac-noi-tiep-v1.svg","20-hinh-non.svg","20-hinh-cau.svg"]},
+  {topic:"01-ban-do-chuong-trinh",version:"r13",math:false,stale:null,phrase:"Ba trạng thái học",tables:1,actions:0,keep:"01-overview.svg"},
+  {topic:"22-dai-luong-dac-trung",version:"r13",math:true,stale:null,phrase:"Giá trị ngoại lai",tables:1,actions:1,keepAll:["22-trung-binh.svg","22-trung-vi-mot.svg","22-ngoai-lai.svg"]},
+  {topic:"24-bai-toan-thuc-te",version:"r13",math:false,stale:null,phrase:"Mô hình hóa toán học",tables:1,actions:2,keepAll:["24-03-chon-mo-hinh.svg","24-quang-duong-van-toc-thoi-gian.svg","24-phan-tram-giam-gia.svg","24-chieu-cao-luong-giac.svg"]},
+  {topic:"25-tong-hop-on-thi-10",version:"r13",math:false,stale:null,phrase:"Ba giai đoạn ôn tập",tables:1,actions:1,keepAll:["25-03-luyen-de-so-loi.svg","25-ban-do-tong-hop.svg","25-ma-tran-uu-tien.svg","25-lo-trinh-3-giai-doan.svg"]},
+  {topic:"10-ham-so-do-thi",version:"tabs-r6",fileName:"preview-tabs-r6",css:"math-topic-knowledge-tabs-pilot-r5.css",math:true,stale:null,phrase:"Hàm số và đồ thị",tables:1,keep:"10-10-tu-cong-thuc-den-do-thi-r3.svg",tabbed:true}
 ]
 let count=0;
 const seen=[];
 const urlRx=/(?:src|href)=["']([^"']+)["']/ig;
 for(const p of plans){
- const entry=path.join(root,"kien-thuc",p.topic,"preview-composition-"+p.version,"index.html");
+ const entry=path.join(root,"kien-thuc",p.topic,p.fileName||("preview-composition-"+p.version),"index.html");
  assert(fs.existsSync(entry),"Missing built preview "+entry);
  const html=fs.readFileSync(entry,"utf8");
  assert(html.includes(p.phrase),"Missing pedagogical section "+p.topic);
@@ -48,7 +53,7 @@ for(const p of plans){
  for(const x of html.matchAll(urlRx)){
   const u=x[1];
   if(/^(?:https?:|data:|#|mailto:)/.test(u))continue;
-  if(!/(?:assets\/infographics\/(?:02|03|05|06|08|09|12|18|20)\/|assets\/(?:geometry|statistics|probability)\/|math-knowledge-composition-v1\.css)/.test(u))continue;
+  if(!/(?:assets\/infographics\/|assets\/(?:geometry|statistics|probability|modeling|review)\/|math-knowledge-composition-v1\.css|math-topic-knowledge-tabs-pilot-r5\.css)/.test(u))continue;
   const clean=u.split(/[?#]/,1)[0];
   const absolute=clean.startsWith("/")
      ?path.join(root,clean.replace(/^\/+/,""))
@@ -56,7 +61,7 @@ for(const p of plans){
   assert(absolute.startsWith(root+path.sep),"Asset outside website output: "+u);
   assert(fs.existsSync(absolute),"Broken deployed asset in "+p.topic+": "+u+" -> "+absolute);
   localRefs.push(u);
-  if(u.includes(wantCSS))hasCSS=true;
+  if(u.includes(p.css||wantCSS))hasCSS=true;
  }
  assert(hasCSS,"Preview CSS not resolvable "+p.topic);
  if(p.topic==="05-7-hang-dang-thuc")assert(localRefs.some(u=>u.includes("05-05-")),"Missing source-linked area SVG");
@@ -65,6 +70,17 @@ for(const p of plans){
  if(p.version==="r9"||p.version==="r10"||p.version==="r11"||p.version==="r12") {
    assert(html.includes("Luyện ngay"),"Missing skill practice link "+p.topic);
    assert(html.includes("Làm tự luận"),"Missing canonical written link "+p.topic);
+ }
+ if(p.version==="r13"){
+   const actualNavCount=(html.match(/class=["']math-related-practice["']/g)||[]).length;
+   assert(actualNavCount === (p.actions||0),"R13 practice links wrong: "+p.topic);
+   if(p.actions>0)assert(html.includes("Luyện ngay"),"R13 missing Practice CTA "+p.topic);
+   if(p.actions===2)assert(html.includes("Làm tự luận"),"R13 missing approved Written CTA "+p.topic);
+ }
+ if(p.tabbed){
+   assert((html.match(/class=["'][^"']*tabbed-set/g)||[]).length>=2,"CT10 5+5 tab layouts missing");
+   assert(html.includes("2x-4=0")&&html.includes("x=2"),"CT10 intermediate x=2 lost");
+   assert((html.match(/Luyện ngay/g)||[]).length>=6,"CT10 six Entrance10 CTA labels missing");
  }
  seen.push({topic:p.topic,byteLength:html.length,assets:localRefs.length,mathCount:(html.match(/class=["']arithmatex["']/g)||[]).length});
  count++;
