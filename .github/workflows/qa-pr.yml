@@ -424,6 +424,8 @@ jobs:
           node scripts/test-topic25-paper-exam-v1.js
       - name: Build strict static site
         run: mkdocs build --strict
+      - name: Validate native Knowledge previews (math, visuals, real asset links)
+        run: node scripts/test-math-knowledge-native-render-r3.js
       - name: Validate CĐ25 built display math
         run: node scripts/test-topic25-math-render.js --built
       - name: Validate built topic navigation
