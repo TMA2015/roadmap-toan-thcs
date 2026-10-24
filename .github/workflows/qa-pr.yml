@@ -422,6 +422,8 @@ jobs:
           node --check docs/assets/javascripts/topic25-exam-engine-v1.js
           node scripts/test-topic25-student-journey.js
           node scripts/test-topic25-paper-exam-v1.js
+      - name: Validate SHA-locked Math Knowledge original Markdown
+        run: node scripts/test-math-knowledge-r17-original-source-integrity.js
       - name: Build strict static site
         run: mkdocs build --strict
       - name: Validate CĐ25 built display math
@@ -439,6 +441,7 @@ jobs:
           python scripts/test-library-two-paths-r1-browser.py
           python scripts/test-math-learner-nav-library-r2-browser.py
           python scripts/test-math-knowledge-p2-ct13-14-responsive-browser-20261019.py
+          python scripts/test-math-knowledge-r17-source-safe-browser.py
           python scripts/test-practice-interactive-only-wave6-browser.py
           python scripts/capture-ui-previews.py
           python scripts/test-topic25-student-browser.py
