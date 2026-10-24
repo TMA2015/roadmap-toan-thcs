@@ -40,6 +40,20 @@
   font-size:inherit;
   line-height:inherit;
 }
+/* Secondary sections follow the same hierarchy; never leave tiny H3s
+   beside oversized formulas on the same lesson page. */
+.math-knowledge-r19 :is(#exam,#errors,#links,#practice,#check,#roadmap) .topic-learning-card-body h3{
+  font-size:20px;
+  line-height:1.4;
+  font-weight:760;
+  color:var(--mk21-ink);
+}
+.math-knowledge-r19 :is(#exam,#errors,#links,#practice,#check,#roadmap) .topic-learning-card-body h4{
+  font-size:18px;
+  line-height:1.4;
+  font-weight:740;
+  color:var(--mk21-accent);
+}
 .math-knowledge-r19 :is(#core,#types) .tabbed-block h3{
   font-size:21px;
   font-weight:770;
@@ -274,6 +288,8 @@
   .math-knowledge-r19 .math-composition .math-compare{gap:.6rem}
 }
 @media(max-width:570px){
+  .math-knowledge-r19 :is(#exam,#errors,#links,#practice,#check,#roadmap) .topic-learning-card-body h3{font-size:19px}
+  .math-knowledge-r19 :is(#exam,#errors,#links,#practice,#check,#roadmap) .topic-learning-card-body h4{font-size:17px}
   .md-content__inner.math-knowledge-r19{--mk21-body:16px;line-height:1.62}
   .math-knowledge-r19 :is(#core,#types) .tabbed-block h3{font-size:19px}
   .math-knowledge-r19 :is(#core,#types) .tabbed-block h4{font-size:17px}
