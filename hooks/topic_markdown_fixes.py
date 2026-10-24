@@ -176,5 +176,5 @@ def on_page_markdown(markdown, page, config, files):
             "math_knowledge_editorial_r19", Path(__file__).with_name("knowledge_editorial_r19.py"))
         module = importlib.util.module_from_spec(spec)
         spec.loader.exec_module(module)
-        return module.transform(_unwrap_topic_actions(markdown), src_path)
+        return _unwrap_topic_actions(module.transform(markdown, src_path))
     return markdown
