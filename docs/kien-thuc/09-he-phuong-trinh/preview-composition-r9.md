@@ -691,13 +691,21 @@ Hai phương pháp này là công cụ chính để:
 
 ### Dạng rất đáng luyện: bài toán thực tế lập hệ hai ẩn
 
-Những bài kiểu **số lượng – giá trị**, **giá – giảm giá**, **chuyển động**, **năng suất**, **hỗn hợp** đều có chung một kỹ năng quan trọng:
+Những bài kiểu **số lượng – giá trị**, **giá – giảm giá**, **chuyển động**, **năng suất**, **hỗn hợp**, **số học**, **tuổi** và **hình học** đều có chung một kỹ năng quan trọng:
 
 1. chọn đúng hai ẩn;
 2. xác định đơn vị và điều kiện;
 3. tìm hai quan hệ độc lập;
 4. lập hệ;
 5. giải và kiểm tra kết quả trong bối cảnh bài toán.
+
+Hai nhóm dữ kiện dễ bỏ sót khi chuyển từ đề lời văn sang hệ phương trình:
+
+| **Bài toán về tuổi** | **Bài toán hình học** |
+|---|---|
+| Chọn tuổi của hai người **tại cùng một thời điểm**; sau `k` năm, tuổi mỗi người đều tăng `k`. | Chọn hai đại lượng có **cùng đơn vị** (chẳng hạn hai cạnh); dùng chu vi, tổng–hiệu hoặc quan hệ giữa chúng để lập hai phương trình. |
+
+Đây là **gợi ý nhận dạng dữ kiện**, không phải công thức giải chung: điều kiện của ẩn và ý nghĩa từng phương trình vẫn phải phù hợp với đề cụ thể.
 
 ### Dạng mở rộng: biến đổi rồi đưa về hệ tuyến tính
 
