@@ -54,7 +54,7 @@ Mạch tư duy trọng tâm:
 ### 1. Bảng tần số
 
 <p align="center">
-  <img src="../../assets/statistics/21/21-bang-tan-so.svg"
+  <img src="../../../assets/statistics/21/21-bang-tan-so.svg"
        alt="Minh họa bảng tần số"
        width="560">
 </p>
@@ -79,7 +79,7 @@ Ví dụ trong bảng trên:
 ### 2. Biểu đồ cột
 
 <p align="center">
-  <img src="../../assets/statistics/21/21-bieu-do-cot.svg"
+  <img src="../../../assets/statistics/21/21-bieu-do-cot.svg"
        alt="Minh họa biểu đồ cột"
        width="560">
 </p>
@@ -103,7 +103,7 @@ Trong ví dụ:
 ### 3. Biểu đồ đoạn thẳng
 
 <p align="center">
-  <img src="../../assets/statistics/21/21-bieu-do-doan-thang.svg"
+  <img src="../../../assets/statistics/21/21-bieu-do-doan-thang.svg"
        alt="Minh họa biểu đồ đoạn thẳng"
        width="560">
 </p>
@@ -265,7 +265,7 @@ Khi đọc biểu đồ cột phải kiểm tra:
 - thang chia.
 
 <p align="center">
-  <img src="../../assets/statistics/21/21-bieu-do-cot-cau-truc.svg"
+  <img src="../../../assets/statistics/21/21-bieu-do-cot-cau-truc.svg"
        alt="Cấu trúc biểu đồ cột với trục ngang, trục dọc, thang chia và chiều cao cột"
        width="650">
 </p>
@@ -283,7 +283,7 @@ Cần quan sát:
 - đoạn thay đổi mạnh.
 
 <p align="center">
-  <img src="../../assets/statistics/21/21-bieu-do-doan-thang-xu-huong.svg"
+  <img src="../../../assets/statistics/21/21-bieu-do-doan-thang-xu-huong.svg"
        alt="Biểu đồ đoạn thẳng minh họa đoạn tăng, đoạn giảm và điểm cao nhất"
        width="650">
 </p>
@@ -295,7 +295,7 @@ Cần quan sát:
 **Biểu đồ cột kép** phù hợp khi cần so sánh **hai dãy số liệu theo cùng các nhóm**. Khi đọc phải đối chiếu đúng chú giải, vì hai cột đứng cạnh nhau nhưng biểu diễn hai đối tượng khác nhau.
 
 <p align="center">
-  <img src="../../assets/statistics/21/21-bieu-do-cot-kep.svg"
+  <img src="../../../assets/statistics/21/21-bieu-do-cot-kep.svg"
        alt="Biểu đồ cột kép so sánh hai dãy số liệu theo cùng các nhóm và có chú giải"
        width="650">
 </p>
@@ -309,7 +309,7 @@ Nếu một nhóm chiếm `p%` thì góc ở tâm của hình quạt tương ứ
 `góc = p/100 × 360° = 3,6p°`
 
 <p align="center">
-  <img src="../../assets/statistics/21/21-bieu-do-quat-tron.svg"
+  <img src="../../../assets/statistics/21/21-bieu-do-quat-tron.svg"
        alt="Biểu đồ quạt tròn minh họa các tỉ lệ phần trăm và góc ở tâm tương ứng"
        width="650">
 </p>
@@ -340,7 +340,7 @@ Khi cần biểu diễn dữ liệu ghép nhóm bằng biểu đồ đoạn th�
 `xᵢ = (aᵢ + aᵢ₊₁)/2`
 
 <p align="center">
-  <img src="../../assets/statistics/21/21-du-lieu-ghep-nhom.svg"
+  <img src="../../../assets/statistics/21/21-du-lieu-ghep-nhom.svg"
        alt="Dữ liệu chiều cao được chia thành các khoảng không chồng lấn với bảng tần số ghép nhóm"
        width="690">
 </p>
