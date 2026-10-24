@@ -53,6 +53,44 @@ WRITTEN_LINKS = {
  "CT23":{2:"WX23-PRO-002",3:"WX23-PRO-001"},
  "CT24":{1:"WX24-MOD-001",2:"WX24-MOD-003",4:"WX24-MOD-002"}
 }
+# Curated exact-skill mapping; every deep link is verified against its real Practice manifest.
+METHOD_FOCUS = {}
+for _row in """CT02|thu-tu-phep-tinh,thu-tu-phep-tinh,dau-hieu-chia-het,ucln,rut-gon-phan-so,phep-tinh-phan-so,phan-tram,thu-tu-phep-tinh,gia-tri-tuyet-doi,lam-tron-so
+CT03|ti-le-thuc,tim-x-ti-le-thuc,chia-theo-ti-le,ti-le-thuan,ti-le-nghich,ti-so-phan-tram,ti-le-ban-do,phan-biet-thuan-nghich,mo-hinh-ti-le,mo-hinh-ti-le
+CT05|binh-phuong-tong,binh-phuong-hoan-chinh,hieu-hai-binh-phuong,tong-hai-lap-phuong,tinh-nhanh-hdt,rut-gon-hdt,chung-minh-hdt,giai-phuong-trinh-hdt
+CT06|nhan-tu-chung,doi-dau-nhan-tu-chung,hieu-hai-binh-phuong,binh-phuong-hoan-chinh,nhom-hang-tu,phoi-hop-phuong-phap,phoi-hop-phuong-phap,ung-dung-phan-tich,ung-dung-phan-tich,giai-pt-bang-nhan-tu
+CT07|dieu-kien-xac-dinh,rut-gon-phan-thuc,doi-dau-phan-thuc,quy-dong-mau-thuc,cong-tru-phan-thuc,nhan-phan-thuc,chia-phan-thuc,bieu-thuc-nhieu-phep-tinh,tinh-gia-tri-phan-thuc,tim-gia-tri-nguyen
+CT09|kiem-tra-nghiem-he,giai-he-the,giai-he-cong,bien-doi-truoc-giai,bien-doi-truoc-giai,tham-so-he,tham-so-he,lap-he-bai-toan
+CT11|dkxd-can,can-dong-dang,can-dong-dang,nhan-chia-can,truc-can-mau-don,truc-can-lien-hop,can-dong-dang,can-binh-phuong,tim-x-can,tim-x-can
+CT12|giai-pt-bac-hai,nham-nghiem,tham-so-so-nghiem,tong-tich-nghiem,bieu-thuc-doi-xung,bieu-thuc-doi-xung,dau-nghiem,lap-pt-tu-nghiem,lap-pt-tu-nghiem,lien-he-do-thi
+CT13|goc-phu-bu,goc-doi-dinh,tia-phan-giac,tia-phan-giac,goc-so-le-trong,dau-hieu-song-song,duong-vuong-goc,goc-dong-vi,lap-luan-chung-minh-ngan,lap-luan-chung-minh-ngan
+CT14|tong-goc-tam-giac,goc-ngoai,bat-dang-thuc-tam-giac,bat-dang-thuc-tam-giac,so-sanh-canh-goc,tam-giac-can,pythagore,bang-nhau-ccc,bang-nhau-cgc,nhan-biet-trung-truc
+CT15|phan-biet-bon-tam,ti-so-trong-tam,tam-noi-tiep,tam-ngoai-tiep,vi-tri-truc-tam,dong-quy-bon-duong-dac-biet
+CT16|tong-goc-tu-giac,hbh-dau-hieu,hcn-dau-hieu,hthoi-dau-hieu,hvuong-dau-hieu,duong-cheo-suy-luan,quan-he-bao-ham
+CT17|thales-thuan,thales-dao,duong-trung-binh,dong-dang-gg,tinh-do-dai-dong-dang,he-thuc-tich,ket-hop-song-song-dong-dang
+CT18|pythagore,he-thuc-duong-cao,tim-canh-luong-giac,tim-goc-luong-giac,goc-nang-ha,ket-hop-he-thuc
+CT19|goc-noi-tiep,chung-minh-tiep-tuyen,hai-tiep-tuyen,tu-giac-noi-tiep,hai-day-cat-nhau,tiep-tuyen-cat-tuyen,do-dai-cung,goc-cung
+CT20|hai-goc-vuong-noi-tiep,song-song-dong-dang,tiep-tuyen-chung-minh,dong-dang-he-thuc-tich,chuoi-suy-luan,nhan-dang-cong-cu,do-luong-thuc-te,bai-toan-tong-hop
+CT21|thu-thap-du-lieu,bang-tan-so,tan-suat,doc-bieu-do-cot,doc-bieu-do-doan-thang,chuyen-bang-bieu-do,doc-bieu-do-cot-kep,du-lieu-ghep-nhom,nhan-xet-du-lieu
+CT22|trung-binh-tho,trung-binh-tan-so,trung-vi,mot,khoang-bien-thien,so-sanh-hai-bo,chon-dai-luong
+CT23|khong-gian-mau,xac-suat-co-dien,xac-suat-thuc-nghiem,bien-co-chac-chan-khong-the,dong-xu-nhieu-lan,bien-co-doi,so-do-cay,kiem-tra-xac-suat
+CT24|chuyen-dong,nang-suat,phan-tram,lap-phuong-trinh,hinh-hoc-do-luong,thong-ke-thuc-te,xac-suat-thuc-te,kiem-tra-ket-luan
+CT25|nhan-dien-chuyen-de,nhan-dien-chuyen-de,on-thi-bieu-thuc-can,on-thi-hinh-hoc,on-thi-thong-ke,on-thi-mo-hinh-hoa,quan-ly-thoi-gian,checklist-chua-de""".strip().splitlines():
+    _topic,_skills=_row.split("|")
+    METHOD_FOCUS[_topic]={i:s for i,s in enumerate(_skills.split(","),1)}
+MANIFEST_VERSION={"CT02":"v4","CT03":"v4","CT04":"v6","CT21":"v2"}
+_skill_bank={}
+def get_focus(topic,num):
+    name=METHOD_FOCUS.get(topic,{}).get(num)
+    if not name:return None
+    if topic not in _skill_bank:
+        slug=next(s for s in PLANS if s.startswith(topic[2:]+"-"))
+        v=MANIFEST_VERSION.get(topic,"v1")
+        manifest=Path("docs/assets/data/practice")/(slug+"-"+v+".manifest.json")
+        _skill_bank[topic]=json.loads(manifest.read_text(encoding="utf8"))["skill_labels"]
+    if name not in _skill_bank[topic]:raise ValueError("Unapproved method skill focus "+topic+" "+name)
+    return name
+
 BANK = None
 def approved(id, topic):
     global BANK
@@ -87,7 +125,9 @@ def section(markdown, num, groups, topic, kind):
             n=re.match(r"Dạng\s+(\d+)(?!\d)",name,re.I) if kind=="method" else None
             if n and "math-related-practice" not in chunk and "math-topic-links" not in chunk:
                 num_type=int(n.group(1))
-                links=['<a href="bai-tap/">Luyện ngay →</a>']
+                focus=get_focus(topic,num_type)
+                uri="bai-tap/?mode=remediation&amp;focus="+focus if focus else "bai-tap/"
+                links=['<a href="'+uri+'">Luyện ngay →</a>']
                 written=WRITTEN_LINKS.get(topic,{}).get(num_type)
                 if written:
                     approved(written,topic)
