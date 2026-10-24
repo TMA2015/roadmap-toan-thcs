@@ -46,6 +46,10 @@ with sync_playwright() as pw:
             page.on("pageerror", lambda exc: errors.append(str(exc)))
             response = page.goto(BASE + slug + "/", wait_until="domcontentloaded")
             assert response and response.status == 200, f"{slug}: missing learner page"
+            # The real learner must select the Knowledge tab before opening Core.
+            tab = page.get_by_role("tab", name="Kiến thức")
+            assert tab.count() == 1, f"{slug} {device}: missing Knowledge tab"
+            tab.click()
             lesson = page.locator("details.topic-learning-card#core")
             lesson.locator("summary").wait_for(state="visible", timeout=20000)
             assert page.locator("details.topic-learning-card").count() == 11, (

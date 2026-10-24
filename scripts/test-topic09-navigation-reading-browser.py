@@ -21,13 +21,12 @@ with sync_playwright() as p:
     page = context.new_page()
     page.goto(BASE, wait_until="networkidle")
 
-    # Quick nav: the renamed exam section must still map to the canonical #exam card.
-    quick_exam = page.locator('.topic-workspace-nav a[href="#exam"]')
-    assert quick_exam.count() == 1, "missing quick-nav exam link"
-    quick_exam.click()
+    # R18 replaces redundant quick links with one horizontal tab route.
+    page.get_by_role("tab",name="Dạng bài").click()
     exam_card = page.locator("#exam")
     assert exam_card.count() == 1, "exam card was not created from renamed H2"
-    assert exam_card.evaluate("(el) => el.open"), "quick-nav exam click did not open its section"
+    exam_card.locator("summary").click()
+    assert exam_card.evaluate("(el) => el.open"), "exam card did not open inside the problem-types tab"
 
     # Material right TOC: all top-level source anchors must survive the H2->details transform.
     related = page.locator('.md-sidebar--secondary nav.md-nav--secondary > ul.md-nav__list > li > a[href="#4-kien-thuc-lien-quan"]')
@@ -60,6 +59,8 @@ with sync_playwright() as p:
     assert children.is_hidden(), "TOC − did not close children"
     assert toggle.inner_text().strip() == "+", "closed TOC should restore +"
 
+    # Keep the Core reading pane visible while inspecting its calculator disclosure.
+    page.get_by_role("tab",name="Kiến thức").click()
     # Calculator guidance is concise and closed by default.
     calculator = page.locator("details.info", has_text="Máy tính cầm tay – mở khi cần")
     assert calculator.count() == 1, "calculator disclosure missing"

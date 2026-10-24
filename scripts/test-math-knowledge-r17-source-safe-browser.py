@@ -31,7 +31,14 @@ with sync_playwright() as pw:
             assert response and response.status==200,(topic,"original route unavailable")
             content=page.locator(".md-content__inner.md-typeset")
             content.wait_for(state="visible",timeout=12000)
-            # The existing learner UI contains 11 native <details> lesson accordions.
+            # R18: only one official learner route and a real accessible five-tab strip.
+            tabs=page.locator(".mk-unified-tablist [role=tab]")
+            assert tabs.count()==5,(topic,device,"missing actual 5 horizontal tabs")
+            assert page.locator(".mk-unified-panel:not([hidden])").count()==1,(topic,device,"only one pane must be shown")
+            page.get_by_role("tab",name="Kiến thức").click()
+            assert page.locator(".mk-unified-panel:not([hidden])").count()==1
+            assert page.locator(".mk-unified-panel:not([hidden]) #core").count()==1
+            # The original native <details> sections remain the source of truth.
             # CT05's two-direction comparison lives in section 4 (initially collapsed).
             lesson_section="links" if cfg["kind"]=="compare" else "core"
             section=page.locator("details.topic-learning-card#"+lesson_section)
@@ -62,7 +69,7 @@ with sync_playwright() as pw:
                     pair_cols=rule_pair.evaluate("(n)=>getComputedStyle(n).gridTemplateColumns.split(' ').length")
                     assert pair_cols==expected,(topic,device,"responsive rule pair",rule_index,pair_cols,expected)
             for passage in cfg["visible"]:
-                assert passage in content.inner_text(),(topic,device,"original text lost",passage)
+                assert passage in content.locator("details.topic-learning-card#core,details.topic-learning-card#links").all_inner_texts().__str__() or passage in content.inner_text(),(topic,device,"original text lost",passage)
             if cfg["kind"]=="compare":
                 assert card.locator(".mk-r17-compare-item").count()==2,(topic,"two directions missing")
                 assert card.locator("pre").count()==2,(topic,"original worked expressions missing")
@@ -71,13 +78,15 @@ with sync_playwright() as pw:
             else:
                 assert card.locator("li").count()==2,(topic,"source list items lost")
                 assert content.locator("img").count()>=2,(topic,"geometric diagrams missing")
+            # Show original infographic's tab and parent accordion before visibility/print QA.
+            page.get_by_role("tab",name="Bản đồ").click()
             image=content.locator('img[src*="'+cfg["figure"]+'"]')
             assert image.count()==1,(topic,"original official infographic unexpectedly hidden")
-            image.scroll_into_view_if_needed()
             image.evaluate("(img)=>img.decode()",timeout=16000)
             assert image.evaluate("(img)=>img.complete && img.naturalWidth>100"),(topic,"original visual broken")
             assert page.evaluate("()=>document.documentElement.scrollWidth<=document.documentElement.clientWidth+2"),(topic,device,"page overflow")
             assert not errors,(topic,device,"Javascript page errors",errors[:3])
+            page.get_by_role("tab",name="Kiến thức").click()
             if device=="desktop":
                 page.emulate_media(media="print")
                 assert card.is_visible(),(topic,"print must preserve two directions/rules")
@@ -92,6 +101,39 @@ with sync_playwright() as pw:
             response=other.goto(BASE+control+"/",wait_until="domcontentloaded",timeout=30000)
             assert response and response.status==200,(control,"original route unavailable")
             assert other.locator(".mk-r17-compare,.mk-r17-logic-pairs").count()==0,(control,"R17 changed negative-control topic")
+            assert other.locator(".mk-unified-tablist [role=tab]").count()==5,(control,"R18 tabs must be on the original topic route")
             other.close()
         ctx.close()
+    # R18 full-scope desktop smoke: each of 24 taught topic routes uses ONE tabbed view.
+    # CĐ01 is the programme map/launcher, not a lesson with 11 academic sections.
+    slugs=[
+        "02-so-va-phep-tinh","03-ti-le-ti-le-thuc","04-bieu-thuc-dai-so",
+        "05-7-hang-dang-thuc","06-phan-tich-da-thuc","07-phan-thuc-dai-so",
+        "08-phuong-trinh-bat-phuong-trinh","09-he-phuong-trinh",
+        "10-ham-so-do-thi","11-can-thuc","12-phuong-trinh-bac-hai-viete",
+        "13-goc-va-duong-thang","14-tam-giac","15-duong-dong-quy","16-tu-giac",
+        "17-thales-dong-dang","18-he-thuc-luong","19-duong-tron",
+        "20-hinh-hoc-tong-hop","21-thong-ke","22-dai-luong-dac-trung",
+        "23-xac-suat","24-bai-toan-thuc-te","25-tong-hop-on-thi-10"]
+    ctx=browser.new_context(viewport={"width":1365,"height":900})
+    for topic in slugs:
+        page=ctx.new_page()
+        response=page.goto(BASE+topic+"/",wait_until="domcontentloaded",timeout=30000)
+        assert response and response.status==200,(topic,"canonical route unavailable")
+        tabs=page.locator(".mk-unified-tablist [role=tab]")
+        assert tabs.count()==5,(topic,"five-zone horizontal tabs not rendered")
+        assert page.locator(".mk-unified-panel:not([hidden])").count()==1,(topic,"expected one active pane")
+        assert page.locator(".topic-learning-card").count()==11,(topic,"lost or duplicated academic section")
+        assert page.locator("a[href*='preview-composition'],a[href*='preview-tabs']").count()==0,(topic,"duplicate preview links still student facing")
+        tabs.nth(1).click()
+        assert page.locator(".mk-unified-panel:not([hidden]) #core").count()==1,(topic,"Knowledge tab did not open")
+        tabs.nth(2).click()
+        assert page.locator(".mk-unified-panel:not([hidden]) #types").count()==1,(topic,"Problem-type tab did not open")
+        page.close()
+    start=ctx.new_page()
+    start.goto(BASE+"01-ban-do-chuong-trinh/",wait_until="domcontentloaded")
+    assert start.locator(".mk-unified-tablist").count()==0,"Programme-map launcher should not fabricate lesson tabs"
+    start.close()
+    ctx.close()
+    print("PASS R18 unified native tabs 24 taught topics + CT01 map route",flush=True)
     browser.close()

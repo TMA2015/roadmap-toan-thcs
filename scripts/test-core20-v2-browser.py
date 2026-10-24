@@ -53,6 +53,13 @@ with sync_playwright() as p:
         assert figures.count()>=3
         for i in range(figures.count()):
             figure=figures.nth(i)
+            # Lesson images live in switchable canonical tabs; open their original card.
+            panel_id=figure.evaluate("(el)=>el.closest('.mk-unified-panel')?.id")
+            if panel_id:
+                page.locator('.mk-unified-tab[aria-controls="'+panel_id+'"]').click()
+            card=figure.locator("xpath=ancestor::details[contains(@class,'topic-learning-card')]")
+            if card.count() and card.get_attribute("open") is None:
+                card.locator("summary").click()
             figure.scroll_into_view_if_needed()
             assert figure.evaluate("(el)=>el.complete && el.naturalWidth>0 && el.naturalHeight>0")
             assert figure.evaluate("(el)=>el.getBoundingClientRect().width<=window.innerWidth+1")

@@ -20,6 +20,8 @@ with sync_playwright() as pw:
         errors=[]
         page.on("pageerror",lambda error:errors.append(str(error)))
         page.goto(BASE,wait_until="domcontentloaded")
+        # Unified R18 route: select the "Dạng bài" tab containing error examples.
+        page.get_by_role("tab",name="Dạng bài").click()
         error_card=page.locator("details.topic-learning-card#errors")
         error_card.locator("summary").wait_for(timeout=30000)
         assert page.locator("details.topic-learning-card").count()==11
