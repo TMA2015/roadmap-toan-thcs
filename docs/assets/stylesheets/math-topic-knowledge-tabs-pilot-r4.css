@@ -1,0 +1,34 @@
+/* Isolated CT10 long-knowledge pilot R4; not registered globally in mkdocs.yml. */
+body.math-topic-pilot-r4 .md-content__inner>.md-typeset{font-size:17px;line-height:1.73;max-width:900px;margin-inline:auto;}
+body.math-topic-pilot-r4 .md-typeset h1{font-size:clamp(1.7rem,3vw,2.15rem);line-height:1.24;}
+body.math-topic-pilot-r4 .md-typeset h2{font-size:clamp(1.3rem,2.5vw,1.55rem);margin-top:2rem;padding-bottom:.35rem;}
+body.math-topic-pilot-r4 .md-typeset h3{font-size:1.16rem;margin-top:1.35rem;}
+body.math-topic-pilot-r4 .md-typeset p,body.math-topic-pilot-r4 .md-typeset li{line-height:1.73;}
+body.math-topic-pilot-r4 .md-typeset .arithmatex:has(>mjx-container[display="true"]){max-width:100%;overflow-x:auto;}
+body.math-topic-pilot-r4 .md-typeset div.arithmatex{max-width:100%;overflow-x:auto;background:var(--roadmap-soft);border:1px solid var(--roadmap-line);border-radius:.7rem;padding:.68rem .9rem;text-align:center;margin:.85rem 0 1rem;}
+body.math-topic-pilot-r4 .md-typeset div.arithmatex mjx-container{font-size:1.15em!important;}
+body.math-topic-pilot-r4 .md-typeset :not(pre)>code{font-family:Cambria,"Cambria Math",Georgia,serif;font-size:1em;padding:0 .12em;}
+body.math-topic-pilot-r4 .md-typeset .tabbed-set{border:1px solid var(--roadmap-line);border-radius:1rem;overflow:hidden;background:var(--roadmap-surface);margin:1rem 0 1.7rem;}
+body.math-topic-pilot-r4 .md-typeset .tabbed-labels{overflow-x:auto;scrollbar-width:thin;flex-wrap:nowrap;white-space:normal;gap:.25rem;background:var(--roadmap-soft);padding:.5rem .5rem 0;}
+body.math-topic-pilot-r4 .md-typeset .tabbed-labels>label{box-sizing:border-box;min-width:145px;max-width:215px;min-height:48px;display:flex;align-items:center;justify-content:flex-start;font-weight:700;font-size:.8rem;line-height:1.3;white-space:normal;border-radius:.45rem .45rem 0 0;padding:.65rem .8rem;}
+body.math-topic-pilot-r4 .md-typeset .tabbed-labels>label:focus-visible{outline:3px solid var(--roadmap-indigo);outline-offset:-3px;}
+body.math-topic-pilot-r4 .md-typeset .tabbed-content{padding:0 1.15rem .85rem;}
+body.math-topic-pilot-r4 .md-typeset .tabbed-content>.tabbed-block{padding-top:.85rem;}
+body.math-topic-pilot-r4 .md-typeset img{display:block;width:auto;max-width:100%;max-height:560px;height:auto;object-fit:contain;margin:1rem auto;border:1px solid var(--roadmap-line);border-radius:.9rem;background:#fff;padding:.35rem;}
+body.math-topic-pilot-r4 .md-typeset .math-topic-figure-caption{font-size:.8rem;line-height:1.6;color:var(--roadmap-muted);margin:.1rem auto 1.4rem;text-align:center;max-width:690px;}
+body.math-topic-pilot-r4 .md-typeset .math-topic-shortcut{font-size:.85rem;padding:.8rem 1rem;border-left:3px solid var(--roadmap-indigo);background:var(--roadmap-soft);border-radius:.35rem;margin:1rem 0;}
+body.math-topic-pilot-r4 .md-typeset .math-topic-warning{font-size:.82rem;border-left:3px solid #bc842d;padding:.75rem 1rem;background:var(--roadmap-soft);border-radius:.35rem;}
+body.math-topic-pilot-r4 .md-typeset .math-topic-quicknav{position:sticky;top:5.15rem;display:flex;flex-wrap:nowrap;align-items:center;gap:.45rem;overflow-x:auto;scrollbar-width:thin;background:var(--roadmap-surface);border:1px solid var(--roadmap-line);padding:.45rem .6rem;border-radius:.65rem;z-index:4;box-shadow:0 3px 12px rgba(20,33,61,.045);margin:1.15rem 0 1.5rem;}
+body.math-topic-pilot-r4 .md-typeset .math-topic-quicknav a{white-space:nowrap;padding:.3rem .5rem;min-height:38px;display:flex;align-items:center;border-radius:.4rem;font-size:.81rem;text-decoration:none;}
+body.math-topic-pilot-r4 .md-typeset .math-topic-quicknav a:focus-visible{outline:2px solid var(--roadmap-indigo);}
+body.math-topic-pilot-r4 .md-typeset .math-topic-tab-footer{display:flex;align-items:center;justify-content:space-between;gap:.7rem;border-top:1px solid var(--roadmap-line);padding:.8rem .1rem .15rem;margin-top:1.3rem;font-size:.78rem;}
+body.math-topic-pilot-r4 .md-typeset .math-topic-tab-footer button{border:1px solid var(--roadmap-line);border-radius:.5rem;min-height:44px;padding:.5rem .8rem;background:var(--roadmap-soft);font:inherit;font-weight:750;cursor:pointer;color:var(--roadmap-ink);}
+body.math-topic-pilot-r4 .md-typeset .math-topic-tab-footer button:disabled{opacity:.35;cursor:default;}
+body.math-topic-pilot-r4 .md-typeset .math-topic-tab-footer button:focus-visible{outline:3px solid var(--roadmap-indigo);}
+body.math-topic-pilot-r4 .md-typeset .math-topic-tab-footer span{font-weight:700;color:var(--roadmap-muted);}
+body.math-topic-pilot-r4 .md-typeset .math-topic-links{padding:.8rem 1rem;border:1px solid var(--roadmap-line);background:var(--roadmap-soft);border-radius:.75rem;margin:1rem 0;display:flex;flex-wrap:wrap;gap:.7rem;font-size:.82rem;}
+body.math-topic-pilot-r4 .md-typeset .math-topic-links a{display:inline-flex;min-height:44px;align-items:center;padding:.4rem .7rem;border-radius:.45rem;background:var(--roadmap-surface);border:1px solid var(--roadmap-line);font-weight:650;}
+body.math-topic-pilot-r4 .md-typeset .math-topic-links a:hover{border-color:var(--roadmap-indigo);}
+body.math-topic-pilot-r4 .md-typeset .math-topic-pilot-notice{background:var(--roadmap-soft);border:1px solid var(--roadmap-line);border-radius:.75rem;padding:.75rem 1rem;font-size:.82rem;}
+@media(max-width:700px){body.math-topic-pilot-r4 .md-content__inner>.md-typeset{font-size:16px}body.math-topic-pilot-r4 .md-typeset .math-topic-quicknav{top:3.45rem}body.math-topic-pilot-r4 .md-typeset .tabbed-content{padding:0 .7rem .65rem}body.math-topic-pilot-r4 .md-typeset .tabbed-labels>label{min-width:140px;max-width:170px;font-size:.78rem}body.math-topic-pilot-r4 .md-typeset .math-topic-tab-footer button{padding:.45rem .55rem}}
+@media print{body.math-topic-pilot-r4 .md-typeset .math-topic-quicknav,body.math-topic-pilot-r4 .md-typeset .math-topic-tab-footer{display:none!important}body.math-topic-pilot-r4 .md-typeset .tabbed-set>input,body.math-topic-pilot-r4 .md-typeset .tabbed-labels{display:none!important}body.math-topic-pilot-r4 .md-typeset .tabbed-set .tabbed-block{display:block!important;position:static!important;visibility:visible!important;opacity:1!important;transform:none!important;height:auto!important;max-height:none!important;overflow:visible!important;break-after:auto}body.math-topic-pilot-r4 .md-typeset .tabbed-content{display:block!important;overflow:visible!important}body.math-topic-pilot-r4 .md-typeset .tabbed-set{border:0;overflow:visible!important}body.math-topic-pilot-r4 .md-typeset .tabbed-block+ .tabbed-block{border-top:1px solid #bbb;padding-top:1rem;page-break-before:always}}
