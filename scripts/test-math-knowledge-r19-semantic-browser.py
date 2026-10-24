@@ -41,6 +41,13 @@ with sync_playwright() as pw:
     assert kt.count()>=3 and db.count()>=3,(slug,device,"content-based tabs missing",kt.count(),db.count())
    assert root.locator('a[href*="preview-composition"],a[href*="preview-tabs"]').count()==0,(slug,"no two-version choices")
    assert root.locator("details#map").count()==1 and root.locator("details#goals").count()==1
+   if device=="desktop":
+    # Both orientation sections must remain readable even if a summary is tapped.
+    for landmark in ("map","goals"):
+     card=root.locator("details#"+landmark)
+     assert card.evaluate("(el) => el.open"),(slug,landmark,"orientation collapsed")
+     card.locator(":scope > summary").click()
+     assert card.evaluate("(el) => el.open"),(slug,landmark,"orientation was closable")
    assert core.locator(".tabbed-block h3").count()>=3,(slug,"knowledge examples lost")
    assert types.locator('a[href*="bai-tap/"]').count()>=1 or slug=="04-bieu-thuc-dai-so",(slug,"practice link missing")
    assert page.evaluate("document.documentElement.scrollWidth<=document.documentElement.clientWidth+2"),(slug,device,"overflow")
