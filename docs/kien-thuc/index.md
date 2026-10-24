@@ -27,3 +27,36 @@ Không nhất thiết phải học cả 25 chuyên đề theo một đường th
 Nếu đang học theo chương trình trên lớp, ưu tiên chuyên đề đang học và dùng phần **Kiến thức liên quan** / **Liên kết Roadmap** trong từng bài để quay lại đúng lỗ hổng trước đó.
 
 Xem chi tiết kiến trúc tại [Blueprint 25 chuyên đề](../roadmap/blueprint-25-chuyen-de.md).
+
+## Đọc thử bố cục kiến thức mới
+
+Các trang dưới đây giúp so sánh bản trình bày ngắn gọn, có bảng và tab với **bài học gốc đã kiểm định**. Bản đọc mới không thay thế bài học gốc; nếu gặp khó khăn khi đọc công thức hoặc chuyển tab, hãy quay lại cột **Bài học gốc**. Không ảnh hưởng bài tập, điểm số hay tiến độ đã lưu.
+
+| Chuyên đề | Giao diện đọc mới | Bài học gốc |
+|---|---|---|
+| 01. Bản đồ chương trình | [Đọc bản mới](01-ban-do-chuong-trinh/preview-composition-r13.md) | [Bản gốc](01-ban-do-chuong-trinh/index.md) |
+| 02. Số và phép tính | [Đọc bản mới](02-so-va-phep-tinh/preview-composition-r9.md) | [Bản gốc](02-so-va-phep-tinh/index.md) |
+| 03. Tỉ lệ thức | [Đọc bản mới](03-ti-le-ti-le-thuc/preview-composition-r9.md) | [Bản gốc](03-ti-le-ti-le-thuc/index.md) |
+| 04. Biểu thức đại số | [Đọc bản mới](04-bieu-thuc-dai-so/preview-composition-r10.md) | [Bản gốc](04-bieu-thuc-dai-so/index.md) |
+| 05. 7 Hằng đẳng thức | [Đọc bản mới](05-7-hang-dang-thuc/preview-composition-r3.md) | [Bản gốc](05-7-hang-dang-thuc/index.md) |
+| 06. Phân tích đa thức | [Đọc bản mới](06-phan-tich-da-thuc/preview-composition-r9.md) | [Bản gốc](06-phan-tich-da-thuc/index.md) |
+| 07. Phân thức đại số | [Đọc bản mới](07-phan-thuc-dai-so/preview-composition-r10.md) | [Bản gốc](07-phan-thuc-dai-so/index.md) |
+| 08. Phương trình và bất phương trình | [Đọc bản mới](08-phuong-trinh-bat-phuong-trinh/preview-composition-r10.md) | [Bản gốc](08-phuong-trinh-bat-phuong-trinh/index.md) |
+| 09. Hệ phương trình | [Đọc bản mới](09-he-phuong-trinh/preview-composition-r9.md) | [Bản gốc](09-he-phuong-trinh/index.md) |
+| 10. Hàm số và đồ thị | [Đọc bản mới](10-ham-so-do-thi/preview-tabs-r6.md) | [Bản gốc](10-ham-so-do-thi/index.md) |
+| 11. Căn thức | [Đọc bản mới](11-can-thuc/preview-composition-r10.md) | [Bản gốc](11-can-thuc/index.md) |
+| 12. Phương trình bậc hai và Viète | [Đọc bản mới](12-phuong-trinh-bac-hai-viete/preview-composition-r11.md) | [Bản gốc](12-phuong-trinh-bac-hai-viete/index.md) |
+| 13. Góc và đường thẳng | [Đọc bản mới](13-goc-va-duong-thang/preview-composition-r11.md) | [Bản gốc](13-goc-va-duong-thang/index.md) |
+| 14. Tam giác | [Đọc bản mới](14-tam-giac/preview-composition-r3.md) | [Bản gốc](14-tam-giac/index.md) |
+| 15. Các đường đồng quy | [Đọc bản mới](15-duong-dong-quy/preview-composition-r11.md) | [Bản gốc](15-duong-dong-quy/index.md) |
+| 16. Tứ giác | [Đọc bản mới](16-tu-giac/preview-composition-r11.md) | [Bản gốc](16-tu-giac/index.md) |
+| 17. Thales và đồng dạng | [Đọc bản mới](17-thales-dong-dang/preview-composition-r12.md) | [Bản gốc](17-thales-dong-dang/index.md) |
+| 18. Hệ thức lượng | [Đọc bản mới](18-he-thuc-luong/preview-composition-r12.md) | [Bản gốc](18-he-thuc-luong/index.md) |
+| 19. Đường tròn | [Đọc bản mới](19-duong-tron/preview-composition-r12.md) | [Bản gốc](19-duong-tron/index.md) |
+| 20. Hình học tổng hợp | [Đọc bản mới](20-hinh-hoc-tong-hop/preview-composition-r12.md) | [Bản gốc](20-hinh-hoc-tong-hop/index.md) |
+| 21. Thống kê | [Đọc bản mới](21-thong-ke/preview-composition-r3.md) | [Bản gốc](21-thong-ke/index.md) |
+| 22. Đại lượng đặc trưng | [Đọc bản mới](22-dai-luong-dac-trung/preview-composition-r13.md) | [Bản gốc](22-dai-luong-dac-trung/index.md) |
+| 23. Xác suất | [Đọc bản mới](23-xac-suat/preview-composition-r3.md) | [Bản gốc](23-xac-suat/index.md) |
+| 24. Bài toán thực tế | [Đọc bản mới](24-bai-toan-thuc-te/preview-composition-r13.md) | [Bản gốc](24-bai-toan-thuc-te/index.md) |
+| 25. Tổng hợp ôn thi vào 10 | [Đọc bản mới](25-tong-hop-on-thi-10/preview-composition-r13.md) | [Bản gốc](25-tong-hop-on-thi-10/index.md) |
+
