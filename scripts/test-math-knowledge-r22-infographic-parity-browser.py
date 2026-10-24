@@ -50,11 +50,13 @@ with sync_playwright() as pw:
             # mathematical/interpretive facts as native text and tables.
             assert root.locator('img[src*="' + omitted_poster + '"]').count() == 0, (
                 slug, device, "redundant text poster still displayed")
+            indices = {}
             for phrase in phrases:
                 matching = [i for i in range(blocks.count())
                             if phrase in (blocks.nth(i).text_content() or "")]
                 assert matching, (slug, device, "unique infographic cue lost", phrase)
                 idx = matching[0]
+                indices[phrase] = idx
                 tabs.nth(idx).click()
                 assert tabs.nth(idx).get_attribute("aria-selected") == "true", (
                     slug, device, "cue tab did not activate", phrase)
@@ -66,12 +68,14 @@ with sync_playwright() as pw:
                 # This is the shared decision flow preceding the method tabs.
                 assert section.get_by_text("Quy trình chọn công thức:", exact=False).first.is_visible(), (
                     slug, device, "method-selection flow hidden")
-                assert blocks.nth(idx).locator("table").count() >= 1, (
+                assert blocks.nth(indices[phrases[0]]).locator("table").count() >= 1, (
                     slug, device, "two-pattern recognition comparison not rendered as a table")
             elif slug == "23-xac-suat":
-                assert blocks.nth(idx).locator("table").count() >= 1, (
+                check_block = blocks.nth(indices[phrases[0]])
+                tabs.nth(indices[phrases[0]]).click()
+                assert check_block.locator("table").count() >= 1, (
                     slug, device, "classical probability conditions table missing")
-                assert "Đếm đủ và không trùng" in blocks.nth(idx).inner_text(), (
+                assert "Đếm đủ và không trùng" in check_block.inner_text(), (
                     slug, device, "equiprobability caveat missing")
             assert page.evaluate(
                 "document.documentElement.scrollWidth <= document.documentElement.clientWidth + 2"
