@@ -644,7 +644,7 @@ Sau khi hoàn thành chuyên đề, học sinh cần có thể:
 
     ---
 
-    <div class="math-topic-links"><a href="../bai-tap/">Bài Entrance10 10-ENT-01 · Trang luyện tập →</a></div>
+    <div class="math-topic-links"><a href="../bai-tap/">Luyện kỹ năng vị trí hai đường thẳng →</a></div>
 
     ### Dạng 8 – Tìm giao điểm hai đường thẳng
 
@@ -656,7 +656,7 @@ Sau khi hoàn thành chuyên đề, học sinh cần có thể:
 
     ---
 
-    <div class="math-topic-links"><a href="../../../luyen-tap/tu-luan/?topic=CT10#wx10-fun-003">Bài mỏ neo WX10-FUN-003 →</a><a href="../bai-tap/">Bài Entrance10 10-ENT-02 →</a></div>
+    <div class="math-topic-links"><a href="../../../luyen-tap/tu-luan/?topic=CT10#wx10-fun-003">Bài mỏ neo WX10-FUN-003 →</a></div>
 
 
 
@@ -768,7 +768,10 @@ Sau khi hoàn thành chuyên đề, học sinh cần có thể:
 
     Do đó, số nghiệm thực của phương trình thu được sau khi cho hai biểu thức bằng nhau chính là số giao điểm của hai đồ thị. Đây là cầu nối quan trọng sang Chuyên đề 12.
 
-    <div class="math-topic-links"><a href="../bai-tap/">Bài mở rộng 10-CH-01 · Trang luyện tập →</a></div>
+    <div class="math-topic-links"><a href="../../../luyen-tap/tu-luan/?topic=CT10#wx10-fun-002">Ôn kiến thức nền parabol · WX10-FUN-002 →</a></div>
+
+> **Bài giao điểm đường thẳng–parabol:** Chưa có bài đại diện đúng dạng được xác minh trong ngân hàng đang hiển thị; cần kiểm định bài tự luận mới trước khi gắn liên kết trực tiếp.
+
 
 
 ## 🚀 6. Dạng bài thi vào lớp 10
