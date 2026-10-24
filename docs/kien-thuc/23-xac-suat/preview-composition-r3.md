@@ -53,7 +53,7 @@ Mạch tư duy trọng tâm:
 ### 1. Không gian mẫu và biến cố
 
 <p align="center">
-  <img src="../../assets/probability/23/23-khong-gian-mau-xuc-xac.svg"
+  <img src="../../../assets/probability/23/23-khong-gian-mau-xuc-xac.svg"
        alt="Minh họa không gian mẫu khi gieo xúc xắc"
        width="560">
 </p>
@@ -77,7 +77,7 @@ Vì có `3` kết quả thuận lợi trên `6` kết quả có thể, nên:
 ### 2. Xác suất của một biến cố đơn giản
 
 <p align="center">
-  <img src="../../assets/probability/23/23-dong-xu.svg"
+  <img src="../../../assets/probability/23/23-dong-xu.svg"
        alt="Minh họa xác suất khi tung đồng xu"
        width="560">
 </p>
@@ -105,7 +105,7 @@ Lưu ý quan trọng:
 ### 3. Sơ đồ cây cho thí nghiệm nhiều bước
 
 <p align="center">
-  <img src="../../assets/probability/23/23-so-do-cay.svg"
+  <img src="../../../assets/probability/23/23-so-do-cay.svg"
        alt="Minh họa sơ đồ cây khi tung đồng xu hai lần"
        width="620">
 </p>
@@ -303,7 +303,7 @@ Cần phân biệt hai cách tính:
 Khi một thí nghiệm ổn định được lặp lại nhiều lần, tần số tương đối của biến cố thường có xu hướng ổn định quanh xác suất của biến cố trong mô hình. Tuy nhiên, với một số lần thử hữu hạn, hai giá trị **không bắt buộc bằng nhau**.
 
 <p align="center">
-  <img src="../../assets/probability/23/23-xac-suat-thuc-nghiem-on-dinh.svg"
+  <img src="../../../assets/probability/23/23-xac-suat-thuc-nghiem-on-dinh.svg"
        alt="Đồ thị tần số tương đối của mặt Ngửa dao động và dần ổn định quanh xác suất 0,5 khi số lần tung đồng xu tăng"
        width="820">
 </p>
