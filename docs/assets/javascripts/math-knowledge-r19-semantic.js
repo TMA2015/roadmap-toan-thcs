@@ -15,7 +15,9 @@
       const card=root.querySelector("details.topic-learning-card#"+id);
       if(card)card.open=true;
     }
-    for(const card of [core,types]){
+    // The orientation (map + goals) and the two learning tab groups are
+    // permanent reading landmarks, not optional accordion disclosures.
+    for(const card of ["map","goals","core","types"].map(id=>root.querySelector("details.topic-learning-card#"+id)).filter(Boolean)){
       card.addEventListener("click",e=>{if(e.target.closest("summary")===card.querySelector(":scope > summary"))e.preventDefault()},true);
     }
     const nav=root.querySelector(".topic-workspace-nav-list");
