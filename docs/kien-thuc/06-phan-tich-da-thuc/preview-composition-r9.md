@@ -86,7 +86,7 @@ Sau khi hoàn thành chuyên đề, học sinh cần có thể:
 
 ### Infographic 2 – Sơ đồ chọn phương pháp
 
-![Infographic sơ đồ chọn phương pháp phân tích đa thức](../../../assets/infographics/06/06-02-so-do-chon-phuong-phap.svg)
+![Infographic sơ đồ chọn phương pháp phân tích đa thức](../../assets/infographics/06/06-02-so-do-chon-phuong-phap.svg)
 
 ### 3.1. Phân tích đa thức thành nhân tử là gì?
 
