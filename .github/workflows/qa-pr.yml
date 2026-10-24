@@ -424,6 +424,8 @@ jobs:
           node scripts/test-topic25-paper-exam-v1.js
       - name: Build strict static site
         run: mkdocs build --strict
+      - name: Validate R15 final Knowledge routes and links
+        run: node scripts/test-math-knowledge-r15-final-route-built.js
       - name: Validate CĐ25 built display math
         run: node scripts/test-topic25-math-render.js --built
       - name: Validate built topic navigation
@@ -439,6 +441,7 @@ jobs:
           python scripts/test-library-two-paths-r1-browser.py
           python scripts/test-math-learner-nav-library-r2-browser.py
           python scripts/test-math-knowledge-p2-ct13-14-responsive-browser-20261019.py
+          python scripts/test-math-knowledge-r15-final-route-browser.py
           python scripts/test-practice-interactive-only-wave6-browser.py
           python scripts/capture-ui-previews.py
           python scripts/test-topic25-student-browser.py
