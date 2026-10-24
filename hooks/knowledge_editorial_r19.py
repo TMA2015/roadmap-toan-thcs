@@ -162,6 +162,33 @@ def transform(markdown, src_path):
     # native Markdown. Unwrap only that exact block; preserve all Markdown links.
     raw=re.sub(r'(?s)<div class="topic-workspace-actions" markdown>\s*(.*?)\s*</div>',
                lambda m: "\n\n"+m.group(1).strip()+"\n",raw)
+    # CT04: the source supplies a concise eleven-row method table, not full
+    # worked H3 methods. Preserve honest table structure; add an exact approved
+    # skill link to each existing row, not fabricated standalone method lessons.
+    if slug.startswith("04-"):
+        start=re.search(r"(?m)^##\s+[^\n]*\b5\.\s+[^\n]+$",raw)
+        following=re.search(r"(?m)^##\s+[^\n]*\b6\.\s+[^\n]+$",raw[start.end():]) if start else None
+        if not start or not following:raise ValueError("R19 CT04 types table missing")
+        end=start.end()+following.start()
+        middle=raw[start.start():end].splitlines()
+        skill_order=["nhan-biet-don-thuc","he-so-bac","thu-gon-da-thuc",
+          "thu-gon-da-thuc","cong-tru-da-thuc","nhan-bieu-thuc",
+          "nhan-bieu-thuc","tinh-gia-tri-bieu-thuc","dieu-kien-xac-dinh",
+          "bien-doi-nhieu-buoc","nhan-bieu-thuc"]
+        if len([line for line in middle if line.startswith("|")])!=13:
+            raise ValueError("R19 CT04 11-type table count changed")
+        modified=[]
+        row=0
+        for line in middle:
+            if line.startswith("|"):
+                if row==0:line=line.rstrip()+" Luyện tập |"
+                elif row==1:line=line.rstrip()+" --- |"
+                else:
+                    skill=skill_order[row-2]
+                    line=line.rstrip()+f" [Luyện ngay](bai-tap/?mode=remediation&focus={skill}) |"
+                row+=1
+            modified.append(line)
+        raw=raw[:start.start()]+"\n".join(modified)+"\n"+raw[end:]
     if version=="tabs-r6":
         return raw
     # CT08 already has four authored level-tabs rather than method H3 headings.
