@@ -139,7 +139,10 @@ a{color:var(--thpt-blue)}
  .thpt-process{flex-direction:column}
  .thpt-step{flex-basis:auto;min-width:0}
  .thpt-process .arrow{align-self:center;transform:rotate(90deg)}
- .thpt-figure-frame{padding:8px}
+ .thpt-figure-frame{padding:8px;overflow-x:auto}
+ /* Preserve label size when 640-unit diagrams appear on a 390px phone.
+    Scroll only the diagram card, never squeeze every math label to 11px. */
+ .thpt-figure-frame svg{width:560px;max-width:none}
 }
 @media(prefers-color-scheme:dark){
  :root:not([data-theme=light]){color-scheme:dark;--thpt-blue:#afc1ff;--thpt-ink:#eef2fd;
