@@ -51,6 +51,11 @@ with sync_playwright() as pw:
     db.nth(1).click()
     assert db.nth(1).get_attribute("aria-selected")=="true",(slug,"switch failed")
     if slug!="10-ham-so-do-thi":
+     # Clicking an already selected deep link must not add a phantom Back entry.
+     before=page.evaluate("history.length")
+     db.nth(1).click()
+     assert page.evaluate("history.length")==before,(slug,device,"duplicate tab history")
+    if slug!="10-ham-so-do-thi":
      # ARIA tabs are labels, so keyboard Enter/Space must activate them explicitly.
      db.first.focus()
      page.keyboard.press("Enter")
@@ -93,6 +98,11 @@ with sync_playwright() as pw:
      root=page.locator(".md-content__inner.math-knowledge-r19")
      root.wait_for(state="visible",timeout=15000)
      assert root.locator("details#"+zone+" .tabbed-labels label").nth(1).get_attribute("aria-selected")=="true",(slug,zone,"direct source hash")
+   if device=="desktop" and slug in ("05-7-hang-dang-thuc","14-tam-giac","21-thong-ke","23-xac-suat"):
+    # Printing must reveal every semantic tab, including panels hidden on screen.
+    page.emulate_media(media="print")
+    assert page.evaluate("""() => [...document.querySelectorAll('.math-knowledge-r19 #core .tabbed-block, .math-knowledge-r19 #types .tabbed-block')].every(el => getComputedStyle(el).display !== 'none' && getComputedStyle(el).visibility === 'visible')"""),(slug,"print hid a tab")
+    page.emulate_media(media="screen")
    page.close()
   ctx.close()
   print("PASS R19 Knowledge semantic tabs",device,len(items),flush=True)
