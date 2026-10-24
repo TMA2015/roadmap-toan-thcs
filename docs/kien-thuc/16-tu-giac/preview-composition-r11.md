@@ -1,0 +1,444 @@
+> **BẢN THỬ R11 — CHƯA PHÁT HÀNH:** Chỉ tinh chỉnh bố cục, infographic và đường tới bài luyện có thật; học liệu gốc và dữ liệu học sinh không thay đổi.
+
+<link rel="stylesheet" href="../../../assets/stylesheets/math-knowledge-composition-v1.css">
+
+# Chuyên đề 16 – Tứ giác và các hình đặc biệt
+
+> **Trạng thái:** Đã kiểm định nội dung học thuật; cấu trúc Roadmap chuẩn 11 mục.
+>
+> **Lớp trọng tâm:** 8
+> **Mạch kiến thức:** Hình học
+> **Mức ưu tiên:** ⭐⭐⭐⭐⭐
+
+---
+
+## 🧭 1. Bản đồ kiến thức
+
+```text
+TỨ GIÁC
+│
+├── Hình thang
+│   ├── Một cặp cạnh đối song song
+│   └── Hình thang cân
+│
+├── Hình bình hành
+│   ├── Hai cặp cạnh đối song song
+│   ├── Cạnh đối bằng nhau
+│   └── Hai đường chéo cắt nhau tại trung điểm
+│
+├── Hình chữ nhật
+│   ├── Hình bình hành có 4 góc vuông
+│   └── Hai đường chéo bằng nhau
+│
+├── Hình thoi
+│   ├── Hình bình hành có 4 cạnh bằng nhau
+│   └── Hai đường chéo vuông góc, phân giác góc
+│
+└── Hình vuông
+    └── Vừa là hình chữ nhật, vừa là hình thoi
+```
+
+Mạch tư duy trọng tâm:
+
+**nhận dạng dấu hiệu → gọi đúng tên hình → dùng tính chất → suy ra cạnh, góc, đường chéo hoặc chứng minh hình đặc biệt.**
+
+---
+
+## Minh họa trực quan
+
+### 1. Hình thang
+
+<p align="center">
+  <img src="../../../assets/geometry/16/16-hinh-thang-v1.svg"
+       alt="Minh họa hình thang"
+       width="430">
+</p>
+
+> Hình thang là tứ giác có **một cặp cạnh đối song song**.
+
+Hai cạnh song song được gọi là **hai đáy**; hai cạnh còn lại là **hai cạnh bên**.
+
+> Theo cách hiểu “có một cặp cạnh đối song song”, điều kiện này không loại trừ trường hợp tứ giác còn có thêm một cặp cạnh đối song song. Trong Roadmap, hình bình hành vẫn được tách thành mục riêng để học các tính chất và dấu hiệu đặc trưng.
+
+---
+
+### 2. Hình bình hành
+
+<p align="center">
+  <img src="../../../assets/geometry/16/16-hinh-binh-hanh-v1.svg"
+       alt="Minh họa hình bình hành"
+       width="430">
+</p>
+
+> Hình bình hành là tứ giác có **hai cặp cạnh đối song song**.
+
+Các tính chất quan trọng:
+
+- các cạnh đối bằng nhau;
+- các góc đối bằng nhau;
+- hai đường chéo cắt nhau tại trung điểm của mỗi đường.
+
+---
+
+### 3. Hình chữ nhật
+
+<p align="center">
+  <img src="../../../assets/geometry/16/16-hinh-chu-nhat-v1.svg"
+       alt="Minh họa hình chữ nhật"
+       width="430">
+</p>
+
+> Hình chữ nhật là hình bình hành có **bốn góc vuông**.
+
+Ngoài các tính chất của hình bình hành, hình chữ nhật còn có:
+
+- hai đường chéo bằng nhau;
+- hai đường chéo cắt nhau tại trung điểm của mỗi đường.
+
+---
+
+### 4. Hình thoi
+
+<p align="center">
+  <img src="../../../assets/geometry/16/16-hinh-thoi-v1.svg"
+       alt="Minh họa hình thoi"
+       width="430">
+</p>
+
+> Hình thoi là hình bình hành có **bốn cạnh bằng nhau**.
+
+Các tính chất nổi bật:
+
+- hai đường chéo vuông góc với nhau;
+- mỗi đường chéo là phân giác của các góc mà nó đi qua;
+- hai đường chéo cắt nhau tại trung điểm của mỗi đường.
+
+---
+
+### 5. Hình vuông
+
+<p align="center">
+  <img src="../../../assets/geometry/16/16-hinh-vuong-v1.svg"
+       alt="Minh họa hình vuông"
+       width="400">
+</p>
+
+> Hình vuông vừa là **hình chữ nhật**, vừa là **hình thoi**.
+
+Vì vậy hình vuông có đồng thời:
+
+- bốn cạnh bằng nhau;
+- bốn góc vuông;
+- hai đường chéo bằng nhau;
+- hai đường chéo vuông góc;
+- hai đường chéo cắt nhau tại trung điểm;
+- hai đường chéo là các đường phân giác của góc.
+
+---
+
+### Quan hệ giữa các tứ giác đặc biệt
+
+Theo quy ước của Roadmap, **hình thang là tứ giác có ít nhất một cặp cạnh đối song song**. Vì vậy hình bình hành là một trường hợp đặc biệt của hình thang.
+
+```text
+TỨ GIÁC
+   |
+   v
+HÌNH THANG
+   |
+   v
+HÌNH BÌNH HÀNH
+   |          \
+   v           v
+HÌNH CHỮ NHẬT  HÌNH THOI
+        \       /
+         \     /
+          v   v
+        HÌNH VUÔNG
+```
+
+Điểm cần nhớ:
+
+- Mọi hình bình hành đều là hình thang theo định nghĩa “ít nhất một cặp cạnh đối song song”.
+- Một hình vuông luôn là hình chữ nhật và hình thoi.
+- Một hình chữ nhật hoặc hình thoi chưa chắc là hình vuông.
+
+---
+
+### Bảng so sánh nhanh
+
+| Hình | Cạnh đối song song | Cạnh bằng nhau | Góc vuông | Đường chéo |
+|---|---|---|---|---|
+| Hình thang | Ít nhất 1 cặp | Không nhất thiết | Không nhất thiết | Không có tính chất chung đặc biệt |
+| Hình bình hành | 2 cặp | Các cạnh đối bằng nhau | Không nhất thiết | Cắt nhau tại trung điểm |
+| Hình chữ nhật | 2 cặp | Các cạnh đối bằng nhau | 4 góc | Bằng nhau và cắt nhau tại trung điểm |
+| Hình thoi | 2 cặp | 4 cạnh bằng nhau | Không nhất thiết | Vuông góc, cắt nhau tại trung điểm; mỗi đường chéo phân giác hai góc đối |
+| Hình vuông | 2 cặp | 4 cạnh bằng nhau | 4 góc | Bằng nhau, vuông góc, cắt nhau tại trung điểm |
+
+---
+
+### Mẹo nhận dạng
+
+- Có **ít nhất một cặp cạnh đối song song** → nghĩ đến hình thang.
+- Có **hai cặp cạnh đối song song** → nghĩ đến hình bình hành.
+- Hình bình hành + **4 góc vuông** → hình chữ nhật.
+- Hình bình hành + **4 cạnh bằng nhau** → hình thoi.
+- Có cả **4 góc vuông + 4 cạnh bằng nhau** → hình vuông.
+
+---
+
+## 🎯 2. Mục tiêu cần đạt
+
+Sau khi hoàn thành chuyên đề, học sinh cần:
+
+- [ ] Phân biệt được hình thang, hình bình hành, hình chữ nhật, hình thoi, hình vuông.
+- [ ] Nắm được các tính chất về cạnh, góc và đường chéo của từng hình.
+- [ ] Nhận biết được các dấu hiệu để chứng minh một tứ giác là hình đặc biệt.
+- [ ] Vận dụng được đường trung bình hình thang và tính chất đường chéo để tính độ dài, chứng minh.
+- [ ] Biết dùng quan hệ bao hàm giữa các hình để suy luận nhanh.
+- [ ] Giải được các bài chứng minh tứ giác đặc biệt trong hình học tổng hợp.
+
+---
+
+## 📖 3. Kiến thức cốt lõi
+
+### 3.1. Tổng các góc trong một tứ giác
+
+Tổng bốn góc trong mọi tứ giác bằng:
+
+`360°`
+
+Nếu biết ba góc, có thể tính góc còn lại bằng:
+
+`góc còn lại = 360° - tổng ba góc đã biết`
+
+### 3.2. Hình thang
+
+Hình thang là tứ giác có **ít nhất một cặp cạnh đối song song**.
+
+Nếu `AB ∥ CD`, thì `ABCD` là hình thang.
+
+**Hình thang cân** có hai góc kề một đáy bằng nhau.
+
+Tính chất quan trọng của hình thang cân:
+- hai cạnh bên bằng nhau;
+- hai đường chéo bằng nhau.
+
+### 3.2A. Đường trung bình của hình thang
+
+Cho hình thang `ABCD` với `AB ∥ CD`. Nếu `M`, `N` lần lượt là trung điểm của hai cạnh bên `AD`, `BC` thì `MN` là đường trung bình của hình thang và:
+
+`MN ∥ AB ∥ CD`
+
+`MN = (AB + CD)/2`
+
+Hệ quả này đặc biệt hữu ích khi đề cho trung điểm hai cạnh bên hoặc cần tính tổng hai đáy.
+
+> Không nhầm với đường trung bình của tam giác: trong tam giác độ dài bằng **một nửa cạnh thứ ba**, còn trong hình thang bằng **nửa tổng hai đáy**.
+
+### 3.3. Hình bình hành
+
+Dấu hiệu nhận biết thường dùng:
+- hai cặp cạnh đối song song;
+- hai cặp cạnh đối bằng nhau;
+- một cặp cạnh đối vừa song song vừa bằng nhau;
+- hai đường chéo cắt nhau tại trung điểm của mỗi đường.
+
+Tính chất:
+- cạnh đối bằng nhau;
+- góc đối bằng nhau;
+- hai góc kề bù nhau;
+- hai đường chéo cắt nhau tại trung điểm.
+
+### 3.4. Hình chữ nhật
+
+Hình chữ nhật là hình bình hành có bốn góc vuông.
+
+Dấu hiệu nhận biết:
+- tứ giác có ba góc vuông;
+- hình bình hành có một góc vuông;
+- hình bình hành có hai đường chéo bằng nhau.
+
+Tính chất đặc trưng:
+- hai đường chéo bằng nhau;
+- hai đường chéo cắt nhau tại trung điểm.
+
+### 3.5. Hình thoi
+
+Hình thoi là hình bình hành có bốn cạnh bằng nhau.
+
+Dấu hiệu nhận biết:
+- tứ giác có bốn cạnh bằng nhau;
+- hình bình hành có hai cạnh kề bằng nhau;
+- hình bình hành có hai đường chéo vuông góc;
+- hình bình hành có một đường chéo là phân giác một góc.
+
+Tính chất:
+- hai đường chéo vuông góc;
+- mỗi đường chéo là phân giác của hai góc đối mà nó đi qua;
+- hai đường chéo cắt nhau tại trung điểm.
+
+### 3.6. Hình vuông
+
+Hình vuông vừa là hình chữ nhật vừa là hình thoi.
+
+Có thể nhận biết hình vuông bằng hai hướng, đều **xuất phát từ một hình đã được chứng minh**:
+
+| **Từ hình chữ nhật** | **Từ hình thoi** |
+|:---|:---|
+| Có **hai cạnh kề bằng nhau**. | Có **một góc vuông**. |
+| Hoặc có **hai đường chéo vuông góc**. | Hoặc có **hai đường chéo bằng nhau**. |
+
+Đây là các **cách chứng minh thay thế**, không phải các bước phải làm theo thứ tự.
+
+
+<div class="math-composition"><nav class="math-related-practice" aria-label="Luyện bài đã học">
+<span>Thực hành kiến thức vừa học:</span>
+<a href="../bai-tap/?mode=remediation&amp;focus=hvuong-dau-hieu">Luyện ngay →</a>
+<a href="../../../luyen-tap/tu-luan/?topic=CT16#wx16-quad-002">Làm tự luận · WX16-QUAD-002 →</a>
+</nav></div>
+
+### 3.6A. Trung tuyến ứng với cạnh huyền — liên kết với hình chữ nhật
+
+Cho tam giác `ABC` vuông tại `A`, `M` là **trung điểm cạnh huyền `BC`**. Khi đó:
+
+`AM = BM = CM = BC/2`.
+
+**Vì sao đúng?** Lấy điểm `D` đối xứng với `A` qua `M`. Trong tứ giác `ABDC`, hai đường chéo `AD` và `BC` cắt nhau tại trung điểm mỗi đường, nên `ABDC` là hình bình hành. Vì `∠BAC = 90°`, đây là **hình chữ nhật**, nên hai đường chéo bằng nhau: `AD = BC`. Do đó `AM = AD/2 = BC/2`.
+
+**Định lý đảo:** Nếu `M` là trung điểm `BC` và `AM = BC/2`, thì tam giác `ABC` vuông tại `A`. Có thể kiểm tra bằng cách dựng `D` như trên: hình bình hành `ABDC` có hai đường chéo bằng nhau (`AD = 2AM = BC`) nên là hình chữ nhật.
+
+**Ví dụ nhanh:** Nếu `ABC` vuông tại `A`, `BC = 10 cm` và `M` là trung điểm `BC`, thì `AM = 5 cm`. Ngược lại, nếu tam giác `ABC` có `BM = MC = 5 cm` và `AM = 5 cm`, thì `∠A = 90°`.
+
+> **Bẫy nhận biết hình thang cân:** Với quy ước hình thang có **ít nhất một cặp cạnh đối song song** đang dùng trong bài, hình bình hành xiên (không phải hình chữ nhật) cũng có hai cạnh bên bằng nhau nhưng **hai góc kề một đáy không bằng nhau**. Vì thế, không được kết luận hình thang cân chỉ từ “hai cạnh bên bằng nhau”; cần kiểm tra đúng dấu hiệu nhận biết.
+
+### 3.7. Bảng chọn tính chất nhanh
+
+| Dấu hiệu | Hình nên nghĩ tới |
+|---|---|
+| Có ít nhất một cặp cạnh đối song song | Hình thang |
+| 2 cặp cạnh đối song song | Hình bình hành |
+| Hình bình hành + góc vuông | Hình chữ nhật |
+| Hình bình hành + hai cạnh kề bằng nhau | Hình thoi |
+| Hình chữ nhật + hai cạnh kề bằng nhau | Hình vuông |
+| Hai đường chéo cắt nhau tại trung điểm | Hình bình hành |
+| Hai đường chéo bằng nhau trong hình bình hành | Hình chữ nhật |
+| Hai đường chéo vuông góc trong hình bình hành | Hình thoi |
+
+---
+
+## 🔗 4. Kiến thức liên quan
+
+- **Kiến thức nên ôn trước:** [13 – Góc và quan hệ giữa các đường thẳng](../13-goc-va-duong-thang/index.md), [14 – Tam giác](../14-tam-giac/index.md)
+- **Liên hệ mạnh:** song song, vuông góc, trung điểm, phân giác.
+- **Chuyên đề sử dụng tiếp:** [17 – Thales và tam giác đồng dạng](../17-thales-dong-dang/index.md), [20 – Hình học tổng hợp](../20-hinh-hoc-tong-hop/index.md)
+
+---
+
+## 🧩 5. Các dạng bài cần nắm vững
+
+### Dạng 1. Tính góc trong tứ giác
+
+Dùng tổng bốn góc bằng `360°`.
+
+### Dạng 2. Chứng minh hình bình hành
+
+Ưu tiên chọn dấu hiệu phù hợp nhất với giả thiết: song song, bằng nhau hoặc đường chéo.
+
+### Dạng 3. Chứng minh hình chữ nhật
+
+Thường đi theo hướng:
+- chứng minh hình bình hành;
+- sau đó chứng minh có một góc vuông hoặc hai đường chéo bằng nhau.
+
+### Dạng 4. Chứng minh hình thoi
+
+Thường chứng minh:
+- hình bình hành có hai cạnh kề bằng nhau;
+- hoặc đường chéo vuông góc.
+
+### Dạng 5. Chứng minh hình vuông
+
+Thường chứng minh một hình vừa là hình chữ nhật vừa là hình thoi.
+
+### Dạng 6. Bài toán đường chéo
+
+Khai thác:
+- trung điểm;
+- bằng nhau;
+- vuông góc;
+- phân giác.
+
+### Dạng 7. Bài tổng hợp
+
+Kết hợp trung điểm, song song, tam giác bằng nhau, Thales hoặc đồng dạng để chứng minh tứ giác đặc biệt.
+
+---
+
+## 🚀 6. Dạng bài thi vào lớp 10
+
+Trong Roadmap ôn thi vào lớp 10, các tính chất và dấu hiệu của tứ giác đặc biệt được xem là **công cụ nền cho nhiều bài hình học tổng hợp**, thường được dùng như một bước trung gian trong chuỗi chứng minh.
+
+Các kỹ năng cần chắc:
+1. Chứng minh hình bình hành từ trung điểm hoặc song song.
+2. Nâng cấp hình bình hành thành hình chữ nhật / hình thoi / hình vuông.
+3. Khai thác tính chất đường chéo để suy ra trung điểm, bằng nhau, vuông góc.
+4. Kết hợp với Thales và tam giác đồng dạng.
+
+Mức ưu tiên ôn thi: **⭐⭐⭐⭐⭐**.
+
+---
+
+## ⚠️ 7. Lỗi sai thường gặp
+
+| Lỗi sai | Cách tránh |
+|---|---|
+| Thấy 1 cặp cạnh song song rồi kết luận hình bình hành | Hình bình hành cần đủ dấu hiệu |
+| Nhầm đường chéo hình chữ nhật luôn vuông góc | Hình chữ nhật chỉ có đường chéo **bằng nhau**, không nhất thiết vuông góc |
+| Nhầm đường chéo hình thoi luôn bằng nhau | Hình thoi có đường chéo **vuông góc**, không nhất thiết bằng nhau |
+| Chứng minh hình vuông quá dài | Tìm cách chứng minh vừa là chữ nhật vừa là thoi |
+| Dùng tính chất trước khi chứng minh loại hình | Phải xác định hình trước rồi mới dùng tính chất |
+| Quên tổng góc tứ giác là `360°` | Ghi công thức ngay khi bài yêu cầu tính góc |
+
+---
+
+## 📝 8. Luyện tập
+
+Phần luyện tập chính đã chuyển sang **Practice Room** để tách rõ Core với Entrance10/Challenge và ghi learner evidence theo skill.
+
+- **→ [Mở Practice Room](bai-tap.md)**
+
+---
+
+## ✅ 9. Tự kiểm tra
+
+Sau khi luyện, làm **Core Readiness Check** 10 câu. Kết quả là **soft mastery**: dùng để gợi ý ôn lại, không khóa lộ trình.
+
+- **→ [Mở Core Readiness Check](tu-kiem-tra.md)**
+
+---
+
+## 🔄 10. Liên kết Roadmap
+
+- **← Trước:** [15 – Các đường đồng quy trong tam giác](../15-duong-dong-quy/index.md)
+
+- **← Kiến thức nền:** [13 – Góc và đường thẳng](../13-goc-va-duong-thang/index.md), [14 – Tam giác](../14-tam-giac/index.md)
+- **→ Tiếp theo:** [17 – Thales và tam giác đồng dạng](../17-thales-dong-dang/index.md)
+- **→ Liên hệ:** [20 – Hình học tổng hợp](../20-hinh-hoc-tong-hop/index.md)
+
+- **✏️ Luyện tập:** [Bài tập Chuyên đề 16](bai-tap.md)
+- **✅ Tự kiểm tra:** [Tự kiểm tra Chuyên đề 16](tu-kiem-tra.md)
+
+Xem toàn bộ hệ thống tại [Blueprint 25 chuyên đề](../../roadmap/blueprint-25-chuyen-de.md).
+
+---
+
+## 🏁 11. Điều kiện hoàn thành
+
+- [ ] Đã học đủ 5 chặng KNTT Core ở đầu trang.
+- [ ] Đã luyện Practice Room và chữa lại các câu sai.
+- [ ] Đã làm Core Readiness Check; khoảng 80% trở lên là tín hiệu sẵn sàng.
+- [ ] Mọi kết luận hình học dựa trên giả thiết/định lí, không dựa vào hình vẽ.
+
+!!! note "Soft Mastery"
+    Kết quả không khóa chuyên đề tiếp theo; evidence yếu chỉ tạo gợi ý ôn đúng skill.
