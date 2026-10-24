@@ -14,7 +14,11 @@ const plans=[
   {topic:"02-so-va-phep-tinh",version:"r9",math:true,stale:"Dùng infographic này",phrase:"Quy tắc dấu với số nguyên",tables:1,keep:"02-04-truc-so-gia-tri-tuyet-do.svg"},
   {topic:"03-ti-le-ti-le-thuc",version:"r9",math:true,stale:"Dùng infographic này",phrase:"Phân biệt tỉ lệ thuận và tỉ lệ nghịch",tables:1,keep:"03-04-ti-le-thuan-nghich.svg"},
   {topic:"06-phan-tich-da-thuc",version:"r9",math:true,stale:null,phrase:"Phối hợp nhiều phương pháp",tables:1,keep:"06-02-so-do-chon-phuong-phap.svg"},
-  {topic:"09-he-phuong-trinh",version:"r9",math:true,stale:null,phrase:"Cùng một hệ, so sánh phương pháp thế và cộng đại số",tables:1,keep:"09-04-y-nghia-hinh-hoc-he.svg"}
+  {topic:"09-he-phuong-trinh",version:"r9",math:true,stale:null,phrase:"Cùng một hệ, so sánh phương pháp thế và cộng đại số",tables:1,keep:"09-04-y-nghia-hinh-hoc-he.svg"},
+  {topic:"04-bieu-thuc-dai-so",version:"r10",math:true,stale:"Dùng infographic này",phrase:"Các phép biến đổi quan trọng",tables:1},
+  {topic:"07-phan-thuc-dai-so",version:"r10",math:true,minMath:2,stale:"Dùng infographic này",phrase:"Tính chất cơ bản của phân thức",tables:1},
+  {topic:"08-phuong-trinh-bat-phuong-trinh",version:"r10",math:true,stale:null,phrase:"Bất đẳng thức và tính chất thứ tự",tables:1,keepAll:["08-05-truc-so-bat-phuong-trinh.svg","08-06-giao-tap-nghiem.svg"]},
+  {topic:"11-can-thuc",version:"r10",math:true,stale:"Dùng infographic này",phrase:"Điều kiện xác định",tables:1}
 ]
 let count=0;
 const seen=[];
@@ -28,7 +32,7 @@ for(const p of plans){
  assert((html.match(/<table\b/g)||[]).length>=p.tables,"Missing comparison/process table "+p.topic);
  if(p.math){
   assert(/class=["']arithmatex["']/.test(html),"No preserved typeset math wrappers "+p.topic);
-  assert((html.match(/class=["']arithmatex["']/g)||[]).length>=3,"Too few math wrappers "+p.topic);
+  assert((html.match(/class=["']arithmatex["']/g)||[]).length>=(p.minMath||3),"Too few math wrappers "+p.topic);
  }
  // CSS and SVG assets: test only our document-specific resources, not remote MathJax.
  const wantCSS="math-knowledge-composition-v1.css";
@@ -36,7 +40,7 @@ for(const p of plans){
  for(const x of html.matchAll(urlRx)){
   const u=x[1];
   if(/^(?:https?:|data:|#|mailto:)/.test(u))continue;
-  if(!/(?:assets\/infographics\/(?:02|03|05|06|09)\/|assets\/(?:geometry|statistics|probability)\/|math-knowledge-composition-v1\.css)/.test(u))continue;
+  if(!/(?:assets\/infographics\/(?:02|03|05|06|08|09)\/|assets\/(?:geometry|statistics|probability)\/|math-knowledge-composition-v1\.css)/.test(u))continue;
   const clean=u.split(/[?#]/,1)[0];
   const absolute=clean.startsWith("/")
      ?path.join(root,clean.replace(/^\/+/,""))
@@ -49,7 +53,8 @@ for(const p of plans){
  assert(hasCSS,"Preview CSS not resolvable "+p.topic);
  if(p.topic==="05-7-hang-dang-thuc")assert(localRefs.some(u=>u.includes("05-05-")),"Missing source-linked area SVG");
  if(p.keep)assert(localRefs.some(u=>u.includes(p.keep)),"Missing expected visual "+p.keep);
- if(p.version==="r9") {
+ if(p.keepAll)for(const img of p.keepAll)assert(localRefs.some(u=>u.includes(img)),"Missing visual "+img);
+ if(p.version==="r9"||p.version==="r10") {
    assert(html.includes("Luyện ngay"),"Missing skill practice link "+p.topic);
    assert(html.includes("Làm tự luận"),"Missing canonical written link "+p.topic);
  }
