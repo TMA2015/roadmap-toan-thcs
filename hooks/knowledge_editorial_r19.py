@@ -118,21 +118,13 @@ def transform(markdown, src_path):
             .replace("../bai-tap/","bai-tap/")
             .replace("../tu-kiem-tra/","tu-kiem-tra/"))
     raw=re.sub(r"(?m)^> \*\*BẢN THỬ[^\n]*\n","",raw)
-    # R16 preview pages end in an HTML wrapper without Markdown-in-HTML support.
-    # Unwrap only that exact final action block; preserve all button/link markdown.
-    raw=re.sub(r'(?s)<div class="topic-workspace-actions" markdown>\\s*(.*?)\\s*</div>\\s*
+    # R16 candidate's last learner CTA is in an HTML block unsupported by
+    # native Markdown. Unwrap only that exact block; preserve all Markdown links.
+    raw=re.sub(r'(?s)<div class="topic-workspace-actions" markdown>\s*(.*?)\s*</div>\s*$',
+               lambda m: "\n\n"+m.group(1).strip()+"\n",raw)
     if version=="tabs-r6":
         return raw
-    # Include every original preview subsection exactly once; only add semantic wrappers.
-    raw=section(raw,5,methods,"CT"+slug[:2],"method")
-    raw=section(raw,3,kt,"CT"+slug[:2],"knowledge")
-    return raw
-,
-               lambda m: '\\n\\n'+m.group(1).strip()+'\\n',raw)
-
-    if version=="tabs-r6":
-        return raw
-    # Include every original preview subsection exactly once; only add semantic wrappers.
+    # Include every candidate source subsection exactly once in its semantic tab.
     raw=section(raw,5,methods,"CT"+slug[:2],"method")
     raw=section(raw,3,kt,"CT"+slug[:2],"knowledge")
     return raw
