@@ -168,5 +168,6 @@ def on_page_markdown(markdown, page, config, files):
     if src_path in _NEXT_PILOT_PRACTICE:
         return _interactive_only_next_pilot(src_path)
     if src_path.startswith("kien-thuc/") and src_path.endswith("/index.md"):
-        return _unwrap_topic_actions(markdown)
+        from hooks.knowledge_editorial_r19 import transform
+        return transform(_unwrap_topic_actions(markdown), src_path)
     return markdown
