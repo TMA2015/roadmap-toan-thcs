@@ -21,13 +21,16 @@ with sync_playwright() as p:
     page = context.new_page()
     page.goto(BASE, wait_until="networkidle")
 
-    # Quick nav: the renamed exam section must still map to the canonical #exam card.
-    quick_exam = page.locator('.topic-workspace-nav a[href="#exam"]')
-    assert quick_exam.count() == 1, "missing quick-nav exam link"
-    quick_exam.click()
+    # R19: learner has a compact Knowledge / Dạng bài jump bar, while §6
+    # original entrance-exam notes remain intact as a separate source section.
+    quick_types = page.locator('.topic-workspace-nav a[href="#types"]')
+    assert quick_types.count() == 1, "missing semantic method-section jump"
+    quick_types.click()
+    assert page.locator("#types").evaluate("(el)=>el.open"), "method section not opened"
     exam_card = page.locator("#exam")
-    assert exam_card.count() == 1, "exam card was not created from renamed H2"
-    assert exam_card.evaluate("(el) => el.open"), "quick-nav exam click did not open its section"
+    assert exam_card.count() == 1, "original entrance-exam section lost"
+    exam_card.evaluate("(node)=>node.open=true")
+    assert exam_card.evaluate("(el) => el.open"), "exam section did not open"
 
     # Material right TOC: all top-level source anchors must survive the H2->details transform.
     related = page.locator('.md-sidebar--secondary nav.md-nav--secondary > ul.md-nav__list > li > a[href="#4-kien-thuc-lien-quan"]')
@@ -64,6 +67,11 @@ with sync_playwright() as p:
     calculator = page.locator("details.info", has_text="Máy tính cầm tay – mở khi cần")
     assert calculator.count() == 1, "calculator disclosure missing"
     assert not calculator.evaluate("(el) => el.open"), "calculator note should be closed by default"
+    # Open the concept tab which contains the verified calculator guidance.
+    panel = calculator.locator("xpath=ancestor::*[contains(concat(' ',normalize-space(@class),' '),' tabbed-block ')]")
+    if panel.count():
+        n = panel.evaluate("(node)=>Array.from(node.parentNode.children).indexOf(node)")
+        panel.locator("xpath=ancestor::*[contains(concat(' ',normalize-space(@class),' '),' tabbed-set ')]").locator(".tabbed-labels label").nth(n).click()
     calculator.locator("summary").click()
     assert calculator.evaluate("(el) => el.open"), "calculator disclosure did not open"
     assert "nên hạn chế khi đang học phương pháp" in calculator.inner_text()
