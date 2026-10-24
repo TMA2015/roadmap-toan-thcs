@@ -53,6 +53,14 @@ with sync_playwright() as pw:
             expected=2 if width>=672 else 1
             cols=card.evaluate("(n)=>getComputedStyle(n).gridTemplateColumns.split(' ').length")
             assert cols==expected,(topic,device,"expected responsive columns",cols,expected)
+            if cfg["kind"]=="rules":
+                # Independently verify BOTH source-backed pairs (§3.5 and §3.6A), not just first.
+                for rule_index in (0,1):
+                    rule_pair=cards.nth(rule_index)
+                    assert rule_pair.is_visible(),(topic,device,"source rule pair hidden",rule_index)
+                    assert rule_pair.locator("li").count()==2,(topic,device,"rule omitted",rule_index)
+                    pair_cols=rule_pair.evaluate("(n)=>getComputedStyle(n).gridTemplateColumns.split(' ').length")
+                    assert pair_cols==expected,(topic,device,"responsive rule pair",rule_index,pair_cols,expected)
             for passage in cfg["visible"]:
                 assert passage in content.inner_text(),(topic,device,"original text lost",passage)
             if cfg["kind"]=="compare":
@@ -78,10 +86,12 @@ with sync_playwright() as pw:
                 assert card.is_visible(),(topic,"dark theme hides content")
             print("PASS R17",topic,device,"source text + real figure + responsive pair + print/dark",flush=True)
             page.close()
-        # R17 does not change the Grade-9 official Knowledge routes.
-        other=ctx.new_page()
-        other.goto(BASE+"21-thong-ke/",wait_until="domcontentloaded",timeout=30000)
-        assert other.locator(".mk-r17-compare,.mk-r17-logic-pairs").count()==0,"R17 changed control topic CT21"
-        other.close()
+        # Both Grade-9 SHA-locked official Knowledge routes are negative controls.
+        for control in ("21-thong-ke","23-xac-suat"):
+            other=ctx.new_page()
+            response=other.goto(BASE+control+"/",wait_until="domcontentloaded",timeout=30000)
+            assert response and response.status==200,(control,"original route unavailable")
+            assert other.locator(".mk-r17-compare,.mk-r17-logic-pairs").count()==0,(control,"R17 changed negative-control topic")
+            other.close()
         ctx.close()
     browser.close()
