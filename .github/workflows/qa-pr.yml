@@ -522,15 +522,3 @@ jobs:
           python scripts/test-math-w2b-rich-practice-wave1-browser.py
           python scripts/test-a25-learner-navigation-r1-browser.py
           python scripts/test-class-mixed-g6-preview-browser.py
-      - name: Package visual THPT R0 prototypes for review
-        uses: actions/upload-artifact@v4
-        with:
-          name: math-thpt-r0-four-template-preview
-          path: |
-            docs/qa/thpt-design-system-r0/index.html
-            docs/qa/thpt-design-system-r0/template.css
-            docs/qa/thpt-design-system-r0/template.js
-            docs/qa/thpt-design-system-r0/template-data.js
-            previews/math-thpt-r0-*.png
-          if-no-files-found: error
-          retention-days: 14
