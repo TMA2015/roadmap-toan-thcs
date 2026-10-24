@@ -424,6 +424,11 @@ jobs:
           node scripts/test-topic25-paper-exam-v1.js
       - name: Validate SHA-locked Math Knowledge original Markdown
         run: node scripts/test-math-knowledge-r17-original-source-integrity.js
+      - name: Validate THPT R0 design contract without publishing courses
+        run: |
+          node --check docs/qa/thpt-design-system-r0/template-data.js
+          node --check docs/qa/thpt-design-system-r0/template.js
+          node scripts/test-thpt-template-contract-r0.js
       - name: Build strict static site
         run: mkdocs build --strict
       - name: Validate all 25 knowledge source and image receipts
@@ -457,6 +462,7 @@ jobs:
           python scripts/test-math-knowledge-r17-source-safe-browser.py
           python scripts/test-math-knowledge-r19-semantic-browser.py
           python scripts/test-math-knowledge-r21-visual-browser.py
+          python scripts/test-thpt-template-contract-r0-browser.py
           python scripts/test-math-knowledge-entrance10-r20-browser.py
           python scripts/test-practice-interactive-only-wave6-browser.py
           python scripts/capture-ui-previews.py
