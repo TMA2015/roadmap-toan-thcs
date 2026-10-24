@@ -1,97 +1,73 @@
 #!/usr/bin/env python3
-"""R17 source-preserving progressive display: real MkDocs browser QA, no student-data writes."""
+"""R17→R19: source-safe semantic QA for the two formerly protected pilots.
+R17 original SVG positions are intentionally superseded by R16 independently
+reviewed editorial content; check math & genuine diagrams, not old text posters.
+"""
 import shutil
 from playwright.sync_api import sync_playwright
-
 CHROME=shutil.which("google-chrome") or shutil.which("chromium")
-if not CHROME:
-    raise RuntimeError("Chromium required for R17 source-safe QA")
+if not CHROME:raise RuntimeError("Chromium required")
 BASE="http://127.0.0.1:8765/kien-thuc/"
-SIZES={"desktop":(1365,900),"tablet-sim":(820,1180),"phone":(390,844)}
-TOPICS={
-    "05-7-hang-dang-thuc":{
-        "kind":"compare","figure":"05-02-nhom-binh-phuong.svg",
-        "visible":["Chiều khai triển","Chiều nhận dạng / phân tích","Học sinh cần thành thạo cả hai chiều"]
-    },
-    "14-tam-giac":{
-        "kind":"rules","figure":"14-03-tam-giac-dac-biet-pythagore.svg",
-        "visible":["Quan hệ giữa cạnh và góc đối diện","Góc lớn hơn đối diện cạnh lớn hơn","Cạnh lớn hơn đối diện góc lớn hơn"]
-    }
+CASES={
+"05-7-hang-dang-thuc":{
+  "section":"links","head":"4.2. Hằng đẳng thức dùng theo hai chiều",
+  "visual":"05-05-mo-hinh-dien-tich-binh-phuong-r2.svg",
+  "phrases":["Chiều khai triển","Chiều nhận dạng","thành thạo cả hai chiều"]},
+"14-tam-giac":{
+  "section":"core","head":"3.5. Quan hệ giữa cạnh và góc đối diện",
+  "visual":"14-tam-giac-can-v1.svg",
+  "phrases":["Góc lớn hơn đối diện cạnh lớn hơn",
+             "Cạnh lớn hơn đối diện góc lớn hơn","PA=PB"]}
 }
 with sync_playwright() as pw:
-    browser=pw.chromium.launch(executable_path=CHROME,headless=True,
-        args=["--no-sandbox","--disable-dev-shm-usage"])
-    for device,(width,height) in SIZES.items():
-        ctx=browser.new_context(viewport={"width":width,"height":height})
-        for topic,cfg in TOPICS.items():
-            page=ctx.new_page()
-            errors=[]
-            page.on("pageerror",lambda error:errors.append(str(error)))
-            response=page.goto(BASE+topic+"/",wait_until="domcontentloaded",timeout=30000)
-            assert response and response.status==200,(topic,"original route unavailable")
-            content=page.locator(".md-content__inner.md-typeset")
-            content.wait_for(state="visible",timeout=12000)
-            # The existing learner UI contains 11 native <details> lesson accordions.
-            # CT05's two-direction comparison lives in section 4 (initially collapsed).
-            lesson_section="links" if cfg["kind"]=="compare" else "core"
-            section=page.locator("details.topic-learning-card#"+lesson_section)
-            section.locator("summary").wait_for(state="visible",timeout=12000)
-            if section.get_attribute("open") is None:
-                section.locator("summary").click()
-            assert section.get_attribute("open") is not None,(topic,"lesson section failed to open")
-            selector=".mk-r17-compare" if cfg["kind"]=="compare" else ".mk-r17-logic-pairs"
-            cards=page.locator(selector)
-            if cfg["kind"]=="rules":
-                # CT14 successfully transforms *both* two-rule blocks, §3.5 and §3.6A.
-                assert cards.count()==2,(topic,"both original logical comparisons must remain")
-            else:
-                assert cards.count()==1,(topic,"exactly one two-direction example")
-            card=cards.first
-            card.wait_for(state="visible",timeout=12000)
-            if cfg["kind"]=="rules":
-                assert cards.nth(1).is_visible(),(topic,"second CT14 comparison must remain readable")
-            expected=2 if width>=672 else 1
-            cols=card.evaluate("(n)=>getComputedStyle(n).gridTemplateColumns.split(' ').length")
-            assert cols==expected,(topic,device,"expected responsive columns",cols,expected)
-            if cfg["kind"]=="rules":
-                # Independently verify BOTH source-backed pairs (§3.5 and §3.6A), not just first.
-                for rule_index in (0,1):
-                    rule_pair=cards.nth(rule_index)
-                    assert rule_pair.is_visible(),(topic,device,"source rule pair hidden",rule_index)
-                    assert rule_pair.locator("li").count()==2,(topic,device,"rule omitted",rule_index)
-                    pair_cols=rule_pair.evaluate("(n)=>getComputedStyle(n).gridTemplateColumns.split(' ').length")
-                    assert pair_cols==expected,(topic,device,"responsive rule pair",rule_index,pair_cols,expected)
-            for passage in cfg["visible"]:
-                assert passage in content.inner_text(),(topic,device,"original text lost",passage)
-            if cfg["kind"]=="compare":
-                assert card.locator(".mk-r17-compare-item").count()==2,(topic,"two directions missing")
-                assert card.locator("pre").count()==2,(topic,"original worked expressions missing")
-                assert card.locator(".mk-r17-compare-item").nth(0).inner_text().find("khai triển")>=0
-                assert card.locator(".mk-r17-compare-item").nth(1).inner_text().find("nhận dạng")>=0
-            else:
-                assert card.locator("li").count()==2,(topic,"source list items lost")
-                assert content.locator("img").count()>=2,(topic,"geometric diagrams missing")
-            image=content.locator('img[src*="'+cfg["figure"]+'"]')
-            assert image.count()==1,(topic,"original official infographic unexpectedly hidden")
-            image.scroll_into_view_if_needed()
-            image.evaluate("(img)=>img.decode()",timeout=16000)
-            assert image.evaluate("(img)=>img.complete && img.naturalWidth>100"),(topic,"original visual broken")
-            assert page.evaluate("()=>document.documentElement.scrollWidth<=document.documentElement.clientWidth+2"),(topic,device,"page overflow")
-            assert not errors,(topic,device,"Javascript page errors",errors[:3])
-            if device=="desktop":
-                page.emulate_media(media="print")
-                assert card.is_visible(),(topic,"print must preserve two directions/rules")
-                page.emulate_media(media="screen")
-                page.evaluate("()=>document.documentElement.setAttribute('data-md-color-scheme','slate')")
-                assert card.is_visible(),(topic,"dark theme hides content")
-            print("PASS R17",topic,device,"source text + real figure + responsive pair + print/dark",flush=True)
-            page.close()
-        # Both Grade-9 SHA-locked official Knowledge routes are negative controls.
-        for control in ("21-thong-ke","23-xac-suat"):
-            other=ctx.new_page()
-            response=other.goto(BASE+control+"/",wait_until="domcontentloaded",timeout=30000)
-            assert response and response.status==200,(control,"original route unavailable")
-            assert other.locator(".mk-r17-compare,.mk-r17-logic-pairs").count()==0,(control,"R17 changed negative-control topic")
-            other.close()
-        ctx.close()
-    browser.close()
+ browser=pw.chromium.launch(executable_path=CHROME,headless=True,
+   args=["--no-sandbox","--disable-dev-shm-usage"])
+ for device,(width,height) in {"desktop":(1365,900),"tablet-sim":(820,1180),"phone":(390,844)}.items():
+  ctx=browser.new_context(viewport={"width":width,"height":height})
+  for slug,cfg in CASES.items():
+   page=ctx.new_page();errors=[]
+   page.on("pageerror",lambda e:errors.append(str(e)))
+   response=page.goto(BASE+slug+"/",wait_until="domcontentloaded",timeout=30000)
+   assert response and response.status==200,(slug,"official source route unavailable")
+   root=page.locator(".md-content__inner.math-knowledge-r19")
+   root.wait_for(state="visible",timeout=18000)
+   assert root.locator("details.topic-learning-card").count()==11,(slug,"lost a source section")
+   section=root.locator("details.topic-learning-card#"+cfg["section"])
+   section.locator("summary").wait_for(state="visible")
+   section.evaluate("(node)=>node.open=true")
+   heading=section.locator("h3").filter(has_text=cfg["head"]).first
+   assert heading.count()==1,(slug,"missing reviewed teaching heading")
+   block=heading.locator("xpath=ancestor::*[contains(concat(' ',normalize-space(@class),' '),' tabbed-block ')]")
+   if block.count():
+    idx=block.evaluate("(node)=>Array.from(node.parentNode.children).indexOf(node)")
+    section.locator(".tabbed-set .tabbed-labels label").nth(idx).click()
+   for phrase in cfg["phrases"]:
+    assert phrase in section.text_content(),(slug,"lost approved explanation",phrase)
+   visual=root.locator('img[src*="'+cfg["visual"]+'"]')
+   assert visual.count()==1,(slug,"real conceptual/geometric diagram not retained")
+   # One teaching figure remains legible; a removed text-only summary poster is not a failure.
+   parent=visual.locator("xpath=ancestor::*[contains(concat(' ',normalize-space(@class),' '),' tabbed-block ')]")
+   if parent.count():
+    tab_idx=parent.evaluate("(node)=>Array.from(node.parentNode.children).indexOf(node)")
+    root.locator("#core .tabbed-labels label").nth(tab_idx).click()
+   box=visual.locator("xpath=ancestor::details[contains(@class,'topic-learning-card')]")
+   if box.count():box.evaluate("(node)=>node.open=true")
+   visual.scroll_into_view_if_needed(timeout=15000)
+   visual.evaluate("(img)=>img.decode()",timeout=20000)
+   assert visual.evaluate("(img)=>img.complete && img.naturalWidth>100"),(slug,"actual SVG broken")
+   assert page.evaluate("document.documentElement.scrollWidth<=document.documentElement.clientWidth+2"),(slug,device,"horizontal overflow")
+   assert not errors,(slug,device,"JS page exception",errors[:2])
+   if device=="desktop":
+    page.emulate_media(media="print")
+    assert visual.is_visible(),(slug,"print hides reviewed diagram")
+    page.emulate_media(media="screen")
+    page.evaluate("document.documentElement.setAttribute('data-md-color-scheme','slate')")
+    assert visual.is_visible(),(slug,"dark mode hides reviewed diagram")
+   print("PASS R19 protected-equivalent",slug,device,flush=True)
+   page.close()
+  for neg in ("21-thong-ke","23-xac-suat"):
+   page=ctx.new_page();page.goto(BASE+neg+"/",wait_until="domcontentloaded")
+   assert page.locator(".mk-r17-compare,.mk-r17-logic-pairs").count()==0,(neg,"other topic received CT05/14-specific R17 layout")
+   page.close()
+  ctx.close()
+ browser.close()
