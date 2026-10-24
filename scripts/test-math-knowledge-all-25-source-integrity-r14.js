@@ -31,19 +31,19 @@ const writtenById=new Map(writtenBank.exercises.map(x=>[x.exercise_id.toLowerCas
 assert.equal(writtenById.size,writtenBank.exercises.length,"Duplicate canonical Written ID");
 let verifiedWrittenLinks=0;
 function checkWrittenLinks(candidate,topic){
- const html=[...candidate.matchAll(/\\bhref\\s*=\\s*["']([^"']+)["']/g)].map(m=>m[1]);
- const md=[...candidate.matchAll(/\\]\(([^)]+)\)/g)].map(m=>m[1]);
+ const html=[...candidate.matchAll(/\bhref\s*=\s*["']([^"']+)["']/g)].map(m=>m[1]);
+ const md=[...candidate.matchAll(/\]\(([^)]+)\)/g)].map(m=>m[1]);
  for(const raw of [...html,...md]){
    const href=raw.replaceAll("&amp;","&");
    if(!href.includes("luyen-tap/tu-luan/"))continue;
-   const hash=href.match(/#(wx\\d{2}-[a-z0-9-]+)/i);
+   const hash=href.match(/#(wx\d{2}-[a-z0-9-]+)/i);
    if(!hash)continue; // A general Written-library link is legitimate.
    const id=hash[1].toLowerCase();
    const item=writtenById.get(id);
    assert(item,"Preview has noncanonical Written link "+id+" in "+topic);
    const expected="CT"+topic.slice(0,2);
    assert.equal(item.topic_id,expected,"Written link is attached to wrong topic: "+id);
-   const filter=href.match(/[?&]topic=(CT\\d{2})/i);
+   const filter=href.match(/[?&]topic=(CT\d{2})/i);
    if(filter)assert.equal(filter[1].toUpperCase(),expected,"Written topic filter mismatch for "+id);
    assert.equal(item.academic_review?.status,"APPROVED","Written destination not academically approved: "+id);
    verifiedWrittenLinks++;
