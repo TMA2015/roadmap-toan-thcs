@@ -426,6 +426,11 @@ jobs:
         run: node scripts/test-math-knowledge-r17-original-source-integrity.js
       - name: Build strict static site
         run: mkdocs build --strict
+      - name: Validate all 25 knowledge source and image receipts
+        run: node scripts/test-math-knowledge-all-25-source-integrity-r14.js
+
+      - name: Validate native Knowledge previews (math, visuals, real asset links)
+        run: node scripts/test-math-knowledge-native-render-r3.js
       - name: Validate CĐ25 built display math
         run: node scripts/test-topic25-math-render.js --built
       - name: Validate built topic navigation
@@ -440,6 +445,11 @@ jobs:
           python scripts/test-math-w4-five-written-candidate-browser.py
           python scripts/test-library-two-paths-r1-browser.py
           python scripts/test-math-learner-nav-library-r2-browser.py
+          python scripts/test-math-knowledge-wave2-r9-browser.py
+          python scripts/test-math-knowledge-wave3-r10-browser.py
+          python scripts/test-math-knowledge-wave4-r11-browser.py
+          python scripts/test-math-knowledge-wave5-r12-browser.py
+          python scripts/test-math-knowledge-wave6-r13-browser.py
           python scripts/test-math-knowledge-p2-ct13-14-responsive-browser-20261019.py
           python scripts/test-math-knowledge-r17-source-safe-browser.py
           python scripts/test-practice-interactive-only-wave6-browser.py

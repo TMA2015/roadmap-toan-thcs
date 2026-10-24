@@ -1,0 +1,136 @@
+/* CT10 R5 standalone design extension; this file is linked only by preview-tabs-r5.md. */
+@import url("./math-topic-knowledge-tabs-pilot-r4.css");
+
+body.math-topic-pilot-r4 .md-typeset .math-topic-step-grid{
+  display:grid;grid-template-columns:minmax(0,1fr) 34px minmax(0,1fr);
+  gap:.65rem;align-items:stretch;margin:1rem 0;
+}
+body.math-topic-pilot-r4 .md-typeset .math-topic-step{
+  border:1px solid var(--roadmap-line);border-radius:.8rem;
+  padding:.9rem 1rem;background:var(--roadmap-soft);min-width:0;
+}
+body.math-topic-pilot-r4 .md-typeset .math-topic-step p{margin:.4rem 0;}
+body.math-topic-pilot-r4 .md-typeset .math-topic-step .math-topic-step-label{
+  font-weight:800;color:var(--roadmap-indigo);letter-spacing:.02em;font-size:.75rem;margin:0 0 .7rem;
+}
+body.math-topic-pilot-r4 .md-typeset .math-topic-step .math-topic-step-math{
+  font-size:1.08rem;text-align:center;font-weight:700;padding:.45rem .1rem;
+}
+body.math-topic-pilot-r4 .md-typeset .math-topic-step .math-topic-step-result{
+  text-align:center;font-weight:800;font-size:1.13rem;background:var(--roadmap-surface);
+  border:1px solid var(--roadmap-line);border-radius:.5rem;padding:.4rem .5rem;margin:.4rem 0;
+}
+body.math-topic-pilot-r4 .md-typeset .math-topic-step .math-topic-step-note{
+  font-size:.82rem;color:var(--roadmap-muted);margin:.7rem 0 0;
+}
+body.math-topic-pilot-r4 .md-typeset .math-topic-step-arrow{
+  display:flex;align-items:center;justify-content:center;color:var(--roadmap-indigo);
+  font-size:1.75rem;font-weight:700;
+}
+body.math-topic-pilot-r4 .md-typeset .math-topic-step-conclude{
+  margin:.8rem 0 1rem;font-size:.89rem;
+}
+body.math-topic-pilot-r4 .md-typeset .math-topic-worked-row{
+  display:grid;grid-template-columns:minmax(0,1fr) 20px minmax(0,1fr) 20px minmax(0,1fr);
+  align-items:stretch;gap:.4rem;margin:1rem 0 1.25rem;
+}
+body.math-topic-pilot-r4 .md-typeset .math-topic-worked-row>div{
+  min-width:0;padding:.8rem;border:1px solid var(--roadmap-line);border-radius:.7rem;
+  display:flex;flex-direction:column;gap:.3rem;background:var(--roadmap-soft);
+}
+body.math-topic-pilot-r4 .md-typeset .math-topic-worked-row .math-topic-worked-label{
+  font-size:.73rem;font-weight:700;color:var(--roadmap-indigo);
+}
+body.math-topic-pilot-r4 .md-typeset .math-topic-worked-row strong{
+  font-size:.87rem;line-height:1.45;overflow-wrap:anywhere;
+}
+body.math-topic-pilot-r4 .md-typeset .math-topic-worked-row>div>span:last-child{
+  font-size:.8rem;color:var(--roadmap-muted);
+}
+body.math-topic-pilot-r4 .md-typeset .math-topic-worked-arrow{
+  color:var(--roadmap-indigo);font-size:1.3rem;align-self:center;justify-self:center;
+}
+body.math-topic-pilot-r4 .md-typeset .math-topic-exam-table-wrap{
+  width:100%;overflow-x:auto;max-width:100%;
+}
+body.math-topic-pilot-r4 .md-typeset .math-topic-exam-table{
+  width:100%;min-width:670px;border-collapse:separate;border-spacing:0;
+  font-size:.82rem;line-height:1.45;border:1px solid var(--roadmap-line);
+  border-radius:.7rem;overflow:hidden;
+}
+body.math-topic-pilot-r4 .md-typeset .math-topic-exam-table thead th{
+  padding:.75rem .6rem;text-align:left;background:var(--roadmap-soft);
+  color:var(--roadmap-ink);font-weight:750;
+}
+body.math-topic-pilot-r4 .md-typeset .math-topic-exam-table tbody th,
+body.math-topic-pilot-r4 .md-typeset .math-topic-exam-table tbody td{
+  padding:.65rem .6rem;vertical-align:middle;border-top:1px solid var(--roadmap-line);
+}
+body.math-topic-pilot-r4 .md-typeset .math-topic-exam-table tbody th{
+  font-weight:650;min-width:160px;max-width:290px;
+}
+body.math-topic-pilot-r4 .md-typeset .math-topic-exam-table .math-topic-stars{
+  white-space:nowrap;color:#b97b11;font-size:1rem;letter-spacing:.03em;
+}
+body.math-topic-pilot-r4 .md-typeset .math-topic-exam-table td:nth-child(3){
+  color:var(--roadmap-muted);
+}
+body.math-topic-pilot-r4 .md-typeset .math-topic-exam-actions{
+  display:flex;gap:.3rem;flex-wrap:wrap;min-width:160px;
+}
+body.math-topic-pilot-r4 .md-typeset .math-topic-exam-link{
+  min-height:40px;display:inline-flex;align-items:center;
+  padding:.42rem .55rem;border:1px solid var(--roadmap-line);border-radius:.5rem;
+  background:var(--roadmap-soft);font-size:.76rem;font-weight:700;
+  white-space:normal;text-decoration:none;
+}
+body.math-topic-pilot-r4 .md-typeset .math-topic-exam-link.written{
+  border-color:var(--roadmap-indigo);
+}
+body.math-topic-pilot-r4 .md-typeset .math-topic-exam-link:focus-visible{
+  outline:3px solid var(--roadmap-indigo);outline-offset:2px;
+}
+body.math-topic-pilot-r4 .md-typeset .math-topic-exam-pending{
+  display:inline-block;font-size:.75rem;color:var(--roadmap-muted);font-style:italic;
+}
+@media(max-width:720px){
+  body.math-topic-pilot-r4 .md-typeset .math-topic-step-grid{
+    grid-template-columns:1fr;gap:.3rem;
+  }
+  body.math-topic-pilot-r4 .md-typeset .math-topic-step-arrow{transform:rotate(90deg);min-height:28px;font-size:1.2rem;}
+  body.math-topic-pilot-r4 .md-typeset .math-topic-worked-row{
+    grid-template-columns:1fr;gap:.15rem;
+  }
+  body.math-topic-pilot-r4 .md-typeset .math-topic-worked-arrow{transform:rotate(90deg);min-height:24px;}
+  body.math-topic-pilot-r4 .md-typeset .math-topic-exam-table{min-width:0;border:0;background:none;}
+  body.math-topic-pilot-r4 .md-typeset .math-topic-exam-table thead{display:none;}
+  body.math-topic-pilot-r4 .md-typeset .math-topic-exam-table tbody{
+    display:grid;grid-template-columns:1fr;gap:.75rem;
+  }
+  body.math-topic-pilot-r4 .md-typeset .math-topic-exam-table tbody tr{
+    border:1px solid var(--roadmap-line);border-radius:.75rem;
+    display:grid;grid-template-columns:1fr;gap:.45rem;padding:.85rem;
+    background:var(--roadmap-surface);
+  }
+  body.math-topic-pilot-r4 .md-typeset .math-topic-exam-table tbody th,
+  body.math-topic-pilot-r4 .md-typeset .math-topic-exam-table tbody td{
+    border:0;padding:0;max-width:none;min-width:0;width:100%;display:block;
+  }
+  body.math-topic-pilot-r4 .md-typeset .math-topic-exam-table tbody th{font-weight:800;}
+  body.math-topic-pilot-r4 .md-typeset .math-topic-exam-table tbody td:nth-child(3){
+    font-size:.8rem;
+  }
+  body.math-topic-pilot-r4 .md-typeset .math-topic-exam-table tbody td:nth-child(3)::before{
+    content:"Vị trí: ";font-weight:700;color:var(--roadmap-ink);
+  }
+  body.math-topic-pilot-r4 .md-typeset .math-topic-exam-table .math-topic-stars{
+    font-size:.85rem;
+  }
+  body.math-topic-pilot-r4 .md-typeset .math-topic-exam-actions{min-width:0;}
+  body.math-topic-pilot-r4 .md-typeset .math-topic-exam-link{min-height:44px;}
+}
+@media print{
+  body.math-topic-pilot-r4 .md-typeset .math-topic-exam-table tbody tr{break-inside:avoid;}
+  body.math-topic-pilot-r4 .md-typeset .math-topic-step-grid{grid-template-columns:1fr 24px 1fr;}
+  body.math-topic-pilot-r4 .md-typeset .math-topic-worked-row{grid-template-columns:1fr 16px 1fr 16px 1fr;}
+}

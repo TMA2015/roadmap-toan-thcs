@@ -1,0 +1,453 @@
+> **BẢN THỬ R13 — CHƯA PHÁT HÀNH:** Toàn bộ bài giảng dùng nguồn hiện có; chỉ đổi cách đọc, vai trò infographic và liên kết luyện tập. Ngân hàng câu hỏi và dữ liệu học sinh không thay đổi.
+
+<link rel="stylesheet" href="../../../assets/stylesheets/math-knowledge-composition-v1.css">
+
+# Chuyên đề 22 – Các đại lượng đặc trưng của dữ liệu
+
+> **Vai trò:** THPT-Bridge – kiến thức chuyển tiếp lên Toán 10, tự chọn sau khi vững CĐ21.
+>
+> **Nền tảng đã học:** trung bình cộng cơ bản từ Toán 4; tần số và biểu đồ được học theo phần KNTT tương ứng. Toán 10 KNTT Chương V, Bài 13–14 hệ thống hóa các số đặc trưng thống kê.
+>
+> **Phân tầng:** không thuộc Core Readiness bắt buộc của Toán THCS; không khóa tiến độ tới CĐ23.
+>
+> **Mạch kiến thức:** Thống kê · Chuyển tiếp THPT
+
+---
+
+!!! info "Không nhầm kiến thức nền với chương thống kê lớp 10"
+    Trung bình cộng cơ bản được học từ Toán 4 KNTT (Bài 46). Tại CĐ22, ta sử dụng số trung bình cùng trung vị, mốt và khoảng biến thiên để phân tích mẫu dữ liệu theo định hướng Toán 10 KNTT (Chương V, Bài 13–14). Không suy từ việc đã học phép tính trung bình cộng rằng cả CĐ22 là nội dung bắt buộc của THCS.
+
+## 🧭 1. Bản đồ kiến thức
+
+```text
+ĐẠI LƯỢNG ĐẶC TRƯNG CỦA DỮ LIỆU
+│
+├── Số trung bình cộng
+│   ├── dữ liệu thô
+│   └── dữ liệu có tần số
+│
+├── Trung vị
+│   ├── số phần tử lẻ
+│   └── số phần tử chẵn
+│
+├── Mốt
+│   └── giá trị xuất hiện nhiều nhất
+│
+├── Mức độ phân tán đơn giản
+│   └── khoảng biến thiên = lớn nhất - nhỏ nhất
+│
+└── Chọn đại lượng phù hợp
+    ├── dữ liệu ổn định → trung bình
+    ├── có ngoại lai → cân nhắc trung vị
+    └── cần giá trị phổ biến → mốt
+```
+
+Mạch tư duy trọng tâm:
+
+**sắp xếp dữ liệu → tính đúng đại lượng → so sánh → chọn đại lượng đại diện hợp lý → giải thích bằng ngữ cảnh.**
+
+---
+
+## Minh họa trực quan
+
+### 1. Số trung bình cộng
+
+<p align="center">
+  <img src="../../../assets/statistics/22/22-trung-binh.svg"
+       alt="Minh họa số trung bình cộng"
+       width="560">
+</p>
+
+> Số trung bình cộng cho biết mức “trung bình” của một bộ dữ liệu.
+
+Công thức:
+
+`Số trung bình = tổng các giá trị / số lượng giá trị`
+
+Ví dụ trong hình:
+
+- tổng các giá trị là `56`;
+- có `7` giá trị;
+- nên số trung bình là `56 / 7 = 8`.
+
+---
+
+### 2. Trung vị và mốt
+
+<p align="center">
+  <img src="../../../assets/statistics/22/22-trung-vi-mot.svg"
+       alt="Minh họa trung vị và mốt"
+       width="560">
+</p>
+
+> **Trung vị** là giá trị đứng giữa sau khi dữ liệu đã được sắp xếp theo thứ tự.
+
+> **Mốt** là giá trị xuất hiện nhiều nhất trong bộ dữ liệu.
+
+Trong ví dụ:
+
+- dữ liệu đã sắp xếp là `5, 6, 7, 7, 7, 8, 10`;
+- giá trị ở giữa là `7` nên **trung vị = 7**;
+- giá trị xuất hiện nhiều nhất cũng là `7` nên **mốt = 7**.
+
+Lưu ý:
+
+- muốn tìm trung vị, luôn phải **sắp xếp dữ liệu trước**;
+- một bộ dữ liệu có thể có **một hoặc nhiều mốt**; nếu nhiều giá trị cùng đạt tần số lớn nhất thì tất cả các giá trị đó đều là mốt. Khi các tần số bằng nhau, mốt thường không giúp phân biệt giá trị nào là phổ biến hơn.
+
+---
+
+### 3. Ảnh hưởng của giá trị ngoại lai
+
+<p align="center">
+  <img src="../../../assets/statistics/22/22-ngoai-lai.svg"
+       alt="Minh họa ảnh hưởng của giá trị ngoại lai"
+       width="560">
+</p>
+
+> Trong Roadmap, **giá trị ngoại lai** được hiểu ở mức trực quan là một giá trị khác biệt rõ rệt so với phần lớn các giá trị còn lại. Việc xác định ngoại lai bằng tiêu chí định lượng cụ thể sẽ được xem là nội dung mở rộng.
+
+Trong hình:
+
+- Bộ A: `7, 8, 8, 9, 9` có trung bình `8,2` và trung vị `8`;
+- Bộ B: `7, 8, 8, 9, 30` có trung bình `12,4` nhưng trung vị vẫn là `8`.
+
+Nhận xét quan trọng:
+
+> Giá trị ngoại lai có thể làm **số trung bình thay đổi mạnh**, nhưng thường **ít ảnh hưởng hơn đến trung vị**.
+
+---
+
+### Khi nào nên dùng đại lượng nào?
+
+| Đại lượng | Ý nghĩa | Phù hợp khi nào? |
+|---|---|---|
+| Số trung bình cộng | Giá trị trung bình chung | Dữ liệu khá ổn định, không có ngoại lai quá lớn |
+| Trung vị | Giá trị đứng giữa | Dữ liệu có ngoại lai hoặc cần mức “điển hình” |
+| Mốt | Giá trị xuất hiện nhiều nhất | Cần biết giá trị phổ biến nhất |
+
+---
+
+### Bảng so sánh nhanh
+
+| Đại lượng | Cách tìm | Ưu điểm | Hạn chế |
+|---|---|---|---|
+| Trung bình | Cộng tất cả rồi chia cho số phần tử | Dễ tính, dùng nhiều | Nhạy với ngoại lai |
+| Trung vị | Sắp xếp rồi lấy giá trị giữa | Ít bị ảnh hưởng bởi ngoại lai | Không phản ánh hết mọi giá trị |
+| Mốt | Tìm giá trị xuất hiện nhiều nhất | Dễ hiểu, trực quan | Có thể có nhiều mốt |
+
+---
+
+### Mẹo làm bài
+
+- Với **trung bình**, nhớ tính đúng tổng rồi chia đúng số phần tử.
+- Với **trung vị**, phải sắp xếp dữ liệu trước.
+- Với **mốt**, kiểm tra giá trị nào lặp lại nhiều nhất.
+- Khi đề bài có một giá trị quá lớn hoặc quá nhỏ, hãy nghĩ ngay đến **ngoại lai**.
+- Nếu đề yêu cầu “giá trị đại diện hợp lý hơn”, nhiều khi **trung vị** là lựa chọn tốt hơn trung bình.
+
+---
+
+### Quy trình xử lý dữ liệu trong bài toán thực tế
+
+```text
+Thu thập dữ liệu
+      ↓
+Sắp xếp dữ liệu
+      ↓
+Tính trung bình / tìm trung vị / tìm mốt
+      ↓
+So sánh các kết quả
+      ↓
+Chọn đại lượng phù hợp để nhận xét
+```
+
+---
+
+## 🎯 2. Mục tiêu cần đạt
+
+Sau khi hoàn thành chuyên đề, học sinh cần:
+
+- [ ] Tính đúng số trung bình cộng của một bộ dữ liệu.
+- [ ] Tính được số trung bình khi dữ liệu được cho bằng bảng tần số.
+- [ ] Tìm đúng trung vị khi số phần tử là lẻ hoặc chẵn.
+- [ ] Xác định đúng mốt của dữ liệu.
+- [ ] Nhận biết ảnh hưởng của giá trị ngoại lai.
+- [ ] Biết dùng khoảng biến thiên để mô tả mức độ phân tán đơn giản.
+- [ ] Chọn và giải thích được đại lượng đại diện phù hợp với tình huống.
+
+---
+
+## 📖 3. Kiến thức chuyển tiếp Toán 10
+
+### 3.1. Số trung bình cộng
+
+Với dữ liệu:
+
+`x₁, x₂, ..., xₙ`
+
+số trung bình cộng là:
+
+`x̄ = (x₁ + x₂ + ... + xₙ) / n`
+
+Số trung bình sử dụng **tất cả giá trị** trong bộ dữ liệu nên phản ánh mức chung khá tốt khi dữ liệu không có ngoại lai quá mạnh.
+
+### 3.2. Số trung bình từ bảng tần số
+
+Nếu giá trị `xᵢ` xuất hiện `nᵢ` lần thì:
+
+`x̄ = (x₁n₁ + x₂n₂ + ... + xₖnₖ) / (n₁ + n₂ + ... + nₖ)`
+
+Ví dụ:
+
+| Điểm | 6 | 7 | 8 |
+|---|---:|---:|---:|
+| Tần số | 2 | 3 | 5 |
+
+Khi đó:
+
+`x̄ = (6×2 + 7×3 + 8×5) / 10 = 7,3`
+
+### 3.3. Trung vị
+
+Trước tiên phải **sắp xếp dữ liệu** theo thứ tự tăng hoặc giảm.
+
+- Nếu có số phần tử lẻ, trung vị là giá trị chính giữa.
+- Nếu có số phần tử chẵn, trung vị là trung bình cộng của hai giá trị chính giữa.
+
+Ví dụ:
+
+`4, 6, 7, 8, 10`
+
+→ trung vị là `7`.
+
+Với:
+
+`4, 6, 7, 8, 10, 12`
+
+→ trung vị là:
+
+`(7 + 8)/2 = 7,5`
+
+### 3.4. Mốt
+
+Mốt là giá trị có **tần số lớn nhất** trong bộ dữ liệu.
+
+Một bộ dữ liệu:
+- có thể có một mốt;
+- có thể có nhiều mốt nếu nhiều giá trị cùng có tần số lớn nhất;
+- khi mọi giá trị có cùng tần số, mốt không tạo ra một giá trị nổi bật để đại diện cho mức phổ biến.
+
+### 3.5. Khoảng biến thiên
+
+Một cách đơn giản để mô tả độ phân tán của dữ liệu là:
+
+`R = giá trị lớn nhất - giá trị nhỏ nhất`
+
+Khoảng biến thiên càng lớn thì dữ liệu trải rộng hơn.
+
+Ví dụ:
+
+`5, 6, 7, 8, 9`
+
+có:
+
+`R = 9 - 5 = 4`
+
+### 3.6. Giá trị ngoại lai
+
+Ở mức trực quan, một giá trị khác biệt rõ rệt so với phần lớn dữ liệu có thể được xem là giá trị ngoại lai. Giá trị như vậy có thể làm số trung bình thay đổi mạnh.
+
+Ví dụ, cùng bộ dữ liệu **7, 8, 8, 9, 30** cho hai đại lượng rất khác nhau:
+
+| **Số trung bình cộng** | **Trung vị** |
+|:---:|:---:|
+| $\dfrac{7+8+8+9+30}{5}=12{,}4$ | $8$ |
+
+Do giá trị ngoại lai $30$, số trung bình bị kéo lên; **trung vị thường mô tả mức điển hình tốt hơn trung bình** trong tình huống này.
+
+<div class="math-composition"><nav class="math-related-practice" aria-label="Bài luyện áp dụng">
+<span>Thực hành nội dung vừa học:</span>
+<a href="../bai-tap/?mode=remediation&amp;focus=so-sanh-trung-binh-trung-vi">Luyện ngay →</a>
+</nav></div>
+
+### 3.6A. Phương sai và độ lệch chuẩn — nhìn sâu hơn số trung bình (mở rộng Toán 10)
+
+**Khoảng biến thiên** chỉ dùng hai giá trị lớn nhất và nhỏ nhất. Để xét các giá trị phân tán quanh trung bình \(\bar x\) đến đâu, ta có thể dùng **phương sai** và **độ lệch chuẩn**.
+
+Với toàn bộ bộ dữ liệu \(x_1,\ldots,x_n\), \(n>0\), đặt:
+
+\[
+s^2=\frac{(x_1-\bar x)^2+\cdots+(x_n-\bar x)^2}{n},\qquad s=\sqrt{s^2}.
+\]
+
+- **Phương sai** là trung bình của các bình phương độ lệch so với \(\bar x\), nên không âm và có đơn vị bình phương.
+- **Độ lệch chuẩn** lấy căn bậc hai của phương sai; nó có **cùng đơn vị** với dữ liệu ban đầu. Khi so sánh dữ liệu cùng thang đo, độ lệch chuẩn lớn hơn thường có nghĩa là dữ liệu phân tán hơn.
+
+**Ví dụ — hai bộ dữ liệu có cùng số trung bình:**
+
+| Nhóm | Bốn quan sát | Trung bình | Phương sai | Độ lệch chuẩn |
+|---|---|---:|---:|---:|
+| A | \(5,5,7,7\) | \(6\) | \((1+1+1+1)/4=1\) | \(1\) |
+| B | \(4,4,8,8\) | \(6\) | \((4+4+4+4)/4=4\) | \(2\) |
+
+Cả hai có **trung bình 6**, nhưng các quan sát trong nhóm B cách trung bình xa hơn. Do đó, **chỉ biết số trung bình chưa đủ** để mô tả đặc điểm phân tán của dữ liệu.
+
+> **Phân tầng:** Đây là kiến thức **tự chọn chuẩn bị Toán 10**, không phải yêu cầu bắt buộc của phần ôn thi vào lớp 10. Công thức chia cho \(n\) dùng để mô tả **toàn bộ bộ dữ liệu đang xét**, không phải công thức ước lượng phương sai mẫu chia \(n-1\).
+
+### 3.7. Chọn đại lượng nào?
+
+| Mục tiêu | Đại lượng ưu tiên |
+|---|---|
+| Mức chung của dữ liệu ổn định | Trung bình |
+| Giá trị điển hình khi có ngoại lai | Trung vị |
+| Giá trị phổ biến nhất | Mốt |
+| Mức trải rộng đơn giản | Khoảng biến thiên |
+
+Không nên chỉ tính toán; cần giải thích vì sao đại lượng đó phù hợp với ngữ cảnh.
+
+---
+
+## 🔗 4. Kiến thức liên quan
+
+- **Kiến thức nên ôn trước:** [21 – Thống kê và thu thập dữ liệu](../21-thong-ke/index.md)
+- **Liên hệ mạnh:** bảng tần số, tần suất, phần trăm.
+- **Chuyên đề sử dụng tiếp:** [24 – Bài toán thực tế](../24-bai-toan-thuc-te/index.md), [25 – Tổng hợp ôn thi vào 10](../25-tong-hop-on-thi-10/index.md)
+
+---
+
+## 🧩 5. Các dạng bài cần nắm vững
+
+### Dạng 1. Tính số trung bình của dữ liệu thô
+
+Cộng tất cả giá trị rồi chia đúng số phần tử.
+
+### Dạng 2. Tính số trung bình từ bảng tần số
+
+Nhân từng giá trị với tần số trước khi cộng.
+
+### Dạng 3. Tìm trung vị
+
+Sắp xếp dữ liệu, sau đó xác định vị trí giữa.
+
+### Dạng 4. Tìm mốt
+
+Đếm tần số và chọn giá trị xuất hiện nhiều nhất.
+
+### Dạng 5. Tính khoảng biến thiên
+
+Dùng:
+
+`R = max - min`
+
+### Dạng 6. So sánh hai bộ dữ liệu
+
+So sánh trung bình, trung vị, mốt hoặc khoảng biến thiên tùy câu hỏi.
+
+### Dạng 7. Chọn đại lượng đại diện hợp lý
+
+Đặc biệt chú ý dữ liệu có ngoại lai; không mặc định trung bình luôn là lựa chọn tốt nhất.
+
+---
+
+## 🚀 6. Bài tập chuyển tiếp lên Toán 10
+
+Trong Roadmap ôn thi vào lớp 10, nhóm kiến thức này được xếp ở mức ưu tiên cao vừa phải và nên luyện cùng bảng, biểu đồ và bài toán dữ liệu thực tế.
+
+Các kỹ năng cần chắc:
+1. Tính số trung bình từ dữ liệu hoặc bảng tần số.
+2. Tìm trung vị sau khi sắp xếp.
+3. Nhận biết mốt.
+4. So sánh các đại lượng giữa hai nhóm.
+5. Giải thích ảnh hưởng của ngoại lai.
+6. Chọn đại lượng đại diện phù hợp với ngữ cảnh.
+
+**Phạm vi:** học mở rộng/chuẩn bị Toán 10; không coi các dạng này là yêu cầu bắt buộc của bài thi vào 10.
+
+---
+
+## ⚠️ 7. Lỗi sai thường gặp
+
+| Lỗi sai | Cách tránh |
+|---|---|
+| Chia tổng cho sai số phần tử | Đếm lại số quan sát hoặc tổng tần số |
+| Tính trung bình từ bảng nhưng quên nhân tần số | Dùng `giá trị × tần số` |
+| Tìm trung vị khi chưa sắp xếp | Luôn sắp xếp trước |
+| Số phần tử chẵn nhưng lấy một giá trị giữa | Phải lấy trung bình của hai giá trị giữa |
+| Nhầm mốt với trung bình | Mốt là giá trị có tần số lớn nhất |
+| Bỏ qua ngoại lai khi nhận xét | So sánh trung bình và trung vị |
+| Chỉ nêu con số mà không giải thích | Kết luận theo ngữ cảnh dữ liệu |
+
+---
+
+## 📝 8. Luyện tập
+
+### Mức 1 – Nhận biết
+
+1. Nêu công thức tính số trung bình cộng.
+2. Muốn tìm trung vị phải làm gì trước?
+3. Mốt là gì?
+4. Khoảng biến thiên được tính như thế nào?
+
+### Mức 2 – Thông hiểu
+
+5. Tính trung bình của `6, 7, 8, 8, 9`.
+6. Tìm trung vị của `3, 5, 7, 8, 10`.
+7. Tìm trung vị của `2, 4, 6, 8, 10, 12`.
+8. Tìm mốt của `4, 5, 5, 6, 7, 5, 8`.
+
+### Mức 3 – Vận dụng
+
+9. Bảng tần số có các giá trị `6, 7, 8` với tần số `2, 3, 5`. Tính số trung bình.
+10. So sánh hai bộ dữ liệu có cùng trung bình nhưng khoảng biến thiên khác nhau.
+11. Với dữ liệu `7, 8, 8, 9, 30`, hãy tính trung bình, trung vị và nhận xét đại lượng nào đại diện hợp lý hơn.
+
+### Mức 4 – Tổng hợp
+
+12. Cho bảng điểm của hai lớp. Hãy tính trung bình và trung vị rồi đưa ra nhận xét có căn cứ.
+13. Một bộ dữ liệu bị nhập nhầm một giá trị rất lớn. Hãy phân tích đại lượng nào bị ảnh hưởng mạnh nhất và giải thích.
+
+---
+
+## ✅ 9. Tự kiểm tra
+
+Hãy tự trả lời không nhìn tài liệu:
+
+1. Công thức số trung bình là gì?
+2. Khi dữ liệu có tần số, phải tính trung bình như thế nào?
+3. Trung vị của dữ liệu có số phần tử chẵn được xác định ra sao?
+4. Mốt là đại lượng nào?
+5. Khoảng biến thiên cho biết điều gì?
+6. Ngoại lai ảnh hưởng mạnh hơn đến trung bình hay trung vị?
+7. Khi nào trung vị có thể phù hợp hơn trung bình?
+8. Một bộ dữ liệu có thể có nhiều mốt không?
+
+**Tự đánh giá:** nếu còn sai, xem lại ví dụ và luyện thêm; kết quả không tính vào Core Readiness THCS.
+
+---
+
+## 🔄 10. Liên kết Roadmap
+
+- **← Trước:** [21 – Thống kê và thu thập dữ liệu](../21-thong-ke/index.md)
+- **→ Tiếp theo:** [23 – Xác suất](../23-xac-suat/index.md)
+- **→ Liên hệ:** [24 – Bài toán thực tế](../24-bai-toan-thuc-te/index.md)
+- **→ Tổng hợp:** [25 – Ôn thi vào 10](../25-tong-hop-on-thi-10/index.md)
+
+- **✏️ Luyện tập:** [Bài tập Chuyên đề 22](bai-tap.md)
+- **✅ Tự kiểm tra:** [Tự kiểm tra Chuyên đề 22](tu-kiem-tra.md)
+
+Xem toàn bộ hệ thống tại [Blueprint 25 chuyên đề](../../roadmap/blueprint-25-chuyen-de.md).
+
+---
+
+## 🏁 11. Điều kiện hoàn thành
+
+**Checklist tự chọn cho người học cầu nối Toán 10:**
+
+- [ ] Tính đúng trung bình từ dữ liệu thô và bảng tần số.
+- [ ] Tìm đúng trung vị với cả số phần tử lẻ và chẵn.
+- [ ] Xác định đúng mốt.
+- [ ] Tính được khoảng biến thiên.
+- [ ] Nhận biết được ảnh hưởng của ngoại lai.
+- [ ] Chọn được đại lượng đại diện phù hợp và giải thích được lý do.
+- [ ] Chữa lại câu còn sai; có thể chuyển sang Chuyên đề 23 bất kể kết quả tại đây, vì CĐ22 là nhánh chuyển tiếp không bắt buộc.
