@@ -98,13 +98,17 @@
         tabs.setAttribute("role","tablist");tabs.setAttribute("aria-label",zone==="core"?"Các nhóm kiến thức":"Các nhóm dạng bài");
         function choose(i,updateUrl=false,focus=false){
           const inp=inputs[i];if(!inp)return;
+          // An already-active tab is a no-op for navigation history, even if
+          // Material's native label/radio handler changes the URL hash.
+          // Otherwise tapping the active label can create a phantom Back step.
+          const wasSelected=inp.checked;
           inp.checked=true;inp.dispatchEvent(new Event("change",{bubbles:true}));
           labels.forEach((l,n)=>{l.setAttribute("aria-selected",String(i===n));l.tabIndex=n===i?0:-1});
           pages.forEach((p,n)=>{p.hidden=n!==i;p.setAttribute("aria-hidden",String(n!==i))});
           footers.forEach((f,n)=>{f.hidden=n!==i});
           if(focus)labels[i].focus();
           // Re-selecting the active deep link must not add phantom Back entries.
-          if(updateUrl && location.hash!=="#"+key+"-"+(i+1))history.pushState({mkTab:key}, "", "#"+key+"-"+(i+1));
+          if(updateUrl && !wasSelected && location.hash!=="#"+key+"-"+(i+1))history.pushState({mkTab:key}, "", "#"+key+"-"+(i+1));
           if(window.MathJax?.typesetPromise)window.MathJax.typesetPromise([panels[i]]).catch(()=>{});
         }
         const pages=panels,footers=[];
