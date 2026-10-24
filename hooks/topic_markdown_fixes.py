@@ -176,5 +176,16 @@ def on_page_markdown(markdown, page, config, files):
             "math_knowledge_editorial_r19", Path(__file__).with_name("knowledge_editorial_r19.py"))
         module = importlib.util.module_from_spec(spec)
         spec.loader.exec_module(module)
-        return _unwrap_topic_actions(module.transform(markdown, src_path))
+        view = module.transform(markdown, src_path)
+        topic_id = "CT" + src_path.split("/")[1][:2]
+        if topic_id not in ("CT01", "CT10"):
+            # CT10 already has its real 10-row Entrance10 action table from R4.
+            # The other §6 editorial links are validated against real banks.
+            exam_spec = importlib.util.spec_from_file_location(
+                "math_entrance10_links_r20",
+                Path(__file__).with_name("entrance10_links_r20.py"))
+            exam_module = importlib.util.module_from_spec(exam_spec)
+            exam_spec.loader.exec_module(exam_module)
+            view = exam_module.augment_exam_links(view, topic_id)
+        return _unwrap_topic_actions(view)
     return markdown
