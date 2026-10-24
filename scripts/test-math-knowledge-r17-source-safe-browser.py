@@ -40,8 +40,16 @@ with sync_playwright() as pw:
                 section.locator("summary").click()
             assert section.get_attribute("open") is not None,(topic,"lesson section failed to open")
             selector=".mk-r17-compare" if cfg["kind"]=="compare" else ".mk-r17-logic-pairs"
-            card=page.locator(selector)
+            cards=page.locator(selector)
+            if cfg["kind"]=="rules":
+                # CT14 successfully transforms *both* two-rule blocks, §3.5 and §3.6A.
+                assert cards.count()==2,(topic,"both original logical comparisons must remain")
+            else:
+                assert cards.count()==1,(topic,"exactly one two-direction example")
+            card=cards.first
             card.wait_for(state="visible",timeout=12000)
+            if cfg["kind"]=="rules":
+                assert cards.nth(1).is_visible(),(topic,"second CT14 comparison must remain readable")
             expected=2 if width>=672 else 1
             cols=card.evaluate("(n)=>getComputedStyle(n).gridTemplateColumns.split(' ').length")
             assert cols==expected,(topic,device,"expected responsive columns",cols,expected)
