@@ -313,14 +313,15 @@ Nhiều bài không thể giải chỉ bằng một bước.
 
 Quy trình nên thử:
 
-| Bước | Tự hỏi để chọn công cụ |
+| Chặng | Câu hỏi / việc cần kiểm tra |
 |:---:|:---|
-| **1** | Có **nhân tử chung** không? |
-| **2** | Có nhận ra **hằng đẳng thức** không? |
-| **3** | Có thể **nhóm hạng tử** để tạo nhân tử chung không? |
-| **4** | Sau khi phân tích, **còn phân tích tiếp được không?** |
+| **1 · Nhân tử chung** | Có **nhân tử chung** không? Nếu có, thường đặt ra ngoài trước. |
+| **2 · Hằng đẳng thức** | Có nhận ra **hằng đẳng thức** không? |
+| **3 · Nhóm hạng tử** | Có thể **nhóm hạng tử** để tạo nhân tử chung không? |
+| **4 · Phối hợp** | Nếu chưa hoàn tất, có thể dùng **kết hợp nhiều phương pháp** không? |
+| **5 · Kiểm tra** | Nhân ngược để kiểm tra và xem **còn phân tích tiếp được không**. |
 
-**Thực hiện theo thứ tự:** 1 → 2 → 3 → 4; mỗi bước là câu hỏi để lựa chọn cách giải, không phải yêu cầu bắt buộc áp dụng đủ bốn phương pháp.
+**Cách đọc:** Đây là năm điểm kiểm tra để **lựa chọn phương pháp**, không phải yêu cầu phải dùng cả năm thao tác trong mọi bài. Bảng này tương ứng với sơ đồ chọn phương pháp minh họa phía trên.
 
 Ví dụ:
 
