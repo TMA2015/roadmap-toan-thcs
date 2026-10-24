@@ -101,7 +101,8 @@
           pages.forEach((p,n)=>{p.hidden=n!==i;p.setAttribute("aria-hidden",String(n!==i))});
           footers.forEach((f,n)=>{f.hidden=n!==i});
           if(focus)labels[i].focus();
-          if(updateUrl)history.pushState({mkTab:key}, "", "#"+key+"-"+(i+1));
+          // Re-selecting the active deep link must not add phantom Back entries.
+          if(updateUrl && location.hash!=="#"+key+"-"+(i+1))history.pushState({mkTab:key}, "", "#"+key+"-"+(i+1));
           if(window.MathJax?.typesetPromise)window.MathJax.typesetPromise([panels[i]]).catch(()=>{});
         }
         const pages=panels,footers=[];
