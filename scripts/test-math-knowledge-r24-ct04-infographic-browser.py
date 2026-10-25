@@ -58,6 +58,11 @@ with sync_playwright() as pw:
         assert table.locator("tr").count() == 4, (device, "all three examples required")
         assert table.locator("tr").first.locator("th").count() == 2, (
             device, "not a two-column comparison")
+        assert table.locator("a").count() == 0, (
+            device, "unverified modelling example acquired a fake practice link")
+        canonical = section.locator("table").filter(has_text="Nhận biết đơn thức, đa thức")
+        assert canonical.count() == 1 and canonical.first.locator("a").count() == 11, (
+            device, "existing 11 verified method CTAs were lost or multiplied")
         assert page.evaluate(
             "document.documentElement.scrollWidth <= document.documentElement.clientWidth + 2"
         ), (device, "horizontal document overflow")
