@@ -332,6 +332,8 @@ Sau khi có đồng dạng, viết đúng tỉ số các cạnh tương ứng.
 
 Biến hệ thức tích thành tỉ số, sau đó tìm hai tam giác đồng dạng thích hợp.
 
+**Ví dụ đổi hệ thức tích về tỉ số (từ infographic gốc 17-04):** Với các đoạn thẳng có độ dài dương, muốn chứng minh `AB·CD = EF·GH`, ta có thể đổi tương đương thành `AB/EF = GH/CD` (vì `EF` và `CD` khác `0`). Sau đó tìm hai tam giác đồng dạng tạo đúng hai tỉ số tương ứng; không được tự ý đổi thứ tự cạnh.
+
 ### Dạng 7. Bài tổng hợp
 
 Kết hợp song song → góc bằng nhau → đồng dạng → tỉ lệ → kết luận.

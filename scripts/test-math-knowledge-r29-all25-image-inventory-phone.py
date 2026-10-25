@@ -88,6 +88,14 @@ assert "Số âm nên đặt trong ngoặc" in source04_03
 for cue in ("Thay số âm phải đặt trong ngoặc", "P(-2) = (-2)² - 3·(-2) + 2 = 4 + 6 + 2 = 12", "(-2)² = 4", "-2² = -(2²) = -4"):
     assert cue in ct04, ("CT04 04-02/03 negative substitution caution lost", cue)
 print("PASS R31 focused CT04 old-poster negative-substitution guard", flush=True)
+# R32: the old CT17 17-04 poster contains a concrete product-to-ratio
+# conversion, not just a generic instruction to use similarity.
+source17_04 = Path("docs/assets/infographics/17/17-04-dang-bai-he-thuc-loi-sai.svg").read_text(encoding="utf-8")
+ct17 = Path("docs/kien-thuc/17-thales-dong-dang/preview-composition-r12.md").read_text(encoding="utf-8")
+assert "AB·CD = EF·GH" in source17_04 and "AB/EF = GH/CD" in source17_04
+for cue in ("AB·CD = EF·GH", "AB/EF = GH/CD", "EF` và `CD` khác `0"):
+    assert cue in ct17, ("CT17 17-04 product-to-ratio worked cue lost", cue)
+print("PASS R32 focused CT17 17-04 old-poster product-ratio guard", flush=True)
 ct19 = Path("docs/kien-thuc/19-duong-tron/preview-composition-r12.md").read_text(encoding="utf-8")
 for cue in ("PT² = PA × PB", "đoạn ngoài", "giao điểm xa",
             "không lấy riêng đoạn `AB` thay cho `PB`"):
