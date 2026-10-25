@@ -168,6 +168,18 @@
   padding:.3rem .5rem;
   white-space:normal;
 }
+.md-content__inner.math-knowledge-r19 #exam .mk-exam-method-note {
+  margin:.55rem 0 .3rem;padding:.45rem .6rem;
+  border-left:3px solid var(--mk21-accent,var(--md-primary-fg-color));
+  background:var(--mk21-soft,var(--md-code-bg-color));
+  border-radius:.4rem;
+}
+.md-content__inner.math-knowledge-r19 #exam .mk-exam-method-note h3 {
+  margin:.2rem 0 .4rem;font-size:16px;line-height:1.45;
+}
+.md-content__inner.math-knowledge-r19 #exam .mk-exam-method-note :is(p,blockquote) {
+  margin:.25rem 0 .45rem;font-size:15px;line-height:1.55;
+}
 @media (max-width:700px) {
   .md-content__inner.math-knowledge-r19 .topic-workspace-nav {
     top:2.4rem;margin:.06rem 0 .4rem;padding:0 .2rem;min-height:44px;
