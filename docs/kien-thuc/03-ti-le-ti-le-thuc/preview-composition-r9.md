@@ -411,6 +411,8 @@ Tư duy tỉ lệ cũng xuất hiện trong:
 
 **Đầu tiên hãy phân loại:** tỉ lệ thức, chia theo tỉ lệ, tỉ lệ thuận hoặc tỉ lệ nghịch. Chọn đúng mô hình trước khi tính.
 
+**Quy trình nhận dạng nhanh (từ infographic cũ):** Đọc đề, xác định đại lượng → **Đổi về cùng đơn vị** khi cần → **Chọn mô hình** (tỉ lệ thức / tỉ lệ thuận / tỉ lệ nghịch) → **Kiểm tra đơn vị và tính hợp lí** của kết quả. Với bài toán số máy – thời gian, chỉ dùng tỉ lệ nghịch khi cùng khối lượng công việc và các máy có cùng năng suất.
+
 ### Dạng 1 – Lập và kiểm tra tỉ lệ thức
 
 Ví dụ: kiểm tra `6/9 = 10/15`.
