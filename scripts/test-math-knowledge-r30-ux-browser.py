@@ -76,7 +76,8 @@ with sync_playwright() as pw:
                 # Table content preserves all eleven original methods once.
                 assert types.locator(".tabbed-block tbody tr").count()==11,(device,"CT04 row coverage")
             if slug=="08-phuong-trinh-bat-phuong-trinh":
-                content=root.locator("details#core").inner_text()
+                # Inspect ALL authored tab panels, including currently inactive ones.
+                content=root.locator("details#core").text_content()
                 assert "(x\\in\\mathbb N)" not in content,(device,"CT08 raw TeX leak")
                 assert "8 hộp" in content,(device,"CT08 worked example missing")
             if slug=="15-duong-dong-quy":
