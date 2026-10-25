@@ -22,17 +22,11 @@
     const body = exam?.querySelector(":scope > .topic-learning-card-body");
     if (!body) return;
     const headings = [...body.children].filter(n => n.tagName === "H3");
-    const hasVerifiedActions = headings.length >= 2 &&
-      headings.every(h => {
-        let sibling = h.nextElementSibling;
-        while (sibling && sibling.tagName !== "H3") {
-          if (sibling.querySelector?.(".math-knowledge-exam-actions") ||
-              sibling.matches?.(".math-knowledge-exam-actions")) return true;
-          sibling = sibling.nextElementSibling;
-        }
-        return false;
-      });
-    if (!hasVerifiedActions) return;
+    // §6 H3 source families are independently validated by the R20 build
+    // hook. Some MkDocs renderer paths wrap links as siblings rather than
+    // direct descendants, so don't gate layout on incidental action wrappers.
+    // Every real H3 remains a visible row even when its exercise is pending.
+    if (headings.length < 2) return;
 
     const wrap = document.createElement("div");
     wrap.className = "mk-exam-table-scroll";
