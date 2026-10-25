@@ -235,8 +235,16 @@ def transform(markdown, src_path):
     if slug.startswith("08-"):
         old='Ví dụ, một thùng chịu tối đa (18) kg, trong thùng đã có (6) kg. Mỗi hộp hàng thêm vào nặng (1{,}5) kg. Gọi (x) là số hộp thêm vào, với (x\\in\\mathbb N). Khi đó:\n\n[\n6+1{,}5x\\le18\n]\n\nsuy ra (x\\le8).'
         new=r'Ví dụ, một thùng chịu tối đa \(18\) kg, trong thùng đã có \(6\) kg. Mỗi hộp hàng thêm vào nặng \(1{,}5\) kg. Gọi \(x\) là số hộp thêm vào, với \(x\in\mathbb{N}\). Khi đó:'+'\n\n'+r'$$6+1{,}5x\le18$$'+'\n\n'+r'suy ra \(x\le8\).'
-        if raw.count(old)!=1:raise ValueError("R30 CT08 TeX phrase changed, refuse blind rewrite")
-        raw=raw.replace(old,new)
+        # Preserve R30 legacy-source correction, but accept the same
+        # fully authored MathJax example without rewriting it a second time.
+        # Both paths are exact-text guarded; unexpected changes still fail.
+        authored="Ví dụ, một thùng chịu tối đa \\(18\\) kg, trong thùng đã có \\(6\\) kg. Mỗi hộp hàng thêm vào nặng \\(1{,}5\\) kg. Gọi \\(x\\) là số hộp thêm vào, với \\(x\\in\\mathbb N\\). Khi đó:\n\n\\[\n6+1{,}5x\\le18\n\\]\n\nsuy ra \\(x\\le8\\)."
+        if raw.count(old)==1:
+            raw=raw.replace(old,new)
+        elif raw.count(authored)==1:
+            pass
+        else:
+            raise ValueError("R30 CT08 TeX phrase changed, refuse blind rewrite")
     if version=="tabs-r6":
         return raw
     # CT08 already has four authored level-tabs rather than method H3 headings.
