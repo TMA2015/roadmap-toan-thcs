@@ -10,7 +10,7 @@ source = Path("docs/kien-thuc/02-so-va-phep-tinh/index.md").read_text()
 candidate = Path("docs/kien-thuc/02-so-va-phep-tinh/preview-composition-r9.md").read_text()
 svg2 = Path("docs/assets/infographics/02/02-02-kien-thuc-cot-loi.svg").read_text()
 svg3 = Path("docs/assets/infographics/02/02-03-dang-bai-trong-tam.svg").read_text()
-assert "Trừ số âm = cộng số đối" in svg2
+assert "Trừ số âm</text>" in svg2 and "= cộng số đối</text>" in svg2
 assert "48 − 73 + 25 = 0" in svg3
 assert "**Trừ một số nguyên:**" in candidate
 assert "a - b = a + (-b)" in candidate
