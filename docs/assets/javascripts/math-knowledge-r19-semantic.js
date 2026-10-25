@@ -11,14 +11,15 @@
     const types=root.querySelector("details.topic-learning-card#types");
     if(!core||!types)return;
     root.dataset.mathKnowledgeR19="1";root.classList.add("math-knowledge-r19");
+    // R30: All four sections are genuine native <details> disclosures.
+    // Map and Goals start closed to keep orientation concise; §3/§5 start
+    // open so the two approved horizontal teaching-tab groups are visible.
+    // Never intercept the summary click: learner must be able to collapse
+    // and reopen any of these sections, including with keyboard or touch.
     for(const id of ["map","goals","core","types"]){
       const card=root.querySelector("details.topic-learning-card#"+id);
-      if(card)card.open=true;
-    }
-    // The orientation (map + goals) and the two learning tab groups are
-    // permanent reading landmarks, not optional accordion disclosures.
-    for(const card of ["map","goals","core","types"].map(id=>root.querySelector("details.topic-learning-card#"+id)).filter(Boolean)){
-      card.addEventListener("click",e=>{if(e.target.closest("summary")===card.querySelector(":scope > summary"))e.preventDefault()},true);
+      if(card)card.open=(id==="core"||id==="types");
+      if(card)card.querySelector(":scope > summary .topic-section-badge")?.remove();
     }
     const nav=root.querySelector(".topic-workspace-nav-list");
     if(nav){
