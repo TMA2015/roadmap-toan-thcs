@@ -9,6 +9,7 @@ Source index.md, exercise banks, student state and authentication stay untouched
 from pathlib import Path
 import re
 import shutil
+from xml.etree import ElementTree as ET
 from playwright.sync_api import sync_playwright
 
 # slug, canonical reviewed candidate, source infographic count, omitted poster IDs,
@@ -100,6 +101,24 @@ ct19 = Path("docs/kien-thuc/19-duong-tron/preview-composition-r12.md").read_text
 for cue in ("PT² = PA × PB", "đoạn ngoài", "giao điểm xa",
             "không lấy riêng đoạn `AB` thay cho `PB`"):
     assert cue in ct19, ("CT19 19-04 tangent-secant guard lost", cue)
+# R33: the CĐ19 native tangent-secant explanation and original 19-04
+# poster use P–A–B (A near P). The rendered geometry must label the
+# near intersection A and far intersection B, not silently reverse them.
+source19_04 = Path("docs/assets/infographics/19/19-04-he-thuc-do-dai-loi-sai.svg").read_text(encoding="utf-8")
+assert "PA là đoạn ngoài" in source19_04 and "PB là toàn bộ cát tuyến" in source19_04
+assert "P – A – B" in ct19
+geom19 = Path("docs/assets/geometry/19/19-tiep-tuyen-cat-tuyen-v1.svg").read_text(encoding="utf-8")
+root19 = ET.fromstring(geom19)
+ns19 = {"svg": "http://www.w3.org/2000/svg"}
+near19 = root19.find(".//svg:text[@x='470']", ns19)
+far19 = root19.find(".//svg:text[@x='150']", ns19)
+desc19 = root19.find("svg:desc", ns19)
+assert near19 is not None and near19.text == "A", "CT19 near secant intersection must be A"
+assert far19 is not None and far19.text == "B", "CT19 far secant intersection must be B"
+assert desc19 is not None and "A nằm giữa P và B" in (desc19.text or "")
+assert "PT² = PA × PB" in geom19
+assert "19-tiep-tuyen-cat-tuyen-v1.svg" in ct19
+print("PASS R33 CT19 tangent-secant SVG/alt/native near-far label parity", flush=True)
 ct20 = Path("docs/kien-thuc/20-hinh-hoc-tong-hop/preview-composition-r12.md").read_text(encoding="utf-8")
 for cue in ("đổi về cùng một đơn vị", "chỉ làm tròn **ở bước cuối**",
             "độ dài, diện tích hoặc thể tích"):
