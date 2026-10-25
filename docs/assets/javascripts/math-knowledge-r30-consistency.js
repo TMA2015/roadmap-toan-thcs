@@ -44,9 +44,18 @@
     titles.forEach(t => { const th = document.createElement("th"); th.scope = "col"; th.textContent = t; tr.appendChild(th); });
     thead.appendChild(tr);
     const tbody = document.createElement("tbody");
+    // Snapshot siblings BEFORE moving headings into table cells.
+    const groups = headings.map((heading, i) => {
+      const nodes = [];
+      let node = heading.nextSibling;
+      while (node && node !== (headings[i + 1] || null)) {
+        nodes.push(node); node = node.nextSibling;
+      }
+      return {heading, nodes};
+    });
     headings[0].before(wrap);
 
-    headings.forEach((heading, i) => {
+    groups.forEach(({heading, nodes}, i) => {
       const row = document.createElement("tr");
       const name = document.createElement("th");
       name.scope = "row";
@@ -66,27 +75,23 @@
       level.textContent = "Theo chuyên đề";
       const links = document.createElement("td");
       links.className = "mk-exam-links";
-      let node = heading.nextSibling;
-      const next = headings[i + 1] || null;
-      while (node && node !== next) {
-        const after = node.nextSibling;
+      for (const node of nodes) {
         if (node.nodeType === 1 && node.matches?.("hr")) {
-          // Horizontal rule is just a source separator, keep after the table.
           node.remove();
-        } else {
-          const found = node.nodeType === 1 &&
-            (node.matches?.(".math-knowledge-exam-actions")
-              ? node : node.querySelector?.(".math-knowledge-exam-actions"));
-          if (found) {
-            links.appendChild(found);
-            if (node !== found &&
-                !node.textContent.trim() && node.children.length === 0) node.remove();
-            else if (node !== found) details.appendChild(node);
-          } else {
-            details.appendChild(node);
-          }
+          continue;
         }
-        node = after;
+        const found = node.nodeType === 1 &&
+          (node.matches?.(".math-knowledge-exam-actions")
+            ? node : node.querySelector?.(".math-knowledge-exam-actions"));
+        if (found) {
+          links.appendChild(found);
+          if (node !== found && !node.textContent.trim() && node.children.length === 0)
+            node.remove();
+          else if (node !== found)
+            details.appendChild(node);
+        } else {
+          details.appendChild(node);
+        }
       }
       row.append(name, details, level, links);
       tbody.appendChild(row);
