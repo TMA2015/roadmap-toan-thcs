@@ -145,6 +145,8 @@ Quy tắc:
 | Kết quả **dương**. | Kết quả **âm**. |
 | $(-3)\cdot(-5)=15$ | $(-18):6=-3$ |
 
+**Trừ một số nguyên:** `a - b = a + (-b)`; vì thế **trừ số âm là cộng số đối**. Ví dụ: `7 - (-3) = 7 + 3 = 10`. Phân biệt phép trừ với quy tắc dấu của phép nhân/chia ở bảng trên.
+
 
 
 <div class="math-composition"><nav class="math-related-practice" aria-label="Luyện tập liên quan">
@@ -430,6 +432,8 @@ A = 24 - 3·2² + 18:3
   = 24 - 12 + 6
   = 18
 ```
+
+**Ví dụ kiểm tra dấu (từ infographic cũ):** `48 - 73 + 25 = -25 + 25 = 0`. Không bỏ qua kết quả âm ở bước giữa; cộng/trừ cùng mức ưu tiên được thực hiện từ trái sang phải.
 
 ### Dạng 2 – Tính nhanh, tính hợp lí
 
