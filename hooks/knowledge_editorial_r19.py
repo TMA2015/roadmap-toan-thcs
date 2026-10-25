@@ -175,18 +175,25 @@ def transform(markdown, src_path):
           "thu-gon-da-thuc","cong-tru-da-thuc","nhan-bieu-thuc",
           "nhan-bieu-thuc","tinh-gia-tri-bieu-thuc","dieu-kien-xac-dinh",
           "bien-doi-nhieu-buoc","nhan-bieu-thuc"]
-        if len([line for line in middle if line.startswith("|")])!=13:
+        # Only the FIRST, contiguous 13-line table is the canonical
+        # 11-method source table. Subsequent native explanatory tables in §5
+        # must remain intact and must never receive invented skill links.
+        first=next((i for i,line in enumerate(middle) if line.startswith("|")),None)
+        if first is None:raise ValueError("R19 CT04 method table absent")
+        stop=first
+        while stop<len(middle) and middle[stop].startswith("|"):
+            stop+=1
+        if stop-first!=13:
             raise ValueError("R19 CT04 11-type table count changed")
         modified=[]
-        row=0
-        for line in middle:
-            if line.startswith("|"):
+        for i,line in enumerate(middle):
+            if first<=i<stop:
+                row=i-first
                 if row==0:line=line.rstrip()+" Luyện tập |"
                 elif row==1:line=line.rstrip()+" --- |"
                 else:
                     skill=skill_order[row-2]
                     line=line.rstrip()+f" [Luyện ngay](bai-tap/?mode=remediation&focus={skill}) |"
-                row+=1
             modified.append(line)
         raw=raw[:start.start()]+"\n".join(modified)+"\n"+raw[end:]
     if version=="tabs-r6":
