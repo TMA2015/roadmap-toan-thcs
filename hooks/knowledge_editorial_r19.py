@@ -217,16 +217,16 @@ def transform(markdown, src_path):
     # R30: Source previews CT15+ place useful geometry illustrations under
     # an unnumbered H2 immediately after §1. Make it a nested subsection of
     # §1 so the figures collapse with the Map instead of floating outside.
-    map_head = re.search(r"(?m)^##[^\\n]*\\b1\\.\\s+[^\\n]*$",raw)
-    goals_head = re.search(r"(?m)^##[^\\n]*\\b2\\.\\s+[^\\n]*$",raw)
+    map_head = re.search(r"(?m)^##[^\n]*\b1\.\s+[^\n]*$",raw)
+    goals_head = re.search(r"(?m)^##[^\n]*\b2\.\s+[^\n]*$",raw)
     if map_head and goals_head and goals_head.start()>map_head.end():
         map_text=raw[map_head.end():goals_head.start()]
-        visual_header=re.search(r"(?m)^##\\s+Minh họa trực quan\\s*$",map_text)
+        visual_header=re.search(r"(?m)^##\s+Minh họa trực quan\s*$",map_text)
         if visual_header:
             pre=map_text[:visual_header.start()]
             figures=map_text[visual_header.end():]
             # Keep original captions and all SVGs, only repair heading nesting.
-            figures=re.sub(r"(?m)^###\\s+(?=\\d+\\.)","#### ",figures)
+            figures=re.sub(r"(?m)^###\s+(?=\d+\.)","#### ",figures)
             map_text=pre+"### Minh họa trực quan"+figures
             raw=raw[:map_head.end()]+map_text+raw[goals_head.start():]
     # R30: CT08 single authored example has literal parenthesized TeX and
