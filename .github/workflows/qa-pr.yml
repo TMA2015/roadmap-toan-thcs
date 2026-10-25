@@ -444,6 +444,7 @@ jobs:
           mkdir -p previews
           python -m http.server 8765 --directory site >/tmp/roadmap-preview.log 2>&1 &
           for i in {1..25}; do curl --fail --silent http://127.0.0.1:8765/ >/dev/null && break; sleep 0.2; done
+          python scripts/test-math-knowledge-r30-ux-browser.py
           python scripts/test-w9-reviewed-written-grade-browser-r1.py
           python scripts/test-math-w4-five-written-candidate-browser.py
           python scripts/test-library-two-paths-r1-browser.py

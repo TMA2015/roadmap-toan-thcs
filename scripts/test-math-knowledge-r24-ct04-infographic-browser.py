@@ -44,12 +44,18 @@ with sync_playwright() as pw:
         assert section.count() == 1, (device, "§5 missing")
         section.evaluate("(node) => node.open = true")
         assert section.is_visible(), (device, "§5 hidden")
-        # CT04 is the explicit exception: real methods table, not invented tabs.
-        assert section.locator(".tabbed-set").count() == 0, (
-            device, "CT04 invented tabs")
+        # R30 owner-approved change: preserve the exact eleven source methods
+        # in four semantic HORIZONTAL tabs, not one long vertical table.
+        tabs = section.locator(".tabbed-labels label")
+        assert tabs.count() == 4, (device, "CT04 grouped method tabs absent")
+        assert section.locator(".tabbed-block tbody tr").count() == 11, (
+            device, "one or more original method rows missing")
+        assert section.locator(".tabbed-block a[href*='bai-tap/']").count() == 11, (
+            device, "11 verified method CTAs missing/duplicated")
+        tabs.last.click()
         assert root.locator('img[src*="04-03-dang-bai-trong-tam.svg"]').count() == 0, (
             device, "duplicative giant infographic is visible")
-        content = section.inner_text()
+        content = section.text_content()
         for phrase in PHRASES:
             assert phrase in content, (device, "lost poster cue", phrase)
         matches = section.locator("table").filter(has_text="Hai số nguyên liên tiếp")
@@ -60,9 +66,8 @@ with sync_playwright() as pw:
             device, "not a two-column comparison")
         assert table.locator("a").count() == 0, (
             device, "unverified modelling example acquired a fake practice link")
-        canonical = section.locator("table").filter(has_text="Nhận biết đơn thức, đa thức")
-        assert canonical.count() == 1 and canonical.first.locator("a").count() == 11, (
-            device, "existing 11 verified method CTAs were lost or multiplied")
+        assert section.locator(".tabbed-block table").count() == 4, (
+            device, "canonical methods not partitioned into four original-row tables")
         assert page.evaluate(
             "document.documentElement.scrollWidth <= document.documentElement.clientWidth + 2"
         ), (device, "horizontal document overflow")

@@ -52,8 +52,12 @@ with sync_playwright() as pw:
             for phrase in phrases:
                 assert phrase in section.inner_text(), (slug, device, "lost source cue", phrase)
             tables = section.locator("table")
+            # R30 nests CT09's original two-column comparison table inside
+            # the richer four-column Entrance10 row. Select the actual
+            # source comparison, not its enclosing exam table wrapper.
             matches = [tables.nth(i) for i in range(tables.count())
-                       if phrases[0] in (tables.nth(i).text_content() or "")]
+                       if phrases[0] in (tables.nth(i).text_content() or "")
+                       and tables.nth(i).locator("tr").first.locator("th").count() == 2]
             assert len(matches) == 1, (slug, device, "native comparison table missing")
             table = matches[0]
             assert table.locator("tr").count() >= min_rows, (

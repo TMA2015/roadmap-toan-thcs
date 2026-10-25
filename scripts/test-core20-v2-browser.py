@@ -62,7 +62,7 @@ with sync_playwright() as p:
                 group.locator(".tabbed-labels label").nth(index).click()
             card=figure.locator("xpath=ancestor::details[contains(concat(' ',normalize-space(@class),' '),' topic-learning-card ')]")
             if card.count() and card.get_attribute("open") is None:
-                card.locator("summary").click()
+                card.locator(":scope > summary").click()
             figure.scroll_into_view_if_needed()
             assert figure.evaluate("(el)=>el.complete && el.naturalWidth>0 && el.naturalHeight>0")
             assert figure.evaluate("(el)=>el.getBoundingClientRect().width<=window.innerWidth+1")

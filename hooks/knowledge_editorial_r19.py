@@ -195,7 +195,48 @@ def transform(markdown, src_path):
                     skill=skill_order[row-2]
                     line=line.rstrip()+f" [Luyện ngay](bai-tap/?mode=remediation&focus={skill}) |"
             modified.append(line)
+        # Keep the source-backed 11-row table but put semantically adjacent
+        # method families into genuine independent §5 tabs. No invented lessons.
+        headers=modified[first:first+2]
+        data=modified[first+2:stop]
+        families=[
+            ("Nhận biết và cấu trúc",data[0:2]),
+            ("Thu gọn, cộng trừ và nhân",data[2:7]),
+            ("Giá trị và điều kiện",data[7:9]),
+            ("Vận dụng nhiều bước",data[9:11]),
+        ]
+        if sum(len(rows) for _,rows in families)!=11:
+            raise ValueError("R30 CT04 method family coverage")
+        tabs=[]
+        for title,rows in families:
+            tabs += ['=== "'+title+'"',""] + [
+                "    "+line for line in headers+rows
+            ] + [""]
+        modified=modified[:first]+tabs+modified[stop:]
         raw=raw[:start.start()]+"\n".join(modified)+"\n"+raw[end:]
+    # R30: Source previews CT15+ place useful geometry illustrations under
+    # an unnumbered H2 immediately after §1. Make it a nested subsection of
+    # §1 so the figures collapse with the Map instead of floating outside.
+    map_head = re.search(r"(?m)^##[^\n]*\b1\.\s+[^\n]*$",raw)
+    goals_head = re.search(r"(?m)^##[^\n]*\b2\.\s+[^\n]*$",raw)
+    if map_head and goals_head and goals_head.start()>map_head.end():
+        map_text=raw[map_head.end():goals_head.start()]
+        visual_header=re.search(r"(?m)^##\s+Minh họa trực quan\s*$",map_text)
+        if visual_header:
+            pre=map_text[:visual_header.start()]
+            figures=map_text[visual_header.end():]
+            # Keep original captions and all SVGs, only repair heading nesting.
+            figures=re.sub(r"(?m)^###\s+(?=\d+\.)","#### ",figures)
+            map_text=pre+"### Minh họa trực quan"+figures
+            raw=raw[:map_head.end()]+map_text+raw[goals_head.start():]
+    # R30: CT08 single authored example has literal parenthesized TeX and
+    # square brackets, not math delimiters. Correct the DISPLAY ONLY after
+    # matching that exact sentence/inequality, preserving all quantities.
+    if slug.startswith("08-"):
+        old='Ví dụ, một thùng chịu tối đa (18) kg, trong thùng đã có (6) kg. Mỗi hộp hàng thêm vào nặng (1{,}5) kg. Gọi (x) là số hộp thêm vào, với (x\\in\\mathbb N). Khi đó:\n\n[\n6+1{,}5x\\le18\n]\n\nsuy ra (x\\le8).'
+        new=r'Ví dụ, một thùng chịu tối đa \(18\) kg, trong thùng đã có \(6\) kg. Mỗi hộp hàng thêm vào nặng \(1{,}5\) kg. Gọi \(x\) là số hộp thêm vào, với \(x\in\mathbb{N}\). Khi đó:'+'\n\n'+r'$$6+1{,}5x\le18$$'+'\n\n'+r'suy ra \(x\le8\).'
+        if raw.count(old)!=1:raise ValueError("R30 CT08 TeX phrase changed, refuse blind rewrite")
+        raw=raw.replace(old,new)
     if version=="tabs-r6":
         return raw
     # CT08 already has four authored level-tabs rather than method H3 headings.

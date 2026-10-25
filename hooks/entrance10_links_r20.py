@@ -103,19 +103,46 @@ def _render_actions(spec, home):
     return '<span class="math-knowledge-exam-actions">' + " ".join(html) + "</span>"
 
 def _with_table(block, plan, topic):
+    """Preserve source columns, extend only to a uniform four-column exam grid.
+
+    Some original sources carried two columns (title, topic priority), while
+    others carried three (including reasoning/role). No priority is invented.
+    Every extra learning-route cell is derived solely from validated R20 spec.
+    """
     lines = block.splitlines(keepends=True)
     tables = [i for i, ln in enumerate(lines) if ln.lstrip().startswith("|")]
     if len(tables) != len(plan) + 2 or any(b != a + 1 for a, b in zip(tables, tables[1:])):
         raise ValueError("R20 §6 exam table changed: " + topic)
+    def count_cells(s):
+        return len(s.strip().strip("|").split("|"))
+    original = count_cells(lines[tables[0]])
+    if original not in (2, 3) or any(count_cells(lines[idx]) != original for idx in tables):
+        raise ValueError("R30 §6 unexpected original table columns: " + topic)
     for n, index in enumerate(tables):
         line = lines[index].rstrip("\n")
         if n == 0:
-            lines[index] = line + " Thực hành đúng dạng |\n"
+            extras = (" Vị trí bài luyện | Mở bài |" if original == 2
+                      else " Mở bài |")
         elif n == 1:
-            lines[index] = line + " :--- |\n"
+            extras = (" :--- | :--- |" if original == 2
+                      else " :--- |")
         else:
-            lines[index] = line + " " + _render_actions(plan[n - 2], topic) + " |\n"
+            spec = plan[n - 2]
+            actions = _render_actions(spec, topic)
+            if original == 2:
+                if spec == ("-",):
+                    location = "Chưa có bài đúng dạng"
+                else:
+                    has_skill = any(not token.startswith("WX") for token in spec)
+                    has_written = any(token.startswith("WX") for token in spec)
+                    location = ("Luyện kỹ năng + Tự luận" if has_skill and has_written
+                                else "Tự luận" if has_written else "Luyện kỹ năng")
+                extras = " " + location + " | " + actions + " |"
+            else:
+                extras = " " + actions + " |"
+        lines[index] = line + extras + "\n"
     return "".join(lines)
+
 
 def _with_h3(block, plan, topic):
     hits = list(_H3.finditer(block))
@@ -127,15 +154,33 @@ def _with_h3(block, plan, topic):
     return block
 
 def _with_bullets(block, plan, topic):
+    """Build the CT10-style readable exam table, not an inline sentence chain.
+
+    Keep each authored item exactly once and every verified link beside its
+    matching row. The original overall priority remains below the table; do
+    not fabricate distinct per-row priority evidence.
+    """
     hits = list(_BULLET.finditer(block))
     if len(hits) != len(plan) or [int(x.group(1)) for x in hits] != list(range(1, len(plan) + 1)):
-        raise ValueError("R20 §6 numbered exam list changed: " + topic)
-    for index in range(len(hits)-1, -1, -1):
-        item = hits[index]
-        # The in-flow semantic mapping remains beside the exact original syllabus line.
-        block = block[:item.end()] + ' <span class="math-knowledge-exam-inline">' \
-                + _render_actions(plan[index], topic) + "</span>" + block[item.end():]
-    return block
+        raise ValueError("R30 §6 numbered exam list changed: " + topic)
+    # This authored form is exactly one contiguous numbered list. Refuse to
+    # restructure other formats accidentally.
+    for i in range(len(hits) - 1):
+        if block[hits[i].end():hits[i + 1].start()].strip():
+            raise ValueError("R30 §6 unexpected material between list rows: " + topic)
+    before, after = block[:hits[0].start()], block[hits[-1].end():]
+    lines = [
+        "| Dạng bài | Trọng tâm cần chắc | Mức ưu tiên | Mở bài |",
+        "|:---|:---|:---:|:---|",
+    ]
+    for i, hit in enumerate(hits):
+        label = hit.group(2).strip().replace("|", r"\|")
+        actions = _render_actions(plan[i], topic)
+        # These stars were defined for the *whole topic*, never per item.
+        lines.append("| **Dạng " + str(i + 1) + "** | " + label +
+                     " | Theo chuyên đề | " + actions + " |")
+    return before.rstrip() + "\n\n" + "\n".join(lines) + "\n\n" + after.lstrip()
+
 
 def augment_exam_links(markdown, topic):
     """Return only a §6 annotated view; reject changed/missing row counts."""
