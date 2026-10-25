@@ -10,6 +10,11 @@
     const root = document.querySelector(".md-content__inner.math-knowledge-r19");
     if (!root || root.dataset.mathKnowledgeR30 === "1") return;
     root.dataset.mathKnowledgeR30 = "1";
+    // Place the slim, sticky jump row immediately below the site's blue
+    // masthead in reading order, instead of after the tall topic hero.
+    const nav = root.querySelector(".topic-workspace-nav");
+    const hero = root.querySelector(".topic-workspace-hero");
+    if (nav && hero) hero.before(nav);
 
     // The semantic CT10 table and source-authored §6 Markdown tables are
     // already correct. Only H3-authored §6 sections need layout conversion.
