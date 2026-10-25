@@ -65,7 +65,7 @@
    normal 17px article body. Do NOT blanket-override controls or tiny captions. */
 .md-content__inner.math-knowledge-r19 .topic-learning-card-body :is(
   blockquote,.admonition,.math-outcome,.note,.math-composition-note
-) {font-size:16px;line-height:1.68;}
+) {font-size:inherit;line-height:inherit;}
 .md-content__inner.math-knowledge-r19 .topic-learning-card-body :is(
   blockquote,.admonition,.math-outcome,.note,.math-composition-note
 ) :is(p,li) {font-size:inherit;line-height:inherit;}
