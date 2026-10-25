@@ -426,6 +426,8 @@ Với bán kính `r`:
 
 Khi bài cho nhiều đơn vị khác nhau, phải đổi về cùng một đơn vị **trước khi** thay vào công thức.
 
+**Độ chính xác:** Giữ giá trị chính xác hoặc đủ chữ số trong các bước trung gian; chỉ làm tròn **ở bước cuối** theo yêu cầu đề bài. Làm tròn sớm có thể làm sai kết quả độ dài, diện tích hoặc thể tích.
+
 ### 3.7. Bảng chọn chiến lược
 
 | Mục tiêu | Hướng ưu tiên |

@@ -269,6 +269,8 @@ Từ điểm `P` ngoài đường tròn, tiếp tuyến `PT` và cát tuyến `P
 
 `PT² = PA × PB`
 
+**Chọn đúng hai đoạn:** Trên cát tuyến có thứ tự `P – A – B` (với `A` là giao điểm gần `P`, `B` là giao điểm xa), `PA` là **đoạn ngoài** đường tròn, còn `PB` là **toàn bộ đoạn từ P đến giao điểm xa**; không lấy riêng đoạn `AB` thay cho `PB`.
+
 ### 3.6A. Độ dài cung, diện tích hình quạt và hình vành khuyên
 
 Với đường tròn bán kính `R`, cung có số đo `n°`:
