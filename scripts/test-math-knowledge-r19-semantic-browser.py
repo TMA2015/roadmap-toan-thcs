@@ -13,7 +13,7 @@ SLUGS=[
 "17-thales-dong-dang","18-he-thuc-luong","19-duong-tron","20-hinh-hoc-tong-hop",
 "21-thong-ke","22-dai-luong-dac-trung","23-xac-suat","24-bai-toan-thuc-te",
 "25-tong-hop-on-thi-10"]
-COUNTS={"10-ham-so-do-thi":(5,5),"04-bieu-thuc-dai-so":(3,0),"08-phuong-trinh-bat-phuong-trinh":(4,4)}
+COUNTS={"10-ham-so-do-thi":(5,5),"04-bieu-thuc-dai-so":(3,4),"08-phuong-trinh-bat-phuong-trinh":(4,4)}
 with sync_playwright() as pw:
  browser=pw.chromium.launch(executable_path=CHROME,headless=True,args=["--no-sandbox","--disable-dev-shm-usage"])
  for device,width,items in [
@@ -42,12 +42,22 @@ with sync_playwright() as pw:
    assert root.locator('a[href*="preview-composition"],a[href*="preview-tabs"]').count()==0,(slug,"no two-version choices")
    assert root.locator("details#map").count()==1 and root.locator("details#goals").count()==1
    if device=="desktop":
-    # Both orientation sections must remain readable even if a summary is tapped.
+    # R30: map/goals start compact and are genuinely reversible disclosures.
     for landmark in ("map","goals"):
      card=root.locator("details#"+landmark)
-     assert card.evaluate("(el) => el.open"),(slug,landmark,"orientation collapsed")
+     assert not card.evaluate("(el) => el.open"),(slug,landmark,"orientation should start compact")
      card.locator(":scope > summary").click()
-     assert card.evaluate("(el) => el.open"),(slug,landmark,"orientation was closable")
+     assert card.evaluate("(el) => el.open"),(slug,landmark,"orientation did not open")
+     card.locator(":scope > summary").click()
+     assert not card.evaluate("(el) => el.open"),(slug,landmark,"orientation did not close")
+    # §3/§5 default open for direct learning, but must close and reopen.
+    for zone in ("core","types"):
+     card=root.locator("details#"+zone)
+     assert card.evaluate("(el) => el.open"),(slug,zone,"tab zone closed by default")
+     card.locator(":scope > summary").click()
+     assert not card.evaluate("(el) => el.open"),(slug,zone,"cannot collapse tab zone")
+     card.locator(":scope > summary").click()
+     assert card.evaluate("(el) => el.open"),(slug,zone,"cannot reopen tab zone")
    assert core.locator(".tabbed-block h3").count()>=3,(slug,"knowledge examples lost")
    assert types.locator('a[href*="bai-tap/"]').count()>=1 or slug=="04-bieu-thuc-dai-so",(slug,"practice link missing")
    assert page.evaluate("document.documentElement.scrollWidth<=document.documentElement.clientWidth+2"),(slug,device,"overflow")
