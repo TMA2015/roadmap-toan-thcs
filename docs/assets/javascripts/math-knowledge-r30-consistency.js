@@ -1,0 +1,103 @@
+/* R30: THCS Knowledge presentation parity (source-safe).
+   §6: Preserve authored details and verified R20 Practice/Written links, display
+   H3-based rows in one clear table. Never change learner state or bank data.
+   No extra tab or content copy is produced. */
+(() => {
+  "use strict";
+  const activate = () => {
+    const match = location.pathname.match(/(?:^|\/)kien-thuc\/(\d\d-[^/]+)\/(?:index\.html)?$/);
+    if (!match || match[1].startsWith("01-")) return;
+    const root = document.querySelector(".md-content__inner.math-knowledge-r19");
+    if (!root || root.dataset.mathKnowledgeR30 === "1") return;
+    root.dataset.mathKnowledgeR30 = "1";
+
+    // The semantic CT10 table and source-authored §6 Markdown tables are
+    // already correct. Only H3-authored §6 sections need layout conversion.
+    const exam = root.querySelector("details.topic-learning-card#exam");
+    const body = exam?.querySelector(":scope > .topic-learning-card-body");
+    if (!body) return;
+    const headings = [...body.children].filter(n => n.tagName === "H3");
+    const hasVerifiedActions = headings.length >= 2 &&
+      headings.every(h => {
+        let sibling = h.nextElementSibling;
+        while (sibling && sibling.tagName !== "H3") {
+          if (sibling.querySelector?.(".math-knowledge-exam-actions") ||
+              sibling.matches?.(".math-knowledge-exam-actions")) return true;
+          sibling = sibling.nextElementSibling;
+        }
+        return false;
+      });
+    if (!hasVerifiedActions) return;
+
+    const wrap = document.createElement("div");
+    wrap.className = "mk-exam-table-scroll";
+    wrap.setAttribute("role", "region");
+    wrap.setAttribute("aria-label", "Bảng các dạng bài thi vào lớp 10");
+    wrap.tabIndex = 0;
+    const table = document.createElement("table");
+    table.className = "mk-exam-table";
+    const caption = document.createElement("caption");
+    caption.textContent = "Các dạng bài thi vào lớp 10 — bài luyện đúng dạng được kiểm chứng";
+    const thead = document.createElement("thead");
+    const titles = ["Dạng bài", "Nội dung cần nắm vững", "Ưu tiên", "Mở bài"];
+    const tr = document.createElement("tr");
+    titles.forEach(t => { const th = document.createElement("th"); th.scope = "col"; th.textContent = t; tr.appendChild(th); });
+    thead.appendChild(tr);
+    const tbody = document.createElement("tbody");
+    headings[0].before(wrap);
+
+    headings.forEach((heading, i) => {
+      const row = document.createElement("tr");
+      const name = document.createElement("th");
+      name.scope = "row";
+      name.className = "mk-exam-name";
+      if (!/^Dạng\s+\d+/i.test(heading.textContent.trim())) {
+        const prefix = document.createElement("span");
+        prefix.className = "mk-exam-number";
+        prefix.textContent = "Dạng " + (i + 1);
+        name.appendChild(prefix);
+      }
+      name.appendChild(heading); // preserve any existing heading id / TOC links
+
+      const details = document.createElement("td");
+      details.className = "mk-exam-description";
+      const level = document.createElement("td");
+      level.className = "mk-exam-topic-priority";
+      level.textContent = "Theo chuyên đề";
+      const links = document.createElement("td");
+      links.className = "mk-exam-links";
+      let node = heading.nextSibling;
+      const next = headings[i + 1] || null;
+      while (node && node !== next) {
+        const after = node.nextSibling;
+        if (node.nodeType === 1 && node.matches?.("hr")) {
+          // Horizontal rule is just a source separator, keep after the table.
+          node.remove();
+        } else {
+          const found = node.nodeType === 1 &&
+            (node.matches?.(".math-knowledge-exam-actions")
+              ? node : node.querySelector?.(".math-knowledge-exam-actions"));
+          if (found) {
+            links.appendChild(found);
+            if (node !== found &&
+                !node.textContent.trim() && node.children.length === 0) node.remove();
+            else if (node !== found) details.appendChild(node);
+          } else {
+            details.appendChild(node);
+          }
+        }
+        node = after;
+      }
+      row.append(name, details, level, links);
+      tbody.appendChild(row);
+    });
+    table.append(caption, thead, tbody);
+    wrap.appendChild(table);
+    exam.dataset.mathR30ExamTable = "1";
+  };
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", activate, {once:true});
+  } else activate();
+  if (window.document$?.subscribe) window.document$.subscribe(activate);
+})();
