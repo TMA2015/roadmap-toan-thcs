@@ -335,7 +335,7 @@ Tính `P` tại `x = 2`.
 | **Chu vi hình chữ nhật:** gọi chiều dài, chiều rộng là `a`, `b`. | **`P = 2(a + b)`**; `a, b > 0` và cùng đơn vị độ dài. |
 | **Quãng đường khi chuyển động đều:** gọi vận tốc là `v`, thời gian là `t`. | **`s = v·t`**; dùng đơn vị tương thích (ví dụ km/h và giờ cho kết quả km). |
 
-**Tự kiểm tra:** Mỗi biến đã có ý nghĩa rõ chưa? Quan hệ đã chuyển đúng thành phép toán chưa? Kết quả có đúng đơn vị và phù hợp tình huống không? Không tự gắn nút “Luyện ngay” cho mục này khi chưa có skill đích được xác minh.
+**Tự kiểm tra:** Mỗi biến đã có ý nghĩa rõ chưa? Quan hệ đã chuyển đúng thành phép toán chưa? Kết quả có đúng đơn vị và phù hợp tình huống không? Không tạo đường dẫn luyện tập riêng khi chưa có skill đích được xác minh.
 
 ---
 
