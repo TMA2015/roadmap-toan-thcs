@@ -20,8 +20,22 @@ SLUGS=[
 "19-duong-tron","20-hinh-hoc-tong-hop","21-thong-ke",
 "22-dai-luong-dac-trung","23-xac-suat","24-bai-toan-thuc-te",
 "25-tong-hop-on-thi-10"]
-EXAM_ROWS=[4,4,3,7,7,9,6,5,10,8,8,6,8,5,4,5,5,6,6,5,6,7,6,5]
-EXPECTED=dict(zip(SLUGS,EXAM_ROWS))
+# The source-validated R20 §6 family roster is the ground truth (not a
+# manually guessed per-topic row count). CT10 uses the original approved R4
+# ten-row table, so it has an explicit independent count.
+from pathlib import Path
+plan_text=Path("hooks/entrance10_links_r20.py").read_text(encoding="utf8")
+roster=re.search(r'_ROWS = r"""(.*?)"""',plan_text,re.S)
+assert roster,"R20 source-backed Entrance10 roster unavailable"
+EXPECTED={}
+for entry in roster.group(1).strip().splitlines():
+    topic,kind,rows=entry.split("|",2)
+    slug=next((s for s in SLUGS if s.startswith(topic[2:]+"-")),None)
+    assert slug and slug not in EXPECTED,(topic,"missing or duplicate roster")
+    EXPECTED[slug]=len(rows.split(";"))
+EXPECTED["10-ham-so-do-thi"]=10
+assert len(EXPECTED)==24
+
 with sync_playwright() as pw:
     browser=pw.chromium.launch(executable_path=CHROME,headless=True,
                                args=["--no-sandbox","--disable-dev-shm-usage"])
