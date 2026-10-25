@@ -89,6 +89,31 @@ for(const [topic,revision] of plans){
    assert.deepEqual(candHeads,origHeads,"Full heading order changed in "+topic);
  }
  checkWrittenLinks(candidate,topic);
+ // R24 CT04 old infographic 04-03 has an actual fifth problem family:
+ // modelling an expression from words. Its 1200x1450 text poster is hidden;
+ // retain the unique learning steps and all three source examples in native §5.
+ // Do not fabricate a separate exercise type or Practice/Written destination.
+ if(topic==="04-bieu-thuc-dai-so"){
+   const svg=fs.readFileSync(path.join("docs","assets","infographics","04",
+     "04-03-dang-bai-trong-tam.svg"),"utf8");
+   for(const phrase of ["Lập biểu thức từ lời văn",
+      "Chọn biến và nêu ý nghĩa", "Chuyển từng quan hệ thành phép toán",
+      "Kiểm tra đơn vị và tính hợp lí", "Hai số liên tiếp: n, n + 1",
+      "Chu vi HCN: P = 2(a + b)", "Quãng đường: s = v·t"]){
+     assert(svg.includes(phrase),"CT04 infographic source changed; re-audit "+phrase);
+   }
+   for(const phrase of ["**Lập biểu thức từ lời văn (mở rộng).**",
+     "Chọn biến và nêu ý nghĩa", "chuyển từng quan hệ thành phép toán",
+     "**đơn vị, điều kiện và tính hợp lí**", "`n` và `n + 1`",
+     "`P = 2(a + b)`", "`s = v·t`"]){
+     assert(candidate.includes(phrase),"CT04 unique poster knowledge lost: "+phrase);
+   }
+   const sec5=candidate.split("## 🧩 5. Các dạng bài cần nắm vững")[1]?.split("## 🚀 6. Dạng bài thi vào lớp 10")[0];
+   assert(sec5?.includes("**Lập biểu thức từ lời văn (mở rộng).**"),
+     "CT04 modelling guidance must stay in §5");
+   assert(!sec5.includes("luyen-tap/tu-luan/") && !sec5.includes("Luyện ngay"),
+     "CT04 infographic-only modelling must not invent Practice/Written deep links");
+ }
  // R22 targeted infographic editorial parity: the CT05 text-only posters are
  // hidden from the learner view, but their unique recognition/decision cues
  // must remain readable in the native HTML content. This is NOT a blanket
