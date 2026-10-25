@@ -78,8 +78,16 @@ for slug, version, original_count, omitted_ids, added in TOPICS:
           len(old - omitted), len(added), flush=True)
 print("R29 IMAGE EMBED INVENTORY (NOT ACADEMIC SIGN-OFF):", counts, flush=True)
 
-# Focused factual parity assertions for two specific omitted text posters.
+# Focused factual parity assertions for specific omitted text posters.
 # Other posters require their own proposition-level audit before academic sign-off.
+ct04 = Path("docs/kien-thuc/04-bieu-thuc-dai-so/preview-composition-r10.md").read_text(encoding="utf-8")
+source04_02 = Path("docs/assets/infographics/04/04-02-kien-thuc-cot-loi.svg").read_text(encoding="utf-8")
+source04_03 = Path("docs/assets/infographics/04/04-03-dang-bai-trong-tam.svg").read_text(encoding="utf-8")
+assert "Dùng ngoặc khi thay số âm" in source04_02
+assert "Số âm nên đặt trong ngoặc" in source04_03
+for cue in ("Thay số âm phải đặt trong ngoặc", "P(-2) = (-2)² - 3·(-2) + 2 = 4 + 6 + 2 = 12", "(-2)² = 4", "-2² = -(2²) = -4"):
+    assert cue in ct04, ("CT04 04-02/03 negative substitution caution lost", cue)
+print("PASS R31 focused CT04 old-poster negative-substitution guard", flush=True)
 ct19 = Path("docs/kien-thuc/19-duong-tron/preview-composition-r12.md").read_text(encoding="utf-8")
 for cue in ("PT² = PA × PB", "đoạn ngoài", "giao điểm xa",
             "không lấy riêng đoạn `AB` thay cho `PB`"):

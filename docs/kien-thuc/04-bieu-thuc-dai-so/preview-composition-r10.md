@@ -274,6 +274,12 @@ Tính `P` tại `x = 2`.
 
 `P = 2² - 3·2 + 2 = 4 - 6 + 2 = 0`
 
+**Thay số âm phải đặt trong ngoặc.** Vẫn với `P = x² - 3x + 2`, nếu `x = -2` thì:
+
+`P(-2) = (-2)² - 3·(-2) + 2 = 4 + 6 + 2 = 12`.
+
+> ⚠️ **Không viết `-2²` thay cho `(-2)²`:** `(-2)² = 4` nhưng `-2² = -(2²) = -4`. Khi thay số âm vào biểu thức, hãy đặt số âm trong ngoặc **trước khi** thực hiện lũy thừa hoặc phép nhân.
+
 ---
 
 ## 🔗 4. Kiến thức liên quan
