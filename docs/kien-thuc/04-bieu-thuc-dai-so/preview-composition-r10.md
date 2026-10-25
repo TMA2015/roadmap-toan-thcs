@@ -325,6 +325,18 @@ Tính `P` tại `x = 2`.
 | Biến đổi nhiều bước | ⭐⭐⭐ | ⭐⭐⭐⭐ |
 | Nhận dạng cấu trúc để đưa về dạng tích | ⭐⭐⭐ | ⭐⭐⭐⭐ |
 
+**Lập biểu thức từ lời văn (mở rộng).** Infographic cũ còn một kỹ năng vận dụng hữu ích chưa được thể hiện ở bảng trên: **đọc một quan hệ thực tế và biểu diễn bằng biến, phép toán**. Đây là phần hướng dẫn ngay trong chuyên đề, **không phải dạng luyện tập riêng đã có ngân hàng câu hỏi được xác minh**.
+
+**Quy trình ngắn:** Chọn biến và nêu ý nghĩa → chuyển từng quan hệ thành phép toán → kiểm tra **đơn vị, điều kiện và tính hợp lí**.
+
+| Tình huống từ đề bài | Cách biểu diễn và tự kiểm tra |
+|---|---|
+| **Hai số nguyên liên tiếp:** gọi số thứ nhất là `n`. | Hai số là **`n` và `n + 1`**; `n` là số nguyên. |
+| **Chu vi hình chữ nhật:** gọi chiều dài, chiều rộng là `a`, `b`. | **`P = 2(a + b)`**; `a, b > 0` và cùng đơn vị độ dài. |
+| **Quãng đường khi chuyển động đều:** gọi vận tốc là `v`, thời gian là `t`. | **`s = v·t`**; dùng đơn vị tương thích (ví dụ km/h và giờ cho kết quả km). |
+
+**Tự kiểm tra:** Mỗi biến đã có ý nghĩa rõ chưa? Quan hệ đã chuyển đúng thành phép toán chưa? Kết quả có đúng đơn vị và phù hợp tình huống không? Không tự gắn nút “Luyện ngay” cho mục này khi chưa có skill đích được xác minh.
+
 ---
 
 ## 🚀 6. Dạng bài thi vào lớp 10
