@@ -56,7 +56,10 @@ with sync_playwright() as pw:
             tables=exam.locator("table.mk-exam-table")
             if slug in ("02-so-va-phep-tinh","03-ti-le-ti-le-thuc",
                         "04-bieu-thuc-dai-so","09-he-phuong-trinh"):
-                assert tables.count()==1,(device,slug,"H3 source not in exam table")
+                assert tables.count()==1,(device,slug,"H3 source not in exam table",
+                    "direct H3",exam.locator(":scope > .topic-learning-card-body > h3").count(),
+                    "all H3",exam.locator("h3").count(),
+                    "verified CTAs",exam.locator(".math-knowledge-exam-actions").count())
             # All authored topic §6 families must be rows of a table, not
             # numbered prose with CT15-style inline buttons glued into it.
             top_table=tables.first if tables.count() else exam.locator("table").first
