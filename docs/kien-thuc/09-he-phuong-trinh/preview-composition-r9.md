@@ -691,13 +691,19 @@ Hai phương pháp này là công cụ chính để:
 
 ### Dạng rất đáng luyện: bài toán thực tế lập hệ hai ẩn
 
-Những bài kiểu **số lượng – giá trị**, **giá – giảm giá**, **chuyển động**, **năng suất**, **hỗn hợp**, **số học**, **tuổi** và **hình học** đều có chung một kỹ năng quan trọng:
+Những bài kiểu **số lượng – giá trị**, **giá – giảm giá theo phần trăm**, **chuyển động**, **năng suất**, **hỗn hợp**, **số học**, **tuổi** và **hình học** đều có chung một kỹ năng quan trọng:
 
 1. chọn đúng hai ẩn;
 2. xác định đơn vị và điều kiện;
 3. tìm hai quan hệ độc lập;
 4. lập hệ;
 5. giải và kiểm tra kết quả trong bối cảnh bài toán.
+
+Đối chiếu nhanh các đại lượng trước khi lập hệ (chỉ là **quan hệ mô hình**, không thay thế việc đọc điều kiện của đề):
+
+| Chuyển động | Năng suất | Mua bán / phần trăm |
+|---|---|---|
+| Quãng đường = vận tốc × thời gian; thống nhất đơn vị. | Khối lượng công việc = năng suất × thời gian; thống nhất đơn vị công việc. | Thành tiền = số lượng × đơn giá; giảm `p%` nghĩa là giá còn `(100 − p)%` giá gốc. |
 
 Hai nhóm dữ kiện dễ bỏ sót khi chuyển từ đề lời văn sang hệ phương trình:
 
