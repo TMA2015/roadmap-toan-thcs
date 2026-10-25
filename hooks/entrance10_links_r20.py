@@ -127,15 +127,33 @@ def _with_h3(block, plan, topic):
     return block
 
 def _with_bullets(block, plan, topic):
+    """Build the CT10-style readable exam table, not an inline sentence chain.
+
+    Keep each authored item exactly once and every verified link beside its
+    matching row. The original overall priority remains below the table; do
+    not fabricate distinct per-row priority evidence.
+    """
     hits = list(_BULLET.finditer(block))
     if len(hits) != len(plan) or [int(x.group(1)) for x in hits] != list(range(1, len(plan) + 1)):
-        raise ValueError("R20 §6 numbered exam list changed: " + topic)
-    for index in range(len(hits)-1, -1, -1):
-        item = hits[index]
-        # The in-flow semantic mapping remains beside the exact original syllabus line.
-        block = block[:item.end()] + ' <span class="math-knowledge-exam-inline">' \
-                + _render_actions(plan[index], topic) + "</span>" + block[item.end():]
-    return block
+        raise ValueError("R30 §6 numbered exam list changed: " + topic)
+    # This authored form is exactly one contiguous numbered list. Refuse to
+    # restructure other formats accidentally.
+    for i in range(len(hits) - 1):
+        if block[hits[i].end():hits[i + 1].start()].strip():
+            raise ValueError("R30 §6 unexpected material between list rows: " + topic)
+    before, after = block[:hits[0].start()], block[hits[-1].end():]
+    lines = [
+        "| Dạng bài | Trọng tâm cần chắc | Mức ưu tiên | Mở bài |",
+        "|:---|:---|:---:|:---|",
+    ]
+    for i, hit in enumerate(hits):
+        label = hit.group(2).strip().replace("|", r"\|")
+        actions = _render_actions(plan[i], topic)
+        # These stars were defined for the *whole topic*, never per item.
+        lines.append("| **Dạng " + str(i + 1) + "** | " + label +
+                     " | Theo chuyên đề | " + actions + " |")
+    return before.rstrip() + "\n\n" + "\n".join(lines) + "\n\n" + after.lstrip()
+
 
 def augment_exam_links(markdown, topic):
     """Return only a §6 annotated view; reject changed/missing row counts."""
