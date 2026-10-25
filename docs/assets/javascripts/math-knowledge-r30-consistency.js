@@ -52,6 +52,26 @@
       }
       return {heading, nodes};
     });
+    // CT13 already has the six reviewed R20 exam rows in its source table,
+    // followed by three explanatory method H3s. We must integrate those
+    // into the EXISTING table, not render a second competing three-row table.
+    // The two parallel-angle methods belong to row 2, perpendicular to row 3.
+    const authoredTable = body.querySelector("table");
+    if (match[1].startsWith("13-") && authoredTable && groups.length === 3) {
+      const authoredRows = [...authoredTable.querySelectorAll("tbody > tr")];
+      if (authoredRows.length !== 6) return; // fail safe, don't lose content
+      const mappedRowIndexes = [1,1,2];
+      groups.forEach(({heading,nodes},i) => {
+        const cell = authoredRows[mappedRowIndexes[i]].querySelector("td");
+        if (!cell) return;
+        const note = document.createElement("section");
+        note.className = "mk-exam-method-note";
+        note.append(heading,...nodes); // move original headings, links, explanations
+        cell.append(note);
+      });
+      exam.dataset.mathR30ExamTable = "1";
+      return;
+    }
     headings[0].before(wrap);
 
     groups.forEach(({heading, nodes}, i) => {
