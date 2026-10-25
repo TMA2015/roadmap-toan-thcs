@@ -118,6 +118,8 @@ Ví dụ:
 
 Nếu biết thêm `x ≥ 3` thì mới kết luận `|x - 3| = x - 3`.
 
+**Xét dấu trước khi bỏ giá trị tuyệt đối:** `A ≥ 0` → `|A| = A`; `A < 0` → `|A| = -A`; nếu chưa biết dấu của `A` thì **giữ nguyên `|A|`**. Ví dụ, khi `x < 3` thì `|x - 3| = 3 - x`.
+
 ### 3.3A. Mở rộng / Entrance10 – Bình phương hai vế và phương trình chứa căn
 
 Bình phương hai vế **không phải lúc nào cũng là phép biến đổi tương đương**. Từ `U = V` có thể suy ra `U² = V²`, nhưng chiều ngược lại còn có khả năng `U = -V`.
