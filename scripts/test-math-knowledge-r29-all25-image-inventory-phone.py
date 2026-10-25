@@ -125,6 +125,40 @@ for cue in ("đổi về cùng một đơn vị", "chỉ làm tròn **ở bướ
     assert cue in ct20, ("CT20 20-04 measurement guard lost", cue)
 print("PASS R29 focused CT19/CT20 old-poster native guards", flush=True)
 
+# R34: retained CT10 graph strokes must stay inside their actual plot frames.
+# This catches visual overshoot into titles/footers without changing the math.
+ct10 = Path("docs/kien-thuc/10-ham-so-do-thi/preview-tabs-r6.md").read_text(encoding="utf-8")
+ct10_plot_frames = {
+    "10-06-he-so-a-b.svg": ((60, 560, 145, 475), (640, 1140, 145, 475)),
+    "10-07-giao-diem-hai-duong-thang.svg": ((110, 870, 110, 580),),
+    "10-09-duong-thang-parabol.svg": ((110, 870, 110, 580),),
+}
+for name, frames in ct10_plot_frames.items():
+    assert name in ct10, ("CT10 retained visual removed", name)
+    graphic = Path("docs/assets/infographics/10") / name
+    svg = ET.fromstring(graphic.read_text(encoding="utf-8"))
+    chart_marks = 0
+    for el in svg.iter():
+        kind = el.tag.rsplit("}", 1)[-1]
+        if kind not in ("line", "polyline") or el.get("stroke") not in (
+                "#2563eb", "#059669", "#dc2626"):
+            continue
+        if kind == "line":
+            points = [(float(el.get("x1")), float(el.get("y1"))),
+                      (float(el.get("x2")), float(el.get("y2")))]
+        else:
+            points = [tuple(map(float, item.split(",")))
+                      for item in el.get("points", "").split()]
+        assert points, (name, "empty chart mark")
+        assert any(all(xmin - 0.01 <= x <= xmax + 0.01
+                           and ymin - 0.01 <= y <= ymax + 0.01
+                           for x, y in points)
+                   for xmin, xmax, ymin, ymax in frames), (
+                       name, "graph stroke outside plot frame", points[:2], points[-2:])
+        chart_marks += 1
+    assert chart_marks >= 2, (name, "expected chart lines absent")
+    print("PASS R34 CT10 retained SVG graph plot-frame bounds", name, flush=True)
+
 CHROME = shutil.which("google-chrome") or shutil.which("chromium")
 if not CHROME:
     raise RuntimeError("Chromium required for 25-topic phone browser QA")
