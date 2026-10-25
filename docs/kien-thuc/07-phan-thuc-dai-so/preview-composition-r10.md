@@ -591,6 +591,15 @@ Với biểu thức dài, thay số quá sớm thường làm phép tính nặng
 
 ---
 
+**Tự đối chiếu tư duy trước khi luyện tập** (hai câu hỏi hữu ích từ infographic cũ, không phải bài chấm điểm):
+
+| Câu hỏi | Điểm cần tự giải thích |
+|---|---|
+| Vì sao giá trị bị loại ở mẫu ban đầu **vẫn bị loại sau khi rút gọn**? | Rút gọn chỉ cho biểu thức tương đương **trên miền xác định ban đầu**; không làm phân thức gốc có nghĩa tại giá trị đã bị loại. |
+| Khi nào **rút gọn trước**, khi nào **quy đồng trước**? | Nếu tử và mẫu có nhân tử chung, nên phân tích để rút gọn; khi cộng/trừ phân thức khác mẫu, cần đưa về mẫu chung phù hợp (có thể rút gọn từng phần trước). |
+
+---
+
 ## 📝 8. Luyện tập tiếp theo
 
 Phần **micro-practice** trong 5 Learning Cards dùng để kiểm tra nhanh ngay sau khi học. Khi muốn luyện sâu hơn và lặp lại theo kỹ năng, hãy chuyển sang **Practice Room**.
