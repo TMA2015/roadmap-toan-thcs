@@ -203,8 +203,12 @@ for(const [topic,revision] of plans){
  if(["22-dai-luong-dac-trung","25-tong-hop-on-thi-10"].includes(topic))
    assert(!candidate.includes('href="../../../luyen-tap/tu-luan/'),"Do not invent canonical Written for "+topic);
 }
-assert.deepEqual([sourceImages,keptImages,hiddenImages,newImages],[159,78,81,3],
-  "R14 image-display inventory changed: re-audit infographic source before any release");
+// R41 #578 source-to-native ledger audits six additional duplicate text posters.
+// Source placements and authored SVGs stay unchanged; only presentation count changes.
+assert(fs.existsSync("docs/collaboration/math-thcs-infographic-crosswalk-r41-20261026.csv"),
+  "R41 99-row source-to-native review ledger missing");
+assert.deepEqual([sourceImages,keptImages,hiddenImages,newImages],[159,72,87,3],
+  "R41 image-display inventory changed: re-audit original source and ledger before release");
 console.log("PASS source-checked candidate Written deep links",verifiedWrittenLinks,"approved links");
 console.log("PASS R14 25 source candidates / CT02 semantic reflow / CT10 5+5 tabs");
 console.log(JSON.stringify({total:plans.length,sourceImages,keptImages,hiddenImages,newImages,receipt}));
