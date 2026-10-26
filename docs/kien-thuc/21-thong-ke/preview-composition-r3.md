@@ -55,7 +55,7 @@ Mạch tư duy trọng tâm:
 
 <p align="center">
   <img src="../../../assets/statistics/21/21-bang-tan-so.svg"
-       alt="Minh họa bảng tần số"
+       alt="Bảng điểm Toán của 14 học sinh: điểm 6, 7, 8, 9 có tần số 2, 4, 5, 3; tần suất 14,3%, 28,6%, 35,7%, 21,4%."
        width="560">
 </p>
 
@@ -80,7 +80,7 @@ Ví dụ trong bảng trên:
 
 <p align="center">
   <img src="../../../assets/statistics/21/21-bieu-do-cot.svg"
-       alt="Minh họa biểu đồ cột"
+       alt="Biểu đồ cột tần số điểm Toán: điểm 6 có 2 học sinh, điểm 7 có 4, điểm 8 có 5, điểm 9 có 3; cột điểm 8 cao nhất."
        width="560">
 </p>
 
@@ -104,7 +104,7 @@ Trong ví dụ:
 
 <p align="center">
   <img src="../../../assets/statistics/21/21-bieu-do-doan-thang.svg"
-       alt="Minh họa biểu đồ đoạn thẳng"
+       alt="Biểu đồ đoạn thẳng nhiệt độ trung bình ngày 1 đến 5 lần lượt 27, 28, 29, 28, 30 độ C; xu hướng tăng, giảm rồi tăng."
        width="560">
 </p>
 

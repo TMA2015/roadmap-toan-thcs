@@ -142,6 +142,56 @@ for filename, prefix, required in (
 print("PASS R39 CT20 retained SVG accessibility and original teaching cues", flush=True)
 
 
+
+# R40: retained CĐ21 statistics diagrams expose precise accessible names and
+# text alternatives; data, chart geometry and original visual labels are kept.
+ct21_native = Path("docs/kien-thuc/21-thong-ke/preview-composition-r3.md").read_text(encoding="utf-8")
+for filename, prefix, title, desc_cues, alt_cues, visible_cues in (
+    ("21-bang-tan-so.svg", "ct21-frequency", "Bảng tần số và tần suất điểm kiểm tra Toán",
+     ("14 học sinh", "14,3%", "28,6%", "35,7%", "21,4%"),
+     ("14 học sinh", "2, 4, 5, 3", "35,7%"),
+     ("Điểm", "Tần số", "Tần suất", "6", "7", "8", "9", "2", "4", "5", "3", "14,3%", "28,6%", "35,7%", "21,4%", "14 học sinh")),
+    ("21-bieu-do-cot.svg", "ct21-bars", "Biểu đồ cột tần số điểm kiểm tra Toán",
+     ("2, 4, 5, 3", "0 đến 5"),
+     ("2 học sinh", "4", "5", "3", "cao nhất"),
+     ("6 điểm", "7 điểm", "8 điểm", "9 điểm", "2", "4", "5", "3")),
+    ("21-bieu-do-doan-thang.svg", "ct21-line", "Biểu đồ đoạn thẳng nhiệt độ trung bình năm ngày",
+     ("27, 28, 29, 28, 30", "ngày 5"),
+     ("27, 28, 29, 28, 30", "tăng, giảm rồi tăng"),
+     ("Ngày 1", "Ngày 2", "Ngày 3", "Ngày 4", "Ngày 5", "26", "27", "28", "29", "30")),
+):
+    assert filename in ct21_native, ("CT21 retained diagram missing", filename)
+    svg = ET.fromstring((Path("docs/assets/statistics/21") / filename).read_text(encoding="utf-8"))
+    ns = {"svg": "http://www.w3.org/2000/svg"}
+    assert svg.get("role") == "img"
+    assert svg.get("aria-labelledby") == f"{prefix}-title {prefix}-desc"
+    title_el = svg.find("svg:title", ns)
+    desc_el = svg.find("svg:desc", ns)
+    assert title_el is not None and title_el.get("id") == f"{prefix}-title" and title_el.text == title
+    assert desc_el is not None and desc_el.get("id") == f"{prefix}-desc"
+    for cue in desc_cues:
+        assert cue in (desc_el.text or ""), ("CT21 description cue lost", filename, cue)
+    img = re.search(r'<img[^>]+src="[^"]*' + re.escape(filename) + r'"[^>]*>', ct21_native, re.S)
+    assert img, ("CT21 native image missing", filename)
+    alt_match = re.search(r'alt="([^"]+)"', img.group(0))
+    assert alt_match, ("CT21 image alt missing", filename)
+    for cue in alt_cues:
+        assert cue in alt_match.group(1), ("CT21 alt cue lost", filename, cue)
+    labels = "\\n".join("".join(el.itertext()) for el in svg.findall(".//svg:text", ns))
+    for cue in visible_cues:
+        assert cue in labels, ("CT21 source data label lost", filename, cue)
+# Pin the existing bar heights and line points to catch silent data changes.
+ct21_bar = ET.fromstring(Path("docs/assets/statistics/21/21-bieu-do-cot.svg").read_text(encoding="utf-8"))
+bar_rects = {(el.get("x"), el.get("y"), el.get("width"), el.get("height"))
+             for el in ct21_bar.findall(".//{http://www.w3.org/2000/svg}rect")}
+for bar in (("160", "260", "80", "100"), ("290", "160", "80", "200"),
+            ("420", "110", "80", "250"), ("550", "210", "80", "150")):
+    assert bar in bar_rects, ("CT21 bar geometry changed", bar)
+ct21_line = ET.fromstring(Path("docs/assets/statistics/21/21-bieu-do-doan-thang.svg").read_text(encoding="utf-8"))
+line_points = [el.get("points") for el in ct21_line.findall(".//{http://www.w3.org/2000/svg}polyline")]
+assert line_points == ["160,270 270,220 380,170 490,220 600,120"], "CT21 line chart data changed"
+print("PASS R40 CT21 accessible diagrams, precise alt and original data", flush=True)
+
 # Focused factual parity assertions for specific omitted text posters.
 # Other posters require their own proposition-level audit before academic sign-off.
 ct04 = Path("docs/kien-thuc/04-bieu-thuc-dai-so/preview-composition-r10.md").read_text(encoding="utf-8")
