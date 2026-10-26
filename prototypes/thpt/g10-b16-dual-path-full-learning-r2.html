@@ -146,7 +146,7 @@ footer{margin-top:27px;border-top:1px solid var(--line);padding-top:13px;color:v
 "use strict";
 var pages=[].slice.call(document.querySelectorAll("[data-page]"));
 function route(){
- var raw=(location.hash||"#sgk").slice(1),page=raw.indexOf("core-")===0?"core":raw;
+ var raw=(location.hash||"#sgk").slice(1),page=raw==="core-library"?"core-library":raw.indexOf("core-")===0?"core":raw;
  if(!document.getElementById(page)||!document.getElementById(page).hasAttribute("data-page")){location.replace(location.pathname+location.search+"#sgk");return;}
  pages.forEach(function(p){p.hidden=p.id!==page});
  document.querySelectorAll("[data-nav]").forEach(function(a){if(a.dataset.nav===page){a.setAttribute("aria-current","page")}else{a.removeAttribute("aria-current")}});
