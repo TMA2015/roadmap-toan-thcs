@@ -10,7 +10,7 @@ CHROME=shutil.which("google-chrome") or shutil.which("chromium")
 if not CHROME:
     raise RuntimeError("Chromium required for R13 QA")
 TOPICS={
-    "01-ban-do-chuong-trinh": {"version":"preview-composition-r13","phrase":"Ba trạng thái học","actions":0,"imgs":["01-overview.svg"]},
+    "01-ban-do-chuong-trinh": {"version":"preview-composition-r13","phrase":"Ba trạng thái học","actions":0,"imgs":["01-overview-r2.svg"]},
     "22-dai-luong-dac-trung": {"version":"preview-composition-r13","phrase":"Giá trị ngoại lai","actions":1,"imgs":["22-trung-binh.svg","22-trung-vi-mot.svg","22-ngoai-lai.svg"]},
     "24-bai-toan-thuc-te": {"version":"preview-composition-r13","phrase":"Mô hình hóa toán học","actions":2,"imgs":["24-03-chon-mo-hinh.svg","24-quang-duong-van-toc-thoi-gian.svg","24-phan-tram-giam-gia.svg","24-chieu-cao-luong-giac.svg"]},
     "25-tong-hop-on-thi-10": {"version":"preview-composition-r13","phrase":"Ba giai đoạn ôn tập","actions":1,"imgs":["25-03-luyen-de-so-loi.svg","25-ban-do-tong-hop.svg","25-ma-tran-uu-tien.svg","25-lo-trinh-3-giai-doan.svg"]},
