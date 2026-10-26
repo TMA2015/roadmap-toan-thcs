@@ -33,14 +33,14 @@ TOPICS = [
     ("15-duong-dong-quy", "r11", 4, "01 02 03 04", ()),
     ("16-tu-giac", "r11", 4, "01 02 03 04", ()),
     ("17-thales-dong-dang", "r12", 4, "01 02 03 04", ()),
-    ("18-he-thuc-luong", "r12", 4, "01 04", ()),
+    ("18-he-thuc-luong", "r12", 4, "01 02 03 04", ()),
     ("19-duong-tron", "r12", 4, "01 02 03 04", ()),
-    ("20-hinh-hoc-tong-hop", "r12", 4, "01 04", ()),
+    ("20-hinh-hoc-tong-hop", "r12", 4, "01 02 03 04", ()),
     ("21-thong-ke", "r3", 3, "01 02 03", ()),
     ("22-dai-luong-dac-trung", "r13", 3, "01 02 03", ()),
     ("23-xac-suat", "r3", 3, "01 02 03", ()),
-    ("24-bai-toan-thuc-te", "r13", 4, "01 02 04", ()),
-    ("25-tong-hop-on-thi-10", "r13", 4, "01 02 04", ()),
+    ("24-bai-toan-thuc-te", "r13", 4, "01 02 03 04", ()),
+    ("25-tong-hop-on-thi-10", "r13", 4, "01 02 03 04", ()),
 ]
 assert len(TOPICS) == 25 and len({x[0] for x in TOPICS}) == 25
 IMAGE = re.compile(r'!\[[^\]]*\]\([^)]*assets/infographics/(\d\d)/([^)]*?\.svg)\)')
@@ -116,7 +116,7 @@ print("PASS R38 CT06 SVG title/description/role and five-step parity", flush=Tru
 
 
 
-# R39: CĐ20 retained instructional posters keep accessible SVG names,
+# R39/R41: CĐ20 source SVGs remain available but duplicated posters are no longer displayed; SVGs keep accessible names,
 # descriptions and all original teaching cues without changing artwork.
 ct20_native = Path("docs/kien-thuc/20-hinh-hoc-tong-hop/preview-composition-r12.md").read_text(encoding="utf-8")
 for filename, prefix, required in (
@@ -127,7 +127,7 @@ for filename, prefix, required in (
      ("CHUỖI A · NỘI TIẾP", "CHUỖI B · SONG SONG",
       "CHUỖI C · ĐỒNG DẠNG", "CHUỖI D · TAM GIÁC VUÔNG")),
 ):
-    assert filename in ct20_native, ("CT20 retained poster missing", filename)
+    assert filename not in ct20_native, ("CT20 duplicate poster still displayed", filename)
     svg = ET.fromstring((Path("docs/assets/infographics/20") / filename).read_text(encoding="utf-8"))
     ns = {"svg": "http://www.w3.org/2000/svg"}
     assert svg.get("role") == "img"
@@ -139,7 +139,7 @@ for filename, prefix, required in (
     labels = "\\n".join("".join(el.itertext()) for el in svg.findall(".//svg:text", ns))
     for cue in required:
         assert cue in labels, ("CT20 teaching cue lost", filename, cue)
-print("PASS R39 CT20 retained SVG accessibility and original teaching cues", flush=True)
+print("PASS R39 CT20 archived SVG metadata and original teaching cues", flush=True)
 
 
 
@@ -191,6 +191,43 @@ ct21_line = ET.fromstring(Path("docs/assets/statistics/21/21-bieu-do-doan-thang.
 line_points = [el.get("points") for el in ct21_line.findall(".//{http://www.w3.org/2000/svg}polyline")]
 assert line_points == ["160,270 270,220 380,170 490,220 600,120"], "CT21 line chart data changed"
 print("PASS R40 CT21 accessible diagrams, precise alt and original data", flush=True)
+
+# R41: six text-heavy posters must not reappear on the canonical
+# Knowledge route; their unique teaching facts are preserved in native text.
+# This is source-text regression, NOT final image-level academic certification.
+r41_paths = {
+    "18": ("18-he-thuc-luong", "preview-composition-r12.md",
+           ("18-02-he-thuc-duong-cao.svg", "18-03-ti-so-luong-giac.svg"),
+           ("BH + CH = BC", "hình chiếu **của chính cạnh đó**",
+            "AB² = BH × BC", "AC² = CH × BC", "AH² = BH × CH",
+            "đối–huyền", "kề–huyền", "đối–kề", "chế độ **DEG**")),
+    "20": ("20-hinh-hoc-tong-hop", "preview-composition-r12.md",
+           ("20-02-chon-chien-luoc.svg", "20-03-chuoi-suy-luan.svg"),
+           ("Bốn chuỗi suy luận thường gặp", "Nội tiếp → góc nội tiếp",
+            "đồng dạng hoặc Thales", "bán kính tại điểm thuộc đường tròn",
+            "AB² = BH × BC", "ghép đúng các đỉnh/cạnh tương ứng")),
+    "24": ("24-bai-toan-thuc-te", "preview-composition-r13.md",
+           ("24-03-chon-mo-hinh.svg",),
+           ("Chọn mô hình theo quan hệ thực tế", "đơn vị và điều kiện",
+            "không máy móc theo số ẩn", "S = vt", "A = nt")),
+    "25": ("25-tong-hop-on-thi-10", "preview-composition-r13.md",
+           ("25-03-luyen-de-so-loi.svg",),
+           ("Sổ lỗi cá nhân nên ghi đủ bốn trường", "chuyên đề gốc",
+            "nguyên nhân sai", "cách sửa", "tự làm lại không nhìn lời giải",
+            "sau vài ngày")),
+}
+for number, (slug, filename, posters, required_cues) in r41_paths.items():
+    folder = Path("docs/kien-thuc") / slug
+    source = (folder / "index.md").read_text(encoding="utf-8")
+    native = (folder / filename).read_text(encoding="utf-8")
+    for svg_name in posters:
+        assert svg_name in source, ("R41 historical source embed missing", svg_name)
+        assert svg_name not in native, ("R41 text-heavy duplicate still shown", svg_name)
+        assert (Path("docs/assets/infographics") / number / svg_name).is_file(), (
+            "R41 source SVG deleted", svg_name)
+    for cue in required_cues:
+        assert cue in native, ("R41 native teaching cue missing", slug, cue)
+print("PASS R41 six redundant posters omitted; native teaching cues retained", flush=True)
 
 # Focused factual parity assertions for specific omitted text posters.
 # Other posters require their own proposition-level audit before academic sign-off.
