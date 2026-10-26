@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>G Learning · Toán THPT — Kiến trúc hai trục R2 (Demo)</title>
+<style>
+:root{color-scheme:light;--bg:#f3f6fc;--surface:#fff;--soft:#f6f8fd;--ink:#16223b;--muted:#526178;--line:#dde5f0;--blue:#334fc0;--teal:#087d69;--amber:#815715;--warn:#fff6e8;--shadow:0 7px 23px #1b355113}
+html[data-theme="dark"]{color-scheme:dark;--bg:#111a2b;--surface:#202e47;--soft:#18253d;--ink:#e9f2ff;--muted:#c2cfe3;--line:#415170;--blue:#aec5ff;--teal:#76e2c8;--amber:#f7ca82;--warn:#43341f;--shadow:none}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);background:var(--bg);font:17px/1.65 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+a{color:var(--blue)}button{cursor:pointer;font:inherit}a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible{outline:3px solid var(--teal);outline-offset:3px}
+.wrap{max-width:1030px;width:calc(100% - 32px);margin:auto}header{position:sticky;top:0;z-index:20;background:var(--surface);border-bottom:1px solid var(--line)}
+header .wrap{min-height:64px;display:flex;align-items:center;gap:14px;justify-content:space-between}.brand{font-weight:800;white-space:nowrap;color:var(--ink);text-decoration:none}.brand b{color:var(--teal)}
+nav{display:flex;gap:5px;flex-wrap:wrap}.navlink{display:inline-flex;align-items:center;border-radius:9px;padding:8px 11px;min-height:44px;font-size:14px;font-weight:670;text-decoration:none;border:1px solid transparent}
+.navlink[aria-current="page"]{background:var(--soft);border-color:var(--line);color:var(--ink)}.theme{min-height:44px;background:var(--soft);color:var(--ink);border:1px solid var(--line);border-radius:9px;padding:8px 12px}
+main{padding:22px 0 65px}.notice,.intro,.panel,.concept{background:var(--surface);border:1px solid var(--line);border-radius:15px}.notice{padding:12px 17px;font-size:14px;color:var(--muted);margin-bottom:22px}
+article[data-page]{background:var(--surface);padding:32px 40px 40px;border-radius:19px;border:1px solid var(--line);box-shadow:var(--shadow)}article[hidden]{display:none!important}
+h1,h2,h3,p{margin-top:0}h1{font-size:clamp(28px,3.5vw,36px);line-height:1.25;letter-spacing:-.03em;margin-bottom:10px}h2{font-size:23px;line-height:1.3;margin:29px 0 14px;border-bottom:1px solid var(--line);padding-bottom:9px}h3{font-size:18px;line-height:1.35;margin-bottom:9px}.muted,.crumb{color:var(--muted)}.crumb{font-size:14px;margin-bottom:11px}
+.lead{max-width:760px;color:var(--muted)}.tabs,.pills,.buttons{display:flex;flex-wrap:wrap;gap:9px}.tab{padding:9px 15px;border:1px solid var(--line);border-radius:10px;min-height:44px;background:var(--soft);color:var(--ink);font-size:15px;font-weight:690}
+.tab[aria-current="page"]{background:var(--blue);color:var(--surface)}html[data-theme="dark"] .tab[aria-current="page"]{color:#18243c}
+.card{background:var(--soft);padding:19px;border-radius:13px;border:1px solid var(--line);margin:16px 0}.grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:17px}.full{grid-column:1/-1}
+.pill{border-radius:100px;border:1px solid var(--line);background:var(--soft);padding:3px 11px;font-size:13px;display:inline-block}.eyebrow{color:var(--teal);font-size:12px;font-weight:780;letter-spacing:.04em;text-transform:uppercase}
+.math{padding:11px 14px;background:var(--soft);border-radius:10px;font:22px/1.5 "Cambria Math",system-ui,sans-serif;text-align:center;overflow-x:auto;white-space:nowrap}.small{font-size:14px;color:var(--muted)}.formula-inline{white-space:nowrap;font-family:"Cambria Math",system-ui,sans-serif}
+.feature{border-left:4px solid var(--teal);background:var(--soft);padding:13px 18px;border-radius:0 12px 12px 0}.feature p{margin:4px 0}
+.graph{margin:0;border:1px solid var(--line);border-radius:13px;padding:12px}.graph svg{width:100%;height:auto;display:block}.graph text{font:14px system-ui;fill:var(--ink)}.graph figcaption{font-size:13px;color:var(--muted);padding:6px}
+.example{border-left:4px solid var(--blue);background:var(--soft);padding:17px;border-radius:0 12px 12px 0;margin:14px 0}.example p:last-child{margin-bottom:0}
+.tip{border-left:4px solid var(--amber);background:var(--warn);padding:13px 17px;border-radius:0 12px 12px 0}.tip p:last-child{margin:0}
+.route{display:inline-flex;padding:10px 16px;min-height:44px;border:1px solid var(--line);border-radius:10px;align-items:center;text-decoration:none;font-weight:700;background:var(--soft);font-size:15px}.route.primary{background:var(--blue);color:var(--surface);border-color:var(--blue)}html[data-theme="dark"] .route.primary{color:#16223b}
+fieldset{border:0;padding:0;margin:14px 0 0}legend{font-weight:700;padding:0 0 9px}.choices{display:grid;gap:9px}.choices label{display:flex;align-items:center;gap:10px;min-height:44px;padding:9px 12px;border:1px solid var(--line);background:var(--soft);border-radius:9px;cursor:pointer}
+.choices input{width:19px;height:19px;accent-color:var(--blue);flex:0 0 auto}.action{border:1px solid var(--line);border-radius:10px;background:var(--soft);color:var(--ink);font-size:15px;font-weight:670;min-height:44px;padding:10px 17px}
+.action.primary{background:var(--blue);border-color:var(--blue);color:var(--surface)}html[data-theme="dark"] .action.primary{color:#16223b}.action:disabled{opacity:.5;cursor:not-allowed}
+.feedback{min-height:30px;margin-top:13px}.feedback:not(:empty){background:var(--soft);padding:12px 14px;border-radius:10px}
+details{margin:13px 0;border:1px solid var(--line);border-radius:10px;padding:10px 14px}summary{cursor:pointer;font-weight:700;min-height:32px}details[open] summary{margin-bottom:11px}
+dl{display:grid;grid-template-columns:160px 1fr;gap:5px 15px}dt{color:var(--muted)}dd{margin:0}.divider{height:1px;background:var(--line);margin:23px 0}.num{font-variant-numeric:tabular-nums}
+.rubric{width:100%;border-collapse:collapse;font-size:15px}.rubric th,.rubric td{text-align:left;padding:10px;border-bottom:1px solid var(--line)}.rubric th:last-child,.rubric td:last-child{text-align:center}
+footer{margin-top:27px;border-top:1px solid var(--line);padding-top:13px;color:var(--muted);font-size:13px}
+@media(max-width:850px){header .wrap{flex-wrap:wrap;padding:9px 0}.brand{flex:1}nav{order:3;width:100%;overflow-x:auto;flex-wrap:nowrap}.navlink{white-space:nowrap}}
+@media(max-width:690px){article[data-page]{padding:20px 17px 25px}.grid{grid-template-columns:1fr}h2{font-size:21px}dl{grid-template-columns:1fr}.wrap{width:calc(100% - 22px)}}
+@media(max-width:450px){body{font-size:16px}.math{font-size:19px}h1{font-size:27px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style></head>
+<body>
+<header><div class="wrap"><a class="brand" href="#sgk">G <b>Learning</b> · Toán THPT</a>
+<nav aria-label="Các khu vực học tập"><a class="navlink" data-nav="sgk" href="#sgk">Theo SGK</a><a class="navlink" data-nav="topic" href="#topic">Theo chuyên đề</a><a class="navlink" data-nav="core-library" href="#core-library">Thư viện Core</a><a class="navlink" data-nav="written" href="#written">Tự luận</a></nav>
+<button class="theme" id="theme" type="button">Sáng / Tối</button></div></header>
+<main class="wrap">
+<div class="notice"><strong>THPT · Mẫu giao diện R2 · Chưa phát hành.</strong> Đây là demo cấu trúc và hành vi, chưa được NotebookLM duyệt học thuật. Câu hỏi minh họa, không ghi điểm/lưu kết quả lên máy hoặc máy chủ. Các bài khác của Chương VI chưa biên soạn.</div>
+<article id="sgk" data-page>
+<div class="crumb">Theo SGK KNTT › Lớp 10 › Chương VI</div>
+<h1>Chương VI. Hàm số, đồ thị và ứng dụng</h1>
+<p class="lead">Học theo từng bài SGK; mỗi bài có lý thuyết ngắn gọn nhưng đủ kiến thức của bài, ví dụ và Core luyện tập ngay bên dưới.</p>
+<div class="tabs" role="group" aria-label="Các bài trong Chương VI"><button type="button" class="tab" data-lesson="15">Bài 15</button><button type="button" class="tab" data-lesson="16" aria-current="page">Bài 16</button><button type="button" class="tab" data-lesson="17">Bài 17</button><button type="button" class="tab" data-lesson="18">Bài 18</button></div>
+<section id="lesson16">
+<h2>Bài 16. Hàm số bậc hai</h2>
+<div class="feature"><strong>Mục tiêu</strong><p>Biết dạng tổng quát, xác định đỉnh, trục đối xứng, chiều mở và giá trị cực trị của một parabol đơn giản.</p></div>
+<h2>1. Khái niệm</h2><p>Hàm số bậc hai có dạng <span class="formula-inline">y = ax² + bx + c</span> với a, b, c là các số thực và <strong>a ≠ 0</strong>. Tập xác định là ℝ.</p>
+<h2>2. Đồ thị và tính chất</h2>
+<div class="grid"><div><p>Đồ thị là một parabol. Đặt <span class="formula-inline">h = −b/(2a)</span> và <span class="formula-inline">k = f(h)</span>; khi đó:</p><div class="math">y = a(x − h)² + k</div>
+<p>Đỉnh <strong>I(h; k)</strong>, trục đối xứng <strong>x = h</strong>.</p>
+<p><strong>a &gt; 0:</strong> mở lên, giá trị nhỏ nhất là k và hàm giảm trên (−∞; h), tăng trên (h; +∞).</p>
+<p><strong>a &lt; 0:</strong> mở xuống, giá trị lớn nhất là k và hàm tăng trên (−∞; h), giảm trên (h; +∞).</p></div>
+<figure class="graph"><svg role="img" aria-labelledby="gtitle gdesc" viewBox="0 0 510 325"><title id="gtitle">Đồ thị y bằng x bình phương trừ bốn x cộng ba</title><desc id="gdesc">Parabol mở lên, đỉnh I hai âm một, trục x bằng hai, nghiệm x bằng một và ba.</desc>
+<g id="gridlines" stroke="var(--line)" stroke-width="1"></g><path d="M60 210H481M100 18V305" fill="none" stroke="var(--ink)" stroke-width="1.8"/><path d="M244 20V302" fill="none" stroke="var(--teal)" stroke-width="1.7" stroke-dasharray="5 6"/>
+<polyline id="curve" fill="none" stroke="var(--blue)" stroke-width="3.5" stroke-linejoin="round"/><circle cx="244" cy="244" r="5" fill="var(--teal)"/><circle cx="172" cy="210" r="4" fill="var(--blue)"/><circle cx="316" cy="210" r="4" fill="var(--blue)"/>
+<text x="259" y="270">I(2; −1)</text><text x="166" y="229">1</text><text x="310" y="229">3</text><text x="244" y="320" text-anchor="middle">x = 2</text><text x="483" y="204">x</text><text x="110" y="26">y</text>
+</svg><figcaption>Đồ thị y = x² − 4x + 3, vẽ theo tọa độ. Dùng hình khi nó giúp hiểu, không dùng poster lặp công thức.</figcaption></figure></div>
+<h2>3. Ví dụ</h2><div class="example"><strong>Ví dụ: y = x² − 4x + 3</strong><p>Hoàn thành bình phương: y = (x − 2)² − 1. Vậy đỉnh I(2; −1), trục x = 2, mở lên, giá trị nhỏ nhất bằng −1. Khi y = 0, x = 1 hoặc x = 3.</p></div>
+<div class="tip"><strong>Lưu ý</strong><p>Từ (x − h)² phải đọc đúng dấu của h. Với (x + 3)², hoành độ đỉnh là −3.</p></div>
+<h2>4. Luyện tập</h2><p>Core dưới bài không lặp thêm một tab Kiến thức. Nhấn luyện để mở <strong>chính cùng thẻ Core</strong> có trong thư viện và chuyên đề.</p>
+<div class="card"><span class="eyebrow">Core · Formative · Có gợi ý</span><h3>THPT-CORE-QF01 — Đỉnh của parabol</h3><p>Đọc hoành độ đỉnh từ dạng bình phương hoàn chỉnh.</p><a class="route primary" href="#core-sgk">Luyện Core của bài</a></div>
+<h2>5. Vận dụng</h2><p>Biểu thức bậc hai có thể mô tả diện tích lớn nhất khi hai kích thước bị ràng buộc. Bài tự luận mẫu cho phép học sinh giải trên giấy và tự đối chiếu.</p>
+<a class="route" href="#written">Đến thư viện tự luận</a></section>
+<section id="lesson-other" hidden class="card" aria-live="polite"><h2 id="other-title"></h2><p>Tab điều hướng đã có, nhưng bài học này chưa được xây dựng/kiểm duyệt. Không có nội dung giả hoặc liên kết vào bài chưa phát hành.</p><button class="action" type="button" data-lesson="16">Quay về Bài 16</button></section>
+<footer>Trục SGK: lý thuyết đầy đủ trong phạm vi bài, tiếp đến Core dùng chung · Bản mẫu chưa S1 PASS.</footer></article>
+
+<article id="topic" data-page hidden>
+<div class="crumb">Theo chuyên đề › Đại số và hàm số › Demo Hàm số bậc hai</div>
+<h1>Chuyên đề Hàm số và đồ thị</h1>
+<p class="lead">Mô hình trục dọc kế thừa Toán THCS: bản đồ tiền đề, kiến thức theo mạch, ví dụ, các dạng bài, Core, Practice, Readiness và thư viện tự luận. Bản R2 hiện chỉ viết chi tiết nhánh hàm số bậc hai; chưa phải chuyên đề hoàn chỉnh xuyên lớp 10–12.</p>
+<div class="pills"><span class="pill">Kiến thức chuyên đề</span><span class="pill">Core chung</span><span class="pill">Practice</span><span class="pill">Readiness</span><span class="pill">Written + Mỏ neo</span></div>
+<h2>1. Khái niệm và kiến thức nền</h2><p>Hàm số mô tả quan hệ giữa biến số x và giá trị y. Trong THCS, ta đã gặp đồ thị đường thẳng và parabol đơn giản. Với hàm bậc hai, <span class="formula-inline">y = ax² + bx + c</span>, a ≠ 0, tập xác định ℝ.</p>
+<p>Từ dạng đỉnh <span class="formula-inline">y = a(x − h)² + k</span>, ta thấy <strong>I(h; k)</strong> và <strong>x = h</strong> là trục đối xứng. Dấu của a quyết định chiều mở, đồng thời giúp đọc khoảng tăng/giảm và giá trị lớn nhất/nhỏ nhất.</p>
+<h2>2. Các dạng bài và ví dụ</h2>
+<div class="grid">
+<div class="card"><h3>Dạng 1 · Tìm đỉnh, trục</h3><p>Đưa về dạng đỉnh hoặc dùng h = −b/(2a); sau đó tính k = f(h).</p></div>
+<div class="card"><h3>Dạng 2 · Giao trục và đồ thị</h3><p>Tìm giao điểm với Oy bằng x = 0; tìm giao điểm với Ox bằng cách giải ax² + bx + c = 0 nếu có nghiệm thực.</p></div>
+</div>
+<div class="example"><strong>Ví dụ liên kết kiến thức:</strong> Với y = (x − 2)² − 1, parabol có I(2; −1), cắt Ox tại (1;0) và (3;0). Hai nghiệm đối xứng qua x = 2.</div>
+<h2>3. Core theo chuyên đề</h2><p>Cùng Core dưới Bài 16 và trong Thư viện Core KNTT — không nhân bản câu hỏi hoặc kết quả.</p>
+<a class="route primary" href="#core-topic">Mở Core THPT-CORE-QF01</a>
+<h2>4. Luyện tập chuyên đề</h2><p>Formative Practice: luyện các dạng bài kết hợp, có gợi ý và phản hồi.</p><a class="route" href="#practice">Vào Luyện tập chuyên đề</a>
+<h2>5. Tự kiểm tra</h2><p>Readiness độc lập: không gợi ý, không tiết lộ đáp án hoặc đúng/sai khi chuyển câu; chỉ chấm sau Final Submit.</p><a class="route" href="#readiness">Bắt đầu Tự kiểm tra</a>
+<h2>6. Thư viện bài tự luận</h2><p>Làm trên giấy, xem gợi ý tự chọn, so sánh rubric và lời giải. Bài mỏ neo thuộc chính thư viện này.</p><a class="route" href="#written">Đọc đề tự luận và mỏ neo</a>
+<footer>Đây là cấu trúc đầy đủ của trang chuyên đề; nội dung xuyên lớp còn phải xây và review học thuật.</footer></article>
+
+<article id="core-library" data-page hidden>
+<div class="crumb">Theo SGK KNTT › Thư viện Core</div><h1>Thư viện Core KNTT</h1>
+<p class="lead">Mỗi thẻ có ID ổn định, một bộ câu hỏi/đáp án và các liên kết từ bài học hoặc chuyên đề. Lọc theo lớp/chương/bài và kỹ năng khi thư viện thật được xây dựng.</p>
+<div class="card"><span class="eyebrow">THPT-CORE-QF01 · Lớp 10 · Chương VI · Bài 16</span><h3>Đỉnh của parabol</h3><p>Ví dụ đại diện một kỹ năng Core có thể xuất hiện ở nhiều lối học.</p><a class="route primary" href="#core-library-item">Mở Core chung</a></div>
+<div class="tip"><strong>Không nhân bản dữ liệu</strong><p>Những nơi dẫn tới thẻ Core chỉ là ba cửa vào của cùng nội dung. Demo giữ trạng thái câu trả lời trong phiên trang hiện tại nhưng không ghi tiến độ.</p></div></article>
+
+<article id="core" data-page hidden>
+<div class="crumb" id="core-breadcrumb">Core · Formative</div><h1>THPT-CORE-QF01 · Đỉnh của parabol</h1><span class="pill">Tương tác · Có gợi ý · Một Core duy nhất</span>
+<p class="lead">Đây là cùng một thẻ Core cho đường SGK, thư viện Core và chuyên đề, không có tab Kiến thức trùng lặp.</p>
+<div class="card"><form id="core-form"><fieldset><legend>Cho y = (x + 3)² − 5. Hoành độ đỉnh là bao nhiêu?</legend>
+<div class="choices"><label><input name="core-answer" type="radio" value="-3"> −3</label><label><input name="core-answer" type="radio" value="3"> 3</label><label><input name="core-answer" type="radio" value="-5"> −5</label></div></fieldset>
+<details><summary>Xem gợi ý (tự chọn)</summary>So sánh (x + 3)² với (x − h)²: x + 3 = x − (−3).</details>
+<button class="action primary" type="submit">Kiểm tra Core</button><div id="core-feedback" class="feedback" role="status" aria-live="polite"></div></form></div>
+<a class="route" id="core-back" href="#sgk">Về Bài 16</a><p class="small">Demo lưu trạng thái Core trong bộ nhớ của trang hiện tại, không tạo attempt trên máy chủ hoặc localStorage.</p></article>
+
+<article id="practice" data-page hidden>
+<div class="crumb">Chuyên đề Hàm số và đồ thị › Practice</div><h1>Luyện tập chuyên đề</h1><span class="pill">Tương tác · Có gợi ý · Formative</span>
+<p class="lead">Khác Core: bài luyện theo dạng thuộc chuyên đề, có thể kết hợp kỹ năng; đáp án và phản hồi thuộc ngân hàng Practice riêng.</p>
+<div class="card"><form id="practice-form"><fieldset><legend>Với y = x² − 4x + 3, đồ thị cắt trục Ox tại những hoành độ nào?</legend>
+<div class="choices"><label><input type="radio" name="practice-answer" value="1,3"> x = 1 và x = 3</label><label><input type="radio" name="practice-answer" value="2"> x = 2</label><label><input type="radio" name="practice-answer" value="-1,3"> x = −1 và x = 3</label></div></fieldset>
+<details><summary>Xem gợi ý (tự chọn)</summary>Giao với Ox khi y = 0; phân tích x² − 4x + 3 = (x − 1)(x − 3).</details>
+<button class="action primary" type="submit">Kiểm tra bài luyện</button><div id="practice-feedback" class="feedback" role="status" aria-live="polite"></div></form></div>
+<a class="route" href="#topic">Về chuyên đề</a></article>
+
+<article id="readiness" data-page hidden>
+<div class="crumb">Chuyên đề Hàm số và đồ thị › Tự kiểm tra</div><h1>Tự kiểm tra · Readiness</h1>
+<span class="pill">Tương tác · Không gợi ý · Chỉ chấm sau Final Submit</span>
+<p class="lead">Đây là demo hai câu kiểm tra hành vi giao diện, <strong>không phải bài Readiness học thuật hoàn chỉnh</strong>. Trước khi nộp, có thể quay lại và sửa đáp án; không có giải thích, điểm số hoặc đúng/sai hiển thị sớm.</p>
+<div class="card">
+<p id="readiness-progress" class="small num" aria-live="polite">Câu 1 / 2</p>
+<fieldset id="readiness-fieldset"><legend id="readiness-question"></legend><div class="choices" id="readiness-options"></div></fieldset>
+<div class="buttons" style="margin-top:16px"><button id="readiness-prev" type="button" class="action">Previous</button><button id="readiness-next" type="button" class="action">Next</button><button id="readiness-submit" type="button" class="action primary">Final Submit</button></div>
+<div id="readiness-result" class="feedback" role="status" aria-live="polite"></div>
+<div id="readiness-solutions" hidden><h3>Kết quả và lời giải (sau nộp)</h3><div id="readiness-review"></div><button type="button" class="action" id="readiness-reset">Làm lại bản demo</button></div></div>
+<a class="route" href="#topic">Về chuyên đề</a></article>
+
+<article id="written" data-page hidden>
+<div class="crumb">Thư viện Tự luận › Bài thường và Mỏ neo</div><h1>Thư viện bài tập tự luận</h1>
+<p class="lead">Đọc đề → làm ra giấy → chủ động xem gợi ý nếu cần → so sánh lời giải và rubric. <strong>Không có chấm điểm tự động</strong>. Bài mỏ neo là một nhãn của bài tự luận đại diện, không có thư viện thứ hai.</p>
+<section class="card"><span class="eyebrow">WRI-THPT-DEMO-W01 · Bài tự luận thường</span><h3>Tìm đỉnh và giá trị nhỏ nhất</h3><p>Với y = x² − 6x + 7, hãy đưa về dạng đỉnh, xác định đỉnh, trục đối xứng và giá trị nhỏ nhất; giải thích.</p>
+<details><summary>Gợi ý từng bước</summary>Hoàn thành bình phương: x² − 6x = (x − 3)² − 9.</details>
+<details><summary>Lời giải và rubric tự đối chiếu (4 điểm)</summary><p>y = (x − 3)² − 2. Đỉnh I(3; −2), trục x = 3; vì hệ số bình phương dương, GTNN = −2 tại x = 3.</p>
+<table class="rubric"><thead><tr><th>Tiêu chí</th><th>Điểm</th></tr></thead><tbody><tr><td>Biến đổi đúng</td><td>1</td></tr><tr><td>Đỉnh và trục</td><td>1</td></tr><tr><td>GTNN, điều kiện đạt</td><td>1</td></tr><tr><td>Lập luận/trình bày</td><td>1</td></tr></tbody></table></details></section>
+<section class="card"><span class="eyebrow">WRI-THPT-DEMO-A01 · MỎ NEO · Cùng thư viện Written</span><h3>Bài toán diện tích tối đa</h3><p>Một hình chữ nhật có chu vi 24 m. Đặt một cạnh là x (m). Lập biểu thức diện tích S theo x, tìm diện tích lớn nhất và các kích thước khi đạt giá trị đó. Nêu điều kiện của x và trình bày lời giải trên giấy.</p>
+<details><summary>Gợi ý theo chiến lược (tự chọn)</summary><p>Chu vi 24 m nên hai cạnh có tổng 12 m. Cạnh kia là 12 − x, điều kiện 0 &lt; x &lt; 12. Dùng dạng bình phương để tìm cực đại.</p></details>
+<details><summary>Lời giải và rubric tự đối chiếu (6 điểm)</summary><p>Với 0 &lt; x &lt; 12, S = x(12 − x) = −(x − 6)² + 36 (m²). Vì −(x − 6)² ≤ 0, S ≤ 36; đạt tại x = 6. Hình là hình vuông cạnh 6 m, diện tích lớn nhất 36 m².</p>
+<table class="rubric"><thead><tr><th>Tiêu chí</th><th>Điểm</th></tr></thead><tbody><tr><td>Chọn ẩn, điều kiện và quan hệ thực tế</td><td>2</td></tr><tr><td>Lập biểu thức diện tích</td><td>1</td></tr><tr><td>Tìm cực đại có lý do</td><td>2</td></tr><tr><td>Kết luận, đơn vị</td><td>1</td></tr></tbody></table></details>
+<p class="small">Vì đây là bài mỏ neo, rubric chú trọng lựa chọn mô hình và lập luận, không chỉ phép tính cuối.</p></section><a class="route" href="#topic">Về chuyên đề</a></article>
+</main>
+<script>
+(function(){
+"use strict";
+var pages=[].slice.call(document.querySelectorAll("[data-page]"));
+function route(){
+ var raw=(location.hash||"#sgk").slice(1),page=raw.indexOf("core-")===0?"core":raw;
+ if(!document.getElementById(page)||!document.getElementById(page).hasAttribute("data-page")){location.replace(location.pathname+location.search+"#sgk");return;}
+ pages.forEach(function(p){p.hidden=p.id!==page});
+ document.querySelectorAll("[data-nav]").forEach(function(a){if(a.dataset.nav===page){a.setAttribute("aria-current","page")}else{a.removeAttribute("aria-current")}});
+ var back=document.getElementById("core-back"),bread=document.getElementById("core-breadcrumb");
+ if(page==="core"){
+  var source=raw.slice(5),target=source==="topic"?"topic":source==="library-item"?"core-library":"sgk";
+  back.href="#"+target;back.textContent=target==="topic"?"Về chuyên đề":target==="core-library"?"Về thư viện Core":"Về Bài 16";
+  bread.textContent="Core › "+(target==="topic"?"Từ chuyên đề":target==="core-library"?"Từ thư viện Core":"Từ bài SGK");
+ }
+ window.scrollTo(0,0);
+}
+window.addEventListener("hashchange",route);route();
+document.getElementById("theme").addEventListener("click",function(){document.documentElement.dataset.theme=document.documentElement.dataset.theme==="dark"?"light":"dark"});
+document.querySelectorAll("[data-lesson]").forEach(function(b){b.addEventListener("click",function(){
+ var n=b.dataset.lesson;document.getElementById("lesson16").hidden=n!=="16";document.getElementById("lesson-other").hidden=n==="16";
+ var names={"15":"Bài 15. Hàm số","17":"Bài 17. Dấu của tam thức bậc hai","18":"Bài 18. Phương trình quy về phương trình bậc hai"};
+ document.getElementById("other-title").textContent=names[n]||"";
+ document.querySelectorAll(".tab[data-lesson]").forEach(function(t){if(t.dataset.lesson===n)t.setAttribute("aria-current","page");else t.removeAttribute("aria-current")});
+})});
+var curve=document.getElementById("curve"),g=document.getElementById("gridlines");
+for(var xx=0;xx<=5;xx++){var l=document.createElementNS("http://www.w3.org/2000/svg","line");l.setAttribute("x1",100+72*xx);l.setAttribute("x2",100+72*xx);l.setAttribute("y1",18);l.setAttribute("y2",305);g.appendChild(l)}
+for(var yy=-2;yy<=5;yy++){var l2=document.createElementNS("http://www.w3.org/2000/svg","line");l2.setAttribute("x1",60);l2.setAttribute("x2",481);l2.setAttribute("y1",210-34*yy);l2.setAttribute("y2",210-34*yy);g.appendChild(l2)}
+var pts=[];for(var x=0;x<=4.9;x+=.035){var y=x*x-4*x+3;if(y>=-2&&y<=5)pts.push((100+72*x).toFixed(2)+","+(210-34*y).toFixed(2))}curve.setAttribute("points",pts.join(" "));
+document.getElementById("core-form").addEventListener("submit",function(e){e.preventDefault();var picked=document.querySelector('input[name="core-answer"]:checked'),box=document.getElementById("core-feedback");box.textContent=!picked?"Hãy chọn một đáp án.":picked.value==="-3"?"Đúng: x + 3 = x − (−3), nên hoành độ đỉnh là −3.":"Chưa đúng. Dạng chuẩn là (x − h)² + k, vì thế h = −3."});
+document.getElementById("practice-form").addEventListener("submit",function(e){e.preventDefault();var picked=document.querySelector('input[name="practice-answer"]:checked'),box=document.getElementById("practice-feedback");box.textContent=!picked?"Hãy chọn một đáp án.":picked.value==="1,3"?"Đúng. (x − 1)(x − 3) = 0, nên x = 1 hoặc x = 3.":"Chưa đúng. Giao trục Ox có y = 0; giải (x − 1)(x − 3) = 0."});
+var q=[
+ {ask:"Với y = (x − 4)² + 2, tung độ đỉnh bằng bao nhiêu?",opts:["4","2","−4"],answer:1,why:"Dạng y = (x − h)² + k có k = 2, nên đỉnh I(4; 2)."},
+ {ask:"Với y = −(x − 1)² + 5, giá trị lớn nhất của hàm số là bao nhiêu?",opts:["1","−5","5"],answer:2,why:"Hệ số trước bình phương âm, nên giá trị lớn nhất là 5 tại x = 1."}
+],answers=[null,null],idx=0,submitted=false;
+function redraw(){
+ var a=q[idx],options=document.getElementById("readiness-options");options.textContent="";
+ document.getElementById("readiness-progress").textContent="Câu "+(idx+1)+" / "+q.length;
+ document.getElementById("readiness-question").textContent=a.ask;
+ a.opts.forEach(function(opt,i){var label=document.createElement("label"),radio=document.createElement("input");radio.type="radio";radio.name="ready-answer";radio.value=String(i);radio.checked=answers[idx]===i;radio.disabled=submitted;radio.addEventListener("change",function(){if(!submitted)answers[idx]=i});label.appendChild(radio);label.appendChild(document.createTextNode(" "+opt));options.appendChild(label)});
+ document.getElementById("readiness-prev").disabled=idx===0;
+ document.getElementById("readiness-next").disabled=idx===q.length-1;
+ document.getElementById("readiness-submit").hidden=submitted;
+ document.getElementById("readiness-solutions").hidden=!submitted;
+}
+document.getElementById("readiness-prev").addEventListener("click",function(){if(idx>0){idx--;redraw()}});
+document.getElementById("readiness-next").addEventListener("click",function(){if(idx<q.length-1){idx++;redraw()}});
+document.getElementById("readiness-submit").addEventListener("click",function(){
+ if(answers.some(function(x){return x===null})){document.getElementById("readiness-result").textContent="Hãy trả lời đủ 2 câu trước khi Final Submit; có thể dùng Previous/Next để sửa.";return}
+ submitted=true;var score=answers.reduce(function(n,a,i){return n+(a===q[i].answer?1:0)},0);
+ document.getElementById("readiness-result").textContent="Đã nộp. Kết quả bản demo: "+score+" / "+q.length+". Lời giải mở bên dưới.";
+ var rev=document.getElementById("readiness-review");rev.textContent="";q.forEach(function(item,i){var p=document.createElement("p");p.textContent="Câu "+(i+1)+": "+(answers[i]===item.answer?"Đúng. ":"Chưa đúng. ")+item.why;rev.appendChild(p)});redraw()
+});
+document.getElementById("readiness-reset").addEventListener("click",function(){answers=[null,null];idx=0;submitted=false;document.getElementById("readiness-result").textContent="";document.getElementById("readiness-review").textContent="";redraw()});
+redraw();
+})();
+</script></body></html>
