@@ -95,6 +95,26 @@ ct06 = Path("docs/kien-thuc/06-phan-tich-da-thuc/preview-composition-r9.md").rea
 assert "xét nhân tử chung, hằng đẳng thức, nhóm hạng tử, phối hợp phương pháp, rồi nhân ngược để kiểm tra" in ct06
 assert "06-02-so-do-chon-phuong-phap.svg" in ct06
 print("PASS R36 CT01 neutral image criterion and CT06 decision-sequence alt", flush=True)
+# R38: retained CT06 five-step decision diagram must expose a meaningful
+# accessible name and description without losing any instructional step.
+ct06_svg = ET.fromstring(Path("docs/assets/infographics/06/06-02-so-do-chon-phuong-phap.svg").read_text(encoding="utf-8"))
+ns06 = {"svg": "http://www.w3.org/2000/svg"}
+assert ct06_svg.get("role") == "img"
+assert ct06_svg.get("aria-labelledby") == "ct06-method-title ct06-method-desc"
+title06 = ct06_svg.find("svg:title", ns06)
+desc06 = ct06_svg.find("svg:desc", ns06)
+assert title06 is not None and title06.get("id") == "ct06-method-title"
+assert title06.text == "Sơ đồ chọn phương pháp phân tích đa thức thành nhân tử"
+assert desc06 is not None and desc06.get("id") == "ct06-method-desc"
+assert "nhân ngược" in (desc06.text or "") and "phối hợp" in (desc06.text or "")
+text06 = "\\n".join("".join(el.itertext()) for el in ct06_svg.findall(".//svg:text", ns06))
+for step in ("BƯỚC 1 · Có nhân tử chung?", "BƯỚC 2 · Có dạng hằng đẳng thức?",
+             "BƯỚC 3 · Có thể nhóm hạng tử?", "BƯỚC 4 · Phối hợp nhiều phương pháp",
+             "BƯỚC 5 · Kiểm tra đã phân tích hết chưa?"):
+    assert step in text06, ("CT06 decision-diagram step lost", step)
+print("PASS R38 CT06 SVG title/description/role and five-step parity", flush=True)
+
+
 
 # Focused factual parity assertions for specific omitted text posters.
 # Other posters require their own proposition-level audit before academic sign-off.
