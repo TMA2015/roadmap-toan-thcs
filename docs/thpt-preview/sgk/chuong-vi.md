@@ -44,7 +44,7 @@ Với \(f(x)=x^2-4x+3=(x-2)^2-1\), suy ra **đỉnh** \(I(2;-1)\), **trục đ�
 Dưới bài là thẻ **Core dùng chung**, không có bản “Kiến thức” thứ hai trong Core.
 
 <div class="math-library-entry-grid">
-<a class="math-library-entry" href="../chuyen-de/ham-so/core/"><strong>🧩 Core — Đỉnh parabol (Demo)</strong><span>Cùng một mã Core mở từ bài SGK, Thư viện Core KNTT và chuyên đề.</span></a>
+<a class="math-library-entry" href="../../chuyen-de/ham-so/core/"><strong>🧩 Core — Đỉnh parabol (Demo)</strong><span>Cùng một mã Core mở từ bài SGK, Thư viện Core KNTT và chuyên đề.</span></a>
 </div>
 
 ### 5. Vận dụng
