@@ -442,7 +442,7 @@ Sau khi có đáp số, cần kiểm tra:
 | bảng / biểu đồ / số liệu | thống kê |
 | khả năng xảy ra | xác suất |
 
-![Infographic chọn mô hình toán học](../../assets/infographics/24/24-03-chon-mo-hinh.svg)
+> **Chọn mô hình theo quan hệ thực tế, không máy móc theo số ẩn.** Khi đặt ẩn, ghi đại lượng, đơn vị và điều kiện; sau khi giải, kiểm tra nghiệm và trả lời đúng ngữ cảnh. Các nhóm dấu hiệu ở bảng trên chỉ là gợi ý lựa chọn công cụ, không thay cho việc lập quan hệ từ dữ kiện.
 
 ---
 
