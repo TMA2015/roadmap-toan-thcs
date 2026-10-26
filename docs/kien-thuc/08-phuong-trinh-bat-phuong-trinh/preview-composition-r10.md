@@ -281,39 +281,39 @@ Nếu bài toán yêu cầu nhiều điều kiện phải đúng **đồng thờ
 
 #### Ví dụ 1 — Phương trình bậc nhất
 
-[
+\[
 3x-5=10
-]
+\]
 
-[
+\[
 3x=15\Rightarrow x=5.
-]
+\]
 
 #### Ví dụ 2 — Biến đổi rồi mới dùng tính chất tích bằng (0)
 
 Giải:
 
-[
+\[
 x^2-5x+6=0.
-]
+\]
 
 Ta chưa có dạng tích ngay. Phân tích:
 
-[
+\[
 x^2-5x+6=(x-2)(x-3).
-]
+\]
 
 Do đó:
 
-[
+\[
 (x-2)(x-3)=0
-]
+\]
 
 nên:
 
-[
+\[
 x=2\quad\text{hoặc}\quad x=3.
-]
+\]
 
 > Điểm cần học ở ví dụ này là **tạo được dạng tích**; chỉ sau đó mới dùng tính chất tích bằng (0).
 
@@ -321,25 +321,25 @@ x=2\quad\text{hoặc}\quad x=3.
 
 Giải:
 
-[
+\[
 3(x-2)-5x\le4.
-]
+\]
 
 Thu gọn:
 
-[
+\[
 3x-6-5x\le4
-]
+\]
 
-[
+\[
 -2x\le10.
-]
+\]
 
-Chia hai vế cho (-2) nên phải đổi chiều:
+Chia hai vế cho \(-2\) nên phải đổi chiều:
 
-[
+\[
 x\ge-5.
-]
+\]
 
 > Không đổi chiều ở bước bỏ ngoặc hay chuyển vế; chỉ đổi chiều khi **nhân hoặc chia hai vế cho số âm**.
 
@@ -347,27 +347,27 @@ x\ge-5.
 
 Một tổ dự định làm cùng một số sản phẩm mỗi ngày. Trong 4 ngày đầu tổ làm đúng kế hoạch; 6 ngày sau, mỗi ngày làm nhiều hơn kế hoạch 3 sản phẩm. Sau 10 ngày tổ làm được 238 sản phẩm. Hỏi theo kế hoạch mỗi ngày tổ làm bao nhiêu sản phẩm?
 
-Gọi (x) là số sản phẩm dự định làm mỗi ngày, (x\in\mathbb N^*).
+Gọi \(x\) là số sản phẩm dự định làm mỗi ngày, \(x\in\mathbb N^*\).
 
-- 4 ngày đầu làm (4x) sản phẩm;
-- 6 ngày sau làm (6(x+3)) sản phẩm.
+- 4 ngày đầu làm \(4x\) sản phẩm;
+- 6 ngày sau làm \(6(x+3)\) sản phẩm.
 
 Theo tổng số sản phẩm:
 
-[
+\[
 4x+6(x+3)=238.
-]
+\]
 
 Giải:
 
-[
+\[
 10x+18=238\Rightarrow10x=220\Rightarrow x=22.
-]
+\]
 
-Kiểm tra: (4\cdot22+6\cdot25=88+150=238). Vậy theo kế hoạch tổ làm **22 sản phẩm/ngày**.
+Kiểm tra: \(4\cdot22+6\cdot25=88+150=238\). Vậy theo kế hoạch tổ làm **22 sản phẩm/ngày**.
 
 !!! warning "Mô hình dễ nhầm"
-    Không viết (10(x+3)=238), vì chỉ **6 ngày sau** mới tăng thêm 3 sản phẩm/ngày; 4 ngày đầu vẫn làm theo mức (x).
+    Không viết \(10(x+3)=238\), vì chỉ **6 ngày sau** mới tăng thêm 3 sản phẩm/ngày; 4 ngày đầu vẫn làm theo mức \(x\).
 
 ---
 
