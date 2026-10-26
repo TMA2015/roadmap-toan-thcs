@@ -296,6 +296,18 @@ for cue in (r"\(18\)", r"\(6\)", r"\(1{,}5\)", r"\(x\in\mathbb N\)",
     assert cue in ct08, ("CT08 word-problem MathJax delimiter regression", cue)
 assert "\n[\n6+1{,}5x\\le18\n]\n" not in ct08
 print("PASS R35 CT08 word-problem MathJax delimiters", flush=True)
+# R42 user-reported CĐ08 §5 issue: bare Markdown [ ... ] and (x) displayed
+# raw rather than typesetting. Guard all 12 worked display equations and
+# related inline expressions; no mathematical content or answers changed.
+ct08_examples = ct08.split("### Ví dụ mẫu\n", 1)[1].split("\n---\n", 1)[0]
+assert ct08_examples.count("\n\\[\n") == 12, "CT08 §5 display MathJax starts"
+assert ct08_examples.count("\n\\]\n") == 12, "CT08 §5 display MathJax ends"
+assert not re.search(r"(?m)^\s*[\[\]]\s*$", ct08_examples), "CT08 §5 raw bracket delimiter"
+for cue in (r"3x=15\Rightarrow x=5", r"x=2\quad\text{hoặc}\quad x=3",
+            r"-2x\le10", r"x\ge-5", r"10x+18=238\Rightarrow",
+            r"\(x\in\mathbb N^*\)", r"\(10(x+3)=238\)"):
+    assert cue in ct08_examples, ("CT08 §5 math teaching step lost", cue)
+print("PASS R42 CT08 §5 12 MathJax display equations and inline examples", flush=True)
 
 # R34: retained CT10 graph strokes must stay inside their actual plot frames.
 # This catches visual overshoot into titles/footers without changing the math.
