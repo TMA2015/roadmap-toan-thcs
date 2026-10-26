@@ -24,13 +24,13 @@ const plans=[
   {topic:"15-duong-dong-quy",version:"r11",math:true,stale:null,phrase:"Cách chọn đúng tính chất",tables:1,keepAll:["15-trong-tam-v1.svg","15-truc-tam-v1.svg","15-tam-noi-tiep-v1.svg","15-tam-ngoai-tiep-v1.svg"]},
   {topic:"16-tu-giac",version:"r11",math:false,stale:null,phrase:"Hình vuông",tables:1,keepAll:["16-hinh-thang-v1.svg","16-hinh-binh-hanh-v1.svg","16-hinh-chu-nhat-v1.svg","16-hinh-thoi-v1.svg","16-hinh-vuong-v1.svg"]},
   {topic:"17-thales-dong-dang",version:"r12",math:false,stale:null,phrase:"Ba trường hợp đồng dạng",tables:1,keepAll:["17-thales-v1.svg","17-duong-trung-binh-v1.svg","17-tam-giac-dong-dang-v1.svg"]},
-  {topic:"18-he-thuc-luong",version:"r12",math:true,stale:null,phrase:"Tỉ số lượng giác của góc nhọn",tables:1,keepAll:["18-02-he-thuc-duong-cao.svg","18-03-ti-so-luong-giac.svg","18-ti-so-sin-cos-v1.svg","18-ti-so-tan-cot-v1.svg"]},
+  {topic:"18-he-thuc-luong",version:"r12",math:true,stale:null,phrase:"Tỉ số lượng giác của góc nhọn",tables:1,keepAll:["18-he-thuc-canh-hinh-chieu-v1.svg","18-ti-so-sin-cos-v1.svg","18-ti-so-tan-cot-v1.svg"]},
   {topic:"19-duong-tron",version:"r12",math:true,stale:null,phrase:"Tứ giác nội tiếp",tables:1,keepAll:["19-goc-noi-tiep-goc-o-tam-v1.svg","19-tiep-tuyen-v1.svg","19-hai-day-cat-nhau-v1.svg","19-tiep-tuyen-cat-tuyen-v1.svg"]},
-  {topic:"20-hinh-hoc-tong-hop",version:"r12",math:true,stale:null,phrase:"Các “cầu nối” thường gặp",tables:1,keepAll:["20-02-chon-chien-luoc.svg","20-03-chuoi-suy-luan.svg","20-tu-giac-noi-tiep-v1.svg","20-hinh-non.svg","20-hinh-cau.svg"]},
+  {topic:"20-hinh-hoc-tong-hop",version:"r12",math:true,stale:null,phrase:"Các “cầu nối” thường gặp",tables:1,keepAll:["20-tu-giac-noi-tiep-v1.svg","20-hinh-non.svg","20-hinh-cau.svg"]},
   {topic:"01-ban-do-chuong-trinh",version:"r13",math:false,stale:null,phrase:"Ba trạng thái học",tables:1,actions:0,keep:"01-overview-r2.svg"},
   {topic:"22-dai-luong-dac-trung",version:"r13",math:true,stale:null,phrase:"Giá trị ngoại lai",tables:1,actions:1,keepAll:["22-trung-binh.svg","22-trung-vi-mot.svg","22-ngoai-lai.svg"]},
-  {topic:"24-bai-toan-thuc-te",version:"r13",math:false,stale:null,phrase:"Mô hình hóa toán học",tables:1,actions:2,keepAll:["24-03-chon-mo-hinh.svg","24-quang-duong-van-toc-thoi-gian.svg","24-phan-tram-giam-gia.svg","24-chieu-cao-luong-giac.svg"]},
-  {topic:"25-tong-hop-on-thi-10",version:"r13",math:false,stale:null,phrase:"Ba giai đoạn ôn tập",tables:1,actions:1,keepAll:["25-03-luyen-de-so-loi.svg","25-ban-do-tong-hop.svg","25-ma-tran-uu-tien.svg","25-lo-trinh-3-giai-doan.svg"]},
+  {topic:"24-bai-toan-thuc-te",version:"r13",math:false,stale:null,phrase:"Mô hình hóa toán học",tables:1,actions:2,keepAll:["24-quang-duong-van-toc-thoi-gian.svg","24-phan-tram-giam-gia.svg","24-chieu-cao-luong-giac.svg"]},
+  {topic:"25-tong-hop-on-thi-10",version:"r13",math:false,stale:null,phrase:"Ba giai đoạn ôn tập",tables:1,actions:1,keepAll:["25-ban-do-tong-hop.svg","25-ma-tran-uu-tien.svg","25-lo-trinh-3-giai-doan.svg"]},
   {topic:"10-ham-so-do-thi",version:"tabs-r6",fileName:"preview-tabs-r6",css:"math-topic-knowledge-tabs-pilot-r5.css",math:true,stale:null,phrase:"Hàm số và đồ thị",tables:1,keep:"10-10-tu-cong-thuc-den-do-thi-r3.svg",tabbed:true}
 ]
 let count=0;
@@ -68,6 +68,16 @@ for(const p of plans){
  if(p.keep)assert(localRefs.some(u=>u.includes(p.keep)),"Missing expected visual "+p.keep);
  if(p.topic==="01-ban-do-chuong-trinh")assert(!localRefs.some(u=>u.endsWith("/01-overview.svg")), "Legacy CT01 fixed-80%-gate poster must not be learner-facing");
  if(p.keepAll)for(const img of p.keepAll)assert(localRefs.some(u=>u.includes(img)),"Missing visual "+img);
+ // R41 owner-approved editorial cut: no large duplicated poster remains in built native reading.
+ const r41Omitted={
+  "18-he-thuc-luong":["18-02-he-thuc-duong-cao.svg","18-03-ti-so-luong-giac.svg"],
+  "20-hinh-hoc-tong-hop":["20-02-chon-chien-luoc.svg","20-03-chuoi-suy-luan.svg"],
+  "24-bai-toan-thuc-te":["24-03-chon-mo-hinh.svg"],
+  "25-tong-hop-on-thi-10":["25-03-luyen-de-so-loi.svg"],
+ };
+ for(const oldGraphic of r41Omitted[p.topic]||[])
+  assert(!localRefs.some(u=>u.includes(oldGraphic)),
+   "R41 duplicate legacy infographic must be absent from built native preview: "+oldGraphic);
  if(p.version==="r9"||p.version==="r10"||p.version==="r11"||p.version==="r12") {
    assert(html.includes("Luyện ngay"),"Missing skill practice link "+p.topic);
    assert(html.includes("Làm tự luận"),"Missing canonical written link "+p.topic);
