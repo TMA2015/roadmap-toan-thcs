@@ -12,8 +12,8 @@ if not CHROME:
 TOPICS={
     "01-ban-do-chuong-trinh": {"version":"preview-composition-r13","phrase":"Ba trạng thái học","actions":0,"imgs":["01-overview-r2.svg"]},
     "22-dai-luong-dac-trung": {"version":"preview-composition-r13","phrase":"Giá trị ngoại lai","actions":1,"imgs":["22-trung-binh.svg","22-trung-vi-mot.svg","22-ngoai-lai.svg"]},
-    "24-bai-toan-thuc-te": {"version":"preview-composition-r13","phrase":"Mô hình hóa toán học","actions":2,"imgs":["24-03-chon-mo-hinh.svg","24-quang-duong-van-toc-thoi-gian.svg","24-phan-tram-giam-gia.svg","24-chieu-cao-luong-giac.svg"]},
-    "25-tong-hop-on-thi-10": {"version":"preview-composition-r13","phrase":"Ba giai đoạn ôn tập","actions":1,"imgs":["25-03-luyen-de-so-loi.svg","25-ban-do-tong-hop.svg","25-ma-tran-uu-tien.svg","25-lo-trinh-3-giai-doan.svg"]},
+    "24-bai-toan-thuc-te": {"version":"preview-composition-r13","phrase":"Mô hình hóa toán học","actions":2,"imgs":["24-quang-duong-van-toc-thoi-gian.svg","24-phan-tram-giam-gia.svg","24-chieu-cao-luong-giac.svg"],"omitted":["24-03-chon-mo-hinh.svg"],"native_cue":"Chọn mô hình theo quan hệ thực tế"},
+    "25-tong-hop-on-thi-10": {"version":"preview-composition-r13","phrase":"Ba giai đoạn ôn tập","actions":1,"imgs":["25-ban-do-tong-hop.svg","25-ma-tran-uu-tien.svg","25-lo-trinh-3-giai-doan.svg"],"omitted":["25-03-luyen-de-so-loi.svg"],"native_cue":"Sổ lỗi cá nhân nên ghi đủ bốn trường"},
     "10-ham-so-do-thi": {"version":"preview-tabs-r6","phrase":"Hàm số và đồ thị","actions":None,"imgs":["10-10-tu-cong-thuc-den-do-thi-r3.svg"],"tabbed":True}
 }
 SIZES={"desktop":(1365,900),"tablet-sim":(820,1180),"phone":(390,844)}
@@ -63,6 +63,11 @@ with sync_playwright() as pw:
                 img.scroll_into_view_if_needed()
                 img.evaluate("(n)=>n.decode()",timeout=20000)
                 assert img.evaluate("(n)=>n.complete && n.naturalWidth>100"),f"{topic}: image failed to render {imgfile}"
+            # R41: only genuine instructional diagrams remain; unique poster cues are native text.
+            for old_poster in cfg.get("omitted",[]):
+                assert body.locator(f'img[src*="{old_poster}"]').count()==0, f"{topic}: duplicated text poster displayed"
+            if cfg.get("native_cue"):
+                assert cfg["native_cue"] in body.inner_text(), f"{topic}: preserved teaching cue missing"
             assert page.evaluate("()=>document.documentElement.scrollWidth <= document.documentElement.clientWidth + 2"),f"{topic}: {name} horizontal document overflow"
             assert not errors,f"{topic}: {name} javascript exception(s): {errors[:3]}"
             print("PASS R13",topic,name,"built page + real graphics + actions + tabs + no overflow",flush=True)
