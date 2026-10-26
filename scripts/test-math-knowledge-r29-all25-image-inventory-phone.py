@@ -331,6 +331,30 @@ for name, frames in ct10_plot_frames.items():
     assert chart_marks >= 2, (name, "expected chart lines absent")
     print("PASS R34 CT10 retained SVG graph plot-frame bounds", name, flush=True)
 
+# R42: CT12 retained delta plot's middle parabola extends above its own
+# panel in raw sampled coordinates (y=112.4 vs panel top y=140).
+# Clip only that curve to its original plot frame, not labels/axes/math.
+ct12_svg = ET.fromstring(Path("docs/assets/infographics/12/12-05-delta-va-giao-ox.svg").read_text(encoding="utf-8"))
+ns12 = {"svg": "http://www.w3.org/2000/svg"}
+clip12 = ct12_svg.find(".//svg:clipPath[@id='ct12-middle-plot-clip']", ns12)
+assert clip12 is not None, "CT12 middle plot clipping absent"
+frame12 = clip12.find("svg:rect", ns12)
+assert frame12 is not None and tuple(frame12.get(key) for key in ("x", "y", "width", "height")) == (
+    "430", "140", "330", "290"), "CT12 clip frame altered"
+middle12 = ct12_svg.find(".//svg:g[@clip-path='url(#ct12-middle-plot-clip)']/svg:polyline", ns12)
+assert middle12 is not None and middle12.get("stroke") == "#7c3aed", "CT12 middle parabola lost"
+coords12 = [tuple(map(float, p.split(","))) for p in middle12.get("points", "").split()]
+assert len(coords12) >= 50 and min(y for _, y in coords12) < 140, (
+    "CT12 plot regression no longer covers original overshoot")
+assert all(430 <= x <= 760 for x, _ in coords12), "CT12 parabola x-range changed"
+assert len(ct12_svg.findall(".//svg:polyline", ns12)) == 3, "CT12 three delta cases changed"
+labels12 = " ".join("".join(e.itertext()) for e in ct12_svg.findall(".//svg:text", ns12))
+for label in ("Δ > 0", "Δ = 0", "Δ < 0", "x₁=-1", "x₂=1", "x₁=x₂=0", "Không cắt Ox"):
+    assert label in labels12, ("CT12 delta teaching label missing", label)
+assert ct12_svg.find(".//svg:circle[@cx='595'][@cy='357.5']", ns12) is not None, (
+    "CT12 double root marker moved")
+print("PASS R42 CT12 delta plot frame and all three mathematical cases", flush=True)
+
 CHROME = shutil.which("google-chrome") or shutil.which("chromium")
 if not CHROME:
     raise RuntimeError("Chromium required for 25-topic phone browser QA")
