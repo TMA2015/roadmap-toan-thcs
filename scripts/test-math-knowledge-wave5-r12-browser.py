@@ -11,14 +11,17 @@ TOPICS={
     "17-thales-dong-dang":("Ba trường hợp đồng dạng",[
         "17-thales-v1.svg","17-duong-trung-binh-v1.svg","17-tam-giac-dong-dang-v1.svg"]),
     "18-he-thuc-luong":("Tỉ số lượng giác của góc nhọn",[
-        "18-02-he-thuc-duong-cao.svg","18-03-ti-so-luong-giac.svg",
+        "18-he-thuc-canh-hinh-chieu-v1.svg",
         "18-ti-so-sin-cos-v1.svg","18-ti-so-tan-cot-v1.svg"]),
     "19-duong-tron":("Tứ giác nội tiếp",[
         "19-goc-noi-tiep-goc-o-tam-v1.svg","19-tiep-tuyen-v1.svg",
         "19-hai-day-cat-nhau-v1.svg","19-tiep-tuyen-cat-tuyen-v1.svg"]),
     "20-hinh-hoc-tong-hop":("Các “cầu nối” thường gặp",[
-        "20-02-chon-chien-luoc.svg","20-03-chuoi-suy-luan.svg",
         "20-tu-giac-noi-tiep-v1.svg","20-hinh-non.svg","20-hinh-cau.svg"]),
+}
+R41_REMOVED={
+    "18-he-thuc-luong":("18-02-he-thuc-duong-cao.svg","18-03-ti-so-luong-giac.svg"),
+    "20-hinh-hoc-tong-hop":("20-02-chon-chien-luoc.svg","20-03-chuoi-suy-luan.svg"),
 }
 VIEWPORTS={"desktop":(1365,900),"ipad-size":(820,1180),"phone":(390,844)}
 with sync_playwright() as pw:
@@ -50,6 +53,9 @@ with sync_playwright() as pw:
                 img.scroll_into_view_if_needed()
                 img.evaluate("(n)=>n.decode()",timeout=20000)
                 assert img.evaluate("(n)=>n.complete && n.naturalWidth>100"),f"{topic}: unloaded image {svg}"
+            # R41: legacy text posters were intentionally replaced by readable native content.
+            for duplicate in R41_REMOVED.get(topic,()):
+                assert body.locator(f'img[src*="{duplicate}"]').count()==0, f"{topic}: duplicated poster still displayed"
             assert page.evaluate("()=>document.documentElement.scrollWidth <= document.documentElement.clientWidth+2"), f"{topic} {device}: horizontal page overflow"
             assert not errors, f"{topic} {device}: JS errors {errors[:3]}"
             print("PASS R12",topic,device,"content links CSS real diagrams responsive",flush=True)
