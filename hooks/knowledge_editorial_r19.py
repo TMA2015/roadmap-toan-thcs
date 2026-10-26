@@ -147,6 +147,15 @@ def section(markdown, num, groups, topic, kind):
 def transform(markdown, src_path):
     if not re.fullmatch(r"kien-thuc/\d\d-[^/]+/index\.md", src_path):return markdown
     slug=src_path.split("/")[1]
+    # CT01 is the roadmap exception: it has no §3/§5 tabs. Preserve its
+    # SHA-locked academic Markdown and swap only the audited learner-facing
+    # graphic/alt into the canonical HTML; keep the original SVG in the repo.
+    if slug=="01-ban-do-chuong-trinh":
+        old="![Infographic tổng quan Chuyên đề 01 – Bản đồ chương trình Toán THCS](../../assets/infographics/01/01-overview.svg)"
+        new="![Sơ đồ bốn mạch Toán THCS và quan hệ học trước-sau; chu trình học bài, luyện tập, tự kiểm tra rồi chọn bước tiếp theo](../../assets/infographics/01/01-overview-r2.svg)"
+        if markdown.count(old)!=1:
+            raise ValueError("R36 CT01 original infographic markup changed; refuse blind rewrite")
+        return markdown.replace(old,new)
     if slug not in PLANS:return markdown
     version,kt,methods=PLANS[slug]
     filename="preview-tabs-r6.md" if version=="tabs-r6" else "preview-composition-"+version+".md"

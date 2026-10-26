@@ -190,11 +190,20 @@ for(const [topic,revision] of plans){
  const added=dst.filter(x=>!src.includes(x));
  sourceImages+=src.length;keptImages+=kept.length;hiddenImages+=hidden.length;newImages+=added.length;
  receipt.push({topic,revision,src:src.length,kept:kept.length,hidden:hidden.length,added:added.length});
- if(topic==="01-ban-do-chuong-trinh")assert(!candidate.includes('class="math-related-practice"'),"No invented CT01 practice");
+ if(topic==="01-ban-do-chuong-trinh"){
+    assert(!candidate.includes('class="math-related-practice"'),"No invented CT01 practice");
+    const original=fs.readFileSync(path.join("docs","assets","infographics","01","01-overview.svg"),"utf8");
+    const derived=fs.readFileSync(path.join("docs","assets","infographics","01","01-overview-r2.svg"),"utf8");
+    assert.equal(original.match(/Đạt ≥ 80% → đi tiếp/g)?.length,1,"CT01 original threshold lock changed");
+    assert.equal(derived,original.replace("Đạt ≥ 80% → đi tiếp","Đạt tiêu chí → đi tiếp"),
+      "CT01 learner diagram must differ ONLY by obsolete threshold label");
+    assert(candidate.includes("01-overview-r2.svg")&&!candidate.includes("01-overview.svg)"),
+      "CT01 canonical page must show revised map only");
+  }
  if(["22-dai-luong-dac-trung","25-tong-hop-on-thi-10"].includes(topic))
    assert(!candidate.includes('href="../../../luyen-tap/tu-luan/'),"Do not invent canonical Written for "+topic);
 }
-assert.deepEqual([sourceImages,keptImages,hiddenImages,newImages],[159,79,80,2],
+assert.deepEqual([sourceImages,keptImages,hiddenImages,newImages],[159,78,81,3],
   "R14 image-display inventory changed: re-audit infographic source before any release");
 console.log("PASS source-checked candidate Written deep links",verifiedWrittenLinks,"approved links");
 console.log("PASS R14 25 source candidates / CT02 semantic reflow / CT10 5+5 tabs");

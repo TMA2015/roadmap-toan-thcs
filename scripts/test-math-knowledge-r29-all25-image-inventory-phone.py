@@ -14,8 +14,9 @@ from playwright.sync_api import sync_playwright
 
 # slug, canonical reviewed candidate, source infographic count, omitted poster IDs,
 # newly authored useful educational diagrams (outside original source embeds).
+# CT01 archive filename 01-overview.svg uses "overview.svg" as its second segment.
 TOPICS = [
-    ("01-ban-do-chuong-trinh", "r13", 1, "", ()),
+    ("01-ban-do-chuong-trinh", "r13", 1, "overview.svg", ("01-overview-r2.svg",)),
     ("02-so-va-phep-tinh", "r9", 4, "01 02 03", ()),
     ("03-ti-le-ti-le-thuc", "r9", 4, "01 02 03", ()),
     ("04-bieu-thuc-dai-so", "r10", 3, "01 02 03", ()),
@@ -78,6 +79,22 @@ for slug, version, original_count, omitted_ids, added in TOPICS:
     print("PASS R29 image decision inventory", number, len(old), len(omitted),
           len(old - omitted), len(added), flush=True)
 print("R29 IMAGE EMBED INVENTORY (NOT ACADEMIC SIGN-OFF):", counts, flush=True)
+
+# R36: The historical CT01 graphic remains on disk for rollback. Its new
+# student-facing copy removes only the obsolete universal 80% gate, since
+# actual topic criteria are not a single fixed Readiness threshold.
+source01 = Path("docs/assets/infographics/01/01-overview.svg").read_text(encoding="utf-8")
+visual01 = Path("docs/assets/infographics/01/01-overview-r2.svg").read_text(encoding="utf-8")
+ct01 = Path("docs/kien-thuc/01-ban-do-chuong-trinh/preview-composition-r13.md").read_text(encoding="utf-8")
+assert source01.count("Đạt ≥ 80% → đi tiếp") == 1, "CT01 archived source changed"
+assert visual01 == source01.replace("Đạt ≥ 80% → đi tiếp", "Đạt tiêu chí → đi tiếp"), (
+    "CT01 threshold-neutral artwork differs in more than approved label")
+assert "01-overview-r2.svg" in ct01 and "01-overview.svg)" not in ct01
+assert "Sơ đồ bốn mạch Toán THCS và quan hệ học trước-sau" in ct01
+ct06 = Path("docs/kien-thuc/06-phan-tich-da-thuc/preview-composition-r9.md").read_text(encoding="utf-8")
+assert "xét nhân tử chung, hằng đẳng thức, nhóm hạng tử, phối hợp phương pháp, rồi nhân ngược để kiểm tra" in ct06
+assert "06-02-so-do-chon-phuong-phap.svg" in ct06
+print("PASS R36 CT01 neutral image criterion and CT06 decision-sequence alt", flush=True)
 
 # Focused factual parity assertions for specific omitted text posters.
 # Other posters require their own proposition-level audit before academic sign-off.
@@ -212,6 +229,11 @@ with sync_playwright() as pw:
                     slug, "semantic tab groups lost")
             if slug == "10-ham-so-do-thi":
                 assert (knowledge.count(), methods.count()) == (5, 5)
+            if slug == "06-phan-tich-da-thuc":
+                factor_graphic = root.locator('img[src*="06-02-so-do-chon-phuong-phap.svg"]')
+                assert factor_graphic.count() == 1 and "nhân ngược để kiểm tra" in (
+                    factor_graphic.get_attribute("alt") or ""), (
+                    slug, "CT06 method decision sequence missing from image alt")
             if methods.count() > 1:
                 methods.nth(1).click()
                 assert methods.nth(1).get_attribute("aria-selected") == "true", (
@@ -225,8 +247,10 @@ with sync_playwright() as pw:
             font = root.evaluate("(e) => parseFloat(getComputedStyle(e).fontSize)")
             assert font >= 15.8, (slug, "R3 body typography too small", font)
         else:
-            assert root.locator('img[src*="01-overview.svg"]').count() >= 1, (
-                slug, "CT01 map graphic missing")
+            graphic = root.locator('img[src*="01-overview-r2.svg"]')
+            assert graphic.count() == 1, (slug, "CT01 corrected map graphic missing")
+            assert "bốn mạch Toán THCS" in (graphic.get_attribute("alt") or ""), (
+                slug, "CT01 accessible visual label missing")
         assert page.evaluate(
             "document.documentElement.scrollWidth <= document.documentElement.clientWidth + 2"
         ), (slug, "mobile horizontal overflow")
