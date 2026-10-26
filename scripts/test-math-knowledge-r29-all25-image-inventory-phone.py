@@ -116,6 +116,32 @@ print("PASS R38 CT06 SVG title/description/role and five-step parity", flush=Tru
 
 
 
+# R39: CĐ20 retained instructional posters keep accessible SVG names,
+# descriptions and all original teaching cues without changing artwork.
+ct20_native = Path("docs/kien-thuc/20-hinh-hoc-tong-hop/preview-composition-r12.md").read_text(encoding="utf-8")
+for filename, prefix, required in (
+    ("20-02-chon-chien-luoc.svg", "ct20-strategy",
+     ("1 · XÁC ĐỊNH MỤC TIÊU", "NỘI TIẾP", "ĐỒNG DẠNG", "TIẾP TUYẾN",
+      "SONG SONG / VUÔNG GÓC", "TÍNH ĐỘ DÀI", "2 · KIỂM TRA TRƯỚC KHI VIẾT")),
+    ("20-03-chuoi-suy-luan.svg", "ct20-chains",
+     ("CHUỖI A · NỘI TIẾP", "CHUỖI B · SONG SONG",
+      "CHUỖI C · ĐỒNG DẠNG", "CHUỖI D · TAM GIÁC VUÔNG")),
+):
+    assert filename in ct20_native, ("CT20 retained poster missing", filename)
+    svg = ET.fromstring((Path("docs/assets/infographics/20") / filename).read_text(encoding="utf-8"))
+    ns = {"svg": "http://www.w3.org/2000/svg"}
+    assert svg.get("role") == "img"
+    assert svg.get("aria-labelledby") == f"{prefix}-title {prefix}-desc"
+    title = svg.find("svg:title", ns)
+    desc = svg.find("svg:desc", ns)
+    assert title is not None and title.get("id") == f"{prefix}-title" and title.text
+    assert desc is not None and desc.get("id") == f"{prefix}-desc" and len(desc.text or "") > 60
+    labels = "\\n".join("".join(el.itertext()) for el in svg.findall(".//svg:text", ns))
+    for cue in required:
+        assert cue in labels, ("CT20 teaching cue lost", filename, cue)
+print("PASS R39 CT20 retained SVG accessibility and original teaching cues", flush=True)
+
+
 # Focused factual parity assertions for specific omitted text posters.
 # Other posters require their own proposition-level audit before academic sign-off.
 ct04 = Path("docs/kien-thuc/04-bieu-thuc-dai-so/preview-composition-r10.md").read_text(encoding="utf-8")
