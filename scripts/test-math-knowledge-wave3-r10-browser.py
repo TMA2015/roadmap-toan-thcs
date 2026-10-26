@@ -44,6 +44,21 @@ with sync_playwright() as pw:
                 img.scroll_into_view_if_needed()
                 img.evaluate("(el)=>el.decode()",timeout=20000)
                 assert img.evaluate("(el)=>el.complete && el.naturalWidth>100"),f"{topic}: broken SVG {svg}"
+            if topic == "08-phuong-trinh-bat-phuong-trinh":
+                # CĐ08 §5 screenshot regression: built markup must provide 12
+                # typeset display equations, not paragraphs with raw brackets.
+                math_report = page.evaluate("""() => {
+                  const heading = document.getElementById('vi-du-mau');
+                  if (!heading) return { missing: true };
+                  const nodes = [];
+                  for (let n=heading.nextElementSibling; n && n.tagName !== 'HR'; n=n.nextElementSibling) nodes.push(n);
+                  const displays = nodes.reduce((s,n)=>s+(n.matches('.arithmatex') ? 1 : n.querySelectorAll('.arithmatex').length),0);
+                  const bare = nodes.filter(n=>n.matches('p') && /^\s*\[[\s\S]*\]\s*$/.test(n.textContent)).length;
+                  const headings = nodes.filter(n=>n.tagName==='H4').length;
+                  return {displays,bare,headings};
+                }""")
+                assert math_report.get("displays", 0) >= 12, f"CT08 {label}: missing MathJax displays: {math_report}"
+                assert math_report["bare"] == 0 and math_report["headings"] == 4, f"CT08 {label}: raw equations or missing examples: {math_report}"
             assert page.evaluate("() => document.documentElement.scrollWidth <= document.documentElement.clientWidth + 2"),f"{topic}: {label} document overflow"
             assert not errors,f"{topic}: {label} javascript errors: {errors[:3]}"
             print("PASS R10",topic,label,"links CSS math content SVG layout",flush=True)
