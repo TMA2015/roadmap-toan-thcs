@@ -191,6 +191,8 @@ Ngoài ra:
 
 Đây là nhóm công thức cần thuộc và nhận ra nhanh.
 
+**Chọn đúng hệ thức:** Nếu biết một cạnh góc vuông và hình chiếu **của chính cạnh đó** trên cạnh huyền, dùng `AB² = BH × BC` hoặc `AC² = CH × BC`. Nếu biết hai hình chiếu `BH`, `CH`, dùng `AH² = BH × CH`. Nếu biết hai cạnh góc vuông và cạnh huyền, dùng `AB × AC = AH × BC`. Không ghép nhầm `AB` với `CH` hay `AC` với `BH`.
+
 ![Hệ thức giữa mỗi cạnh góc vuông và hình chiếu của nó trên cạnh huyền](../../assets/geometry/18/18-he-thuc-canh-hinh-chieu-v1.svg)
 
 ### 3.2A. Hiểu và suy ra hệ thức đường cao (mở rộng)
@@ -305,6 +307,8 @@ Nếu điểm quan sát cao hơn mặt đất, cần cộng hoặc trừ chiều
 | Biết góc + 1 cạnh | `sin`, `cos`, `tan` |
 | Biết 2 cạnh, cần tìm góc | Lập tỉ số lượng giác rồi dùng phím nghịch đảo (`sin⁻¹`, `cos⁻¹`, `tan⁻¹`) trên máy tính |
 | Bài chiều cao / khoảng cách | Góc nâng, góc hạ + lượng giác |
+
+**Lưu ý khi dùng máy tính:** Nếu góc tính bằng độ, đặt máy ở chế độ **DEG** trước khi tính lượng giác hoặc dùng phím `sin⁻¹`, `cos⁻¹`, `tan⁻¹` để tìm góc.
 
 ---
 

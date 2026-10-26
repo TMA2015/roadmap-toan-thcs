@@ -114,6 +114,19 @@ assert "AB·CD = EF·GH" in source17_04 and "AB/EF = GH/CD" in source17_04
 for cue in ("AB·CD = EF·GH", "AB/EF = GH/CD", "EF` và `CD` khác `0"):
     assert cue in ct17, ("CT17 17-04 product-to-ratio worked cue lost", cue)
 print("PASS R32 focused CT17 17-04 old-poster product-ratio guard", flush=True)
+# R37: CT18 retained text-heavy posters teach formula-selection and DEG
+# calculator guards; preserve those cues in native text before deduplication.
+source18_02 = Path("docs/assets/infographics/18/18-02-he-thuc-duong-cao.svg").read_text(encoding="utf-8")
+source18_03 = Path("docs/assets/infographics/18/18-03-ti-so-luong-giac.svg").read_text(encoding="utf-8")
+ct18 = Path("docs/kien-thuc/18-he-thuc-luong/preview-composition-r12.md").read_text(encoding="utf-8")
+assert "hình chiếu của chính cạnh đó" in source18_02
+assert "Máy tính phải ở chế độ DEG" in source18_03
+for cue in ("hình chiếu **của chính cạnh đó**", "AB² = BH × BC", "AC² = CH × BC",
+            "AH² = BH × CH", "AB × AC = AH × BC",
+            "Không ghép nhầm `AB` với `CH`", "đặt máy ở chế độ **DEG**"):
+    assert cue in ct18, ("CT18 retained poster formula-choice/DEG cue lost", cue)
+assert "### 3.2. Hệ thức" in ct18 and "### 3.6. Bảng chọn công cụ" in ct18
+print("PASS R37 CT18 retained poster formula-choice and DEG guards", flush=True)
 ct19 = Path("docs/kien-thuc/19-duong-tron/preview-composition-r12.md").read_text(encoding="utf-8")
 for cue in ("PT² = PA × PB", "đoạn ngoài", "giao điểm xa",
             "không lấy riêng đoạn `AB` thay cho `PB`"):
