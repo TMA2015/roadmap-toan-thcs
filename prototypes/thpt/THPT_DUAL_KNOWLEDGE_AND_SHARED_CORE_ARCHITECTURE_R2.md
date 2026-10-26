@@ -1,6 +1,6 @@
 # THPT — Hai lối học đầy đủ, một hệ thống Core thống nhất (R2 — định hướng chủ dự án, 26/10/2026)
 
-**Trạng thái:** OWNER-DIRECTION-RECORDED / ARCHITECTURE-CONTRACT-CANDIDATE / UI R2 NOT YET IMPLEMENTED / NO DEPLOY.  
+**Trạng thái:** OWNER-DIRECTION-RECORDED / ARCHITECTURE-CONTRACT-CANDIDATE / NO DEPLOY / ACADEMIC REVIEW PENDING.  
 **Nguồn xác minh cấu trúc:** Bộ SGK/SBT KNTT THPT đã định vị trên Google Drive. Trong Toán 10 tập 2, **Bài 16: Hàm số bậc hai** trình bày mạch **1. Khái niệm hàm số bậc hai**, **2. Đồ thị của hàm số bậc hai**, kèm luyện tập và vận dụng. Chứng cứ mục lục/tên đề mục tham khảo: https://www.sachgiaokhoa.online/lop-10-13/ket-noi-tri-thuc-voi-cuoc-song-3/chuong-vi-ham-so-do-thi-va-ung-dung-3132/bai-16-ham-so-bac-hai-11335.html . Đối chiếu nguồn chính S1 và số trang trong NotebookLM THPT trước khi phê duyệt nội dung, không tự nhận đã học thuật PASS.
 
 ## 1. Một dự án, hai hệ thống kiến thức hoàn chỉnh
@@ -82,3 +82,42 @@ THPT Lesson (stable ID) ── many-to-many ── Topic (stable ID)
 4. Kiểm duyệt học thuật bằng notebook THPT có SGK/SBT đã cung cấp và owner signoff trước khi phát hành; chưa tuyên bố bài 16 đạt S1 khi thiếu receipt. THCS Issue #578 vẫn đóng, không sửa site live vì thay đổi này.
 
 **Phân loại quyết định:** Hai trục kiến thức đều độc lập đầy đủ; Core là một nguồn, ba lối; trục SGK dùng Lớp→Chương→Bài với lý thuyết chuẩn gần SGK; topic THCS-style; infographic tối giản là **owner product direction confirmed**. Chi tiết URL/ID và phương án tab responsive là **implementation proposal requiring QA**, không phải đã nghiệm thu UI R2.
+
+
+## 8. Quyết định bổ sung của chủ dự án — hoàn thiện hệ luyện tập (26/10/2026)
+
+**Trạng thái: OWNER CONFIRMED.** Sơ đồ R2 trước đó thiếu Practice, Readiness và Thư viện tự luận/mỏ neo ở trục chuyên đề. Phục hồi **đầy đủ**, giống hợp đồng học tập Toán THCS đã nghiệm thu. Tách rạch ròi phần tương tác máy chấm với việc học sinh viết ra giấy. Cả hai trục kiến thức đều vẫn độc lập và đầy đủ; **bốn hoạt động khác nhau không được gom thành một “bài tập” chung**.
+
+| Lớp học / Nơi xuất hiện | Hình thức | Gợi ý | Chấm và công bố kết quả | Ý nghĩa chứng cứ |
+|:--|:--|:--|:--|:--|
+| **Core** (dưới bài SGK, thư viện Core KNTT, nhóm Core chuyên đề) | Tương tác theo kỹ năng; **chỉ một canonical Core ID** | **Có**, người học chủ động mở | Phản hồi sau nộp theo hoạt động | **Formative**, không tự phong Readiness |
+| **Luyện tập chuyên đề (Practice)** | Tương tác các dạng bài theo chuyên đề; độc lập với tập Core | **Có** | Giải thích, chữa lỗi; phản hồi theo hoạt động | **Formative**, riêng bộ item/attempt với Core |
+| **Tự kiểm tra (Readiness)** | Tương tác độc lập, đi tới/lùi, được sửa đáp án đến khi nộp cuối | **Không có**, không hé đúng/sai hoặc lời giải trước nộp | Chỉ hiện điểm, lỗi và giải thích **sau Final Submit**; không Tutor giải bài trong phiên | Bằng chứng kiểm tra độc lập, tách Practice; trạng thái và phiên bản rõ ràng |
+| **Thư viện bài tự luận (Written)** | Đọc đề, **làm trên giấy**, so đáp án với lời giải và **rubric** | **Có** theo yêu cầu; gợi ý từng bước tùy người học | Người học tự đối chiếu, **không giả vờ máy chấm bài trên giấy** | Không tự tăng mastery/Readiness từ thao tác xem rubric |
+| **Bài mỏ neo (Anchor Written)** | **Tiểu loại/nhãn** bài trong **cùng thư viện tự luận canonical**, không phải ngân hàng thứ hai | **Có** theo nhu cầu | Rubric giải thích chiến lược chọn phương pháp, tính logic, trình bày, kiểm tra nghiệm | Đại diện một **dạng bài quan trọng**, có thể nối nhiều kỹ năng |
+
+**Bố cục trang chuyên đề THPT đầy đủ:**
+
+```text
+Chuyên đề (trục dọc, lý thuyết tự đủ)
+  ├─ Kiến thức: định nghĩa, công thức/điều kiện, ví dụ, liên hệ, lỗi điển hình
+  ├─ Core theo chuyên đề: cùng các thẻ Core canonical được bài SGK và thư viện Core dùng
+  ├─ Luyện tập chuyên đề: bài tương tác có gợi ý và phản hồi
+  ├─ Tự kiểm tra: bài tương tác không gợi ý, kết quả/lời giải sau Final Submit
+  └─ Thư viện tự luận (liên kết cùng kho canonical): thường + [Mỏ neo], gợi ý/rubric
+```
+
+**Bố cục trục SGK:** `Lớp → Chương → Bài` có phần lý thuyết gọn đủ và các **Core tương tác ngay bên dưới bài**, không còn tab Kiến thức trong Core THPT. Cùng Core mở được ở (1) bài học, (2) thư viện Core SGK, (3) chuyên đề. Một item/ID/đáp án/cơ chế chấm, không tự sinh bản sao vì ba điểm vào. Các liên kết tới Practice/Readiness/Written từ trục SGK nếu có chỉ là **điểm dẫn tới đúng hoạt động canonical**, không nhân bản ngân hàng.
+
+**Cấu trúc tự luận canonical:** `WRI-THPT-...` là một đề có `source_refs`, `topic_ids`, `lesson_ids`, `problem_type`, `is_anchor`, `hint_steps`, `rubric_criteria`, `worked_solution` và `revision`. **Mỏ neo là cờ phân loại**, không một ngân hàng hay luồng chấm trùng lặp. Phân biệt nhãn `Có gợi ý` và `Không gợi ý` bằng chữ, không chỉ màu.
+
+**Giao diện và tiêu đề:** Đồng ý chuẩn hóa nhóm tên mục gần SGK (Khái niệm/Định nghĩa, Công thức/Tính chất/Đồ thị, Ví dụ, Luyện tập, Vận dụng), **nhưng không bắt buộc mỗi bài có cùng tập hợp/chuỗi tiêu đề**. Hình/infographic chỉ thêm khi đem lại thông tin toán học thực sự chưa được trình bày rõ bằng HTML/MathJax.
+
+### R2 demo acceptance (functional, NOT academic)
+
+- Cùng một Core `core_id` vào từ ba vị trí và cùng trạng thái tương tác trong một phiên demo; nhấn Back về đúng ngữ cảnh.
+- Practice có gợi ý và chữa lỗi, item/ID riêng với Core.
+- Readiness có Previous/Next, sửa được trước Final Submit, **không có gợi ý hoặc chấm sớm**; giải thích chỉ sau submit.
+- Written có nút tự mở gợi ý và rubric; Anchor được đánh nhãn rõ, **không tạo một hệ thống bài tập thứ năm**.
+- Hai tuyến lý thuyết đọc độc lập, đồ thị chuẩn, không hình poster lặp lại; responsive desktop/điện thoại/tablet, bàn phím và đủ điều kiện học thuật trước phát hành.
+- **Mọi số liệu câu hỏi/bản vẽ trong prototype R2 là demo để thử tương tác, chưa là học liệu S1 hoặc bộ ngân hàng được phê duyệt.**
