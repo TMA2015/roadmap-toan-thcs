@@ -350,7 +350,7 @@ Ba nhóm quan trọng:
 
 Mỗi loại lỗi cần một cách sửa khác nhau.
 
-![Infographic chu trình luyện đề và sổ lỗi sai – Chuyên đề 25](../../assets/infographics/25/25-03-luyen-de-so-loi.svg)
+**Sổ lỗi cá nhân nên ghi đủ bốn trường:** (1) câu/dạng bài đang sai, (2) chuyên đề gốc cần ôn, (3) nguyên nhân sai, (4) dấu hiệu nhận biết và cách sửa. Sau khi chữa, **tự làm lại không nhìn lời giải** và thử một câu tương tự sau vài ngày; nếu còn sai, quay về đúng kiến thức gốc.
 
 <div class="math-composition"><nav class="math-related-practice" aria-label="Bài luyện áp dụng">
 <span>Thực hành nội dung vừa học:</span>

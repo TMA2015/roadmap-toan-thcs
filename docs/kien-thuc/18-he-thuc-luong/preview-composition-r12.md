@@ -221,10 +221,6 @@ Suy ra:
 
 > Điều kiện không thể bỏ: tam giác phải **vuông tại `A`** và `AH` phải là **đường cao xuống cạnh huyền**, nên các độ dài `AB`, `AC`, `AH` đều dương.
 
-### Infographic – Hệ thức đường cao
-
-![Hệ thức đường cao trong tam giác vuông](../../assets/infographics/18/18-02-he-thuc-duong-cao.svg)
-
 ### 3.3. Tỉ số lượng giác của góc nhọn
 
 ![Phân biệt cạnh đối, kề, huyền trong sin và cos tại góc C](../../assets/geometry/18/18-ti-so-sin-cos-v1.svg)
@@ -238,6 +234,8 @@ Với góc nhọn $\alpha$, xác định **cạnh đối, cạnh kề, cạnh hu
 Từ đó có thể:
 - biết góc và một cạnh → tìm cạnh;
 - biết hai cạnh → tìm góc.
+
+**Chọn đúng tỉ số:** Khi dữ kiện liên quan đến **đối–huyền**, chọn `sin`; **kề–huyền**, chọn `cos`; **đối–kề**, chọn `tan`. Nếu cần tìm góc từ hai cạnh, lập đúng tỉ số rồi dùng phím nghịch đảo; khi góc tính theo độ phải chọn chế độ **DEG** trên máy tính.
 
 <div class="math-composition"><nav class="math-related-practice" aria-label="Luyện bài đã học">
 <span>Thực hành nội dung vừa học:</span>
@@ -275,10 +273,6 @@ Nếu `α + β = 90°` thì:
 | `60°` | `√3/2` | `1/2` | `√3` | `√3/3` |
 
 Không nhất thiết học bảng như bốn dòng công thức rời rạc: dùng quan hệ hai góc phụ nhau để kiểm tra chéo `sin ↔ cos` và `tan ↔ cot`.
-
-### Infographic – Tỉ số lượng giác
-
-![Tỉ số lượng giác trong tam giác vuông](../../assets/infographics/18/18-03-ti-so-luong-giac.svg)
 
 ### 3.5. Góc nâng và góc hạ
 
