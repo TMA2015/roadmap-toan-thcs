@@ -74,7 +74,7 @@ Tổng hợp ôn thi vào 10
 
 ### Infographic – Tổng quan Roadmap Toán THCS
 
-![Infographic tổng quan Chuyên đề 01 – Bản đồ chương trình Toán THCS](../../assets/infographics/01/01-overview.svg)
+![Sơ đồ bốn mạch Toán THCS và quan hệ học trước-sau; chu trình học bài, luyện tập, tự kiểm tra rồi chọn bước tiếp theo](../../assets/infographics/01/01-overview-r2.svg)
 
 ---
 
