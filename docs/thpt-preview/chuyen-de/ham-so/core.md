@@ -7,7 +7,7 @@
 
 # Thẻ Core — Hàm số và đồ thị
 
-**Một Core dùng chung từ ba đường:** [Bài 16 SGK](../../../sgk/chuong-vi.md) · [Thư viện Core SGK](../../../sgk/core/index.md) · Chính chuyên đề này.
+**Một Core dùng chung từ ba đường:** [Bài 16 SGK](../../sgk/chuong-vi.md) · [Thư viện Core SGK](../../sgk/core/index.md) · Chính chuyên đề này.
 
 <div class="thpt-r4-exercise" data-thpt-core>
 <p class="thpt-r4-eyebrow">THPT-CORE-QF01 · CÓ GỢI Ý · CHỈ DEMO</p>
