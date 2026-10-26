@@ -45,7 +45,7 @@ hide:
 ## Kiến thức liên quan
 
 - **Kiến thức nền THCS:** phương trình bậc hai và hàm số đơn giản.
-- **Theo SGK KNTT:** [Lớp 10 · Chương VI · Bài 16](../../../sgk/chuong-vi.md).
+- **Theo SGK KNTT:** [Lớp 10 · Chương VI · Bài 16](../../sgk/chuong-vi.md).
 - **Mở rộng sau này:** tính đơn điệu và các ứng dụng đạo hàm; chưa liên kết vì chưa biên soạn.
 
 ## Dạng bài
@@ -56,7 +56,7 @@ hide:
 
     **Phương pháp:** tính \(h=-b/(2a)\), rồi \(k=f(h)\).
 
-    **Luyện ngay:** [Core chung](../core.md) hoặc [Practice theo chuyên đề](../luyen-tap.md).
+    **Luyện ngay:** [Core chung](core.md) hoặc [Practice theo chuyên đề](luyen-tap.md).
 
 === "Vẽ đồ thị và giao trục"
 
@@ -64,13 +64,13 @@ hide:
 
     **Phương pháp:** tính tọa độ đỉnh, nghiệm của \(ax^2+bx+c=0\) nếu có và dấu hệ số \(a\).
 
-    **Luyện ngay:** [Luyện tập chuyên đề](../luyen-tap.md).
+    **Luyện ngay:** [Luyện tập chuyên đề](luyen-tap.md).
 
 === "Thi tốt nghiệp THPT"
 
     Đây là **bộ lọc của các dạng bài phía trên**, không tạo thêm một kho dạng bài khác. Chỉ gắn nhãn đề thi theo **năm và nguồn xác minh**; bản mẫu hiện **chưa gắn bất kỳ đề thi thực tế nào**.
 
-    [Mở thư viện tự luận và bài mỏ neo](../../../thu-vien/tu-luan.md).
+    [Mở thư viện tự luận và bài mỏ neo](../../thu-vien/tu-luan.md).
 
 ## Lỗi sai thường gặp
 
