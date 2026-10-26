@@ -194,13 +194,13 @@ Quy tắc đổi chiều bất phương trình dựa trên thứ tự số: **nh
 
 Khi một bài toán có các từ như **không vượt quá**, **ít nhất**, **tối đa**, **tối thiểu**, dữ kiện thường dẫn đến một bất phương trình.
 
-Ví dụ, một thùng chịu tối đa (18) kg, trong thùng đã có (6) kg. Mỗi hộp hàng thêm vào nặng (1{,}5) kg. Gọi (x) là số hộp thêm vào, với (x\in\mathbb N). Khi đó:
+Ví dụ, một thùng chịu tối đa \(18\) kg, trong thùng đã có \(6\) kg. Mỗi hộp hàng thêm vào nặng \(1{,}5\) kg. Gọi \(x\) là số hộp thêm vào, với \(x\in\mathbb N\). Khi đó:
 
-[
+\[
 6+1{,}5x\le18
-]
+\]
 
-suy ra (x\le8). Vì (x) là số hộp nên nhiều nhất có thể thêm **8 hộp**.
+suy ra \(x\le8\). Vì \(x\) là số hộp nên nhiều nhất có thể thêm **8 hộp**.
 
 > Không dừng ở nghiệm đại số: cần đối chiếu đơn vị, điều kiện nguyên/không âm và ý nghĩa “tối đa / tối thiểu” trong ngữ cảnh.
 

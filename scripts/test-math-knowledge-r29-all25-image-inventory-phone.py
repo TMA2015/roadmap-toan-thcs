@@ -125,6 +125,15 @@ for cue in ("đổi về cùng một đơn vị", "chỉ làm tròn **ở bướ
     assert cue in ct20, ("CT20 20-04 measurement guard lost", cue)
 print("PASS R29 focused CT19/CT20 old-poster native guards", flush=True)
 
+# R35: CT08 word-problem inequality must be valid MathJax, not bare
+# parentheses and Markdown bracket lines that display raw on the lesson.
+ct08 = Path("docs/kien-thuc/08-phuong-trinh-bat-phuong-trinh/preview-composition-r10.md").read_text(encoding="utf-8")
+for cue in (r"\(18\)", r"\(6\)", r"\(1{,}5\)", r"\(x\in\mathbb N\)",
+            "\\[\n6+1{,}5x\\le18\n\\]", r"\(x\le8\)"):
+    assert cue in ct08, ("CT08 word-problem MathJax delimiter regression", cue)
+assert "\n[\n6+1{,}5x\\le18\n]\n" not in ct08
+print("PASS R35 CT08 word-problem MathJax delimiters", flush=True)
+
 # R34: retained CT10 graph strokes must stay inside their actual plot frames.
 # This catches visual overshoot into titles/footers without changing the math.
 ct10 = Path("docs/kien-thuc/10-ham-so-do-thi/preview-tabs-r6.md").read_text(encoding="utf-8")
