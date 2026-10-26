@@ -14,8 +14,9 @@ from playwright.sync_api import sync_playwright
 
 # slug, canonical reviewed candidate, source infographic count, omitted poster IDs,
 # newly authored useful educational diagrams (outside original source embeds).
+# CT01 archive filename 01-overview.svg uses "overview.svg" as its second segment.
 TOPICS = [
-    ("01-ban-do-chuong-trinh", "r13", 1, "01", ("01-overview-r2.svg",)),
+    ("01-ban-do-chuong-trinh", "r13", 1, "overview.svg", ("01-overview-r2.svg",)),
     ("02-so-va-phep-tinh", "r9", 4, "01 02 03", ()),
     ("03-ti-le-ti-le-thuc", "r9", 4, "01 02 03", ()),
     ("04-bieu-thuc-dai-so", "r10", 3, "01 02 03", ()),
