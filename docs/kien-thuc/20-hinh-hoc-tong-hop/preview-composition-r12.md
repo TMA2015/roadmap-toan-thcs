@@ -225,9 +225,7 @@ Quy trình nên dùng:
 5. Tìm các tỉ số hoặc hệ thức trung gian.
 6. Chỉ sau đó mới hướng tới kết luận cuối.
 
-### Infographic – Chọn chiến lược
-
-![Infographic chọn chiến lược giải hình học tổng hợp](../../assets/infographics/20/20-02-chon-chien-luoc.svg)
+**Chọn công cụ theo đích:** Muốn chứng minh nội tiếp, ưu tiên hai góc đối bù, hai góc cùng nhìn một đoạn (đúng vị trí), hoặc hai góc vuông cùng nhìn đường kính; muốn tìm tỉ số hoặc hệ thức tích, tìm đồng dạng; muốn chứng minh tiếp tuyến, phải chỉ ra điểm thuộc đường tròn và bán kính vuông góc đường thẳng. Khi tính độ dài, cân nhắc đồng dạng → Pythagore → lượng giác → hệ thức đường tròn, chọn cách dùng ít ẩn và kiểm tra đủ điều kiện áp dụng.
 
 ### 3.2. Các “cầu nối” thường gặp
 
@@ -294,11 +292,16 @@ Bên cạnh các chuỗi nội tiếp → đồng dạng → hệ thức tích, 
 3. Suy ra `OB = OC`, nên `O` cũng thuộc trung trực `BC`.
 4. Vậy ba đường trung trực của tam giác **đồng quy tại `O`**.
 
-**Tự kiểm tra lời chứng minh:** Căn cứ nào được cho sẵn? Kết quả trung gian nào đã chứng minh? Bước cuối có thật sự suy ra đúng điều phải chứng minh, hay chỉ là điều nhìn thấy trên hình?
+**Tự kiểm tra lời chứng minh:** Căn cứ nào được cho sẵn? Kết quả trung gian nào đã chứng minh? Bước cuối có thật sự suy ra đúng điều phải chứng minh, hay chỉ là điều nhìn thấy trên hình? Hãy ghép đúng các đỉnh/cạnh tương ứng và ghi lý do cho từng bước.
 
-### Infographic – Chuỗi suy luận
+**Bốn chuỗi suy luận thường gặp** (mỗi hàng là một khả năng độc lập, không phải bốn bước của cùng một bài):
 
-![Infographic các chuỗi suy luận mẫu trong hình học tổng hợp](../../assets/infographics/20/20-03-chuoi-suy-luan.svg)
+| Dữ kiện / hướng tiếp cận | Chuỗi lập luận cần chứng minh từng bước |
+|:---|:---|
+| Có điều kiện nội tiếp hợp lệ | Nội tiếp → góc nội tiếp bằng nhau → đồng dạng → tỉ số → hệ thức tích |
+| Có đường song song trong tam giác | Góc tương ứng → đồng dạng hoặc Thales → tỉ số cạnh → độ dài |
+| Có thể dùng đồng dạng để tạo góc vuông | Đồng dạng → chứng minh vuông góc với **bán kính tại điểm thuộc đường tròn** → tiếp tuyến |
+| Tam giác vuông có đường cao xuống cạnh huyền | Tam giác đồng dạng → hình chiếu cạnh góc vuông → `AB² = BH × BC`, `AC² = CH × BC`, `AH² = BH × CH` |
 
 ### 3.6. Đo lường và hình khối
 
