@@ -3,7 +3,7 @@
 **Review ID:** THPT-G10-B16-R1-20261026  
 **Trạng thái:** ACADEMIC_REVIEW_REQUIRED · DESIGN_PROTOTYPE_ONLY · KHÔNG PHÁT HÀNH  
 **Bài mẫu:** Toán 10 KNTT, Chương VI, Bài 16 — *Hàm số bậc hai* (xác nhận vị trí/tên bài chính xác từ SGK trước khi kết luận).  
-**Mẫu giao diện:** `THPT_G10_B16_knowledge_pilot_R1.html` (kế thừa bản ngày 23/10 `math_knowledge_design_preview_r0.html`).  
+**Mẫu giao diện:** [`prototypes/thpt/g10-b16-knowledge-pilot-r1.html`](../../prototypes/thpt/g10-b16-knowledge-pilot-r1.html) (giao diện độc lập, kế thừa ý tưởng R0 ngày 23/10; chưa đưa vào `docs/`).  
 **Quy tắc:** THCS và THPT là hai khu vực trong **một** website/repository Self-Learning Math; học liệu, ngân hàng câu hỏi, điểm và lịch sử THPT dùng namespace riêng. Không đổi hay triển khai THCS trong đợt này.
 
 ## Nguồn để NotebookLM đối chiếu
