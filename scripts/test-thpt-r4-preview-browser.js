@@ -149,7 +149,7 @@ async function ready(page,path){
   assert((await page.locator("article a").filter({hasText:"Tự kiểm tra cuối Chương VI"}).count())>=1,"SGK chapter is missing Readiness link");
   await ready(page,"sgk/chuong-vi/luyen-tap/");
   const practiceHub=await page.locator("article").textContent();
-  assert(practiceHub.includes("Luyện tập theo từng bài")&&practiceHub.includes("Bài tập cuối Chương VI"),"Practice hub lacks lesson and cumulative practice");
+  assert(practiceHub.includes("Luyện tập theo từng bài")&&practiceHub.includes("Luyện tập tổng hợp, vận dụng cuối chương")&&practiceHub.includes("8 bài luyện tập tổng hợp"),"Practice hub lacks lesson-aligned and cumulative practice");
   await ready(page,"sgk/chuong-vi/tu-kiem-tra-chuong/");
   const chapterReady=page.locator('[data-thpt-assessment="sgk-chapter"][data-thpt-readiness]');
   assert((await chapterReady.count())===1,"Missing separate SGK chapter Readiness engine");
