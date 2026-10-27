@@ -113,7 +113,42 @@
   });
  }
 
+ function initAdaptiveKnowledgeTabs(){
+  const route=location.pathname;
+  document.body.classList.toggle("thpt-r4-topic-knowledge",
+    /\/(thpt-preview|thpt)\/(chuyen-de\/ham-so\/kien-thuc|qa\/adaptive-knowledge-tabs)\/?(?:index\.html)?$/.test(route));
+  document.querySelectorAll("[data-thpt-knowledge-layout]").forEach(root=>{
+    if(root.dataset.knowledgeReady==="1")return;
+    root.dataset.knowledgeReady="1";
+    const buttons=[...root.querySelectorAll("[data-thpt-knowledge-tab]")];
+    const panels=[...root.querySelectorAll("[data-thpt-knowledge-panel]")];
+    if(!buttons.length||buttons.length!==panels.length)return;
+    const activate=id=>{
+      for(const btn of buttons){
+        const selected=btn.dataset.thptKnowledgeTab===id;
+        btn.classList.toggle("is-active",selected);
+        btn.setAttribute("aria-selected",String(selected));
+        btn.tabIndex=selected?0:-1;
+      }
+      for(const panel of panels)panel.hidden=panel.dataset.thptKnowledgePanel!==id;
+    };
+    buttons.forEach((btn,index)=>{
+      btn.addEventListener("click",()=>activate(btn.dataset.thptKnowledgeTab));
+      btn.addEventListener("keydown",event=>{
+        if(!["ArrowLeft","ArrowRight","Home","End"].includes(event.key))return;
+        event.preventDefault();
+        const next=event.key==="Home"?0:event.key==="End"?buttons.length-1:
+          (index+(event.key==="ArrowRight"?1:-1)+buttons.length)%buttons.length;
+        activate(buttons[next].dataset.thptKnowledgeTab);
+        buttons[next].focus();
+      });
+    });
+    activate(buttons[0].dataset.thptKnowledgeTab);
+  });
+ }
+
  function init() {
+  initAdaptiveKnowledgeTabs();
   initTHPTLauncher();
   initQuadraticPlot();
   document.querySelectorAll('[data-thpt-r4]').forEach(root => {
