@@ -1,5 +1,7 @@
 # Core SGK · Bài 16 — Hàm số bậc hai
 
+<div class="thpt-r4-screen" data-thpt-r4><p class="thpt-r4-eyebrow">SGK CORE · CANONICAL ITEM · PILOT</p></div>
+
 **Canonical item:** `THPT-CORE-QF01` · **SGK KNTT lớp 10, Chương VI, Bài 16**. Bài Core này củng cố khái niệm sau khi học SGK; cùng bài toán có thể được gắn vai trò Practice cơ bản ở Chuyên đề, **không tạo item mới**.
 
 [Xem lý thuyết SGK Bài 16](../chuong-vi/bai-16.md) · [Thư viện Core SGK](index.md) · [Luyện tập Chuyên đề Hàm số](../../chuyen-de/ham-so/luyen-tap.md)
