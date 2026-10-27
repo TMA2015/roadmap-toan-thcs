@@ -1,6 +1,7 @@
 ---
 hide:
   - toc
+  - navigation
 ---
 
 <div class="thpt-r4-screen" data-thpt-r4>
