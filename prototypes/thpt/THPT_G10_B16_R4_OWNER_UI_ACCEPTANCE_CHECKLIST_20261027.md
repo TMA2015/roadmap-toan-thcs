@@ -1,10 +1,12 @@
 # Toán THPT R4 · Owner UI Acceptance Checklist — Bài 16
 
 **Ngày:** 27/10/2026  
-**Phase:** Academic Pilot PASS → Owner visual/interaction QA pending  
+**Phase:** Academic Pilot PASS + **Golden UI HTML v3 DESIGN PASS**; kiểm tra staging/thiết bị thật vẫn tách riêng.  
 **Reviewed content:** `THPT-G10-B16-R4-POSTFIX-REVIEW-20261027`  
 **Academic result:** PASS / CLEARANCE YES (theo kết quả NotebookLM được chuyển giao)  
 **Prototype:** Một mẫu lớp 10, Bài 16; chuyên đề `PILOT_PARTIAL_G10`; Draft PR #612, không phải sản phẩm đã triển khai.
+
+**Owner Design Receipt:** Chủ dự án đã kiểm tra và PASS file HTML Golden UI v3 ngày 27/10/2026. Các dòng checklist bên dưới vẫn là checklist **staging/thiết bị thật** và không được tự đổi tất cả thành PASS. Hồ sơ: `THPT_R4_GOLDEN_UI_OWNER_DESIGN_LOCK_20261027.md`.
 
 ## 1. Cách mở preview trên thiết bị thật (LAN riêng, không deploy)
 
