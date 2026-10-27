@@ -1,7 +1,110 @@
 /* R4 learning-pilot-only helpers: all selectors scoped under data-thpt-r4, no storage/network. */
 (() => {
  "use strict";
+
+ // THPT-only launcher. The accepted THCS 7+25 launcher code remains unchanged.
+ function initTHPTLauncher(){
+  const match=location.pathname.match(/^(.*?\/)(thpt-preview|thpt)\//);
+  if(!match)return;
+  const base=match[1]+match[2]+"/";
+  document.body.classList.add("thpt-r4-route");
+  // Scope hiding to THPT paths; never remove or rewrite THCS launcher code/data.
+  document.querySelectorAll("[data-roadmap-topic-launcher]").forEach(el=>{
+   el.hidden=true;el.setAttribute("aria-hidden","true");
+  });
+  if(document.querySelector("[data-thpt-r4-launcher]"))return;
+  const header=document.querySelector(".md-header__inner");
+  if(!header)return;
+  const topics=[["Hàm số và đồ thị · MẪU","chuyen-de/ham-so/kien-thuc/"]];
+  const groups=[
+   ["Trang chủ","home/"],["Học theo SGK","sgk/"],
+   ["Chuyên đề","chuyen-de/"],["Thư viện bài tập","thu-vien/"],
+   ["Tiến độ học tập","tien-do/"]
+  ];
+  const btn=document.createElement("button");
+  btn.type="button";btn.className="roadmap-topic-launcher thpt-r4-launcher";
+  btn.dataset.thptR4Launcher="1";
+  btn.setAttribute("aria-haspopup","dialog");
+  btn.setAttribute("aria-label","Mở 5 nhóm THPT và "+topics.length+" chuyên đề mẫu, chưa phát hành");
+  const mark=document.createElement("span");mark.className="roadmap-topic-launcher__mark";mark.textContent="▤";
+  const count=document.createElement("span");count.className="roadmap-topic-launcher__count";count.textContent="5 + "+topics.length;
+  const name=document.createElement("span");name.className="roadmap-topic-launcher__name";name.textContent="mẫu";
+  btn.append(mark,count,name);
+  btn.addEventListener("click",()=>{
+   let dlg=document.querySelector("[data-thpt-r4-shortcut-dialog]");
+   if(!dlg){
+    dlg=document.createElement("dialog");
+    dlg.className="roadmap-topic-dialog";dlg.dataset.thptR4ShortcutDialog="1";
+    dlg.setAttribute("aria-label","Điều hướng nhanh Toán THPT · Bản mẫu");
+    const heading=document.createElement("div");heading.className="roadmap-topic-dialog__heading";
+    const title=document.createElement("h2");title.textContent="Toán THPT · 5 nhóm + "+topics.length+" chuyên đề mẫu";
+    const close=document.createElement("button");close.type="button";close.className="roadmap-topic-dialog__close";close.textContent="Đóng ✕";
+    close.addEventListener("click",()=>dlg.close());heading.append(title,close);
+    const hint=document.createElement("p");hint.className="roadmap-topic-dialog__hint";
+    hint.textContent="Đây là các trang minh họa chưa phát hành, không phải danh mục chuyên đề đã nghiệm thu.";
+    const section=document.createElement("details");section.className="roadmap-main-quick";section.open=true;
+    const summary=document.createElement("summary");summary.textContent="5 nhóm THPT · mở/thu gọn";
+    const nav=document.createElement("nav");nav.className="roadmap-main-quick__links";
+    nav.setAttribute("aria-label","Năm lối tắt chính Toán THPT");
+    for(const [label,url]of groups){
+     const a=document.createElement("a");a.href=base+url;a.textContent=label;nav.append(a);
+    }
+    section.append(summary,nav);
+    const topicNav=document.createElement("nav");topicNav.className="roadmap-topic-dialog__list";
+    topicNav.setAttribute("aria-label","Các chuyên đề mẫu THPT");
+    for(const [label,url]of topics){
+     const a=document.createElement("a");a.href=base+url;a.textContent=label;topicNav.append(a);
+    }
+    dlg.append(heading,section,hint,topicNav);
+    dlg.addEventListener("click",event=>{if(event.target===dlg)dlg.close()});
+    document.body.append(dlg);
+   }
+   if(!dlg.open)dlg.showModal();
+  });
+  const title=header.querySelector(".md-header__title");
+  if(title)title.insertAdjacentElement("afterend",btn);else header.append(btn);
+ }
+ function initQuadraticPlot(){
+  document.querySelectorAll("[data-thpt-quadratic-plot] svg").forEach(svg=>{
+   if(svg.dataset.r4Plotted==="1")return;
+   svg.dataset.r4Plotted="1";
+   const ns="http://www.w3.org/2000/svg";
+   const xmin=-0.3,xmax=4.3,ymin=-1.5,ymax=5.2;
+   const sx=x=>55+(x-xmin)/(xmax-xmin)*535;
+   const sy=y=>315-(y-ymin)/(ymax-ymin)*270;
+   function elt(tag,attrs,text){
+    const node=document.createElementNS(ns,tag);
+    Object.entries(attrs).forEach(([k,v])=>node.setAttribute(k,String(v)));
+    if(text!==undefined)node.textContent=text;
+    svg.append(node);return node;
+   }
+   for(let x=0;x<=4;x++){
+    elt("line",{x1:sx(x),y1:45,x2:sx(x),y2:315,stroke:"#d1d9e8","stroke-width":.8});
+    elt("text",{x:sx(x),y:332,"text-anchor":"middle",fill:"#5a6a81","font-size":13},String(x));
+   }
+   for(let y=-1;y<=5;y++){
+    elt("line",{x1:55,y1:sy(y),x2:590,y2:sy(y),stroke:"#d1d9e8","stroke-width":.8});
+    elt("text",{x:47,y:sy(y)+4,"text-anchor":"end",fill:"#5a6a81","font-size":12},String(y));
+   }
+   elt("line",{x1:55,y1:sy(0),x2:596,y2:sy(0),stroke:"#50627d","stroke-width":1.6});
+   elt("line",{x1:sx(0),y1:43,x2:sx(0),y2:317,stroke:"#50627d","stroke-width":1.6});
+   elt("line",{x1:sx(2),y1:45,x2:sx(2),y2:315,stroke:"#8e9ab0","stroke-dasharray":"5 5"});
+   let d="";
+   for(let i=0;i<=180;i++){
+    const x=xmin+(xmax-xmin)*i/180,y=x*x-4*x+3;
+    d+=(i?"L":"M")+sx(x).toFixed(2)+" "+sy(y).toFixed(2)+" ";
+   }
+   elt("path",{d,fill:"none",stroke:"#354fc6","stroke-width":3,"stroke-linecap":"round"});
+   for(const [x,y,name]of [[1,0,"1"],[3,0,"3"],[2,-1,"I(2;−1)"]]){
+    elt("circle",{cx:sx(x),cy:sy(y),r:5,fill:"#22796f",stroke:"#ffffff","stroke-width":1.5});
+    if(name.startsWith("I"))elt("text",{x:sx(x)+12,y:sy(y)+4,fill:"#164c45","font-size":14,"font-weight":"bold"},name);
+   }
+  });
+ }
+
  function init() {
+  initTHPTLauncher();
+  initQuadraticPlot();
   document.querySelectorAll('[data-thpt-r4]').forEach(root => {
    if(root.dataset.thptR4Ready==="1")return;
    root.dataset.thptR4Ready="1";
