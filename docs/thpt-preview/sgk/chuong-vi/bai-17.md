@@ -2,7 +2,7 @@
 
 <div class="thpt-r4-screen" data-thpt-r4>
 <p class="thpt-r4-eyebrow">TOÁN 10 · CHƯƠNG VI · BẢN NHÁP HỌC LIỆU</p>
-<p class="thpt-r4-lead"><strong>DRAFT_NOT_ACADEMICALLY_REVIEWED.</strong> Bài soạn nguyên gốc theo mạch hàm số bậc hai → xét dấu → bất phương trình bậc hai; còn chờ source receipt SGK/SBT và NotebookLM review theo chương. Không ghi điểm hay tiến độ.</p>
+<p class="thpt-r4-lead"><strong>DRAFT_NOT_ACADEMICALLY_REVIEWED.</strong> Bài soạn nguyên gốc theo mạch hàm số bậc hai → xét dấu → bất phương trình bậc hai; đã đối chiếu trực quan SGK/SBT gốc; còn chờ ma trận item hoàn chỉnh và NotebookLM review theo chương. Không ghi điểm hay tiến độ.</p>
 <nav class="thpt-r4-lesson-tabs" aria-label="Điều hướng Chương VI"><a href="../">Chương VI</a><a href="../bai-16/">Bài 16</a><span class="is-current" aria-current="page">Bài 17 · Dấu tam thức (nháp)</span><a href="../bai-18/">Bài 18</a></nav>
 </div>
 
@@ -29,6 +29,21 @@ f(x)=ax^2+bx+c,\quad a\ne0.
 
 **Ví dụ 2.** \(g(x)=x^2-2x+1=(x-1)^2\ge0\) với mọi \(x\). Dấu bằng chỉ xảy ra tại \(x=1\) (\(\Delta=0\)). Không được nói \(g(x)>0\) với mọi \(x\).
 
+### Bảng xét dấu — mẫu cần biết
+
+Trên bảng xét dấu, mỗi nghiệm của tam thức là điểm phân chia khoảng; tại nghiệm thì giá trị bằng \(0\). Với \(\Delta>0\) và \(x_1<x_2\), dấu được xác định như sau:
+
+| Vị trí | \((-\infty;x_1)\) | \(x_1\) | \((x_1;x_2)\) | \(x_2\) | \((x_2;+\infty)\) |
+|---|:---:|:---:|:---:|:---:|:---:|
+| Nếu \(a>0\) | \(+\) | \(0\) | \(-\) | \(0\) | \(+\) |
+| Nếu \(a<0\) | \(-\) | \(0\) | \(+\) | \(0\) | \(-\) |
+
+Khi \(\Delta=0\), không xuất hiện khoảng đổi dấu qua nghiệm kép; khi \(\Delta<0\), tam thức không có nghiệm và giữ nguyên dấu của \(a\). Cần xét đúng biểu thức **tam thức bậc hai**, không tự áp dụng bảng này cho phân thức nếu chưa xét cả dấu mẫu số.
+
+**Ví dụ 2b (tự soạn — nghiệm kép).** \(f(x)=-2(x+1)^2\le0\) với mọi \(x\in\mathbb R\), bằng \(0\) duy nhất tại \(x=-1\). Do đó \(f(x)<0\) có tập nghiệm \(\mathbb R\setminus\{-1\}\), còn \(f(x)\le0\) có tập nghiệm \(\mathbb R\).
+
+**Ví dụ 2c (tự soạn — không có nghiệm).** \(g(x)=-2x^2+4x-5=-2(x-1)^2-3<0\) với mọi \(x\). Đây là ví dụ \(\Delta<0\), \(a<0\); nó cũng cho thấy định lí dấu phù hợp với dạng bình phương hoàn chỉnh.
+
 ## 3. Bất phương trình bậc hai
 
 Giải bất phương trình \(ax^2+bx+c\ >,\ge,<,\le\ 0\) bằng quy trình:
@@ -47,6 +62,23 @@ Giải bất phương trình \(ax^2+bx+c\ >,\ge,<,\le\ 0\) bằng quy trình:
 \iff (x-3)(x-6)\le0.
 \]
 Suy ra \(\boxed{3\le x\le6}\) (m); các nghiệm thỏa \(0<x<9\).
+
+### Bất phương trình có tham số: khi nào đúng với mọi số thực?
+
+Đối với một tam thức \(f(x)=ax^2+bx+c\) có \(a>0\), điều kiện để \(f(x)>0\) với **mọi** \(x\in\mathbb R\) là \(\Delta<0\). Nếu chỉ yêu cầu \(f(x)\ge0\) với mọi \(x\), điều kiện là \(\Delta\le0\). Khi \(a<0\), các mệnh đề tương tự áp dụng cho dấu \(<0\) hoặc \(\le0\).
+
+**Ví dụ 5 (tự soạn).** Tìm \(m\) để
+\[
+x^2-2(m+1)x+m^2+3>0
+\]
+đúng với mọi \(x\in\mathbb R\). Vì \(a=1>0\), ta cần
+\[
+\Delta=[-2(m+1)]^2-4(m^2+3)=8(m-1)<0.
+\]
+Suy ra \(\boxed{m<1}\). Nếu \(m=1\), tam thức có nghiệm kép và bằng \(0\) tại một điểm nên **không** thỏa dấu \(>\).
+
+!!! note "Ranh giới học thuật"
+    Phần tham số là **mở rộng luyện tập** được định hướng bởi SBT Bài 17 trang in 17–18 (bài toán nghiệm, dấu bất phương trình với tham số), không tự coi là Core bắt buộc của SGK. Ví dụ và lời giải do dự án tự biên soạn, chưa được NotebookLM thẩm định.
 
 ## 4. Tự luyện
 
@@ -69,4 +101,4 @@ Suy ra \(\boxed{3\le x\le6}\) (m); các nghiệm thỏa \(0<x<9\).
 - Không kết hợp tập nghiệm bất phương trình với **miền xác định** từ bài toán thực tế.
 
 !!! warning "Giới hạn"
-    Bản nháp này dùng ví dụ nguyên gốc và định lí phổ thông, **chưa chốt source receipt PDF của Bài 17**; chưa có canonical exercise register/Readiness chính thức. Không coi là bài học Academic PASS hoặc đã phát hành.
+    Bản nháp này dùng ví dụ nguyên gốc và định lí phổ thông, **đã đối chiếu hình trang SGK 19–24 và SBT 16–18; chưa thẩm định độc lập toàn bộ học liệu**; chưa có canonical exercise register/Readiness chính thức. Không coi là bài học Academic PASS hoặc đã phát hành.
