@@ -5,8 +5,9 @@
 <p class="thpt-r4-lead">Bản xem thử cách học từng bài SGK KNTT. Nội dung học thuật mẫu Bài 16 đã được NotebookLM tái thẩm định R4 Postfix và xác nhận ACADEMIC_CLEARANCE: YES (27/10/2026). Đây vẫn là bản xem thử giao diện; bài tương tác không ghi điểm hoặc lưu lịch sử.</p>
 <nav class="thpt-r4-lesson-tabs" aria-label="Điều hướng Chương VI">
 <a href="../">Tổng quan Chương VI</a>
+<a href="../bai-15/">Bài 15 · Hàm số (nháp)</a>
 <span class="is-current" aria-current="page">Bài 16 · Hàm số bậc hai</span>
-<span aria-disabled="true">Bài khác · Chưa có bản mẫu</span>
+<a href="../bai-17/">Bài 17 · Dấu tam thức (nháp)</a>
 </nav>
 </div>
 
