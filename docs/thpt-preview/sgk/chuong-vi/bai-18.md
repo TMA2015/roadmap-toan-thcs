@@ -85,6 +85,8 @@ Hai nghiệm ứng viên là \(x=3\) và \(x=-\frac53\). Chỉ \(x=3\) đạt đ
 - **Quên dấu của vế không chứa căn:** trong \(\sqrt{A(x)}=B(x)\) phải có \(B(x)\ge0\).
 - **Quên điều kiện của biến và việc thử lại:** nghiệm đại số có thể làm căn vô nghĩa.
 
+[Mở khu vực **Core và Luyện tập/Vận dụng của Chương VI**](luyen-tap.md) — modal hiện tại phục vụ kiểm thử kỹ thuật; bộ ứng viên bài B18 riêng đang chờ đối chiếu và review học thuật, chưa ghi điểm tiến độ.
+
 ## 5. Tự luyện
 
 1. Giải \(\sqrt{x+2}=x\).
