@@ -83,5 +83,32 @@ Xét \(f(x)=x^2-4x+3=(x-2)^2-1\). Do đó:
 
 Hàm số bậc hai có thể biểu diễn diện tích hình chữ nhật khi chu vi được giữ cố định. [Xem bài tự luận mỏ neo mẫu](../../thu-vien/tu-luan.md).
 
+### Mở rộng mô hình thực tế từ phần cuối Bài 16
+
+!!! warning "Phần học liệu bổ sung đang chờ review delta học thuật"
+    **DRAFT_NOT_ACADEMICALLY_REVIEWED — SOURCE_SCOPE_DELTA_B16.** Nội dung dưới đây được biên soạn thêm từ các chủ đề minh họa trong SGK Toán 10 KNTT tập 2 **trang in 17–18** và SBT tập 2 **trang in 15**. Những trang này nằm ngoài receipt SGK 11–16/SBT 10–14 trong biên bản NotebookLM Postfix trước đó. Hai ví dụ dưới đây do dự án **tự soạn**, không chép nguyên bài SGK/SBT, và chưa được cấp Academic PASS. Kết quả PASS cũ chỉ giữ cho phần đã được review.
+
+**Ví dụ bổ sung A — Chuyển động theo phương thẳng đứng.** Bỏ qua sức cản không khí, một vật được ném lên từ mặt đất với vận tốc đầu \(19{,}6\;\text{m/s}\); lấy \(g=9{,}8\;\text{m/s}^2\). Độ cao \(h\) (m) theo thời gian \(t\) (giây) là
+
+\[
+h(t)=19{,}6t-4{,}9t^2=-4{,}9(t-2)^2+19{,}6.
+\]
+
+Vì \(t\ge0\) và chỉ xét đến lúc vật trở lại mặt đất, ta có \(0\le t\le4\). Parabol mở xuống; **độ cao lớn nhất** là \(19{,}6\) m tại \(t=2\) giây. Giải \(h(t)=0\) được \(t=0\) (lúc ném) hoặc \(t=4\) (lúc chạm đất).
+
+*Điều cần nắm:* Các biến phải có **đơn vị và miền ý nghĩa vật lý**; không dùng toàn bộ \(\mathbb R\) làm miền thời gian của chuyển động thực tế.
+
+**Ví dụ bổ sung B — Doanh thu và giá bán.** Một mô hình giả định số sản phẩm bán được theo giá \(x\) (nghìn đồng/sản phẩm) là \(n(x)=600-10x\), với \(0\le x\le60\). Doanh thu tính bằng nghìn đồng:
+
+\[
+R(x)=x\,n(x)=600x-10x^2=-10(x-30)^2+9000.
+\]
+
+Do đó doanh thu lớn nhất theo mô hình là \(9000\) nghìn đồng, tức **9 triệu đồng**, khi giá bán \(x=30\) nghìn đồng/sản phẩm và lượng bán dự kiến \(n(30)=300\) sản phẩm.
+
+*Điều cần nắm:* Số lượng và đơn giá phải đúng đơn vị; miền \(0\le x\le60\) bảo đảm giá không âm và nhu cầu dự đoán không âm. Đây là một mô hình tuyến tính hóa giả định, không phải dự báo kinh tế thực tế.
+
+Hai ví dụ củng cố cách tìm cực trị từ dạng đỉnh. **Bộ bài vận dụng nguồn SBT 6.18–6.20** (trang in 15) bổ sung các tình huống chuyển động và doanh thu; khi biên soạn ngân hàng bài, cần tạo câu hỏi gốc/biến thể hợp pháp, mapping về đúng outcome và chưa trộn trực tiếp vào Readiness không kiểm soát tiếp xúc đáp án.
+
 !!! warning "Chỉ là bài học trình diễn"
     Biên bản NotebookLM R4 Postfix đã xác nhận học thuật PASS cho riêng bài mẫu này (5/5 mục tiêu, 5/5 item). Nghiệm thu giao diện trên thiết bị thực tế và phê duyệt phát hành vẫn là các bước riêng; bản mẫu không ghi nhận tiến độ.
