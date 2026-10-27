@@ -1,3 +1,5 @@
+> **CẬP NHẬT QUY TẮC 27/10/2026 — SUPERSEDED IN PART:** Quy tắc Core trong Chuyên đề và bốn mục cố định đã được thay thế bởi `THPT_DUAL_COMPLETE_PATHS_SHARED_ITEMS_OWNER_CONTRACT_v2.0.md`. Chuyên đề nay chỉ có **Kiến thức / Luyện tập / Tự kiểm tra**; SGK Core dùng chung item ID với Practice cơ bản khi phù hợp. Phần shell, shortcut 5+N và thư viện Written trong tài liệu lịch sử này vẫn có hiệu lực.
+
 # THPT R4 — Cấu trúc website thống nhất, thư viện bài tập và điều hướng nhanh
 
 **Ngày:** 26/10/2026 · **Trạng thái:** yêu cầu sản phẩm được chủ dự án xác nhận; triển khai trong **Draft PR #612**, chưa phát hành.  
