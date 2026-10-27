@@ -96,16 +96,19 @@
    }
    elt("line",{x1:55,y1:sy(0),x2:596,y2:sy(0),stroke:"#50627d","stroke-width":1.6});
    elt("line",{x1:sx(0),y1:43,x2:sx(0),y2:317,stroke:"#50627d","stroke-width":1.6});
-   elt("line",{x1:sx(2),y1:45,x2:sx(2),y2:315,stroke:"#8e9ab0","stroke-dasharray":"5 5"});
+   elt("line",{x1:sx(2),y1:45,x2:sx(2),y2:315,stroke:"#8e9ab0","stroke-dasharray":"5 5","data-thpt-symmetry-axis":"x=2"});
+   elt("text",{x:sx(2)+8,y:58,fill:"#465576","font-size":13},"x = 2");
    let d="";
    for(let i=0;i<=180;i++){
     const x=xmin+(xmax-xmin)*i/180,y=x*x-4*x+3;
     d+=(i?"L":"M")+sx(x).toFixed(2)+" "+sy(y).toFixed(2)+" ";
    }
    elt("path",{d,fill:"none",stroke:"#354fc6","stroke-width":3,"stroke-linecap":"round"});
-   for(const [x,y,name]of [[1,0,"1"],[3,0,"3"],[2,-1,"I(2;−1)"]]){
+   for(const [x,y,name]of [[1,0,"(1;0)"],[3,0,"(3;0)"],[2,-1,"I(2;−1)"],[0,3,"(0;3)"]]){
     elt("circle",{cx:sx(x),cy:sy(y),r:5,fill:"#22796f",stroke:"#ffffff","stroke-width":1.5});
-    if(name.startsWith("I"))elt("text",{x:sx(x)+12,y:sy(y)+4,fill:"#164c45","font-size":14,"font-weight":"bold"},name);
+    const dx=x===1?-48:12;
+    const dy=y===0?-12:4;
+    elt("text",{x:sx(x)+dx,y:sy(y)+dy,fill:"#164c45","font-size":13,"font-weight":"bold"},name);
    }
   });
  }
@@ -160,6 +163,8 @@
    }
    document.querySelectorAll("[data-thpt-readiness]").forEach(area=>{
     if(area.dataset.thptR4Bound==="1")return;
+    // Require explicit non-credit QA scope before binding the two-question demonstration.
+    if(area.dataset.demoScope!=="TECHNICAL_DEMO_ONLY"||area.dataset.masteryCredit!=="false")return;
     area.dataset.thptR4Bound="1";
     const queries=[
      {prompt:"Cho y = (x − 4)² + 2. Tung độ đỉnh là bao nhiêu?",opts:["4","2","−4"],key:1,reason:"Đỉnh I(4;2), tung độ là 2."},
@@ -190,7 +195,7 @@
      if(answers.some(x=>x===null)){result.textContent="Hãy hoàn thành cả hai câu trước khi Final Submit. Có thể dùng Previous/Next để quay lại sửa.";return}
      finalized=true;
      const score=queries.reduce((n,q,i)=>n+(answers[i]===q.key?1:0),0);
-     result.textContent="Kết quả Demo: "+score+" / "+queries.length+". Lời giải chỉ hiện sau lần nộp này.";
+     result.textContent="Kết quả Demo kỹ thuật (không tính tiến độ): "+score+" / "+queries.length+". Lời giải chỉ hiện sau lần nộp này.";
      reveal.hidden=false;reveal.replaceChildren();
      queries.forEach((q,i)=>{
       const p=document.createElement("p");
