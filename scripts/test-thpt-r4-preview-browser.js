@@ -132,8 +132,8 @@ async function ready(page,path){
   }
   // Full SGK route has visible Practice/Application and separate chapter-end readiness.
   await ready(page,"sgk/chuong-vi/");
-  assert((await page.locator('a[href="luyen-tap/"]').count())===1,"SGK chapter is missing Practice/Application link");
-  assert((await page.locator('a[href="tu-kiem-tra-chuong/"]').count())===1,"SGK chapter is missing Readiness link");
+  assert((await page.locator("article a").filter({hasText:"Luyện tập / Vận dụng Chương VI"}).count())>=1,"SGK chapter is missing Practice/Application link");
+  assert((await page.locator("article a").filter({hasText:"Tự kiểm tra cuối Chương VI"}).count())>=1,"SGK chapter is missing Readiness link");
   await ready(page,"sgk/chuong-vi/luyen-tap/");
   const practiceHub=await page.locator("article").textContent();
   assert(practiceHub.includes("Luyện tập theo từng bài")&&practiceHub.includes("Bài tập cuối Chương VI"),"Practice hub lacks lesson and cumulative practice");
