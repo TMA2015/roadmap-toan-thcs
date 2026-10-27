@@ -65,6 +65,66 @@ async function ready(page,path){
   await page.locator('#thpt-written-search').fill("diện tích");
   assert(await page.locator("#bai-mo-neo-demo").isVisible(),"Written anchor filter missing");
   assert(await page.locator("#tu-luan-thuong-demo").isHidden(),"Written filter not applied");
+
+  // R4 golden UI interaction gates: local navigation, launcher, search, shared Core identity.
+  await page.locator("#thpt-written-search").fill("");
+  await page.locator("#thpt-written-kind").selectOption("anchor");
+  assert(await page.locator("#bai-mo-neo-demo").isVisible(),"Written anchor type filter failed");
+  assert(await page.locator("#tu-luan-thuong-demo").isHidden(),"Written normal item must be hidden with anchor filter");
+  await page.locator("#thpt-written-kind").selectOption("normal");
+  assert(await page.locator("#tu-luan-thuong-demo").isVisible(),"Written normal filter failed");
+  assert(await page.locator("#bai-mo-neo-demo").isHidden(),"Written anchor must be hidden with normal filter");
+
+  await ready(page,"home/");
+  await page.locator("[data-thpt-r4-launcher]").click();
+  const dialog=page.locator("[data-thpt-r4-shortcut-dialog]");
+  assert(await dialog.isVisible(),"THPT quick navigation dialog did not open");
+  const mainLinks=dialog.locator('nav[aria-label="Năm lối tắt chính Toán THPT"] a');
+  assert((await mainLinks.count())===5,"THPT launcher must have precisely five fixed destinations");
+  const expected=["Trang chủ","Học theo SGK","Chuyên đề","Thư viện bài tập","Tiến độ học tập"];
+  assert.deepEqual((await mainLinks.allTextContents()).map(x=>x.trim()),expected,"THPT launcher group order differs from R4 contract");
+  assert((await dialog.locator('nav[aria-label="Các chuyên đề mẫu THPT"] a').count())===1,"THPT pilot must have one sample topic");
+  for(const a of await mainLinks.all()){
+   const href=await a.getAttribute("href");
+   assert(href?.startsWith("/thpt-preview/"),"THPT launcher left its own section: "+href);
+  }
+  await dialog.getByRole("button",{name:"Đóng"}).click();
+  assert(!(await dialog.isVisible()),"THPT launcher cannot close");
+
+  await ready(page,"sgk/");
+  const sgkSearch=page.locator("#thpt-chapter-search");
+  await sgkSearch.fill("hàm số");
+  assert(await page.locator('a.library-topic-tile[href="chuong-vi/"]').isVisible(),"SGK search did not retain B16 Chapter VI result");
+  await sgkSearch.fill("zzz_chuong_khong_ton_tai");
+  assert(await page.locator('a.library-topic-tile[href="chuong-vi/"]').isHidden(),"SGK search did not hide unmatched chapter");
+  await sgkSearch.fill("");
+  assert(await page.locator('a.library-topic-tile[href="chuong-vi/"]').isVisible(),"SGK search did not restore chapter after reset");
+
+  await ready(page,"chuyen-de/");
+  const topicSearch=page.locator("#thpt-topic-search");
+  await topicSearch.fill("hàm số");
+  assert(await page.locator('a.library-topic-tile[href="ham-so/kien-thuc/"]').isVisible(),"Topic search did not retain sample");
+  await topicSearch.fill("zzz_khong_co_chuyen_de");
+  assert(await page.locator('a.library-topic-tile[href="ham-so/kien-thuc/"]').isHidden(),"Topic search did not filter sample");
+  await topicSearch.fill("");
+  assert(await page.locator('a.library-topic-tile[href="ham-so/kien-thuc/"]').isVisible(),"Topic search did not restore sample");
+
+  function canonical(href,currentUrl){
+   return new URL(href,currentUrl).pathname.replace(/index\\.html$/,"").replace(/\\/$/,"");
+  }
+  const expectedCore="/thpt-preview/chuyen-de/ham-so/core";
+  await ready(page,"sgk/core/");
+  const coreLibraryHref=await page.locator("a.math-library-entry").first().getAttribute("href");
+  assert.equal(canonical(coreLibraryHref,page.url()),expectedCore,"SGK Core library links to different Core identity");
+  await ready(page,"sgk/chuong-vi/bai-16/");
+  const lessonCoreHref=await page.locator("a.math-library-entry").first().getAttribute("href");
+  assert.equal(canonical(lessonCoreHref,page.url()),expectedCore,"SGK B16 points to duplicated Core");
+  await ready(page,"chuyen-de/ham-so/core/");
+  assert((await page.locator('[data-thpt-core] .thpt-r4-eyebrow').textContent()).includes("THPT-CORE-QF01"),"Canonical Core ID mismatch");
+
+  await ready(page,"chuyen-de/ham-so/kien-thuc/");
+  assert((await page.locator("article").textContent()).includes("PILOT_PARTIAL_G10"),"Partial-topic status not visible");
+
   await page.close();
   console.log("PASS THPT R4 Chromium viewport + Core/Practice/Readiness/Written smoke test (synthetic demo; not academic review or physical-device approval)");
  }finally{await browser.close();}
