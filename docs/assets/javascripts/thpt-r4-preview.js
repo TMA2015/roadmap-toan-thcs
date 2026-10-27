@@ -149,8 +149,121 @@
   });
  }
 
+
+ // SGK Chapter Practice: one button/card, one modal, never a cloned canonical ID.
+ // B16 uses the ORIGINAL exercise markup from existing SGK Core/Topic Practice URLs.
+ // Other cards use TECHNICAL_DEMO_ONLY prompts, not production item records.
+ function initChapterPracticeCards(){
+  const root=document.querySelector("[data-thpt-practice-hub]");
+  if(!root||root.dataset.thptModalReady==="1")return;
+  root.dataset.thptModalReady="1";
+  const demoSets={
+   "b15-core":[
+    ["Với f(x)=√(x−1), điều kiện của x là gì?",["x≥1","x≤1","x≠1"],0,"Vì x−1≥0 nên x≥1.","Để căn thức có nghĩa, biểu thức dưới căn không âm."],
+    ["Với f(x)=2x+1, f(2) bằng bao nhiêu?",["3","5","4"],1,"f(2)=2·2+1=5.","Thay x=2 vào công thức."]
+   ],
+   "b15-practice":[
+    ["Điểm nào thuộc đồ thị y=2x+1?",["(2;4)","(2;5)","(2;6)"],1,"Khi x=2 thì y=5.","Thử thay hoành độ của từng điểm."],
+    ["Hàm số y=−3x+7 trên ℝ là:",["Đồng biến","Nghịch biến","Không xác định"],1,"Hệ số góc −3<0 nên hàm nghịch biến.","Xét f(x₂)−f(x₁) khi x₂>x₁."]
+   ],
+   "b17-core":[
+    ["Tam thức f(x)=2x²+3x+5 có Δ bằng:",["−31","31","49"],0,"Δ=3²−4·2·5=−31.","Δ=b²−4ac."],
+    ["Với a>0, Δ<0, tam thức bậc hai có dấu:",["Luôn âm","Luôn dương","Đổi dấu hai lần"],1,"Không có nghiệm thực và a>0 nên f(x)>0 trên ℝ.","Định lý dấu tam thức."]
+   ],
+   "b17-practice":[
+    ["Giải x²−5x+6<0:",["x<2 hoặc x>3","2<x<3","2≤x≤3"],1,"(x−2)(x−3)<0 khi 2<x<3.","Ngoài hai nghiệm cùng dấu a, giữa hai nghiệm trái dấu a."],
+    ["Giải −(x−2)²≤0:",["Vô nghiệm","x=2","Mọi x∈ℝ"],2,"Bình phương luôn ≥0 nên số đối luôn ≤0.","Dấu của bình phương."]
+   ],
+   "b18-core":[
+    ["Giải √(x+2)=x, trước khi bình phương cần:",["x≥0","x<0","x≥−2 là đủ"],0,"Vế phải x phải không âm; điều kiện cần x≥0.","Vế căn thức không âm."],
+    ["Nghiệm x=−1 sau khi bình phương √(x+2)=x là:",["Được giữ","Bị loại","Luôn đúng"],1,"−1 không thỏa vế phải không âm và phương trình gốc.","Luôn thử lại nghiệm sau bình phương."]
+   ],
+   "b18-practice":[
+    ["Tập nghiệm của √(x+2)=x là:",["{−1;2}","{2}","{−1}"],1,"x²−x−2=0 cho −1 và 2; chỉ 2 thỏa x≥0.","Bình phương rồi thử nghiệm ứng viên."],
+    ["Giải √(x+5)=√(2x+1):",["x=4","x=−4","x=1"],0,"Bình phương được x+5=2x+1, x=4; thử lại thỏa.","Hai căn bằng nhau khi hai biểu thức xác định và bằng nhau."]
+   ]
+  };
+  const src={
+   "b16-core":["../../core/ham-so-bac-hai/","[data-thpt-core]"],
+   "b16-practice":["../../../chuyen-de/ham-so/luyen-tap/","[data-thpt-practice]"]
+  };
+  const lessonTitle={"15":"Hàm số","16":"Hàm số bậc hai","17":"Dấu của tam thức bậc hai","18":"Phương trình quy về phương trình bậc hai"};
+  const dlg=document.createElement("dialog");
+  dlg.className="thpt-r4-practice-dialog";
+  dlg.setAttribute("aria-label","Luyện tập Toán THPT · bản mẫu");
+  dlg.innerHTML='<div class="thpt-r4-modal-top"><div><p class="thpt-r4-modal-meta">TOÁN 10 · CHƯƠNG VI</p><h2 data-thpt-modal-title>Luyện tập</h2></div><button type="button" data-thpt-modal-close aria-label="Đóng cửa sổ">Đóng ×</button></div><div class="thpt-r4-modal-main" data-thpt-modal-body></div>';
+  document.body.append(dlg);
+  const modalBody=dlg.querySelector("[data-thpt-modal-body]");
+  const modalTitle=dlg.querySelector("[data-thpt-modal-title]");
+  let returnFocus=null;
+  const close=()=>dlg.close();
+  dlg.querySelector("[data-thpt-modal-close]").addEventListener("click",close);
+  dlg.addEventListener("click",event=>{if(event.target===dlg)close()});
+  dlg.addEventListener("close",()=>returnFocus?.focus());
+  const showDemo=(items)=>{
+   let index=0;const selections=items.map(()=>null),checked=items.map(()=>false);
+   modalBody.replaceChildren();
+   const hintText=document.createElement("p");
+   const progress=document.createElement("p");progress.className="thpt-r4-modal-progress";
+   const numbers=document.createElement("div");numbers.className="thpt-r4-modal-question-nav";
+   const question=document.createElement("div");
+   const footer=document.createElement("div");footer.className="thpt-r4-modal-buttons";
+   const prev=document.createElement("button"),next=document.createElement("button");
+   prev.textContent="← Câu trước";next.textContent="Câu tiếp →";prev.type=next.type="button";
+   const render=()=>{
+    progress.textContent="Câu "+(index+1)+" / "+items.length+" · Demo kỹ thuật · Không ghi điểm";
+    numbers.replaceChildren();items.forEach((_,n)=>{const b=document.createElement("button");b.type="button";b.textContent="Câu "+(n+1);b.className=n===index?"active":"";b.setAttribute("aria-current",String(n===index));b.addEventListener("click",()=>{index=n;render()});numbers.append(b)});
+    question.replaceChildren();
+    const p=document.createElement("h3");p.textContent=items[index][0];question.append(p);
+    const form=document.createElement("form"),group=document.createElement("fieldset");group.className="thpt-r4-modal-options";
+    items[index][1].forEach((option,n)=>{const lab=document.createElement("label"),radio=document.createElement("input");radio.type="radio";radio.name="answer";radio.value=String(n);radio.checked=selections[index]===n;radio.addEventListener("change",()=>{selections[index]=n;checked[index]=false});lab.append(radio,document.createTextNode(option));group.append(lab)});
+    const hint=document.createElement("details"),summary=document.createElement("summary");summary.textContent="💡 Gợi ý";hint.append(summary,document.createTextNode(items[index][4]));
+    const submit=document.createElement("button");submit.type="submit";submit.className="thpt-r4-practice-open";submit.textContent="Kiểm tra câu này";
+    const result=document.createElement("p");result.setAttribute("role","status");
+    if(checked[index])result.textContent=selections[index]===items[index][2]?"Đúng. "+items[index][3]:"Chưa đúng. "+items[index][3];
+    form.append(group,hint,submit,result);form.addEventListener("submit",e=>{e.preventDefault();if(selections[index]===null){result.textContent="Hãy chọn một đáp án.";return}checked[index]=true;result.textContent=selections[index]===items[index][2]?"Đúng. "+items[index][3]:"Chưa đúng. "+items[index][3]});
+    question.append(form);
+    prev.disabled=index===0;next.disabled=index===items.length-1;
+   };
+   prev.addEventListener("click",()=>{if(index>0){index--;render()}});
+   next.addEventListener("click",()=>{if(index<items.length-1){index++;render()}});
+   footer.append(prev,next);modalBody.append(progress,numbers,question,footer);
+   render();
+  };
+  root.querySelectorAll("[data-thpt-open-quiz]").forEach(button=>{
+   button.addEventListener("click",async()=>{
+    returnFocus=button;
+    const id=button.dataset.thptOpenQuiz,parts=id.match(/^b(1[5678])-(core|practice)$/);
+    if(!parts)return;
+    const lesson=parts[1],role=parts[2]==="core"?"Core":"Luyện tập";
+    modalTitle.textContent=role+" · Bài "+lesson+". "+lessonTitle[lesson];
+    modalBody.textContent="Đang mở nội dung…";dlg.showModal();
+    if(demoSets[id]){showDemo(demoSets[id]);return}
+    try{
+     // Import exact canonical source, not a separately copied answer key.
+     const [relative,selector]=src[id];
+     const url=new URL(relative,location.href);
+     const response=await fetch(url,{credentials:"same-origin"});
+     if(!response.ok)throw Error("HTTP "+response.status);
+     const doc=new DOMParser().parseFromString(await response.text(),"text/html");
+     const source=doc.querySelector(selector);
+     if(!source)throw Error("Không tìm thấy bài trong trang nguồn");
+     modalBody.replaceChildren();
+     const meta=document.createElement("p");meta.className="thpt-r4-modal-progress";meta.textContent="Bài 16 · Cùng item canonical · Không ghi điểm học sinh";
+     modalBody.append(meta,source.cloneNode(true));
+     // Existing R4 exercise handler binds the imported card once.
+     init();
+     if(window.MathJax?.typesetPromise)window.MathJax.typesetPromise([modalBody]).catch(()=>{});
+    }catch(error){
+     modalBody.textContent="Chưa thể tải bài mẫu. Hãy mở bản MkDocs Preview với máy chủ trang đầy đủ hoặc kiểm tra đường dẫn nguồn.";
+    }
+   });
+  });
+ }
+
  function init() {
   initAdaptiveKnowledgeTabs();
+  initChapterPracticeCards();
   initTHPTLauncher();
   initQuadraticPlot();
   document.querySelectorAll('[data-thpt-r4]').forEach(root => {
