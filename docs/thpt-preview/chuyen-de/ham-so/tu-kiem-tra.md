@@ -4,11 +4,10 @@ demo_scope: TECHNICAL_DEMO_ONLY
 mastery_credit: false
 ---
 
-<div class="thpt-r4-screen" data-thpt-r4><nav class="thpt-r4-topic-steps" aria-label="Các phần học của chuyên đề">
-<a href="../core/" >01 · Thẻ Core</a>
-<a href="../kien-thuc/" >02 · Kiến thức</a>
-<a href="../luyen-tap/" >03 · Luyện tập</a>
-<a href="../tu-kiem-tra/" aria-current="page">04 · Tự kiểm tra</a>
+<div class="thpt-r4-screen" data-thpt-r4><nav class="thpt-r4-topic-steps" aria-label="Ba phần học của chuyên đề">
+<a href="../kien-thuc/">01 · Kiến thức</a>
+<a href="../luyen-tap/">02 · Luyện tập</a>
+<a href="../tu-kiem-tra/" aria-current="page">03 · Tự kiểm tra</a>
 </nav></div>
 
 # Tự kiểm tra — Hàm số và đồ thị
