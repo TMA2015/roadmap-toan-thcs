@@ -31,6 +31,38 @@ Cho tập hợp \(D\) gồm các giá trị của \(x\). Nếu **mỗi** \(x\in 
 !!! tip "Chú ý khi đọc hình"
     Khi một đường thẳng đứng \(x=x_0\) cắt hình vẽ tại nhiều hơn một điểm, hình vẽ đó **không thể** là đồ thị của hàm số \(y=f(x)\) trên miền chứa \(x_0\).
 
+### Đọc hàm số qua bảng và đồ thị
+
+Hàm số không nhất thiết phải được cho bằng một công thức duy nhất. Theo mạch kiến thức SGK Toán 10 KNTT Tập 2 (trang in 5–7), ta còn gặp **bảng số liệu**, **đồ thị đo đạc** và **mô hình tính tiền theo từng khoảng**.
+
+**Ví dụ bổ sung A — Bảng giá trị.** Một trạm quan sát ghi nhiệt độ tại ba thời điểm:
+
+| Thời điểm \(t\) (giờ) | 6 | 12 | 18 |
+|---|---:|---:|---:|
+| Nhiệt độ \(T(t)\) (\(^\circ\mathrm C\)) | 19 | 25 | 21 |
+
+Trong dữ liệu chỉ gồm ba thời điểm đó, tập xác định là \(D=\{6;12;18\}\); tập giá trị là \(\{19;21;25\}\). Ta đọc được \(T(12)=25\) nhưng **không thể tự suy ra** \(T(9)\) nếu chưa có mô hình hoặc số liệu bổ sung. Nếu hai thời điểm có cùng nhiệt độ thì giá trị đó chỉ liệt kê **một lần** trong tập giá trị.
+
+**Ví dụ bổ sung B — Hàm số cho theo từng khoảng.** Một dịch vụ giao hàng giả định tính phí \(C(x)\), đơn vị *nghìn đồng*, theo quãng đường \(x\) (km):
+
+\[
+C(x)=
+\begin{cases}
+8x,&0\le x\le2,\\
+16+6(x-2),&x>2.
+\end{cases}
+\]
+
+- \(C(1)=8\) (nghìn đồng); \(C(2)=16\); \(C(3)=22\).
+- Hai công thức tương ứng với **hai khoảng khác nhau**, nhưng mọi quãng đường \(x\ge0\) đều có **duy nhất một** mức phí.
+- Tập xác định thực tế \(D=[0;+\infty)\). Tại \(x=2\), dùng nhánh \(0\le x\le2\); nhánh còn lại chỉ dùng khi \(x>2\).
+- Muốn vẽ đồ thị, vẽ đoạn thẳng \(y=8x\) trên \([0;2]\) và tia thẳng \(y=6x+4\) trên \((2;+\infty)\). Hai phần gặp nhau tại \((2;16)\).
+
+*Lưu ý:* Mô hình tính phí này là **ví dụ do dự án tự biên soạn**, không sao chép biểu giá trong SGK và không đại diện cho giá giao hàng thực tế. Đây là một ví dụ về cách biểu diễn phụ thuộc bằng công thức trên từng miền.
+
+!!! warning "Phần bổ sung SGK B15 đang chờ review học thuật"
+    **DRAFT_NOT_ACADEMICALLY_REVIEWED** — Nguồn ý tưởng/độ phủ: SGK Toán 10 Tập 2 Bài 15, phần hoạt động, ví dụ và vận dụng về bảng/đồ thị/biểu giá trên trang in **5–7, 9**. Đã quan sát hình quét gốc; chưa soát hết SBT trang 3–9, chưa có canonical item ID mới, không ghi mastery.
+
 ## 3. Sự đồng biến, nghịch biến của hàm số
 
 Cho hàm số \(y=f(x)\) xác định trên khoảng \(K\). Với mọi \(x_1,x_2\in K\) thỏa \(x_1<x_2\):
