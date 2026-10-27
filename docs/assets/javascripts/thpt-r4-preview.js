@@ -5,7 +5,15 @@
  // THPT-only launcher. The accepted THCS 7+25 launcher code remains unchanged.
  function initTHPTLauncher(){
   const match=location.pathname.match(/^(.*?\/)(thpt-preview|thpt)\//);
-  if(!match)return;
+  if(!match){
+   document.body.classList.remove("thpt-r4-route");
+   document.querySelectorAll("[data-roadmap-topic-launcher]").forEach(el=>{
+    el.hidden=false;el.removeAttribute("aria-hidden");
+   });
+   document.querySelector("[data-thpt-r4-launcher]")?.remove();
+   document.querySelector("[data-thpt-r4-shortcut-dialog]")?.remove();
+   return;
+  }
   const base=match[1]+match[2]+"/";
   document.body.classList.add("thpt-r4-route");
   // Scope hiding to THPT paths; never remove or rewrite THCS launcher code/data.
