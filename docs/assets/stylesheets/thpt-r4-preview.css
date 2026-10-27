@@ -203,3 +203,55 @@ body.thpt-r4-topic-knowledge .md-typeset .thpt-r4-knowledge-content-panel p {
     min-width: 0;
   }
 }
+
+
+/* THPT SGK chapter lesson groups: THCS-inspired layout, THPT-sized typography. */
+.thpt-r4-practice-sections{display:grid;gap:22px;margin:18px 0 24px}
+.thpt-r4-practice-lesson{--thpt-grade-accent:#405bc6;--thpt-grade-soft:#eef2ff;--thpt-grade-border:#cdd8ff;min-width:0;border:1px solid var(--md-default-fg-color--lightest);border-radius:16px;overflow:hidden;background:var(--md-default-bg-color);box-shadow:0 3px 14px rgba(17,33,73,.05)}
+.thpt-r4-practice-lesson[data-thpt-grade="11"],.thpt-r4-practice-card[data-thpt-grade="11"]{--thpt-grade-accent:#148477;--thpt-grade-soft:#e9f7f3;--thpt-grade-border:#addbcf}
+.thpt-r4-practice-lesson[data-thpt-grade="12"],.thpt-r4-practice-card[data-thpt-grade="12"]{--thpt-grade-accent:#8554c1;--thpt-grade-soft:#f4eefe;--thpt-grade-border:#d8c2f4}
+.thpt-r4-practice-lesson[data-thpt-grade="10"],.thpt-r4-practice-card[data-thpt-grade="10"]{--thpt-grade-accent:#405bc6;--thpt-grade-soft:#eef2ff;--thpt-grade-border:#cdd8ff}
+.thpt-r4-practice-lesson-header{display:flex;align-items:center;gap:15px;padding:14px 18px;background:var(--thpt-grade-soft);border-top:4px solid var(--thpt-grade-accent);color:#172947}
+.thpt-r4-lesson-number{display:grid;place-items:center;border-radius:50%;background:var(--thpt-grade-accent);color:#fff;font-weight:800;min-width:43px;height:43px;font-size:1rem}
+.thpt-r4-practice-lesson-header h2{font-size:1.13rem!important;font-weight:750!important;border:0!important;padding:0!important;margin:1px 0 0!important;color:#172947!important}
+.thpt-r4-practice-class{font-size:.83rem!important;color:#52617d!important;margin:0!important;font-weight:600}
+.thpt-r4-practice-card-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;padding:16px}
+.thpt-r4-practice-card{--thpt-grade-accent:#405bc6;display:flex;flex-direction:column;justify-content:space-between;gap:20px;border:1px solid var(--md-default-fg-color--lightest);border-radius:12px;padding:16px;min-width:0;background:var(--md-default-bg-color)}
+.thpt-r4-practice-card-kind{margin:0 0 6px!important;font-size:.88rem!important;font-weight:850;color:var(--thpt-grade-accent)}
+.thpt-r4-practice-card>div>strong{font-size:.97rem;line-height:1.45;display:block}
+.thpt-r4-practice-card-desc{font-size:.85rem!important;color:var(--md-default-fg-color--light)!important;line-height:1.55;margin:8px 0!important}
+.thpt-r4-practice-card small{display:block;color:var(--md-default-fg-color--light);font-size:.75rem;line-height:1.45;margin-top:7px}
+.thpt-r4-practice-open{width:100%;background:var(--md-default-bg-color);border:1px solid var(--thpt-grade-border,#cdd8ff);border-radius:9px;color:var(--thpt-grade-accent,#405bc6);font-weight:750;font-size:.94rem;min-height:43px;padding:8px 13px;cursor:pointer}
+.thpt-r4-practice-open:hover,.thpt-r4-practice-open:focus-visible{background:var(--thpt-grade-soft,#eef2ff);outline-offset:2px}
+.thpt-r4-practice-disclaimer{font-size:.82rem!important;color:var(--md-default-fg-color--light);line-height:1.6;margin:13px 0 24px}
+body[data-md-color-scheme="slate"] .thpt-r4-practice-lesson-header{background:#20334e;color:#f2f5ff}
+body[data-md-color-scheme="slate"] .thpt-r4-practice-lesson-header h2{color:#f2f5ff!important}
+body[data-md-color-scheme="slate"] .thpt-r4-practice-class{color:#b5c6e1!important}
+.thpt-r4-practice-dialog{position:fixed;inset:0;border:1px solid var(--md-default-fg-color--lightest);border-radius:18px;background:var(--md-default-bg-color);color:var(--md-default-fg-color);box-shadow:0 20px 70px rgba(3,12,30,.35);padding:0;width:min(860px,calc(100vw - 24px));max-height:min(91vh,900px);overflow:hidden}
+.thpt-r4-practice-dialog::backdrop{background:rgba(5,15,35,.68)}
+.thpt-r4-modal-top{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;padding:18px 22px 16px;border-bottom:1px solid var(--md-default-fg-color--lightest)}
+.thpt-r4-modal-top h2{font-size:1.12rem;margin:0!important;border:0!important;padding:0!important}
+.thpt-r4-modal-meta{font-size:.72rem;color:var(--md-default-fg-color--light);margin:0 0 5px;letter-spacing:.05em}
+.thpt-r4-modal-top [data-thpt-modal-close]{border:1px solid var(--md-default-fg-color--lightest);background:var(--md-code-bg-color);border-radius:8px;min-height:40px;padding:5px 10px;white-space:nowrap;cursor:pointer;color:inherit}
+.thpt-r4-modal-main{padding:20px 24px 28px;overflow-y:auto;max-height:calc(min(91vh,900px) - 90px);font-size:.98rem}
+.thpt-r4-modal-progress{color:var(--md-default-fg-color--light);font-size:.81rem;letter-spacing:.02em;font-weight:650}
+.thpt-r4-modal-question-nav{display:flex;gap:8px;margin:14px 0;flex-wrap:wrap}
+.thpt-r4-modal-question-nav button{min-height:38px;border-radius:8px;border:1px solid var(--md-default-fg-color--lightest);background:var(--md-code-bg-color);color:inherit;padding:5px 12px;cursor:pointer}
+.thpt-r4-modal-question-nav button.active{border-color:var(--md-accent-fg-color);font-weight:750}
+.thpt-r4-modal-main h3{font-size:1.03rem;margin:18px 0!important}
+.thpt-r4-modal-options{border:0;padding:0;margin:0 0 12px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+.thpt-r4-modal-options label{display:flex;align-items:center;gap:10px;border:1px solid var(--md-default-fg-color--lightest);border-radius:9px;padding:12px;cursor:pointer;min-width:0}
+.thpt-r4-modal-options input{flex:none}
+.thpt-r4-modal-main details{margin:14px 0;padding:10px 12px;border-radius:9px;background:var(--md-code-bg-color)}
+.thpt-r4-modal-buttons{display:flex;justify-content:space-between;gap:10px;margin:15px 0}
+.thpt-r4-modal-buttons button{padding:10px 15px;border-radius:8px;background:var(--md-code-bg-color);border:1px solid var(--md-default-fg-color--lightest);color:inherit;cursor:pointer}
+.thpt-r4-modal-buttons button:disabled{opacity:.48;cursor:not-allowed}
+.thpt-r4-modal-main .thpt-r4-exercise{max-width:100%;font-size:inherit}
+.thpt-r4-practice-dialog .thpt-r4-exercise fieldset label{font-size:inherit}
+@media(max-width:680px){
+ .thpt-r4-practice-card-grid,.thpt-r4-modal-options{grid-template-columns:minmax(0,1fr)}
+ .thpt-r4-practice-lesson-header{padding:12px 13px}
+ .thpt-r4-practice-card-grid{padding:12px}
+ .thpt-r4-modal-top{padding:14px}
+ .thpt-r4-modal-main{padding:14px}
+}
