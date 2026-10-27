@@ -194,6 +194,30 @@ async function ready(page,path){
   const widths=await page.evaluate(()=>({document:document.documentElement.scrollWidth,viewport:innerWidth}));
   assert(widths.document<=widths.viewport+20,"Adaptive knowledge preview caused horizontal overflow");
 
+  // Chapter VI authoring phase: navigable DRAFT lessons never appear as reviewed.
+  await ready(page,"sgk/chuong-vi/");
+  const draftLinks=page.locator(".thpt-r4-lesson-tabs a[href]");
+  const lessonTargets=["bai-15/","bai-16/","bai-17/","bai-18/"];
+  for(const target of lessonTargets){
+    assert((await draftLinks.filter({has:page.locator("span")}).count())>=0,"Navigation DOM unexpectedly changed");
+    assert((await page.locator('.thpt-r4-lesson-tabs a[href="'+target+'"]').count())===1,"Missing lesson route "+target);
+  }
+  for(const [lesson,title] of [
+    ["15","Hàm số"],["17","Dấu của tam thức bậc hai"],
+    ["18","Phương trình quy về phương trình bậc hai"]
+  ]){
+    await ready(page,"sgk/chuong-vi/bai-"+lesson+"/");
+    assert((await page.locator("h1").first().textContent()).includes(title),"Wrong draft heading B"+lesson);
+    const body=await page.locator("article").textContent();
+    assert(body.includes("DRAFT_NOT_ACADEMICALLY_REVIEWED"),"Draft B"+lesson+" accidentally looks academically cleared");
+    assert(body.includes("chưa")||body.includes("Chưa"),"Missing academic source disclaimer B"+lesson);
+    assert((await page.locator("[data-thpt-readiness]").count())===0,"Unreviewed B"+lesson+" must not expose mastery readiness");
+    const w=await page.evaluate(()=>({document:document.documentElement.scrollWidth,viewport:innerWidth}));
+    assert(w.document<=w.viewport+20,"Draft B"+lesson+" horizontal overflow");
+  }
+  await ready(page,"sgk/chuong-vi/bai-16/");
+  assert((await page.locator("article").textContent()).includes("ACADEMIC_CLEARANCE: YES"),"Existing B16 academic receipt unintentionally lost");
+
   await page.close();
   console.log("PASS THPT R4 Chromium viewport + Core/Practice/Readiness/Written smoke test (synthetic demo; not academic review or physical-device approval)");
  }finally{await browser.close();}
