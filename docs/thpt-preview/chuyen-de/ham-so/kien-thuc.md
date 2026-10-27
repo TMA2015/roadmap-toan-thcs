@@ -5,11 +5,10 @@ pilot_scope: PILOT_PARTIAL_G10
 ---
 
 <div data-thpt-r4 class="thpt-r4-screen"><p class="thpt-r4-eyebrow">CHUYÊN ĐỀ · BẢN MẪU THPT</p><p class="thpt-r4-lead">Hàm số và đồ thị · PILOT_PARTIAL_G10 · Minh họa nhánh hàm số bậc hai của lớp 10; chưa phải chuyên đề 10–12 hoàn chỉnh.</p>
-<nav class="thpt-r4-topic-steps" aria-label="Các phần học của chuyên đề">
-<a href="../core/" >01 · Thẻ Core</a>
-<a href="../kien-thuc/" aria-current="page">02 · Kiến thức</a>
-<a href="../luyen-tap/" >03 · Luyện tập</a>
-<a href="../tu-kiem-tra/" >04 · Tự kiểm tra</a>
+<nav class="thpt-r4-topic-steps" aria-label="Ba phần học của chuyên đề">
+<a href="../kien-thuc/" aria-current="page">01 · Kiến thức</a>
+<a href="../luyen-tap/">02 · Luyện tập</a>
+<a href="../tu-kiem-tra/">03 · Tự kiểm tra</a>
 </nav>
 <nav class="thpt-r4-section-links" aria-label="Di chuyển nhanh trong bài"><a href="#ban-do-kien-thuc">Bản đồ</a><a href="#kien-thuc">Kiến thức</a><a href="#kien-thuc-lien-quan">Liên quan</a><a href="#dang-bai">Dạng bài</a><a href="#loi-sai-thuong-gap">Lỗi sai</a></nav></div>
 
@@ -44,7 +43,7 @@ pilot_scope: PILOT_PARTIAL_G10
     Với \(y=x^2-4x+3=(x-2)^2-1\), đỉnh \(I(2;-1)\), trục \(x=2\), giao điểm với \(Ox\) có hoành độ \(1\) và \(3\).
 
 !!! info "Cách tổ chức kiến thức khi chuyên đề có nhiều mảng"
-    Trong bản mẫu Bài 16 (một mảng kiến thức), các tab **Khái niệm / Đồ thị và tính chất / Ví dụ** là phù hợp. Với chuyên đề lớn hơn, tab cấp này sẽ đổi thành **mảng kiến thức 3.1 / 3.2 / 3.3...**, bên trong là các **đề mục** tương ứng, tránh tab lồng tab. **Font, size, màu của tab và normal text được giữ nhất quán** giữa mọi cấu trúc.
+    Trong bản mẫu Bài 16 (một mảng kiến thức), các tab **Khái niệm / Đồ thị và tính chất / Ví dụ** là phù hợp. Với chuyên đề lớn hơn, tab cấp này sẽ đổi thành **mảng kiến thức 3.1 / 3.2 / 3.3...**, bên trong có **hàng tab nội dung cấp 2** khi kiến thức đủ dài; tối đa hai cấp tab, theo quy chuẩn Adaptive v2.0. **Font, size, màu của tab và normal text được giữ nhất quán** giữa mọi cấu trúc.
 
     [Xem thử bố cục nhiều mảng và kiểm tra kiểu chữ](../../qa/adaptive-knowledge-tabs.md).
 
@@ -62,7 +61,7 @@ pilot_scope: PILOT_PARTIAL_G10
 
     **Phương pháp:** tính \(h=-b/(2a)\), rồi \(k=f(h)\).
 
-    **Luyện ngay:** [Core chung](core.md) hoặc [Practice theo chuyên đề](luyen-tap.md).
+    **Luyện ngay:** [Practice chuyên đề](luyen-tap.md). Câu Core của SGK cũng có thể tham chiếu ở Practice cơ bản bằng cùng ID, không phải mục Core chuyên đề.
 
 === "Vẽ đồ thị và giao trục"
 
