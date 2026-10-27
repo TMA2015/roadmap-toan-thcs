@@ -39,7 +39,7 @@ async function ready(page,path){
    await page.close();
   }
   const page=await browser.newPage({viewport:{width:390,height:844}});
-  await ready(page,"chuyen-de/ham-so/core/");
+  await ready(page,"sgk/core/ham-so-bac-hai/");
   await page.locator('[data-thpt-core] input[value="-3"]').check();
   await page.locator('[data-thpt-core] button[type="submit"]').click();
   assert((await page.locator('[data-thpt-core] [data-thpt-feedback]').textContent()).startsWith("Đúng."),"Core did not grade after Check");
