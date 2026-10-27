@@ -80,6 +80,8 @@ Suy ra \(\boxed{m<1}\). Nếu \(m=1\), tam thức có nghiệm kép và bằng \
 !!! note "Ranh giới học thuật"
     Phần tham số là **mở rộng luyện tập** được định hướng bởi SBT Bài 17 trang in 17–18 (bài toán nghiệm, dấu bất phương trình với tham số), không tự coi là Core bắt buộc của SGK. Ví dụ và lời giải do dự án tự biên soạn, chưa được NotebookLM thẩm định.
 
+[Mở khu vực **Core và Luyện tập/Vận dụng của Chương VI**](luyen-tap.md) — hiện các thẻ Bài 17 mới là **demo giao diện**, chưa kết nối ngân hàng câu hỏi ứng viên đang chờ review. Khi được thẩm định, từng thẻ sẽ lấy bài theo canonical item ID và lịch sử làm bài.
+
 ## 4. Tự luyện
 
 1. Xét dấu \(h(x)=2x^2+3x+5\) trên \(\mathbb R\).
