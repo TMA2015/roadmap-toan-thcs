@@ -50,7 +50,7 @@ pilot_scope: PILOT_PARTIAL_G10
 ## Kiến thức liên quan
 
 - **Kiến thức nền THCS:** phương trình bậc hai và hàm số đơn giản.
-- **Theo SGK KNTT:** [Lớp 10 · Chương VI · Bài 16](../../sgk/chuong-vi.md).
+- **Theo SGK KNTT:** [Lớp 10 · Chương VI · Bài 16](../../sgk/chuong-vi/bai-16.md).
 - **Mở rộng sau này:** tính đơn điệu và các ứng dụng đạo hàm; chưa liên kết vì chưa biên soạn.
 
 ## Dạng bài
