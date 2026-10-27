@@ -197,7 +197,7 @@ async function ready(page,path){
   // Chapter VI authoring phase: navigable DRAFT lessons never appear as reviewed.
   await ready(page,"sgk/chuong-vi/");
   const draftLinks=page.locator(".thpt-r4-lesson-tabs a[href]");
-  const lessonTargets=["bai-15/","bai-16/","bai-17/","bai-18/"];
+  const lessonTargets=["bai-15/","bai-16/","bai-17/","bai-18/","bai-tap-cuoi-chuong/"];
   for(const target of lessonTargets){
     assert((await draftLinks.filter({has:page.locator("span")}).count())>=0,"Navigation DOM unexpectedly changed");
     assert((await page.locator('.thpt-r4-lesson-tabs a[href="'+target+'"]').count())===1,"Missing lesson route "+target);
@@ -215,6 +215,11 @@ async function ready(page,path){
     const w=await page.evaluate(()=>({document:document.documentElement.scrollWidth,viewport:innerWidth}));
     assert(w.document<=w.viewport+20,"Draft B"+lesson+" horizontal overflow");
   }
+  await ready(page,"sgk/chuong-vi/bai-tap-cuoi-chuong/");
+  const integrated=await page.locator("article").textContent();
+  assert(integrated.includes("DRAFT_NOT_ACADEMICALLY_REVIEWED"),"Unreviewed chapter exercises must be labeled");
+  assert((await page.locator("article details").count())===8,"Chapter draft must include eight independently solvable explanations");
+  assert(!(await page.locator("article details").first().getAttribute("open")),"End-chapter answers should start collapsed");
   await ready(page,"sgk/chuong-vi/bai-16/");
   assert((await page.locator("article").textContent()).includes("ACADEMIC_CLEARANCE: YES"),"Existing B16 academic receipt unintentionally lost");
 
