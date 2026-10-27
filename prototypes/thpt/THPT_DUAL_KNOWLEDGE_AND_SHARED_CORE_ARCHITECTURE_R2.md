@@ -1,3 +1,5 @@
+> **LỊCH SỬ KIẾN TRÚC — SUPERSEDED IN PART 27/10/2026:** Owner đã thay quy tắc “Core ba đường vào như một trang Chuyên đề” bằng `THPT_DUAL_COMPLETE_PATHS_SHARED_ITEMS_OWNER_CONTRACT_v2.0.md`. Core là vai trò trong nhánh SGK, Chuyên đề chỉ có Kiến thức / Luyện tập / Tự kiểm tra. Cùng một item ID có nhiều placement/role; chapter Readiness của SGK tách topic Readiness. Giữ tài liệu R2 để truy vết, **không sử dụng các điều khoản mâu thuẫn làm contract hiện tại**.
+
 # THPT — Hai lối học đầy đủ, một hệ thống Core thống nhất (R2 — định hướng chủ dự án, 26/10/2026)
 
 **Trạng thái:** OWNER-DIRECTION-RECORDED / ARCHITECTURE-CONTRACT-CANDIDATE / NO DEPLOY / ACADEMIC REVIEW PENDING.  
