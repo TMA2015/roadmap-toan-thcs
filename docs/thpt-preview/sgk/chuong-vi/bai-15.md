@@ -60,7 +60,7 @@ Nếu hàm số không có cùng một chiều biến thiên trên toàn miền,
 
 ## 5. Liên kết kiến thức
 
-- [Bài 16 — Hàm số bậc hai](../bai-16/) sử dụng các khái niệm tập xác định, đồ thị và tính đơn điệu.
+- [Bài 16 — Hàm số bậc hai](bai-16.md) sử dụng các khái niệm tập xác định, đồ thị và tính đơn điệu.
 - Các bài phía sau trong Chương VI kế thừa kĩ năng đọc đồ thị, phân tích điều kiện và xác định nghiệm.
 
 !!! warning "Giới hạn nguồn và phát hành"
