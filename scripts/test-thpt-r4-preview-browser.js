@@ -130,6 +130,36 @@ async function ready(page,path){
     assert.deepEqual(labels,["01 · Kiến thức","02 · Luyện tập","03 · Tự kiểm tra"],"Topic order differs from approved contract");
     assert((await nav.locator('a[href="../core/"]').count())===0,"Old topic Core tab must not appear");
   }
+  // Full SGK route has visible Practice/Application and separate chapter-end readiness.
+  await ready(page,"sgk/chuong-vi/");
+  assert((await page.locator('a[href="luyen-tap/"]').count())===1,"SGK chapter is missing Practice/Application link");
+  assert((await page.locator('a[href="tu-kiem-tra-chuong/"]').count())===1,"SGK chapter is missing Readiness link");
+  await ready(page,"sgk/chuong-vi/luyen-tap/");
+  const practiceHub=await page.locator("article").textContent();
+  assert(practiceHub.includes("Luyện tập theo từng bài")&&practiceHub.includes("Bài tập cuối Chương VI"),"Practice hub lacks lesson and cumulative practice");
+  await ready(page,"sgk/chuong-vi/tu-kiem-tra-chuong/");
+  const chapterReady=page.locator('[data-thpt-assessment="sgk-chapter"][data-thpt-readiness]');
+  assert((await chapterReady.count())===1,"Missing separate SGK chapter Readiness engine");
+  assert((await chapterReady.getAttribute("data-demo-scope"))==="TECHNICAL_DEMO_ONLY","Chapter readiness must be explicitly demo only");
+  assert((await chapterReady.getAttribute("data-mastery-credit"))==="false","Chapter readiness must not grant mastery");
+  assert(await chapterReady.locator("[data-thpt-solution]").isHidden(),"SGK chapter assessment leaked answers before Submit");
+  assert((await chapterReady.locator("[data-thpt-progress]").textContent()).includes("1 / 4"),"Chapter readiness must contain four technical demo questions");
+  await chapterReady.locator('input[value="1"]').check();
+  await chapterReady.locator("[data-thpt-next]").click();
+  await chapterReady.locator('input[value="1"]').check();
+  await chapterReady.locator("[data-thpt-next]").click();
+  await chapterReady.locator('input[value="2"]').check();
+  await chapterReady.locator("[data-thpt-next]").click();
+  await chapterReady.locator('input[value="0"]').check();
+  assert(await chapterReady.locator("[data-thpt-solution]").isHidden(),"SGK chapter assessment leaked after Next");
+  await chapterReady.locator("[data-thpt-previous]").click();
+  await chapterReady.locator('input[value="2"]').check();
+  await chapterReady.locator("[data-thpt-next]").click();
+  await chapterReady.locator("[data-thpt-final]").click();
+  const finalText=await chapterReady.locator("[data-thpt-feedback]").textContent();
+  assert(finalText.includes("4 / 4"),"SGK chapter Final Submit score incorrect");
+  assert(await chapterReady.locator("[data-thpt-solution]").isVisible(),"SGK chapter explanation did not appear after Final Submit");
+
   await ready(page,"chuyen-de/ham-so/luyen-tap/");
   assert((await page.locator("article").textContent()).includes("THPT-CORE-QF01"),"Same shared Core item must be referenced in beginner Practice");
   await ready(page,"chuyen-de/ham-so/core/");
