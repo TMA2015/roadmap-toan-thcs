@@ -43,6 +43,11 @@ pilot_scope: PILOT_PARTIAL_G10
 
     Với \(y=x^2-4x+3=(x-2)^2-1\), đỉnh \(I(2;-1)\), trục \(x=2\), giao điểm với \(Ox\) có hoành độ \(1\) và \(3\).
 
+!!! info "Cách tổ chức kiến thức khi chuyên đề có nhiều mảng"
+    Trong bản mẫu Bài 16 (một mảng kiến thức), các tab **Khái niệm / Đồ thị và tính chất / Ví dụ** là phù hợp. Với chuyên đề lớn hơn, tab cấp này sẽ đổi thành **mảng kiến thức 3.1 / 3.2 / 3.3...**, bên trong là các **đề mục** tương ứng, tránh tab lồng tab. **Font, size, màu của tab và normal text được giữ nhất quán** giữa mọi cấu trúc.
+
+    [Xem thử bố cục nhiều mảng và kiểm tra kiểu chữ](../../qa/adaptive-knowledge-tabs.md).
+
 ## Kiến thức liên quan
 
 - **Kiến thức nền THCS:** phương trình bậc hai và hàm số đơn giản.
