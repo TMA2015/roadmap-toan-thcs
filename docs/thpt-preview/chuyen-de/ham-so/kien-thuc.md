@@ -79,4 +79,4 @@ pilot_scope: PILOT_PARTIAL_G10
 - Kết luận luôn có hai nghiệm thực khi cắt trục hoành; thực tế có thể không có, có một nghiệm kép hoặc có hai nghiệm.
 - Quên điều kiện \(a\neq0\) khi gọi hàm bậc hai.
 
-> **Bản mẫu chưa nghiệm thu học thuật.** Trang kiến thức được rút gọn; hướng dẫn luyện tập và đánh giá chỉ nằm ở các mục chuyên trách. Cột mục lục phải của trang này được ẩn, thanh di chuyển nhanh nằm ngay phía trên.
+> **Nhánh kiến thức Bài 16 lớp 10 đã được NotebookLM xác nhận học thuật PASS trong review R4 Postfix.** Đây vẫn chỉ là lát cắt PILOT_PARTIAL_G10, không phải chuyên đề 10–12 hoàn chỉnh. Hướng dẫn luyện tập và đánh giá nằm ở các mục chuyên trách. Cột mục lục phải của trang này được ẩn, thanh di chuyển nhanh nằm ngay phía trên.
