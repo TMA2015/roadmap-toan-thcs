@@ -8,9 +8,9 @@
 <a href="bai-17/">Bài 17 · Dấu tam thức · NHÁP</a>
 <a href="bai-18/">Bài 18 · Phương trình quy về bậc hai · NHÁP</a>
 <a href="luyen-tap/">Luyện tập / Vận dụng Chương VI · NHÁP</a>
-<a href="bai-tap-cuoi-chuong/">Bài tập cuối chương VI · NHÁP</a>
 <a href="tu-kiem-tra-chuong/">Tự kiểm tra cuối Chương VI · DEMO 4 CÂU</a>
 </div>
+<p class="thpt-r4-lead"><strong>Luyện tập / Vận dụng</strong> bao gồm Core theo bài và bài tổng hợp cuối chương (8 bài nháp). <strong>Tự kiểm tra cuối chương</strong> là hoạt động đánh giá độc lập, không cho gợi ý trước Final Submit.</p>
 </div>
 
 !!! note "Bản mẫu chưa phát hành"
