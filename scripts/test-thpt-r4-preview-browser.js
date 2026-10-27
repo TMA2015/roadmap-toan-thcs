@@ -155,11 +155,20 @@ async function ready(page,path){
   for(const toggle of await disclosureButtons.all()){
     assert.equal(await toggle.getAttribute("aria-expanded"),"false","Nested THPT sidebar sections must default to collapsed");
   }
+  // Exercise the actual on-screen sidebar, not the hidden mobile drawer copy.
+  await page.setViewportSize({width:1440,height:900});
   let firstVisibleDisclosure=null;
   for(const toggle of await disclosureButtons.all()){
-    if(await toggle.isVisible()){firstVisibleDisclosure=toggle;break}
+    const inViewport=await toggle.evaluate(el=>{
+      const rect=el.getBoundingClientRect();
+      const parent=el.closest(".md-sidebar--primary");
+      const style=getComputedStyle(parent);
+      return rect.width>0&&rect.height>0&&rect.left>=0&&rect.right<=innerWidth&&
+        rect.top>=0&&rect.bottom<=innerHeight&&style.visibility!=="hidden"&&style.display!=="none";
+    });
+    if(inViewport&&await toggle.isVisible()){firstVisibleDisclosure=toggle;break}
   }
-  assert(firstVisibleDisclosure,"No accessible sidebar disclosure button found");
+  assert(firstVisibleDisclosure,"No on-screen sidebar disclosure button found at desktop width");
   const controlledId=await firstVisibleDisclosure.getAttribute("aria-controls");
   await firstVisibleDisclosure.click();
   assert.equal(await firstVisibleDisclosure.getAttribute("aria-expanded"),"true","Sidebar section could not expand");
