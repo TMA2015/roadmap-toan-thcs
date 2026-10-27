@@ -14,7 +14,7 @@
 | G10-CHVI-B16 | `docs/thpt-preview/sgk/chuong-vi/bai-16.md` | Golden Pilot R4 đã thẩm định | SGK in 11–16, SBT 10–14 theo reviewer receipt | **PASS, clearance YES** đúng snapshot đã duyệt |
 | G10-CHVI-B17 | `docs/thpt-preview/sgk/chuong-vi/bai-17.md` | Draft định lí, xét dấu, bất phương trình, ví dụ, tự luyện | PENDING | NOT_REVIEWED |
 | G10-CHVI-B18 | `docs/thpt-preview/sgk/chuong-vi/bai-18.md` | Draft 2 dạng phương trình chứa căn, kiểm nghiệm, ví dụ, tự luyện | PENDING | NOT_REVIEWED |
-| G10-CHVI-END | chưa tạo bài học chính thức | PENDING | PENDING | NOT_REVIEWED |
+| G10-CHVI-END | `docs/thpt-preview/sgk/chuong-vi/bai-tap-cuoi-chuong.md` | Draft 8 bài tổng hợp nguyên gốc với lời giải; chưa có canonical IDs | PENDING | NOT_REVIEWED |
 
 Tất cả các lesson key `G10-CHVI-...` là **nhãn kế hoạch**, chưa chốt canonical ID cho hệ thống học tập. **Không dùng** ba bài tự luyện nháp thành Core/Readiness chính thức hay mastery evidence.
 
