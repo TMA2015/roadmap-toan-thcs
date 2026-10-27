@@ -1,3 +1,5 @@
+> **DELTA KIẾN TRÚC ĐƯỢC OWNER CHẤP THUẬN (27/10/2026):** Golden UI về typography, two-level knowledge tabs và shell vẫn đã PASS. Chuyên đề chỉ còn **3 phần**: Kiến thức / Luyện tập / Tự kiểm tra; Core chuyển về nhánh SGK. Chi tiết `THPT_DUAL_COMPLETE_PATHS_SHARED_ITEMS_OWNER_CONTRACT_v2.0.md`; cần regression QA ba mục khi code thay đổi. Không biến biên bản v3 lịch sử thành nghiệm thu toàn bộ cấu trúc mới.
+
 # Toán THPT R4 — Golden UI Design Lock · Owner Acceptance
 
 **Ngày:** 2026-10-27  
