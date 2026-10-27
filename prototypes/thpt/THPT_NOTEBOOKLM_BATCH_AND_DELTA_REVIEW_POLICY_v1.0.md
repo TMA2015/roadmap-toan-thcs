@@ -1,3 +1,5 @@
+> **THPT OWNER ARCHITECTURE v2 UPDATE · 27/10/2026:** Với batch SGK, cần kiểm từng bài + Core/Practice và **Readiness cuối chương**. Với batch Chuyên đề, kiểm độc lập 3 phần **Kiến thức/Luyện tập/Tự kiểm tra** và Practice theo cấp độ (không còn Topic Core page). Một `item_id` có thể là SGK Core và Topic Practice qua placement khác; expected IDs chỉ đếm câu canonical một lần. Xem `THPT_DUAL_COMPLETE_PATHS_SHARED_ITEMS_OWNER_CONTRACT_v2.0.md` cho các quy định ưu tiên mới. Hợp đồng Temp_ file + prompt vẫn giữ nguyên.
+
 # Toán THPT · Quy tắc review theo lô và xử lý sửa đổi nhỏ v1.0
 
 **Ngày:** 27/10/2026  
