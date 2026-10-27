@@ -2,7 +2,7 @@
 
 <div class="thpt-r4-screen" data-thpt-r4>
 <p class="thpt-r4-eyebrow">TOÁN 10 · CHƯƠNG VI · BÀI MẪU R4</p>
-<p class="thpt-r4-lead">Bản xem thử cách học từng bài SGK KNTT. NotebookLM THPT đã thẩm định đợt R4 và yêu cầu bổ sung nội dung; bản chỉnh sửa này chờ tái kiểm duyệt. Bài tương tác chỉ dùng thử, không ghi điểm hay lưu lịch sử.</p>
+<p class="thpt-r4-lead">Bản xem thử cách học từng bài SGK KNTT. Nội dung học thuật mẫu Bài 16 đã được NotebookLM tái thẩm định R4 Postfix và xác nhận ACADEMIC_CLEARANCE: YES (27/10/2026). Đây vẫn là bản xem thử giao diện; bài tương tác không ghi điểm hoặc lưu lịch sử.</p>
 <nav class="thpt-r4-lesson-tabs" aria-label="Điều hướng Chương VI">
 <a href="../">Tổng quan Chương VI</a>
 <span class="is-current" aria-current="page">Bài 16 · Hàm số bậc hai</span>
@@ -81,4 +81,4 @@ Xét \(f(x)=x^2-4x+3=(x-2)^2-1\). Do đó:
 Hàm số bậc hai có thể biểu diễn diện tích hình chữ nhật khi chu vi được giữ cố định. [Xem bài tự luận mỏ neo mẫu](../../thu-vien/tu-luan.md).
 
 !!! warning "Chỉ là bài học trình diễn"
-    Đã cập nhật theo biên bản NotebookLM R4 có kết luận REVISIONS_REQUIRED. Những sửa đổi này chưa được NotebookLM tái kiểm duyệt; ACADEMIC_CLEARANCE vẫn là NO, không chấm tiến độ và không phát hành.
+    Biên bản NotebookLM R4 Postfix đã xác nhận học thuật PASS cho riêng bài mẫu này (5/5 mục tiêu, 5/5 item). Nghiệm thu giao diện trên thiết bị thực tế và phê duyệt phát hành vẫn là các bước riêng; bản mẫu không ghi nhận tiến độ.
