@@ -125,6 +125,44 @@ async function ready(page,path){
 
   await ready(page,"chuyen-de/ham-so/kien-thuc/");
   assert((await page.locator("article").textContent()).includes("PILOT_PARTIAL_G10"),"Partial-topic status not visible");
+  const semanticTab=page.locator(".md-typeset .tabbed-set > .tabbed-labels > label").first();
+  assert(await semanticTab.isVisible(),"Golden pilot semantic tabs are missing");
+  const semanticStyle=await semanticTab.evaluate(el=>({
+    font:getComputedStyle(el).fontFamily,size:getComputedStyle(el).fontSize,
+    weight:getComputedStyle(el).fontWeight,color:getComputedStyle(el).color
+  }));
+  const semanticsBody=await page.locator(".md-typeset .tabbed-content .tabbed-block p").first().evaluate(el=>({
+    font:getComputedStyle(el).fontFamily,size:getComputedStyle(el).fontSize,color:getComputedStyle(el).color
+  }));
+  const adaptiveLink=page.getByRole("link",{name:"Xem thử bố cục nhiều mảng và kiểm tra kiểu chữ"});
+  assert(await adaptiveLink.isVisible(),"Adaptive layout demo link missing");
+
+  await ready(page,"qa/adaptive-knowledge-tabs/");
+  const moduleTabs=page.locator("[data-thpt-knowledge-layout] [data-thpt-knowledge-tab]");
+  assert((await moduleTabs.count())===3,"Expected three illustrative knowledge modules");
+  const moduleStyle=await moduleTabs.first().evaluate(el=>({
+    font:getComputedStyle(el).fontFamily,size:getComputedStyle(el).fontSize,
+    weight:getComputedStyle(el).fontWeight,color:getComputedStyle(el).color
+  }));
+  assert.deepEqual(moduleStyle,semanticStyle,"Semantic and module tabs must share font/size/weight/color");
+  const moduleBody=await page.locator("#thpt-adaptive-a p").first().evaluate(el=>({
+    font:getComputedStyle(el).fontFamily,size:getComputedStyle(el).fontSize,color:getComputedStyle(el).color
+  }));
+  assert.deepEqual(moduleBody,semanticsBody,"Normal prose must match inside semantic and module tabs");
+  await moduleTabs.nth(1).click();
+  assert(await page.locator("#thpt-adaptive-b").isVisible(),"Module B did not open");
+  assert(await page.locator("#thpt-adaptive-a").isHidden(),"Module A did not hide");
+  await moduleTabs.nth(2).focus();
+  await page.keyboard.press("Enter");
+  assert(await page.locator("#thpt-adaptive-c").isVisible(),"Module C did not open by keyboard");
+  await page.keyboard.press("ArrowLeft");
+  assert(await page.locator("#thpt-adaptive-b").isVisible(),"Keyboard tab navigation failed");
+  const moduleBodyB=await page.locator("#thpt-adaptive-b p").first().evaluate(el=>({
+    font:getComputedStyle(el).fontFamily,size:getComputedStyle(el).fontSize,color:getComputedStyle(el).color
+  }));
+  assert.deepEqual(moduleBodyB,moduleBody,"Normal text must remain uniform between modules");
+  const widths=await page.evaluate(()=>({document:document.documentElement.scrollWidth,viewport:innerWidth}));
+  assert(widths.document<=widths.viewport+20,"Adaptive knowledge preview caused horizontal overflow");
 
   await page.close();
   console.log("PASS THPT R4 Chromium viewport + Core/Practice/Readiness/Written smoke test (synthetic demo; not academic review or physical-device approval)");
