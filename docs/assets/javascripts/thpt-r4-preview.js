@@ -146,7 +146,9 @@
     ["[data-thpt-core]","-3","Đúng. Hoành độ đỉnh h = −3.","Chưa đúng. So sánh với (x − h)² + k: h = −3."],
     ["[data-thpt-practice]","1,3","Đúng. Giải (x − 1)(x − 3) = 0 được 1 và 3.","Chưa đúng. Cho y = 0 rồi phân tích thành nhân tử."]
    ]){
-    root.querySelectorAll(selector).forEach(area=>{
+    document.querySelectorAll(selector).forEach(area=>{
+     if(area.dataset.thptR4Bound==="1")return;
+     area.dataset.thptR4Bound="1";
      const form=area.querySelector("form"),feedback=area.querySelector("[data-thpt-feedback]");
      if(!form||!feedback)return;
      form.addEventListener("submit",ev=>{
@@ -156,7 +158,9 @@
      });
     });
    }
-   root.querySelectorAll("[data-thpt-readiness]").forEach(area=>{
+   document.querySelectorAll("[data-thpt-readiness]").forEach(area=>{
+    if(area.dataset.thptR4Bound==="1")return;
+    area.dataset.thptR4Bound="1";
     const queries=[
      {prompt:"Cho y = (x − 4)² + 2. Tung độ đỉnh là bao nhiêu?",opts:["4","2","−4"],key:1,reason:"Đỉnh I(4;2), tung độ là 2."},
      {prompt:"Cho y = −(x − 1)² + 5. Giá trị lớn nhất bằng bao nhiêu?",opts:["1","−5","5"],key:2,reason:"Hệ số bình phương âm, GTLN bằng 5 tại x = 1."}
