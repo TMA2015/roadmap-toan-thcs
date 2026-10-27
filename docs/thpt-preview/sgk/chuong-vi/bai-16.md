@@ -71,10 +71,10 @@ Xét \(f(x)=x^2-4x+3=(x-2)^2-1\). Do đó:
 
 ## 4. Luyện tập
 
-**Thẻ Core chung** dùng một nội dung/mã canonical minh họa, truy cập từ bài SGK, thư viện Core và chuyên đề. Core có gợi ý; không có tab Kiến thức thứ hai vì lý thuyết nằm ngay trên trang bài học.
+**Thẻ Core SGK** củng cố hiểu khái niệm sau bài. Cùng một item ID có thể xuất hiện trong Practice cơ bản của chuyên đề dưới vai trò khác, không sao chép đáp án/hồ sơ; Core có gợi ý và không tạo tab lý thuyết thứ hai.
 
 <div class="math-library-entry-grid" data-thpt-r4>
-<a class="math-library-entry" href="../../../chuyen-de/ham-so/core/"><strong>🧩 Core · Tọa độ đỉnh (bản mẫu)</strong><span>Mở một thẻ Core dùng chung — không tạo ba bộ câu hỏi trùng nhau.</span></a>
+<a class="math-library-entry" href="../../core/ham-so-bac-hai/"><strong>🧩 Core · Tọa độ đỉnh (bản mẫu)</strong><span>Mở một thẻ Core dùng chung — không tạo ba bộ câu hỏi trùng nhau.</span></a>
 </div>
 
 ## 5. Vận dụng
