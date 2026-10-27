@@ -1,3 +1,9 @@
+---
+readiness_item_id: READINESS-THPT-DEMO-01
+demo_scope: TECHNICAL_DEMO_ONLY
+mastery_credit: false
+---
+
 <div class="thpt-r4-screen" data-thpt-r4><nav class="thpt-r4-topic-steps" aria-label="Các phần học của chuyên đề">
 <a href="../core/" >01 · Thẻ Core</a>
 <a href="../kien-thuc/" >02 · Kiến thức</a>
