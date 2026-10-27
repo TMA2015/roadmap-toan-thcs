@@ -25,7 +25,13 @@ async function ready(page,path){
    await ready(page,path);
    if(name==="iphone"){
     assert((await page.locator("[data-thpt-quadratic-plot] svg path").count())>0,"Derived parabola not drawn");
-    assert((await page.locator("[data-thpt-quadratic-plot] svg circle").count())===3,"Vertex/intercepts missing");
+    assert((await page.locator("[data-thpt-quadratic-plot] svg circle").count())===4,"Vertex, two Ox crossings and Oy crossing missing");
+    assert((await page.locator("[data-thpt-symmetry-axis=\"x=2\"][stroke-dasharray]").count())===1,"Dashed axis x=2 missing");
+    const plotText=await page.locator("[data-thpt-quadratic-plot] svg").textContent();
+    assert(plotText.includes("I(2;−1)")&&plotText.includes("(0;3)")&&plotText.includes("x = 2"),"Key graph annotations missing");
+    const lessonText=await page.locator("article").textContent();
+    assert(lessonText.includes("Bốn bước vẽ đồ thị parabol"),"Four plotting steps missing");
+    assert(lessonText.includes("Bảng biến thiên và tập giá trị tổng quát"),"General range table missing");
    }
    const width=await page.evaluate(()=>({page:document.documentElement.scrollWidth,window:window.innerWidth}));
    assert(width.page<=width.window+20,name+" unexpected horizontal overflow "+JSON.stringify(width));
@@ -42,6 +48,8 @@ async function ready(page,path){
   await page.locator('[data-thpt-practice] button[type="submit"]').click();
   assert((await page.locator('[data-thpt-practice] [data-thpt-feedback]').textContent()).startsWith("Đúng."),"Practice did not grade after Check");
   await ready(page,"chuyen-de/ham-so/tu-kiem-tra/");
+  assert((await page.locator("[data-thpt-readiness]").getAttribute("data-demo-scope"))==="TECHNICAL_DEMO_ONLY","Explicit readiness demo-scope missing");
+  assert((await page.locator("[data-thpt-readiness]").getAttribute("data-mastery-credit"))==="false","Readiness could grant mastery credit");
   assert(await page.locator('[data-thpt-readiness] [data-thpt-solution]').isHidden(),"Readiness leaked answers before submission");
   await page.locator('[data-thpt-readiness] input[value="1"]').check();
   await page.locator('[data-thpt-next]').click();
