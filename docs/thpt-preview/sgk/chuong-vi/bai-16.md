@@ -73,8 +73,8 @@ Xét \(f(x)=x^2-4x+3=(x-2)^2-1\). Do đó:
 
 **Thẻ Core SGK** củng cố hiểu khái niệm sau bài. Cùng một item ID có thể xuất hiện trong Practice cơ bản của chuyên đề dưới vai trò khác, không sao chép đáp án/hồ sơ; Core có gợi ý và không tạo tab lý thuyết thứ hai.
 
-<div class="math-library-entry-grid" data-thpt-r4>
-<a class="math-library-entry" href="../../core/ham-so-bac-hai/"><strong>🧩 Core · Tọa độ đỉnh (bản mẫu)</strong><span>Mở một thẻ Core dùng chung — không tạo ba bộ câu hỏi trùng nhau.</span></a>
+<div class="thpt-r4-lesson-core-entry" data-thpt-practice-hub>
+<button type="button" class="thpt-r4-practice-open" data-thpt-open-quiz="b16-core" aria-label="Mở cửa sổ Core Bài 16 · Tọa độ đỉnh">🧩 Luyện Core · Tọa độ đỉnh (THPT-CORE-QF01)</button>
 </div>
 
 **Tiếp tục rèn luyện:** [Luyện tập và Vận dụng Chương VI](luyen-tap.md) · [Tự kiểm tra cuối Chương VI (demo kỹ thuật)](tu-kiem-tra-chuong.md).
