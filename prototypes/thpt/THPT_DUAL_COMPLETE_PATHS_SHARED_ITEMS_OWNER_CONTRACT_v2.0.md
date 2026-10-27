@@ -47,11 +47,40 @@ answer_key_ref: same_canonical_answer_key
 readiness_eligibility: false
 ```
 
-A single item can be used as `SGK_CORE` and `TOPIC_PRACTICE` at low level, **not** two distinct storage records. Keep unique `item_id`, `content_version`, `answer_key`, `solution`, `hint` or `rubric` per item; use many-to-many **placement/role mapping** to display by route and context. A display role is not part of the canonical item identity. Do not treat this YAML sample as currently deployed storage schema.
+A single item can be placed across **all compatible exercise roles**, including SGK Core/Practice, Topic Practice, SGK Chapter Readiness, Topic Readiness and Written where appropriate; it is **not** stored as two distinct mathematical questions. The next clarification details the eligibility safeguards. Keep unique `item_id`, `content_version`, `answer_key`, `solution`, `hint` or `rubric` per item; use many-to-many **placement/role mapping** to display by route and context. A display role is not part of the canonical item identity. Do not treat this YAML sample as currently deployed storage schema.
 
 `entry_context` (route/lesson/topic/placement, attempt/session) distinguishes what learner actually did; **never doubles mastery simply because a question appeared twice**.
 
 **Assessment hygiene:** Chapter Readiness and Topic Readiness use independent no-hint question forms, with sufficient coverage and new/held-out questions or controlled variants. Shared skills/problem types/knowledge are fine; blindly repeating already answered Core/Practice exact items inflates evidence and must be avoided. Results/coverage are indexed by chapter vs topic respectively; only validated evidence contributes to mastery, not unreviewed demo items.
+
+## 3A. Owner clarification — all exercise modes may share canonical items (27/10/2026)
+
+**Reusability is NOT restricted to SGK Core ↔ Topic beginner Practice.** Any canonical item may have multiple eligible placements if its mathematics, difficulty, curriculum scope and mode-specific scoring requirements fit:
+
+| Canonical mathematical item | Example placements (all use SAME item_id/version/key) |
+|---|---|
+| Short understanding item | `SGK_CORE`, `SGK_PRACTICE`, `TOPIC_PRACTICE:CO_BAN` |
+| Practice/application item | `SGK_PRACTICE`, `SGK_CHAPTER_APPLICATION`, `TOPIC_PRACTICE:VAN_DUNG` |
+| Suitable assessment item | `SGK_CHAPTER_READINESS`, `TOPIC_READINESS` **if independently eligible for BOTH scope matrices** |
+| Written problem | `SGK_WRITTEN`, `TOPIC_WRITTEN`, possibly `WRITTEN_ANCHOR` **as a label on the same written record** |
+
+The illustrative `readiness_eligibility: false` on `THPT-CORE-QF01` above applies only to **that particular example**; it is not a global ban on reusing assessment items, nor does it mean two Readiness banks must be copied.
+
+**Required architecture:**
+- `item_id` uniquely identifies content and canonical answer. `placements` are many-to-many references to lesson, chapter, topic, difficulty, purpose and `mode`; roles are **contextual, not identity**.
+- Review eligibility by *actual* SGK chapter outcomes or Topic outcomes; identical content may qualify for both assessments even if their **coverage assembly** is different.
+- Separate `assessment_id`/`assessment_scope` (SGK chapter vs vertical topic), `attempt_id`, `placement_id` and `entry_context`; do not create a new item ID, answer record or history merely because one question appears in two routes.
+- The question bank is shareable, **but assessment exposure is learner-dependent**. Prior attempt, visible hint, solution reveal or previous Final Submit must be checked before using the *same exact item* to certify Readiness in another route. Prefer a held-out replacement/equivalent unexposed item. If a repeated item is intentionally shown for review or retake, mark `REEXPOSED_PRACTICE/RETAKE` and restrict its independent mastery evidence according to the approved scoring policy.
+- Before each Readiness Final Submit: no hint/Tutor/correctness/reveal; after Final Submit: feedback and solutions permitted. Reuse across two assessments must **not bypass** that condition or count the same exposure as two independent demonstrations of skill.
+
+This clarification **extends** the v2.0 canonical placement contract without adding a separate storage bank or modifying reviewed question mathematics.
+
+## 3B. SGK chapter navigation and cumulative exercises
+
+- SGK chapter menu exposes **Luyện tập / Vận dụng** and **Tự kiểm tra cuối chương**, while each lesson retains learning content and accessible Core activities.
+- The optional historical **Thư viện Core** URL is kept for old links and internal reuse, **but removed from the left navigation**; Core is reachable from lessons and the chapter practice table.
+- **Bài tập cuối chương belongs inside Luyện tập / Vận dụng as a cumulative practice group**. Do not make it an independent top-level chapter section or confuse its revealable answers with independent Readiness. An internal page containing its eight draft problems may be linked from the chapter Practice hub; that is source organization, not a third student-facing learning mode.
+- SGK chapter Readiness and Topic Readiness are independently assembled scopes, even if a particular eligible canonical question may be used in both under the exposure-control policy above.
 
 ## 4. Shared resources and simpler skills
 
@@ -72,7 +101,7 @@ A single item can be used as `SGK_CORE` and `TOPIC_PRACTICE` at low level, **not
 ## 6. Implementation and compatibility
 
 - `docs/thpt-preview/sgk/core/ham-so-bac-hai.md`: canonical pilot Core runtime content.
-- `docs/thpt-preview/sgk/core/index.md`: library link.
+- `docs/thpt-preview/sgk/core/index.md`: backward-compatible internal link, **not a sidebar navigation section**.
 - `docs/thpt-preview/sgk/chuong-vi/bai-16.md`: SGK entry.
 - `docs/thpt-preview/chuyen-de/ham-so/{kien-thuc,luyen-tap,tu-kiem-tra}.md`: **only three topic pages**, the current pilot remains `PILOT_PARTIAL_G10`.
 - `docs/thpt-preview/chuyen-de/ham-so/core.md`: legacy compatibility pointer only (not in navigation, no item engine).
