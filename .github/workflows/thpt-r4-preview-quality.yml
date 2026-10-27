@@ -8,6 +8,7 @@ on:
       - 'docs/assets/javascripts/thpt-r4-preview.js'
       - 'docs/assets/stylesheets/thpt-r4-preview.css'
       - 'review-packets/thpt-g10-b16-r4/**'
+      - 'scripts/serve-thpt-r4-lan-preview.ps1'
       - '.github/workflows/thpt-r4-preview-quality.yml'
 
 permissions:
@@ -27,6 +28,18 @@ jobs:
         run: python -m pip install 'mkdocs-material>=9,<10'
       - name: Validate scoped THPT JavaScript syntax
         run: node --check docs/assets/javascripts/thpt-r4-preview.js
+      - name: Validate local preview PowerShell script syntax
+        shell: pwsh
+        run: |
+          $tokens = $null
+          $parseErrors = $null
+          [System.Management.Automation.Language.Parser]::ParseFile("$PWD/scripts/serve-thpt-r4-lan-preview.ps1", [ref]$tokens, [ref]$parseErrors) | Out-Null
+          if ($parseErrors.Count -gt 0) {
+            $parseErrors | ForEach-Object { Write-Error $_ }
+            exit 1
+          }
+          Write-Host "PASS: PowerShell LAN preview runner parses"
+
       - name: Build alternate THPT preview config (never main config)
         run: mkdocs build -f mkdocs.thpt-preview.yml --clean
       - name: Verify R4 preview pages and assets exist
