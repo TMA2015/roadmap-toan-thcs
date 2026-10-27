@@ -138,29 +138,59 @@ async function ready(page,path){
   assert(await adaptiveLink.isVisible(),"Adaptive layout demo link missing");
 
   await ready(page,"qa/adaptive-knowledge-tabs/");
-  const moduleTabs=page.locator("[data-thpt-knowledge-layout] [data-thpt-knowledge-tab]");
-  assert((await moduleTabs.count())===3,"Expected three illustrative knowledge modules");
-  const moduleStyle=await moduleTabs.first().evaluate(el=>({
+  const moduleTabs=page.locator('[data-thpt-knowledge-level="module"] > nav > [data-thpt-knowledge-tab]');
+  assert((await moduleTabs.count())===3,"Expected 3 module tabs");
+  for(const letter of ["a","b","c"]){
+    assert((await page.locator('[data-thpt-knowledge-level="content"]').filter({has:page.locator('#thpt-'+letter+'-tab-0')}).count())===1,"Missing nested content tabs for "+letter);
+    assert((await page.locator('#thpt-module-'+letter+' [data-thpt-knowledge-level="content"] > nav > button').count())===3,"Expected 3 semantic content tabs within module "+letter);
+  }
+  // Match the SAME visual token set as B16's three semantic tabs,
+  // regardless of whether an inner tab belongs to module A, B or C.
+  const innerA=page.locator("#thpt-module-a > [data-thpt-knowledge-layout] > nav > button").first();
+  const innerStyle=await innerA.evaluate(el=>({
     font:getComputedStyle(el).fontFamily,size:getComputedStyle(el).fontSize,
     weight:getComputedStyle(el).fontWeight,color:getComputedStyle(el).color
   }));
-  assert.deepEqual(moduleStyle,semanticStyle,"Semantic and module tabs must share font/size/weight/color");
-  const moduleBody=await page.locator("#thpt-adaptive-a p").first().evaluate(el=>({
+  assert.deepEqual(innerStyle,semanticStyle,"Inner content tabs must match one-module semantic tab font/size/weight/color");
+  const innerBody=page.locator("#thpt-module-a [data-thpt-knowledge-panel='a-0'] p").first();
+  const innerProse=await innerBody.evaluate(el=>({
     font:getComputedStyle(el).fontFamily,size:getComputedStyle(el).fontSize,color:getComputedStyle(el).color
   }));
-  assert.deepEqual(moduleBody,semanticsBody,"Normal prose must match inside semantic and module tabs");
+  assert.deepEqual(innerProse,semanticsBody,"Prose inside inner content tabs must match one-module normal text");
+  assert(await page.locator("#thpt-module-b").isHidden(),"Only one module panel may be visible");
+
+  // A: switch concept -> properties. Switching module must not reset another
+  // module's inner tab, and returning should retain A's selection.
+  await page.locator("#thpt-a-tab-1").click();
+  assert(await page.locator("#thpt-a-1").isVisible(),"A properties panel did not open");
+  assert(await page.locator("#thpt-a-0").isHidden(),"A concept panel did not hide");
   await moduleTabs.nth(1).click();
-  assert(await page.locator("#thpt-adaptive-b").isVisible(),"Module B did not open");
-  assert(await page.locator("#thpt-adaptive-a").isHidden(),"Module A did not hide");
+  assert(await page.locator("#thpt-module-b").isVisible(),"Module B did not open");
+  assert(await page.locator("#thpt-module-a").isHidden(),"Module A did not hide");
+  assert(await page.locator("#thpt-b-0").isVisible(),"Module B default inner tab is missing");
+  await page.locator("#thpt-b-tab-1").click();
+  assert(await page.locator("#thpt-b-1").isVisible(),"B properties panel did not open");
+  await moduleTabs.nth(0).click();
+  assert(await page.locator("#thpt-a-1").isVisible(),"Returning to A reset its inner tab");
+  await moduleTabs.nth(1).click();
+  assert(await page.locator("#thpt-b-1").isVisible(),"Returning to B reset its inner tab");
+  const bStyle=await page.locator("#thpt-b-tab-1").evaluate(el=>({
+    font:getComputedStyle(el).fontFamily,size:getComputedStyle(el).fontSize,
+    weight:getComputedStyle(el).fontWeight,color:getComputedStyle(el).color
+  }));
+  assert.deepEqual(bStyle,semanticStyle,"Selected inner B content tab style deviates from B16 semantic tab");
+  const bText=await page.locator("#thpt-b-1 p").evaluate(el=>({
+    font:getComputedStyle(el).fontFamily,size:getComputedStyle(el).fontSize,color:getComputedStyle(el).color
+  }));
+  assert.deepEqual(bText,semanticsBody,"Normal text in B content tab must share B16 typography");
   await moduleTabs.nth(2).focus();
   await page.keyboard.press("Enter");
-  assert(await page.locator("#thpt-adaptive-c").isVisible(),"Module C did not open by keyboard");
+  assert(await page.locator("#thpt-module-c").isVisible(),"Module C did not open with keyboard");
+  await page.locator("#thpt-c-tab-0").focus();
+  await page.keyboard.press("ArrowRight");
+  assert(await page.locator("#thpt-c-1").isVisible(),"Inner content keyboard navigation failed");
   await page.keyboard.press("ArrowLeft");
-  assert(await page.locator("#thpt-adaptive-b").isVisible(),"Keyboard tab navigation failed");
-  const moduleBodyB=await page.locator("#thpt-adaptive-b p").first().evaluate(el=>({
-    font:getComputedStyle(el).fontFamily,size:getComputedStyle(el).fontSize,color:getComputedStyle(el).color
-  }));
-  assert.deepEqual(moduleBodyB,moduleBody,"Normal text must remain uniform between modules");
+  assert(await page.locator("#thpt-c-0").isVisible(),"Inner reverse keyboard navigation failed");
   const widths=await page.evaluate(()=>({document:document.documentElement.scrollWidth,viewport:innerWidth}));
   assert(widths.document<=widths.viewport+20,"Adaptive knowledge preview caused horizontal overflow");
 
