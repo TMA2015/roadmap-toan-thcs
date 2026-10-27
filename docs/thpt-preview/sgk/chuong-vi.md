@@ -7,8 +7,9 @@
 <a href="bai-16/">Bài 16 · Hàm số bậc hai · Academic PASS</a>
 <a href="bai-17/">Bài 17 · Dấu tam thức · NHÁP</a>
 <a href="bai-18/">Bài 18 · Phương trình quy về bậc hai · NHÁP</a>
+<a href="luyen-tap/">Luyện tập / Vận dụng Chương VI · NHÁP</a>
 <a href="bai-tap-cuoi-chuong/">Bài tập cuối chương VI · NHÁP</a>
-<a href="tu-kiem-tra-chuong/">Tự kiểm tra Chương VI · CHƯA CÓ ĐỀ</a>
+<a href="tu-kiem-tra-chuong/">Tự kiểm tra cuối Chương VI · DEMO 4 CÂU</a>
 </div>
 </div>
 
