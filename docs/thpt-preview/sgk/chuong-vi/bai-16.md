@@ -77,6 +77,8 @@ Xét \(f(x)=x^2-4x+3=(x-2)^2-1\). Do đó:
 <a class="math-library-entry" href="../../core/ham-so-bac-hai/"><strong>🧩 Core · Tọa độ đỉnh (bản mẫu)</strong><span>Mở một thẻ Core dùng chung — không tạo ba bộ câu hỏi trùng nhau.</span></a>
 </div>
 
+**Tiếp tục rèn luyện:** [Luyện tập và Vận dụng Chương VI](luyen-tap.md) · [Tự kiểm tra cuối Chương VI (demo kỹ thuật)](tu-kiem-tra-chuong.md).
+
 ## 5. Vận dụng
 
 Hàm số bậc hai có thể biểu diễn diện tích hình chữ nhật khi chu vi được giữ cố định. [Xem bài tự luận mỏ neo mẫu](../../thu-vien/tu-luan.md).
