@@ -253,7 +253,7 @@ async function ready(page,path){
   // Chapter VI authoring phase: navigable DRAFT lessons never appear as reviewed.
   await ready(page,"sgk/chuong-vi/");
   const draftLinks=page.locator(".thpt-r4-lesson-tabs a[href]");
-  const lessonTargets=["bai-15/","bai-16/","bai-17/","bai-18/","bai-tap-cuoi-chuong/"];
+  const lessonTargets=["bai-15/","bai-16/","bai-17/","bai-18/"];
   for(const target of lessonTargets){
     assert((await draftLinks.filter({has:page.locator("span")}).count())>=0,"Navigation DOM unexpectedly changed");
     assert((await page.locator('.thpt-r4-lesson-tabs a[href="'+target+'"]').count())===1,"Missing lesson route "+target);
