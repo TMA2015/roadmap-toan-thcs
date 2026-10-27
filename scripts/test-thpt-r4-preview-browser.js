@@ -130,6 +130,19 @@ async function ready(page,path){
     assert.deepEqual(labels,["01 · Kiến thức","02 · Luyện tập","03 · Tự kiểm tra"],"Topic order differs from approved contract");
     assert((await nav.locator('a[href="../core/"]').count())===0,"Old topic Core tab must not appear");
   }
+  // Owner UI consolidation: keep links while hiding Core library and end-chapter
+  // exercise as separate student-facing sidebar sections.
+  await ready(page,"sgk/chuong-vi/");
+  const sideNav=page.locator("nav.md-nav--primary");
+  const visibleSidebar=await sideNav.innerText();
+  assert(!visibleSidebar.includes("Thư viện Core"),"SGK sidebar must not expose a separate Core library");
+  assert(!visibleSidebar.includes("Bài tập cuối Chương VI"),"Cumulative exercises belong under chapter Practice, not their own menu entry");
+  assert(visibleSidebar.includes("Luyện tập và Vận dụng Chương VI"),"Missing SGK Chapter Practice in sidebar");
+  assert(visibleSidebar.includes("Tự kiểm tra cuối Chương VI"),"Missing separate SGK chapter Readiness in sidebar");
+  await ready(page,"sgk/core/");
+  assert((await page.locator("article").textContent()).includes("liên kết tương thích"),"Old Core library URL must remain usable");
+  await ready(page,"sgk/chuong-vi/bai-tap-cuoi-chuong/");
+  assert((await page.locator("article").textContent()).includes("Nhóm bài tổng hợp"),"Cumulative exercises should remain reachable as a Practice subsection");
   // Full SGK route has visible Practice/Application and separate chapter-end readiness.
   await ready(page,"sgk/chuong-vi/");
   assert((await page.locator("article a").filter({hasText:"Luyện tập / Vận dụng Chương VI"}).count())>=1,"SGK chapter is missing Practice/Application link");
