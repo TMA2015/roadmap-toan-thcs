@@ -6,16 +6,29 @@
 **Academic result:** PASS / CLEARANCE YES (theo kết quả NotebookLM được chuyển giao)  
 **Prototype:** Một mẫu lớp 10, Bài 16; chuyên đề `PILOT_PARTIAL_G10`; Draft PR #612, không phải sản phẩm đã triển khai.
 
-## 1. Cách mở preview khi thử nghiệm cục bộ
+## 1. Cách mở preview trên thiết bị thật (LAN riêng, không deploy)
 
-Từ repository checkout tại work branch `feature/thpt-g10-b16-knowledge-pilot-r1-20261026`:
+1. Trên PC Windows, lấy code đúng nhánh `feature/thpt-g10-b16-knowledge-pilot-r1-20261026` bằng Git checkout hoặc mở GitHub tại nhánh này → **Code → Download ZIP** → giải nén (ZIP này là code repository, **không phải file review NotebookLM**).
+2. Cài **Python 3** nếu chưa có. Đảm bảo lệnh `python` hoạt động trong PowerShell.
+3. Mở PowerShell **ngay thư mục gốc repository** và chạy:
 
 ```powershell
-python -m pip install mkdocs-material
-python -m mkdocs serve -f mkdocs.thpt-preview.yml
+.\scripts\serve-thpt-r4-lan-preview.ps1
 ```
 
-Mở địa chỉ do MkDocs in ra (mặc định thường là `http://127.0.0.1:8000/thpt-preview/`); **đây là địa chỉ local, không phải link website công khai**. Nếu máy đã có MkDocs Material, không cần cài lại.
+Script dùng `mkdocs.thpt-preview.yml`, tự tạo môi trường Python riêng `.venv-thpt-r4` và in địa chỉ máy tính lẫn địa chỉ Wi-Fi. Nếu chính sách PowerShell chặn thực thi script, chạy lệnh thủ công từ thư mục gốc thay vì nới rộng chính sách hệ thống:
+
+```powershell
+python -m pip install "mkdocs-material>=9,<10"
+python -m mkdocs serve -f mkdocs.thpt-preview.yml -a 0.0.0.0:8000
+```
+
+- **Desktop:** `http://127.0.0.1:8000/thpt-preview/`
+- **iPhone/iPad cùng Wi-Fi đáng tin cậy:** `http://<IP-LAN-MAY-TINH>:8000/thpt-preview/` (ví dụ minh họa: `http://192.168.1.50:8000/thpt-preview/`; thay bằng IP mà script hiện, không dùng nguyên số minh họa). Không mở localhost trên iPhone.
+- Nếu Windows Firewall hỏi quyền, chỉ cho phép Python trong mạng **Private**; không tạo firewall rule mới hay cổng internet công khai. Chỉ dùng mạng LAN tin cậy.
+- Bấm `Ctrl+C` để dừng. Không có dữ liệu học sinh thực được ghi trong bản preview.
+
+**Chú ý:** đây là hướng dẫn kiểm thử từ PC Windows, chưa phải bằng chứng chạy thành công trên thiết bị của chủ dự án. Không có URL staging công khai được triển khai.
 
 ## 2. Mốc thao tác owner cần nghiệm thu
 
