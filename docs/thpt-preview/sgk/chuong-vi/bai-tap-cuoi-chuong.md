@@ -1,9 +1,9 @@
-# Bài tập cuối Chương VI — Bản nháp tổng hợp
+# Luyện tập / Vận dụng · Nhóm bài tổng hợp cuối Chương VI
 
 <div class="thpt-r4-screen" data-thpt-r4>
 <p class="thpt-r4-eyebrow">TOÁN 10 · CHƯƠNG VI · DRAFT BÀI TẬP TÍCH HỢP</p>
 <p class="thpt-r4-lead"><strong>DRAFT_NOT_ACADEMICALLY_REVIEWED.</strong> Các bài dưới đây đều được dự án soạn mới để kiểm thử độ phủ chương và chuẩn bị batch. Đây <strong>không phải bản chép bài tập cuối chương SGK/SBT</strong> hay thư viện Written đã được nghiệm thu; chưa có canonical IDs, chưa tính điểm, không ghi tiến độ.</p>
-<a href="../">← Danh mục Chương VI</a>
+<a href="luyen-tap.md">← Trở về Luyện tập / Vận dụng Chương VI</a>
 </div>
 
 ## Phần A — Kiến thức cơ bản và kết nối
@@ -89,6 +89,10 @@ Tìm các giá trị thực \(m\) sao cho \(x^2-2mx+4>0\) với mọi \(x\in\mat
 <details><summary>Xem lời giải B4</summary>
 Hệ số bậc hai \(a=1>0\). Tam thức dương với mọi \(x\) khi và chỉ khi biệt thức \(\Delta=(-2m)^2-16<0\), tức \(m^2<4\Leftrightarrow -2<m<2\). Nếu \(\Delta=0\), tam thức bằng \(0\) tại một điểm nên không thỏa dấu \(>\).
 </details>
+
+## Vai trò trong Luyện tập / Vận dụng
+
+Đây là **nhóm luyện tập tổng hợp của chương**, không tạo một mục riêng trong menu và không được coi là **Tự kiểm tra**. Các bài giải có thể mở khi người học tự luyện. Câu hỏi dùng cho Readiness nếu phù hợp phải được lựa chọn có kiểm soát tiếp xúc đáp án, và giữ cùng canonical ID khi item chính thức tồn tại.
 
 ## Hướng dẫn sử dụng và giới hạn học thuật
 
