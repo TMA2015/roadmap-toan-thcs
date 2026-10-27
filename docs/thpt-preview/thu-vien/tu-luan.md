@@ -29,4 +29,4 @@
 <table><thead><tr><th>Tiêu chí</th><th>Điểm</th></tr></thead><tbody><tr><td>Chọn ẩn và điều kiện</td><td>2</td></tr><tr><td>Lập hàm diện tích</td><td>1</td></tr><tr><td>Chứng minh cực đại</td><td>2</td></tr><tr><td>Kết luận, đơn vị, trình bày</td><td>1</td></tr></tbody></table></details>
 </section></div></div>
 
-Hai đề chỉ dùng để **kiểm thử thư viện**; không coi là học liệu đã được NotebookLM duyệt. [Học bài mẫu tiêu biểu](bai-mau-tieu-bieu.md) · [Về giới thiệu thư viện](index.md).
+Hai đề Bài 16 này đã được NotebookLM thẩm định học thuật **PASS** trong gói R4 Postfix (27/10/2026). Chúng hiện vẫn phục vụ **thử nghiệm giao diện thư viện**, chưa ghi tiến độ và không đại diện cho thư viện bài tập Toán THPT hoàn chỉnh. [Học bài mẫu tiêu biểu](bai-mau-tieu-bieu.md) · [Về giới thiệu thư viện](index.md).
