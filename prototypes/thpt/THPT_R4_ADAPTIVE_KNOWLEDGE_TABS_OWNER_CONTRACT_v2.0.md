@@ -36,7 +36,7 @@ Tab nội dung trực tiếp của chuyên đề **một mảng** và tab nội 
 - Chuyển tab cấp 1 **không xóa trạng thái tab cấp 2** đã chọn ở mảng trước đó trong cùng phiên xem trang.
 - Khi mở một mảng lần đầu, hiện tab nội dung đầu tiên của riêng mảng; chưa chọn tab khác thì không hiển thị nội dung của mảng đó.
 - Tab có role phù hợp, hỗ trợ click, phím mũi tên, Home/End, nhãn và panel liên kết rõ ràng; panel chưa chọn ẩn.
-- Các phần cố định của chuyên đề không thay đổi: **Thẻ Core / Kiến thức / Luyện tập / Tự kiểm tra**; trong Kiến thức vẫn có **Bản đồ kiến thức / Kiến thức / Kiến thức liên quan / Dạng bài / Lỗi sai thường gặp**.
+- Các phần cố định của chuyên đề theo **owner architecture v2**: **Kiến thức / Luyện tập / Tự kiểm tra** (không có trang Core riêng); xem `THPT_DUAL_COMPLETE_PATHS_SHARED_ITEMS_OWNER_CONTRACT_v2.0.md`; trong Kiến thức vẫn có **Bản đồ kiến thức / Kiến thức / Kiến thức liên quan / Dạng bài / Lỗi sai thường gặp**.
 
 ## 4. Mã nguồn và QA
 
