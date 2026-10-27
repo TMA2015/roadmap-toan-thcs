@@ -190,6 +190,7 @@
   const lessonTitle={"15":"Hàm số","16":"Hàm số bậc hai","17":"Dấu của tam thức bậc hai","18":"Phương trình quy về phương trình bậc hai"};
   const dlg=document.createElement("dialog");
   dlg.className="thpt-r4-practice-dialog";
+  dlg.dataset.thptR4="1"; // Eligible root for existing R4 exercise binder when remote card is inserted.
   dlg.setAttribute("aria-label","Luyện tập Toán THPT · bản mẫu");
   dlg.innerHTML='<div class="thpt-r4-modal-top"><div><p class="thpt-r4-modal-meta">TOÁN 10 · CHƯƠNG VI</p><h2 data-thpt-modal-title>Luyện tập</h2></div><button type="button" data-thpt-modal-close aria-label="Đóng cửa sổ">Đóng ×</button></div><div class="thpt-r4-modal-main" data-thpt-modal-body></div>';
   document.body.append(dlg);
@@ -298,7 +299,9 @@
      modalBody.replaceChildren();
      const meta=document.createElement("p");meta.className="thpt-r4-modal-progress";meta.textContent="Bài 16 · Cùng item canonical · Không ghi điểm học sinh";
      modalBody.append(meta,source.cloneNode(true));
-     // Existing R4 exercise handler binds the imported card once.
+     // The existing exercise binder is scoped to uninitialized data-thpt-r4 roots.
+     // Re-arm only this modal root; imported card keeps its original canonical key.
+     dlg.dataset.thptR4Ready="0";
      init();
      if(parts[2]==="practice")attachCumulative(lesson);
      if(window.MathJax?.typesetPromise)window.MathJax.typesetPromise([modalBody]).catch(()=>{});
