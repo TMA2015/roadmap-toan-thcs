@@ -1,7 +1,7 @@
 # Toán 10 · Chương VI — Authoring Register v0.1
 
 **Ngày:** 27/10/2026  
-**Phase:** GOLDEN_UI_DESIGN_PASS → LESSON_DRAFTS_IN_GITHUB → S1_RECEIPT_PENDING  
+**Phase:** GOLDEN_UI_DESIGN_PASS → CHVI_DRAFTS_IN_GITHUB → S1_PDF_ACQUIRED_AND_INDEX_VERIFIED → FULL_OUTCOME_AUDIT_PENDING  
 **Branch:** `feature/thpt-g10-b16-knowledge-pilot-r1-20261026`, Draft PR #612  
 **Quy tắc:** Project Sources 06 (bàn giao NotebookLM), 07 (review cụm/chương và delta risk).  
 **Đối tượng:** SGK Toán 10 KNTT tập 2, Chương VI *Hàm số, đồ thị và ứng dụng*.
@@ -10,11 +10,11 @@
 
 | Lesson/key (planning only) | Tệp trên nhánh | Mức hoàn thiện | S1 receipt | Academic verdict |
 |---|---|---|---|---|
-| G10-CHVI-B15 | `docs/thpt-preview/sgk/chuong-vi/bai-15.md` | Draft lý thuyết + ví dụ + tự luyện | PENDING (chưa đọc PDF gốc) | NOT_REVIEWED |
-| G10-CHVI-B16 | `docs/thpt-preview/sgk/chuong-vi/bai-16.md` | Golden Pilot R4 đã thẩm định | SGK in 11–16, SBT 10–14 theo reviewer receipt | **PASS, clearance YES** đúng snapshot đã duyệt |
-| G10-CHVI-B17 | `docs/thpt-preview/sgk/chuong-vi/bai-17.md` | Draft định lí, xét dấu, bất phương trình, ví dụ, tự luyện | PENDING | NOT_REVIEWED |
-| G10-CHVI-B18 | `docs/thpt-preview/sgk/chuong-vi/bai-18.md` | Draft 2 dạng phương trình chứa căn, kiểm nghiệm, ví dụ, tự luyện | PENDING | NOT_REVIEWED |
-| G10-CHVI-END | `docs/thpt-preview/sgk/chuong-vi/bai-tap-cuoi-chuong.md` | Draft 8 bài tổng hợp nguyên gốc với lời giải; chưa có canonical IDs | PENDING | NOT_REVIEWED |
+| G10-CHVI-B15 | `docs/thpt-preview/sgk/chuong-vi/bai-15.md` | Draft lý thuyết + ví dụ + tự luyện | **SGK p4–10, SBT p3–9 (visual index only)** | NOT_REVIEWED |
+| G10-CHVI-B16 | `docs/thpt-preview/sgk/chuong-vi/bai-16.md` | Golden Pilot R4 đã thẩm định | Reviewer SGK p11–16, SBT p10–14; **PDF gốc còn SGK p17–18 và SBT p15 cần scope-delta check** | **PASS cho snapshot đã review; source-scope delta pending** |
+| G10-CHVI-B17 | `docs/thpt-preview/sgk/chuong-vi/bai-17.md` | Draft định lí, xét dấu, bất phương trình, ví dụ, tự luyện | **SGK p19–24, SBT p16–18 (visual index only)** | NOT_REVIEWED |
+| G10-CHVI-B18 | `docs/thpt-preview/sgk/chuong-vi/bai-18.md` | Draft 2 dạng phương trình chứa căn, kiểm nghiệm, ví dụ, tự luyện | **SGK p25–27, SBT p19–21 (visual index only)** | NOT_REVIEWED |
+| G10-CHVI-END | `docs/thpt-preview/sgk/chuong-vi/bai-tap-cuoi-chuong.md` | Draft 8 bài tổng hợp nguyên gốc với lời giải; chưa có canonical IDs | **SGK p28–29, SBT p22–27 (visual index only)** | NOT_REVIEWED |
 
 Tất cả các lesson key `G10-CHVI-...` là **nhãn kế hoạch**, chưa chốt canonical ID cho hệ thống học tập. **Không dùng** ba bài tự luyện nháp thành Core/Readiness chính thức hay mastery evidence.
 
@@ -27,11 +27,11 @@ Nguồn mục lục công khai để định hướng (secondary web evidence, *
 
 | Lesson | Các mảng dự kiến phải xác minh qua S1 | Trang in ghi trên chỉ mục web, **không phải S1 receipt** |
 |---|---|---|
-| B15 | Khái niệm hàm số, đồ thị, đồng/nghịch biến | 5–9 theo chỉ mục câu hỏi và bài tập |
+| B15 | Khái niệm hàm số, đồ thị, đồng/nghịch biến | **SGK 4–10, SBT 3–9 đã soát ranh giới trực quan; outcome chưa soát** |
 | B16 | Khái niệm, parabol, đỉnh, tính chất, mô hình thực tế | 11–16 theo receipt NotebookLM |
-| B17 | Tam thức bậc hai, định lí dấu, bất phương trình, vận dụng | 19–24 theo chỉ mục web |
-| B18 | `sqrt(A)=sqrt(B)`; `sqrt(A)=B`; thử lại | 25–26 theo chỉ mục web; phải xác minh trang bài tập |
-| Cuối chương | bài tập tổng hợp và yêu cầu vận dụng | cần xác minh từ bản in |
+| B17 | Tam thức bậc hai, định lí dấu, bất phương trình, vận dụng | **SGK 19–24, SBT 16–18 đã soát ranh giới trực quan; outcome chưa soát** |
+| B18 | `sqrt(A)=sqrt(B)`; `sqrt(A)=B`; thử lại | **SGK 25–27, SBT 19–21 đã soát ranh giới trực quan; outcome chưa soát** |
+| Cuối chương | bài tập tổng hợp và yêu cầu vận dụng | **SGK 28–29, SBT 22–27 đã soát ranh giới trực quan; bài tập chưa trích xuất** |
 
 Các bản nháp B15/17/18 dùng **ví dụ do dự án viết** và tự kiểm đại số, chưa chứng minh hoàn thành 100% phạm vi SGK.
 
@@ -63,7 +63,7 @@ Những nhãn `P01`... trên chỉ là **working labels**, không công nhận o
 
 ## 5. Việc kế tiếp có thể tự làm
 
-1. Hoàn tất source receipt SGK/SBT PDF gốc cho B15/B17/B18/cuối chương. Google Drive connector hiện trả lỗi nội bộ; chưa có bản PDF gốc trong tệp gắn chat để đối chiếu trực tiếp.
+1. **Đã tải SGK/SBT PDF gốc và kiểm chứng trang bài trực quan**; xem `THPT_G10_CHVI_S1_PDF_VISUAL_INDEX_RECEIPT_20261027.md`. Tiếp theo rà nội dung chi tiết từng trang/hình, lập outcome/item matrix, xử lý scope delta B16.
 2. Sau khi nhận S1, hiệu chỉnh phạm vi và chiều sâu D1–D6; bổ sung ví dụ và câu luyện tập đầy đủ.
 3. Đăng ký canonical Core/Practice/Readiness/Written/Anchor và key/rubric theo Project Source 05; không nhân bản Core hoặc dùng Readiness 2 câu demo để ghi thành thạo.
 4. Soạn Bài tập cuối Chương VI và cross-lesson outcome matrix.
