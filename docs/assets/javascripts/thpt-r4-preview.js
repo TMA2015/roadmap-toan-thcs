@@ -120,8 +120,10 @@
   document.querySelectorAll("[data-thpt-knowledge-layout]").forEach(root=>{
     if(root.dataset.knowledgeReady==="1")return;
     root.dataset.knowledgeReady="1";
-    const buttons=[...root.querySelectorAll("[data-thpt-knowledge-tab]")];
-    const panels=[...root.querySelectorAll("[data-thpt-knowledge-panel]")];
+    // Scope to DIRECT children: module tabs and nested content tabs are independent.
+    const nav=root.querySelector(":scope > .thpt-r4-knowledge-tabs");
+    const buttons=nav?[...nav.querySelectorAll(":scope > [data-thpt-knowledge-tab]")]:[];
+    const panels=[...root.querySelectorAll(":scope > [data-thpt-knowledge-panel]")];
     if(!buttons.length||buttons.length!==panels.length)return;
     const activate=id=>{
       for(const btn of buttons){
