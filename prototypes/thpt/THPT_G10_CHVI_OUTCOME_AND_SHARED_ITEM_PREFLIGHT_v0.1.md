@@ -1,3 +1,5 @@
+> **B15 SOURCE/BANK UPDATE 27/10/2026:** Đã đối chiếu trực tiếp SGK B15 p4–10 **và SBT p3–9**. Biên bản: [B15 SBT audit](THPT_G10_B15_SBT_DIRECT_VISUAL_CONTENT_RECEIPT_20261027.md). [B15 canonical candidates](shared-items/THPT_G10_CHVI_B15_CANONICAL_CANDIDATES_v0.1.md) gồm 9 câu (2 Core + 4 Practice + 3 held-out Readiness), tất cả **chưa thẩm định**. Tổng ứng viên B15/B17/B18 hiện là **25 IDs** (6 Core + 12 Practice + 7 Readiness); 5 IDs B16 cũ là nhóm độc lập đã có reviewer receipt, **không gộp verdict hay nhân bản câu**. Trang Tự kiểm tra cuối chương vẫn **TECHNICAL_DEMO_ONLY**, chưa đủ độ phủ hoặc điều kiện để cấp mastery.
+
 > **CẬP NHẬT SOURCE AUDIT 27/10/2026:** B17/B18 đã được đối chiếu trực quan đầy đủ phạm vi SGK/SBT ở cấp trang. Chi tiết: [B17 S1 audit](THPT_G10_B17_SGK_SBT_DIRECT_VISUAL_AUDIT_20261027.md) và [B18 S1 audit](THPT_G10_B18_SGK_SBT_DIRECT_VISUAL_AUDIT_20261027.md). Nội dung lý thuyết đã bổ sung; [ngân hàng 16 câu ứng viên](shared-items/THPT_G10_CHVI_B17_B18_CANONICAL_CANDIDATES_v0.1.md) (mỗi bài 2 Core + 4 Practice + 2 held-out Readiness) **chưa phát hành và chưa Academic PASS**. Các đề kiểm tra chính thức vẫn phải qua review độ phủ toàn chương, kiểm tra tiếp xúc item và khóa đáp án chỉ hiện sau Final Submit.
 
 # Chương VI · Toán 10 KNTT — Academic and Shared-Item Preflight v0.1
@@ -12,7 +14,7 @@ The original SGK/SBT **scanned PDF files** were visually checked at the lesson b
 
 | SGK unit | SGK printed pages | SBT printed pages | Full source/outcome audit |
 |---|---|---|---|
-| Bài 15. Hàm số | 4–10 | 3–9 | PENDING |
+| Bài 15. Hàm số | 4–10 | 3–9 | **DIRECT S1 VISUAL REVIEW DONE**, independent item review pending |
 | Bài 16. Hàm số bậc hai | 11–18 | 10–15 | R4 Postfix reviewed only SGK 11–16 and SBT 10–14; **remaining source scope PENDING** |
 | Bài 17. Dấu của tam thức bậc hai | 19–24 | 16–18 | **DIRECT S1 VISUAL REVIEW DONE**, independent item review pending |
 | Bài 18. Phương trình quy về phương trình bậc hai | 25–27 | 19–21 | **DIRECT S1 VISUAL REVIEW DONE**, independent item review pending |
@@ -63,7 +65,7 @@ The four-question `SGK-CHVI-TECH-DEMO-01` is a **technical assessment demo**, no
 
 ## 4. Remaining student learning path work
 
-**SGK KNTT — Chapter VI:** B17/18 now have direct-page S1 audit and **16 draft Core/Practice/held-out items**, but no released canonical bank. B15 requires SBT audit; B15/17/18 still need source-complete verified lesson-to-item coverage and academically reviewed **Chapter Readiness**. B16 remaining-page delta remains separate. Present 4-question Chapter Readiness and two-question Topic Readiness remain UI technical demos.
+**SGK KNTT — Chapter VI:** B17/18 now have direct-page S1 audit and **16 draft Core/Practice/held-out items**, but no released canonical bank. B15 SGK/SBT source audit completed; B15/17/18 still need verified lesson-to-item coverage and academically reviewed **Chapter Readiness**. B16 remaining-page delta remains separate. Present 4-question Chapter Readiness and two-question Topic Readiness remain UI technical demos.
 
 **Chuyên đề — Hàm số và đồ thị:** one/two-level knowledge tabs and 3 sections already defined. Current `PILOT_PARTIAL_G10` explicitly **does not** cover the full vertical scope 10–12. Develop a separate topic outcome map and tiered question placement before claiming a standalone complete topic.
 
