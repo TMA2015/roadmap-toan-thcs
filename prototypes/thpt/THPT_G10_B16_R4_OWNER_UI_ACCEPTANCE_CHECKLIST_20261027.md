@@ -42,7 +42,7 @@ python -m mkdocs serve -f mkdocs.thpt-preview.yml -a 0.0.0.0:8000
 | UI-04 | SGK Lớp→Chương→Bài: mở trực tiếp Bài 16, back/forward đúng, đọc độc lập không phải chuyển sang chuyên đề | PENDING |
 | UI-05 | Bài 16: bốn bước vẽ, bảng tổng quát, MathJax và SVG parabol hiển thị rõ khi xoay dọc/ngang | PENDING |
 | UI-06 | SVG có trục nét đứt `x=2`; đỉnh `I(2;−1)`; giao `Ox` `(1;0), (3;0)`; giao `Oy` `(0;3)` | PENDING |
-| UI-07 | Core cùng canonical ID từ bài SGK, thư viện Core, chuyên đề; gợi ý chỉ khi mở và đáp án sau kiểm tra | PENDING |
+| UI-07 | Core cùng canonical ID từ bài SGK và Thư viện Core; Chuyên đề không có Core tab, Practice cơ bản có thể tham chiếu cùng item ID mà không clone; gợi ý chỉ khi mở và đáp án sau Check | PENDING |
 | UI-08 | Practice: chọn đáp án → Check mới hiện phản hồi; có gợi ý tùy chọn | PENDING |
 | UI-09 | Readiness 2 câu: Previous/Next, sửa đáp án trước nộp; **không hint, không biết đúng/sai trước Final Submit**; nhãn TECHNICAL_DEMO_ONLY rõ | PENDING |
 | UI-10 | Written: bài thường và bài Anchor đúng trong một thư viện, lọc/tìm kiếm, tự chấm rubric, không tự động chấm bài trên giấy | PENDING |
@@ -51,7 +51,7 @@ python -m mkdocs serve -f mkdocs.thpt-preview.yml -a 0.0.0.0:8000
 
 ## 3. Thiết bị và phép thử
 
-- **Desktop:** trình duyệt người dùng thực tế, thử bật/tắt chế độ tối, phóng to/thu nhỏ, tìm kiếm, đọc đủ bốn điểm đến.
+- **Desktop:** trình duyệt người dùng thực tế, thử bật/tắt chế độ tối, phóng to/thu nhỏ, tìm kiếm, kiểm tra đúng ba điểm đến Chuyên đề: Kiến thức/Luyện tập/Tự kiểm tra.
 - **iPhone:** cuộn trang SGK đến bảng và đồ thị, kiểm tra công thức không tràn màn hình; thử đổi câu và nộp trong Readiness.
 - **iPad:** sidebar, bảng tab Kiến thức/Dạng bài, các liên kết và vùng bấm.
 - Kiểm thử trình duyệt Chromium giả lập trên CI đã PASS tại reviewed commit và sẽ được re-run trên head mới; **không thay thế nghiệm thu thiết bị thực tế**.
