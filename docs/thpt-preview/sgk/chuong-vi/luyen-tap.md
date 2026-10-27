@@ -1,34 +1,59 @@
 # Luyện tập và Vận dụng — Chương VI
 
 <div class="thpt-r4-screen" data-thpt-r4>
-<p class="thpt-r4-eyebrow">TOÁN 10 · SGK KNTT · CHƯƠNG VI</p>
-<p class="thpt-r4-lead">Đây là **đầu mối luyện tập/vận dụng của nhánh SGK**, khác với luyện tập theo dạng bài và cấp độ xuyên chương của Chuyên đề. Tập hợp các bài theo đúng thứ tự SGK để học sinh tự học trọn vẹn một chương.</p>
-<nav class="thpt-r4-lesson-tabs" aria-label="Các hoạt động chính của Chương VI">
-<a href="../">Tổng quan chương</a>
-<span class="is-current" aria-current="page">Luyện tập / Vận dụng</span>
- <a href="../tu-kiem-tra-chuong/">Tự kiểm tra cuối chương (demo)</a>
-</nav></div>
+<p class="thpt-r4-eyebrow">CHƯƠNG VI · LUYỆN TẬP/VẬN DỤNG · NHÁP</p>
+<p class="thpt-r4-lead">Luyện tập được <strong>sắp theo bài SGK</strong> và có phần tổng hợp cuối chương. Đây là nhánh luyện tập của SGK, không phải trang luyện tập theo trục dọc của Chuyên đề.</p>
+</div>
 
-!!! warning "Trạng thái học liệu"
-    **DRAFT_NOT_ACADEMICALLY_REVIEWED** với phần bài mới. Các bài luyện ở Bài 15, 17, 18 và cuối chương là bản nháp chưa được NotebookLM duyệt. Riêng Core và nội dung Bài 16 giữ kết quả Academic PASS đúng phạm vi reviewer đã xét. Không ghi điểm, credit hay mastery.
+<div class="thpt-r4-practice-sections" data-thpt-practice-hub>
+<section class="thpt-r4-practice-lesson" data-thpt-grade="10" aria-label="Bài 15 · Hàm số">
+<div class="thpt-r4-practice-lesson-header"><span class="thpt-r4-lesson-number">15</span><div><p class="thpt-r4-practice-class">Lớp 10 · Chương VI · Bài 15</p><h2>Bài 15. Hàm số</h2></div></div>
+<div class="thpt-r4-practice-card-grid">
+<section class="thpt-r4-practice-card" data-thpt-grade="10">
+<div><p class="thpt-r4-practice-card-kind">Core</p><strong>Hàm số · Tập xác định và đồ thị</strong><p class="thpt-r4-practice-card-desc">Củng cố khái niệm và kiến thức cơ bản</p><small>Bài nháp · Chỉ kiểm thử giao diện</small></div>
+<button type="button" class="thpt-r4-practice-open" data-thpt-open-quiz="b15-core" aria-label="Mở cửa sổ Core cho Bài 15">✎ Luyện tập</button>
+</section>
+<section class="thpt-r4-practice-card" data-thpt-grade="10">
+<div><p class="thpt-r4-practice-card-kind">Luyện tập</p><strong>Hàm số · Tập xác định và đồ thị</strong><p class="thpt-r4-practice-card-desc">Rèn phương pháp, tính toán và vận dụng</p><small>Bài nháp · Chỉ kiểm thử giao diện</small></div>
+<button type="button" class="thpt-r4-practice-open" data-thpt-open-quiz="b15-practice" aria-label="Mở cửa sổ Luyện tập cho Bài 15">✎ Luyện tập</button>
+</section>
+</div></section>
+<section class="thpt-r4-practice-lesson" data-thpt-grade="10" aria-label="Bài 16 · Hàm số bậc hai">
+<div class="thpt-r4-practice-lesson-header"><span class="thpt-r4-lesson-number">16</span><div><p class="thpt-r4-practice-class">Lớp 10 · Chương VI · Bài 16</p><h2>Bài 16. Hàm số bậc hai</h2></div></div>
+<div class="thpt-r4-practice-card-grid">
+<section class="thpt-r4-practice-card" data-thpt-grade="10">
+<div><p class="thpt-r4-practice-card-kind">Core</p><strong>Parabol · Đỉnh và tính chất</strong><p class="thpt-r4-practice-card-desc">Củng cố khái niệm và kiến thức cơ bản</p><small>Bài 16 · Item mẫu đã review</small></div>
+<button type="button" class="thpt-r4-practice-open" data-thpt-open-quiz="b16-core" aria-label="Mở cửa sổ Core cho Bài 16">✎ Luyện tập</button>
+</section>
+<section class="thpt-r4-practice-card" data-thpt-grade="10">
+<div><p class="thpt-r4-practice-card-kind">Luyện tập</p><strong>Parabol · Đỉnh và tính chất</strong><p class="thpt-r4-practice-card-desc">Rèn phương pháp, tính toán và vận dụng</p><small>Bài 16 · Item mẫu đã review</small></div>
+<button type="button" class="thpt-r4-practice-open" data-thpt-open-quiz="b16-practice" aria-label="Mở cửa sổ Luyện tập cho Bài 16">✎ Luyện tập</button>
+</section>
+</div></section>
+<section class="thpt-r4-practice-lesson" data-thpt-grade="10" aria-label="Bài 17 · Dấu của tam thức bậc hai">
+<div class="thpt-r4-practice-lesson-header"><span class="thpt-r4-lesson-number">17</span><div><p class="thpt-r4-practice-class">Lớp 10 · Chương VI · Bài 17</p><h2>Bài 17. Dấu của tam thức bậc hai</h2></div></div>
+<div class="thpt-r4-practice-card-grid">
+<section class="thpt-r4-practice-card" data-thpt-grade="10">
+<div><p class="thpt-r4-practice-card-kind">Core</p><strong>Tam thức · Xét dấu và bất phương trình</strong><p class="thpt-r4-practice-card-desc">Củng cố khái niệm và kiến thức cơ bản</p><small>Bài nháp · Chỉ kiểm thử giao diện</small></div>
+<button type="button" class="thpt-r4-practice-open" data-thpt-open-quiz="b17-core" aria-label="Mở cửa sổ Core cho Bài 17">✎ Luyện tập</button>
+</section>
+<section class="thpt-r4-practice-card" data-thpt-grade="10">
+<div><p class="thpt-r4-practice-card-kind">Luyện tập</p><strong>Tam thức · Xét dấu và bất phương trình</strong><p class="thpt-r4-practice-card-desc">Rèn phương pháp, tính toán và vận dụng</p><small>Bài nháp · Chỉ kiểm thử giao diện</small></div>
+<button type="button" class="thpt-r4-practice-open" data-thpt-open-quiz="b17-practice" aria-label="Mở cửa sổ Luyện tập cho Bài 17">✎ Luyện tập</button>
+</section>
+</div></section>
+<section class="thpt-r4-practice-lesson" data-thpt-grade="10" aria-label="Bài 18 · Phương trình quy về phương trình bậc hai">
+<div class="thpt-r4-practice-lesson-header"><span class="thpt-r4-lesson-number">18</span><div><p class="thpt-r4-practice-class">Lớp 10 · Chương VI · Bài 18</p><h2>Bài 18. Phương trình quy về phương trình bậc hai</h2></div></div>
+<div class="thpt-r4-practice-card-grid">
+<section class="thpt-r4-practice-card" data-thpt-grade="10">
+<div><p class="thpt-r4-practice-card-kind">Core</p><strong>Căn thức · Điều kiện và nghiệm</strong><p class="thpt-r4-practice-card-desc">Củng cố khái niệm và kiến thức cơ bản</p><small>Bài nháp · Chỉ kiểm thử giao diện</small></div>
+<button type="button" class="thpt-r4-practice-open" data-thpt-open-quiz="b18-core" aria-label="Mở cửa sổ Core cho Bài 18">✎ Luyện tập</button>
+</section>
+<section class="thpt-r4-practice-card" data-thpt-grade="10">
+<div><p class="thpt-r4-practice-card-kind">Luyện tập</p><strong>Căn thức · Điều kiện và nghiệm</strong><p class="thpt-r4-practice-card-desc">Rèn phương pháp, tính toán và vận dụng</p><small>Bài nháp · Chỉ kiểm thử giao diện</small></div>
+<button type="button" class="thpt-r4-practice-open" data-thpt-open-quiz="b18-practice" aria-label="Mở cửa sổ Luyện tập cho Bài 18">✎ Luyện tập</button>
+</section>
+</div></section>
+</div>
 
-## Luyện tập theo từng bài
-
-| Bài học SGK | Core hiểu kiến thức | Luyện tập / Vận dụng |
-|---|---|---|
-| **Bài 15 — Hàm số** | Core đang biên soạn, chưa có thẻ được duyệt | [Đọc bài và làm 3 câu tự luyện](bai-15.md#4-tu-luyen-truoc-khi-chuyen-bai) |
-| **Bài 16 — Hàm số bậc hai** | [Core nhận diện đỉnh · THPT-CORE-QF01](../core/ham-so-bac-hai.md) | [Xem ví dụ, đồ thị, vận dụng theo bài](bai-16.md#4-luyen-tap) và [bài tự luận mỏ neo](../../thu-vien/tu-luan.md) |
-| **Bài 17 — Dấu của tam thức bậc hai** | Core đang biên soạn | [Đọc bài và làm 3 câu tự luyện](bai-17.md#4-tu-luyen) |
-| **Bài 18 — Phương trình quy về phương trình bậc hai** | Core đang biên soạn | [Đọc bài và làm 3 câu tự luyện](bai-18.md#5-tu-luyen) |
-
-**Lưu ý:** Những đường dẫn Core chưa biên soạn không được hiển thị thành thẻ tương tác giả. Khi có ngân hàng item canonical, các câu Practice theo bài sẽ được gắn đúng lesson_ref, chapter_ref, skill_id và có thể dùng chung với Chuyên đề qua placement.
-
-## Luyện tập tổng hợp, vận dụng cuối chương
-
-**Bài tập cuối chương là nhóm bài luyện tổng hợp**, không phải phần học hoặc chế độ đánh giá thứ ba. [Mở 8 bài luyện tập tổng hợp (bản nháp, có lời giải tự mở)](bai-tap-cuoi-chuong.md)
-
-Các bài cuối chương được nhóm theo hàm số/tập xác định, parabol, dấu tam thức, phương trình căn và mô hình hóa. Người học tự giải trước, chỉ mở lời giải sau; những câu này **không phải** bộ Tự kiểm tra độc lập.
-
-## Tự kiểm tra cuối chương
-
-[Tự kiểm tra Chương VI](tu-kiem-tra-chuong.md) có phạm vi SGK chương, không phải Tự kiểm tra Chuyên đề. Bản hiện tại chỉ là **mô phỏng kỹ thuật** (4 câu minh họa, không đủ để xác nhận thành thạo và không lưu tiến độ); bộ đánh giá chính thức phải có đủ ma trận outcome và các item giữ riêng không dùng lại máy móc từ Core/Practice.
+<p class="thpt-r4-practice-disclaimer">Các thẻ Bài 15/17/18 là <strong>TECHNICAL_DEMO_ONLY</strong>: các câu hỏi minh họa đang chờ NotebookLM thẩm định, không ghi điểm, lịch sử hoặc mastery. Core Bài 16 và câu Practice demo sử dụng đúng nội dung đã có trong R4 qua cùng nguồn trang, không nhân bản item canonical.</p>
