@@ -11,7 +11,7 @@ mastery_credit: false
 <div class="thpt-r4-screen" data-thpt-r4><p class="thpt-r4-eyebrow">TOÁN 10 · SGK KNTT · TỰ KIỂM TRA CUỐI CHƯƠNG</p>
 <p class="thpt-r4-lead"><strong>TECHNICAL_DEMO_ONLY — KHÔNG TÍNH THÀNH THẠO.</strong> Bài mẫu này cho thấy cách tự kiểm tra <strong>sau khi kết thúc Chương VI</strong>. Bốn câu chỉ kiểm thử trải nghiệm Previous/Next/Final Submit, <strong>không đủ bao phủ chương</strong> và chưa được NotebookLM duyệt như bộ đề chính thức. Không lưu điểm hay tiến độ.</p>
 <nav class="thpt-r4-lesson-tabs" aria-label="Chuyển hoạt động SGK Chương VI">
-<a href="../">Tổng quan Chương VI</a><a href="luyen-tap/">Luyện tập / Vận dụng</a><span class="is-current" aria-current="page">Tự kiểm tra cuối chương</span></nav></div>
+<a href="../">Tổng quan Chương VI</a><a href="../luyen-tap/">Luyện tập / Vận dụng</a><span class="is-current" aria-current="page">Tự kiểm tra cuối chương</span></nav></div>
 
 ## Làm thử đề kiểm tra chương (4 câu mẫu)
 
