@@ -15,4 +15,4 @@
 </div>
 </div>
 
-**Thư viện Core** nằm ở mục cuối trong menu SGK bên trái: [Mở thư viện Core](core/index.md).
+**Core và Luyện tập/Vận dụng** được mở theo từng bài trong chương tương ứng. [Vào Luyện tập/Vận dụng Chương VI](chuong-vi/luyen-tap.md).
