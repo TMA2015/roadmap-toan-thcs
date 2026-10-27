@@ -1,13 +1,16 @@
-<div class="thpt-r4-screen" data-thpt-r4><nav class="thpt-r4-topic-steps" aria-label="Các phần học của chuyên đề">
-<a href="../core/" >01 · Thẻ Core</a>
-<a href="../kien-thuc/" >02 · Kiến thức</a>
-<a href="../luyen-tap/" aria-current="page">03 · Luyện tập</a>
-<a href="../tu-kiem-tra/" >04 · Tự kiểm tra</a>
+<div class="thpt-r4-screen" data-thpt-r4><nav class="thpt-r4-topic-steps" aria-label="Ba phần học của chuyên đề">
+<a href="../kien-thuc/">01 · Kiến thức</a>
+<a href="../luyen-tap/" aria-current="page">02 · Luyện tập</a>
+<a href="../tu-kiem-tra/">03 · Tự kiểm tra</a>
 </nav></div>
 
 # Luyện tập chuyên đề — Hàm số và đồ thị
 
-Luyện tập tương tác tổng hợp các dạng bài của chuyên đề. **Có gợi ý** và được chữa lỗi sau khi kiểm tra. Khác với Core theo từng kỹ năng.
+Luyện tập theo **mảng kiến thức, dạng bài và cấp độ**; từ cơ bản/hiểu bản chất đến vận dụng, tổng hợp. Có gợi ý và phản hồi sau Check. Một câu hỏi có thể vừa là SGK Core vừa là Practice cơ bản tại đây nếu giữ **cùng canonical item ID**.
+
+**Luyện tập cơ bản — nhận diện dạng đỉnh:** [THPT-CORE-QF01 trong kho câu hỏi chung](../../sgk/core/ham-so-bac-hai.md) (đây là tham chiếu cùng item, chưa có trình hiển thị trực tiếp theo ngữ cảnh trong demo).
+
+**Luyện tập dạng giao trục:**
 
 <div class="thpt-r4-exercise" data-thpt-practice>
 <p class="thpt-r4-eyebrow">PRACTICE-THPT-DEMO-01 · CÓ GỢI Ý</p>
