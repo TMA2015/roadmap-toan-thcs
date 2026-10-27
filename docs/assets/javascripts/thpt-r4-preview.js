@@ -312,7 +312,58 @@
   });
  }
 
+
+ // THPT route-only navigation behavior, preserving MkDocs Material's native
+ // drawer and link semantics. All nested sidebar sections start collapsed.
+ function initTHPTPrimarySidebar(){
+  const path=location.pathname;
+  const isTHPT=/\/(?:thpt-preview|thpt)\//.test(path);
+  if(!isTHPT)return;
+  const isHome=/\/(?:thpt-preview|thpt)\/home\/?(?:index\.html)?$/.test(path);
+  document.body.classList.toggle("thpt-r4-home",isHome);
+  if(isHome)return;
+  const sidebar=document.querySelector(".md-sidebar--primary");
+  const primary=sidebar?.querySelector("nav.md-nav--primary");
+  if(!primary)return;
+  const groups=[...primary.querySelectorAll("li.md-nav__item--nested")];
+  groups.forEach((li,index)=>{
+   const nested=li.querySelector(":scope > nav.md-nav");
+   if(!nested)return;
+   const native=li.querySelector(":scope > input.md-nav__toggle");
+   const label=li.querySelector(":scope > label.md-nav__link, :scope > a.md-nav__link");
+   let button=li.querySelector(":scope > button.thpt-r4-sidebar-toggle");
+   const update=open=>{
+    nested.hidden=!open;
+    if(native)native.checked=open;
+    button?.setAttribute("aria-expanded",String(open));
+    if(button)button.textContent=open?"▾":"▸";
+   };
+   if(!button){
+    li.classList.add("thpt-r4-collapsible");
+    if(!nested.id)nested.id="thpt-r4-subnav-"+index;
+    button=document.createElement("button");
+    button.type="button";
+    button.className="thpt-r4-sidebar-toggle";
+    button.setAttribute("aria-label","Mở hoặc thu gọn "+(label?.textContent?.trim()||"mục điều hướng"));
+    button.setAttribute("aria-controls",nested.id);
+    li.insertBefore(button,nested);
+    button.addEventListener("click",event=>{event.preventDefault();event.stopPropagation();update(nested.hidden)});
+    native?.addEventListener("change",()=>update(native.checked));
+    if(!native&&label?.tagName==="LABEL"){
+     label.addEventListener("click",event=>{event.preventDefault();update(nested.hidden)});
+    }
+   }
+   // On each actual navigation, start collapsed regardless of current/active link.
+   // Re-entering the same page does not discard a reader's manual expansion.
+   if(li.dataset.thptR4SidebarPath!==path){
+    li.dataset.thptR4SidebarPath=path;
+    update(false);
+   }
+  });
+ }
+
  function init() {
+  initTHPTPrimarySidebar();
   initAdaptiveKnowledgeTabs();
   initChapterPracticeCards();
   initTHPTLauncher();
