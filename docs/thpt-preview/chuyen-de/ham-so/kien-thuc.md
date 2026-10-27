@@ -1,9 +1,10 @@
 ---
 hide:
   - toc
+pilot_scope: PILOT_PARTIAL_G10
 ---
 
-<div data-thpt-r4 class="thpt-r4-screen"><p class="thpt-r4-eyebrow">CHUYÊN ĐỀ · BẢN MẪU THPT</p><p class="thpt-r4-lead">Hàm số và đồ thị · Minh họa nhánh hàm số bậc hai; chưa phải chuyên đề 10–12 hoàn chỉnh.</p>
+<div data-thpt-r4 class="thpt-r4-screen"><p class="thpt-r4-eyebrow">CHUYÊN ĐỀ · BẢN MẪU THPT</p><p class="thpt-r4-lead">Hàm số và đồ thị · PILOT_PARTIAL_G10 · Minh họa nhánh hàm số bậc hai của lớp 10; chưa phải chuyên đề 10–12 hoàn chỉnh.</p>
 <nav class="thpt-r4-topic-steps" aria-label="Các phần học của chuyên đề">
 <a href="../core/" >01 · Thẻ Core</a>
 <a href="../kien-thuc/" aria-current="page">02 · Kiến thức</a>
@@ -36,7 +37,7 @@ hide:
 
     Đồ thị là parabol, trục đối xứng \(x=h\), đỉnh \(I(h;k)\). Khi \(a>0\) đồ thị mở lên và có GTNN \(k\); khi \(a<0\) đồ thị mở xuống và có GTLN \(k\).
 
-    Chiều biến thiên đổi tại hoành độ đỉnh \(h\). Khi \(a>0\), hàm giảm rồi tăng; khi \(a<0\), tăng rồi giảm.
+    Chiều biến thiên đổi tại hoành độ đỉnh \(h\). Khi \(a>0\), hàm giảm rồi tăng với tập giá trị \(T=[k;+\infty)\); khi \(a<0\), tăng rồi giảm với \(T=(-\infty;k]\). Ở đây \(k=-\frac{\Delta}{4a}\), \(\Delta=b^2-4ac\).
 
 === "Ví dụ"
 
@@ -62,7 +63,7 @@ hide:
 
     **Nhận diện:** yêu cầu xác định chiều mở, đỉnh, trục và các giao điểm.
 
-    **Phương pháp:** tính tọa độ đỉnh, nghiệm của \(ax^2+bx+c=0\) nếu có và dấu hệ số \(a\).
+    **Phương pháp 4 bước:** (1) Tìm đỉnh \(I\); (2) vẽ trục đối xứng, xác định chiều mở theo dấu \(a\); (3) tìm giao với \(Oy\), giao với \(Ox\) nếu có và một cặp điểm đối xứng; (4) vẽ parabol qua các điểm đặc trưng. Không mặc định có hai giao điểm với \(Ox\).
 
     **Luyện ngay:** [Luyện tập chuyên đề](luyen-tap.md).
 
