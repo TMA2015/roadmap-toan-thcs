@@ -318,7 +318,7 @@
  function initTHPTPrimarySidebar(){
   const path=location.pathname;
   const isTHPT=/\/(?:thpt-preview|thpt)\//.test(path);
-  if(!isTHPT)return;
+  if(!isTHPT){document.body.classList.remove("thpt-r4-home");return}
   const isHome=/\/(?:thpt-preview|thpt)\/home\/?(?:index\.html)?$/.test(path);
   document.body.classList.toggle("thpt-r4-home",isHome);
   if(isHome)return;
