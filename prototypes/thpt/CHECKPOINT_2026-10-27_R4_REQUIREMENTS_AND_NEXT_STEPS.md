@@ -1,3 +1,5 @@
+> **CHECKPOINT KIẾN TRÚC MỚI 27/10/2026:** Tài liệu này là lịch sử trước quyết định Owner Dual Complete Paths v2.0. Hiện SGK và Chuyên đề là hai lối học hoàn chỉnh; SGK có Core/Practice/Tự kiểm tra **cuối chương**, Chuyên đề có **chỉ 3 phần Kiến thức/Luyện tập/Tự kiểm tra**, shared item ID nhiều placement/role. Kiểm tra trạng thái trong `THPT_DUAL_COMPLETE_PATHS_SHARED_ITEMS_OWNER_CONTRACT_v2.0.md` và Project Sources v2, không khôi phục Topic Core tab theo checkpoint này.
+
 # CHECKPOINT — Self-Learning Math THPT, 27/10/2026
 **Tiếp tục dự kiến:** 28/10/2026 (người dùng sẽ chủ động quay lại)  
 **Owner request:** TẠM DỪNG, lưu yêu cầu và checkpoint; KHÔNG tiếp tục phát triển, merge hoặc deploy hôm nay.  
