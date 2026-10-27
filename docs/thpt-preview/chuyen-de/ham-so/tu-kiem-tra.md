@@ -7,9 +7,11 @@
 
 # Tự kiểm tra — Hàm số và đồ thị
 
+**Chỉ kiểm thử thao tác (TECHNICAL_DEMO_ONLY). Không dùng để kết luận mức độ thành thạo.**
+
 **Readiness độc lập:** không gợi ý, không biết đúng/sai trong lúc làm. Học sinh có thể chuyển câu, quay lại sửa đáp án; chỉ sau **Final Submit** mới được xem kết quả và lời giải.
 
-<div class="thpt-r4-exercise" data-thpt-readiness>
+<div class="thpt-r4-exercise" data-thpt-readiness data-demo-scope="TECHNICAL_DEMO_ONLY" data-mastery-credit="false">
 <p class="thpt-r4-eyebrow">READINESS-THPT-DEMO-01 · KHÔNG GỢI Ý · 2 CÂU DEMO</p>
 <p data-thpt-progress aria-live="polite">Câu 1/2</p>
 <form><div data-thpt-question></div>
