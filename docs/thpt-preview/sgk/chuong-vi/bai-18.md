@@ -1,7 +1,7 @@
 # Bài 18. Phương trình quy về phương trình bậc hai
 
 <div class="thpt-r4-screen" data-thpt-r4><p class="thpt-r4-eyebrow">TOÁN 10 · CHƯƠNG VI · BẢN NHÁP HỌC LIỆU</p>
-<p class="thpt-r4-lead"><strong>DRAFT_NOT_ACADEMICALLY_REVIEWED.</strong> Bài soạn nguyên gốc minh họa quy trình giải phương trình chứa căn thức quy về phương trình bậc hai. Chưa hoàn tất receipt SGK/SBT và chưa có Academic PASS. Không ghi điểm hoặc tiến độ.</p>
+<p class="thpt-r4-lead"><strong>DRAFT_NOT_ACADEMICALLY_REVIEWED.</strong> Bài soạn nguyên gốc minh họa quy trình giải phương trình chứa căn thức quy về phương trình bậc hai. Đã quan sát SGK Bài 18 trang in 25–27 và SBT trang 19–21; chưa có Academic PASS độc lập. Không ghi điểm hoặc tiến độ.</p>
 <nav class="thpt-r4-lesson-tabs" aria-label="Điều hướng Chương VI"><a href="../">Chương VI</a><a href="../bai-17/">Bài 17</a><span class="is-current" aria-current="page">Bài 18 · Phương trình chứa căn (nháp)</span></nav></div>
 
 ## 1. Vì sao phải kiểm tra nghiệm?
@@ -44,6 +44,41 @@ Khi hai điều kiện này thỏa, \(A(x)=B(x)^2\ge0\) cũng bảo đảm căn 
 \]
 Điều kiện \(x\ge1\). Bình phương: \(2x+3=(x-1)^2\), hay \(x^2-4x-2=0\). Nghiệm ứng viên \(x=2\pm\sqrt6\). Vì \(2-\sqrt6<1\), loại nghiệm này; \(2+\sqrt6\ge1\) thỏa phương trình gốc. Vậy \(\boxed{x=2+\sqrt6}\).
 
+### Ví dụ 3 — Hai căn thức và nghiệm ngoại lai (tự soạn)
+
+Xét
+\[
+\sqrt{x^2+7x+11}=\sqrt{x+3}.
+\]
+Bình phương hai vế và rút gọn:
+\[
+x^2+7x+11=x+3 \iff x^2+6x+8=0
+\iff(x+2)(x+4)=0.
+\]
+
+Hai nghiệm ứng viên là \(x=-2\), \(x=-4\). Tuy nhiên, \(x=-4\) làm \(x+3=-1<0\), **không thuộc miền xác định**; còn \(x=-2\) cho cả hai vế bằng \(1\). Vì vậy \(\boxed{S=\{-2\}}\).
+
+*Bài học:* Không phải cứ bình phương rồi giải phương trình đại số là thu được các nghiệm của phương trình chứa căn.
+
+### Ví dụ 4 — Ứng dụng độ dài trong hình học (tự soạn)
+
+Một tam giác vuông có hai cạnh góc vuông dài \(x\) m và \(4\) m, với \(x>0\). Tìm \(x\) nếu cạnh huyền dài \(2x-1\) m.
+
+Theo định lí Pythagore:
+\[
+\sqrt{x^2+16}=2x-1.
+\]
+
+Điều kiện cần là \(2x-1\ge0\), tức \(x\ge\frac12\). Bình phương được
+\[
+x^2+16=(2x-1)^2
+\iff 3x^2-4x-15=0
+\iff(3x+5)(x-3)=0.
+\]
+Hai nghiệm ứng viên là \(x=3\) và \(x=-\frac53\). Chỉ \(x=3\) đạt điều kiện. Thử lại: \(\sqrt{3^2+4^2}=5=2\cdot3-1\). Vậy cạnh góc vuông cần tìm dài \(\boxed{3\text{ m}}\).
+
+**Liên hệ S1:** SGK Bài 18, trang in **26–27**, có vận dụng hình học/quãng đường với biểu thức căn; SBT trang **19–21** bổ sung bài điều kiện có nghiệm và một tình huống hình học. Hai ví dụ trên là nội dung **tự biên soạn, chưa review**, dùng để rèn điều kiện căn thức và thử nghiệm ứng viên.
+
 ## 4. Những sai lầm thường gặp
 
 - **Nhận hết nghiệm sau khi bình phương:** nghiệm ngoại lai có thể được sinh ra.
@@ -64,4 +99,4 @@ Khi hai điều kiện này thỏa, \(A(x)=B(x)^2\ge0\) cũng bảo đảm căn 
 </ol></details>
 
 !!! warning "Giới hạn"
-    Đây là draft kiến thức do dự án tự soạn, **chưa đối chiếu trực tiếp PDF SGK/SBT** và chưa đăng ký Core/Readiness/Written chính thức. Chỉ dùng cho phát triển nội bộ, chưa Academic PASS.
+    Đây là draft kiến thức do dự án tự soạn, **đã đối chiếu trực tiếp SGK trang 25–27 và SBT trang 19–21 nhưng chưa được NotebookLM thẩm định** và chưa đăng ký Core/Readiness/Written chính thức. Chỉ dùng cho phát triển nội bộ, chưa Academic PASS.
