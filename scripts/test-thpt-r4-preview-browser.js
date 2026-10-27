@@ -76,6 +76,7 @@ async function ready(page,path){
   assert(await page.locator("#bai-mo-neo-demo").isHidden(),"Written anchor must be hidden with normal filter");
 
   await ready(page,"home/");
+  assert(await page.locator(".md-sidebar--primary").isHidden(),"THPT homepage must have no left sidebar");
   await page.locator("[data-thpt-r4-launcher]").click();
   const dialog=page.locator("[data-thpt-r4-shortcut-dialog]");
   assert(await dialog.isVisible(),"THPT quick navigation dialog did not open");
@@ -118,8 +119,18 @@ async function ready(page,path){
   const coreLibraryHref=await page.locator("a.math-library-entry").first().getAttribute("href");
   assert.equal(canonical(coreLibraryHref,page.url()),expectedCore,"SGK Core library links to different Core identity");
   await ready(page,"sgk/chuong-vi/bai-16/");
-  const lessonCoreHref=await page.locator("a.math-library-entry").first().getAttribute("href");
-  assert.equal(canonical(lessonCoreHref,page.url()),expectedCore,"SGK B16 points to duplicated Core");
+  assert.equal((await page.locator('a.math-library-entry[href*="core"]').count()),0,"B16 SGK lesson still links to old standalone Core page");
+  const inlineCore=page.locator('[data-thpt-open-quiz="b16-core"]');
+  assert.equal((await inlineCore.count()),1,"SGK B16 must open its Core in the new modal");
+  const b16Route=page.url();
+  await inlineCore.click();
+  const b16Modal=page.locator("dialog.thpt-r4-practice-dialog");
+  await b16Modal.locator('[data-thpt-core] input[value="-3"]').waitFor();
+  await b16Modal.locator('[data-thpt-core] input[value="-3"]').check();
+  await b16Modal.locator('[data-thpt-core] button[type="submit"]').click();
+  assert((await b16Modal.locator('[data-thpt-core] [data-thpt-feedback]').textContent()).startsWith("Đúng."),"Inline B16 Core did not grade inside modal");
+  assert.equal(page.url(),b16Route,"SGK B16 Core action must not navigate to a legacy page");
+  await b16Modal.locator("[data-thpt-modal-close]").click();
   await ready(page,"sgk/core/ham-so-bac-hai/");
   assert((await page.locator('[data-thpt-core] .thpt-r4-eyebrow').textContent()).includes("THPT-CORE-QF01"),"Canonical Core ID mismatch");
   for(const area of ["kien-thuc","luyen-tap","tu-kiem-tra"]){
@@ -133,12 +144,28 @@ async function ready(page,path){
   // Owner UI consolidation: keep links while hiding Core library and end-chapter
   // exercise as separate student-facing sidebar sections.
   await ready(page,"sgk/chuong-vi/");
-  const sideNav=page.locator("nav.md-nav--primary");
-  const visibleSidebar=await sideNav.innerText();
-  assert(!visibleSidebar.includes("Thư viện Core"),"SGK sidebar must not expose a separate Core library");
-  assert(!visibleSidebar.includes("Bài tập cuối Chương VI"),"Cumulative exercises belong under chapter Practice, not their own menu entry");
-  assert(visibleSidebar.includes("Luyện tập và Vận dụng Chương VI"),"Missing SGK Chapter Practice in sidebar");
-  assert(visibleSidebar.includes("Tự kiểm tra cuối Chương VI"),"Missing separate SGK chapter Readiness in sidebar");
+  const sideNav=page.locator(".md-sidebar--primary nav.md-nav--primary");
+  const sidebarStructure=await sideNav.textContent();
+  assert(!sidebarStructure.includes("Thư viện Core"),"SGK sidebar must not expose a separate Core library");
+  assert(!sidebarStructure.includes("Bài tập cuối Chương VI"),"Cumulative exercises belong under chapter Practice, not their own menu entry");
+  assert(sidebarStructure.includes("Luyện tập và Vận dụng Chương VI"),"Missing SGK Chapter Practice in sidebar");
+  assert(sidebarStructure.includes("Tự kiểm tra cuối Chương VI"),"Missing separate SGK chapter Readiness in sidebar");
+  const disclosureButtons=page.locator(".md-sidebar--primary .thpt-r4-sidebar-toggle");
+  assert((await disclosureButtons.count())>=1,"THPT sidebar must have collapsible navigation groups");
+  for(const toggle of await disclosureButtons.all()){
+    assert.equal(await toggle.getAttribute("aria-expanded"),"false","Nested THPT sidebar sections must default to collapsed");
+  }
+  let firstVisibleDisclosure=null;
+  for(const toggle of await disclosureButtons.all()){
+    if(await toggle.isVisible()){firstVisibleDisclosure=toggle;break}
+  }
+  assert(firstVisibleDisclosure,"No accessible sidebar disclosure button found");
+  const controlledId=await firstVisibleDisclosure.getAttribute("aria-controls");
+  await firstVisibleDisclosure.click();
+  assert.equal(await firstVisibleDisclosure.getAttribute("aria-expanded"),"true","Sidebar section could not expand");
+  assert(await page.locator("#"+controlledId).isVisible(),"Expanded section children not visible");
+  await firstVisibleDisclosure.click();
+  assert.equal(await firstVisibleDisclosure.getAttribute("aria-expanded"),"false","Sidebar section could not collapse");
   await ready(page,"sgk/core/");
   assert((await page.locator("article").textContent()).includes("liên kết tương thích"),"Old Core library URL must remain usable");
   await ready(page,"sgk/chuong-vi/bai-tap-cuoi-chuong/");
