@@ -4,6 +4,7 @@ const fs=require("node:fs");
 const {chromium}=require("playwright");
 // Run the same no-duplicate / assessment-exposure contract on every THPT QA run.
 require("./test-thpt-shared-item-placement.cjs").run();
+require("./test-thpt-chvi-draft-item-bank.cjs");
 const base="http://127.0.0.1:8765/thpt-preview/";
 async function ready(page,path){
  const response=await page.goto(base+path,{waitUntil:"networkidle"});
