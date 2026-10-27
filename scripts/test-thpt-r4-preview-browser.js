@@ -113,15 +113,28 @@ async function ready(page,path){
    const pathname=new URL(href,currentUrl).pathname;
    return pathname.endsWith("/")?pathname.slice(0,-1):pathname;
   }
-  const expectedCore="/thpt-preview/chuyen-de/ham-so/core";
+  const expectedCore="/thpt-preview/sgk/core/ham-so-bac-hai";
   await ready(page,"sgk/core/");
   const coreLibraryHref=await page.locator("a.math-library-entry").first().getAttribute("href");
   assert.equal(canonical(coreLibraryHref,page.url()),expectedCore,"SGK Core library links to different Core identity");
   await ready(page,"sgk/chuong-vi/bai-16/");
   const lessonCoreHref=await page.locator("a.math-library-entry").first().getAttribute("href");
   assert.equal(canonical(lessonCoreHref,page.url()),expectedCore,"SGK B16 points to duplicated Core");
-  await ready(page,"chuyen-de/ham-so/core/");
+  await ready(page,"sgk/core/ham-so-bac-hai/");
   assert((await page.locator('[data-thpt-core] .thpt-r4-eyebrow').textContent()).includes("THPT-CORE-QF01"),"Canonical Core ID mismatch");
+  for(const area of ["kien-thuc","luyen-tap","tu-kiem-tra"]){
+    await ready(page,"chuyen-de/ham-so/"+area+"/");
+    const nav=page.locator(".thpt-r4-topic-steps");
+    assert((await nav.locator("a").count())===3,"Topic must have exactly three nav sections");
+    const labels=(await nav.locator("a").allTextContents()).map(x=>x.trim());
+    assert.deepEqual(labels,["01 · Kiến thức","02 · Luyện tập","03 · Tự kiểm tra"],"Topic order differs from approved contract");
+    assert((await nav.locator('a[href="../core/"]').count())===0,"Old topic Core tab must not appear");
+  }
+  await ready(page,"chuyen-de/ham-so/luyen-tap/");
+  assert((await page.locator("article").textContent()).includes("THPT-CORE-QF01"),"Same shared Core item must be referenced in beginner Practice");
+  await ready(page,"chuyen-de/ham-so/core/");
+  assert((await page.locator("[data-thpt-core]").count())===0,"Deprecated topic Core page duplicated canonical card");
+  assert((await page.locator("article").textContent()).includes("liên kết tương thích"),"Legacy Core URL must not break");
 
   await ready(page,"chuyen-de/ham-so/kien-thuc/");
   assert((await page.locator("article").textContent()).includes("PILOT_PARTIAL_G10"),"Partial-topic status not visible");
