@@ -61,7 +61,7 @@ C(x)=
 *Lưu ý:* Mô hình tính phí này là **ví dụ do dự án tự biên soạn**, không sao chép biểu giá trong SGK và không đại diện cho giá giao hàng thực tế. Đây là một ví dụ về cách biểu diễn phụ thuộc bằng công thức trên từng miền.
 
 !!! warning "Phần bổ sung SGK B15 đang chờ review học thuật"
-    **DRAFT_NOT_ACADEMICALLY_REVIEWED** — Nguồn ý tưởng/độ phủ: SGK Toán 10 Tập 2 Bài 15, phần hoạt động, ví dụ và vận dụng về bảng/đồ thị/biểu giá trên trang in **5–7, 9**. Đã quan sát hình quét gốc; chưa soát hết SBT trang 3–9, chưa có canonical item ID mới, không ghi mastery.
+    **DRAFT_NOT_ACADEMICALLY_REVIEWED** — Nguồn ý tưởng/độ phủ: SGK Toán 10 Tập 2 Bài 15, phần hoạt động, ví dụ và vận dụng về bảng/đồ thị/biểu giá trên trang in **5–7, 9**. Đã đối chiếu trực quan SGK trang 4–10 và SBT trang 3–9; **chưa có bộ Core/Practice canonical được thẩm định**, không ghi mastery.
 
 ## 3. Sự đồng biến, nghịch biến của hàm số
 
@@ -96,4 +96,4 @@ Nếu hàm số không có cùng một chiều biến thiên trên toàn miền,
 - Các bài phía sau trong Chương VI kế thừa kĩ năng đọc đồ thị, phân tích điều kiện và xác định nghiệm.
 
 !!! warning "Giới hạn nguồn và phát hành"
-    Đây là **draft cho Chương VI**. Chưa đối chiếu bản SGK/SBT PDF gốc theo từng hoạt động/trang in; các ví dụ và câu hỏi tự luyện do dự án tự soạn, **không phải câu trích nguyên SGK**. Không cấp Academic PASS cho nội dung này cho tới khi có verdict NotebookLM theo batch. Không có Core/Practice/Readiness canonical cho Bài 15 ở phiên bản này.
+    Đây là **draft cho Chương VI**. Đã đối chiếu trực tiếp các trang SGK 4–10 và SBT 3–9 theo hoạt động/dạng bài; vẫn cần kiểm toán outcome–item và review độc lập. Các ví dụ và câu hỏi tự luyện do dự án tự soạn, **không phải câu trích nguyên SGK**. Không cấp Academic PASS cho nội dung này cho tới khi có verdict NotebookLM theo batch. Không có Core/Practice/Readiness canonical cho Bài 15 ở phiên bản này.
