@@ -21,4 +21,4 @@ Luyện tập tương tác tổng hợp các dạng bài của chuyên đề. **
 <button type="submit" class="thpt-r4-action">Kiểm tra bài luyện</button>
 <p data-thpt-feedback role="status" aria-live="polite"></p></form></div>
 
-[Xem dạng bài và phương pháp](../kien-thuc.md#dang-bai) · [Làm bài tự luận trên giấy](../../../thu-vien/tu-luan.md).
+[Xem dạng bài và phương pháp](kien-thuc.md#dang-bai) · [Làm bài tự luận trên giấy](../../thu-vien/tu-luan.md).
