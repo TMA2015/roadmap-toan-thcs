@@ -255,3 +255,13 @@ body[data-md-color-scheme="slate"] .thpt-r4-practice-class{color:#b5c6e1!importa
  .thpt-r4-modal-top{padding:14px}
  .thpt-r4-modal-main{padding:14px}
 }
+
+
+.thpt-r4-modal-cumulative{border-top:1px solid var(--md-default-fg-color--lightest);margin:22px 0 0;padding-top:15px}
+.thpt-r4-modal-cumulative-button{width:100%;border:1px solid var(--md-default-fg-color--lightest);border-radius:9px;background:var(--md-code-bg-color);color:var(--md-default-fg-color);font-weight:730;text-align:left;cursor:pointer;padding:12px 14px}
+.thpt-r4-modal-cumulative-button:hover,.thpt-r4-modal-cumulative-button[aria-expanded="true"]{border-color:var(--md-accent-fg-color)}
+.thpt-r4-modal-cumulative-pane{margin-top:12px;display:grid;gap:16px}
+.thpt-r4-modal-cumulative-pane[hidden]{display:none!important}
+.thpt-r4-modal-cumulative-item{border:1px solid var(--md-default-fg-color--lightest);padding:13px 15px;border-radius:10px}
+.thpt-r4-modal-cumulative-item h3{font-size:1.03rem!important;margin:0 0 10px!important}
+.thpt-r4-modal-cumulative-item details{background:var(--md-code-bg-color);padding:8px 10px;border-radius:8px}
