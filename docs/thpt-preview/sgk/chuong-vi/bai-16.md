@@ -58,7 +58,7 @@ Xét \(f(x)=x^2-4x+3=(x-2)^2-1\). Do đó:
 
 ## 5. Vận dụng
 
-Hàm số bậc hai có thể biểu diễn diện tích hình chữ nhật khi chu vi được giữ cố định. [Xem bài tự luận mỏ neo mẫu](../../thu-vien/tu-luan.md#bai-mo-neo-demo).
+Hàm số bậc hai có thể biểu diễn diện tích hình chữ nhật khi chu vi được giữ cố định. [Xem bài tự luận mỏ neo mẫu](../../thu-vien/tu-luan.md).
 
 !!! warning "Chỉ là bài học trình diễn"
     Bản R4 chưa phải một bài đã đối chiếu đầy đủ SGK/SBT hoặc được chấp thuận phát hành. Đề mục, các dạng bài và câu hỏi sẽ được chỉnh theo biên bản NotebookLM THPT.
