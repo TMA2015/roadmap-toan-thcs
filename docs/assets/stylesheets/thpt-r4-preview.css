@@ -135,3 +135,71 @@ body.thpt-r4-topic-knowledge .md-typeset .thpt-r4-knowledge-panel p {
   .thpt-r4-knowledge-tabs { display: grid; grid-template-columns: minmax(0,1fr); }
   .thpt-r4-knowledge-tabs .thpt-r4-knowledge-tab { width: 100%; }
 }
+
+
+/* R4 two-level knowledge navigation: the OUTER row chooses the knowledge
+   module; the INNER row uses the identical type/color tokens as single-module
+   semantic tabs. No third level is introduced. */
+body.thpt-r4-topic-knowledge .md-typeset .thpt-r4-knowledge-modules {
+  margin: 12px 0 18px;
+  gap: 10px;
+}
+body.thpt-r4-topic-knowledge .md-typeset .thpt-r4-knowledge-module-tab {
+  border-radius: 12px;
+  padding-inline: 17px;
+  background: var(--md-default-bg-color);
+}
+body.thpt-r4-topic-knowledge .md-typeset .thpt-r4-knowledge-module-tab.is-active {
+  border-color: var(--md-accent-fg-color);
+  box-shadow: inset 0 -3px var(--md-accent-fg-color);
+}
+body.thpt-r4-topic-knowledge .md-typeset .thpt-r4-knowledge-module-panel {
+  padding: 9px 0 0;
+}
+body.thpt-r4-topic-knowledge .md-typeset .thpt-r4-knowledge-module-panel > h2 {
+  font-size: 1.03em;
+  margin: 8px 0 14px;
+  font-weight: 700;
+}
+body.thpt-r4-topic-knowledge .md-typeset .thpt-r4-knowledge-subgroup > .thpt-r4-knowledge-subtabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 4px 0 12px;
+}
+body.thpt-r4-topic-knowledge .md-typeset .thpt-r4-knowledge-subgroup .thpt-r4-knowledge-tab {
+  /* Same component as first-level semantic tab, never a smaller tab */
+  font-size: var(--thpt-knowledge-tab-font-size);
+  font-weight: var(--thpt-knowledge-tab-font-weight);
+  color: var(--md-default-fg-color);
+}
+body.thpt-r4-topic-knowledge .md-typeset .thpt-r4-knowledge-content-panel {
+  font-size: inherit;
+  font-family: inherit;
+  line-height: var(--thpt-knowledge-prose-line-height);
+  color: inherit;
+  padding: 8px 0;
+}
+body.thpt-r4-topic-knowledge .md-typeset .thpt-r4-knowledge-content-panel h3 {
+  font-size: 1.05em;
+  font-weight: 700;
+  margin: 9px 0;
+}
+body.thpt-r4-topic-knowledge .md-typeset .thpt-r4-knowledge-content-panel p {
+  font: inherit;
+  color: inherit;
+}
+@media(max-width:600px) {
+  body.thpt-r4-topic-knowledge .md-typeset .thpt-r4-knowledge-modules {
+    display: grid;
+    grid-template-columns: repeat(2,minmax(0,1fr));
+  }
+  body.thpt-r4-topic-knowledge .md-typeset .thpt-r4-knowledge-subgroup > .thpt-r4-knowledge-subtabs {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  body.thpt-r4-topic-knowledge .md-typeset .thpt-r4-knowledge-subtabs > button {
+    flex: 1 1 auto;
+    min-width: 0;
+  }
+}
