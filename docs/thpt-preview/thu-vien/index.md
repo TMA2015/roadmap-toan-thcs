@@ -27,4 +27,4 @@ Em có thể **tự giải một bài toán** hoặc **xem một bài mẫu đ�
 4. Nếu cần, theo link trở về Kiến thức hoặc Luyện tập.
 
 !!! info "Bản mẫu R4"
-    Bài tập hiện chỉ để kiểm tra cấu trúc và hành vi. Chưa có thư viện SGK/SBT được phê duyệt; chưa ghi điểm hay tiến độ.
+    Hai bài tự luận mẫu của Bài 16 đã đạt review học thuật R4 Postfix; thư viện hiện vẫn là bản thử nghiệm giao diện, chưa phải kho SGK/SBT hoàn chỉnh và không ghi điểm hoặc tiến độ.
