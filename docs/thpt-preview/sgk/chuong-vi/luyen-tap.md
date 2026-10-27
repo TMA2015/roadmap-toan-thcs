@@ -6,8 +6,7 @@
 <nav class="thpt-r4-lesson-tabs" aria-label="Các hoạt động chính của Chương VI">
 <a href="../">Tổng quan chương</a>
 <span class="is-current" aria-current="page">Luyện tập / Vận dụng</span>
-<a href="../bai-tap-cuoi-chuong/">Bài tập cuối chương (nháp)</a>
-<a href="../tu-kiem-tra-chuong/">Tự kiểm tra cuối chương (demo)</a>
+ <a href="../tu-kiem-tra-chuong/">Tự kiểm tra cuối chương (demo)</a>
 </nav></div>
 
 !!! warning "Trạng thái học liệu"
@@ -26,7 +25,7 @@
 
 ## Luyện tập tổng hợp, vận dụng cuối chương
 
-[Bài tập cuối Chương VI (8 bài nháp, có đáp án tự mở)](bai-tap-cuoi-chuong.md)
+**Bài tập cuối chương là nhóm bài luyện tổng hợp**, không phải phần học hoặc chế độ đánh giá thứ ba. [Mở 8 bài luyện tập tổng hợp (bản nháp, có lời giải tự mở)](bai-tap-cuoi-chuong.md)
 
 Các bài cuối chương được nhóm theo hàm số/tập xác định, parabol, dấu tam thức, phương trình căn và mô hình hóa. Người học tự giải trước, chỉ mở lời giải sau; những câu này **không phải** bộ Tự kiểm tra độc lập.
 
