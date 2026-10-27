@@ -203,10 +203,18 @@
     // Require explicit non-credit QA scope before binding the two-question demonstration.
     if(area.dataset.demoScope!=="TECHNICAL_DEMO_ONLY"||area.dataset.masteryCredit!=="false")return;
     area.dataset.thptR4Bound="1";
-    const queries=[
-     {prompt:"Cho y = (x − 4)² + 2. Tung độ đỉnh là bao nhiêu?",opts:["4","2","−4"],key:1,reason:"Đỉnh I(4;2), tung độ là 2."},
-     {prompt:"Cho y = −(x − 1)² + 5. Giá trị lớn nhất bằng bao nhiêu?",opts:["1","−5","5"],key:2,reason:"Hệ số bình phương âm, GTLN bằng 5 tại x = 1."}
+    const chapterQuestions=[
+      {prompt:"Bài 15 · Hàm f(x) = √(x − 2) xác định với những x nào?",opts:["x ≤ 2","x ≥ 2","mọi x thực"],key:1,reason:"Biểu thức dưới căn không âm khi x − 2 ≥ 0, nên x ≥ 2."},
+      {prompt:"Bài 16 · Hàm y = (x − 3)² + 1 có hoành độ đỉnh bằng bao nhiêu?",opts:["−3","3","1"],key:1,reason:"Dạng y = (x − h)² + k cho hoành độ đỉnh h = 3."},
+      {prompt:"Bài 17 · Giải bất phương trình (x − 1)(x − 4) < 0.",opts:["x < 1 hoặc x > 4","[1;4]","1 < x < 4"],key:2,reason:"Tam thức có hệ số đầu dương, âm giữa hai nghiệm: (1;4)."},
+      {prompt:"Bài 18 · Nghiệm của phương trình √(x + 6) = x là bao nhiêu?",opts:["3","−2 và 3","−2"],key:0,reason:"Cần x ≥ 0. Bình phương cho x² − x − 6 = 0, nghiệm ứng viên 3 và −2; chỉ x = 3 thỏa phương trình gốc."}
     ];
+    const topicQuestions=[
+      {prompt:"Cho y = (x − 4)² + 2. Tung độ đỉnh là bao nhiêu?",opts:["4","2","−4"],key:1,reason:"Đỉnh I(4;2), tung độ là 2."},
+      {prompt:"Cho y = −(x − 1)² + 5. Giá trị lớn nhất bằng bao nhiêu?",opts:["1","−5","5"],key:2,reason:"Hệ số bình phương âm, GTLN bằng 5 tại x = 1."}
+    ];
+    const isChapter=area.dataset.thptAssessment==="sgk-chapter";
+    const queries=isChapter?chapterQuestions:topicQuestions;
     let at=0,answers=queries.map(()=>null),finalized=false;
     const form=area.querySelector("form"),holder=area.querySelector("[data-thpt-question]"),info=area.querySelector("[data-thpt-progress]"),result=area.querySelector("[data-thpt-feedback]"),reveal=area.querySelector("[data-thpt-solution]"),prev=area.querySelector("[data-thpt-previous]"),next=area.querySelector("[data-thpt-next]"),submit=area.querySelector("[data-thpt-final]");
     if(!form||!holder||!info||!result||!reveal||!prev||!next||!submit)return;
@@ -229,7 +237,7 @@
     next.addEventListener("click",()=>{if(at<queries.length-1){at++;redraw()}});
     form.addEventListener("submit",event=>{
      event.preventDefault();if(finalized)return;
-     if(answers.some(x=>x===null)){result.textContent="Hãy hoàn thành cả hai câu trước khi Final Submit. Có thể dùng Previous/Next để quay lại sửa.";return}
+     if(answers.some(x=>x===null)){result.textContent="Hãy hoàn thành tất cả các câu trước khi Final Submit. Có thể dùng Previous/Next để quay lại sửa.";return}
      finalized=true;
      const score=queries.reduce((n,q,i)=>n+(answers[i]===q.key?1:0),0);
      result.textContent="Kết quả Demo kỹ thuật (không tính tiến độ): "+score+" / "+queries.length+". Lời giải chỉ hiện sau lần nộp này.";
