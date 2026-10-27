@@ -4,10 +4,10 @@
 <p class="thpt-r4-eyebrow">TOÁN 10 · SGK KNTT · CHƯƠNG VI</p>
 <p class="thpt-r4-lead">Đây là **đầu mối luyện tập/vận dụng của nhánh SGK**, khác với luyện tập theo dạng bài và cấp độ xuyên chương của Chuyên đề. Tập hợp các bài theo đúng thứ tự SGK để học sinh tự học trọn vẹn một chương.</p>
 <nav class="thpt-r4-lesson-tabs" aria-label="Các hoạt động chính của Chương VI">
-<a href="../chuong-vi/">Tổng quan chương</a>
+<a href="../">Tổng quan chương</a>
 <span class="is-current" aria-current="page">Luyện tập / Vận dụng</span>
-<a href="bai-tap-cuoi-chuong/">Bài tập cuối chương (nháp)</a>
-<a href="tu-kiem-tra-chuong/">Tự kiểm tra cuối chương (demo)</a>
+<a href="../bai-tap-cuoi-chuong/">Bài tập cuối chương (nháp)</a>
+<a href="../tu-kiem-tra-chuong/">Tự kiểm tra cuối chương (demo)</a>
 </nav></div>
 
 !!! warning "Trạng thái học liệu"
