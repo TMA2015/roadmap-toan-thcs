@@ -176,6 +176,12 @@ async function ready(page,path){
   await exerciseModal.locator('[data-thpt-practice] input[value="1,3"]').waitFor();
   assert((await exerciseModal.locator("[data-thpt-practice]").count())===1,"Practice modal must import unchanged topic practice source");
   await exerciseModal.locator("[data-thpt-modal-close]").click();
+  await page.locator('[data-thpt-open-quiz="b17-practice"]').click();
+  await exerciseModal.locator(".thpt-r4-modal-cumulative-button").click();
+  await exerciseModal.locator(".thpt-r4-modal-cumulative-item").first().waitFor();
+  assert((await exerciseModal.locator(".thpt-r4-modal-cumulative-item").count())===3,"B17 Practice modal must include A3/A4/B4 from one cumulative source");
+  assert(await exerciseModal.locator(".thpt-r4-modal-cumulative-item").first().locator("details").isVisible(),"Cumulative practice solution must be learner-openable");
+  await exerciseModal.locator("[data-thpt-modal-close]").click();
   assert.equal(page.url(),currentPracticeRoute,"Modal interactions unexpectedly navigated away");
   await ready(page,"sgk/chuong-vi/tu-kiem-tra-chuong/");
   const chapterReady=page.locator('[data-thpt-assessment="sgk-chapter"][data-thpt-readiness]');
