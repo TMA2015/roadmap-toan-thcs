@@ -1,7 +1,7 @@
 # Toán THPT R4 — Adaptive Knowledge Tabs v2.0 · Two-Level Knowledge Navigation
 
 **Ngày chốt nguyên tắc:** 27/10/2026  
-**Trạng thái:** Owner APPROVED — kiến trúc tab; đang QA giao diện thực tế.  
+**Trạng thái:** **GOLDEN_UI_DESIGN_LOCKED — OWNER PASS**; file HTML v3 đã được chủ dự án kiểm tra và xác nhận PASS ngày 27/10/2026. Kiểm thử bản MkDocs trên thiết bị thực tế và phát hành vẫn là cổng khác.  
 **Phạm vi:** Trình bày phần Kiến thức trong chuyên đề Toán THPT lớp 10–12.  
 **Supersedes:** `THPT_R4_ADAPTIVE_KNOWLEDGE_TABS_OWNER_CONTRACT_v1.0.md` ở phần đề xuất không có tab lồng nhau.  
 **Loại thay đổi:** DELTA_A_UI, không bổ sung học liệu hoặc sửa nội dung toán Bài 16 đã Academic PASS.
@@ -57,7 +57,7 @@ Tab nội dung trực tiếp của chuyên đề **một mảng** và tab nội 
 ## 5. Cổng phát hành
 
 **ACADEMIC_B16:** PASS theo biên bản NotebookLM R4 Postfix; vẫn chỉ giới hạn Bài 16 và 5 item.  
-**TWO_LEVEL_GOLDEN_UI:** Chủ dự án đã phê duyệt nguyên tắc, còn chờ nghiệm thu HTML v3 nếu có yêu cầu hiệu chỉnh.  
+**TWO_LEVEL_GOLDEN_UI:** **OWNER HTML v3 PASS; DESIGN LOCKED** (ghi nhận trong `THPT_R4_GOLDEN_UI_OWNER_DESIGN_LOCK_20261027.md`).  
 **REVIEW_NOTEBOOKLM:** NOT_REQUIRED (DELTA_A_UI, không thay đổi toán học).  
 **PR_RELEASE:** Chưa được cho phép merge/deploy; phải qua owner acceptance riêng.
 
