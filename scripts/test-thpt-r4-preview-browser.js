@@ -110,7 +110,8 @@ async function ready(page,path){
   assert(await page.locator('a.library-topic-tile[href="ham-so/kien-thuc/"]').isVisible(),"Topic search did not restore sample");
 
   function canonical(href,currentUrl){
-   return new URL(href,currentUrl).pathname.replace(/index\\.html$/,"").replace(/\\/$/,"");
+   const pathname=new URL(href,currentUrl).pathname;
+   return pathname.endsWith("/")?pathname.slice(0,-1):pathname;
   }
   const expectedCore="/thpt-preview/chuyen-de/ham-so/core";
   await ready(page,"sgk/core/");
