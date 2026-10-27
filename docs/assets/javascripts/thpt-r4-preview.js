@@ -230,6 +230,53 @@
    footer.append(prev,next);modalBody.append(progress,numbers,question,footer);
    render();
   };
+
+  // Cumulative exercises remain one backing source, assigned to eligible
+  // lesson Practice modals instead of a separate chapter page/menu.
+  const cumulativeSections={"15":["A1"],"16":["A2","B3"],"17":["A3","A4","B4"],"18":["B1","B2"]};
+  const attachCumulative=lesson=>{
+   const footer=document.createElement("div");
+   footer.className="thpt-r4-modal-cumulative";
+   const button=document.createElement("button");
+   button.type="button";button.className="thpt-r4-modal-cumulative-button";
+   button.textContent="Bài vận dụng tổng hợp của Bài "+lesson+" (nháp)";
+   button.setAttribute("aria-expanded","false");
+   const holder=document.createElement("div");holder.hidden=true;
+   holder.className="thpt-r4-modal-cumulative-pane";
+   button.addEventListener("click",async()=>{
+    const visible=button.getAttribute("aria-expanded")==="true";
+    if(visible){holder.hidden=true;button.setAttribute("aria-expanded","false");return}
+    if(!holder.dataset.loaded){
+     holder.textContent="Đang lấy bài tổng hợp từ nguồn học liệu chương…";
+     try{
+      const response=await fetch(new URL("../bai-tap-cuoi-chuong/",location.href),{credentials:"same-origin"});
+      if(!response.ok)throw Error("HTTP "+response.status);
+      const doc=new DOMParser().parseFromString(await response.text(),"text/html");
+      const heads=[...doc.querySelectorAll("article h3")];
+      holder.replaceChildren();
+      for(const key of cumulativeSections[lesson]){
+       const h=heads.find(x=>x.textContent.trim().startsWith(key+"."));
+       if(!h)continue;
+       const section=document.createElement("section");
+       section.className="thpt-r4-modal-cumulative-item";
+       section.append(h.cloneNode(true));
+       let next=h.nextElementSibling;
+       while(next&&!/^H[23]$/.test(next.tagName)){
+        section.append(next.cloneNode(true));
+        next=next.nextElementSibling;
+       }
+       holder.append(section);
+      }
+      if(!holder.children.length)throw Error("No matching source problems");
+      holder.dataset.loaded="1";
+      if(window.MathJax?.typesetPromise)window.MathJax.typesetPromise([holder]).catch(()=>{});
+     }catch(error){holder.textContent="Không tải được bài tổng hợp. Bạn vẫn có thể mở nhóm bài nguồn từ trang Chương VI sau khi kết nối được bản preview."}
+    }
+    holder.hidden=false;button.setAttribute("aria-expanded","true");
+   });
+   footer.append(button,holder);modalBody.append(footer);
+  };
+
   root.querySelectorAll("[data-thpt-open-quiz]").forEach(button=>{
    button.addEventListener("click",async()=>{
     returnFocus=button;
@@ -238,7 +285,7 @@
     const lesson=parts[1],role=parts[2]==="core"?"Core":"Luyện tập";
     modalTitle.textContent=role+" · Bài "+lesson+". "+lessonTitle[lesson];
     modalBody.textContent="Đang mở nội dung…";dlg.showModal();
-    if(demoSets[id]){showDemo(demoSets[id]);return}
+    if(demoSets[id]){showDemo(demoSets[id]);if(parts[2]==="practice")attachCumulative(lesson);return}
     try{
      // Import exact canonical source, not a separately copied answer key.
      const [relative,selector]=src[id];
@@ -253,6 +300,7 @@
      modalBody.append(meta,source.cloneNode(true));
      // Existing R4 exercise handler binds the imported card once.
      init();
+     if(parts[2]==="practice")attachCumulative(lesson);
      if(window.MathJax?.typesetPromise)window.MathJax.typesetPromise([modalBody]).catch(()=>{});
     }catch(error){
      modalBody.textContent="Chưa thể tải bài mẫu. Hãy mở bản MkDocs Preview với máy chủ trang đầy đủ hoặc kiểm tra đường dẫn nguồn.";
