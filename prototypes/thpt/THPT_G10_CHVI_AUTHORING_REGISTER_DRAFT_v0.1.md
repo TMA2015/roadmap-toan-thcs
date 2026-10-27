@@ -1,3 +1,5 @@
+> **KIẾN TRÚC ĐÃ ĐƯỢC OWNER ĐIỀU CHỈNH (27/10/2026):** SGK B15–18 cần Core, Practice và **Chapter Readiness** cuối Chương VI. Chuyên đề gồm **Kiến thức / Luyện tập / Tự kiểm tra**, không có Topic Core page. Thư viện Core SGK có `THPT-CORE-QF01` tại `docs/thpt-preview/sgk/core/ham-so-bac-hai.md`. Bài tập canonical chia sẻ bằng placement; file này là sổ nháp, không tự nâng thành academic PASS. Xem `THPT_DUAL_COMPLETE_PATHS_SHARED_ITEMS_OWNER_CONTRACT_v2.0.md`.
+
 # Toán 10 · Chương VI — Authoring Register v0.1
 
 **Ngày:** 27/10/2026  
