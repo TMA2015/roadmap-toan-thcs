@@ -1,3 +1,5 @@
+> **UPDATE 27/10/2026 — Dual Complete Paths v2:** Đây là preflight SGK theo CHƯƠNG, kết thúc bằng `SGK_CHAPTER_READINESS`, **không thay Topic Readiness**. Chuyên đề Hàm số sau này cần kiến thức đầy đủ trục dọc và đúng 3 phần Kiến thức/Luyện tập/Tự kiểm tra; Core chỉ thuộc SGK nhưng canonical item có thể dùng lại trong Practice cơ bản. Dùng `THPT_DUAL_COMPLETE_PATHS_SHARED_ITEMS_OWNER_CONTRACT_v2.0.md` làm chuẩn khi bản dưới còn ghi khác.
+
 # Toán THPT · Chương VI — Batch authoring preflight v0.2
 
 **Ngày:** 2026-10-27  
