@@ -21,4 +21,4 @@
 
 Khi đánh giá thực tế, học sinh cần thể hiện năng lực đọc dạng hàm bậc hai, xác định đỉnh/trục, nhận xét chiều mở và vận dụng giải dạng bài. **Hai câu Demo này không đủ làm chuẩn kết luận thành thạo một chuyên đề**; bộ Readiness chính thức phải được kiểm duyệt SGK/SBT và thiết kế đủ các kỹ năng.
 
-[Ôn lại Kiến thức](../kien-thuc.md) · [Luyện tập có gợi ý](../luyen-tap.md).
+[Ôn lại Kiến thức](kien-thuc.md) · [Luyện tập có gợi ý](luyen-tap.md).
