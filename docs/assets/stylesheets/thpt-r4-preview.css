@@ -265,3 +265,58 @@ body[data-md-color-scheme="slate"] .thpt-r4-practice-class{color:#b5c6e1!importa
 .thpt-r4-modal-cumulative-item{border:1px solid var(--md-default-fg-color--lightest);padding:13px 15px;border-radius:10px}
 .thpt-r4-modal-cumulative-item h3{font-size:1.03rem!important;margin:0 0 10px!important}
 .thpt-r4-modal-cumulative-item details{background:var(--md-code-bg-color);padding:8px 10px;border-radius:8px}
+
+
+/* THPT-only information architecture: left menu collapsible at each nested
+   level; default-closed groups with accessible per-group disclosure buttons. */
+body.thpt-r4-route .md-sidebar--primary .thpt-r4-collapsible{
+  position:relative;
+}
+body.thpt-r4-route .md-sidebar--primary .thpt-r4-collapsible > .md-nav__link{
+  padding-right:2.3rem;
+}
+body.thpt-r4-route .md-sidebar--primary .thpt-r4-collapsible > .md-nav__link .md-nav__icon{
+  display:none!important;
+}
+body.thpt-r4-route .md-sidebar--primary .thpt-r4-collapsible > .md-nav[hidden]{
+  display:none!important;
+}
+body.thpt-r4-route .md-sidebar--primary .thpt-r4-sidebar-toggle{
+  position:absolute;
+  z-index:2;
+  top:.12rem;
+  right:.2rem;
+  display:grid;
+  place-items:center;
+  width:1.7rem;
+  height:1.7rem;
+  min-width:38px;
+  min-height:38px;
+  background:transparent;
+  color:var(--md-default-fg-color);
+  border:1px solid transparent;
+  border-radius:7px;
+  font-size:1.1rem;
+  cursor:pointer;
+}
+body.thpt-r4-route .md-sidebar--primary .thpt-r4-sidebar-toggle:hover,
+body.thpt-r4-route .md-sidebar--primary .thpt-r4-sidebar-toggle:focus-visible{
+  border-color:var(--md-accent-fg-color);
+  background:var(--md-code-bg-color);
+  outline-offset:2px;
+}
+/* Home is a clean choice screen: only top bar and five action tiles. */
+body.thpt-r4-home .md-sidebar--primary{
+  display:none!important;
+}
+body.thpt-r4-home .md-main__inner{
+  justify-content:center;
+}
+.thpt-r4-lesson-core-entry{
+  max-width:32rem;
+  margin:12px 0 20px;
+}
+.thpt-r4-lesson-core-entry .thpt-r4-practice-open{
+  width:auto;
+  min-width:min(100%,18rem);
+}
