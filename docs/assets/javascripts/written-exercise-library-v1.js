@@ -1,6 +1,6 @@
 (() => {
   "use strict";
-  const base=()=>location.pathname.startsWith("/roadmap-toan-thcs/")?"/roadmap-toan-thcs/":"/";
+  const base=()=>{const m=location.pathname.match(/^\/(roadmap-toan-thcs|self-learning-math)\//);return m?"/"+m[1]+"/":"/";};
   const el=(tag,cls,text)=>{const n=document.createElement(tag);if(cls)n.className=cls;if(text!==undefined)n.textContent=text;return n;};
   const renderRich=(root,text)=>{
     if(window.RoadmapRichMath?.render)window.RoadmapRichMath.render(text,root);

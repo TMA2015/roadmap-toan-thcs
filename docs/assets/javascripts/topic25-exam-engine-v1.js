@@ -4,7 +4,8 @@
   const route = location.pathname.match(/(?:^|\/)kien-thuc\/25-tong-hop-on-thi-10\/de-luyen-(0[1-3])\/(?:index\.html)?$/);
   if (!route) return;
   const no = route[1];
-  const prefix = location.pathname.startsWith("/roadmap-toan-thcs/") ? "/roadmap-toan-thcs/" : "/";
+  const projectPrefix = location.pathname.match(/^\/(roadmap-toan-thcs|self-learning-math)\//);
+  const prefix = projectPrefix ? "/" + projectPrefix[1] + "/" : "/";
   const storageKey = "roadmap:exam-v1:EXAM25-" + no;
   const historyKey = "roadmap:exam-history-v1";
   const create = (tag, className, label) => {

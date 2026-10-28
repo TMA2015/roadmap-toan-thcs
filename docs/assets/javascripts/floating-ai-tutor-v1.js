@@ -1,17 +1,25 @@
 (() => {
   "use strict";
 
-  // Read-only teaching surfaces: topic lessons plus the Topic 25 anchor library.
-  // Never mount on practice, self-checks, timed mocks or answer keys.
+  // Same Gemini Tutor for THCS and THPT reading pages. Do not mount during
+  // practice, Readiness, final submission, or on answer-library pages.
+  const currentPath = () => location.pathname.replace(/\/index\.html$/, "/");
+  const isTHPTReadingPage = () =>
+    /^\/(?:(?:roadmap-toan-thcs|self-learning-math)\/)?(?:thpt-preview|thpt)\/(?:sgk\/chuong-[^/]+\/bai-\d+|chuyen-de\/[^/]+\/kien-thuc)\/$/.test(currentPath());
   const isReadingPage = () => {
+    // Keep this function self-contained: THCS route contract tests run it alone.
     const path = location.pathname.replace(/\/index\.html$/, "/");
-    if (/^\/(?:roadmap-toan-thcs\/)?kien-thuc\/[^/]+\/$/.test(path)) return true;
-    return /^\/(?:roadmap-toan-thcs\/)?kien-thuc\/25-tong-hop-on-thi-10\/(?:bai-toan-kinh-dien|kho-bai-mo-neo|anchor-25-\d{3})\/$/.test(path);
+    if (/^\/(?:(?:roadmap-toan-thcs|self-learning-math)\/)?(?:thpt-preview|thpt)\/(?:sgk\/chuong-[^/]+\/bai-\d+|chuyen-de\/[^/]+\/kien-thuc)\/$/.test(path)) return true;
+    if (/^\/(?:(?:roadmap-toan-thcs|self-learning-math)\/)?kien-thuc\/[^/]+\/$/.test(path)) return true;
+    return /^\/(?:(?:roadmap-toan-thcs|self-learning-math)\/)?kien-thuc\/25-tong-hop-on-thi-10\/(?:bai-toan-kinh-dien|kho-bai-mo-neo|anchor-25-\d{3})\/$/.test(path);
   };
   const contentRoot = () => document.querySelector(".md-content__inner .md-typeset") || document.querySelector(".md-content__inner");
   const topicSlug = () => {
     const match = location.pathname.match(/\/kien-thuc\/([^/]+)/);
-    return match ? match[1] : "lesson";
+    if (match) return match[1];
+    if (isTHPTReadingPage())
+      return "thpt-" + currentPath().replace(/^.*?\/(?:thpt-preview|thpt)\//, "").replace(/[^a-z0-9]+/gi, "-").replace(/-$/, "");
+    return "lesson";
   };
   const clean = value => String(value || "").replace(/\s+/g, " ").trim();
   const headingLevel = node => /^H[1-6]$/.test(node?.tagName || "") ? Number(node.tagName.slice(1)) : 9;
@@ -89,7 +97,8 @@
     shell.className = "floating-ai";
     shell.dataset.floatingAi = "1";
 
-    const iconSrc = (location.pathname.startsWith("/roadmap-toan-thcs/") ? "/roadmap-toan-thcs/" : "/") + "assets/images/tutor-girl-awake.webp";
+    const projectPrefix = location.pathname.match(/^\/(roadmap-toan-thcs|self-learning-math)\//);
+    const iconSrc = (projectPrefix ? "/" + projectPrefix[1] + "/" : "/") + "assets/images/tutor-girl-awake.webp";
     const launcher = button("", "floating-ai-launcher");
     const face = document.createElement("img");
     face.className = "floating-ai-face";
@@ -125,7 +134,7 @@
     const quick = document.createElement("div");
     quick.className = "floating-ai-quick";
     [
-      ["Giải thích dễ hơn", "Hãy giải thích đoạn kiến thức này bằng ngôn ngữ đơn giản hơn, từng ý ngắn, phù hợp học sinh THCS. Nêu trực giác trước rồi mới dùng công thức."],
+      ["Giải thích dễ hơn", "Hãy giải thích đoạn kiến thức này bằng ngôn ngữ đơn giản hơn, từng ý ngắn, phù hợp học sinh " + (isTHPTReadingPage() ? "THPT" : "THCS") + ". Nêu trực giác trước rồi mới dùng công thức."],
       ["Cho ví dụ khác", "Hãy cho một ví dụ mới, đơn giản và khác ví dụ trên trang, giải thích từng bước để em thấy kiến thức này được dùng như thế nào."],
       ["Vì sao lại đúng?", "Hãy giải thích vì sao kiến thức hoặc quy tắc trong đoạn này đúng. Ưu tiên lập luận trực quan rồi mới trình bày toán học."],
       ["Em cần nhớ gì?", "Hãy tóm tắt đúng phần cốt lõi của đoạn này thành 3-5 ý cần nhớ và chỉ ra một lỗi học sinh thường mắc."]
@@ -186,14 +195,16 @@
       waiting.textContent = "Gemini đang đọc đúng phần này và chuẩn bị giải thích…";
       answer.appendChild(waiting);
       try {
+        const lessonLayer = isTHPTReadingPage() ? "THPT-SGK-KNTT" : "KNTT-Core";
         const question = {
           id: "lesson-" + topicSlug(),
           question: "ĐOẠN KIẾN THỨC ĐANG ĐỌC\nTrang: " + page.title + "\nMục: " + page.section + "\n\n" + page.text,
-          tags: { layer: "KNTT-Core", skill: ["reading-" + topicSlug()] }
+          tags: { layer: lessonLayer, skill: ["reading-" + topicSlug()] }
         };
         const context = window.RoadmapTutor.buildContext({
           projectContextVersion: "1.0.17",
-          layer: "KNTT-Core",
+          layer: lessonLayer,
+          gradeOverlay: isTHPTReadingPage() && /\/sgk\//.test(currentPath()) ? 10 : null,
           skill: "reading-" + topicSlug(),
           question,
           learnerRequest: questionText,

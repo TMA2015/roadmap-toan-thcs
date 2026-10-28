@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>G Learning · Toán 10 — Hàm số bậc hai (Pilot R1)</title>
+<style>
+:root{color-scheme:light;--bg:#f2f5fb;--surface:#fff;--soft:#f5f8fe;--ink:#18243c;--sub:#536078;--line:#dce4f1;--accent:#3654bd;--teal:#087c6e;--warn-bg:#fff8ed;--warn:#775316;--plot:#3157b7}
+html[data-theme=dark]{color-scheme:dark;--bg:#101827;--surface:#202c43;--soft:#172238;--ink:#f0f4ff;--sub:#c2cee0;--line:#41506a;--accent:#acc2ff;--teal:#75e1c4;--warn-bg:#423522;--warn:#ffdd96;--plot:#a8bcff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.68 system-ui,-apple-system,"Segoe UI",sans-serif}
+a{color:var(--accent)}button{font:inherit;cursor:pointer}button:focus-visible,a:focus-visible,summary:focus-visible{outline:3px solid var(--teal);outline-offset:3px}.bar{position:sticky;top:0;z-index:5;background:var(--surface);border-bottom:1px solid var(--line)}
+.wrap{width:min(990px,calc(100% - 36px));margin:auto}.bar .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:62px}.brand{font-weight:800;color:var(--ink);text-decoration:none}.brand span{color:var(--teal)}
+.action{padding:9px 15px;min-height:44px;border:1px solid var(--line);background:var(--soft);color:var(--ink);border-radius:10px}
+main{padding:26px 0 68px}.status{font-size:14px;padding:12px 15px;border:1px solid var(--line);background:var(--surface);border-radius:12px;color:var(--sub);margin:0 0 28px}
+.status strong{color:var(--ink)}.lesson{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:32px 38px}.crumb{color:var(--sub);font-size:14px;margin:0 0 12px}
+h1,h2,h3,p{margin-top:0}h1{font-size:clamp(27px,3.2vw,35px);line-height:1.25;letter-spacing:-.03em;margin-bottom:10px}
+h2{font-size:23px;line-height:1.3;margin:29px 0 17px}h3{font-size:19px;line-height:1.4;margin-bottom:10px}.intro{color:var(--sub);max-width:760px}.objectives{padding:14px 18px;border-left:4px solid var(--teal);background:var(--soft);border-radius:0 12px 12px 0;margin:21px 0 25px}
+.objectives p{margin:5px 0 0}.pills{display:flex;gap:9px;flex-wrap:wrap;margin-bottom:10px}.pill{padding:6px 12px;border:1px solid var(--line);background:var(--soft);border-radius:9px;font-size:14px;font-weight:650}
+.two{display:grid;grid-template-columns:1fr 1.13fr;gap:18px;align-items:start}.panel{border:1px solid var(--line);border-radius:14px;padding:20px;min-width:0}.panel p{font-size:16px}.formula{background:var(--soft);border-radius:9px;padding:13px 10px;text-align:center;font-size:22px;overflow-x:auto;white-space:nowrap}
+.muted{color:var(--sub);font-size:14px!important}.graph{padding:10px}.graph svg{width:100%;height:auto;display:block}.axis{stroke:var(--ink);stroke-width:1.7}.gridline{stroke:var(--line)}.curve{stroke:var(--plot);stroke-width:3.5;fill:none;stroke-linecap:round;stroke-linejoin:round}.mark{fill:var(--teal)}svg text{fill:var(--ink);font:14px system-ui}.graph figcaption{color:var(--sub);font-size:14px;padding:4px 10px 8px}
+.steps{background:var(--soft);border-radius:14px;padding:20px}.steps p{margin-bottom:13px}.step{padding:12px 0;border-bottom:1px solid var(--line)}.step:last-child{border-bottom:0}
+.warning{border-left:4px solid var(--warn);background:var(--warn-bg);border-radius:0 10px 10px 0;padding:13px 17px;margin-top:16px}.warning p{margin:3px 0 0}
+.choice-row{display:flex;gap:10px;flex-wrap:wrap}.choice{padding:9px 17px;min-height:44px;border:1px solid var(--line);border-radius:10px;background:var(--soft);color:var(--ink)}.choice[aria-pressed=true]{outline:2px solid var(--accent);border-color:var(--accent)}
+.primary{background:var(--accent);color:var(--surface);border:0;border-radius:10px;padding:11px 19px;min-height:44px;font-weight:750;margin-top:15px}html[data-theme=dark] .primary{color:#18243c}
+.result{min-height:28px;margin-top:13px}details{margin-top:15px;color:var(--sub)}summary{cursor:pointer;min-height:44px}footer{color:var(--sub);font-size:14px;margin-top:23px}
+@media(max-width:740px){.lesson{padding:25px 19px}.two{grid-template-columns:1fr}.wrap{width:min(100% - 24px,990px)}h2{font-size:21px}}@media(max-width:450px){body{font-size:16px}.formula{font-size:19px}.panel{padding:16px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style></head><body>
+<header class="bar"><div class="wrap"><a class="brand" href="#top">G <span>Learning</span> / Math</a><button class="action" id="theme" type="button" aria-label="Chuyển chế độ sáng hoặc tối">Sáng / Tối</button></div></header>
+<main class="wrap" id="top"><div class="status" role="note"><strong>Toán THPT · Bản mẫu R1</strong> — Chỉ kiểm tra thiết kế. Chưa được NotebookLM duyệt học thuật; không lưu điểm, không kết nối ngân hàng câu hỏi hay dữ liệu học sinh.</div>
+<article class="lesson">
+<div class="crumb">Toán THPT › Lớp 10 › Chương VI › Bài 16</div>
+<h1>Hàm số bậc hai</h1>
+<p class="intro">Từ biểu thức đại số đến đồ thị parabol: xác định đỉnh, trục đối xứng và giá trị lớn nhất/nhỏ nhất khi thích hợp.</p>
+<div class="objectives"><strong>Học xong phần mẫu này, em có thể:</strong><p>Nhận dạng hàm số bậc hai · tìm đỉnh và trục đối xứng · giải thích vì sao parabol mở lên hoặc xuống.</p></div>
+<div class="pills"><span class="pill">📖 Kiến thức</span><span class="pill">✏️ Ví dụ mẫu</span><span class="pill">✓ Micro có gợi ý</span></div>
+<h2>1. Kiến thức cốt lõi</h2><div class="two">
+<section class="panel"><h3>Nhận dạng và điều kiện</h3><p>Hàm số bậc hai có dạng:</p><div class="formula" aria-label="y bằng a x bình phương cộng b x cộng c">y = ax<sup>2</sup> + bx + c</div>
+<p>Với <strong>a ≠ 0</strong>, a, b, c là các số thực; tập xác định là ℝ.</p><p>Đưa về dạng đỉnh:</p>
+<div class="formula">y = a(x − h)<sup>2</sup> + k</div><p>Đỉnh <strong>I(h; k)</strong>, trục đối xứng <strong>x = h</strong>. Nếu a &gt; 0 đồ thị mở lên; a &lt; 0 đồ thị mở xuống.</p>
+<p class="muted">Để học đầy đủ Bài 16, NotebookLM còn phải xác minh yêu cầu về biến thiên và miền giá trị theo SGK.</p></section>
+<figure class="panel graph"><svg viewBox="0 0 540 360" role="img" aria-labelledby="graph-title graph-desc"><title id="graph-title">Đồ thị y bằng x bình phương trừ 4x cộng 3</title><desc id="graph-desc">Parabol mở lên, đỉnh I(2;-1), trục đối xứng x bằng 2, cắt trục hoành tại 1 và 3, cắt trục tung tại 3.</desc>
+<g id="plot-grid"></g><line x1="85" y1="252" x2="510" y2="252" class="axis"/><line x1="152" y1="327" x2="152" y2="22" class="axis"/><line x1="286" y1="30" x2="286" y2="327" stroke="var(--teal)" stroke-width="1.6" stroke-dasharray="6 6"/>
+<polyline id="parabola" class="curve"/><circle cx="286" cy="288" r="5" class="mark"/><text x="296" y="308">I(2;−1)</text><text x="510" y="244">x</text><text x="160" y="22">y</text><text x="287" y="348" text-anchor="middle">x = 2</text></svg>
+<figcaption>Đồ thị của y = (x − 2)<sup>2</sup> − 1. Trục x = 2, đỉnh I(2; −1); cắt trục Ox tại x = 1 và x = 3.</figcaption></figure>
+</div>
+<h2>2. Ví dụ mẫu từng bước</h2><div class="steps"><h3>Tìm đỉnh: y = x<sup>2</sup> − 4x + 3</h3><div class="step"><strong>Bước 1 — Hoàn thành bình phương</strong><p>x<sup>2</sup> − 4x + 3 = (x − 2)<sup>2</sup> − 1.</p></div><div class="step"><strong>Bước 2 — Đọc dạng đỉnh</strong><p>a = 1, h = 2, k = −1. Vậy trục đối xứng là x = 2.</p></div><div class="step"><strong>Kết luận</strong><p>Đỉnh I(2; −1); đồ thị mở lên nên giá trị nhỏ nhất của hàm số là −1.</p></div></div>
+<aside class="warning"><strong>Lỗi thường gặp</strong><p>Thấy (x − 2)<sup>2</sup> rồi đọc hoành độ đỉnh là −2. Đúng là <strong>+2</strong> vì dạng chuẩn chứa (x − h).</p></aside>
+<h2>3. Micro — Thử một câu</h2>
+<section class="panel"><h3>Với y = (x + 3)<sup>2</sup> − 5, hoành độ đỉnh bằng bao nhiêu?</h3><p class="muted">Câu thử tương tác; không lưu điểm hay tính vào Readiness.</p>
+<div class="choice-row" role="group" aria-label="Chọn hoành độ đỉnh"><button type="button" class="choice" data-answer="-3" aria-pressed="false">−3</button><button type="button" class="choice" data-answer="3" aria-pressed="false">3</button><button type="button" class="choice" data-answer="-5" aria-pressed="false">−5</button></div>
+<button type="button" class="primary" id="check">Kiểm tra</button><div id="result" class="result" role="status" aria-live="polite"></div>
+<details><summary>Xem gợi ý (tự chọn)</summary>Viết (x + 3)<sup>2</sup> = (x − (−3))<sup>2</sup> rồi so sánh với (x − h)<sup>2</sup>.</details></section>
+<footer>R1 · Một bài mẫu lớp 10 / chưa phát hành · Quy trình tiếp theo: đối chiếu SGK/SBT bằng NotebookLM → sửa nội dung → phụ huynh kiểm tra PC và thiết bị cảm ứng → mới xem xét gộp vào website.</footer>
+</article></main>
+<script>
+(function(){'use strict';var g=document.getElementById('plot-grid'),p=document.getElementById('parabola');
+var X=function(x){return 152+67*x},Y=function(y){return 252-36*y};
+for(var x=-1;x<=5;x++){var l=document.createElementNS('http://www.w3.org/2000/svg','line');l.setAttribute('x1',X(x));l.setAttribute('x2',X(x));l.setAttribute('y1',24);l.setAttribute('y2',327);l.setAttribute('class','gridline');g.appendChild(l)}
+for(var y=-2;y<=6;y++){var l=document.createElementNS('http://www.w3.org/2000/svg','line');l.setAttribute('x1',70);l.setAttribute('x2',512);l.setAttribute('y1',Y(y));l.setAttribute('y2',Y(y));l.setAttribute('class','gridline');g.appendChild(l)}
+var points=[];for(var x=-0.75;x<=4.75;x+=0.04){var y=x*x-4*x+3;if(y>=-2&&y<=6)points.push(X(x).toFixed(2)+','+Y(y).toFixed(2))}p.setAttribute('points',points.join(' '));
+document.getElementById('theme').addEventListener('click',function(){document.documentElement.dataset.theme=document.documentElement.dataset.theme==='dark'?'light':'dark'});
+var picked=null,choices=document.querySelectorAll('.choice');choices.forEach(function(b){b.addEventListener('click',function(){picked=b.dataset.answer;choices.forEach(function(z){z.setAttribute('aria-pressed',String(z===b))});document.getElementById('result').textContent=''})});
+document.getElementById('check').addEventListener('click',function(){document.getElementById('result').textContent=picked===null?'Hãy chọn một đáp án trước.':picked==='-3'?'Đúng. (x + 3) = (x − (−3)), nên h = −3.':'Chưa đúng. Hãy so sánh với dạng (x − h)² + k hoặc xem gợi ý.'});
+})();
+</script></body></html>

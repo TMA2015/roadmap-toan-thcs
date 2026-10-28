@@ -49,7 +49,9 @@ for(let i=0;i<orderedPrimary.length-1;i++){
 }
 ok(yaml.includes("Bản đồ kỹ năng: ban-do-ky-nang/index.md")&&yaml.indexOf("Bản đồ kỹ năng: ban-do-ky-nang/index.md")>yaml.indexOf("  - Thư viện bài tập:"),"skill map is grouped under the exercise library");
 
-ok(nav.includes('dialog.append(heading,main,hint,list)')&&nav.includes('count.textContent = "7 + 25"'),"main groups and topics share one compact header launcher");
+ok(nav.includes('dialog.append(heading,coverNav,main,hint,list)')&&nav.includes('count.textContent = "7 + 25"'),"main groups and topics share one compact header launcher, with a separate programme-cover link");
+ok(nav.includes('coverLink.dataset.mathProgramCoverLink="1"')&&nav.includes('coverLink.href=sitePrefix()+"thpt-preview/"'),"THCS launcher links to level-1 programme cover without changing seven primary groups");
+ok(nav.includes('["Trang chủ THCS", "", "⌂"]'),"THCS home remains an explicit level-2 homepage");
 ok(css.includes(".roadmap-topic-launcher")&&css.includes(".roadmap-topic-dialog__list"),"independent launcher/modal styles");
 ok(css.includes(".roadmap-main-quick__links"),"responsive seven-group grid in the modal");
 ok(!css.includes(".roadmap-mobile-shortcuts")&&!css.includes(".md-sidebar--primary > .md-sidebar__scrollwrap"),"remove all injected/sticky drawer styles");

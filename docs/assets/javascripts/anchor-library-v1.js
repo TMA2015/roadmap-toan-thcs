@@ -1,6 +1,6 @@
 (() => {
   "use strict";
-  const originPrefix=()=>location.pathname.startsWith("/roadmap-toan-thcs/")?"/roadmap-toan-thcs/":"/";
+  const originPrefix=()=>{const m=location.pathname.match(/^\/(roadmap-toan-thcs|self-learning-math)\//);return m?"/"+m[1]+"/":"/";};
   const create=(tag,cls,text)=>{const x=document.createElement(tag);if(cls)x.className=cls;if(text!==undefined)x.textContent=text;return x;};
   const app=()=>document.querySelector("[data-anchor-browser]");
   const init=async()=>{

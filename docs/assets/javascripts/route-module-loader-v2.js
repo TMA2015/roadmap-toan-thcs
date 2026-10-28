@@ -12,12 +12,12 @@
     document.head.appendChild(script);
   };
   const path = location.pathname.replace(/\/index\.html$/, "/");
-  const siteRoot = path.endsWith("/roadmap-toan-thcs/") || path === "/" ? true : false;
+  const siteRoot = path.endsWith("/roadmap-toan-thcs/") || path.endsWith("/self-learning-math/") || path === "/";
   if (siteRoot) {
     load("study-scene-v1.js");
     load("home-orientation-slider-v1.js");
   }
-  if (/\/(?:roadmap-toan-thcs\/)?hoc-theo-lop\/$/.test(path)) load("class-learning-v1.js");
+  if (/\/(?:(?:roadmap-toan-thcs|self-learning-math)\/)?hoc-theo-lop\/$/.test(path)) load("class-learning-v1.js");
   if (document.querySelector("[data-anchor-browser]")) load("anchor-library-v1.js");
   if (document.querySelector("[data-model-examples-library]")) load("model-examples-library-v1.js");
   if (/\/kien-thuc\/(?:03-ti-le-ti-le-thuc|22-dai-luong-dac-trung)\/bai-tap\/$/.test(path)) load("practice-level-focus-pilot-v1.js");
