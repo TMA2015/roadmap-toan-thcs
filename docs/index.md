@@ -40,6 +40,7 @@ hide:
       <a class="home-button home-button-ghost" href="roadmap/">Xem lộ trình học <span aria-hidden="true">→</span></a>
     </div>
     <div class="home-hero-note">Luyện tập có giải thích · Theo dõi tiến độ theo kỹ năng · Không khóa quyền học tiếp</div>
+    <p class="home-hero-note"><a href="thpt-preview/">Học thử Toán THPT · Lớp 10 · Chương VI →</a></p>
   </div>
   <div class="home-art-mode" data-home-mode="standard" aria-label="Minh họa hành trình 25 chuyên đề">
     <div class="home-hero-art" role="img" aria-label="Số học, Đại số, Hình học và Vận dụng kết nối trong hành trình 25 chuyên đề">
