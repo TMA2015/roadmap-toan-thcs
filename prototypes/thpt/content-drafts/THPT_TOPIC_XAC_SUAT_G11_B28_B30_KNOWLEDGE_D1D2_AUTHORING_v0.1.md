@@ -1,29 +1,29 @@
 # THPT · Chuyên đề trục dọc Xác suất — Kiến thức nền lớp 11 (G11 Foundations) · v0.1
 
-**PACKET_ID:** \`THPT-TOPIC-PROBABILITY-G11-B28-B30-D1D4-AUTHORING-20261028-R0\`  
-**STATUS:** \`NEW_AUTHORING_CANDIDATE / DIRECT_S1_NOT_YET_REVIEWED / NO_MERGE_DEPLOY\`  
-**CONTEXT:** G10 Foundation already independently reviewed PASS under \`THPT-TOPIC-PROBABILITY-G10-FOUNDATION-D1D4-20261028-R0\`; this **does not** establish any G11 or G12 PASS. Source SGK/SBT G11 **must be checked in NotebookLM** before claiming academic completeness or Core equivalence.  
+**PACKET_ID:** `THPT-TOPIC-PROBABILITY-G11-B28-B30-D1D4-AUTHORING-20261028-R0`  
+**STATUS:** `NEW_AUTHORING_CANDIDATE / DIRECT_S1_NOT_YET_REVIEWED / NO_MERGE_DEPLOY`  
+**CONTEXT:** G10 Foundation already independently reviewed PASS under `THPT-TOPIC-PROBABILITY-G10-FOUNDATION-D1D4-20261028-R0`; this **does not** establish any G11 or G12 PASS. Source SGK/SBT G11 **must be checked in NotebookLM** before claiming academic completeness or Core equivalence.  
 **Framework:** five Permanent THPT v2.0 sources only. Topic always exactly **Knowledge / Practice / Topic Readiness** with no Topic Core page, and must remain independently teachable without visiting SGK route.
 
 ## A. Source-scope audit before reviewing the authoring draft
 
-**S2 (public table of contents only, not verified original S1):** KNTT Toán 11 Tập 2 **Chương VIII — Các quy tắc tính xác suất**, B28 *Biến cố hợp, biến cố giao, biến cố độc lập*; B29 *Công thức cộng xác suất*; B30 *Công thức nhân xác suất cho hai biến cố độc lập*; bài tập cuối chương. Public index \`https://sgkvn.com/lop-11-14/ket-noi-tri-thuc-voi-cuoc-song-3/toan-tap-2-1193.html\`.
+**S2 (public table of contents only, not verified original S1):** KNTT Toán 11 Tập 2 **Chương VIII — Các quy tắc tính xác suất**, B28 *Biến cố hợp, biến cố giao, biến cố độc lập*; B29 *Công thức cộng xác suất*; B30 *Công thức nhân xác suất cho hai biến cố độc lập*; bài tập cuối chương. Public index `https://sgkvn.com/lop-11-14/ket-noi-tri-thuc-voi-cuoc-song-3/toan-tap-2-1193.html`.
 
-**Scope correction:** Reviewer G10 P1-01 spoke broadly of G11 "conditional probability". Formal **xác suất có điều kiện** belongs to Toán 12 KNTT Tập 2 **B18**, while total probability / Bayes belongs to **B19** (S2 public TOC: \`https://sgkvn.com/lop-12-15/ket-noi-tri-thuc-voi-cuoc-song-3/toan-12-tap-hai-3520.html\`). Ask NotebookLM to check original S1; do **not** teach \`P(A|B)\` as a mandatory G11 formula in this candidate.
+**Scope correction:** Reviewer G10 P1-01 spoke broadly of G11 "conditional probability". Formal **xác suất có điều kiện** belongs to Toán 12 KNTT Tập 2 **B18**, while total probability / Bayes belongs to **B19** (S2 public TOC: `https://sgkvn.com/lop-12-15/ket-noi-tri-thuc-voi-cuoc-song-3/toan-12-tap-hai-3520.html`). Ask NotebookLM to check original S1; do **not** teach `P(A|B)` as a mandatory G11 formula in this candidate.
 
-**SOURCE_RECEIPT_G11_SGK = PENDING_ORIGINAL**, \`SOURCE_RECEIPT_G11_SBT = PENDING_ORIGINAL\`, and S1 printed page ranges are **not guessed**. G12 official scope and exact page numbers also pending. Check original B28/B29/B30 section headings, SBT task depth, distinctions between mutually exclusive vs independent and any first-use notation.
+**SOURCE_RECEIPT_G11_SGK = PENDING_ORIGINAL**, `SOURCE_RECEIPT_G11_SBT = PENDING_ORIGINAL`, and S1 printed page ranges are **not guessed**. G12 official scope and exact page numbers also pending. Check original B28/B29/B30 section headings, SBT task depth, distinctions between mutually exclusive vs independent and any first-use notation.
 
 ## B. Outcome candidate matrix — 7 unique skills, not yet academically passed
 
 | Canonical candidate outcome ID | Lesson anchor | What an independent Topic learner must understand | D1–D2 anchor | D3–D4 candidate practice |
 |---|---|---|---|---|
-| \`G11-B28-EVENT_UNION_INTERSECTION\` | B28 | Interpret \`A∪B\`, \`A∩B\` and original outcome sets | KT-G11-01, EX-G11-28-01 | B28-P01, P03 |
-| \`G11-B28-DISJOINT_EVENTS\` | B28/B29 (review placement with S1) | Distinguish mutually exclusive from complementary and independent | KT-G11-01 | B28-P03, B29-P02 |
-| \`G11-B28-INDEPENDENT_EVENTS\` | B28 | Recognize/verify independence by an appropriate probability model | KT-G11-02, EX-G11-28-01 | B28-P01, P02 |
-| \`G11-B29-ADDITION_DISJOINT\` | B29 | Use sum rule without overlap for disjoint events | KT-G11-03 | B29-P02 |
-| \`G11-B29-ADDITION_GENERAL\` | B29 | Correct for intersection when computing union | KT-G11-03, EX-G11-29-01 | B29-P01, P03 |
-| \`G11-B30-MULTIPLICATION_INDEPENDENT\` | B30 | Use \`P(A∩B)=P(A)P(B)\` **only for independent events** | KT-G11-04, EX-G11-30-01 | B30-P01, P02 |
-| \`G11-B30-COMBINED_RULES\` | B30 | Combine multiplication, addition and complement safely | KT-G11-04, EX-G11-30-01 | B30-P03, W30-ANCHOR-01 |
+| `G11-B28-EVENT_UNION_INTERSECTION` | B28 | Interpret `A∪B`, `A∩B` and original outcome sets | KT-G11-01, EX-G11-28-01 | B28-P01, P03 |
+| `G11-B28-DISJOINT_EVENTS` | B28/B29 (review placement with S1) | Distinguish mutually exclusive from complementary and independent | KT-G11-01 | B28-P03, B29-P02 |
+| `G11-B28-INDEPENDENT_EVENTS` | B28 | Recognize/verify independence by an appropriate probability model | KT-G11-02, EX-G11-28-01 | B28-P01, P02 |
+| `G11-B29-ADDITION_DISJOINT` | B29 | Use sum rule without overlap for disjoint events | KT-G11-03 | B29-P02 |
+| `G11-B29-ADDITION_GENERAL` | B29 | Correct for intersection when computing union | KT-G11-03, EX-G11-29-01 | B29-P01, P03 |
+| `G11-B30-MULTIPLICATION_INDEPENDENT` | B30 | Use `P(A∩B)=P(A)P(B)` **only for independent events** | KT-G11-04, EX-G11-30-01 | B30-P01, P02 |
+| `G11-B30-COMBINED_RULES` | B30 | Combine multiplication, addition and complement safely | KT-G11-04, EX-G11-30-01 | B30-P03, W30-ANCHOR-01 |
 
 These **seven are candidate G11 outcome IDs**, distinct from the ten already reviewed G10 IDs. Do not add them to production canonical outcome registries before NotebookLM S1 reconciliation. The topic is NOT complete without independently sourced G12 modules and a separate held-out Topic Readiness.
 
@@ -91,10 +91,10 @@ Two independent systems work with probabilities \(4/5\) and \(2/3\). \(P(\text{b
 ## E. Three-section Topic architecture and review boundaries
 
 - **Knowledge:** the four modules and three worked examples above augment the previously reviewed five G10 Foundation modules. They are self-contained; they do not force the learner to open SGK.
-- **Practice:** use a new **single canonical** G11 bank under the planned \`TOPIC_PRACTICE\` placements (companion D3/D4 review file), which may later be reused for SGK Core/Practice through mapping if source scope is confirmed. No \`TOPIC_CORE\` page exists.
-- **Topic Readiness:** \`NOT_AUTHORED\`; future independent held-out 10–12 blueprint, not six G10 SGK Chapter Readiness questions, and not current seen Practice items. No hint/solution/answer before **Final Submit**. Exposure across SGK/Topic must be logged.
+- **Practice:** use a new **single canonical** G11 bank under the planned `TOPIC_PRACTICE` placements (companion D3/D4 review file), which may later be reused for SGK Core/Practice through mapping if source scope is confirmed. No `TOPIC_CORE` page exists.
+- **Topic Readiness:** `NOT_AUTHORED`; future independent held-out 10–12 blueprint, not six G10 SGK Chapter Readiness questions, and not current seen Practice items. No hint/solution/answer before **Final Submit**. Exposure across SGK/Topic must be logged.
 - The Topic also requires G12 B18/B19 foundational content and independent review, then new Topic held-out candidates. Do not award whole-Topic PASS from a G11 segment or G10 PASS.
 
 ## F. NotebookLM review request
 
-Consult **original** SGK/SBT KNTT G11 printed B28–B30 and exercises, 5 Permanent Sources THPT v2.0, and the paired G11 item file. Return \`SOURCE_RECEIPT_G11\` exact pages, \`GRADE_SCOPE_RECONCILIATION\` (G11 vs G12 conditional), verdict for four modules \`KT-G11-01..04\`, three examples \`EX-G11-B28/29/30-01\`, seven outcomes, mathematical correctness and pedagogic depth, Core/Optional flags, clones against G10 and primary S1, \`P0/P1/P2\`, \`MINIMAL_DELTA\`, \`ACADEMIC_OVERALL_G11\`, \`ACADEMIC_CLEARANCE_FOR_RELEASE=NO\`. Do not assume a S1 receipt from an S2 index.
+Consult **original** SGK/SBT KNTT G11 printed B28–B30 and exercises, 5 Permanent Sources THPT v2.0, and the paired G11 item file. Return `SOURCE_RECEIPT_G11` exact pages, `GRADE_SCOPE_RECONCILIATION` (G11 vs G12 conditional), verdict for four modules `KT-G11-01..04`, three examples `EX-G11-B28/29/30-01`, seven outcomes, mathematical correctness and pedagogic depth, Core/Optional flags, clones against G10 and primary S1, `P0/P1/P2`, `MINIMAL_DELTA`, `ACADEMIC_OVERALL_G11`, `ACADEMIC_CLEARANCE_FOR_RELEASE=NO`. Do not assume a S1 receipt from an S2 index.
