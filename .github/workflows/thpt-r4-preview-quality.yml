@@ -8,6 +8,8 @@ on:
       - 'scripts/test-thpt-static-release.cjs'
       - 'docs/thpt-preview/**'
       - 'docs/assets/javascripts/thpt-r4-preview.js'
+      - 'docs/assets/javascripts/floating-ai-tutor-v1.js'
+      - 'docs/assets/javascripts/firebase-gemini-v1.js'
       - 'docs/assets/stylesheets/thpt-r4-preview.css'
       - 'review-packets/thpt-g10-b16-r4/**'
       - 'scripts/serve-thpt-r4-lan-preview.ps1'
@@ -32,6 +34,8 @@ jobs:
       - name: Validate scoped THPT JavaScript syntax
         run: |
           node --check docs/assets/javascripts/thpt-r4-preview.js
+          node --check docs/assets/javascripts/floating-ai-tutor-v1.js
+          node --check docs/assets/javascripts/firebase-gemini-v1.js
           node --check docs/assets/javascripts/thpt-chvi-reviewed-formative-v1.js
       - name: Check THPT no-account static release contract
         run: node scripts/test-thpt-static-release.cjs
