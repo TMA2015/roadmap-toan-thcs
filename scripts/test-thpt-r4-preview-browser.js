@@ -125,7 +125,7 @@ async function ready(page,path){
   assert(await dialog.isVisible(),"THPT quick navigation dialog did not open");
   const mainLinks=dialog.locator('nav[aria-label="Năm lối tắt chính Toán THPT"] a');
   assert((await mainLinks.count())===5,"THPT launcher must have precisely five fixed destinations");
-  const expected=["Trang chủ","Học theo SGK","Chuyên đề","Thư viện bài tập","Tiến độ học tập"];
+  const expected=["Trang chủ THPT","Học theo SGK","Chuyên đề","Thư viện bài tập","Tiến độ học tập"];
   assert.deepEqual((await mainLinks.allTextContents()).map(x=>x.trim()),expected,"THPT launcher group order differs from R4 contract");
   assert((await dialog.locator('nav[aria-label="Các chuyên đề mẫu THPT"] a').count())===1,"THPT pilot must have one sample topic");
   for(const a of await mainLinks.all()){
