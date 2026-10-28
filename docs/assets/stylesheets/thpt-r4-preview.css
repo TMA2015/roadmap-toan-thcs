@@ -320,3 +320,13 @@ body.thpt-r4-home .md-main__inner{
   width:auto;
   min-width:min(100%,18rem);
 }
+
+
+/* Approved G10 ChVI public formative items use the existing R4 modal.
+ * Self-check reveals answers only on deliberate disclosure; no scoring.
+ */
+.thpt-r4-reviewed-formative-card{padding:4px 0;line-height:1.65;min-width:0}
+.thpt-r4-reviewed-formative-card h3{font-size:1rem!important;line-height:1.65;white-space:pre-wrap;overflow-wrap:anywhere;margin:13px 0 18px!important}
+.thpt-r4-reviewed-formative-card details{margin:12px 0;padding:12px 14px;border:1px solid var(--md-default-fg-color--lightest);border-radius:9px;white-space:pre-line;line-height:1.7}
+.thpt-r4-reviewed-formative-card details summary{font-weight:700;cursor:pointer}
+.thpt-r4-reviewed-formative-card .thpt-r4-modal-progress{overflow-wrap:anywhere}
