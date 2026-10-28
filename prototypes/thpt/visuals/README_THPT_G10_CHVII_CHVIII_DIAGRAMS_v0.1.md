@@ -19,10 +19,10 @@ Bốn hình dưới đây do dự án **tự dựng bằng SVG có thể chỉnh
 ## Biên bản review D5 R0 và vòng sửa R1 (2026-10-28)
 
 - `PACKET_ID=THPT-G10-CHVII-VIII-D5-FOUR-SVG-BATCH-20261028-R0`: reviewer đánh giá đủ 4 hình, `FIG01=HOLD`, `FIG02=HOLD`, `FIG03=HOLD`, `FIG04=PASS`, `ACADEMIC_OVERALL_D5=HOLD_REVISIONS_REQUIRED`, release NO. Lý do: glyph dấu trừ `U+2212` không hiển thị trong CairoSVG/Linux (đưa tới ô vuông) tại FIG01/02/03; FIG01 thiếu d3 và Δ so với item B19-P06.
-- Bản sửa R1 đã **thay U+2212 thành dấu ASCII U+002D** trong ba SVG giữ nguyên filename; FIG01 bổ sung d3 và đường Δ, dùng cùng tỷ lệ đồ thị. Đã dựng thử CairoSVG, kiểm tra không còn ký tự ô vuông dấu trừ và XML hợp lệ. Đây **không phải kết quả QA trình duyệt/iPhone**, cũng không phải học thuật D5 PASS.
+- Bản sửa R1 đã **thay U+2212 thành dấu ASCII U+002D** trong ba SVG giữ nguyên filename; FIG01 bổ sung d3 và đường Δ, dùng cùng tỷ lệ đồ thị. Đã dựng thử CairoSVG, kiểm tra không còn ký tự ô vuông dấu trừ và XML hợp lệ. Đây **không phải kết quả QA trình duyệt/iPhone**; kết quả học thuật của bản sửa được xác nhận riêng bởi packet R1 ở mục bên dưới.
 - GitHub trước sửa: FIG01 `d55f5c9dc277ea90affa04416dda2ddd637650c7`, FIG02 `2f6097cb04ca38625607fe937cc6c52393b3aabc`, FIG03 `8a5df7db0fb0d2ce849990d68d8ff0ed4eba7b86`. Sau sửa: FIG01 `8964b708aac7cf56d1848db9d469f2573ce40873`, FIG02 `08e22fbc8ed90db7ccc48d782eb270404f057226`, FIG03 `e28c6500b486ee755fad0fc164d48969fd891c55`.
 - FIG04 giữ nguyên Git blob SHA `f24fcdf80d2a4ffc935a415197b30f48a54b4817`, không cần review lại từ R0 PASS; P2 đề xuất tăng font chữ chỉ là cải thiện tùy chọn, **chưa thực hiện** để tránh làm thay đổi asset đã PASS.
-- Delta R1 `THPT-G10-CHVII-VIII-D5-THREE-SVG-REVISION-20261028-R1`: chờ NotebookLM review theo 5 Permanent Sources THPT v2.0 với **một file Temp_ Markdown chứa đúng 3 SVG cập nhật**, kèm prompt ngắn. Chưa có quyền Academic Clearance, không merge/deploy, Golden UI R4 giữ nguyên.
+- Delta R1 `THPT-G10-CHVII-VIII-D5-THREE-SVG-REVISION-20261028-R1`: đã được NotebookLM thẩm định PASS cả ba SVG sửa, theo 5 Permanent Sources THPT v2.0 và một file Temp_ chứa đúng ba hình. Không có quyền phát hành, không merge/deploy, Golden UI R4 giữ nguyên.
 
 ## Kết quả D5 R1 — tất cả bốn hình PASS học thuật (28/10/2026)
 
