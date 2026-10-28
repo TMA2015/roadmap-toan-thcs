@@ -61,6 +61,10 @@ function d1Repository(db){
   async getBank(id){
    const bank=await one("SELECT id,scope,version,required_count,active FROM thpt_banks WHERE id=?",id);
    if(!bank)return null;
+   // Do not even read protected stems, answers or rubrics for inactive banks.
+   if(bank.active!==1)return {id:bank.id,scope:bank.scope,
+     version:bank.version,required_count:bank.required_count,
+     active:false,items:[]};
    const items=(await db.prepare("SELECT item_id,prompt,response_kind,choices_json,key_index,explanation,rubric_ready,heldout,blocked FROM thpt_bank_items WHERE bank_id=? ORDER BY position")
      .bind(id).all()).results||[];
    return {id:bank.id,scope:bank.scope,version:bank.version,
