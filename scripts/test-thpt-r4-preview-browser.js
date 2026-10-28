@@ -235,7 +235,7 @@ async function ready(page,path){
   assert.equal(page.url(),currentPracticeRoute,"Modal interactions unexpectedly navigated away");
   await ready(page,"thu-vien/tu-luan/");
   assert((await page.locator(".thpt-r4-written-card").count())===8,"Reviewed Chapter VI Written library must have eight cards");
-  assert((await page.locator('[data-thpt-written-canonical]').count())===6,"Six newly reviewed Written IDs must have canonical identity");
+  assert((await page.locator('[data-thpt-written-canonical]').count())===8,"All eight reviewed Written must have canonical identity");
   assert((await page.locator('.thpt-r4-written-card[data-thpt-kind="anchor"]').count())===4,"Four anchor labels must be a subset of eight Written");
   for(const section of await page.locator('[data-thpt-written-canonical]').all()){
    assert(await section.locator("details").count()===2,"Every reviewed Written must have hint and solution/rubric");
