@@ -49,4 +49,19 @@ const sources=[
 const heldOut=[...["15","16","17","18"].flatMap(n=>
  Array.from({length:n==="15"||n==="16"?5:4},(_,i)=>"THPT-G10-B"+n+"-R"+String(i+1).padStart(2,"0")))];
 for(const id of heldOut) assert(!sources.includes(id),"Exposed held-out item in client: "+id);
+const manifest=require("../prototypes/thpt/shared-items/thpt-g10-chvi-reviewed-public-placement-v1.cjs");
+const qa=manifest.validate();
+assert.equal(qa.valid,true,qa.errors.join("; "));
+assert.equal(qa.unique_ids,36,"36 published public formative/Written canonical records");
+assert.equal(qa.placements,65,"28 conditional Topic practice refs + 36 SGK + B3 Written ref");
+for(const row of manifest.canonical){
+ assert(fs.existsSync(path.join(root,row.source)),"Missing canonical source "+row.source);
+ assert.equal(row.mastery_credit,false,"No automatic production mastery");
+}
+assert.equal(manifest.canonical.filter(x=>x.is_anchor===true).length,4);
+const b3=manifest.placementsFor("THPT-G10-CHVI-APP-B3");
+assert.equal(b3.length,3,"Integrated application B3 must reuse one item as optional Written");
+assert.equal(new Set(b3.map(p=>p.item_id)).size,1,"B3 source item must not be cloned");
+assert(manifest.placements.every(x=>x.role!=="SGK_CHAPTER_READINESS"&&x.role!=="TOPIC_READINESS"),"No held-out assessment placement publicly activated");
+
 console.log("PASS THPT ChVI reviewed public practice: 18 unique formative, 8 cumulative, 8 Written; no held-out keys or assessment IDs; 36 total canonical IDs.");
