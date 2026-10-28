@@ -4,7 +4,9 @@
  */
 (function(){
  "use strict";
- const tracked=new WeakSet(),sent=new Set(),inflight=new Set();
+ // Server de-duplicates by verified learner UID + canonical ID + event.
+ // Never cache per-item success in a shared browser across account changes.
+ const tracked=new WeakSet();
  const roles=new Set(["SGK_CORE","SGK_PRACTICE","SGK_CHAPTER_APPLICATION",
    "SGK_WRITTEN","TOPIC_PRACTICE"]);
  const events=new Set(["QUESTION_SHOWN","HINT_OPENED","SOLUTION_OPENED"]);
@@ -19,9 +21,6 @@
   const cfg=settings();
   if(!cfg||!roles.has(role)||!events.has(eventKind)||
      !/^[A-Za-z0-9][A-Za-z0-9_-]{0,127}$/.test(itemId||""))return false;
-  const key=itemId+"|"+role+"|"+eventKind;
-  if(sent.has(key)||inflight.has(key))return sent.has(key);
-  inflight.add(key);
   try{
     const token=await cfg.auth.getToken();
     if(!token)return false;
@@ -33,8 +32,8 @@
     if(!res.ok)return false;
     const body=await res.json();
     if(body.recorded!==true)return false;
-    sent.add(key);return true;
-  }catch{return false}finally{inflight.delete(key)}
+    return true;
+  }catch{return false}
  }
  function attach(el){
   if(!el||tracked.has(el))return;
