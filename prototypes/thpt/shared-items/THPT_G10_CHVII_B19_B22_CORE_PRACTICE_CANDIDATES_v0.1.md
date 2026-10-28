@@ -41,7 +41,7 @@
 
 ## Bài 19 — Phương trình đường thẳng
 
-Nguồn liên quan đã quan sát: SGK 30–34; SBT 27–31. Các câu dưới đây do dự án tự soạn, chưa qua NotebookLM.
+Nguồn liên quan đã quan sát: SGK 29–34; SBT 27–31. Các câu dưới đây do dự án tự soạn, chưa qua NotebookLM.
 
 ### THPT-G10-B19-C01 — CORE
 
@@ -233,7 +233,7 @@ Nguồn liên quan đã quan sát: SGK 42–46; SBT 38–41. Các câu dưới �
 
 ## Bài 22 — Ba đường conic
 
-Nguồn liên quan đã quan sát: SGK 47–58; SBT 41–46. Các câu dưới đây do dự án tự soạn, chưa qua NotebookLM.
+Nguồn liên quan đã quan sát: SGK 47–56; SBT 41–45. Các câu dưới đây do dự án tự soạn, chưa qua NotebookLM.
 
 ### THPT-G10-B22-C01 — CORE
 
