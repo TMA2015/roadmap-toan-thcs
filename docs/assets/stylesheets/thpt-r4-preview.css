@@ -376,7 +376,7 @@ body.thpt-r4-home .md-main__inner{
 .thpt-r4-home-visual-footer{display:flex;gap:9px;flex-wrap:wrap;justify-content:space-between;font-size:.73rem;color:#3c587d}
 .thpt-r4-home-visual-footer span{border:1px solid #c9dbef;background:#ffffffc9;border-radius:10px;padding:8px 11px}
 .thpt-r4-home-visual-footer b{color:#3150c3;margin-right:4px}
-.thpt-r4-home-stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border:1px solid var(--r4-line);background:var(--md-default-bg-color);border-radius:18px;padding:14px 0;margin:0 0 27px}
+.thpt-r4-home-stats{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));border:1px solid var(--r4-line);background:var(--md-default-bg-color);border-radius:18px;padding:14px 0;margin:0 0 27px}
 .thpt-r4-home-stats>div{display:grid;gap:3px;place-items:center;text-align:center;padding:8px 10px;min-width:0;border-right:1px solid var(--r4-line)}
 .thpt-r4-home-stats>div:last-child{border-right:0}
 .thpt-r4-home-stats strong{font-size:1.45rem;color:var(--r4-accent);line-height:1.25}
@@ -388,7 +388,7 @@ body[data-md-color-scheme="slate"] .thpt-r4-home-hero h1 span{color:#9bb1ff}
 body[data-md-color-scheme="slate"] .thpt-r4-home-hero-desc,body[data-md-color-scheme="slate"] .thpt-r4-home-hero-notice{color:#c5d3ed}
 body[data-md-color-scheme="slate"] .thpt-r4-home-illustration{background:linear-gradient(140deg,#dce9ff,#b4c8e7);border-color:#446188}
 @media(max-width:980px){.thpt-r4-home-hero{grid-template-columns:minmax(0,1fr)}.thpt-r4-home-illustration{max-width:650px;width:100%;margin:auto}}
-@media(max-width:610px){.thpt-r4-home-hero{padding:22px 18px;border-radius:18px}.thpt-r4-home-hero h1{font-size:2rem!important}.thpt-r4-home-hero-actions{display:grid;grid-template-columns:minmax(0,1fr)}.thpt-r4-home-stats{grid-template-columns:repeat(2,minmax(0,1fr))}.thpt-r4-home-stats>div:nth-child(2){border-right:0}.thpt-r4-home-stats>div:nth-child(-n+2){border-bottom:1px solid var(--r4-line)}}
+@media(max-width:610px){.thpt-r4-home-hero{padding:22px 18px;border-radius:18px}.thpt-r4-home-hero h1{font-size:2rem!important}.thpt-r4-home-hero-actions{display:grid;grid-template-columns:minmax(0,1fr)}.thpt-r4-home-stats{grid-template-columns:repeat(2,minmax(0,1fr))}.thpt-r4-home-stats>div{border-bottom:1px solid var(--r4-line)}.thpt-r4-home-stats>div:nth-child(even){border-right:0}.thpt-r4-home-stats>div:last-child{grid-column:1/-1;border-bottom:0}}
 @media(prefers-reduced-motion:reduce){.thpt-r4-home-hero-actions a{transition:none}}
 
 /* Shared SGK lesson and Core/Practice modal title language. Keep the
@@ -410,3 +410,34 @@ body[data-md-color-scheme="slate"] .thpt-r4-practice-dialog .thpt-r4-modal-top{b
 body[data-md-color-scheme="slate"] .thpt-r4-practice-dialog .thpt-r4-modal-top h2{color:#f2f5ff!important}
 body[data-md-color-scheme="slate"] .thpt-r4-practice-dialog .thpt-r4-modal-meta{color:#b5c6e1}
 @media(max-width:600px){.thpt-r4-practice-dialog .thpt-r4-modal-top{padding:13px 14px;gap:11px}.thpt-r4-practice-dialog .thpt-r4-modal-lesson-badge{width:40px;height:40px;font-size:1rem}.thpt-r4-practice-dialog .thpt-r4-modal-top h2{font-size:1.01rem!important}}
+
+
+/* The five orbits are conceptual programme features, not five separate
+   curricula. Static SVG avoids motion, fetches and THCS Golden UI changes. */
+.thpt-r4-home-illustration{padding:14px 11px 9px}
+.thpt-r4-home-orbit-heading{font-size:.7rem!important;letter-spacing:.045em;font-weight:800;color:#3451a9;text-align:center;margin:3px 6px 0!important}
+.thpt-r4-home-illustration .thpt-r4-home-orbit{width:100%;max-height:none;height:auto;display:block;overflow:visible}
+.thpt-r4-home-orbit-lines ellipse{vector-effect:non-scaling-stroke}
+.thpt-r4-home-sun{filter:drop-shadow(0 11px 16px #28469b44)}
+.thpt-r4-home-planet{filter:drop-shadow(0 5px 9px #314a9133)}
+.thpt-r4-orbit-sun-top{fill:#fff;font-size:16px;font-weight:850;letter-spacing:1px}
+.thpt-r4-orbit-sun-main{fill:#fff;font-size:34px;font-weight:900;letter-spacing:-1px}
+.thpt-r4-orbit-sun-bottom{fill:#edf2ff;font-size:11px;font-weight:750;letter-spacing:.8px}
+.thpt-r4-orbit-planet-number{fill:#17a79c;font-size:24px;font-weight:900}
+.thpt-r4-orbit-planet-label{fill:#17284c;font-size:17px;font-weight:800}
+.thpt-r4-orbit-planet-sub{fill:#576d91;font-size:16px;font-weight:750}
+.thpt-r4-home-orbit-caption{font-size:.72rem!important;line-height:1.5;text-align:center;color:#526783;margin:0 7px 5px!important}
+.thpt-r4-home-stats>div{overflow-wrap:anywhere}
+.thpt-r4-home-stats strong{font-size:1.32rem;white-space:nowrap}
+@media(min-width:611px) and (max-width:1090px){
+ .thpt-r4-home-stats{grid-template-columns:repeat(3,minmax(0,1fr))}
+ .thpt-r4-home-stats>div:nth-child(3){border-right:0}
+ .thpt-r4-home-stats>div:nth-child(-n+3){border-bottom:1px solid var(--r4-line)}
+}
+@media(max-width:610px){
+ .thpt-r4-home-illustration{padding:12px 5px 9px}
+ .thpt-r4-home-orbit-heading{font-size:.62rem!important}
+ .thpt-r4-home-orbit-caption{font-size:.69rem!important}
+}
+body[data-md-color-scheme="slate"] .thpt-r4-home-orbit-heading{color:#c6d5ff}
+body[data-md-color-scheme="slate"] .thpt-r4-home-orbit-caption{color:#243e68}
