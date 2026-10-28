@@ -106,6 +106,14 @@ jobs:
           python -m http.server 8765 --directory site > /tmp/thpt-r4-combined-http.log 2>&1 &
           sleep 2
           node scripts/test-thpt-r4-preview-browser.js
+      - name: Keep owner-review screenshots for THPT visual signoff (no deploy)
+        if: success()
+        uses: actions/upload-artifact@v4
+        with:
+          name: thpt-r4-visual-review-pr613
+          path: thpt-r4-visual-qa/
+          if-no-files-found: error
+          retention-days: 14
       - name: Emulate old and new GitHub Pages paths, without renaming the repo
         run: |
           mkdir -p rename-path-smoke
