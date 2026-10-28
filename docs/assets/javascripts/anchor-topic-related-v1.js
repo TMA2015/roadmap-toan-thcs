@@ -6,7 +6,8 @@
   if (!match || match[1] === "25") return;
 
   const topicId = "CT" + match[1];
-  const siteBase = path.startsWith("/roadmap-toan-thcs/") ? "/roadmap-toan-thcs/" : "/";
+  const projectMatch = path.match(/^\/(roadmap-toan-thcs|self-learning-math)\//);
+  const siteBase = projectMatch ? "/" + projectMatch[1] + "/" : "/";
   const catalogUrl = siteBase + "assets/data/anchors/anchor-catalog-v1.json";
   const article = () => document.querySelector(".md-content__inner");
 
