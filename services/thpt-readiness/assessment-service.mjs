@@ -23,17 +23,25 @@ function verifyBank(bank){
    if(ids.has(q.item_id))throw new AssessmentError("DUPLICATE_CANONICAL_ID",503);
    ids.add(q.item_id);
    if(q.heldout!==true||q.blocked===true||typeof q.prompt!=="string"||
-      !Array.isArray(q.choices)||q.choices.length<2||q.choices.length>8||
-      !q.choices.every(t=>typeof t==="string"&&t.length>0&&t.length<1000)||
       q.prompt.length<1||q.prompt.length>4000||
-      !Number.isInteger(q.key)||q.key<0||q.key>=q.choices.length||
-      typeof q.explanation!=="string"||!q.explanation)
+      !["CHOICE","TEXT"].includes(q.response_kind)||
+      !Array.isArray(q.choices))
       throw new AssessmentError("BANK_ITEM_UNSAFE_OR_UNSUPPORTED",503);
+   if(q.response_kind==="CHOICE"&&
+      (q.choices.length<2||q.choices.length>8||
+       !q.choices.every(t=>typeof t==="string"&&t.length>0&&t.length<1000)||
+       !Number.isInteger(q.key)||q.key<0||q.key>=q.choices.length||
+       typeof q.explanation!=="string"||!q.explanation))
+       throw new AssessmentError("BANK_ITEM_UNSAFE_OR_UNSUPPORTED",503);
+   if(q.response_kind==="TEXT"&&
+      (q.choices.length!==0||q.key!==null||!q.rubric_ready))
+       throw new AssessmentError("TEXT_RUBRIC_NOT_READY",503);
  }
  return bank;
 }
 const visible=bank=>bank.items.map(q=>({
- item_id:q.item_id,prompt:q.prompt,choices:q.choices.slice()
+ item_id:q.item_id,prompt:q.prompt,response_kind:q.response_kind,
+ choices:q.choices.slice()
 }));
 const activeView=(a,bank)=>({
  attempt_id:a.id,bank_id:bank.id,scope:bank.scope,
@@ -73,10 +81,21 @@ export function createAssessmentService(repo){
       Object.keys(answers).length!==bank.items.length)
       throw new AssessmentError("ALL_ANSWERS_REQUIRED",400);
    for(const q of bank.items){
-    if(!Object.hasOwn(answers,q.item_id) ||
-       !Number.isInteger(answers[q.item_id]) ||
-       answers[q.item_id]<0||answers[q.item_id]>=q.choices.length)
+    const answer=answers[q.item_id];
+    if(!Object.hasOwn(answers,q.item_id)||
+      (q.response_kind==="CHOICE"&&
+       (!Number.isInteger(answer)||answer<0||answer>=q.choices.length))||
+      (q.response_kind==="TEXT"&&
+       (typeof answer!=="string"||!answer.trim()||answer.length>2000)))
        throw new AssessmentError("INVALID_OR_MISSING_ANSWER",400);
+   }
+   // Any real written/short-answer question requires the independently
+   // approved rubric evaluator. Never guess a grade or reveal a worked key.
+   if(bank.items.some(q=>q.response_kind==="TEXT")){
+     const response={attempt_id:a.id,completed:true,score:null,
+       total:bank.items.length,manual_review_required:true,details:[],
+       mastery_credit:false,credit_status:"PENDING_MANUAL_RUBRIC_REVIEW"};
+     return await repo.finalize(uid,a.id,response,answers);
    }
    const details=bank.items.map(q=>({
      item_id:q.item_id,correct:answers[q.item_id]===q.key,
@@ -84,8 +103,9 @@ export function createAssessmentService(repo){
    }));
    const score=details.filter(d=>d.correct).length;
    const response={attempt_id:a.id,completed:true,score,total:details.length,
-     details,mastery_credit:false,credit_status:"PENDING_PRODUCTION_SCORING_AUDIT"};
-   return await repo.finalize(uid,a.id,response);
+     details,manual_review_required:false,mastery_credit:false,
+     credit_status:"PENDING_PRODUCTION_SCORING_AUDIT"};
+   return await repo.finalize(uid,a.id,response,answers);
   }
  });
 }
