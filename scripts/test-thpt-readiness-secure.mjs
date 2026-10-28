@@ -5,7 +5,7 @@ import {createAssessmentService,AssessmentError} from "../services/thpt-readines
 import worker from "../services/thpt-readiness/worker.mjs";
 
 const item=(id,key=1)=>({item_id:id,prompt:"Tính đáp số của "+id,
-  choices:["Sai","Đúng","Khác"],key,explanation:"Giải theo điều kiện và đối chiếu.",
+  response_kind:"CHOICE",choices:["Sai","Đúng","Khác"],key,explanation:"Giải theo điều kiện và đối chiếu.",
   heldout:true,blocked:false});
 function bank(id,scope,items){
  return {id,scope,version:"academic-reviewed-snapshot-v1",
@@ -30,10 +30,11 @@ class MemoryRepository{
   for(const q of b.items)this.exposure.set(uid+":"+q.item_id,b.scope);
   return a;
  }
- async finalize(uid,id,result){
+ async finalize(uid,id,result,answers){
   const a=await this.findAttempt(uid,id);
   if(a.submitted_at)return JSON.parse(a.result_json);
   a.submitted_at="now";a.result_json=JSON.stringify(result);
+  a.responses_json=JSON.stringify(answers);
   return result;
  }
 }
@@ -99,6 +100,35 @@ corrupted.version="academic-reviewed-snapshot-v2";
 await failure(()=>svc.submit("learner_D",earlier.attempt_id,{"Q-ORIGINAL":1}),
  "ASSESSMENT_VERSION_CHANGED");
 
+// Actual reviewer-approved ChVI Readiness is open-response in several places.
+// Accept genuine written answers only as protected pending-rubric work; do NOT
+// pretend the generic multiple-choice scorer has graded the student's proof.
+const shortWritten=bank("G10_CHVI_WRITTEN","SGK_CHAPTER",[{
+ item_id:"SYNTHETIC-WRITTEN-01",prompt:"Giải thích nghiệm và miền xác định.",
+ response_kind:"TEXT",choices:[],key:null,explanation:null,rubric_ready:true,
+ heldout:true,blocked:false
+}]);
+db.banks.set(shortWritten.id,shortWritten);
+const wx=await svc.start("learner_writer",shortWritten.id);
+assert(!JSON.stringify(wx).includes("rubric_ready"));
+assert(wx.questions[0].response_kind==="TEXT");
+await failure(()=>svc.submit("learner_writer",wx.attempt_id,
+ {"SYNTHETIC-WRITTEN-01":"   "}),"INVALID_OR_MISSING_ANSWER");
+const writtenResult=await svc.submit("learner_writer",wx.attempt_id,
+ {"SYNTHETIC-WRITTEN-01":"Miền x ≥ 0 và kiểm lại trong phương trình gốc."});
+assert.equal(writtenResult.completed,true);
+assert.equal(writtenResult.score,null,"Never assign automatic grade to unreviewed free text");
+assert.equal(writtenResult.manual_review_required,true);
+assert.equal(writtenResult.details.length,0,"Do not reveal rubric/solution to pending written evaluation");
+assert.equal(writtenResult.mastery_credit,false);
+assert(db.attempts.get(wx.attempt_id).responses_json.includes("Miền x"),
+ "Written answer must be stored for protected later review");
+const repeatedWritten=await svc.submit("learner_writer",wx.attempt_id,
+ {"SYNTHETIC-WRITTEN-01":"Different text"});
+assert.deepEqual(repeatedWritten,writtenResult,"Final Submit is immutable for written too");
+assert(!db.attempts.get(wx.attempt_id).responses_json.includes("Different text"),
+ "Retry must not overwrite prior saved written response");
+
 // Worker fail-closed even before identity provider or DB is configured.
 const request=new Request("https://example.test/v1/assessment/start",{
  method:"POST",headers:{"Content-Type":"application/json"},
@@ -125,4 +155,4 @@ for(const phrase of ["THPT-G10-B15-R01","THPT-G10-B16-R01","THPT-G10-B17-R01",
 }
 assert(!publicSource.includes("√(x+5)=x−1"),
  "Don't silently move approved formative answer into held-out bank");
-console.log("PASS THPT secure Readiness service preflight: keys withheld pre-submit; authenticated-user isolation; shared exposure; exact count; version lock; one-time/duplicate Final Submit; disabled unsupported/free-response; zero mastery; unconfigured worker denied. No production deployment implied.");
+console.log("PASS THPT secure Readiness preflight: private keys until Final Submit; learner isolation; shared exposure; bank count/version lock; idempotent choice and written submission; pending written rubric without fake grades; zero mastery; unconfigured worker denied. NOT a real D1 deployment.");
