@@ -12,8 +12,18 @@ function bank(id,scope,items){
    required_count:items.length,active:true,items};
 }
 class MemoryRepository{
- constructor(banks){this.banks=new Map(banks.map(b=>[b.id,b]));this.attempts=new Map();this.exposure=new Map();this.seq=0;}
+ constructor(banks){this.banks=new Map(banks.map(b=>[b.id,b]));this.attempts=new Map();this.exposure=new Map();this.publicItems=new Map();this.events=new Map();this.seq=0;}
  async getBank(id){return this.banks.get(id)||null}
+ async getPublicItem(itemId){return this.publicItems.get(itemId)||null}
+ async findPublished(ids){return ids.filter(id=>this.publicItems.has(id))}
+ async recordPublicExposure(uid,itemId,role,eventKind){
+  if(!this.publicItems.get(itemId)?.active)
+   throw new AssessmentError("UNREGISTERED_FORMATIVE_ITEM",404);
+  const key=uid+":"+itemId;
+  if(!this.exposure.has(key))this.exposure.set(key,role);
+  this.events.set(key+":"+role+":"+eventKind,true);
+ }
+
  async getAttempt(uid,bankId,version){
   return [...this.attempts.values()].find(a=>a.uid===uid&&a.bank_id===bankId&&a.bank_version===version)||null
  }
@@ -46,6 +56,29 @@ const a=bank("G10_CHVI_SGK","SGK_CHAPTER",[item("Q-HIDDEN-01"),item("Q-HIDDEN-02
 const b=bank("TOPIC_FUNCTION_READY","TOPIC_READINESS",[item("Q-HIDDEN-02"),item("Q-HIDDEN-03")]);
 const db=new MemoryRepository([a,b]);
 const svc=createAssessmentService(db);
+// Public formative exposures are authenticated and canonical-scoped; Topic reuse
+// cannot count as unseen readiness, including after public item deactivation.
+db.publicItems.set("PUBLIC-C01",{item_id:"PUBLIC-C01",active:true,
+ allowed_scopes:["SGK_CORE"]});
+await failure(()=>svc.recordExposure("learner_C","MISSING-ITEM","SGK_CORE",
+ "QUESTION_SHOWN"),"UNREGISTERED_FORMATIVE_ITEM");
+await failure(()=>svc.recordExposure("learner_C","PUBLIC-C01","TOPIC_PRACTICE",
+ "QUESTION_SHOWN"),"UNREGISTERED_FORMATIVE_ITEM");
+await failure(()=>svc.recordExposure("learner_C","PUBLIC-C01","SGK_CORE",
+ "SILENT_ANSWER"),"INVALID_FORMATIVE_EXPOSURE");
+const recorded=await svc.recordExposure("learner_C","PUBLIC-C01","SGK_CORE",
+ "QUESTION_SHOWN");
+assert.equal(recorded.mastery_credit,false);
+await svc.recordExposure("learner_C","PUBLIC-C01","SGK_CORE","HINT_OPENED");
+await svc.recordExposure("learner_C","PUBLIC-C01","SGK_CORE","HINT_OPENED");
+assert.equal(db.events.size,2,"Repeated hint must not create duplicate exposure event");
+const onlySeen=bank("PUBLIC_ASSESSMENT","SGK_CHAPTER",[item("PUBLIC-C01")]);
+db.banks.set(onlySeen.id,onlySeen);
+await failure(()=>svc.start("learner_Z",onlySeen.id),"HELDOUT_ITEM_WAS_PUBLIC");
+db.publicItems.get("PUBLIC-C01").active=false;
+await failure(()=>svc.start("learner_D",onlySeen.id),"HELDOUT_ITEM_WAS_PUBLIC");
+assert.equal(db.attempts.size,0,"Rejected public assessment must never create attempt");
+
 const opened=await svc.start("learner_A",a.id);
 assert.equal(opened.questions.length,2);
 assert.equal(opened.scope,"SGK_CHAPTER");
@@ -155,4 +188,4 @@ for(const phrase of ["THPT-G10-B15-R01","THPT-G10-B16-R01","THPT-G10-B17-R01",
 }
 assert(!publicSource.includes("√(x+5)=x−1"),
  "Don't silently move approved formative answer into held-out bank");
-console.log("PASS THPT secure Readiness preflight: private keys until Final Submit; learner isolation; shared exposure; bank count/version lock; idempotent choice and written submission; pending written rubric without fake grades; zero mastery; unconfigured worker denied. NOT a real D1 deployment.");
+console.log("PASS THPT secure Readiness preflight: private keys until Final Submit; learner isolation; shared practice exposure and permanently published-ID exclusion; bank count/version lock; idempotent choice and written submission; pending written rubric without fake grades; zero mastery; unconfigured worker denied. NOT a real D1 deployment.");
