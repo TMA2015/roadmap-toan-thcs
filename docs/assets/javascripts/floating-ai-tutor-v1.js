@@ -5,13 +5,13 @@
   // practice, Readiness, final submission, or on answer-library pages.
   const currentPath = () => location.pathname.replace(/\/index\.html$/, "/");
   const isTHPTReadingPage = () =>
-    /^\/(?:roadmap-toan-thcs\/)?(?:thpt-preview|thpt)\/(?:sgk\/chuong-[^/]+\/bai-\d+|chuyen-de\/[^/]+\/kien-thuc)\/$/.test(currentPath());
+    /^\/(?:(?:roadmap-toan-thcs|self-learning-math)\/)?(?:thpt-preview|thpt)\/(?:sgk\/chuong-[^/]+\/bai-\d+|chuyen-de\/[^/]+\/kien-thuc)\/$/.test(currentPath());
   const isReadingPage = () => {
     // Keep this function self-contained: THCS route contract tests run it alone.
     const path = location.pathname.replace(/\/index\.html$/, "/");
-    if (/^\/(?:roadmap-toan-thcs\/)?(?:thpt-preview|thpt)\/(?:sgk\/chuong-[^/]+\/bai-\d+|chuyen-de\/[^/]+\/kien-thuc)\/$/.test(path)) return true;
-    if (/^\/(?:roadmap-toan-thcs\/)?kien-thuc\/[^/]+\/$/.test(path)) return true;
-    return /^\/(?:roadmap-toan-thcs\/)?kien-thuc\/25-tong-hop-on-thi-10\/(?:bai-toan-kinh-dien|kho-bai-mo-neo|anchor-25-\d{3})\/$/.test(path);
+    if (/^\/(?:(?:roadmap-toan-thcs|self-learning-math)\/)?(?:thpt-preview|thpt)\/(?:sgk\/chuong-[^/]+\/bai-\d+|chuyen-de\/[^/]+\/kien-thuc)\/$/.test(path)) return true;
+    if (/^\/(?:(?:roadmap-toan-thcs|self-learning-math)\/)?kien-thuc\/[^/]+\/$/.test(path)) return true;
+    return /^\/(?:(?:roadmap-toan-thcs|self-learning-math)\/)?kien-thuc\/25-tong-hop-on-thi-10\/(?:bai-toan-kinh-dien|kho-bai-mo-neo|anchor-25-\d{3})\/$/.test(path);
   };
   const contentRoot = () => document.querySelector(".md-content__inner .md-typeset") || document.querySelector(".md-content__inner");
   const topicSlug = () => {
@@ -97,7 +97,8 @@
     shell.className = "floating-ai";
     shell.dataset.floatingAi = "1";
 
-    const iconSrc = (location.pathname.startsWith("/roadmap-toan-thcs/") ? "/roadmap-toan-thcs/" : "/") + "assets/images/tutor-girl-awake.webp";
+    const projectPrefix = location.pathname.match(/^\/(roadmap-toan-thcs|self-learning-math)\//);
+    const iconSrc = (projectPrefix ? "/" + projectPrefix[1] + "/" : "/") + "assets/images/tutor-girl-awake.webp";
     const launcher = button("", "floating-ai-launcher");
     const face = document.createElement("img");
     face.className = "floating-ai-face";
