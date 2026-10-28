@@ -2,7 +2,7 @@
 
 **Status:** DRAFT_NOT_ACADEMICALLY_REVIEWED · NO_MASTERY_CREDIT · CANDIDATE_ONLY
 
-**Nguồn S1:** SGK Toán 10 tập 2 Chương VII tr.29–60; SBT tập 2 tr.27–49, dựa trên việc đọc trực quan bản quét gốc. Chi tiết tại `THPT_G10_CHVII_S1_VISUAL_SOURCE_RECEIPT_AND_SCOPE_20261028.md`. Không chép nguyên bài từ sách.
+**Nguồn S1:** SGK Toán 10 tập 2 Chương VII tr.29–58; SBT tập 2 tr.27–49, dựa trên việc đọc trực quan bản quét gốc. Chi tiết tại `THPT_G10_CHVII_S1_VISUAL_SOURCE_RECEIPT_AND_SCOPE_20261028.md`. Không chép nguyên bài từ sách.
 
 **Quy mô:** 24 item ứng viên = 8 Core + 12 Practice + 4 Vận dụng. Mỗi item có **một ID, một đáp án và một lời giải chuẩn**. Chưa đăng ký thành ngân hàng production; không sử dụng làm mastery hay Tự kiểm tra chính thức. Các ID tham chiếu Chuyên đề là placement khả dĩ, không ngụ ý chuyên đề dọc 10–12 đã hoàn chỉnh.
 
