@@ -1,10 +1,10 @@
 # Bài 15. Hàm số
 
 <div class="thpt-r4-screen" data-thpt-r4>
-<p class="thpt-r4-eyebrow">TOÁN 10 · CHƯƠNG VI · BẢN NHÁP HỌC LIỆU</p>
+<p class="thpt-r4-eyebrow">TOÁN 10 · CHƯƠNG VI · HỌC LIỆU ĐÃ REVIEW</p>
 <p class="thpt-r4-lead"><strong>NOTEBOOKLM_CHVI_SNAPSHOT_PASS · TÍCH HỢP ĐANG QA.</strong> Gói học liệu SGK Chương VI Bài 15 đã được NotebookLM review học thuật PASS ngày 28/10/2026 (SGK trang 4–10, SBT 3–9). Trang hiển thị hiện tại còn cần so khớp chi tiết với snapshot, không tự coi là bản copy từng byte. Core/Luyện tập tham chiếu ngân hàng formative đã review; không ghi điểm/mastery.</p>
 <nav class="thpt-r4-lesson-tabs" aria-label="Điều hướng Chương VI">
-<a href="../">Chương VI</a><span class="is-current" aria-current="page">Bài 15 · Hàm số (nháp)</span><a href="../bai-16/">Bài 16 · Hàm số bậc hai</a>
+<a href="../">Chương VI</a><span class="is-current" aria-current="page">Bài 15 · Hàm số</span><a href="../bai-16/">Bài 16 · Hàm số bậc hai</a>
 </nav></div>
 
 ## 1. Khái niệm hàm số
