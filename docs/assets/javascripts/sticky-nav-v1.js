@@ -1,6 +1,9 @@
 (() => {
  "use strict";
- const sitePrefix = () => location.pathname.startsWith("/roadmap-toan-thcs/") ? "/roadmap-toan-thcs/" : "/";
+ const sitePrefix = () => {
+   const match = location.pathname.match(/^\/(roadmap-toan-thcs|self-learning-math)\//);
+   return match ? "/" + match[1] + "/" : "/";
+ };
  const mainDestinations = [
    ["Trang chủ THCS", "", "⌂"],
    ["Bản đồ học tập", "roadmap/", "◇"],
