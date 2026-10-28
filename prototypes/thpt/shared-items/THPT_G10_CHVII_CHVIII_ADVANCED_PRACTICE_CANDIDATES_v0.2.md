@@ -2,7 +2,7 @@
 
 **DRAFT_NOT_ACADEMICALLY_REVIEWED** · **CANDIDATE_ONLY** · **NO_MASTERY_CREDIT** · **NO_MERGE_DEPLOY**
 
-**Source receipt:** `THPT_G10_CHVII_S1_VISUAL_SOURCE_RECEIPT_AND_SCOPE_20261028.md` (SGK 29–60, SBT 27–49) và `THPT_G10_CHVIII_S1_VISUAL_SOURCE_RECEIPT_AND_SCOPE_20261028.md` (SGK 60–79, SBT 50–59). Nguồn được kiểm tra ở mức cấu trúc chương/bài qua trang PDF gốc, **chưa có full-outcome audit**. Tất cả câu hỏi dưới đây **tự soạn**, không chép SGK/SBT. Các câu mức ADVANCED cần xác nhận thêm về độ khó và phạm vi SGK trước khi phát hành.
+**Source receipt:** `THPT_G10_CHVII_S1_VISUAL_SOURCE_RECEIPT_AND_SCOPE_20261028.md` (SGK 29–58, SBT 27–49) và `THPT_G10_CHVIII_S1_VISUAL_SOURCE_RECEIPT_AND_SCOPE_20261028.md` (SGK 59–79, SBT 50–59). Nguồn được kiểm tra ở mức cấu trúc chương/bài qua trang PDF gốc, **chưa có full-outcome audit**. Tất cả câu hỏi dưới đây **tự soạn**, không chép SGK/SBT. Các câu mức ADVANCED cần xác nhận thêm về độ khó và phạm vi SGK trước khi phát hành.
 
 **Incremental delta:** thêm đúng 2 câu P05/P06 cho mỗi bài B19–B25; **không sửa hoặc tạo bản sao** của 42 Core/Practice và 7 Written đã có ở v0.1. Tổng sau bổ sung: 56 Core/Practice/Application + 7 Written = **63 nội dung ứng viên**. Hai nhãn Anchor vẫn thuộc hai trong số 7 Written, không phải 2 câu khác.
 
