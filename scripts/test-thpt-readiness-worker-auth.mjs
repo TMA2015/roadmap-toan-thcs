@@ -128,7 +128,7 @@ try{
  assert.equal(res.status,404);
  assert.equal((await res.json()).error,"ROUTE_NOT_FOUND");
  assert.equal(jwksCalls,1,"Signed verification should cache synthetic JWK by kid");
- console.log("PASS THPT Worker signed JWT QA: real RS256 signature, project/audience, expiration, future-issued, auth absent, blocked origin, strict origin settings, CORS and disabled-bank gate. Synthetic only; not production auth.");
+ console.log("PASS THPT Worker signed JWT QA: real RS256 signature, project/audience, expiration, future-issued, auth absent, approved/revoked/unknown learner admission, bank-before-access isolation, blocked origin, strict origin settings, CORS and disabled-bank gate. Synthetic only; not production auth.");
 }finally{
  globalThis.fetch=realFetch;
 }
