@@ -121,6 +121,23 @@ Sau khi nguồn lớp 11–12 được kiểm chứng, phải xây dựng **outc
 | D5 minh họa cho Chuyên đề | `NOT_REVIEWED_FOR_TOPIC` |
 | D6 website / triển khai | `OUT_OF_SCOPE_OTHER_CONVERSATION` |
 
-## 6. Yêu cầu review NotebookLM cụ thể
+## 6. Ma trận outcome G10 — 10/10 ID đã có nguồn SGK, placement Chuyên đề vẫn chờ review
+
+| Canonical outcome | Mô-đun kiến thức Chuyên đề | Nhóm luyện tập chứng cứ | Trạng thái |
+|---|---|---|---|
+| `G10-B26-EXPERIMENT_SAMPLE_SPACE` | KT-G10-01 | B26-C01; W26-01 | Topic mapping dự thảo |
+| `G10-B26-EVENT_SUBSET` | KT-G10-01 | B26-P02; W26-01 | Topic mapping dự thảo |
+| `G10-B26-COMPLEMENT` | KT-G10-03 | B26-C02; B26-P01 | Topic mapping dự thảo |
+| `G10-B26-CLASSICAL_RATIO` | KT-G10-02 | B26-C02; B26-P03 | Topic mapping dự thảo |
+| `G10-B26-SCOPE_SMALL_PROBABILITY` | KT-G10-03 | B26-P04; B26-P05 | Topic mapping dự thảo |
+| `G10-B27-COUNTING_OUTCOMES` | KT-G10-04 | B27-P01; W27-ANCHOR-01 | Topic mapping dự thảo |
+| `G10-B27-TREE_SEQUENCE` | KT-G10-04 | B27-C01; B27-P03 | Topic mapping dự thảo |
+| `G10-B27-COMPLEMENT_PROBABILITY` | KT-G10-03 | B27-P02; W27-ANCHOR-01 | Topic mapping dự thảo |
+| `G10-B27-EQUIPROBABLE_MODELLING` | KT-G10-02; KT-G10-05 | B27-P05; B26-P05 | Topic mapping dự thảo |
+| `G10-B27-MULTISTEP_CONTEXT` | KT-G10-05 | B27-P04; B27-P03 | Topic mapping dự thảo |
+
+Lưu ý: Các ID item trong cột nhóm luyện tập là **viết tắt để đọc nhanh**, tương ứng với ID nguyên vẹn `THPT-G10-...` ở bảng Luyện tập. Đây không phải 10 item mới và không thay thế ma trận nguồn SGK gốc. **Chưa có Topic Readiness hay review học thuật riêng ở cấp Chuyên đề.**
+
+## 7. Yêu cầu review NotebookLM cụ thể
 
 Trả `SOURCE_RECEIPT`, `TOPIC_MODULE_REGISTER` cho 5 mô-đun Kiến thức lớp 10, `OUTCOME_ALIGNMENT` 10/10 ở phạm vi G10, `PLACEMENT_REGISTER` 16/16 cùng canonical ID (không nhân bản), phát hiện bài/ví dụ gần trùng hoặc gây lộ đề SGK Readiness, mức Core/Practice/Advanced, `P0/P1/P2` và `MINIMAL_DELTA`. Kiểm tra đủ độ sâu để **một học sinh mở trực tiếp vào Topic vẫn học được phần nền tảng G10**, và xác nhận có bắt buộc thêm nội dung nào từ S1 trước khi coi segment G10 hoàn chỉnh. **Không cấp PASS toàn Chuyên đề 10–12** khi S1 lớp 11/12 và Topic Readiness còn thiếu; không tự merge/deploy hay cấp mastery.
