@@ -199,11 +199,16 @@ async function ready(page,path){
   const exerciseModal=page.locator("dialog.thpt-r4-practice-dialog");
   assert(await exerciseModal.isVisible(),"Core card did not open an exercise modal");
   assert.equal(page.url(),currentPracticeRoute,"Opening a lesson Core must not navigate to another page");
-  await exerciseModal.locator('input[type="radio"]').first().check();
-  await exerciseModal.locator('button[type="submit"]').click();
-  assert((await exerciseModal.locator('[role="status"]').last().textContent()).includes("Đúng."),"Draft demo Core did not grade after Check");
+  assert.equal((await exerciseModal.locator('[data-thpt-reviewed-formative="1"]').count()),1,"B15 must load the reviewed public canonical bank, not a UI demo");
+  assert((await exerciseModal.locator(".thpt-r4-reviewed-formative-card").textContent()).includes("THPT-G10-B15-C01"),"Canonical B15 Core ID not visible");
+  const b15Solution=exerciseModal.locator(".thpt-r4-reviewed-formative-card details").last();
+  assert(!await b15Solution.evaluate(el=>el.open),"Practice solution must stay collapsed before deliberate reveal");
+  await b15Solution.locator("summary").click();
+  assert(await b15Solution.evaluate(el=>el.open),"Practice solution did not open on learner request");
+  assert((await b15Solution.textContent()).includes("x=2"),"Reviewed B15 Core solution is missing");
   await exerciseModal.locator(".thpt-r4-modal-buttons button").last().click();
-  assert((await exerciseModal.locator(".thpt-r4-modal-progress").textContent()).includes("2 / 2"),"Draft exercise modal did not navigate to question two");
+  assert((await exerciseModal.locator(".thpt-r4-modal-progress").first().textContent()).includes("2 / 2"),"Reviewed exercise modal did not navigate to question two");
+  assert((await exerciseModal.locator(".thpt-r4-reviewed-formative-card").textContent()).includes("THPT-G10-B15-C02"),"Question navigation must retain canonical B15 IDs");
   await exerciseModal.locator("[data-thpt-modal-close]").click();
   assert(await exerciseModal.isHidden(),"Exercise modal did not close");
   await page.locator('[data-thpt-open-quiz="b16-core"]').click();
@@ -220,10 +225,21 @@ async function ready(page,path){
   await page.locator('[data-thpt-open-quiz="b17-practice"]').click();
   await exerciseModal.locator(".thpt-r4-modal-cumulative-button").click();
   await exerciseModal.locator(".thpt-r4-modal-cumulative-item").first().waitFor();
+  assert((await exerciseModal.locator('[data-thpt-canonical-item]').count())===3,
+    "B17 cumulative A3/A4/B4 must retain reviewed canonical IDs, not anonymous headings");
   assert((await exerciseModal.locator(".thpt-r4-modal-cumulative-item").count())===3,"B17 Practice modal must include A3/A4/B4 from one cumulative source");
   assert(await exerciseModal.locator(".thpt-r4-modal-cumulative-item").first().locator("details").isVisible(),"Cumulative practice solution must be learner-openable");
   await exerciseModal.locator("[data-thpt-modal-close]").click();
   assert.equal(page.url(),currentPracticeRoute,"Modal interactions unexpectedly navigated away");
+  await ready(page,"thu-vien/tu-luan/");
+  assert((await page.locator(".thpt-r4-written-card").count())===8,"Reviewed Chapter VI Written library must have eight cards");
+  assert((await page.locator('[data-thpt-written-canonical]').count())===6,"Six newly reviewed Written IDs must have canonical identity");
+  assert((await page.locator('.thpt-r4-written-card[data-thpt-kind="anchor"]').count())===4,"Four anchor labels must be a subset of eight Written");
+  for(const section of await page.locator('[data-thpt-written-canonical]').all()){
+   assert(await section.locator("details").count()===2,"Every reviewed Written must have hint and solution/rubric");
+   const solution=section.locator("details").last();
+   assert(!await solution.evaluate(el=>el.open),"Written solution must be closed by default");
+  }
   await ready(page,"sgk/chuong-vi/tu-kiem-tra-chuong/");
   const chapterReady=page.locator('[data-thpt-assessment="sgk-chapter"][data-thpt-readiness]');
   assert((await chapterReady.count())===1,"Missing separate SGK chapter Readiness engine");
