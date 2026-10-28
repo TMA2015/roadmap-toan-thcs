@@ -1,5 +1,8 @@
 # Owner decision — THPT official site deployment conditional approval
 
+> **SUPERSEDED ARCHITECTURE NOTE · 28/10/2026:** Owner explicitly rejected student accounts, Firebase Auth, Cloudflare Worker/D1, learner allowlists and a new assessment backend for Toán THPT. The older release-gate rows below describing authenticated private banking, per-learner server ledgers and D1 staging are retained as historical discussion **only, and are NOT active release requirements**. Current authority: [THPT_OWNER_CORRECTION_NO_STUDENT_ACCOUNTS_20261028.md](THPT_OWNER_CORRECTION_NO_STUDENT_ACCOUNTS_20261028.md). GitHub static website + Gemini support, no user accounts. Readiness design/release scope must be re-planned without misrepresenting static-client answer secrecy; owner conditional permission to deploy remains contingent on newly aligned QA and acceptance. No merge/deploy.
+
+
 **Recorded:** 28/10/2026  
 **Owner message:** “Nếu trang chính thức đạt các điều kiện kiểm tra, tôi đồng ý triển khai.”  
 **Interpretation:** `OWNER_DEPLOYMENT_INTENT=CONDITIONALLY_APPROVED`, not immediate release authorisation. This does **not** imply that the Preview branch, backend, learner records or the entire Toán 10–12 curriculum already pass release QA.
