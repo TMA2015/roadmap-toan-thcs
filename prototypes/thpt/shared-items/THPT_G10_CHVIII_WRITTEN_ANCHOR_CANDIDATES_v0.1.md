@@ -1,6 +1,6 @@
 # Toán 10 KNTT Chương VIII — Written/Anchor draft v0.1
 
-**DRAFT_NOT_ACADEMICALLY_REVIEWED**, chưa triển khai trong website, không ghi mastery. Written dùng một ngân hàng; Anchor là nhãn trên Written (không nhân bản câu). Nguồn S1: SGK tr.60–79, SBT tr.50–59.
+**DRAFT_NOT_ACADEMICALLY_REVIEWED**, chưa triển khai trong website, không ghi mastery. Written dùng một ngân hàng; Anchor là nhãn trên Written (không nhân bản câu). Nguồn S1: SGK tr.59–79, SBT tr.50–59.
 
 ## THPT-G10-CHVIII-W23-01 · Bài 23 · Written, 6 điểm
 
