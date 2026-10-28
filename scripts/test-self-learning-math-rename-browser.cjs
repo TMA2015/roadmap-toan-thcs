@@ -72,5 +72,16 @@ const open=async(page,url)=>{
     console.log("PASS candidate path "+prefix+" on "+viewport.width+"px, THCS/THPT, AI, cover, no-answer-leak");
    }
   }
+  // Both project paths share one tma2015.github.io origin; verify a stored
+  // value survives path migration without changing any real student keys.
+  const migrationPage=await browser.newPage();
+  await open(migrationPage,host+"/roadmap-toan-thcs/");
+  await migrationPage.evaluate(()=>localStorage.setItem("__math_repo_rename_test__","origin-retained"));
+  await open(migrationPage,host+"/self-learning-math/");
+  assert.equal(await migrationPage.evaluate(()=>localStorage.getItem("__math_repo_rename_test__")),
+    "origin-retained","A renamed Pages project path must not destroy same-origin localStorage");
+  await migrationPage.evaluate(()=>localStorage.removeItem("__math_repo_rename_test__"));
+  await migrationPage.close();
+  console.log("PASS same-origin localStorage persists from legacy Pages path to new Pages path");
  }finally{await browser.close();}
 })().catch(e=>{console.error("FAIL dual GitHub Pages prefix smoke:",e);process.exit(1);});
