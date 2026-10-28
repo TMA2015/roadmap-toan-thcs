@@ -5,7 +5,7 @@ const ui=read("docs/assets/javascripts/floating-ai-tutor-v1.js");
 const prompt=read("docs/assets/javascripts/firebase-gemini-v1.js");
 const mk=read("mkdocs.yml");
 const ok=(v,m)=>{if(!v)throw Error(m)};
-ok(ui.includes("isReadingPage")&&ui.includes("(?:roadmap-toan-thcs\\/)?kien-thuc"),"explicit teaching-route gate");
+ok(ui.includes("isReadingPage")&&ui.includes("(?:roadmap-toan-thcs|self-learning-math)\\"),"explicit teaching-route gate");
 const routeSource=ui.match(/const isReadingPage = \(\) => \{[\s\S]*?\n  \};/)?.[0];
 ok(routeSource,"route function remains independently testable");
 const mayMount = pathname => require("vm").runInNewContext(routeSource+"\nisReadingPage();",{location:{pathname}});
@@ -17,7 +17,11 @@ for(const pathname of [
   "/roadmap-toan-thcs/kien-thuc/25-tong-hop-on-thi-10/anchor-25-004/",
   "/kien-thuc/25-tong-hop-on-thi-10/anchor-25-011/index.html",
   "/roadmap-toan-thcs/thpt-preview/sgk/chuong-vi/bai-16/",
-  "/roadmap-toan-thcs/thpt-preview/chuyen-de/ham-so/kien-thuc/"
+  "/roadmap-toan-thcs/thpt-preview/chuyen-de/ham-so/kien-thuc/",
+  "/self-learning-math/kien-thuc/04-bieu-thuc-dai-so/",
+  "/self-learning-math/kien-thuc/25-tong-hop-on-thi-10/anchor-25-004/",
+  "/self-learning-math/thpt-preview/sgk/chuong-vi/bai-16/",
+  "/self-learning-math/thpt-preview/chuyen-de/ham-so/kien-thuc/"
 ])ok(mayMount(pathname),"reading route needs contextual Tutor: "+pathname);
 for(const pathname of [
   "/roadmap-toan-thcs/kien-thuc/04-bieu-thuc-dai-so/bai-tap/",
@@ -30,7 +34,10 @@ for(const pathname of [
   "/roadmap-toan-thcs/ai/ai-tutor-core-contract/",
   "/roadmap-toan-thcs/thpt-preview/sgk/chuong-vi/tu-kiem-tra-chuong/",
   "/roadmap-toan-thcs/thpt-preview/chuyen-de/ham-so/tu-kiem-tra/",
-  "/roadmap-toan-thcs/thpt-preview/chuyen-de/ham-so/luyen-tap/"
+  "/roadmap-toan-thcs/thpt-preview/chuyen-de/ham-so/luyen-tap/",
+  "/self-learning-math/kien-thuc/04-bieu-thuc-dai-so/tu-kiem-tra/",
+  "/self-learning-math/thpt-preview/sgk/chuong-vi/tu-kiem-tra-chuong/",
+  "/self-learning-math/thpt-preview/chuyen-de/ham-so/tu-kiem-tra/"
 ])ok(!mayMount(pathname),"assessed/nonreading route must not mount Tutor: "+pathname);
 ok(ui.includes('activity: "learning"')&&ui.includes('helpMode: "TEACH_FROM_START"'),"learning context, not assessment/practice");
 ok(ui.includes("selectedText(root)")&&ui.includes("sectionText(root, heading)"),"selection or active section context");
