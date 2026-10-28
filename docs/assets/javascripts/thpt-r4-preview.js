@@ -25,7 +25,7 @@
   if(!header)return;
   const topics=[["Hàm số và đồ thị · MẪU","chuyen-de/ham-so/kien-thuc/"]];
   const groups=[
-   ["Trang chủ","home/"],["Học theo SGK","sgk/"],
+   ["Trang chủ THPT","home/"],["Học theo SGK","sgk/"],
    ["Chuyên đề","chuyen-de/"],["Thư viện bài tập","thu-vien/"],
    ["Tiến độ học tập","tien-do/"]
   ];
@@ -58,12 +58,22 @@
      const a=document.createElement("a");a.href=base+url;a.textContent=label;nav.append(a);
     }
     section.append(summary,nav);
+    // The programme cover is above all THPT learning groups.
+    // It is not a sixth group and does not change Golden 5+1.
+    const coverNav=document.createElement("nav");
+    coverNav.className="roadmap-main-quick__links";
+    coverNav.setAttribute("aria-label","Cổng chọn chương trình Toán");
+    const coverLink=document.createElement("a");
+    coverLink.href=base;
+    coverLink.textContent="⌂ Chọn chương trình";
+    coverLink.dataset.mathProgramCoverLink="1";
+    coverNav.appendChild(coverLink);
     const topicNav=document.createElement("nav");topicNav.className="roadmap-topic-dialog__list";
     topicNav.setAttribute("aria-label","Các chuyên đề mẫu THPT");
     for(const [label,url]of topics){
      const a=document.createElement("a");a.href=base+url;a.textContent=label;topicNav.append(a);
     }
-    dlg.append(heading,section,hint,topicNav);
+    dlg.append(heading,coverNav,section,hint,topicNav);
     dlg.addEventListener("click",event=>{if(event.target===dlg)dlg.close()});
     document.body.append(dlg);
    }
