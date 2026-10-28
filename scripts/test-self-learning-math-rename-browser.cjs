@@ -83,5 +83,44 @@ const open=async(page,url)=>{
   await migrationPage.evaluate(()=>localStorage.removeItem("__math_repo_rename_test__"));
   await migrationPage.close();
   console.log("PASS same-origin localStorage persists from legacy Pages path to new Pages path");
+
+  // IndexedDB was tested separately in Phase4 canaries. Protect the origin
+  // property too, without enabling experimental storage in production.
+  const idbPage=await browser.newPage();
+  await open(idbPage,host+"/roadmap-toan-thcs/");
+  const testDb="__math_rename_origin_qa_v1__";
+  try{
+    await idbPage.evaluate(name=>new Promise((resolve,reject)=>{
+      const req=indexedDB.open(name,1);
+      req.onupgradeneeded=()=>req.result.createObjectStore("probe");
+      req.onerror=()=>reject(req.error);
+      req.onsuccess=()=>{
+        const db=req.result,tx=db.transaction("probe","readwrite");
+        tx.objectStore("probe").put("preserved-across-repo-rename","marker");
+        tx.oncomplete=()=>{db.close();resolve();};
+        tx.onerror=()=>{db.close();reject(tx.error);};
+      };
+    }),testDb);
+    await open(idbPage,host+"/self-learning-math/");
+    const retained=await idbPage.evaluate(name=>new Promise((resolve,reject)=>{
+      const req=indexedDB.open(name);
+      req.onerror=()=>reject(req.error);
+      req.onsuccess=()=>{
+        const db=req.result,tx=db.transaction("probe","readonly");
+        const get=tx.objectStore("probe").get("marker");
+        get.onsuccess=()=>{const value=get.result;db.close();resolve(value);};
+        get.onerror=()=>{db.close();reject(get.error);};
+      };
+    }),testDb);
+    assert.equal(retained,"preserved-across-repo-rename",
+      "IndexedDB must remain same-origin across old/new GitHub Pages repo paths");
+    console.log("PASS same-origin IndexedDB survives old/new repo path switch (QA database only)");
+  }finally{
+    await idbPage.evaluate(name=>new Promise(resolve=>{
+      const req=indexedDB.deleteDatabase(name);
+      req.onsuccess=req.onerror=req.onblocked=()=>resolve();
+    }),testDb);
+    await idbPage.close();
+  }
  }finally{await browser.close();}
 })().catch(e=>{console.error("FAIL dual GitHub Pages prefix smoke:",e);process.exit(1);});
