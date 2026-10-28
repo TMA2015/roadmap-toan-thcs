@@ -1,7 +1,7 @@
 (() => {
   "use strict";
   // Read-only catalog references: one original problem source, no clone, no learner record.
-  const rootPath=()=>location.pathname.startsWith("/roadmap-toan-thcs/")?"/roadmap-toan-thcs/":"/";
+  const rootPath=()=>{const m=location.pathname.match(/^\/(roadmap-toan-thcs|self-learning-math)\//);return m?"/"+m[1]+"/":"/";};
   const el=(tag,cls,text)=>{const e=document.createElement(tag);if(cls)e.className=cls;if(text!==undefined)e.textContent=text;return e;};
   const init=async()=>{
     const root=document.querySelector("[data-model-examples-library]");
