@@ -341,7 +341,7 @@ async function ready(page,path){
   const widths=await page.evaluate(()=>({document:document.documentElement.scrollWidth,viewport:innerWidth}));
   assert(widths.document<=widths.viewport+20,"Adaptive knowledge preview caused horizontal overflow");
 
-  // Chapter VI authoring phase: navigable DRAFT lessons never appear as reviewed.
+  // Chapter VI reviewed academic snapshot is integrated into non-production lesson previews.
   await ready(page,"sgk/chuong-vi/");
   const draftLinks=page.locator(".thpt-r4-lesson-tabs a[href]");
   const lessonTargets=["bai-15/","bai-16/","bai-17/","bai-18/"];
@@ -356,21 +356,21 @@ async function ready(page,path){
     await ready(page,"sgk/chuong-vi/bai-"+lesson+"/");
     assert((await page.locator("h1").first().textContent()).includes(title),"Wrong draft heading B"+lesson);
     const body=await page.locator("article").textContent();
-    assert(body.includes("DRAFT_NOT_ACADEMICALLY_REVIEWED"),"Draft B"+lesson+" accidentally looks academically cleared");
-    assert(body.includes("chưa")||body.includes("Chưa"),"Missing academic source disclaimer B"+lesson);
-    assert((await page.locator("[data-thpt-readiness]").count())===0,"Unreviewed B"+lesson+" must not expose mastery readiness");
+    assert(body.includes("NOTEBOOKLM_CHVI_SNAPSHOT_PASS"),"Reviewed B"+lesson+" status receipt missing from lesson preview");
+    assert(body.includes("TÍCH HỢP ĐANG QA"),"B"+lesson+" must distinguish academically reviewed snapshot from website QA");
+    assert((await page.locator("[data-thpt-readiness]").count())===0,"Academic PASS must not activate learner mastery readiness inside lesson B"+lesson);
     const w=await page.evaluate(()=>({document:document.documentElement.scrollWidth,viewport:innerWidth}));
     assert(w.document<=w.viewport+20,"Draft B"+lesson+" horizontal overflow");
   }
   await ready(page,"sgk/chuong-vi/bai-tap-cuoi-chuong/");
   const integrated=await page.locator("article").textContent();
-  assert(integrated.includes("DRAFT_NOT_ACADEMICALLY_REVIEWED"),"Unreviewed chapter exercises must be labeled");
-  assert((await page.locator("article details").count())===8,"Chapter draft must include eight independently solvable explanations");
+  assert(integrated.includes("ACADEMIC_REVIEWED_SNAPSHOT_20281028")||integrated.includes("ACADEMIC_REVIEWED_SNAPSHOT_20261028"),"Reviewed cumulative exercises must be tied to the correct 2026-10-28 academic snapshot");
+  assert((await page.locator("article details").count())===8,"Reviewed cumulative source must retain eight independently solvable explanations");
   assert(!(await page.locator("article details").first().getAttribute("open")),"End-chapter answers should start collapsed");
   await ready(page,"sgk/chuong-vi/bai-16/");
   assert((await page.locator("article").textContent()).includes("ACADEMIC_CLEARANCE: YES"),"Existing B16 academic receipt unintentionally lost");
 
   await page.close();
-  console.log("PASS THPT R4 Chromium viewport + Core/Practice/Readiness/Written smoke test (synthetic demo; not academic review or physical-device approval)");
+  console.log("PASS THPT R4 reviewed formative/Written + technical Readiness Chromium smoke (not production approval or real-device QA)");
  }finally{await browser.close();}
 })().catch(e=>{console.error("FAIL THPT R4 browser smoke",e);process.exit(1)});
