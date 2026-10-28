@@ -2,7 +2,7 @@
 
 <div class="thpt-r4-screen" data-thpt-r4>
 <p class="thpt-r4-eyebrow">TOÁN 10 · CHƯƠNG VI · BẢN NHÁP HỌC LIỆU</p>
-<p class="thpt-r4-lead"><strong>DRAFT_NOT_ACADEMICALLY_REVIEWED.</strong> Bài soạn nguyên gốc theo mạch hàm số bậc hai → xét dấu → bất phương trình bậc hai; đã đối chiếu trực quan SGK/SBT gốc; còn chờ ma trận item hoàn chỉnh và NotebookLM review theo chương. Không ghi điểm hay tiến độ.</p>
+<p class="thpt-r4-lead"><strong>NOTEBOOKLM_CHVI_SNAPSHOT_PASS · TÍCH HỢP ĐANG QA.</strong> Học liệu Bài 17 trong batch SGK Chương VI đã được NotebookLM review PASS ngày 28/10/2026; trang hiện tại đang được đồng bộ/đối chiếu lại với snapshot đã duyệt. Core và Luyện tập lấy item đã review qua cùng ID; không ghi điểm hoặc mastery.</p>
 <nav class="thpt-r4-lesson-tabs" aria-label="Điều hướng Chương VI"><a href="../">Chương VI</a><a href="../bai-16/">Bài 16</a><span class="is-current" aria-current="page">Bài 17 · Dấu tam thức (nháp)</span><a href="../bai-18/">Bài 18</a></nav>
 </div>
 
@@ -78,9 +78,9 @@ x^2-2(m+1)x+m^2+3>0
 Suy ra \(\boxed{m<1}\). Nếu \(m=1\), tam thức có nghiệm kép và bằng \(0\) tại một điểm nên **không** thỏa dấu \(>\).
 
 !!! note "Ranh giới học thuật"
-    Phần tham số là **mở rộng luyện tập** được định hướng bởi SBT Bài 17 trang in 17–18 (bài toán nghiệm, dấu bất phương trình với tham số), không tự coi là Core bắt buộc của SGK. Ví dụ và lời giải do dự án tự biên soạn, chưa được NotebookLM thẩm định.
+    Phần tham số là **mở rộng luyện tập** được định hướng bởi SBT Bài 17 trang in 17–18 (bài toán nghiệm, dấu bất phương trình với tham số), không tự coi là Core bắt buộc của SGK. Ví dụ và lời giải do dự án tự biên soạn, đã được NotebookLM thẩm định trong snapshot Chương VI ngày 28/10/2026; website còn QA riêng.
 
-[Mở khu vực **Core và Luyện tập/Vận dụng của Chương VI**](luyen-tap.md) — hiện các thẻ Bài 17 mới là **demo giao diện**, chưa kết nối ngân hàng câu hỏi ứng viên đang chờ review. Khi được thẩm định, từng thẻ sẽ lấy bài theo canonical item ID và lịch sử làm bài.
+[Mở khu vực **Core và Luyện tập/Vận dụng của Chương VI**](luyen-tap.md) — hai thẻ Bài 17 hiện mở **6 item canonical đã review** theo Core/Luyện tập/Vận dụng, có gợi ý/lời giải tự mở; không ghi điểm hay lịch sử học sinh.
 
 ## 4. Tự luyện
 
@@ -103,4 +103,4 @@ Suy ra \(\boxed{m<1}\). Nếu \(m=1\), tam thức có nghiệm kép và bằng \
 - Không kết hợp tập nghiệm bất phương trình với **miền xác định** từ bài toán thực tế.
 
 !!! warning "Giới hạn"
-    Bản nháp này dùng ví dụ nguyên gốc và định lí phổ thông, **đã đối chiếu hình trang SGK 19–24 và SBT 16–18; chưa thẩm định độc lập toàn bộ học liệu**; chưa có canonical exercise register/Readiness chính thức. Không coi là bài học Academic PASS hoặc đã phát hành.
+    Bản nháp này dùng ví dụ nguyên gốc và định lí phổ thông, **đã đối chiếu hình trang SGK 19–24 và SBT 16–18**; snapshot B17 đã nhận NotebookLM Academic PASS. Trang hiện tại chưa hoàn thành xác nhận tương đương byte/semantics và chưa triển khai Readiness bảo mật; không coi là production đã phát hành.
