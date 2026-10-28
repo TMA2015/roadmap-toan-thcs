@@ -61,13 +61,14 @@ function d1Repository(db){
   async getBank(id){
    const bank=await one("SELECT id,scope,version,required_count,active FROM thpt_banks WHERE id=?",id);
    if(!bank)return null;
-   const items=(await db.prepare("SELECT item_id,prompt,choices_json,key_index,explanation,heldout,blocked FROM thpt_bank_items WHERE bank_id=? ORDER BY position")
+   const items=(await db.prepare("SELECT item_id,prompt,response_kind,choices_json,key_index,explanation,rubric_ready,heldout,blocked FROM thpt_bank_items WHERE bank_id=? ORDER BY position")
      .bind(id).all()).results||[];
    return {id:bank.id,scope:bank.scope,version:bank.version,
      required_count:bank.required_count,active:bank.active===1,
      items:items.map(q=>({item_id:q.item_id,prompt:q.prompt,
-       choices:JSON.parse(q.choices_json),key:q.key_index,
-       explanation:q.explanation,heldout:q.heldout===1,blocked:q.blocked===1}))};
+       response_kind:q.response_kind,choices:JSON.parse(q.choices_json),
+       key:q.key_index,explanation:q.explanation,rubric_ready:q.rubric_ready===1,
+       heldout:q.heldout===1,blocked:q.blocked===1}))};
   },
   async getAttempt(uid,bankId,version){
    return one("SELECT * FROM thpt_attempts WHERE uid=? AND bank_id=? AND bank_version=?",
@@ -105,11 +106,13 @@ function d1Repository(db){
    const prior=await this.getAttempt(uid,bank.id,bank.version);
    return prior||null;
   },
-  async finalize(uid,attemptId,response){
+  async finalize(uid,attemptId,response,answers){
    const serialized=JSON.stringify(response);
-   await db.prepare("UPDATE thpt_attempts SET result_json=?,submitted_at=CURRENT_TIMESTAMP "+
+   // Answers remain private in D1 and are not echoed to a public result;
+   // rubric-based written grading must be separately approved.
+   await db.prepare("UPDATE thpt_attempts SET result_json=?,responses_json=?,submitted_at=CURRENT_TIMESTAMP "+
     "WHERE id=? AND uid=? AND submitted_at IS NULL")
-    .bind(serialized,attemptId,uid).run();
+    .bind(serialized,JSON.stringify(answers),attemptId,uid).run();
    const stored=await this.findAttempt(uid,attemptId);
    if(!stored?.submitted_at||!stored.result_json)
      fail("FINAL_SUBMIT_NOT_PERSISTED",503);
