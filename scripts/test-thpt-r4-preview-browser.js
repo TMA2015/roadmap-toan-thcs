@@ -485,13 +485,15 @@ async function ready(page,path){
   assert(exposureResult.first&&exposureResult.second&&exposureResult.hint,
     "Authenticated canonical Core exposure did not record");
   assert.equal(exposureResult.wrong,false,"Nonexistent Topic Core must be denied");
-  assert.equal(exposureResult.calls.length,2,
-    "Repeating the same exposure event must not duplicate network writes");
+  // D1 deduplicates by verified learner, not by shared browser state.
+  assert.equal(exposureResult.calls.length,3,
+    "Every authenticated view must be sent even on a shared-family device");
   assert(exposureResult.calls.every(x=>x.token==="Bearer synthetic-token"),
     "Exposure logs require a signed-in learner token");
   assert.equal(exposureResult.calls[0].body.item_id,"THPT-CORE-QF01");
   assert.equal(exposureResult.calls[0].body.event_kind,"QUESTION_SHOWN");
-  assert.equal(exposureResult.calls[1].body.event_kind,"HINT_OPENED");
+  assert.equal(exposureResult.calls[1].body.event_kind,"QUESTION_SHOWN");
+  assert.equal(exposureResult.calls[2].body.event_kind,"HINT_OPENED");
   assert(!JSON.stringify(exposureResult.calls).includes("answer"),
     "Formative exposure call must never transmit an answer or key");
 
