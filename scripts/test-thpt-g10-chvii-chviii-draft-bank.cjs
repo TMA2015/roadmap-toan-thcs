@@ -115,4 +115,21 @@ for(const [file,expected] of [
 assert(!readiness.includes("THPT-G10-B19-P05"),
  "Readiness blueprint must not embed advanced Practice item IDs");
 
+
+// Source-boundary regression: direct visual scan labels SGK printed p29 (ChVII/B19),
+// p57 (ChVII end exercises), p59 (ChVIII/B23); avoid +1 page drift.
+const receipt7=read("prototypes/thpt/THPT_G10_CHVII_S1_VISUAL_SOURCE_RECEIPT_AND_SCOPE_20261028.md");
+const receipt8=read("prototypes/thpt/THPT_G10_CHVIII_S1_VISUAL_SOURCE_RECEIPT_AND_SCOPE_20261028.md");
+for(const phrase of ["| Chương VII | 29–58 |","| Bài 19 · Phương trình đường thẳng | 29–34 |",
+ "| Bài 22 · Ba đường conic | 47–56 |","| Bài tập cuối Chương VII | 57–58 |"]){
+ assert(receipt7.includes(phrase),"ChVII SGK page boundary drift: "+phrase);
+}
+for(const phrase of ["| Chương VIII | 59–79 |","| Bài 23. Quy tắc đếm | 59–64 |"]){
+ assert(receipt8.includes(phrase),"ChVIII SGK page boundary drift: "+phrase);
+}
+assert(matrix.includes("29–58")&&matrix.includes("59–79"),
+ "matrix must use corrected source chapter boundaries");
+assert(!matrix.includes("29–60")&&!matrix.includes("60–79"),
+ "matrix contains stale +1 SGK page boundaries");
+
 console.log("PASS THPT G10 draft bank v0.2: 56 Core/Practice + 7 Written = 63 unique candidate items; 35 mapped provisional outcomes; 4 original SVGs; 14 readiness blueprint slots with no keys. NOT Academic PASS.");
