@@ -15,6 +15,7 @@ Cho tập hợp \(D\) gồm các giá trị của \(x\). Nếu **mỗi** \(x\in 
 - \(f(x)\): **giá trị của hàm số** tại \(x\).
 - \(T=\{f(x)\mid x\in D\}\): **tập giá trị** của hàm số.
 - Một giá trị \(x\) không thể đồng thời ứng với hai giá trị \(y\) khác nhau nếu đó là đồ thị của một hàm số.
+- **Bảng có đầu vào lặp:** nếu hai hàng cùng \(x\) và cùng \(y\), quan hệ vẫn có thể là hàm số; chỉ khi cùng \(x\) ứng với **hai \(y\) khác nhau** mới vi phạm tính đơn trị. Chẳng hạn \((1;3),(2;4),(2;4)\) mô tả một hàm số trên \(\{1;2\}\), nhưng thay cặp cuối bằng \((2;5)\) thì không.
 
 **Ví dụ 1.** Với \(f(x)=\sqrt{x-1}\), căn thức xác định khi \(x-1\ge0\), tức \(D=[1;+\infty)\). Đồng thời \(f(x)\ge0\) và mọi giá trị không âm đều nhận được; do đó \(T=[0;+\infty)\).
 
