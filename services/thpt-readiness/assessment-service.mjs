@@ -48,8 +48,24 @@ const activeView=(a,bank)=>({
  content_version:bank.version,questions:visible(bank),
  completed:false,mastery_credit:false // require independently audited mastery engine
 });
+const FORMATIVE_ROLES=new Set([
+ "SGK_CORE","SGK_PRACTICE","SGK_CHAPTER_APPLICATION",
+ "SGK_WRITTEN","TOPIC_PRACTICE"
+]);
+const EXPOSURE_EVENTS=new Set(["QUESTION_SHOWN","HINT_OPENED","SOLUTION_OPENED"]);
 export function createAssessmentService(repo){
  return Object.freeze({
+  async recordExposure(uid,itemId,role,eventKind){
+   verifyId(uid,"LEARNER");verifyId(itemId,"ITEM");
+   if(!FORMATIVE_ROLES.has(role)||!EXPOSURE_EVENTS.has(eventKind))
+     throw new AssessmentError("INVALID_FORMATIVE_EXPOSURE",400);
+   const publicItem=await repo.getPublicItem(itemId);
+   if(!publicItem||!publicItem.active||
+      !publicItem.allowed_scopes.includes(role))
+     throw new AssessmentError("UNREGISTERED_FORMATIVE_ITEM",404);
+   await repo.recordPublicExposure(uid,itemId,role,eventKind);
+   return {recorded:true,item_id:itemId,role,event_kind:eventKind,mastery_credit:false};
+  },
   async start(uid,bankId){
    verifyId(uid,"LEARNER");verifyId(bankId,"BANK");
    const bank=verifyBank(await repo.getBank(bankId));
@@ -58,6 +74,9 @@ export function createAssessmentService(repo){
     if(prior.submitted_at)throw new AssessmentError("ALREADY_SUBMITTED",409);
     return activeView(prior,bank); // resume same exposure, not a new test
    }
+   const publicItems=await repo.findPublished(bank.items.map(q=>q.item_id));
+   if(publicItems.length)
+     throw new AssessmentError("HELDOUT_ITEM_WAS_PUBLIC",409);
    const seen=await repo.findExposed(uid,bank.items.map(q=>q.item_id));
    if(seen.length)throw new AssessmentError("ASSESSMENT_ITEMS_PREVIOUSLY_SEEN",409);
    const result=await repo.claim(uid,bank);
