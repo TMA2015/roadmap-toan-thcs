@@ -7,6 +7,8 @@ on:
       - 'docs/thpt-preview/**'
       - 'docs/assets/javascripts/thpt-r4-preview.js'
       - 'docs/assets/javascripts/thpt-protected-readiness-v1.js'
+      - 'docs/assets/javascripts/thpt-formative-exposure-v1.js'
+      - 'scripts/test-thpt-public-exposure-registry.cjs'
       - 'docs/assets/stylesheets/thpt-r4-preview.css'
       - 'review-packets/thpt-g10-b16-r4/**'
       - 'scripts/serve-thpt-r4-lan-preview.ps1'
@@ -35,11 +37,13 @@ jobs:
         run: |
           node --check docs/assets/javascripts/thpt-r4-preview.js
           node --check docs/assets/javascripts/thpt-protected-readiness-v1.js
+          node --check docs/assets/javascripts/thpt-formative-exposure-v1.js
       - name: Secure THPT assessment service — source and isolation QA
         run: |
           node --check services/thpt-readiness/assessment-service.mjs
           node --check services/thpt-readiness/worker.mjs
           node scripts/test-thpt-readiness-secure.mjs
+          node scripts/test-thpt-public-exposure-registry.cjs
           python scripts/test-thpt-readiness-d1-schema.py
       - name: Validate local preview PowerShell script syntax
         shell: pwsh
@@ -64,6 +68,7 @@ jobs:
           test -f site-thpt-preview/thpt-preview/thu-vien/index.html
           test -f site-thpt-preview/assets/javascripts/thpt-r4-preview.js
           test -f site-thpt-preview/assets/javascripts/thpt-protected-readiness-v1.js
+          test -f site-thpt-preview/assets/javascripts/thpt-formative-exposure-v1.js
           test -f site-thpt-preview/assets/stylesheets/thpt-r4-preview.css
           echo 'PASS: THPT R4 MkDocs preview paths built. No deployment, academic approval or browser QA implied.'
 
