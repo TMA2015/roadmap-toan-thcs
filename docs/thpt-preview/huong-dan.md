@@ -17,4 +17,13 @@ Trang hướng dẫn giữ bố cục và vai trò giống Toán THCS, không ph
 | Tự kiểm tra cuối chương SGK / chuyên đề | Không | Chỉ sau Final Submit |
 | Tự luận, mỏ neo | Có theo yêu cầu | Học sinh chủ động mở lời giải/rubric |
 
+
+## Bài nào ghi nhận tiến độ và Skill Mastery?
+
+- **Core và Luyện tập:** giúp học sinh học và sửa sai; có gợi ý, có thể xem lời giải. Các lượt này là hoạt động luyện học, **không tự xác nhận Skill Mastery**. Một item có thể xuất hiện ở SGK Core và Luyện tập chuyên đề nhưng chỉ có **một ID canonical**.
+- **Tự kiểm tra cuối chương SGK:** khi có bộ đề chính thức, sẽ đánh giá độc lập những kỹ năng thuộc chương SGK vừa học.
+- **Tự kiểm tra chuyên đề:** khi có bộ đề chính thức, sẽ đánh giá độc lập các kỹ năng thuộc chuyên đề, có thể xuyên các lớp 10–12.
+- Cả hai bài Tự kiểm tra chính thức phải **không gợi ý, không cho Tutor, không lộ đáp án trước Final Submit**. Không dùng nguyên câu đã luyện làm bằng chứng thành thạo nếu chưa kiểm soát việc học sinh đã xem câu đó.
+- **Trạng thái hiện nay:** Bài Tự kiểm tra Chương VI (4 câu) và Tự kiểm tra chuyên đề Hàm số (2 câu) đều là **demo kỹ thuật, không ghi điểm, không cập nhật Skill Mastery**. Bộ câu Readiness riêng đã review chưa được bật thành đánh giá chính thức. Vì vậy hiện **chưa có câu THPT công khai nào được ghi nhận thành thạo**.
+
 [← Về trang chủ THPT](home.md).
