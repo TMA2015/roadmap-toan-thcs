@@ -118,9 +118,11 @@ function d1Repository(db){
    const query="INSERT INTO thpt_attempts (id,uid,bank_id,bank_version,item_ids_json) "+
      "SELECT ?,?,?,?,? WHERE NOT EXISTS "+
      "(SELECT 1 FROM thpt_exposures WHERE uid=? AND item_id IN ("+placeholders+")) "+
+     "AND NOT EXISTS (SELECT 1 FROM thpt_public_item_registry "+
+     "WHERE item_id IN ("+placeholders+")) "+
      "ON CONFLICT(uid,bank_id,bank_version) DO NOTHING";
    const statements=[db.prepare(query).bind(attemptId,uid,bank.id,bank.version,
-     JSON.stringify(itemIds),uid,...itemIds)];
+     JSON.stringify(itemIds),uid,...itemIds,...itemIds)];
    for(const id of itemIds){
     statements.push(db.prepare(
      "INSERT OR IGNORE INTO thpt_exposures (uid,item_id,source_scope) "+
