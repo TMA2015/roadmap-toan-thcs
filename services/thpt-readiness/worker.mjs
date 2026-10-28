@@ -207,7 +207,7 @@ export default {
     if(!payload||typeof payload!=="object"||Array.isArray(payload))
        fail("INVALID_BODY",400);
    }catch(e){if(e instanceof AssessmentError)throw e;fail("INVALID_BODY",400);}
-   const service=createAssessmentService(d1Repository(env.DB));
+   const service=createAssessmentService(repository);
    const output=url.pathname==="/v1/exposure/record"?
       await service.recordExposure(uid,payload.item_id,payload.role,payload.event_kind):
       url.pathname.endsWith("/start")?
