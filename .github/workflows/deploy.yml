@@ -182,6 +182,9 @@ jobs:
           node scripts/test-skill-map-v2-i6-controlled.js
           node scripts/test-skill-map-v2-i6b-public.js
 
+      - name: Guard THPT first-phase static release
+        run: node scripts/test-thpt-static-release.cjs
+
       - name: Build documentation
         run: mkdocs build --strict
 
