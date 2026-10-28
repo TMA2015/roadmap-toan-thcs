@@ -1,7 +1,7 @@
 # Bài 18. Phương trình quy về phương trình bậc hai
 
 <div class="thpt-r4-screen" data-thpt-r4><p class="thpt-r4-eyebrow">TOÁN 10 · CHƯƠNG VI · BẢN NHÁP HỌC LIỆU</p>
-<p class="thpt-r4-lead"><strong>DRAFT_NOT_ACADEMICALLY_REVIEWED.</strong> Bài soạn nguyên gốc minh họa quy trình giải phương trình chứa căn thức quy về phương trình bậc hai. Đã quan sát SGK Bài 18 trang in 25–27 và SBT trang 19–21; chưa có Academic PASS độc lập. Không ghi điểm hoặc tiến độ.</p>
+<p class="thpt-r4-lead"><strong>NOTEBOOKLM_CHVI_SNAPSHOT_PASS · TÍCH HỢP ĐANG QA.</strong> Nội dung học thuật Bài 18 trong batch SGK Chương VI đã được NotebookLM PASS ngày 28/10/2026; trang đang đối chiếu với bản snapshot. Core/Luyện tập dùng canonical item đã review; không ghi điểm hoặc tiến độ.</p>
 <nav class="thpt-r4-lesson-tabs" aria-label="Điều hướng Chương VI"><a href="../">Chương VI</a><a href="../bai-17/">Bài 17</a><span class="is-current" aria-current="page">Bài 18 · Phương trình chứa căn (nháp)</span></nav></div>
 
 ## 1. Vì sao phải kiểm tra nghiệm?
@@ -77,7 +77,7 @@ x^2+16=(2x-1)^2
 \]
 Hai nghiệm ứng viên là \(x=3\) và \(x=-\frac53\). Chỉ \(x=3\) đạt điều kiện. Thử lại: \(\sqrt{3^2+4^2}=5=2\cdot3-1\). Vậy cạnh góc vuông cần tìm dài \(\boxed{3\text{ m}}\).
 
-**Liên hệ S1:** SGK Bài 18, trang in **26–27**, có vận dụng hình học/quãng đường với biểu thức căn; SBT trang **19–21** bổ sung bài điều kiện có nghiệm và một tình huống hình học. Hai ví dụ trên là nội dung **tự biên soạn, chưa review**, dùng để rèn điều kiện căn thức và thử nghiệm ứng viên.
+**Liên hệ S1:** SGK Bài 18, trang in **26–27**, có vận dụng hình học/quãng đường với biểu thức căn; SBT trang **19–21** bổ sung bài điều kiện có nghiệm và một tình huống hình học. Hai ví dụ trên là nội dung **tự biên soạn, đã được NotebookLM review trong snapshot Chương VI**, dùng để rèn điều kiện căn thức và thử nghiệm ứng viên.
 
 ## 4. Những sai lầm thường gặp
 
@@ -85,7 +85,7 @@ Hai nghiệm ứng viên là \(x=3\) và \(x=-\frac53\). Chỉ \(x=3\) đạt đ
 - **Quên dấu của vế không chứa căn:** trong \(\sqrt{A(x)}=B(x)\) phải có \(B(x)\ge0\).
 - **Quên điều kiện của biến và việc thử lại:** nghiệm đại số có thể làm căn vô nghĩa.
 
-[Mở khu vực **Core và Luyện tập/Vận dụng của Chương VI**](luyen-tap.md) — modal hiện tại phục vụ kiểm thử kỹ thuật; bộ ứng viên bài B18 riêng đang chờ đối chiếu và review học thuật, chưa ghi điểm tiến độ.
+[Mở khu vực **Core và Luyện tập/Vận dụng của Chương VI**](luyen-tap.md) — modal Bài 18 lấy **6 item canonical Core/Luyện tập đã review**, lời giải tự mở và chưa ghi điểm/mastery.
 
 ## 5. Tự luyện
 
@@ -101,4 +101,4 @@ Hai nghiệm ứng viên là \(x=3\) và \(x=-\frac53\). Chỉ \(x=3\) đạt đ
 </ol></details>
 
 !!! warning "Giới hạn"
-    Đây là draft kiến thức do dự án tự soạn, **đã đối chiếu trực tiếp SGK trang 25–27 và SBT trang 19–21 nhưng chưa được NotebookLM thẩm định** và chưa đăng ký Core/Readiness/Written chính thức. Chỉ dùng cho phát triển nội bộ, chưa Academic PASS.
+    Đây là draft kiến thức do dự án tự soạn, **đã đối chiếu trực tiếp SGK trang 25–27 và SBT trang 19–21; snapshot đã được NotebookLM thẩm định PASS**. Câu Core/Luyện tập và Written có ID canonical, nhưng Readiness bảo mật chưa triển khai; chưa coi bản trang GitHub là phát hành chính thức.
