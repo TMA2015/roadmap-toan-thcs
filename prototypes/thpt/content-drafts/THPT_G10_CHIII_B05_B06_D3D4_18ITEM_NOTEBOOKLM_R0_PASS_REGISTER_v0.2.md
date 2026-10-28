@@ -1,0 +1,71 @@
+# SGK Toán 10 KNTT · ChIII B05–B06 · D3/D4 18 canonical item revieweds, role/placement index v0.2
+
+**PACKET_ID:** `THPT-G10-CHIII-B05-B06-D3D4-18ITEMS-20261028-R0` · **Status:** `NOTEBOOKLM_R0_PASS_SCOPED_18_OF_18` · **Grade 10 first roadmap**. Reviewer source receipt SGK Tập 1 ChIII pp.33–45, SBT pp.25–45. Prior D1/D2 NotebookLM R0 **PASS** 7/7 knowledge, 7/7 examples, 12/12 outcomes, exact Git blob `1ebc3c1a10818305d9eb0aa1096c06f0acb5005d`. No inherited PASS for these 18 new items.
+
+## Real independently reviewable full-text sources (outside this metadata-only GitHub index)
+
+1. `Temp_THPT_G10_CHIII_B05_D3D4_NINE_CANONICAL_ITEMS_REVIEW_20261028.md` — complete B05 nine stems, answer keys, worked solutions, hints and one Written /6 rubric; **14917 UTF-8 bytes**, SHA256 `4b0b70fefd4fa682b76f43160b5d3e6287ace34d54177df81e26bdb7219785c1`.
+2. `Temp_THPT_G10_CHIII_B06_D3D4_NINE_CANONICAL_ITEMS_REVIEW_20261028.md` — complete B06 nine stems, keys, solutions, hints and one Written /8 rubric; **13714 UTF-8 bytes**, SHA256 `328a7e42fd2f8408844cc3bc835160856863b01c1ed7c32121571e2137287f55`.
+
+**These are two real local owner-to-NotebookLM Markdown attachments, not JSON**, under file 06. Original sources deliberately remain separate until reviewer verdict; **this public authoring index contains only IDs/roles/tier candidates**, not the reviewed answers/stems. Do not claim either source text was committed to GitHub at this stage. After reviewer PASS/HOLD, persist the exact accepted snapshot into one canonical bank source per item, never a new duplicate ID/answer/history.
+
+## Expected original 18 canonical IDs and 12 outcome targets
+
+| Canonical item ID | SGK lesson | Proposed placement | Proposed curriculum tier | Outcome mapping candidates | Reviewer status |
+|---|---|---|---|---|---|
+| `THPT-G10-B05-C01` | `B05` | `SGK_CORE` | `BASIC` | `G10-B05-UNIT_SEMICIRCLE`, `G10-B05-TRIG_SIGNS_DOMAINS` | `NOTEBOOKLM_R0_PASS` |
+| `THPT-G10-B05-C02` | `B05` | `SGK_CORE` | `BASIC` | `G10-B05-TRIG_SIGNS_DOMAINS`, `G10-B05-SPECIAL_ANGLES` | `NOTEBOOKLM_R0_PASS` |
+| `THPT-G10-B05-C03` | `B05` | `SGK_CORE` | `BASIC` | `G10-B05-SPECIAL_ANGLES`, `G10-B05-SUPPLEMENTARY_ANGLES` | `NOTEBOOKLM_R0_PASS` |
+| `THPT-G10-B05-P01` | `B05` | `SGK_PRACTICE` | `BASIC` | `G10-B05-SUPPLEMENTARY_ANGLES`, `G10-B05-TRIG_SIGNS_DOMAINS` | `NOTEBOOKLM_R0_PASS` |
+| `THPT-G10-B05-P02` | `B05` | `SGK_PRACTICE` | `BASIC` | `G10-B05-COMPLEMENTARY_ANGLES` | `NOTEBOOKLM_R0_PASS` |
+| `THPT-G10-B05-P03` | `B05` | `SGK_PRACTICE` | `INTERMEDIATE` | `G10-B05-TRIG_SIGNS_DOMAINS`, `G10-B05-TRIG_IDENTITIES_CALCULATOR` | `NOTEBOOKLM_R0_PASS` |
+| `THPT-G10-B05-P04` | `B05` | `SGK_PRACTICE_APPLICATION` | `BASIC` | `G10-B05-TRIG_IDENTITIES_CALCULATOR`, `G10-B05-TRIG_SIGNS_DOMAINS` | `NOTEBOOKLM_R0_PASS` |
+| `THPT-G10-B05-P05` | `B05` | `SGK_PRACTICE` | `BASIC` | `G10-B05-UNIT_SEMICIRCLE`, `G10-B05-TRIG_SIGNS_DOMAINS` | `NOTEBOOKLM_R0_PASS` |
+| `THPT-G10-CHIII-W05` | `B05` | `SGK_WRITTEN` | `INTERMEDIATE` | `G10-B05-TRIG_SIGNS_DOMAINS`, `G10-B05-TRIG_IDENTITIES_CALCULATOR`, `G10-B05-SUPPLEMENTARY_ANGLES` | `NOTEBOOKLM_R0_PASS` |
+| `THPT-G10-B06-C01` | `B06` | `SGK_CORE` | `BASIC` | `G10-B06-COSINE_RULE`, `G10-B06-AREA_TWO_SIDES_ANGLE` | `NOTEBOOKLM_R0_PASS` |
+| `THPT-G10-B06-C02` | `B06` | `SGK_CORE` | `BASIC` | `G10-B06-SINE_RULE_CIRCUMRADIUS`, `G10-B06-TRIANGLE_SOLVING` | `NOTEBOOKLM_R0_PASS` |
+| `THPT-G10-B06-C03` | `B06` | `SGK_CORE` | `BASIC` | `G10-B06-HERON_INRADIUS_CIRCUMRADIUS` | `NOTEBOOKLM_R0_PASS` |
+| `THPT-G10-B06-P01` | `B06` | `SGK_PRACTICE` | `BASIC` | `G10-B06-COSINE_RULE` | `NOTEBOOKLM_R0_PASS` |
+| `THPT-G10-B06-P02` | `B06` | `SGK_PRACTICE` | `BASIC` | `G10-B06-SINE_RULE_CIRCUMRADIUS`, `G10-B06-TRIANGLE_SOLVING` | `NOTEBOOKLM_R0_PASS` |
+| `THPT-G10-B06-P03` | `B06` | `SGK_PRACTICE` | `BASIC` | `G10-B06-AREA_TWO_SIDES_ANGLE` | `NOTEBOOKLM_R0_PASS` |
+| `THPT-G10-B06-P04` | `B06` | `SGK_PRACTICE_APPLICATION` | `INTERMEDIATE` | `G10-B06-REAL_WORLD_DISTANCE`, `G10-B06-SINE_RULE_CIRCUMRADIUS`, `G10-B06-TRIANGLE_SOLVING` | `NOTEBOOKLM_R0_PASS` |
+| `THPT-G10-B06-P05` | `B06` | `SGK_PRACTICE_EXTENSION` | `SUPPORT_EXTENSION` | `G10-B06-COSINE_RULE` | `NOTEBOOKLM_R0_PASS` |
+| `THPT-G10-CHIII-W06` | `B06` | `SGK_WRITTEN` | `INTERMEDIATE` | `G10-B06-HERON_INRADIUS_CIRCUMRADIUS`, `G10-B06-COSINE_RULE` | `NOTEBOOKLM_R0_PASS` |
+
+**Reconciliation:** 18 unique item IDs (B05 9 + B06 9); six per-lesson `SGK_CORE`, ten `SGK_PRACTICE` / Application / Extension, two `SGK_WRITTEN` and no extra Anchor tag. Exactly 12 unique outcome targets (B05 6 and B06 6). All placement labels **PENDING REVIEW**. The **B06-P05** median-formula item must be reviewed at `SUPPORT_EXTENSION`, as required by the independent D1/D2 P1-01; it is expressly **NOT mandatory Core**. Do not assume the reviewer accepts every mathematical result or role before seeing both real item files.
+
+## Reviewer-specific safeguards and forthcoming academic gates
+
+- Confirm each answer/solution/rubric, grade level and true 12/12 outcome elicitation; evaluate near overlap with seven previously taught D2 examples.
+- Verify SSA conditional case does not silently select principal arcsin only. B05 tang/cot undefined at correct endpoints, DEG mode for approximate values, signs for obtuse; B06 law sin/cos, Heron, r/R, geometry units, median formula extension.
+- Practice items may have hints only in their learning mode. No hint/answer/Tutor/correctness before Final Submit in a **different, private** end-of-Chapter III readiness bank. No Readiness authored in the current D3/D4 packet. D5 unit semicircle and triangle diagrams also unreviewed.
+- SGK is self-sufficient: Knowledge, Core after lesson, Practice/Application/Written and Chapter Readiness at **end of chapter**. Topic is separately self-sufficient with **exactly three parts** Knowledge/Practice/Topic Readiness and **no Topic Core**. One canonical item/answer/attempt history reused across SGK and Topic Practice by mapping only. Golden UI R4 unchanged.
+
+```text
+G10_CHIII_D1D2|PASS_12_OUTCOMES_7_EXAMPLES
+G10_CHIII_D3D4|18_CANDIDATES_6_CORE_10_PRACTICE_2_WRITTEN
+G10_CHIII_B06_P05|SUPPORT_EXTENSION
+G10_CHIII_SGK_CHAPTER_READINESS|NOT_AUTHORED
+G10_CHIII_D5|NOT_AUTHORED
+ACADEMIC_CLEARANCE_FOR_RELEASE|NO
+MERGE_DEPLOY|NO
+```
+
+## R0 independent academic verdict & exact verified source snapshots (supersedes earlier candidate language)
+
+```text
+PACKET_ID|THPT-G10-CHIII-B05-B06-D3D4-18ITEMS-20261028-R0
+B05|9_OF_9_PASS
+B06|9_OF_9_PASS
+SGK_CORE|6_OF_6_PASS
+SGK_PRACTICE_APPLICATION_EXTENSION|10_OF_10_PASS
+SGK_WRITTEN|2_OF_2_PASS
+OUTCOME_COVERAGE|12_OF_12
+CANONICAL_IDS|18_UNIQUE_NO_DUPLICATES
+THPT-G10-B06-P05_CURRICULUM_LAYER|SUPPORT_EXTENSION
+CHAPTER_READINESS|NOT_INCLUDED_IN_D3D4_VERDICT
+D5|NOT_INCLUDED_IN_D3D4_VERDICT
+ACADEMIC_CLEARANCE_FOR_RELEASE|NO
+```
+
+The original **18 academic source items** are preserved unchanged, in two files with byte-exact Git blob matches to reviewer Temp files: `prototypes/thpt/shared-items/THPT_G10_CHIII_B05_D3D4_NINE_CANONICAL_ITEMS_R0_REVIEWED_20261028.md` blob `cf6d7b50c4e6837976c55ea6a2750fa6c4346823` and `prototypes/thpt/shared-items/THPT_G10_CHIII_B06_D3D4_NINE_CANONICAL_ITEMS_R0_REVIEWED_20261028.md` blob `ff09849d46e0958f28c2d102cf6610b76ed3f7ca`. These are **one canonical source per original item**, NOT a second set of canonical bank IDs. Original v0.1 candidate index preserved for provenance; this v0.2 overlay is current academic status. `THPT-G10-B06-P05` retains `SGK_PRACTICE_EXTENSION` role and `curriculum_layer: SUPPORT_EXTENSION`. The chapter-end assessment will have **separate protected canonical IDs** and must never clone any of the 18 seen Practice items.
