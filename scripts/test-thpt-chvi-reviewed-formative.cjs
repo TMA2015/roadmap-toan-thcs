@@ -35,8 +35,8 @@ for(const id of ["A1","A2","A3","A4","B1","B2","B3","B4"]){
 }
 const written=fs.readFileSync(path.join(root,"docs/thpt-preview/thu-vien/tu-luan.md"),"utf8");
 const newWritten=[...written.matchAll(/data-thpt-written-canonical="([^"]+)"/g)].map(m=>m[1]);
-assert.equal(newWritten.length,6,"Expected six newly reviewed Written records");
-assert.equal(new Set(newWritten).size,6);
+assert.equal(newWritten.length,8,"Expected eight reviewed Written records with canonical exposure markers");
+assert.equal(new Set(newWritten).size,8);
 assert.equal(new Set([...ids,...appIds,...newWritten,
   "THPT-CORE-QF01","PRACTICE-THPT-DEMO-01","HPT-WRI-DEMO-01","HPT-WRI-DEMO-ANCHOR-01"]).size,36,
   "Public Core/Practice/Written canonical IDs must reconcile to 36 without cloning");
