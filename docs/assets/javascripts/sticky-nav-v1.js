@@ -2,7 +2,7 @@
  "use strict";
  const sitePrefix = () => location.pathname.startsWith("/roadmap-toan-thcs/") ? "/roadmap-toan-thcs/" : "/";
  const mainDestinations = [
-   ["Trang chủ", "", "⌂"],
+   ["Trang chủ THCS", "", "⌂"],
    ["Bản đồ học tập", "roadmap/", "◇"],
    ["Tiến độ học tập", "tien-do-hoc-tap/", "◴"],
    ["25 chuyên đề", "kien-thuc/", "▤"],
@@ -56,14 +56,25 @@
    primary.setAttribute("aria-label","Bảy nhóm điều hướng chính");
    const sources=[...document.querySelectorAll(".md-tabs__list a.md-tabs__link")];
    for(const [label,fallback,glyph] of mainDestinations){
-     const source=sources.find(a=>a.textContent.trim()===label);
+     const navLabel=label==="Trang chủ THCS"?"Trang chủ":label;
+     const source=sources.find(a=>a.textContent.trim()===navLabel);
      const a=document.createElement("a");a.href=source?.href||sitePrefix()+fallback;
      a.textContent=glyph+" "+label;
      if(source?.classList.contains("md-tabs__link--active"))a.setAttribute("aria-current","page");
      primary.appendChild(a);
    }
    main.append(summary,primary);
-   dialog.append(heading,main,hint,list);
+   // Cross-programme cover is a separate level-1 destination, not an
+   // eighth THCS shortcut group and not a change to Golden 7+25.
+   const coverNav=document.createElement("nav");
+   coverNav.className="roadmap-main-quick__links";
+   coverNav.setAttribute("aria-label","Cổng chọn chương trình Toán");
+   const coverLink=document.createElement("a");
+   coverLink.href=sitePrefix()+"thpt-preview/";
+   coverLink.textContent="⌂ Chọn chương trình";
+   coverLink.dataset.mathProgramCoverLink="1";
+   coverNav.appendChild(coverLink);
+   dialog.append(heading,coverNav,main,hint,list);
    dialog.addEventListener("click", event => { if (event.target === dialog) dialog.close(); });
    document.body.appendChild(dialog);
    return dialog;
