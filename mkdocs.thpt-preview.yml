@@ -1,5 +1,5 @@
 INHERIT: mkdocs.yml
-# R4 DRAFT PREVIEW ONLY. Standard mkdocs.yml and THCS deployment remain unchanged.
+# THPT R4 QA configuration: same MkDocs engine, dedicated THPT navigation; one shared GitHub Pages site.
 site_name: Self-Learning Math · THPT R4 Preview
 site_description: Bản xem thử Toán THPT — chưa phát hành; chưa chấm điểm hoặc lưu lịch sử.
 site_dir: site-thpt-preview
@@ -11,10 +11,10 @@ nav:
       - Lớp 10:
           - Chương VI · Hàm số và đồ thị:
               - Tổng quan chương: thpt-preview/sgk/chuong-vi.md
-              - Bài 15 · Hàm số (nháp): thpt-preview/sgk/chuong-vi/bai-15.md
+              - Bài 15 · Hàm số: thpt-preview/sgk/chuong-vi/bai-15.md
               - Bài 16 · Hàm số bậc hai: thpt-preview/sgk/chuong-vi/bai-16.md
-              - Bài 17 · Dấu của tam thức bậc hai (nháp): thpt-preview/sgk/chuong-vi/bai-17.md
-              - Bài 18 · Phương trình quy về bậc hai (nháp): thpt-preview/sgk/chuong-vi/bai-18.md
+              - Bài 17 · Dấu của tam thức bậc hai: thpt-preview/sgk/chuong-vi/bai-17.md
+              - Bài 18 · Phương trình quy về bậc hai: thpt-preview/sgk/chuong-vi/bai-18.md
               - Luyện tập và Vận dụng Chương VI: thpt-preview/sgk/chuong-vi/luyen-tap.md
               - Tự kiểm tra cuối Chương VI (demo kỹ thuật): thpt-preview/sgk/chuong-vi/tu-kiem-tra-chuong.md
   - Học theo chuyên đề:
