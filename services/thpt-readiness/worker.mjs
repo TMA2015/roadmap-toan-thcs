@@ -77,6 +77,33 @@ function d1Repository(db){
   async findAttempt(uid,id){
    return one("SELECT * FROM thpt_attempts WHERE uid=? AND id=?",uid,id);
   },
+  async getPublicItem(id){
+   const q=await one("SELECT item_id,allowed_scopes_json,active FROM thpt_public_item_registry WHERE item_id=?",id);
+   if(!q)return null;
+   return {item_id:q.item_id,allowed_scopes:JSON.parse(q.allowed_scopes_json),
+     active:q.active===1};
+  },
+  async findPublished(ids){
+   if(!ids.length)return [];
+   const query="SELECT item_id FROM thpt_public_item_registry WHERE item_id IN ("+
+     ids.map(()=>"?").join(",")+")";
+   return (await db.prepare(query).bind(...ids).all()).results||[];
+  },
+  async recordPublicExposure(uid,itemId,scope,eventKind){
+   const canRecord="EXISTS (SELECT 1 FROM thpt_public_item_registry WHERE item_id=? AND active=1)";
+   const query="INSERT OR IGNORE INTO thpt_exposures (uid,item_id,source_scope) "+
+     "SELECT ?,?,? WHERE "+canRecord;
+   const events="INSERT OR IGNORE INTO thpt_exposure_events (uid,item_id,source_scope,event_kind) "+
+     "SELECT ?,?,?,? WHERE "+canRecord;
+   const results=await db.batch([
+     db.prepare(query).bind(uid,itemId,scope,itemId),
+     db.prepare(events).bind(uid,itemId,scope,eventKind,itemId)
+   ]);
+   // Re-check: if registry was disabled mid-transaction, no success reply.
+   const verified=await one("SELECT 1 AS present FROM thpt_exposures WHERE uid=? AND item_id=?",uid,itemId);
+   if(!verified||!Array.isArray(results))
+     fail("EXPOSURE_NOT_PERSISTED",503);
+  },
   async findExposed(uid,ids){
    if(ids.length===0)return [];
    const placeholders=ids.map(()=>"?").join(",");
@@ -144,7 +171,8 @@ export default {
    }
    if(request.method!=="POST")fail("METHOD_NOT_ALLOWED",405);
    const url=new URL(request.url);
-   if(!["/v1/assessment/start","/v1/assessment/submit"].includes(url.pathname))
+   if(!["/v1/assessment/start","/v1/assessment/submit",
+         "/v1/exposure/record"].includes(url.pathname))
       fail("ROUTE_NOT_FOUND",404);
    const uid=await firebaseUID(request,env);
    const length=Number(request.headers.get("Content-Length")||0);
@@ -158,7 +186,9 @@ export default {
        fail("INVALID_BODY",400);
    }catch(e){if(e instanceof AssessmentError)throw e;fail("INVALID_BODY",400);}
    const service=createAssessmentService(d1Repository(env.DB));
-   const output=url.pathname.endsWith("/start")?
+   const output=url.pathname==="/v1/exposure/record"?
+      await service.recordExposure(uid,payload.item_id,payload.role,payload.event_kind):
+      url.pathname.endsWith("/start")?
       await service.start(uid,payload.bank_id):
       await service.submit(uid,payload.attempt_id,payload.answers);
    return json(output,200,origin,allowed);
