@@ -55,6 +55,8 @@ async function ready(page,path){
   await page.locator('[data-thpt-practice] button[type="submit"]').click();
   assert((await page.locator('[data-thpt-practice] [data-thpt-feedback]').textContent()).startsWith("Đúng."),"Practice did not grade after Check");
   await ready(page,"chuyen-de/ham-so/tu-kiem-tra/");
+  assert.equal(await page.locator("[data-floating-ai]").count(),0,
+    "Gemini Tutor must not be offered in Topic Readiness before Final Submit");
   assert((await page.locator("[data-thpt-readiness]").getAttribute("data-demo-scope"))==="TECHNICAL_DEMO_ONLY","Explicit readiness demo-scope missing");
   assert((await page.locator("[data-thpt-readiness]").getAttribute("data-mastery-credit"))==="false","Readiness could grant mastery credit");
   assert(await page.locator('[data-thpt-readiness] [data-thpt-solution]').isHidden(),"Readiness leaked answers before submission");
@@ -126,6 +128,10 @@ async function ready(page,path){
   const coreLibraryHref=await page.locator("a.math-library-entry").first().getAttribute("href");
   assert.equal(canonical(coreLibraryHref,page.url()),expectedCore,"SGK Core library links to different Core identity");
   await ready(page,"sgk/chuong-vi/bai-16/");
+  assert.equal(await page.locator("[data-floating-ai]").count(),1,
+    "THPT SGK knowledge page must reuse the existing Gemini Tutor (not a second engine)");
+  assert(await page.locator(".floating-ai-launcher").isVisible(),
+    "Existing Gemini Tutor launcher is missing on THPT B16");
   assert.equal((await page.locator('a.math-library-entry[href*="core"]').count()),0,"B16 SGK lesson still links to old standalone Core page");
   const inlineCore=page.locator('[data-thpt-open-quiz="b16-core"]');
   assert.equal((await inlineCore.count()),1,"SGK B16 must open its Core in the new modal");
@@ -243,6 +249,8 @@ async function ready(page,path){
    assert(!await solution.evaluate(el=>el.open),"Written solution must be closed by default");
   }
   await ready(page,"sgk/chuong-vi/tu-kiem-tra-chuong/");
+  assert.equal(await page.locator("[data-floating-ai]").count(),0,
+    "Gemini Tutor must stay hidden throughout SGK Chapter Readiness");
   const chapterReady=page.locator('[data-thpt-assessment="sgk-chapter"][data-thpt-readiness]');
   assert((await chapterReady.count())===1,"Missing separate SGK chapter Readiness engine");
   assert((await chapterReady.getAttribute("data-demo-scope"))==="TECHNICAL_DEMO_ONLY","Chapter readiness must be explicitly demo only");
@@ -272,6 +280,8 @@ async function ready(page,path){
   assert((await page.locator("article").textContent()).includes("liên kết tương thích"),"Legacy Core URL must not break");
 
   await ready(page,"chuyen-de/ham-so/kien-thuc/");
+  assert.equal(await page.locator("[data-floating-ai]").count(),1,
+    "THPT Topic knowledge must reuse the same Gemini Tutor");
   assert((await page.locator("article").textContent()).includes("PILOT_PARTIAL_G10"),"Partial-topic status not visible");
   const semanticTab=page.locator(".md-typeset .tabbed-set > .tabbed-labels > label").first();
   assert(await semanticTab.isVisible(),"Golden pilot semantic tabs are missing");
