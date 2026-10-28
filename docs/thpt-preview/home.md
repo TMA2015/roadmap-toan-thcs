@@ -16,7 +16,7 @@ hide:
     </div>
     <p class="thpt-r4-home-hero-notice">Đang mở bản mẫu Toán 10 · Chương VI và một chuyên đề minh họa; chưa phải toàn bộ học liệu lớp 10–12.</p>
   </div>
-  <div class="thpt-r4-home-illustration" role="img" aria-label="Self-Learning Math ở trung tâm, xung quanh là năm hành tinh tượng trưng cho hai lộ trình học, 25 chuyên đề THCS, SGK KNTT, luyện tập tương tác và theo dõi tiến độ.">
+  <div class="thpt-r4-home-illustration" role="img" aria-label="Self-Learning Math ở trung tâm, xung quanh là năm hành tinh tượng trưng cho hai lộ trình học, 24 chuyên đề THPT theo kế hoạch, SGK KNTT, luyện tập tương tác và theo dõi tiến độ.">
     <p class="thpt-r4-home-orbit-heading">5 ĐIỂM NỔI BẬT CỦA SELF-LEARNING MATH</p>
     <svg class="thpt-r4-home-orbit" viewBox="0 0 540 400" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
       <defs>
@@ -44,9 +44,9 @@ hide:
       </g>
       <g class="thpt-r4-home-planet" transform="translate(434 79)">
         <circle r="49" fill="url(#thpt-r4-planet)" stroke="#c5d8f5" stroke-width="1.5"/>
-        <text y="-10" text-anchor="middle" class="thpt-r4-orbit-planet-number">25</text>
+        <text y="-10" text-anchor="middle" class="thpt-r4-orbit-planet-number">24</text>
         <text y="10" text-anchor="middle" class="thpt-r4-orbit-planet-label">Chuyên đề</text>
-        <text y="26" text-anchor="middle" class="thpt-r4-orbit-planet-sub">THCS</text>
+        <text y="26" text-anchor="middle" class="thpt-r4-orbit-planet-sub">THPT</text>
       </g>
       <g class="thpt-r4-home-planet" transform="translate(462 272)">
         <circle r="48" fill="url(#thpt-r4-planet)" stroke="#c5d8f5" stroke-width="1.5"/>
@@ -61,7 +61,7 @@ hide:
       </g>
       <g class="thpt-r4-home-planet" transform="translate(83 268)">
         <circle r="48" fill="url(#thpt-r4-planet)" stroke="#c5d8f5" stroke-width="1.5"/>
-        <text y="-10" text-anchor="middle" class="thpt-r4-orbit-planet-number">↗</text>
+        <g class="thpt-r4-orbit-chart-icon" fill="#18a99e" stroke="#18a99e" aria-hidden="true"><path d="M-20 -1 V-23 M-20 -1 H22" fill="none" stroke="#6681aa" stroke-width="2.2" stroke-linecap="round"/><rect x="-15" y="-10" width="7" height="9" rx="1.5" stroke="none"/><rect x="-4" y="-19" width="7" height="18" rx="1.5" stroke="none"/><rect x="7" y="-27" width="7" height="26" rx="1.5" stroke="none"/></g>
         <text y="9" text-anchor="middle" class="thpt-r4-orbit-planet-label">Tiến độ</text>
         <text y="25" text-anchor="middle" class="thpt-r4-orbit-planet-label">học tập</text>
       </g>
@@ -71,10 +71,10 @@ hide:
 </section>
 <div class="thpt-r4-home-stats" aria-label="Năm điểm nổi bật của Self-Learning Math">
   <div><strong>2</strong><span>lộ trình học độc lập</span></div>
-  <div><strong>25</strong><span>chuyên đề THCS</span></div>
+  <div><strong>24</strong><span>chuyên đề THPT</span></div>
   <div><strong>SGK</strong><span>học theo KNTT</span></div>
   <div><strong>✦</strong><span>luyện tập tương tác</span></div>
-  <div><strong>↗</strong><span>theo dõi tiến độ</span></div>
+  <div><strong class="thpt-r4-home-stat-chart" aria-hidden="true"><svg viewBox="0 0 44 34" width="37" height="29" xmlns="http://www.w3.org/2000/svg"><path d="M4 2 V31 H42" fill="none" stroke="#6b7ea1" stroke-width="2.1" stroke-linecap="round"/><rect x="10" y="20" width="7" height="11" rx="1.5" fill="currentColor"/><rect x="21" y="12" width="7" height="19" rx="1.5" fill="currentColor"/><rect x="32" y="5" width="7" height="26" rx="1.5" fill="currentColor"/></svg></strong><span>theo dõi tiến độ</span></div>
 </div>
 <p class="thpt-r4-home-subheading">Chọn một không gian học</p>
 <div class="thpt-r4-grid">
