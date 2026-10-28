@@ -71,13 +71,11 @@ async function ready(page,path){
       "THPT SGK overview must show one chapter/lesson search");
     assert.equal(await ui.locator(".thpt-r4-search").count(),1,
       "THPT SGK unexpectedly has duplicate search panels");
-    await ui.screenshot({path:"thpt-r4-visual-qa/"+viewport.width+"-sgk-search.png",fullPage:true});
     await ready(ui,"chuyen-de/");
     assert.equal(await ui.locator(".library-search").count(),0,
       "THCS library search leaked into THPT Topic overview");
     assert.equal(await ui.locator('input[type="search"][data-thpt-filter-input]').count(),1,
       "THPT Topic overview must show one topic search");
-    await ui.screenshot({path:"thpt-r4-visual-qa/"+viewport.width+"-topic-search.png",fullPage:true});
     await ready(ui,"home/");
     assert.equal(await ui.locator(".thpt-r4-home-hero h1").count(),1,
       "THPT home must have a designed learner-oriented hero");
@@ -88,7 +86,6 @@ async function ready(page,path){
       "Golden THPT five-entry landing menu must remain");
     let overflow=await ui.evaluate(()=>document.documentElement.scrollWidth-window.innerWidth);
     assert(overflow<=20,"THPT home hero overflow "+viewport.width+"px: "+overflow);
-    await ui.screenshot({path:"thpt-r4-visual-qa/"+viewport.width+"-thpt-home.png",fullPage:true});
     await ready(ui,"sgk/chuong-vi/luyen-tap/");
     await ui.locator('[data-thpt-open-quiz="b15-core"]').click();
     const modal=ui.locator("dialog.thpt-r4-practice-dialog");
@@ -100,12 +97,10 @@ async function ready(page,path){
     assert.equal(modalStyle.top,"4px","Core modal must match SGK lesson banner top border");
     const headerStyle=await ui.locator(".thpt-r4-practice-lesson-header").first().evaluate(el=>getComputedStyle(el).backgroundColor);
     assert.equal(modalStyle.background,headerStyle,"Core modal and SGK lesson header backgrounds must match");
-    await ui.screenshot({path:"thpt-r4-visual-qa/"+viewport.width+"-core-modal.png",fullPage:false});
     await modal.locator("[data-thpt-modal-close]").click();
     await ui.locator('[data-thpt-open-quiz="b17-practice"]').click();
     assert.equal(await modal.locator("[data-thpt-modal-lesson-number]").innerText(),"17",
       "Practice modal must update lesson badge for each launch");
-    await ui.screenshot({path:"thpt-r4-visual-qa/"+viewport.width+"-practice-modal.png",fullPage:false});
     await modal.locator("[data-thpt-modal-close]").click();
     await ui.close();
   }
