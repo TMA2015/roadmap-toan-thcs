@@ -227,8 +227,8 @@ async function ready(page,path){
   await page.locator('[data-thpt-open-quiz="b17-practice"]').click();
   await exerciseModal.locator(".thpt-r4-modal-cumulative-button").click();
   await exerciseModal.locator(".thpt-r4-modal-cumulative-item").first().waitFor();
-  assert((await exerciseModal.locator('[data-thpt-canonical-item]').count())===3,
-    "B17 cumulative A3/A4/B4 must retain reviewed canonical IDs, not anonymous headings");
+  assert((await exerciseModal.locator('.thpt-r4-modal-cumulative-item [data-thpt-canonical-item]').count())===3,
+    "B17 cumulative A3/A4/B4 must retain reviewed canonical IDs, separate from active Practice card");
   assert((await exerciseModal.locator(".thpt-r4-modal-cumulative-item").count())===3,"B17 Practice modal must include A3/A4/B4 from one cumulative source");
   assert(await exerciseModal.locator(".thpt-r4-modal-cumulative-item").first().locator("details").isVisible(),"Cumulative practice solution must be learner-openable");
   await exerciseModal.locator("[data-thpt-modal-close]").click();
