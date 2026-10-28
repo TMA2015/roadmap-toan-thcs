@@ -40,6 +40,28 @@ CREATE TABLE IF NOT EXISTS thpt_attempts (
 );
 CREATE INDEX IF NOT EXISTS idx_thpt_attempts_uid
   ON thpt_attempts(uid,bank_id);
+-- Contains public canonical IDs only, NEVER review-only held-out keys/stems.
+-- A formerly published ID stays registered even when disabled (active=0),
+-- ensuring it can never be reused as independent held-out evidence.
+CREATE TABLE IF NOT EXISTS thpt_public_item_registry (
+  item_id TEXT PRIMARY KEY,
+  allowed_scopes_json TEXT NOT NULL,
+  active INTEGER NOT NULL DEFAULT 0 CHECK(active IN (0,1)),
+  first_registered_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
+CREATE TABLE IF NOT EXISTS thpt_exposure_events (
+  uid TEXT NOT NULL,
+  item_id TEXT NOT NULL REFERENCES thpt_public_item_registry(item_id),
+  source_scope TEXT NOT NULL CHECK(source_scope IN
+   ('SGK_CORE','SGK_PRACTICE','SGK_CHAPTER_APPLICATION','SGK_WRITTEN','TOPIC_PRACTICE')),
+  event_kind TEXT NOT NULL CHECK(event_kind IN
+   ('QUESTION_SHOWN','HINT_OPENED','SOLUTION_OPENED')),
+  occurred_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY(uid,item_id,source_scope,event_kind)
+);
+CREATE INDEX IF NOT EXISTS idx_thpt_exposure_events_learner
+  ON thpt_exposure_events(uid,item_id);
+
 CREATE TABLE IF NOT EXISTS thpt_exposures (
   uid TEXT NOT NULL,
   item_id TEXT NOT NULL,
