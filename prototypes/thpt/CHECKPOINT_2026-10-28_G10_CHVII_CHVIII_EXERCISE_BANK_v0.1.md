@@ -1,3 +1,5 @@
+> **SUPERSEDED by v0.2 checkpoint (28/10/2026):** 63 authored items (not 49), 35 provisional outcomes, 4 original SVGs. SGK printed-page correction: ChVII **29–58**, B19 **29–34**, B22 **47–56**, final exercises **57–58**; ChVIII **59–79**, B23 **59–64**. See `CHECKPOINT_2026-10-28_G10_CHVII_CHVIII_EXERCISE_BANK_v0.2.md`. Historical numbers below remain for traceability only.
+
 # CHECKPOINT 2026-10-28 — G10 Chapters VII & VIII exercise bank while ChVI review awaits owner
 
 **Owner direction:** Người dùng chưa tiện thao tác NotebookLM, nên giữ nguyên gói review Chương VI đã bàn giao, tiếp tục phát triển ngân hàng cho chương khác **ngay**; không trì hoãn để chờ review ChVI.  
