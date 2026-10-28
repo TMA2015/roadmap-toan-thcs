@@ -109,7 +109,7 @@ for(const [file,expected] of [
  assert(s.includes("<svg ")&&s.includes("</svg>")&&s.includes("<title ")&&s.includes("<desc "),
   "SVG must have accessible root/title/description "+file);
  assert(s.includes(expected),"diagram missing mathematical landmark "+file);
- assert(!/<script\b|<foreignObject\b|https?:\/\/|onload\s*=|onclick\s*=/i.test(s),
+ assert(!/<script\b|<foreignObject\b|(?:href|xlink:href)\s*=\s*["']https?:\/\/|onload\s*=|onclick\s*=/i.test(s),
   "SVG must not contain executable or remote content "+file);
 }
 assert(!readiness.includes("THPT-G10-B19-P05"),
