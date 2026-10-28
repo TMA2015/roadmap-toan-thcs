@@ -2,6 +2,15 @@
 -- Never execute in production before auth, privacy, source receipt and D6 sign-off.
 PRAGMA foreign_keys=ON;
 
+-- Private access gate: only explicitly approved Firebase UIDs may use THPT
+-- assessment or formative-exposure APIs. No names/emails or default learners.
+-- Revocation is immediate on subsequent authenticated API requests.
+CREATE TABLE IF NOT EXISTS thpt_allowed_learners (
+  uid TEXT PRIMARY KEY,
+  active INTEGER NOT NULL DEFAULT 0 CHECK(active IN (0,1)),
+  approved_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
+
 CREATE TABLE IF NOT EXISTS thpt_banks (
   id TEXT PRIMARY KEY,
   scope TEXT NOT NULL CHECK(scope IN ('SGK_CHAPTER','TOPIC_READINESS')),
