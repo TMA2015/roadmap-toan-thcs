@@ -79,6 +79,15 @@ db.publicItems.get("PUBLIC-C01").active=false;
 await failure(()=>svc.start("learner_D",onlySeen.id),"HELDOUT_ITEM_WAS_PUBLIC");
 assert.equal(db.attempts.size,0,"Rejected public assessment must never create attempt");
 
+const lateBank=bank("LATE_PUBLIC","SGK_CHAPTER",[item("LATE-BANK-Q01")]);
+db.banks.set(lateBank.id,lateBank);
+const lateAttempt=await svc.start("learner_Z",lateBank.id);
+db.publicItems.set("LATE-BANK-Q01",{item_id:"LATE-BANK-Q01",active:false,
+ allowed_scopes:["SGK_PRACTICE"]});
+await failure(()=>svc.submit("learner_Z",lateAttempt.attempt_id,
+ {"LATE-BANK-Q01":1}),"HELDOUT_ITEM_WAS_PUBLIC");
+assert.equal(db.attempts.get(lateAttempt.attempt_id).submitted_at,null,
+ "Previously revealed question must not be graded even after opening exam");
 const opened=await svc.start("learner_A",a.id);
 assert.equal(opened.questions.length,2);
 assert.equal(opened.scope,"SGK_CHAPTER");
