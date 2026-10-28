@@ -10,7 +10,7 @@
 
 ### A1. Tập xác định và đồ thị
 
-<p class="thpt-r4-modal-progress" data-thpt-canonical-item="THPT-G10-CHVI-APP-A1">Canonical item_id: <code>THPT-G10-CHVI-APP-A1</code> · SGK_CHAPTER_APPLICATION · đã thẩm định học thuật 28/10/2026 · Không ghi mastery</p>
+<p class="thpt-r4-modal-progress" data-thpt-canonical-item="THPT-G10-CHVI-APP-A1" data-thpt-exposure-role="SGK_CHAPTER_APPLICATION">Canonical item_id: <code>THPT-G10-CHVI-APP-A1</code> · SGK_CHAPTER_APPLICATION · đã thẩm định học thuật 28/10/2026 · Không ghi mastery</p>
 
 Cho \(f(x)=\sqrt{7-2x}\).
 
@@ -23,7 +23,7 @@ Cho \(f(x)=\sqrt{7-2x}\).
 
 ### A2. Parabol và đặc trưng đồ thị
 
-<p class="thpt-r4-modal-progress" data-thpt-canonical-item="THPT-G10-CHVI-APP-A2">Canonical item_id: <code>THPT-G10-CHVI-APP-A2</code> · SGK_CHAPTER_APPLICATION · đã thẩm định học thuật 28/10/2026 · Không ghi mastery</p>
+<p class="thpt-r4-modal-progress" data-thpt-canonical-item="THPT-G10-CHVI-APP-A2" data-thpt-exposure-role="SGK_CHAPTER_APPLICATION">Canonical item_id: <code>THPT-G10-CHVI-APP-A2</code> · SGK_CHAPTER_APPLICATION · đã thẩm định học thuật 28/10/2026 · Không ghi mastery</p>
 
 Xét \(g(x)=-x^2+6x-5\).
 
@@ -37,7 +37,7 @@ Xét \(g(x)=-x^2+6x-5\).
 
 ### A3. Xét dấu và bất phương trình
 
-<p class="thpt-r4-modal-progress" data-thpt-canonical-item="THPT-G10-CHVI-APP-A3">Canonical item_id: <code>THPT-G10-CHVI-APP-A3</code> · SGK_CHAPTER_APPLICATION · đã thẩm định học thuật 28/10/2026 · Không ghi mastery</p>
+<p class="thpt-r4-modal-progress" data-thpt-canonical-item="THPT-G10-CHVI-APP-A3" data-thpt-exposure-role="SGK_CHAPTER_APPLICATION">Canonical item_id: <code>THPT-G10-CHVI-APP-A3</code> · SGK_CHAPTER_APPLICATION · đã thẩm định học thuật 28/10/2026 · Không ghi mastery</p>
 
 Giải cả hai bất phương trình:
 
@@ -50,7 +50,7 @@ Tam thức bằng \((x-2)(x-5)\) và có \(a>0\). Âm trên khoảng \((2;5)\), 
 
 ### A4. Bất phương trình bậc hai với hệ số âm
 
-<p class="thpt-r4-modal-progress" data-thpt-canonical-item="THPT-G10-CHVI-APP-A4">Canonical item_id: <code>THPT-G10-CHVI-APP-A4</code> · SGK_CHAPTER_APPLICATION · đã thẩm định học thuật 28/10/2026 · Không ghi mastery</p>
+<p class="thpt-r4-modal-progress" data-thpt-canonical-item="THPT-G10-CHVI-APP-A4" data-thpt-exposure-role="SGK_CHAPTER_APPLICATION">Canonical item_id: <code>THPT-G10-CHVI-APP-A4</code> · SGK_CHAPTER_APPLICATION · đã thẩm định học thuật 28/10/2026 · Không ghi mastery</p>
 
 Giải \(-2x^2+8x+10\ge0\).
 
@@ -62,7 +62,7 @@ Chia cho \(-2\) và **đổi chiều** dấu: \(x^2-4x-5\le0\Leftrightarrow(x-5)
 
 ### B1. Phương trình căn một vế
 
-<p class="thpt-r4-modal-progress" data-thpt-canonical-item="THPT-G10-CHVI-APP-B1">Canonical item_id: <code>THPT-G10-CHVI-APP-B1</code> · SGK_CHAPTER_APPLICATION · đã thẩm định học thuật 28/10/2026 · Không ghi mastery</p>
+<p class="thpt-r4-modal-progress" data-thpt-canonical-item="THPT-G10-CHVI-APP-B1" data-thpt-exposure-role="SGK_CHAPTER_APPLICATION">Canonical item_id: <code>THPT-G10-CHVI-APP-B1</code> · SGK_CHAPTER_APPLICATION · đã thẩm định học thuật 28/10/2026 · Không ghi mastery</p>
 
 Giải \(\sqrt{3x+1}=x+1\) và thử lại mọi nghiệm.
 
@@ -72,7 +72,7 @@ Giải \(\sqrt{3x+1}=x+1\) và thử lại mọi nghiệm.
 
 ### B2. Phương trình căn hai vế
 
-<p class="thpt-r4-modal-progress" data-thpt-canonical-item="THPT-G10-CHVI-APP-B2">Canonical item_id: <code>THPT-G10-CHVI-APP-B2</code> · SGK_CHAPTER_APPLICATION · đã thẩm định học thuật 28/10/2026 · Không ghi mastery</p>
+<p class="thpt-r4-modal-progress" data-thpt-canonical-item="THPT-G10-CHVI-APP-B2" data-thpt-exposure-role="SGK_CHAPTER_APPLICATION">Canonical item_id: <code>THPT-G10-CHVI-APP-B2</code> · SGK_CHAPTER_APPLICATION · đã thẩm định học thuật 28/10/2026 · Không ghi mastery</p>
 
 Giải \(\sqrt{x^2-2x+5}=\sqrt{x+3}\).
 
@@ -82,7 +82,7 @@ Bình phương: \(x^2-2x+5=x+3\Leftrightarrow x^2-3x+2=0\), cho \(x=1,2\). Tại
 
 ### B3. Vận dụng mô hình diện tích
 
-<p class="thpt-r4-modal-progress" data-thpt-canonical-item="THPT-G10-CHVI-APP-B3">Canonical item_id: <code>THPT-G10-CHVI-APP-B3</code> · SGK_CHAPTER_APPLICATION · đã thẩm định học thuật 28/10/2026 · Không ghi mastery</p>
+<p class="thpt-r4-modal-progress" data-thpt-canonical-item="THPT-G10-CHVI-APP-B3" data-thpt-exposure-role="SGK_CHAPTER_APPLICATION">Canonical item_id: <code>THPT-G10-CHVI-APP-B3</code> · SGK_CHAPTER_APPLICATION · đã thẩm định học thuật 28/10/2026 · Không ghi mastery</p>
 
 Một mảnh đất hình chữ nhật sát tường được rào ba mặt bằng \(40\) m lưới. Gọi \(x\) (m) là độ dài mỗi cạnh vuông góc với tường.
 
@@ -98,7 +98,7 @@ Một mảnh đất hình chữ nhật sát tường được rào ba mặt bằ
 
 ### B4. Kiểm tra dấu với tham số (dự kiến phân tầng bổ sung)
 
-<p class="thpt-r4-modal-progress" data-thpt-canonical-item="THPT-G10-CHVI-APP-B4">Canonical item_id: <code>THPT-G10-CHVI-APP-B4</code> · SGK_CHAPTER_APPLICATION · đã thẩm định học thuật 28/10/2026 · Không ghi mastery</p>
+<p class="thpt-r4-modal-progress" data-thpt-canonical-item="THPT-G10-CHVI-APP-B4" data-thpt-exposure-role="SGK_CHAPTER_APPLICATION">Canonical item_id: <code>THPT-G10-CHVI-APP-B4</code> · SGK_CHAPTER_APPLICATION · đã thẩm định học thuật 28/10/2026 · Không ghi mastery</p>
 
 Tìm các giá trị thực \(m\) sao cho \(x^2-2mx+4>0\) với mọi \(x\in\mathbb{R}\).
 
