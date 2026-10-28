@@ -7,8 +7,9 @@
   const isTHPTReadingPage = () =>
     /^\/(?:roadmap-toan-thcs\/)?(?:thpt-preview|thpt)\/(?:sgk\/chuong-[^/]+\/bai-\d+|chuyen-de\/[^/]+\/kien-thuc)\/$/.test(currentPath());
   const isReadingPage = () => {
-    const path = currentPath();
-    if (isTHPTReadingPage()) return true;
+    // Keep this function self-contained: THCS route contract tests run it alone.
+    const path = location.pathname.replace(/\/index\.html$/, "/");
+    if (/^\/(?:roadmap-toan-thcs\/)?(?:thpt-preview|thpt)\/(?:sgk\/chuong-[^/]+\/bai-\d+|chuyen-de\/[^/]+\/kien-thuc)\/$/.test(path)) return true;
     if (/^\/(?:roadmap-toan-thcs\/)?kien-thuc\/[^/]+\/$/.test(path)) return true;
     return /^\/(?:roadmap-toan-thcs\/)?kien-thuc\/25-tong-hop-on-thi-10\/(?:bai-toan-kinh-dien|kho-bai-mo-neo|anchor-25-\d{3})\/$/.test(path);
   };
