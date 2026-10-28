@@ -330,3 +330,83 @@ body.thpt-r4-home .md-main__inner{
 .thpt-r4-reviewed-formative-card details{margin:12px 0;padding:12px 14px;border:1px solid var(--md-default-fg-color--lightest);border-radius:9px;white-space:pre-line;line-height:1.7}
 .thpt-r4-reviewed-formative-card details summary{font-weight:700;cursor:pointer}
 .thpt-r4-reviewed-formative-card .thpt-r4-modal-progress{overflow-wrap:anywhere}
+
+
+/* Owner-requested THPT landing: related to THCS home, but visualizes the two
+   independent learning paths instead of copying the THCS 25-topic diagram. */
+.thpt-r4-home-hero{
+ display:grid;grid-template-columns:minmax(0,1.06fr) minmax(0,.94fr);
+ align-items:center;gap:clamp(22px,3vw,52px);
+ padding:clamp(25px,4vw,56px);border:1px solid #d5e3f9;border-radius:25px;
+ background:linear-gradient(112deg,#eaf2ff 0%,#e9f6fc 51%,#e3edff 100%);
+ color:#15213e;overflow:hidden;margin:6px 0 15px;
+}
+.thpt-r4-home-hero-copy{min-width:0}
+.thpt-r4-home-hero-eyebrow{
+ display:flex;align-items:center;gap:9px;color:#334cc2;font-size:.77rem;
+ font-weight:800;letter-spacing:.055em;line-height:1.5;margin:0 0 18px!important
+}
+.thpt-r4-home-hero-eyebrow::before{content:"";width:11px;height:11px;border-radius:50%;background:#16b8ad;box-shadow:0 0 0 5px #d0f0ef;flex:none}
+.thpt-r4-home-hero h1{
+ color:#14213d!important;border:0!important;font-size:clamp(1.9rem,3.2vw,3.4rem)!important;
+ line-height:1.12!important;letter-spacing:-.045em;font-weight:850;
+ margin:0 0 23px!important;padding:0!important
+}
+.thpt-r4-home-hero h1 span{display:block;color:#3d56cc}
+.thpt-r4-home-hero-desc{font-size:clamp(.95rem,1.3vw,1.08rem);line-height:1.75;color:#4d6180;margin:0 0 25px!important;max-width:55ch}
+.thpt-r4-home-hero-actions{display:flex;gap:10px;flex-wrap:wrap;margin:0 0 18px}
+.thpt-r4-home-hero-actions a{
+ display:inline-flex;align-items:center;justify-content:center;gap:13px;min-height:49px;
+ border-radius:12px;padding:10px 17px;font-size:.88rem;font-weight:750;
+ text-decoration:none!important;transition:transform .15s ease,box-shadow .15s ease
+}
+.thpt-r4-home-hero-actions a:hover,.thpt-r4-home-hero-actions a:focus-visible{transform:translateY(-2px)}
+.thpt-r4-home-hero-primary{background:#304fc7;color:#fff!important;box-shadow:0 8px 18px #243e9c25}
+.thpt-r4-home-hero-secondary{border:1px solid #c5d7f5;background:#fff9;color:#284497!important}
+.thpt-r4-home-hero-notice{font-size:.79rem;line-height:1.55;color:#536882;margin:0!important}
+.thpt-r4-home-illustration{
+ min-width:0;border:1px solid #c6d9f4;border-radius:20px;
+ background:linear-gradient(155deg,#ffffffed,#dfeeffd9);
+ box-shadow:0 17px 42px #20366618;padding:17px 19px 14px
+}
+.thpt-r4-home-visual-head{display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap}
+.thpt-r4-home-visual-head span{font-size:.71rem;letter-spacing:.07em;font-weight:800;color:#3d55b4}
+.thpt-r4-home-visual-head strong{font-size:.88rem;font-weight:800;color:#213d7b}
+.thpt-r4-home-illustration svg{display:block;width:100%;height:auto;max-height:340px}
+.thpt-r4-home-visual-footer{display:flex;gap:9px;flex-wrap:wrap;justify-content:space-between;font-size:.73rem;color:#3c587d}
+.thpt-r4-home-visual-footer span{border:1px solid #c9dbef;background:#ffffffc9;border-radius:10px;padding:8px 11px}
+.thpt-r4-home-visual-footer b{color:#3150c3;margin-right:4px}
+.thpt-r4-home-stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border:1px solid var(--r4-line);background:var(--md-default-bg-color);border-radius:18px;padding:14px 0;margin:0 0 27px}
+.thpt-r4-home-stats>div{display:grid;gap:3px;place-items:center;text-align:center;padding:8px 10px;min-width:0;border-right:1px solid var(--r4-line)}
+.thpt-r4-home-stats>div:last-child{border-right:0}
+.thpt-r4-home-stats strong{font-size:1.45rem;color:var(--r4-accent);line-height:1.25}
+.thpt-r4-home-stats span{font-size:.76rem;color:var(--md-default-fg-color--light);line-height:1.5}
+.thpt-r4-home-subheading{font-size:1.12rem;color:var(--md-default-fg-color);font-weight:750;margin:0 0 13px}
+body[data-md-color-scheme="slate"] .thpt-r4-home-hero{background:linear-gradient(120deg,#1a2d51,#243b5d);border-color:#385174}
+body[data-md-color-scheme="slate"] .thpt-r4-home-hero h1{color:#f4f7ff!important}
+body[data-md-color-scheme="slate"] .thpt-r4-home-hero h1 span{color:#9bb1ff}
+body[data-md-color-scheme="slate"] .thpt-r4-home-hero-desc,body[data-md-color-scheme="slate"] .thpt-r4-home-hero-notice{color:#c5d3ed}
+body[data-md-color-scheme="slate"] .thpt-r4-home-illustration{background:linear-gradient(140deg,#dce9ff,#b4c8e7);border-color:#446188}
+@media(max-width:980px){.thpt-r4-home-hero{grid-template-columns:minmax(0,1fr)}.thpt-r4-home-illustration{max-width:650px;width:100%;margin:auto}}
+@media(max-width:610px){.thpt-r4-home-hero{padding:22px 18px;border-radius:18px}.thpt-r4-home-hero h1{font-size:2rem!important}.thpt-r4-home-hero-actions{display:grid;grid-template-columns:minmax(0,1fr)}.thpt-r4-home-stats{grid-template-columns:repeat(2,minmax(0,1fr))}.thpt-r4-home-stats>div:nth-child(2){border-right:0}.thpt-r4-home-stats>div:nth-child(-n+2){border-bottom:1px solid var(--r4-line)}}
+@media(prefers-reduced-motion:reduce){.thpt-r4-home-hero-actions a{transition:none}}
+
+/* Shared SGK lesson and Core/Practice modal title language. Keep the
+   existing R4 dialog behavior; only the header presentation changes. */
+.thpt-r4-practice-dialog .thpt-r4-modal-top{
+ display:flex;align-items:center;gap:16px;padding:16px 22px;
+ background:var(--thpt-grade-soft,#edf1ff);border-top:4px solid #405acc;
+ border-bottom:1px solid #dce4f3;color:#162340;
+}
+.thpt-r4-practice-dialog .thpt-r4-modal-lesson-badge{
+ flex:none;display:grid;place-items:center;width:45px;height:45px;border-radius:50%;
+ background:#405ac9;color:white;font-weight:800;font-size:1.12rem;line-height:1;
+}
+.thpt-r4-practice-dialog .thpt-r4-modal-heading{flex:1;min-width:0}
+.thpt-r4-practice-dialog .thpt-r4-modal-meta{font-size:.77rem;font-weight:700;color:#566783;margin:0 0 3px;letter-spacing:normal}
+.thpt-r4-practice-dialog .thpt-r4-modal-top h2{font-size:1.15rem!important;line-height:1.3!important;font-weight:800!important;color:#162340!important;margin:0!important;overflow-wrap:anywhere}
+.thpt-r4-practice-dialog .thpt-r4-modal-top [data-thpt-modal-close]{margin-left:auto;align-self:center;color:#293b58;background:#ffffffb9}
+body[data-md-color-scheme="slate"] .thpt-r4-practice-dialog .thpt-r4-modal-top{background:#20334e;color:#f2f5ff;border-color:#405acc}
+body[data-md-color-scheme="slate"] .thpt-r4-practice-dialog .thpt-r4-modal-top h2{color:#f2f5ff!important}
+body[data-md-color-scheme="slate"] .thpt-r4-practice-dialog .thpt-r4-modal-meta{color:#b5c6e1}
+@media(max-width:600px){.thpt-r4-practice-dialog .thpt-r4-modal-top{padding:13px 14px;gap:11px}.thpt-r4-practice-dialog .thpt-r4-modal-lesson-badge{width:40px;height:40px;font-size:1rem}.thpt-r4-practice-dialog .thpt-r4-modal-top h2{font-size:1.01rem!important}}
