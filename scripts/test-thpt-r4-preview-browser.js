@@ -57,6 +57,72 @@ async function ready(page,path){
     "THPT cover shortcut did not open the real programme selection page");
   await entry.close();
 
+  // Owner UI acceptance: the existing THCS library keeps its own search,
+  // while SGK/Topic R4 overview pages must each show ONLY their search.
+  for(const viewport of [{width:1440,height:900},{width:390,height:844}]){
+    const ui=await browser.newPage({viewport});
+    await ui.goto("http://127.0.0.1:8765/kien-thuc/",{waitUntil:"networkidle"});
+    assert.equal(await ui.locator(".library-search").count(),1,
+      "THCS library's original 25-topic search must stay intact");
+    await ready(ui,"sgk/");
+    assert.equal(await ui.locator(".library-search").count(),0,
+      "THCS library search leaked into THPT SGK overview");
+    assert.equal(await ui.locator('input[type="search"][data-thpt-filter-input]').count(),1,
+      "THPT SGK overview must show one chapter/lesson search");
+    assert.equal(await ui.locator(".thpt-r4-search").count(),1,
+      "THPT SGK unexpectedly has duplicate search panels");
+    await ready(ui,"chuyen-de/");
+    assert.equal(await ui.locator(".library-search").count(),0,
+      "THCS library search leaked into THPT Topic overview");
+    assert.equal(await ui.locator('input[type="search"][data-thpt-filter-input]').count(),1,
+      "THPT Topic overview must show one topic search");
+    await ready(ui,"home/");
+    assert.equal(await ui.locator(".thpt-r4-home-hero h1").count(),1,
+      "THPT home must have a designed learner-oriented hero");
+    assert.equal(await ui.locator(".thpt-r4-home-orbit .thpt-r4-home-sun").count(),1,
+      "THPT homepage must have the Self-Learning Math central sun");
+    assert.equal(await ui.locator(".thpt-r4-home-orbit .thpt-r4-home-planet").count(),5,
+      "Five orbiting sphere features must be visually distinct");
+    assert.equal(await ui.locator(".thpt-r4-home-orbit-lines ellipse").count(),3,
+      "Orbit paths must appear behind the fixed feature spheres");
+    const orbitLabels=await ui.locator(".thpt-r4-home-orbit").innerText().catch(async()=>
+      await ui.locator(".thpt-r4-home-orbit").textContent());
+    assert(orbitLabels.includes("SELF-LEARNING")&&orbitLabels.includes("MATH"),
+      "Central sun must be explicitly named Self-Learning Math");
+    assert.equal(await ui.locator(".thpt-r4-home-stats > div").count(),5,
+      "Highlights must have five categories rather than obsolete pilot counts");
+    const statsText=await ui.locator(".thpt-r4-home-stats").innerText();
+    assert(statsText.includes("chuyên đề THPT")&&statsText.includes("luyện tập tương tác"),
+      "Feature strip must use THPT's planned vertical-topic scope");
+    assert.equal((await ui.locator(".thpt-r4-home-stats > div").nth(1).innerText()).includes("24"),true,
+      "THPT's planned 24 vertical topics must not be confused with 24 SGK chapters");
+    assert.equal(await ui.locator(".thpt-r4-orbit-chart-icon rect").count(),3,
+      "Progress planet must contain a three-bar chart instead of an arrow");
+    assert.equal(await ui.locator(".thpt-r4-home-stat-chart svg rect").count(),3,
+      "Progress feature strip must use the matching three-bar chart icon");
+    assert.equal(await ui.locator(".thpt-r4-grid .thpt-r4-tile").count(),5,
+      "Golden THPT five-entry landing menu must remain");
+    let overflow=await ui.evaluate(()=>document.documentElement.scrollWidth-window.innerWidth);
+    assert(overflow<=20,"THPT home hero overflow "+viewport.width+"px: "+overflow);
+    await ready(ui,"sgk/chuong-vi/luyen-tap/");
+    await ui.locator('[data-thpt-open-quiz="b15-core"]').click();
+    const modal=ui.locator("dialog.thpt-r4-practice-dialog");
+    assert.equal(await modal.locator("[data-thpt-modal-lesson-number]").innerText(),"15");
+    assert((await modal.locator("[data-thpt-modal-title]").innerText()).includes("Bài 15"));
+    const modalStyle=await modal.locator(".thpt-r4-modal-top").evaluate(el=>({
+      top:getComputedStyle(el).borderTopWidth,background:getComputedStyle(el).backgroundColor
+    }));
+    assert.equal(modalStyle.top,"4px","Core modal must match SGK lesson banner top border");
+    const headerStyle=await ui.locator(".thpt-r4-practice-lesson-header").first().evaluate(el=>getComputedStyle(el).backgroundColor);
+    assert.equal(modalStyle.background,headerStyle,"Core modal and SGK lesson header backgrounds must match");
+    await modal.locator("[data-thpt-modal-close]").click();
+    await ui.locator('[data-thpt-open-quiz="b17-practice"]').click();
+    assert.equal(await modal.locator("[data-thpt-modal-lesson-number]").innerText(),"17",
+      "Practice modal must update lesson badge for each launch");
+    await modal.locator("[data-thpt-modal-close]").click();
+    await ui.close();
+  }
+
   for(const [name,viewport,path] of [
    ["desktop",{width:1440,height:900},"home/"],
    ["iphone",{width:390,height:844},"sgk/chuong-vi/bai-16/"],

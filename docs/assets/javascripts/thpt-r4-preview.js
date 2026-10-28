@@ -202,7 +202,7 @@
   dlg.className="thpt-r4-practice-dialog";
   dlg.dataset.thptR4="1"; // Eligible root for existing R4 exercise binder when remote card is inserted.
   dlg.setAttribute("aria-label","Luyện tập Toán THPT · bản mẫu");
-  dlg.innerHTML='<div class="thpt-r4-modal-top"><div><p class="thpt-r4-modal-meta">TOÁN 10 · CHƯƠNG VI</p><h2 data-thpt-modal-title>Luyện tập</h2></div><button type="button" data-thpt-modal-close aria-label="Đóng cửa sổ">Đóng ×</button></div><div class="thpt-r4-modal-main" data-thpt-modal-body></div>';
+  dlg.innerHTML='<div class="thpt-r4-modal-top"><span class="thpt-r4-modal-lesson-badge" data-thpt-modal-lesson-number aria-hidden="true">15</span><div class="thpt-r4-modal-heading"><p class="thpt-r4-modal-meta">LỚP 10 · CHƯƠNG VI</p><h2 data-thpt-modal-title>Luyện tập</h2></div><button type="button" data-thpt-modal-close aria-label="Đóng cửa sổ">Đóng ×</button></div><div class="thpt-r4-modal-main" data-thpt-modal-body></div>';
   document.body.append(dlg);
   const modalBody=dlg.querySelector("[data-thpt-modal-body]");
   const modalTitle=dlg.querySelector("[data-thpt-modal-title]");
@@ -348,6 +348,7 @@
     const id=button.dataset.thptOpenQuiz,parts=id.match(/^b(1[5678])-(core|practice)$/);
     if(!parts)return;
     const lesson=parts[1],role=parts[2]==="core"?"Core":"Luyện tập";
+    dlg.querySelector("[data-thpt-modal-lesson-number]").textContent=lesson;
     modalTitle.textContent=role+" · Bài "+lesson+". "+lessonTitle[lesson];
     modalBody.textContent="Đang mở nội dung…";dlg.showModal();
     if(reviewed?.validate().valid){
