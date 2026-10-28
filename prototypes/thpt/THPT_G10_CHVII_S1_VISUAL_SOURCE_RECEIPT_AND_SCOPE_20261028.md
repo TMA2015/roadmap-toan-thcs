@@ -10,14 +10,14 @@ Nguồn trực tiếp: ảnh quét PDF **SGK Toán 10 tập 2 Kết nối tri th
 | Bài 19 · Phương trình đường thẳng | 29–34 | 27–31 (phần B19 trước đầu B20 trên tr.31) | Vector pháp tuyến/chỉ phương, phương trình tổng quát/tham số, dựng đường thẳng qua điểm |
 | Bài 20 · Vị trí tương đối của hai đường thẳng. Góc và khoảng cách | 35–41 | 31–38 (phần B20 trước đầu B21 trên tr.38) | Vị trí tương đối, góc, công thức khoảng cách điểm–đường thẳng, ứng dụng |
 | Bài 21 · Đường tròn trong mặt phẳng tọa độ | 42–46 | 38–41 (phần B21 trước đầu B22 trên tr.41) | Phương trình đường tròn, tâm/bán kính, tiếp tuyến, xác định đường tròn |
-| Bài 22 · Ba đường conic | 47–56 | 41–46 (p46 có phần đầu bài cuối chương) | Elip, hypebol, parabol, tiêu điểm, các tham số, phương trình chính tắc, ứng dụng |
+| Bài 22 · Ba đường conic | 47–56 | 41–45 (bài tập B22 kết thúc trước phần bài tập cuối chương tr.46) | Elip, hypebol, parabol, tiêu điểm, các tham số, phương trình chính tắc, ứng dụng |
 | Bài tập cuối Chương VII | 57–58 | 46–49 | Bài tổng hợp tọa độ, đường thẳng, tròn, conic |
 
 **Kỹ thuật xác minh:** kiểm tra ảnh overview các trang in SGK 29–58 / SBT 27–49; kiểm tra rõ trang mở đầu B19 (SGK 29, SBT 27), B20 (SGK 35, SBT 31), B21 (SGK 42, SBT 38), B22 (SGK 47, SBT 41), bài tập cuối (SGK 57, SBT 46). Một số trang chuyển bài giữa trang nên phạm vi in có chồng lấp có chủ ý.
 
 **Độ sâu kiểm kê:** SOURCE_STRUCTURE_VISUALLY_VERIFIED. Chưa khẳng định từng câu SGK/SBT hay hình có outcome riêng đã được truy vết đến từng item. Không gọi đây là academic complete audit. Ngân hàng câu dưới đây là **bài tự soạn** theo khái niệm và dạng toán đã quan sát, không sao chép bài trong SGK/SBT. Từng outcome/đáp án vẫn cần QA và NotebookLM thẩm định về sau.
 
-**ERRATUM — 28/10/2026, kiểm tra lại ảnh có nhãn số trang in:** SGK p29 đã chứa cả tiêu đề Chương VII và mở đầu B19; SGK p57 có tiêu đề **Bài tập cuối Chương VII**; SGK p59 mở đầu Chương VIII. Vì vậy phạm vi đúng của ChVII là **SGK p29–58**, B19 p29–34, B22 p47–56, bài tập cuối p57–58. Các phạm vi SGK 29–60, B19 30–34, B22 47–58, bài tập cuối 59–60 trong phiên bản trước là lệch trang và đã được sửa. SBT ChVII p27–49 không đổi.
+**ERRATUM — 28/10/2026, kiểm tra lại ảnh có nhãn số trang in:** SGK p29 đã chứa cả tiêu đề Chương VII và mở đầu B19; SGK p57 có tiêu đề **Bài tập cuối Chương VII**; SGK p59 mở đầu Chương VIII. Vì vậy phạm vi đúng của ChVII là **SGK p29–58**, B19 p29–34, B22 p47–56, bài tập cuối p57–58. Các phạm vi SGK 29–60, B19 30–34, B22 47–58, bài tập cuối 59–60 trong phiên bản trước là lệch trang và đã được sửa. SBT ChVII p27–49 không đổi; B22 SBT p41–45, bài tập cuối p46–49.
 
 ## Kế hoạch ngân hàng dùng chung
 
