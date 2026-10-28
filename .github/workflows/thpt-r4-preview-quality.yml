@@ -6,6 +6,8 @@ on:
       - 'mkdocs.thpt-preview.yml'
       - 'mkdocs.yml'
       - 'scripts/test-thpt-static-release.cjs'
+      - 'scripts/assemble-thpt-site.cjs'
+      - '.github/workflows/deploy.yml'
       - 'docs/thpt-preview/**'
       - 'docs/assets/javascripts/thpt-r4-preview.js'
       - 'docs/assets/javascripts/floating-ai-tutor-v1.js'
@@ -64,6 +66,16 @@ jobs:
           test -f site-thpt-preview/assets/stylesheets/thpt-r4-preview.css
           echo 'PASS: THPT R4 MkDocs preview paths built. No deployment, academic approval or browser QA implied.'
 
+      - name: Build and verify one-site THCS + THPT candidate (never deploy)
+        run: |
+          mkdocs build --strict
+          node scripts/assemble-thpt-site.cjs
+      - name: Verify combined build has no backend
+        run: |
+          test -f site/index.html
+          test -f site/thpt-preview/sgk/chuong-vi/bai-16/index.html
+          test ! -e site/assets/javascripts/thpt-protected-readiness-v1.js
+          test ! -e site/assets/javascripts/thpt-formative-exposure-v1.js
       - name: Install isolated Chromium test dependency
         run: |
           npm install --no-save playwright@1.56.1
