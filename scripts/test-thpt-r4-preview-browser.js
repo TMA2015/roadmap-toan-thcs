@@ -32,7 +32,7 @@ async function ready(page,path){
   assert.equal(await thcsCover.count(),1,"THCS quick navigation missing level-1 programme cover");
   assert(new URL(await thcsCover.getAttribute("href"),entry.url()).pathname.endsWith("/thpt-preview/"),
     "THCS programme-cover shortcut leads to wrong page");
-  assert((await entry.locator('[data-roadmap-topic-dialog] .roadmap-main-quick__links').textContent()).includes("Trang chủ THCS"),
+  assert((await entry.locator('[data-roadmap-topic-dialog] .roadmap-main-quick__links').last().textContent()).includes("Trang chủ THCS"),
     "THCS home shortcut is not clearly named");
   await entry.goto(base+"home/",{waitUntil:"networkidle"});
   await entry.locator("[data-thpt-r4-launcher]").click();
