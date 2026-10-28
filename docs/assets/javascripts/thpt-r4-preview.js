@@ -249,6 +249,13 @@
    prev.type=next.type="button";prev.textContent="← Câu trước";next.textContent="Câu tiếp →";
    const render=()=>{
     const item=items[index];card.replaceChildren();tabs.replaceChildren();
+    card.dataset.thptCanonicalItem=item.item_id;
+    const exposureRole=item.role==="CORE"?"SGK_CORE":
+      item.role==="APPLICATION"?"SGK_CHAPTER_APPLICATION":"SGK_PRACTICE";
+    card.dataset.thptExposureRole=exposureRole;
+    // This is only best-effort authenticated exposure telemetry. Missing
+    // credentials or an inactive backend is NOT evidence of unseen material.
+    void window.THPTFormativeExposure?.record(item.item_id,exposureRole,"QUESTION_SHOWN");
     head.textContent="Câu "+(index+1)+" / "+items.length+
       " · Đã review học thuật · Tự luyện, không ghi điểm";
     for(let i=0;i<items.length;i++){
