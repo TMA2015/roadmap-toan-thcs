@@ -371,6 +371,68 @@ async function ready(page,path){
   await ready(page,"sgk/chuong-vi/bai-16/");
   assert((await page.locator("article").textContent()).includes("ACADEMIC_CLEARANCE: YES"),"Existing B16 academic receipt unintentionally lost");
 
+  // OPTIONAL secure-assessment UI bridge: synthetic API/auth only, no real
+  // held-out questions, credentials, production scoring or endpoint calls.
+  await page.evaluate(()=>{
+    const host=document.createElement("div");
+    host.dataset.thptSecureReadiness="";
+    host.dataset.apiOrigin="https://example.test";
+    host.dataset.bankId="SYNTHETIC_BANK";
+    document.querySelector("article").append(host);
+    window.THPT_PROTECTED_AUTH={getToken:async()=>"synthetic-token"};
+    window.__thptSafeCalls=[];
+    const realFetch=window.fetch.bind(window);
+    window.fetch=async(url,opts)=>{
+      if(!String(url).startsWith("https://example.test/v1/assessment/"))
+        return realFetch(url,opts);
+      const body=JSON.parse(opts.body);
+      window.__thptSafeCalls.push({url,body,auth:opts.headers.Authorization});
+      const start=String(url).endsWith("/start");
+      const result=start?{
+        attempt_id:"SYNTHETIC-A01",completed:false,
+        questions:[
+          {item_id:"TEST-C01",prompt:"Chọn đáp án thử nghiệm.",response_kind:"CHOICE",
+           choices:["Chọn 1","Chọn 2"]},
+          {item_id:"TEST-T01",prompt:"Nêu lời giải ngắn.",response_kind:"TEXT",choices:[]}
+        ]
+      }:{
+        attempt_id:"SYNTHETIC-A01",completed:true,score:null,total:2,
+        manual_review_required:true,details:[],mastery_credit:false
+      };
+      return new Response(JSON.stringify(result),{status:200,headers:{"Content-Type":"application/json"}});
+    };
+    window.THPTProtectedReadiness.mount(host);
+  });
+  const protectedArea=page.locator("[data-thpt-secure-readiness]");
+  assert(await protectedArea.locator("button").filter({hasText:"Bắt đầu"}).isVisible(),
+    "Protected UI was not mounted on explicit opt-in");
+  await protectedArea.locator("button").filter({hasText:"Bắt đầu"}).click();
+  await protectedArea.locator("input[type=radio]").first().waitFor();
+  assert(!(await protectedArea.textContent()).includes("Giải theo"),
+    "Protected pre-submit UI leaked an explanation");
+  await protectedArea.locator("input[type=radio]").first().check();
+  await protectedArea.locator("button").filter({hasText:"Next"}).click();
+  await protectedArea.locator("textarea").fill("Lập điều kiện và thử nghiệm.");
+  assert(!(await protectedArea.textContent()).includes("chờ chấm"),
+    "Protected UI revealed post-submit status before final submit");
+  await protectedArea.locator("button").filter({hasText:"Previous"}).click();
+  assert(await protectedArea.locator("input[type=radio]").first().isChecked(),
+    "Previous/Next lost existing answer before Final Submit");
+  await protectedArea.locator("button").filter({hasText:"Next"}).click();
+  await protectedArea.locator("button").filter({hasText:"Final Submit"}).click();
+  await protectedArea.locator("text=Đã lưu bài.").waitFor().catch(async()=>{
+    assert((await protectedArea.textContent()).includes("Đã lưu bài."),
+      "Written Final Submit did not show pending-manual review");
+  });
+  assert((await protectedArea.textContent()).includes("chưa có điểm hoặc mastery"),
+    "Protected written mode must not award fake grades or mastery");
+  assert(await protectedArea.locator("textarea").isDisabled(),
+    "Final Submit must lock submitted answers");
+  const protectedCalls=await page.evaluate(()=>window.__thptSafeCalls);
+  assert.equal(protectedCalls.length,2,"Exactly start + one Final Submit required");
+  assert.equal(protectedCalls[0].auth,"Bearer synthetic-token");
+  assert.equal(protectedCalls[1].body.answers["TEST-T01"],"Lập điều kiện và thử nghiệm.");
+
   await page.close();
   console.log("PASS THPT R4 reviewed formative/Written + technical Readiness Chromium smoke (not production approval or real-device QA)");
  }finally{await browser.close();}
