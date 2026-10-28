@@ -371,131 +371,13 @@ async function ready(page,path){
   await ready(page,"sgk/chuong-vi/bai-16/");
   assert((await page.locator("article").textContent()).includes("ACADEMIC_CLEARANCE: YES"),"Existing B16 academic receipt unintentionally lost");
 
-  // OPTIONAL secure-assessment UI bridge: synthetic API/auth only, no real
-  // held-out questions, credentials, production scoring or endpoint calls.
-  await page.evaluate(()=>{
-    const host=document.createElement("div");
-    host.dataset.thptSecureReadiness="";
-    host.dataset.apiOrigin="https://example.test";
-    host.dataset.bankId="SYNTHETIC_BANK";
-    document.querySelector("article").append(host);
-    window.THPT_PROTECTED_AUTH={getToken:async()=>"synthetic-token"};
-    window.__thptSafeCalls=[];
-    const realFetch=window.fetch.bind(window);
-    window.fetch=async(url,opts)=>{
-      if(!String(url).startsWith("https://example.test/v1/assessment/"))
-        return realFetch(url,opts);
-      const body=JSON.parse(opts.body);
-      window.__thptSafeCalls.push({url,body,auth:opts.headers.Authorization});
-      const start=String(url).endsWith("/start");
-      const result=start?{
-        attempt_id:"SYNTHETIC-A01",completed:false,
-        questions:[
-          {item_id:"TEST-C01",prompt:"Chọn đáp án thử nghiệm.",response_kind:"CHOICE",
-           choices:["Chọn 1","Chọn 2"]},
-          {item_id:"TEST-T01",prompt:"Nêu lời giải ngắn.",response_kind:"TEXT",choices:[]}
-        ]
-      }:{
-        attempt_id:"SYNTHETIC-A01",completed:true,score:null,total:2,
-        manual_review_required:true,details:[],mastery_credit:false
-      };
-      return new Response(JSON.stringify(result),{status:200,headers:{"Content-Type":"application/json"}});
-    };
-    window.THPTProtectedReadiness.mount(host);
-  });
-  const protectedArea=page.locator("[data-thpt-secure-readiness]");
-  assert(await protectedArea.locator("button").filter({hasText:"Bắt đầu"}).isVisible(),
-    "Protected UI was not mounted on explicit opt-in");
-  await protectedArea.locator("button").filter({hasText:"Bắt đầu"}).click();
-  await protectedArea.locator("input[type=radio]").first().waitFor();
-  assert(!(await protectedArea.textContent()).includes("Giải theo"),
-    "Protected pre-submit UI leaked an explanation");
-  await protectedArea.locator("input[type=radio]").first().check();
-  await protectedArea.locator("button").filter({hasText:"Next"}).click();
-  await protectedArea.locator("textarea").fill("Lập điều kiện và thử nghiệm.");
-  assert(!(await protectedArea.textContent()).includes("chờ chấm"),
-    "Protected UI revealed post-submit status before final submit");
-  await protectedArea.locator("button").filter({hasText:"Previous"}).click();
-  assert(await protectedArea.locator("input[type=radio]").first().isChecked(),
-    "Previous/Next lost existing answer before Final Submit");
-  await protectedArea.locator("button").filter({hasText:"Next"}).click();
-  await protectedArea.locator("button").filter({hasText:"Final Submit"}).click();
-  await protectedArea.locator("text=Đã lưu bài.").waitFor().catch(async()=>{
-    assert((await protectedArea.textContent()).includes("Đã lưu bài."),
-      "Written Final Submit did not show pending-manual review");
-  });
-  assert((await protectedArea.textContent()).includes("chưa có điểm hoặc mastery"),
-    "Protected written mode must not award fake grades or mastery");
-  assert(await protectedArea.locator("textarea").isDisabled(),
-    "Final Submit must lock submitted answers");
-  const protectedCalls=await page.evaluate(()=>window.__thptSafeCalls);
-  assert.equal(protectedCalls.length,2,"Exactly start + one Final Submit required");
-  assert.equal(protectedCalls[0].auth,"Bearer synthetic-token");
-  assert.equal(protectedCalls[1].body.answers["TEST-T01"],"Lập điều kiện và thử nghiệm.");
-
-  // Shared-family-device regression: a previous learner's event must never
-  // suppress the next learner's same canonical event via client-side cache.
-  const exposureAccountCalls=await page.evaluate(async()=>{
-    window.THPT_EXPOSURE_API_ORIGIN="https://example.test";
-    const prevFetch=window.fetch,seen=[];
-    let learner="A";
-    window.THPT_PROTECTED_AUTH={getToken:async()=>learner+"-synthetic-token"};
-    window.fetch=async(url,opts)=>{
-      if(!String(url).endsWith("/v1/exposure/record"))return prevFetch(url,opts);
-      seen.push({auth:opts.headers.Authorization,body:JSON.parse(opts.body)});
-      return new Response(JSON.stringify({recorded:true}),
-        {status:200,headers:{"Content-Type":"application/json"}});
-    };
-    await window.THPTFormativeExposure.record("THPT-G10-B15-C01","SGK_CORE","QUESTION_SHOWN");
-    learner="B";
-    await window.THPTFormativeExposure.record("THPT-G10-B15-C01","SGK_CORE","QUESTION_SHOWN");
-    return seen;
-  });
-  assert.deepEqual(exposureAccountCalls.map(x=>x.auth),
-    ["Bearer A-synthetic-token","Bearer B-synthetic-token"],
-    "Switching learners on shared device must record separate canonical exposures");
-  assert(exposureAccountCalls.every(x=>x.body.item_id==="THPT-G10-B15-C01"),
-    "Exposure logger sent an incorrect canonical item ID");
-
-
-  // Public-formative telemetry is opt-in: test only with synthetic auth.
-  const exposureResult=await page.evaluate(async()=>{
-    window.THPT_EXPOSURE_API_ORIGIN="https://example.test";
-    window.THPT_PROTECTED_AUTH={getToken:async()=>"synthetic-token"};
-    const saved=window.fetch;
-    window.__syntheticExposureCalls=[];
-    window.fetch=async(url,opts)=>{
-      if(String(url)==="https://example.test/v1/exposure/record"){
-        window.__syntheticExposureCalls.push({url,body:JSON.parse(opts.body),
-          token:opts.headers.Authorization});
-        return new Response(JSON.stringify({recorded:true}),{
-          status:200,headers:{"Content-Type":"application/json"}});
-      }
-      return saved(url,opts);
-    };
-    const logger=window.THPTFormativeExposure;
-    if(!logger)return {missing:true};
-    const first=await logger.record("THPT-CORE-QF01","SGK_CORE","QUESTION_SHOWN");
-    const second=await logger.record("THPT-CORE-QF01","SGK_CORE","QUESTION_SHOWN");
-    const hint=await logger.record("THPT-CORE-QF01","SGK_CORE","HINT_OPENED");
-    const wrong=await logger.record("THPT-CORE-QF01","TOPIC_CORE","QUESTION_SHOWN");
-    return {first,second,hint,wrong,calls:window.__syntheticExposureCalls};
-  });
-  assert(!exposureResult.missing,"Opt-in formative logger must load within THPT R4");
-  assert(exposureResult.first&&exposureResult.second&&exposureResult.hint,
-    "Authenticated canonical Core exposure did not record");
-  assert.equal(exposureResult.wrong,false,"Nonexistent Topic Core must be denied");
-  // D1 deduplicates by verified learner, not by shared browser state.
-  assert.equal(exposureResult.calls.length,3,
-    "Every authenticated view must be sent even on a shared-family device");
-  assert(exposureResult.calls.every(x=>x.token==="Bearer synthetic-token"),
-    "Exposure logs require a signed-in learner token");
-  assert.equal(exposureResult.calls[0].body.item_id,"THPT-CORE-QF01");
-  assert.equal(exposureResult.calls[0].body.event_kind,"QUESTION_SHOWN");
-  assert.equal(exposureResult.calls[1].body.event_kind,"QUESTION_SHOWN");
-  assert.equal(exposureResult.calls[2].body.event_kind,"HINT_OPENED");
-  assert(!JSON.stringify(exposureResult.calls).includes("answer"),
-    "Formative exposure call must never transmit an answer or key");
+  // Static website: do not mount login-dependent assessments or learners.
+  assert.equal(await page.locator("[data-thpt-secure-readiness]").count(),0,
+    "No private backend interface may appear on THPT pages");
+  assert.equal(await page.evaluate(()=>typeof window.THPTProtectedReadiness),"undefined",
+    "No learner-login assessment engine should load");
+  assert.equal(await page.evaluate(()=>typeof window.THPTFormativeExposure),"undefined",
+    "No authenticated exposure tracker should load");
 
   await page.close();
   console.log("PASS THPT R4 reviewed formative/Written + technical Readiness Chromium smoke (not production approval or real-device QA)");
