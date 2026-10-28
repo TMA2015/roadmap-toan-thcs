@@ -96,6 +96,9 @@ export function createAssessmentService(repo){
    if(bank.version!==a.bank_version ||
       JSON.stringify(bank.items.map(q=>q.item_id))!==a.item_ids_json)
       throw new AssessmentError("ASSESSMENT_VERSION_CHANGED",503);
+   // Fail closed if an exam item was made public after this attempt started.
+   if((await repo.findPublished(bank.items.map(q=>q.item_id))).length)
+     throw new AssessmentError("HELDOUT_ITEM_WAS_PUBLIC",409);
    if(!answers||typeof answers!=="object"||Array.isArray(answers)||
       Object.keys(answers).length!==bank.items.length)
       throw new AssessmentError("ALL_ANSWERS_REQUIRED",400);
