@@ -58,6 +58,10 @@ async function firebaseUID(request,env){
 function d1Repository(db){
  const one=async(sql,...args)=>(await db.prepare(sql).bind(...args).first())||null;
  return {
+  async isLearnerAllowed(uid){
+   const row=await one("SELECT active FROM thpt_allowed_learners WHERE uid=?",uid);
+   return row?.active===1; // no row, revoked, or malformed -> deny
+  },
   async getBank(id){
    const bank=await one("SELECT id,scope,version,required_count,active FROM thpt_banks WHERE id=?",id);
    if(!bank)return null;
