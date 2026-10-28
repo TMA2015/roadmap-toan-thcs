@@ -15,7 +15,9 @@ for(const pathname of [
   "/roadmap-toan-thcs/kien-thuc/25-tong-hop-on-thi-10/bai-toan-kinh-dien/",
   "/roadmap-toan-thcs/kien-thuc/25-tong-hop-on-thi-10/kho-bai-mo-neo/",
   "/roadmap-toan-thcs/kien-thuc/25-tong-hop-on-thi-10/anchor-25-004/",
-  "/kien-thuc/25-tong-hop-on-thi-10/anchor-25-011/index.html"
+  "/kien-thuc/25-tong-hop-on-thi-10/anchor-25-011/index.html",
+  "/roadmap-toan-thcs/thpt-preview/sgk/chuong-vi/bai-16/",
+  "/roadmap-toan-thcs/thpt-preview/chuyen-de/ham-so/kien-thuc/"
 ])ok(mayMount(pathname),"reading route needs contextual Tutor: "+pathname);
 for(const pathname of [
   "/roadmap-toan-thcs/kien-thuc/04-bieu-thuc-dai-so/bai-tap/",
@@ -25,7 +27,10 @@ for(const pathname of [
   "/roadmap-toan-thcs/kien-thuc/25-tong-hop-on-thi-10/de-luyen-01-dap-an/",
   "/roadmap-toan-thcs/kien-thuc/25-tong-hop-on-thi-10/tu-danh-gia-ky-nang-thi/",
   "/roadmap-toan-thcs/kien-thuc/25-tong-hop-on-thi-10/bai-tap/",
-  "/roadmap-toan-thcs/ai/ai-tutor-core-contract/"
+  "/roadmap-toan-thcs/ai/ai-tutor-core-contract/",
+  "/roadmap-toan-thcs/thpt-preview/sgk/chuong-vi/tu-kiem-tra-chuong/",
+  "/roadmap-toan-thcs/thpt-preview/chuyen-de/ham-so/tu-kiem-tra/",
+  "/roadmap-toan-thcs/thpt-preview/chuyen-de/ham-so/luyen-tap/"
 ])ok(!mayMount(pathname),"assessed/nonreading route must not mount Tutor: "+pathname);
 ok(ui.includes('activity: "learning"')&&ui.includes('helpMode: "TEACH_FROM_START"'),"learning context, not assessment/practice");
 ok(ui.includes("selectedText(root)")&&ui.includes("sectionText(root, heading)"),"selection or active section context");
@@ -35,5 +40,10 @@ ok(ui.includes('provider: "gemini"')&&ui.includes("RoadmapRichMath"),"real Gemin
 ok(ui.includes("maxLength = 500")&&ui.includes("Không nhập thông tin cá nhân"),"bounded free question and privacy cue");
 ok(prompt.includes('activity === "learning"')&&prompt.includes("NGỮ CẢNH ĐỌC BÀI HỌC"),"provider distinguishes learning from exercise");
 ok(mk.includes("floating-ai-tutor-v1.js"),"global script registered");
+ok(ui.includes('lessonLayer = isTHPTReadingPage() ? "THPT-SGK-KNTT" : "KNTT-Core"'),
+  "THPT uses the shared Tutor with independent grade context");
+ok(prompt.includes('String(context.current_layer || "").startsWith("THPT-")'),
+  "Gemini system prompt must distinguish THPT from THCS without changing THCS teaching");
+
 ok(!ui.includes("innerHTML = response")&&!ui.includes("insertAdjacentHTML"),"AI response not injected as HTML");
 console.log("PASS: floating lesson/anchor AI respects route matrix, active/selected context, Gemini Tutor contract, safe rich math and excludes assessments.");
