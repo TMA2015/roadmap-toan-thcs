@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="768" viewBox="0 0 1120 768" role="img" aria-labelledby="title desc">
+<title id="title">Minh hoạ biểu đồ Venn: hợp, giao, hiệu và phần bù</title>
+<desc id="desc">Bốn bảng biểu đồ với hai tập A B chồng nhau trong tập nền U. Vùng màu xanh chỉ các phần tử thuộc hợp A với B, giao A với B, hiệu A trừ B và phần bù của A trong U theo đúng từng bảng.</desc>
+<style>
+text{font-family:Arial,DejaVu Sans,sans-serif;fill:#17243c}.heading{font-size:27px;font-weight:700}.subtitle{font-size:16px;fill:#64748b}.paneltitle{font-size:21px;font-weight:700}.formula{font-size:21px;font-weight:600}.small{font-size:15px}.label{font-size:23px;font-weight:700}.outline{fill:none;stroke:#183554;stroke-width:3.2}.universe{fill:#f8fafc;stroke:#94a3b8;stroke-width:2.4}.card{fill:white;stroke:#dbe4ef;stroke-width:2}
+</style><rect width="1120" height="768" fill="#f1f5f9"/><text x="30" y="45" class="heading">Phép toán tập hợp · Biểu đồ Venn</text><text x="30" y="73" class="subtitle">Miền tô xanh là kết quả của phép toán; U là tập nền, đường biên là sơ đồ minh họa.</text>
+<g transform="translate(28,100)">
+<rect class="card" rx="18" width="526" height="301"/><text x="26" y="36" class="paneltitle">Hợp: A hoặc B</text>
+<rect class="universe" x="43" y="71" width="440" height="177" rx="10"/>
+<ellipse cx="204" cy="158" rx="111" ry="78" fill="#35b4a0" opacity="0.68"/><ellipse cx="301" cy="158" rx="111" ry="78" fill="#35b4a0" opacity="0.68"/>
+<ellipse class="outline" cx="204" cy="158" rx="111" ry="78"/><ellipse class="outline" cx="301" cy="158" rx="111" ry="78"/>
+<text class="label" x="125" y="155">A</text><text class="label" x="364" y="155">B</text>
+<text x="55" y="92" class="small">U</text><text x="26" y="281" class="formula">Tô màu: A hoặc B</text>
+</g><g transform="translate(586,100)">
+<rect class="card" rx="18" width="526" height="301"/><text x="26" y="36" class="paneltitle">Giao: A ∩ B</text>
+<rect class="universe" x="43" y="71" width="440" height="177" rx="10"/>
+<clipPath id="clipA1"><ellipse cx="204" cy="158" rx="111" ry="78"/></clipPath><ellipse cx="301" cy="158" rx="111" ry="78" fill="#35b4a0" opacity="0.77" clip-path="url(#clipA1)"/>
+<ellipse class="outline" cx="204" cy="158" rx="111" ry="78"/><ellipse class="outline" cx="301" cy="158" rx="111" ry="78"/>
+<text class="label" x="125" y="155">A</text><text class="label" x="364" y="155">B</text>
+<text x="55" y="92" class="small">U</text><text x="26" y="281" class="formula">Tô màu: A ∩ B</text>
+</g><g transform="translate(28,420)">
+<rect class="card" rx="18" width="526" height="301"/><text x="26" y="36" class="paneltitle">Hiệu: A \ B</text>
+<rect class="universe" x="43" y="71" width="440" height="177" rx="10"/>
+<clipPath id="clipDiffA2"><ellipse cx="204" cy="158" rx="111" ry="78"/></clipPath><ellipse cx="204" cy="158" rx="111" ry="78" fill="#35b4a0" opacity="0.84"/><ellipse cx="301" cy="158" rx="111" ry="78" fill="#f8fafc" clip-path="url(#clipDiffA2)"/>
+<ellipse class="outline" cx="204" cy="158" rx="111" ry="78"/><ellipse class="outline" cx="301" cy="158" rx="111" ry="78"/>
+<text class="label" x="125" y="155">A</text><text class="label" x="364" y="155">B</text>
+<text x="55" y="92" class="small">U</text><text x="26" y="281" class="formula">Tô màu: A \ B</text>
+</g><g transform="translate(586,420)">
+<rect class="card" rx="18" width="526" height="301"/><text x="26" y="36" class="paneltitle">Phần bù: C<tspan dy="6" font-size="14">U</tspan><tspan dy="-6" font-size="21"> A</tspan></text>
+<rect class="universe" x="43" y="71" width="440" height="177" rx="10"/>
+<rect x="43" y="71" width="440" height="177" fill="#35b4a0" opacity="0.72" rx="10"/><ellipse cx="204" cy="158" rx="111" ry="78" fill="#f8fafc"/>
+<ellipse class="outline" cx="204" cy="158" rx="111" ry="78"/><ellipse class="outline" cx="301" cy="158" rx="111" ry="78"/>
+<text class="label" x="125" y="155">A</text><text class="label" x="364" y="155">B</text>
+<text x="55" y="92" class="small">U</text><text x="26" y="281" class="formula">Tô màu: U \ A</text>
+</g>
+<text x="34" y="746" class="subtitle">Lưu ý: Phần bù luôn xét theo tập nền U; vùng trắng là phần không được chọn.</text>
+</svg>
