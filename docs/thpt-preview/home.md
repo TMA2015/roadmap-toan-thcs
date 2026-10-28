@@ -21,8 +21,8 @@ hide:
     <svg viewBox="0 0 540 345" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
       <defs><pattern id="thpt-home-grid" width="47.5" height="40" patternUnits="userSpaceOnUse"><path d="M 47.5 0 L 0 0 0 40" fill="none" stroke="#d6e3f8" stroke-width="1"/></pattern></defs>
       <rect x="36" y="40" width="456" height="280" rx="14" fill="url(#thpt-home-grid)"/>
-      <path d="M74 245 H492 M74 40 V310" stroke="#6e81a6" stroke-width="2" fill="none"/>
-      <path d="M485 238 L493 245 L485 252 M67 48 L74 40 L81 48" fill="none" stroke="#6e81a6" stroke-width="2"/>
+      <path d="M74 205 H492 M74 40 V310" stroke="#6e81a6" stroke-width="2" fill="none"/>
+      <path d="M485 198 L493 205 L485 212 M67 48 L74 40 L81 48" fill="none" stroke="#6e81a6" stroke-width="2"/>
       <text x="500" y="263" fill="#536481" font-size="16">x</text><text x="55" y="28" fill="#536481" font-size="16">y</text>
       <path d="M74 85 Q264 405 454 85" fill="none" stroke="#3753ce" stroke-width="7" stroke-linecap="round"/>
       <path d="M264 42 V245" stroke="#94a9d1" stroke-width="2" stroke-dasharray="6 7"/>
