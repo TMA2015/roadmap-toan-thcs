@@ -348,6 +348,7 @@
     const id=button.dataset.thptOpenQuiz,parts=id.match(/^b(1[5678])-(core|practice)$/);
     if(!parts)return;
     const lesson=parts[1],role=parts[2]==="core"?"Core":"Luyện tập";
+    dlg.querySelector("[data-thpt-modal-lesson-number]").textContent=lesson;
     modalTitle.textContent=role+" · Bài "+lesson+". "+lessonTitle[lesson];
     modalBody.textContent="Đang mở nội dung…";dlg.showModal();
     if(reviewed?.validate().valid){
