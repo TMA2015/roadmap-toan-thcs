@@ -1,6 +1,6 @@
 # Toán 10 KNTT Chương VII — Written / Anchor ứng viên v0.1
 
-**DRAFT_NOT_ACADEMICALLY_REVIEWED** · **NO_MASTERY_CREDIT** · Nội dung tự soạn, chưa publish. **Anchor là vai trò/nhãn của Written**, không tạo ngân hàng thứ hai hay bản sao câu. Phạm vi dựa trên bản gốc SGK 29–60, SBT 27–49 đã đối chiếu theo trang.
+**DRAFT_NOT_ACADEMICALLY_REVIEWED** · **NO_MASTERY_CREDIT** · Nội dung tự soạn, chưa publish. **Anchor là vai trò/nhãn của Written**, không tạo ngân hàng thứ hai hay bản sao câu. Phạm vi dựa trên bản gốc SGK 29–58, SBT 27–49 đã đối chiếu theo trang.
 
 ## THPT-G10-CHVII-W19-01 — Written · Bài 19 (6 điểm)
 
