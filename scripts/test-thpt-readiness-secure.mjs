@@ -100,7 +100,7 @@ for(const x of ["key","explanation","correct","answer","Giải theo điều ki�
 assert.deepEqual(opened.questions.map(q=>q.item_id),["Q-HIDDEN-01","Q-HIDDEN-02"]);
 const resumed=await svc.start("learner_A",a.id);
 assert.equal(resumed.attempt_id,opened.attempt_id,"Resume must not create a second attempt");
-assert.equal(db.attempts.size,1);
+assert.equal(db.attempts.size,2,"One active learner and one pending deliberately blocked late-published test");
 await failure(()=>svc.start("learner_A",b.id),"ASSESSMENT_ITEMS_PREVIOUSLY_SEEN");
 await failure(()=>svc.submit("learner_B",opened.attempt_id,{"Q-HIDDEN-01":1,"Q-HIDDEN-02":0}),"ATTEMPT_NOT_FOUND");
 await failure(()=>svc.submit("learner_A",opened.attempt_id,{"Q-HIDDEN-01":1}),"ALL_ANSWERS_REQUIRED");
