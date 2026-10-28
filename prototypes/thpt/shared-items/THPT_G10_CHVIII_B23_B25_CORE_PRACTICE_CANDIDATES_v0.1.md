@@ -2,7 +2,7 @@
 
 **Status:** DRAFT_NOT_ACADEMICALLY_REVIEWED · CANDIDATE_ONLY · NO_CREDIT.
 
-**S1:** SGK Tập 2 Chương VIII trang 60–79; SBT Tập 2 trang 50–59. Đã đối chiếu trực quan ảnh PDF gốc; xem `THPT_G10_CHVIII_S1_VISUAL_SOURCE_RECEIPT_AND_SCOPE_20261028.md`. Đây là bài **tự biên soạn**, không sao chép nội dung nguyên văn SGK/SBT.
+**S1:** SGK Tập 2 Chương VIII trang 59–79; SBT Tập 2 trang 50–59. Đã đối chiếu trực quan ảnh PDF gốc; xem `THPT_G10_CHVIII_S1_VISUAL_SOURCE_RECEIPT_AND_SCOPE_20261028.md`. Đây là bài **tự biên soạn**, không sao chép nội dung nguyên văn SGK/SBT.
 
 **Quy mô:** 18 ứng viên = **6 Core + 9 Practice + 3 Application**, cho B23–25. Mỗi bài toán một canonical ID/đáp án/lời giải; các vị trí Topic Practice chỉ là mapping điều kiện, không hàm ý chuyên đề dọc hoàn thiện.
 
@@ -33,7 +33,7 @@
 
 ## Bài 23. Quy tắc đếm
 
-**Nguồn đã quan sát:** SGK 60–64; SBT 50–52.
+**Nguồn đã quan sát:** SGK 59–64; SBT 50–52.
 ### THPT-G10-B23-C01 — CORE
 
 **Đề:** Một cửa hàng có 4 loại bút mực và 3 loại bút chì khác nhau. Chọn đúng **một** cây bút. Có bao nhiêu cách chọn?
