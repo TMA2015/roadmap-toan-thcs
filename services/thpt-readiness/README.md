@@ -18,6 +18,16 @@
 
 This QA service supports **single-choice** questions with an objective answer key, and **written/short-response** submissions with a reviewer-verified private rubric. Written answers are stored privately, but returned as **PENDING_MANUAL_RUBRIC_REVIEW** with **no score, solution, or mastery** until the separately approved rubric-grading workflow exists. The approved ChVI bank includes open-answer questions; **do not convert them to multiple-choice, guess mathematical equivalence, or turn a pending response into mastery**. Until the actual question formats, rubric handling and D6 QA pass, the whole bank remains inactive.
 
+## Formative exposure coverage added (new, NOT production-verified)
+
+- `POST /v1/exposure/record`: authenticated, private per-learner canonical record of `QUESTION_SHOWN`, `HINT_OPENED` or `SOLUTION_OPENED` with a valid *published* item/role. Repeated events are idempotent.
+- `thpt_public_item_registry`: permanent list of canonical public formative IDs, including retired/inactive ones. A question **ever present** in this registry is excluded from a held-out Readiness bank for **every learner**; this exclusion is checked at both test start and Final Submit, and atomically at the D1 attempt creation.
+- `thpt_exposure_events`: records first occurrence of each kind of public learning exposure per learner/item/role. `thpt_exposures` remains the single cross-route per-learner item-exposure lock.
+- `docs/assets/javascripts/thpt-formative-exposure-v1.js`: silent opt-in logger for registered formative questions and opened hints/solutions; requires `window.THPT_EXPOSURE_API_ORIGIN` and `window.THPT_PROTECTED_AUTH.getToken`. Without both, **no exposure is verified**. It sends neither answers nor keys.
+- `scripts/test-thpt-public-exposure-registry.cjs` derives **36 public ChVI item IDs** from the preexisting canonical manifest, without cloning questions/answers. Optional local `--emit --metadata-only` generates inactive metadata SQL; it never activates any bank, learner score or private key. Pending Topic placements are **not** automatically approved.
+
+**Release caution:** Anonymous visits, old browsing history, untracked examples, or a failed exposure request do *not* establish that a learner has never seen an exercise. Until all formative content requires verified logging and the cross-path review of analogous questions has passed, **independent Readiness credit is disabled**. Even with telemetry, Question Shown is evidence of rendering, not proof of understanding or mastery.
+
 ## First production activation blockers
 
 1. Choose and configure an authorized **private Cloudflare Worker + D1** instance, compatible with the shared G Learning website; verify free quotas and account permissions before deployment. Configure `FIREBASE_PROJECT_ID`, `ALLOWED_ORIGIN` (exact **https** origin), `DB` D1 binding; Firebase Auth must be established for intended learners. **No credentials, actual DB IDs or private exam imports in GitHub.**
