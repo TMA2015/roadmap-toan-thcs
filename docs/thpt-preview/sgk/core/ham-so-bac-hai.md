@@ -6,7 +6,7 @@
 
 [Xem lý thuyết SGK Bài 16](../chuong-vi/bai-16.md) · [Thư viện Core SGK](index.md) · [Luyện tập Chuyên đề Hàm số](../../chuyen-de/ham-so/luyen-tap.md)
 
-<div class="thpt-r4-exercise" data-thpt-core>
+<div class="thpt-r4-exercise" data-thpt-core data-thpt-canonical-item="THPT-CORE-QF01" data-thpt-exposure-role="SGK_CORE">
 <p class="thpt-r4-eyebrow">THPT-CORE-QF01 · CÓ GỢI Ý · CHỈ DEMO</p>
 <h3>Đọc tọa độ đỉnh</h3>
 <p>Cho \(y=(x+3)^2-5\). Hoành độ đỉnh là bao nhiêu?</p>
