@@ -12,6 +12,7 @@ on:
       - 'scripts/test-thpt-r4-preview-browser.js'
       - 'services/thpt-readiness/**'
       - 'scripts/test-thpt-readiness-secure.mjs'
+      - 'scripts/test-thpt-readiness-d1-schema.py'
       - '.github/workflows/thpt-r4-preview-quality.yml'
 
 permissions:
@@ -36,6 +37,7 @@ jobs:
           node --check services/thpt-readiness/assessment-service.mjs
           node --check services/thpt-readiness/worker.mjs
           node scripts/test-thpt-readiness-secure.mjs
+          python scripts/test-thpt-readiness-d1-schema.py
       - name: Validate local preview PowerShell script syntax
         shell: pwsh
         run: |
