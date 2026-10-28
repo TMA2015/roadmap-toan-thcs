@@ -55,7 +55,8 @@
     if(node?.tagName!=="DETAILS"||!node.open)return;
     const label=node.querySelector("summary")?.textContent||"";
     const kind=/gợi ý|hint/i.test(label)?"HINT_OPENED":"SOLUTION_OPENED";
-    void record(id,role,kind);
+    void record(el.dataset.thptCanonicalItem||el.dataset.thptWrittenCanonical,
+      el.dataset.thptExposureRole,kind);
   },true);
  }
  function scan(root=document){
