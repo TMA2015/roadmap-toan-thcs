@@ -3,7 +3,9 @@
   const normalize = (value) => String(value || "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/đ/g, "d").trim();
   const setupLibrary = () => {
     const clusters = document.querySelector(".library-clusters");
-    if (!clusters || clusters.dataset.libraryReady === "1") return;
+    // THCS-only 25-topic search. THPT SGK and Topic overview pages already
+    // own their scoped R4 search controls; adding the THCS widget duplicates UI.
+    if (!clusters || clusters.closest("[data-thpt-r4]") || clusters.dataset.libraryReady === "1") return;
     clusters.dataset.libraryReady = "1";
     const search = document.createElement("div");
     search.className = "library-search";
