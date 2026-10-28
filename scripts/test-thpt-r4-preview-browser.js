@@ -433,6 +433,43 @@ async function ready(page,path){
   assert.equal(protectedCalls[0].auth,"Bearer synthetic-token");
   assert.equal(protectedCalls[1].body.answers["TEST-T01"],"Lập điều kiện và thử nghiệm.");
 
+  // Public-formative telemetry is opt-in: test only with synthetic auth.
+  const exposureResult=await page.evaluate(async()=>{
+    window.THPT_EXPOSURE_API_ORIGIN="https://example.test";
+    window.THPT_PROTECTED_AUTH={getToken:async()=>"synthetic-token"};
+    const saved=window.fetch;
+    window.__syntheticExposureCalls=[];
+    window.fetch=async(url,opts)=>{
+      if(String(url)==="https://example.test/v1/exposure/record"){
+        window.__syntheticExposureCalls.push({url,body:JSON.parse(opts.body),
+          token:opts.headers.Authorization});
+        return new Response(JSON.stringify({recorded:true}),{
+          status:200,headers:{"Content-Type":"application/json"}});
+      }
+      return saved(url,opts);
+    };
+    const logger=window.THPTFormativeExposure;
+    if(!logger)return {missing:true};
+    const first=await logger.record("THPT-CORE-QF01","SGK_CORE","QUESTION_SHOWN");
+    const second=await logger.record("THPT-CORE-QF01","SGK_CORE","QUESTION_SHOWN");
+    const hint=await logger.record("THPT-CORE-QF01","SGK_CORE","HINT_OPENED");
+    const wrong=await logger.record("THPT-CORE-QF01","TOPIC_CORE","QUESTION_SHOWN");
+    return {first,second,hint,wrong,calls:window.__syntheticExposureCalls};
+  });
+  assert(!exposureResult.missing,"Opt-in formative logger must load within THPT R4");
+  assert(exposureResult.first&&exposureResult.second&&exposureResult.hint,
+    "Authenticated canonical Core exposure did not record");
+  assert.equal(exposureResult.wrong,false,"Nonexistent Topic Core must be denied");
+  assert.equal(exposureResult.calls.length,2,
+    "Repeating the same exposure event must not duplicate network writes");
+  assert(exposureResult.calls.every(x=>x.token==="Bearer synthetic-token"),
+    "Exposure logs require a signed-in learner token");
+  assert.equal(exposureResult.calls[0].body.item_id,"THPT-CORE-QF01");
+  assert.equal(exposureResult.calls[0].body.event_kind,"QUESTION_SHOWN");
+  assert.equal(exposureResult.calls[1].body.event_kind,"HINT_OPENED");
+  assert(!JSON.stringify(exposureResult.calls).includes("answer"),
+    "Formative exposure call must never transmit an answer or key");
+
   await page.close();
   console.log("PASS THPT R4 reviewed formative/Written + technical Readiness Chromium smoke (not production approval or real-device QA)");
  }finally{await browser.close();}
