@@ -16,7 +16,7 @@
 - `POST /v1/assessment/submit`: same token, JSON `{"attempt_id":"...","answers":{"ITEM_ID":0}}`. All answers required. **Only after Final Submit**, grade and explanations are returned and stored once, even if the request repeats.
 - Previously seen canonical items across SGK/Topic cannot be used in a new independently scored attempt. An unfinished attempt can resume, but not become two independent grades.
 
-This first server-side QA engine deliberately supports **objective single-choice questions only**. The approved 18-item bank may contain other response formats; **do not auto-convert their questions or rubrics** or mark them graded without an academic/technical delta review. Until those types have a reviewed grader and D6 QA, the whole bank stays inactive.
+This QA service supports **single-choice** questions with an objective answer key, and **written/short-response** submissions with a reviewer-verified private rubric. Written answers are stored privately, but returned as **PENDING_MANUAL_RUBRIC_REVIEW** with **no score, solution, or mastery** until the separately approved rubric-grading workflow exists. The approved ChVI bank includes open-answer questions; **do not convert them to multiple-choice, guess mathematical equivalence, or turn a pending response into mastery**. Until the actual question formats, rubric handling and D6 QA pass, the whole bank remains inactive.
 
 ## First production activation blockers
 
@@ -36,6 +36,7 @@ WORKER_D1_DEPLOYED|NO
 PRODUCTION_AUTH_CONNECTED|NO
 PRIVATE_ACADEMIC_BANK_IMPORTED|NO
 CHVI_REVIEWED_READINESS_ITEMS_ACTIVE|0
+OPEN_RESPONSE_SUBMISSION|PRIVATE_PENDING_MANUAL_REVIEW
 FULL_MIXED_RESPONSE_GRADING|NOT_IMPLEMENTED
 CROSS_ROUTE_PUBLIC_EXPOSURE_COMPLETE|NO
 REAL_DEVICE_AND_SERVER_SECURITY_D6|NOT_PASSED
