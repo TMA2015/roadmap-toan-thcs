@@ -42,8 +42,10 @@ globalThis.fetch=async url=>{
  return new Response(JSON.stringify({keys:[jwk]}),
   {status:200,headers:{"Content-Type":"application/json"}});
 };
+let dbReads=0;
 const db={
  prepare(sql){
+  dbReads++;
   return {
    bind(...args){
     return {
@@ -74,7 +76,7 @@ try{
  const correct=await call();
  assert.equal(correct.status,503);
  assert.equal((await correct.json()).error,"BANK_NOT_AVAILABLE",
-   "Successfully verified Firebase token must reach disabled-bank gate");
+   "Verified Firebase JWT must reach disabled-bank gate (jwksCalls="+jwksCalls+", dbReads="+dbReads+")");
  assert.equal(jwksCalls,1,"Expected one synthetic public-key lookup");
  const forged=jwt.slice(0,-3)+"AAA";
  let res=await call({token:forged});
