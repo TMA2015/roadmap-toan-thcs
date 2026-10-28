@@ -185,6 +185,12 @@ jobs:
       - name: Guard THPT first-phase static release
         run: node scripts/test-thpt-static-release.cjs
 
+      - name: Guard Self-Learning Math Pages rename compatibility and learner data contracts
+        run: |
+          node scripts/test-self-learning-math-rename-preflight.cjs
+          node scripts/test-floating-ai-tutor-v1.js
+          node scripts/test-site-navigation-v1.js
+
       - name: Build shared THCS website (unchanged)
         run: mkdocs build --strict
 
