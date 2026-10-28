@@ -29,13 +29,17 @@ for(const asset of [
  "assets/javascripts/thpt-r4-preview.js",
  "assets/javascripts/firebase-gemini-v1.js"
 ])assert(main.includes(asset),"Required static asset missing: "+asset);
-for(const config of [main,preview,quality]){
+for(const config of [main,preview]){
  for(const forbidden of ["thpt-protected-readiness-v1.js","thpt-formative-exposure-v1.js",
    "services/thpt-readiness","test-thpt-readiness-worker-auth",
    "test-thpt-readiness-d1-schema","test-thpt-readiness-secure"]){
   assert(!config.includes(forbidden),"Unapproved private assessment dependency: "+forbidden);
  }
 }
+// Negative tests in CI may mention old filenames deliberately to ensure
+// absence from the built output; that is not a runtime dependency.
+assert(quality.includes("test ! -e site/assets/javascripts/thpt-protected-readiness-v1.js"),
+ "CI should assert that the retired backend client is absent from static output");
 assert(!browser.includes("THPT_PROTECTED_AUTH"),"Browser regression still exercises learner accounts");
 const readiness=read("docs/thpt-preview/sgk/chuong-vi/tu-kiem-tra-chuong.md");
 assert(readiness.includes("TECHNICAL_DEMO_ONLY")&&readiness.includes("mastery_credit: false"),
