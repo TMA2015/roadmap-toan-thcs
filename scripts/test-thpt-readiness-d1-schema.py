@@ -134,4 +134,4 @@ record = conn.execute(
 ).fetchone()
 assert record["result_json"] == result
 assert record["responses_json"] == answers
-print("PASS THPT SQLite/D1 schema: disabled empty banks, authenticated public-event ledger, permanent public-item ban, atomic claim/exposure, cross-route collision, learner isolation, immutable Final Submit.")
+print("PASS THPT SQLite/D1 schema: disabled empty banks, default-deny learner admission/revocation, authenticated public-event ledger, permanent public-item ban, atomic claim/exposure, cross-route collision, learner isolation, immutable Final Submit.")
