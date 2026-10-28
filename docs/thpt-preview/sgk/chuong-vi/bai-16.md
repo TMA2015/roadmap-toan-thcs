@@ -86,7 +86,7 @@ Hàm số bậc hai có thể biểu diễn diện tích hình chữ nhật khi 
 ### Mở rộng mô hình thực tế từ phần cuối Bài 16
 
 !!! warning "Phần học liệu bổ sung đang chờ review delta học thuật"
-    **DRAFT_NOT_ACADEMICALLY_REVIEWED — SOURCE_SCOPE_DELTA_B16.** Nội dung dưới đây được biên soạn thêm từ các chủ đề minh họa trong SGK Toán 10 KNTT tập 2 **trang in 17–18** và SBT tập 2 **trang in 15**. Những trang này nằm ngoài receipt SGK 11–16/SBT 10–14 trong biên bản NotebookLM Postfix trước đó. Hai ví dụ dưới đây do dự án **tự soạn**, không chép nguyên bài SGK/SBT, và chưa được cấp Academic PASS. Kết quả PASS cũ chỉ giữ cho phần đã được review.
+    **NOTEBOOKLM_CHVI_BATCH_20261028_DELTA_PASS — SOURCE_SCOPE_DELTA_B16.** Nội dung dưới đây được biên soạn thêm từ các chủ đề minh họa trong SGK Toán 10 KNTT tập 2 **trang in 17–18** và SBT tập 2 **trang in 15**. Những trang này nằm ngoài receipt SGK 11–16/SBT 10–14 trong biên bản NotebookLM Postfix trước đó. Hai ví dụ dưới đây do dự án **tự soạn**, không chép nguyên bài SGK/SBT; phần mở rộng đã được NotebookLM thẩm định PASS trong gói Chương VI ngày 28/10/2026. Kết quả PASS cũ cho R4 Postfix vẫn được bảo lưu theo đúng snapshot riêng. Chưa có cấp phép phát hành website.
 
 **Ví dụ bổ sung A — Chuyển động theo phương thẳng đứng.** Bỏ qua sức cản không khí, một vật được ném lên từ mặt đất với vận tốc đầu \(19{,}6\;\text{m/s}\); lấy \(g=9{,}8\;\text{m/s}^2\). Độ cao \(h\) (m) theo thời gian \(t\) (giây) là
 
