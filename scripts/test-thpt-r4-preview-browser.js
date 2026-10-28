@@ -27,6 +27,13 @@ async function ready(page,path){
   // Cover remains under /thpt-preview/ until a separately reviewed root migration.
   const entry=await browser.newPage({viewport:{width:390,height:844}});
   await entry.goto("http://127.0.0.1:8765/",{waitUntil:"networkidle"});
+  // THCS intentionally shows its existing first-visit style chooser.
+  // Choose a style like a real visitor before using the header launcher.
+  if(await entry.locator("[data-home-dialog]").isVisible()){
+    await entry.locator('[data-home-dialog] [data-home-select="standard"]').click();
+    assert(await entry.locator("[data-home-dialog]").isHidden(),
+      "THCS first-visit chooser must close when a style is chosen");
+  }
   await entry.locator("[data-roadmap-topic-launcher]").click();
   const thcsCover=entry.locator('[data-roadmap-topic-dialog] [data-math-program-cover-link]');
   assert.equal(await thcsCover.count(),1,"THCS quick navigation missing level-1 programme cover");
