@@ -8,6 +8,22 @@ conn = sqlite3.connect(":memory:")
 conn.executescript((root / "services/thpt-readiness/schema.sql").read_text(encoding="utf-8"))
 conn.row_factory = sqlite3.Row
 
+# Explicit learner access defaults to DENY. A Firebase UID is not by itself
+# permission to access THPT assessments or register exposure events.
+assert conn.execute("SELECT COUNT(*) FROM thpt_allowed_learners").fetchone()[0] == 0
+conn.execute("INSERT INTO thpt_allowed_learners(uid) VALUES ('QA-learner')")
+assert conn.execute(
+    "SELECT active FROM thpt_allowed_learners WHERE uid='QA-learner'"
+).fetchone()[0] == 0
+conn.execute("UPDATE thpt_allowed_learners SET active=1 WHERE uid='QA-learner'")
+assert conn.execute(
+    "SELECT active FROM thpt_allowed_learners WHERE uid='QA-learner'"
+).fetchone()[0] == 1
+conn.execute("UPDATE thpt_allowed_learners SET active=0 WHERE uid='QA-learner'")
+assert conn.execute(
+    "SELECT active FROM thpt_allowed_learners WHERE uid='QA-learner'"
+).fetchone()[0] == 0
+
 assert conn.execute("SELECT COUNT(*) FROM thpt_banks").fetchone()[0] == 0
 assert conn.execute("SELECT COUNT(*) FROM thpt_bank_items").fetchone()[0] == 0
 conn.executemany(
