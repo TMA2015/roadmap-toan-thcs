@@ -83,8 +83,21 @@ try{
  assert.equal((await correct.json()).error,"BANK_NOT_AVAILABLE",
    "Verified Firebase JWT must reach disabled-bank gate (jwksCalls="+jwksCalls+", dbReads="+dbReads+")");
  assert.equal(jwksCalls,1,"Expected one synthetic public-key lookup");
+ const bankReadsBeforeDenied=protectedBankReads;
+ learnerAdmission="inactive";
+ let res=await call();
+ assert.equal(res.status,403,"Revoked learner must be denied despite valid Firebase JWT");
+ assert.equal((await res.json()).error,"LEARNER_ACCESS_DENIED");
+ learnerAdmission="absent";
+ res=await call({path:"/v1/exposure/record",
+  body:{item_id:"SYNTHETIC-PUBLIC-ITEM",role:"SGK_CORE",event_kind:"QUESTION_SHOWN"}});
+ assert.equal(res.status,403,"Non-member cannot log exposure either");
+ assert.equal((await res.json()).error,"LEARNER_ACCESS_DENIED");
+ assert.equal(protectedBankReads,bankReadsBeforeDenied,
+   "Unapproved identities must not access assessment bank metadata");
+ learnerAdmission="active";
  const forged=jwt.slice(0,-3)+"AAA";
- let res=await call({token:forged});
+ res=await call({token:forged});
  assert.equal(res.status,401);
  assert.equal((await res.json()).error,"INVALID_TOKEN");
  res=await call({token:null});
