@@ -50,7 +50,12 @@ const db={
    bind(...args){
     return {
      async first(){
+      if(sql==="SELECT active FROM thpt_allowed_learners WHERE uid=?"){
+       assert.equal(args[0],"synthetic_learner_A");
+       return learnerAdmission==="absent"?null:{active:learnerAdmission==="active"?1:0};
+      }
       if(sql.startsWith("SELECT id,scope,version,required_count,active FROM thpt_banks")){
+       protectedBankReads++;
        assert.equal(args[0],"SYNTHETIC-DISABLED-BANK");
        return {id:args[0],scope:"SGK_CHAPTER",version:"v1",required_count:2,active:0};
       }
