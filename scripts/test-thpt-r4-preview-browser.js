@@ -79,9 +79,21 @@ async function ready(page,path){
     await ready(ui,"home/");
     assert.equal(await ui.locator(".thpt-r4-home-hero h1").count(),1,
       "THPT home must have a designed learner-oriented hero");
-    assert.equal(await ui.locator(".thpt-r4-home-illustration svg path[stroke='#3753ce']").count(),1,
-      "THPT home needs its own learning-path graphic, not a copied THCS 25-topic diagram");
-    assert.equal(await ui.locator(".thpt-r4-home-stats > div").count(),4);
+    assert.equal(await ui.locator(".thpt-r4-home-orbit .thpt-r4-home-sun").count(),1,
+      "THPT homepage must have the Self-Learning Math central sun");
+    assert.equal(await ui.locator(".thpt-r4-home-orbit .thpt-r4-home-planet").count(),5,
+      "Five orbiting sphere features must be visually distinct");
+    assert.equal(await ui.locator(".thpt-r4-home-orbit-lines ellipse").count(),3,
+      "Orbit paths must appear behind the fixed feature spheres");
+    const orbitLabels=await ui.locator(".thpt-r4-home-orbit").innerText().catch(async()=>
+      await ui.locator(".thpt-r4-home-orbit").textContent());
+    assert(orbitLabels.includes("SELF-LEARNING")&&orbitLabels.includes("MATH"),
+      "Central sun must be explicitly named Self-Learning Math");
+    assert.equal(await ui.locator(".thpt-r4-home-stats > div").count(),5,
+      "Highlights must have five categories rather than obsolete pilot counts");
+    const statsText=await ui.locator(".thpt-r4-home-stats").innerText();
+    assert(statsText.includes("chuyên đề THCS")&&statsText.includes("luyện tập tương tác"),
+      "Do not mislabel THCS 25 topics as the THPT topic count");
     assert.equal(await ui.locator(".thpt-r4-grid .thpt-r4-tile").count(),5,
       "Golden THPT five-entry landing menu must remain");
     let overflow=await ui.evaluate(()=>document.documentElement.scrollWidth-window.innerWidth);
