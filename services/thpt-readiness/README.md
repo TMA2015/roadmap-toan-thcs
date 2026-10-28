@@ -3,7 +3,7 @@
 ## What has actually been implemented
 
 - `assessment-service.mjs`: server-side guarded start/resume/Final Submit, no answer or hint in question delivery, score and explanation only after Final Submit, same retry returns **same stored score**, no credit/mastery.
-- `worker.mjs`: Cloudflare Worker HTTP interface with **verified Firebase ID token**, strict permitted website origin, D1 private item/answer loading and persistent attempt/exposure logs. User identity comes from verified token **never** from a client-supplied learner ID.
+- `worker.mjs`: Cloudflare Worker HTTP interface with **verified Firebase ID token**, **private active-learner allowlist**, strict permitted website origin, D1 private item/answer loading and persistent attempt/exposure logs. User identity comes from verified token **never** from a client-supplied learner ID. A valid Firebase token alone is insufficient: absent/inactive UIDs receive `LEARNER_ACCESS_DENIED` before any exam bank access.
 - `schema.sql`: private question bank, disabled-by-default versions, answer keys stored only in D1, one attempt per learner/bank/version, per-learner canonical item exposure shared between SGK and Chuyên đề.
 - `scripts/test-thpt-readiness-secure.mjs`: isolated real Node QA for no pre-submit key/solution leakage, no cross-learner access, no reused exposed items between SGK and Topic, complete answers, immutable first score, duplicate submit, version drift, blocked/unsafe items and no unconfigured API.
 - `.github/workflows/thpt-r4-preview-quality.yml`: runs this security preflight automatically on changes.
