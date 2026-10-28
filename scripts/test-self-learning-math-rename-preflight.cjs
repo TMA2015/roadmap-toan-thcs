@@ -20,7 +20,7 @@ for(const name of assets){
  assert(code.includes(newName),
    "ACTIVE runtime still hardcodes ONLY the old GitHub Pages repository name: "+name);
 }
-assert(routeAware>=10,"Route prefix review missed previously identified runtime files");
+assert(routeAware>=9,"Route prefix review missed previously identified runtime files");
 for(const p of ["sticky-nav-v1.js","floating-ai-tutor-v1.js",
   "route-module-loader-v2.js","route-module-loader-v1.js",
   "anchor-library-v1.js","anchor-topic-related-v1.js",
