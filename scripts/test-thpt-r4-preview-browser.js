@@ -34,6 +34,9 @@ async function ready(page,path){
     "THCS programme-cover shortcut leads to wrong page");
   assert((await entry.locator('[data-roadmap-topic-dialog] .roadmap-main-quick__links').last().textContent()).includes("Trang chủ THCS"),
     "THCS home shortcut is not clearly named");
+  await thcsCover.click();
+  assert((await entry.locator("h1").textContent()).includes("Chọn hành trình Toán"),
+    "THCS cover shortcut did not open the real programme selection page");
   await entry.goto(base+"home/",{waitUntil:"networkidle"});
   await entry.locator("[data-thpt-r4-launcher]").click();
   const thptCover=entry.locator('[data-thpt-r4-shortcut-dialog] [data-math-program-cover-link]');
@@ -42,6 +45,9 @@ async function ready(page,path){
     "THPT programme-cover shortcut leads to wrong page");
   assert((await entry.locator('[data-thpt-r4-shortcut-dialog] .roadmap-main-quick__links').last().textContent()).includes("Trang chủ THPT"),
     "THPT home shortcut is not clearly named");
+  await thptCover.click();
+  assert((await entry.locator("h1").textContent()).includes("Chọn hành trình Toán"),
+    "THPT cover shortcut did not open the real programme selection page");
   await entry.close();
 
   for(const [name,viewport,path] of [
