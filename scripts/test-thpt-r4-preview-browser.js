@@ -433,6 +433,31 @@ async function ready(page,path){
   assert.equal(protectedCalls[0].auth,"Bearer synthetic-token");
   assert.equal(protectedCalls[1].body.answers["TEST-T01"],"Lập điều kiện và thử nghiệm.");
 
+  // Shared-family-device regression: a previous learner's event must never
+  // suppress the next learner's same canonical event via client-side cache.
+  const exposureAccountCalls=await page.evaluate(async()=>{
+    window.THPT_EXPOSURE_API_ORIGIN="https://example.test";
+    const prevFetch=window.fetch,seen=[];
+    let learner="A";
+    window.THPT_PROTECTED_AUTH={getToken:async()=>learner+"-synthetic-token"};
+    window.fetch=async(url,opts)=>{
+      if(!String(url).endsWith("/v1/exposure/record"))return prevFetch(url,opts);
+      seen.push({auth:opts.headers.Authorization,body:JSON.parse(opts.body)});
+      return new Response(JSON.stringify({recorded:true}),
+        {status:200,headers:{"Content-Type":"application/json"}});
+    };
+    await window.THPTFormativeExposure.record("THPT-G10-B15-C01","SGK_CORE","QUESTION_SHOWN");
+    learner="B";
+    await window.THPTFormativeExposure.record("THPT-G10-B15-C01","SGK_CORE","QUESTION_SHOWN");
+    return seen;
+  });
+  assert.deepEqual(exposureAccountCalls.map(x=>x.auth),
+    ["Bearer A-synthetic-token","Bearer B-synthetic-token"],
+    "Switching learners on shared device must record separate canonical exposures");
+  assert(exposureAccountCalls.every(x=>x.body.item_id==="THPT-G10-B15-C01"),
+    "Exposure logger sent an incorrect canonical item ID");
+
+
   // Public-formative telemetry is opt-in: test only with synthetic auth.
   const exposureResult=await page.evaluate(async()=>{
     window.THPT_EXPOSURE_API_ORIGIN="https://example.test";
