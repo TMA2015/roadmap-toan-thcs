@@ -14,8 +14,10 @@ CREATE TABLE IF NOT EXISTS thpt_bank_items (
   item_id TEXT NOT NULL,
   position INTEGER NOT NULL,
   prompt TEXT NOT NULL,
+  response_kind TEXT NOT NULL DEFAULT 'CHOICE' CHECK(response_kind IN ('CHOICE','TEXT')),
   choices_json TEXT NOT NULL,
-  key_index INTEGER NOT NULL,
+  key_index INTEGER,
+  rubric_ready INTEGER NOT NULL DEFAULT 0 CHECK(rubric_ready IN (0,1)),
   explanation TEXT NOT NULL,
   heldout INTEGER NOT NULL DEFAULT 0 CHECK(heldout IN (0,1)),
   blocked INTEGER NOT NULL DEFAULT 1 CHECK(blocked IN (0,1)),
@@ -33,6 +35,7 @@ CREATE TABLE IF NOT EXISTS thpt_attempts (
   created_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
   submitted_at TEXT,
   result_json TEXT,
+  responses_json TEXT,
   UNIQUE(uid,bank_id,bank_version)
 );
 CREATE INDEX IF NOT EXISTS idx_thpt_attempts_uid
