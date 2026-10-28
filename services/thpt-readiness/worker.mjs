@@ -160,7 +160,14 @@ export default {
  async fetch(request,env){
   const origin=request.headers.get("Origin"),allowed=env.ALLOWED_ORIGIN||"";
   try{
-   if(!allowed||!allowed.startsWith("https://")||!env.DB||!env.FIREBASE_PROJECT_ID)
+   // Require an exact HTTPS origin, not a URL with path, query or spoofed prefix.
+   let trustedOrigin=false;
+   try{
+     const parsed=new URL(allowed);
+     trustedOrigin=parsed.protocol==="https:"&&parsed.origin===allowed&&
+       !!parsed.hostname&&parsed.username===""&&parsed.password==="";
+   }catch{}
+   if(!trustedOrigin||!env.DB||!env.FIREBASE_PROJECT_ID)
       fail("SERVER_NOT_CONFIGURED",503);
    if(origin&&origin!==allowed)fail("ORIGIN_DENIED",403);
    if(request.method==="OPTIONS"){
