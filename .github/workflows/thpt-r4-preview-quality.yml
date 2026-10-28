@@ -10,6 +10,8 @@ on:
       - 'review-packets/thpt-g10-b16-r4/**'
       - 'scripts/serve-thpt-r4-lan-preview.ps1'
       - 'scripts/test-thpt-r4-preview-browser.js'
+      - 'services/thpt-readiness/**'
+      - 'scripts/test-thpt-readiness-secure.mjs'
       - '.github/workflows/thpt-r4-preview-quality.yml'
 
 permissions:
@@ -29,6 +31,11 @@ jobs:
         run: python -m pip install 'mkdocs-material>=9,<10'
       - name: Validate scoped THPT JavaScript syntax
         run: node --check docs/assets/javascripts/thpt-r4-preview.js
+      - name: Secure THPT assessment service — source and isolation QA
+        run: |
+          node --check services/thpt-readiness/assessment-service.mjs
+          node --check services/thpt-readiness/worker.mjs
+          node scripts/test-thpt-readiness-secure.mjs
       - name: Validate local preview PowerShell script syntax
         shell: pwsh
         run: |
