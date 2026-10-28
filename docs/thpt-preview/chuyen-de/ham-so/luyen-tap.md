@@ -12,7 +12,7 @@ Luyện tập theo **mảng kiến thức, dạng bài và cấp độ**; từ c
 
 **Luyện tập dạng giao trục:**
 
-<div class="thpt-r4-exercise" data-thpt-practice>
+<div class="thpt-r4-exercise" data-thpt-practice data-thpt-canonical-item="PRACTICE-THPT-DEMO-01" data-thpt-exposure-role="SGK_PRACTICE">
 <p class="thpt-r4-eyebrow">PRACTICE-THPT-DEMO-01 · CÓ GỢI Ý</p>
 <h3>Giao điểm với trục hoành</h3>
 <p>Cho \(y=x^2-4x+3\). Hoành độ các giao điểm với trục \(Ox\) là:</p>
