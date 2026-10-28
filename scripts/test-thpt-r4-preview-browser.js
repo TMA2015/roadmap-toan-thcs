@@ -8,6 +8,7 @@ require("./test-thpt-chvi-draft-item-bank.cjs");
 require("./test-thpt-g10-chvii-chviii-draft-bank.cjs");
 require("./test-thpt-chvi-review-receipt.cjs");
 require("./test-thpt-chvi-reviewed-formative.cjs");
+require("./test-thpt-chvi-reviewed-knowledge-parity.cjs");
 const base="http://127.0.0.1:8765/thpt-preview/";
 async function ready(page,path){
  const response=await page.goto(base+path,{waitUntil:"networkidle"});
