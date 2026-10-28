@@ -89,6 +89,6 @@ jobs:
           npx playwright install chromium
       - name: Browser smoke test · desktop / iPhone / iPad simulation
         run: |
-          python -m http.server 8765 --directory site-thpt-preview > /tmp/thpt-r4-preview-http.log 2>&1 &
+          python -m http.server 8765 --directory site > /tmp/thpt-r4-combined-http.log 2>&1 &
           sleep 2
           node scripts/test-thpt-r4-preview-browser.js
