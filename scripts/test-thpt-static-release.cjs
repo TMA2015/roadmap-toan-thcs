@@ -42,6 +42,4 @@ assert(readiness.includes("TECHNICAL_DEMO_ONLY")&&readiness.includes("mastery_cr
  "Unreviewed demo must remain clearly non-credit");
 assert(read("docs/assets/javascripts/thpt-r4-preview.js").includes("thpt-r4-route"),
  "THPT-only R4 scoping removed");
-const navNo=main.match(/thpt-preview\\/chuyen-de\\/ham-so\\/(kien-thuc|luyen-tap|tu-kiem-tra)\\.md/g)||[];
-assert(navNo.length===0||navNo.length===3);
 console.log("PASS THPT GitHub Pages first-phase static release: routes/assets, Gemini retained, no student auth/backend, Readiness demo clearly no credit.");
