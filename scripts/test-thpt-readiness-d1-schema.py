@@ -37,11 +37,13 @@ def claim(uid, bank, ids, attempt):
         "SELECT ?,?,?,?,? WHERE NOT EXISTS "
         "(SELECT 1 FROM thpt_exposures WHERE uid=? AND item_id IN ("
         + placeholders + ")) "
+        "AND NOT EXISTS (SELECT 1 FROM thpt_public_item_registry WHERE item_id IN ("
+        + placeholders + ")) "
         "ON CONFLICT(uid,bank_id,bank_version) DO NOTHING"
     )
     with conn:
         result = conn.execute(statement,
-          [attempt, uid, bank, "v1", json.dumps(ids), uid, *ids])
+          [attempt, uid, bank, "v1", json.dumps(ids), uid, *ids, *ids])
         for item_id in ids:
             conn.execute(
                 """INSERT OR IGNORE INTO thpt_exposures(uid,item_id,source_scope)
@@ -66,6 +68,37 @@ assert conn.execute(
 assert claim("learnerB","B-TOPIC",["QA-SHARED","QA-THREE"],"b-1") == 1
 assert conn.execute("SELECT COUNT(*) FROM thpt_attempts").fetchone()[0] == 2
 
+# One registered public question can NEVER become protected held-out, even
+# when public availability is later set to inactive.
+conn.execute("INSERT INTO thpt_public_item_registry (item_id,allowed_scopes_json,active) VALUES (?,?,1)",
+    ("QA-THREE",json.dumps(["SGK_CORE","SGK_PRACTICE"])))
+assert claim("learnerC","B-TOPIC",["QA-SHARED","QA-THREE"],"c-1") == 0
+conn.execute("UPDATE thpt_public_item_registry SET active=0 WHERE item_id='QA-THREE'")
+assert claim("learnerD","B-TOPIC",["QA-SHARED","QA-THREE"],"d-1") == 0
+assert conn.execute("SELECT COUNT(*) FROM thpt_attempts WHERE uid IN ('learnerC','learnerD')").fetchone()[0] == 0
+conn.execute("UPDATE thpt_public_item_registry SET active=1 WHERE item_id='QA-THREE'")
+with conn:
+    conn.execute(
+        """INSERT OR IGNORE INTO thpt_exposures (uid,item_id,source_scope)
+           SELECT ?,?,? WHERE EXISTS
+           (SELECT 1 FROM thpt_public_item_registry WHERE item_id=? AND active=1)""",
+        ("learnerE","QA-THREE","SGK_CORE","QA-THREE"),
+    )
+    conn.execute(
+        """INSERT OR IGNORE INTO thpt_exposure_events (uid,item_id,source_scope,event_kind)
+           SELECT ?,?,?,? WHERE EXISTS
+           (SELECT 1 FROM thpt_public_item_registry WHERE item_id=? AND active=1)""",
+        ("learnerE","QA-THREE","SGK_CORE","QUESTION_SHOWN","QA-THREE"),
+    )
+for _ in range(2):
+    conn.execute(
+        """INSERT OR IGNORE INTO thpt_exposure_events
+           (uid,item_id,source_scope,event_kind) VALUES (?,?,?,?)""",
+        ("learnerE","QA-THREE","SGK_CORE","HINT_OPENED"),
+    )
+assert conn.execute("SELECT COUNT(*) FROM thpt_exposure_events WHERE uid='learnerE'").fetchone()[0] == 2
+assert claim("learnerE","B-TOPIC",["QA-SHARED","QA-THREE"],"e-1") == 0
+
 result = json.dumps({"completed":True,"score":1,"total":2,"mastery_credit":False})
 answers = json.dumps({"QA-ONE":1,"QA-SHARED":0})
 assert conn.execute(
@@ -85,4 +118,4 @@ record = conn.execute(
 ).fetchone()
 assert record["result_json"] == result
 assert record["responses_json"] == answers
-print("PASS THPT SQLite/D1 schema: disabled empty banks, atomic claim/exposure, cross-route collision, learner isolation, immutable Final Submit.")
+print("PASS THPT SQLite/D1 schema: disabled empty banks, authenticated public-event ledger, permanent public-item ban, atomic claim/exposure, cross-route collision, learner isolation, immutable Final Submit.")
