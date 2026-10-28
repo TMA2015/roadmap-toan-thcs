@@ -42,7 +42,7 @@ globalThis.fetch=async url=>{
  return new Response(JSON.stringify({keys:[jwk]}),
   {status:200,headers:{"Content-Type":"application/json"}});
 };
-let dbReads=0;
+let dbReads=0, protectedBankReads=0, learnerAdmission="active";
 const db={
  prepare(sql){
   dbReads++;
