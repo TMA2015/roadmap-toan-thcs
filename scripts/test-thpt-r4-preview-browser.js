@@ -23,6 +23,27 @@ async function ready(page,path){
  const browser=await chromium.launch({headless:true,args:["--no-sandbox"]});
  try{
   fs.mkdirSync("thpt-r4-visual-qa",{recursive:true});
+  // Programme-switch QA for the ONE GitHub Pages site.
+  // Cover remains under /thpt-preview/ until a separately reviewed root migration.
+  const entry=await browser.newPage({viewport:{width:390,height:844}});
+  await entry.goto("http://127.0.0.1:8765/",{waitUntil:"networkidle"});
+  await entry.locator("[data-roadmap-topic-launcher]").click();
+  const thcsCover=entry.locator('[data-roadmap-topic-dialog] [data-math-program-cover-link]');
+  assert.equal(await thcsCover.count(),1,"THCS quick navigation missing level-1 programme cover");
+  assert(new URL(await thcsCover.getAttribute("href"),entry.url()).pathname.endsWith("/thpt-preview/"),
+    "THCS programme-cover shortcut leads to wrong page");
+  assert((await entry.locator('[data-roadmap-topic-dialog] .roadmap-main-quick__links').textContent()).includes("Trang chủ THCS"),
+    "THCS home shortcut is not clearly named");
+  await entry.goto(base+"home/",{waitUntil:"networkidle"});
+  await entry.locator("[data-thpt-r4-launcher]").click();
+  const thptCover=entry.locator('[data-thpt-r4-shortcut-dialog] [data-math-program-cover-link]');
+  assert.equal(await thptCover.count(),1,"THPT quick navigation missing level-1 programme cover");
+  assert(new URL(await thptCover.getAttribute("href"),entry.url()).pathname.endsWith("/thpt-preview/"),
+    "THPT programme-cover shortcut leads to wrong page");
+  assert((await entry.locator('[data-thpt-r4-shortcut-dialog] .roadmap-main-quick__links').last().textContent()).includes("Trang chủ THPT"),
+    "THPT home shortcut is not clearly named");
+  await entry.close();
+
   for(const [name,viewport,path] of [
    ["desktop",{width:1440,height:900},"home/"],
    ["iphone",{width:390,height:844},"sgk/chuong-vi/bai-16/"],
