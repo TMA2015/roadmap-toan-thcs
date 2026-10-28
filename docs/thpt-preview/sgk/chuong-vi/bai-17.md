@@ -1,9 +1,9 @@
 # Bài 17. Dấu của tam thức bậc hai
 
 <div class="thpt-r4-screen" data-thpt-r4>
-<p class="thpt-r4-eyebrow">TOÁN 10 · CHƯƠNG VI · BẢN NHÁP HỌC LIỆU</p>
+<p class="thpt-r4-eyebrow">TOÁN 10 · CHƯƠNG VI · HỌC LIỆU ĐÃ REVIEW</p>
 <p class="thpt-r4-lead"><strong>NOTEBOOKLM_CHVI_SNAPSHOT_PASS · TÍCH HỢP ĐANG QA.</strong> Học liệu Bài 17 trong batch SGK Chương VI đã được NotebookLM review PASS ngày 28/10/2026; trang hiện tại đang được đồng bộ/đối chiếu lại với snapshot đã duyệt. Core và Luyện tập lấy item đã review qua cùng ID; không ghi điểm hoặc mastery.</p>
-<nav class="thpt-r4-lesson-tabs" aria-label="Điều hướng Chương VI"><a href="../">Chương VI</a><a href="../bai-16/">Bài 16</a><span class="is-current" aria-current="page">Bài 17 · Dấu tam thức (nháp)</span><a href="../bai-18/">Bài 18</a></nav>
+<nav class="thpt-r4-lesson-tabs" aria-label="Điều hướng Chương VI"><a href="../">Chương VI</a><a href="../bai-16/">Bài 16</a><span class="is-current" aria-current="page">Bài 17 · Dấu tam thức</span><a href="../bai-18/">Bài 18</a></nav>
 </div>
 
 ## 1. Tam thức bậc hai
@@ -103,4 +103,4 @@ Suy ra \(\boxed{m<1}\). Nếu \(m=1\), tam thức có nghiệm kép và bằng \
 - Không kết hợp tập nghiệm bất phương trình với **miền xác định** từ bài toán thực tế.
 
 !!! warning "Giới hạn"
-    Bản nháp này dùng ví dụ nguyên gốc và định lí phổ thông, **đã đối chiếu hình trang SGK 19–24 và SBT 16–18**; snapshot B17 đã nhận NotebookLM Academic PASS. Trang hiện tại chưa hoàn thành xác nhận tương đương byte/semantics và chưa triển khai Readiness bảo mật; không coi là production đã phát hành.
+    Trang học này dùng ví dụ nguyên gốc và định lí phổ thông, **đã đối chiếu hình trang SGK 19–24 và SBT 16–18**; snapshot B17 đã nhận NotebookLM Academic PASS. Trang hiện tại chưa hoàn thành xác nhận tương đương byte/semantics và Tự kiểm tra chính thức hiện chưa kích hoạt; không coi là production đã phát hành.
