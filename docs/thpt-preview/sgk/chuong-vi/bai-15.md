@@ -2,7 +2,7 @@
 
 <div class="thpt-r4-screen" data-thpt-r4>
 <p class="thpt-r4-eyebrow">TOÁN 10 · CHƯƠNG VI · BẢN NHÁP HỌC LIỆU</p>
-<p class="thpt-r4-lead"><strong>DRAFT_NOT_ACADEMICALLY_REVIEWED.</strong> Nội dung gốc do dự án biên soạn để chuẩn bị batch review Chương VI. Mạch mục đã đối chiếu sơ bộ từ chỉ mục SGK trực tuyến; chưa có source receipt SGK/SBT PDF gốc và chưa được NotebookLM thẩm định. Không ghi điểm hay tiến độ.</p>
+<p class="thpt-r4-lead"><strong>NOTEBOOKLM_CHVI_SNAPSHOT_PASS · TÍCH HỢP ĐANG QA.</strong> Gói học liệu SGK Chương VI Bài 15 đã được NotebookLM review học thuật PASS ngày 28/10/2026 (SGK trang 4–10, SBT 3–9). Trang hiển thị hiện tại còn cần so khớp chi tiết với snapshot, không tự coi là bản copy từng byte. Core/Luyện tập tham chiếu ngân hàng formative đã review; không ghi điểm/mastery.</p>
 <nav class="thpt-r4-lesson-tabs" aria-label="Điều hướng Chương VI">
 <a href="../">Chương VI</a><span class="is-current" aria-current="page">Bài 15 · Hàm số (nháp)</span><a href="../bai-16/">Bài 16 · Hàm số bậc hai</a>
 </nav></div>
@@ -61,7 +61,7 @@ C(x)=
 *Lưu ý:* Mô hình tính phí này là **ví dụ do dự án tự biên soạn**, không sao chép biểu giá trong SGK và không đại diện cho giá giao hàng thực tế. Đây là một ví dụ về cách biểu diễn phụ thuộc bằng công thức trên từng miền.
 
 !!! warning "Phần bổ sung SGK B15 đang chờ review học thuật"
-    **DRAFT_NOT_ACADEMICALLY_REVIEWED** — Nguồn ý tưởng/độ phủ: SGK Toán 10 Tập 2 Bài 15, phần hoạt động, ví dụ và vận dụng về bảng/đồ thị/biểu giá trên trang in **5–7, 9**. Đã đối chiếu trực quan SGK trang 4–10 và SBT trang 3–9; **chưa có bộ Core/Practice canonical được thẩm định**, không ghi mastery.
+    **NOTEBOOKLM_BATCH_20261028_PASS_FOR_REVIEWED_SNAPSHOT** — Nguồn ý tưởng/độ phủ: SGK Toán 10 Tập 2 Bài 15, phần hoạt động, ví dụ và vận dụng về bảng/đồ thị/biểu giá trên trang in **5–7, 9**. Đã đối chiếu trực quan SGK trang 4–10 và SBT trang 3–9; **18 item Core/Practice B15/B17/B18 đã được reviewer PASS trong đúng snapshot, đang tích hợp**, không ghi mastery.
 
 ## 3. Sự đồng biến, nghịch biến của hàm số
 
@@ -96,4 +96,4 @@ Nếu hàm số không có cùng một chiều biến thiên trên toàn miền,
 - Các bài phía sau trong Chương VI kế thừa kĩ năng đọc đồ thị, phân tích điều kiện và xác định nghiệm.
 
 !!! warning "Giới hạn nguồn và phát hành"
-    Đây là **draft cho Chương VI**. Đã đối chiếu trực tiếp các trang SGK 4–10 và SBT 3–9 theo hoạt động/dạng bài; vẫn cần kiểm toán outcome–item và review độc lập. Các ví dụ và câu hỏi tự luyện do dự án tự soạn, **không phải câu trích nguyên SGK**. Không cấp Academic PASS cho nội dung này cho tới khi có verdict NotebookLM theo batch. Không có Core/Practice/Readiness canonical cho Bài 15 ở phiên bản này.
+    Đây là **trang học tập đang được đối chiếu với snapshot đã review của Chương VI**. Đã đối chiếu trực tiếp các trang SGK 4–10 và SBT 3–9 theo hoạt động/dạng bài; vẫn cần kiểm toán outcome–item và review độc lập. Các ví dụ và câu hỏi tự luyện do dự án tự soạn, **không phải câu trích nguyên SGK**. NotebookLM đã PASS bản snapshot tương ứng; việc đồng bộ đủ nội dung và kiểm thử website vẫn là cổng độc lập. Core/Practice đã dùng ID canonical trong modal; 18 câu Readiness còn chưa phát hành.
