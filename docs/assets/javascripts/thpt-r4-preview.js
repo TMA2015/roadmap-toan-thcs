@@ -232,6 +232,53 @@
    render();
   };
 
+  // Reviewed public FORMATIVE items only. These are not chapter Readiness.
+  // Each item has one canonical record in thpt-chvi-reviewed-formative-v1.js;
+  // the SGK card chooses a role-based placement without cloning content.
+  const reviewed=window.THPT_CHVI_REVIEWED_FORMATIVE;
+  const showReviewed=items=>{
+   let index=0;
+   const root=document.createElement("section");
+   root.className="thpt-r4-reviewed-formative";
+   root.dataset.thptReviewedFormative="1";
+   const head=document.createElement("p");head.className="thpt-r4-modal-progress";
+   const tabs=document.createElement("div");tabs.className="thpt-r4-modal-question-nav";
+   const card=document.createElement("article");card.className="thpt-r4-reviewed-formative-card";
+   const footer=document.createElement("div");footer.className="thpt-r4-modal-buttons";
+   const prev=document.createElement("button"),next=document.createElement("button");
+   prev.type=next.type="button";prev.textContent="← Câu trước";next.textContent="Câu tiếp →";
+   const render=()=>{
+    const item=items[index];card.replaceChildren();tabs.replaceChildren();
+    head.textContent="Câu "+(index+1)+" / "+items.length+
+      " · Đã review học thuật · Tự luyện, không ghi điểm";
+    for(let i=0;i<items.length;i++){
+     const button=document.createElement("button");button.type="button";
+     button.textContent="Câu "+(i+1);button.className=i===index?"active":"";
+     button.setAttribute("aria-current",String(i===index));
+     button.addEventListener("click",()=>{index=i;render()});tabs.append(button);
+    }
+    const meta=document.createElement("p");meta.className="thpt-r4-modal-progress";
+    meta.textContent=item.item_id+" · "+item.skill+
+      (item.exposure==="EXPOSED_IN_KNOWLEDGE"?" · Đã xuất hiện trong bài giảng":"");
+    const prompt=document.createElement("h3");prompt.textContent=item.stem;
+    const hint=document.createElement("details"),hintSummary=document.createElement("summary");
+    hintSummary.textContent="💡 Xem gợi ý (tự chọn)";
+    hint.append(hintSummary,document.createTextNode(item.hint));
+    const solution=document.createElement("details"),solutionSummary=document.createElement("summary");
+    solutionSummary.textContent="Xem đáp án và lời giải sau khi tự làm";
+    solution.append(solutionSummary,document.createTextNode(item.solution));
+    const note=document.createElement("p");note.className="thpt-r4-modal-progress";
+    note.textContent="Chế độ luyện tập tự đối chiếu · Không chấm điểm/mastery.";
+    card.append(meta,prompt,hint,solution,note);
+    prev.disabled=index===0;next.disabled=index===items.length-1;
+   };
+   prev.addEventListener("click",()=>{if(index>0){index--;render()}});
+   next.addEventListener("click",()=>{if(index<items.length-1){index++;render()}});
+   footer.append(prev,next);root.append(head,tabs,card,footer);
+   modalBody.replaceChildren(root);
+   render();
+  };
+
   // Cumulative exercises remain one backing source, assigned to eligible
   // lesson Practice modals instead of a separate chapter page/menu.
   const cumulativeSections={"15":["A1"],"16":["A2","B3"],"17":["A3","A4","B4"],"18":["B1","B2"]};
@@ -286,6 +333,15 @@
     const lesson=parts[1],role=parts[2]==="core"?"Core":"Luyện tập";
     modalTitle.textContent=role+" · Bài "+lesson+". "+lessonTitle[lesson];
     modalBody.textContent="Đang mở nội dung…";dlg.showModal();
+    if(reviewed?.validate().valid){
+     const items=reviewed.forLesson(lesson,parts[2]);
+     if(items.length){
+      showReviewed(items);
+      if(parts[2]==="practice")attachCumulative(lesson);
+      return;
+     }
+    }
+    // Legacy standalone offline previews did not include the new reviewed bank.
     if(demoSets[id]){showDemo(demoSets[id]);if(parts[2]==="practice")attachCumulative(lesson);return}
     try{
      // Import exact canonical source, not a separately copied answer key.
