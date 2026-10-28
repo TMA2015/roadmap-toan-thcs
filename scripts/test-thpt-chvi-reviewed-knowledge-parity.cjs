@@ -19,10 +19,10 @@ for(const [lesson,count] of Object.entries(expected)){
 const checks={
  15:["Khái niệm hàm số","tập xác định","tập giá trị","Bảng có đầu vào lặp",
       "Đồ thị","x_0\\in D","hàm số cho theo từng khoảng","C(3)","đồng biến","nghịch biến"],
- 16:["a\\ne 0","tập xác định","Đỉnh","trục đối xứng","Bốn bước vẽ","Δ",
+ 16:["a\\ne 0","tập xác định","Đỉnh","trục đối xứng","Bốn bước vẽ","\\Delta",
       "thpt-r4-plot","Chuyển động theo phương thẳng đứng","Doanh thu và giá bán"],
  17:["Tam thức bậc hai","\\Delta","nghiệm kép","Bảng xét dấu","a>0",
-      "a<0","Bất phương trình có tham số","rào ba cạnh","đầu mút"],
+      "a<0","Bất phương trình có tham số","rào ba cạnh","dấu bằng"],
  18:["\\sqrt{A(x)}=\\sqrt{B(x)}","\\sqrt{A(x)}=B(x)",
       "B(x)\\ge0","ngoại lai","tam giác vuông","\\sqrt{u^2}=|u|",
       "thử lại"]
