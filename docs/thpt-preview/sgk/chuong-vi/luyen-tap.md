@@ -1,7 +1,7 @@
 # Luyện tập và Vận dụng — Chương VI
 
 <div class="thpt-r4-screen" data-thpt-r4>
-<p class="thpt-r4-eyebrow">CHƯƠNG VI · LUYỆN TẬP/VẬN DỤNG · NHÁP</p>
+<p class="thpt-r4-eyebrow">CHƯƠNG VI · LUYỆN TẬP/VẬN DỤNG · BẢN THẨM ĐỊNH</p>
 <p class="thpt-r4-lead">Luyện tập được <strong>sắp theo bài SGK</strong> và có phần tổng hợp cuối chương. Đây là nhánh luyện tập của SGK, không phải trang luyện tập theo trục dọc của Chuyên đề.</p>
 </div>
 
@@ -10,11 +10,11 @@
 <div class="thpt-r4-practice-lesson-header"><span class="thpt-r4-lesson-number">15</span><div><p class="thpt-r4-practice-class">Lớp 10 · Chương VI · Bài 15</p><h2>Bài 15. Hàm số</h2></div></div>
 <div class="thpt-r4-practice-card-grid">
 <section class="thpt-r4-practice-card" data-thpt-grade="10">
-<div><p class="thpt-r4-practice-card-kind">Core</p><strong>Nền tảng: Hàm số · Tập xác định và đồ thị</strong><p class="thpt-r4-practice-card-desc">Củng cố khái niệm và kiến thức cơ bản</p><small>Bài nháp · Chỉ kiểm thử giao diện</small></div>
+<div><p class="thpt-r4-practice-card-kind">Core</p><strong>Nền tảng: Hàm số · Tập xác định và đồ thị</strong><p class="thpt-r4-practice-card-desc">Củng cố khái niệm và kiến thức cơ bản</p><small>Câu hỏi đã được NotebookLM review · Không ghi điểm</small></div>
 <button type="button" class="thpt-r4-practice-open" data-thpt-open-quiz="b15-core" aria-label="Mở cửa sổ Core cho Bài 15">✎ Luyện tập</button>
 </section>
 <section class="thpt-r4-practice-card" data-thpt-grade="10">
-<div><p class="thpt-r4-practice-card-kind">Luyện tập</p><strong>Hàm số · Tập xác định và đồ thị</strong><p class="thpt-r4-practice-card-desc">Rèn phương pháp, tính toán và vận dụng</p><small>Bài nháp · Chỉ kiểm thử giao diện</small></div>
+<div><p class="thpt-r4-practice-card-kind">Luyện tập</p><strong>Hàm số · Tập xác định và đồ thị</strong><p class="thpt-r4-practice-card-desc">Rèn phương pháp, tính toán và vận dụng</p><small>Câu hỏi đã được NotebookLM review · Không ghi điểm</small></div>
 <button type="button" class="thpt-r4-practice-open" data-thpt-open-quiz="b15-practice" aria-label="Mở cửa sổ Luyện tập cho Bài 15">✎ Luyện tập</button>
 </section>
 </div></section>
@@ -22,7 +22,7 @@
 <div class="thpt-r4-practice-lesson-header"><span class="thpt-r4-lesson-number">16</span><div><p class="thpt-r4-practice-class">Lớp 10 · Chương VI · Bài 16</p><h2>Bài 16. Hàm số bậc hai</h2></div></div>
 <div class="thpt-r4-practice-card-grid">
 <section class="thpt-r4-practice-card" data-thpt-grade="10">
-<div><p class="thpt-r4-practice-card-kind">Core</p><strong>Nền tảng: Parabol · Đỉnh và tính chất</strong><p class="thpt-r4-practice-card-desc">Củng cố khái niệm và kiến thức cơ bản</p><small>Bài 16 · Item mẫu đã review</small></div>
+<div><p class="thpt-r4-practice-card-kind">Core</p><strong>Nền tảng: Parabol · Đỉnh và tính chất</strong><p class="thpt-r4-practice-card-desc">Củng cố khái niệm và kiến thức cơ bản</p><small>Bài 16 · Canonical item đã review · Không ghi điểm</small></div>
 <button type="button" class="thpt-r4-practice-open" data-thpt-open-quiz="b16-core" aria-label="Mở cửa sổ Core cho Bài 16">✎ Luyện tập</button>
 </section>
 <section class="thpt-r4-practice-card" data-thpt-grade="10">
@@ -34,11 +34,11 @@
 <div class="thpt-r4-practice-lesson-header"><span class="thpt-r4-lesson-number">17</span><div><p class="thpt-r4-practice-class">Lớp 10 · Chương VI · Bài 17</p><h2>Bài 17. Dấu của tam thức bậc hai</h2></div></div>
 <div class="thpt-r4-practice-card-grid">
 <section class="thpt-r4-practice-card" data-thpt-grade="10">
-<div><p class="thpt-r4-practice-card-kind">Core</p><strong>Nền tảng: Tam thức · Xét dấu và bất phương trình</strong><p class="thpt-r4-practice-card-desc">Củng cố khái niệm và kiến thức cơ bản</p><small>Bài nháp · Chỉ kiểm thử giao diện</small></div>
+<div><p class="thpt-r4-practice-card-kind">Core</p><strong>Nền tảng: Tam thức · Xét dấu và bất phương trình</strong><p class="thpt-r4-practice-card-desc">Củng cố khái niệm và kiến thức cơ bản</p><small>Câu hỏi đã được NotebookLM review · Không ghi điểm</small></div>
 <button type="button" class="thpt-r4-practice-open" data-thpt-open-quiz="b17-core" aria-label="Mở cửa sổ Core cho Bài 17">✎ Luyện tập</button>
 </section>
 <section class="thpt-r4-practice-card" data-thpt-grade="10">
-<div><p class="thpt-r4-practice-card-kind">Luyện tập</p><strong>Tam thức · Xét dấu và bất phương trình</strong><p class="thpt-r4-practice-card-desc">Rèn phương pháp, tính toán và vận dụng</p><small>Bài nháp · Chỉ kiểm thử giao diện</small></div>
+<div><p class="thpt-r4-practice-card-kind">Luyện tập</p><strong>Tam thức · Xét dấu và bất phương trình</strong><p class="thpt-r4-practice-card-desc">Rèn phương pháp, tính toán và vận dụng</p><small>Câu hỏi đã được NotebookLM review · Không ghi điểm</small></div>
 <button type="button" class="thpt-r4-practice-open" data-thpt-open-quiz="b17-practice" aria-label="Mở cửa sổ Luyện tập cho Bài 17">✎ Luyện tập</button>
 </section>
 </div></section>
@@ -46,14 +46,14 @@
 <div class="thpt-r4-practice-lesson-header"><span class="thpt-r4-lesson-number">18</span><div><p class="thpt-r4-practice-class">Lớp 10 · Chương VI · Bài 18</p><h2>Bài 18. Phương trình quy về phương trình bậc hai</h2></div></div>
 <div class="thpt-r4-practice-card-grid">
 <section class="thpt-r4-practice-card" data-thpt-grade="10">
-<div><p class="thpt-r4-practice-card-kind">Core</p><strong>Nền tảng: Căn thức · Điều kiện và nghiệm</strong><p class="thpt-r4-practice-card-desc">Củng cố khái niệm và kiến thức cơ bản</p><small>Bài nháp · Chỉ kiểm thử giao diện</small></div>
+<div><p class="thpt-r4-practice-card-kind">Core</p><strong>Nền tảng: Căn thức · Điều kiện và nghiệm</strong><p class="thpt-r4-practice-card-desc">Củng cố khái niệm và kiến thức cơ bản</p><small>Câu hỏi đã được NotebookLM review · Không ghi điểm</small></div>
 <button type="button" class="thpt-r4-practice-open" data-thpt-open-quiz="b18-core" aria-label="Mở cửa sổ Core cho Bài 18">✎ Luyện tập</button>
 </section>
 <section class="thpt-r4-practice-card" data-thpt-grade="10">
-<div><p class="thpt-r4-practice-card-kind">Luyện tập</p><strong>Căn thức · Điều kiện và nghiệm</strong><p class="thpt-r4-practice-card-desc">Rèn phương pháp, tính toán và vận dụng</p><small>Bài nháp · Chỉ kiểm thử giao diện</small></div>
+<div><p class="thpt-r4-practice-card-kind">Luyện tập</p><strong>Căn thức · Điều kiện và nghiệm</strong><p class="thpt-r4-practice-card-desc">Rèn phương pháp, tính toán và vận dụng</p><small>Câu hỏi đã được NotebookLM review · Không ghi điểm</small></div>
 <button type="button" class="thpt-r4-practice-open" data-thpt-open-quiz="b18-practice" aria-label="Mở cửa sổ Luyện tập cho Bài 18">✎ Luyện tập</button>
 </section>
 </div></section>
 </div>
 
-<p class="thpt-r4-practice-disclaimer">Các thẻ Bài 15/17/18 là <strong>TECHNICAL_DEMO_ONLY</strong>: các câu hỏi minh họa đang chờ NotebookLM thẩm định, không ghi điểm, lịch sử hoặc mastery. Core Bài 16 và câu Practice demo sử dụng đúng nội dung đã có trong R4 qua cùng nguồn trang, không nhân bản item canonical.</p>
+<p class="thpt-r4-practice-disclaimer">Core/Luyện tập của Bài 15/17/18 dùng 18 canonical item đã được NotebookLM thẩm định trong gói Chương VI (28/10/2026); Bài 16 vẫn tham chiếu 2 item R4 đã review trước đó. Mỗi item chỉ có một bản nội dung cho các placement phù hợp. Đây là <strong>luyện tập tự đối chiếu</strong>: có thể mở gợi ý/lời giải theo yêu cầu, <strong>không ghi điểm, mastery hoặc lịch sử học sinh</strong>. Những nội dung này không tự động trở thành Tự kiểm tra độc lập; Tự kiểm tra cuối chương đang là demo kỹ thuật cho đến khi có cơ chế bảo vệ.</p>
