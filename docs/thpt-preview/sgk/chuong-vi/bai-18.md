@@ -84,6 +84,7 @@ Hai nghiệm ứng viên là \(x=3\) và \(x=-\frac53\). Chỉ \(x=3\) đạt đ
 - **Nhận hết nghiệm sau khi bình phương:** nghiệm ngoại lai có thể được sinh ra.
 - **Quên dấu của vế không chứa căn:** trong \(\sqrt{A(x)}=B(x)\) phải có \(B(x)\ge0\).
 - **Quên điều kiện của biến và việc thử lại:** nghiệm đại số có thể làm căn vô nghĩa.
+- **Rút gọn căn bậc hai sai:** với \(u\in\mathbb R\), ta có \(\sqrt{u^2}=|u|\), **không tự thay bằng \(u\)** khi chưa biết dấu của \(u\). Quy tắc này đặc biệt quan trọng nếu biểu thức dưới căn chứa bình phương của một đa thức.
 
 [Mở khu vực **Core và Luyện tập/Vận dụng của Chương VI**](luyen-tap.md) — modal Bài 18 lấy **6 item canonical Core/Luyện tập đã review**, lời giải tự mở và chưa ghi điểm/mastery.
 
