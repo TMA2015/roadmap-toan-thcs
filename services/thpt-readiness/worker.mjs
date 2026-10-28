@@ -192,6 +192,11 @@ export default {
          "/v1/exposure/record"].includes(url.pathname))
       fail("ROUTE_NOT_FOUND",404);
    const uid=await firebaseUID(request,env);
+   const repository=d1Repository(env.DB);
+   // A valid token for the shared Firebase project is NOT admission to
+   // protected THPT tests. Require an active private D1 approval for this UID.
+   if(!(await repository.isLearnerAllowed(uid)))
+     fail("LEARNER_ACCESS_DENIED",403);
    const length=Number(request.headers.get("Content-Length")||0);
    if(length>16384)fail("BODY_TOO_LARGE",413);
    let payload;
