@@ -80,6 +80,31 @@ for(const p of liveFiles){
  if(matches.length){oldPublishedLinks+=matches.length;console.error("Old absolute learner link: "+p+" ("+matches.length+")");}
 }
 assert.equal(oldPublishedLinks,0,"Replace absolute old-path learner-facing links before rename");
+
+// Catch the less visible source of broken links: course JSON bundles and
+// interactive item metadata consumed by the live learning engines.
+// Historical review/collaboration receipts are not published learner links.
+const liveDataRoot=path.join(root,"docs/assets/data");
+const dataFiles=walkData(liveDataRoot);
+function walkData(dir){
+ return fs.readdirSync(dir,{withFileTypes:true}).flatMap(ent=>{
+   if(ent.name==="collaboration")return [];
+   const p=path.join(dir,ent.name);
+   return ent.isDirectory()?walkData(p):
+     ent.isFile()&&/\.(json|html|md)$/.test(ent.name)?[p]:[];
+ });
+}
+let legacyBundleLinks=0;
+for(const fp of dataFiles){
+ const src=fs.readFileSync(fp,"utf8");
+ const matches=[...src.matchAll(/(?:https?:\/\/tma2015\.github\.io)?\/roadmap-toan-thcs\//g)];
+ if(matches.length){
+   console.error("Legacy Pages URL in live bundle: "+path.relative(root,fp)+" ("+matches.length+")");
+   legacyBundleLinks+=matches.length;
+ }
+}
+assert.equal(legacyBundleLinks,0,
+ "Course JSON bundles must not contain old absolute GitHub Pages URLs");
 console.log("PASS rename preflight: "+assets.length+" JS runtime files, "+routeAware+
- " dual-prefix modules, "+liveFiles.length+" learner pages, shared Gemini origin, old storage schemas, same MkDocs + GitHub Pages.");
+ " dual-prefix modules, "+liveFiles.length+" learner pages, "+dataFiles.length+" learning bundles, shared Gemini origin, old storage schemas, same MkDocs + GitHub Pages.");
 console.log("NOTE: This is compatibility QA, not an actual GitHub rename, live Gemini call, redirect, or final owner UAT.");
