@@ -1,8 +1,8 @@
 # Bài 18. Phương trình quy về phương trình bậc hai
 
-<div class="thpt-r4-screen" data-thpt-r4><p class="thpt-r4-eyebrow">TOÁN 10 · CHƯƠNG VI · BẢN NHÁP HỌC LIỆU</p>
+<div class="thpt-r4-screen" data-thpt-r4><p class="thpt-r4-eyebrow">TOÁN 10 · CHƯƠNG VI · HỌC LIỆU ĐÃ REVIEW</p>
 <p class="thpt-r4-lead"><strong>NOTEBOOKLM_CHVI_SNAPSHOT_PASS · TÍCH HỢP ĐANG QA.</strong> Nội dung học thuật Bài 18 trong batch SGK Chương VI đã được NotebookLM PASS ngày 28/10/2026; trang đang đối chiếu với bản snapshot. Core/Luyện tập dùng canonical item đã review; không ghi điểm hoặc tiến độ.</p>
-<nav class="thpt-r4-lesson-tabs" aria-label="Điều hướng Chương VI"><a href="../">Chương VI</a><a href="../bai-17/">Bài 17</a><span class="is-current" aria-current="page">Bài 18 · Phương trình chứa căn (nháp)</span></nav></div>
+<nav class="thpt-r4-lesson-tabs" aria-label="Điều hướng Chương VI"><a href="../">Chương VI</a><a href="../bai-17/">Bài 17</a><span class="is-current" aria-current="page">Bài 18 · Phương trình chứa căn</span></nav></div>
 
 ## 1. Vì sao phải kiểm tra nghiệm?
 
@@ -102,4 +102,4 @@ Hai nghiệm ứng viên là \(x=3\) và \(x=-\frac53\). Chỉ \(x=3\) đạt đ
 </ol></details>
 
 !!! warning "Giới hạn"
-    Đây là draft kiến thức do dự án tự soạn, **đã đối chiếu trực tiếp SGK trang 25–27 và SBT trang 19–21; snapshot đã được NotebookLM thẩm định PASS**. Câu Core/Luyện tập và Written có ID canonical, nhưng Readiness bảo mật chưa triển khai; chưa coi bản trang GitHub là phát hành chính thức.
+    Đây là trang kiến thức do dự án tự soạn, **đã đối chiếu trực tiếp SGK trang 25–27 và SBT trang 19–21; snapshot đã được NotebookLM thẩm định PASS**. Câu Core/Luyện tập và Written có ID canonical, nhưng Tự kiểm tra chính thức chưa kích hoạt; chưa coi bản trang GitHub là phát hành chính thức.
