@@ -92,8 +92,14 @@ async function ready(page,path){
     assert.equal(await ui.locator(".thpt-r4-home-stats > div").count(),5,
       "Highlights must have five categories rather than obsolete pilot counts");
     const statsText=await ui.locator(".thpt-r4-home-stats").innerText();
-    assert(statsText.includes("chuyên đề THCS")&&statsText.includes("luyện tập tương tác"),
-      "Do not mislabel THCS 25 topics as the THPT topic count");
+    assert(statsText.includes("chuyên đề THPT")&&statsText.includes("luyện tập tương tác"),
+      "Feature strip must use THPT's planned vertical-topic scope");
+    assert.equal((await ui.locator(".thpt-r4-home-stats > div").nth(1).innerText()).includes("24"),true,
+      "THPT's planned 24 vertical topics must not be confused with 24 SGK chapters");
+    assert.equal(await ui.locator(".thpt-r4-orbit-chart-icon rect").count(),3,
+      "Progress planet must contain a three-bar chart instead of an arrow");
+    assert.equal(await ui.locator(".thpt-r4-home-stat-chart svg rect").count(),3,
+      "Progress feature strip must use the matching three-bar chart icon");
     assert.equal(await ui.locator(".thpt-r4-grid .thpt-r4-tile").count(),5,
       "Golden THPT five-entry landing menu must remain");
     let overflow=await ui.evaluate(()=>document.documentElement.scrollWidth-window.innerWidth);
