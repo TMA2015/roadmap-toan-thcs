@@ -1,23 +1,23 @@
 # THPT · Chuyên đề Xác suất · G11 B28–B30 · D3/D4 ten canonical Practice/Written candidates v0.1
 
-**PACKET_ID:** \`THPT-TOPIC-PROBABILITY-G11-B28-B30-D1D4-AUTHORING-20261028-R0\`.  
-**Academic status:** \`NEW_CANDIDATES_NOT_REVIEWED\`; G11 original SGK/SBT S1 \`NOT_YET_REVIEWED\`.  
-**Use:** \`TOPIC_PRACTICE\` (including basic items), \`TOPIC_WRITTEN\` as contextual placement only; **no dedicated Topic Core**. A later valid SGK Core/Practice placement may reuse the exact **same canonical ID, one key, one attempt history**; do not copy/clone. **This is a public Practice candidate bank, NOT held-out Topic Readiness.** Practice hints/solutions only at the approved Check/Submit stage; any previously seen exercise cannot count as fresh independent Readiness evidence.
+**PACKET_ID:** `THPT-TOPIC-PROBABILITY-G11-B28-B30-D1D4-AUTHORING-20261028-R0`.  
+**Academic status:** `NEW_CANDIDATES_NOT_REVIEWED`; G11 original SGK/SBT S1 `NOT_YET_REVIEWED`.  
+**Use:** `TOPIC_PRACTICE` (including basic items), `TOPIC_WRITTEN` as contextual placement only; **no dedicated Topic Core**. A later valid SGK Core/Practice placement may reuse the exact **same canonical ID, one key, one attempt history**; do not copy/clone. **This is a public Practice candidate bank, NOT held-out Topic Readiness.** Practice hints/solutions only at the approved Check/Submit stage; any previously seen exercise cannot count as fresh independent Readiness evidence.
 
 ## 1. ID register and outcome alignment
 
 | Item ID | Lesson S2 | Outcome primary | Kind | Level / points |
 |---|---|---|---|---|
-| \`THPT-G11-B28-P01\` | B28 | \`G11-B28-EVENT_UNION_INTERSECTION\` | Practice | Basic |
-| \`THPT-G11-B28-P02\` | B28 | \`G11-B28-INDEPENDENT_EVENTS\` | Practice | Basic |
-| \`THPT-G11-B28-P03\` | B28 | \`G11-B28-DISJOINT_EVENTS\` | Practice | Basic |
-| \`THPT-G11-B29-P01\` | B29 | \`G11-B29-ADDITION_GENERAL\` | Practice | Basic–Intermediate |
-| \`THPT-G11-B29-P02\` | B29 | \`G11-B29-ADDITION_DISJOINT\` | Practice | Basic |
-| \`THPT-G11-B29-P03\` | B29 | \`G11-B29-ADDITION_GENERAL\` | Practice | Intermediate |
-| \`THPT-G11-B30-P01\` | B30 | \`G11-B30-MULTIPLICATION_INDEPENDENT\` | Practice | Basic |
-| \`THPT-G11-B30-P02\` | B30 | \`G11-B30-MULTIPLICATION_INDEPENDENT\` | Practice | Intermediate |
-| \`THPT-G11-B30-P03\` | B30 | \`G11-B30-COMBINED_RULES\` | Application | Intermediate |
-| \`THPT-G11-CHVIII-W30-ANCHOR-01\` | B30 | \`G11-B30-COMBINED_RULES\` | Written + Anchor tag | /8, Intermediate |
+| `THPT-G11-B28-P01` | B28 | `G11-B28-EVENT_UNION_INTERSECTION` | Practice | Basic |
+| `THPT-G11-B28-P02` | B28 | `G11-B28-INDEPENDENT_EVENTS` | Practice | Basic |
+| `THPT-G11-B28-P03` | B28 | `G11-B28-DISJOINT_EVENTS` | Practice | Basic |
+| `THPT-G11-B29-P01` | B29 | `G11-B29-ADDITION_GENERAL` | Practice | Basic–Intermediate |
+| `THPT-G11-B29-P02` | B29 | `G11-B29-ADDITION_DISJOINT` | Practice | Basic |
+| `THPT-G11-B29-P03` | B29 | `G11-B29-ADDITION_GENERAL` | Practice | Intermediate |
+| `THPT-G11-B30-P01` | B30 | `G11-B30-MULTIPLICATION_INDEPENDENT` | Practice | Basic |
+| `THPT-G11-B30-P02` | B30 | `G11-B30-MULTIPLICATION_INDEPENDENT` | Practice | Intermediate |
+| `THPT-G11-B30-P03` | B30 | `G11-B30-COMBINED_RULES` | Application | Intermediate |
+| `THPT-G11-CHVIII-W30-ANCHOR-01` | B30 | `G11-B30-COMBINED_RULES` | Written + Anchor tag | /8, Intermediate |
 
 **Expected:** 10 unique canonical item IDs, 9 short practice/application + **1 Written** (Anchor is a label of that Written, NOT an 11th item). New G11 candidate outcome IDs count **7**, separate from the already reviewed 10 G10 Foundation outcomes. All numbers/problems below are original authoring proposals, pending S1 overlap and pedagogy review.
 
@@ -133,5 +133,5 @@
 
 - Reviewer original SGK/SBT G11 KNTT **S1 direct receipt required**. Public TOC gives chapter VIII lessons B28–B30 but is not sufficient for page-level Academic PASS.
 - Judge item arithmetic, assumptions, answer equivalence, independent vs disjoint modelling, formula depth and Clone risk relative to source SGK, five G10 taught Topic examples and 16 G10 shared items. The B28-P02 fair-coin example is a standard model but may be too near taught G10 examples; if so mark HOLD with minimal change rather than claim uniqueness.
-- Reconcile \`EXPECTED=10, UNIQUE=10\` with exactly 1 Written Anchor and 9 Practice/Application. Return \`ITEM_REGISTER\` per ID, \`OUTCOME_ALIGNMENT=7_OF_7_OR_GAPS\`, \`P0/P1/P2\`, \`MINIMAL_DELTA\`, \`ACADEMIC_OVERALL_G11_D3D4\`, \`ACADEMIC_CLEARANCE_FOR_RELEASE=NO\`.
+- Reconcile `EXPECTED=10, UNIQUE=10` with exactly 1 Written Anchor and 9 Practice/Application. Return `ITEM_REGISTER` per ID, `OUTCOME_ALIGNMENT=7_OF_7_OR_GAPS`, `P0/P1/P2`, `MINIMAL_DELTA`, `ACADEMIC_OVERALL_G11_D3D4`, `ACADEMIC_CLEARANCE_FOR_RELEASE=NO`.
 - Don't copy or expose six G10 SGK Chapter IX held-out readiness questions, or create/claim any Topic heldout key. All content here **may be shown to learners as Practice after review**; no answer or hint before approved Check/Submit, and none can be treated as new independent Topic Readiness evidence after exposure.
