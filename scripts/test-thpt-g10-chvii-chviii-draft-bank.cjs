@@ -35,8 +35,10 @@ function bank(md,chapter,lessons,expected){
 }
 const sevenIDs=bank(seven,"CHVII",[19,20,21,22],24);
 const eightIDs=bank(eight,"CHVIII",[23,24,25],18);
-const chviIDs=[...ch6a.matchAll(/^\| (THPT-G10-B15-[CPR]\d\d) \|/gm),
- ...ch6b.matchAll(/^\| (THPT-G10-B(?:17|18)-[CPR]\d\d) \|/gm)].map(x=>x[1]);
+// Count rows only inside the original register sections. In the source
+// documents, held-out IDs appear again in a later detailed table.
+const chviIDs=[...ch6a.split("## 2. Core")[0].matchAll(/^\| (THPT-G10-B15-[CPR]\d\d) \|/gm),
+ ...ch6b.split("## B. Bài 17")[0].matchAll(/^\| (THPT-G10-B(?:17|18)-[CPR]\d\d) \|/gm)].map(x=>x[1]);
 assert.equal(chviIDs.length,25,"ChVI existing candidate baseline count");
 assert.equal(new Set([...sevenIDs,...eightIDs,...chviIDs]).size,67,
  "canonical ID collision across Chapters VI,VII,VIII");
