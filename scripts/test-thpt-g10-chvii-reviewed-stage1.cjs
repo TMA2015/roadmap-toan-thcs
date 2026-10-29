@@ -80,8 +80,17 @@ for(const [itemId,asset,sha] of reviewedD5){
  const rel="docs/assets/images/thpt/"+asset;
  const content=fs.readFileSync(path.join(root,rel));
  const hash=crypto.createHash("sha1").update("blob "+content.length+"\0").update(content).digest("hex");
- assert.equal(hash,sha,"D5-reviewed Git blob MUST stay unchanged: "+asset);
  const xml=content.toString("utf8");
+ const reviewerFooter={
+  "THPT_G10_B19_LINE_INTERSECTION_DRAFT.svg":'<text x="65" y="426" font-size="15" fill="#64748b">DRAFT — hình tự dựng, chưa qua Academic review</text>\n',
+  "THPT_G10_B21_CIRCLE_TANGENT_DRAFT.svg":'<text x="70" y="430" font-size="15" fill="#64748b">DRAFT — hình tự dựng, chưa qua Academic review</text>\n',
+  "THPT_G10_B22_PARABOLA_FOCUS_DIRECTRIX_DRAFT.svg":'<text x="80" y="440" font-size="15" fill="#64748b">DRAFT — hình tự dựng, chưa qua Academic review</text>\n'
+ }[asset];
+ assert(reviewerFooter&&xml.endsWith("</svg>"),"D5 footer equivalence rule missing");
+ const reviewed=Buffer.from(xml.replace("</svg>",reviewerFooter+"</svg>"),"utf8");
+ const reviewerHash=crypto.createHash("sha1").update("blob "+reviewed.length+"\0").update(reviewed).digest("hex");
+ assert.equal(reviewerHash,sha,"D5 illustration math/geometry must match reviewed Git blob after restoring ONLY old admin footer: "+asset);
+ assert(!xml.includes("DRAFT — hình tự dựng")&&!xml.includes("chưa qua Academic review"),"Outdated unreviewed watermark not allowed in student-facing D5 illustration");
  assert(xml.includes("<title")&&xml.includes("<desc")&&xml.includes('viewBox='),
   "Accessible SVG requires title, description and scalable viewBox: "+asset);
  assert(!/<script\b|onload\s*=|<foreignObject\b|<image\b|(?:xlink:)?href=["']https?:/i.test(xml),

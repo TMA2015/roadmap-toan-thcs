@@ -4,7 +4,7 @@ Sources: reviewed candidate PR #614 head `c122935b783efb9dc5f32452d37d0cad405a3a
 
 Scope: B19–22 D1–D2; 32 canonical formative + 4 Written (1 Anchor), D5 3 independently reviewed SVG assets. SGK 10 KNTT tập 2 pp29–58; SBT pp27–49. D6/completeness and Chapter Readiness activation still gated; no Mastery or held-out item release.
 
-Original D5 SVGs have footer “DRAFT — hình tự dựng, chưa qua Academic review” despite receipt PASS. Preserve original SHA for now; footer must be removed as a controlled UI delta with unchanged geometry and updated evidence before final learner release.
+D5 DELTA_A_UI: removed only the outdated `DRAFT — hình tự dựng, chưa qua Academic review` footer from 3 original reviewed SVGs. Mathematical SVG geometry, lines, curves, labels, positions and accessibility tags remain identical. QA guard reconstructs each exact original footer and checks its original Git blob SHA against the NotebookLM-review-locked receipt. This is source-equivalent visual cleanup, NOT a new Academic PASS for the modified byte snapshot.
 
 Student-facing lesson review details removed below; original metadata retained here.
 
