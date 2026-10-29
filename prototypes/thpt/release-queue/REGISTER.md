@@ -4,7 +4,7 @@
 
 | Gói | Hành trình | Trạng thái | Phạm vi | PR / nguồn |
 |---|---|---|---|---|
-| [G10-SGK-CHIII](inventory/G10-SGK-CHIII.md) | SGK_CHAPTER | ACADEMIC_PARTIAL | PUBLIC_FORMATIVE_ONLY | B05–B06 R01 D1–D6 source frozen, NotebookLM pending |
+| [G10-SGK-CHIII](ready/G10-SGK-CHIII.md) | SGK_CHAPTER | CONTENT_READY | PUBLIC_FORMATIVE_ONLY | #633 source-only D1–D6 NotebookLM 18/18 PASS, B05–B06 only |
 | [G10-SGK-CHVI](inventory/G10-SGK-CHVI.md) | SGK_CHAPTER | PUBLISHED_SCOPED | PUBLIC_FORMATIVE_ONLY | merged #612; UI #617–619 |
 | [G10-SGK-CHVII](ready/G10-SGK-CHVII.md) | SGK_CHAPTER | RELEASE_READY | PUBLIC_FORMATIVE_ONLY | #625 (scoped technical release; source #624 merged)
 | [G10-SGK-CHVIII](ready/G10-SGK-CHVIII.md) | SGK_CHAPTER | RELEASE_READY | PUBLIC_FORMATIVE_ONLY | #625 (scoped technical release; source #624 merged)
@@ -20,4 +20,4 @@
 
 **PR lịch sử:** #614/#615 là những nhánh cũ của #620/#621; #616 đang theo snapshot cũ và sẽ cần tái tích hợp trước release.
 
-**G10 ChIII B05–B06 R01 authoring:** [inventory manifest](inventory/G10-SGK-CHIII.md), 18 candidate IDs (16 formative + 2 Written), 10 outcomes, 2 SVG, 4 D6. Exact source blob `6320aeaa89bd51c514b07461e01fad5e3aca833f`; 42/42 author QA PASS, BUT no NotebookLM verdict, A3/A5/A6 HOLD and NOT CONTENT_READY. This row is from unmerged authoring branch and must be reconciled with current main before handoff; release lane not involved yet.
+**G10 ChIII B05–B06 authoring:** [ready manifest](ready/G10-SGK-CHIII.md), 18 candidate IDs, 10 outcomes, 2 SVG, 4 D6. Reviewer Academic PASS exact R01 source blob `6320aeaa89bd51c514b07461e01fad5e3aca833f`, report blob `3fb823c4353d368ae5a9c14f03c7309933d47e6f`. A1–A7 checked only for PUBLIC_FORMATIVE_ONLY B05/B06. [Evidence](CHIII_B05_B06_PUBLIC_FORMATIVE_A1A7_EVIDENCE_20261029.md). R1–R5 unchecked and full chapter readiness/Topic not approved. This authoring row is not merged into main.
