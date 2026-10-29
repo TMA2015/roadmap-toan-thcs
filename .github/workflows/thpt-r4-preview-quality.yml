@@ -36,6 +36,7 @@ on:
       - 'scripts/test-thpt-g10-d6-release-integration.cjs'
       - 'scripts/test-thpt-g10-chix-reviewed-stage3.cjs'
       - 'scripts/test-thpt-g10-chix-release-integration.cjs'
+      - 'scripts/test-thpt-g10-chix-browser-smoke.cjs'
       - 'docs/assets/javascripts/thpt-chix-reviewed-formative-v1.js'
       - 'docs/assets/javascripts/thpt-chvii-reviewed-formative-v1.js'
       - 'docs/assets/javascripts/thpt-chviii-reviewed-formative-v1.js'
@@ -148,6 +149,8 @@ jobs:
           python -m http.server 8765 --directory site > /tmp/thpt-r4-combined-http.log 2>&1 &
           sleep 2
           node scripts/test-thpt-r4-preview-browser.js
+      - name: ChIX reviewed D5/D6 browser smoke · mobile / iPad / desktop
+        run: node scripts/test-thpt-g10-chix-browser-smoke.cjs
       - name: Emulate old and new GitHub Pages paths, without renaming the repo
         run: |
           mkdir -p rename-path-smoke
