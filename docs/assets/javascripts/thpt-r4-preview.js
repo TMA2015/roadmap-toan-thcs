@@ -286,6 +286,37 @@
     const solution=document.createElement("details"),solutionSummary=document.createElement("summary");
     solutionSummary.textContent="Xem đáp án và lời giải sau khi tự làm";
     solution.append(solutionSummary,document.createTextNode(item.solution));
+    // D5-reviewed figures are *answer-bearing*. Load an exact shared SVG ONLY
+    // when the learner deliberately expands the formative solution, never
+    // alongside an unanswered Core/Practice prompt or held-out Readiness.
+    const reviewedFigures={
+     "THPT-G10-B19-P06":["THPT_G10_B19_LINE_INTERSECTION_DRAFT.svg",
+       "Hình giải B19-P06: giao điểm I(2;2), hai đường và đường vuông góc cần tìm"],
+     "THPT-G10-B21-P03":["THPT_G10_B21_CIRCLE_TANGENT_DRAFT.svg",
+       "Hình giải B21-P03: đường tròn tâm I(1;−1), tiếp tuyến x=3 tại H(3;−1)"],
+     "THPT-G10-B22-P06":["THPT_G10_B22_PARABOLA_FOCUS_DIRECTRIX_DRAFT.svg",
+       "Hình giải B22-P06: tiêu điểm, đường chuẩn và hai khoảng cách bằng nhau"]
+    };
+    const figure=reviewedFigures[item.item_id];
+    if(figure){
+     solution.dataset.thptSolutionFigureItem=item.item_id;
+     solution.addEventListener("toggle",()=>{
+      if(!solution.open||solution.dataset.figureLoaded==="1")return;
+      const match=location.pathname.match(/^(.*?\/)(?:thpt-preview|thpt)\//);
+      if(!match)return;
+      const img=document.createElement("img");
+      img.className="thpt-r4-reviewed-solution-figure";
+      img.alt=figure[1];
+      img.loading="lazy";img.decoding="async";
+      img.src=match[1]+"assets/images/thpt/"+figure[0];
+      img.dataset.thptReviewedFigure=item.item_id;
+      const caption=document.createElement("p");
+      caption.className="thpt-r4-reviewed-solution-caption";
+      caption.textContent="Hình minh họa lời giải đã review học thuật D5 · "+item.item_id;
+      solution.append(img,caption);
+      solution.dataset.figureLoaded="1";
+     });
+    }
     const note=document.createElement("p");note.className="thpt-r4-modal-progress";
     note.textContent="Chế độ luyện tập tự đối chiếu · Không chấm điểm/mastery.";
     card.append(meta,prompt,hint,solution,note);
