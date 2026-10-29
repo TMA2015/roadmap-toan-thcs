@@ -15,6 +15,10 @@ on:
       - 'docs/thcs/**'
       - 'docs/thpt-preview/**'
       - 'docs/assets/javascripts/thpt-r4-preview.js'
+      - 'docs/assets/javascripts/thpt-chvii-reviewed-formative-v1.js'
+      - 'docs/assets/images/thpt/**'
+      - 'docs/assets/stylesheets/thpt-r4-preview.css'
+      - 'scripts/test-thpt-g10-chvii-reviewed-stage1.cjs'
       - 'docs/assets/javascripts/floating-ai-tutor-v1.js'
       - 'docs/assets/javascripts/firebase-gemini-v1.js'
       - 'docs/assets/javascripts/sticky-nav-v1.js'
@@ -68,6 +72,10 @@ jobs:
         run: node scripts/test-thpt-release-queue.cjs
       - name: Check THPT no-account static release contract
         run: node scripts/test-thpt-static-release.cjs
+      - name: Guard ChVII reviewed public formative integration, source scope and held-out separation
+        run: |
+          node --check docs/assets/javascripts/thpt-chvii-reviewed-formative-v1.js
+          node scripts/test-thpt-g10-chvii-reviewed-stage1.cjs
       - name: Guard Chapter VI academic-snapshot scope and shared canonical items
         run: |
           node scripts/test-thpt-chvi-review-receipt.cjs
@@ -114,6 +122,14 @@ jobs:
           test -f site/thcs/index.html
           test -f site/kien-thuc/04-bieu-thuc-dai-so/index.html
           test -f site/thpt-preview/sgk/chuong-vi/bai-16/index.html
+          test -f site/thpt-preview/sgk/chuong-vii/bai-19/index.html
+          test -f site/thpt-preview/sgk/chuong-vii/bai-22/index.html
+          test -f site/thpt-preview/sgk/chuong-vii/luyen-tap/index.html
+          test -f site/thpt-preview/sgk/chuong-vii/tu-kiem-tra-chuong/index.html
+          test -f site/assets/javascripts/thpt-chvii-reviewed-formative-v1.js
+          test -f site/assets/images/thpt/THPT_G10_B19_LINE_INTERSECTION_DRAFT.svg
+          test -f site/assets/images/thpt/THPT_G10_B21_CIRCLE_TANGENT_DRAFT.svg
+          test -f site/assets/images/thpt/THPT_G10_B22_PARABOLA_FOCUS_DIRECTRIX_DRAFT.svg
           test ! -e site/assets/javascripts/thpt-protected-readiness-v1.js
           test ! -e site/assets/javascripts/thpt-formative-exposure-v1.js
       - name: Install isolated Chromium test dependency

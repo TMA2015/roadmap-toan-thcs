@@ -9,6 +9,7 @@ require("./test-thpt-g10-chvii-chviii-draft-bank.cjs");
 require("./test-thpt-chvi-review-receipt.cjs");
 require("./test-thpt-chvi-reviewed-formative.cjs");
 require("./test-thpt-chvi-reviewed-knowledge-parity.cjs");
+require("./test-thpt-g10-chvii-reviewed-stage1.cjs");
 const base="http://127.0.0.1:8765/thpt-preview/";
 async function ready(page,path){
  const response=await page.goto(base+path,{waitUntil:"networkidle"});
@@ -59,6 +60,114 @@ async function ready(page,path){
   assert((await entry.locator("h1").textContent()).includes("Chọn hành trình Toán"),
     "THPT cover shortcut did not open the real programme selection page");
   await entry.close();
+
+  // New G10 ChVII reviewed D1/D2 and PUBLIC formative stage. This deliberately
+  // does not test or expose academically reviewed held-out Chapter Readiness.
+  for(const viewport of [{width:1440,height:900},{width:390,height:844}]){
+    const page=await browser.newPage({viewport});
+    await ready(page,"sgk/");
+    assert((await page.locator('a[href*="chuong-vii/"]').count())>0,
+      "SGK search overview must link to ChVII without replacing ChVI");
+    await ready(page,"sgk/chuong-vii/");
+    assert.equal(await page.locator(".thpt-r4-grid .thpt-r4-tile").count(),4,
+      "ChVII hub must contain all four reviewed SGK lessons");
+    for(const lesson of ["19","20","21","22"]){
+      await ready(page,"sgk/chuong-vii/bai-"+lesson+"/");
+      assert((await page.locator("article").innerText()).includes("Ví dụ"),
+        "B"+lesson+" missing source-backed worked example");
+    }
+    await ready(page,"sgk/chuong-vii/luyen-tap/");
+    assert.equal(await page.locator("[data-thpt-open-quiz]").count(),8,
+      "All eight SGK ChVII Core/Practice cards must be accessible");
+    await page.locator('[data-thpt-open-quiz="b19-core"]').click();
+    const dlg=page.locator("dialog.thpt-r4-practice-dialog");
+    assert.equal(await dlg.locator("[data-thpt-modal-lesson-number]").innerText(),"19");
+    assert((await dlg.locator("[data-thpt-r4] [data-thpt-canonical-item], [data-thpt-canonical-item]").first().getAttribute("data-thpt-canonical-item"))==="THPT-G10-B19-C01",
+      "B19 must render original reviewed canonical item ID");
+    assert.equal(await dlg.locator("details[open]").count(),0,
+      "Hint and answer must start collapsed in formative exercises");
+    assert((await dlg.innerText()).includes("Không ghi điểm thành thạo"),
+      "Formative exercises must not claim protected assessment");
+    await dlg.locator("[data-thpt-modal-close]").click();
+    await page.locator('[data-thpt-open-quiz="b19-practice"]').click();
+    assert.equal(await dlg.locator(".thpt-r4-modal-question-nav button").count(),6,
+      "B19 must expose 6 reviewed Practice/Application items, not only stage-one pair");
+    await dlg.locator(".thpt-r4-modal-question-nav button").last().click();
+    assert.equal(await dlg.locator("[data-thpt-canonical-item]").getAttribute("data-thpt-canonical-item"),"THPT-G10-B19-P06",
+      "B19 advanced Practice must keep its existing canonical ID");
+    assert.equal(await dlg.locator("details[open]").count(),0,
+      "Extended Practice hints/answers must remain collapsed by default");
+    await dlg.locator("[data-thpt-modal-close]").click();
+    await page.locator('[data-thpt-open-quiz="b22-core"]').click();
+    await dlg.locator(".thpt-r4-modal-question-nav button").nth(1).click();
+    assert.equal(await dlg.locator("[data-thpt-canonical-item]").getAttribute("data-thpt-canonical-item"),"THPT-G10-B22-P01",
+      "Approved ellipse item B22-P01 must supply mandatory Core coverage via role mapping");
+    assert(!(await dlg.innerText()).includes("THPT-G10-B22-C01"),
+      "Specialist eccentricity item B22-C01 must stay outside mandatory SGK Core");
+    await dlg.locator("[data-thpt-modal-close]").click();
+    await page.locator('[data-thpt-open-quiz="b22-practice"]').click();
+    assert.equal(await dlg.locator(".thpt-r4-modal-question-nav button").count(),7,
+      "B22 should contain 6 normal Practice + 1 optional specialist item");
+    await dlg.locator(".thpt-r4-modal-question-nav button").last().click();
+    assert((await dlg.locator("[data-thpt-canonical-item]").getAttribute("data-thpt-canonical-item"))==="THPT-G10-B22-C01"&&
+      (await dlg.innerText()).includes("Chuyên sâu tự chọn"),
+      "Reviewer-reclassified eccentricity item must be optional, not mandatory Core");
+    await dlg.locator("[data-thpt-modal-close]").click();
+    // D5-reviewed SVGs may explain Practice AFTER deliberate solution reveal,
+    // not when a learner only opens the question. Verify all three exact IDs
+    // on desktop and phone; no image cloning or premature answer exposure.
+    await page.locator('[data-thpt-open-quiz="b19-core"]').click();
+    const b19Recovery=dlg.locator("a.thpt-r4-remediation-link");
+    assert.equal(await b19Recovery.count(),1,"ChVII B19 formative recovery link missing");
+    assert((await b19Recovery.getAttribute("href")).endsWith("/sgk/chuong-vii/bai-19/"),"B19 recovery link wrong");
+    assert(!(await dlg.locator(".thpt-r4-reviewed-formative-card").innerText()).includes("THPT-G10-"),"Canonical ID leaked to B19 students");
+    await dlg.locator("[data-thpt-modal-close]").click();
+    const figureCases=[
+      ["19",5,"THPT-G10-B19-P06"],
+      ["21",2,"THPT-G10-B21-P03"],
+      ["22",5,"THPT-G10-B22-P06"]
+    ];
+    for(const [lesson,slot,itemId] of figureCases){
+      await page.locator('[data-thpt-open-quiz="b'+lesson+'-practice"]').click();
+      await dlg.locator(".thpt-r4-modal-question-nav button").nth(slot).click();
+      assert((await dlg.locator("[data-thpt-canonical-item]").getAttribute("data-thpt-canonical-item"))===itemId,
+        "D5 asset must be tied to the reviewed original canonical Practice ID: "+itemId);
+      const details=dlg.locator('details[data-thpt-solution-figure-item="'+itemId+'"]');
+      assert.equal(await details.count(),1,"Expected reviewed figure attached to solution of "+itemId);
+      assert.equal(await dlg.locator("[data-thpt-reviewed-figure]").count(),0,
+        "Answer-bearing diagram must not be inserted before opening solution for "+itemId);
+      await details.locator("summary").click();
+      const img=dlg.locator('[data-thpt-reviewed-figure="'+itemId+'"]');
+      await img.scrollIntoViewIfNeeded();
+      await page.waitForFunction(id=>{
+        const el=document.querySelector('[data-thpt-reviewed-figure="'+id+'"]');
+        return el?.complete&&el.naturalWidth>0;
+      },itemId);
+      const imgWidth=await img.evaluate(x=>x.getBoundingClientRect().width);
+      assert(imgWidth<=viewport.width+1,
+        "Solution diagram must fit inside mobile viewport "+viewport.width);
+      assert((await img.getAttribute("src")).includes("/assets/images/thpt/"),
+        "D5 SVG source must be one same-origin shared asset");
+      await dlg.locator("[data-thpt-modal-close]").click();
+    }
+    await ready(page,"thu-vien/tu-luan-chuong-vii/");
+    assert.equal(await page.locator('[data-thpt-written-canonical]').count(),4,
+      "Four ChVII Written cards must be independently accessible");
+    assert.equal(await page.locator('.thpt-r4-written-card[data-thpt-kind="anchor"]').count(),1,
+      "Anchor is a tag on one Written item, not an extra duplicate");
+    assert.equal(await page.locator('.thpt-r4-written-card details[open]').count(),0,
+      "All ChVII Written solutions and rubrics must start closed");
+    assert.equal(await page.locator('.thpt-r4-written-card details').count(),4,
+      "Each Written item must retain one reviewed solution/rubric");
+    await ready(page,"sgk/chuong-vii/tu-kiem-tra-chuong/");
+    assert.equal(await page.locator("[data-thpt-secure-readiness]").count(),0);
+    assert.equal(await page.locator("[data-thpt-open-quiz]").count(),0,
+      "ChVII held-out Readiness must not be served as a public practice card");
+    assert((await page.locator("article").innerText()).includes("chưa mở"),"ChVII inactive readiness clearly identified to learners");
+    const overflow=await page.evaluate(()=>document.documentElement.scrollWidth-window.innerWidth);
+    assert(overflow<=20,"ChVII R4 overflow at "+viewport.width+"px: "+overflow);
+    await page.close();
+  }
 
   // Owner UI acceptance: the existing THCS library keeps its own search,
   // while SGK/Topic R4 overview pages must each show ONLY their search.
@@ -311,15 +420,20 @@ async function ready(page,path){
   assert(await exerciseModal.isVisible(),"Core card did not open an exercise modal");
   assert.equal(page.url(),currentPracticeRoute,"Opening a lesson Core must not navigate to another page");
   assert.equal((await exerciseModal.locator('[data-thpt-reviewed-formative="1"]').count()),1,"B15 must load the reviewed public canonical bank, not a UI demo");
-  assert((await exerciseModal.locator(".thpt-r4-reviewed-formative-card").textContent()).includes("THPT-G10-B15-C01"),"Canonical B15 Core ID not visible");
+  assert.equal(await exerciseModal.locator(".thpt-r4-reviewed-formative-card").getAttribute("data-thpt-canonical-item"),"THPT-G10-B15-C01","Canonical ID retained in DOM but not learner-facing text");
+  assert(!(await exerciseModal.locator(".thpt-r4-reviewed-formative-card").innerText()).includes("THPT-G10-"),"Do not expose canonical IDs in student UI");
   const b15Solution=exerciseModal.locator(".thpt-r4-reviewed-formative-card details").last();
   assert(!await b15Solution.evaluate(el=>el.open),"Practice solution must stay collapsed before deliberate reveal");
   await b15Solution.locator("summary").click();
   assert(await b15Solution.evaluate(el=>el.open),"Practice solution did not open on learner request");
   assert((await b15Solution.textContent()).includes("x=2"),"Reviewed B15 Core solution is missing");
+  const recovery=exerciseModal.locator("a.thpt-r4-remediation-link");
+  assert.equal(await recovery.count(),1,"Formative item must offer learner an optional knowledge recovery link");
+  assert((await recovery.getAttribute("href")).endsWith("/sgk/chuong-vi/bai-15/"),"B15 recovery must link back to the lesson");
+  assert(!(await exerciseModal.locator(".thpt-r4-reviewed-formative-card").innerText()).includes("Đã review học thuật"),"No editorial reviewer status in learner view");
   await exerciseModal.locator(".thpt-r4-modal-buttons button").last().click();
   assert((await exerciseModal.locator(".thpt-r4-modal-progress").first().textContent()).includes("2 / 2"),"Reviewed exercise modal did not navigate to question two");
-  assert((await exerciseModal.locator(".thpt-r4-reviewed-formative-card").textContent()).includes("THPT-G10-B15-C02"),"Question navigation must retain canonical B15 IDs");
+  assert.equal(await exerciseModal.locator(".thpt-r4-reviewed-formative-card").getAttribute("data-thpt-canonical-item"),"THPT-G10-B15-C02","Question navigation retains canonical identity in dataset");
   await exerciseModal.locator("[data-thpt-modal-close]").click();
   assert(await exerciseModal.isHidden(),"Exercise modal did not close");
   await page.locator('[data-thpt-open-quiz="b16-core"]').click();

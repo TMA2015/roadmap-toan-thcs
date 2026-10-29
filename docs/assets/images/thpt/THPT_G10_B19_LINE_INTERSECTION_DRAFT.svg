@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="450" viewBox="0 0 680 450" role="img" aria-labelledby="title desc">
+<title id="title">Bài 19: Giao điểm hai đường thẳng</title><desc id="desc">Bốn đường trên hệ trục với tỉ lệ 55 pixel một đơn vị: d1: x+y=4, d2: 2x-y=2, giao tại I(2;2); d3: x-2y+1=0 và đường Delta: 2x+y-6=0 đi qua I và vuông góc với d3.</desc>
+<rect width="680" height="450" rx="14" fill="#fff"/>
+
+<line x1="60" y1="350" x2="590" y2="350" stroke="#475569" stroke-width="2"/><line x1="150" y1="405" x2="150" y2="32" stroke="#475569" stroke-width="2"/>
+<path d="M590 350 l-10 -6 v12 z M150 32 l-6 10 h12 z" fill="#475569"/>
+<line x1="150" y1="130" x2="370" y2="350" stroke="#2563eb" stroke-width="4"/>
+<line x1="205" y1="350" x2="370" y2="20" stroke="#d97706" stroke-width="4"/>
+<!-- B19-P06: d3 has slope 1/2; Delta has slope -2. Same scale as axes. -->
+<line x1="95" y1="350" x2="535" y2="130" stroke="#0f766e" stroke-width="3" stroke-dasharray="8 5"/>
+<line x1="150" y1="20" x2="315" y2="350" stroke="#9333ea" stroke-width="3"/>
+<line x1="260" y1="240" x2="260" y2="350" stroke="#94a3b8" stroke-dasharray="5 5"/>
+<line x1="150" y1="240" x2="260" y2="240" stroke="#94a3b8" stroke-dasharray="5 5"/>
+<circle cx="260" cy="240" r="6" fill="#0f172a"/>
+<text x="272" y="230" font-size="19" fill="#0f172a" font-weight="bold">I(2; 2)</text>
+<text x="395" y="329" font-size="18" fill="#2563eb">d₁: x + y = 4</text>
+<text x="382" y="66" font-size="18" fill="#d97706">d₂: 2x - y = 2</text>
+<text x="382" y="120" font-size="17" fill="#0f766e">d₃: x - 2y + 1 = 0</text>
+<text x="324" y="392" font-size="17" fill="#9333ea">Δ: 2x + y - 6 = 0</text>
+<text x="601" y="356" font-size="17" fill="#334155">x</text><text x="140" y="23" font-size="17" fill="#334155">y</text>
+<text x="130" y="369" font-size="16" fill="#334155">O</text>
+<text x="252" y="369" font-size="14" fill="#475569">2</text><text x="130" y="245" font-size="14" fill="#475569">2</text>
+</svg>

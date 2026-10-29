@@ -188,6 +188,11 @@ jobs:
       - name: Guard THPT first-phase static release
         run: node scripts/test-thpt-static-release.cjs
 
+      - name: Guard G10 ChVII public formative content and held-out readiness boundary
+        run: |
+          node --check docs/assets/javascripts/thpt-chvii-reviewed-formative-v1.js
+          node scripts/test-thpt-g10-chvii-reviewed-stage1.cjs
+
       - name: Guard Self-Learning Math Pages rename compatibility and learner data contracts
         run: |
           node scripts/test-self-learning-math-rename-preflight.cjs
