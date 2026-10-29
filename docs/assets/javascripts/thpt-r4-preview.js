@@ -438,7 +438,7 @@
   });
   // Public formative navigation from the approved D6 help cards only.
   const requestedItem=new URLSearchParams(location.search).get("item");
-  const parsed=/^THPT-G10-B(19|20|21|22|23|24|25)-[CP]\\d{2}$/.exec(requestedItem||"");
+  const parsed=/^THPT-G10-B(19|20|21|22|23|24|25)-[CP]\d{2}$/.exec(requestedItem||"");
   if(parsed){
    const lesson=parsed[1], bank=Number(lesson)>=23?window.THPT_CHVIII_REVIEWED_FORMATIVE:window.THPT_CHVII_REVIEWED_FORMATIVE;
    if(bank?.validate().valid){
