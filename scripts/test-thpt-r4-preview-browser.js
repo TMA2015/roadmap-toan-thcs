@@ -87,6 +87,7 @@ async function ready(page,path){
       "Formative exercises must not claim protected assessment");
     await dlg.locator("[data-thpt-modal-close]").click();
     await page.locator('[data-thpt-open-quiz="b22-core"]').click();
+    await dlg.locator(".thpt-r4-modal-question-nav button").nth(1).click();
     assert((await dlg.innerText()).includes("THPT-G10-B22-P01"),
       "Approved ellipse item B22-P01 must supply mandatory Core coverage via role mapping");
     assert(!(await dlg.innerText()).includes("THPT-G10-B22-C01"),
