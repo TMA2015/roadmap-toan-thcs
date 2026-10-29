@@ -55,7 +55,7 @@ Vậy \(I(2;-3)\) và \(R=5\). Điểm \(M(5;1)\) thuộc đường tròn vì \(
 
 ## 4. Tiếp tục học
 
-- [Bài 22 — Ba đường conic](../bai-22/).
-- [Core và Luyện tập/Vận dụng](../luyen-tap/).
+- [Bài 22 — Ba đường conic](bai-22.md).
+- [Core và Luyện tập/Vận dụng](luyen-tap.md).
 
 <small>Nguồn đối chiếu: SGK KNTT tập 2, trang in 42–46; SBT trang 38–41. Ví dụ do dự án biên soạn.</small>
