@@ -1,6 +1,6 @@
 # THPT G10 ChVII–VIII — Release Engineering Checkpoint · 2026-10-29
 
-STATE: DRAFT_RELEASE_CANDIDATE / NO_MERGE / NO_DEPLOY
+STATE: RELEASE_READY_CONDITIONAL / OWNER_AUTHORIZATION_GRANTED_FOR_PUBLIC_FORMATIVE_ONLY / NOT_YET_DEPLOYED
 BASE_AUTHORING_PR: #624 @ 2d8ec4d9e8dcfd22d970aa19c034449211e67c14
 PACKETS: G10-SGK-CHVII, G10-SGK-CHVIII
 RELEASE_SCOPE: PUBLIC_FORMATIVE_ONLY (NOT FULL_LEARNING_PATH)
@@ -29,3 +29,10 @@ READY_MANIFESTS: 2 / 2 by authoring scope only
 - P1/P2: pending real deployment and physical device acceptance.
 
 Academic PASS of D6 R02 is *only* for those 14 cards; overall CONTENT_READY refers to PUBLIC_FORMATIVE_ONLY. Do not advertise independent Chapter Readiness, Topic completion or Mastery.
+
+## Owner authorization and final release checkpoint, 2026-10-29
+
+- Owner explicitly authorizes ChVII–VIII PUBLIC_FORMATIVE_ONLY merge/deploy **only after exact final-head CI PASS**. No activation of Tự kiểm tra, TOPIC or Mastery.
+- PR #624 source manifest merged to main @ 573fbdd4444f2e5c612f50e902f428b6064f6970. PR #625 retains all canonical 57 formative + 7 Written, reviewed 14 D6 cards and 4 SVG.
+- On previous content HEAD 2de9b30f6793323ac54fd63a840ebebb781ddd2b, THPT Preview #40882054456 and Roadmap PR Quality #40882054200 reported SUCCESS. After final release metadata merge commit, rerun both CI and verify live results before merging.
+- R1/R3/R4 evidence preserved; R2 is conditional on final HEAD tests, R5 granted for exact scope. P1 must be entered after deploy receipt; P2 physical device QA separate.
