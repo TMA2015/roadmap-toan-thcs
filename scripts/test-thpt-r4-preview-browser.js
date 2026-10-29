@@ -86,6 +86,15 @@ async function ready(page,path){
     assert((await dlg.innerText()).includes("Không chấm điểm/mastery"),
       "Formative exercises must not claim protected assessment");
     await dlg.locator("[data-thpt-modal-close]").click();
+    await page.locator('[data-thpt-open-quiz="b19-practice"]').click();
+    assert.equal(await dlg.locator(".thpt-r4-modal-question-nav button").count(),6,
+      "B19 must expose 6 reviewed Practice/Application items, not only stage-one pair");
+    await dlg.locator(".thpt-r4-modal-question-nav button").last().click();
+    assert((await dlg.innerText()).includes("THPT-G10-B19-P06"),
+      "B19 advanced Practice must keep its existing canonical ID");
+    assert.equal(await dlg.locator("details[open]").count(),0,
+      "Extended Practice hints/answers must remain collapsed by default");
+    await dlg.locator("[data-thpt-modal-close]").click();
     await page.locator('[data-thpt-open-quiz="b22-core"]').click();
     await dlg.locator(".thpt-r4-modal-question-nav button").nth(1).click();
     assert((await dlg.innerText()).includes("THPT-G10-B22-P01"),
@@ -93,6 +102,23 @@ async function ready(page,path){
     assert(!(await dlg.innerText()).includes("THPT-G10-B22-C01"),
       "Specialist eccentricity item B22-C01 must stay outside mandatory SGK Core");
     await dlg.locator("[data-thpt-modal-close]").click();
+    await page.locator('[data-thpt-open-quiz="b22-practice"]').click();
+    assert.equal(await dlg.locator(".thpt-r4-modal-question-nav button").count(),7,
+      "B22 should contain 6 normal Practice + 1 optional specialist item");
+    await dlg.locator(".thpt-r4-modal-question-nav button").last().click();
+    assert((await dlg.innerText()).includes("THPT-G10-B22-C01")&&
+      (await dlg.innerText()).includes("Chuyên sâu · tự chọn"),
+      "Reviewer-reclassified eccentricity item must be optional, not mandatory Core");
+    await dlg.locator("[data-thpt-modal-close]").click();
+    await ready(page,"thu-vien/tu-luan-chuong-vii/");
+    assert.equal(await page.locator('[data-thpt-written-canonical]').count(),4,
+      "Four ChVII Written cards must be independently accessible");
+    assert.equal(await page.locator('.thpt-r4-written-card[data-thpt-kind="anchor"]').count(),1,
+      "Anchor is a tag on one Written item, not an extra duplicate");
+    assert.equal(await page.locator('.thpt-r4-written-card details[open]').count(),0,
+      "All ChVII Written solutions and rubrics must start closed");
+    assert.equal(await page.locator('.thpt-r4-written-card details').count(),4,
+      "Each Written item must retain one reviewed solution/rubric");
     await ready(page,"sgk/chuong-vii/tu-kiem-tra-chuong/");
     assert.equal(await page.locator("[data-thpt-secure-readiness]").count(),0);
     assert.equal(await page.locator("[data-thpt-open-quiz]").count(),0,
