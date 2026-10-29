@@ -15,7 +15,7 @@
 2. Checks **no canonical ID duplication** across four chapters, no held-out `Rxx/RDxx` IDs in THPT public pages/assets, no `data-mastery-credit="true"`, no accidental protected assessment client, and ChVI remains a **four-question TECHNICAL_DEMO_ONLY**. ChVII/VIII/IX Chapter Readiness pages remain informational with **0 activated** questions.
 3. CI workflow now executes the guard **before MkDocs build** and **after one-site assembly** (`--built`), without publishing anything.
 4. Updated the ChIX stage3 source QA to accept either original THCS root or the separately approved PR #617 root selector, while **requiring preservation of the real THCS homepage**. No THCS files changed.
-5. Independent GitHub source inspection reconciled **116/116 distinct IDs**; the new exact-head CI and browser checks remain a separate evidence gate.
+5. Independent GitHub source inspection reconciled **116/116 distinct IDs**; CI run #40834803470 on exact functional code commit `a7dd808d7cbb239a9419adffb2f0c2d07fa45b30` completed SUCCESS: source guard, built-site guard, MkDocs assembly, Chromium desktop/iPhone/iPad simulation, and old/new GitHub Pages path smoke. This is not real physical Safari/UAT.
 
 ## Academic scope, not inferred from CI
 
@@ -30,8 +30,8 @@
 ```text
 D6_SOURCE_CANONICAL_RECONCILIATION|116_UNIQUE_PUBLIC_IDS_CONFIRMED
 D6_PUBLIC_HELDOUT_SOURCE_GUARD|IMPLEMENTED
-D6_PUBLIC_HELDOUT_BUILT_GUARD|CI_PENDING
-D6_EXACT_HEAD_BROWSER_QA|CI_PENDING
+D6_PUBLIC_HELDOUT_BUILT_GUARD|PASS_CI_40834803470
+D6_EXACT_FUNCTIONAL_CODE_BROWSER_QA|PASS_CI_40834803470
 D6_REAL_DEVICE_SAFARI|NOT_SIGNED_OFF
 CHVI_HELDOUT_READINESS|INACTIVE
 CHVII_VIII_IX_HELDOUT_READINESS|INACTIVE
@@ -40,4 +40,4 @@ OWNER_RELEASE_APPROVAL_FOR_NEW_CHAPTERS|NO
 MERGE_DEPLOY_BY_THIS_RUN|NO
 ```
 
-**Next:** review exact-head CI and reconcile #614–#616 against the separately merged #617 root selector before any release discussion; independently validate real Safari/mobile and source-to-render parity. Do not upload private Readiness or award Mastery.
+**Next:** reconcile #614–#616 against the separately merged #617 root selector before any release discussion; independently validate real Safari/mobile and source-to-render parity. The checkpoint-only commit after CI changes documentation, not the tested functional source. Do not upload private Readiness or award Mastery.
