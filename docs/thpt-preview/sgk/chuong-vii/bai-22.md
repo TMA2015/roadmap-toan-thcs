@@ -37,7 +37,7 @@ Parabol có đỉnh \(O(0;0)\), tiêu điểm \(F(p/2;0)\), đường chuẩn \(
 
 ## 5. Tiếp tục học
 
-- [Core và Luyện tập/Vận dụng Chương VII](../luyen-tap/).
-- [Tổng quan Chương VII](../).
+- [Core và Luyện tập/Vận dụng Chương VII](luyen-tap.md).
+- [Tổng quan Chương VII](../chuong-vii.md).
 
 <small>Nguồn đối chiếu: SGK KNTT tập 2, trang in 47–56; SBT trang 41–45. Không dùng đạo hàm hoặc nội dung trục quay ngoài phạm vi đã kiểm chứng.</small>
