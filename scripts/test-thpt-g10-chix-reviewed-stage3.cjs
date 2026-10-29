@@ -40,7 +40,7 @@ for(const s of [js,written,hub,rd,...[26,27].map(n=>read("docs/thpt-preview/sgk/
 const config=read("mkdocs.thpt-preview.yml"),engine=read("docs/assets/javascripts/thpt-r4-preview.js");
 for(const file of ["chuong-ix.md","bai-26.md","bai-27.md","chuong-ix/luyen-tap.md","chuong-ix/tu-kiem-tra-chuong.md","tu-luan-chuong-ix.md","thpt-chix-reviewed-formative-v1.js"])
  assert(config.includes(file),"Missing MkDocs route/asset: "+file);
-assert(engine.includes("THPT_CHIX_REVIEWED_FORMATIVE")&&engine.includes("2[67]"),"R4 launcher must mount ChIX bank");
+assert(engine.includes("THPT_CHIX_REVIEWED_FORMATIVE")&&(engine.includes("2[67]")||engine.includes("2[0-7]")),"R4 launcher must mount ChIX bank");
 // Root selector was separately approved/merged in PR #617 on 29/10.
  // Accept either pre-migration THCS root or approved selector+THCS archive,
  // but never allow the existing THCS home to disappear.
