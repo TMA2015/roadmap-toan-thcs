@@ -452,6 +452,7 @@
 
  // THPT route-only navigation behavior, preserving MkDocs Material's native
  // drawer and link semantics. All nested sidebar sections start collapsed.
+ let sidebarBreakpointObserverSet=false;
  function initTHPTPrimarySidebar(){
   const path=location.pathname;
   const isTHPT=/\/(?:thpt-preview|thpt)\//.test(path);
@@ -463,6 +464,29 @@
   const primary=sidebar?.querySelector("nav.md-nav--primary");
   if(!primary)return;
   const groups=[...primary.querySelectorAll("li.md-nav__item--nested")];
+  // Material uses a stacked mobile drawer below this breakpoint. Nested
+  // input/label elements are native navigation controls on iPad/iPhone,
+  // not accordion rows. Resetting them hides the three top-level names.
+  const compactDrawer=window.matchMedia("(max-width: 76.234375em)");
+  if(!sidebarBreakpointObserverSet){
+   sidebarBreakpointObserverSet=true;
+   const reinit=()=>initTHPTPrimarySidebar();
+   if(compactDrawer.addEventListener)compactDrawer.addEventListener("change",reinit);
+   else compactDrawer.addListener(reinit);
+  }
+  if(compactDrawer.matches){
+   groups.forEach(li=>{
+    if(!li.classList.contains("thpt-r4-collapsible"))return;
+    const nested=li.querySelector(":scope > nav.md-nav");
+    const native=li.querySelector(":scope > input.md-nav__toggle");
+    li.querySelector(":scope > button.thpt-r4-sidebar-toggle")?.remove();
+    li.classList.remove("thpt-r4-collapsible");
+    if(nested)nested.hidden=false;
+    if(native)native.checked=li.classList.contains("md-nav__item--active");
+    delete li.dataset.thptR4SidebarPath;
+   });
+   return;
+  }
   groups.forEach((li,index)=>{
    const nested=li.querySelector(":scope > nav.md-nav");
    if(!nested)return;
@@ -485,7 +509,7 @@
     button.setAttribute("aria-controls",nested.id);
     li.insertBefore(button,nested);
     button.addEventListener("click",event=>{event.preventDefault();event.stopPropagation();update(nested.hidden)});
-    native?.addEventListener("change",()=>update(native.checked));
+    native?.addEventListener("change",()=>{if(!compactDrawer.matches)update(native.checked)});
     if(!native&&label?.tagName==="LABEL"){
      label.addEventListener("click",event=>{event.preventDefault();update(nested.hidden)});
     }
