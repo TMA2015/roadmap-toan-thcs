@@ -60,6 +60,8 @@ assert.equal(new Set([...ids,...writtenIds]).size,36,"32 C/P + 4 Written must st
 assert.equal((written.match(/data-thpt-kind="anchor"/g)||[]).length,1,
  "Anchor is a single tag on one Written item");
 assert.equal((written.match(/<details>/g)||[]).length,4,"All solutions and rubrics must be collapsed initially");
+assert.equal((written.match(/<span class="arithmatex">\\\(/g)||[]).length,57,
+ "All 57 Written inline formula strings must be MathJax-wrapped in raw HTML");
 const hub=read("docs/thpt-preview/sgk/chuong-vii/luyen-tap.md");
 for(const lesson of required)for(const role of ["core","practice"])
  assert(hub.includes('data-thpt-open-quiz="b'+lesson+'-'+role+'"'),
