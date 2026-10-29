@@ -23,6 +23,8 @@ jobs:
           python-version: '3.x'
       - name: Install MkDocs
         run: pip install mkdocs-material
+      - name: Validate THPT academic-to-release checklist
+        run: node scripts/test-thpt-release-queue.cjs
       - name: Validate Math-only GitHub Actions isolation
         run: node scripts/test-math-actions-isolation-r1.js
       - name: Validate curriculum dependencies
