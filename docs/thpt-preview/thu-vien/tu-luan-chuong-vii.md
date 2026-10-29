@@ -8,6 +8,7 @@
 <section class="thpt-r4-written-card" data-thpt-filter-item data-thpt-kind="normal" data-thpt-filter-text="lớp 10 chương VII bài 19 phương trình đường thẳng tự luận " data-thpt-written-canonical="THPT-G10-CHVII-W19-01" data-thpt-exposure-role="SGK_WRITTEN" id="thpt-g10-chvii-w19-01">
 <p class="thpt-r4-eyebrow">TỰ LUẬN · TOÁN 10 · CHƯƠNG VII</p>
 <h2>Bài 19 · Phương trình đường thẳng (6 điểm tự đối chiếu)</h2>
+<p><a class="thpt-r4-remediation-link" href="../../sgk/chuong-vii/bai-19/">↶ Ôn lại kiến thức Bài 19</a></p>
 <p>Trong mặt phẳng tọa độ, cho <span class="arithmatex">\(A(2;-1)\)</span>, <span class="arithmatex">\(B(5;5)\)</span>.</p>
 <p>(a) Viết phương trình tổng quát đường thẳng <span class="arithmatex">\(AB\)</span>.</p>
 <p>(b) Viết một phương trình tham số.</p>
@@ -20,6 +21,7 @@
 <section class="thpt-r4-written-card" data-thpt-filter-item data-thpt-kind="normal" data-thpt-filter-text="lớp 10 chương VII bài 20 góc và khoảng cách tự luận " data-thpt-written-canonical="THPT-G10-CHVII-W20-01" data-thpt-exposure-role="SGK_WRITTEN" id="thpt-g10-chvii-w20-01">
 <p class="thpt-r4-eyebrow">TỰ LUẬN · TOÁN 10 · CHƯƠNG VII</p>
 <h2>Bài 20 · Góc và khoảng cách (6 điểm tự đối chiếu)</h2>
+<p><a class="thpt-r4-remediation-link" href="../../sgk/chuong-vii/bai-20/">↶ Ôn lại kiến thức Bài 20</a></p>
 <p>Cho <span class="arithmatex">\(d_1:(m-1)x+2y-3=0\)</span>, <span class="arithmatex">\(d_2:x-y+1=0\)</span>.</p>
 <p>(a) Tìm <span class="arithmatex">\(m\)</span> để hai đường vuông góc.</p>
 <p>(b) Với <span class="arithmatex">\(m\)</span> vừa tìm, tìm giao điểm của hai đường.</p>
@@ -31,6 +33,7 @@
 <section class="thpt-r4-written-card" data-thpt-filter-item data-thpt-kind="anchor" data-thpt-filter-text="lớp 10 chương VII bài 21 đường tròn và tiếp tuyến tự luận mỏ neo" data-thpt-written-canonical="THPT-G10-CHVII-W21-ANCHOR-01" data-thpt-exposure-role="SGK_WRITTEN" id="thpt-g10-chvii-w21-anchor-01">
 <p class="thpt-r4-eyebrow">TỰ LUẬN · TOÁN 10 · CHƯƠNG VII</p>
 <h2>Bài 21 · Đường tròn và tiếp tuyến (8 điểm tự đối chiếu)</h2>
+<p><a class="thpt-r4-remediation-link" href="../../sgk/chuong-vii/bai-21/">↶ Ôn lại kiến thức Bài 21</a></p>
 <p>Cho tam giác <span class="arithmatex">\(A(0;0)\)</span>, <span class="arithmatex">\(B(6;0)\)</span>, <span class="arithmatex">\(C(0;8)\)</span>.</p>
 <p>(a) Chứng minh tam giác vuông tại <span class="arithmatex">\(A\)</span>.</p>
 <p>(b) Xác định đường tròn đi qua ba điểm, tâm và bán kính.</p>
@@ -43,6 +46,7 @@
 <section class="thpt-r4-written-card" data-thpt-filter-item data-thpt-kind="normal" data-thpt-filter-text="lớp 10 chương VII bài 22 elip tự luận " data-thpt-written-canonical="THPT-G10-CHVII-W22-01" data-thpt-exposure-role="SGK_WRITTEN" id="thpt-g10-chvii-w22-01">
 <p class="thpt-r4-eyebrow">TỰ LUẬN · TOÁN 10 · CHƯƠNG VII</p>
 <h2>Bài 22 · Elip (6 điểm tự đối chiếu)</h2>
+<p><a class="thpt-r4-remediation-link" href="../../sgk/chuong-vii/bai-22/">↶ Ôn lại kiến thức Bài 22</a></p>
 <p>Một elip tâm <span class="arithmatex">\(O\)</span>, trục lớn trùng <span class="arithmatex">\(Ox\)</span>, độ dài trục lớn bằng <span class="arithmatex">\(6\)</span>, các tiêu điểm là <span class="arithmatex">\((-\sqrt5;0)\)</span>, <span class="arithmatex">\((\sqrt5;0)\)</span>.</p>
 <p>(a) Lập phương trình chính tắc.</p>
 <p>(b) Tìm tọa độ hai đỉnh trên trục nhỏ và phương trình tiếp tuyến ngang tại đỉnh phía trên (giải bằng hình học, không yêu cầu công thức đạo hàm).</p>
