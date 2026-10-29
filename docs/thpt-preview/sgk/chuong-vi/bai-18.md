@@ -1,7 +1,7 @@
 # Bài 18. Phương trình quy về phương trình bậc hai
 
-<div class="thpt-r4-screen" data-thpt-r4><p class="thpt-r4-eyebrow">TOÁN 10 · CHƯƠNG VI · HỌC LIỆU ĐÃ REVIEW</p>
-<p class="thpt-r4-lead"><strong>NOTEBOOKLM_CHVI_SNAPSHOT_PASS · TÍCH HỢP ĐANG QA.</strong> Nội dung học thuật Bài 18 trong batch SGK Chương VI đã được NotebookLM PASS ngày 28/10/2026; trang đang đối chiếu với bản snapshot. Core/Luyện tập dùng canonical item đã review; không ghi điểm hoặc tiến độ.</p>
+<div class="thpt-r4-screen" data-thpt-r4><p class="thpt-r4-eyebrow">TOÁN 10 · CHƯƠNG VI · BÀI 18</p>
+<p class="thpt-r4-lead">Học cách giải phương trình chứa căn, xét điều kiện xác định và loại nghiệm không thỏa phương trình ban đầu.</p>
 <nav class="thpt-r4-lesson-tabs" aria-label="Điều hướng Chương VI"><a href="../">Chương VI</a><a href="../bai-17/">Bài 17</a><span class="is-current" aria-current="page">Bài 18 · Phương trình chứa căn</span></nav></div>
 
 ## 1. Vì sao phải kiểm tra nghiệm?
@@ -90,7 +90,7 @@ x^2+16=(2x-1)^2
 
 Hai nghiệm ứng viên là \(x=3\) và \(x=-\frac53\). Chỉ \(x=3\) đạt điều kiện. Thử lại: \(\sqrt{3^2+4^2}=5=2\cdot3-1\). Vậy cạnh góc vuông cần tìm dài \(\boxed{3\text{ m}}\).
 
-**Liên hệ S1:** SGK Bài 18, trang in **26–27**, có vận dụng hình học/quãng đường với biểu thức căn; SBT trang **19–21** bổ sung bài điều kiện có nghiệm và một tình huống hình học. Hai ví dụ trên là nội dung **tự biên soạn, đã được NotebookLM review trong snapshot Chương VI**, dùng để rèn điều kiện căn thức và thử nghiệm ứng viên.
+**Liên hệ SGK/SBT:** Những tình huống hình học ở trên giúp luyện cách đặt điều kiện cho căn thức và thử lại nghiệm ứng viên trong phương trình ban đầu.
 
 ## 4. Những sai lầm thường gặp
 
@@ -99,7 +99,7 @@ Hai nghiệm ứng viên là \(x=3\) và \(x=-\frac53\). Chỉ \(x=3\) đạt đ
 - **Quên điều kiện của biến và việc thử lại:** nghiệm đại số có thể làm căn vô nghĩa.
 - **Rút gọn căn bậc hai sai:** với \(u\in\mathbb R\), ta có \(\sqrt{u^2}=|u|\), **không tự thay bằng \(u\)** khi chưa biết dấu của \(u\). Quy tắc này đặc biệt quan trọng nếu biểu thức dưới căn chứa bình phương của một đa thức.
 
-[Mở khu vực **Core và Luyện tập/Vận dụng của Chương VI**](luyen-tap.md) — modal Bài 18 lấy **6 item canonical Core/Luyện tập đã review**, lời giải tự mở và chưa ghi điểm/mastery.
+[Chuyển đến Luyện tập và Vận dụng Chương VI](../luyen-tap/) để làm bài củng cố. Bạn có thể mở gợi ý và lời giải sau khi tự làm.
 
 ## 5. Tự luyện
 
@@ -114,5 +114,3 @@ Hai nghiệm ứng viên là \(x=3\) và \(x=-\frac53\). Chỉ \(x=3\) đạt đ
 <li><span class="arithmatex">\(x+1\ge0\)</span>. Bình phương được <span class="arithmatex">\(x^2+2x+5=(x+1)^2=x^2+2x+1\)</span>, mâu thuẫn <span class="arithmatex">\(5=1\)</span>. Do đó vô nghiệm.</li>
 </ol></details>
 
-!!! warning "Giới hạn"
-    Đây là trang kiến thức do dự án tự soạn, **đã đối chiếu trực tiếp SGK trang 25–27 và SBT trang 19–21; snapshot đã được NotebookLM thẩm định PASS**. Câu Core/Luyện tập và Written có ID canonical, nhưng Tự kiểm tra chính thức chưa kích hoạt; chưa coi bản trang GitHub là phát hành chính thức.

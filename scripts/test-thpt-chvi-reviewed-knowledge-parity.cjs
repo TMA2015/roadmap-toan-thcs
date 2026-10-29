@@ -29,7 +29,7 @@ const checks={
 };
 for(const [lesson,required] of Object.entries(checks)){
  const src=read("docs/thpt-preview/sgk/chuong-vi/bai-"+lesson+".md");
- assert(src.includes("NOTEBOOKLM_CHVI"),"Missing reviewed snapshot qualifier B"+lesson);
+ assert(!/NOTEBOOKLM|ACADEMIC_CLEARANCE|TÍCH HỢP ĐANG QA/.test(src),"Internal review metadata exposed to student in B"+lesson);
  for(const term of required)assert(src.toLocaleLowerCase("vi").includes(term.toLocaleLowerCase("vi")),
    "B"+lesson+" website knowledge source lacks expected reviewed concept: "+term);
  assert(!src.includes("data-thpt-assessment=\"sgk-chapter\""),
