@@ -209,7 +209,7 @@
   {
     "item_id": "THPT-G10-B23-P05",
     "lesson": "23",
-    "role": "ADVANCED",
+    "role": "PRACTICE",
     "skill": "COUNT_CASES_NO_REPEAT",
     "stem": "Từ các chữ số \\(0,1,2,3,4\\), lập số tự nhiên có ba chữ số khác nhau và là số chẵn. Có bao nhiêu số?",
     "solution": "Đáp án: \\(30\\) số.\nLời giải: Chia hai trường hợp rời nhau. (i) Hàng đơn vị bằng 0: hàng trăm có 4 lựa chọn, hàng chục còn 3, được \\(4\\cdot3=12\\). (ii) Hàng đơn vị là 2 hoặc 4: có 2 lựa chọn; hàng trăm chọn trong ba chữ số khác 0 và khác chữ số đơn vị; hàng chục còn 3 lựa chọn (có thể là 0). Được \\(2\\cdot3\\cdot3=18\\). Tổng \\(12+18=30\\).",
@@ -220,7 +220,7 @@
   {
     "item_id": "THPT-G10-B23-P06",
     "lesson": "23",
-    "role": "INTERMEDIATE",
+    "role": "PRACTICE",
     "skill": "COUNT_MIXED_SUM_PRODUCT",
     "stem": "Một khách có thể chọn đúng một cách đi lại: 3 tuyến xe đạp khác nhau hoặc 2 tuyến xe buýt khác nhau. Nếu đi xe buýt, mỗi tuyến có 2 loại vé. Nếu đi xe đạp thì không chọn vé. Có bao nhiêu phương án hoàn chỉnh?",
     "solution": "Đáp án: \\(7\\) phương án.\nLời giải: Phương án xe đạp: 3. Phương án xe buýt: \\(2\\) tuyến nhân \\(2\\) loại vé bằng \\(4\\). Hai nhóm lựa chọn loại trừ nhau, tổng \\(3+4=7\\).",
@@ -231,7 +231,7 @@
   {
     "item_id": "THPT-G10-B24-P05",
     "lesson": "24",
-    "role": "ADVANCED",
+    "role": "PRACTICE",
     "skill": "COMBINATION_AT_LEAST_ONE",
     "stem": "Chọn nhóm 3 người từ 6 người khác nhau, trong đó có hai người được chỉ định A và B. Có bao nhiêu nhóm chứa ít nhất một trong hai người A, B?",
     "solution": "Đáp án: \\(16\\) nhóm.\nLời giải: Tổng số nhóm \\(\\binom63=20\\). Nhóm không có A lẫn B chỉ chọn 3 trong 4 người còn lại: \\(\\binom43=4\\). Vậy \\(20-4=16\\).",
@@ -242,7 +242,7 @@
   {
     "item_id": "THPT-G10-B24-P06",
     "lesson": "24",
-    "role": "ADVANCED",
+    "role": "PRACTICE",
     "skill": "PERMUTATION_ADJACENT",
     "stem": "Xếp 5 học sinh khác nhau thành một hàng, biết hai bạn A và B phải đứng cạnh nhau. Có bao nhiêu cách?",
     "solution": "Đáp án: \\(48\\) cách.\nLời giải: Gộp A và B thành một khối, cùng 3 học sinh còn lại là 4 đối tượng phân biệt, có \\(4!=24\\) cách. Trong khối A/B có 2 thứ tự, tổng \\(24\\cdot2=48\\).",
