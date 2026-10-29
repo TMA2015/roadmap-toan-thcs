@@ -15,3 +15,10 @@
 - Technical release candidate #630 has same original canonical bank, Written/rubric, two SVG and four R01 D6. R1–R4 require final exact-head QA and R5 owner authorization. No merge/deploy assumed from this authoring handoff.
 
 Một packet canonical duy nhất trên mỗi phạm vi; không nhân đôi câu hỏi, không mở Readiness/Mastery chỉ vì gói `CONTENT_READY`. Trạng thái thực tế từng chương tra trong [REGISTER](../REGISTER.md).
+
+
+## Authoring candidate B07–B08 (Chương IV) — chưa phát hành
+
+- [Chương IV, Bài 7–8](G10-SGK-CHIV.md): `PUBLIC_FORMATIVE_ONLY`, 10 outcome, 6 ví dụ, 16 formative + 2 Written, 2 SVG, 4 D6 HELP_ID.
+- NotebookLM R01 độc lập 18/18 Academic PASS, A1–A7 đã khóa vào source blob `42b206e31421b33860a1bf697d2d04b7aba992cf`; [evidence](../CHIV_B07_B08_PUBLIC_FORMATIVE_A1A7_EVIDENCE_20261029.md). Đây chỉ là manifest trên Draft PR #634, chưa merge vào main.
+- Reviewer P2: nhánh phát hành phải đăng ký 18 ID thực tế, kiểm trùng trên current main và thử SVG trên di động. R1–R5 chưa thực hiện, không cấp quyền phát hành. B09–B11 và Tự kiểm tra cuối Chương IV/TOPIC chưa được review.
