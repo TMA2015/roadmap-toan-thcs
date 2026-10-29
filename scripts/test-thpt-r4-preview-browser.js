@@ -471,8 +471,8 @@ async function ready(page,path){
       "B"+lesson+" entire lesson must have all inline math wrappers");
     assert.equal(await article.locator("div.arithmatex").count(),displayCount,
       "B"+lesson+" entire lesson must render all display math");
-    const details=article.locator("details");
-    assert.equal(await details.count(),1,"B"+lesson+" hidden solution preserved");
+    const details=article.locator("details:not(.thpt-r4-pedagogical-note)");
+    assert.equal(await details.count(),1,"B"+lesson+" hidden solution preserved separately from extension note");
     assert(!(await details.evaluate(el=>el.open)),"B"+lesson+" self-check must be collapsed by default");
     assert.equal(await details.locator("span.arithmatex").count(),9,
       "B"+lesson+" hidden solution requires all nine math wrappers");
@@ -491,8 +491,8 @@ async function ready(page,path){
     await ready(page,"sgk/chuong-vi/bai-"+lesson+"/");
     assert((await page.locator("h1").first().textContent()).includes(title),"Wrong draft heading B"+lesson);
     const body=await page.locator("article").textContent();
-    assert(body.includes("NOTEBOOKLM_CHVI_SNAPSHOT_PASS"),"Reviewed B"+lesson+" status receipt missing from lesson preview");
-    assert(body.includes("TÍCH HỢP ĐANG QA"),"B"+lesson+" must distinguish academically reviewed snapshot from website QA");
+    assert(!/NOTEBOOKLM|ACADEMIC_CLEARANCE|TÍCH HỢP ĐANG QA/.test(body),"B"+lesson+" exposes internal review metadata");
+    assert((await page.locator(".thpt-r4-lead").first().textContent()).length<190,"B"+lesson+" has verbose admin preface");
     assert((await page.locator("[data-thpt-readiness]").count())===0,"Academic PASS must not activate learner mastery readiness inside lesson B"+lesson);
     const w=await page.evaluate(()=>({document:document.documentElement.scrollWidth,viewport:innerWidth}));
     assert(w.document<=w.viewport+20,"Draft B"+lesson+" horizontal overflow");
@@ -503,7 +503,15 @@ async function ready(page,path){
   assert((await page.locator("article details").count())===8,"Reviewed cumulative source must retain eight independently solvable explanations");
   assert(!(await page.locator("article details").first().getAttribute("open")),"End-chapter answers should start collapsed");
   await ready(page,"sgk/chuong-vi/bai-16/");
-  assert((await page.locator("article").textContent()).includes("ACADEMIC_CLEARANCE: YES"),"Existing B16 academic receipt unintentionally lost");
+  assert(!(await page.locator("article").textContent()).includes("ACADEMIC_CLEARANCE"),"B16 shows internal QA approval");
+  await ready(page,"sgk/chuong-vi/bai-17/");
+  const scope=page.locator("details.thpt-r4-pedagogical-note");
+  assert.equal(await scope.count(),1,"B17 should offer one compact optional extension note");
+  assert(!(await scope.evaluate(el=>el.open)),"B17 scope note must begin collapsed");
+  await scope.locator("summary").click();
+  assert(await scope.evaluate(el=>el.open),"B17 scope note should open on student choice");
+  await scope.locator("summary").click();
+  assert(!(await scope.evaluate(el=>el.open)),"B17 scope note should close");
 
   // Static website: do not mount login-dependent assessments or learners.
   assert.equal(await page.locator("[data-thpt-secure-readiness]").count(),0,

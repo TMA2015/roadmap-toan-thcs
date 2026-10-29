@@ -201,7 +201,9 @@ jobs:
         run: node scripts/assemble-thpt-site.cjs
 
       - name: Guard ChVI display math B15–B18
-        run: node scripts/test-thpt-chvi-math-block-render.cjs --built
+        run: |
+          node scripts/test-thpt-chvi-math-block-render.cjs --built
+          node scripts/test-thpt-chvi-student-notes.cjs --built
 
       - name: Validate CĐ25 built display math
         run: node scripts/test-topic25-math-render.js --built

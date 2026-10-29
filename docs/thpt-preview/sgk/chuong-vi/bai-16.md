@@ -1,13 +1,13 @@
 # Bài 16. Hàm số bậc hai
 
 <div class="thpt-r4-screen" data-thpt-r4>
-<p class="thpt-r4-eyebrow">TOÁN 10 · CHƯƠNG VI · BÀI MẪU R4</p>
-<p class="thpt-r4-lead">Bản xem thử cách học từng bài SGK KNTT. Nội dung học thuật mẫu Bài 16 đã được NotebookLM tái thẩm định R4 Postfix và xác nhận ACADEMIC_CLEARANCE: YES (27/10/2026). Đây vẫn là bản xem thử giao diện; bài tương tác không ghi điểm hoặc lưu lịch sử.</p>
+<p class="thpt-r4-eyebrow">TOÁN 10 · CHƯƠNG VI · BÀI 16</p>
+<p class="thpt-r4-lead">Khám phá hàm số bậc hai qua đồ thị parabol, đỉnh, trục đối xứng, bảng biến thiên và các bài toán thực tế.</p>
 <nav class="thpt-r4-lesson-tabs" aria-label="Điều hướng Chương VI">
 <a href="../">Tổng quan Chương VI</a>
-<a href="../bai-15/">Bài 15 · Hàm số (nháp)</a>
+<a href="../bai-15/">Bài 15 · Hàm số</a>
 <span class="is-current" aria-current="page">Bài 16 · Hàm số bậc hai</span>
-<a href="../bai-17/">Bài 17 · Dấu tam thức (nháp)</a>
+<a href="../bai-17/">Bài 17 · Dấu tam thức</a>
 </nav>
 </div>
 
@@ -85,8 +85,6 @@ Hàm số bậc hai có thể biểu diễn diện tích hình chữ nhật khi 
 
 ### Mở rộng mô hình thực tế từ phần cuối Bài 16
 
-!!! warning "Phần học liệu bổ sung đang chờ review delta học thuật"
-    **NOTEBOOKLM_CHVI_BATCH_20261028_DELTA_PASS — SOURCE_SCOPE_DELTA_B16.** Nội dung dưới đây được biên soạn thêm từ các chủ đề minh họa trong SGK Toán 10 KNTT tập 2 **trang in 17–18** và SBT tập 2 **trang in 15**. Những trang này nằm ngoài receipt SGK 11–16/SBT 10–14 trong biên bản NotebookLM Postfix trước đó. Hai ví dụ dưới đây do dự án **tự soạn**, không chép nguyên bài SGK/SBT; phần mở rộng đã được NotebookLM thẩm định PASS trong gói Chương VI ngày 28/10/2026. Kết quả PASS cũ cho R4 Postfix vẫn được bảo lưu theo đúng snapshot riêng. Chưa có cấp phép phát hành website.
 
 **Ví dụ bổ sung A — Chuyển động theo phương thẳng đứng.** Bỏ qua sức cản không khí, một vật được ném lên từ mặt đất với vận tốc đầu \(19{,}6\;\text{m/s}\); lấy \(g=9{,}8\;\text{m/s}^2\). Độ cao \(h\) (m) theo thời gian \(t\) (giây) là
 
@@ -108,7 +106,5 @@ Do đó doanh thu lớn nhất theo mô hình là \(9000\) nghìn đồng, tức
 
 *Điều cần nắm:* Số lượng và đơn giá phải đúng đơn vị; miền \(0\le x\le60\) bảo đảm giá không âm và nhu cầu dự đoán không âm. Đây là một mô hình tuyến tính hóa giả định, không phải dự báo kinh tế thực tế.
 
-Hai ví dụ củng cố cách tìm cực trị từ dạng đỉnh. **Bộ bài vận dụng nguồn SBT 6.18–6.20** (trang in 15) bổ sung các tình huống chuyển động và doanh thu; khi biên soạn ngân hàng bài, cần tạo câu hỏi gốc/biến thể hợp pháp, mapping về đúng outcome và chưa trộn trực tiếp vào Readiness không kiểm soát tiếp xúc đáp án.
+Hai ví dụ củng cố cách tìm giá trị lớn nhất, nhỏ nhất từ dạng đỉnh của parabol. Khi vận dụng mô hình thực tế, cần kiểm tra **điều kiện và đơn vị** của các đại lượng.
 
-!!! warning "Chỉ là bài học trình diễn"
-    Biên bản NotebookLM R4 Postfix đã xác nhận học thuật PASS cho riêng bài mẫu này (5/5 mục tiêu, 5/5 item). Nghiệm thu giao diện trên thiết bị thực tế và phê duyệt phát hành vẫn là các bước riêng; bản mẫu không ghi nhận tiến độ.

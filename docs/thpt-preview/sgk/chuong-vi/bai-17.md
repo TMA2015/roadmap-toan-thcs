@@ -1,8 +1,8 @@
 # Bài 17. Dấu của tam thức bậc hai
 
 <div class="thpt-r4-screen" data-thpt-r4>
-<p class="thpt-r4-eyebrow">TOÁN 10 · CHƯƠNG VI · HỌC LIỆU ĐÃ REVIEW</p>
-<p class="thpt-r4-lead"><strong>NOTEBOOKLM_CHVI_SNAPSHOT_PASS · TÍCH HỢP ĐANG QA.</strong> Học liệu Bài 17 trong batch SGK Chương VI đã được NotebookLM review PASS ngày 28/10/2026; trang hiện tại đang được đồng bộ/đối chiếu lại với snapshot đã duyệt. Core và Luyện tập lấy item đã review qua cùng ID; không ghi điểm hoặc mastery.</p>
+<p class="thpt-r4-eyebrow">TOÁN 10 · CHƯƠNG VI · BÀI 17</p>
+<p class="thpt-r4-lead">Tìm hiểu dấu của tam thức bậc hai, bảng xét dấu và cách giải bất phương trình bằng định lí về dấu.</p>
 <nav class="thpt-r4-lesson-tabs" aria-label="Điều hướng Chương VI"><a href="../">Chương VI</a><a href="../bai-16/">Bài 16</a><span class="is-current" aria-current="page">Bài 17 · Dấu tam thức</span><a href="../bai-18/">Bài 18</a></nav>
 </div>
 
@@ -84,10 +84,12 @@ x^2-2(m+1)x+m^2+3>0
 
 Suy ra \(\boxed{m<1}\). Nếu \(m=1\), tam thức có nghiệm kép và bằng \(0\) tại một điểm nên **không** thỏa dấu \(>\).
 
-!!! note "Ranh giới học thuật"
-    Phần tham số là **mở rộng luyện tập** được định hướng bởi SBT Bài 17 trang in 17–18 (bài toán nghiệm, dấu bất phương trình với tham số), không tự coi là Core bắt buộc của SGK. Ví dụ và lời giải do dự án tự biên soạn, đã được NotebookLM thẩm định trong snapshot Chương VI ngày 28/10/2026; website còn QA riêng.
+<details class="thpt-r4-pedagogical-note">
+<summary>Lưu ý: Kiến thức mở rộng về tham số</summary>
+<p>Phần bất phương trình có tham số là nội dung luyện tập mở rộng, không phải kiến thức Core bắt buộc của SGK. Các ví dụ ở trên giúp rèn kỹ năng xét dấu.</p>
+</details>
 
-[Mở khu vực **Core và Luyện tập/Vận dụng của Chương VI**](luyen-tap.md) — hai thẻ Bài 17 hiện mở **6 item canonical đã review** theo Core/Luyện tập/Vận dụng, có gợi ý/lời giải tự mở; không ghi điểm hay lịch sử học sinh.
+[Chuyển đến Luyện tập và Vận dụng Chương VI](luyen-tap.md) để làm bài củng cố. Bạn có thể mở gợi ý và lời giải sau khi tự làm.
 
 ## 4. Tự luyện
 
@@ -109,5 +111,3 @@ Suy ra \(\boxed{m<1}\). Nếu \(m=1\), tam thức có nghiệm kép và bằng \
 - Bỏ quên nghiệm kép hoặc thêm nghiệm ở bất phương trình dấu \(<\) / \(>\).
 - Không kết hợp tập nghiệm bất phương trình với **miền xác định** từ bài toán thực tế.
 
-!!! warning "Giới hạn"
-    Trang học này dùng ví dụ nguyên gốc và định lí phổ thông, **đã đối chiếu hình trang SGK 19–24 và SBT 16–18**; snapshot B17 đã nhận NotebookLM Academic PASS. Trang hiện tại chưa hoàn thành xác nhận tương đương byte/semantics và Tự kiểm tra chính thức hiện chưa kích hoạt; không coi là production đã phát hành.

@@ -32,6 +32,7 @@ on:
       - 'scripts/serve-thpt-r4-lan-preview.ps1'
       - 'scripts/test-thpt-r4-preview-browser.js'
       - 'scripts/test-thpt-chvi-math-block-render.cjs'
+      - 'scripts/test-thpt-chvi-student-notes.cjs'
       - '.github/workflows/thpt-r4-preview-quality.yml'
 
 permissions:
@@ -68,6 +69,7 @@ jobs:
           node scripts/test-thpt-chvi-review-receipt.cjs
           node scripts/test-thpt-chvi-reviewed-formative.cjs
           node scripts/test-thpt-chvi-reviewed-knowledge-parity.cjs
+          node scripts/test-thpt-chvi-student-notes.cjs
           node scripts/test-thpt-chvi-math-block-render.cjs
           node scripts/test-thpt-shared-item-placement.cjs
           node scripts/test-floating-ai-tutor-v1.js
@@ -101,6 +103,7 @@ jobs:
           mkdocs build --strict
           node scripts/assemble-thpt-site.cjs
           node scripts/test-thpt-chvi-math-block-render.cjs --built
+          node scripts/test-thpt-chvi-student-notes.cjs --built
       - name: Verify combined build has no backend
         run: |
           test -f site/index.html

@@ -15,7 +15,9 @@ for(const [lesson,count] of Object.entries(displayExpected)){
  const fullInline=[...source.matchAll(/\\\(([\s\S]*?)\\\)/g)].map(m=>m[1]);
  if(lesson in inlineExpected){
   assert.equal(fullInline.length,inlineExpected[lesson],"B"+lesson+": full-page inline math count drift");
-  const answer=source.slice(source.indexOf("<details><summary>"),source.indexOf("</details>")+10);
+  const answerStart=source.indexOf("<details><summary>");
+  assert(answerStart>=0,"B"+lesson+": written solution disclosure absent");
+  const answer=source.slice(answerStart,source.indexOf("</details>",answerStart)+10);
   assert.equal((answer.match(/<span class="arithmatex">\\\(/g)||[]).length,9,
    "B"+lesson+": all 9 hidden answer formulas must be wrapped");
  }
