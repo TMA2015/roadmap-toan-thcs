@@ -29,6 +29,7 @@ async function ready(page,path){
   await entry.goto("http://127.0.0.1:8765/",{waitUntil:"networkidle"});
   assert.equal(await entry.locator("[data-math-program-selector]").count(),1,"Root selector missing");
   await entry.locator('[data-math-program-selector] a[href="thcs/"]').click();
+  await entry.locator('[data-home-portal][data-home-style-ready="1"]').waitFor();
   // THCS intentionally shows its existing first-visit style chooser.
   // Choose a style like a real visitor before using the header launcher.
   if(await entry.locator("[data-home-dialog]").isVisible()){

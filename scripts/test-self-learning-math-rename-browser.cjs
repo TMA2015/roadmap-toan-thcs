@@ -24,6 +24,7 @@ const open=async(page,url)=>{
     await open(page,host+prefix);
     assert.equal(await page.locator("[data-math-program-selector]").count(),1,"Missing level selector: "+prefix);
     await page.locator('[data-math-program-selector] a[href="thcs/"]').click();
+    await page.locator('[data-home-portal][data-home-style-ready="1"]').waitFor();
     assert.equal(new URL(page.url()).pathname,prefix+"thcs/","THCS home moved, not its learning URLs");
     await page.locator("[data-roadmap-topic-launcher]").waitFor({state:"visible"});
     // First-visit THCS style choice is an intended overlay, not a regression.
