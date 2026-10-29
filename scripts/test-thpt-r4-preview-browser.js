@@ -86,7 +86,7 @@ async function ready(page,path){
       "B19 must render original reviewed canonical item ID");
     assert.equal(await dlg.locator("details[open]").count(),0,
       "Hint and answer must start collapsed in formative exercises");
-    assert((await dlg.innerText()).includes("Không chấm điểm/mastery"),
+    assert((await dlg.innerText()).includes("Không ghi điểm thành thạo"),
       "Formative exercises must not claim protected assessment");
     await dlg.locator("[data-thpt-modal-close]").click();
     await page.locator('[data-thpt-open-quiz="b19-practice"]').click();
