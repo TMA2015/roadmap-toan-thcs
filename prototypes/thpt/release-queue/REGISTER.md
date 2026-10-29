@@ -4,6 +4,7 @@
 
 | Gói | Hành trình | Trạng thái | Phạm vi | PR / nguồn |
 |---|---|---|---|---|
+| [G10-SGK-CHI](inventory/G10-SGK-CHI.md) | SGK_CHAPTER | ACADEMIC_PARTIAL | PUBLIC_FORMATIVE_ONLY | ChI B01–B02 R01 authoring, independent NotebookLM pending |
 | [G10-SGK-CHVI](inventory/G10-SGK-CHVI.md) | SGK_CHAPTER | PUBLISHED_SCOPED | PUBLIC_FORMATIVE_ONLY | merged #612; UI #617–619 |
 | [G10-SGK-CHVII](ready/G10-SGK-CHVII.md) | SGK_CHAPTER | CONTENT_READY | PUBLIC_FORMATIVE_ONLY | #620 (current); #614 (old source, not a second packet) |
 | [G10-SGK-CHVIII](ready/G10-SGK-CHVIII.md) | SGK_CHAPTER | CONTENT_READY | PUBLIC_FORMATIVE_ONLY | #621 (depends #620); #615 old source |
