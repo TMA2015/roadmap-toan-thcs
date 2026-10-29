@@ -488,6 +488,16 @@
     li.classList.remove("thpt-r4-collapsible");
     if(nested)nested.hidden=false;
     if(native&&resetForPath)native.checked=false;
+    // A stale checked nested nav can sit above the mobile header in the
+    // Material stacked drawer. Keep hidden in sync with native toggles,
+    // without removing or replacing the visible parent label.
+    if(native&&!li.dataset.thptR4MobileBound){
+     native.addEventListener("change",()=>{
+      if(compactDrawer.matches)nested.hidden=!native.checked;
+     });
+     li.dataset.thptR4MobileBound="1";
+    }
+    nested.hidden=native?!native.checked:false;
     delete li.dataset.thptR4SidebarPath;
    });
    return;
