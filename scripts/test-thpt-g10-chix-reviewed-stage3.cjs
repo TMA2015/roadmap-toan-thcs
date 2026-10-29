@@ -41,6 +41,18 @@ const config=read("mkdocs.thpt-preview.yml"),engine=read("docs/assets/javascript
 for(const file of ["chuong-ix.md","bai-26.md","bai-27.md","chuong-ix/luyen-tap.md","chuong-ix/tu-kiem-tra-chuong.md","tu-luan-chuong-ix.md","thpt-chix-reviewed-formative-v1.js"])
  assert(config.includes(file),"Missing MkDocs route/asset: "+file);
 assert(engine.includes("THPT_CHIX_REVIEWED_FORMATIVE")&&engine.includes("2[67]"),"R4 launcher must mount ChIX bank");
+// Root selector was separately approved/merged in PR #617 on 29/10.
+ // Accept either pre-migration THCS root or approved selector+THCS archive,
+ // but never allow the existing THCS home to disappear.
 const main=read("docs/index.md");
-assert(main.includes("data-home-portal")&&main.includes("TOÁN THCS"),"THCS default home root must remain unchanged before approved migration");
+if(main.includes("data-math-program-selector")){
+ assert(main.includes('href="thcs/"')&&main.includes('href="thpt-preview/home/"'),
+   "Approved programme selector must preserve both learning routes");
+ const legacy=read("docs/thcs/index.md");
+ assert(legacy.includes("data-home-portal")&&legacy.includes("TOÁN THCS"),
+   "Original THCS home must remain at /thcs/");
+}else{
+ assert(main.includes("data-home-portal")&&main.includes("TOÁN THCS"),
+   "Pre-selector THCS home must remain unchanged");
+}
 console.log("PASS G10 ChIX B26/B27 public 14 C/P + 2 Written (1 Anchor), source-locked scope, 0 protected Readiness/Mastery; root THCS remains unchanged");
