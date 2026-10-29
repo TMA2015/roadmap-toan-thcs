@@ -375,6 +375,40 @@ async function ready(page,path){
     assert.deepEqual(labels,["01 · Kiến thức","02 · Luyện tập","03 · Tự kiểm tra"],"Topic order differs from approved contract");
     assert((await nav.locator('a[href="../core/"]').count())===0,"Old topic Core tab must not appear");
   }
+  // iOS/iPad Safari regression from owner screenshots (2026-10-29):
+  // three level-one THPT categories must retain their native label text
+  // after opening the Material drawer. No custom desktop disclosure buttons
+  // or forced-hidden native nav children may exist at mobile breakpoints.
+  for(const [width,height] of [[390,844],[820,1180]]){
+   const mobile=await browser.newPage({viewport:{width,height},hasTouch:true,isMobile:true});
+   try{
+    await ready(mobile,"sgk/chuong-viii/");
+    const drawer=mobile.locator('.md-header label[for="__drawer"]');
+    await drawer.click();
+    assert(await mobile.locator("#__drawer").isChecked(),
+      "Mobile drawer could not open at "+width);
+    const sections=mobile.locator('.md-sidebar--primary nav.md-nav--primary > ul.md-nav__list > li.md-nav__item--nested');
+    assert.equal(await sections.count(),3,"Expected three THPT mobile parent groups at "+width);
+    const expectedParents=["Học theo SGK KNTT","Học theo chuyên đề","Thư viện bài tập"];
+    for(let i=0;i<expectedParents.length;i++){
+     const item=sections.nth(i);
+     const label=item.locator(':scope > label.md-nav__link .md-ellipsis');
+     assert.equal((await label.textContent()).trim(),expectedParents[i],
+       "Mobile group label content wrong at "+width);
+     assert(await label.isVisible(),
+       "Mobile Safari-style drawer hid category label "+expectedParents[i]+" at "+width);
+     assert.equal(await item.locator(':scope > button.thpt-r4-sidebar-toggle').count(),0,
+       "Desktop accordion button leaked into native mobile drawer at "+width);
+     assert.equal(await item.locator(':scope > nav.md-nav').getAttribute("hidden"),null,
+       "Mobile navigation group incorrectly hidden at "+width);
+    }
+    await mobile.screenshot({path:"thpt-r4-visual-qa/ios-nav-"+width+".png"});
+    await mobile.locator('.md-header label[for="__drawer"]').click();
+    assert(!(await mobile.locator("#__drawer").isChecked()),
+      "Mobile drawer did not close at "+width);
+   }finally{await mobile.close()}
+  }
+
   // Owner UI consolidation: keep links while hiding Core library and end-chapter
   // exercise as separate student-facing sidebar sections.
   await ready(page,"sgk/chuong-vi/");
