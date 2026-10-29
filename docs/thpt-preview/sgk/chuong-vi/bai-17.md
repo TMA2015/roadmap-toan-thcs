@@ -89,7 +89,7 @@ Suy ra \(\boxed{m<1}\). Nếu \(m=1\), tam thức có nghiệm kép và bằng \
 <p>Phần bất phương trình có tham số là nội dung luyện tập mở rộng, không phải kiến thức Core bắt buộc của SGK. Các ví dụ ở trên giúp rèn kỹ năng xét dấu.</p>
 </details>
 
-[Chuyển đến Luyện tập và Vận dụng Chương VI](../luyen-tap/) để làm bài củng cố. Bạn có thể mở gợi ý và lời giải sau khi tự làm.
+[Chuyển đến Luyện tập và Vận dụng Chương VI](luyen-tap.md) để làm bài củng cố. Bạn có thể mở gợi ý và lời giải sau khi tự làm.
 
 ## 4. Tự luyện
 

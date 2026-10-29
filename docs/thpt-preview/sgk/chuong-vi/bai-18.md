@@ -99,7 +99,7 @@ Hai nghiệm ứng viên là \(x=3\) và \(x=-\frac53\). Chỉ \(x=3\) đạt đ
 - **Quên điều kiện của biến và việc thử lại:** nghiệm đại số có thể làm căn vô nghĩa.
 - **Rút gọn căn bậc hai sai:** với \(u\in\mathbb R\), ta có \(\sqrt{u^2}=|u|\), **không tự thay bằng \(u\)** khi chưa biết dấu của \(u\). Quy tắc này đặc biệt quan trọng nếu biểu thức dưới căn chứa bình phương của một đa thức.
 
-[Chuyển đến Luyện tập và Vận dụng Chương VI](../luyen-tap/) để làm bài củng cố. Bạn có thể mở gợi ý và lời giải sau khi tự làm.
+[Chuyển đến Luyện tập và Vận dụng Chương VI](luyen-tap.md) để làm bài củng cố. Bạn có thể mở gợi ý và lời giải sau khi tự làm.
 
 ## 5. Tự luyện
 
