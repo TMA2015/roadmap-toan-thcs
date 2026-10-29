@@ -9,6 +9,7 @@
 ## 1. Tam thức bậc hai
 
 Tam thức bậc hai theo biến \(x\) là biểu thức
+
 \[
 f(x)=ax^2+bx+c,\quad a\ne0.
 \]
@@ -56,11 +57,13 @@ Giải bất phương trình \(ax^2+bx+c\ >,\ge,<,\le\ 0\) bằng quy trình:
 **Ví dụ 3.** Giải \(-x^2+4x-3\ge0\). Từ Ví dụ 1, tam thức dương trên \((1;3)\), bằng 0 tại \(1,3\); vậy nghiệm là \(\boxed{[1;3]}\).
 
 **Ví dụ 4 (thực tế do dự án tự soạn).** Dùng \(18\) m lưới rào ba cạnh một hình chữ nhật sát bức tường. Gọi \(x\) (m) là chiều rộng vuông góc tường, \(0<x<9\); chiều còn lại là \(18-2x\). Diện tích \(S(x)=x(18-2x)\). Muốn \(S(x)\ge36\), ta giải
+
 \[
 -2x^2+18x-36\ge0
 \iff x^2-9x+18\le0
 \iff (x-3)(x-6)\le0.
 \]
+
 Suy ra \(\boxed{3\le x\le6}\) (m); các nghiệm thỏa \(0<x<9\).
 
 ### Bất phương trình có tham số: khi nào đúng với mọi số thực?
@@ -68,13 +71,17 @@ Suy ra \(\boxed{3\le x\le6}\) (m); các nghiệm thỏa \(0<x<9\).
 Đối với một tam thức \(f(x)=ax^2+bx+c\) có \(a>0\), điều kiện để \(f(x)>0\) với **mọi** \(x\in\mathbb R\) là \(\Delta<0\). Nếu chỉ yêu cầu \(f(x)\ge0\) với mọi \(x\), điều kiện là \(\Delta\le0\). Khi \(a<0\), các mệnh đề tương tự áp dụng cho dấu \(<0\) hoặc \(\le0\).
 
 **Ví dụ 5 (tự soạn).** Tìm \(m\) để
+
 \[
 x^2-2(m+1)x+m^2+3>0
 \]
+
 đúng với mọi \(x\in\mathbb R\). Vì \(a=1>0\), ta cần
+
 \[
 \Delta=[-2(m+1)]^2-4(m^2+3)=8(m-1)<0.
 \]
+
 Suy ra \(\boxed{m<1}\). Nếu \(m=1\), tam thức có nghiệm kép và bằng \(0\) tại một điểm nên **không** thỏa dấu \(>\).
 
 !!! note "Ranh giới học thuật"
