@@ -69,7 +69,30 @@ const mkdocs=read("mkdocs.thpt-preview.yml");
 for(const name of ["chuong-vii.md","bai-19.md","bai-20.md","bai-21.md","bai-22.md","chuong-vii/luyen-tap.md","chuong-vii/tu-kiem-tra-chuong.md",
  "thpt-chvii-reviewed-formative-v1.js","tu-luan-chuong-vii.md"])
  assert(mkdocs.includes(name),"THPT nav/script missing "+name);
+const crypto=require("node:crypto");
+const reviewedD5=[
+ ["THPT-G10-B19-P06","THPT_G10_B19_LINE_INTERSECTION_DRAFT.svg","8964b708aac7cf56d1848db9d469f2573ce40873"],
+ ["THPT-G10-B21-P03","THPT_G10_B21_CIRCLE_TANGENT_DRAFT.svg","08e22fbc8ed90db7ccc48d782eb270404f057226"],
+ ["THPT-G10-B22-P06","THPT_G10_B22_PARABOLA_FOCUS_DIRECTRIX_DRAFT.svg","e28c6500b486ee755fad0fc164d48969fd891c55"]
+];
+for(const [itemId,asset,sha] of reviewedD5){
+ const rel="docs/assets/images/thpt/"+asset;
+ const content=fs.readFileSync(path.join(root,rel));
+ const hash=crypto.createHash("sha1").update("blob "+content.length+"\\0").update(content).digest("hex");
+ assert.equal(hash,sha,"D5-reviewed Git blob MUST stay unchanged: "+asset);
+ const xml=content.toString("utf8");
+ assert(xml.includes("<title")&&xml.includes("<desc")&&xml.includes('viewBox='),
+  "Accessible SVG requires title, description and scalable viewBox: "+asset);
+ assert(!/<script\\b|onload\\s*=|<foreignObject\\b|<image\\b|(?:xlink:)?href=["']https?:/i.test(xml),
+  "D5 assets must be local, inert, and safe to embed");
+ assert(bank.records.some(x=>x.item_id===itemId&&x.role!=="CORE"),
+  "Answer-bearing D5 asset must attach only to a reviewed Practice record: "+itemId);
+}
 const engine=read("docs/assets/javascripts/thpt-r4-preview.js");
+assert(reviewedD5.every(x=>engine.includes(x[0])&&engine.includes(x[1])),
+ "All three D5 figures must use exact original canonical Practice ID in the disclosure-only mapping");
+assert(engine.includes('solution.addEventListener("toggle"')&&engine.includes('if(!solution.open'),
+ "No answer-bearing SVG may render before the learner opens the solution details");
 assert(engine.includes("THPT_CHVII_REVIEWED_FORMATIVE")&&engine.includes("2[012]"),
  "R4 exercise UI must load the reviewed ChVII canonical bank");
 console.log("PASS G10 ChVII D1/D2 knowledge, all 32 unique reviewed public C/P including specialist role, 4 Written (1 Anchor), R4 navigation, no held-out Readiness or mastery");
