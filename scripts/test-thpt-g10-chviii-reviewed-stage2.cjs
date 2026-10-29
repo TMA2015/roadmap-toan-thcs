@@ -40,6 +40,8 @@ assert.equal(new Set([...ids,...wIds]).size,28,"ChVIII must have 28 unique canon
 assert.equal((written.match(/data-thpt-kind="anchor"/g)||[]).length,1,"Anchor must be a Written tag");
 assert(!/1 Anchor|một bài được chọn làm bài mỏ neo/.test(written),"Internal Anchor count/status not shown in student-facing Written intro");
 assert.equal((written.match(/<details>/g)||[]).length,3,"Written solutions start collapsed");
+assert.equal((written.match(/class="thpt-r4-remediation-link"/g)||[]).length,3,"Every Written exercise must link to the matching S1 knowledge lesson");
+
 assert.equal((written.match(/<span class="arithmatex">\\\(/g)||[]).length,12,
  "All 12 ChVIII Written math formula strings must be MathJax-wrapped");
 const hub=read("docs/thpt-preview/sgk/chuong-viii/luyen-tap.md");
