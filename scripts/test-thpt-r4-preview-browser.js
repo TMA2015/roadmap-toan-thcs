@@ -618,6 +618,30 @@ async function ready(page,path){
   await ready(page,"sgk/chuong-viii/tu-kiem-tra-chuong/");
   assert.equal(await page.locator("[data-thpt-readiness], [data-thpt-secure-readiness]").count(),0,"No active ChVIII Readiness");
 
+  // ChIX stage3 is reviewed formative ONLY, no protected readiness or Mastery.
+  require("./test-thpt-g10-chix-reviewed-stage3.cjs");
+  for(const vp of [{width:1365,height:800},{width:390,height:844},{width:820,height:1100}]){
+    await page.setViewportSize(vp);
+    await ready(page,"sgk/chuong-ix/luyen-tap/");
+    assert.equal(await page.locator("[data-thpt-open-quiz]").count(),4,"ChIX expected B26/27 Core+Practice");
+    const dims=await page.evaluate(()=>({w:document.documentElement.scrollWidth,v:innerWidth}));
+    assert(dims.w<=dims.v+20,"ChIX practice horizontal overflow "+vp.width);
+  }
+  await page.locator('[data-thpt-open-quiz="b26-core"]').click();
+  const ixDialog=page.locator("dialog.thpt-r4-practice-dialog");
+  assert(await ixDialog.isVisible(),"ChIX Core modal did not open");
+  assert((await ixDialog.locator(".thpt-r4-modal-meta").textContent()).includes("IX"),"Wrong ChIX banner");
+  assert.equal(await ixDialog.locator("[data-thpt-canonical-item]").getAttribute("data-thpt-canonical-item"),
+   "THPT-G10-B26-C01","Wrong ChIX Core identity");
+  assert.equal(await ixDialog.locator("img[data-thpt-reviewed-figure]").count(),0,"No unreviewed ChIX D5 figure may appear");
+  await ixDialog.locator("[data-thpt-modal-close]").click();
+  await ready(page,"thu-vien/tu-luan-chuong-ix/");
+  assert.equal(await page.locator("[data-thpt-written-canonical]").count(),2,"Missing ChIX Written");
+  assert.equal(await page.locator('[data-thpt-kind="anchor"]').count(),1,"ChIX Anchor only one tag");
+  assert.equal(await page.locator('section[data-thpt-written-canonical] details[open]').count(),0,"Written keys revealed");
+  await ready(page,"sgk/chuong-ix/tu-kiem-tra-chuong/");
+  assert.equal(await page.locator("[data-thpt-readiness], [data-thpt-secure-readiness]").count(),0,"ChIX Readiness must not activate");
+
   await page.close();
   console.log("PASS THPT R4 reviewed formative/Written + technical Readiness Chromium smoke (not production approval or real-device QA)");
  }finally{await browser.close();}
