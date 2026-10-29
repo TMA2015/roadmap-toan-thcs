@@ -17,4 +17,6 @@
 
 **Ưu tiên phát hành:** lọc CONTENT_READY trước; trong tập đó xếp theo tiền đề kiến thức, phụ thuộc PR, mức ảnh hưởng và ngày review; **không random và không FIFO tuyệt đối**. Phát hành đúng những phần được duyệt, không gắn nhãn 'chương hoàn chỉnh' nếu thiếu D1–D6 hoặc đánh giá.
 
+**Khóa chứng cứ:** SOURCE_COMMIT là commit của ứng viên tích hợp để QA. REVIEW_RECEIPT ghi đường dẫn và Git blob SHA của biên bản NotebookLM bất biến; reviewer PASS chỉ áp dụng đúng snapshot gốc và delta được chứng minh. Nếu có file thay đổi học thuật, cập nhật receipt/delta trước khi đánh dấu A1/A3/A6 PASS.
+
 **Địa chỉ sử dụng:** REGISTER.md là danh sách duy nhất; inventory/ là hồ sơ chưa A-PASS toàn bộ và lịch sử phát hành scoped; ready/ là kho thực sự giao cho nhánh phát hành; PACKET_TEMPLATE.md là mẫu. Script scripts/test-thpt-release-queue.cjs giữ danh mục và checklist nhất quán nhưng không tự cấp Academic PASS hoặc deploy.
