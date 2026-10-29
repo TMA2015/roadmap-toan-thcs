@@ -157,7 +157,7 @@ async function ready(page,path){
     assert.equal(await page.locator("[data-thpt-secure-readiness]").count(),0);
     assert.equal(await page.locator("[data-thpt-open-quiz]").count(),0,
       "ChVII held-out Readiness must not be served as a public practice card");
-    assert((await page.locator("article").innerText()).includes("Chưa kích hoạt"));
+    assert((await page.locator("article").innerText()).includes("chưa mở"),"ChVII inactive readiness clearly identified to learners");
     const overflow=await page.evaluate(()=>document.documentElement.scrollWidth-window.innerWidth);
     assert(overflow<=20,"ChVII R4 overflow at "+viewport.width+"px: "+overflow);
     await page.close();
