@@ -471,8 +471,8 @@ async function ready(page,path){
       "B"+lesson+" entire lesson must have all inline math wrappers");
     assert.equal(await article.locator("div.arithmatex").count(),displayCount,
       "B"+lesson+" entire lesson must render all display math");
-    const details=article.locator("details");
-    assert.equal(await details.count(),1,"B"+lesson+" hidden solution preserved");
+    const details=article.locator("details:not(.thpt-r4-pedagogical-note)");
+    assert.equal(await details.count(),1,"B"+lesson+" hidden solution preserved separately from extension note");
     assert(!(await details.evaluate(el=>el.open)),"B"+lesson+" self-check must be collapsed by default");
     assert.equal(await details.locator("span.arithmatex").count(),9,
       "B"+lesson+" hidden solution requires all nine math wrappers");
