@@ -45,10 +45,10 @@ for(const content of [source,hub,written,readiness,...[23,24,25].map(n=>read("do
 const file="docs/assets/images/thpt/THPT_G10_B23_COUNTING_TREE_DRAFT.svg";
 const svg=fs.readFileSync(path.join(root,file));
 const blob=crypto.createHash("sha1").update("blob "+svg.length+"\0").update(svg).digest("hex");
-const footer='<text x="38" y="525" font-size="15" fill="#64748b">DRAFT — cây tự dựng; các nhánh lựa chọn độc lập, không lặp cùng bộ</text>\\n';
-const rebuilt=Buffer.from(svg.toString("utf8").replace("</svg>",footer.replace(/\\\\n$/,"\\n")+"</svg>"),"utf8");
-const originalBlob=crypto.createHash("sha1").update("blob "+rebuilt.length+"\\0").update(rebuilt).digest("hex");
-assert.equal(originalBlob,"f24fcdf80d2a4ffc935a415197b30f48a54b4817","D5 FIG04 original reviewed geometry SHA must match after restoring only administrative footer");
+const footer='<text x="38" y="525" font-size="15" fill="#64748b">DRAFT — cây tự dựng; các nhánh lựa chọn độc lập, không lặp cùng bộ</text>\n';
+const rebuilt=Buffer.from(svg.toString("utf8").replace("</svg>",footer+"</svg>"),"utf8");
+const originalBlob=crypto.createHash("sha1").update("blob "+rebuilt.length+"\0").update(rebuilt).digest("hex");
+assert.equal(originalBlob,"f24fcdf80d2a4ffc935a415197b30f48a54b4817","D5 FIG04 reviewed original bytes must be reproducible from the UI-only footer removal");
 const xml=svg.toString("utf8");
 assert(xml.includes("<title")&&xml.includes("<desc")&&xml.includes('viewBox='));
 assert(!xml.includes("DRAFT — cây tự dựng"),"Student FIG04 must not show draft watermark");
