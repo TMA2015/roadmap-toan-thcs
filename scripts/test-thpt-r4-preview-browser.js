@@ -420,6 +420,8 @@ async function ready(page,path){
 
   // Owner UI consolidation: keep links while hiding Core library and end-chapter
   // exercise as separate student-facing sidebar sections.
+  // Desktop accordion is deliberately disabled on native mobile drawer.
+  await page.setViewportSize({width:1440,height:900});
   await ready(page,"sgk/chuong-vi/");
   const sideNav=page.locator(".md-sidebar--primary nav.md-nav--primary");
   const sidebarStructure=await sideNav.textContent();
