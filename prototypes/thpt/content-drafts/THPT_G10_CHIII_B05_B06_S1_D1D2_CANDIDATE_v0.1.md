@@ -1,7 +1,7 @@
 # Toán 10 KNTT tập 1 — Chương III — Hệ thức lượng trong tam giác
 ## Source-first D1–D2 bản thảo v0.1 — CHƯA REVIEW
 
-**AUTHORING_ONLY** · \`PACKET_DRAFT=G10-SGK-CHIII\` · \`NOTEBOOKLM_NOT_REVIEWED\` · \`CONTENT_READY_NO\`.
+**AUTHORING_ONLY** · `PACKET_DRAFT=G10-SGK-CHIII` · `NOTEBOOKLM_NOT_REVIEWED` · `CONTENT_READY_NO`.
 
 ### 1. Source S1 scope
 
@@ -13,22 +13,22 @@
 | Bài 6 — Hệ thức lượng trong tam giác | 38–43 | 34–39 |
 | Bài tập cuối Chương III | 44–45 | 40–44 |
 
-Đã kiểm trực tiếp SGK Bài 5 (đường nửa tròn, GTLG, góc bù) và Bài 6 (định lí côsin, định lí sin, diện tích, Heron, ứng dụng); SBT Bài 5 được xem từ trang 29–33. Chưa đối chiếu từng bài SBT Bài 6 và cuối chương: giữ \`A2_PARTIAL\` cho đến khi soát đủ.
+Đã kiểm trực tiếp SGK Bài 5 (đường nửa tròn, GTLG, góc bù) và Bài 6 (định lí côsin, định lí sin, diện tích, Heron, ứng dụng); SBT Bài 5 được xem từ trang 29–33. Chưa đối chiếu từng bài SBT Bài 6 và cuối chương: giữ `A2_PARTIAL` cho đến khi soát đủ.
 
 ### 2. Outcome dự kiến (chưa đăng ký)
 
 | Outcome ID ứng viên | Bằng chứng học thuật cần có |
 |---|---|
-| \`G10-B05-UNIT_SEMICIRCLE\` | Giá trị lượng giác góc 0°–180° bằng nửa đường tròn đơn vị |
-| \`G10-B05-SPECIAL_ANGLES\` | Bảng góc đặc biệt 0°, 30°, 45°, 60°, 90°, 120°, 135°, 150°, 180° và góc liên quan |
-| \`G10-B05-SIGN_DOMAIN\` | Dấu sin/cos/tan/cot, miền xác định và trường hợp giá trị không tồn tại |
-| \`G10-B05-SUPPLEMENTARY\` | Quan hệ sin/cos/tan/cot của hai góc bù nhau |
-| \`G10-B05_IDENTITIES\` | Các hệ thức cơ bản và suy giá trị lượng giác |
-| \`G10-B06_COSINE_RULE\` | Định lí côsin và định lí Pitago là trường hợp đặc biệt |
-| \`G10-B06_SINE_RULE\` | Định lí sin, đường kính/ bán kính ngoại tiếp; góc còn lại hợp lệ |
-| \`G10-B06_AREA_SIN\` | Công thức diện tích qua hai cạnh và góc xen giữa |
-| \`G10-B06_HERON\` | Công thức Heron, bán kính nội tiếp/ngoại tiếp và điều kiện tam giác |
-| \`G10-B06_APPLICATION\` | Giải tam giác và ứng dụng đo khoảng cách/góc; đơn vị và chọn nghiệm hình học |
+| `G10-B05-UNIT_SEMICIRCLE` | Giá trị lượng giác góc 0°–180° bằng nửa đường tròn đơn vị |
+| `G10-B05-SPECIAL_ANGLES` | Bảng góc đặc biệt 0°, 30°, 45°, 60°, 90°, 120°, 135°, 150°, 180° và góc liên quan |
+| `G10-B05-SIGN_DOMAIN` | Dấu sin/cos/tan/cot, miền xác định và trường hợp giá trị không tồn tại |
+| `G10-B05-SUPPLEMENTARY` | Quan hệ sin/cos/tan/cot của hai góc bù nhau |
+| `G10-B05-IDENTITIES` | Các hệ thức cơ bản và suy giá trị lượng giác |
+| `G10-B06-COSINE_RULE` | Định lí côsin và định lí Pitago là trường hợp đặc biệt |
+| `G10-B06-SINE_RULE` | Định lí sin, đường kính/ bán kính ngoại tiếp; góc còn lại hợp lệ |
+| `G10-B06-AREA_SIN` | Công thức diện tích qua hai cạnh và góc xen giữa |
+| `G10-B06-HERON` | Công thức Heron, bán kính nội tiếp/ngoại tiếp và điều kiện tam giác |
+| `G10-B06-APPLICATION` | Giải tam giác và ứng dụng đo khoảng cách/góc; đơn vị và chọn nghiệm hình học |
 
 ID outcome chỉ là đề xuất cho ma trận D1–D6, cần rà contract ID chung trước khi sử dụng.
 
@@ -130,4 +130,4 @@ Bán kính nội tiếp \(r=S/p=84/21=4\), bán kính ngoại tiếp \(R=abc/(4S
 - D3: biên soạn câu Core/Practice/Application đúng độ sâu, không nhân bản item. D4: Written/Anchor cùng thư viện, rubric. D5: tạo 2 SVG thực về nửa đường tròn lượng giác và tam giác/định lí sin-côsin/diện tích; kiểm XML-to-math. D6: ít nhất 4 thẻ cho dấu góc tù, điều kiện tan/cot, quy tắc góc xen giữa, nhầm sin/cos rule.
 - Không công bố key Readiness, không tự động ghi Mastery, không làm trang Core riêng trên Topic, không triển khai website. Chỉ khi D1–D6 đủ và freeze Temp chính thức mới gửi NotebookLM; không suy PASS mới từ PASS ChII.
 
-**CHECKPOINT:** \`D1_D2_DRAFT\`, \`A1_A7_HOLD\`, \`NOTEBOOKLM_NOT_REVIEWED\`, \`NO_CONTENT_READY\`, \`NO_RELEASE\`.
+**CHECKPOINT:** `D1_D2_DRAFT`, `A1_A7_HOLD`, `NOTEBOOKLM_NOT_REVIEWED`, `NO_CONTENT_READY`, `NO_RELEASE`.
