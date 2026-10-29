@@ -27,5 +27,5 @@
 </section>
 </div>
 <nav class="thpt-r4-lesson-tabs" aria-label="Quay lại lộ trình SGK"><a href="../../sgk/chuong-ix/">Chương IX</a><a href="../../sgk/chuong-ix/luyen-tap/">Core và Luyện tập</a><a href="../tu-luan-chuong-viii/">Tự luận Chương VIII</a></nav>
-<p class="thpt-r4-footnote">S1: SGK Toán 10 KNTT tập 2 tr.77–89; SBT tr.60–74. Reviewer PASS đúng snapshot D3/D4; không phải Tự kiểm tra độc lập hoặc phê duyệt phát hành.</p>
+<p class="thpt-r4-footnote">S1: SGK Toán 10 KNTT tập 2 tr.77–89; SBT B26/B27 bài tập tr.61–66; bài tập cuối chương tr.67–69. Học sinh tự làm trước khi mở lời giải; đây không phải Tự kiểm tra độc lập hoặc điểm thành thạo.</p>
 </div>
