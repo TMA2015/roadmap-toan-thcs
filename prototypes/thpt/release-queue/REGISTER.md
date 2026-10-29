@@ -4,7 +4,7 @@
 
 | Gói | Hành trình | Trạng thái | Phạm vi | PR / nguồn |
 |---|---|---|---|---|
-| [G10-SGK-CHII](inventory/G10-SGK-CHII.md) | SGK_CHAPTER | ACADEMIC_PARTIAL | PUBLIC_FORMATIVE_ONLY | ChII B03–B04 R01 D1–D6 candidate, NotebookLM pending |
+| [G10-SGK-CHII](ready/G10-SGK-CHII.md) | SGK_CHAPTER | CONTENT_READY | PUBLIC_FORMATIVE_ONLY | ChII B03–B04 D1–D6 18/18 NotebookLM PASS, authoring-only handoff |
 | [G10-SGK-CHVI](inventory/G10-SGK-CHVI.md) | SGK_CHAPTER | PUBLISHED_SCOPED | PUBLIC_FORMATIVE_ONLY | merged #612; UI #617–619 |
 | [G10-SGK-CHVII](ready/G10-SGK-CHVII.md) | SGK_CHAPTER | RELEASE_READY | PUBLIC_FORMATIVE_ONLY | #625 (scoped technical release; source #624 merged)
 | [G10-SGK-CHVIII](ready/G10-SGK-CHVIII.md) | SGK_CHAPTER | RELEASE_READY | PUBLIC_FORMATIVE_ONLY | #625 (scoped technical release; source #624 merged)
@@ -19,4 +19,4 @@
 **Nhánh Chuyên đề:** chưa có packet đạt cổng riêng; không suy luận từ SGK. Khi có batch TOPIC thực tế, dùng PACKET_TEMPLATE.md tạo một hàng, không thêm gói rỗng.
 
 **PR lịch sử:** #614/#615 là những nhánh cũ của #620/#621; #616 đang theo snapshot cũ và sẽ cần tái tích hợp trước release.
-**G10 ChII:** 2 lesson content candidate under `inventory/G10-SGK-CHII.md`, 18 item candidates, 10 outcomes, 2 SVG, 4 D6. Actual review file Temp R01 SHA256 c411c850d7112b73884b685c503966034236a88f8c9cda671569695d8b014a90. NOT_REVIEWED / NOT CONTENT_READY. This is authoring only.
+**G10 ChII:** B03/B04 R01 NotebookLM Academic PASS on original Temp Git blob `acea9776d1c7534a4cd0cd28e98db26dedf0c122`; 18/18 candidate item IDs, 10/10 outcomes, 2 SVG, 4 D6. A1–A7 checked strictly PUBLIC_FORMATIVE_ONLY. [Academic gate evidence](CHII_B03_B04_PUBLIC_FORMATIVE_A1A7_EVIDENCE_20261029.md) and [manifest](ready/G10-SGK-CHII.md). R1–R5 pending in separate release lane; no permission to merge/deploy, no whole-chapter Readiness or TOPIC PASS. Status refers to this authoring branch until handoff PR merges.
