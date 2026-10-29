@@ -60,3 +60,14 @@ NO_REPUBLISHED_PRIVATE_READINESS|TRUE
 ```
 
 **Bước kế tiếp:** đối chiếu từng outcome với D6 thực tế; chọn các câu thiếu trợ giúp có giá trị cao để sửa tối thiểu, lập batch Temp_ Markdown snapshot và prompt NotebookLM khi có delta học thuật cần review. Đừng yêu cầu reviewer review lại trọn D1–D5 chỉ vì link trình bày.
+
+
+## 5. Nội dung mới đã biên soạn — sau preflight 29/10
+
+- **14 thẻ HELP_ID toán học** D6-G10-B19-01/02 đến D6-G10-B25-01/02 đã biên soạn cho 7 bài, có lỗi thường gặp, giải thích điều kiện, hướng tự sửa, kiến thức cần ôn, mapping về 64 canonical IDs tồn tại.
+- **GitHub CANDIDATE:** `prototypes/thpt/content-drafts/THPT_G10_CHVII_VIII_D6_REMEDIATION_CARDS_CANDIDATE_v0.1.md`, creation commit `97e3e8073f3884baa4d272774904973767af0663`, content blob SHA `25cf1bbaf47e98c884e954328b0b637a2b4e30af`.
+- **Owner handoff Temp file:** `Temp_THPT_G10_CHVII_VIII_D6_REMEDIATION_R01.md`, UTF-8 Markdown, SHA256 `3d018a6e6c34b5d92452d64af0acb8f6de6e2674941a7d58650622862e97c188`, full 14-card source for review; **Temp snapshot không bảo đảm byte-identical với GitHub working draft**. Reviewer verdict chỉ áp dụng đúng file Temp nhận được. Sau reviewer phải đối chiếu và chép nguyên nội dung được PASS vào candidate/website trước khi A5/A6 có thể được đánh dấu.
+- QA metadata: 14/14 unique HELP_ID, tham chiếu 57 unique formative + 7 Written, không có item Readiness mới, không sửa answer/rubric.
+- **Đây là `DELTA_C_ACADEMIC_MATERIAL`, `NOTEBOOKLM_REREVIEW=REQUIRED_FOR_14_HELP_ID`, `ACADEMIC_CLEARANCE=NOT_RECEIVED`; inventory ChVII/VIII còn HOLD A5.**
+
+Không tạo gói CONTENT_READY, không merge/deploy.
