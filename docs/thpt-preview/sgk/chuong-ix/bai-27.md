@@ -14,7 +14,7 @@ Khi chọn đều k vật trong n vật **khác nhau** và không quan tâm th�
 
 ### 27.2. Sơ đồ cây và xác suất theo nhiều bước
 
-Với phép thử theo giai đoạn, sơ đồ cây giúp liệt kê mọi đường đi từ gốc đến lá, phân biệt “có hoàn lại” và “không hoàn lại”. Trong mô hình hữu hạn đồng khả năng, có thể đếm lá thuận lợi / tổng lá **chỉ khi các lá có cùng xác suất**. Nếu không đồng khả năng, cần tính xác suất cho từng nhánh theo điều kiện (nếu ngoài phạm vi SGK Core, reviewer yêu cầu phân tầng).
+Với phép thử theo giai đoạn, sơ đồ cây giúp liệt kê mọi đường đi từ gốc đến lá, phân biệt “có hoàn lại” và “không hoàn lại”. Trong mô hình hữu hạn đồng khả năng, có thể đếm lá thuận lợi / tổng lá **chỉ khi các lá có cùng xác suất**. Nếu không đồng khả năng, cần tính xác suất cho từng nhánh theo điều kiện (chú ý điều kiện đồng khả năng của kết quả sơ cấp).
 
 ### 27.3. Xác suất của biến cố đối
 
@@ -56,8 +56,8 @@ Trước khi tính, học sinh tự hỏi: (1) Các kết quả sơ cấp là g�
 
 ## 4. Tiếp tục học
 
-- [Core và Luyện tập/Vận dụng Chương IX](luyen-tap.md) · cùng ID canonical đã được review.
+- [Core và Luyện tập/Vận dụng Chương IX](luyen-tap.md) · dùng chung câu hỏi luyện tập đã có.
 - [Thư viện Written/Anchor Chương IX](../../thu-vien/tu-luan-chuong-ix.md) · giải trên giấy trước khi mở rubric.
 - [Tổng quan Chương IX](../chuong-ix.md).
 
-<small>Nguồn S1 đã được reviewer xác nhận: SGK Toán 10 KNTT tập 2 tr.83–87, SBT Bài 27 phần bài tập tr.64–66. Hình minh họa và thẻ hướng dẫn giúp học sinh tự ôn tập; không phải bài đánh giá thành thạo.</small>
+<small>Nguồn S1: SGK Toán 10 KNTT tập 2 tr.83–87, SBT Bài 27 phần bài tập tr.64–66. Hình minh họa và thẻ hướng dẫn giúp học sinh tự ôn tập; không phải bài đánh giá thành thạo.</small>
