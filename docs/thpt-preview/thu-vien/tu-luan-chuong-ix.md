@@ -2,11 +2,11 @@
 
 <div class="thpt-r4-screen" data-thpt-r4>
 <p class="thpt-r4-eyebrow">THƯ VIỆN TỰ LUẬN · CHƯƠNG IX · KNTT</p>
-<p class="thpt-r4-lead">Hai bài tự luận chuẩn canonical được NotebookLM kiểm tra D3/D4. Bài 27 là một Anchor thuộc Written, <strong>không sinh thêm bài thứ ba</strong>. Tự làm trên giấy, mở đáp án và rubric khi cần. Tự đối chiếu không ghi điểm Mastery.</p>
+<p class="thpt-r4-lead">Hai bài tự luận để tự luyện và đối chiếu. Bài 27 là một bài mỏ neo trong cùng kho tự luận, <strong>không phải bài thứ ba</strong>. Tự làm trên giấy, mở đáp án và rubric khi cần. Tự đối chiếu không ghi điểm Mastery.</p>
 <div class="thpt-r4-search"><label for="thpt-chix-written-search"><strong>🔎 Tìm tự luận Chương IX</strong></label><input id="thpt-chix-written-search" type="search" data-thpt-filter-input="written" placeholder="Ví dụ: không gian mẫu, biến cố đối, tổ hợp"><span data-thpt-filter-count aria-live="polite">2 bài · 1 Anchor</span></div>
 <div data-thpt-filter-list="written">
 <section class="thpt-r4-written-card" data-thpt-filter-item data-thpt-kind="normal" data-thpt-filter-text="lớp 10 chương IX bài 26 Biến cố và định nghĩa cổ điển của xác suất tự luận" data-thpt-written-canonical="THPT-G10-CHIX-W26-01" data-thpt-exposure-role="SGK_WRITTEN" id="thpt-g10-chix-w26-01">
-<p class="thpt-r4-eyebrow">THPT-G10-CHIX-W26-01 · BÀI TỰ LUẬN · REVIEWED D3/D4 20261028</p>
+<p class="thpt-r4-eyebrow">THPT-G10-CHIX-W26-01 · BÀI TỰ LUẬN</p>
 <h2>Bài 26 · Biến cố và định nghĩa cổ điển của xác suất</h2>
 <p>Gieo một con xúc xắc 6 mặt cân đối và tung một đồng xu cân đối, ghi cặp kết quả (mặt đồng xu, số chấm). (a) Mô tả Ω và n(Ω). (b) Gọi A là biến cố “xuất hiện mặt ngửa và số chấm lớn hơn 4”, hãy liệt kê A và tính P(A). (c) Nêu biến cố đối Ā và tính P(Ā).</p>
 <details><summary>Xem lời giải, đáp án và rubric sau khi tự làm</summary>
