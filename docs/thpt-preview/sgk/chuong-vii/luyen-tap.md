@@ -5,26 +5,55 @@
 <p class="thpt-r4-lead">Chọn bài để mở thẻ Core hoặc Luyện tập trong cùng giao diện R4. Bài tập dùng một nguồn canonical; học sinh có thể xem gợi ý và lời giải sau khi tự làm. <strong>Chỉ luyện tập, không ghi điểm hoặc Skill Mastery.</strong></p>
 </div>
 
-<div class="thpt-r4-screen" data-thpt-r4 data-thpt-practice-hub>
-<div class="thpt-r4-practice-lesson-header"><span class="thpt-r4-practice-number">19</span><div><small>LỚP 10 · CHƯƠNG VII</small><h2>Bài 19. Phương trình đường thẳng</h2></div></div>
+<div class="thpt-r4-practice-sections" data-thpt-practice-hub>
+<section class="thpt-r4-practice-lesson" data-thpt-grade="10" aria-label="Bài 19 · Phương trình đường thẳng">
+<div class="thpt-r4-practice-lesson-header"><span class="thpt-r4-lesson-number">19</span><div><p class="thpt-r4-practice-class">Lớp 10 · Chương VII · Bài 19</p><h2>Bài 19. Phương trình đường thẳng</h2></div></div>
 <div class="thpt-r4-practice-card-grid">
-<button type="button" class="thpt-r4-practice-open" data-thpt-open-quiz="b19-core">Core · Vectơ pháp tuyến, phương trình</button>
-<button type="button" class="thpt-r4-practice-open" data-thpt-open-quiz="b19-practice">Luyện tập · Tổng quát, tham số, hai điểm</button>
-</div>
-<div class="thpt-r4-practice-lesson-header"><span class="thpt-r4-practice-number">20</span><div><small>LỚP 10 · CHƯƠNG VII</small><h2>Bài 20. Góc và khoảng cách</h2></div></div>
+<section class="thpt-r4-practice-card" data-thpt-grade="10">
+<div><p class="thpt-r4-practice-card-kind">Core</p><strong>Vectơ pháp tuyến, phương trình</strong><p class="thpt-r4-practice-card-desc">Củng cố sau khi học lý thuyết</p><small>ID canonical đã review · Không ghi điểm</small></div>
+<button type="button" class="thpt-r4-practice-open" data-thpt-open-quiz="b19-core" aria-label="Mở Core Bài 19">✎ Luyện tập</button>
+</section>
+<section class="thpt-r4-practice-card" data-thpt-grade="10">
+<div><p class="thpt-r4-practice-card-kind">Luyện tập</p><strong>Tổng quát, tham số, hai điểm</strong><p class="thpt-r4-practice-card-desc">Tự luyện, xem gợi ý và lời giải khi cần</p><small>Câu trong ngân hàng formative đã review · Không mastery</small></div>
+<button type="button" class="thpt-r4-practice-open" data-thpt-open-quiz="b19-practice" aria-label="Mở Luyện tập Bài 19">✎ Luyện tập</button>
+</section>
+</div></section>
+<section class="thpt-r4-practice-lesson" data-thpt-grade="10" aria-label="Bài 20 · Vị trí, góc và khoảng cách">
+<div class="thpt-r4-practice-lesson-header"><span class="thpt-r4-lesson-number">20</span><div><p class="thpt-r4-practice-class">Lớp 10 · Chương VII · Bài 20</p><h2>Bài 20. Vị trí, góc và khoảng cách</h2></div></div>
 <div class="thpt-r4-practice-card-grid">
-<button type="button" class="thpt-r4-practice-open" data-thpt-open-quiz="b20-core">Core · Vị trí tương đối và vuông góc</button>
-<button type="button" class="thpt-r4-practice-open" data-thpt-open-quiz="b20-practice">Luyện tập · Giao điểm và khoảng cách</button>
-</div>
-<div class="thpt-r4-practice-lesson-header"><span class="thpt-r4-practice-number">21</span><div><small>LỚP 10 · CHƯƠNG VII</small><h2>Bài 21. Đường tròn</h2></div></div>
+<section class="thpt-r4-practice-card" data-thpt-grade="10">
+<div><p class="thpt-r4-practice-card-kind">Core</p><strong>Vị trí tương đối và vuông góc</strong><p class="thpt-r4-practice-card-desc">Củng cố sau khi học lý thuyết</p><small>ID canonical đã review · Không ghi điểm</small></div>
+<button type="button" class="thpt-r4-practice-open" data-thpt-open-quiz="b20-core" aria-label="Mở Core Bài 20">✎ Luyện tập</button>
+</section>
+<section class="thpt-r4-practice-card" data-thpt-grade="10">
+<div><p class="thpt-r4-practice-card-kind">Luyện tập</p><strong>Giao điểm và khoảng cách</strong><p class="thpt-r4-practice-card-desc">Tự luyện, xem gợi ý và lời giải khi cần</p><small>Câu trong ngân hàng formative đã review · Không mastery</small></div>
+<button type="button" class="thpt-r4-practice-open" data-thpt-open-quiz="b20-practice" aria-label="Mở Luyện tập Bài 20">✎ Luyện tập</button>
+</section>
+</div></section>
+<section class="thpt-r4-practice-lesson" data-thpt-grade="10" aria-label="Bài 21 · Đường tròn">
+<div class="thpt-r4-practice-lesson-header"><span class="thpt-r4-lesson-number">21</span><div><p class="thpt-r4-practice-class">Lớp 10 · Chương VII · Bài 21</p><h2>Bài 21. Đường tròn</h2></div></div>
 <div class="thpt-r4-practice-card-grid">
-<button type="button" class="thpt-r4-practice-open" data-thpt-open-quiz="b21-core">Core · Tâm, bán kính, phương trình</button>
-<button type="button" class="thpt-r4-practice-open" data-thpt-open-quiz="b21-practice">Luyện tập · Đường kính và tiếp tuyến</button>
-</div>
-<div class="thpt-r4-practice-lesson-header"><span class="thpt-r4-practice-number">22</span><div><small>LỚP 10 · CHƯƠNG VII</small><h2>Bài 22. Ba đường conic</h2></div></div>
+<section class="thpt-r4-practice-card" data-thpt-grade="10">
+<div><p class="thpt-r4-practice-card-kind">Core</p><strong>Tâm, bán kính, phương trình</strong><p class="thpt-r4-practice-card-desc">Củng cố sau khi học lý thuyết</p><small>ID canonical đã review · Không ghi điểm</small></div>
+<button type="button" class="thpt-r4-practice-open" data-thpt-open-quiz="b21-core" aria-label="Mở Core Bài 21">✎ Luyện tập</button>
+</section>
+<section class="thpt-r4-practice-card" data-thpt-grade="10">
+<div><p class="thpt-r4-practice-card-kind">Luyện tập</p><strong>Đường kính và tiếp tuyến</strong><p class="thpt-r4-practice-card-desc">Tự luyện, xem gợi ý và lời giải khi cần</p><small>Câu trong ngân hàng formative đã review · Không mastery</small></div>
+<button type="button" class="thpt-r4-practice-open" data-thpt-open-quiz="b21-practice" aria-label="Mở Luyện tập Bài 21">✎ Luyện tập</button>
+</section>
+</div></section>
+<section class="thpt-r4-practice-lesson" data-thpt-grade="10" aria-label="Bài 22 · Ba đường conic">
+<div class="thpt-r4-practice-lesson-header"><span class="thpt-r4-lesson-number">22</span><div><p class="thpt-r4-practice-class">Lớp 10 · Chương VII · Bài 22</p><h2>Bài 22. Ba đường conic</h2></div></div>
 <div class="thpt-r4-practice-card-grid">
-<button type="button" class="thpt-r4-practice-open" data-thpt-open-quiz="b22-core">Core · Hypebol và elip (phần SGK)</button>
-<button type="button" class="thpt-r4-practice-open" data-thpt-open-quiz="b22-practice">Luyện tập · Viết phương trình conic</button>
+<section class="thpt-r4-practice-card" data-thpt-grade="10">
+<div><p class="thpt-r4-practice-card-kind">Core</p><strong>Hypebol và elip (phần SGK)</strong><p class="thpt-r4-practice-card-desc">Củng cố sau khi học lý thuyết</p><small>ID canonical đã review · Không ghi điểm</small></div>
+<button type="button" class="thpt-r4-practice-open" data-thpt-open-quiz="b22-core" aria-label="Mở Core Bài 22">✎ Luyện tập</button>
+</section>
+<section class="thpt-r4-practice-card" data-thpt-grade="10">
+<div><p class="thpt-r4-practice-card-kind">Luyện tập</p><strong>Viết phương trình conic</strong><p class="thpt-r4-practice-card-desc">Tự luyện, xem gợi ý và lời giải khi cần</p><small>Câu trong ngân hàng formative đã review · Không mastery</small></div>
+<button type="button" class="thpt-r4-practice-open" data-thpt-open-quiz="b22-practice" aria-label="Mở Luyện tập Bài 22">✎ Luyện tập</button>
+</section>
+</div></section>
 </div>
 <p class="thpt-r4-footnote">B22-C01 liên quan tâm sai được reviewer phân tầng chuyên sâu, <strong>không có trong Core bắt buộc</strong>. Mỗi bài được lưu theo ID nguồn, không tạo câu mới hoặc câu kiểm tra từ câu luyện tập.</p>
 <nav class="thpt-r4-lesson-tabs"><a href="../">Tổng quan Chương VII</a><a href="../tu-kiem-tra-chuong/">Tự kiểm tra cuối chương · chưa kích hoạt</a></nav>
