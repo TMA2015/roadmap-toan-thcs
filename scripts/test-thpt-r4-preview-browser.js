@@ -76,6 +76,21 @@ async function ready(page,path){
       assert((await page.locator("article").innerText()).includes("Ví dụ"),
         "B"+lesson+" missing source-backed worked example");
     }
+    await ready(page,"sgk/chuong-vii/bai-19/");
+    const helpCards=page.locator('[data-thpt-help-id^="D6-G10-B19-"]');
+    assert.equal(await helpCards.count(),2,"R02 D6 B19 must have two optional help cards");
+    assert.equal(await page.locator('[data-thpt-help-id][open]').count(),0,"D6 should start collapsed");
+    await helpCards.first().locator("summary").click();
+    const d6Link=helpCards.first().locator('[data-thpt-formative-id="THPT-G10-B19-C01"]');
+    assert.equal(await d6Link.count(),1,"D6 must link to an existing canonical item");
+    await d6Link.click();
+    const focusedModal=page.locator("dialog.thpt-r4-practice-dialog");
+    await focusedModal.waitFor({state:"visible"});
+    assert.equal(await focusedModal.locator("[data-thpt-canonical-item]").getAttribute("data-thpt-canonical-item"),"THPT-G10-B19-C01",
+      "D6 deep link should open exact B19-C01, without a second item engine");
+    assert.equal(await focusedModal.locator("details[open]").count(),0,
+      "D6 recovery must not reveal formative solution until chosen");
+    await focusedModal.locator("[data-thpt-modal-close]").click();
     await ready(page,"sgk/chuong-vii/luyen-tap/");
     assert.equal(await page.locator("[data-thpt-open-quiz]").count(),8,
       "All eight SGK ChVII Core/Practice cards must be accessible");
