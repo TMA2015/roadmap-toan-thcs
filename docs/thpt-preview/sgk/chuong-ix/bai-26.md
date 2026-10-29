@@ -28,7 +28,7 @@ Biến cố đối của A, kí hiệu Ā, là biến cố “A không xảy ra
 
 ### 26.5. Nguyên lí xác suất bé
 
-Biến cố có xác suất rất nhỏ **khó xảy ra trong một phép thử**, nhưng **không phải không thể xảy ra**; ngược lại, xác suất gần 1 không bảo đảm chắc chắn. Trong tình huống thực tế, cần tách điều SGK trình bày với một quy tắc dự báo số lần xuất hiện (chỉ ước lượng, không bảo đảm số lần đúng bằng n·P(A)). Reviewer kiểm tra phát biểu có đúng ranh giới Core S1 B26 hay cần giản lược.
+Biến cố có xác suất rất nhỏ **khó xảy ra trong một phép thử**, nhưng **không phải không thể xảy ra**; ngược lại, xác suất gần 1 không bảo đảm chắc chắn. Trong tình huống thực tế, cần tách điều SGK trình bày với một quy tắc dự báo số lần xuất hiện (chỉ ước lượng, không bảo đảm số lần đúng bằng n·P(A)). 
 
 ## 2. Ví dụ đã giải và tự kiểm tra lập luận
 
@@ -60,8 +60,8 @@ Biến cố có xác suất rất nhỏ **khó xảy ra trong một phép thử*
 
 ## 4. Tiếp tục học
 
-- [Core và Luyện tập/Vận dụng Chương IX](luyen-tap.md) · cùng ID canonical đã được review.
+- [Core và Luyện tập/Vận dụng Chương IX](luyen-tap.md) · dùng chung câu hỏi luyện tập đã có.
 - [Thư viện Written/Anchor Chương IX](../../thu-vien/tu-luan-chuong-ix.md) · giải trên giấy trước khi mở rubric.
 - [Tổng quan Chương IX](../chuong-ix.md).
 
-<small>Nguồn S1 đã được reviewer xác nhận: SGK Toán 10 KNTT tập 2 tr.77–82, SBT Bài 26 phần bài tập tr.61–63. Hình minh họa và thẻ hướng dẫn giúp học sinh tự ôn tập; không phải bài đánh giá thành thạo.</small>
+<small>Nguồn S1: SGK Toán 10 KNTT tập 2 tr.77–82, SBT Bài 26 phần bài tập tr.61–63. Hình minh họa và thẻ hướng dẫn giúp học sinh tự ôn tập; không phải bài đánh giá thành thạo.</small>
