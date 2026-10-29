@@ -86,21 +86,21 @@ async function ready(page,path){
       "B19 must render original reviewed canonical item ID");
     assert.equal(await dlg.locator("details[open]").count(),0,
       "Hint and answer must start collapsed in formative exercises");
-    assert((await dlg.innerText()).includes("Không chấm điểm/mastery"),
+    assert((await dlg.innerText()).includes("Không ghi điểm thành thạo"),
       "Formative exercises must not claim protected assessment");
     await dlg.locator("[data-thpt-modal-close]").click();
     await page.locator('[data-thpt-open-quiz="b19-practice"]').click();
     assert.equal(await dlg.locator(".thpt-r4-modal-question-nav button").count(),6,
       "B19 must expose 6 reviewed Practice/Application items, not only stage-one pair");
     await dlg.locator(".thpt-r4-modal-question-nav button").last().click();
-    assert((await dlg.innerText()).includes("THPT-G10-B19-P06"),
+    assert.equal(await dlg.locator("[data-thpt-canonical-item]").getAttribute("data-thpt-canonical-item"),"THPT-G10-B19-P06",
       "B19 advanced Practice must keep its existing canonical ID");
     assert.equal(await dlg.locator("details[open]").count(),0,
       "Extended Practice hints/answers must remain collapsed by default");
     await dlg.locator("[data-thpt-modal-close]").click();
     await page.locator('[data-thpt-open-quiz="b22-core"]').click();
     await dlg.locator(".thpt-r4-modal-question-nav button").nth(1).click();
-    assert((await dlg.innerText()).includes("THPT-G10-B22-P01"),
+    assert.equal(await dlg.locator("[data-thpt-canonical-item]").getAttribute("data-thpt-canonical-item"),"THPT-G10-B22-P01",
       "Approved ellipse item B22-P01 must supply mandatory Core coverage via role mapping");
     assert(!(await dlg.innerText()).includes("THPT-G10-B22-C01"),
       "Specialist eccentricity item B22-C01 must stay outside mandatory SGK Core");
@@ -109,8 +109,8 @@ async function ready(page,path){
     assert.equal(await dlg.locator(".thpt-r4-modal-question-nav button").count(),7,
       "B22 should contain 6 normal Practice + 1 optional specialist item");
     await dlg.locator(".thpt-r4-modal-question-nav button").last().click();
-    assert((await dlg.innerText()).includes("THPT-G10-B22-C01")&&
-      (await dlg.innerText()).includes("Chuyên sâu · tự chọn"),
+    assert((await dlg.locator("[data-thpt-canonical-item]").getAttribute("data-thpt-canonical-item"))==="THPT-G10-B22-C01"&&
+      (await dlg.innerText()).includes("Chuyên sâu tự chọn"),
       "Reviewer-reclassified eccentricity item must be optional, not mandatory Core");
     await dlg.locator("[data-thpt-modal-close]").click();
     // D5-reviewed SVGs may explain Practice AFTER deliberate solution reveal,
