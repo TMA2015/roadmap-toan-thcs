@@ -341,10 +341,11 @@
   }
 ];
  const allowed=new Set(["THPT-G10-B19-C01","THPT-G10-B19-C02","THPT-G10-B19-P01","THPT-G10-B19-P02","THPT-G10-B19-P03","THPT-G10-B19-P04","THPT-G10-B20-C01","THPT-G10-B20-C02","THPT-G10-B20-P01","THPT-G10-B20-P02","THPT-G10-B20-P03","THPT-G10-B20-P04","THPT-G10-B21-C01","THPT-G10-B21-C02","THPT-G10-B21-P01","THPT-G10-B21-P02","THPT-G10-B21-P03","THPT-G10-B21-P04","THPT-G10-B22-C01","THPT-G10-B22-C02","THPT-G10-B22-P01","THPT-G10-B22-P02","THPT-G10-B22-P03","THPT-G10-B22-P04","THPT-G10-B19-P05","THPT-G10-B19-P06","THPT-G10-B20-P05","THPT-G10-B20-P06","THPT-G10-B21-P05","THPT-G10-B21-P06","THPT-G10-B22-P05","THPT-G10-B22-P06"]);
- const validate=()=>({valid:records.length===32&&new Set(records.map(x=>x.item_id)).size===16&&records.every(x=>allowed.has(x.item_id)&&x.stem&&x.hint&&x.solution&&!/READINESS|-(RD|R)\d\d\b/.test(x.item_id))});
+ const validate=()=>({valid:records.length===32&&new Set(records.map(x=>x.item_id)).size===32&&records.every(x=>allowed.has(x.item_id)&&x.stem&&x.hint&&x.solution&&!/READINESS|-(RD|R)\d\d\b/.test(x.item_id))});
  const forLesson=(lesson,role)=>records.filter(x=>x.lesson===String(lesson)&&(
    role==="core"?(x.role==="CORE"||x.item_id==="THPT-G10-B22-P01"):
    ["PRACTICE","APPLICATION","OPTIONAL_SPECIALIZED"].includes(x.role)))
-   .map(x=>x.item_id==="THPT-G10-B22-P01"&&role==="core"?Object.assign({},x,{role:"CORE"}):x);
+   .map(x=>x.item_id==="THPT-G10-B22-P01"&&role==="core"?Object.assign({},x,{role:"CORE"}):x)
+   .sort((a,b)=>Number(a.role==="OPTIONAL_SPECIALIZED")-Number(b.role==="OPTIONAL_SPECIALIZED"));
  root.THPT_CHVII_REVIEWED_FORMATIVE=Object.freeze({contentVersion,records:Object.freeze(records.map(x=>Object.freeze(x))),validate,forLesson});
 })(window);
