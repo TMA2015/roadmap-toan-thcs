@@ -22,7 +22,7 @@
 | Written and Anchor | **4** | Separate single source location `thu-vien/tu-luan-chuong-vii.md`; 1 anchor-tagged Written B21, not a fifth item |
 | Public ChVII total | **36** | One statement and answer per item_id, with exposed formative self-check but no mastery |
 | Independent SGK Chapter Readiness | **0 activated** | Nonfunctional information-only route. Reviewed held-out item bodies, keys and rubrics are not imported |
-| Source illustrations D5 | **0 embedded in this integration** | Four reviewed SVGs remain separate pending answer-bearing display timing / visual QA |
+| Source illustrations D5 | **3 ChVII SVGs staged** | Exact reviewer PASS blobs attached to original B19-P06, B21-P03, B22-P06 **only after voluntarily expanding formative solution**. FIG04 ChVIII remains unintegrated. Browser/real-device validation is a separate D6 gate. |
 
 **Scope override:** `THPT-G10-B22-C01` involving eccentricity is `OPTIONAL_SPECIALIZED`, at the end of optional Practice and **not mandatory SGK Core**. B22-P01 basic ellipse coverage shares one ID in SGK Core and Practice.
 
@@ -31,20 +31,24 @@
 - Knowledge D1/D2 re-expressed as browser-ready prose with source lineages; source-equivalence and real-device verification remain release gates, not claimed as second NotebookLM verdict.
 - 32 original exercise stems, keys, explanations and hints transcribed from two immutable draft source files, retaining canonical IDs and role overlay. One legacy B19-C02 hint had a control character in authored source; source-equivalent plain wording preserved math (DELTA_B; no key/rubric/condition change).
 - 4 original Written stems, solutions, rubric labels retained; browser cards hide solution/rubric in default-closed `details`, do not score automatically.
+- 32/32 formative question stem/key/solution/hint strings matched verbatim to original authored source in a direct GitHub branch comparison (except the pre-declared source-equivalent broken B19-C02 hint); all four Written tasks/solutions/rubrics matched. Reviewer source receipts remain snapshot-scoped.
+- D5 FIG01/02/03 shared SVG blobs verified at reviewed Git SHA `8964b708aac7cf56d1848db9d469f2573ce40873`, `08e22fbc8ed90db7ccc48d782eb270404f057226`, `e28c6500b486ee755fad0fc164d48969fd891c55`; each used once in public assets, loaded only inside the corresponding formative solution's opened `<details>`. Never in Readiness. FIG04 retained for ChVIII.
 - UI labels, links, lessons and optional tier are implementation changes, not an invented new academic grade or new scope. No `DELTA_C` to original math content intended; any reviewer-discovered substantive mismatch remains HOLD until scoped re-review.
 
 ## 4. Tests and outstanding gates
 
 - `scripts/test-thpt-g10-chvii-reviewed-stage1.cjs` checks 32 IDs, 4 Written with 1 Anchor, 36 overall unique IDs, scope flags, no held-out release, and MkDocs navigation.
-- `scripts/test-thpt-r4-preview-browser.js` exercises lessons, 8 Core/Practice launcher cards, 6 normal Practice per lesson (7 optional for B22), Written solution concealment, responsive desktop/mobile, no Readiness activation, existing THCS/ChVI routing.
+- `scripts/test-thpt-r4-preview-browser.js` exercises lessons, 8 Core/Practice launcher cards, 6 normal Practice per lesson (7 optional for B22), Written solution concealment, 3 exact SVGs **not inserted before opting into solution**, responsive desktop/mobile, no Readiness activation, existing THCS/ChVI routing.
 - CI on final exact HEAD, source-to-render screenshot/MathJax and real iPhone/iPad UAT are still separate gates. **Do not call this released, complete chapter, or real learner Readiness PASS.**
-- Next wave: assess four D5 figures' placement/exposure; complete ChVII cumulative practice coverage and then start ChVIII B23–25 integration from its own exact reviewed snapshot. Standalone vertical Topic path needs independent review.
+- Next wave: verify physical mobile/Safari D6 and owner UAT; ChVIII FIG04 remains a separate D5 integration. Complete S1 chapter-end cumulative coverage, then ChVIII B23–25 in a separate wave. Standalone vertical Topic path needs independent review.
 
 ```text
 PUBLIC_CHVII_C_P_APP=32_CANONICAL
 PUBLIC_CHVII_WRITTEN=4_WITH_1_ANCHOR_TAG
 PUBLIC_CHVII_TOTAL=36_UNIQUE
 SGK_CHVII_KNOWLEDGE=4_PAGES_STAGED
+D5_CHVII_3_OF_3_SVG=STAGED_SOLUTION_ONLY
+D5_CHVIII_FIG04=NOT_INTEGRATED
 SGK_CHVII_READINESS=0_ACTIVE
 TOPIC_10_12_CHVII_SCOPE=NOT_INDEPENDENTLY_REVIEWED
 NO_NEW_MASTERy_OR_SCORE=TRUE
