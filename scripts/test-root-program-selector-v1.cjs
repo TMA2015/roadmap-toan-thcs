@@ -17,7 +17,7 @@ for(const url of refs){
  const target=path.resolve(root,"docs/thcs",url.split("?")[0]);
  assert(target.startsWith(path.resolve(root,"docs")+path.sep)&&(fs.existsSync(target)||fs.existsSync(target.replace(/\/$/,"")+".md")||fs.existsSync(path.join(target,"index.md"))),"Missing THCS target: "+url);
 }
-assert(read("mkdocs.yml").includes("Trang chủ THCS: thcs/index.md"));
+assert(read("mkdocs.yml").includes("  - Trang chủ: index.md")&&!read("mkdocs.yml").includes("  - Trang chủ THCS: thcs/index.md"),"Golden six-lane learner menu must be preserved");
 assert(legacy.includes('href="../thcs/"'));
 assert(read("docs/assets/javascripts/sticky-nav-v1.js").includes('["Trang chủ THCS", "thcs/", "⌂"]'));
 assert(read("docs/assets/javascripts/route-module-loader-v2.js").includes("const thcsHome"));
