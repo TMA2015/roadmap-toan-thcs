@@ -9,6 +9,7 @@ require("./test-thpt-g10-chvii-chviii-draft-bank.cjs");
 require("./test-thpt-chvi-review-receipt.cjs");
 require("./test-thpt-chvi-reviewed-formative.cjs");
 require("./test-thpt-chvi-reviewed-knowledge-parity.cjs");
+require("./test-thpt-g10-chvii-reviewed-stage1.cjs");
 const base="http://127.0.0.1:8765/thpt-preview/";
 async function ready(page,path){
  const response=await page.goto(base+path,{waitUntil:"networkidle"});
@@ -59,6 +60,123 @@ async function ready(page,path){
   assert((await entry.locator("h1").textContent()).includes("Chọn hành trình Toán"),
     "THPT cover shortcut did not open the real programme selection page");
   await entry.close();
+
+  // New G10 ChVII reviewed D1/D2 and PUBLIC formative stage. This deliberately
+  // does not test or expose academically reviewed held-out Chapter Readiness.
+  for(const viewport of [{width:1440,height:900},{width:390,height:844}]){
+    const page=await browser.newPage({viewport});
+    await ready(page,"sgk/");
+    assert((await page.locator('a[href*="chuong-vii/"]').count())>0,
+      "SGK search overview must link to ChVII without replacing ChVI");
+    await ready(page,"sgk/chuong-vii/");
+    assert.equal(await page.locator(".thpt-r4-grid .thpt-r4-tile").count(),4,
+      "ChVII hub must contain all four reviewed SGK lessons");
+    for(const lesson of ["19","20","21","22"]){
+      await ready(page,"sgk/chuong-vii/bai-"+lesson+"/");
+      assert((await page.locator("article").innerText()).includes("Ví dụ"),
+        "B"+lesson+" missing source-backed worked example");
+    }
+    await ready(page,"sgk/chuong-vii/bai-19/");
+    const helpCards=page.locator('[data-thpt-help-id^="D6-G10-B19-"]');
+    assert.equal(await helpCards.count(),2,"R02 D6 B19 must have two optional help cards");
+    assert.equal(await page.locator('[data-thpt-help-id][open]').count(),0,"D6 should start collapsed");
+    await helpCards.first().locator("summary").click();
+    const d6Link=helpCards.first().locator('[data-thpt-formative-id="THPT-G10-B19-C01"]');
+    assert.equal(await d6Link.count(),1,"D6 must link to an existing canonical item");
+    await d6Link.click();
+    const focusedModal=page.locator("dialog.thpt-r4-practice-dialog");
+    await focusedModal.waitFor({state:"visible"});
+    assert.equal(await focusedModal.locator("[data-thpt-canonical-item]").getAttribute("data-thpt-canonical-item"),"THPT-G10-B19-C01",
+      "D6 deep link should open exact B19-C01, without a second item engine");
+    assert.equal(await focusedModal.locator("details[open]").count(),0,
+      "D6 recovery must not reveal formative solution until chosen");
+    await focusedModal.locator("[data-thpt-modal-close]").click();
+    await ready(page,"sgk/chuong-vii/luyen-tap/");
+    assert.equal(await page.locator("[data-thpt-open-quiz]").count(),8,
+      "All eight SGK ChVII Core/Practice cards must be accessible");
+    await page.locator('[data-thpt-open-quiz="b19-core"]').click();
+    const dlg=page.locator("dialog.thpt-r4-practice-dialog");
+    assert.equal(await dlg.locator("[data-thpt-modal-lesson-number]").innerText(),"19");
+    assert((await dlg.locator("[data-thpt-r4] [data-thpt-canonical-item], [data-thpt-canonical-item]").first().getAttribute("data-thpt-canonical-item"))==="THPT-G10-B19-C01",
+      "B19 must render original reviewed canonical item ID");
+    assert.equal(await dlg.locator("details[open]").count(),0,
+      "Hint and answer must start collapsed in formative exercises");
+    assert((await dlg.innerText()).includes("Không ghi điểm thành thạo"),
+      "Formative exercises must not claim protected assessment");
+    await dlg.locator("[data-thpt-modal-close]").click();
+    await page.locator('[data-thpt-open-quiz="b19-practice"]').click();
+    assert.equal(await dlg.locator(".thpt-r4-modal-question-nav button").count(),6,
+      "B19 must expose 6 reviewed Practice/Application items, not only stage-one pair");
+    await dlg.locator(".thpt-r4-modal-question-nav button").last().click();
+    assert.equal(await dlg.locator("[data-thpt-canonical-item]").getAttribute("data-thpt-canonical-item"),"THPT-G10-B19-P06",
+      "B19 advanced Practice must keep its existing canonical ID");
+    assert.equal(await dlg.locator("details[open]").count(),0,
+      "Extended Practice hints/answers must remain collapsed by default");
+    await dlg.locator("[data-thpt-modal-close]").click();
+    await page.locator('[data-thpt-open-quiz="b22-core"]').click();
+    await dlg.locator(".thpt-r4-modal-question-nav button").nth(1).click();
+    assert.equal(await dlg.locator("[data-thpt-canonical-item]").getAttribute("data-thpt-canonical-item"),"THPT-G10-B22-P01",
+      "Approved ellipse item B22-P01 must supply mandatory Core coverage via role mapping");
+    assert(!(await dlg.innerText()).includes("THPT-G10-B22-C01"),
+      "Specialist eccentricity item B22-C01 must stay outside mandatory SGK Core");
+    await dlg.locator("[data-thpt-modal-close]").click();
+    await page.locator('[data-thpt-open-quiz="b22-practice"]').click();
+    assert.equal(await dlg.locator(".thpt-r4-modal-question-nav button").count(),7,
+      "B22 should contain 6 normal Practice + 1 optional specialist item");
+    await dlg.locator(".thpt-r4-modal-question-nav button").last().click();
+    assert((await dlg.locator("[data-thpt-canonical-item]").getAttribute("data-thpt-canonical-item"))==="THPT-G10-B22-C01"&&
+      (await dlg.innerText()).includes("Chuyên sâu tự chọn"),
+      "Reviewer-reclassified eccentricity item must be optional, not mandatory Core");
+    await dlg.locator("[data-thpt-modal-close]").click();
+    // D5-reviewed SVGs may explain Practice AFTER deliberate solution reveal,
+    // not when a learner only opens the question. Verify all three exact IDs
+    // on desktop and phone; no image cloning or premature answer exposure.
+    const figureCases=[
+      ["19",5,"THPT-G10-B19-P06"],
+      ["21",2,"THPT-G10-B21-P03"],
+      ["22",5,"THPT-G10-B22-P06"]
+    ];
+    for(const [lesson,slot,itemId] of figureCases){
+      await page.locator('[data-thpt-open-quiz="b'+lesson+'-practice"]').click();
+      await dlg.locator(".thpt-r4-modal-question-nav button").nth(slot).click();
+      assert((await dlg.locator("[data-thpt-canonical-item]").getAttribute("data-thpt-canonical-item"))===itemId,
+        "D5 asset must be tied to the reviewed original canonical Practice ID: "+itemId);
+      const details=dlg.locator('details[data-thpt-solution-figure-item="'+itemId+'"]');
+      assert.equal(await details.count(),1,"Expected reviewed figure attached to solution of "+itemId);
+      assert.equal(await dlg.locator("[data-thpt-reviewed-figure]").count(),0,
+        "Answer-bearing diagram must not be inserted before opening solution for "+itemId);
+      await details.locator("summary").click();
+      const img=dlg.locator('[data-thpt-reviewed-figure="'+itemId+'"]');
+      await img.scrollIntoViewIfNeeded();
+      await page.waitForFunction(id=>{
+        const el=document.querySelector('[data-thpt-reviewed-figure="'+id+'"]');
+        return el?.complete&&el.naturalWidth>0;
+      },itemId);
+      const imgWidth=await img.evaluate(x=>x.getBoundingClientRect().width);
+      assert(imgWidth<=viewport.width+1,
+        "Solution diagram must fit inside mobile viewport "+viewport.width);
+      assert((await img.getAttribute("src")).includes("/assets/images/thpt/"),
+        "D5 SVG source must be one same-origin shared asset");
+      await dlg.locator("[data-thpt-modal-close]").click();
+    }
+    await ready(page,"thu-vien/tu-luan-chuong-vii/");
+    assert.equal(await page.locator('[data-thpt-written-canonical]').count(),4,
+      "Four ChVII Written cards must be independently accessible");
+    assert.equal(await page.locator('.thpt-r4-written-card[data-thpt-kind="anchor"]').count(),1,
+      "Anchor is a tag on one Written item, not an extra duplicate");
+    assert.equal(await page.locator('.thpt-r4-written-card details[open]').count(),0,
+      "All ChVII Written solutions and rubrics must start closed");
+    assert.equal(await page.locator('.thpt-r4-written-card details').count(),4,
+      "Each Written item must retain one reviewed solution/rubric");
+    await ready(page,"sgk/chuong-vii/tu-kiem-tra-chuong/");
+    assert.equal(await page.locator("[data-thpt-secure-readiness]").count(),0);
+    assert.equal(await page.locator("[data-thpt-open-quiz]").count(),0,
+      "ChVII held-out Readiness must not be served as a public practice card");
+    assert((await page.locator("article").innerText()).includes("chưa mở"),"ChVII inactive readiness clearly identified to learners");
+    const overflow=await page.evaluate(()=>document.documentElement.scrollWidth-window.innerWidth);
+    assert(overflow<=20,"ChVII R4 overflow at "+viewport.width+"px: "+overflow);
+    await page.close();
+  }
 
   // Owner UI acceptance: the existing THCS library keeps its own search,
   // while SGK/Topic R4 overview pages must each show ONLY their search.
@@ -257,8 +375,53 @@ async function ready(page,path){
     assert.deepEqual(labels,["01 · Kiến thức","02 · Luyện tập","03 · Tự kiểm tra"],"Topic order differs from approved contract");
     assert((await nav.locator('a[href="../core/"]').count())===0,"Old topic Core tab must not appear");
   }
+  // iOS/iPad Safari regression from owner screenshots (2026-10-29):
+  // three level-one THPT categories must retain their native label text
+  // after opening the Material drawer. No custom desktop disclosure buttons
+  // or forced-hidden native nav children may exist at mobile breakpoints.
+  for(const [width,height] of [[390,844],[820,1180]]){
+   const mobile=await browser.newPage({viewport:{width,height},hasTouch:true});
+   try{
+    await ready(mobile,"sgk/chuong-viii/");
+    // Toggle the native drawer input directly: Chromium's touch emulation
+    // may place Material's stacked nested label above the header hit-target.
+    // This regression checks the actual broken state: visible root labels
+    // in the opened drawer at iPhone/iPad CSS breakpoints.
+    await mobile.evaluate(()=>{
+     const input=document.getElementById("__drawer");
+     input.checked=true;input.dispatchEvent(new Event("change",{bubbles:true}));
+    });
+    assert(await mobile.locator("#__drawer").isChecked(),
+      "Mobile drawer could not open at "+width);
+    const sections=mobile.locator('.md-sidebar--primary nav.md-nav--primary > ul.md-nav__list > li.md-nav__item--nested');
+    assert.equal(await sections.count(),3,"Expected three THPT mobile parent groups at "+width);
+    const expectedParents=["Học theo SGK KNTT","Học theo chuyên đề","Thư viện bài tập"];
+    for(let i=0;i<expectedParents.length;i++){
+     const item=sections.nth(i);
+     const label=item.locator(':scope > label.md-nav__link .md-ellipsis');
+     assert.equal((await label.textContent()).trim(),expectedParents[i],
+       "Mobile group label content wrong at "+width);
+     assert(await label.isVisible(),
+       "Mobile Safari-style drawer hid category label "+expectedParents[i]+" at "+width);
+     assert.equal(await item.locator(':scope > button.thpt-r4-sidebar-toggle').count(),0,
+       "Desktop accordion button leaked into native mobile drawer at "+width);
+     assert.equal(await item.locator(':scope > nav.md-nav').getAttribute("hidden"),null,
+       "Mobile navigation group incorrectly hidden at "+width);
+    }
+    await mobile.screenshot({path:"thpt-r4-visual-qa/ios-nav-"+width+".png"});
+    await mobile.evaluate(()=>{
+     const input=document.getElementById("__drawer");
+     input.checked=false;input.dispatchEvent(new Event("change",{bubbles:true}));
+    });
+    assert(!(await mobile.locator("#__drawer").isChecked()),
+      "Mobile drawer did not close at "+width);
+   }finally{await mobile.close()}
+  }
+
   // Owner UI consolidation: keep links while hiding Core library and end-chapter
   // exercise as separate student-facing sidebar sections.
+  // Desktop accordion is deliberately disabled on native mobile drawer.
+  await page.setViewportSize({width:1440,height:900});
   await ready(page,"sgk/chuong-vi/");
   const sideNav=page.locator(".md-sidebar--primary nav.md-nav--primary");
   const sidebarStructure=await sideNav.textContent();
@@ -311,15 +474,20 @@ async function ready(page,path){
   assert(await exerciseModal.isVisible(),"Core card did not open an exercise modal");
   assert.equal(page.url(),currentPracticeRoute,"Opening a lesson Core must not navigate to another page");
   assert.equal((await exerciseModal.locator('[data-thpt-reviewed-formative="1"]').count()),1,"B15 must load the reviewed public canonical bank, not a UI demo");
-  assert((await exerciseModal.locator(".thpt-r4-reviewed-formative-card").textContent()).includes("THPT-G10-B15-C01"),"Canonical B15 Core ID not visible");
+  assert.equal(await exerciseModal.locator(".thpt-r4-reviewed-formative-card").getAttribute("data-thpt-canonical-item"),"THPT-G10-B15-C01","Canonical ID retained in DOM but not learner-facing text");
+  assert(!(await exerciseModal.locator(".thpt-r4-reviewed-formative-card").innerText()).includes("THPT-G10-"),"Do not expose canonical IDs in student UI");
   const b15Solution=exerciseModal.locator(".thpt-r4-reviewed-formative-card details").last();
   assert(!await b15Solution.evaluate(el=>el.open),"Practice solution must stay collapsed before deliberate reveal");
   await b15Solution.locator("summary").click();
   assert(await b15Solution.evaluate(el=>el.open),"Practice solution did not open on learner request");
   assert((await b15Solution.textContent()).includes("x=2"),"Reviewed B15 Core solution is missing");
+  const recovery=exerciseModal.locator("a.thpt-r4-remediation-link");
+  assert.equal(await recovery.count(),1,"Formative item must offer learner an optional knowledge recovery link");
+  assert((await recovery.getAttribute("href")).endsWith("/sgk/chuong-vi/bai-15/"),"B15 recovery must link back to the lesson");
+  assert(!(await exerciseModal.locator(".thpt-r4-reviewed-formative-card").innerText()).includes("Đã review học thuật"),"No editorial reviewer status in learner view");
   await exerciseModal.locator(".thpt-r4-modal-buttons button").last().click();
   assert((await exerciseModal.locator(".thpt-r4-modal-progress").first().textContent()).includes("2 / 2"),"Reviewed exercise modal did not navigate to question two");
-  assert((await exerciseModal.locator(".thpt-r4-reviewed-formative-card").textContent()).includes("THPT-G10-B15-C02"),"Question navigation must retain canonical B15 IDs");
+  assert.equal(await exerciseModal.locator(".thpt-r4-reviewed-formative-card").getAttribute("data-thpt-canonical-item"),"THPT-G10-B15-C02","Question navigation retains canonical identity in dataset");
   await exerciseModal.locator("[data-thpt-modal-close]").click();
   assert(await exerciseModal.isHidden(),"Exercise modal did not close");
   await page.locator('[data-thpt-open-quiz="b16-core"]').click();
@@ -520,6 +688,37 @@ async function ready(page,path){
     "No learner-login assessment engine should load");
   assert.equal(await page.evaluate(()=>typeof window.THPTFormativeExposure),"undefined",
     "No authenticated exposure tracker should load");
+
+  // G10 ChVIII stage2: reviewed formative source, no held-out assessment.
+  require("./test-thpt-g10-chviii-reviewed-stage2.cjs");
+  for(const vp of [{width:1365,height:800},{width:390,height:844},{width:820,height:1100}]){
+    await page.setViewportSize(vp);
+    await ready(page,"sgk/chuong-viii/luyen-tap/");
+    assert.equal(await page.locator("[data-thpt-open-quiz]").count(),6,"ChVIII must expose three Core and three Practice launchers");
+    const sizes=await page.evaluate(()=>({w:document.documentElement.scrollWidth,v:innerWidth}));
+    assert(sizes.w<=sizes.v+20,"ChVIII practice overflow "+vp.width);
+  }
+  await page.locator('[data-thpt-open-quiz="b23-core"]').click();
+  assert((await page.locator("dialog.thpt-r4-practice-dialog a.thpt-r4-remediation-link").getAttribute("href")).endsWith("/sgk/chuong-viii/bai-23/"),"B23 recovery link wrong");
+  assert(!(await page.locator("dialog.thpt-r4-practice-dialog .thpt-r4-reviewed-formative-card").innerText()).includes("THPT-G10-"),"ChVIII canonical ID shown to students");
+  const viiiDialog=page.locator("dialog.thpt-r4-practice-dialog");
+  assert(await viiiDialog.isVisible(),"ChVIII Core modal must open");
+  assert((await viiiDialog.locator(".thpt-r4-modal-meta").textContent()).includes("VIII"),"ChVIII modal banner wrong chapter");
+  await viiiDialog.locator(".thpt-r4-modal-buttons button").last().click();
+  assert.equal(await viiiDialog.locator("[data-thpt-canonical-item]").getAttribute("data-thpt-canonical-item"),"THPT-G10-B23-C02");
+  assert.equal(await viiiDialog.locator("img[data-thpt-reviewed-figure]").count(),0,"D5 FIG04 leaked before solution disclosure");
+  await viiiDialog.locator("details").last().locator("summary").click();
+  await viiiDialog.locator('img[data-thpt-reviewed-figure="THPT-G10-B23-C02"]').waitFor();
+  await viiiDialog.locator("[data-thpt-modal-close]").click();
+  await ready(page,"thu-vien/tu-luan-chuong-viii/");
+  assert.equal(await page.locator('[data-thpt-written-canonical]').count(),3,"Missing ChVIII Written");
+  const writtenRecovery=page.locator("section[data-thpt-written-canonical] a.thpt-r4-remediation-link");
+  assert.equal(await writtenRecovery.count(),3,"All ChVIII Written need voluntary same-lesson knowledge links");
+  assert((await writtenRecovery.first().getAttribute("href")).endsWith("/sgk/chuong-viii/bai-23/"),"ChVIII Written recovery wrong lesson");
+  assert.equal(await page.locator('[data-thpt-kind="anchor"]').count(),1,"Anchor must be a Written tag");
+  assert.equal(await page.locator('section[data-thpt-written-canonical] details[open]').count(),0,"Written solutions must start hidden");
+  await ready(page,"sgk/chuong-viii/tu-kiem-tra-chuong/");
+  assert.equal(await page.locator("[data-thpt-readiness], [data-thpt-secure-readiness]").count(),0,"No active ChVIII Readiness");
 
   await page.close();
   console.log("PASS THPT R4 reviewed formative/Written + technical Readiness Chromium smoke (not production approval or real-device QA)");
