@@ -12,20 +12,26 @@ vm.runInNewContext(js,sandbox,{timeout:5000,filename:"chvii-reviewed-formative-v
 const bank=sandbox.window.THPT_CHVII_REVIEWED_FORMATIVE;
 assert(bank&&bank.validate().valid,"public ChVII bank not self-consistent");
 const ids=bank.records.map(x=>x.item_id);
-assert.equal(ids.length,16);assert.equal(new Set(ids).size,16);
+assert.equal(ids.length,32);assert.equal(new Set(ids).size,32);
 const required=Array.from({length:4},(_,i)=>String(i+19));
 for(const lesson of required){
  const items=bank.records.filter(x=>x.lesson===lesson);
- assert.equal(items.length,4,"must preserve four canonical source records B"+lesson);
+ assert.equal(items.length,8,"must preserve eight original canonical C/P source records B"+lesson);
  assert(items.every(x=>x.solution.length>15&&x.hint.length>5&&x.stem.length>15));
- assert(bank.forLesson(lesson,"core").length>=1,"SGK Core missing B"+lesson);
- assert(bank.forLesson(lesson,"practice").length>=2,"SGK practice missing B"+lesson);
+ assert.equal(bank.forLesson(lesson,"core").length,2,"Two SGK Core placements required B"+lesson);
+ assert.equal(bank.forLesson(lesson,"practice").length,lesson==="22"?7:6,"SGK Practice/Application/specialist placement missing B"+lesson);
  const lessonText=read("docs/thpt-preview/sgk/chuong-vii/bai-"+lesson+".md");
  assert(lessonText.includes("## 1.")&&lessonText.includes("## 3."),"SGK knowledge not stand-alone B"+lesson);
  assert(lessonText.includes("SGK")&&lessonText.includes("SBT"),"S1 lesson page provenance missing B"+lesson);
  assert(lessonText.includes("luyen-tap/"),"SGK lesson missing practice link B"+lesson);
 }
-assert(!ids.includes("THPT-G10-B22-C01"),"specialist eccentricity item must not be mandatory SGK Core");
+assert(ids.includes("THPT-G10-B22-C01"),"specialist eccentricity candidate is part of 32 reviewed source records");
+assert(!bank.forLesson("22","core").some(x=>x.item_id==="THPT-G10-B22-C01"),
+ "B22-C01 specialist eccentricity item must not be mandatory SGK Core");
+assert(bank.forLesson("22","practice").some(x=>x.item_id==="THPT-G10-B22-C01"&&x.role==="OPTIONAL_SPECIALIZED"),
+ "B22-C01 must remain optional specialist Practice with original canonical ID");
+assert.equal(bank.forLesson("22","practice").at(-1).item_id,"THPT-G10-B22-C01",
+ "Specialist item must appear last, clearly separated from normal practice");
 assert(bank.forLesson("22","core").some(x=>x.item_id==="THPT-G10-B22-P01"),
  "approved ellipse Core coverage must reuse ONE B22-P01 canonical ID");
 assert.equal(bank.records.filter(x=>x.item_id==="THPT-G10-B22-P01").length,1,
@@ -35,6 +41,7 @@ for(const p of [
  "docs/thpt-preview/sgk/chuong-vii.md",
  "docs/thpt-preview/sgk/chuong-vii/luyen-tap.md",
  "docs/thpt-preview/sgk/chuong-vii/tu-kiem-tra-chuong.md",
+ "docs/thpt-preview/thu-vien/tu-luan-chuong-vii.md",
  ...required.map(x=>"docs/thpt-preview/sgk/chuong-vii/bai-"+x+".md")
 ]){
  const source=read(p);
@@ -43,6 +50,15 @@ for(const p of [
  assert(!/data-mastery-credit=["']true|THPTProtectedReadiness|THPTSecureReadiness/.test(source),
   "new SGK formative pages cannot activate scoring");
 }
+const written=read("docs/thpt-preview/thu-vien/tu-luan-chuong-vii.md");
+const writtenIds=[...written.matchAll(/data-thpt-written-canonical="([^"]+)"/g)].map(x=>x[1]);
+const expectedWritten=["THPT-G10-CHVII-W19-01","THPT-G10-CHVII-W20-01",
+ "THPT-G10-CHVII-W21-ANCHOR-01","THPT-G10-CHVII-W22-01"];
+assert.deepEqual(writtenIds,expectedWritten,"Four reviewed Written/Anchor items in one canonical register");
+assert.equal(new Set([...ids,...writtenIds]).size,36,"32 C/P + 4 Written must stay unique");
+assert.equal((written.match(/data-thpt-kind="anchor"/g)||[]).length,1,
+ "Anchor is a single tag on one Written item");
+assert.equal((written.match(/<details>/g)||[]).length,4,"All solutions and rubrics must be collapsed initially");
 const hub=read("docs/thpt-preview/sgk/chuong-vii/luyen-tap.md");
 for(const lesson of required)for(const role of ["core","practice"])
  assert(hub.includes('data-thpt-open-quiz="b'+lesson+'-'+role+'"'),
@@ -51,9 +67,9 @@ assert.equal((hub.match(/data-thpt-practice-hub/g)||[]).length,1,
  "one shared hub should wire all lesson card buttons");
 const mkdocs=read("mkdocs.thpt-preview.yml");
 for(const name of ["chuong-vii.md","bai-19.md","bai-20.md","bai-21.md","bai-22.md","chuong-vii/luyen-tap.md","chuong-vii/tu-kiem-tra-chuong.md",
- "thpt-chvii-reviewed-formative-v1.js"])
+ "thpt-chvii-reviewed-formative-v1.js","tu-luan-chuong-vii.md"])
  assert(mkdocs.includes(name),"THPT nav/script missing "+name);
 const engine=read("docs/assets/javascripts/thpt-r4-preview.js");
 assert(engine.includes("THPT_CHVII_REVIEWED_FORMATIVE")&&engine.includes("2[012]"),
  "R4 exercise UI must load the reviewed ChVII canonical bank");
-console.log("PASS G10 ChVII staged D1/D2 lesson scope, 16 canonical public formative items, role mapping, R4 nav, no held-out Readiness or mastery");
+console.log("PASS G10 ChVII D1/D2 knowledge, all 32 unique reviewed public C/P including specialist role, 4 Written (1 Anchor), R4 navigation, no held-out Readiness or mastery");
