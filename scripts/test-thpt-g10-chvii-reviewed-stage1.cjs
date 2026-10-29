@@ -57,6 +57,7 @@ const expectedWritten=["THPT-G10-CHVII-W19-01","THPT-G10-CHVII-W20-01",
  "THPT-G10-CHVII-W21-ANCHOR-01","THPT-G10-CHVII-W22-01"];
 assert.deepEqual(writtenIds,expectedWritten,"Four reviewed Written/Anchor items in one canonical register");
 assert.equal(new Set([...ids,...writtenIds]).size,36,"32 C/P + 4 Written must stay unique");
+assert(!/Anchor skills:|anchor_tag=true|1 Anchor/.test(written),"Internal Anchor audit metadata must not appear in learner-facing Written text");
 assert.equal((written.match(/data-thpt-kind="anchor"/g)||[]).length,1,
  "Anchor is a single tag on one Written item");
 assert.equal((written.match(/<details>/g)||[]).length,4,"All solutions and rubrics must be collapsed initially");
@@ -105,6 +106,6 @@ assert(reviewedD5.every(x=>engine.includes(x[0])&&engine.includes(x[1])),
  "All three D5 figures must use exact original canonical Practice ID in the disclosure-only mapping");
 assert(engine.includes('solution.addEventListener("toggle"')&&engine.includes('if(!solution.open'),
  "No answer-bearing SVG may render before the learner opens the solution details");
-assert(engine.includes("THPT_CHVII_REVIEWED_FORMATIVE")&&(engine.includes("2[012]")||engine.includes("2[0-5]")),
+assert(engine.includes("THPT_CHVII_REVIEWED_FORMATIVE")&&engine.includes("2[012]"),
  "R4 exercise UI must load the reviewed ChVII canonical bank");
 console.log("PASS G10 ChVII D1/D2 knowledge, all 32 unique reviewed public C/P including specialist role, 4 Written (1 Anchor), R4 navigation, no held-out Readiness or mastery");

@@ -2,8 +2,8 @@
 
 <div class="thpt-r4-screen" data-thpt-r4>
 <p class="thpt-r4-eyebrow">THƯ VIỆN TỰ LUẬN · CHƯƠNG VIII · SGK KNTT</p>
-<p class="thpt-r4-lead">Ba bài tự luận về quy tắc đếm, tổ hợp và nhị thức Newton; một bài được chọn làm bài mỏ neo. Hãy tự làm trước khi mở lời giải và rubric.</p>
-<div class="thpt-r4-search"><label for="thpt-chviii-written-search"><strong>🔎 Tìm tự luận Chương VIII</strong></label><input id="thpt-chviii-written-search" type="search" data-thpt-filter-input="written" placeholder="Ví dụ: quy tắc đếm, tổ hợp, Newton"><span data-thpt-filter-count aria-live="polite">3 bài tự luận · 1 Anchor</span></div>
+<p class="thpt-r4-lead">Ba bài tự luận về quy tắc đếm, tổ hợp và nhị thức Newton. Hãy tự làm trước khi mở lời giải và tiêu chí tự đối chiếu.</p>
+<div class="thpt-r4-search"><label for="thpt-chviii-written-search"><strong>🔎 Tìm tự luận Chương VIII</strong></label><input id="thpt-chviii-written-search" type="search" data-thpt-filter-input="written" placeholder="Ví dụ: quy tắc đếm, tổ hợp, Newton"><span data-thpt-filter-count aria-live="polite">3 bài tự luận</span></div>
 <div data-thpt-filter-list="written">
 <section class="thpt-r4-written-card" data-thpt-filter-item data-thpt-kind="normal" data-thpt-filter-text="lớp 10 chương VIII bài 23 Quy tắc đếm tự luận" data-thpt-written-canonical="THPT-G10-CHVIII-W23-01" data-thpt-exposure-role="SGK_WRITTEN" id="thpt-g10-chviii-w23-01">
 <p class="thpt-r4-eyebrow">TỰ LUẬN · TOÁN 10 · CHƯƠNG VIII</p>
