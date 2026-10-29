@@ -64,7 +64,7 @@ for(const name of fs.readdirSync(styles).filter(n=>n.endsWith(".css"))){
 // Historic review/checkpoint files are excluded deliberately.
 const liveDirs=["docs/kien-thuc","docs/thpt-preview","docs/hoc-theo-lop",
  "docs/luyen-tap","docs/ai","docs/ban-do-ky-nang","docs/roadmap","docs/tien-do-hoc-tap"];
-const liveFiles=["docs/index.md"];
+const liveFiles=["docs/index.md","docs/thcs/index.md"];
 const walk=dir=>{
  if(!fs.existsSync(dir))return [];
  return fs.readdirSync(dir,{withFileTypes:true}).flatMap(ent=>

@@ -22,6 +22,10 @@ const open=async(page,url)=>{
       if(r.url().startsWith(host+prefix)&&r.status()>=400)errors.push(r.status()+" "+r.url());
     });
     await open(page,host+prefix);
+    assert.equal(await page.locator("[data-math-program-selector]").count(),1,"Missing level selector: "+prefix);
+    await page.locator('[data-math-program-selector] a[href="thcs/"]').click();
+    await page.locator('[data-home-portal][data-home-style-ready="1"]').waitFor();
+    assert.equal(new URL(page.url()).pathname,prefix+"thcs/","THCS home moved, not its learning URLs");
     await page.locator("[data-roadmap-topic-launcher]").waitFor({state:"visible"});
     // First-visit THCS style choice is an intended overlay, not a regression.
     if(await page.locator("[data-home-dialog]").isVisible()){
@@ -37,7 +41,7 @@ const open=async(page,url)=>{
     assert((await dlg.locator(".roadmap-main-quick .roadmap-main-quick__links").innerText()).includes("Trang chủ THCS"));
     const cover=dlg.locator("[data-math-program-cover-link]");
     assert.equal(await cover.count(),1);
-    assert.equal(new URL(await cover.getAttribute("href"),page.url()).pathname,prefix+"thpt-preview/");
+    assert.equal(new URL(await cover.getAttribute("href"),page.url()).pathname,prefix);
     await cover.click();
     assert((await page.locator("h1").first().innerText()).includes("Chọn hành trình Toán"),
       "Programme selector not reachable from THCS under "+prefix);
@@ -48,7 +52,7 @@ const open=async(page,url)=>{
     assert.equal(await topicDlg.locator('nav[aria-label="Năm lối tắt chính Toán THPT"] a').count(),5);
     assert((await topicDlg.locator('nav[aria-label="Năm lối tắt chính Toán THPT"]').innerText()).includes("Trang chủ THPT"));
     const coverAgain=topicDlg.locator("[data-math-program-cover-link]");
-    assert.equal(new URL(await coverAgain.getAttribute("href"),page.url()).pathname,prefix+"thpt-preview/");
+    assert.equal(new URL(await coverAgain.getAttribute("href"),page.url()).pathname,prefix);
     await coverAgain.click();
     assert((await page.locator("h1").first().innerText()).includes("Chọn hành trình Toán"),
       "Programme selector not reachable from THPT under "+prefix);

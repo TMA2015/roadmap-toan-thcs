@@ -28,7 +28,7 @@ with sync_playwright() as p:
                                 args=["--no-sandbox", "--disable-dev-shm-usage"])
     desktop = browser.new_context(viewport={"width": 1440, "height": 1000}, device_scale_factor=1)
     page = desktop.new_page()
-    page.goto(BASE, wait_until="networkidle")
+    page.goto(BASE + "thcs/", wait_until="networkidle")
     page.locator("[data-home-dialog]").wait_for(state="visible")
     shot(page, "home-selector-desktop.png")
     page.locator('[data-home-dialog] [data-home-select="standard"]').click()
@@ -697,7 +697,7 @@ $$
     phone = browser.new_context(viewport={"width": 390, "height": 844}, device_scale_factor=1,
                                 is_mobile=True, has_touch=True)
     first_phone = phone.new_page()
-    first_phone.goto(BASE, wait_until="networkidle")
+    first_phone.goto(BASE + "thcs/", wait_until="networkidle")
     check(first_phone.locator("[data-home-dialog]").is_visible(), "phone first-visit chooser")
     check(first_phone.locator('.home-style-card[data-home-select="standard"]').is_visible(), "standard choice visible")
     check(first_phone.locator('.home-style-card[data-home-select="playful"]').is_visible(), "playful choice visible")

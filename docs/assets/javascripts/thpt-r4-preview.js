@@ -64,7 +64,7 @@
     coverNav.className="roadmap-main-quick__links";
     coverNav.setAttribute("aria-label","Cổng chọn chương trình Toán");
     const coverLink=document.createElement("a");
-    coverLink.href=base;
+    coverLink.href=match[1];
     coverLink.textContent="⌂ Chọn chương trình";
     coverLink.dataset.mathProgramCoverLink="1";
     coverNav.appendChild(coverLink);

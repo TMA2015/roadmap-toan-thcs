@@ -12,8 +12,8 @@
     document.head.appendChild(script);
   };
   const path = location.pathname.replace(/\/index\.html$/, "/");
-  const siteRoot = path.endsWith("/roadmap-toan-thcs/") || path.endsWith("/self-learning-math/") || path === "/";
-  if (siteRoot) {
+  const thcsHome = /\/(?:roadmap-toan-thcs\/|self-learning-math\/)?thcs\/$/.test(path);
+  if (thcsHome) {
     load("study-scene-v1.js");
     load("home-orientation-slider-v1.js");
   }

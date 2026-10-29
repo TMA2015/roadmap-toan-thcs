@@ -2,8 +2,9 @@
 "use strict";
 const fs=require("fs"),path=require("path"),cp=require("child_process"),r=path.resolve(__dirname,"..");
 const read=p=>fs.readFileSync(path.join(r,p),"utf8");
-const home=read("docs/index.md"),library=read("docs/kien-thuc/index.md"),css=read("docs/assets/stylesheets/site-design-system.css"),nav=read("docs/assets/javascripts/sticky-nav-v1.js"),slider=read("docs/assets/javascripts/home-orientation-slider-v1.js"),yaml=read("mkdocs.yml");
+const cover=read("docs/index.md"),home=read("docs/thcs/index.md"),library=read("docs/kien-thuc/index.md"),css=read("docs/assets/stylesheets/site-design-system.css"),nav=read("docs/assets/javascripts/sticky-nav-v1.js"),slider=read("docs/assets/javascripts/home-orientation-slider-v1.js"),yaml=read("mkdocs.yml");
 const ok=(v,m)=>{if(!v)throw Error(m)}; 
+ok(cover.includes("data-math-program-selector")&&cover.includes('href="thcs/"')&&cover.includes('href="thpt-preview/home/"'),"root programme gateway links");
 // The learning-guide gallery is homepage-only and must not alter learner evidence or route semantics.
 // Mobile gallery image loading is browser-gated in capture-ui-previews.py.
 ok((home.match(/<article class="home-slide [^"]+" data-home-slide/g)||[]).length===4,"four homepage orientation slides");
@@ -50,8 +51,8 @@ for(let i=0;i<orderedPrimary.length-1;i++){
 ok(yaml.includes("Bản đồ kỹ năng: ban-do-ky-nang/index.md")&&yaml.indexOf("Bản đồ kỹ năng: ban-do-ky-nang/index.md")>yaml.indexOf("  - Thư viện bài tập:"),"skill map is grouped under the exercise library");
 
 ok(nav.includes('dialog.append(heading,coverNav,main,hint,list)')&&nav.includes('count.textContent = "7 + 25"'),"main groups and topics share one compact header launcher, with a separate programme-cover link");
-ok(nav.includes('coverLink.dataset.mathProgramCoverLink="1"')&&nav.includes('coverLink.href=sitePrefix()+"thpt-preview/"'),"THCS launcher links to level-1 programme cover without changing seven primary groups");
-ok(nav.includes('["Trang chủ THCS", "", "⌂"]'),"THCS home remains an explicit level-2 homepage");
+ok(nav.includes('coverLink.dataset.mathProgramCoverLink="1"')&&nav.includes('coverLink.href=sitePrefix();'),"THCS launcher links to level-1 programme cover without changing seven primary groups");
+ok(nav.includes('["Trang chủ THCS", "thcs/", "⌂"]'),"THCS home remains an explicit level-2 homepage");
 ok(css.includes(".roadmap-topic-launcher")&&css.includes(".roadmap-topic-dialog__list"),"independent launcher/modal styles");
 ok(css.includes(".roadmap-main-quick__links"),"responsive seven-group grid in the modal");
 ok(!css.includes(".roadmap-mobile-shortcuts")&&!css.includes(".md-sidebar--primary > .md-sidebar__scrollwrap"),"remove all injected/sticky drawer styles");
@@ -62,7 +63,7 @@ ok(/route-module-loader-v\d+\.js/.test(yaml)&&!yaml.includes("  - assets/javascr
 const routeLoaderName=(yaml.match(/^\s*- assets\/javascripts\/(route-module-loader-v\d+\.js)\s*$/m)||[])[1];
 ok(routeLoaderName,"versioned route loader configured");
 const routeLoader=read("docs/assets/javascripts/"+routeLoaderName);
-ok(routeLoader.includes('load("home-orientation-slider-v1.js")')&&routeLoader.includes('load("study-scene-v1.js")')&&routeLoader.includes('load("anchor-library-v1.js")'),"route loader keeps homepage and anchor modules available");
+ok(routeLoader.includes("const thcsHome")&&routeLoader.includes('load("home-orientation-slider-v1.js")')&&routeLoader.includes('load("study-scene-v1.js")')&&routeLoader.includes('load("anchor-library-v1.js")'),"route loader keeps homepage and anchor modules available");
 cp.execFileSync(process.execPath,["--check",path.join(r,"docs/assets/javascripts",routeLoaderName)],{stdio:"pipe"});
 ok(yaml.indexOf("learner-evidence-v1.js")<yaml.indexOf("topic-workspace-v1.js")&&yaml.indexOf("topic-workspace-v1.js")<yaml.indexOf("https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"),"Core critical runtime loads before remote MathJax");
 console.log("PASS: persistent desktop nav, four orientation slides, four compact entry points, four library clusters, all 25 links.");

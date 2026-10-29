@@ -12,13 +12,14 @@ const source=path.join(preview,"thpt-preview");
 const target=path.join(main,"thpt-preview");
 const file=p=>fs.readFileSync(path.join(main,p),"utf8");
 for(const p of [
- "index.html","kien-thuc/index.html","assets/javascripts/floating-ai-tutor-v1.js",
+ "index.html","thcs/index.html","kien-thuc/index.html","assets/javascripts/floating-ai-tutor-v1.js",
  "assets/javascripts/firebase-gemini-v1.js","assets/javascripts/thpt-r4-preview.js",
  "assets/stylesheets/thpt-r4-preview.css"
 ])assert(fs.existsSync(path.join(main,p)),"Missing shared site dependency: "+p);
 assert(fs.existsSync(path.join(source,"sgk/chuong-vi/bai-16/index.html")),
  "THPT dedicated MkDocs build is missing Chapter VI.");
-const thcsBefore=fs.readFileSync(path.join(main,"index.html"));
+const coverBefore=fs.readFileSync(path.join(main,"index.html"));
+const thcsBefore=fs.readFileSync(path.join(main,"thcs/index.html"));
 const thcsTopicBefore=fs.readFileSync(path.join(main,"kien-thuc/index.html"));
 fs.cpSync(source,target,{recursive:true,force:true});
 for(const p of [
@@ -37,8 +38,8 @@ for(const label of ["Trang chủ THPT","Học theo SGK KNTT","Học theo chuyên
  assert(html.includes(label),"THPT page lost its own MkDocs menu: "+label);
 assert(!html.includes("25 chuyên đề xuyên lớp")||html.includes("Trang chủ THPT"),
  "THPT pages must use THPT-specific navigation, not THCS top menu");
-assert(fs.readFileSync(path.join(main,"index.html")).equals(thcsBefore),
- "Assemble must not change THCS homepage bytes");
+assert(fs.readFileSync(path.join(main,"index.html")).equals(coverBefore),"Assemble must not change root cover bytes");
+assert(fs.readFileSync(path.join(main,"thcs/index.html")).equals(thcsBefore),"Assemble must not change THCS homepage bytes");
 assert(fs.readFileSync(path.join(main,"kien-thuc/index.html")).equals(thcsTopicBefore),
  "Assemble must not change THCS knowledge route bytes");
 console.log("PASS assembled ONE GitHub Pages site: shared MkDocs/Gemini assets, separate THPT navigation, THCS bytes preserved.");

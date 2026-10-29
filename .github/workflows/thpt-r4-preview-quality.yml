@@ -6,8 +6,13 @@ on:
       - 'mkdocs.thpt-preview.yml'
       - 'mkdocs.yml'
       - 'scripts/test-thpt-static-release.cjs'
+      - 'scripts/test-root-program-selector-v1.cjs'
+      - 'scripts/test-site-navigation-v1.js'
+      - 'docs/assets/javascripts/sticky-nav-v1.js'
       - 'scripts/assemble-thpt-site.cjs'
       - '.github/workflows/deploy.yml'
+      - 'docs/index.md'
+      - 'docs/thcs/**'
       - 'docs/thpt-preview/**'
       - 'docs/assets/javascripts/thpt-r4-preview.js'
       - 'docs/assets/javascripts/floating-ai-tutor-v1.js'
@@ -51,6 +56,8 @@ jobs:
           node --check docs/assets/javascripts/thpt-chvi-reviewed-formative-v1.js
       - name: Verify future Self-Learning Math rename compatibility (no rename/deploy)
         run: |
+          node scripts/test-root-program-selector-v1.cjs
+          node scripts/test-site-navigation-v1.js
           node scripts/test-self-learning-math-rename-preflight.cjs
           for js in             docs/assets/javascripts/sticky-nav-v1.js             docs/assets/javascripts/anchor-library-v1.js             docs/assets/javascripts/anchor-topic-related-v1.js             docs/assets/javascripts/model-examples-library-v1.js             docs/assets/javascripts/written-exercise-library-v1.js             docs/assets/javascripts/topic25-exam-engine-v1.js             docs/assets/javascripts/route-module-loader-v1.js             docs/assets/javascripts/route-module-loader-v2.js; do node --check "$js"; done
       - name: Check THPT no-account static release contract
@@ -94,6 +101,8 @@ jobs:
       - name: Verify combined build has no backend
         run: |
           test -f site/index.html
+          test -f site/thcs/index.html
+          test -f site/kien-thuc/04-bieu-thuc-dai-so/index.html
           test -f site/thpt-preview/sgk/chuong-vi/bai-16/index.html
           test ! -e site/assets/javascripts/thpt-protected-readiness-v1.js
           test ! -e site/assets/javascripts/thpt-formative-exposure-v1.js
