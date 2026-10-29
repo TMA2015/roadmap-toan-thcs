@@ -6,7 +6,7 @@
 <div class="thpt-r4-search"><label for="thpt-chix-written-search"><strong>🔎 Tìm tự luận Chương IX</strong></label><input id="thpt-chix-written-search" type="search" data-thpt-filter-input="written" placeholder="Ví dụ: không gian mẫu, biến cố đối, tổ hợp"><span data-thpt-filter-count aria-live="polite">2 bài · 1 Anchor</span></div>
 <div data-thpt-filter-list="written">
 <section class="thpt-r4-written-card" data-thpt-filter-item data-thpt-kind="normal" data-thpt-filter-text="lớp 10 chương IX bài 26 Biến cố và định nghĩa cổ điển của xác suất tự luận" data-thpt-written-canonical="THPT-G10-CHIX-W26-01" data-thpt-exposure-role="SGK_WRITTEN" id="thpt-g10-chix-w26-01">
-<p class="thpt-r4-eyebrow">THPT-G10-CHIX-W26-01 · BÀI TỰ LUẬN</p>
+<p class="thpt-r4-eyebrow">BÀI TỰ LUẬN · BÀI 26</p>
 <h2>Bài 26 · Biến cố và định nghĩa cổ điển của xác suất</h2>
 <p>Gieo một con xúc xắc 6 mặt cân đối và tung một đồng xu cân đối, ghi cặp kết quả (mặt đồng xu, số chấm). (a) Mô tả Ω và n(Ω). (b) Gọi A là biến cố “xuất hiện mặt ngửa và số chấm lớn hơn 4”, hãy liệt kê A và tính P(A). (c) Nêu biến cố đối Ā và tính P(Ā).</p>
 <details><summary>Xem lời giải, đáp án và rubric sau khi tự làm</summary>
@@ -16,7 +16,7 @@
 <p><strong>Gợi ý khắc phục:</strong> Vẽ bảng 2 hàng, 6 cột để thấy cả A và phần bù.</p></details>
 </section>
 <section class="thpt-r4-written-card" data-thpt-filter-item data-thpt-kind="anchor" data-thpt-filter-text="lớp 10 chương IX bài 27 Thực hành tính xác suất theo định nghĩa cổ điển mỏ neo" data-thpt-written-canonical="THPT-G10-CHIX-W27-ANCHOR-01" data-thpt-exposure-role="SGK_WRITTEN" id="thpt-g10-chix-w27-anchor-01">
-<p class="thpt-r4-eyebrow">THPT-G10-CHIX-W27-ANCHOR-01 · BÀI MỎ NEO · WRITTEN · REVIEWED D3/D4 20261028</p>
+<p class="thpt-r4-eyebrow">BÀI MỎ NEO · BÀI 27</p>
 <h2>Bài 27 · Thực hành tính xác suất theo định nghĩa cổ điển</h2>
 <p>Một hộp có 4 thẻ đỏ và 3 thẻ xanh, cả bảy thẻ đều phân biệt. Rút đồng thời đều ngẫu nhiên 2 thẻ, không xét thứ tự. (a) Tính n(Ω). (b) Tính xác suất hai thẻ cùng màu. (c) Tính xác suất có ít nhất 1 thẻ xanh. (d) Giải thích vì sao có thể dùng tổ hợp thay vì chỉnh hợp trong bài toán.</p>
 <details><summary>Xem lời giải, đáp án và rubric sau khi tự làm</summary>
