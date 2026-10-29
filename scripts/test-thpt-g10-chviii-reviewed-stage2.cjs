@@ -33,6 +33,8 @@ assert.deepEqual(wIds,["THPT-G10-CHVIII-W23-01","THPT-G10-CHVIII-W24-ANCHOR-01",
 assert.equal(new Set([...ids,...wIds]).size,28,"ChVIII must have 28 unique canonical records");
 assert.equal((written.match(/data-thpt-kind="anchor"/g)||[]).length,1,"Anchor must be a Written tag");
 assert.equal((written.match(/<details>/g)||[]).length,3,"Written solutions start collapsed");
+assert.equal((written.match(/<span class="arithmatex">\\\(/g)||[]).length,12,
+ "All 12 ChVIII Written math formula strings must be MathJax-wrapped");
 const hub=read("docs/thpt-preview/sgk/chuong-viii/luyen-tap.md");
 for(let n=23;n<=25;n++)for(const role of ["core","practice"])
  assert(hub.includes('data-thpt-open-quiz="b'+n+'-'+role+'"'),"Missing Core/Practice launcher "+n+" "+role);
