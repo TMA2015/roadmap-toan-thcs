@@ -11,7 +11,7 @@
 </div>
 <div class="thpt-r4-lesson-tabs" aria-label="Chương VII: học và luyện">
 <a href="luyen-tap/">Core và Luyện tập/Vận dụng</a>
-<a href="../thu-vien/tu-luan-chuong-vii/">Tự luận Chương VII · 4 bài</a>
+<a href="../../thu-vien/tu-luan-chuong-vii/">Tự luận Chương VII · 4 bài</a>
 <a href="tu-kiem-tra-chuong/">Tự kiểm tra cuối chương · chưa kích hoạt</a>
 </div>
 <p class="thpt-r4-lead">Các bài luyện tập sử dụng <strong>một ID canonical cho mỗi câu</strong>; có thể xem gợi ý hoặc lời giải, vì vậy <strong>không tự ghi điểm/mastery</strong>. Câu kiểm tra độc lập đã review vẫn được giữ riêng, không đưa lên GitHub công khai.</p>
