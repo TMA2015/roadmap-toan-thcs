@@ -463,6 +463,27 @@ async function ready(page,path){
     assert((await draftLinks.filter({has:page.locator("span")}).count())>=0,"Navigation DOM unexpectedly changed");
     assert((await page.locator('.thpt-r4-lesson-tabs a[href="'+target+'"]').count())===1,"Missing lesson route "+target);
   }
+  // Full-page B17/B18 rendering QA: do not sample only the screenshots.
+  for(const [lesson,inlineCount,displayCount] of [["17",130,4],["18",59,8]]){
+    await ready(page,"sgk/chuong-vi/bai-"+lesson+"/");
+    const article=page.locator("article.md-content__inner");
+    assert.equal(await article.locator("span.arithmatex").count(),inlineCount,
+      "B"+lesson+" entire lesson must have all inline math wrappers");
+    assert.equal(await article.locator("div.arithmatex").count(),displayCount,
+      "B"+lesson+" entire lesson must render all display math");
+    const details=article.locator("details");
+    assert.equal(await details.count(),1,"B"+lesson+" hidden solution preserved");
+    assert(!(await details.evaluate(el=>el.open)),"B"+lesson+" self-check must be collapsed by default");
+    assert.equal(await details.locator("span.arithmatex").count(),9,
+      "B"+lesson+" hidden solution requires all nine math wrappers");
+    await details.locator("summary").click();
+    assert(await details.evaluate(el=>el.open),"B"+lesson+" student can expand full explanation");
+    assert(await details.locator("li").first().isVisible(),"B"+lesson+" hidden answer becomes visible");
+    await details.locator("summary").click();
+    assert(!(await details.evaluate(el=>el.open)),"B"+lesson+" answers can collapse again");
+    const bounds=await page.evaluate(()=>({w:document.documentElement.scrollWidth,v:innerWidth}));
+    assert(bounds.w<=bounds.v+20,"B"+lesson+" math overflows narrow viewport");
+  }
   for(const [lesson,title] of [
     ["15","Hàm số"],["17","Dấu của tam thức bậc hai"],
     ["18","Phương trình quy về phương trình bậc hai"]
