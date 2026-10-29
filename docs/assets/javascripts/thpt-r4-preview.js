@@ -246,8 +246,9 @@
   // Each item has one canonical record in thpt-chvi-reviewed-formative-v1.js;
   // the SGK card chooses a role-based placement without cloning content.
   const reviewed=window.THPT_CHVI_REVIEWED_FORMATIVE;
-  const showReviewed=items=>{
-   let index=0;
+  const showReviewed=(items,requestedItem)=>{
+   let index=items.findIndex(item=>item.item_id===requestedItem);
+   if(index<0)index=0;
    const root=document.createElement("section");
    root.className="thpt-r4-reviewed-formative";
    root.dataset.thptReviewedFormative="1";
@@ -404,7 +405,7 @@
     if(activeBank?.validate().valid){
      const items=activeBank.forLesson(lesson,parts[2]);
      if(items.length){
-      showReviewed(items);
+      showReviewed(items,new URLSearchParams(location.search).get("item"));
       if(parts[2]==="practice")attachCumulative(lesson);
       return;
      }
@@ -435,6 +436,17 @@
     }
    });
   });
+  // Public formative navigation from the approved D6 help cards only.
+  const requestedItem=new URLSearchParams(location.search).get("item");
+  const parsed=/^THPT-G10-B(19|20|21|22|23|24|25)-[CP]\\d{2}$/.exec(requestedItem||"");
+  if(parsed){
+   const lesson=parsed[1], bank=Number(lesson)>=23?window.THPT_CHVIII_REVIEWED_FORMATIVE:window.THPT_CHVII_REVIEWED_FORMATIVE;
+   if(bank?.validate().valid){
+    const placement=["core","practice"].find(role=>bank.forLesson(lesson,role).some(item=>item.item_id===requestedItem));
+    const trigger=placement?root.querySelector('[data-thpt-open-quiz="b'+lesson+'-'+placement+'"]'):null;
+    trigger?.click();
+   }
+  }
  }
 
 
