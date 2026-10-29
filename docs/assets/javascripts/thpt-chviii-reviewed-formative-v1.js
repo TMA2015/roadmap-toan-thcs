@@ -210,7 +210,7 @@
     "item_id": "THPT-G10-B23-P05",
     "lesson": "23",
     "role": "ADVANCED",
-    "skill": "ADVANCED",
+    "skill": "COUNT_CASES_NO_REPEAT",
     "stem": "Từ các chữ số \\(0,1,2,3,4\\), lập số tự nhiên có ba chữ số khác nhau và là số chẵn. Có bao nhiêu số?",
     "solution": "Đáp án: \\(30\\) số.\nLời giải: Chia hai trường hợp rời nhau. (i) Hàng đơn vị bằng 0: hàng trăm có 4 lựa chọn, hàng chục còn 3, được \\(4\\cdot3=12\\). (ii) Hàng đơn vị là 2 hoặc 4: có 2 lựa chọn; hàng trăm chọn trong ba chữ số khác 0 và khác chữ số đơn vị; hàng chục còn 3 lựa chọn (có thể là 0). Được \\(2\\cdot3\\cdot3=18\\). Tổng \\(12+18=30\\).",
     "hint": "Tách trường hợp chữ số hàng đơn vị bằng 0 và khác 0.",
@@ -221,18 +221,18 @@
     "item_id": "THPT-G10-B23-P06",
     "lesson": "23",
     "role": "INTERMEDIATE",
-    "skill": "INTERMEDIATE",
+    "skill": "COUNT_MIXED_SUM_PRODUCT",
     "stem": "Một khách có thể chọn đúng một cách đi lại: 3 tuyến xe đạp khác nhau hoặc 2 tuyến xe buýt khác nhau. Nếu đi xe buýt, mỗi tuyến có 2 loại vé. Nếu đi xe đạp thì không chọn vé. Có bao nhiêu phương án hoàn chỉnh?",
     "solution": "Đáp án: \\(7\\) phương án.\nLời giải: Phương án xe đạp: 3. Phương án xe buýt: \\(2\\) tuyến nhân \\(2\\) loại vé bằng \\(4\\). Hai nhóm lựa chọn loại trừ nhau, tổng \\(3+4=7\\).",
     "hint": "Nhân trong từng nhánh nhiều bước, cộng giữa các nhánh loại trừ nhau.",
     "exposure": "FORMATIVE_ONLY",
-    "difficulty": "ADVANCED"
+    "difficulty": "INTERMEDIATE"
   },
   {
     "item_id": "THPT-G10-B24-P05",
     "lesson": "24",
     "role": "ADVANCED",
-    "skill": "ADVANCED",
+    "skill": "COMBINATION_AT_LEAST_ONE",
     "stem": "Chọn nhóm 3 người từ 6 người khác nhau, trong đó có hai người được chỉ định A và B. Có bao nhiêu nhóm chứa ít nhất một trong hai người A, B?",
     "solution": "Đáp án: \\(16\\) nhóm.\nLời giải: Tổng số nhóm \\(\\binom63=20\\). Nhóm không có A lẫn B chỉ chọn 3 trong 4 người còn lại: \\(\\binom43=4\\). Vậy \\(20-4=16\\).",
     "hint": "Dùng biến cố đối: tất cả nhóm trừ nhóm không chứa cả A lẫn B.",
@@ -243,7 +243,7 @@
     "item_id": "THPT-G10-B24-P06",
     "lesson": "24",
     "role": "ADVANCED",
-    "skill": "ADVANCED",
+    "skill": "PERMUTATION_ADJACENT",
     "stem": "Xếp 5 học sinh khác nhau thành một hàng, biết hai bạn A và B phải đứng cạnh nhau. Có bao nhiêu cách?",
     "solution": "Đáp án: \\(48\\) cách.\nLời giải: Gộp A và B thành một khối, cùng 3 học sinh còn lại là 4 đối tượng phân biệt, có \\(4!=24\\) cách. Trong khối A/B có 2 thứ tự, tổng \\(24\\cdot2=48\\).",
     "hint": "Gộp cặp phải đứng cạnh nhau thành một khối, rồi tính thứ tự trong khối.",
@@ -254,18 +254,18 @@
     "item_id": "THPT-G10-B25-P05",
     "lesson": "25",
     "role": "SUPPORT_EXTENSION",
-    "skill": "INTERMEDIATE",
+    "skill": "BINOMIAL_COEFF_NEGATIVE",
     "stem": "Tìm hệ số của \\(x^3\\) trong \\((2-x)^6\\).",
     "solution": "Đáp án: \\(-160\\).\nLời giải: Chọn 3 thừa số \\((-x)\\) và 3 thừa số \\(2\\): hệ số \\(\\binom63(-1)^3 2^3=20\\cdot(-1)\\cdot8=-160\\).",
     "hint": "Dấu của ((-x)^3) là âm.",
     "exposure": "FORMATIVE_ONLY",
-    "difficulty": "ADVANCED"
+    "difficulty": "INTERMEDIATE"
   },
   {
     "item_id": "THPT-G10-B25-P06",
     "lesson": "25",
     "role": "OPTIONAL_SPECIALIZED",
-    "skill": "ADVANCED",
+    "skill": "BINOMIAL_ODD_COEFF_SUM",
     "stem": "Tính tổng các hệ số của những số hạng có số mũ lẻ của \\(x\\) trong khai triển \\((1+x)^7\\).",
     "solution": "Đáp án: \\(64\\).\nLời giải: Đặt \\(f(x)=(1+x)^7\\). Tổng hệ số bậc chẵn trừ tổng hệ số bậc lẻ là \\(f(-1)=0\\); tổng tất cả hệ số là \\(f(1)=2^7=128\\). Vậy tổng hệ số bậc lẻ bằng \\((128-0)/2=64\\).",
     "hint": "Thử thay x=1 và x=-1 để tách hệ số bậc chẵn/lẻ.",
@@ -292,8 +292,7 @@
  const forLesson=(lesson,role)=>records.filter(x=>x.lesson===String(lesson)&&(
    role==="core"?x.role==="CORE":
    ["PRACTICE","APPLICATION","SUPPORT_EXTENSION","OPTIONAL_SPECIALIZED"].includes(x.role)))
-   .sort((a,b)=>Number(a.role==="SUPPORT_EXTENSION")-Number(b.role==="SUPPORT_EXTENSION")||
-                  Number(a.role==="OPTIONAL_SPECIALIZED")-Number(b.role==="OPTIONAL_SPECIALIZED"));
+   .sort((a,b)=>({PRACTICE:0,APPLICATION:0,SUPPORT_EXTENSION:1,OPTIONAL_SPECIALIZED:2}[a.role]||0)-({PRACTICE:0,APPLICATION:0,SUPPORT_EXTENSION:1,OPTIONAL_SPECIALIZED:2}[b.role]||0));
  root.THPT_CHVIII_REVIEWED_FORMATIVE=Object.freeze({
    contentVersion,records:Object.freeze(records.map(x=>Object.freeze(x))),validate,forLesson
  });

@@ -93,6 +93,6 @@ assert(reviewedD5.every(x=>engine.includes(x[0])&&engine.includes(x[1])),
  "All three D5 figures must use exact original canonical Practice ID in the disclosure-only mapping");
 assert(engine.includes('solution.addEventListener("toggle"')&&engine.includes('if(!solution.open'),
  "No answer-bearing SVG may render before the learner opens the solution details");
-assert(engine.includes("THPT_CHVII_REVIEWED_FORMATIVE")&&engine.includes("2[012]"),
+assert(engine.includes("THPT_CHVII_REVIEWED_FORMATIVE")&&engine.includes("2[0-5]"),
  "R4 exercise UI must load the reviewed ChVII canonical bank");
 console.log("PASS G10 ChVII D1/D2 knowledge, all 32 unique reviewed public C/P including specialist role, 4 Written (1 Anchor), R4 navigation, no held-out Readiness or mastery");

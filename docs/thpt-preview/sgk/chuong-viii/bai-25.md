@@ -8,11 +8,13 @@
 
 ## 1. Khái niệm, điều kiện và công thức
 
-**Công thức.** Với n là số nguyên không âm,
-(a+b)^n = Σ_(k=0..n) C(n,k) a^(n-k) b^k.
-Có n+1 số hạng trước khi thu gọn các số hạng đồng dạng. Hệ số tổ hợp C(n,k)=C(n,n-k) và C(n,k)=C(n-1,k-1)+C(n-1,k) với 1≤k≤n-1. Khi b là một biểu thức âm, dấu âm ở b^k phải được giữ: (-1)^k khác nhau cho số mũ chẵn/lẻ.
+**Công thức.** Với \(n\) là số nguyên không âm,
+\[
+(a+b)^n=\sum_{k=0}^{n}\binom{n}{k}a^{n-k}b^k.
+\]
+Có n+1 số hạng trước khi thu gọn các số hạng đồng dạng. Hệ số tổ hợp \(\binom nk=\binom n{n-k}\) và \(\binom nk=\binom{n-1}{k-1}+\binom{n-1}k\) với \(1\le k\le n-1\). Khi \(b\) là một biểu thức âm, dấu âm ở \(b^k\) phải được giữ: \((-1)^k\) khác nhau cho số mũ chẵn/lẻ.
 
-**Đọc hệ số.** Trong (a+bx)^n, hệ số của x^r là C(n,r)a^(n-r)b^r (0≤r≤n), với a,b là hằng số. Với biểu thức có các lũy thừa x khác nhau hoặc x^-1, phải viết số mũ tổng quát, giải phương trình số mũ cần tìm, và kiểm tra điều kiện xác định x≠0 nếu có.
+**Đọc hệ số.** Trong \((a+bx)^n\), hệ số của \(x^r\) là \(\binom nr a^{n-r}b^r\) (\(0\le r\le n\)), với a,b là hằng số. Với biểu thức có các lũy thừa x khác nhau hoặc \(x^{-1}\), phải viết số mũ tổng quát, giải phương trình số mũ cần tìm, và kiểm tra điều kiện xác định \(x\ne0\) nếu có.
 
 ## 2. Ví dụ, cách kiểm tra và lỗi hay gặp
 

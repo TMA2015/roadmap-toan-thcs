@@ -8,11 +8,11 @@
 
 ## 1. Khái niệm, điều kiện và công thức
 
-**Điều kiện chung.** Có n đối tượng **phân biệt**, n nguyên không âm. Với 0≤k≤n:
-- Hoán vị của n đối tượng: P_n=n!, với 0!=1.
-- Chỉnh hợp chập k (chọn k phần tử và **xếp thứ tự**): A_n^k=n!/(n-k)!.
-- Tổ hợp chập k (chọn nhóm k phần tử, **không** xét thứ tự): C_n^k=n!/[k!(n-k)!].
-- Công thức liên hệ A_n^k=C_n^k × k! vì mỗi nhóm k phần tử có k! thứ tự.
+**Điều kiện chung.** Có \(n\) đối tượng **phân biệt**, \(n\) nguyên không âm. Với \(0\le k\le n\):
+- Hoán vị của n đối tượng: \(P_n=n!\), với \(0!=1\).
+- Chỉnh hợp chập k (chọn k phần tử và **xếp thứ tự**): \(A_n^k=\dfrac{n!}{(n-k)!}\).
+- Tổ hợp chập k (chọn nhóm k phần tử, **không** xét thứ tự): \(C_n^k=\dfrac{n!}{k!(n-k)!}\).
+- Công thức liên hệ \(A_n^k=C_n^k\cdot k!\) vì mỗi nhóm k phần tử có k! thứ tự.
 
 **Hướng chọn phương pháp.** Hỏi "chọn nhóm" mà không phân vai → tổ hợp; "xếp k người vào k vị trí phân biệt" → chỉnh hợp; "xếp tất cả" → hoán vị. Chọn nhóm rồi phân vai là hai bước: số nhóm nhân số phân vai **sau** khi nhóm được chọn, nếu mỗi nhóm có cùng số cách phân vai.
 
