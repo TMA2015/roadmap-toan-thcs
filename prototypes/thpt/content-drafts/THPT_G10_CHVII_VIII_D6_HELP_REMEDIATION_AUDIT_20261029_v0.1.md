@@ -71,3 +71,29 @@ NO_REPUBLISHED_PRIVATE_READINESS|TRUE
 - **Đây là `DELTA_C_ACADEMIC_MATERIAL`, `NOTEBOOKLM_REREVIEW=REQUIRED_FOR_14_HELP_ID`, `ACADEMIC_CLEARANCE=NOT_RECEIVED`; inventory ChVII/VIII còn HOLD A5.**
 
 Không tạo gói CONTENT_READY, không merge/deploy.
+
+
+## 6. R01 NotebookLM verdict → R02 minimal delta — 29/10/2026
+
+**Nguồn verdict:** Chủ dự án chuyển nguyên bản kết quả NotebookLM cho `THPT-G10-CHVII-VIII-D6-REMEDIATION-R01`: 5/5 Permanent Sources v2.0, đối chiếu SGK/SBT S1 theo reviewer, `14/14 HELP_ID`, `64` canonical tham chiếu, 0 P0, **5 P1 + 1 P2**, `PACKET_VERDICT=REVISIONS_REQUIRED`, `ACADEMIC_CLEARANCE=HOLD/NOT_ISSUED`. Phân bố: 8 PASS, 6 REVISE; không tự nhận ACADEMIC PASS sau sửa.
+
+**Kiểm toán snapshot:** Temp R01 được reviewer đọc SHA256 `3d018a6e6c34b5d92452d64af0acb8f6de6e2674941a7d58650622862e97c188`, Git blob `d84ab2f5c7cbd036b85bcb829767554ca79bdbba`. Bản thảo GitHub `THPT_G10_CHVII_VIII_D6_REMEDIATION_CARDS_CANDIDATE_v0.1.md` blob `25cf1bbaf47e98c884e954328b0b637a2b4e30af` **không trùng** Temp R01. Không áp verdict Temp vào nguyên văn working draft.
+
+**Giải pháp nguồn:** Lấy **đúng Temp R01 reviewer snapshot** làm nền, giữ nguyên 8 HELP_ID PASS, sửa đúng 6 HELP_ID theo R01. Đã tạo **R02** tại `prototypes/thpt/content-drafts/THPT_G10_CHVII_VIII_D6_REMEDIATION_REVIEW_SNAPSHOT_v0.2.md`. Git blob `03755fb8e4a192df833820b2b01617de74035076` **byte-identical** với `Temp_THPT_G10_CHVII_VIII_D6_REMEDIATION_R02.md` (file 19785 bytes; SHA256 `0293026323929fe8359c7af66e4d7420d4d1890b19d3844bf9c1d1fa6da220f9`), proven by matching calculated local Git blob vs GitHub content blob SHA. Commit chốt `3a80a71536a5493ad0316bdb332b11e839bf0a8e`.
+
+| Lỗi | HELP_ID | Sửa R02 | Delta |
+|---|---|---|---|
+| P1 | D6-G10-B19-02 | Viết pháp tuyến và phương trình tổng quát chuẩn vectơ | B source-equivalent theo chỉ dẫn reviewer |
+| P1 | D6-G10-B20-02 | B20 mục 2 góc, mục 3 khoảng cách | B source-equivalent |
+| P1 | D6-G10-B21-02 | Khoảng cách từ tâm đến đường là B20 mục 3 | B source-equivalent |
+| P1 | D6-G10-B24-01 | B24 mục 2 chỉnh hợp, mục 3 tổ hợp, giới hạn công thức phân vai | B source-equivalent |
+| P1 | D6-G10-B24-02 | B24 mục 1 hoán vị, mục 2 chỉnh hợp; nội bộ khối 2! | B source-equivalent |
+| P2 | D6-G10-B25-01 | Ghi ví dụ Core chủ yếu n=4/5 theo reviewer, công thức tổng quát vẫn n nguyên không âm | B source-equivalent, chờ reviewer S1 reconfirm |
+
+**QA tĩnh:** 14/14 thẻ duy nhất; 6 thẻ thay `Tự sửa`, 8 thẻ PASS giữ nguyên byte-for-byte; 64/64 canonical tham chiếu (57 formative + 7 Written/Anchor); không thêm ID/câu hỏi, không sửa JS/Written/answer/hint/rubric; không đưa held-out Readiness vào gói; không thay code học sinh. Đây là QA nội dung cấu trúc, không thay cho review S1/NotebookLM.
+
+**Delta classification:** Nội dung D6 R01 là `DELTA_C_ACADEMIC_MATERIAL` (review đã diễn ra nhưng chưa đạt). Các sửa đổi P1/P2 là `DELTA_B_SOURCE_EQUIVALENT` theo hướng dẫn reviewer; kiểm chứng và lưu log. Để giải quyết `ACADEMIC_CLEARANCE` đang HOLD, **đã chuẩn bị R02 scoped confirmation**; chỉ cập nhật sau verdict mới, không tự chuyển sang PASS.
+
+**Warehouse:** R02 là `ACADEMIC_REVIEW_PENDING`, chưa đáp ứng A5; không di chuyển `inventory` → `CONTENT_READY`; không merge/deploy.
+
+**Tiếp theo:** Reviewer R02 xác nhận 6 fixes và 8 thẻ giữ nguyên; nếu đạt thì ghi verdict đúng R02 snapshot, tiếp tục A5–A7 chapter audit và tích hợp sau khi được phép.
