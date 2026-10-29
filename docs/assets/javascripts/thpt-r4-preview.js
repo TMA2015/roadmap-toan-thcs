@@ -197,7 +197,7 @@
    "b16-core":["../../core/ham-so-bac-hai/","[data-thpt-core]"],
    "b16-practice":["../../../chuyen-de/ham-so/luyen-tap/","[data-thpt-practice]"]
   };
-  const lessonTitle={"15":"Hàm số","16":"Hàm số bậc hai","17":"Dấu của tam thức bậc hai","18":"Phương trình quy về phương trình bậc hai","19":"Phương trình đường thẳng","20":"Vị trí, góc và khoảng cách","21":"Đường tròn","22":"Ba đường conic"};
+  const lessonTitle={"15":"Hàm số","16":"Hàm số bậc hai","17":"Dấu của tam thức bậc hai","18":"Phương trình quy về phương trình bậc hai","19":"Phương trình đường thẳng","20":"Vị trí, góc và khoảng cách","21":"Đường tròn","22":"Ba đường conic","23":"Quy tắc đếm","24":"Hoán vị, chỉnh hợp và tổ hợp","25":"Nhị thức Newton"};
   const dlg=document.createElement("dialog");
   dlg.className="thpt-r4-practice-dialog";
   dlg.dataset.thptR4="1"; // Eligible root for existing R4 exercise binder when remote card is inserted.
@@ -277,6 +277,7 @@
     const meta=document.createElement("p");meta.className="thpt-r4-modal-progress";
     meta.textContent=item.item_id+" · "+item.skill+
       (item.role==="OPTIONAL_SPECIALIZED"?" · Chuyên sâu · tự chọn":"")+
+      (item.role==="SUPPORT_EXTENSION"?" · Hỗ trợ mở rộng · tự chọn":"")+
       (item.difficulty==="ADVANCED"?" · Nâng cao":"")+
       (item.exposure==="EXPOSED_IN_KNOWLEDGE"?" · Đã xuất hiện trong bài giảng":"");
     const prompt=document.createElement("h3");prompt.textContent=item.stem;
@@ -290,6 +291,8 @@
     // when the learner deliberately expands the formative solution, never
     // alongside an unanswered Core/Practice prompt or held-out Readiness.
     const reviewedFigures={
+     "THPT-G10-B23-C02":["THPT_G10_B23_COUNTING_TREE_DRAFT.svg",
+       "Cây quy tắc nhân: ba áo, hai quần, sáu bộ; chỉ xem sau khi tự giải"],
      "THPT-G10-B19-P06":["THPT_G10_B19_LINE_INTERSECTION_DRAFT.svg",
        "Hình giải B19-P06: giao điểm I(2;2), hai đường và đường vuông góc cần tìm"],
      "THPT-G10-B21-P03":["THPT_G10_B21_CIRCLE_TANGENT_DRAFT.svg",
@@ -381,14 +384,14 @@
   root.querySelectorAll("[data-thpt-open-quiz]").forEach(button=>{
    button.addEventListener("click",async()=>{
     returnFocus=button;
-    const id=button.dataset.thptOpenQuiz,parts=id.match(/^b(1[56789]|2[012])-(core|practice)$/);
+    const id=button.dataset.thptOpenQuiz,parts=id.match(/^b(1[5-9]|2[0-5])-(core|practice)$/);
     if(!parts)return;
     const lesson=parts[1],role=parts[2]==="core"?"Core":"Luyện tập";
     dlg.querySelector("[data-thpt-modal-lesson-number]").textContent=lesson;
-    dlg.querySelector(".thpt-r4-modal-meta").textContent="LỚP 10 · CHƯƠNG "+(Number(lesson)>=19?"VII":"VI");
+    dlg.querySelector(".thpt-r4-modal-meta").textContent="LỚP 10 · CHƯƠNG "+(Number(lesson)>=23?"VIII":Number(lesson)>=19?"VII":"VI");
     modalTitle.textContent=role+" · Bài "+lesson+". "+lessonTitle[lesson];
     modalBody.textContent="Đang mở nội dung…";dlg.showModal();
-    const activeBank=Number(lesson)>=19?window.THPT_CHVII_REVIEWED_FORMATIVE:reviewed;
+    const activeBank=Number(lesson)>=23?window.THPT_CHVIII_REVIEWED_FORMATIVE:Number(lesson)>=19?window.THPT_CHVII_REVIEWED_FORMATIVE:reviewed;
     if(activeBank?.validate().valid){
      const items=activeBank.forLesson(lesson,parts[2]);
      if(items.length){
