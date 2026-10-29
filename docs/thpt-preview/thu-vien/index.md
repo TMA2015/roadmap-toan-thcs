@@ -11,7 +11,7 @@ Em có thể **tự giải một bài toán** hoặc **xem một bài mẫu đ�
 
 ## Trong thư viện có gì?
 
-**Bài tập tự luận:** Có đề, gợi ý tùy chọn, lời giải và rubric. Kết quả tự chấm **không cộng vào điểm Tự kiểm tra**.
+**Bài tập tự luận:** [Chương VI — 8 bài](tu-luan.md) · [Chương VII — 4 bài vừa tích hợp](tu-luan-chuong-vii.md). Có đề, gợi ý tùy chọn khi nguồn hỗ trợ, lời giải và rubric. Kết quả tự chấm **không cộng vào điểm Tự kiểm tra**.
 
 **Bài mẫu tiêu biểu và bài mỏ neo:** Là những bài trong **cùng kho tự luận** được chọn để dạy cách suy luận, chọn phương pháp và trình bày.
 
