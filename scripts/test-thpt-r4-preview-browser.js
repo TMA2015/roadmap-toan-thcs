@@ -635,6 +635,34 @@ async function ready(page,path){
   assert.equal(await page.evaluate(()=>typeof window.THPTFormativeExposure),"undefined",
     "No authenticated exposure tracker should load");
 
+  // G10 ChVIII stage2: reviewed formative source, no held-out assessment.
+  require("./test-thpt-g10-chviii-reviewed-stage2.cjs");
+  for(const vp of [{width:1365,height:800},{width:390,height:844},{width:820,height:1100}]){
+    await page.setViewportSize(vp);
+    await ready(page,"sgk/chuong-viii/luyen-tap/");
+    assert.equal(await page.locator("[data-thpt-open-quiz]").count(),6,"ChVIII must expose three Core and three Practice launchers");
+    const sizes=await page.evaluate(()=>({w:document.documentElement.scrollWidth,v:innerWidth}));
+    assert(sizes.w<=sizes.v+20,"ChVIII practice overflow "+vp.width);
+  }
+  await page.locator('[data-thpt-open-quiz="b23-core"]').click();
+  assert((await page.locator("dialog.thpt-r4-practice-dialog a.thpt-r4-remediation-link").getAttribute("href")).endsWith("/sgk/chuong-viii/bai-23/"),"B23 recovery link wrong");
+  assert(!(await page.locator("dialog.thpt-r4-practice-dialog .thpt-r4-reviewed-formative-card").innerText()).includes("THPT-G10-"),"ChVIII canonical ID shown to students");
+  const viiiDialog=page.locator("dialog.thpt-r4-practice-dialog");
+  assert(await viiiDialog.isVisible(),"ChVIII Core modal must open");
+  assert((await viiiDialog.locator(".thpt-r4-modal-meta").textContent()).includes("VIII"),"ChVIII modal banner wrong chapter");
+  await viiiDialog.locator(".thpt-r4-modal-buttons button").last().click();
+  assert.equal(await viiiDialog.locator("[data-thpt-canonical-item]").getAttribute("data-thpt-canonical-item"),"THPT-G10-B23-C02");
+  assert.equal(await viiiDialog.locator("img[data-thpt-reviewed-figure]").count(),0,"D5 FIG04 leaked before solution disclosure");
+  await viiiDialog.locator("details").last().locator("summary").click();
+  await viiiDialog.locator('img[data-thpt-reviewed-figure="THPT-G10-B23-C02"]').waitFor();
+  await viiiDialog.locator("[data-thpt-modal-close]").click();
+  await ready(page,"thu-vien/tu-luan-chuong-viii/");
+  assert.equal(await page.locator('[data-thpt-written-canonical]').count(),3,"Missing ChVIII Written");
+  assert.equal(await page.locator('[data-thpt-kind="anchor"]').count(),1,"Anchor must be a Written tag");
+  assert.equal(await page.locator('section[data-thpt-written-canonical] details[open]').count(),0,"Written solutions must start hidden");
+  await ready(page,"sgk/chuong-viii/tu-kiem-tra-chuong/");
+  assert.equal(await page.locator("[data-thpt-readiness], [data-thpt-secure-readiness]").count(),0,"No active ChVIII Readiness");
+
   await page.close();
   console.log("PASS THPT R4 reviewed formative/Written + technical Readiness Chromium smoke (not production approval or real-device QA)");
  }finally{await browser.close();}

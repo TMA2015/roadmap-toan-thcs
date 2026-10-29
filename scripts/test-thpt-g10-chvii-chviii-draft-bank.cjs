@@ -63,9 +63,14 @@ assert.equal((readiness.match(/\| CHVIII-READ-/g)||[]).length,6,"CHVIII blueprin
 const reviewedSolutionFigures=new Map([
  ["THPT-G10-B19-P06","THPT_G10_B19_LINE_INTERSECTION_DRAFT.svg"],
  ["THPT-G10-B21-P03","THPT_G10_B21_CIRCLE_TANGENT_DRAFT.svg"],
- ["THPT-G10-B22-P06","THPT_G10_B22_PARABOLA_FOCUS_DIRECTRIX_DRAFT.svg"]
+ ["THPT-G10-B22-P06","THPT_G10_B22_PARABOLA_FOCUS_DIRECTRIX_DRAFT.svg"],
+ // ChVIII B23-C02 FIG04 is independently D5-reviewed, answer-bearing and disclosed only after user opens the formative solution.
+ ["THPT-G10-B23-C02","THPT_G10_B23_COUNTING_TREE_DRAFT.svg"]
 ]);
-const reviewedPublic=read("docs/assets/javascripts/thpt-chvii-reviewed-formative-v1.js");
+const reviewedPublic=[
+ read("docs/assets/javascripts/thpt-chvii-reviewed-formative-v1.js"),
+ read("docs/assets/javascripts/thpt-chviii-reviewed-formative-v1.js")
+].join("\n");
 for(const [id,asset] of reviewedSolutionFigures){
  assert(reviewedPublic.includes('"item_id": "'+id+'"'),
   "D5 figure must reference a reviewed public formative item: "+id);
