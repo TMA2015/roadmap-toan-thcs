@@ -55,7 +55,7 @@
 </section>
 </div></section>
 </div>
-<p><a href="../../thu-vien/tu-luan-chuong-vii/"><strong>✍️ Thư viện 4 bài tự luận Chương VII</strong></a> · tự giải rồi mới mở lời giải/rubric.</p>
+<p><a href="../../../thu-vien/tu-luan-chuong-vii/"><strong>✍️ Thư viện 4 bài tự luận Chương VII</strong></a> · tự giải rồi mới mở lời giải/rubric.</p>
 <p class="thpt-r4-footnote">B22-C01 liên quan tâm sai được reviewer phân tầng chuyên sâu, <strong>không có trong Core bắt buộc</strong>. Mỗi bài được lưu theo ID nguồn, không tạo câu mới hoặc câu kiểm tra từ câu luyện tập.</p>
 <nav class="thpt-r4-lesson-tabs"><a href="../">Tổng quan Chương VII</a><a href="../tu-kiem-tra-chuong/">Tự kiểm tra cuối chương · chưa kích hoạt</a></nav>
 </div>
