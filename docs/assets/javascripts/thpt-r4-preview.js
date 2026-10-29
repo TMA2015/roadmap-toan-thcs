@@ -475,6 +475,11 @@
    else compactDrawer.addListener(reinit);
   }
   if(compactDrawer.matches){
+   // Start each new mobile route at the three visible group labels,
+   // rather than inheriting Material's checked active subsections.
+   // Reset just once per route so user disclosure clicks still work.
+   const resetForPath=primary.dataset.thptR4MobileResetPath!==path;
+   primary.dataset.thptR4MobileResetPath=path;
    groups.forEach(li=>{
     if(!li.classList.contains("thpt-r4-collapsible"))return;
     const nested=li.querySelector(":scope > nav.md-nav");
@@ -482,7 +487,7 @@
     li.querySelector(":scope > button.thpt-r4-sidebar-toggle")?.remove();
     li.classList.remove("thpt-r4-collapsible");
     if(nested)nested.hidden=false;
-    if(native)native.checked=li.classList.contains("md-nav__item--active");
+    if(native&&resetForPath)native.checked=false;
     delete li.dataset.thptR4SidebarPath;
    });
    return;
