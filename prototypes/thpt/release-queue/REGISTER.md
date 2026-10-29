@@ -7,9 +7,9 @@
 | [G10-SGK-CHVI](inventory/G10-SGK-CHVI.md) | SGK_CHAPTER | PUBLISHED_SCOPED | PUBLIC_FORMATIVE_ONLY | merged #612; UI #617–619 |
 | [G10-SGK-CHVII](ready/G10-SGK-CHVII.md) | SGK_CHAPTER | RELEASE_READY | PUBLIC_FORMATIVE_ONLY | merged/deployed #625, source #624 |
 | [G10-SGK-CHVIII](ready/G10-SGK-CHVIII.md) | SGK_CHAPTER | RELEASE_READY | PUBLIC_FORMATIVE_ONLY | merged/deployed #625, source #624 |
-| [G10-SGK-CHIX](ready/G10-SGK-CHIX.md) | SGK_CHAPTER | CONTENT_READY | PUBLIC_FORMATIVE_ONLY | authoring #626 (A1–A7 PASS); release #630 Draft |
+| [G10-SGK-CHIX](ready/G10-SGK-CHIX.md) | SGK_CHAPTER | RELEASE_READY | PUBLIC_FORMATIVE_ONLY | authoring #626 merged; release #630 conditional R1–R5 |
 
-**Đã phát hành trên website theo phạm vi `PUBLIC_FORMATIVE_ONLY`: ChVI–VIII (ChVII–VIII merged #625, Deploy MkDocs #40888628016 SUCCESS, HTML trên `gh-pages` đã xác minh). ChVII–VIII vẫn có trạng thái manifest kỹ thuật `RELEASE_READY` trong ready/ theo validator hiện hành dù P1 đã xác nhận; không tự đổi nhãn sang `PUBLISHED_SCOPED` khi chưa chuyển manifest sang inventory/ kèm P1. ChIX có một gói `CONTENT_READY` được bàn giao ở PR #626; chưa merge/deploy và vẫn cần QA/cho phép R5 trong PR #630.**
+**Đã phát hành trên website theo phạm vi `PUBLIC_FORMATIVE_ONLY`: ChVI–VIII (ChVII–VIII merged #625, Deploy MkDocs #40888628016 SUCCESS, HTML trên `gh-pages` đã xác minh). ChVII–VIII vẫn có trạng thái manifest kỹ thuật `RELEASE_READY` trong ready/ theo validator hiện hành dù P1 đã xác nhận; không tự đổi nhãn sang `PUBLISHED_SCOPED` khi chưa chuyển manifest sang inventory/ kèm P1. ChIX hiện là một gói `RELEASE_READY` trên ứng viên #630, chỉ được merge/deploy khi cả hai CI trên HEAD cuối SUCCESS; quyền phát hành PUBLIC_FORMATIVE_ONLY đã được chủ dự án cấp.**
 
 **Cổng A1–A7 mới của ChVII/VIII:** [CHVII_VIII_PUBLIC_FORMATIVE_A1_A7_FINAL_EVIDENCE_20261029.md](CHVII_VIII_PUBLIC_FORMATIVE_A1_A7_FINAL_EVIDENCE_20261029.md). ChVII–VIII đã dùng đúng bản D6 R02 và có bằng chứng P1 deploy sau PR #625. Nội dung Tự kiểm tra cuối chương/Mastery vẫn chưa kích hoạt.
 

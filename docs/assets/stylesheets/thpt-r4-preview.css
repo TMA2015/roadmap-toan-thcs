@@ -48,6 +48,9 @@ body.thpt-r4-route [data-thpt-r4-launcher]{display:inline-flex!important}
 body.thpt-r4-route .thpt-r4-launcher .roadmap-topic-launcher__name{font-size:.73rem}
 .thpt-r4-plot{margin:1.2rem 0;padding:14px;background:var(--md-default-bg-color);border:1px solid var(--r4-line,#d1d9e8);border-radius:14px}
 .thpt-r4-plot svg{width:100%;max-width:640px;height:auto;display:block;margin:auto;background:#fdfefe;border-radius:8px}
+/* Reviewed ChIX B26/B27 D5 figures responsive on narrow devices. */
+.thpt-r4-probability-figure{max-width:100%;min-width:0;overflow:hidden}
+.thpt-r4-probability-figure img{display:block;width:100%;max-width:100%;height:auto;object-fit:contain;margin:0 auto}
 .thpt-r4-plot figcaption{font-size:.77rem;line-height:1.5;color:var(--md-default-fg-color--light);text-align:center;margin-top:7px}
 .thpt-r4-plot svg>text{font-size:15px;fill:#27395a}
 @media(max-width:600px){body.thpt-r4-route .thpt-r4-launcher .roadmap-topic-launcher__name{font-size:.65rem}.thpt-r4-plot{padding:7px}}
