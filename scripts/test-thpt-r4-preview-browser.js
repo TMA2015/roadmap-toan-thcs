@@ -9,6 +9,7 @@ require("./test-thpt-g10-chvii-chviii-draft-bank.cjs");
 require("./test-thpt-chvi-review-receipt.cjs");
 require("./test-thpt-chvi-reviewed-formative.cjs");
 require("./test-thpt-chvi-reviewed-knowledge-parity.cjs");
+require("./test-thpt-g10-chvii-reviewed-stage1.cjs");
 const base="http://127.0.0.1:8765/thpt-preview/";
 async function ready(page,path){
  const response=await page.goto(base+path,{waitUntil:"networkidle"});
@@ -56,6 +57,50 @@ async function ready(page,path){
   assert((await entry.locator("h1").textContent()).includes("Chọn hành trình Toán"),
     "THPT cover shortcut did not open the real programme selection page");
   await entry.close();
+
+  // New G10 ChVII reviewed D1/D2 and PUBLIC formative stage. This deliberately
+  // does not test or expose academically reviewed held-out Chapter Readiness.
+  for(const viewport of [{width:1440,height:900},{width:390,height:844}]){
+    const page=await browser.newPage({viewport});
+    await ready(page,"sgk/");
+    assert((await page.locator('a[href*="chuong-vii/"]').count())>0,
+      "SGK search overview must link to ChVII without replacing ChVI");
+    await ready(page,"sgk/chuong-vii/");
+    assert.equal(await page.locator(".thpt-r4-grid .thpt-r4-tile").count(),4,
+      "ChVII hub must contain all four reviewed SGK lessons");
+    for(const lesson of ["19","20","21","22"]){
+      await ready(page,"sgk/chuong-vii/bai-"+lesson+"/");
+      assert((await page.locator("article").innerText()).includes("Ví dụ"),
+        "B"+lesson+" missing source-backed worked example");
+    }
+    await ready(page,"sgk/chuong-vii/luyen-tap/");
+    assert.equal(await page.locator("[data-thpt-open-quiz]").count(),8,
+      "All eight SGK ChVII Core/Practice cards must be accessible");
+    await page.locator('[data-thpt-open-quiz="b19-core"]').click();
+    const dlg=page.locator("dialog.thpt-r4-practice-dialog");
+    assert.equal(await dlg.locator("[data-thpt-modal-lesson-number]").innerText(),"19");
+    assert((await dlg.locator("[data-thpt-r4] [data-thpt-canonical-item], [data-thpt-canonical-item]").first().getAttribute("data-thpt-canonical-item"))==="THPT-G10-B19-C01",
+      "B19 must render original reviewed canonical item ID");
+    assert.equal(await dlg.locator("details[open]").count(),0,
+      "Hint and answer must start collapsed in formative exercises");
+    assert((await dlg.innerText()).includes("Không chấm điểm/mastery"),
+      "Formative exercises must not claim protected assessment");
+    await dlg.locator("[data-thpt-modal-close]").click();
+    await page.locator('[data-thpt-open-quiz="b22-core"]').click();
+    assert((await dlg.innerText()).includes("THPT-G10-B22-P01"),
+      "Approved ellipse item B22-P01 must supply mandatory Core coverage via role mapping");
+    assert(!(await dlg.innerText()).includes("THPT-G10-B22-C01"),
+      "Specialist eccentricity item B22-C01 must stay outside mandatory SGK Core");
+    await dlg.locator("[data-thpt-modal-close]").click();
+    await ready(page,"sgk/chuong-vii/tu-kiem-tra-chuong/");
+    assert.equal(await page.locator("[data-thpt-secure-readiness]").count(),0);
+    assert.equal(await page.locator("[data-thpt-open-quiz]").count(),0,
+      "ChVII held-out Readiness must not be served as a public practice card");
+    assert((await page.locator("article").innerText()).includes("Chưa kích hoạt"));
+    const overflow=await page.evaluate(()=>document.documentElement.scrollWidth-window.innerWidth);
+    assert(overflow<=20,"ChVII R4 overflow at "+viewport.width+"px: "+overflow);
+    await page.close();
+  }
 
   // Owner UI acceptance: the existing THCS library keeps its own search,
   // while SGK/Topic R4 overview pages must each show ONLY their search.
