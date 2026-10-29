@@ -10,7 +10,7 @@
 
 - B07–B09 D1/D2 independently PASS, 9 Knowledge + 11 Examples + 12 outcomes.
 - B10–B11 D1/D2 independently PASS, 8 Knowledge + 10 Examples + 11 outcomes.
-- B07–B09 D3/D4 independently PASS, 27/27 original canonical teaching exercises (9 Core), B09-P05 SUPPPORT_EXTENSION.
+- B07–B09 D3/D4 independently PASS, 27/27 original canonical teaching exercises (9 Core), B09-P05 SUPPORT_EXTENSION.
 - B10–B11 D3/D4 independently PASS, 18/18 canonical teaching exercises (6 Core).
 - **45/45 original viewed practice exercise PASS does not constitute independent readiness assessment.**
 
