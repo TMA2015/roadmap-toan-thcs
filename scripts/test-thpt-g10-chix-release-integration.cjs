@@ -4,7 +4,7 @@ const fs=require("node:fs");
 require("./test-thpt-g10-chix-reviewed-stage3.cjs");
 const base="docs/thpt-preview/sgk/chuong-ix/";
 const bank=fs.readFileSync("docs/assets/javascripts/thpt-chix-reviewed-formative-v1.js","utf8");
-const ids=[...bank.matchAll(/item_id:\s*"(THPT-G10-B(?:26|27)-[CP]\d\d)"/g)].map(x=>x[1]);
+const ids=[...bank.matchAll(/"item_id":\s*"(THPT-G10-B(?:26|27)-[CP]\d\d)"/g)].map(x=>x[1]);
 assert.equal(new Set(ids).size,14,"Exactly 14 reviewed public ChIX C/P items");
 const expected={
  "D6-G10-B26-01":"2ac6713d","D6-G10-B26-02":"9c9e40f7",
