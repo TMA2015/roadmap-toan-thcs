@@ -109,9 +109,9 @@ Hai nghiệm ứng viên là \(x=3\) và \(x=-\frac53\). Chỉ \(x=3\) đạt đ
 
 <details><summary>Đáp án và kiểm tra nghiệm (chỉ mở sau khi tự làm)</summary>
 <ol>
-<li>\(x\ge0\). Bình phương \(x+2=x^2\iff (x-2)(x+1)=0\); chỉ \(x=2\) đạt điều kiện.</li>
-<li>\(x+5=2x+1\iff x=4\). Thay vào hai căn cho cùng \(\sqrt9=3\), vậy \(x=4\).</li>
-<li>\(x+1\ge0\). Bình phương được \(x^2+2x+5=(x+1)^2=x^2+2x+1\), mâu thuẫn \(5=1\). Do đó vô nghiệm.</li>
+<li><span class="arithmatex">\(x\ge0\)</span>. Bình phương <span class="arithmatex">\(x+2=x^2\iff (x-2)(x+1)=0\)</span>; chỉ <span class="arithmatex">\(x=2\)</span> đạt điều kiện.</li>
+<li><span class="arithmatex">\(x+5=2x+1\iff x=4\)</span>. Thay vào hai căn cho cùng <span class="arithmatex">\(\sqrt9=3\)</span>, vậy <span class="arithmatex">\(x=4\)</span>.</li>
+<li><span class="arithmatex">\(x+1\ge0\)</span>. Bình phương được <span class="arithmatex">\(x^2+2x+5=(x+1)^2=x^2+2x+1\)</span>, mâu thuẫn <span class="arithmatex">\(5=1\)</span>. Do đó vô nghiệm.</li>
 </ol></details>
 
 !!! warning "Giới hạn"

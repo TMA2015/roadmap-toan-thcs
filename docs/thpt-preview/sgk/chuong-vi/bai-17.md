@@ -97,9 +97,9 @@ Suy ra \(\boxed{m<1}\). Nếu \(m=1\), tam thức có nghiệm kép và bằng \
 
 <details><summary>Đáp án và giải thích (chỉ mở sau khi tự làm)</summary>
 <ol>
-<li>\(\Delta=9-40=-31<0\), \(a=2>0\) nên \(h(x)>0\) với mọi \(x\in\mathbb R\).</li>
-<li>\((x-2)(x-3)<0\iff 2<x<3\).</li>
-<li>\(-(x-2)^2\le0\) với mọi số thực \(x\), nên tập nghiệm là \(\mathbb R\); dấu bằng tại \(x=2\).</li>
+<li><span class="arithmatex">\(\Delta=9-40=-31<0\)</span>, <span class="arithmatex">\(a=2>0\)</span> nên <span class="arithmatex">\(h(x)>0\)</span> với mọi <span class="arithmatex">\(x\in\mathbb R\)</span>.</li>
+<li><span class="arithmatex">\((x-2)(x-3)<0\iff 2<x<3\)</span>.</li>
+<li><span class="arithmatex">\(-(x-2)^2\le0\)</span> với mọi số thực <span class="arithmatex">\(x\)</span>, nên tập nghiệm là <span class="arithmatex">\(\mathbb R\)</span>; dấu bằng tại <span class="arithmatex">\(x=2\)</span>.</li>
 </ol>
 </details>
 
