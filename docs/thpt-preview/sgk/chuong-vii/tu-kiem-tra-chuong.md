@@ -1,11 +1,8 @@
 # Chương VII · Tự kiểm tra cuối chương
 
 <div class="thpt-r4-screen" data-thpt-r4>
-<p class="thpt-r4-eyebrow">TOÁN 10 · CHƯƠNG VII · SGK CHAPTER READINESS</p>
-<p class="thpt-r4-lead"><strong>Chưa kích hoạt bài Tự kiểm tra chính thức.</strong> Các câu Chapter Readiness được review học thuật trong một nguồn riêng, nhưng không được đưa đề và đáp án vào website công khai khi chưa đáp ứng điều kiện kiểm tra độc lập.</p>
-<p>Đây là trang thông báo phạm vi, <strong>không có đề thi, đáp án, gợi ý hoặc chấm điểm</strong>. Luyện tập đã xem lời giải không tự trở thành chứng cứ Skill Mastery.</p>
-<nav class="thpt-r4-lesson-tabs" aria-label="Chương VII"><a href="../">Về tổng quan chương</a><a href="../luyen-tap/">Luyện tập không ghi điểm</a></nav>
+<p class="thpt-r4-eyebrow">TOÁN 10 · CHƯƠNG VII · TỰ KIỂM TRA</p>
+<p class="thpt-r4-lead"><strong>Bài Tự kiểm tra cuối chương chưa mở.</strong> Em có thể tiếp tục ôn luyện các dạng bài về đường thẳng, đường tròn và đường conic.</p>
+<p>Trang này <strong>chưa có đề kiểm tra và không chấm điểm</strong>. Kết quả luyện tập tự đối chiếu không tính vào đánh giá thành thạo.</p>
+<nav class="thpt-r4-lesson-tabs" aria-label="Chương VII"><a href="../">Tổng quan chương</a><a href="../luyen-tap/">Quay lại Luyện tập</a></nav>
 </div>
-
-!!! warning "Không sử dụng bài luyện tập làm Readiness"
-    Các bài đã hiển thị trong Core/Luyện tập có thể được học sinh xem trước. Kết quả Readiness chính thức chỉ được tính sau Final Submit khi bài kiểm tra độc lập và cơ chế bảo vệ đáp án được nghiệm thu; hiện chưa có điểm/mastery.
