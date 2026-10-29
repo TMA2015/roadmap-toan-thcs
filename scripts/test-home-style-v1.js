@@ -2,11 +2,11 @@
 "use strict";
 const fs=require("fs"),path=require("path"),vm=require("vm"),root=path.resolve(__dirname,"..");
 const load=p=>fs.readFileSync(path.join(root,p),"utf8");
-const html=load("docs/index.md"),css=load("docs/assets/stylesheets/site-design-system.css"),js=load("docs/assets/javascripts/study-scene-v1.js"),config=load("mkdocs.yml"),routeLoader=load("docs/assets/javascripts/"+(config.match(/^\s*- assets\/javascripts\/(route-module-loader-v\d+\.js)\s*$/m)||[])[1]);
+const html=load("docs/thcs/index.md"),css=load("docs/assets/stylesheets/site-design-system.css"),js=load("docs/assets/javascripts/study-scene-v1.js"),config=load("mkdocs.yml"),routeLoader=load("docs/assets/javascripts/"+(config.match(/^\s*- assets\/javascripts\/(route-module-loader-v\d+\.js)\s*$/m)||[])[1]);
 const ok=(x,msg)=>{if(!x)throw Error(msg)};
 for(const mark of ['data-home-mode="standard"','data-home-mode="playful"','data-home-dialog hidden','data-home-select="standard"','data-home-select="playful"','data-study-wake','data-study-gateway hidden'])ok(html.includes(mark),mark);
 ok(html.includes('class="home-hero-art"')&&html.includes('class="study-art-image"'),"both illustrations");
-ok(html.includes('href="kien-thuc/"')&&html.includes('href="roadmap/"'),"links");
+ok(html.includes('href="../kien-thuc/"')&&html.includes('href="../roadmap/"'),"links");
 ok(css.includes("prefers-reduced-motion:reduce")&&css.includes(".home-style-card-playful"),"accessibility and style");
 ok(/route-module-loader-v\d+\.js/.test(config)&&!config.includes("  - assets/javascripts/study-scene-v1.js")&&routeLoader.includes('load("study-scene-v1.js")'),"homepage study scene route-lazy loaded");
 ok(js.includes("roadmap.home.style.v1")&&js.includes("localStorage.setItem")&&js.includes('gateway.hidden = false'),"preference and wake interaction");
@@ -14,7 +14,7 @@ for(const name of ["study-kid-sleeping.webp","study-kid-awake.webp","tutor-girl-
   const image=path.join(root,"docs/assets/images",name),data=fs.readFileSync(image);
   ok(data.length>5000&&data.toString("ascii",0,4)==="RIFF"&&data.toString("ascii",8,12)==="WEBP",name+" is an optimized bundled WebP");
 }
-ok(html.includes('src="assets/images/study-scene-sleep-final.webp" data-awake-src="assets/images/study-scene-awake-final.webp"'),"exact matched owner-approved scene pair");
+ok(html.includes('src="../assets/images/study-scene-sleep-final.webp" data-awake-src="../assets/images/study-scene-awake-final.webp"'),"exact matched owner-approved scene pair");
 ok(!html.includes('class="study-art-room"')&&!html.includes('class="study-art-wakeup"'),"no duplicate room panel or greeting overlay");
 ok(css.includes(".study-art-stage{")&&css.includes("aspect-ratio:520/276")&&css.includes("object-fit:cover;object-position:center"),"both states share identical stage and crop");
 ok(!css.includes(".study-scene.is-awake .study-art-stage{")&&!css.includes(".study-art-room{"),"no per-state background or duplicate room layer");
