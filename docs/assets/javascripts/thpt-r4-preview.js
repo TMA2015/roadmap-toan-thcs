@@ -276,6 +276,8 @@
     }
     const meta=document.createElement("p");meta.className="thpt-r4-modal-progress";
     meta.textContent=item.item_id+" · "+item.skill+
+      (item.role==="OPTIONAL_SPECIALIZED"?" · Chuyên sâu · tự chọn":"")+
+      (item.difficulty==="ADVANCED"?" · Nâng cao":"")+
       (item.exposure==="EXPOSED_IN_KNOWLEDGE"?" · Đã xuất hiện trong bài giảng":"");
     const prompt=document.createElement("h3");prompt.textContent=item.stem;
     const hint=document.createElement("details"),hintSummary=document.createElement("summary");
