@@ -13,7 +13,7 @@
 
 **Phạm vi lô này:** chỉ Bài 1–2, không đụng Bài 3 (đồ thị/chu kì hàm số) hoặc Bài 4 (giải phương trình lượng giác cơ bản). Các công thức lượng giác liên quan được sử dụng để biến đổi và tính giá trị, **không** thêm dạng phương trình lượng giác tổng quát vào SGK Core B01–02. Hệ số lượng giác có điều kiện xác định. Câu hỏi đều do dự án tự biên soạn, không chép nguyên văn ví dụ SGK/SBT.
 
-**Trạng thái câu và ID:** 16 `item_id` mới đề xuất (14 formative + 2 Written, một Anchor là nhãn của Written); 4 `HELP_ID` độc lập không phải item_id; 2 `FIG_ID` độc lập. Các ID được **đề xuất**, chưa đăng ký vào ngân hàng canonical đang phát hành và chưa qua đối chiếu trùng lặp toàn repo.
+**Trạng thái câu và ID:** 18 `item_id` mới đề xuất (16 formative + 2 Written, một Anchor là nhãn của Written); 4 `HELP_ID` độc lập không phải item_id; 2 `FIG_ID` độc lập. Các ID được **đề xuất**, chưa đăng ký vào ngân hàng canonical đang phát hành và chưa qua đối chiếu trùng lặp toàn repo.
 
 ## 2. Ma trận mục tiêu và nguồn S1
 
@@ -24,8 +24,8 @@
 | `G11-B01-TRIG_IDENTITIES` | Hệ thức cơ bản và dấu theo góc phần tư | B01-P01, B01-P04 |
 | `G11-B01-PERIODIC_REDUCTION` | Góc cùng phương và chu kì của giá trị lượng giác | B01-P02 |
 | `G11-B01-ARC_LENGTH` | Góc radian và độ dài cung | B01-P03, B01-W01 |
-| `G11-B01-RELATED_ANGLES` | Góc đối, bù, phụ, hơn kém π và dấu | D1 Bài 1 / EX-G11-B01-02 |
-| `G11-B02-SUM_DIFFERENCE` | Công thức cộng/trừ, điều kiện với tan | B02-C01, B02-P01,P02,P03 |
+| `G11-B01-RELATED_ANGLES` | Góc đối, bù, phụ, hơn kém π và dấu | B01-P05 + D1 Bài 1 / EX-G11-B01-02 |
+| `G11-B02-SUM_DIFFERENCE` | Công thức cộng/trừ, điều kiện với tan | B02-C01, B02-P01,P02,P03,P07 |
 | `G11-B02-DOUBLE_ANGLE` | Góc nhân đôi và hệ quả | B02-C02, B02-P06 |
 | `G11-B02-PRODUCT_TO_SUM` | Tích thành tổng | B02-P04, B02-W02 |
 | `G11-B02-SUM_TO_PRODUCT` | Tổng thành tích | B02-P05 |
@@ -68,7 +68,7 @@
 
 **D2 · EX-G11-B02-04 — tổng thành tích.** `cos75°+cos15°=2cos45°cos30°=√6/2`. Với các góc cho bằng độ, toàn bộ biểu thức phải dùng độ; tránh lẫn `π` rad với số đo độ trong cùng phép tính không đổi đơn vị.
 
-## 4. D3 · Formative Core/Practice và lời giải chuẩn — 14 canonical candidates
+## 4. D3 · Formative Core/Practice và lời giải chuẩn — 16 canonical candidates
 
 **Quy tắc:** luyện tập có thể mở hint và xem lời giải sau khi tự làm; không ghi Skill Mastery tự động. Không được lấy nguyên câu đã xem lời giải để làm chứng cứ độc lập `SGK_CHAPTER_READINESS` hoặc `TOPIC_READINESS`.
 
@@ -212,6 +212,26 @@
 
 **Lời giải:** sin2α=2·3/5·4/5=24/25; cos2α=16/25−9/25=7/25.
 
+### THPT-G11-B01-P05 — SGK_PRACTICE · G11-B01-RELATED_ANGLES · CORE_APPLY
+
+**Đề:** Cho góc θ ở góc phần tư II có sin θ=4/5 và cos θ=−3/5. Không tìm θ, hãy tính sin(π−θ), cos(π+θ), sin(−θ).
+
+**Đáp án:** 4/5; 3/5; −4/5.
+
+**Gợi ý:** Sử dụng hệ thức góc bù, hơn kém π và góc đối; kiểm dấu của kết quả.
+
+**Lời giải:** sin(π−θ)=sin θ=4/5; cos(π+θ)=−cos θ=3/5; sin(−θ)=−sin θ=−4/5.
+
+### THPT-G11-B02-P07 — SGK_PRACTICE · G11-B02-SUM_DIFFERENCE · CORE_APPLY
+
+**Đề:** Biết tan u=1/2 và tan v=1/3, trong đó tan u và tan v đều xác định. Tính tan(u+v) nếu biểu thức xác định.
+
+**Đáp án:** 1.
+
+**Gợi ý:** Kiểm 1−tan u·tan v≠0, sau đó mới áp dụng công thức cộng tan.
+
+**Lời giải:** 1−(1/2)(1/3)=5/6≠0 nên tan(u+v) xác định. tan(u+v)=(1/2+1/3)/(1−1/6)=(5/6)/(5/6)=1.
+
 ## 5. D4 · Written/Anchor — 2 canonical candidates, không tự chấm Mastery
 
 **Hướng dẫn:** học sinh giải trên giấy, chủ động xem gợi ý, lời giải/rubric sau. Anchor chỉ là nhãn Written, không phải ngân hàng riêng.
@@ -319,7 +339,7 @@
 **Bản chất:** tan α chỉ xác định nếu cos α≠0; cot α chỉ nếu sin α≠0. Hệ thức sin²+cos²=1 chỉ cho độ lớn; góc phần tư quyết định dấu.  
 **Tự sửa:** khoanh miền xác định trước; xác định góc phần tư, lấy căn đúng dấu; thử ngược bằng tan=sin/cos và sin²+cos²=1.  
 **Ôn:** SGK Bài 1 giá trị lượng giác, dấu và hệ thức cơ bản.  
-**Quay lại item:** `THPT-G11-B01-C02`, `THPT-G11-B01-P01`, `THPT-G11-B01-P04`.
+**Quay lại item:** `THPT-G11-B01-C02`, `THPT-G11-B01-P01`, `THPT-G11-B01-P04`, `THPT-G11-B01-P05`.
 
 ### HELP-G11-B02-01 · Biến sin(u+v) thành sin u+sin v
 
@@ -339,12 +359,12 @@
 
 ## 8. Cổng kiểm toán, danh sách ID và yêu cầu verdict
 
-**EXPECTED_FORMATIVE_ITEM_ID = 14**; **EXPECTED_WRITTEN_ITEM_ID = 2**; **EXPECTED_CANONICAL_TOTAL = 16**; **EXPECTED_HELP_ID=4**; **EXPECTED_FIGURE_ID=2**; **EXPECTED_D2_EXAMPLE=7**; **OUTCOME_REGISTER=10**. ID chỉ là candidate; chỉ được cấp chính thức sau khi đối chiếu kho hiện hành, chính sách một câu–một canonical và verdict.
+**EXPECTED_FORMATIVE_ITEM_ID = 16**; **EXPECTED_WRITTEN_ITEM_ID = 2**; **EXPECTED_CANONICAL_TOTAL = 18**; **EXPECTED_HELP_ID=4**; **EXPECTED_FIGURE_ID=2**; **EXPECTED_D2_EXAMPLE=7**; **OUTCOME_REGISTER=10**. ID chỉ là candidate; chỉ được cấp chính thức sau khi đối chiếu kho hiện hành, chính sách một câu–một canonical và verdict.
 
 **Academic checklist bắt buộc:**
 1. Khóa SGK/SBT trang B01/B02 theo PDF (lưu ý phiên bản sách và trang in), đối chiếu mọi mục tiêu trong ma trận 10 outcome: `COVERED/PARTIAL/NOT_CORE` và nguồn trang/mục.
 2. Chấm học thuật từng D1/D2/ví dụ, xác nhận điều kiện định nghĩa tan/cot, công thức lượng giác, chiều quay, radian/độ và số vòng quay. Cần phân biệt bài Core và nội dung có thể chuyển hỗ trợ hoặc chuyên sâu.
-3. Chấm 16 item theo từng `item_id` gồm stem, đáp án, lời giải, hint, độ khó, trùng lặp **thực chất**, phân tầng; kiểm Written rubric và Anchor chỉ là nhãn. Đề nghị so với ngân hàng khác trên NotebookLM; nếu không có nguồn bank, ghi rõ `DEDUPE_NOT_VERIFIED`.
+3. Chấm 18 item theo từng `item_id` gồm stem, đáp án, lời giải, hint, độ khó, trùng lặp **thực chất**, phân tầng; kiểm Written rubric và Anchor chỉ là nhãn. Đề nghị so với ngân hàng khác trên NotebookLM; nếu không có nguồn bank, ghi rõ `DEDUPE_NOT_VERIFIED`.
 4. Chấm D5 theo từng SVG XML: tọa độ hình, tia, cung, dấu, nhãn, accessibility và phạm vi SGK. Render mobile là QA kỹ thuật riêng, không tự suy học thuật PASS.
 5. Chấm D6 theo 4 HELP_ID: chẩn đoán đúng lỗi → bản chất → bước tự sửa → tiền đề → ID trở lại. Không làm lộ đáp án đề đánh giá độc lập. Chia P0/P1/P2 với `MINIMAL_DELTA` chuẩn nếu sửa.
 6. Trả `SOURCE_RECEIPT`, `LESSON_B01/B02_VERDICT`, `D1–D6_OVERALL`, `ITEM_RECONCILIATION`, `OUTCOME_MATRIX`, `ACADEMIC_CLEARANCE_FOR_THIS_DELTA`. **Academic PASS không tự cấp CONTENT_READY, không cấp quyền merge/deploy**, không suy rộng sang Bài 3/4, chương I đầy đủ hoặc Topic Readiness.
