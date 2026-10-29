@@ -18,6 +18,12 @@ for(let n=23;n<=25;n++){
  assert.equal(bank.forLesson(n,"core").length,2,"ChVIII Core B"+n);
  assert.equal(bank.forLesson(n,"practice").length,n===25?7:6,"ChVIII Practice B"+n);
  const lesson=read("docs/thpt-preview/sgk/chuong-viii/bai-"+n+".md");
+ for(const m of lesson.matchAll(/\\\\\[\\n([\\s\\S]*?)\\n\\\\\]/g)){
+  const p=m.index+ m[0].length;
+  assert((m.index===0||lesson.slice(m.index-2,m.index)==="\\n\\n")&&
+         (p===lesson.length||lesson.slice(p,p+2)==="\\n\\n"),
+   "B"+n+" display TeX must have blank paragraphs for MkDocs MathJax");
+ }
  assert(lesson.includes("## 1.")&&lesson.includes("## 3."),"Missing self-contained Knowledge/Examples B"+n);
  assert(lesson.includes("SGK")&&lesson.includes("SBT")&&lesson.includes("../luyen-tap/"));
 }
