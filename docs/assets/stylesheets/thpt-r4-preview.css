@@ -281,6 +281,14 @@ body.thpt-r4-route .md-sidebar--primary .thpt-r4-collapsible > .md-nav__link .md
 body.thpt-r4-route .md-sidebar--primary .thpt-r4-collapsible > .md-nav[hidden]{
   display:none!important;
 }
+/* On the native Material mobile drawer the child nav is mounted as a
+   stacked panel. Hiding only the panel (never its parent label) prevents
+   stale active branches from overlaying the three category names/header. */
+@media(max-width:76.234375em){
+ body.thpt-r4-route .md-sidebar--primary li.md-nav__item--nested > nav.md-nav[hidden]{
+  display:none!important;
+ }
+}
 body.thpt-r4-route .md-sidebar--primary .thpt-r4-sidebar-toggle{
   position:absolute;
   z-index:2;
