@@ -191,6 +191,8 @@ jobs:
           node scripts/test-thpt-g10-chvii-reviewed-stage1.cjs
           node --check docs/assets/javascripts/thpt-chviii-reviewed-formative-v1.js
           node scripts/test-thpt-g10-chviii-reviewed-stage2.cjs
+          node --check docs/assets/javascripts/thpt-chix-reviewed-formative-v1.js
+          node scripts/test-thpt-g10-chix-reviewed-stage3.cjs
 
       - name: Guard Self-Learning Math Pages rename compatibility and learner data contracts
         run: |
