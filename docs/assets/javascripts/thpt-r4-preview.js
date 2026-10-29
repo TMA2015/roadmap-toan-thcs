@@ -197,7 +197,7 @@
    "b16-core":["../../core/ham-so-bac-hai/","[data-thpt-core]"],
    "b16-practice":["../../../chuyen-de/ham-so/luyen-tap/","[data-thpt-practice]"]
   };
-  const lessonTitle={"15":"Hàm số","16":"Hàm số bậc hai","17":"Dấu của tam thức bậc hai","18":"Phương trình quy về phương trình bậc hai"};
+  const lessonTitle={"15":"Hàm số","16":"Hàm số bậc hai","17":"Dấu của tam thức bậc hai","18":"Phương trình quy về phương trình bậc hai","19":"Phương trình đường thẳng","20":"Vị trí, góc và khoảng cách","21":"Đường tròn","22":"Ba đường conic"};
   const dlg=document.createElement("dialog");
   dlg.className="thpt-r4-practice-dialog";
   dlg.dataset.thptR4="1"; // Eligible root for existing R4 exercise binder when remote card is inserted.
@@ -287,6 +287,9 @@
     const note=document.createElement("p");note.className="thpt-r4-modal-progress";
     note.textContent="Chế độ luyện tập tự đối chiếu · Không chấm điểm/mastery.";
     card.append(meta,prompt,hint,solution,note);
+    // Only public formative text is typeset; never load any held-out readiness
+    // prompts or answer keys into the browser.
+    if(window.MathJax?.typesetPromise)window.MathJax.typesetPromise([card]).catch(()=>{});
     prev.disabled=index===0;next.disabled=index===items.length-1;
    };
    prev.addEventListener("click",()=>{if(index>0){index--;render()}});
@@ -345,14 +348,16 @@
   root.querySelectorAll("[data-thpt-open-quiz]").forEach(button=>{
    button.addEventListener("click",async()=>{
     returnFocus=button;
-    const id=button.dataset.thptOpenQuiz,parts=id.match(/^b(1[5678])-(core|practice)$/);
+    const id=button.dataset.thptOpenQuiz,parts=id.match(/^b(1[56789]|2[012])-(core|practice)$/);
     if(!parts)return;
     const lesson=parts[1],role=parts[2]==="core"?"Core":"Luyện tập";
     dlg.querySelector("[data-thpt-modal-lesson-number]").textContent=lesson;
+    dlg.querySelector(".thpt-r4-modal-meta").textContent="LỚP 10 · CHƯƠNG "+(Number(lesson)>=19?"VII":"VI");
     modalTitle.textContent=role+" · Bài "+lesson+". "+lessonTitle[lesson];
     modalBody.textContent="Đang mở nội dung…";dlg.showModal();
-    if(reviewed?.validate().valid){
-     const items=reviewed.forLesson(lesson,parts[2]);
+    const activeBank=Number(lesson)>=19?window.THPT_CHVII_REVIEWED_FORMATIVE:reviewed;
+    if(activeBank?.validate().valid){
+     const items=activeBank.forLesson(lesson,parts[2]);
      if(items.length){
       showReviewed(items);
       if(parts[2]==="practice")attachCumulative(lesson);
@@ -363,6 +368,7 @@
     if(demoSets[id]){showDemo(demoSets[id]);if(parts[2]==="practice")attachCumulative(lesson);return}
     try{
      // Import exact canonical source, not a separately copied answer key.
+     if(!src[id])throw Error("Không có nguồn formative đã duyệt cho "+id);
      const [relative,selector]=src[id];
      const url=new URL(relative,location.href);
      const response=await fetch(url,{credentials:"same-origin"});
