@@ -11,6 +11,8 @@ on:
       - 'docs/thpt-preview/**'
       - 'docs/assets/javascripts/thpt-r4-preview.js'
       - 'docs/assets/javascripts/thpt-chvii-reviewed-formative-v1.js'
+      - 'docs/assets/images/thpt/**'
+      - 'docs/assets/stylesheets/thpt-r4-preview.css'
       - 'scripts/test-thpt-g10-chvii-reviewed-stage1.cjs'
       - 'docs/assets/javascripts/floating-ai-tutor-v1.js'
       - 'docs/assets/javascripts/firebase-gemini-v1.js'
@@ -106,6 +108,9 @@ jobs:
           test -f site/thpt-preview/sgk/chuong-vii/luyen-tap/index.html
           test -f site/thpt-preview/sgk/chuong-vii/tu-kiem-tra-chuong/index.html
           test -f site/assets/javascripts/thpt-chvii-reviewed-formative-v1.js
+          test -f site/assets/images/thpt/THPT_G10_B19_LINE_INTERSECTION_DRAFT.svg
+          test -f site/assets/images/thpt/THPT_G10_B21_CIRCLE_TANGENT_DRAFT.svg
+          test -f site/assets/images/thpt/THPT_G10_B22_PARABOLA_FOCUS_DIRECTRIX_DRAFT.svg
           test ! -e site/assets/javascripts/thpt-protected-readiness-v1.js
           test ! -e site/assets/javascripts/thpt-formative-exposure-v1.js
       - name: Install isolated Chromium test dependency
