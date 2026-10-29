@@ -441,3 +441,8 @@ body[data-md-color-scheme="slate"] .thpt-r4-practice-dialog .thpt-r4-modal-meta{
 }
 body[data-md-color-scheme="slate"] .thpt-r4-home-orbit-heading{color:#c6d5ff}
 body[data-md-color-scheme="slate"] .thpt-r4-home-orbit-caption{color:#243e68}
+
+/* ChVII D5 SVGs: show only after opening the reviewed formative solution.
+   White artboard in both Material light and dark themes; never crop labels. */
+.thpt-r4-reviewed-solution-figure{display:block;width:100%;max-width:720px;height:auto;object-fit:contain;margin:14px auto 6px;border-radius:12px;border:1px solid #d8e3f3;background:#fff}
+.thpt-r4-reviewed-solution-caption{font-size:.76rem;color:var(--roadmap-muted,#586782);text-align:center;line-height:1.5;margin:5px 0 12px}

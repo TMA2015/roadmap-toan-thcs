@@ -56,11 +56,31 @@ assert(!readiness.includes("**Đáp án")&&!readiness.includes("**Đề:"),
  "Readiness blueprint must contain NO answer keys or actual question bodies");
 assert.equal((readiness.match(/\| CHVII-READ-/g)||[]).length,8,"CHVII blueprint 8 outcome slots");
 assert.equal((readiness.match(/\| CHVIII-READ-/g)||[]).length,6,"CHVIII blueprint 6 outcome slots");
+// The ChVII academic review has since approved these *three* D5 visual
+// attachments to original public formative IDs, and they appear exclusively
+// in an opt-in solution renderer. Preserve the original fail-closed gate for
+// all other drafts and every protected assessment item.
+const reviewedSolutionFigures=new Map([
+ ["THPT-G10-B19-P06","THPT_G10_B19_LINE_INTERSECTION_DRAFT.svg"],
+ ["THPT-G10-B21-P03","THPT_G10_B21_CIRCLE_TANGENT_DRAFT.svg"],
+ ["THPT-G10-B22-P06","THPT_G10_B22_PARABOLA_FOCUS_DIRECTRIX_DRAFT.svg"]
+]);
+const reviewedPublic=read("docs/assets/javascripts/thpt-chvii-reviewed-formative-v1.js");
+for(const [id,asset] of reviewedSolutionFigures){
+ assert(reviewedPublic.includes('"item_id": "'+id+'"'),
+  "D5 figure must reference a reviewed public formative item: "+id);
+}
 for(const userPath of ["docs/assets/javascripts/thpt-r4-preview.js",
  "docs/thpt-preview/sgk/chuong-vi/tu-kiem-tra-chuong.md"]){
  const source=read(userPath);
  for(const id of [...sevenIDs,...eightIDs,...writtenIds]){
-  assert(!source.includes(id),"Internal draft item leaked into preview "+id);
+  if(!source.includes(id))continue;
+  assert(userPath==="docs/assets/javascripts/thpt-r4-preview.js"&&reviewedSolutionFigures.has(id),
+   "Internal unreviewed draft item leaked into preview "+id);
+  assert(source.includes(reviewedSolutionFigures.get(id))&&
+    source.includes('solution.addEventListener("toggle"')&&
+    source.includes("if(!solution.open"),
+   "Review-cleared D5 visual must remain solution-only for "+id);
  }
 }
 
@@ -89,7 +109,11 @@ for(const id of advancedIds){
  }
  for(const studentPath of ["docs/assets/javascripts/thpt-r4-preview.js",
  "docs/thpt-preview/sgk/chuong-vi/tu-kiem-tra-chuong.md"]){
-  assert(!read(studentPath).includes(id),"advanced draft leaked to preview "+id);
+  if(read(studentPath).includes(id)){
+    assert(studentPath==="docs/assets/javascripts/thpt-r4-preview.js"&&
+      reviewedSolutionFigures.has(id),
+      "Unreviewed advanced draft leaked to learner route: "+id);
+  }
  }
 }
 const outcomeRows=[...matrix.matchAll(/^\| (G10-B(?:19|20|21|22|23|24|25)-[A-Z_]+) \|/gm)].map(x=>x[1]);
