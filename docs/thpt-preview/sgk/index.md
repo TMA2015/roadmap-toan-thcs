@@ -16,4 +16,4 @@
 </div>
 </div>
 
-**Core và Luyện tập/Vận dụng** được mở theo từng bài trong chương tương ứng. [Vào Luyện tập/Vận dụng Chương VI](chuong-vi/luyen-tap.md).
+**Core và Luyện tập/Vận dụng** được mở theo từng bài trong chương tương ứng. [Luyện tập Chương VI](chuong-vi/luyen-tap.md) · [Luyện tập Chương VII](chuong-vii/luyen-tap.md) · [Tự luận Chương VII](../thu-vien/tu-luan-chuong-vii.md).
