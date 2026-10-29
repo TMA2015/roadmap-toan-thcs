@@ -197,7 +197,7 @@
    "b16-core":["../../core/ham-so-bac-hai/","[data-thpt-core]"],
    "b16-practice":["../../../chuyen-de/ham-so/luyen-tap/","[data-thpt-practice]"]
   };
-  const lessonTitle={"15":"Hàm số","16":"Hàm số bậc hai","17":"Dấu của tam thức bậc hai","18":"Phương trình quy về phương trình bậc hai"};
+  const lessonTitle={"15":"Hàm số","16":"Hàm số bậc hai","17":"Dấu của tam thức bậc hai","18":"Phương trình quy về phương trình bậc hai","19":"Phương trình đường thẳng","20":"Vị trí, góc và khoảng cách","21":"Đường tròn","22":"Ba đường conic","23":"Quy tắc đếm","24":"Hoán vị, chỉnh hợp và tổ hợp","25":"Nhị thức Newton"};
   const dlg=document.createElement("dialog");
   dlg.className="thpt-r4-practice-dialog";
   dlg.dataset.thptR4="1"; // Eligible root for existing R4 exercise binder when remote card is inserted.
@@ -246,8 +246,9 @@
   // Each item has one canonical record in thpt-chvi-reviewed-formative-v1.js;
   // the SGK card chooses a role-based placement without cloning content.
   const reviewed=window.THPT_CHVI_REVIEWED_FORMATIVE;
-  const showReviewed=items=>{
-   let index=0;
+  const showReviewed=(items,requestedItem)=>{
+   let index=items.findIndex(item=>item.item_id===requestedItem);
+   if(index<0)index=0;
    const root=document.createElement("section");
    root.className="thpt-r4-reviewed-formative";
    root.dataset.thptReviewedFormative="1";
@@ -267,7 +268,7 @@
     // credentials or an inactive backend is NOT evidence of unseen material.
     void window.THPTFormativeExposure?.record(item.item_id,exposureRole,"QUESTION_SHOWN");
     head.textContent="Câu "+(index+1)+" / "+items.length+
-      " · Đã review học thuật · Tự luyện, không ghi điểm";
+      " · Tự luyện, không ghi điểm";
     for(let i=0;i<items.length;i++){
      const button=document.createElement("button");button.type="button";
      button.textContent="Câu "+(i+1);button.className=i===index?"active":"";
@@ -275,8 +276,11 @@
      button.addEventListener("click",()=>{index=i;render()});tabs.append(button);
     }
     const meta=document.createElement("p");meta.className="thpt-r4-modal-progress";
-    meta.textContent=item.item_id+" · "+item.skill+
-      (item.exposure==="EXPOSED_IN_KNOWLEDGE"?" · Đã xuất hiện trong bài giảng":"");
+    meta.textContent="Bài "+item.lesson+" · "+
+      (item.role==="CORE"?"Kiến thức cơ bản":item.role==="APPLICATION"?"Vận dụng":"Luyện tập")+
+      (item.role==="OPTIONAL_SPECIALIZED"?" · Chuyên sâu tự chọn":"")+
+      (item.role==="SUPPORT_EXTENSION"?" · Mở rộng tự chọn":"")+
+      (item.difficulty==="ADVANCED"?" · Nâng cao":"");
     const prompt=document.createElement("h3");prompt.textContent=item.stem;
     const hint=document.createElement("details"),hintSummary=document.createElement("summary");
     hintSummary.textContent="💡 Xem gợi ý (tự chọn)";
@@ -284,9 +288,54 @@
     const solution=document.createElement("details"),solutionSummary=document.createElement("summary");
     solutionSummary.textContent="Xem đáp án và lời giải sau khi tự làm";
     solution.append(solutionSummary,document.createTextNode(item.solution));
+    // D5-reviewed figures are *answer-bearing*. Load an exact shared SVG ONLY
+    // when the learner deliberately expands the formative solution, never
+    // alongside an unanswered Core/Practice prompt or held-out Readiness.
+    const reviewedFigures={
+     "THPT-G10-B23-C02":["THPT_G10_B23_COUNTING_TREE_DRAFT.svg",
+       "Cây quy tắc nhân: ba áo, hai quần, sáu bộ; chỉ xem sau khi tự giải"],
+     "THPT-G10-B19-P06":["THPT_G10_B19_LINE_INTERSECTION_DRAFT.svg",
+       "Hình giải B19-P06: giao điểm I(2;2), hai đường và đường vuông góc cần tìm"],
+     "THPT-G10-B21-P03":["THPT_G10_B21_CIRCLE_TANGENT_DRAFT.svg",
+       "Hình giải B21-P03: đường tròn tâm I(1;−1), tiếp tuyến x=3 tại H(3;−1)"],
+     "THPT-G10-B22-P06":["THPT_G10_B22_PARABOLA_FOCUS_DIRECTRIX_DRAFT.svg",
+       "Hình giải B22-P06: tiêu điểm, đường chuẩn và hai khoảng cách bằng nhau"]
+    };
+    const figure=reviewedFigures[item.item_id];
+    if(figure){
+     solution.dataset.thptSolutionFigureItem=item.item_id;
+     solution.addEventListener("toggle",()=>{
+      if(!solution.open||solution.dataset.figureLoaded==="1")return;
+      const match=location.pathname.match(/^(.*?\/)(?:thpt-preview|thpt)\//);
+      if(!match)return;
+      const img=document.createElement("img");
+      img.className="thpt-r4-reviewed-solution-figure";
+      img.alt=figure[1];
+      img.loading="lazy";img.decoding="async";
+      img.src=match[1]+"assets/images/thpt/"+figure[0];
+      img.dataset.thptReviewedFigure=item.item_id;
+      const caption=document.createElement("p");
+      caption.className="thpt-r4-reviewed-solution-caption";
+      caption.textContent="Hình minh họa lời giải";
+      solution.append(img,caption);
+      solution.dataset.figureLoaded="1";
+     });
+    }
+    // D6 learner recovery: link to the existing S1 lesson without adding math.
+    const reviewLesson=document.createElement("a");
+    reviewLesson.className="thpt-r4-remediation-link";
+    reviewLesson.textContent="↶ Ôn lại kiến thức Bài "+item.lesson;
+    const matchPath=location.pathname.match(/^(.*?\/)(?:thpt-preview|thpt)\//);
+    const chapter=Number(item.lesson)<=18?"vi":Number(item.lesson)<=22?"vii":"viii";
+    reviewLesson.href=matchPath?
+      matchPath[0]+"sgk/chuong-"+chapter+"/bai-"+item.lesson+"/":
+      "../bai-"+item.lesson+"/";
     const note=document.createElement("p");note.className="thpt-r4-modal-progress";
-    note.textContent="Chế độ luyện tập tự đối chiếu · Không chấm điểm/mastery.";
-    card.append(meta,prompt,hint,solution,note);
+    note.textContent="Tự luyện và đối chiếu lời giải · Không ghi điểm thành thạo.";
+    card.append(meta,prompt,hint,solution,reviewLesson,note);
+    // Only public formative text is typeset; never load any held-out readiness
+    // prompts or answer keys into the browser.
+    if(window.MathJax?.typesetPromise)window.MathJax.typesetPromise([card]).catch(()=>{});
     prev.disabled=index===0;next.disabled=index===items.length-1;
    };
    prev.addEventListener("click",()=>{if(index>0){index--;render()}});
@@ -345,16 +394,18 @@
   root.querySelectorAll("[data-thpt-open-quiz]").forEach(button=>{
    button.addEventListener("click",async()=>{
     returnFocus=button;
-    const id=button.dataset.thptOpenQuiz,parts=id.match(/^b(1[5678])-(core|practice)$/);
+    const id=button.dataset.thptOpenQuiz,parts=id.match(/^b(1[5-9]|2[0-5])-(core|practice)$/);
     if(!parts)return;
     const lesson=parts[1],role=parts[2]==="core"?"Core":"Luyện tập";
     dlg.querySelector("[data-thpt-modal-lesson-number]").textContent=lesson;
+    dlg.querySelector(".thpt-r4-modal-meta").textContent="LỚP 10 · CHƯƠNG "+(Number(lesson)>=23?"VIII":Number(lesson)>=19?"VII":"VI");
     modalTitle.textContent=role+" · Bài "+lesson+". "+lessonTitle[lesson];
     modalBody.textContent="Đang mở nội dung…";dlg.showModal();
-    if(reviewed?.validate().valid){
-     const items=reviewed.forLesson(lesson,parts[2]);
+    const activeBank=Number(lesson)>=23?window.THPT_CHVIII_REVIEWED_FORMATIVE:Number(lesson)>=19?window.THPT_CHVII_REVIEWED_FORMATIVE:reviewed;
+    if(activeBank?.validate().valid){
+     const items=activeBank.forLesson(lesson,parts[2]);
      if(items.length){
-      showReviewed(items);
+      showReviewed(items,new URLSearchParams(location.search).get("item"));
       if(parts[2]==="practice")attachCumulative(lesson);
       return;
      }
@@ -363,6 +414,7 @@
     if(demoSets[id]){showDemo(demoSets[id]);if(parts[2]==="practice")attachCumulative(lesson);return}
     try{
      // Import exact canonical source, not a separately copied answer key.
+     if(!src[id])throw Error("Không có nguồn formative đã duyệt cho "+id);
      const [relative,selector]=src[id];
      const url=new URL(relative,location.href);
      const response=await fetch(url,{credentials:"same-origin"});
@@ -384,6 +436,17 @@
     }
    });
   });
+  // Public formative navigation from the approved D6 help cards only.
+  const requestedItem=new URLSearchParams(location.search).get("item");
+  const parsed=/^THPT-G10-B(19|20|21|22|23|24|25)-[CP]\d{2}$/.exec(requestedItem||"");
+  if(parsed){
+   const lesson=parsed[1], bank=Number(lesson)>=23?window.THPT_CHVIII_REVIEWED_FORMATIVE:window.THPT_CHVII_REVIEWED_FORMATIVE;
+   if(bank?.validate().valid){
+    const placement=["core","practice"].find(role=>bank.forLesson(lesson,role).some(item=>item.item_id===requestedItem));
+    const trigger=placement?root.querySelector('[data-thpt-open-quiz="b'+lesson+'-'+placement+'"]'):null;
+    trigger?.click();
+   }
+  }
  }
 
 

@@ -5,13 +5,13 @@
 | Gói | Hành trình | Trạng thái | Phạm vi | PR / nguồn |
 |---|---|---|---|---|
 | [G10-SGK-CHVI](inventory/G10-SGK-CHVI.md) | SGK_CHAPTER | PUBLISHED_SCOPED | PUBLIC_FORMATIVE_ONLY | merged #612; UI #617–619 |
-| [G10-SGK-CHVII](ready/G10-SGK-CHVII.md) | SGK_CHAPTER | CONTENT_READY | PUBLIC_FORMATIVE_ONLY | #620 (current); #614 (old source, not a second packet) |
-| [G10-SGK-CHVIII](ready/G10-SGK-CHVIII.md) | SGK_CHAPTER | CONTENT_READY | PUBLIC_FORMATIVE_ONLY | #621 (depends #620); #615 old source |
+| [G10-SGK-CHVII](ready/G10-SGK-CHVII.md) | SGK_CHAPTER | RELEASE_READY | PUBLIC_FORMATIVE_ONLY | #625 (scoped technical release; source #624 merged)
+| [G10-SGK-CHVIII](ready/G10-SGK-CHVIII.md) | SGK_CHAPTER | RELEASE_READY | PUBLIC_FORMATIVE_ONLY | #625 (scoped technical release; source #624 merged)
 | [G10-SGK-CHIX](inventory/G10-SGK-CHIX.md) | SGK_CHAPTER | ACADEMIC_PARTIAL | PUBLIC_FORMATIVE_ONLY | #616 (dependent old draft) |
 
-**CONTENT_READY trong nhánh ứng viên authoring: 2 (ChVII, ChVIII) · chỉ PUBLIC_FORMATIVE_ONLY.** Phát hành mới chỉ khi A1–A7 đã hoàn tất; nhánh phát hành phải đạt R1–R5 và có owner approval. ChVI là PUBLISHED_SCOPED lịch sử, không coi Tự kiểm tra/Mastery hoàn thiện.
+**RELEASE_READY có điều kiện: 2 (ChVII, ChVIII) · chỉ PUBLIC_FORMATIVE_ONLY.** PR #624 source merged @ 573fbdd4444f2e5c612f50e902f428b6064f6970; owner approved #625 conditional on exact-head dual CI SUCCESS. RELEASE_READY is pre-deploy; PUBLISHED_SCOPED only after observed Pages deploy. ChVI là PUBLISHED_SCOPED lịch sử, không coi Tự kiểm tra/Mastery hoàn thiện.
 
-**Cổng A1–A7 mới của ChVII/VIII:** [CHVII_VIII_PUBLIC_FORMATIVE_A1_A7_FINAL_EVIDENCE_20261029.md](CHVII_VIII_PUBLIC_FORMATIVE_A1_A7_FINAL_EVIDENCE_20261029.md). Nhánh phát hành phải lấy nguyên bản D6 R02 đã review và QA lại exact head; đây chưa phải MERGED CONTENT_READY trên main và không là quyền merge/deploy.
+**Cổng A1–A7 mới của ChVII/VIII:** [CHVII_VIII_PUBLIC_FORMATIVE_A1_A7_FINAL_EVIDENCE_20261029.md](CHVII_VIII_PUBLIC_FORMATIVE_A1_A7_FINAL_EVIDENCE_20261029.md). Nhánh phát hành phải lấy nguyên bản D6 R02 đã review và QA lại exact head; source manifests đã merge vào main qua PR #624; quyền merge/deploy #625 được chủ dự án cấp có điều kiện exact-head CI PASS, chỉ phạm vi PUBLIC_FORMATIVE_ONLY.
 
 **Đối chiếu bằng chứng lịch sử sau PR #620/#621 và kiểm soát D6:** [ACADEMIC_AND_D6_GATE_EVIDENCE_20261029.md](ACADEMIC_AND_D6_GATE_EVIDENCE_20261029.md). Tài liệu này chỉ là checkpoint/QA evidence, không nâng A5 hoặc thêm gói READY.
 
