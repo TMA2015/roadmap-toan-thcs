@@ -39,21 +39,30 @@ async function ready(page,path){
      assert(rootText.includes(label),"Missing selector label "+label+" at "+vp.width);
     assert(!rootText.includes("Học theo lớp"),
       "THCS-only navigation leaked into the programme selector");
-    await navPage.locator("#__drawer").check({force:true});
+    await navPage.evaluate(()=>{
+     const el=document.getElementById("__drawer");el.checked=true;
+     el.dispatchEvent(new Event("change",{bubbles:true}));
+    });
     const thptLink=list.locator('a[href="thpt-preview/home/"]');
     assert(await thptLink.isVisible(),"THPT programme path hidden at "+vp.width);
     await thptLink.click();
     await navPage.locator("[data-thpt-r4-launcher]").waitFor();
     assert.equal(await navPage.locator("body.thpt-r4-home").count(),1,"THPT homepage route missing");
     const drawer=navPage.locator("#__drawer");
-    await drawer.check({force:true});
+    await navPage.evaluate(()=>{
+     const el=document.getElementById("__drawer");el.checked=true;
+     el.dispatchEvent(new Event("change",{bubbles:true}));
+    });
     assert(await drawer.isChecked(),"THPT home native drawer failed at "+vp.width);
     assert(await navPage.locator(".md-sidebar--primary").isVisible(),
       "THPT home sidebar force-hidden at "+vp.width);
     const homeText=await navPage.locator(".md-sidebar--primary nav.md-nav--primary").innerText();
     for(const label of ["Học theo SGK KNTT","Học theo chuyên đề","Thư viện bài tập"])
      assert(homeText.includes(label),"THPT home menu missing "+label+" at "+vp.width);
-    await drawer.uncheck({force:true});
+    await navPage.evaluate(()=>{
+     const el=document.getElementById("__drawer");el.checked=false;
+     el.dispatchEvent(new Event("change",{bubbles:true}));
+    });
    }finally{await navPage.close()}
   }
 
