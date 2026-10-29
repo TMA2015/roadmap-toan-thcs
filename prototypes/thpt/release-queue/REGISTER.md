@@ -4,7 +4,7 @@
 
 | Gói | Hành trình | Trạng thái | Phạm vi | PR / nguồn |
 |---|---|---|---|---|
-| [G10-SGK-CHIV](inventory/G10-SGK-CHIV.md) | SGK_CHAPTER | ACADEMIC_PARTIAL | PUBLIC_FORMATIVE_ONLY | B07–B08 D1–D6 R01 18 items, 10 outcomes, NotebookLM pending |
+| [G10-SGK-CHIV](ready/G10-SGK-CHIV.md) | SGK_CHAPTER | CONTENT_READY | PUBLIC_FORMATIVE_ONLY | B07–B08 R01 NotebookLM 18/18 PASS, authoring Draft #634 |
 | [G10-SGK-CHVI](inventory/G10-SGK-CHVI.md) | SGK_CHAPTER | PUBLISHED_SCOPED | PUBLIC_FORMATIVE_ONLY | merged #612; UI #617–619 |
 | [G10-SGK-CHVII](ready/G10-SGK-CHVII.md) | SGK_CHAPTER | RELEASE_READY | PUBLIC_FORMATIVE_ONLY | merged/deployed #625, source #624 |
 | [G10-SGK-CHVIII](ready/G10-SGK-CHVIII.md) | SGK_CHAPTER | RELEASE_READY | PUBLIC_FORMATIVE_ONLY | merged/deployed #625, source #624 |
@@ -20,4 +20,4 @@
 
 **Nguồn ChIX mới:** [hồ sơ A1–A7 B26–B27](CHIX_B26_B27_PUBLIC_FORMATIVE_A1_A7_FINAL_EVIDENCE_20261029.md). Hai SVG D5 và bốn thẻ D6 nguồn R01 được tích hợp trong ứng viên kỹ thuật #630; chưa phát hành. **PR lịch sử:** #614/#615/#616 và #620/#621 không được merge như gói học liệu độc lập.
 
-**G10 ChIV B07–B08 candidate:** [inventory manifest](inventory/G10-SGK-CHIV.md), 6 worked examples, 16 formative + 2 Written, 2 SVG, 4 D6 HELP_ID. New Temp R01 source blob `42b206e31421b33860a1bf697d2d04b7aba992cf` (SHA256 `55a9bd4df29e57de82df9d68a18b60e29a31ef57264884633c2f2cac08d2eaa6`), 55/55 self-QA PASS but no independent Academic PASS. A3/A5/A6 HOLD, no CONTENT_READY, no ChIV entire Chapter/Topic claim. This row is unmerged authoring branch only; no release action.
+**G10 ChIV B07–B08 source-scoped ready:** [manifest](ready/G10-SGK-CHIV.md), [A1–A7 receipt](CHIV_B07_B08_PUBLIC_FORMATIVE_A1A7_EVIDENCE_20261029.md). Exact R01 source blob `42b206e31421b33860a1bf697d2d04b7aba992cf`, reviewer report blob `cf4df6ecb603adb258ab5de03f9defa2c695369f`; 18/18 items, 10/10 outcomes, D1–D6 PASS. Only PUBLIC_FORMATIVE_ONLY B07–B08; A1–A7 passed, R1–R5 unchecked. This authoring branch / Draft PR #634 is NOT merged into main and does not authorize deploy, chapter readiness or TOPIC PASS.
