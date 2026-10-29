@@ -16,6 +16,7 @@ on:
       - 'scripts/test-thpt-g10-chvii-reviewed-stage1.cjs'
       - 'scripts/test-thpt-g10-chviii-reviewed-stage2.cjs'
       - 'scripts/test-thpt-g10-chix-reviewed-stage3.cjs'
+      - 'scripts/test-thpt-g10-public-bank-isolation.cjs'
       - 'docs/assets/javascripts/thpt-chix-reviewed-formative-v1.js'
       - 'docs/assets/javascripts/floating-ai-tutor-v1.js'
       - 'docs/assets/javascripts/firebase-gemini-v1.js'
@@ -69,6 +70,7 @@ jobs:
           node scripts/test-thpt-g10-chviii-reviewed-stage2.cjs
           node --check docs/assets/javascripts/thpt-chix-reviewed-formative-v1.js
           node scripts/test-thpt-g10-chix-reviewed-stage3.cjs
+          node scripts/test-thpt-g10-public-bank-isolation.cjs
       - name: Guard Chapter VI academic-snapshot scope and shared canonical items
         run: |
           node scripts/test-thpt-chvi-review-receipt.cjs
@@ -130,6 +132,8 @@ jobs:
           test -f site/assets/images/thpt/THPT_G10_B22_PARABOLA_FOCUS_DIRECTRIX_DRAFT.svg
           test ! -e site/assets/javascripts/thpt-protected-readiness-v1.js
           test ! -e site/assets/javascripts/thpt-formative-exposure-v1.js
+      - name: Audit assembled THPT static client isolation (no deploy)
+        run: node scripts/test-thpt-g10-public-bank-isolation.cjs --built
       - name: Install isolated Chromium test dependency
         run: |
           npm install --no-save playwright@1.56.1
