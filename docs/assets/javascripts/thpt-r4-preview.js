@@ -2,6 +2,41 @@
 (() => {
  "use strict";
 
+ // Cover-page navigation is not a THCS or THPT lesson sidebar.
+ // Only replace the root selector's native drawer list. No change to
+ // /thcs/, its 7+25 navigation, storage or existing header controls.
+ function initProgramSelectorDrawer(){
+  const cover=document.querySelector("[data-math-program-selector]");
+  if(!cover)return;
+  const primary=document.querySelector(".md-sidebar--primary nav.md-nav--primary");
+  const list=primary?.querySelector(":scope > ul.md-nav__list");
+  if(!list||list.dataset.mathProgramDrawerReady==="1")return;
+  list.dataset.mathProgramDrawerReady="1";
+  list.replaceChildren();
+  for(const item of [
+   ["Chọn chương trình","./"],
+   ["Toán THCS · Lớp 6–9","thcs/"],
+   ["Toán THPT · Lớp 10–12","thpt-preview/home/"]
+  ]){
+   const li=document.createElement("li");
+   li.className="md-nav__item";
+   const a=document.createElement("a");
+   a.href=item[1];a.className="md-nav__link";
+   if(item[1]==="./"){li.classList.add("md-nav__item--active");a.classList.add("md-nav__link--active")}
+   const span=document.createElement("span");
+   span.className="md-ellipsis";span.textContent=item[0];
+   a.append(span);li.append(a);list.append(li);
+  }
+  const pending=document.createElement("li");
+  pending.className="md-nav__item";
+  const label=document.createElement("span");
+  label.className="md-nav__link";
+  label.setAttribute("aria-disabled","true");
+  const title=document.createElement("span");
+  title.className="md-ellipsis";title.textContent="SAT/ACT · Chưa phát hành";
+  label.append(title);pending.append(label);list.append(pending);
+ }
+ 
  // THPT-only launcher. The accepted THCS 7+25 launcher code remains unchanged.
  function initTHPTLauncher(){
   const match=location.pathname.match(/^(.*?\/)(thpt-preview|thpt)\//);
@@ -539,6 +574,7 @@
  }
 
  function init() {
+  initProgramSelectorDrawer();
   initTHPTPrimarySidebar();
   initAdaptiveKnowledgeTabs();
   initChapterPracticeCards();

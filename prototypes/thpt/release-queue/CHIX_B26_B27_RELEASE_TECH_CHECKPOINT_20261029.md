@@ -34,3 +34,10 @@
 4. Never touch browser progress keys, Firebase/Gemini, THCS Golden UI, or public private Readiness isolation.
 
 **No merge/deploy authorization is implied by this checkpoint.**
+
+## Release scope authorization and dependency closure · 2026-10-29
+
+- Owner granted conditional merge/deploy for ChIX B26–B27 PUBLIC_FORMATIVE_ONLY (also any other truly R1–R5 eligible packet), never held-out Readiness/Mastery.
+- Source authoring PR #626 merged to main c7adee6b4fa979a9fbdb4b43b012b8aa63b57fc0. Neutral selector/THPT home menu fix PR #632 merged prior to this release candidate. Main's original THCS code, lesson progress keys and historical packets retained.
+- Student hub/Practice/Written captions cleaned of reviewer-only labels (DELTA_A_UI); canonical JS bank, 2 Written rubric cards, 2 SVG and R01 4 D6 reviewed bodies preserved.
+- This checkpoint does not claim R2 final until both exact-head CI workflows conclude SUCCESS; P1 real deploy and P2 physical-device acceptance remain later steps.
