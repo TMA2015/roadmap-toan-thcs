@@ -57,6 +57,7 @@ const expectedWritten=["THPT-G10-CHVII-W19-01","THPT-G10-CHVII-W20-01",
  "THPT-G10-CHVII-W21-ANCHOR-01","THPT-G10-CHVII-W22-01"];
 assert.deepEqual(writtenIds,expectedWritten,"Four reviewed Written/Anchor items in one canonical register");
 assert.equal(new Set([...ids,...writtenIds]).size,36,"32 C/P + 4 Written must stay unique");
+assert(!/Anchor skills:|anchor_tag=true|1 Anchor/.test(written),"Internal Anchor audit metadata must not appear in learner-facing Written text");
 assert.equal((written.match(/data-thpt-kind="anchor"/g)||[]).length,1,
  "Anchor is a single tag on one Written item");
 assert.equal((written.match(/<details>/g)||[]).length,4,"All solutions and rubrics must be collapsed initially");

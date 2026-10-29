@@ -3,7 +3,7 @@
 <div class="thpt-r4-screen" data-thpt-r4>
 <p class="thpt-r4-eyebrow">THƯ VIỆN TỰ LUẬN · CHƯƠNG VII · SGK KNTT</p>
 <p class="thpt-r4-lead">Bốn bài tự luận về tọa độ trong mặt phẳng. Hãy tự giải rồi mở lời giải và rubric để đối chiếu. Bài tự chấm không tính vào Tự kiểm tra.</p>
-<div class="thpt-r4-search"><label for="thpt-chvii-written-search"><strong>🔎 Tìm tự luận Chương VII</strong></label><input type="search" id="thpt-chvii-written-search" data-thpt-filter-input="written" placeholder="Ví dụ: đường thẳng, đường tròn, elip…"><span data-thpt-filter-count aria-live="polite">4 bài tự luận · 1 Anchor</span></div>
+<div class="thpt-r4-search"><label for="thpt-chvii-written-search"><strong>🔎 Tìm tự luận Chương VII</strong></label><input type="search" id="thpt-chvii-written-search" data-thpt-filter-input="written" placeholder="Ví dụ: đường thẳng, đường tròn, elip…"><span data-thpt-filter-count aria-live="polite">4 bài tự luận</span></div>
 <div data-thpt-filter-list="written">
 <section class="thpt-r4-written-card" data-thpt-filter-item data-thpt-kind="normal" data-thpt-filter-text="lớp 10 chương VII bài 19 phương trình đường thẳng tự luận " data-thpt-written-canonical="THPT-G10-CHVII-W19-01" data-thpt-exposure-role="SGK_WRITTEN" id="thpt-g10-chvii-w19-01">
 <p class="thpt-r4-eyebrow">TỰ LUẬN · TOÁN 10 · CHƯƠNG VII</p>
@@ -38,7 +38,7 @@
 <details><summary>Xem lời giải, hướng dẫn và rubric sau khi tự làm</summary>
 <p><span class="arithmatex">\(\overrightarrow{AB}=(6;0)\)</span>, <span class="arithmatex">\(\overrightarrow{AC}=(0;8)\)</span> có tích vô hướng bằng <span class="arithmatex">\(0\)</span>, nên <span class="arithmatex">\(\angle A=90^\circ\)</span>. Tâm ngoại tiếp là trung điểm <span class="arithmatex">\(BC\)</span>: <span class="arithmatex">\(I(3;4)\)</span>, bán kính <span class="arithmatex">\(R=IA=5\)</span>. Phương trình <span class="arithmatex">\((x-3)^2+(y-4)^2=25\)</span>. Bán kính <span class="arithmatex">\(IA=(-3;-4)\)</span> là pháp tuyến tiếp tuyến tại <span class="arithmatex">\(A\)</span>, nên tiếp tuyến <span class="arithmatex">\(3x+4y=0\)</span>.</p>
 <p><strong>Rubric /8:</strong> chứng minh vuông (1), tìm tâm (2), tìm bán kính (1), phương trình (2), tiếp tuyến &amp; kiểm tra tại <span class="arithmatex">\(A\)</span> (2).</p>
-<p><strong>Anchor skills:</strong> tọa độ vectơ → vuông góc → đường tròn qua ba điểm → tiếp tuyến, kiểm chứng kết quả. Một item_id duy nhất, anchor_tag=true.</p></details>
+<p><strong>Các bước cần đối chiếu:</strong> tọa độ vectơ → vuông góc → đường tròn qua ba điểm → tiếp tuyến → kiểm chứng kết quả.</p></details>
 </section>
 <section class="thpt-r4-written-card" data-thpt-filter-item data-thpt-kind="normal" data-thpt-filter-text="lớp 10 chương VII bài 22 elip tự luận " data-thpt-written-canonical="THPT-G10-CHVII-W22-01" data-thpt-exposure-role="SGK_WRITTEN" id="thpt-g10-chvii-w22-01">
 <p class="thpt-r4-eyebrow">TỰ LUẬN · TOÁN 10 · CHƯƠNG VII</p>
