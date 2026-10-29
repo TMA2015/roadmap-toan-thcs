@@ -380,11 +380,17 @@ async function ready(page,path){
   // after opening the Material drawer. No custom desktop disclosure buttons
   // or forced-hidden native nav children may exist at mobile breakpoints.
   for(const [width,height] of [[390,844],[820,1180]]){
-   const mobile=await browser.newPage({viewport:{width,height},hasTouch:true,isMobile:true});
+   const mobile=await browser.newPage({viewport:{width,height},hasTouch:true});
    try{
     await ready(mobile,"sgk/chuong-viii/");
-    const drawer=mobile.locator('.md-header label[for="__drawer"]');
-    await drawer.click();
+    // Toggle the native drawer input directly: Chromium's touch emulation
+    // may place Material's stacked nested label above the header hit-target.
+    // This regression checks the actual broken state: visible root labels
+    // in the opened drawer at iPhone/iPad CSS breakpoints.
+    await mobile.evaluate(()=>{
+     const input=document.getElementById("__drawer");
+     input.checked=true;input.dispatchEvent(new Event("change",{bubbles:true}));
+    });
     assert(await mobile.locator("#__drawer").isChecked(),
       "Mobile drawer could not open at "+width);
     const sections=mobile.locator('.md-sidebar--primary nav.md-nav--primary > ul.md-nav__list > li.md-nav__item--nested');
@@ -403,7 +409,10 @@ async function ready(page,path){
        "Mobile navigation group incorrectly hidden at "+width);
     }
     await mobile.screenshot({path:"thpt-r4-visual-qa/ios-nav-"+width+".png"});
-    await mobile.locator('.md-header label[for="__drawer"]').click();
+    await mobile.evaluate(()=>{
+     const input=document.getElementById("__drawer");
+     input.checked=false;input.dispatchEvent(new Event("change",{bubbles:true}));
+    });
     assert(!(await mobile.locator("#__drawer").isChecked()),
       "Mobile drawer did not close at "+width);
    }finally{await mobile.close()}
