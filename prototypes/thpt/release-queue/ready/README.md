@@ -8,3 +8,11 @@ PR #624 đã hợp nhất nguồn A1–A7 vào main; hai manifest đã chuyển 
 Đối chiếu học thuật A1–A7: [evidence](../CHVII_VIII_PUBLIC_FORMATIVE_A1_A7_FINAL_EVIDENCE_20261029.md).
 
 Các manifest là con trỏ tới snapshot đã review; không nhân bản item, không bật Readiness/Mastery. Nhánh phát hành phải tích hợp nội dung D6 R02 chính xác vào giao diện, đạt các gate R1–R5 và được chủ dự án cho phép cụ thể trước khi merge/deploy. Không được suy PUBLISHED_SCOPED hoặc deploy thành công cho đến khi CI cuối, merge PR #625 và kiểm tra Pages thực tế hoàn tất. P2 thiết bị thật vẫn phải ghi riêng.
+
+
+## New authoring CONTENT_READY — Toán 10 Chương II Bài 3–4
+
+- [G10-SGK-CHII](G10-SGK-CHII.md) — chỉ SGK B03–B04 `PUBLIC_FORMATIVE_ONLY`, 10 outcomes, 6 ví dụ, 16 formative + 2 Written, 2 SVG, 4 HELP_ID.
+- Snapshot đã được NotebookLM thẩm định: `Temp_THPT_G10_CHII_B03_B04_D1D6_AUTHORING_R01.md`; Git blob `acea9776d1c7534a4cd0cd28e98db26dedf0c122`; biên bản PASS `47eab8185d431045ab202d58fe4f2fbc3e99628b`. Đối chiếu [A1–A7](../CHII_B03_B04_PUBLIC_FORMATIVE_A1A7_EVIDENCE_20261029.md).
+- Lưu ý **reviewer chép `CHI-W03` thay vì `CHII-W03`**; Canonical ID phải giữ đúng tên trong nguồn đã duyệt, không nhân bản W03. Sai khác biên bản được ghi trong evidence.
+- G10 ChII mới ở `CONTENT_READY` trên **nhánh biên soạn**, không phải `RELEASE_READY` hay `PUBLISHED_SCOPED`. R1–R5 vẫn chưa thực hiện. Tự kiểm tra cuối Chương II, Topic và Mastery chưa được duyệt.
