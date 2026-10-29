@@ -348,7 +348,7 @@ async function ready(page,path){
   assert(await page.locator("#bai-mo-neo-demo").isHidden(),"Written anchor must be hidden with normal filter");
 
   await ready(page,"home/");
-  assert(await page.locator(".md-sidebar--primary").isHidden(),"THPT homepage must have no left sidebar");
+  assert.equal(await page.locator("body.thpt-r4-home .md-sidebar--primary nav.md-nav--primary").count(),1,"THPT home must retain native sidebar markup for hamburger drawer");
   await page.locator("[data-thpt-r4-launcher]").click();
   const dialog=page.locator("[data-thpt-r4-shortcut-dialog]");
   assert(await dialog.isVisible(),"THPT quick navigation dialog did not open");
