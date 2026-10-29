@@ -43,4 +43,14 @@ const nav=fs.readFileSync("mkdocs.thpt-preview.yml","utf8");
 assert(nav.includes("Bài 26 · Biến cố")&&nav.includes("Bài 27 · Thực hành")&&nav.includes("thpt-chix-reviewed-formative-v1.js"),"Missing R4 ChIX route or JS");
 const css=fs.readFileSync("docs/assets/stylesheets/thpt-r4-preview.css","utf8");
 assert(css.includes(".thpt-r4-probability-figure img"),"Mobile figure overflow guard absent");
+// Student-facing labels must not show academic/reviewer or internal item-ID status.
+for(const page of [
+ "docs/thpt-preview/sgk/chuong-ix.md",
+ "docs/thpt-preview/sgk/chuong-ix/luyen-tap.md",
+ "docs/thpt-preview/thu-vien/tu-luan-chuong-ix.md"
+]){
+ const student=fs.readFileSync(page,"utf8");
+ assert(!/(NotebookLM|REVIEWED D\d|review học thuật|ID canonical review|snapshot|đang tích hợp để QA)/i.test(student),
+  "Reviewer-only text leaked to student page: "+page);
+}
 console.log("PASS G10 ChIX R1 preview static: 16 public items, D6 R01 4/4 locked, SVG 2/2, "+linked+" formative links, "+writtenLinks+" Written links; no protected Readiness or Mastery.");
