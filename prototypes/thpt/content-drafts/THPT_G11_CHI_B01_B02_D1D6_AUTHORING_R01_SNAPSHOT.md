@@ -3,7 +3,7 @@
 **PACKET_ID:** `THPT-G11-CHI-B01-B02-D1D6-AUTHORING-20261029-R01`  
 **STATUS:** `CANDIDATE_DELTA_C_ACADEMIC_MATERIAL / NOTEBOOKLM_NOT_REVIEWED / NO_RELEASE`  
 **LEARNING_PATH:** `SGK_CHAPTER` (không chứng nhận `FULL_LEARNING_PATH`, chưa tạo chương Tự kiểm tra).  
-**PERMANENT_SOURCES:** đúng 5 nguồn THPT v2.0 của NotebookLM, không dùng v1.0.  
+**PERMANENT_SOURCES:** đúng 5 nguồn THPT v2.0, không dùng v1.0: `01_THPT_MASTER_PLAN_v2.0.md`, `02_THPT_NOTEBOOKLM_INDEPENDENT_REVIEW_RULES_v2.0.md`, `03_THPT_ACADEMIC_SOURCES_AND_DEPTH_AUDIT_v2.0.md`, `04_THPT_GOLDEN_LEARNING_ARCHITECTURE_v2.0.md`, `05_THPT_CANONICAL_EXERCISE_AND_ID_CONTRACT_v2.0.md`.  
 **OWNERSHIP:** Nhánh biên soạn học liệu; không tích hợp JS, giao diện, server, Mastery hay deploy.  
 **SOURCE:** Tập SGK/SBT Toán 11 KNTT trên Drive do chủ dự án cung cấp; đã xem trực tiếp bản scan PDF, không tự nhận thẩm quyền kiểm toán NotebookLM.
 
