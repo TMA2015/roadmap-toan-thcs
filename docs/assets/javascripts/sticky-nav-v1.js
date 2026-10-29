@@ -5,7 +5,7 @@
    return match ? "/" + match[1] + "/" : "/";
  };
  const mainDestinations = [
-   ["Trang chủ THCS", "", "⌂"],
+   ["Trang chủ THCS", "thcs/", "⌂"],
    ["Bản đồ học tập", "roadmap/", "◇"],
    ["Tiến độ học tập", "tien-do-hoc-tap/", "◴"],
    ["25 chuyên đề", "kien-thuc/", "▤"],
@@ -59,7 +59,7 @@
    primary.setAttribute("aria-label","Bảy nhóm điều hướng chính");
    const sources=[...document.querySelectorAll(".md-tabs__list a.md-tabs__link")];
    for(const [label,fallback,glyph] of mainDestinations){
-     const navLabel=label==="Trang chủ THCS"?"Trang chủ":label;
+     const navLabel=label;
      const source=sources.find(a=>a.textContent.trim()===navLabel);
      const a=document.createElement("a");a.href=source?.href||sitePrefix()+fallback;
      a.textContent=glyph+" "+label;
@@ -73,7 +73,7 @@
    coverNav.className="roadmap-main-quick__links";
    coverNav.setAttribute("aria-label","Cổng chọn chương trình Toán");
    const coverLink=document.createElement("a");
-   coverLink.href=sitePrefix()+"thpt-preview/";
+   coverLink.href=sitePrefix();
    coverLink.textContent="⌂ Chọn chương trình";
    coverLink.dataset.mathProgramCoverLink="1";
    coverNav.appendChild(coverLink);
@@ -118,6 +118,7 @@
    else header.appendChild(button);
  };
  const create = () => {
+   if(document.querySelector("[data-math-program-selector]"))return;
    // Keep the topic launcher and desktop dock independently guarded.
    addTopicLauncher();
    const tabs = document.querySelector(".md-tabs");

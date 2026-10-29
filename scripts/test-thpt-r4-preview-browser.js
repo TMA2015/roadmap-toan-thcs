@@ -24,9 +24,11 @@ async function ready(page,path){
  try{
   fs.mkdirSync("thpt-r4-visual-qa",{recursive:true});
   // Programme-switch QA for the ONE GitHub Pages site.
-  // Cover remains under /thpt-preview/ until a separately reviewed root migration.
+  // Neutral root is the programme selector; THCS Golden home is at /thcs/.
   const entry=await browser.newPage({viewport:{width:390,height:844}});
   await entry.goto("http://127.0.0.1:8765/",{waitUntil:"networkidle"});
+  assert.equal(await entry.locator("[data-math-program-selector]").count(),1,"Root selector missing");
+  await entry.locator('[data-math-program-selector] a[href="thcs/"]').click();
   // THCS intentionally shows its existing first-visit style chooser.
   // Choose a style like a real visitor before using the header launcher.
   if(await entry.locator("[data-home-dialog]").isVisible()){
@@ -37,7 +39,7 @@ async function ready(page,path){
   await entry.locator("[data-roadmap-topic-launcher]").click();
   const thcsCover=entry.locator('[data-roadmap-topic-dialog] [data-math-program-cover-link]');
   assert.equal(await thcsCover.count(),1,"THCS quick navigation missing level-1 programme cover");
-  assert(new URL(await thcsCover.getAttribute("href"),entry.url()).pathname.endsWith("/thpt-preview/"),
+  assert(new URL(await thcsCover.getAttribute("href"),entry.url()).pathname.endsWith("/"),
     "THCS programme-cover shortcut leads to wrong page");
   assert((await entry.locator('[data-roadmap-topic-dialog] .roadmap-main-quick__links').last().textContent()).includes("Trang chủ THCS"),
     "THCS home shortcut is not clearly named");
@@ -48,7 +50,7 @@ async function ready(page,path){
   await entry.locator("[data-thpt-r4-launcher]").click();
   const thptCover=entry.locator('[data-thpt-r4-shortcut-dialog] [data-math-program-cover-link]');
   assert.equal(await thptCover.count(),1,"THPT quick navigation missing level-1 programme cover");
-  assert(new URL(await thptCover.getAttribute("href"),entry.url()).pathname.endsWith("/thpt-preview/"),
+  assert(new URL(await thptCover.getAttribute("href"),entry.url()).pathname.endsWith("/"),
     "THPT programme-cover shortcut leads to wrong page");
   assert((await entry.locator('[data-thpt-r4-shortcut-dialog] .roadmap-main-quick__links').last().textContent()).includes("Trang chủ THPT"),
     "THPT home shortcut is not clearly named");
