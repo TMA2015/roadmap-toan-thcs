@@ -116,6 +116,12 @@ async function ready(page,path){
     // D5-reviewed SVGs may explain Practice AFTER deliberate solution reveal,
     // not when a learner only opens the question. Verify all three exact IDs
     // on desktop and phone; no image cloning or premature answer exposure.
+    await page.locator('[data-thpt-open-quiz="b19-core"]').click();
+    const b19Recovery=dlg.locator("a.thpt-r4-remediation-link");
+    assert.equal(await b19Recovery.count(),1,"ChVII B19 formative recovery link missing");
+    assert((await b19Recovery.getAttribute("href")).endsWith("/sgk/chuong-vii/bai-19/"),"B19 recovery link wrong");
+    assert(!(await dlg.locator(".thpt-r4-reviewed-formative-card").innerText()).includes("THPT-G10-"),"Canonical ID leaked to B19 students");
+    await dlg.locator("[data-thpt-modal-close]").click();
     const figureCases=[
       ["19",5,"THPT-G10-B19-P06"],
       ["21",2,"THPT-G10-B21-P03"],
@@ -414,15 +420,20 @@ async function ready(page,path){
   assert(await exerciseModal.isVisible(),"Core card did not open an exercise modal");
   assert.equal(page.url(),currentPracticeRoute,"Opening a lesson Core must not navigate to another page");
   assert.equal((await exerciseModal.locator('[data-thpt-reviewed-formative="1"]').count()),1,"B15 must load the reviewed public canonical bank, not a UI demo");
-  assert((await exerciseModal.locator(".thpt-r4-reviewed-formative-card").textContent()).includes("THPT-G10-B15-C01"),"Canonical B15 Core ID not visible");
+  assert.equal(await exerciseModal.locator(".thpt-r4-reviewed-formative-card").getAttribute("data-thpt-canonical-item"),"THPT-G10-B15-C01","Canonical ID retained in DOM but not learner-facing text");
+  assert(!(await exerciseModal.locator(".thpt-r4-reviewed-formative-card").innerText()).includes("THPT-G10-"),"Do not expose canonical IDs in student UI");
   const b15Solution=exerciseModal.locator(".thpt-r4-reviewed-formative-card details").last();
   assert(!await b15Solution.evaluate(el=>el.open),"Practice solution must stay collapsed before deliberate reveal");
   await b15Solution.locator("summary").click();
   assert(await b15Solution.evaluate(el=>el.open),"Practice solution did not open on learner request");
   assert((await b15Solution.textContent()).includes("x=2"),"Reviewed B15 Core solution is missing");
+  const recovery=exerciseModal.locator("a.thpt-r4-remediation-link");
+  assert.equal(await recovery.count(),1,"Formative item must offer learner an optional knowledge recovery link");
+  assert((await recovery.getAttribute("href")).endsWith("/sgk/chuong-vi/bai-15/"),"B15 recovery must link back to the lesson");
+  assert(!(await exerciseModal.locator(".thpt-r4-reviewed-formative-card").innerText()).includes("Đã review học thuật"),"No editorial reviewer status in learner view");
   await exerciseModal.locator(".thpt-r4-modal-buttons button").last().click();
   assert((await exerciseModal.locator(".thpt-r4-modal-progress").first().textContent()).includes("2 / 2"),"Reviewed exercise modal did not navigate to question two");
-  assert((await exerciseModal.locator(".thpt-r4-reviewed-formative-card").textContent()).includes("THPT-G10-B15-C02"),"Question navigation must retain canonical B15 IDs");
+  assert.equal(await exerciseModal.locator(".thpt-r4-reviewed-formative-card").getAttribute("data-thpt-canonical-item"),"THPT-G10-B15-C02","Question navigation retains canonical identity in dataset");
   await exerciseModal.locator("[data-thpt-modal-close]").click();
   assert(await exerciseModal.isHidden(),"Exercise modal did not close");
   await page.locator('[data-thpt-open-quiz="b16-core"]').click();

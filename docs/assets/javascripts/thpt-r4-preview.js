@@ -267,7 +267,7 @@
     // credentials or an inactive backend is NOT evidence of unseen material.
     void window.THPTFormativeExposure?.record(item.item_id,exposureRole,"QUESTION_SHOWN");
     head.textContent="Câu "+(index+1)+" / "+items.length+
-      " · Đã review học thuật · Tự luyện, không ghi điểm";
+      " · Tự luyện, không ghi điểm";
     for(let i=0;i<items.length;i++){
      const button=document.createElement("button");button.type="button";
      button.textContent="Câu "+(i+1);button.className=i===index?"active":"";
@@ -275,10 +275,11 @@
      button.addEventListener("click",()=>{index=i;render()});tabs.append(button);
     }
     const meta=document.createElement("p");meta.className="thpt-r4-modal-progress";
-    meta.textContent=item.item_id+" · "+item.skill+
-      (item.role==="OPTIONAL_SPECIALIZED"?" · Chuyên sâu · tự chọn":"")+
-      (item.difficulty==="ADVANCED"?" · Nâng cao":"")+
-      (item.exposure==="EXPOSED_IN_KNOWLEDGE"?" · Đã xuất hiện trong bài giảng":"");
+    meta.textContent="Bài "+item.lesson+" · "+
+      (item.role==="CORE"?"Kiến thức cơ bản":item.role==="APPLICATION"?"Vận dụng":"Luyện tập")+
+      (item.role==="OPTIONAL_SPECIALIZED"?" · Chuyên sâu tự chọn":"")+
+      (item.role==="SUPPORT_EXTENSION"?" · Mở rộng tự chọn":"")+
+      (item.difficulty==="ADVANCED"?" · Nâng cao":"");
     const prompt=document.createElement("h3");prompt.textContent=item.stem;
     const hint=document.createElement("details"),hintSummary=document.createElement("summary");
     hintSummary.textContent="💡 Xem gợi ý (tự chọn)";
@@ -312,14 +313,23 @@
       img.dataset.thptReviewedFigure=item.item_id;
       const caption=document.createElement("p");
       caption.className="thpt-r4-reviewed-solution-caption";
-      caption.textContent="Hình minh họa lời giải đã review học thuật D5 · "+item.item_id;
+      caption.textContent="Hình minh họa lời giải";
       solution.append(img,caption);
       solution.dataset.figureLoaded="1";
      });
     }
+    // D6 learner recovery: link to the existing S1 lesson without adding math.
+    const reviewLesson=document.createElement("a");
+    reviewLesson.className="thpt-r4-remediation-link";
+    reviewLesson.textContent="↶ Ôn lại kiến thức Bài "+item.lesson;
+    const matchPath=location.pathname.match(/^(.*?\/)(?:thpt-preview|thpt)\//);
+    const chapter=Number(item.lesson)<=18?"vi":Number(item.lesson)<=22?"vii":"viii";
+    reviewLesson.href=matchPath?
+      matchPath[0]+"sgk/chuong-"+chapter+"/bai-"+item.lesson+"/":
+      "../bai-"+item.lesson+"/";
     const note=document.createElement("p");note.className="thpt-r4-modal-progress";
-    note.textContent="Chế độ luyện tập tự đối chiếu · Không chấm điểm/mastery.";
-    card.append(meta,prompt,hint,solution,note);
+    note.textContent="Tự luyện và đối chiếu lời giải · Không ghi điểm thành thạo.";
+    card.append(meta,prompt,hint,solution,reviewLesson,note);
     // Only public formative text is typeset; never load any held-out readiness
     // prompts or answer keys into the browser.
     if(window.MathJax?.typesetPromise)window.MathJax.typesetPromise([card]).catch(()=>{});
