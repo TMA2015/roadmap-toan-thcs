@@ -33,6 +33,8 @@ on:
       - 'scripts/test-thpt-r4-preview-browser.js'
       - 'scripts/test-thpt-chvi-math-block-render.cjs'
       - 'scripts/test-thpt-chvi-student-notes.cjs'
+      - 'scripts/test-thpt-release-queue.cjs'
+      - 'prototypes/thpt/release-queue/**'
       - '.github/workflows/thpt-r4-preview-quality.yml'
 
 permissions:
@@ -62,6 +64,8 @@ jobs:
           node scripts/test-site-navigation-v1.js
           node scripts/test-self-learning-math-rename-preflight.cjs
           for js in             docs/assets/javascripts/sticky-nav-v1.js             docs/assets/javascripts/anchor-library-v1.js             docs/assets/javascripts/anchor-topic-related-v1.js             docs/assets/javascripts/model-examples-library-v1.js             docs/assets/javascripts/written-exercise-library-v1.js             docs/assets/javascripts/topic25-exam-engine-v1.js             docs/assets/javascripts/route-module-loader-v1.js             docs/assets/javascripts/route-module-loader-v2.js; do node --check "$js"; done
+      - name: Validate THPT academic-to-release checklist (no deploy)
+        run: node scripts/test-thpt-release-queue.cjs
       - name: Check THPT no-account static release contract
         run: node scripts/test-thpt-static-release.cjs
       - name: Guard Chapter VI academic-snapshot scope and shared canonical items

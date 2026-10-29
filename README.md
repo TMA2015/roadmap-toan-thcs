@@ -23,6 +23,13 @@ Website dùng MkDocs Material, triển khai bằng GitHub Pages.
 
 [Master Plan v1.1.1](governance/TOAN_THCS_MASTER_PLAN.md) là nguồn chuẩn cho nguyên tắc dài hạn; [hướng dẫn học sinh và phụ huynh](docs/huong-dan/phuong-phap-tu-hoc-va-danh-gia.md) là bản diễn giải công khai. Hồ sơ Batch và QA theo phiên bản được lưu riêng, không đưa tiến độ ngắn hạn vào Master Plan.
 
+## Quy trình chính thức THPT — biên soạn → NotebookLM → bàn giao → phát hành
+
+- **Mọi cuộc trò chuyện/nhánh mới** phụ trách Self-Learning Math THPT bắt đầu bằng việc kiểm tra GitHub `main`, [quy trình hai nhánh, một checklist](prototypes/thpt/release-queue/README.md), [danh mục gói](prototypes/thpt/release-queue/REGISTER.md) và [handoff hiện hành](docs/collaboration/current-handoff.md). Không chỉ dựa vào ký ức chat hoặc checkpoint cũ.
+- **Nhánh học liệu:** đối chiếu SGK/SBT S1, NotebookLM review đúng snapshot, hoàn tất A1–A7, chuyển manifest của gói đủ điều kiện từ `inventory/` sang `ready/`. Không sao chép câu hỏi; PASS thành phần không bằng `CONTENT_READY`.
+- **Nhánh phát hành:** nhận gói `ready/`, kiểm tra R1–R5 gồm CI đúng commit, giao diện sạch, an toàn đánh giá và **phê duyệt rõ của chủ dự án**; chỉ merge/deploy khi toàn bộ cổng đạt; ghi P1/P2 hậu phát hành. Không tự bật Mastery, không lộ câu Readiness.
+- **Hai hành trình:** SGK chương và Chuyên đề độc lập theo [kiến trúc THPT v2.0](prototypes/thpt/release-queue/README.md); chung canonical item_id, Written/Anchor và hình nhưng không suy PASS/Readiness giữa hai nhánh. File 06 về bàn giao NotebookLM, file 07 về delta và file 08 về kiến trúc vẫn ưu tiên theo phạm vi của chúng.
+
 ## Bàn giao khi chuyển cuộc trò chuyện
 
 [Project Handoff hiện hành](docs/collaboration/current-handoff.md) ghi công việc vừa hoàn thành, quyết định đã duyệt và điểm nối. Luôn so sánh với GitHub `main` trước khi tiếp tục.
