@@ -78,12 +78,12 @@ const reviewedD5=[
 for(const [itemId,asset,sha] of reviewedD5){
  const rel="docs/assets/images/thpt/"+asset;
  const content=fs.readFileSync(path.join(root,rel));
- const hash=crypto.createHash("sha1").update("blob "+content.length+"\\0").update(content).digest("hex");
+ const hash=crypto.createHash("sha1").update("blob "+content.length+"\0").update(content).digest("hex");
  assert.equal(hash,sha,"D5-reviewed Git blob MUST stay unchanged: "+asset);
  const xml=content.toString("utf8");
  assert(xml.includes("<title")&&xml.includes("<desc")&&xml.includes('viewBox='),
   "Accessible SVG requires title, description and scalable viewBox: "+asset);
- assert(!/<script\\b|onload\\s*=|<foreignObject\\b|<image\\b|(?:xlink:)?href=["']https?:/i.test(xml),
+ assert(!/<script\b|onload\s*=|<foreignObject\b|<image\b|(?:xlink:)?href=["']https?:/i.test(xml),
   "D5 assets must be local, inert, and safe to embed");
  assert(bank.records.some(x=>x.item_id===itemId&&x.role!=="CORE"),
   "Answer-bearing D5 asset must attach only to a reviewed Practice record: "+itemId);
