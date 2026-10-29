@@ -97,3 +97,20 @@ Không tạo gói CONTENT_READY, không merge/deploy.
 **Warehouse:** R02 là `ACADEMIC_REVIEW_PENDING`, chưa đáp ứng A5; không di chuyển `inventory` → `CONTENT_READY`; không merge/deploy.
 
 **Tiếp theo:** Reviewer R02 xác nhận 6 fixes và 8 thẻ giữ nguyên; nếu đạt thì ghi verdict đúng R02 snapshot, tiếp tục A5–A7 chapter audit và tích hợp sau khi được phép.
+
+
+## 7. Owner NotebookLM R02 FINAL academic verdict — scoped PASS (29/10/2026)
+
+**Evidence of review supplied by owner, archived verbatim:** `prototypes/thpt/content-drafts/THPT_G10_CHVII_VIII_D6_NOTEBOOKLM_R02_PASS_RECEIPT_20261029.md`, source uploaded text `Văn bản đã dán (1)(20261029-122153).txt` SHA256 `da22238fd30de29df2066ab309407e29e2b99547fd79328a359956c96375851a` (raw input had CRLF). Archived normalized-LF Git blob `cd53c1f6d3fe225e9508f3f7f513a70c319b2612` (GitHub source branch `content/thpt-g10-chvii-chviii-authoring-20261028`).
+
+**Exact reviewed source remains immutable:**
+- `Temp_THPT_G10_CHVII_VIII_D6_REMEDIATION_R02.md` SHA256 `0293026323929fe8359c7af66e4d7420d4d1890b19d3844bf9c1d1fa6da220f9`.
+- Mirror `prototypes/thpt/content-drafts/THPT_G10_CHVII_VIII_D6_REMEDIATION_REVIEW_SNAPSHOT_v0.2.md` Git blob `03755fb8e4a192df833820b2b01617de74035076` (byte-equal to Temp R02 source).
+- Owner-delivered verdict: `EXPECTED=14 REVIEWED=14 MISSING=0 DUPLICATED=0 UNEXPECTED=0`; 6/6 `VERIFIED_CORRECTED_PASS` and 8/8 `VERIFIED_UNCHANGED_PASS`; P0=0/P1=0/P2=0, `PACKET_VERDICT=PASS`, `ACADEMIC_CLEARANCE_FOR_THIS_DELTA=YES`. Source receipt: NotebookLM used 5/5 Permanent Sources v2.0 and SGK/SBT KNTT Tập 2 ranges. No re-review needed **for unchanged exact R02 D6 content**.
+- Verdict scope **only 14 D6 remediation help cards for B19–B25**, not D1–D6 completion of ChVII/ChVIII, no TOPIC, Chapter Readiness or Mastery validation.
+
+**Workflow status:** D6 academic subdelta `ACADEMIC_APPROVED_SCOPED_R02`. Do **not** change broader manifest A5 from [ ] until the two SGK packets independently meet D1–D6 completeness for their declared release scopes; A1–A7 manifest review required. Current GitHub PR #620/#621 Draft, #622 already merged to main. No learner route code or canonical item changed in this review-archive commit.
+
+**Next A-gates/content:** Verify student-facing pedagogical placement of exact approved R02 content in VII/VIII candidate (not site merge), absence of duplicated sections, and D1–D6 scope/coverage including end-of-chapter checks; document remaining blockers. ChIX D5/D6 continues in separate unreviewed authoring queue.
+
+**Release:** `CONTENT_READY=HOLD`; `RELEASE_READY=NO`; `MERGE_DEPLOY=NO`.
