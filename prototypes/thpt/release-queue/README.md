@@ -2,6 +2,12 @@
 
 **Repository duy nhất:** TMA2015/self-learning-math. Đây là kho MANIFEST và bằng chứng; không phải kho nhân bản câu hỏi, không có backend, không có held-out Readiness keys.
 
+## Hiệu lực và tự tiếp nối cuộc trò chuyện
+
+**Nguồn vận hành chính thức sau khi merge PR #622:** Có hiệu lực cho mọi lần mở chat/nhánh mới của dự án THPT. Trước khi thực hiện, kiểm tra trạng thái GitHub thực tế, đọc `REGISTER.md`, manifest liên quan, checkpoint hiện hành, sau đó chọn đúng vai trò biên soạn hoặc phát hành. Các nguồn 08 (kiến trúc), 06 (file/prompt NotebookLM), 07 (delta) và SGK/SBT S1 giữ nguyên thẩm quyền, không bị quy trình này thay thế.
+
+Danh mục là **con trỏ** đến học liệu và biên bản, không phải nơi copy nội dung câu hỏi. Không dùng trạng thái ghi trong tài liệu này thay cho kết quả live CI hoặc sự cho phép của chủ dự án.
+
 ## Quy trình
 
 1. **Nhánh biên soạn/review** khóa SGK/SBT S1, snapshot và danh mục LESSON/OUTCOME/ITEM; bàn giao Temp_ Markdown/TXT + prompt 3–6 câu theo file 06; nhận NotebookLM verdict độc lập; sửa delta theo file 07 v1.1. Điền các ô **A1–A7** và bằng chứng chính xác.
