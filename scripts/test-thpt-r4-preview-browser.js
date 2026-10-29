@@ -24,6 +24,39 @@ async function ready(page,path){
  const browser=await chromium.launch({headless:true,args:["--no-sandbox"]});
  try{
   fs.mkdirSync("thpt-r4-visual-qa",{recursive:true});
+  // Owner P2: the neutral cover drawer must not show the THCS-only menu.
+  // Native THPT home drawer must open at phone/tablet/narrow desktop widths.
+  for(const vp of [{width:390,height:844},{width:820,height:1180},{width:1100,height:820}]){
+   const navPage=await browser.newPage({viewport:vp});
+   try{
+    const root=await navPage.goto("http://127.0.0.1:8765/",{waitUntil:"networkidle"});
+    assert(root?.ok(),"Programme selector not reachable");
+    const list=navPage.locator(".md-sidebar--primary nav.md-nav--primary > ul.md-nav__list");
+    const entries=list.locator(":scope > li.md-nav__item");
+    assert.equal(await entries.count(),4,"Programme selector must have three paths and SAT placeholder");
+    const rootText=await list.innerText();
+    for(const label of ["Chọn chương trình","Toán THCS","Toán THPT","SAT/ACT"])
+     assert(rootText.includes(label),"Missing selector label "+label+" at "+vp.width);
+    assert(!rootText.includes("Học theo lớp"),
+      "THCS-only navigation leaked into the programme selector");
+    await navPage.locator("#__drawer").check({force:true});
+    const thptLink=list.locator('a[href="thpt-preview/home/"]');
+    assert(await thptLink.isVisible(),"THPT programme path hidden at "+vp.width);
+    await thptLink.click();
+    await navPage.locator("[data-thpt-r4-launcher]").waitFor();
+    assert.equal(await navPage.locator("body.thpt-r4-home").count(),1,"THPT homepage route missing");
+    const drawer=navPage.locator("#__drawer");
+    await drawer.check({force:true});
+    assert(await drawer.isChecked(),"THPT home native drawer failed at "+vp.width);
+    assert(await navPage.locator(".md-sidebar--primary").isVisible(),
+      "THPT home sidebar force-hidden at "+vp.width);
+    const homeText=await navPage.locator(".md-sidebar--primary nav.md-nav--primary").innerText();
+    for(const label of ["Học theo SGK KNTT","Học theo chuyên đề","Thư viện bài tập"])
+     assert(homeText.includes(label),"THPT home menu missing "+label+" at "+vp.width);
+    await drawer.uncheck({force:true});
+   }finally{await navPage.close()}
+  }
+
   // Programme-switch QA for the ONE GitHub Pages site.
   // Neutral root is the programme selector; THCS Golden home is at /thcs/.
   const entry=await browser.newPage({viewport:{width:390,height:844}});
