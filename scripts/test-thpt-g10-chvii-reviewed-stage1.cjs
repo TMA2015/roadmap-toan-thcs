@@ -86,7 +86,7 @@ for(const [itemId,asset,sha] of reviewedD5){
   "THPT_G10_B21_CIRCLE_TANGENT_DRAFT.svg":'<text x="70" y="430" font-size="15" fill="#64748b">DRAFT — hình tự dựng, chưa qua Academic review</text>\n',
   "THPT_G10_B22_PARABOLA_FOCUS_DIRECTRIX_DRAFT.svg":'<text x="80" y="440" font-size="15" fill="#64748b">DRAFT — hình tự dựng, chưa qua Academic review</text>\n'
  }[asset];
- assert(reviewerFooter&&xml.endsWith("</svg>"),"D5 footer equivalence rule missing");
+ assert(reviewerFooter&&xml.trimEnd().endsWith("</svg>"),"D5 footer equivalence rule missing");
  const reviewed=Buffer.from(xml.replace("</svg>",reviewerFooter+"</svg>"),"utf8");
  const reviewerHash=crypto.createHash("sha1").update("blob "+reviewed.length+"\0").update(reviewed).digest("hex");
  assert.equal(reviewerHash,sha,"D5 illustration math/geometry must match reviewed Git blob after restoring ONLY old admin footer: "+asset);
