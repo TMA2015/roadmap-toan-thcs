@@ -61,6 +61,7 @@ assert(!/Anchor skills:|anchor_tag=true|1 Anchor/.test(written),"Internal Anchor
 assert.equal((written.match(/data-thpt-kind="anchor"/g)||[]).length,1,
  "Anchor is a single tag on one Written item");
 assert.equal((written.match(/<details>/g)||[]).length,4,"All solutions and rubrics must be collapsed initially");
+assert.equal((written.match(/class="thpt-r4-remediation-link"/g)||[]).length,4,"Every ChVII Written must link to the matching knowledge lesson");
 assert.equal((written.match(/<span class="arithmatex">\\\(/g)||[]).length,57,
  "All 57 Written inline formula strings must be MathJax-wrapped in raw HTML");
 const hub=read("docs/thpt-preview/sgk/chuong-vii/luyen-tap.md");
