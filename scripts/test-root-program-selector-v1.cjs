@@ -15,7 +15,7 @@ for(const url of refs){
  if(/^(?:https?:|mailto:|#|data:)/.test(url))continue;
  assert(url.startsWith("../"),"THCS relative link not rebased: "+url);
  const target=path.resolve(root,"docs/thcs",url.split("?")[0]);
- assert(target.startsWith(path.resolve(root,"docs")+path.sep)&&fs.existsSync(target),"Missing THCS target: "+url);
+ assert(target.startsWith(path.resolve(root,"docs")+path.sep)&&(fs.existsSync(target)||fs.existsSync(target.replace(/\/$/,"")+".md")||fs.existsSync(path.join(target,"index.md"))),"Missing THCS target: "+url);
 }
 assert(read("mkdocs.yml").includes("Trang chủ THCS: thcs/index.md"));
 assert(legacy.includes('href="../thcs/"'));
