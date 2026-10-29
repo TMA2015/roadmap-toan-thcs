@@ -652,6 +652,9 @@ async function ready(page,path){
   await viiiDialog.locator("[data-thpt-modal-close]").click();
   await ready(page,"thu-vien/tu-luan-chuong-viii/");
   assert.equal(await page.locator('[data-thpt-written-canonical]').count(),3,"Missing ChVIII Written");
+  const writtenRecovery=page.locator("section[data-thpt-written-canonical] a.thpt-r4-remediation-link");
+  assert.equal(await writtenRecovery.count(),3,"All ChVIII Written need voluntary same-lesson knowledge links");
+  assert((await writtenRecovery.first().getAttribute("href")).endsWith("/sgk/chuong-viii/bai-23/"),"ChVIII Written recovery wrong lesson");
   assert.equal(await page.locator('[data-thpt-kind="anchor"]').count(),1,"Anchor must be a Written tag");
   assert.equal(await page.locator('section[data-thpt-written-canonical] details[open]').count(),0,"Written solutions must start hidden");
   await ready(page,"sgk/chuong-viii/tu-kiem-tra-chuong/");
