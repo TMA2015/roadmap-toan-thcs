@@ -21,11 +21,11 @@ CONTENTS: B07–B08 ONLY; 10/10 outcomes, 6 D2, 16 formative + 2 Written (one An
 ## R — release lane only
 - [ ] R1_INTEGRATED_CURRENT_MAIN — No code/UI integration or official bank registration.
 - [ ] R2_EXACT_HEAD_CI — No student website QA or CI, only authoring preflight.
-- [ ] R3_CLEAN_STUDENT_UI — Not integrated.
+- [ ] R3_CLEAN_STUDENT_UI — Website learner-facing UI has not been integrated into the current release branch; requires R3 review.
 - [ ] R4_ASSESSMENT_SAFETY — No Chapter/Topic Readiness or Mastery active.
 - [ ] R5_OWNER_APPROVAL — No release authorization.
 ## P — postrelease
-- [ ] P1_DEPLOY_RECEIPT — Not applicable.
+- [ ] P1_DEPLOY_RECEIPT — No deployment occurred for this academic source-only packet; P1 must be verified later.
 - [ ] P2_DEVICE_UAT — No real device testing.
 
 BLOCKER/NEXT: A1–A7 complete for B07/B08 PUBLIC_FORMATIVE_ONLY. Release R1–R5 still pending: actual canonical bank dedup/registration, Golden UI exact-head CI/browser/mobile SVG, assessment safety/THCS regression, explicit owner approval. Authoring of B09–B11 separately still required for ChIV.
