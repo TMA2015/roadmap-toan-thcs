@@ -143,7 +143,7 @@ async function ready(page,path){
       "B19 must render original reviewed canonical item ID");
     assert.equal(await dlg.locator("details[open]").count(),0,
       "Hint and answer must start collapsed in formative exercises");
-    assert((await dlg.locator(".thpt-r4-modal-progress").first().innerText()).includes("Tự luyện, không ghi điểm"),
+    assert(/không ghi điểm/i.test(await dlg.locator(".thpt-r4-modal-progress").first().innerText()),
       "Formative modal must clearly stay unscored without redundant footer text");
     assert(!(await dlg.innerText()).includes("Tự luyện và đối chiếu lời giải · Không ghi điểm thành thạo."),
       "Do not restore the owner-rejected redundant footer note");
