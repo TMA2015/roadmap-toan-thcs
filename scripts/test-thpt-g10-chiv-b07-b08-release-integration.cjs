@@ -23,7 +23,33 @@ const ctx={window:{}};vm.runInNewContext(fs.readFileSync("docs/assets/javascript
 const bank=ctx.window.THPT_CHIV_B07_B08_REVIEWED_FORMATIVE;assert(bank?.validate().valid);assert.equal(bank.records.length,16);assert.equal(bank.records.filter(x=>x.options).length,8);assert.equal(bank.records.filter(x=>!x.options).length,8);
 assert.deepEqual(Object.keys(expected).sort(),Array.from(bank.records,x=>x.item_id).sort());
 for(const it of bank.records){const match=it.solution.match(/^Đáp án: ([^\n]*)\nLời giải: ([\s\S]*)$/);assert(match,"missing solution "+it.item_id);const raw=[it.stem,it.options?.join(" | ")||"",match[1],it.hint,match[2]].join("\u241f");assert.equal(fnv(raw),expected[it.item_id],"Academic source changed "+it.item_id);assert.equal(it.exposure,"FORMATIVE_ONLY");}
-for(const n of [7,8]){assert.equal(bank.forLesson(n,"core").length,2);assert.equal(bank.forLesson(n,"practice").length,6);const p=fs.readFileSync("docs/thpt-preview/sgk/chuong-iv/bai-"+n+".md","utf8");assert.equal((p.match(/data-thpt-help-id=/g)||[]).length,2);assert(p.includes("## 1. Kiến thức SGK"));assert(!/NotebookLM|ACADEMIC_REVIEWED|PILOT_PARTIAL/i.test(p));}
+for(const n of [7,8]){assert.equal(bank.forLesson(n,"core").length,2);assert.equal(bank.forLesson(n,"practice").length,6);const p=fs.readFileSync("docs/thpt-preview/sgk/chuong-iv/bai-"+n+".md","utf8");assert.equal((p.match(/data-thpt-help-id=/g)||[]).length,2);assert(p.includes("## 1. Kiến thức SGK"));assert(p.includes("## 2. Ví dụ"),"B"+n+": example label must be concise");assert(!/NotebookLM|ACADEMIC_REVIEWED|PILOT_PARTIAL/i.test(p));}
 for(const [name,sha] of [["THPT_G10_B07_PARALLELOGRAM_EQUAL_OPPOSITE_D5_R01.svg","55ec9add04cb79da2cad7703b3897271e5b3436a"],["THPT_G10_B08_TRIANGLE_PARALLELOGRAM_SUM_D5_R01.svg","3d7550c8667ed8ea629563b8078ae3dfbc680135"]]){const bytes=fs.readFileSync("docs/assets/images/thpt/"+name);assert.equal(crypto.createHash("sha1").update(Buffer.concat([Buffer.from("blob "+bytes.length+"\0"),bytes])).digest("hex"),sha,"SVG source altered");}
 const written=fs.readFileSync("docs/thpt-preview/thu-vien/tu-luan-chuong-iv-b07-b08.md","utf8");for(const id of ["THPT-G10-CHIV-W07","THPT-G10-CHIV-W08-ANCHOR"])assert(written.includes('data-thpt-written-canonical="'+id+'"'));
-const ready=fs.readFileSync("docs/thpt-preview/sgk/chuong-iv/tu-kiem-tra-chuong.md","utf8");assert(!/data-thpt-readiness|answerKey|data-mastery-credit/.test(ready));console.log("PASS ChIV B07/B08 16/16 exact source item hashes, 8 MCQ+8 short, 2 original SVG, 2 Written and 4 D6; no Readiness or Mastery");
+const ready=fs.readFileSync("docs/thpt-preview/sgk/chuong-iv/tu-kiem-tra-chuong.md","utf8");assert(!/data-thpt-readiness|answerKey|data-mastery-credit/.test(ready));
+/* Verify canonical identity against all already released G10 SGK formative banks.
+   The candidate bank owns each item exactly once; other learning placements reference it. */
+const releasedBanks=[
+ "thpt-chi-reviewed-formative-v1.js",
+ "thpt-chii-reviewed-formative-v1.js",
+ "thpt-chiii-reviewed-formative-v1.js",
+ "thpt-chvi-reviewed-formative-v1.js",
+ "thpt-chvii-reviewed-formative-v1.js",
+ "thpt-chviii-reviewed-formative-v1.js",
+ "thpt-chix-reviewed-formative-v1.js"
+];
+const releasedIds=[];
+for(const name of releasedBanks){
+ const js=fs.readFileSync("docs/assets/javascripts/"+name,"utf8");
+ const ids=[...js.matchAll(/"item_id"\s*:\s*"([^"]+)"/g)].map(m=>m[1]);
+ assert(ids.length>0,"Released bank has no canonical item IDs: "+name);
+ releasedIds.push(...ids);
+}
+assert.equal(new Set(releasedIds).size,releasedIds.length,"Duplicate ID among previously released banks");
+const newIds=bank.records.map(r=>r.item_id);
+assert.equal(new Set(newIds).size,newIds.length,"Duplicate ID inside ChIV candidate");
+const existing=new Set(releasedIds);
+for(const id of newIds)assert(!existing.has(id),"Canonical item ID reused in ChIV bank: "+id);
+console.log("PASS ChIV canonical cross-bank uniqueness: "+newIds.length+" candidate IDs, "+releasedIds.length+" prior public IDs, 0 collisions");
+
+console.log("PASS ChIV B07/B08 16/16 exact source item hashes, 8 MCQ+8 short, 2 original SVG, 2 Written and 4 D6; no Readiness or Mastery");
