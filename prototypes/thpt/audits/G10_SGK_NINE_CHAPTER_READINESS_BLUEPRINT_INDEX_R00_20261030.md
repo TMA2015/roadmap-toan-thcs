@@ -14,11 +14,13 @@
 | ChIV | B07–B11 | 24 | R01 public source in two distinct batches | [R00 outcome-only blueprint](G10_CHIV_SGK_CHAPTER_READINESS_COVERAGE_BLUEPRINT_R00_NO_ITEMS.md) |
 | ChV | B12–B14 | 14 | R01 public outcome source | [R00 outcome-only blueprint](G10_CHV_SGK_CHAPTER_READINESS_COVERAGE_BLUEPRINT_R00_NO_ITEMS.md) |
 | ChVI | B15–B18 | 19 | prior public outcome set, ChVI A5 remains HOLD | [R00 outcome-only blueprint](G10_CHVI_SGK_CHAPTER_READINESS_COVERAGE_BLUEPRINT_R00_NO_ITEMS.md) |
-| ChVII | B19–B22 | 23 | outcome names from pre-review draft matrix v0.2; assessment reconciliation needed | [R00 outcome-only blueprint](G10_CHVII_SGK_CHAPTER_READINESS_COVERAGE_BLUEPRINT_R00_NO_ITEMS.md) |
+| ChVII | B19–B22 | 23 | 35/35 public outcomes S1-checked in reviewed v0.4; Readiness assessment not reviewed | [R00 outcome-only blueprint](G10_CHVII_SGK_CHAPTER_READINESS_COVERAGE_BLUEPRINT_R00_NO_ITEMS.md) |
 | ChVIII | B23–B25 | 12 | outcome names from pre-review draft matrix v0.2; assessment reconciliation needed | [R00 outcome-only blueprint](G10_CHVIII_SGK_CHAPTER_READINESS_COVERAGE_BLUEPRINT_R00_NO_ITEMS.md) |
 | ChIX | B26–B27 | 10 | skills from live public formative bank, no Readiness clearance | [R00 outcome-only blueprint](G10_CHIX_SGK_CHAPTER_READINESS_COVERAGE_BLUEPRINT_R00_NO_ITEMS.md) |
 
-**Sum:** 9/9 chapter blueprints; **27/27 lesson references**, **133 coverage rows**. The 133 are *educational skill/outcome targets*, NOT 133 assessment questions, not an active private item bank and not 133 independently reviewed readiness outcomes. IDs in ChVII/VIII are specifically from a **draft** placement matrix, so independent source/outcome review is still mandatory.
+**30/10 provenance correction:** ChVII/VIII 35/35 IDs match the reviewer-reconciled public outcome matrix **v0.4** (Git blob `a145b898e13ef88dbc5d37e879b243a1e6e880a3` on source authoring branch). They are *not* academic-cleared for `SGK_CHAPTER_READINESS`; B22-C01 specialized and B25 optional/Core split must stay explicit. Public source snapshot now in main for ChIII B05–B06 via merged #633, but release #644 remains Draft.
+
+**Sum:** 9/9 chapter blueprints; **27/27 lesson references**, **133 coverage rows**. The 133 are *educational skill/outcome targets*, NOT 133 assessment questions, not an active private item bank and not 133 independently reviewed readiness outcomes. ChVII/VIII IDs now have **public-formative S1 outcome receipt (35/35)** in v0.4, but the independent **assessment-specific source/outcome review remains mandatory**; no held-out protected bank is active.
 
 ## Why private readiness is still blocked
 
@@ -32,12 +34,12 @@
 
 | Gate | Needed action | Owner/technical distinction |
 |---|---|---|
-| RD0 | Independent NotebookLM review of 9 **coverage tables** against SGK/SBT S1 and chapter-end tasks; first reconcile provisional ChVII/VIII IDs | Academic review; no protected item yet |
+| RD0 | Independent NotebookLM review of 9 **coverage tables** against SGK/SBT S1 and chapter-end tasks; explicitly evaluate ChVII/VIII v0.4 Core/optional and held-out eligibility | Academic review; no protected item yet |
 | RD1 | Decide secure storage/delivery for genuinely held-out items and key; no new backend/accounts absent owner approval | Owner architecture decision / security review |
 | RD2 | Build protected item content and review by chapter / outcome; exposure controls | Independent academic |
 | RD3 | Final Submit UX no pre-submit reveals, scoring integrity and demo no-credit tests | Technical QA |
 | RD4 | Chapter-by-chapter actual integration + device acceptance, then owner merge/deploy decision | Owner release gate |
 
-**Parallel public-formative integration:** ChII authoring/release PRs #631/#636 **already merged on GitHub** in a later 30/10 status check (P1 actual deployment separate). ChIII #633, ChIV #634/#637, ChV #639 are still unmerged Draft authoring; ChVI #643 D6 integration draft CI PASS for THPT R4 but A5 HOLD and owner physical-device UAT pending.
+**Parallel public-formative integration:** ChII authoring/release PRs #631/#636 **already merged on GitHub** in a later 30/10 status check (P1 actual deployment separate). ChIII source #633 **MERGED** (30/10, main `1643c60e`), release #644 Draft; ChIV #634/#637 and ChV #639 remain authoring Draft; ChVI #643 D6 integration draft CI PASS for THPT R4 but A5 HOLD and owner physical-device UAT pending.
 
 **This index documents real curriculum gaps without lowering the standards.** It does not grant chapter-complete, Academic PASS for Readiness or deployment.
