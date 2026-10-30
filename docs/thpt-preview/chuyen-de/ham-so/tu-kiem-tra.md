@@ -12,12 +12,12 @@ mastery_credit: false
 
 # Tự kiểm tra — Hàm số và đồ thị
 
-**Chỉ kiểm thử thao tác (TECHNICAL_DEMO_ONLY). Không dùng để kết luận mức độ thành thạo.**
+Các câu dưới đây để em tự luyện, không tính điểm thành thạo.
 
 **Readiness độc lập:** không gợi ý, không biết đúng/sai trong lúc làm. Học sinh có thể chuyển câu, quay lại sửa đáp án; chỉ sau **Final Submit** mới được xem kết quả và lời giải.
 
 <div class="thpt-r4-exercise" data-thpt-readiness data-demo-scope="TECHNICAL_DEMO_ONLY" data-mastery-credit="false">
-<p class="thpt-r4-eyebrow">READINESS-THPT-DEMO-01 · KHÔNG GỢI Ý · 2 CÂU DEMO</p>
+<p class="thpt-r4-eyebrow">TỰ KIỂM TRA · 2 CÂU · KHÔNG GỢI Ý</p>
 <p data-thpt-progress aria-live="polite">Câu 1/2</p>
 <form><div data-thpt-question></div>
 <div class="thpt-r4-buttons"><button class="thpt-r4-action" type="button" data-thpt-previous>Previous</button><button class="thpt-r4-action" type="button" data-thpt-next>Next</button><button class="thpt-r4-action" type="submit" data-thpt-final>Final Submit</button></div>
@@ -26,6 +26,6 @@ mastery_credit: false
 
 ## Tiêu chí cần đạt
 
-Khi đánh giá thực tế, học sinh cần thể hiện năng lực đọc dạng hàm bậc hai, xác định đỉnh/trục, nhận xét chiều mở và vận dụng giải dạng bài. **Hai câu Demo này không đủ làm chuẩn kết luận thành thạo một chuyên đề**; bộ Readiness chính thức phải được kiểm duyệt SGK/SBT và thiết kế đủ các kỹ năng.
+Khi đánh giá thực tế, học sinh cần thể hiện năng lực đọc dạng hàm bậc hai, xác định đỉnh/trục, nhận xét chiều mở và vận dụng giải dạng bài. Bài tự luyện này không thay thế bài đánh giá chuyên đề.
 
 [Ôn lại Kiến thức](kien-thuc.md) · [Luyện tập có gợi ý](luyen-tap.md).

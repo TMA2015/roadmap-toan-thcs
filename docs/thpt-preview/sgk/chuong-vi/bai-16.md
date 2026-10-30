@@ -77,7 +77,7 @@ Xét \(f(x)=x^2-4x+3=(x-2)^2-1\). Do đó:
 <button type="button" class="thpt-r4-practice-open" data-thpt-open-quiz="b16-core" aria-label="Mở cửa sổ Core Bài 16 · Tọa độ đỉnh">🧩 Luyện Core · Tọa độ đỉnh (THPT-CORE-QF01)</button>
 </div>
 
-**Tiếp tục rèn luyện:** [Luyện tập và Vận dụng Chương VI](luyen-tap.md) · [Tự kiểm tra cuối Chương VI (demo kỹ thuật)](tu-kiem-tra-chuong.md).
+**Tiếp tục rèn luyện:** [Luyện tập và Vận dụng Chương VI](luyen-tap.md) · [Tự kiểm tra cuối Chương VI](tu-kiem-tra-chuong.md).
 
 ## 5. Vận dụng
 

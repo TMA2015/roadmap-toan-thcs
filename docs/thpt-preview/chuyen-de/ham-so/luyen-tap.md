@@ -8,12 +8,12 @@
 
 Luyện tập theo **mảng kiến thức, dạng bài và cấp độ**; từ cơ bản/hiểu bản chất đến vận dụng, tổng hợp. Có gợi ý và phản hồi sau Check. Một câu hỏi có thể vừa là SGK Core vừa là Practice cơ bản tại đây nếu giữ **cùng canonical item ID**.
 
-**Luyện tập cơ bản — nhận diện dạng đỉnh:** [THPT-CORE-QF01 trong kho câu hỏi chung](../../sgk/core/ham-so-bac-hai.md) (đây là tham chiếu cùng item, chưa có trình hiển thị trực tiếp theo ngữ cảnh trong demo).
+**Luyện tập cơ bản — nhận diện dạng đỉnh:** [THPT-CORE-QF01 trong kho câu hỏi chung](../../sgk/core/ham-so-bac-hai.md).
 
 **Luyện tập dạng giao trục:**
 
 <div class="thpt-r4-exercise" data-thpt-practice data-thpt-canonical-item="PRACTICE-THPT-DEMO-01" data-thpt-exposure-role="SGK_PRACTICE">
-<p class="thpt-r4-eyebrow">PRACTICE-THPT-DEMO-01 · CÓ GỢI Ý</p>
+<p class="thpt-r4-eyebrow">LUYỆN TẬP · CÓ GỢI Ý</p>
 <h3>Giao điểm với trục hoành</h3>
 <p>Cho \(y=x^2-4x+3\). Hoành độ các giao điểm với trục \(Ox\) là:</p>
 <form><fieldset><legend>Chọn một đáp án</legend>

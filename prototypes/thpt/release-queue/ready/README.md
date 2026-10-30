@@ -22,12 +22,12 @@ Một packet canonical duy nhất trên mỗi phạm vi; không nhân đôi câu
 - [Hồ sơ chi tiết](../CHI_B01_B02_A1A7_SCOPED_EVIDENCE_20261029.md), source reviewed exact blob `95a554e31a613b8e215679fe6790738473d598df`, NotebookLM receipt `fece80dcb4b0e17d369e2ecbe12e8d13b672281a`.
 - Kỹ thuật tích hợp trong Draft release #635, có 16/16 original source-locked canonical IDs và browser regression. Owner đã cấp quyền phát hành có điều kiện cho mọi packet đủ gate. Chỉ merge/deploy nếu hai workflow CI trên HEAD cuối cùng đều SUCCESS; không tự bật Chapter/Topic Readiness hoặc Mastery.
 
-## G10 Chương II B03–B04 · CONTENT_READY / authoring handoff
+## G10 Chương II B03–B04 · RELEASE_READY (chờ hai CI exact HEAD)
 
 - [Manifest](G10-SGK-CHII.md): 16 formative original A–D, 2 Written (một Anchor), 6 ví dụ, 2 SVG, 4 HELP_ID, 10/10 outcome; NotebookLM R01 PASS 18/18 chính snapshot blob `acea9776d1c7534a4cd0cd28e98db26dedf0c122`.
-- Hồ sơ [A1–A7](../CHII_B03_B04_PUBLIC_FORMATIVE_A1A7_EVIDENCE_20261029.md) PASS theo đúng `PUBLIC_FORMATIVE_ONLY`; **R1–R5 và quyền merge/deploy vẫn là cổng riêng**, xử lý trong Draft #636. Tự kiểm tra chương, Topic và Mastery chưa kích hoạt.
+- Hồ sơ [A1–A7](../CHII_B03_B04_PUBLIC_FORMATIVE_A1A7_EVIDENCE_20261029.md) PASS theo đúng `PUBLIC_FORMATIVE_ONLY`; **R1–R5 được chuẩn bị trên release PR #636; yêu cầu hai CI trên HEAD cuối cùng SUCCESS trước merge/deploy**, xử lý trong Draft #636. Tự kiểm tra chương, Topic và Mastery chưa kích hoạt.
 
-## G10 Chương III B05–B06 · CONTENT_READY / academic handoff
+## G10 Chương III B05–B06 · CONTENT_READY (academic handoff)
 
-- [Manifest](G10-SGK-CHIII.md), snapshot blob `6320aeaa89bd51c514b07461e01fad5e3aca833f`, NotebookLM receipt blob `3fb823c4353d368ae5a9c14f03c7309933d47e6f`.
-- Academic A1–A7 PASS, 16 public formative + 2 Written/Anchor, 6 examples, 2 source SVG, 4 HELP_ID; **NOT PUBLISHED**. Release lane must handle R1–R5, exact-head QA, separately gated Readiness/Topic/Mastery.
+- [Gói B05–B06](G10-SGK-CHIII.md): 16 formative + 2 Written, 6 worked examples, 2 D5 source SVG, 4 HELP_ID D6, 10/10 outcomes. Independent NotebookLM R01 Academic PASS exact source blob `6320aeaa89bd51c514b07461e01fad5e3aca833f`.
+- Source #633 contains no student release, no Readiness/Topic/Mastery; release must independently pass R1–R5 on new combined head and owner-approved scope.

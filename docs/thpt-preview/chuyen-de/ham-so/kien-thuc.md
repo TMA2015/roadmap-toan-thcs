@@ -4,7 +4,7 @@ hide:
 pilot_scope: PILOT_PARTIAL_G10
 ---
 
-<div data-thpt-r4 class="thpt-r4-screen"><p class="thpt-r4-eyebrow">CHUYÊN ĐỀ · BẢN MẪU THPT</p><p class="thpt-r4-lead">Hàm số và đồ thị · PILOT_PARTIAL_G10 · Minh họa nhánh hàm số bậc hai của lớp 10; chưa phải chuyên đề 10–12 hoàn chỉnh.</p>
+<div data-thpt-r4 class="thpt-r4-screen"><p class="thpt-r4-eyebrow">CHUYÊN ĐỀ · KIẾN THỨC</p><p class="thpt-r4-lead">Hàm số và đồ thị · Hàm số bậc hai lớp 10.</p>
 <nav class="thpt-r4-topic-steps" aria-label="Ba phần học của chuyên đề">
 <a href="../kien-thuc/" aria-current="page">01 · Kiến thức</a>
 <a href="../luyen-tap/">02 · Luyện tập</a>
@@ -18,7 +18,7 @@ pilot_scope: PILOT_PARTIAL_G10
 
 <div class="thpt-r4-flow" aria-label="Các mạch kiến thức liên quan"><span>THCS: Hàm số, phương trình bậc hai</span><b>→</b><span>Lớp 10: Hàm số bậc hai, đồ thị</span><b>→</b><span>Lớp 11–12: Biến thiên, đạo hàm, khảo sát</span></div>
 
-**Lưu ý:** Các liên kết tiền đề/tiếp nối cần kiểm tra toàn chương trình; sơ đồ này chỉ minh họa đúng phần đã xét.
+Các nội dung liên quan giúp em kết nối kiến thức giữa các lớp.
 
 ## Kiến thức
 
@@ -41,11 +41,6 @@ pilot_scope: PILOT_PARTIAL_G10
 === "Ví dụ"
 
     Với \(y=x^2-4x+3=(x-2)^2-1\), đỉnh \(I(2;-1)\), trục \(x=2\), giao điểm với \(Ox\) có hoành độ \(1\) và \(3\).
-
-!!! info "Cách tổ chức kiến thức khi chuyên đề có nhiều mảng"
-    Trong bản mẫu Bài 16 (một mảng kiến thức), các tab **Khái niệm / Đồ thị và tính chất / Ví dụ** là phù hợp. Với chuyên đề lớn hơn, tab cấp này sẽ đổi thành **mảng kiến thức 3.1 / 3.2 / 3.3...**, bên trong có **hàng tab nội dung cấp 2** khi kiến thức đủ dài; tối đa hai cấp tab, theo quy chuẩn Adaptive v2.0. **Font, size, màu của tab và normal text được giữ nhất quán** giữa mọi cấu trúc.
-
-    [Xem thử bố cục nhiều mảng và kiểm tra kiểu chữ](../../qa/adaptive-knowledge-tabs.md).
 
 ## Kiến thức liên quan
 
@@ -73,7 +68,7 @@ pilot_scope: PILOT_PARTIAL_G10
 
 === "Thi tốt nghiệp THPT"
 
-    Đây là **bộ lọc của các dạng bài phía trên**, không tạo thêm một kho dạng bài khác. Chỉ gắn nhãn đề thi theo **năm và nguồn xác minh**; bản mẫu hiện **chưa gắn bất kỳ đề thi thực tế nào**.
+    Đây là **bộ lọc của các dạng bài phía trên**, không tạo thêm một kho dạng bài khác. Chỉ gắn nhãn đề thi theo **năm và nguồn xác minh**; chỉ bổ sung đề thi khi xác minh được nguồn.
 
     [Mở thư viện tự luận và bài mỏ neo](../../thu-vien/tu-luan.md).
 
@@ -82,5 +77,3 @@ pilot_scope: PILOT_PARTIAL_G10
 - Nhầm dấu hoành độ đỉnh trong \(a(x-h)^2+k\).
 - Kết luận luôn có hai nghiệm thực khi cắt trục hoành; thực tế có thể không có, có một nghiệm kép hoặc có hai nghiệm.
 - Quên điều kiện \(a\neq0\) khi gọi hàm bậc hai.
-
-> **Nhánh kiến thức Bài 16 lớp 10 đã được NotebookLM xác nhận học thuật PASS trong review R4 Postfix.** Đây vẫn chỉ là lát cắt PILOT_PARTIAL_G10, không phải chuyên đề 10–12 hoàn chỉnh. Hướng dẫn luyện tập và đánh giá nằm ở các mục chuyên trách. Cột mục lục phải của trang này được ẩn, thanh di chuyển nhanh nằm ngay phía trên.
