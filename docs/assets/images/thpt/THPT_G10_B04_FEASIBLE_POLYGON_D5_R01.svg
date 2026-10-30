@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1160" height="760" viewBox="0 0 1160 760" role="img" aria-labelledby="title desc" font-family="DejaVu Sans,Arial,sans-serif">
+<title id="title">Miền nghiệm đa giác và cực trị F bằng 3x cộng 2y</title>
+<desc id="desc">Hệ x lớn hơn hoặc bằng 0, y lớn hơn hoặc bằng 0, x+y nhỏ hơn hoặc bằng 6, 2x+y nhỏ hơn hoặc bằng 8 tạo tứ giác có các đỉnh O(0,0), A(4,0), B(2,4), C(0,6). Giá trị F=3x+2y lần lượt 0,12,14,12; lớn nhất 14 tại B. Đường kẻ biên liền và tọa độ được ghi rõ.</desc>
+<rect width="1160" height="760" fill="#f8fafc" rx="24"/>
+<text x="50" y="54" fill="#0f172a" font-family="Arial,sans-serif" font-size="30" font-weight="bold">Miền nghiệm chung và tối ưu hàm bậc nhất</text>
+<rect x="47" y="91" width="656" height="618" fill="white" stroke="#cbd5e1" stroke-width="2" rx="20"/>
+<!-- origin(135,630), 77 px/unit -->
+<path d="M135 648 V128 M107 630 H680" stroke="#64748b" stroke-width="2.5" fill="none"/>
+<path d="M135 128 l-6 13 h12 z M680 630 l-13 -6 v12 z" fill="#64748b"/>
+<text x="690" y="633" fill="#475569" font-size="22">x</text><text x="123" y="119" fill="#475569" font-size="22">y</text>
+<!-- x+y=6 runs (0,6)=(135,168) through (6,0)=(597,630); 2x+y=8 runs (1,6)=(212,168) through (4,0)=(443,630). -->
+<path d="M135 168 L597 630" stroke="#7c3aed" stroke-width="3.5" fill="none"/>
+<path d="M212 168 L443 630" stroke="#b45309" stroke-width="3.5" fill="none"/>
+<polygon points="135,630 443,630 289,322 135,168" fill="#bbf7d0" fill-opacity="0.78" stroke="#047857" stroke-width="5"/>
+<circle cx="135" cy="630" r="6" fill="#0f172a"/><text x="102" y="657" font-size="19">O</text>
+<circle cx="443" cy="630" r="7" fill="#0f172a"/><text x="459" y="651" font-size="18">A(4,0)</text>
+<circle cx="289" cy="322" r="10" fill="#047857" stroke="white" stroke-width="3"/><text x="305" y="310" font-size="21" fill="#047857" font-weight="bold">B(2,4)</text>
+<circle cx="135" cy="168" r="7" fill="#0f172a"/><text x="148" y="157" font-size="19">C(0,6)</text>
+<text x="489" y="319" fill="#7c3aed" font-size="21" transform="rotate(44 489 319)">x + y = 6</text>
+<text x="203" y="178" fill="#b45309" font-size="20">2x + y = 8</text>
+<text x="65" y="694" font-size="18" fill="#047857">Tô phần giao của BỐN nửa mặt phẳng; lấy các đường biên.</text>
+<rect x="725" y="91" width="397" height="618" rx="20" fill="white" stroke="#cbd5e1" stroke-width="2"/>
+<text x="750" y="145" fill="#0f172a" font-family="Arial,sans-serif" font-size="24" font-weight="bold">Các điều kiện</text>
+<text x="751" y="192" font-size="21">x ≥ 0; y ≥ 0</text><text x="751" y="232" font-size="21">x + y ≤ 6</text><text x="751" y="272" font-size="21">2x + y ≤ 8</text>
+<path d="M749 304 H1099" stroke="#cbd5e1" stroke-width="2"/>
+<text x="749" y="350" font-size="24" font-weight="bold">F(x,y) = 3x + 2y</text>
+<text x="754" y="402" font-size="21">O(0,0):  0</text><text x="754" y="451" font-size="21">A(4,0): 12</text>
+<rect x="739" y="464" width="353" height="66" rx="14" fill="#dcfce7" stroke="#047857" stroke-width="2"/>
+<text x="754" y="505" font-size="24" fill="#065f46" font-weight="bold">B(2,4): 14  MAX</text>
+<text x="754" y="573" font-size="21">C(0,6): 12</text>
+<text x="754" y="636" font-size="23" font-weight="bold" fill="#065f46">Giá trị lớn nhất = 14</text>
+<text x="50" y="736" fill="#475569" font-family="Arial,sans-serif" font-size="18">Kiểm tất cả các đỉnh. Kết quả này chỉ áp dụng trực tiếp khi miền khả thi là đa giác không rỗng, bị chặn.</text>
+</svg>

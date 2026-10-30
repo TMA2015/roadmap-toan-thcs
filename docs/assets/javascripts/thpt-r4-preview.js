@@ -78,7 +78,7 @@
    if(!dlg){
     dlg=document.createElement("dialog");
     dlg.className="roadmap-topic-dialog";dlg.dataset.thptR4ShortcutDialog="1";
-    dlg.setAttribute("aria-label","Điều hướng nhanh Toán THPT · Bản mẫu");
+    dlg.setAttribute("aria-label","Điều hướng nhanh Toán THPT");
     const heading=document.createElement("div");heading.className="roadmap-topic-dialog__heading";
     const title=document.createElement("h2");title.textContent="Toán THPT · 5 nhóm + "+topics.length+" chuyên đề mẫu";
     const close=document.createElement("button");close.type="button";close.className="roadmap-topic-dialog__close";close.textContent="Đóng ✕";
@@ -232,11 +232,11 @@
    "b16-core":["../../core/ham-so-bac-hai/","[data-thpt-core]"],
    "b16-practice":["../../../chuyen-de/ham-so/luyen-tap/","[data-thpt-practice]"]
   };
-  const lessonTitle={"15":"Hàm số","16":"Hàm số bậc hai","17":"Dấu của tam thức bậc hai","18":"Phương trình quy về phương trình bậc hai","19":"Phương trình đường thẳng","20":"Vị trí, góc và khoảng cách","21":"Đường tròn","22":"Ba đường conic","23":"Quy tắc đếm","24":"Hoán vị, chỉnh hợp và tổ hợp","25":"Nhị thức Newton"};
+  const lessonTitle={"1":"Mệnh đề","2":"Tập hợp và các phép toán trên tập hợp","3":"Bất phương trình bậc nhất hai ẩn","4":"Hệ bất phương trình bậc nhất hai ẩn","5":"Giá trị lượng giác của góc 0°–180°","6":"Hệ thức lượng trong tam giác","15":"Hàm số","16":"Hàm số bậc hai","17":"Dấu của tam thức bậc hai","18":"Phương trình quy về phương trình bậc hai","19":"Phương trình đường thẳng","20":"Vị trí, góc và khoảng cách","21":"Đường tròn","22":"Ba đường conic","23":"Quy tắc đếm","24":"Hoán vị, chỉnh hợp và tổ hợp","25":"Nhị thức Newton","26":"Biến cố và xác suất cổ điển","27":"Thực hành tính xác suất cổ điển"};
   const dlg=document.createElement("dialog");
   dlg.className="thpt-r4-practice-dialog";
   dlg.dataset.thptR4="1"; // Eligible root for existing R4 exercise binder when remote card is inserted.
-  dlg.setAttribute("aria-label","Luyện tập Toán THPT · bản mẫu");
+  dlg.setAttribute("aria-label","Luyện tập Toán THPT");
   dlg.innerHTML='<div class="thpt-r4-modal-top"><span class="thpt-r4-modal-lesson-badge" data-thpt-modal-lesson-number aria-hidden="true">15</span><div class="thpt-r4-modal-heading"><p class="thpt-r4-modal-meta">LỚP 10 · CHƯƠNG VI</p><h2 data-thpt-modal-title>Luyện tập</h2></div><button type="button" data-thpt-modal-close aria-label="Đóng cửa sổ">Đóng ×</button></div><div class="thpt-r4-modal-main" data-thpt-modal-body></div>';
   document.body.append(dlg);
   const modalBody=dlg.querySelector("[data-thpt-modal-body]");
@@ -257,7 +257,7 @@
    const prev=document.createElement("button"),next=document.createElement("button");
    prev.textContent="← Câu trước";next.textContent="Câu tiếp →";prev.type=next.type="button";
    const render=()=>{
-    progress.textContent="Câu "+(index+1)+" / "+items.length+" · Demo kỹ thuật · Không ghi điểm";
+    progress.textContent="Câu "+(index+1)+" / "+items.length+" · Tự luyện";
     numbers.replaceChildren();items.forEach((_,n)=>{const b=document.createElement("button");b.type="button";b.textContent="Câu "+(n+1);b.className=n===index?"active":"";b.setAttribute("aria-current",String(n===index));b.addEventListener("click",()=>{index=n;render()});numbers.append(b)});
     question.replaceChildren();
     const p=document.createElement("h3");p.textContent=items[index][0];question.append(p);
@@ -317,6 +317,8 @@
       (item.role==="SUPPORT_EXTENSION"?" · Mở rộng tự chọn":"")+
       (item.difficulty==="ADVANCED"?" · Nâng cao":"");
     const prompt=document.createElement("h3");prompt.textContent=item.stem;
+    const options=Array.isArray(item.options)&&item.options.length===4?document.createElement("div"):null;
+    if(options){options.className="thpt-r4-formative-options";for(const choice of item.options){const p=document.createElement("p");p.textContent=choice;options.append(p)}}
     const hint=document.createElement("details"),hintSummary=document.createElement("summary");
     hintSummary.textContent="💡 Xem gợi ý (tự chọn)";
     hint.append(hintSummary,document.createTextNode(item.hint));
@@ -361,13 +363,13 @@
     reviewLesson.className="thpt-r4-remediation-link";
     reviewLesson.textContent="↶ Ôn lại kiến thức Bài "+item.lesson;
     const matchPath=location.pathname.match(/^(.*?\/)(?:thpt-preview|thpt)\//);
-    const chapter=Number(item.lesson)<=18?"vi":Number(item.lesson)<=22?"vii":"viii";
+    const chapter=Number(item.lesson)<=2?"i":Number(item.lesson)<=4?"ii":Number(item.lesson)<=6?"iii":Number(item.lesson)<=18?"vi":Number(item.lesson)<=22?"vii":Number(item.lesson)<=25?"viii":"ix";
     reviewLesson.href=matchPath?
       matchPath[0]+"sgk/chuong-"+chapter+"/bai-"+item.lesson+"/":
       "../bai-"+item.lesson+"/";
     const note=document.createElement("p");note.className="thpt-r4-modal-progress";
     note.textContent="Tự luyện và đối chiếu lời giải · Không ghi điểm thành thạo.";
-    card.append(meta,prompt,hint,solution,reviewLesson,note);
+    card.append(meta,prompt,...(options?[options]:[]),hint,solution,reviewLesson,note);
     // Only public formative text is typeset; never load any held-out readiness
     // prompts or answer keys into the browser.
     if(window.MathJax?.typesetPromise)window.MathJax.typesetPromise([card]).catch(()=>{});
@@ -419,7 +421,7 @@
       if(!holder.children.length)throw Error("No matching source problems");
       holder.dataset.loaded="1";
       if(window.MathJax?.typesetPromise)window.MathJax.typesetPromise([holder]).catch(()=>{});
-     }catch(error){holder.textContent="Không tải được bài tổng hợp. Bạn vẫn có thể mở nhóm bài nguồn từ trang Chương VI sau khi kết nối được bản preview."}
+     }catch(error){holder.textContent="Không tải được bài tổng hợp. Hãy mở lại bài từ trang Chương VI hoặc thử tải lại trang."}
     }
     holder.hidden=false;button.setAttribute("aria-expanded","true");
    });
@@ -429,14 +431,14 @@
   root.querySelectorAll("[data-thpt-open-quiz]").forEach(button=>{
    button.addEventListener("click",async()=>{
     returnFocus=button;
-    const id=button.dataset.thptOpenQuiz,parts=id.match(/^b(1[5-9]|2[0-5])-(core|practice)$/);
+    const id=button.dataset.thptOpenQuiz,parts=id.match(/^b([1-6]|1[5-9]|2[0-7])-(core|practice)$/);
     if(!parts)return;
     const lesson=parts[1],role=parts[2]==="core"?"Core":"Luyện tập";
     dlg.querySelector("[data-thpt-modal-lesson-number]").textContent=lesson;
-    dlg.querySelector(".thpt-r4-modal-meta").textContent="LỚP 10 · CHƯƠNG "+(Number(lesson)>=23?"VIII":Number(lesson)>=19?"VII":"VI");
+    dlg.querySelector(".thpt-r4-modal-meta").textContent="LỚP 10 · CHƯƠNG "+(Number(lesson)<=2?"I":Number(lesson)<=4?"II":Number(lesson)<=6?"III":Number(lesson)>=26?"IX":Number(lesson)>=23?"VIII":Number(lesson)>=19?"VII":"VI");
     modalTitle.textContent=role+" · Bài "+lesson+". "+lessonTitle[lesson];
     modalBody.textContent="Đang mở nội dung…";dlg.showModal();
-    const activeBank=Number(lesson)>=23?window.THPT_CHVIII_REVIEWED_FORMATIVE:Number(lesson)>=19?window.THPT_CHVII_REVIEWED_FORMATIVE:reviewed;
+    const activeBank=Number(lesson)<=2?window.THPT_CHI_REVIEWED_FORMATIVE:Number(lesson)<=4?window.THPT_CHII_REVIEWED_FORMATIVE:Number(lesson)<=6?window.THPT_CHIII_REVIEWED_FORMATIVE:Number(lesson)>=26?window.THPT_CHIX_REVIEWED_FORMATIVE:Number(lesson)>=23?window.THPT_CHVIII_REVIEWED_FORMATIVE:Number(lesson)>=19?window.THPT_CHVII_REVIEWED_FORMATIVE:reviewed;
     if(activeBank?.validate().valid){
      const items=activeBank.forLesson(lesson,parts[2]);
      if(items.length){
@@ -467,18 +469,18 @@
      if(parts[2]==="practice")attachCumulative(lesson);
      if(window.MathJax?.typesetPromise)window.MathJax.typesetPromise([modalBody]).catch(()=>{});
     }catch(error){
-     modalBody.textContent="Chưa thể tải bài mẫu. Hãy mở bản MkDocs Preview với máy chủ trang đầy đủ hoặc kiểm tra đường dẫn nguồn.";
+     modalBody.textContent="Chưa tải được bài. Hãy mở lại từ trang SGK hoặc kiểm tra kết nối.";
     }
    });
   });
   // Public formative navigation from the approved D6 help cards only.
   const requestedItem=new URLSearchParams(location.search).get("item");
-  const parsed=/^THPT-G10-B(19|20|21|22|23|24|25)-[CP]\d{2}$/.exec(requestedItem||"");
+  const parsed=/^THPT-G10-B(01|02|03|04|05|06|19|20|21|22|23|24|25|26|27)-[CP]\d{2}$/.exec(requestedItem||"");
   if(parsed){
-   const lesson=parsed[1], bank=Number(lesson)>=23?window.THPT_CHVIII_REVIEWED_FORMATIVE:window.THPT_CHVII_REVIEWED_FORMATIVE;
+   const lesson=parsed[1], bank=Number(lesson)<=2?window.THPT_CHI_REVIEWED_FORMATIVE:Number(lesson)<=4?window.THPT_CHII_REVIEWED_FORMATIVE:Number(lesson)<=6?window.THPT_CHIII_REVIEWED_FORMATIVE:Number(lesson)>=26?window.THPT_CHIX_REVIEWED_FORMATIVE:Number(lesson)>=23?window.THPT_CHVIII_REVIEWED_FORMATIVE:window.THPT_CHVII_REVIEWED_FORMATIVE;
    if(bank?.validate().valid){
     const placement=["core","practice"].find(role=>bank.forLesson(lesson,role).some(item=>item.item_id===requestedItem));
-    const trigger=placement?root.querySelector('[data-thpt-open-quiz="b'+lesson+'-'+placement+'"]'):null;
+    const trigger=placement?root.querySelector('[data-thpt-open-quiz="b'+Number(lesson)+'-'+placement+'"]'):null;
     trigger?.click();
    }
   }
@@ -605,7 +607,7 @@
       if(word&& !group.hidden)group.open=true;
      });
      if(counter&&word)counter.textContent=visible+" kết quả phù hợp · Chỉ mục đã có nội dung/đang đối chiếu";
-     if(counter&&!word)counter.textContent=items.length+" mục trong bản mẫu · chưa phải danh mục đã nghiệm thu";
+     if(counter&&!word)counter.textContent=items.length+" mục";
     };
     input.addEventListener("input",run);kind?.addEventListener("change",run);
    }
@@ -667,7 +669,7 @@
      if(answers.some(x=>x===null)){result.textContent="Hãy hoàn thành tất cả các câu trước khi Final Submit. Có thể dùng Previous/Next để quay lại sửa.";return}
      finalized=true;
      const score=queries.reduce((n,q,i)=>n+(answers[i]===q.key?1:0),0);
-     result.textContent="Kết quả Demo kỹ thuật (không tính tiến độ): "+score+" / "+queries.length+". Lời giải chỉ hiện sau lần nộp này.";
+     result.textContent="Kết quả tự luyện (không tính thành thạo): "+score+" / "+queries.length+". Lời giải chỉ hiện sau khi nộp bài.";
      reveal.hidden=false;reveal.replaceChildren();
      queries.forEach((q,i)=>{
       const p=document.createElement("p");
