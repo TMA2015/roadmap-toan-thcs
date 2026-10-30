@@ -26,8 +26,8 @@ CONTENTS: B01–B02 ONLY; 11/11 outcomes, 7 D2 examples, 16 formative + 2 Writte
 - [x] R5_OWNER_APPROVAL — Owner authorized 2026-10-29 merge/deploy of Chapter IX and ALL other eligible public formative packets, conditional on required exact-head CI and full gates; this packet scope only G10 ChI B01/B02 PUBLIC_FORMATIVE_ONLY, no full Chapter/Readiness/Topic.
 
 ## P — release lane only
-- [ ] P1_DEPLOY_RECEIPT — No deployment; release lane should report exact deployed source when permitted.
-- [ ] P2_DEVICE_UAT — No physical owner mobile UAT for this packet.
+- [x] P1_DEPLOY_RECEIPT — PR #635 merged main 6a9003dfd51ae249a02f4239b75a093dac4e1b81; Deploy MkDocs #40993426353 and Pages #40993520517 SUCCESS; gh-pages e2457bef844a9d022ea6605dd2d4b4270f651dba; exact public HTML/JS/SVG checked. See CHI_B01_B02_POST_RELEASE_P1_P2_RECEIPT_20261030.md.
+- [x] P2_DEVICE_UAT — Owner 30/10/2026 confirmed new content visible on physical phone and desktop and no observed errors. This is scoped owner observation, not exhaustive browser/function coverage or certified Safari/iPad QA; see P1/P2 receipt.
 
-BLOCKER/NEXT: RELEASE_READY conditional on BOTH exact FINAL HEAD CI workflows SUCCESS and source integrity confirmation before authorized merge/deploy. P1 exact deployed Pages receipt and P2 physical device acceptance are separate pending gates.
+POST_RELEASE: #635 merged and deployed; P1 exact Pages receipt PASS; P2 owner phone/desktop NO_ISSUES_OBSERVED (limited scope). Historical ready/ manifest remains RELEASE_READY pending separate queue-status/relocation reconciliation; no readiness or mastery activation.
 ACADEMIC_NOTE: 18/18 owner-supplied independent NotebookLM R01 Academic PASS is exact B01/B02 content-scope evidence, not an entire SGK chapter readiness or Topic PASS; not release approval.
