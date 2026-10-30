@@ -185,6 +185,20 @@ jobs:
           node scripts/test-skill-map-v2-i6-controlled.js
           node scripts/test-skill-map-v2-i6b-public.js
 
+      - name: Guard reviewed ChVII–VIII scoped formative release if explicitly approved
+        run: |
+          node --check docs/assets/javascripts/thpt-chvii-reviewed-formative-v1.js
+          node --check docs/assets/javascripts/thpt-chviii-reviewed-formative-v1.js
+          node scripts/test-thpt-g10-chvii-reviewed-stage1.cjs
+          node scripts/test-thpt-g10-chviii-reviewed-stage2.cjs
+          node scripts/test-thpt-g10-d6-release-integration.cjs
+
+      - name: Guard scoped G10 ChIX public formative before authorized deploy
+        run: |
+          node --check docs/assets/javascripts/thpt-chix-reviewed-formative-v1.js
+          node scripts/test-thpt-g10-chix-reviewed-stage3.cjs
+          node scripts/test-thpt-g10-chix-release-integration.cjs
+
       - name: Guard THPT first-phase static release
         run: node scripts/test-thpt-static-release.cjs
 

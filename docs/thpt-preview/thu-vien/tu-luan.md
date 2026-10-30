@@ -77,4 +77,6 @@
 <table><thead><tr><th>Tiêu chí</th><th>Điểm</th></tr></thead><tbody><tr><td>Dựng điều kiện và đại lượng</td><td>1</td></tr><tr><td>Lập phương trình</td><td>2</td></tr><tr><td>Giải x</td><td>1</td></tr><tr><td>Thử nghiệm</td><td>1</td></tr><tr><td>Kết luận 3 cạnh, đơn vị</td><td>1</td></tr></tbody></table></details>
 </section></div></div>
 
+[**Tự luận Chương VII — 4 bài mới, gồm 1 bài mỏ neo**](tu-luan-chuong-vii.md).
+
 Chương VI có **8 unique Written item IDs** đã được NotebookLM thẩm định cho đúng snapshot (2 bài B16 đã PASS trước và 6 bài B15/B17/B18 trong batch 28/10/2026); trong đó có **4 bài Anchor** nhưng Anchor chỉ là nhãn của Written. Không chấm bài viết tự động, không ghi mastery/tiến độ; kết luận học thuật **không đồng nghĩa với phát hành ứng dụng**. Bài tổng hợp B3 có thể được gắn vai trò Written bằng cùng ID, không tạo bản sao. [Học bài mẫu tiêu biểu](bai-mau-tieu-bieu.md) · [Về giới thiệu thư viện](index.md).

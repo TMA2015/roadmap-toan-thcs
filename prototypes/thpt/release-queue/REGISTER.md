@@ -4,20 +4,19 @@
 
 | Gói | Hành trình | Trạng thái | Phạm vi | PR / nguồn |
 |---|---|---|---|---|
-| [G10-SGK-CHI](ready/G10-SGK-CHI.md) | SGK_CHAPTER | CONTENT_READY | PUBLIC_FORMATIVE_ONLY | ChI B01–B02 R01 Academic PASS; authoring-only #628 |
+| [G10-SGK-CHI](ready/G10-SGK-CHI.md) | SGK_CHAPTER | CONTENT_READY | PUBLIC_FORMATIVE_ONLY | authoring #628 A1–A7 R01, release candidate #635 (unmerged) |
 | [G10-SGK-CHVI](inventory/G10-SGK-CHVI.md) | SGK_CHAPTER | PUBLISHED_SCOPED | PUBLIC_FORMATIVE_ONLY | merged #612; UI #617–619 |
-| [G10-SGK-CHVII](ready/G10-SGK-CHVII.md) | SGK_CHAPTER | CONTENT_READY | PUBLIC_FORMATIVE_ONLY | #620 (current); #614 (old source, not a second packet) |
-| [G10-SGK-CHVIII](ready/G10-SGK-CHVIII.md) | SGK_CHAPTER | CONTENT_READY | PUBLIC_FORMATIVE_ONLY | #621 (depends #620); #615 old source |
-| [G10-SGK-CHIX](inventory/G10-SGK-CHIX.md) | SGK_CHAPTER | ACADEMIC_PARTIAL | PUBLIC_FORMATIVE_ONLY | #616 (dependent old draft) |
+| [G10-SGK-CHVII](ready/G10-SGK-CHVII.md) | SGK_CHAPTER | RELEASE_READY | PUBLIC_FORMATIVE_ONLY | merged/deployed #625, source #624 |
+| [G10-SGK-CHVIII](ready/G10-SGK-CHVIII.md) | SGK_CHAPTER | RELEASE_READY | PUBLIC_FORMATIVE_ONLY | merged/deployed #625, source #624 |
+| [G10-SGK-CHIX](ready/G10-SGK-CHIX.md) | SGK_CHAPTER | RELEASE_READY | PUBLIC_FORMATIVE_ONLY | authoring #626 merged; release #630 conditional R1–R5 |
 
-**CONTENT_READY trong nhánh ứng viên authoring: 2 (ChVII, ChVIII) · chỉ PUBLIC_FORMATIVE_ONLY.** Phát hành mới chỉ khi A1–A7 đã hoàn tất; nhánh phát hành phải đạt R1–R5 và có owner approval. ChVI là PUBLISHED_SCOPED lịch sử, không coi Tự kiểm tra/Mastery hoàn thiện.
+**Đã phát hành trên website theo phạm vi `PUBLIC_FORMATIVE_ONLY`: ChVI–VIII (ChVII–VIII merged #625, Deploy MkDocs #40888628016 SUCCESS, HTML trên `gh-pages` đã xác minh). ChVII–VIII vẫn có trạng thái manifest kỹ thuật `RELEASE_READY` trong ready/ theo validator hiện hành dù P1 đã xác nhận; không tự đổi nhãn sang `PUBLISHED_SCOPED` khi chưa chuyển manifest sang inventory/ kèm P1. ChIX hiện là một gói `RELEASE_READY` trên ứng viên #630, chỉ được merge/deploy khi cả hai CI trên HEAD cuối SUCCESS; quyền phát hành PUBLIC_FORMATIVE_ONLY đã được chủ dự án cấp.**
 
-**Cổng A1–A7 mới của ChVII/VIII:** [CHVII_VIII_PUBLIC_FORMATIVE_A1_A7_FINAL_EVIDENCE_20261029.md](CHVII_VIII_PUBLIC_FORMATIVE_A1_A7_FINAL_EVIDENCE_20261029.md). Nhánh phát hành phải lấy nguyên bản D6 R02 đã review và QA lại exact head; đây chưa phải MERGED CONTENT_READY trên main và không là quyền merge/deploy.
+**Cổng A1–A7 mới của ChVII/VIII:** [CHVII_VIII_PUBLIC_FORMATIVE_A1_A7_FINAL_EVIDENCE_20261029.md](CHVII_VIII_PUBLIC_FORMATIVE_A1_A7_FINAL_EVIDENCE_20261029.md). ChVII–VIII đã dùng đúng bản D6 R02 và có bằng chứng P1 deploy sau PR #625. Nội dung Tự kiểm tra cuối chương/Mastery vẫn chưa kích hoạt.
 
 **Đối chiếu bằng chứng lịch sử sau PR #620/#621 và kiểm soát D6:** [ACADEMIC_AND_D6_GATE_EVIDENCE_20261029.md](ACADEMIC_AND_D6_GATE_EVIDENCE_20261029.md). Tài liệu này chỉ là checkpoint/QA evidence, không nâng A5 hoặc thêm gói READY.
 
 **Nhánh Chuyên đề:** chưa có packet đạt cổng riêng; không suy luận từ SGK. Khi có batch TOPIC thực tế, dùng PACKET_TEMPLATE.md tạo một hàng, không thêm gói rỗng.
 
-**PR lịch sử:** #614/#615 là những nhánh cũ của #620/#621; #616 đang theo snapshot cũ và sẽ cần tái tích hợp trước release.
-
-**G10 ChI B01–B02:** R01 reviewer Academic PASS 18/18 and D1–D6 scoped; moved single manifest to [ready/G10-SGK-CHI.md](ready/G10-SGK-CHI.md). A1–A7 checked, R1–R5 pending for release lane; no Chapter/Topic Readiness or Mastery. Evidence [CHI_B01_B02_A1A7_SCOPED_EVIDENCE_20261029.md](CHI_B01_B02_A1A7_SCOPED_EVIDENCE_20261029.md). This authoring PR must be reconciled with current main before any merge; no production release action in this lane.
+**Nguồn ChIX mới:** [hồ sơ A1–A7 B26–B27](CHIX_B26_B27_PUBLIC_FORMATIVE_A1_A7_FINAL_EVIDENCE_20261029.md). Hai SVG D5 và bốn thẻ D6 nguồn R01 được tích hợp trong ứng viên kỹ thuật #630; chưa phát hành. **PR lịch sử:** #614/#615/#616 và #620/#621 không được merge như gói học liệu độc lập.
+**G10 ChI B01–B02:** A1–A7 đã có Academic PASS đúng snapshot 2026-10-29, hồ sơ tại [CHI_B01_B02_A1A7_SCOPED_EVIDENCE_20261029.md](CHI_B01_B02_A1A7_SCOPED_EVIDENCE_20261029.md). Chưa phải công bố chương hoàn chỉnh; R1–R5 do nhánh phát hành #635 kiểm tra. ChIX đã triển khai #630 P1 PASS, nhưng nhãn manifest `RELEASE_READY` trong ready/ chưa chuyển quy ước historical inventory.

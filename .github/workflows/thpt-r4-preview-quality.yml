@@ -31,6 +31,15 @@ on:
       - 'review-packets/thpt-g10-b16-r4/**'
       - 'scripts/serve-thpt-r4-lan-preview.ps1'
       - 'scripts/test-thpt-r4-preview-browser.js'
+      - 'scripts/test-thpt-g10-chvii-reviewed-stage1.cjs'
+      - 'scripts/test-thpt-g10-chviii-reviewed-stage2.cjs'
+      - 'scripts/test-thpt-g10-d6-release-integration.cjs'
+      - 'scripts/test-thpt-g10-chix-reviewed-stage3.cjs'
+      - 'scripts/test-thpt-g10-chix-release-integration.cjs'
+      - 'scripts/test-thpt-g10-chix-browser-smoke.cjs'
+      - 'docs/assets/javascripts/thpt-chix-reviewed-formative-v1.js'
+      - 'docs/assets/javascripts/thpt-chvii-reviewed-formative-v1.js'
+      - 'docs/assets/javascripts/thpt-chviii-reviewed-formative-v1.js'
       - 'scripts/test-thpt-chvi-math-block-render.cjs'
       - 'scripts/test-thpt-chvi-student-notes.cjs'
       - 'scripts/test-thpt-release-queue.cjs'
@@ -58,6 +67,9 @@ jobs:
           node --check docs/assets/javascripts/floating-ai-tutor-v1.js
           node --check docs/assets/javascripts/firebase-gemini-v1.js
           node --check docs/assets/javascripts/thpt-chvi-reviewed-formative-v1.js
+          node --check docs/assets/javascripts/thpt-chvii-reviewed-formative-v1.js
+          node --check docs/assets/javascripts/thpt-chviii-reviewed-formative-v1.js
+          node --check docs/assets/javascripts/thpt-chix-reviewed-formative-v1.js
       - name: Verify future Self-Learning Math rename compatibility (no rename/deploy)
         run: |
           node scripts/test-root-program-selector-v1.cjs
@@ -68,6 +80,15 @@ jobs:
         run: node scripts/test-thpt-release-queue.cjs
       - name: Check THPT no-account static release contract
         run: node scripts/test-thpt-static-release.cjs
+      - name: Guard ChVII–VIII scoped public formative bank and reviewed R02 recovery
+        run: |
+          node scripts/test-thpt-g10-chvii-reviewed-stage1.cjs
+          node scripts/test-thpt-g10-chviii-reviewed-stage2.cjs
+          node scripts/test-thpt-g10-d6-release-integration.cjs
+      - name: Guard G10 ChIX source-locked public formative and reviewed D5/D6
+        run: |
+          node scripts/test-thpt-g10-chix-reviewed-stage3.cjs
+          node scripts/test-thpt-g10-chix-release-integration.cjs
       - name: Guard Chapter VI academic-snapshot scope and shared canonical items
         run: |
           node scripts/test-thpt-chvi-review-receipt.cjs
@@ -96,6 +117,9 @@ jobs:
           test -f site-thpt-preview/thpt-preview/index.html
           test -f site-thpt-preview/thpt-preview/home/index.html
           test -f site-thpt-preview/thpt-preview/sgk/chuong-vi/bai-16/index.html
+          test -f site-thpt-preview/thpt-preview/sgk/chuong-ix/bai-26/index.html
+          test -f site-thpt-preview/thpt-preview/sgk/chuong-ix/bai-27/index.html
+          test -f site-thpt-preview/assets/images/thpt/THPT_G10_B27_WITHOUT_REPLACEMENT_TREE.svg
           test -f site-thpt-preview/thpt-preview/chuyen-de/ham-so/kien-thuc/index.html
           test -f site-thpt-preview/thpt-preview/thu-vien/index.html
           test -f site-thpt-preview/assets/javascripts/thpt-r4-preview.js
@@ -125,6 +149,8 @@ jobs:
           python -m http.server 8765 --directory site > /tmp/thpt-r4-combined-http.log 2>&1 &
           sleep 2
           node scripts/test-thpt-r4-preview-browser.js
+      - name: ChIX reviewed D5/D6 browser smoke · mobile / iPad / desktop
+        run: node scripts/test-thpt-g10-chix-browser-smoke.cjs
       - name: Emulate old and new GitHub Pages paths, without renaming the repo
         run: |
           mkdir -p rename-path-smoke
