@@ -32,7 +32,7 @@ d(M,d)=\frac{|ax_M+by_M+c|}{\sqrt{a^2+b^2}}.
 
 Dấu giá trị tuyệt đối giúp khoảng cách không âm và góc nhỏ không phụ thuộc chiều chọn vectơ pháp tuyến.
 
-## 3. Ví dụ từng bước
+## 3. Ví dụ
 
 Xét \(d_1:x-y-1=0\) và \(d_2:x+y-5=0\).
 
