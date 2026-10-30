@@ -1,17 +1,33 @@
-# RELEASE_READY — G10 ChVII–VIII (bounded formative only)
+# Học liệu THPT — đã phát hành và sẵn sàng bàn giao
 
-PR #624 đã hợp nhất nguồn A1–A7 vào main; hai manifest đã chuyển RELEASE_READY theo đúng PUBLIC_FORMATIVE_ONLY trên nhánh PR #625. Owner cho phép merge/deploy có điều kiện hai workflow CI cuối cùng PASS. Không phải FULL_LEARNING_PATH.
+## PUBLISHED_SCOPED · PUBLIC_FORMATIVE_ONLY
 
-- [Chương VII](G10-SGK-CHVII.md): B19–B22; 32 formative, 4 Written, 3 SVG D5, 8 D6 cards.
-- [Chương VIII](G10-SGK-CHVIII.md): B23–B25; 25 formative, 3 Written, 1 SVG D5, 6 D6 cards.
+- [Chương VII](G10-SGK-CHVII.md): B19–B22; 32 formative + 4 Written, 3 reviewed SVG D5, 8 reviewed D6 cards.
+- [Chương VIII](G10-SGK-CHVIII.md): B23–B25; 25 formative + 3 Written, 1 reviewed SVG D5, 6 reviewed D6 cards.
+- Nguồn academic A1–A7: [hồ sơ ChVII–VIII](../CHVII_VIII_PUBLIC_FORMATIVE_A1_A7_FINAL_EVIDENCE_20261029.md); merged #624, technical release merged #625; Deploy MkDocs #40888628016 SUCCESS, checked deployed `gh-pages` HTML and canonical bank blobs.
+- P2 owner mobile Safari navigation issue addressed by merged/deployed PR #629; physical Safari retest remains separate.
 
-Đối chiếu học thuật A1–A7: [evidence](../CHVII_VIII_PUBLIC_FORMATIVE_A1_A7_FINAL_EVIDENCE_20261029.md).
+## RELEASE_READY · đã triển khai theo phạm vi (P1 PASS)
 
-Các manifest là con trỏ tới snapshot đã review; không nhân bản item, không bật Readiness/Mastery. Nhánh phát hành phải tích hợp nội dung D6 R02 chính xác vào giao diện, đạt các gate R1–R5 và được chủ dự án cho phép cụ thể trước khi merge/deploy. Không được suy PUBLISHED_SCOPED hoặc deploy thành công cho đến khi CI cuối, merge PR #625 và kiểm tra Pages thực tế hoàn tất. P2 thiết bị thật vẫn phải ghi riêng.
+- [Chương IX](G10-SGK-CHIX.md): B26–B27, `PUBLIC_FORMATIVE_ONLY`, **14 canonical formative + 2 Written (1 Anchor tag)**, 5 worked examples, 2 reviewed D5 SVG and 4 reviewed D6 HELP_ID.
+- Academic receipts: D1–D4 16/16 + D5/D6 R01 reviewed and locked to Temp mirror Git blob `6ac3c0762d9cf8b41ab614e2163979d9770a436f`; [hồ sơ A1–A7](../CHIX_B26_B27_PUBLIC_FORMATIVE_A1_A7_FINAL_EVIDENCE_20261029.md); source page-citation equivalent addendum included in authoring #626.
+- **Không phải FULL_LEARNING_PATH**: sáu SGK Chapter Readiness ứng viên được giữ riêng, không công bố/chấm điểm. TOPIC_READINESS và Mastery chưa được kích hoạt.
+- Technical release #630 đã merge, Deploy MkDocs #40915896874 SUCCESS và P1 có biên bản kiểm tra trực tiếp trên nhánh `gh-pages`. Owner nghiệm thu menu Chọn chương trình/Trang chủ THPT P2 PASS riêng; không suy rộng P2 cho nội dung ChIX.
 
+Một packet canonical duy nhất trên mỗi phạm vi; không nhân đôi câu hỏi, không mở Readiness/Mastery chỉ vì gói `CONTENT_READY`. Trạng thái thực tế từng chương tra trong [REGISTER](../REGISTER.md).
 
-## Học liệu mới ChIII B05–B06 đã PASS (chỉ authoring)
+## G10 Chương I B01–B02 · RELEASE_READY (chờ CI cuối và deploy)
 
-- [G10-SGK-CHIII](G10-SGK-CHIII.md): B05–B06, D1–D6 (6 ví dụ, 16 formative + 2 Written, 2 SVG, 4 HELP_ID), 10 outcomes. Độc lập NotebookLM PASS 18/18 theo nguồn gốc R01 Git blob `6320aeaa89bd51c514b07461e01fad5e3aca833f` và report blob `3fb823c4353d368ae5a9c14f03c7309933d47e6f`.
-- [Biên bản A1–A7](../CHIII_B05_B06_PUBLIC_FORMATIVE_A1A7_EVIDENCE_20261029.md): PASS đúng Bài 5–6 PUBLIC_FORMATIVE_ONLY. Đây là candidate trên Draft PR #633, chưa merge main; R1–R5 giữ nguyên chưa kiểm tra, P2 đăng ký 18 ID production và QA SVG thiết bị thật thuộc nhánh phát hành.
-- Không nhận là hoàn thành Chương III SGK Readiness, TOPIC path, Mastery hoặc quyền merge/deploy.
+- [Gói học thuật A1–A7](G10-SGK-CHI.md), phạm vi `PUBLIC_FORMATIVE_ONLY`: 16 câu Core/Practice, 2 Written (một Anchor), 7 ví dụ, 2 SVG, 4 thẻ D6.
+- [Hồ sơ chi tiết](../CHI_B01_B02_A1A7_SCOPED_EVIDENCE_20261029.md), source reviewed exact blob `95a554e31a613b8e215679fe6790738473d598df`, NotebookLM receipt `fece80dcb4b0e17d369e2ecbe12e8d13b672281a`.
+- Kỹ thuật tích hợp trong Draft release #635, có 16/16 original source-locked canonical IDs và browser regression. Owner đã cấp quyền phát hành có điều kiện cho mọi packet đủ gate. Chỉ merge/deploy nếu hai workflow CI trên HEAD cuối cùng đều SUCCESS; không tự bật Chapter/Topic Readiness hoặc Mastery.
+
+## G10 Chương II B03–B04 · CONTENT_READY / authoring handoff
+
+- [Manifest](G10-SGK-CHII.md): 16 formative original A–D, 2 Written (một Anchor), 6 ví dụ, 2 SVG, 4 HELP_ID, 10/10 outcome; NotebookLM R01 PASS 18/18 chính snapshot blob `acea9776d1c7534a4cd0cd28e98db26dedf0c122`.
+- Hồ sơ [A1–A7](../CHII_B03_B04_PUBLIC_FORMATIVE_A1A7_EVIDENCE_20261029.md) PASS theo đúng `PUBLIC_FORMATIVE_ONLY`; **R1–R5 và quyền merge/deploy vẫn là cổng riêng**, xử lý trong Draft #636. Tự kiểm tra chương, Topic và Mastery chưa kích hoạt.
+
+## G10 Chương III B05–B06 · CONTENT_READY / academic handoff
+
+- [Manifest](G10-SGK-CHIII.md), snapshot blob `6320aeaa89bd51c514b07461e01fad5e3aca833f`, NotebookLM receipt blob `3fb823c4353d368ae5a9c14f03c7309933d47e6f`.
+- Academic A1–A7 PASS, 16 public formative + 2 Written/Anchor, 6 examples, 2 source SVG, 4 HELP_ID; **NOT PUBLISHED**. Release lane must handle R1–R5, exact-head QA, separately gated Readiness/Topic/Mastery.
