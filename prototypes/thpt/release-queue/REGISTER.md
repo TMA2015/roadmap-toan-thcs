@@ -4,7 +4,7 @@
 
 | Gói | Hành trình | Trạng thái | Phạm vi | PR / nguồn |
 |---|---|---|---|---|
-| [G10-SGK-CHV](ready/G10-SGK-CHV.md) | SGK_CHAPTER | CONTENT_READY | PUBLIC_FORMATIVE_ONLY B12–B14 | #639 R01 27/27 unaffected; P1 HELP-G10-B12-02 R01 superseded by owner NotebookLM scoped R02 PASS overlay, must apply before R1 |
+| [G10-SGK-CHV](inventory/G10-SGK-CHV.md) | SGK_CHAPTER | ACADEMIC_PARTIAL | PUBLIC_FORMATIVE_ONLY B12–B14 | #639: HELP02 R02 PASS; HELP01 DELTA_C review candidate pending, A3/A5/A6 HOLD; no release R1 |
 | [G10-SGK-CHIV-B09-B11](ready/G10-SGK-CHIV-B09-B11.md) | SGK_CHAPTER | CONTENT_READY | PUBLIC_FORMATIVE_ONLY B09–B11 | #637 NotebookLM R01 D1–D6 PASS, 27/27 items |
 | [G10-SGK-CHIV](ready/G10-SGK-CHIV.md) | SGK_CHAPTER | RELEASE_READY | PUBLIC_FORMATIVE_ONLY | source #634 merged; release #645 R1–R5 evidence completed, exact-final-head CI recheck before merge/deploy |
 | [G10-SGK-CHIII](ready/G10-SGK-CHIII.md) | SGK_CHAPTER | RELEASE_READY | PUBLIC_FORMATIVE_ONLY | academic source #633 merged; release #644 only after both exact-final-head CI SUCCESS |
@@ -37,3 +37,5 @@
 **30/10/2026 ChIII R1–R5:** Source #633 merged main `1643c60e3638cbc180c6580b54111a64e07cf663`; exact source blob `6320aeaa89bd51c514b07461e01fad5e3aca833f`. Release #644 integrates 16 canonical formative (7 A–D MCQ, 9 short-response), 2 Written incl Anchor, 2 original SVG, 4 D6 HELP_ID. Owner permission covers PUBLIC_FORMATIVE_ONLY **after** both exact final-head CI PASS; P1/P2 postdeploy separate, no Readiness/Mastery.
 
 **30/10/2026 — ChIV B07/B08 academic handoff:** 18/18 NotebookLM R01 PASS, D1–D6 10/10 outcomes, snapshot Git blob `42b206e31421b33860a1bf697d2d04b7aba992cf`. Authoring #634 source-only, no website/Readiness/Mastery. R1–R5 requires separate release PR and exact-head CI.
+
+**30/10 authoring ChV HELP01 new academic HOLD:** The existing frozen R01 HELP01 uses reversed interval guidance for approximate `a` vs true `\bar a`. B12 HELP02@R02 remains independent reviewer PASS; the new B12 HELP01@R02 is candidate **NOT REVIEWED**. `G10-SGK-CHV` moved to `inventory/` `ACADEMIC_PARTIAL` on Draft #639; return to ready/ only after scoped NotebookLM PASS + exact source QA. No owner merge/deploy permission.
