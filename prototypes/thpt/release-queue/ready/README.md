@@ -43,8 +43,7 @@ Một packet canonical duy nhất trên mỗi phạm vi; không nhân đôi câu
 - [Hồ sơ A1–A7](../CHIV_B09_B11_PUBLIC_FORMATIVE_A1A7_EVIDENCE_20261030.md). Trạng thái chỉ áp dụng `PUBLIC_FORMATIVE_ONLY`, bản Draft PR #637 chưa merge. P2: đăng ký ID production và thử 3 SVG responsive trên thiết bị, do nhánh phát hành xử lý.
 - Gói B07–B08 của Draft PR #634 được duyệt riêng; cả hai phải được tích hợp vào **một** hành trình ChIV SGK và một ngân hàng canonical, không được coi là đạt Tự kiểm tra cuối chương/Topic/Mastery. R1–R5 vẫn chưa thực hiện.
 
-## Chương V B12–B14 — CONTENT_READY chỉ cho học liệu (Draft #639)
+## Chương V B12–B14 — chuyển về kiểm toán học thuật (Draft #639)
 
-- [G10-SGK-CHV](G10-SGK-CHV.md): D1–D6 có 9 ví dụ, 24 Formative + 3 Written (một Anchor), 14 outcome, 3 SVG, 6 D6 HELP_ID. NotebookLM R01 27/27 Academic PASS đúng bản source Git blob `49502fe39cf0a67f6a3e973a77f94164150637a7`, reviewer receipt Git blob `7a20d601c5e3e6ef184bcb44e4e7e214e8a06baf`.
-- [A1–A7 evidence](../CHV_B12_B14_PUBLIC_FORMATIVE_A1A7_EVIDENCE_20261030.md): PASS đúng B12–B14 PUBLIC_FORMATIVE_ONLY. Reviewer P2 còn chờ: đăng ký 27 IDs vào ngân hàng canonical và kiểm tra ba SVG responsive trên thiết bị thật; R1–R5 chưa làm.
-- Draft PR #639 chưa merge/deploy; không tuyên bố Tự kiểm tra cuối ChV, Topic Readiness hoặc Mastery đã hoàn thiện.
+- [Manifest hiện hành: ACADEMIC_PARTIAL / HELP01 delta review HOLD](../inventory/G10-SGK-CHV.md). Nội dung được review R01 chỉ có hiệu lực theo snapshot cũ; HELP02 đã nhận NotebookLM R02 PASS, nhưng HELP01 còn điểm bất nhất ký hiệu và hướng dẫn khoảng số đúng, đang chờ review riêng.
+- Bản Temp HELP01 R02 đã chuẩn bị, **chưa PASS**, không phát hành R01 HELP01/HELP02 từ snapshot cũ. D1–D5 và các item không bị ảnh hưởng tiếp tục giữ trạng thái review nguồn cũ. Không merge/deploy.
