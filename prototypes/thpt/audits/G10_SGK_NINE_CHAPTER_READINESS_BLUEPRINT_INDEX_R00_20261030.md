@@ -47,3 +47,12 @@
 **This index documents real curriculum gaps without lowering the standards.** It does not grant chapter-complete, Academic PASS for Readiness or deployment.
 
 **LATEST G10 RD0 SOURCE-SCOPED CHECKPOINT (30/10, after REVISE):** NotebookLM Delta packet `THPT-G10-CHVII-CHVIII-SGK-RD0-R01-DELTA-RECHECK-20261030` returned `ACADEMIC_RD0_R01_OVERALL=PASS`, `ACADEMIC_CLEARANCE_FOR_RD0_SCOPE=YES`, `MINIMAL_DELTA=0`, `P0=P1=P2=0`. 35 canonical IDs reconciled 1:1, 29 CORE / 3 SUPPORT / 2 OPTIONAL / 1 MERGE. Evidence: [owner verdict](G10_CHVII_CHVIII_RD0_R01_DELTA_PASS_OWNER_NOTEBOOKLM_VERDICT_20261030.md) and [scope PASS gate](G10_CHVII_CHVIII_RD0_R01_SCOPE_PASS_EVIDENCE_20261030.md). Reviewer `PAGE_SCOPE_RESOLVED=YES` is preserved as *reviewer-reported*, but prior visual PDF citation ranges conflict and require independent source-page verification before changing citations. `ASSESSMENT_ITEM_BANK=NOT_REVIEWED`, `ACTIVE=NO`, `NO_SCORE/NO_MASTERY`, `CHAPTER_COMPLETE=NO`. This latest section supersedes only the earlier **pending/REVISE** status, not the archived receipt.
+
+
+## 30/10/2026 · Independent direct-PDF S1 pagination resolution (later audit addendum)
+
+The original **SGK and SBT KNTT Toán 10 tập 2** were fetched as complete bytes from the exact connected Drive source files and visually inspected page-by-page at lesson boundaries, including printed footer page numbers. See [direct-PDF source receipt](G10_CHVII_CHVIII_S1_DIRECT_PDF_PAGINATION_RECONCILIATION_20261030.md), including original SHA256 and a full SGK/SBT printed-page table.
+
+- `S1_PAGINATION_CONFLICT_HOLD=RESOLVED_FOR_EXACT_DRIVE_PDFS` for citation accuracy; the NotebookLM reviewer's historical `PAGE_SCOPE_RESOLVED=YES` is **not** accepted as evidence of the same page ranges. The direct PDF pages contradict both that reviewer table and several earlier repository citations.
+- Seven learner-facing B19–B25 citation corrections are staged separately in [Draft PR #646](https://github.com/TMA2015/self-learning-math/pull/646), `DELTA_B_SOURCE_METADATA` only, with stage1/stage2 CI assertions. **Not merged/deployed.** No frozen reviewer source, question math, answers, SVG or D6 help changed.
+- The **35/35 RD0 R01 NotebookLM scope-only PASS** remains recorded exactly as received, `ASSESSMENT_ITEM_BANK=NOT_REVIEWED`, `READINESS_ACTIVE=NO`, `NO_SCORE/NO_MASTERY`. Source pagination reconciliation is not a new assessment-item Academic PASS or owner release authorization.
