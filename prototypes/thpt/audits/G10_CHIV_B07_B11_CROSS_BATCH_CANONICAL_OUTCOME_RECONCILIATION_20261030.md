@@ -1,6 +1,6 @@
 # G10 SGK ChIV B07–B11 · cross-batch ID and evidence reconciliation · 2026-10-30
 
-**LANE:** ACADEMIC_AUTHORING_AUDIT_ONLY; **DOCUMENT CHANGE:** `DELTA_A_UI` (audit metadata, no mathematical/source changes) with `CANONICAL_SKILL_ID_MAPPING_HOLD` for one name mismatch; **RELEASE:** NO. This file is a reference-only crosswalk, not a second question bank, not an automatic alias table inserted into the student runtime.
+**LANE:** ACADEMIC_AUTHORING_AUDIT_ONLY; **DOCUMENT CHANGE:** `DELTA_A_UI` (audit metadata, no mathematical/source changes) with `SOURCE_EQUIVALENT_ALIAS_VERIFIED` for one naming mismatch (`RUNTIME_MAPPING=HOLD`); **RELEASE:** NO. This file is a reference-only crosswalk, not a second question bank, not an automatic alias table inserted into the student runtime.
 
 ## Source and independent reviewer boundaries
 
@@ -20,7 +20,7 @@
 | 5 | `G10-B07-ZERO` | `G10-B07-ZERO` | B07–B08 | `EXACT_ID` |
 | 6 | `G10-B08-TRIANGLE` | `G10-B08-TRIANGLE` | B07–B08 | `EXACT_ID` |
 | 7 | `G10-B08-PARALLELOGRAM` | `G10-B08-PARALLELOGRAM` | B07–B08 | `EXACT_ID` |
-| 8 | `G10-B08-OPPOSITE` | `G10-B08-OPPOSITE-SUBTRACTION` | B07–B08 | `ALIAS_CANDIDATE_HOLD` |
+| 8 | `G10-B08-OPPOSITE` | `G10-B08-OPPOSITE-SUBTRACTION` | B07–B08 | `SOURCE_EQUIVALENT_ALIAS` |
 | 9 | `G10-B08-MIDPOINT` | `G10-B08-MIDPOINT` | B07–B08 | `EXACT_ID` |
 | 10 | `G10-B08-CENTROID` | `G10-B08-CENTROID` | B07–B08 | `EXACT_ID` |
 | 11 | `G10-B09-SCALAR_DEFINITION` | `G10-B09-SCALAR_DEFINITION` | B09–B11 | `EXACT_ID` |
@@ -38,14 +38,14 @@
 | 23 | `G10-B11-PERPENDICULAR` | `G10-B11-PERPENDICULAR` | B09–B11 | `EXACT_ID` |
 | 24 | `G10-B11-APPLICATION` | `G10-B11-APPLICATION` | B09–B11 | `EXACT_ID` |
 
-**Exact string matches 23/24; crosswalk candidates 1/24; math-content discrepancies observed by ID-scope comparison: 0.** The mismatch is *not* silently treated as a verified canonical alias until release's ID/skill mapping review.
+**Exact string matches 23/24; independently source-corroborated naming aliases 1/24; missing mathematical coverage from this ID comparison 0.** Alias equivalence is recorded here as a **reference-only S1/source crosswalk**, not as a modification of reviewed snapshots or an activated runtime alias.
 
 ## One identified naming conflict: hold on identity, not on mathematics
 
 - **RD0 ChIV (reviewed academic outcome scope):** `G10-B08-OPPOSITE`, defined as **vectơ đối** plus **quy tắc trừ** in SGK B08 pp52–53/SBT pp48–49, with both `-AB=BA` and `AB-AC=CB` capabilities.
 - **Independent public formative R01 (Academic PASS):** `G10-B08-OPPOSITE-SUBTRACTION`, also covers vectơ đối and quy tắc trừ at the same cited S1 pages, with two reviewed public practice candidates `THPT-G10-B08-P01` and `THPT-G10-B08-P02`.
-- **Assessment by source-text overlap:** these are *likely a naming difference for the same educational skill*, rather than newly missing content. This conclusion is an **authoring crosswalk hypothesis**, not a new NotebookLM PASS, and does **not** authorize renaming protected or published IDs.
-- **Resolution policy before runtime mapping:** select ONE canonical `skill_id` and record any legacy/alias edge with stable referential integrity, version and exposure checks. **DO NOT edit the frozen NotebookLM-reviewed R01 source or RD0 snapshot; DO NOT change student history/storage keys or production canonical item IDs.** If the proposed identity mapping impacts outcome coverage or item semantics, classify `DELTA_C_ACADEMIC_MATERIAL` and review that affected crosswalk; if source-equivalent naming only, document `DELTA_B_SOURCE_EQUIVALENT` and run technical ID reference QA. `ID_MAPPING_RELEASE_GATE=HOLD` until explicitly verified.
+- **Source-equivalent alias decision (authoring metadata only):** the public source's `G10-B08-OPPOSITE-SUBTRACTION` is the **canonical skill_id to retain for any public formative B08 item placement**. `G10-B08-OPPOSITE` remains the immutable **reviewed RD0 outcome label** and a **read-only reference alias** for coverage comparison; **do not create it as another active skill**, nor rename existing public items. Evidence: both reviewer source descriptions explicitly cover opposite vectors **and vector subtraction** in SGK B08 pp52–53 / SBT pp48–49; original R01 item IDs `THPT-G10-B08-P01/P02` both use the longer ID; draft runtime JS on PR #645 at blob `028fb4c053ed08863ca4ba3110d104b46708da0c` assigns both P01/P02 the same longer `skill` identifier. This crosswalk is a `DELTA_B_SOURCE_EQUIVALENT` documentation reconciliation under Project policy 07, **not a new NotebookLM academic verdict**.
+- **Technical integration constraint:** choose one source-canonical `skill_id` **`G10-B08-OPPOSITE-SUBTRACTION`** when a future release uses the reviewed formative bank. For the separate RD0 coverage report, map `G10-B08-OPPOSITE` → `G10-B08-OPPOSITE-SUBTRACTION` **only at authoring/audit lookup time**; do **not** change a learner's stored skill key or write a runtime migrator. If actual scoring/coverage semantics or source conditions later change, classify `DELTA_C_ACADEMIC_MATERIAL` and review the affected part. `RUNTIME_ALIAS_DEPLOY=HOLD` until exact-current-main bank collision check, exposure/learner-progress compatibility and owner-approved release gates.
 - No other exact name mismatch found in 24 outcomes. Distinct B08/B09 midpoint/centroid outcomes may share evidence `MERGE_COVERAGE` under reviewer verdict, but retain distinct existing IDs; do not duplicate item questions.
 
 ## Remaining educational/release closure
@@ -53,4 +53,12 @@
 - Both constituent authoring packets have Academic D1–D6 PASS **only within PUBLIC_FORMATIVE_ONLY lesson scopes**. Full ChIV student SGK path still needs integration and R1–R5 QA on the actual latest code; no official end-of-chapter Ready/Score/Mastery and no Topic Readiness.
 - Canonical bank registration, inter-bank collision check on *actual current main*, figure/layout browser/physical mobile UAT, THCS regression, and owner release approval remain pending. This 45-ID authoring comparison does not claim those production checks.
 
-**Static QA at creation:** `PUBLIC_SOURCE_ITEM_IDS=45`, `UNIQUE=45`, `RD0_OUTCOMES=24`, `EXACT_MATCH=23`, `ALIAS_CANDIDATE=1`, `DIRECT_ITEM_COLLISIONS=0`, `READINESS_ACTIVE=NO`, `NO_SCORE/NO_MASTERY`, `NO_MERGE_DEPLOY`.
+**Static QA at creation:** `PUBLIC_SOURCE_ITEM_IDS=45`, `UNIQUE=45`, `RD0_OUTCOMES=24`, `EXACT_MATCH=23`, `SOURCE_EQUIVALENT_ALIAS=1`, `DIRECT_ITEM_COLLISIONS=0`, `READINESS_ACTIVE=NO`, `NO_SCORE/NO_MASTERY`, `NO_MERGE_DEPLOY`.
+
+## DELTA_B_SOURCE_EQUIVALENT · Three-way check after PR #645 source inspection
+
+- **BASE_ACADEMIC_SNAPSHOTS (unchanged):** B07–B08 public R01 `42b206e31421b33860a1bf697d2d04b7aba992cf`, ChIV RD0 R01 `7a300fb047b670053b4061dc0339dcf0c708863d`, B09–B11 public R01 `a9f6fab820559a8da98a5a42cd9902dbf9891f34`.
+- **Cited reviewer source:** B07–B08 reviewer receipt `cf4df6ecb603adb258ab5de03f9defa2c695369f` confirms `THPT-G10-B08-P01` and `P02` have source skill `G10-B08-OPPOSITE-SUBTRACTION`; ChIV independent RD0 scope reviewer reports `G10-B08-OPPOSITE` Core, including both opposite vectors and the vector-difference rule. Both S1 SGK B08 printed pp52–53, SBT pp48–49; no expanded/reduced Core meaning.
+- **Technical corroboration:** PR #645 original reviewed-formative JS `docs/assets/javascripts/thpt-chiv-b07-b08-reviewed-formative-v1.js`, blob `028fb4c053ed08863ca4ba3110d104b46708da0c`: **two occurrences**, P01 and P02 each with `skill: G10-B08-OPPOSITE-SUBTRACTION`, **zero** runtime usage of `G10-B08-OPPOSITE` in this checked bank file. The code is **Draft PR**, not evidence of deployment or all-repository-wide absence.
+- **Canonical mapping for this audited scope:** `RD0_LABEL:G10-B08-OPPOSITE -> SOURCE_SKILL_ID:G10-B08-OPPOSITE-SUBTRACTION`, `ALIAS_PURPOSE=RD0_COVERAGE_REFERENCE_ONLY`, `MATCH_CONFIDENCE=SOURCE_EQUIVALENT`, `PUBLIC_ITEM_ID_CHANGES=0`, `REVIEWED_OUTCOME_ID_CHANGES=0`, `CONTENT_VERSION/ANSWER/RUBRIC_CHANGES=0`, `NOTEBOOKLM_REREVIEW=NOT_REQUIRED_WITH_REASON:SOURCE_EQUIVALENT_METADATA_ONLY`.
+- **No automatic score binding:** do not feed this alias into scoring, readiness selection, Topic Readiness, browser persistence, mastery or Firebase until those systems are independently designed/tested and approved; `RUNTIME_ID_MAPPING=HOLD` and all release R1–R5 remain separate.
