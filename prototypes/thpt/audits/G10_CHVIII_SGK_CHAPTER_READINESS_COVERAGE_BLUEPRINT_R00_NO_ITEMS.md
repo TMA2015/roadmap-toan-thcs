@@ -1,6 +1,6 @@
 # Toán 10 KNTT — Chương VIII (Đại số tổ hợp) · Ma trận phạm vi Tự kiểm tra R00
 
-**PHÂN LOẠI:** `SGK_CHAPTER_READINESS:G10:CHVIII` · `OUTCOME_COVERAGE_BLUEPRINT_ONLY` · `NOT_REVIEWED_FOR_ASSESSMENT` · `NO_SCORE/NO_MASTERY`.
+**PHÂN LOẠI:** `SGK_CHAPTER_READINESS:G10:CHVIII` · `OUTCOME_COVERAGE_BLUEPRINT_ONLY` · `NOT_REVIEWED_FOR_ASSESSMENT` · `NOT_ACTIVE` · `NO_SCORE/NO_MASTERY`.
 **BÀI SGK:** B23–B25.
 **S1 kiểm kê:** SGK Toán 10 KNTT tập 2 B23 tr.59–64, B24 tr.65–71, B25 tr.72–77, cuối ChVIII tr.78–79; SBT tập 2 B23 tr.50–52, B24 tr.53–54, B25 tr.55–56, cuối ChVIII tr.57–59.
 **Nguồn outcome / bằng chứng public:** prototypes/thpt/THPT_G10_CHVII_CHVIII_OUTCOME_PLACEMENT_MATRIX_v0.2.md (matrix đề xuất, Git blob 92808da0176c2ba6e282a1872521a38299802919) + scoped public review receipts trong release-queue của main
