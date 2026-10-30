@@ -7,5 +7,5 @@
 <a class="thpt-r4-tile" href="bai-1/"><span>1</span><strong>Bài 1 · Giá trị lượng giác của góc lượng giác</strong><small>Góc lượng giác, radian, cung tròn, đường tròn lượng giác</small><em>Học kiến thức →</em></a>
 <a class="thpt-r4-tile" href="bai-2/"><span>2</span><strong>Bài 2 · Công thức lượng giác</strong><small>Cộng/trừ, nhân đôi, tích thành tổng và tổng thành tích</small><em>Học kiến thức →</em></a>
 </div>
-<nav class="thpt-r4-lesson-tabs"><a href="luyen-tap/">Core và Luyện tập Bài 1–2</a><a href="../../thu-vien/tu-luan-g11-chuong-i-b01-b02/">Tự luận</a><a href="tu-kiem-tra-chuong/">Tự kiểm tra · chưa kích hoạt</a></nav>
+<nav class="thpt-r4-lesson-tabs"><a href="luyen-tap/">Core và Luyện tập Bài 1–2</a><a href="../../../thu-vien/tu-luan-g11-chuong-i-b01-b02/">Tự luận</a><a href="tu-kiem-tra-chuong/">Tự kiểm tra · chưa kích hoạt</a></nav>
 </div>
