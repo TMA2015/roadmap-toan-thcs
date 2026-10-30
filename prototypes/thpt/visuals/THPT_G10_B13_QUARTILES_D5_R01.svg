@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 460" role="img" aria-labelledby="b13title b13desc">
+<title id="b13title">Bài 13: trung vị và tứ phân vị của năm giá trị</title>
+<desc id="b13desc">Dữ liệu đã sắp: 2, 3, 3, 7, 10. Trung vị Q2 bằng 3, Q1 bằng 2,5 và Q3 bằng 8,5 theo quy tắc loại Q2 khỏi hai nửa khi cỡ mẫu lẻ.</desc>
+<rect width="960" height="460" rx="18" fill="#fafcff"/>
+<text x="35" y="48" font-size="24" font-family="DejaVu Sans,Arial" font-weight="bold" fill="#183451">Tứ phân vị — mẫu n = 5 (lẻ)</text>
+<text x="35" y="83" font-size="19" font-family="DejaVu Sans,Arial" fill="#45556d">2, 3, 3, 7, 10   ·   Q1 = 2,5  ·  Q2 = 3  ·  Q3 = 8,5</text>
+<line x1="105" y1="260" x2="870" y2="260" stroke="#35465e" stroke-width="3"/>
+<g font-size="15" font-family="DejaVu Sans,Arial" fill="#425269" text-anchor="middle">
+<text x="150" y="290">2</text><text x="226" y="290">3</text><text x="530" y="290">7</text><text x="758" y="290">10</text></g>
+<g stroke="#bac4d1" stroke-width="1.5"><line x1="150" y1="248" x2="150" y2="273"/><line x1="226" y1="248" x2="226" y2="273"/><line x1="530" y1="248" x2="530" y2="273"/><line x1="758" y1="248" x2="758" y2="273"/></g>
+<g fill="#3773c8"><circle cx="150" cy="235" r="10"/><circle cx="226" cy="235" r="10"/><circle cx="226" cy="210" r="10"/><circle cx="530" cy="235" r="10"/><circle cx="758" cy="235" r="10"/></g>
+<rect x="188" y="164" width="456" height="46" fill="#abdbcc" opacity=".4" rx="8"/>
+<g stroke-width="3" stroke-dasharray="6 5"><line x1="188" y1="135" x2="188" y2="257" stroke="#0d8a77"/><line x1="226" y1="111" x2="226" y2="257" stroke="#bf5f2f"/><line x1="644" y1="135" x2="644" y2="257" stroke="#0d8a77"/></g>
+<g font-family="DejaVu Sans,Arial" font-size="20" text-anchor="middle" font-weight="bold"><text x="185" y="124" fill="#0d8a77">Q1</text><text x="231" y="98" fill="#bf5f2f">Q2</text><text x="645" y="124" fill="#0d8a77">Q3</text></g>
+<text x="45" y="352" font-size="18" font-family="DejaVu Sans,Arial" fill="#263d58">Nửa dưới: (2, 3) → Q1 = (2 + 3)/2 = 2,5</text>
+<text x="45" y="391" font-size="18" font-family="DejaVu Sans,Arial" fill="#263d58">Nửa trên: (7, 10) → Q3 = (7 + 10)/2 = 8,5</text>
+<text x="45" y="432" font-size="16" font-family="DejaVu Sans,Arial" fill="#607087">Điểm 3 ở giữa làm Q2, không tham gia hai nửa khi n lẻ.</text>
+</svg>

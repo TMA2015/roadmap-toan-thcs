@@ -36,3 +36,9 @@ Một packet canonical duy nhất trên mỗi phạm vi; không nhân đôi câu
 
 - [Gói B07–B08](G10-SGK-CHIV.md): 16 Core/Practice, 2 Written (1 Anchor), 6 D2 examples, 2 SVG D5 source-locked, 4 D6 HELP_ID, 10/10 outcomes. Independent NotebookLM R01 PASS exact blob `42b206e31421b33860a1bf697d2d04b7aba992cf`.
 - Authoring #634 only. R1–R5 website release gates remain pending; no Readiness/Topic/Mastery.
+
+## Chương V B12–B14 — CONTENT_READY chỉ cho học liệu (Draft #639)
+
+- [G10-SGK-CHV](G10-SGK-CHV.md): D1–D6 có 9 ví dụ, 24 Formative + 3 Written (một Anchor), 14 outcome, 3 SVG, 6 D6 HELP_ID. NotebookLM R01 27/27 Academic PASS đúng bản source Git blob `49502fe39cf0a67f6a3e973a77f94164150637a7`, reviewer receipt Git blob `7a20d601c5e3e6ef184bcb44e4e7e214e8a06baf`.
+- [A1–A7 evidence](../CHV_B12_B14_PUBLIC_FORMATIVE_A1A7_EVIDENCE_20261030.md): PASS đúng B12–B14 PUBLIC_FORMATIVE_ONLY. Reviewer P2 còn chờ: đăng ký 27 IDs vào ngân hàng canonical và kiểm tra ba SVG responsive trên thiết bị thật; R1–R5 chưa làm.
+- Draft PR #639 chưa merge/deploy; không tuyên bố Tự kiểm tra cuối ChV, Topic Readiness hoặc Mastery đã hoàn thiện.
