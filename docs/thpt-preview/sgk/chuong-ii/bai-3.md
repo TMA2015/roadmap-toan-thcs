@@ -12,16 +12,18 @@
 
 **Điều kiện thực tiễn:** Với giá, thời lượng, số lượng, phải nêu miền của biến, dấu không âm, đơn vị. Nếu \(x,y\) là sản phẩm/ghế/vé, thường yêu cầu nguyên không âm. Nếu dùng trung bình phân thức, phải xác nhận mẫu dương; không thể chỉ giữ bất phương trình sau nhân mẫu rồi bỏ điều kiện ban đầu.
 
-## 2. Ví dụ đã giải
+## 2. Ví dụ
 
 **EX-G10-B03-01 — Vẽ miền có lấy đường biên.** Biểu diễn \(x+2y\le4\). Đường biên \(x+2y=4\) qua \((4,0),(0,2)\). Tại \(O\), \(0\le4\) đúng → tô nửa mặt phẳng chứa O, **kể cả biên**. Điểm \((2,1)\) thỏa dấu bằng.
 
 **EX-G10-B03-02 — Miền nghiêm ngặt.** \(2x-y<1\iff y>2x-1\). Tô phần **phía trên** đường \(y=2x-1\), không lấy biên (nét đứt). O thỏa; \((1,1)\) nằm trên đường biên nên **không** là nghiệm.
 
 **EX-G10-B03-03 — Pha trộn giá trung bình.** Trộn \(x\) kg hàng 140 nghìn/kg và \(y\) kg hàng 180 nghìn/kg, cần đơn giá trung bình không quá 170 nghìn/kg. Với \(x,y\ge0\) và \(x+y>0\):
+
 \[
 \frac{140x+180y}{x+y}\le170 \iff 140x+180y\le170(x+y) \iff y\le3x.
 \]
+
 \((1,3)\) cho 170, thỏa; \((1,4)\) cho 172, không thỏa. **Không xóa điều kiện \(x+y>0\).**
 
 ## 3. Hình minh họa và tự khắc phục lỗi

@@ -28,7 +28,7 @@ a(x-x_0)+b(y-y_0)=0,\quad a^2+b^2>0.
 
 Nếu đường thẳng đi qua \(A\) và \(B\), **phải có \(A\ne B\)** mới dùng được \(\overrightarrow{AB}\) làm vectơ chỉ phương.
 
-## 3. Ví dụ mẫu có giải thích
+## 3. Ví dụ
 
 Cho \(A(1;2)\), \(B(4;3)\). Ta có \(\overrightarrow{AB}=(3;1)\), nên một pháp tuyến là \((1;-3)\).
 

@@ -50,6 +50,7 @@ on:
       - 'docs/assets/javascripts/thpt-chvii-reviewed-formative-v1.js'
       - 'docs/assets/javascripts/thpt-chviii-reviewed-formative-v1.js'
       - 'scripts/test-thpt-chvi-math-block-render.cjs'
+      - 'scripts/test-thpt-g10-sgk-display-ui.cjs'
       - 'scripts/test-thpt-chvi-student-notes.cjs'
       - 'scripts/test-thpt-release-queue.cjs'
       - 'prototypes/thpt/release-queue/**'
@@ -92,6 +93,8 @@ jobs:
         run: node scripts/test-thpt-release-queue.cjs
       - name: Check THPT no-account static release contract
         run: node scripts/test-thpt-static-release.cjs
+      - name: Guard G10 SGK example headings and display math source
+        run: node scripts/test-thpt-g10-sgk-display-ui.cjs
       - name: Guard ChVII–VIII scoped public formative bank and reviewed R02 recovery
         run: |
           node scripts/test-thpt-g10-chvii-reviewed-stage1.cjs
@@ -157,6 +160,7 @@ jobs:
           mkdocs build --strict
           node scripts/assemble-thpt-site.cjs
           node scripts/test-thpt-chvi-math-block-render.cjs --built
+          node scripts/test-thpt-g10-sgk-display-ui.cjs --built
           node scripts/test-thpt-chvi-student-notes.cjs --built
       - name: Verify combined build has no backend
         run: |
