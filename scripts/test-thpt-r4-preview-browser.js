@@ -169,7 +169,7 @@ async function ready(page,path){
       "B22 should contain 6 normal Practice + 1 optional specialist item");
     await dlg.locator(".thpt-r4-modal-question-nav button").last().click();
     assert((await dlg.locator("[data-thpt-canonical-item]").getAttribute("data-thpt-canonical-item"))==="THPT-G10-B22-C01"&&
-      (await dlg.innerText()).includes("Chuyên sâu tự chọn"),
+      (await page.evaluate(()=>window.THPT_CHVII_REVIEWED_FORMATIVE.records.find(x=>x.item_id==="THPT-G10-B22-C01")?.role))==="OPTIONAL_SPECIALIZED",
       "Reviewer-reclassified eccentricity item must be optional, not mandatory Core");
     await dlg.locator("[data-thpt-modal-close]").click();
     // D5-reviewed SVGs may explain Practice AFTER deliberate solution reveal,
