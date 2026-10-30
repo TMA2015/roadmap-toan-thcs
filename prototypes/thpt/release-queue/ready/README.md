@@ -42,3 +42,8 @@ Một packet canonical duy nhất trên mỗi phạm vi; không nhân đôi câu
 - [G10-SGK-CHIV-B09-B11](G10-SGK-CHIV-B09-B11.md) đã NotebookLM PASS 27/27 item, 14/14 outcome, D1–D6 B09–B11; snapshot Git blob `a9f6fab820559a8da98a5a42cd9902dbf9891f34`, biên bản reviewer blob `f13acb74206c00cb489e533df7792870f88830e3`.
 - [Hồ sơ A1–A7](../CHIV_B09_B11_PUBLIC_FORMATIVE_A1A7_EVIDENCE_20261030.md). Source #637 merged main 160fd4fd; release #648 stages 24 canonical public items + 3 Written, 3 original SVG, 6 D6. THPT QA #41037205213 and Roadmap QA #41037205250 both SUCCESS on candidate 8ac012cc; exact-final-head CI still required after metadata commit. Physical-device P2 remains open.
 - Gói B07–B08 đã merged/deployed #645; B09–B11 extends the **same** SGK ChIV learning path and canonical bank convention without duplicate item IDs. R1–R5 documented for release candidate #648, but final-head CI and P1 deploy receipt remain separate. Chapter/Topic Readiness and Mastery inactive.
+
+## CONTENT_READY — G11 Chương I B01–B02 (academic handoff)
+
+- [G11 ChI B01–B02](G11-SGK-CHI-B01-B02.md): 16 public formative + 2 Written/Anchor, 7 worked examples, 2 source-locked D5 SVG, 4 D6 HELP; 10/10 outcomes, owner NotebookLM R01 18/18 academic PASS on immutable Git blob `f0e737f2d07a27f233615345b60070319d5bd00f`.
+- Source PR #627 is authoring-only; exact original academic blobs are preserved. Release R1–R5, exact-head CI and P1/P2 are separate and not yet claimed. No Chapter/Topic Readiness or Mastery.
