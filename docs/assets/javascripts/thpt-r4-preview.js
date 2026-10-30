@@ -281,8 +281,14 @@
   // Each item has one canonical record in thpt-chvi-reviewed-formative-v1.js;
   // the SGK card chooses a role-based placement without cloning content.
   const reviewed=window.THPT_CHVI_REVIEWED_FORMATIVE;
+  // Preserve which canonical question was open when learner visits another Core/Practice role.
+  // This is in-memory UI state only, never localStorage/Mastery/assessment scoring.
+  const lastViewedReviewed=new Map();
+  let pendingD6Item=null;
   const showReviewed=(items,requestedItem)=>{
+   const viewedKey=String(items[0]?.lesson)+":"+(items[0]?.role==="CORE"?"core":"practice");
    let index=items.findIndex(item=>item.item_id===requestedItem);
+   if(index<0)index=items.findIndex(item=>item.item_id===lastViewedReviewed.get(viewedKey));
    if(index<0)index=0;
    const root=document.createElement("section");
    root.className="thpt-r4-reviewed-formative";
@@ -294,7 +300,8 @@
    const prev=document.createElement("button"),next=document.createElement("button");
    prev.type=next.type="button";prev.textContent="← Câu trước";next.textContent="Câu tiếp →";
    const render=()=>{
-    const item=items[index];card.replaceChildren();tabs.replaceChildren();
+    const item=items[index];lastViewedReviewed.set(viewedKey,item.item_id);
+    card.replaceChildren();tabs.replaceChildren();
     card.dataset.thptCanonicalItem=item.item_id;
     const exposureRole=item.role==="CORE"?"SGK_CORE":
       item.role==="APPLICATION"?"SGK_CHAPTER_APPLICATION":"SGK_PRACTICE";
@@ -378,6 +385,18 @@
    footer.append(prev,next);root.append(head,tabs,card,footer);
    modalBody.replaceChildren(root);
    render();
+   // Support is mounted only within ChVI SGK formative modal, never Readiness.
+   window.THPT_CHVI_D6_REVIEWED?.mount(modalBody,items[0]?.lesson,itemId=>{
+    if(!reviewed?.items?.some(item=>item.item_id===itemId))return false;
+    const i=items.findIndex(item=>item.item_id===itemId);
+    if(i>=0){index=i;render();return true}
+    const newRole=reviewed.forLesson(items[0].lesson,"core").some(item=>item.item_id===itemId)?"core":"practice";
+    const trigger=document.querySelector('[data-thpt-practice-hub] [data-thpt-open-quiz="b'+items[0].lesson+'-'+newRole+'"]');
+    if(!trigger)return false;
+    pendingD6Item=itemId;
+    trigger.click(); // Same modal, in-memory role switch; no URL/storage mutation.
+    return true;
+   });
   };
 
   // Cumulative exercises remain one backing source, assigned to eligible
@@ -435,12 +454,13 @@
     dlg.querySelector("[data-thpt-modal-lesson-number]").textContent=lesson;
     dlg.querySelector(".thpt-r4-modal-meta").textContent="LỚP 10 · CHƯƠNG "+(Number(lesson)<=2?"I":Number(lesson)>=26?"IX":Number(lesson)>=23?"VIII":Number(lesson)>=19?"VII":"VI");
     modalTitle.textContent=role+" · Bài "+lesson+". "+lessonTitle[lesson];
-    modalBody.textContent="Đang mở nội dung…";dlg.showModal();
+    modalBody.textContent="Đang mở nội dung…";if(!dlg.open)dlg.showModal();
     const activeBank=Number(lesson)<=2?window.THPT_CHI_REVIEWED_FORMATIVE:Number(lesson)>=26?window.THPT_CHIX_REVIEWED_FORMATIVE:Number(lesson)>=23?window.THPT_CHVIII_REVIEWED_FORMATIVE:Number(lesson)>=19?window.THPT_CHVII_REVIEWED_FORMATIVE:reviewed;
     if(activeBank?.validate().valid){
      const items=activeBank.forLesson(lesson,parts[2]);
      if(items.length){
-      showReviewed(items,new URLSearchParams(location.search).get("item"));
+      showReviewed(items,pendingD6Item||new URLSearchParams(location.search).get("item"));
+      pendingD6Item=null;
       if(parts[2]==="practice")attachCumulative(lesson);
       return;
      }
@@ -465,6 +485,9 @@
      dlg.dataset.thptR4Ready="0";
      init();
      if(parts[2]==="practice")attachCumulative(lesson);
+     // B16 retains the original imported R4 form (and current selected answer).
+     // D6 never replaces that form or creates a second canonical exercise.
+     if(lesson==="16")window.THPT_CHVI_D6_REVIEWED?.mount(modalBody,lesson);
      if(window.MathJax?.typesetPromise)window.MathJax.typesetPromise([modalBody]).catch(()=>{});
     }catch(error){
      modalBody.textContent="Chưa thể tải bài mẫu. Hãy mở bản MkDocs Preview với máy chủ trang đầy đủ hoặc kiểm tra đường dẫn nguồn.";
