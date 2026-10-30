@@ -1,6 +1,6 @@
 # Toán 10 KNTT — Kiểm toán phủ học liệu theo SGK, 9 chương / 27 bài (30/10/2026)
 
-**AUDIT_KIND:** SOURCE_AND_GITHUB_LIVE_RECONCILIATION · **MAIN_CHECKED:** `6a9003dfd51ae249a02f4239b75a093dac4e1b81`.
+**AUDIT_KIND:** SOURCE_AND_GITHUB_LIVE_RECONCILIATION · **MAIN_BASELINE_AT_FIRST_AUDIT:** `6a9003dfd51ae249a02f4239b75a093dac4e1b81`. **LIVE_REFRESH_20261030:** GitHub main `95a02d52ca616f100ecb1e4f1aa78cd829abcfa8`; #631 and #636 independently verified MERGED; do not infer deployment from PR state alone.
 **PHẠM VI:** Nhánh SGK KNTT duy nhất lớp 10, từ Bài 1 đến Bài 27, hai tập. Chỉ **kiểm toán / điều phối / mô tả thiếu**, không tự tạo câu Readiness, không nâng Academic PASS, không sửa website, không merge/deploy.
 
 ## 1. Nguồn và khóa tiêu chuẩn
@@ -14,7 +14,7 @@
 | Chương | Bài SGK | Snapshot Academic D1–D6 trong phạm vi công khai | Đã tích hợp / tình trạng release | Khoảng trống còn lại |
 |---|---|---|---|---|
 | **I. Mệnh đề và tập hợp** | **B01–B02** | 18/18 public formative + Written, 11 outcomes, NotebookLM PASS exact R01; authoring #628 đã merge | Release #635 đã **merge**; manifest main vẫn `RELEASE_READY`; cần đối chiếu P1/P2 exact deployed receipt của #638 | Chapter Readiness chưa hoạt động; cần xác minh P1/P2 |
-| **II. Bất phương trình và hệ bất phương trình bậc nhất hai ẩn** | **B03–B04** | 18/18 items, 10 outcomes, D1–D6 PASS R01; authoring **Draft #631** | Technical release **Draft #636**, chưa merge/deploy | R1–R5/QA actual head, Chapter Readiness |
+| **II. Bất phương trình và hệ bất phương trình bậc nhất hai ẩn** | **B03–B04** | 18/18 items, 10 outcomes, D1–D6 PASS R01; authoring **#631 MERGED** | Technical release **#636 MERGED ngày 30/10/2026** (verified PR metadata); P1 website/gh-pages chưa được kiểm toán trong báo cáo này | Verify exact deploy receipt/device UAT + independent Chapter Readiness |
 | **III. Hệ thức lượng trong tam giác** | **B05–B06** | 18/18 items, 10 outcomes, D1–D6 PASS R01; **Draft #633** | Authoring only, chưa tích hợp | Canonical registration, UI/QA, Chapter Readiness |
 | **IV. Vectơ** | **B07–B11** | B07–08 18/18 PASS Draft #634; B09–11 27/27 PASS Draft #637, tổng **45 public items**, không nhân bản | Hai gói nguồn riêng chưa merge, cần kết hợp thành **một chương SGK** tại release lane | Hòa giải cùng canonical bank, UI/QA, Chapter Readiness |
 | **V. Các số đặc trưng của mẫu số liệu không ghép nhóm** | **B12–B14** | 27/27 items, 14 outcomes, D1–D6 PASS R01; **Draft #639** | Authoring only, chưa tích hợp | Canonical registration, UI/QA, Chapter Readiness |
@@ -28,7 +28,7 @@
 ## 3. Thiếu thực chất cần xử lý trước khi tuyên bố lớp 10 hoàn chỉnh
 
 1. **GAP-10-RD-01 · SGK_CHAPTER_READINESS:** Cả **9 chương** chưa có cơ chế Tự kiểm tra cuối chương được xác minh vừa review học thuật, vừa bảo mật exposure, vừa Final Submit, vừa chấm điểm thực. Các candidate ChVI/IX chỉ là candidate, **0 active**. Không đưa stem/answer/rubric held-out lên GitHub Pages hoặc JS public.
-2. **GAP-10-INT-02 · tích hợp ChII–V:** Authoring PASS không thay R1–R5. Bản nguồn ChII, III, IV (hai batch), V phải được tích hợp trên **đúng main mới nhất**, dùng ID đã duyệt, không copy stem/solution cho mỗi placement. ChII technical #636 còn Draft; ChIII–V chưa release.
+2. **GAP-10-INT-02 · tích hợp ChIII–V và hậu kiểm ChII:** #631/#636 cho B03–B04 đã **merge** và không còn thuộc danh sách chờ merge. Chưa đối chiếu P1 deploy thực tế của #636 trong đợt này; xác nhận trên gh-pages/đúng commit mới kết luận đã phát hành. ChIII–V vẫn là Draft chưa release: nguồn B05–B06 (#633), B07–B08 (#634), B09–B11 (#637), B12–B14 (#639). Phải đăng ký ID canonical đúng main hiện hành, không clone stem/key/rubric cho placement.
 3. **GAP-10-A5-03 · kiểm toán ChVI:** Main manifest ChVI có `A5_D1_D6_SCOPE` chưa được chốt. Rà D1–D6 cho B15–18 đúng public scope và các hỗ trợ D6 (trong trải nghiệm học sinh thực). Nếu thiếu học liệu học thuật, đây là DELTA_C cần NotebookLM review phần bổ sung. Không tự đổi A5 vì site đã xuất bản.
 4. **GAP-10-REG-04 · đối chiếu IDs/provenance:** Kiểm trùng 242 ID theo gói và một canonical bank chính thức tại release head, giữ chung Written/Anchor, skill_id và figure. Không tạo bộ ngân hàng mới. Đặc biệt ChIV B07–B11 phải được xử lý như một chương thống nhất.
 5. **GAP-10-UAT-05 · QA chính xác:** Với từng PR release: MathJax, công thức, SVG responsive, điều hướng desktop/mobile, liên kết sâu, không lộ nội dung reviewer vào learner UI; kiểm tra không ảnh hưởng THCS/Gemini/tiến độ. Đối chiếu nhãn manifest lịch sử với P1 thực tế thay vì tự suy `RELEASE_READY` là chưa phát hành hay `PUBLISHED_SCOPED` là đã chốt toàn chương.
@@ -41,7 +41,7 @@ Chỉ tuyên bố **một chương COMPLETE** khi cả:
 - nội dung đánh giá nhạy cảm không phát hành client-side dưới dạng key có thể đọc; bài kiểm tra chưa an toàn chỉ ở trạng thái **NOT_ACTIVE**, không ghi Mastery;
 - owner cho phép merge/deploy đúng commit và phạm vi; P1/P2 theo dõi riêng.
 
-**Thứ tự chốt:** (1) khóa khoảng trống/hồ sơ ChI→V, (2) đối chiếu ChVI A5, (3) QA/hoàn thiện các chương VII→IX, (4) đánh giá độc lập cuối từng chương khi có nơi lưu an toàn và engine đạt kiểm thử, (5) nghiệm thu lớp 10, sau đó chuyển lớp 11. Không đưa câu readiness private vào public authoring repo.
+**Thứ tự chốt:** (1) hậu kiểm ChI/II và tích hợp ChIII–V trên nhánh PR phù hợp, (2) đối chiếu ChVI A5, (3) QA/hoàn thiện các chương VII→IX, (4) đánh giá độc lập cuối từng chương khi có nơi lưu an toàn và engine đạt kiểm thử, (5) nghiệm thu lớp 10, sau đó chuyển lớp 11. Không đưa câu readiness private vào public authoring repo.
 
 ## 5. Ranh giới sang lớp 11, lớp 12 và Chuyên đề
 
@@ -52,3 +52,10 @@ Chỉ tuyên bố **một chương COMPLETE** khi cả:
 ## 6. Quyền thực thi
 
 Báo cáo này **không phải phát hành** và **không tạo Academic PASS mới**. Các PR đang Draft không được merge/deploy bởi audit. Tự kiểm tra là BLOCKED ở runtime cho đến khi có bài held-out review độc lập + bảo vệ đề/keys + cơ chế scoring xác thực + chủ dự án đồng ý.
+
+## 7. Bổ sung kiểm toán sau khi chủ dự án yêu cầu tiếp tục (30/10/2026)
+
+- **ChII đã thay đổi trạng thái thật:** PR authoring **#631 MERGED** và release **#636 MERGED** (GitHub verified), không thể tiếp tục báo hai PR này còn Draft. Việc xác nhận P1 deployed HTML và nghiệm thu di động là một bước riêng.
+- **ChVI D6:** [PR #643](https://github.com/TMA2015/self-learning-math/pull/643) vẫn Draft; trên exact head `f64b2f81e00725723afe594b7e3bbb73868c813c`, workflow THPT R4 MkDocs Preview [run 41004303692](https://github.com/TMA2015/self-learning-math/actions/runs/41004303692) **SUCCESS** gồm smoke 1280/768/390px. ChVI `A5_D1_D6_SCOPE` trên main vẫn **HOLD**; physical mobile P2 và owner approval chưa đóng. PR #642 giữ riêng reviewer PASS cho 8 HELP_ID.
+- **Độ phủ thiết kế assessment đã có 9/9 chương:** [index R00](G10_SGK_NINE_CHAPTER_READINESS_BLUEPRINT_INDEX_R00_20261030.md) dẫn tới chín file blueprint riêng, 133 dòng mục tiêu không chứa đề/keys. ChVII/VIII có 35 ID từ ma trận `DRAFT_NOT_ACADEMICALLY_REVIEWED`, **không được gọi là outcome đã Academic PASS cho Readiness**. Các bảng mới chưa review NotebookLM riêng cho assessment.
+- **Không thay đổi trạng thái phát hành** do bản audit này: không tạo account/backend/score/Mastery, không merge/deploy.
