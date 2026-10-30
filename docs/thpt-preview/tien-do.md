@@ -1,6 +1,6 @@
 # Tiến độ học tập — Toán THPT
 
-Giai đoạn mẫu R4 **chưa ghi tiến độ THPT**. Khi hệ thống thật được phê duyệt, kết quả Core, Practice, Readiness sẽ được lưu theo mã THPT riêng và đồng bộ qua các điểm vào của cùng Core.
+**Tính năng ghi nhận tiến độ Toán THPT chưa được kích hoạt.** Học liệu kiến thức, Core và luyện tập đang được phát hành theo từng bài. Chỉ khi cơ chế đánh giá chính thức được kiểm chứng và phê duyệt, kết quả học tập và Readiness mới có thể được lưu theo mã THPT riêng; hiện không tự ghi điểm hay cập nhật Skill Mastery.
 
 - Core và Practice là luyện tập có gợi ý, cung cấp bằng chứng formative.
 - Readiness chỉ chấm sau **Final Submit**, cung cấp bằng chứng làm độc lập.
