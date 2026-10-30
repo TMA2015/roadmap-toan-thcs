@@ -4,6 +4,7 @@
 
 | Gói | Hành trình | Trạng thái | Phạm vi | PR / nguồn |
 |---|---|---|---|---|
+| [G10-SGK-CHIV-B09-B11](ready/G10-SGK-CHIV-B09-B11.md) | SGK_CHAPTER | CONTENT_READY | PUBLIC_FORMATIVE_ONLY B09–B11 | #637 NotebookLM R01 D1–D6 PASS, 27/27 items |
 | [G10-SGK-CHIV](ready/G10-SGK-CHIV.md) | SGK_CHAPTER | CONTENT_READY | PUBLIC_FORMATIVE_ONLY | authoring #634 A1–A7 PASS B07–B08; release R1–R5 pending |
 | [G10-SGK-CHIII](ready/G10-SGK-CHIII.md) | SGK_CHAPTER | RELEASE_READY | PUBLIC_FORMATIVE_ONLY | academic source #633 merged; release #644 only after both exact-final-head CI SUCCESS |
 | [G10-SGK-CHII](ready/G10-SGK-CHII.md) | SGK_CHAPTER | RELEASE_READY | PUBLIC_FORMATIVE_ONLY | #631 authoring merged; #636 combined release, dual exact-head CI mandatory before merge |

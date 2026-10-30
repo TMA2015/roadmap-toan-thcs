@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1050" height="420" viewBox="0 0 1050 420" role="img" aria-labelledby="title desc">
+<title id="title">Nhân một vectơ với số: cùng hướng, ngược hướng và vectơ không</title>
+<desc id="desc">Từ gốc O, vectơ u nằm về bên phải độ dài 140 đơn vị hình; 2u cùng hướng dài 280; âm một phẩy năm u ngược hướng sang trái dài 210; 0u là vectơ không.</desc>
+<defs><marker id="blue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#2563eb"/></marker><marker id="green" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#0f766e"/></marker><marker id="red" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#be123c"/></marker></defs>
+<rect width="1050" height="420" rx="16" fill="#f8fafc"/><text x="32" y="48" font-size="26" font-family="Arial,sans-serif" font-weight="bold" fill="#0f172a">Nhân vectơ với một số thực</text>
+<text x="32" y="95" font-size="20" font-family="Arial,sans-serif" fill="#334155">Cùng một vectơ gốc u; chiều đổi khi k âm, độ dài nhân |k|.</text>
+<line x1="380" y1="110" x2="380" y2="352" stroke="#94a3b8" stroke-width="2" stroke-dasharray="6 6"/>
+<circle cx="380" cy="150" r="6" fill="#0f172a"/><circle cx="380" cy="230" r="6" fill="#0f172a"/><circle cx="380" cy="312" r="6" fill="#0f172a"/>
+<line x1="380" y1="150" x2="520" y2="150" stroke="#2563eb" stroke-width="6" marker-end="url(#blue)"/>
+<line x1="380" y1="230" x2="660" y2="230" stroke="#0f766e" stroke-width="6" marker-end="url(#green)"/>
+<line x1="380" y1="312" x2="170" y2="312" stroke="#be123c" stroke-width="6" marker-end="url(#red)"/>
+<text x="680" y="156" font-family="Arial,sans-serif" font-size="23" fill="#1e40af">u: 1 lần, sang phải</text><text x="680" y="236" font-family="Arial,sans-serif" font-size="23" fill="#0f766e">2u: dài gấp đôi</text>
+<text x="680" y="319" font-family="Arial,sans-serif" font-size="23" fill="#be123c">−1,5u: ngược chiều</text>
+<text x="35" y="389" font-family="Arial,sans-serif" font-size="20" fill="#334155">Nếu k = 0 hoặc u là vectơ-không thì ku là vectơ-không.</text>
+</svg>
