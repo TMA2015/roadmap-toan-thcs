@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1160" viewBox="0 0 1600 1160" role="img" aria-labelledby="title desc">
+<title id="title">Rút hai thẻ khác nhau không hoàn lại</title><desc id="desc">Bốn thẻ phân biệt R1 R2 B1 B2, mỗi lần rút đều từ số thẻ còn lại. 4 nhân 3 bằng 12 cặp có thứ tự, mỗi cặp xác suất 1 trên 12. Chuỗi màu RR có 2, RB có 4, BR có 4, BB có 2 kết quả.</desc>
+<rect x="0" y="0" width="1600" height="1160" rx="20" fill="#f8fafc"/>
+<text x="40" y="62" font-family="Arial" font-weight="bold" font-size="31" fill="#0f172a">Rút hai thẻ KHÔNG hoàn lại: 4 × 3 = 12 cặp</text>
+<text x="40" y="105" font-family="Arial" font-size="20" fill="#475569">R₁, R₂ (đỏ) và B₁, B₂ (xanh), bốn thẻ phân biệt</text>
+<text x="70" y="155" font-family="Arial" font-size="22" fill="#0f172a">Lượt 1</text>
+<text x="430" y="155" font-family="Arial" font-size="22" fill="#0f172a">Lượt 2</text>
+<text x="940" y="155" font-family="Arial" font-size="22" fill="#0f172a">Kết quả có thứ tự</text>
+<path d="M150 675 L310 275" fill="none" stroke="#64748b" stroke-width="2"/>
+<rect x="310" y="248" width="120" height="54" rx="10" fill="#fff" stroke="#b91c1c" stroke-width="2"/><text x="370" y="284" text-anchor="middle" font-family="Arial" font-size="26" fill="#b91c1c">R₁</text>
+<path d="M430 275 L582 217" fill="none" stroke="#94a3b8" stroke-width="2"/>
+<rect x="582" y="195" width="118" height="44" rx="8" fill="#fff" stroke="#b91c1c" stroke-width="2"/>
+<text x="641" y="225" text-anchor="middle" font-family="Arial" font-size="22" fill="#b91c1c">R₂</text>
+<path d="M700 217 L925 217" fill="none" stroke="#cbd5e1" stroke-width="2"/><text x="937" y="225" font-family="Arial" font-size="22" fill="#0f172a">(R₁, R₂)</text>
+<path d="M430 275 L582 275" fill="none" stroke="#94a3b8" stroke-width="2"/>
+<rect x="582" y="253" width="118" height="44" rx="8" fill="#fff" stroke="#1d4ed8" stroke-width="2"/>
+<text x="641" y="283" text-anchor="middle" font-family="Arial" font-size="22" fill="#1d4ed8">B₁</text>
+<path d="M700 275 L925 275" fill="none" stroke="#cbd5e1" stroke-width="2"/><text x="937" y="283" font-family="Arial" font-size="22" fill="#0f172a">(R₁, B₁)</text>
+<path d="M430 275 L582 333" fill="none" stroke="#94a3b8" stroke-width="2"/>
+<rect x="582" y="311" width="118" height="44" rx="8" fill="#fff" stroke="#1d4ed8" stroke-width="2"/>
+<text x="641" y="341" text-anchor="middle" font-family="Arial" font-size="22" fill="#1d4ed8">B₂</text>
+<path d="M700 333 L925 333" fill="none" stroke="#cbd5e1" stroke-width="2"/><text x="937" y="341" font-family="Arial" font-size="22" fill="#0f172a">(R₁, B₂)</text>
+<path d="M150 675 L310 495" fill="none" stroke="#64748b" stroke-width="2"/>
+<rect x="310" y="468" width="120" height="54" rx="10" fill="#fff" stroke="#b91c1c" stroke-width="2"/><text x="370" y="504" text-anchor="middle" font-family="Arial" font-size="26" fill="#b91c1c">R₂</text>
+<path d="M430 495 L582 437" fill="none" stroke="#94a3b8" stroke-width="2"/>
+<rect x="582" y="415" width="118" height="44" rx="8" fill="#fff" stroke="#b91c1c" stroke-width="2"/>
+<text x="641" y="445" text-anchor="middle" font-family="Arial" font-size="22" fill="#b91c1c">R₁</text>
+<path d="M700 437 L925 437" fill="none" stroke="#cbd5e1" stroke-width="2"/><text x="937" y="445" font-family="Arial" font-size="22" fill="#0f172a">(R₂, R₁)</text>
+<path d="M430 495 L582 495" fill="none" stroke="#94a3b8" stroke-width="2"/>
+<rect x="582" y="473" width="118" height="44" rx="8" fill="#fff" stroke="#1d4ed8" stroke-width="2"/>
+<text x="641" y="503" text-anchor="middle" font-family="Arial" font-size="22" fill="#1d4ed8">B₁</text>
+<path d="M700 495 L925 495" fill="none" stroke="#cbd5e1" stroke-width="2"/><text x="937" y="503" font-family="Arial" font-size="22" fill="#0f172a">(R₂, B₁)</text>
+<path d="M430 495 L582 553" fill="none" stroke="#94a3b8" stroke-width="2"/>
+<rect x="582" y="531" width="118" height="44" rx="8" fill="#fff" stroke="#1d4ed8" stroke-width="2"/>
+<text x="641" y="561" text-anchor="middle" font-family="Arial" font-size="22" fill="#1d4ed8">B₂</text>
+<path d="M700 553 L925 553" fill="none" stroke="#cbd5e1" stroke-width="2"/><text x="937" y="561" font-family="Arial" font-size="22" fill="#0f172a">(R₂, B₂)</text>
+<path d="M150 675 L310 715" fill="none" stroke="#64748b" stroke-width="2"/>
+<rect x="310" y="688" width="120" height="54" rx="10" fill="#fff" stroke="#1d4ed8" stroke-width="2"/><text x="370" y="724" text-anchor="middle" font-family="Arial" font-size="26" fill="#1d4ed8">B₁</text>
+<path d="M430 715 L582 657" fill="none" stroke="#94a3b8" stroke-width="2"/>
+<rect x="582" y="635" width="118" height="44" rx="8" fill="#fff" stroke="#b91c1c" stroke-width="2"/>
+<text x="641" y="665" text-anchor="middle" font-family="Arial" font-size="22" fill="#b91c1c">R₁</text>
+<path d="M700 657 L925 657" fill="none" stroke="#cbd5e1" stroke-width="2"/><text x="937" y="665" font-family="Arial" font-size="22" fill="#0f172a">(B₁, R₁)</text>
+<path d="M430 715 L582 715" fill="none" stroke="#94a3b8" stroke-width="2"/>
+<rect x="582" y="693" width="118" height="44" rx="8" fill="#fff" stroke="#b91c1c" stroke-width="2"/>
+<text x="641" y="723" text-anchor="middle" font-family="Arial" font-size="22" fill="#b91c1c">R₂</text>
+<path d="M700 715 L925 715" fill="none" stroke="#cbd5e1" stroke-width="2"/><text x="937" y="723" font-family="Arial" font-size="22" fill="#0f172a">(B₁, R₂)</text>
+<path d="M430 715 L582 773" fill="none" stroke="#94a3b8" stroke-width="2"/>
+<rect x="582" y="751" width="118" height="44" rx="8" fill="#fff" stroke="#1d4ed8" stroke-width="2"/>
+<text x="641" y="781" text-anchor="middle" font-family="Arial" font-size="22" fill="#1d4ed8">B₂</text>
+<path d="M700 773 L925 773" fill="none" stroke="#cbd5e1" stroke-width="2"/><text x="937" y="781" font-family="Arial" font-size="22" fill="#0f172a">(B₁, B₂)</text>
+<path d="M150 675 L310 935" fill="none" stroke="#64748b" stroke-width="2"/>
+<rect x="310" y="908" width="120" height="54" rx="10" fill="#fff" stroke="#1d4ed8" stroke-width="2"/><text x="370" y="944" text-anchor="middle" font-family="Arial" font-size="26" fill="#1d4ed8">B₂</text>
+<path d="M430 935 L582 877" fill="none" stroke="#94a3b8" stroke-width="2"/>
+<rect x="582" y="855" width="118" height="44" rx="8" fill="#fff" stroke="#b91c1c" stroke-width="2"/>
+<text x="641" y="885" text-anchor="middle" font-family="Arial" font-size="22" fill="#b91c1c">R₁</text>
+<path d="M700 877 L925 877" fill="none" stroke="#cbd5e1" stroke-width="2"/><text x="937" y="885" font-family="Arial" font-size="22" fill="#0f172a">(B₂, R₁)</text>
+<path d="M430 935 L582 935" fill="none" stroke="#94a3b8" stroke-width="2"/>
+<rect x="582" y="913" width="118" height="44" rx="8" fill="#fff" stroke="#b91c1c" stroke-width="2"/>
+<text x="641" y="943" text-anchor="middle" font-family="Arial" font-size="22" fill="#b91c1c">R₂</text>
+<path d="M700 935 L925 935" fill="none" stroke="#cbd5e1" stroke-width="2"/><text x="937" y="943" font-family="Arial" font-size="22" fill="#0f172a">(B₂, R₂)</text>
+<path d="M430 935 L582 993" fill="none" stroke="#94a3b8" stroke-width="2"/>
+<rect x="582" y="971" width="118" height="44" rx="8" fill="#fff" stroke="#1d4ed8" stroke-width="2"/>
+<text x="641" y="1001" text-anchor="middle" font-family="Arial" font-size="22" fill="#1d4ed8">B₁</text>
+<path d="M700 993 L925 993" fill="none" stroke="#cbd5e1" stroke-width="2"/><text x="937" y="1001" font-family="Arial" font-size="22" fill="#0f172a">(B₂, B₁)</text>
+<rect x="60" y="650" width="120" height="50" rx="10" fill="#e2e8f0" stroke="#64748b"/><text x="120" y="683" text-anchor="middle" font-family="Arial" font-size="21" fill="#0f172a">Bắt đầu</text>
+<rect x="1220" y="240" width="326" height="317" rx="17" fill="#e2e8f0"/><text x="1240" y="282" font-family="Arial" font-size="24" font-weight="bold" fill="#0f172a">Nhãn gộp màu</text>
+<text x="1240" y="327" font-family="Arial" font-size="23" fill="#0f172a">RR: 2/12</text>
+<text x="1240" y="379" font-family="Arial" font-size="23" fill="#0f172a">RB: 4/12</text>
+<text x="1240" y="431" font-family="Arial" font-size="23" fill="#0f172a">BR: 4/12</text>
+<text x="1240" y="483" font-family="Arial" font-size="23" fill="#0f172a">BB: 2/12</text>
+<text x="1240" y="540" font-family="Arial" font-size="20" fill="#0f172a">Tổng: 12/12 = 1</text>
+<text x="40" y="1110" font-family="Arial" font-size="19" fill="#475569">Mỗi cặp thẻ cụ thể: 1/12. Bốn nhãn màu RR, RB, BR, BB KHÔNG đồng khả năng.</text></svg>

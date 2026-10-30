@@ -2,6 +2,41 @@
 (() => {
  "use strict";
 
+ // Cover-page navigation is not a THCS or THPT lesson sidebar.
+ // Only replace the root selector's native drawer list. No change to
+ // /thcs/, its 7+25 navigation, storage or existing header controls.
+ function initProgramSelectorDrawer(){
+  const cover=document.querySelector("[data-math-program-selector]");
+  if(!cover)return;
+  const primary=document.querySelector(".md-sidebar--primary nav.md-nav--primary");
+  const list=primary?.querySelector(":scope > ul.md-nav__list");
+  if(!list||list.dataset.mathProgramDrawerReady==="1")return;
+  list.dataset.mathProgramDrawerReady="1";
+  list.replaceChildren();
+  for(const item of [
+   ["Chọn chương trình","./"],
+   ["Toán THCS · Lớp 6–9","thcs/"],
+   ["Toán THPT · Lớp 10–12","thpt-preview/home/"]
+  ]){
+   const li=document.createElement("li");
+   li.className="md-nav__item";
+   const a=document.createElement("a");
+   a.href=item[1];a.className="md-nav__link";
+   if(item[1]==="./"){li.classList.add("md-nav__item--active");a.classList.add("md-nav__link--active")}
+   const span=document.createElement("span");
+   span.className="md-ellipsis";span.textContent=item[0];
+   a.append(span);li.append(a);list.append(li);
+  }
+  const pending=document.createElement("li");
+  pending.className="md-nav__item";
+  const label=document.createElement("span");
+  label.className="md-nav__link";
+  label.setAttribute("aria-disabled","true");
+  const title=document.createElement("span");
+  title.className="md-ellipsis";title.textContent="SAT/ACT · Chưa phát hành";
+  label.append(title);pending.append(label);list.append(pending);
+ }
+ 
  // THPT-only launcher. The accepted THCS 7+25 launcher code remains unchanged.
  function initTHPTLauncher(){
   const match=location.pathname.match(/^(.*?\/)(thpt-preview|thpt)\//);
@@ -197,7 +232,7 @@
    "b16-core":["../../core/ham-so-bac-hai/","[data-thpt-core]"],
    "b16-practice":["../../../chuyen-de/ham-so/luyen-tap/","[data-thpt-practice]"]
   };
-  const lessonTitle={"15":"Hàm số","16":"Hàm số bậc hai","17":"Dấu của tam thức bậc hai","18":"Phương trình quy về phương trình bậc hai","19":"Phương trình đường thẳng","20":"Vị trí, góc và khoảng cách","21":"Đường tròn","22":"Ba đường conic","23":"Quy tắc đếm","24":"Hoán vị, chỉnh hợp và tổ hợp","25":"Nhị thức Newton"};
+  const lessonTitle={"1":"Mệnh đề","2":"Tập hợp và các phép toán trên tập hợp","15":"Hàm số","16":"Hàm số bậc hai","17":"Dấu của tam thức bậc hai","18":"Phương trình quy về phương trình bậc hai","19":"Phương trình đường thẳng","20":"Vị trí, góc và khoảng cách","21":"Đường tròn","22":"Ba đường conic","23":"Quy tắc đếm","24":"Hoán vị, chỉnh hợp và tổ hợp","25":"Nhị thức Newton","26":"Biến cố và xác suất cổ điển","27":"Thực hành tính xác suất cổ điển"};
   const dlg=document.createElement("dialog");
   dlg.className="thpt-r4-practice-dialog";
   dlg.dataset.thptR4="1"; // Eligible root for existing R4 exercise binder when remote card is inserted.
@@ -326,7 +361,7 @@
     reviewLesson.className="thpt-r4-remediation-link";
     reviewLesson.textContent="↶ Ôn lại kiến thức Bài "+item.lesson;
     const matchPath=location.pathname.match(/^(.*?\/)(?:thpt-preview|thpt)\//);
-    const chapter=Number(item.lesson)<=18?"vi":Number(item.lesson)<=22?"vii":"viii";
+    const chapter=Number(item.lesson)<=2?"i":Number(item.lesson)<=18?"vi":Number(item.lesson)<=22?"vii":Number(item.lesson)<=25?"viii":"ix";
     reviewLesson.href=matchPath?
       matchPath[0]+"sgk/chuong-"+chapter+"/bai-"+item.lesson+"/":
       "../bai-"+item.lesson+"/";
@@ -394,14 +429,14 @@
   root.querySelectorAll("[data-thpt-open-quiz]").forEach(button=>{
    button.addEventListener("click",async()=>{
     returnFocus=button;
-    const id=button.dataset.thptOpenQuiz,parts=id.match(/^b(1[5-9]|2[0-5])-(core|practice)$/);
+    const id=button.dataset.thptOpenQuiz,parts=id.match(/^b([12]|1[5-9]|2[0-7])-(core|practice)$/);
     if(!parts)return;
     const lesson=parts[1],role=parts[2]==="core"?"Core":"Luyện tập";
     dlg.querySelector("[data-thpt-modal-lesson-number]").textContent=lesson;
-    dlg.querySelector(".thpt-r4-modal-meta").textContent="LỚP 10 · CHƯƠNG "+(Number(lesson)>=23?"VIII":Number(lesson)>=19?"VII":"VI");
+    dlg.querySelector(".thpt-r4-modal-meta").textContent="LỚP 10 · CHƯƠNG "+(Number(lesson)<=2?"I":Number(lesson)>=26?"IX":Number(lesson)>=23?"VIII":Number(lesson)>=19?"VII":"VI");
     modalTitle.textContent=role+" · Bài "+lesson+". "+lessonTitle[lesson];
     modalBody.textContent="Đang mở nội dung…";dlg.showModal();
-    const activeBank=Number(lesson)>=23?window.THPT_CHVIII_REVIEWED_FORMATIVE:Number(lesson)>=19?window.THPT_CHVII_REVIEWED_FORMATIVE:reviewed;
+    const activeBank=Number(lesson)<=2?window.THPT_CHI_REVIEWED_FORMATIVE:Number(lesson)>=26?window.THPT_CHIX_REVIEWED_FORMATIVE:Number(lesson)>=23?window.THPT_CHVIII_REVIEWED_FORMATIVE:Number(lesson)>=19?window.THPT_CHVII_REVIEWED_FORMATIVE:reviewed;
     if(activeBank?.validate().valid){
      const items=activeBank.forLesson(lesson,parts[2]);
      if(items.length){
@@ -438,12 +473,12 @@
   });
   // Public formative navigation from the approved D6 help cards only.
   const requestedItem=new URLSearchParams(location.search).get("item");
-  const parsed=/^THPT-G10-B(19|20|21|22|23|24|25)-[CP]\d{2}$/.exec(requestedItem||"");
+  const parsed=/^THPT-G10-B(01|02|19|20|21|22|23|24|25|26|27)-[CP]\d{2}$/.exec(requestedItem||"");
   if(parsed){
-   const lesson=parsed[1], bank=Number(lesson)>=23?window.THPT_CHVIII_REVIEWED_FORMATIVE:window.THPT_CHVII_REVIEWED_FORMATIVE;
+   const lesson=parsed[1], bank=Number(lesson)<=2?window.THPT_CHI_REVIEWED_FORMATIVE:Number(lesson)>=26?window.THPT_CHIX_REVIEWED_FORMATIVE:Number(lesson)>=23?window.THPT_CHVIII_REVIEWED_FORMATIVE:window.THPT_CHVII_REVIEWED_FORMATIVE;
    if(bank?.validate().valid){
     const placement=["core","practice"].find(role=>bank.forLesson(lesson,role).some(item=>item.item_id===requestedItem));
-    const trigger=placement?root.querySelector('[data-thpt-open-quiz="b'+lesson+'-'+placement+'"]'):null;
+    const trigger=placement?root.querySelector('[data-thpt-open-quiz="b'+Number(lesson)+'-'+placement+'"]'):null;
     trigger?.click();
    }
   }
@@ -452,6 +487,7 @@
 
  // THPT route-only navigation behavior, preserving MkDocs Material's native
  // drawer and link semantics. All nested sidebar sections start collapsed.
+ let sidebarBreakpointObserverSet=false;
  function initTHPTPrimarySidebar(){
   const path=location.pathname;
   const isTHPT=/\/(?:thpt-preview|thpt)\//.test(path);
@@ -463,6 +499,44 @@
   const primary=sidebar?.querySelector("nav.md-nav--primary");
   if(!primary)return;
   const groups=[...primary.querySelectorAll("li.md-nav__item--nested")];
+  // Material uses a stacked mobile drawer below this breakpoint. Nested
+  // input/label elements are native navigation controls on iPad/iPhone,
+  // not accordion rows. Resetting them hides the three top-level names.
+  const compactDrawer=window.matchMedia("(max-width: 76.234375em)");
+  if(!sidebarBreakpointObserverSet){
+   sidebarBreakpointObserverSet=true;
+   const reinit=()=>initTHPTPrimarySidebar();
+   if(compactDrawer.addEventListener)compactDrawer.addEventListener("change",reinit);
+   else compactDrawer.addListener(reinit);
+  }
+  if(compactDrawer.matches){
+   // Start each new mobile route at the three visible group labels,
+   // rather than inheriting Material's checked active subsections.
+   // Reset just once per route so user disclosure clicks still work.
+   const resetForPath=primary.dataset.thptR4MobileResetPath!==path;
+   primary.dataset.thptR4MobileResetPath=path;
+   groups.forEach(li=>{
+    if(!li.classList.contains("thpt-r4-collapsible"))return;
+    const nested=li.querySelector(":scope > nav.md-nav");
+    const native=li.querySelector(":scope > input.md-nav__toggle");
+    li.querySelector(":scope > button.thpt-r4-sidebar-toggle")?.remove();
+    li.classList.remove("thpt-r4-collapsible");
+    if(nested)nested.hidden=false;
+    if(native&&resetForPath)native.checked=false;
+    // A stale checked nested nav can sit above the mobile header in the
+    // Material stacked drawer. Keep hidden in sync with native toggles,
+    // without removing or replacing the visible parent label.
+    if(native&&!li.dataset.thptR4MobileBound){
+     native.addEventListener("change",()=>{
+      if(compactDrawer.matches)nested.hidden=!native.checked;
+     });
+     li.dataset.thptR4MobileBound="1";
+    }
+    nested.hidden=native?!native.checked:false;
+    delete li.dataset.thptR4SidebarPath;
+   });
+   return;
+  }
   groups.forEach((li,index)=>{
    const nested=li.querySelector(":scope > nav.md-nav");
    if(!nested)return;
@@ -485,7 +559,7 @@
     button.setAttribute("aria-controls",nested.id);
     li.insertBefore(button,nested);
     button.addEventListener("click",event=>{event.preventDefault();event.stopPropagation();update(nested.hidden)});
-    native?.addEventListener("change",()=>update(native.checked));
+    native?.addEventListener("change",()=>{if(!compactDrawer.matches)update(native.checked)});
     if(!native&&label?.tagName==="LABEL"){
      label.addEventListener("click",event=>{event.preventDefault();update(nested.hidden)});
     }
@@ -500,6 +574,7 @@
  }
 
  function init() {
+  initProgramSelectorDrawer();
   initTHPTPrimarySidebar();
   initAdaptiveKnowledgeTabs();
   initChapterPracticeCards();
