@@ -320,11 +320,17 @@
     const options=Array.isArray(item.options)&&item.options.length===4?document.createElement("div"):null;
     if(options){options.className="thpt-r4-formative-options";for(const choice of item.options){const p=document.createElement("p");p.textContent=choice;options.append(p)}}
     const hint=document.createElement("details"),hintSummary=document.createElement("summary");
-    hintSummary.textContent="💡 Xem gợi ý (tự chọn)";
-    hint.append(hintSummary,document.createTextNode(item.hint));
+    hintSummary.textContent="💡 Gợi ý";
+    const hintContent=document.createElement("div");
+    hintContent.className="thpt-r4-formative-reveal";
+    hintContent.textContent=item.hint;
+    hint.append(hintSummary,hintContent);
     const solution=document.createElement("details"),solutionSummary=document.createElement("summary");
-    solutionSummary.textContent="Xem đáp án và lời giải sau khi tự làm";
-    solution.append(solutionSummary,document.createTextNode(item.solution));
+    solutionSummary.textContent="📖 Đáp án / Lời giải";
+    const solutionContent=document.createElement("div");
+    solutionContent.className="thpt-r4-formative-reveal";
+    solutionContent.textContent=item.solution;
+    solution.append(solutionSummary,solutionContent);
     // D5-reviewed figures are *answer-bearing*. Load an exact shared SVG ONLY
     // when the learner deliberately expands the formative solution, never
     // alongside an unanswered Core/Practice prompt or held-out Readiness.
@@ -367,9 +373,12 @@
     reviewLesson.href=matchPath?
       matchPath[0]+"sgk/chuong-"+chapter+"/bai-"+item.lesson+"/":
       "../bai-"+item.lesson+"/";
-    const note=document.createElement("p");note.className="thpt-r4-modal-progress";
-    note.textContent="Tự luyện và đối chiếu lời giải · Không ghi điểm thành thạo.";
-    card.append(meta,prompt,...(options?[options]:[]),hint,solution,reviewLesson,note);
+    // Compact auxiliary controls after the question, matching THCS practice hierarchy.
+    // Native details keep hints and answers opt-in; question content remains unchanged.
+    const actions=document.createElement("div");
+    actions.className="thpt-r4-formative-actions";
+    actions.append(hint,solution,reviewLesson);
+    card.append(meta,prompt,...(options?[options]:[]),actions);
     // Only public formative text is typeset; never load any held-out readiness
     // prompts or answer keys into the browser.
     if(window.MathJax?.typesetPromise)window.MathJax.typesetPromise([card]).catch(()=>{});
