@@ -15,7 +15,7 @@
 
 **D1.5 Ứng dụng.** Lực, vận tốc, độ dời có thể dùng vectơ vì đồng thời chứa độ lớn và hướng; quãng đường đi theo hai chặng có thể lớn hơn độ dài vectơ độ dời từ đầu đến cuối. Luôn ghi đơn vị thích hợp.
 
-## 2. Ví dụ đã giải
+## 2. Ví dụ
 
 ### Ví dụ 1. Bằng nhau và ngược hướng trong hình bình hành
 
