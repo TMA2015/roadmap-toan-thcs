@@ -4,7 +4,7 @@
 
 | Gói | Hành trình | Trạng thái | Phạm vi | PR / nguồn |
 |---|---|---|---|---|
-| [G10-SGK-CHV](inventory/G10-SGK-CHV.md) | SGK_CHAPTER | ACADEMIC_PARTIAL | PUBLIC_FORMATIVE_ONLY B12–B14 | #639: HELP02 R02 PASS; HELP01 DELTA_C review candidate pending, A3/A5/A6 HOLD; no release R1 |
+| [G10-SGK-CHV](ready/G10-SGK-CHV.md) | SGK_CHAPTER | CONTENT_READY | PUBLIC_FORMATIVE_ONLY B12–B14 | #639: R01 unchanged 27/27 + 2 scoped D6 R02 NotebookLM PASS; R1–R5/H02 Temp parity HOLD, no merge/deploy |
 | [G10-SGK-CHIV-B09-B11](ready/G10-SGK-CHIV-B09-B11.md) | SGK_CHAPTER | CONTENT_READY | PUBLIC_FORMATIVE_ONLY B09–B11 | #637 NotebookLM R01 D1–D6 PASS, 27/27 items |
 | [G10-SGK-CHIV](ready/G10-SGK-CHIV.md) | SGK_CHAPTER | RELEASE_READY | PUBLIC_FORMATIVE_ONLY | source #634 merged; release #645 R1–R5 evidence completed, exact-final-head CI recheck before merge/deploy |
 | [G10-SGK-CHIII](ready/G10-SGK-CHIII.md) | SGK_CHAPTER | RELEASE_READY | PUBLIC_FORMATIVE_ONLY | academic source #633 merged; release #644 only after both exact-final-head CI SUCCESS |
@@ -39,3 +39,5 @@
 **30/10/2026 — ChIV B07/B08 academic handoff:** 18/18 NotebookLM R01 PASS, D1–D6 10/10 outcomes, snapshot Git blob `42b206e31421b33860a1bf697d2d04b7aba992cf`. Authoring #634 source-only, no website/Readiness/Mastery. R1–R5 requires separate release PR and exact-head CI.
 
 **30/10 authoring ChV HELP01 new academic HOLD:** The existing frozen R01 HELP01 uses reversed interval guidance for approximate `a` vs true `\bar a`. B12 HELP02@R02 remains independent reviewer PASS; the new B12 HELP01@R02 is candidate **NOT REVIEWED**. `G10-SGK-CHV` moved to `inventory/` `ACADEMIC_PARTIAL` on Draft #639; return to ready/ only after scoped NotebookLM PASS + exact source QA. No owner merge/deploy permission.
+
+**30/10 ChV authoring closure after second targeted D6 verdict:** Owner independently returned `ACADEMIC_DELTA_VERDICT=PASS` for `HELP-G10-B12-01` R02, correct true-value interval `a−d≤bar-a≤a+d`, no edits to linked `THPT-G10-B12-C02`. With earlier owner-reviewed `HELP-G10-B12-02@R02`, effective six-D6 source map now academic scoped PASS. Restored *authoring only* `CONTENT_READY` for one ChV canonical packet; this supersedes prior `ACADEMIC_PARTIAL` status but does not erase historical hold log. Original HELP02 Temp bytes still require release R1 validation; no public runtime / Chapter Readiness / Mastery / owner merge/deploy authorization.
