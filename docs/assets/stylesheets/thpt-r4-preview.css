@@ -344,6 +344,62 @@ body.thpt-r4-home .md-main__inner{
 .thpt-r4-reviewed-formative-card details summary{font-weight:700;cursor:pointer}
 .thpt-r4-reviewed-formative-card .thpt-r4-modal-progress{overflow-wrap:anywhere}
 
+/* DELTA_A_UI: question-first hierarchy shared by G10/G11 reviewed formative.
+   Three optional actions sit below the prompt like THCS, without changing
+   source item data, solution visibility, progress or assessment behavior. */
+.thpt-r4-reviewed-formative-card h3{
+ font-size:1.12rem!important;line-height:1.5!important;
+ margin:13px 0 18px!important;
+}
+.thpt-r4-reviewed-formative-card .thpt-r4-formative-actions{
+ display:flex;flex-wrap:wrap;align-items:flex-start;
+ gap:8px;margin:17px 0 6px;
+}
+.thpt-r4-reviewed-formative-card .thpt-r4-formative-actions details{
+ margin:0;padding:0;min-width:0;flex:0 1 auto;
+ background:transparent;border:0;border-radius:0;
+ white-space:normal;line-height:1.45;
+}
+.thpt-r4-reviewed-formative-card .thpt-r4-formative-actions details summary,
+.thpt-r4-reviewed-formative-card .thpt-r4-formative-actions .thpt-r4-remediation-link{
+ display:inline-flex;align-items:center;gap:5px;
+ width:auto;max-width:100%;min-height:38px;
+ padding:7px 11px;margin:0;border:1px solid var(--md-default-fg-color--lightest);
+ border-radius:8px;background:var(--md-code-bg-color);
+ color:var(--md-default-fg-color);font-size:.84rem;
+ font-weight:400!important;line-height:1.35;
+ text-decoration:none;white-space:normal;
+ cursor:pointer;overflow-wrap:anywhere;
+}
+.thpt-r4-reviewed-formative-card .thpt-r4-formative-actions details summary{
+ display:list-item;list-style-position:inside;
+}
+.thpt-r4-reviewed-formative-card .thpt-r4-formative-actions details summary::marker{
+ font-size:.74rem;
+}
+.thpt-r4-reviewed-formative-card .thpt-r4-formative-actions details[open]{
+ flex:1 0 100%;
+}
+.thpt-r4-reviewed-formative-card .thpt-r4-formative-actions .thpt-r4-formative-reveal{
+ white-space:pre-wrap;overflow-wrap:anywhere;
+ margin:8px 0 0;padding:12px 14px;
+ border:1px solid var(--md-default-fg-color--lightest);
+ border-radius:8px;background:var(--md-code-bg-color);
+ font-size:.92rem;line-height:1.6;
+}
+.thpt-r4-reviewed-formative-card .thpt-r4-formative-actions
+ :is(details summary,.thpt-r4-remediation-link):focus-visible{
+ outline:2px solid var(--md-accent-fg-color);outline-offset:2px;
+}
+@media(max-width:480px){
+ .thpt-r4-reviewed-formative-card .thpt-r4-formative-actions{gap:7px;}
+ .thpt-r4-reviewed-formative-card .thpt-r4-formative-actions details summary,
+ .thpt-r4-reviewed-formative-card .thpt-r4-formative-actions .thpt-r4-remediation-link{
+   font-size:.82rem;min-height:36px;padding:7px 9px;
+ }
+}
+
+
 
 /* Owner-requested THPT landing: related to THCS home, but visualizes the two
    independent learning paths instead of copying the THCS 25-topic diagram. */
