@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1320" height="740" viewBox="0 0 1320 740" role="img" aria-labelledby="title desc">
+<title id="title">Hai miền nghiệm: dấu không nghiêm ngặt có biên và dấu nghiêm ngặt không có biên</title>
+<desc id="desc">Bên trái x+2y nhỏ hơn hoặc bằng 4, miền nghiệm phía dưới đường thẳng nét liền qua (0,2) và (4,0); gốc tọa độ thuộc miền. Bên phải 2x-y nhỏ hơn 1, tương đương y lớn hơn 2x-1, miền nghiệm nằm trên đường biên nét đứt; điểm (1,1) trên biên không thuộc miền.</desc>
+<rect width="1320" height="740" rx="24" fill="#f8fafc"/>
+<text x="42" y="54" fill="#0f172a" font-size="30" font-family="Arial,sans-serif" font-weight="bold">Biểu diễn miền nghiệm của bất phương trình bậc nhất hai ẩn</text>
+<!-- Left panel, coordinate origin (180,530), 58 px/unit; x in [-1,6], y in [-2,5]. -->
+<rect x="42" y="98" width="600" height="570" rx="20" fill="white" stroke="#cbd5e1" stroke-width="2"/>
+<text x="64" y="140" fill="#1e40af" font-family="Arial,sans-serif" font-size="25" font-weight="bold">x + 2y ≤ 4 — lấy đường biên</text>
+<defs><clipPath id="L"><rect x="95" y="169" width="435" height="421"/></clipPath><clipPath id="R"><rect x="790" y="169" width="420" height="421"/></clipPath></defs>
+<g clip-path="url(#L)"><polygon points="95,675 530,675 530,588 95,370" fill="#bfdbfe" fill-opacity="0.80"/>
+<path d="M95 370 L530 588" stroke="#1d4ed8" stroke-width="5" fill="none"/></g>
+<path d="M95 530 H551 M180 615 V155" stroke="#475569" stroke-width="2.5" fill="none"/>
+<path d="M551 530 l-12 -6 v12 z M180 155 l-6 12 h12 z" fill="#475569"/>
+<text x="556" y="536" font-size="21" fill="#334155">x</text><text x="170" y="152" font-size="21" fill="#334155">y</text>
+<circle cx="180" cy="530" r="6" fill="#0f172a"/><text x="151" y="558" font-size="19" fill="#334155">O</text>
+<circle cx="180" cy="414" r="7" fill="#1d4ed8"/><text x="193" y="411" font-size="19" fill="#1e40af">(0,2)</text>
+<circle cx="412" cy="530" r="7" fill="#1d4ed8"/><text x="421" y="556" font-size="19" fill="#1e40af">(4,0)</text>
+<text x="66" y="641" font-size="19" fill="#1e40af" font-family="Arial,sans-serif">Nửa mặt phẳng chứa O, kể cả biên</text>
+<!-- Right panel: origin(860,500), scale 66; y=2x-1, graph [-0.5,3] x [-2,5] -->
+<rect x="678" y="98" width="600" height="570" rx="20" fill="white" stroke="#cbd5e1" stroke-width="2"/>
+<text x="704" y="140" fill="#047857" font-family="Arial,sans-serif" font-size="25" font-weight="bold">2x − y &lt; 1 — không lấy đường biên</text>
+<g clip-path="url(#R)"><polygon points="827,632 827,170 1058,170" fill="#bbf7d0" fill-opacity="0.78"/>
+<path d="M827 632 L1058 170" stroke="#047857" stroke-width="5" stroke-dasharray="13 12" fill="none"/></g>
+<path d="M790 500 H1220 M860 626 V150" stroke="#475569" stroke-width="2.5" fill="none"/>
+<path d="M1220 500 l-12 -6 v12 z M860 150 l-6 12 h12 z" fill="#475569"/>
+<text x="1228" y="506" font-size="21" fill="#334155">x</text><text x="848" y="148" font-size="21" fill="#334155">y</text>
+<circle cx="860" cy="500" r="6" fill="#0f172a"/><text x="835" y="523" font-size="19" fill="#334155">O</text>
+<circle cx="926" cy="434" r="7" fill="white" stroke="#047857" stroke-width="3"/><text x="940" y="427" font-size="18" fill="#047857">(1,1) trên biên, không thuộc miền</text>
+<text x="705" y="641" font-size="19" fill="#047857" font-family="Arial,sans-serif">Phía trên y = 2x − 1, không kể biên</text>
+<text x="42" y="712" fill="#475569" font-size="18" font-family="Arial,sans-serif">Điểm thử phải nằm ngoài đường biên. Màu tô chỉ hỗ trợ, dấu ≤ và &lt; cùng nét liền/đứt mới xác định miền nghiệm.</text>
+</svg>

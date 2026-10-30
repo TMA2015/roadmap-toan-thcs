@@ -1,8 +1,8 @@
 # Luyện tập / Vận dụng · Nhóm bài tổng hợp cuối Chương VI
 
 <div class="thpt-r4-screen" data-thpt-r4>
-<p class="thpt-r4-eyebrow">TOÁN 10 · CHƯƠNG VI · BÀI TẬP TỔNG HỢP ĐÃ REVIEW</p>
-<p class="thpt-r4-lead"><strong>ACADEMIC_REVIEWED_SNAPSHOT_20261028.</strong> Tám bài tổng hợp tự biên soạn A1–B4 đã được NotebookLM thẩm định trong gói Chương VI, mỗi bài có một canonical item ID ở dưới. Đây <strong>không phải đề chép SGK/SBT</strong>; có thể tự mở lời giải khi luyện tập, nhưng <strong>không chấm điểm hay ghi tiến độ</strong> và không dùng nguyên câu đã lộ đáp án làm Readiness độc lập.</p>
+<p class="thpt-r4-eyebrow">TOÁN 10 · CHƯƠNG VI · BÀI TẬP TỔNG HỢP</p>
+<p class="thpt-r4-lead">Tự luyện 8 bài tổng hợp A1–B4, thử giải trước khi mở lời giải hướng dẫn.</p>
 <a href="luyen-tap.md">← Trở về Luyện tập / Vận dụng Chương VI</a>
 </div>
 
@@ -10,7 +10,7 @@
 
 ### A1. Tập xác định và đồ thị
 
-<p class="thpt-r4-modal-progress" data-thpt-canonical-item="THPT-G10-CHVI-APP-A1" data-thpt-exposure-role="SGK_CHAPTER_APPLICATION">Canonical item_id: <code>THPT-G10-CHVI-APP-A1</code> · SGK_CHAPTER_APPLICATION · đã thẩm định học thuật 28/10/2026 · Không ghi mastery</p>
+<p class="thpt-r4-modal-progress" data-thpt-canonical-item="THPT-G10-CHVI-APP-A1" data-thpt-exposure-role="SGK_CHAPTER_APPLICATION">BÀI LUYỆN TẬP</p>
 
 Cho \(f(x)=\sqrt{7-2x}\).
 
@@ -23,7 +23,7 @@ Cho \(f(x)=\sqrt{7-2x}\).
 
 ### A2. Parabol và đặc trưng đồ thị
 
-<p class="thpt-r4-modal-progress" data-thpt-canonical-item="THPT-G10-CHVI-APP-A2" data-thpt-exposure-role="SGK_CHAPTER_APPLICATION">Canonical item_id: <code>THPT-G10-CHVI-APP-A2</code> · SGK_CHAPTER_APPLICATION · đã thẩm định học thuật 28/10/2026 · Không ghi mastery</p>
+<p class="thpt-r4-modal-progress" data-thpt-canonical-item="THPT-G10-CHVI-APP-A2" data-thpt-exposure-role="SGK_CHAPTER_APPLICATION">BÀI LUYỆN TẬP</p>
 
 Xét \(g(x)=-x^2+6x-5\).
 
@@ -37,7 +37,7 @@ Xét \(g(x)=-x^2+6x-5\).
 
 ### A3. Xét dấu và bất phương trình
 
-<p class="thpt-r4-modal-progress" data-thpt-canonical-item="THPT-G10-CHVI-APP-A3" data-thpt-exposure-role="SGK_CHAPTER_APPLICATION">Canonical item_id: <code>THPT-G10-CHVI-APP-A3</code> · SGK_CHAPTER_APPLICATION · đã thẩm định học thuật 28/10/2026 · Không ghi mastery</p>
+<p class="thpt-r4-modal-progress" data-thpt-canonical-item="THPT-G10-CHVI-APP-A3" data-thpt-exposure-role="SGK_CHAPTER_APPLICATION">BÀI LUYỆN TẬP</p>
 
 Giải cả hai bất phương trình:
 
@@ -50,7 +50,7 @@ Tam thức bằng \((x-2)(x-5)\) và có \(a>0\). Âm trên khoảng \((2;5)\), 
 
 ### A4. Bất phương trình bậc hai với hệ số âm
 
-<p class="thpt-r4-modal-progress" data-thpt-canonical-item="THPT-G10-CHVI-APP-A4" data-thpt-exposure-role="SGK_CHAPTER_APPLICATION">Canonical item_id: <code>THPT-G10-CHVI-APP-A4</code> · SGK_CHAPTER_APPLICATION · đã thẩm định học thuật 28/10/2026 · Không ghi mastery</p>
+<p class="thpt-r4-modal-progress" data-thpt-canonical-item="THPT-G10-CHVI-APP-A4" data-thpt-exposure-role="SGK_CHAPTER_APPLICATION">BÀI LUYỆN TẬP</p>
 
 Giải \(-2x^2+8x+10\ge0\).
 
@@ -62,7 +62,7 @@ Chia cho \(-2\) và **đổi chiều** dấu: \(x^2-4x-5\le0\Leftrightarrow(x-5)
 
 ### B1. Phương trình căn một vế
 
-<p class="thpt-r4-modal-progress" data-thpt-canonical-item="THPT-G10-CHVI-APP-B1" data-thpt-exposure-role="SGK_CHAPTER_APPLICATION">Canonical item_id: <code>THPT-G10-CHVI-APP-B1</code> · SGK_CHAPTER_APPLICATION · đã thẩm định học thuật 28/10/2026 · Không ghi mastery</p>
+<p class="thpt-r4-modal-progress" data-thpt-canonical-item="THPT-G10-CHVI-APP-B1" data-thpt-exposure-role="SGK_CHAPTER_APPLICATION">BÀI LUYỆN TẬP</p>
 
 Giải \(\sqrt{3x+1}=x+1\) và thử lại mọi nghiệm.
 
@@ -72,7 +72,7 @@ Giải \(\sqrt{3x+1}=x+1\) và thử lại mọi nghiệm.
 
 ### B2. Phương trình căn hai vế
 
-<p class="thpt-r4-modal-progress" data-thpt-canonical-item="THPT-G10-CHVI-APP-B2" data-thpt-exposure-role="SGK_CHAPTER_APPLICATION">Canonical item_id: <code>THPT-G10-CHVI-APP-B2</code> · SGK_CHAPTER_APPLICATION · đã thẩm định học thuật 28/10/2026 · Không ghi mastery</p>
+<p class="thpt-r4-modal-progress" data-thpt-canonical-item="THPT-G10-CHVI-APP-B2" data-thpt-exposure-role="SGK_CHAPTER_APPLICATION">BÀI LUYỆN TẬP</p>
 
 Giải \(\sqrt{x^2-2x+5}=\sqrt{x+3}\).
 
@@ -82,7 +82,7 @@ Bình phương: \(x^2-2x+5=x+3\Leftrightarrow x^2-3x+2=0\), cho \(x=1,2\). Tại
 
 ### B3. Vận dụng mô hình diện tích
 
-<p class="thpt-r4-modal-progress" data-thpt-canonical-item="THPT-G10-CHVI-APP-B3" data-thpt-exposure-role="SGK_CHAPTER_APPLICATION">Canonical item_id: <code>THPT-G10-CHVI-APP-B3</code> · SGK_CHAPTER_APPLICATION · đã thẩm định học thuật 28/10/2026 · Không ghi mastery</p>
+<p class="thpt-r4-modal-progress" data-thpt-canonical-item="THPT-G10-CHVI-APP-B3" data-thpt-exposure-role="SGK_CHAPTER_APPLICATION">BÀI LUYỆN TẬP</p>
 
 Một mảnh đất hình chữ nhật sát tường được rào ba mặt bằng \(40\) m lưới. Gọi \(x\) (m) là độ dài mỗi cạnh vuông góc với tường.
 
@@ -98,7 +98,7 @@ Một mảnh đất hình chữ nhật sát tường được rào ba mặt bằ
 
 ### B4. Kiểm tra dấu với tham số (dự kiến phân tầng bổ sung)
 
-<p class="thpt-r4-modal-progress" data-thpt-canonical-item="THPT-G10-CHVI-APP-B4" data-thpt-exposure-role="SGK_CHAPTER_APPLICATION">Canonical item_id: <code>THPT-G10-CHVI-APP-B4</code> · SGK_CHAPTER_APPLICATION · đã thẩm định học thuật 28/10/2026 · Không ghi mastery</p>
+<p class="thpt-r4-modal-progress" data-thpt-canonical-item="THPT-G10-CHVI-APP-B4" data-thpt-exposure-role="SGK_CHAPTER_APPLICATION">BÀI LUYỆN TẬP</p>
 
 Tìm các giá trị thực \(m\) sao cho \(x^2-2mx+4>0\) với mọi \(x\in\mathbb{R}\).
 
@@ -106,16 +106,6 @@ Tìm các giá trị thực \(m\) sao cho \(x^2-2mx+4>0\) với mọi \(x\in\mat
 Hệ số bậc hai \(a=1>0\). Tam thức dương với mọi \(x\) khi và chỉ khi biệt thức \(\Delta=(-2m)^2-16<0\), tức \(m^2<4\Leftrightarrow -2<m<2\). Nếu \(\Delta=0\), tam thức bằng \(0\) tại một điểm nên không thỏa dấu \(>\).
 </details>
 
-## Vai trò trong Luyện tập / Vận dụng
+## Gợi ý học
 
-Đây là **nhóm luyện tập tổng hợp của chương**, không tạo một mục riêng trong menu và không được coi là **Tự kiểm tra**. Các bài giải có thể mở khi người học tự luyện. Câu hỏi dùng cho Readiness nếu phù hợp phải được lựa chọn có kiểm soát tiếp xúc đáp án, và giữ cùng canonical ID khi item chính thức tồn tại.
-
-## Hướng dẫn sử dụng và giới hạn học thuật
-
-- Thứ tự học gợi ý: B15 (hàm số) → B16 (parabol) → B17 (dấu/bất phương trình) → B18 (phương trình căn) → bài tổng hợp này.
-- **Cả 8 bài đã có ID canonical trong gói review được NotebookLM PASS**; không tạo thêm bản sao đề/đáp án dưới Written hoặc Chuyên đề. Lời giải trong thẻ <code>details</code> chỉ mở theo lựa chọn khi luyện tập.
-- A1–A4/B1–B4 là nhãn trình bày; ID chuẩn tương ứng là <code>THPT-G10-CHVI-APP-A1</code> đến <code>THPT-G10-CHVI-APP-B4</code>.
-- Snapshot Chương VI đã có review theo batch, nhưng việc gắn placement mới và nhập ứng dụng cần QA kỹ thuật riêng. B3 có thể được gắn vai trò Written với **cùng ID và rubric**; không tạo bản sao.
-
-!!! warning "Học liệu được review ≠ website được phát hành"
-    NotebookLM đã PASS cho snapshot toán học A1–B4 trong Chương VI. Bản preview vẫn chưa được nghiệm thu production; không ghi điểm/mastery, không tự động cấp phép merge/deploy.
+Sau khi học Bài 15–18, em hãy tự làm các bài tổng hợp rồi so sánh với lời giải từng bước.

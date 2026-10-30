@@ -1,6 +1,6 @@
 # Thư viện bài tập
 
-Em có thể **tự giải một bài toán** hoặc **xem một bài mẫu để học cách giải**. Cách vận hành **giữ giống THCS**, nhưng nội dung và kết quả THPT sẽ được lưu riêng khi triển khai thật.
+Em có thể **tự giải một bài toán** hoặc **xem một bài mẫu để học cách giải**. Hãy thử tự làm trước khi mở hướng dẫn hoặc lời giải.
 
 ## Em muốn làm gì?
 
@@ -11,7 +11,7 @@ Em có thể **tự giải một bài toán** hoặc **xem một bài mẫu đ�
 
 ## Trong thư viện có gì?
 
-**Bài tập tự luận:** [Chương I — 2 bài, một Anchor](tu-luan-chuong-i.md) · [Chương VI — 8 bài](tu-luan.md) · [Chương VII — 4 bài](tu-luan-chuong-vii.md) · [Chương VIII — 3 bài, một Anchor](tu-luan-chuong-viii.md) · [Chương IX — 2 bài, một Anchor](tu-luan-chuong-ix.md). Có đề, gợi ý tùy chọn khi nguồn hỗ trợ, lời giải và rubric. Kết quả tự chấm **không cộng vào điểm Tự kiểm tra**.
+**Bài tập tự luận:** [Chương I — 2 bài, một Anchor](tu-luan-chuong-i.md) · [Chương II — 2 bài, một Anchor](tu-luan-chuong-ii.md) · [Chương VI — 8 bài](tu-luan.md) · [Chương VII — 4 bài](tu-luan-chuong-vii.md) · [Chương VIII — 3 bài, một Anchor](tu-luan-chuong-viii.md) · [Chương IX — 2 bài, một Anchor](tu-luan-chuong-ix.md). Có đề, gợi ý tùy chọn khi nguồn hỗ trợ, lời giải và rubric. Kết quả tự chấm **không cộng vào điểm Tự kiểm tra**.
 
 **Bài mẫu tiêu biểu và bài mỏ neo:** Là những bài trong **cùng kho tự luận** được chọn để dạy cách suy luận, chọn phương pháp và trình bày.
 
@@ -25,6 +25,3 @@ Em có thể **tự giải một bài toán** hoặc **xem một bài mẫu đ�
 2. Dùng bộ lọc theo lớp, chuyên đề, dạng bài, mức độ.
 3. Tự làm trên giấy trước khi mở gợi ý/rubric.
 4. Nếu cần, theo link trở về Kiến thức hoặc Luyện tập.
-
-!!! info "Bản mẫu R4"
-    Hai bài tự luận mẫu của Bài 16 đã đạt review học thuật R4 Postfix; thư viện hiện vẫn là bản thử nghiệm giao diện, chưa phải kho SGK/SBT hoàn chỉnh và không ghi điểm hoặc tiến độ.
