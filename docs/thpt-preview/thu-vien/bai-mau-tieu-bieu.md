@@ -9,4 +9,4 @@
 <a class="math-library-entry" href="../tu-luan/#tu-luan-thuong-demo"><strong>✏️ Hoàn thành bình phương</strong><span>Toán 10 · Đỉnh, trục đối xứng và GTNN của parabol.</span></a>
 </div>
 
-**Quan trọng:** Cả hai mục đều mở đúng bản đề gốc trong [Bài tập tự luận](tu-luan.md), không tạo ra một ngân hàng bài mẫu thứ hai. Hai bài mẫu Bài 16 đã đạt review học thuật R4 Postfix, nhưng bộ lọc và danh mục hiện chỉ dùng để thử nghiệm. Khi mở rộng, người học sẽ lọc theo lớp, chuyên đề và dạng bài.
+Cả hai bài đều mở về đề và lời giải gốc trong [Bài tập tự luận](tu-luan.md).
