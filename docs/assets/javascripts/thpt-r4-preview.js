@@ -312,12 +312,6 @@
      button.setAttribute("aria-current",String(i===index));
      button.addEventListener("click",()=>{index=i;render()});tabs.append(button);
     }
-    const meta=document.createElement("p");meta.className="thpt-r4-modal-progress";
-    meta.textContent="Bài "+item.lesson+" · "+
-      (item.role==="CORE"?"Kiến thức cơ bản":item.role==="APPLICATION"?"Vận dụng":"Luyện tập")+
-      (item.role==="OPTIONAL_SPECIALIZED"?" · Chuyên sâu tự chọn":"")+
-      (item.role==="SUPPORT_EXTENSION"?" · Mở rộng tự chọn":"")+
-      (item.difficulty==="ADVANCED"?" · Nâng cao":"");
     const prompt=document.createElement("h3");prompt.textContent=item.stem;
     // Core/Practice is interactive FORMATIVE learning, not a Readiness test.
     // Only source-reviewed options + answerKey may be checked automatically.
@@ -446,7 +440,7 @@
     const actions=document.createElement("div");
     actions.className="thpt-r4-formative-actions";
     actions.append(hint,solution,reviewLesson);
-    card.append(meta,prompt,answerForm,actions);
+    card.append(prompt,answerForm,actions);
     // Only public formative text is typeset; never load any held-out readiness
     // prompts or answer keys into the browser.
     if(window.MathJax?.typesetPromise)window.MathJax.typesetPromise([card]).catch(()=>{});
