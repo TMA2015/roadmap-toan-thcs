@@ -24,6 +24,6 @@ Trang hướng dẫn giữ bố cục và vai trò giống Toán THCS, không ph
 - **Tự kiểm tra cuối chương SGK:** khi có bộ đề chính thức, sẽ đánh giá độc lập những kỹ năng thuộc chương SGK vừa học.
 - **Tự kiểm tra chuyên đề:** khi có bộ đề chính thức, sẽ đánh giá độc lập các kỹ năng thuộc chuyên đề, có thể xuyên các lớp 10–12.
 - Cả hai bài Tự kiểm tra chính thức phải **không gợi ý, không cho Tutor, không lộ đáp án trước Final Submit**. Không dùng nguyên câu đã luyện làm bằng chứng thành thạo nếu chưa kiểm soát việc học sinh đã xem câu đó.
-- **Trạng thái hiện nay:** Bài Tự kiểm tra Chương VI (4 câu) và Tự kiểm tra chuyên đề Hàm số (2 câu) đều là **demo kỹ thuật, không ghi điểm, không cập nhật Skill Mastery**. Bộ câu Readiness riêng đã review chưa được bật thành đánh giá chính thức. Vì vậy hiện **chưa có câu THPT công khai nào được ghi nhận thành thạo**.
+- **Tự kiểm tra:** Chỉ có kết quả đánh giá khi tính năng kiểm tra chính thức được mở. Các bài luyện tập không tự cộng điểm thành thạo.
 
 [← Về trang chủ THPT](home.md).
