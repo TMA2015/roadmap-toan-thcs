@@ -39,3 +39,12 @@
 - [ ] R5_OWNER_APPROVAL — explicit owner authorization required for integration/merge/deploy.
 
 **CONCLUSION:** `A1–A7=PASS_B12_B14_PUBLIC_FORMATIVE_ONLY`; `CONTENT_READY=YES_AUTHORING_ONLY`; `RELEASE_READY=NO`; `FULL_CHV_SGK_CHAPTER_READINESS=NO`; `TOPIC=NOT_REVIEWED`.
+
+## 30/10 subsequent scoped academic correction — HELP-G10-B12-02 R02
+
+**This addendum overrides only the historical R01 HELP02 D6 clearance claim in §§2–3 above.** Keep original 27/27 R01 item clearance, 14/14 outcome scope, other 5 D6 helpers, D1–D5 and SVG records unchanged; preserve the prior NotebookLM R01 report as a historical snapshot, not an assertion that its flawed HELP02 may be deployed.
+
+- Owner-returned independent NotebookLM `THPT-G10-CHV-B12-D6-HELP02-DELTA-C-20261030-R02-CANDIDATE`: R01 `HELP-G10-B12-02` had an overlooked **P1 mathematical notation/denominator error**, whereas replacement **R02 `HELP02_VERDICT=PASS`, `ACADEMIC_CLEARANCE=YES` for the single card**, `DELTA_C_ACADEMIC_MATERIAL`. S1 SGK 10 KNTT T1 B12 pp73–77 (p75), SBT pp72–73.
+- **Mandatory overlay before R1**: `prototypes/thpt/content-drafts/THPT_G10_CHV_B12_D6_HELP02_R02_CANONICAL_SOURCE_OVERLAY_20261030.md` [Git blob `913400d6aff63befac95a8a47a00870663dd0096`]; **owner reviewer receipt** `prototypes/thpt/content-drafts/THPT_G10_CHV_B12_D6_HELP02_R02_OWNER_NOTEBOOKLM_PASS_RECEIPT_20261030.md`. R01 frozen source Git blob `49502fe39cf0a67f6a3e973a77f94164150637a7` stays unchanged and **must not be used for HELP02**.
+- Static check: correct `a\ne0`, `\delta_a=\Delta_a/|a|`, `\Delta_a\le d\implies\delta_a\le d/|a|`, no equality without actual error; original practice item `THPT-G10-B12-P06` same ID/stem/answer/solution/version. Overlay has exactly one HELP02 with five steps, **not six plus a seventh**. Full Temp byte parity not yet evidenced in authoring conversation; source-lock and release R1–R5 remain separate.
+- **Interpret historical checklist:** the previous `A6_DELTA_RESOLVED` claim `MINIMAL_DELTA=0` applies only to findings known at R01 review time, **not** to later HELP02 discovery. Current **authoring A6** is satisfied by *scoped R02 reviewer clearance + replacement overlay*, with **R1 replacement and source-byte verification not yet completed**. `ASSESSMENT_ITEM_BANK=NOT_REVIEWED`, `NO_SCORE/NO_MASTERY`, `NO_MERGE_DEPLOY`.
