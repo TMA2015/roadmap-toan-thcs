@@ -29,7 +29,7 @@ CURRENT_PR: #639 authoring Draft only, no merge/deploy approval
 - [ ] R4_ASSESSMENT_SAFETY — No protected Readiness or Mastery activation.
 - [ ] R5_OWNER_APPROVAL — Explicit release permission not provided.
 ## P after release
-- [ ] P1_DEPLOY_RECEIPT — Not deployed.
+- [ ] P1_DEPLOY_RECEIPT — No release merge or deployed gh-pages artifact has been performed or verified for B12–B14.
 - [ ] P2_DEVICE_UAT — Not tested on real mobile hardware.
 
 **Boundary:** CONTENT_READY only in authoring Draft PR. Not release, not full-ChV Chapter Readiness, not TOPIC, not Mastery.
