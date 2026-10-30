@@ -3,7 +3,7 @@
 PACKET_ID: G11-SGK-CHI-B01-B02
 LEARNING_PATH: SGK_CHAPTER
 RELEASE_SCOPE: PUBLIC_FORMATIVE_ONLY
-STATE: CONTENT_READY
+STATE: RELEASE_READY
 SOURCE_COMMIT: ed0e14bcf045f88dbfd82b66728aa8d45bed6c05
 REVIEW_RECEIPT: prototypes/thpt/content-drafts/THPT_G11_CHI_B01_B02_NOTEBOOKLM_R01_PASS_RECEIPT_20261029.md [blob 97c01873aa501e791fb14c45c3a3c88784db5d17] + exactly reviewed Temp R01 snapshot prototypes/thpt/content-drafts/THPT_G11_CHI_B01_B02_D1D6_AUTHORING_R01_SNAPSHOT.md [blob f0e737f2d07a27f233615345b60070319d5bd00f]; independent owner-supplied NotebookLM reviewer verdict 2026-10-29 (source branch content/thpt-g11-chi-b01-b02-authoring-20261029).
 CURRENT_PR: academic #627 MERGED at f98ff5ed264ef6fec33e3b70be85e3dc7a081625; release integration PR #650 (reconciled on source-merged main); QA compatibility PR #654 only.
@@ -20,7 +20,7 @@ CONTENTS: G11 ChI B01–B02 only; 10 canonical outcomes, 7 worked examples, 16 f
 
 ## R — Nhánh phát hành, hoàn toàn thuộc nhánh phát hành
 - [x] R1_INTEGRATED_CURRENT_MAIN — G11 B01–B02 original 16 unique formative IDs in one JS bank (Git blob 0997ea27178ef59a29ef33018224fc98b2afc6ae) plus two canonical Written/Anchor on distinct G11 paths. Original source packet #627 merged into main; G10 public banks preserved; no cloned items, backend or changed source math.
-- [ ] R2_EXACT_HEAD_CI — Add approved two lessons/figures/help cards through existing MkDocs R4, run exact head MathJax, browser/iPhone-sized, link, THCS regression and semantic SVG QA.
+- [x] R2_EXACT_HEAD_CI — Final content candidate HEAD 63e36156063900687c613365a615e8e95b265de8 passed both THPT R4 Preview workflow #41080207032 and Roadmap PR Quality #41080206860 (SUCCESS on identical HEAD), including G11 B01–B02 browser/mobile/tablet/desktop emulation, combined THCS+THPT build, D5 SVG, links, public/private safety and unchanged canonical bank. This manifest-only delta must obtain fresh final-HEAD CI SUCCESS before merge.
 - [x] R3_CLEAN_STUDENT_UI — G11 two S1 lessons, public bank, 2 SVG, 4 D6 HELP routes and Written/Anchor display within owner-approved R4 question-first UI. QA-only #654 exact source/UI browser checks succeeded; no NotebookLM/PR/QA labeling inserted into student content.
 - [x] R4_ASSESSMENT_SAFETY — G11 chapter Readiness remains inert placeholder, no held-out keys, no active TOPIC_READINESS; public formative A–D only source-keyed, open answers comparison only; no score, Skill Mastery, Firebase or progress writes. Existing THCS protections retained.
 - [x] R5_OWNER_APPROVAL — Owner on 30/10/2026 confirmed preview UI PASS and instructed release of the currently pending G11 B01–B02 học liệu. Authorization interpreted strictly as PUBLIC_FORMATIVE_ONLY after exact-head QA PASS, not full chapter/topic, readiness or Mastery.
@@ -29,5 +29,5 @@ CONTENTS: G11 ChI B01–B02 only; 10 canonical outcomes, 7 worked examples, 16 f
 - [ ] P1_DEPLOY_RECEIPT — No deployment carried out by authoring lane; release lane must record authoritative deployed SHA and routes.
 - [ ] P2_DEVICE_UAT — Reviewer P2: physical small-screen SVG checks and owner device validation required after integration.
 
-BLOCKER/NEXT: A1–A7 source-locked and R1/R3/R4/R5 documented for G11 B01–B02 PUBLIC_FORMATIVE_ONLY. R2 dual exact-head CI PENDING; no merge before R2 success. B03–B04, full Chapter I Readiness and vertical Topic path are NOT READY.
+BLOCKER/NEXT: A1–A7 and R1–R5 reviewed for B01–B02 PUBLIC_FORMATIVE_ONLY. Final manifest-only commit requires dual exact-HEAD CI SUCCESS, then authorized merge/deploy and P1 deployed Git blob/route verification; physical Safari P2 remains separate. B03–B04, whole-Chapter Readiness and vertical Topic path are NOT READY.
 ACADEMIC_NOTE: Snapshot-locked NotebookLM PASS is not a whole-Chapter I academic PASS. Owner release consent is limited to this B01–B02 public formative packet; no assessment/mastery.
