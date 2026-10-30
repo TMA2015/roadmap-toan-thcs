@@ -8,10 +8,10 @@ The two original **user-connected Google Drive PDFs** were fetched as complete o
 
 | S1 source | Google Drive file | Original byte SHA256 | PDF pages |
 |---|---|---|---:|
-| SGK Toán 10 KNTT tập 2 | [Original SGK PDF](https://drive.google.com/file/d/1v28SYkWsnxg9qUmn-JEmYaEDcCdZWJgf/view) | `ee8a00392e1c9fc5b213e574666cf1f8487548737e138573f28a988c640fafe6` | 102 |
-| SBT Toán 10 KNTT tập 2 | [Original SBT PDF](https://drive.google.com/file/d/1Ca0XQ7KGuZWViVg2LOru3CoQ1UsFpd4P/view) | `3cb33690e0627b9e8ac467c23625b7feb7d05a8422293db0e1b26e44ca6a78c7` | 143 |
+| SGK Toán 10 KNTT tập 2 | Owner-connected SGK PDF (private Drive ID intentionally omitted) | `ee8a00392e1c9fc5b213e574666cf1f8487548737e138573f28a988c640fafe6` | 102 |
+| SBT Toán 10 KNTT tập 2 | Owner-connected SBT PDF (private Drive ID intentionally omitted) | `3cb33690e0627b9e8ac467c23625b7feb7d05a8422293db0e1b26e44ca6a78c7` | 143 |
 
-**No textbook scans or copyrighted page images are copied to public GitHub.** This receipt records only original source IDs, file hashes, page boundaries and the visual verification method.
+**No textbook scans or copyrighted page images are copied to public GitHub.** This receipt records original file SHA256, page boundaries and the visual verification method; private Drive file IDs and download URLs are intentionally not disclosed.
 
 ## SGK Toán 10 tập 2 — verified printed-page boundaries
 
