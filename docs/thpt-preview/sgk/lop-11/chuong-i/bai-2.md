@@ -62,4 +62,4 @@ Nếu \(cos u=3/5\), \(sin u=4/5\), thì \(cos2u=9/25−16/25=−7/25\), \(sin2u
 
 ## 5. Tiếp tục
 
-[Core và Luyện tập Bài 2](../luyen-tap/) · [Tự luận Chương I](../../../../thu-vien/tu-luan-g11-chuong-i-b01-b02/)
+[Core và Luyện tập Bài 2](luyen-tap.md) · [Tự luận Chương I](../../../thu-vien/tu-luan-g11-chuong-i-b01-b02.md)
