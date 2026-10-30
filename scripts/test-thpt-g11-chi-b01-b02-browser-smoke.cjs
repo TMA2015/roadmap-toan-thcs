@@ -26,6 +26,15 @@ const {chromium}=require("playwright"),assert=require("node:assert/strict");
      assert.equal(await dlg.locator("details[open]").count(),0,"solution must be closed before self-work");
      const reviewHref=await dlg.locator(".thpt-r4-remediation-link").first().getAttribute("href");
      assert(reviewHref.includes("/sgk/lop-11/chuong-i/bai-"+n+"/"),"must not route a G11 item to G10");
+     const typed=dlg.locator(".thpt-r4-formative-answer textarea");
+     assert.equal(await typed.count(),1,"G11 canonical open item must allow typed answer");
+     assert.equal(await dlg.locator(".thpt-r4-formative-feedback").innerText(),"","No pre-submit verdict");
+     await typed.fill("Học sinh tự giải G11 — QA");
+     await dlg.locator(".thpt-r4-formative-submit").click();
+     assert((await dlg.locator(".thpt-r4-formative-feedback").innerText()).includes("chưa chấm tự động"),
+       "G11 open-formative must not invent machine correctness");
+     assert(await dlg.locator(".thpt-r4-formative-actions details").nth(1).getAttribute("open")!==null,
+       "G11 open answer should reveal voluntary solution for comparison");
      await dlg.locator("[data-thpt-modal-close]").click();
     }
     await page.goto(base+"luyen-tap/?item=THPT-G11-B02-P07",{waitUntil:"networkidle"});
