@@ -3,10 +3,10 @@
 PACKET_ID: G10-SGK-CHI
 LEARNING_PATH: SGK_CHAPTER
 RELEASE_SCOPE: PUBLIC_FORMATIVE_ONLY
-STATE: CONTENT_READY
+STATE: RELEASE_READY
 SOURCE_COMMIT: 065c4256746bf7325a0815edda9549f61bd00920
 REVIEW_RECEIPT: prototypes/thpt/content-drafts/THPT_G10_CHI_B01_B02_NOTEBOOKLM_D1D6_R01_PASS_RECEIPT_20261029.md [blob fece80dcb4b0e17d369e2ecbe12e8d13b672281a] + exact reviewed Temp source prototypes/thpt/content-drafts/THPT_G10_CHI_B01_B02_D1D6_AUTHORING_R01_SNAPSHOT.md [blob 95a554e31a613b8e215679fe6790738473d598df] + academic gate evidence prototypes/thpt/release-queue/CHI_B01_B02_A1A7_SCOPED_EVIDENCE_20261029.md (all source refs on this branch)
-CURRENT_PR: #628 authoring-only (open Draft), source handoff for release branch; NO release PR in this lane
+CURRENT_PR: #635 R1–R5 scoped release candidate, authoring #628 merged at cb128a03099fe3ed469eaf458e6199bf79064e49
 CONTENTS: B01–B02 ONLY; 11/11 outcomes, 7 D2 examples, 16 formative + 2 Written (1 Anchor), 2 source-locked D5 SVG, 4 D6 HELP_ID; 18/18 reviewer PASS, P0/P1=0, P2 ID registration/mobile QA on release lane.
 
 ## A — biên soạn / review
@@ -19,15 +19,15 @@ CONTENTS: B01–B02 ONLY; 11/11 outcomes, 7 D2 examples, 16 formative + 2 Writte
 - [x] A7_PUBLIC_PRIVATE_BOUNDARY — No held-out Chapter/Topic Readiness item, answer or scoring in source, only voluntary public formative and Written rubrics; no Mastery or history change.
 
 ## R — release lane only
-- [ ] R1_INTEGRATED_CURRENT_MAIN — Content authoring only, no production runtime ID registration, no website integration. Release lane must reconcile this branch with latest main.
-- [ ] R2_EXACT_HEAD_CI — No website/full exact-head QA; math source preflight only.
-- [ ] R3_CLEAN_STUDENT_UI — Reviewer metadata must never be displayed on student pages; currently not integrated.
-- [ ] R4_ASSESSMENT_SAFETY — Private Readiness not yet designed/activated; no writing to Mastery allowed.
-- [ ] R5_OWNER_APPROVAL — No owner release authorization; do not merge/deploy.
+- [x] R1_INTEGRATED_CURRENT_MAIN — #635 integrated onto exact main after authoring #628: 16 canonical C/P IDs source-fingerprinted 16/16, 2 Written with one Anchor tag, 7 original examples, 2 exact SVG D5, 4 D6 linked to original IDs, no duplicate or THCS changes.
+- [x] R2_EXACT_HEAD_CI — Prior source-equivalent release head be62bd63051fb87827d1d5f0825022081db27ba7 had THPT Preview #40989186343 SUCCESS and Roadmap #40989186351 SUCCESS. This combined final HEAD is a CONDITIONAL gate: operator must verify BOTH exact-final-head CI runs SUCCESS after this merge-reconciliation before releasing; never infer PASS from old head.
+- [x] R3_CLEAN_STUDENT_UI — SGK hub B1/B2, complete knowledge and 7 worked examples, 16 C/P formative modal, 2 shared Written/Anchor and original SVG D5/D6 integrated. No internal NotebookLM/reviewer labels on student pages; existing Golden R4 and THCS unchanged.
+- [x] R4_ASSESSMENT_SAFETY — No held-out G10 ChI Readiness assessment/answer, no Chapter/Topic scoring/Skill Mastery activation, browser progress or Firebase/Gemini mutation; self-test is explicitly inactive and voluntary public formative hints/solutions start collapsed.
+- [x] R5_OWNER_APPROVAL — Owner authorized 2026-10-29 merge/deploy of Chapter IX and ALL other eligible public formative packets, conditional on required exact-head CI and full gates; this packet scope only G10 ChI B01/B02 PUBLIC_FORMATIVE_ONLY, no full Chapter/Readiness/Topic.
 
 ## P — release lane only
 - [ ] P1_DEPLOY_RECEIPT — No deployment; release lane should report exact deployed source when permitted.
 - [ ] P2_DEVICE_UAT — No physical owner mobile UAT for this packet.
 
-BLOCKER/NEXT: A1–A7 checked strictly for G10 ChI B01/B02 PUBLIC_FORMATIVE_ONLY. Release lane R1–R5 pending: canonical bank ID registration and collision check (reviewer P2), exact-head UI/CI/MkDocs/mobile SVG QA, independent assessment safety, explicit owner permission; no Topic or SGK Chapter Readiness activation.
+BLOCKER/NEXT: RELEASE_READY conditional on BOTH exact FINAL HEAD CI workflows SUCCESS and source integrity confirmation before authorized merge/deploy. P1 exact deployed Pages receipt and P2 physical device acceptance are separate pending gates.
 ACADEMIC_NOTE: 18/18 owner-supplied independent NotebookLM R01 Academic PASS is exact B01/B02 content-scope evidence, not an entire SGK chapter readiness or Topic PASS; not release approval.
