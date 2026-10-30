@@ -36,7 +36,7 @@ Với đường thẳng \(d\), đặt \(h=d(I,d)\):
 - \(h=R\): tiếp xúc;
 - \(h>R\): không giao nhau.
 
-## 3. Ví dụ có kiểm tra
+## 3. Ví dụ
 
 Với \(x^2+y^2-4x+6y-12=0\), hoàn thành bình phương:
 
