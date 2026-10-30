@@ -21,8 +21,12 @@ for(const token of [
  "if(!canAutoCheck)solution.open=true",
  "answerForm","feedback.setAttribute(\"role\",\"status\")"
 ])assert(renderer.includes(token),"Interactive formative element missing: "+token);
-assert(!/\b(localStorage|sessionStorage|SkillMastery|masteryCredit|score\s*=)\b/.test(renderer),
- "Formative renderer must not write scores or Mastery");
+// Scan executable code, not textual comments such as "no localStorage".
+const executable=renderer.replace(/\/\*[^]*?\*\//g,"").replace(/\/\/[^\n]*/g,"");
+assert(!/\b(localStorage|sessionStorage|SkillMastery|masteryCredit)\b/.test(executable),
+ "Formative renderer must not access storage or Mastery");
+assert(!/\b(score|masteryScore|earnedPoints)\s*=|\.(setItem|recordScore|updateMastery)\s*\(/.test(executable),
+ "Formative renderer must not write scores, points or Mastery");
 assert(renderer.includes("void window.THPTFormativeExposure?.record"),
  "Preserve existing QUESTION_SHOWN exposure behavior");
 
