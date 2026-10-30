@@ -3,9 +3,11 @@
 **PHÂN LOẠI:** `SGK_CHAPTER_READINESS:G10:CHVIII` · `OUTCOME_COVERAGE_BLUEPRINT_ONLY` · `NOT_REVIEWED_FOR_ASSESSMENT` · `NOT_ACTIVE` · `NO_SCORE/NO_MASTERY`.
 **BÀI SGK:** B23–B25.
 **S1 kiểm kê:** SGK Toán 10 KNTT tập 2 B23 tr.59–64, B24 tr.65–71, B25 tr.72–77, cuối ChVIII tr.78–79; SBT tập 2 B23 tr.50–52, B24 tr.53–54, B25 tr.55–56, cuối ChVIII tr.57–59.
-**Nguồn outcome / bằng chứng public:** prototypes/thpt/THPT_G10_CHVII_CHVIII_OUTCOME_PLACEMENT_MATRIX_v0.2.md (matrix đề xuất, Git blob 92808da0176c2ba6e282a1872521a38299802919) + scoped public review receipts trong release-queue của main
+**Nguồn outcome / bằng chứng public:** `prototypes/thpt/THPT_G10_CHVII_CHVIII_OUTCOME_PLACEMENT_MATRIX_v0.4.md` (authoring branch `content/thpt-g10-chvii-chviii-authoring-20261028`, Git blob `a145b898e13ef88dbc5d37e879b243a1e6e880a3`); base v0.2 blob `92808da0176c2ba6e282a1872521a38299802919` chỉ là lịch sử, không dùng làm chuẩn snapshot mới.
 
-**GIỚI HẠN HỌC THUẬT:** Danh sách outcome lấy từ matrix v0.2 là proposal; câu/khóa Readiness chưa được phản biện độc lập. Phân biệt tường minh mở rộng nâng cao và Core SGK, nhất là tổng hệ số lẻ.
+**GIỚI HẠN HỌC THUẬT / ĐỐI CHIẾU NGUỒN 30/10:** Reviewer S1 đã đối chiếu **35/35 outcome của ChVII–VIII cho phạm vi PUBLIC_FORMATIVE_ONLY** (D1/D2 + delta R1; D3/D4 63 câu gốc và B25-P07 qua delta riêng), theo `prototypes/thpt/release-queue/CHVII_VIII_PUBLIC_FORMATIVE_A1_A7_FINAL_EVIDENCE_20261029.md` (main Git blob `f9997fc36bc511cc73d96f1a5f4141d7a5b43358`). **Không suy ra** một outcome đã được reviewer chứng nhận cho bài kiểm tra độc lập hoặc đã có Readiness `item_id` hợp lệ. Đây vẫn là R00 assessment proposal.
+
+**Rủi ro phạm vi cần reviewer xét riêng:** B25-P07 (số hạng không chứa x) đã nhận Delta Academic PASS cho Core public; B25-P02/P05 là SUPPORT_EXTENSION, B25-P06 là ELECTIVE_SPECIALIZED, không mặc định vào Readiness Core. Các ứng viên held-out lịch sử CHVIII-RD05/RD06 có tranh luận phân tầng lũy thừa n=6/7; phải xác minh S1 riêng, không suy ra clearance từ D3/D4 public.
 
 ## Ma trận metadata (không có đề / đáp án / thang điểm)
 
