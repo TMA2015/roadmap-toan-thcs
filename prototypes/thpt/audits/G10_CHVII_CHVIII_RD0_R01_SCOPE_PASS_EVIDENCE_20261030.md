@@ -45,3 +45,12 @@
 - `TOPIC_READINESS` distinct path and scope. No cross-pass inference.
 
 **STATUS:** `RD0_SCOPE_REVIEW_ACADEMIC_PASS=YES`; `ASSESSMENT_ITEM_BANK=NOT_REVIEWED`; `CHVII_CHVIII_FULL_LEARNING_PATH=NO`; `ACTIVE_ASSESSMENT=NO`; `NO_SCORE/NO_MASTERY`; `MERGE_DEPLOY=NO`.
+
+
+## 30/10/2026 · Independent direct-PDF S1 pagination resolution (later audit addendum)
+
+The original **SGK and SBT KNTT Toán 10 tập 2** were fetched as complete bytes from the exact connected Drive source files and visually inspected page-by-page at lesson boundaries, including printed footer page numbers. See [direct-PDF source receipt](G10_CHVII_CHVIII_S1_DIRECT_PDF_PAGINATION_RECONCILIATION_20261030.md), including original SHA256 and a full SGK/SBT printed-page table.
+
+- `S1_PAGINATION_CONFLICT_HOLD=RESOLVED_FOR_EXACT_DRIVE_PDFS` for citation accuracy; the NotebookLM reviewer's historical `PAGE_SCOPE_RESOLVED=YES` is **not** accepted as evidence of the same page ranges. The direct PDF pages contradict both that reviewer table and several earlier repository citations.
+- Seven learner-facing B19–B25 citation corrections are staged separately in [Draft PR #646](https://github.com/TMA2015/self-learning-math/pull/646), `DELTA_B_SOURCE_METADATA` only, with stage1/stage2 CI assertions. **Not merged/deployed.** No frozen reviewer source, question math, answers, SVG or D6 help changed.
+- The **35/35 RD0 R01 NotebookLM scope-only PASS** remains recorded exactly as received, `ASSESSMENT_ITEM_BANK=NOT_REVIEWED`, `READINESS_ACTIVE=NO`, `NO_SCORE/NO_MASTERY`. Source pagination reconciliation is not a new assessment-item Academic PASS or owner release authorization.
