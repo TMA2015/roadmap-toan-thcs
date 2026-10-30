@@ -282,6 +282,8 @@
   // the SGK card chooses a role-based placement without cloning content.
   const reviewed=window.THPT_CHVI_REVIEWED_FORMATIVE;
   const showReviewed=(items,requestedItem)=>{
+   // Ephemeral answers only: no localStorage, backend writes or Skill Mastery.
+   const responses=new Map();
    let index=items.findIndex(item=>item.item_id===requestedItem);
    if(index<0)index=0;
    const root=document.createElement("section");
@@ -317,14 +319,81 @@
       (item.role==="SUPPORT_EXTENSION"?" · Mở rộng tự chọn":"")+
       (item.difficulty==="ADVANCED"?" · Nâng cao":"");
     const prompt=document.createElement("h3");prompt.textContent=item.stem;
-    const options=Array.isArray(item.options)&&item.options.length===4?document.createElement("div"):null;
-    if(options){options.className="thpt-r4-formative-options";for(const choice of item.options){const p=document.createElement("p");p.textContent=choice;options.append(p)}}
+    // Core/Practice is interactive FORMATIVE learning, not a Readiness test.
+    // Only source-reviewed options + answerKey may be checked automatically.
+    // Never guess a mathematical answer key from human-readable solutions.
+    const canAutoCheck=Array.isArray(item.options)&&item.options.length===4&&
+      /^[ABCD]$/.test(item.answerKey||"");
+    let response=responses.get(item.item_id);
+    if(!response){response={value:"",submitted:false};responses.set(item.item_id,response)}
+    const answerForm=document.createElement("form");
+    answerForm.className="thpt-r4-formative-answer";
+    answerForm.setAttribute("aria-label","Trả lời câu "+(index+1));
+    const feedback=document.createElement("p");
+    feedback.className="thpt-r4-formative-feedback";
+    feedback.setAttribute("role","status");
+    feedback.setAttribute("aria-live","polite");
+    const updateFeedback=()=>{
+     if(!response.submitted){feedback.textContent="";return}
+     feedback.textContent=canAutoCheck
+      ?(response.value===item.answerKey
+        ?"Đúng! Em đã chọn đáp án phù hợp. Có thể mở lời giải để hiểu vì sao."
+        :"Chưa đúng. Em có thể đổi đáp án rồi kiểm tra lại, hoặc mở gợi ý.")
+      :"Đã ghi nhận câu trả lời trong lượt luyện tập này. Hãy đối chiếu lời giải mẫu bên dưới; bài này chưa chấm tự động.";
+    };
+    if(canAutoCheck){
+     const group=document.createElement("fieldset");
+     group.className="thpt-r4-formative-choice-group";
+     const legend=document.createElement("legend");
+     legend.textContent="Chọn một phương án rồi bấm Kiểm tra";
+     group.append(legend);
+     item.options.forEach((choice,n)=>{
+      const value="ABCD"[n];
+      const label=document.createElement("label");
+      const radio=document.createElement("input");
+      radio.type="radio";radio.name="thpt-formative-answer";radio.value=value;
+      radio.checked=response.value===value;
+      radio.addEventListener("change",()=>{
+       response.value=value;response.submitted=false;updateFeedback();
+      });
+      label.append(radio,document.createTextNode(choice));group.append(label);
+     });
+     answerForm.append(group);
+    }else{
+     const label=document.createElement("label");
+     label.textContent="Nhập câu trả lời hoặc các bước giải của em";
+     label.className="thpt-r4-formative-text-label";
+     const textarea=document.createElement("textarea");
+     textarea.rows=3;textarea.value=response.value;
+     textarea.setAttribute("aria-label","Lời giải của em");
+     textarea.placeholder="Nhập đáp án hoặc cách làm trước khi đối chiếu";
+     textarea.addEventListener("input",()=>{
+      response.value=textarea.value;response.submitted=false;updateFeedback();
+     });
+     label.append(textarea);answerForm.append(label);
+    }
+    const submit=document.createElement("button");
+    submit.type="submit";submit.className="thpt-r4-formative-submit";
+    submit.textContent=canAutoCheck?"Kiểm tra đáp án":"Nộp và đối chiếu lời giải";
+    answerForm.append(submit,feedback);
+    updateFeedback();
     const hint=document.createElement("details"),hintSummary=document.createElement("summary");
     hintSummary.textContent="💡 Xem gợi ý (tự chọn)";
     hint.append(hintSummary,document.createTextNode(item.hint));
     const solution=document.createElement("details"),solutionSummary=document.createElement("summary");
     solutionSummary.textContent="Xem đáp án và lời giải sau khi tự làm";
     solution.append(solutionSummary,document.createTextNode(item.solution));
+    answerForm.addEventListener("submit",event=>{
+     event.preventDefault();
+     if(!response.value.trim()){
+      feedback.textContent=canAutoCheck?"Hãy chọn một phương án trước khi kiểm tra.":"Hãy nhập câu trả lời trước khi đối chiếu.";
+      return;
+     }
+     response.submitted=true;updateFeedback();
+     // Short/open answers have no structured reviewed grading key: show the
+     // original canonical worked solution for learner comparison, not a score.
+     if(!canAutoCheck)solution.open=true;
+    });
     // D5-reviewed figures are *answer-bearing*. Load an exact shared SVG ONLY
     // when the learner deliberately expands the formative solution, never
     // alongside an unanswered Core/Practice prompt or held-out Readiness.
@@ -369,7 +438,7 @@
       "../bai-"+item.lesson+"/";
     const note=document.createElement("p");note.className="thpt-r4-modal-progress";
     note.textContent="Tự luyện và đối chiếu lời giải · Không ghi điểm thành thạo.";
-    card.append(meta,prompt,...(options?[options]:[]),hint,solution,reviewLesson,note);
+    card.append(meta,prompt,answerForm,hint,solution,reviewLesson,note);
     // Only public formative text is typeset; never load any held-out readiness
     // prompts or answer keys into the browser.
     if(window.MathJax?.typesetPromise)window.MathJax.typesetPromise([card]).catch(()=>{});
