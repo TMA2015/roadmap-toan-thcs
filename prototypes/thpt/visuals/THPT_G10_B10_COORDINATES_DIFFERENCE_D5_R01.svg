@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="480" viewBox="0 0 960 480" role="img" aria-labelledby="title desc">
+<title id="title">Tọa độ vectơ AB là tọa độ điểm B trừ tọa độ điểm A</title><desc id="desc">Trong hệ Oxy, điểm A âm hai, một; điểm B ba, bốn. Vectơ từ A đến B có hoành độ 5 và tung độ 3. Hai nét đứt tạo bước chuyển 5 đơn vị ngang và 3 đơn vị lên.</desc>
+<defs><marker id="arr" markerWidth="8" markerHeight="8" refX="8" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 Z" fill="#2563eb"/></marker><marker id="axis" markerWidth="6" markerHeight="6" refX="6" refY="3" orient="auto"><path d="M0 0 L6 3 L0 6 Z" fill="#475569"/></marker></defs>
+<rect width="960" height="480" fill="#f8fafc" rx="16"/><text x="32" y="42" font-family="Arial,sans-serif" font-weight="bold" font-size="25" fill="#0f172a">Tọa độ vectơ từ hai điểm</text>
+<line x1="100" y1="320" x2="650" y2="320" stroke="#475569" stroke-width="2" marker-end="url(#axis)"/><line x1="350" y1="430" x2="350" y2="60" stroke="#475569" stroke-width="2" marker-end="url(#axis)"/>
+<g stroke="#cbd5e1" stroke-width="1" opacity=".65"><path d="M260 75 V430 M305 75 V430 M395 75 V430 M440 75 V430 M485 75 V430 M530 75 V430 M125 140 H650 M125 185 H650 M125 230 H650 M125 275 H650 M125 365 H650"/></g>
+<text x="655" y="327" font-family="Arial,sans-serif" font-size="18">x</text><text x="359" y="60" font-family="Arial,sans-serif" font-size="18">y</text><text x="354" y="340" font-family="Arial,sans-serif" font-size="17">O</text>
+<line x1="260" y1="275" x2="485" y2="275" stroke="#0f766e" stroke-width="3" stroke-dasharray="10 7"/><line x1="485" y1="275" x2="485" y2="140" stroke="#0f766e" stroke-width="3" stroke-dasharray="10 7"/>
+<line x1="260" y1="275" x2="485" y2="140" stroke="#2563eb" stroke-width="6" marker-end="url(#arr)"/>
+<circle cx="260" cy="275" r="6" fill="#be123c"/><circle cx="485" cy="140" r="6" fill="#be123c"/>
+<text x="173" y="263" font-family="Arial,sans-serif" font-size="21" fill="#be123c">A(−2;1)</text><text x="501" y="132" font-family="Arial,sans-serif" font-size="21" fill="#be123c">B(3;4)</text>
+<text x="339" y="303" font-family="Arial,sans-serif" font-size="20" fill="#0f766e">Δx = 5</text><text x="495" y="232" font-family="Arial,sans-serif" font-size="20" fill="#0f766e">Δy = 3</text>
+<text x="685" y="190" font-family="Arial,sans-serif" font-size="24" fill="#0f172a">AB = B − A</text><text x="685" y="236" font-family="Arial,sans-serif" font-size="23" fill="#1d4ed8">= (5;3)</text>
+<text x="685" y="286" font-family="Arial,sans-serif" font-size="18" fill="#334155">|AB| = √34</text>
+<text x="45" y="454" font-family="Arial,sans-serif" font-size="19" fill="#334155">Đổi thứ tự: BA = (−5;−3). Hình thể hiện tọa độ, không phải vị trí vectơ cố định.</text>
+</svg>
