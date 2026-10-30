@@ -15,3 +15,10 @@
 - Technical release candidate #630 has same original canonical bank, Written/rubric, two SVG and four R01 D6. R1/R3/R4 đã tích hợp và kiểm chứng trên bản ứng viên #630; R2 chỉ đạt khi hai workflow exact HEAD đều SUCCESS. Chủ dự án đã cho phép phát hành ChIX có điều kiện đạt CI, không bật Readiness/Mastery. P1/P2 chỉ xác nhận sau khi triển khai.
 
 Một packet canonical duy nhất trên mỗi phạm vi; không nhân đôi câu hỏi, không mở Readiness/Mastery chỉ vì gói `CONTENT_READY`. Trạng thái thực tế từng chương tra trong [REGISTER](../REGISTER.md).
+
+
+## Authoring CONTENT_READY — Chương IV, Bài 9–11 (không phát hành)
+
+- [G10-SGK-CHIV-B09-B11](G10-SGK-CHIV-B09-B11.md) đã NotebookLM PASS 27/27 item, 14/14 outcome, D1–D6 B09–B11; snapshot Git blob `a9f6fab820559a8da98a5a42cd9902dbf9891f34`, biên bản reviewer blob `f13acb74206c00cb489e533df7792870f88830e3`.
+- [Hồ sơ A1–A7](../CHIV_B09_B11_PUBLIC_FORMATIVE_A1A7_EVIDENCE_20261030.md). Trạng thái chỉ áp dụng `PUBLIC_FORMATIVE_ONLY`, bản Draft PR #637 chưa merge. P2: đăng ký ID production và thử 3 SVG responsive trên thiết bị, do nhánh phát hành xử lý.
+- Gói B07–B08 của Draft PR #634 được duyệt riêng; cả hai phải được tích hợp vào **một** hành trình ChIV SGK và một ngân hàng canonical, không được coi là đạt Tự kiểm tra cuối chương/Topic/Mastery. R1–R5 vẫn chưa thực hiện.
