@@ -4,6 +4,8 @@
 **PACKET_ID:** `THPT-G10-CHIV-SGK-CHAPTER-READINESS-RD1-PRIVATE-ITEMS-20261030-R01`.
 **ACADEMIC:** `DELTA_C_NEW_PRIVATE_ITEMS / NOTEBOOKLM_REVIEW_PENDING`; **ASSESSMENT:** `PRIVATE_CANDIDATE_ONLY`, not a deployed item bank.
 
+**CURRENT_OWNER_VERDICT (2026-10-30):** Independent NotebookLM `ACADEMIC_OVERALL=PASS`, `ACADEMIC_CLEARANCE=YES` for **20/20 private ChIV RD1 candidate item IDs and 24/24 existing outcomes**, `P0/P1/P2=0/0/0`, `MINIMAL_DELTA=0` (owner-provided reviewer report). [Scoped reviewer receipt, metadata-only](G10_CHIV_RD1_OWNER_NOTEBOOKLM_R01_SCOPED_PASS_PRIVATE_METADATA_20261030.md). Reviewer names shortened `..._R01_20.md` but actual source is `..._R01_20261030.md` SHA256 `a73c17539aa2148aa8c1cfd18f607db65847805fe6b0b10e87e8850f2d06d506`; exact uploaded byte identity **HOLD**. Pre-review `PENDING` statements below are archival authoring status, superseded by this review. Still `ASSESSMENT_ITEM_BANK=PRIVATE_CANDIDATE_ONLY`, `FINAL_SUBMIT=NOT_ACTIVE`, `NO_SCORE/NO_MASTERY`, `NO_MERGE_DEPLOY`.
+
 ## S1 authority and independent RD0 history
 
 - Owner-provided original S1 **SGK Toán 10 KNTT Tập 1**: B07 printed pp46–50, B08 pp51–54, B09 pp55–59, B10 pp60–65, B11 pp66–70, end-ChIV pp71–72. Original PDF SHA256 `3cbb335780dc0f2f4a034a55eb542e3bbe67693412b10a90ca1dffe9ea50eac2`; image-checked source excerpts (PDF printed page +1).
