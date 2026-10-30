@@ -23,6 +23,16 @@ for(const lesson of required){
  const lessonText=read("docs/thpt-preview/sgk/chuong-vii/bai-"+lesson+".md");
  assert(lessonText.includes("## 1.")&&lessonText.includes("## 3."),"SGK knowledge not stand-alone B"+lesson);
  assert(lessonText.includes("SGK")&&lessonText.includes("SBT"),"S1 lesson page provenance missing B"+lesson);
+ // Direct visual source lock, original SGK/SBT Toán 10 KNTT tập 2 PDFs.
+ // Only printed-page metadata may change; reviewed math/D6 must remain frozen.
+ const s1Pages={
+  "19":["30–35","28–31"],"20":["36–42","32–38"],
+  "21":["43–47","39–41"],"22":["48–57","42–46"]
+ };
+ const [sgkPages,sbtPages]=s1Pages[lesson];
+ const receipt=lessonText.match(/<small>Nguồn đối chiếu:[^<]*<\/small>/);
+ assert(receipt&&receipt[0].includes(sgkPages)&&receipt[0].includes(sbtPages),
+  "Incorrect original printed SGK/SBT S1 source pages B"+lesson);
  assert(!/NotebookLM|ACADEMIC_CLEARANCE|đang QA/i.test(lessonText),"Student-facing ChVII lesson leaked project notes");
  assert(lessonText.includes("luyen-tap/"),"SGK lesson missing practice link B"+lesson);
 }
