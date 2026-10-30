@@ -351,8 +351,10 @@ body.thpt-r4-home .md-main__inner{
  font-size:1.12rem!important;line-height:1.5!important;
  margin:13px 0 18px!important;
 }
+/* DELTA_A_UI: equal-height centered controls matching THCS visual rhythm.
+   Scoped to formative modals; disclose only when opened by the learner. */
 .thpt-r4-reviewed-formative-card .thpt-r4-formative-actions{
- display:flex;flex-wrap:wrap;align-items:flex-start;
+ display:flex;flex-wrap:wrap;align-items:stretch;
  gap:8px;margin:17px 0 6px;
 }
 .thpt-r4-reviewed-formative-card .thpt-r4-formative-actions details{
@@ -362,20 +364,25 @@ body.thpt-r4-home .md-main__inner{
 }
 .thpt-r4-reviewed-formative-card .thpt-r4-formative-actions details summary,
 .thpt-r4-reviewed-formative-card .thpt-r4-formative-actions .thpt-r4-remediation-link{
- display:inline-flex;align-items:center;gap:5px;
- width:auto;max-width:100%;min-height:38px;
- padding:7px 11px;margin:0;border:1px solid var(--md-default-fg-color--lightest);
+ display:inline-flex;box-sizing:border-box;align-items:center;justify-content:center;gap:6px;
+ width:auto;max-width:100%;height:42px;min-height:42px;max-height:42px;
+ padding:0 12px;margin:0;border:1px solid var(--md-default-fg-color--lightest);
  border-radius:8px;background:var(--md-code-bg-color);
  color:var(--md-default-fg-color);font-size:.84rem;
- font-weight:400!important;line-height:1.35;
- text-decoration:none;white-space:normal;
- cursor:pointer;overflow-wrap:anywhere;
+ font-weight:400!important;line-height:1.25;
+ text-decoration:none;white-space:nowrap;vertical-align:middle;cursor:pointer;
 }
 .thpt-r4-reviewed-formative-card .thpt-r4-formative-actions details summary{
- display:list-item;list-style-position:inside;
+ display:inline-flex;list-style:none;
 }
-.thpt-r4-reviewed-formative-card .thpt-r4-formative-actions details summary::marker{
- font-size:.74rem;
+.thpt-r4-reviewed-formative-card .thpt-r4-formative-actions details summary::-webkit-details-marker{
+ display:none;
+}
+.thpt-r4-reviewed-formative-card .thpt-r4-formative-actions details summary::before{
+ content:"▸";display:inline-block;flex:none;font-size:.75rem;line-height:1;
+}
+.thpt-r4-reviewed-formative-card .thpt-r4-formative-actions details[open] summary::before{
+ transform:rotate(90deg);
 }
 .thpt-r4-reviewed-formative-card .thpt-r4-formative-actions details[open]{
  flex:1 0 100%;
@@ -395,11 +402,9 @@ body.thpt-r4-home .md-main__inner{
  .thpt-r4-reviewed-formative-card .thpt-r4-formative-actions{gap:7px;}
  .thpt-r4-reviewed-formative-card .thpt-r4-formative-actions details summary,
  .thpt-r4-reviewed-formative-card .thpt-r4-formative-actions .thpt-r4-remediation-link{
-   font-size:.82rem;min-height:36px;padding:7px 9px;
+  font-size:.82rem;height:42px;min-height:42px;max-height:42px;padding:0 9px;
  }
 }
-
-
 
 /* Canonical public FORMATIVE interactions only. No assessment score widgets. */
 .thpt-r4-formative-answer{margin:14px 0;padding:14px;border:1px solid var(--md-default-fg-color--lightest);border-radius:10px}
