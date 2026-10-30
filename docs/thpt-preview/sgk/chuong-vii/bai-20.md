@@ -70,4 +70,4 @@ Xét \(d_1:x-y-1=0\) và \(d_2:x+y-5=0\).
 - [Bài 21 — Đường tròn](bai-21.md).
 - [Core và Luyện tập/Vận dụng](luyen-tap.md).
 
-<small>Nguồn đối chiếu: SGK Toán 10 KNTT tập 2, trang in 35–41; SBT trang 31–38. Ví dụ do dự án biên soạn.</small>
+<small>Nguồn đối chiếu: SGK Toán 10 KNTT tập 2, trang in 36–42; SBT trang 32–38. Ví dụ do dự án biên soạn.</small>

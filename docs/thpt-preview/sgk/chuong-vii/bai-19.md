@@ -66,4 +66,4 @@ Cho \(A(1;2)\), \(B(4;3)\). Ta có \(\overrightarrow{AB}=(3;1)\), nên một ph�
 - [Bài 20 — Hai đường thẳng, góc và khoảng cách](bai-20.md).
 - [Core và Luyện tập/Vận dụng Chương VII](luyen-tap.md): tự luyện và mở lời giải sau khi tự làm.
 
-<small>Nguồn đối chiếu: SGK KNTT Toán 10 tập 2, trang in 29–34; SBT trang 27–31. Ví dụ do dự án biên soạn; không chép nguyên SGK.</small>
+<small>Nguồn đối chiếu: SGK KNTT Toán 10 tập 2, trang in 30–35; SBT trang 28–31. Ví dụ do dự án biên soạn; không chép nguyên SGK.</small>

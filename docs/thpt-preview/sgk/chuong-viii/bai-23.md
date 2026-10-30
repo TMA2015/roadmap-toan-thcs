@@ -46,4 +46,4 @@
 - [Thư viện Written/Anchor Chương VIII](../../thu-vien/tu-luan-chuong-viii.md) · tự giải trên giấy.
 - [Tổng quan Chương VIII](../chuong-viii.md).
 
-<small>Nguồn: SGK Toán 10 KNTT tập 2, trang 59–64; SBT 50–52. Các ví dụ do dự án biên soạn, không chép nguyên văn bài SGK.</small>
+<small>Nguồn: SGK Toán 10 KNTT tập 2, trang 60–65; SBT 51–53. Các ví dụ do dự án biên soạn, không chép nguyên văn bài SGK.</small>

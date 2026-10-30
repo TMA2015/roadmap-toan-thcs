@@ -26,6 +26,12 @@ for(let n=23;n<=25;n++){
  }
  assert(lesson.includes("## 1.")&&lesson.includes("## 3."),"Missing self-contained Knowledge/Examples B"+n);
  assert(lesson.includes("SGK")&&lesson.includes("SBT")&&lesson.includes("../luyen-tap/"));
+ // Exact original scanned SGK/SBT printed-page citation guard, metadata only.
+ const s1Pages={23:["60–65","51–53"],24:["66–71","54–55"],25:["72–75","56–57"]};
+ const [sgkPages,sbtPages]=s1Pages[n];
+ const receipt=lesson.match(/<small>Nguồn: SGK[^<]*<\/small>/);
+ assert(receipt&&receipt[0].includes(sgkPages)&&receipt[0].includes(sbtPages),
+  "Incorrect original printed SGK/SBT S1 source pages B"+n);
 }
 assert(bank.records.some(x=>x.item_id==="THPT-G10-B25-P07"&&x.role==="PRACTICE"&&x.solution.includes("-243")),
  "P07 independently reviewed Delta_C constant term not staged correctly");
