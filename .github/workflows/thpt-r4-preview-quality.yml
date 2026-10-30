@@ -181,13 +181,6 @@ jobs:
           node scripts/test-thpt-g10-sgk-display-ui.cjs --built
           node scripts/test-thpt-g10-chiv-b09-b11-release-integration.cjs --built
           node scripts/test-thpt-chvi-student-notes.cjs --built
-      - name: Upload UAT-only combined site artifact (no deploy)
-        uses: actions/upload-artifact@v4
-        with:
-          name: thpt-interactive-qa-${{ github.sha }}
-          path: site/
-          if-no-files-found: error
-          retention-days: 5
       - name: Verify combined build has no backend
         run: |
           test -f site/index.html
