@@ -35,4 +35,4 @@ Một packet canonical duy nhất trên mỗi phạm vi; không nhân đôi câu
 ## G10 Chương IV B07–B08 · CONTENT_READY / nguồn học thuật
 
 - [Gói B07–B08](G10-SGK-CHIV.md): 16 Core/Practice, 2 Written (1 Anchor), 6 D2 examples, 2 SVG D5 source-locked, 4 D6 HELP_ID, 10/10 outcomes. Independent NotebookLM R01 PASS exact blob `42b206e31421b33860a1bf697d2d04b7aba992cf`.
-- Authoring #634 only. R1–R5 website release gates remain pending; no Readiness/Topic/Mastery.
+- Source #634 merged main; release #645 combines original bank and Golden R4 after #647 UI fix. R1/R3/R4/R5 prepared, R2 remains HOLD until two exact-final-head workflows SUCCESS. No Chapter/Topic Readiness or Mastery.
