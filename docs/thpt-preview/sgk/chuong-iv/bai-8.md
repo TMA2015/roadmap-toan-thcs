@@ -15,7 +15,7 @@
 
 **D1.5 Ứng dụng hợp lực.** Nếu hai lực có cùng điểm đặt, hợp lực là đường chéo hình bình hành tạo bởi hai vectơ lực. Độ lớn hợp lực không bằng tổng các độ lớn nếu hai lực không cùng hướng. Bài toán hai lực vuông góc có thể dùng định lí Pitago.
 
-## 2. Ví dụ đã giải
+## 2. Ví dụ
 
 ### Ví dụ 1. Rút gọn theo ba điểm
 
