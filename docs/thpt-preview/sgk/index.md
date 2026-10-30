@@ -2,7 +2,7 @@
 
 <div class="thpt-r4-screen" data-thpt-r4>
 <p class="thpt-r4-lead">Chọn lớp, chương và bài để bắt đầu học.</p>
-<div class="thpt-r4-search"><label for="thpt-chapter-search"><strong>🔎 Tìm lớp, chương, bài</strong></label><input id="thpt-chapter-search" type="search" data-thpt-filter-input="chapter" placeholder="Ví dụ: lớp 10, chương VI, hàm số..." autocomplete="off"><span data-thpt-filter-count aria-live="polite">Chọn lớp và chương</span></div>
+<div class="thpt-r4-search"><label for="thpt-chapter-search"><strong>🔎 Tìm lớp, chương, bài</strong></label><input id="thpt-chapter-search" type="search" data-thpt-filter-input="chapter" placeholder="Ví dụ: lớp 10, chương VI, hàm số..." autocomplete="off"><span data-thpt-filter-count aria-live="polite">7 chương có học liệu</span></div>
 <div class="library-clusters thpt-r4-clusters" data-thpt-filter-list="chapter">
 <details class="library-cluster" data-thpt-filter-group open>
 <summary><span class="library-cluster-icon" aria-hidden="true">10</span><span class="library-cluster-info"><strong>Lớp 10</strong><small>9 chương trong khung đối chiếu; Chương I (B01–B02), Chương II (B03–B04), Chương III (B05–B06) và VI–IX có học liệu công khai theo từng phạm vi được duyệt</small></span><span class="library-cluster-counter">9 chương</span></summary>
