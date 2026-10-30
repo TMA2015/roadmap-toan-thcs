@@ -4,6 +4,8 @@
 
 **STATE:** `DELTA_C_NEW_PRIVATE_ITEMS` · `AUTHOR_MATH_STATIC_QA=PASS` · `NOTEBOOKLM_RD1_ITEM_VERDICT=PENDING` · `RELEASE_AUTHORIZATION=NO`.
 
+**CURRENT_OWNER_NOTEBOOKLM_REVIEW (2026-10-30):** Independent reviewer reports `ACADEMIC_MATH_VERDICT=PASS` and `ACADEMIC_CLEARANCE_FOR_RD1_SNAPSHOT=YES` for 20/20 private candidate items and 19/19 outcomes, `P0/P1/P2=0/0/0`, `MINIMAL_DELTA=0`. **Separately**, `EXPOSURE_ISOLATION_VERDICT=HOLD` for comparison against historical 18 private ChVI Readiness candidates (28/10); `EXACT_NOTEBOOKLM_SOURCE_BYTE_PARITY=HOLD` because reviewer abbreviated actual file name and supplied no uploaded-source SHA. [Metadata-only scoped owner receipt](G10_CHVI_RD1_OWNER_NOTEBOOKLM_R01_SCOPED_MATH_PASS_EXPOSURE_HOLD_METADATA_20261030.md). The earlier `NOTEBOOKLM_RD1_ITEM_VERDICT=PENDING` and `RD1_ACADEMIC_PASS=NO` statements below are **historical pre-review state**, superseded for item mathematics **only**; exposure, secure delivery, Final Submit and Mastery remain HOLD / NOT_ACTIVE. The reviewer report also mislabels SBT ChVI as Tập 1; source verified as **SBT Tập 2**. No content/key/rubric edits, no release or deployment.
+
 ## Original S1, exact sources and independent RD0 limitation
 
 - **Original SGK Toán 10 KNTT Tập 2** (user-supplied 102-page scan; SHA256 `ee8a00392e1c9fc5b213e574666cf1f8487548737e138573f28a988c640fafe6`), representative source pages *visually inspected*: B15 printed pp4–10, B16 pp11–18, B17 pp19–24, B18 pp25–27, end-ChVI pp28–29.
