@@ -1,6 +1,6 @@
 # Toán 10 KNTT — Chương IX (Tính xác suất theo định nghĩa cổ điển) · Ma trận phạm vi Tự kiểm tra R00
 
-**PHÂN LOẠI:** `SGK_CHAPTER_READINESS:G10:CHIX` · `OUTCOME_COVERAGE_BLUEPRINT_ONLY` · `NOT_REVIEWED_FOR_ASSESSMENT` · `NO_SCORE/NO_MASTERY`.
+**PHÂN LOẠI:** `SGK_CHAPTER_READINESS:G10:CHIX` · `OUTCOME_COVERAGE_BLUEPRINT_ONLY` · `NOT_REVIEWED_FOR_ASSESSMENT` · `NOT_ACTIVE` · `NO_SCORE/NO_MASTERY`.
 **BÀI SGK:** B26–B27.
 **S1 kiểm kê:** SGK Toán 10 KNTT tập 2 ChIX, Bài 26–27 và bài tập cuối chương; cần reviewer xác minh lại trang in chính xác của từng bài từ S1 trong gói review riêng (không suy từ dữ liệu JS).
 **Nguồn outcome / bằng chứng public:** docs/assets/javascripts/thpt-chix-reviewed-formative-v1.js (public canonical skills/14 question IDs); prototypes/thpt/release-queue/CHIX_B26_B27_PUBLIC_FORMATIVE_A1_A7_FINAL_EVIDENCE_20261029.md
