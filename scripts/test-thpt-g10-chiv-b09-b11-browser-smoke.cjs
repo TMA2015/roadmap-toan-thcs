@@ -25,7 +25,7 @@ const assert=require("node:assert/strict"),{chromium}=require("playwright");
      const dlg=page.locator("dialog.thpt-r4-practice-dialog");
      await dlg.waitFor({state:"visible",timeout:12000});
      assert.equal(await dlg.locator("[data-thpt-canonical-item]").first().getAttribute("data-thpt-canonical-item"),id);
-     assert.equal(await dlg.locator(".thpt-r4-formative-choice-group input[type="radio"]").count(),4,"MCQ A-D");
+     assert.equal(await dlg.locator('.thpt-r4-formative-choice-group input[type="radio"]').count(),4,"MCQ A-D");
      assert.equal(await dlg.locator("details[open]").count(),0,"No answer leak");
      await page.locator("[data-thpt-modal-close]").click();
     }
@@ -33,7 +33,7 @@ const assert=require("node:assert/strict"),{chromium}=require("playwright");
     const short=page.locator("dialog.thpt-r4-practice-dialog");
     await short.waitFor({state:"visible"});
     assert.equal(await short.locator("[data-thpt-canonical-item]").first().getAttribute("data-thpt-canonical-item"),"THPT-G10-B09-P01");
-    assert.equal(await short.locator(".thpt-r4-formative-choice-group input[type="radio"]").count(),0);
+    assert.equal(await short.locator('.thpt-r4-formative-choice-group input[type="radio"]').count(),0);
     const lock=await page.goto(base+"tu-kiem-tra-chuong/",{waitUntil:"domcontentloaded"});
     assert(lock?.ok()&&await page.getByText("chưa mở",{exact:false}).count()>0,"Readiness must stay inactive");
     const overflow=await page.evaluate(()=>document.documentElement.scrollWidth-window.innerWidth);
