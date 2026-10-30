@@ -12,4 +12,4 @@
 </div></section>
 </div>
 
-[Tự luận Chương I](../../../thu-vien/tu-luan-chuong-i/) · [Tự kiểm tra cuối chương · chưa kích hoạt](../tu-kiem-tra-chuong/)
+[Tự luận Chương I](../../thu-vien/tu-luan-chuong-i.md) · [Tự kiểm tra cuối chương · chưa kích hoạt](tu-kiem-tra-chuong.md)

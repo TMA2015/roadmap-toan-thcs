@@ -55,6 +55,6 @@
 
 ## 4. Tiếp tục học
 
-[Luyện tập Bài 1](../luyen-tap/) · [Tự luận Chương I](../../../thu-vien/tu-luan-chuong-i/)
+[Luyện tập Bài 1](luyen-tap.md) · [Tự luận Chương I](../../thu-vien/tu-luan-chuong-i.md)
 
 <p class="thpt-r4-footnote">Nguồn: SGK Toán 10 KNTT tập 1, Bài 1 trang 5–11; SBT Bài 1 trang 5–7. Học liệu tự luyện không dùng làm bài đánh giá độc lập.</p>
