@@ -1,7 +1,7 @@
 INHERIT: mkdocs.yml
 # THPT R4 QA configuration: same MkDocs engine, dedicated THPT navigation; one shared GitHub Pages site.
 site_name: Self-Learning Math · Toán THPT
-site_description: Tự học Toán THPT theo SGK KNTT và chuyên đề. Học liệu đang được phát hành theo từng bài; Tự kiểm tra và Skill Mastery chưa kích hoạt.
+site_description: Học Toán THPT theo SGK Kết nối tri thức và các chuyên đề.
 site_dir: site-thpt-preview
 nav:
   - Chọn chương trình: thpt-preview/index.md
@@ -14,7 +14,7 @@ nav:
               - Bài 1 · Mệnh đề: thpt-preview/sgk/chuong-i/bai-1.md
               - Bài 2 · Tập hợp: thpt-preview/sgk/chuong-i/bai-2.md
               - Core và Luyện tập Chương I: thpt-preview/sgk/chuong-i/luyen-tap.md
-              - Tự kiểm tra cuối Chương I (chưa kích hoạt): thpt-preview/sgk/chuong-i/tu-kiem-tra-chuong.md
+              - Tự kiểm tra cuối Chương I: thpt-preview/sgk/chuong-i/tu-kiem-tra-chuong.md
           - Chương VI · Hàm số và đồ thị:
               - Tổng quan chương: thpt-preview/sgk/chuong-vi.md
               - Bài 15 · Hàm số: thpt-preview/sgk/chuong-vi/bai-15.md
@@ -22,7 +22,7 @@ nav:
               - Bài 17 · Dấu của tam thức bậc hai: thpt-preview/sgk/chuong-vi/bai-17.md
               - Bài 18 · Phương trình quy về bậc hai: thpt-preview/sgk/chuong-vi/bai-18.md
               - Luyện tập và Vận dụng Chương VI: thpt-preview/sgk/chuong-vi/luyen-tap.md
-              - Tự kiểm tra cuối Chương VI (demo kỹ thuật): thpt-preview/sgk/chuong-vi/tu-kiem-tra-chuong.md
+              - Tự kiểm tra cuối Chương VI: thpt-preview/sgk/chuong-vi/tu-kiem-tra-chuong.md
           - Chương VII · Phương pháp tọa độ:
               - Tổng quan Chương VII: thpt-preview/sgk/chuong-vii.md
               - Bài 19 · Phương trình đường thẳng: thpt-preview/sgk/chuong-vii/bai-19.md
@@ -30,23 +30,23 @@ nav:
               - Bài 21 · Đường tròn: thpt-preview/sgk/chuong-vii/bai-21.md
               - Bài 22 · Ba đường conic: thpt-preview/sgk/chuong-vii/bai-22.md
               - Core và Luyện tập Chương VII: thpt-preview/sgk/chuong-vii/luyen-tap.md
-              - Tự kiểm tra cuối Chương VII (chưa kích hoạt): thpt-preview/sgk/chuong-vii/tu-kiem-tra-chuong.md
+              - Tự kiểm tra cuối Chương VII: thpt-preview/sgk/chuong-vii/tu-kiem-tra-chuong.md
           - Chương VIII · Đại số tổ hợp:
               - Tổng quan Chương VIII: thpt-preview/sgk/chuong-viii.md
               - Bài 23 · Quy tắc đếm: thpt-preview/sgk/chuong-viii/bai-23.md
               - Bài 24 · Hoán vị, chỉnh hợp và tổ hợp: thpt-preview/sgk/chuong-viii/bai-24.md
               - Bài 25 · Nhị thức Newton: thpt-preview/sgk/chuong-viii/bai-25.md
               - Core và Luyện tập Chương VIII: thpt-preview/sgk/chuong-viii/luyen-tap.md
-              - Tự kiểm tra cuối Chương VIII (chưa kích hoạt): thpt-preview/sgk/chuong-viii/tu-kiem-tra-chuong.md
+              - Tự kiểm tra cuối Chương VIII: thpt-preview/sgk/chuong-viii/tu-kiem-tra-chuong.md
           - Chương IX · Xác suất cổ điển:
               - Tổng quan Chương IX: thpt-preview/sgk/chuong-ix.md
               - Bài 26 · Biến cố và xác suất: thpt-preview/sgk/chuong-ix/bai-26.md
               - Bài 27 · Thực hành tính xác suất: thpt-preview/sgk/chuong-ix/bai-27.md
               - Core và Luyện tập Chương IX: thpt-preview/sgk/chuong-ix/luyen-tap.md
-              - Tự kiểm tra cuối Chương IX (chưa kích hoạt): thpt-preview/sgk/chuong-ix/tu-kiem-tra-chuong.md
+              - Tự kiểm tra cuối Chương IX: thpt-preview/sgk/chuong-ix/tu-kiem-tra-chuong.md
   - Học theo chuyên đề:
       - Tổng quan chuyên đề: thpt-preview/chuyen-de/index.md
-      - Hàm số và đồ thị · Mẫu:
+      - Hàm số và đồ thị:
           - Kiến thức: thpt-preview/chuyen-de/ham-so/kien-thuc.md
           - Luyện tập: thpt-preview/chuyen-de/ham-so/luyen-tap.md
           - Tự kiểm tra: thpt-preview/chuyen-de/ham-so/tu-kiem-tra.md

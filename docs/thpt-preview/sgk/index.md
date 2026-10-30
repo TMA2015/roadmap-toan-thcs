@@ -1,7 +1,7 @@
 # Tổng quan học theo SGK KNTT
 
 <div class="thpt-r4-screen" data-thpt-r4>
-<p class="thpt-r4-lead">Chọn lớp, mở chương và đi thẳng tới bài. Danh mục theo SGK sẽ được xác minh từ các tập KNTT và NotebookLM THPT trước khi công bố đầy đủ.</p>
+<p class="thpt-r4-lead">Chọn lớp, chương và bài để bắt đầu học.</p>
 <div class="thpt-r4-search"><label for="thpt-chapter-search"><strong>🔎 Tìm lớp, chương, bài</strong></label><input id="thpt-chapter-search" type="search" data-thpt-filter-input="chapter" placeholder="Ví dụ: lớp 10, chương VI, hàm số..." autocomplete="off"><span data-thpt-filter-count aria-live="polite">24 chương trong khung đối chiếu · 5 chương có học liệu</span></div>
 <div class="library-clusters thpt-r4-clusters" data-thpt-filter-list="chapter">
 <details class="library-cluster" data-thpt-filter-group open>
