@@ -33,6 +33,10 @@
     ],
     "item_ids": [
       "THPT-G10-B15-C01"
+    ],
+    "outcomes": [
+      "B15_OUT_01",
+      "B15_OUT_03"
     ]
   },
   {
@@ -67,6 +71,11 @@
       "THPT-G10-B15-P02",
       "THPT-G10-B15-P03",
       "THPT-G10-B15-P04"
+    ],
+    "outcomes": [
+      "B15_OUT_02",
+      "B15_OUT_04",
+      "B15_OUT_05"
     ]
   },
   {
@@ -95,7 +104,12 @@
         "text": "Quay về Bài 16 SGK Core R4 và phần Practice liên quan; làm lại câu gốc với cùng ID canonical của trang đang mở, **không tạo bản sao**."
       }
     ],
-    "item_ids": []
+    "item_ids": [],
+    "outcomes": [
+      "B16_OUT_01",
+      "B16_OUT_02",
+      "B16_OUT_04"
+    ]
   },
   {
     "help_id": "HELP-G10-B16-02",
@@ -123,7 +137,11 @@
         "text": "Trang Bài 16 SGK mục vẽ đồ thị và bài toán mô hình; đối chiếu hình SVG gốc; tự giải trước khi mở gợi ý luyện tập."
       }
     ],
-    "item_ids": []
+    "item_ids": [],
+    "outcomes": [
+      "B16_OUT_03",
+      "B16_OUT_05"
+    ]
   },
   {
     "help_id": "HELP-G10-B17-01",
@@ -154,6 +172,10 @@
     "item_ids": [
       "THPT-G10-B17-C01",
       "THPT-G10-B17-C02"
+    ],
+    "outcomes": [
+      "B17_OUT_01",
+      "B17_OUT_02"
     ]
   },
   {
@@ -186,6 +208,11 @@
       "THPT-G10-B17-P02",
       "THPT-G10-B17-P03",
       "THPT-G10-B17-P04"
+    ],
+    "outcomes": [
+      "B17_OUT_03",
+      "B17_OUT_04",
+      "B17_OUT_05"
     ]
   },
   {
@@ -219,6 +246,10 @@
       "THPT-G10-B18-C02",
       "THPT-G10-B18-P01",
       "THPT-G10-B18-P03"
+    ],
+    "outcomes": [
+      "B18_OUT_01",
+      "B18_OUT_03"
     ]
   },
   {
@@ -250,6 +281,10 @@
     "item_ids": [
       "THPT-G10-B18-P02",
       "THPT-G10-B18-P04"
+    ],
+    "outcomes": [
+      "B18_OUT_02",
+      "B18_OUT_04"
     ]
   }
 ];
