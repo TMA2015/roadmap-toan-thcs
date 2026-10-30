@@ -43,7 +43,8 @@ Một packet canonical duy nhất trên mỗi phạm vi; không nhân đôi câu
 - [Hồ sơ A1–A7](../CHIV_B09_B11_PUBLIC_FORMATIVE_A1A7_EVIDENCE_20261030.md). Trạng thái chỉ áp dụng `PUBLIC_FORMATIVE_ONLY`, bản Draft PR #637 chưa merge. P2: đăng ký ID production và thử 3 SVG responsive trên thiết bị, do nhánh phát hành xử lý.
 - Gói B07–B08 của Draft PR #634 được duyệt riêng; cả hai phải được tích hợp vào **một** hành trình ChIV SGK và một ngân hàng canonical, không được coi là đạt Tự kiểm tra cuối chương/Topic/Mastery. R1–R5 vẫn chưa thực hiện.
 
-## Chương V B12–B14 — chuyển về kiểm toán học thuật (Draft #639)
+## Chương V B12–B14 — CONTENT_READY học liệu, chưa phát hành (Draft #639)
 
-- [Manifest hiện hành: ACADEMIC_PARTIAL / HELP01 delta review HOLD](../inventory/G10-SGK-CHV.md). Nội dung được review R01 chỉ có hiệu lực theo snapshot cũ; HELP02 đã nhận NotebookLM R02 PASS, nhưng HELP01 còn điểm bất nhất ký hiệu và hướng dẫn khoảng số đúng, đang chờ review riêng.
-- Bản Temp HELP01 R02 đã chuẩn bị, **chưa PASS**, không phát hành R01 HELP01/HELP02 từ snapshot cũ. D1–D5 và các item không bị ảnh hưởng tiếp tục giữ trạng thái review nguồn cũ. Không merge/deploy.
+- [G10-SGK-CHV — manifest CONTENT_READY](G10-SGK-CHV.md): 14 outcomes, 27 canonical public candidate items (24 Formative + 3 Written), 9 ví dụ, 3 SVG; D6 có **6 HELP_ID canonical** dùng nguồn hiệu lực **R01 các phần không bị ảnh hưởng + HELP01@R02 + HELP02@R02**. Hai delta R02 đã nhận NotebookLM scoped Academic PASS độc lập; bản R01 bị lỗi của hai HELP không được dùng khi tích hợp.
+- [Hồ sơ A1–A7](../CHV_B12_B14_PUBLIC_FORMATIVE_A1A7_EVIDENCE_20261030.md) và bản đồ nguồn canonical tại `prototypes/thpt/content-drafts/THPT_G10_CHV_B12_B14_D6_EFFECTIVE_CANONICAL_SOURCE_MAP_R02_20261030.md`. Bài Core `THPT-G10-B12-C02` và Practice `THPT-G10-B12-P06` giữ nguyên stem/đáp án/phiên bản.
+- R1–R5 thuộc nhánh phát hành: phải xác minh byte nguồn Temp HELP02 R02 trước tích hợp, đăng ký/dedup production, QA giao diện/SVG desktop/mobile và nhận **phê duyệt merge/deploy rõ ràng từ chủ dự án**. Tự kiểm tra cuối ChV và Mastery không được phát hành.
