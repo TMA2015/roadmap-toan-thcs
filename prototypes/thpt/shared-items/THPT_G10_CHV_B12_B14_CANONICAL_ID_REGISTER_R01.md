@@ -1,6 +1,6 @@
 # G10 ChV B12–B14 — canonical candidate ID register R01
 
-**Status:** `NOTEBOOKLM_NOT_REVIEWED / ACADEMIC_PARTIAL`, reference-only; no new runtime question bank or duplicated answer/rubric.
+**Status:** `NOTEBOOKLM_ACADEMIC_PASS_R01 / CONTENT_READY_AUTHORING_ONLY`, reference-only; no new runtime question bank or duplicated answer/rubric. Reviewer PASS 27/27 candidate IDs and 14/14 outcomes, report blob `7a20d601c5e3e6ef184bcb44e4e7e214e8a06baf`; R1 canonical registration still pending.
 **Scope:** three SGK lessons B12/B13/B14 `PUBLIC_FORMATIVE_ONLY`. Do not infer end-ChV Readiness or Topic.
 **Source snapshot:** `prototypes/thpt/content-drafts/THPT_G10_CHV_B12_B14_D1D6_AUTHORING_R01_SNAPSHOT.md`; Git blob `49502fe39cf0a67f6a3e973a77f94164150637a7`, SHA256 `77a189bb1aa199f3b81b8915903f85bae6659729849251ad92fa092761fd850c`.
 **Original academic packet:** `THPT-G10-CHV-B12-B14-D1D6-AUTHORING-20261030-R01`. Verify all keys/solutions/rubrics against that snapshot.
