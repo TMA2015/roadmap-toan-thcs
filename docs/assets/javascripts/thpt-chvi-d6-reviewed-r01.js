@@ -266,7 +266,7 @@
  };
  function inline(parent,src){
   // Render a limited Markdown subset using textContent, never innerHTML.
-  const re=/\*\*([^*]+)\*\*|([^\`]+)|\*([^*]+)\*/g;
+  const re=/\*\*([^*]+)\*\*|\x60([^\x60]+)\x60|\*([^*]+)\*/g;
   let i=0,m;
   while((m=re.exec(src))){
    if(m.index>i)parent.append(document.createTextNode(src.slice(i,m.index)));
