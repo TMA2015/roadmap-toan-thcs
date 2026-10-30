@@ -595,7 +595,8 @@ async function ready(page,path){
   await ready(page,"chuyen-de/ham-so/kien-thuc/");
   assert.equal(await page.locator("[data-floating-ai]").count(),1,
     "THPT Topic knowledge must reuse the same Gemini Tutor");
-  assert((await page.locator("article").textContent()).includes("PILOT_PARTIAL_G10"),"Partial-topic status not visible");
+  assert((await page.locator("article").textContent()).includes("Hàm số bậc hai lớp 10."),"Student topic knowledge introduction missing");
+  assert(!(await page.locator("article").textContent()).includes("PILOT_PARTIAL_G10"),"Internal pilot status leaked to student UI");
   const semanticTab=page.locator(".md-typeset .tabbed-set > .tabbed-labels > label").first();
   assert(await semanticTab.isVisible(),"Golden pilot semantic tabs are missing");
   const semanticStyle=await semanticTab.evaluate(el=>({
@@ -605,8 +606,7 @@ async function ready(page,path){
   const semanticsBody=await page.locator(".md-typeset .tabbed-content .tabbed-block p").first().evaluate(el=>({
     font:getComputedStyle(el).fontFamily,size:getComputedStyle(el).fontSize,color:getComputedStyle(el).color
   }));
-  const adaptiveLink=page.getByRole("link",{name:"Xem thử bố cục nhiều mảng và kiểm tra kiểu chữ"});
-  assert(await adaptiveLink.isVisible(),"Adaptive layout demo link missing");
+  assert.equal(await page.getByRole("link",{name:"Xem thử bố cục nhiều mảng và kiểm tra kiểu chữ"}).count(),0,"Internal QA layout link must not appear on student page");
 
   await ready(page,"qa/adaptive-knowledge-tabs/");
   const moduleTabs=page.locator('[data-thpt-knowledge-level="module"] > nav > [data-thpt-knowledge-tab]');
@@ -709,7 +709,8 @@ async function ready(page,path){
   }
   await ready(page,"sgk/chuong-vi/bai-tap-cuoi-chuong/");
   const integrated=await page.locator("article").textContent();
-  assert(integrated.includes("ACADEMIC_REVIEWED_SNAPSHOT_20281028")||integrated.includes("ACADEMIC_REVIEWED_SNAPSHOT_20261028"),"Reviewed cumulative exercises must be tied to the correct 2026-10-28 academic snapshot");
+  assert(integrated.includes("Tự luyện 8 bài tổng hợp A1–B4"),"Cumulative Chapter VI practice introduction missing");
+  assert(!integrated.includes("ACADEMIC_REVIEWED_SNAPSHOT_20261028"),"Internal academic snapshot status leaked to learner UI");
   assert((await page.locator("article details").count())===8,"Reviewed cumulative source must retain eight independently solvable explanations");
   assert(!(await page.locator("article details").first().getAttribute("open")),"End-chapter answers should start collapsed");
   await ready(page,"sgk/chuong-vi/bai-16/");
