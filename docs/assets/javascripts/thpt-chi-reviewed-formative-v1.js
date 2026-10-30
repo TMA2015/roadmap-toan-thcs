@@ -168,7 +168,7 @@
     "solution": "Đáp án: 4 học sinh.\nLời giải: n(A∪B)=23+25−12=36; ngoài cả hai =40−36=4.",
     "hint": "Tính số học ít nhất một CLB bằng công thức cộng trừ giao.",
     "exposure": "FORMATIVE_ONLY",
-    "difficulty": "INTERMEDIATE"
+    "difficulty": "APPLICATION"
   },
   {
     "item_id": "THPT-G10-B02-P06",
@@ -179,7 +179,7 @@
     "solution": "Đáp án: Có, A=B.\nLời giải: x²=4 ⇔ x=±2; A={−2,2}=B.",
     "hint": "Giải phương trình trên ℤ, rồi so hai chiều chứa nhau.",
     "exposure": "FORMATIVE_ONLY",
-    "difficulty": "APPLICATION"
+    "difficulty": "INTERMEDIATE"
   }
 ];
  const validate=()=>({valid:records.length===16&&new Set(records.map(x=>x.item_id)).size===16&&records.every(x=>/^THPT-G10-B0[12]-[CP]\d{2}$/.test(x.item_id)&&x.exposure==="FORMATIVE_ONLY"&&x.stem&&x.solution&&x.hint)});
