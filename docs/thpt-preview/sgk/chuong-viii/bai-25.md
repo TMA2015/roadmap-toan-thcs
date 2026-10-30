@@ -57,4 +57,4 @@ Có n+1 số hạng trước khi thu gọn các số hạng đồng dạng. Hệ
 - [Thư viện Written/Anchor Chương VIII](../../thu-vien/tu-luan-chuong-viii.md) · tự giải trên giấy.
 - [Tổng quan Chương VIII](../chuong-viii.md).
 
-<small>Nguồn: SGK Toán 10 KNTT tập 2, trang 72–77; SBT 55–56. Các ví dụ do dự án biên soạn, không chép nguyên văn bài SGK.</small>
+<small>Nguồn: SGK Toán 10 KNTT tập 2, trang 72–75; SBT 56–57. Các ví dụ do dự án biên soạn, không chép nguyên văn bài SGK.</small>
