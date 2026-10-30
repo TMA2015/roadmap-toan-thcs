@@ -56,6 +56,9 @@ on:
       - 'docs/assets/javascripts/thpt-g11-chi-reviewed-formative-v1.js'
       - 'scripts/test-thpt-g11-chi-b01-b02-release-integration.cjs'
       - 'scripts/test-thpt-g11-chi-b01-b02-browser-smoke.cjs'
+      - 'scripts/test-thpt-formative-actions-ui-browser.cjs'
+      - 'scripts/test-thpt-interactive-compact-browser.cjs'
+      - 'scripts/test-thpt-r4-public-formative-interaction.cjs'
       - 'scripts/test-thpt-r4-search-browser.cjs'
       - 'docs/assets/javascripts/thpt-chvii-reviewed-formative-v1.js'
       - 'docs/assets/javascripts/thpt-chviii-reviewed-formative-v1.js'
@@ -116,7 +119,9 @@ jobs:
       - name: Guard G10 ChI B01–B02 reviewed canonical, D5/D6 and private-assessment boundary
         run: node scripts/test-thpt-g10-chi-release-integration.cjs
       - name: Guard G10 ChII original MCQ and D5/D6/Written
-        run: node scripts/test-thpt-g10-chii-release-integration.cjs
+        run: |
+          node scripts/test-thpt-g10-chii-release-integration.cjs
+          node scripts/test-thpt-r4-public-formative-interaction.cjs
       - name: Guard G10 ChIII B05/B06 source-locked MCQ and short-answer, D5/D6/Written
         run: node scripts/test-thpt-g10-chiii-release-integration.cjs
       - name: Guard G10 ChIV B07/B08 source-locked original items, SVG, Written and D6
@@ -202,6 +207,10 @@ jobs:
           node scripts/test-thpt-r4-preview-browser.js
       - name: SGK and Chuyên đề search QA · class/chapter/lesson · mobile / iPad / desktop
         run: node scripts/test-thpt-r4-search-browser.cjs
+      - name: Integrated PR651/652 question-first compact and interactive browser QA
+        run: |
+          node scripts/test-thpt-formative-actions-ui-browser.cjs
+          node scripts/test-thpt-interactive-compact-browser.cjs
       - name: ChI B01/B02 original canonical/D6/D5 browser QA · mobile / iPad / desktop
         run: node scripts/test-thpt-g10-chi-browser-smoke.cjs
       - name: ChII B03/B04 browser QA mobile / iPad / desktop
