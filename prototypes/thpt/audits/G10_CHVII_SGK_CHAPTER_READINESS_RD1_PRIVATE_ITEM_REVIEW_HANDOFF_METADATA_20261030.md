@@ -12,7 +12,7 @@
 
 ## Actual private candidate file and reviewer item identity
 
-- Owner-only Markdown file `Temp_G10_CHVII_SGK_CHAPTER_READINESS_RD1_PRIVATE_ITEMS_R01_20261030.md`: exact **21,343 UTF-8 bytes**, SHA256 **`aee3c37882152eb20689947d267f96f1008dad8b774e99ed3a2dc321efc4721d`**.
+- Owner-only Markdown file `Temp_G10_CHVII_SGK_CHAPTER_READINESS_RD1_PRIVATE_ITEMS_R01_20261030.md`: exact **24,657 UTF-8 bytes**, SHA256 **`bd013fa3c0cde7d6b297f6621f069d03d004a5c8810c633517c1caef5c1399db`**.
 - **22 distinct private provisional item IDs** `THPT-G10-CHVII-RD1-01` … `THPT-G10-CHVII-RD1-22`; **23/23 original outcomes appear in matrix**, no new outcome IDs. The last item is an explicit optional non-scoring challenge and is not a mandatory Core assessment item.
 - **Item modes:** 8 MCQ_SINGLE, 3 TRUE_FALSE_GROUP, 5 SHORT_EXPLANATION, 6 WRITTEN_RUBRIC. **Item tier:** 18 CORE / 3 SUPPORT / 1 OPTIONAL_NO_SCORE. `G10-B21-LINE_CIRCLE_POSITION` uses the same appropriate item as linked tangent/distance evidence.
 - **Rubric references for independent review only:** 48 available reference points in total if considering all candidate modes, of which **37 Core + 10 Support + 1 Optional non-scoring**. This is not an approved production score, chapter threshold, rubric engine or Skill Mastery evidence.
@@ -23,3 +23,5 @@
 ## Security and release gates
 
 The public GitHub file contains **NO** private question stem, option, answer key, worked solution or item-specific grading rubric. `ASSESSMENT_BANK=PRIVATE_CANDIDATE_ONLY`; `PROTECTED_DELIVERY=NOT_IMPLEMENTED`; `FINAL_SUBMIT_SCORING=NOT_ACTIVE`; `NO_SCORE/NO_MASTERY`; `NO_MERGE_DEPLOY`; `OWNER_RELEASE_AUTHORIZATION=NO`. Do not register 22 new production item IDs, change THCS/Firebase or merge/deploy without independent item review, technical QA and owner permission.
+
+**FINAL PRIVATE TEMP SOURCE EXTENSION:** Owner-only Temp now includes a **32-row public canonical comparator pattern matrix** from `thpt-chvii-reviewed-formative-v1.js` for NotebookLM to identify structural near-duplicates; 22 private item/answer bodies and 23 outcome mappings are unchanged. Exact final file hash and size above supersede the earlier draft pin. Reviewer must return item-by-item `EXPOSURE_STRUCTURAL_RISK`, not blanket public uniqueness PASS based on differing numbers.
