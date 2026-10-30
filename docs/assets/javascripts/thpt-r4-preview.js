@@ -320,13 +320,13 @@
     const options=Array.isArray(item.options)&&item.options.length===4?document.createElement("div"):null;
     if(options){options.className="thpt-r4-formative-options";for(const choice of item.options){const p=document.createElement("p");p.textContent=choice;options.append(p)}}
     const hint=document.createElement("details"),hintSummary=document.createElement("summary");
-    hintSummary.textContent="💡 Xem gợi ý (tự chọn)";
+    hintSummary.textContent="💡 Gợi ý";
     const hintContent=document.createElement("div");
     hintContent.className="thpt-r4-formative-reveal";
     hintContent.textContent=item.hint;
     hint.append(hintSummary,hintContent);
     const solution=document.createElement("details"),solutionSummary=document.createElement("summary");
-    solutionSummary.textContent="Xem đáp án và lời giải sau khi tự làm";
+    solutionSummary.textContent="📖 Đáp án / Lời giải";
     const solutionContent=document.createElement("div");
     solutionContent.className="thpt-r4-formative-reveal";
     solutionContent.textContent=item.solution;
