@@ -5,7 +5,7 @@
 | Gói | Hành trình | Trạng thái | Phạm vi | PR / nguồn |
 |---|---|---|---|---|
 | [G10-SGK-CHI](ready/G10-SGK-CHI.md) | SGK_CHAPTER | RELEASE_READY | PUBLIC_FORMATIVE_ONLY | authoring #628 merged, release #635 exact-head CI pending |
-| [G10-SGK-CHV](inventory/G10-SGK-CHV.md) | SGK_CHAPTER | ACADEMIC_PARTIAL | PUBLIC_FORMATIVE_ONLY B12–B14 | D1–D6 R01, 27 candidate IDs, NotebookLM pending |
+| [G10-SGK-CHV](ready/G10-SGK-CHV.md) | SGK_CHAPTER | CONTENT_READY | PUBLIC_FORMATIVE_ONLY B12–B14 | #639 source authoring, NotebookLM R01 D1–D6 27/27 PASS |
 | [G10-SGK-CHVI](inventory/G10-SGK-CHVI.md) | SGK_CHAPTER | PUBLISHED_SCOPED | PUBLIC_FORMATIVE_ONLY | merged #612; UI #617–619 |
 | [G10-SGK-CHVII](ready/G10-SGK-CHVII.md) | SGK_CHAPTER | RELEASE_READY | PUBLIC_FORMATIVE_ONLY | merged/deployed #625, source #624 |
 | [G10-SGK-CHVIII](ready/G10-SGK-CHVIII.md) | SGK_CHAPTER | RELEASE_READY | PUBLIC_FORMATIVE_ONLY | merged/deployed #625, source #624 |
@@ -25,4 +25,4 @@
 **30/10/2026 — ChI B01–B02:** authoring #628 đã merge và A1–A7 được giữ đúng snapshot. Ứng viên website #635 đã kiểm tra 16/16 original canonical + 2 Written/Anchor, 7 ví dụ, 2 SVG và 4 HELP_ID. R2 chỉ chốt khi exact combined HEAD CI PASS; P1/P2 ghi nhận riêng sau deploy.
 
 
-**G10 ChV authoring candidate:** [B12–B14 inventory](inventory/G10-SGK-CHV.md), Temp R01 exact Git source blob `49502fe39cf0a67f6a3e973a77f94164150637a7`, 27 candidate item IDs, 14 outcomes, 9 worked examples, 3 SVG and 6 D6 HELP_ID. 28/28 author checks PASS, but independent NotebookLM Academic PASS NOT RECEIVED. A3/A5/A6 HOLD, R1–R5 unchecked, whole-ChV Readiness/Topic not approved. This is the unmerged authoring branch, not main.
+**G10 ChV B12–B14 authoring CONTENT_READY:** [ready manifest](ready/G10-SGK-CHV.md) · [A1–A7 evidence](CHV_B12_B14_PUBLIC_FORMATIVE_A1A7_EVIDENCE_20261030.md). Independent NotebookLM R01 D1–D6 PASS 27/27 items, 14/14 outcomes, P0/P1=0, MINIMAL_DELTA=0. Reviewed source Git blob `49502fe39cf0a67f6a3e973a77f94164150637a7`; receipt blob `7a20d601c5e3e6ef184bcb44e4e7e214e8a06baf`. Only B12–B14 PUBLIC_FORMATIVE_ONLY, A1–A7 passed, R1–R5 pending and reviewer P2 (canonical bank registration + SVG mobile QA) open. The row lives on unmerged authoring Draft PR #639, not main. No independent Chapter/Topic Readiness or Mastery.
