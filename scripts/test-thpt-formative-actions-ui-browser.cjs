@@ -17,10 +17,20 @@ const assert=require("node:assert/strict"),{chromium}=require("playwright");
      assert.equal(await card.locator("h3").count(),1,"Question must remain visible");
      assert.equal(await card.locator(".thpt-r4-formative-actions").count(),1);
      const actions=card.locator(".thpt-r4-formative-actions");
+     assert.equal(await card.locator(".thpt-r4-modal-progress").count(),0,
+      "Repeated Bài n / role metadata must be absent inside each question card");
      assert.equal(await actions.locator("details").count(),2);
      assert.equal(await actions.locator(".thpt-r4-remediation-link").count(),1);
      assert.equal(await actions.locator("details[open]").count(),0,"Hint & solution must start closed");
      assert.equal(await card.getByText("Tự luyện và đối chiếu lời giải · Không ghi điểm thành thạo.").count(),0);
+     const peers=await actions.locator("summary,.thpt-r4-remediation-link").evaluateAll(nodes=>
+      nodes.map(el=>{const rect=el.getBoundingClientRect(),css=getComputedStyle(el);
+       return {height:rect.height,align:css.alignItems,justify:css.justifyContent,display:css.display}}));
+     assert.equal(peers.length,3,"Three auxiliary actions must remain present");
+     assert(peers.every(x=>Math.abs(x.height-peers[0].height)<=1),
+      "All three action buttons must share the same height");
+     assert(peers.every(x=>x.align==="center"&&x.justify==="center"&&x.display==="inline-flex"),
+      "Icon/text must be centered vertically and horizontally in each button");
      const prompt=card.locator("h3"),summary=actions.locator("summary").first();
      const positions=await Promise.all([prompt.boundingBox(),actions.boundingBox()]);
      assert(positions.every(Boolean)&&positions[1].y>=positions[0].y+positions[0].height-2,"Actions must follow the prompt");
