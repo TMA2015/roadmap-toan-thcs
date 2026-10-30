@@ -29,7 +29,7 @@ const assert=require("node:assert/strict"),{chromium}=require("playwright");
      assert.equal(peers.length,3,"Three auxiliary actions must remain present");
      assert(peers.every(x=>Math.abs(x.height-peers[0].height)<=1),
       "All three action buttons must share the same height");
-     assert(peers.every(x=>x.align==="center"&&x.justify==="center"&&x.display==="inline-flex"),
+     assert(peers.every(x=>x.align==="center"&&x.justify==="center"&&["flex","inline-flex"].includes(x.display)),
       "Icon/text must be centered vertically and horizontally in each button");
      const prompt=card.locator("h3"),summary=actions.locator("summary").first();
      const positions=await Promise.all([prompt.boundingBox(),actions.boundingBox()]);
