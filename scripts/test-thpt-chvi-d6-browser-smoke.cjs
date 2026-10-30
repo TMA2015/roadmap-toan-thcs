@@ -35,6 +35,8 @@ async function run(){
    for(const lesson of ["16","17","18"]){
     await page.locator('[data-thpt-open-quiz="b'+lesson+'-core"]').click();
     await dlg.waitFor({state:"visible"});
+    // B16 imports its original R4 form asynchronously from its canonical route.
+    await dlg.locator("[data-thpt-chvi-d6]").waitFor({state:"attached",timeout:15000});
     assert.equal(await dlg.locator('[data-thpt-chvi-d6] [data-help-id]').count(),2,
       "Missing source-locked D6 for B"+lesson);
     if(lesson==="16"){
