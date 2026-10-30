@@ -143,8 +143,10 @@ async function ready(page,path){
       "B19 must render original reviewed canonical item ID");
     assert.equal(await dlg.locator("details[open]").count(),0,
       "Hint and answer must start collapsed in formative exercises");
-    assert((await dlg.innerText()).includes("Không ghi điểm thành thạo"),
-      "Formative exercises must not claim protected assessment");
+    assert(/không ghi điểm/i.test(await dlg.locator(".thpt-r4-modal-progress").first().innerText()),
+      "Formative modal must clearly stay unscored without redundant footer text");
+    assert(!(await dlg.innerText()).includes("Tự luyện và đối chiếu lời giải · Không ghi điểm thành thạo."),
+      "Do not restore the owner-rejected redundant footer note");
     await dlg.locator("[data-thpt-modal-close]").click();
     await page.locator('[data-thpt-open-quiz="b19-practice"]').click();
     assert.equal(await dlg.locator(".thpt-r4-modal-question-nav button").count(),6,
@@ -167,7 +169,7 @@ async function ready(page,path){
       "B22 should contain 6 normal Practice + 1 optional specialist item");
     await dlg.locator(".thpt-r4-modal-question-nav button").last().click();
     assert((await dlg.locator("[data-thpt-canonical-item]").getAttribute("data-thpt-canonical-item"))==="THPT-G10-B22-C01"&&
-      (await dlg.innerText()).includes("Chuyên sâu tự chọn"),
+      (await page.evaluate(()=>window.THPT_CHVII_REVIEWED_FORMATIVE.records.find(x=>x.item_id==="THPT-G10-B22-C01")?.role))==="OPTIONAL_SPECIALIZED",
       "Reviewer-reclassified eccentricity item must be optional, not mandatory Core");
     await dlg.locator("[data-thpt-modal-close]").click();
     // D5-reviewed SVGs may explain Practice AFTER deliberate solution reveal,

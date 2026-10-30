@@ -9,9 +9,24 @@ const assert=require("node:assert/strict"),{chromium}=require("playwright");
  const id="THPT-G10-B0"+n+"-C01";const res=await page.goto("http://127.0.0.1:8765/thpt-preview/sgk/chuong-ii/luyen-tap/?item="+id,{waitUntil:"networkidle"});assert(res?.ok());
  const dlg=page.locator("dialog.thpt-r4-practice-dialog");await dlg.waitFor({state:"visible"});
  assert.equal(await dlg.locator("[data-thpt-canonical-item]").first().getAttribute("data-thpt-canonical-item"),id);
- const options=dlg.locator(".thpt-r4-formative-options p");assert.equal(await options.count(),4,"MCQ four options must appear before reveal");
+ const options=dlg.locator(".thpt-r4-formative-choice-group label");assert.equal(await options.count(),4,"MCQ must offer four selectable A–D radio options");
  const optionText=await options.allInnerTexts();for(let i=0;i<4;i++)assert(optionText[i].startsWith("ABCD"[i]+"."));
- assert.equal(await dlg.locator("details[open]").count(),0,"Answer/hint must be voluntarily expanded");
+ assert.equal(await dlg.locator(".thpt-r4-formative-choice-group input[type=radio]").count(),4,"Four real answer inputs required");
+ assert.equal(await dlg.locator("details[open]").count(),0,"Answer/hint must not open automatically");
+ const bankContext={window:{}};require("node:vm").runInNewContext(
+  require("node:fs").readFileSync("docs/assets/javascripts/thpt-chii-reviewed-formative-v1.js","utf8"),bankContext);
+ const bank=bankContext.window.THPT_CHII_REVIEWED_FORMATIVE;
+ const correct=bank.records.find(x=>x.item_id===id).answerKey;
+ const wrong="ABCD".split("").find(x=>x!==correct);
+ await dlg.locator('.thpt-r4-formative-choice-group input[value="'+wrong+'"]').check();
+ assert.equal(await dlg.locator(".thpt-r4-formative-feedback").innerText(),"","Choosing an option alone must not grade");
+ await dlg.locator(".thpt-r4-formative-submit").click();
+ assert((await dlg.locator(".thpt-r4-formative-feedback").innerText()).includes("Chưa đúng"),"Wrong MCQ gets feedback after explicit submit");
+ await dlg.locator('.thpt-r4-formative-choice-group input[value="'+correct+'"]').check();
+ assert.equal(await dlg.locator(".thpt-r4-formative-feedback").innerText(),"","Changing an answer must clear previous feedback");
+ await dlg.locator(".thpt-r4-formative-submit").click();
+ assert((await dlg.locator(".thpt-r4-formative-feedback").innerText()).includes("Đúng!"),"Correct MCQ gets feedback on submit");
+ assert.equal(await dlg.locator("details[open]").count(),0,"Auto-check must not reveal solution without voluntary disclosure");
  await dlg.locator("[data-thpt-modal-close]").click();
 }
  const ready=await page.goto("http://127.0.0.1:8765/thpt-preview/sgk/chuong-ii/tu-kiem-tra-chuong/",{waitUntil:"networkidle"});assert(ready?.ok()&&await page.getByText("chưa mở",{exact:false}).count()>0);
