@@ -592,24 +592,53 @@
     const groups=[...list.querySelectorAll("[data-thpt-filter-group]")];
     const kind=root.querySelector("[data-thpt-kind-filter]");
     const counter=root.querySelector("[data-thpt-filter-count]");
+    // Search only within already published SGK lessons and real Topic entries.
+    // Treat grade/chapter/lesson as structured facets; "chuong I" must not match II/III.
+    const fold=value=>String(value||"").normalize("NFD").replace(/[\u0300-\u036f]/g,"")
+     .replace(/đ/g,"d").replace(/Đ/g,"d").toLowerCase().replace(/[^a-z0-9]+/g," ").trim();
+    const roman={i:1,ii:2,iii:3,iv:4,v:5,vi:6,vii:7,viii:8,ix:9};
+    const parse=value=>{
+     let text=fold(value);
+     const find=(pattern)=>{const match=text.match(pattern);if(match)text=fold(text.replace(match[0]," "));return match?.[1]||null};
+     const grade=find(/\blop\s*(10|11|12)\b/);
+     const chapterRaw=find(/\bchuong\s*(viii|vii|iii|vii|vi|iv|ix|ii|v|i|[1-9])\b/);
+     const lessonRaw=find(/\b(?:bai|b)\s*0?([1-9]|1[0-9]|2[0-7])\b/);
+     const topicRaw=find(/\bchuyen de\s*0?([1-9][0-9]?)\b/);
+     return {grade,chapter:chapterRaw?(roman[chapterRaw]||Number(chapterRaw)):null,
+       lesson:lessonRaw?Number(lessonRaw):null,topic:topicRaw?Number(topicRaw):null,
+       words:text.split(" ").filter(Boolean)};
+    };
     const run=()=>{
-     const word=input.value.normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLocaleLowerCase("vi").trim();
-     const type=kind?.value||"all";
+     const query=fold(input.value),q=parse(input.value),type=kind?.value||"all";
      let visible=0;
-     items.forEach(item=>{
-      const hay=(item.dataset.thptFilterText||item.textContent).normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLocaleLowerCase("vi");
-      const match=(!word||hay.includes(word))&&(type==="all"||item.dataset.thptKind===type);
-      item.hidden=!match;if(match)visible++;
-     });
-     groups.forEach(group=>{
+     for(const item of items){
+      const parent=item.closest("[data-thpt-filter-group]");
+      const grade=item.dataset.thptGrade||parent?.dataset.thptGrade||"";
+      const chapter=Number(item.dataset.thptChapter||0);
+      const lesson=Number(item.dataset.thptLesson||0);
+      const topic=Number(item.dataset.thptTopic||0);
+      const lessonOnly=item.hasAttribute("data-thpt-search-only");
+      const hay=fold((item.dataset.thptFilterText||"")+" "+item.textContent);
+      const compatible=(!q.grade||grade===q.grade)&&(!q.chapter||chapter===q.chapter)&&
+       (!q.lesson||lesson===q.lesson)&&(!q.topic||topic===q.topic);
+      // A grade/chapter query returns chapter cards; a lesson query returns direct lesson links.
+      const showLesson=Boolean(q.lesson||(q.words.length&&query));
+      const structural=!(q.lesson&& !lesson) && !(lessonOnly&&!showLesson);
+      const textMatch=q.words.every(w=>hay.split(" ").some(token=>token.includes(w)));
+      const match=compatible&&structural&&textMatch&&(type==="all"||item.dataset.thptKind===type);
+      item.hidden=!match;
+      if(match)visible++;
+     }
+     for(const group of groups){
       const children=[...group.querySelectorAll("[data-thpt-filter-item]")];
       group.hidden=!children.some(x=>!x.hidden);
-      if(word&& !group.hidden)group.open=true;
-     });
-     if(counter&&word)counter.textContent=visible+" kết quả phù hợp · Chỉ mục đã có nội dung/đang đối chiếu";
-     if(counter&&!word)counter.textContent=items.length+" mục";
+      if(query&&!group.hidden)group.open=true;
+     }
+     if(counter)counter.textContent=query
+      ?visible+" kết quả phù hợp · Chỉ mục có học liệu hoặc đang đối chiếu"
+      :items.filter(x=>!x.hasAttribute("data-thpt-search-only")).length+" mục";
     };
-    input.addEventListener("input",run);kind?.addEventListener("change",run);
+    input.addEventListener("input",run);kind?.addEventListener("change",run);run();
    }
    for(const [selector,correct,good,bad] of [
     ["[data-thpt-core]","-3","Đúng. Hoành độ đỉnh h = −3.","Chưa đúng. So sánh với (x − h)² + k: h = −3."],
