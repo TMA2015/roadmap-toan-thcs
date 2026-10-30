@@ -306,7 +306,7 @@
     // credentials or an inactive backend is NOT evidence of unseen material.
     void window.THPTFormativeExposure?.record(item.item_id,exposureRole,"QUESTION_SHOWN");
     head.textContent="Câu "+(index+1)+" / "+items.length+
-      " · Luyện tập tương tác, không ghi Skill Mastery";
+      " · Luyện tập tương tác, không ghi điểm";
     for(let i=0;i<items.length;i++){
      const button=document.createElement("button");button.type="button";
      button.textContent="Câu "+(i+1);button.className=i===index?"active":"";
