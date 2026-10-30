@@ -15,7 +15,7 @@
 
 | Thứ tự | Gói triển khai | Trạng thái nhận bàn giao |
 |---|---|---|
-| 1 | **Lớp 10**: 9 chương, B01–B27. D1–D6 gói nguồn đã review từng snapshot; chốt ChVI A5, tích hợp ChII–V, rà UI/bank, giải bài toán Chapter Readiness bảo mật cho 9 chương. | Chưa đủ `CHAPTER_COMPLETE`, xem audit riêng |
+| 1 | **Lớp 10**: 9 chương, B01–B27. D1–D6 gói nguồn đã review từng snapshot; ChII #631/#636 đã merge, còn hậu kiểm P1; tiếp tục ChIII–V, ChVI A5 và QA; **9/9 Readiness R00 scope blueprints đã viết, 133 targets**, nhưng không phải đề kín hay Readiness PASS. | Chưa đủ `CHAPTER_COMPLETE`, xem audit và index R00 |
 | 2 | **Lớp 11**: bắt đầu ChI B01 → B02 → B03 → B04, rồi tuần tự những chương/bài tiếp theo SGK T1 và T2. | **B01–B02 đã authoring Academic PASS Draft #627**, cần kế thừa nguồn, không biên soạn lại; bài kế tiếp thực sự B03 |
 | 3 | **Lớp 12**: bắt đầu từ B01 SGK tập 1, tiếp tục SGK tập 2 tới hết; không nhảy trước sang ChVI vì có bản hồi tố lịch sử. | SGK12 tập 1+2 đã tìm trong thư mục Drive. **SBT12 cần định vị/kiểm chứng** trước authoring S1; các gói ChVI cũ trong retro-audit #623 còn HOLD |
 | 4 | **Chuyên đề**: crosswalk canonical sau khi SGK 10–12 hoàn chỉnh, rà dùng chung; triển khai ba mục Kiến thức/Luyện tập/Tự kiểm tra. | Chưa khởi động content mới; **không** suy PASS từ SGK |
@@ -29,7 +29,7 @@
 
 ## Điểm vào công việc tiếp theo
 
-**Ngay bây giờ:** theo `G10_SGK_27_LESSONS_NINE_CHAPTERS_COVERAGE_AUDIT_20261030.md`, giải các khoảng trống thật. Đã tạo `G10_CHI_SGK_CHAPTER_READINESS_COVERAGE_BLUEPRINT_R00_NO_ITEMS.md` làm khung mục tiêu an toàn, không public key. Chuẩn bị D6 ChVI theo delta học thuật riêng (8 HELP_ID mới, không item mới). Sau đó release lane bàn giao các nguồn tác giả đã PASS theo đúng owner approval.
+**Ngay bây giờ:** theo `G10_SGK_27_LESSONS_NINE_CHAPTERS_COVERAGE_AUDIT_20261030.md`, giải các khoảng trống thật. Đã tạo đủ **9 blueprint outcome-only** ChI–ChIX, 133 coverage rows, không public stem/key; index: `G10_SGK_NINE_CHAPTER_READINESS_BLUEPRINT_INDEX_R00_20261030.md`. Các hàng ChVII–VIII vẫn là ID dự thảo cần reviewer xác nhận; ChII authoring #631 và release #636 đã merge trên GitHub, chưa audit P1 ở đây. Chuẩn bị D6 ChVI theo delta học thuật riêng (8 HELP_ID mới, không item mới). Sau đó release lane bàn giao các nguồn tác giả đã PASS theo đúng owner approval.
 
 **Khi chuyển 11:** xác nhận GitHub hiện tại, kế thừa #627 và khóa B03/B04 theo SGK/SBT mới, không làm lại B01/B02. **Không bắt đầu Topic content** trước khi kết thúc ba lớp SGK.
 
