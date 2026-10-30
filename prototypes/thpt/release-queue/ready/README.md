@@ -32,7 +32,7 @@ Một packet canonical duy nhất trên mỗi phạm vi; không nhân đôi câu
 - [Gói B05–B06](G10-SGK-CHIII.md): 16 formative + 2 Written, 6 worked examples, 2 D5 source SVG, 4 HELP_ID D6, 10/10 outcomes. Independent NotebookLM R01 Academic PASS exact source blob `6320aeaa89bd51c514b07461e01fad5e3aca833f`.
 - Source #633 merged, release #644 stages Golden R4 learner pages; both exact-head workflows must PASS before merge/deploy. Readiness, Topic and Mastery remain inactive.
 
-## G10 Chương IV B07–B08 · CONTENT_READY / nguồn học thuật
+## G10 Chương IV B07–B08 · RELEASE_READY (final CI recheck required)
 
 - [Gói B07–B08](G10-SGK-CHIV.md): 16 Core/Practice, 2 Written (1 Anchor), 6 D2 examples, 2 SVG D5 source-locked, 4 D6 HELP_ID, 10/10 outcomes. Independent NotebookLM R01 PASS exact blob `42b206e31421b33860a1bf697d2d04b7aba992cf`.
-- Authoring #634 only. R1–R5 website release gates remain pending; no Readiness/Topic/Mastery.
+- Source #634 merged main; release #645 combines original bank, Golden R4, #647 UI and improved SGK/Topic search. Dual CI SUCCESS on b5a14224 (THPT Preview #41029330154; Roadmap Quality #41029330166). R1–R5 evidence recorded, but the metadata-only final HEAD must also pass both workflows before merge/deploy. No Chapter/Topic Readiness or Mastery.

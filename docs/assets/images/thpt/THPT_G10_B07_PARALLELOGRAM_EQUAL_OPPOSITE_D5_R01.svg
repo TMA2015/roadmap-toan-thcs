@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 510" role="img" aria-labelledby="b07title b07desc">
+<title id="b07title">Hình bình hành ABCD: hai vectơ bằng nhau và đối nhau</title>
+<desc id="b07desc">Bốn đỉnh theo thứ tự A trái dưới, B phải dưới, C phải trên, D trái trên. Vectơ AB hướng sang phải và bằng DC; vectơ CD hướng sang trái nên ngược hướng với AB. Hai đường chéo cắt nhau tại O; AO bằng OC.</desc>
+<defs><marker id="arrow7b" markerWidth="9" markerHeight="9" refX="7" refY="3.5" orient="auto"><path d="M0 0 L7 3.5 L0 7 z" fill="#2563eb"/></marker><marker id="arrow7r" markerWidth="9" markerHeight="9" refX="7" refY="3.5" orient="auto"><path d="M0 0 L7 3.5 L0 7 z" fill="#db2777"/></marker></defs>
+<rect width="920" height="510" rx="20" fill="#f8fafc"/>
+<text x="40" y="53" font-size="27" fill="#0f172a" font-weight="bold">Bài 7: vectơ bằng nhau và ngược hướng</text>
+<polygon points="140,365 440,365 580,155 280,155" fill="#dbeafe" fill-opacity=".55" stroke="#64748b" stroke-width="3"/>
+<path d="M140 365 L440 365" stroke="#2563eb" stroke-width="6" marker-end="url(#arrow7b)"/>
+<path d="M280 155 L580 155" stroke="#2563eb" stroke-width="6" marker-end="url(#arrow7b)"/>
+<path d="M580 155 L280 155" stroke="#db2777" stroke-width="4" stroke-dasharray="10 6" marker-end="url(#arrow7r)"/>
+<line x1="140" y1="365" x2="580" y2="155" stroke="#94a3b8" stroke-width="2" stroke-dasharray="7 5"/>
+<line x1="440" y1="365" x2="280" y2="155" stroke="#94a3b8" stroke-width="2" stroke-dasharray="7 5"/>
+<circle cx="360" cy="260" r="5" fill="#111827"/>
+<g font-size="23" fill="#0f172a" font-family="Arial, sans-serif"><text x="110" y="400">A</text><text x="440" y="401">B</text><text x="585" y="142">C</text><text x="251" y="143">D</text><text x="371" y="252">O</text></g>
+<rect x="625" y="126" width="257" height="259" rx="14" fill="#fff" stroke="#cbd5e1"/>
+<text x="650" y="168" font-size="22" font-weight="bold" fill="#2563eb">AB = DC</text>
+<text x="650" y="213" font-size="19" fill="#334155">Cùng chiều, cùng độ dài</text>
+<text x="650" y="266" font-size="22" font-weight="bold" fill="#be185d">AB và CD ngược hướng</text>
+<text x="650" y="311" font-size="19" fill="#334155">Cùng độ dài, chiều trái nhau</text>
+<text x="650" y="359" font-size="20" fill="#334155">AO = OC (cùng vectơ)</text>
+<text x="44" y="465" font-size="19" fill="#475569">Mỗi kí hiệu AB, DC, CD, AO, OC trong hình chỉ một vectơ có mũi tên.</text>
+</svg>
