@@ -4,7 +4,7 @@
 
 | Gói | Hành trình | Trạng thái | Phạm vi | PR / nguồn |
 |---|---|---|---|---|
-| [G10-SGK-CHV](ready/G10-SGK-CHV.md) | SGK_CHAPTER | CONTENT_READY | PUBLIC_FORMATIVE_ONLY B12–B14 | #639 source authoring, NotebookLM R01 D1–D6 27/27 PASS |
+| [G10-SGK-CHV](ready/G10-SGK-CHV.md) | SGK_CHAPTER | CONTENT_READY | PUBLIC_FORMATIVE_ONLY B12–B14 | #639 R01 27/27 unaffected; P1 HELP-G10-B12-02 R01 superseded by owner NotebookLM scoped R02 PASS overlay, must apply before R1 |
 | [G10-SGK-CHIV-B09-B11](ready/G10-SGK-CHIV-B09-B11.md) | SGK_CHAPTER | CONTENT_READY | PUBLIC_FORMATIVE_ONLY B09–B11 | #637 NotebookLM R01 D1–D6 PASS, 27/27 items |
 | [G10-SGK-CHIV](ready/G10-SGK-CHIV.md) | SGK_CHAPTER | RELEASE_READY | PUBLIC_FORMATIVE_ONLY | source #634 merged; release #645 R1–R5 evidence completed, exact-final-head CI recheck before merge/deploy |
 | [G10-SGK-CHIII](ready/G10-SGK-CHIII.md) | SGK_CHAPTER | RELEASE_READY | PUBLIC_FORMATIVE_ONLY | academic source #633 merged; release #644 only after both exact-final-head CI SUCCESS |
