@@ -257,7 +257,7 @@
    const prev=document.createElement("button"),next=document.createElement("button");
    prev.textContent="← Câu trước";next.textContent="Câu tiếp →";prev.type=next.type="button";
    const render=()=>{
-    progress.textContent="Câu "+(index+1)+" / "+items.length+" · Demo kỹ thuật · Không ghi điểm";
+    progress.textContent="Câu "+(index+1)+" / "+items.length+" · Tự luyện";
     numbers.replaceChildren();items.forEach((_,n)=>{const b=document.createElement("button");b.type="button";b.textContent="Câu "+(n+1);b.className=n===index?"active":"";b.setAttribute("aria-current",String(n===index));b.addEventListener("click",()=>{index=n;render()});numbers.append(b)});
     question.replaceChildren();
     const p=document.createElement("h3");p.textContent=items[index][0];question.append(p);
@@ -419,7 +419,7 @@
       if(!holder.children.length)throw Error("No matching source problems");
       holder.dataset.loaded="1";
       if(window.MathJax?.typesetPromise)window.MathJax.typesetPromise([holder]).catch(()=>{});
-     }catch(error){holder.textContent="Không tải được bài tổng hợp. Bạn vẫn có thể mở nhóm bài nguồn từ trang Chương VI sau khi kết nối được bản preview."}
+     }catch(error){holder.textContent="Không tải được bài tổng hợp. Hãy mở lại bài từ trang Chương VI hoặc thử tải lại trang."}
     }
     holder.hidden=false;button.setAttribute("aria-expanded","true");
    });
@@ -467,7 +467,7 @@
      if(parts[2]==="practice")attachCumulative(lesson);
      if(window.MathJax?.typesetPromise)window.MathJax.typesetPromise([modalBody]).catch(()=>{});
     }catch(error){
-     modalBody.textContent="Chưa thể tải bài mẫu. Hãy mở bản MkDocs Preview với máy chủ trang đầy đủ hoặc kiểm tra đường dẫn nguồn.";
+     modalBody.textContent="Chưa tải được bài. Hãy mở lại từ trang SGK hoặc kiểm tra kết nối.";
     }
    });
   });
@@ -667,7 +667,7 @@
      if(answers.some(x=>x===null)){result.textContent="Hãy hoàn thành tất cả các câu trước khi Final Submit. Có thể dùng Previous/Next để quay lại sửa.";return}
      finalized=true;
      const score=queries.reduce((n,q,i)=>n+(answers[i]===q.key?1:0),0);
-     result.textContent="Kết quả Demo kỹ thuật (không tính tiến độ): "+score+" / "+queries.length+". Lời giải chỉ hiện sau lần nộp này.";
+     result.textContent="Kết quả tự luyện (không tính thành thạo): "+score+" / "+queries.length+". Lời giải chỉ hiện sau khi nộp bài.";
      reveal.hidden=false;reveal.replaceChildren();
      queries.forEach((q,i)=>{
       const p=document.createElement("p");
