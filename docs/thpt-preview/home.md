@@ -14,7 +14,6 @@ hide:
       <a class="thpt-r4-home-hero-primary" href="../sgk/">Học theo SGK KNTT <span aria-hidden="true">↗</span></a>
       <a class="thpt-r4-home-hero-secondary" href="../chuyen-de/">Khám phá chuyên đề <span aria-hidden="true">→</span></a>
     </div>
-    <p class="thpt-r4-home-hero-notice">Đang mở học liệu Toán 10 · Chương I (B01–B02), Chương II (B03–B04) và Chương VI–IX, cùng một chuyên đề minh họa; chưa phải toàn bộ chương trình lớp 10–12.</p>
   </div>
   <div class="thpt-r4-home-illustration" role="img" aria-label="Self-Learning Math ở trung tâm, xung quanh là năm hành tinh tượng trưng cho hai lộ trình học, 24 chuyên đề THPT theo kế hoạch, SGK KNTT, luyện tập tương tác và theo dõi tiến độ.">
     <p class="thpt-r4-home-orbit-heading">5 ĐIỂM NỔI BẬT CỦA SELF-LEARNING MATH</p>

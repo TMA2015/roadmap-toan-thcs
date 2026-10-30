@@ -78,7 +78,7 @@
    if(!dlg){
     dlg=document.createElement("dialog");
     dlg.className="roadmap-topic-dialog";dlg.dataset.thptR4ShortcutDialog="1";
-    dlg.setAttribute("aria-label","Điều hướng nhanh Toán THPT · Bản mẫu");
+    dlg.setAttribute("aria-label","Điều hướng nhanh Toán THPT");
     const heading=document.createElement("div");heading.className="roadmap-topic-dialog__heading";
     const title=document.createElement("h2");title.textContent="Toán THPT · 5 nhóm + "+topics.length+" chuyên đề mẫu";
     const close=document.createElement("button");close.type="button";close.className="roadmap-topic-dialog__close";close.textContent="Đóng ✕";
@@ -236,7 +236,7 @@
   const dlg=document.createElement("dialog");
   dlg.className="thpt-r4-practice-dialog";
   dlg.dataset.thptR4="1"; // Eligible root for existing R4 exercise binder when remote card is inserted.
-  dlg.setAttribute("aria-label","Luyện tập Toán THPT · bản mẫu");
+  dlg.setAttribute("aria-label","Luyện tập Toán THPT");
   dlg.innerHTML='<div class="thpt-r4-modal-top"><span class="thpt-r4-modal-lesson-badge" data-thpt-modal-lesson-number aria-hidden="true">15</span><div class="thpt-r4-modal-heading"><p class="thpt-r4-modal-meta">LỚP 10 · CHƯƠNG VI</p><h2 data-thpt-modal-title>Luyện tập</h2></div><button type="button" data-thpt-modal-close aria-label="Đóng cửa sổ">Đóng ×</button></div><div class="thpt-r4-modal-main" data-thpt-modal-body></div>';
   document.body.append(dlg);
   const modalBody=dlg.querySelector("[data-thpt-modal-body]");
@@ -257,7 +257,7 @@
    const prev=document.createElement("button"),next=document.createElement("button");
    prev.textContent="← Câu trước";next.textContent="Câu tiếp →";prev.type=next.type="button";
    const render=()=>{
-    progress.textContent="Câu "+(index+1)+" / "+items.length+" · Demo kỹ thuật · Không ghi điểm";
+    progress.textContent="Câu "+(index+1)+" / "+items.length+" · Tự luyện";
     numbers.replaceChildren();items.forEach((_,n)=>{const b=document.createElement("button");b.type="button";b.textContent="Câu "+(n+1);b.className=n===index?"active":"";b.setAttribute("aria-current",String(n===index));b.addEventListener("click",()=>{index=n;render()});numbers.append(b)});
     question.replaceChildren();
     const p=document.createElement("h3");p.textContent=items[index][0];question.append(p);
@@ -421,7 +421,7 @@
       if(!holder.children.length)throw Error("No matching source problems");
       holder.dataset.loaded="1";
       if(window.MathJax?.typesetPromise)window.MathJax.typesetPromise([holder]).catch(()=>{});
-     }catch(error){holder.textContent="Không tải được bài tổng hợp. Bạn vẫn có thể mở nhóm bài nguồn từ trang Chương VI sau khi kết nối được bản preview."}
+     }catch(error){holder.textContent="Không tải được bài tổng hợp. Hãy mở lại bài từ trang Chương VI hoặc thử tải lại trang."}
     }
     holder.hidden=false;button.setAttribute("aria-expanded","true");
    });
@@ -469,7 +469,7 @@
      if(parts[2]==="practice")attachCumulative(lesson);
      if(window.MathJax?.typesetPromise)window.MathJax.typesetPromise([modalBody]).catch(()=>{});
     }catch(error){
-     modalBody.textContent="Chưa thể tải bài mẫu. Hãy mở bản MkDocs Preview với máy chủ trang đầy đủ hoặc kiểm tra đường dẫn nguồn.";
+     modalBody.textContent="Chưa tải được bài. Hãy mở lại từ trang SGK hoặc kiểm tra kết nối.";
     }
    });
   });
@@ -607,7 +607,7 @@
       if(word&& !group.hidden)group.open=true;
      });
      if(counter&&word)counter.textContent=visible+" kết quả phù hợp · Chỉ mục đã có nội dung/đang đối chiếu";
-     if(counter&&!word)counter.textContent=items.length+" mục trong bản mẫu · chưa phải danh mục đã nghiệm thu";
+     if(counter&&!word)counter.textContent=items.length+" mục";
     };
     input.addEventListener("input",run);kind?.addEventListener("change",run);
    }
@@ -669,7 +669,7 @@
      if(answers.some(x=>x===null)){result.textContent="Hãy hoàn thành tất cả các câu trước khi Final Submit. Có thể dùng Previous/Next để quay lại sửa.";return}
      finalized=true;
      const score=queries.reduce((n,q,i)=>n+(answers[i]===q.key?1:0),0);
-     result.textContent="Kết quả Demo kỹ thuật (không tính tiến độ): "+score+" / "+queries.length+". Lời giải chỉ hiện sau lần nộp này.";
+     result.textContent="Kết quả tự luyện (không tính thành thạo): "+score+" / "+queries.length+". Lời giải chỉ hiện sau khi nộp bài.";
      reveal.hidden=false;reveal.replaceChildren();
      queries.forEach((q,i)=>{
       const p=document.createElement("p");

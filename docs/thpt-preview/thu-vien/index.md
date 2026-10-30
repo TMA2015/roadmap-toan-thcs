@@ -1,6 +1,6 @@
 # Thư viện bài tập
 
-Em có thể **tự giải một bài toán** hoặc **xem một bài mẫu để học cách giải**. Cách vận hành **giữ giống THCS**, nhưng nội dung và kết quả THPT sẽ được lưu riêng khi triển khai thật.
+Em có thể **tự giải một bài toán** hoặc **xem một bài mẫu để học cách giải**. Hãy thử tự làm trước khi mở hướng dẫn hoặc lời giải.
 
 ## Em muốn làm gì?
 
@@ -25,6 +25,3 @@ Em có thể **tự giải một bài toán** hoặc **xem một bài mẫu đ�
 2. Dùng bộ lọc theo lớp, chuyên đề, dạng bài, mức độ.
 3. Tự làm trên giấy trước khi mở gợi ý/rubric.
 4. Nếu cần, theo link trở về Kiến thức hoặc Luyện tập.
-
-!!! info "Bản mẫu R4"
-    Hai bài tự luận mẫu của Bài 16 đã đạt review học thuật R4 Postfix; thư viện hiện vẫn là bản thử nghiệm giao diện, chưa phải kho SGK/SBT hoàn chỉnh và không ghi điểm hoặc tiến độ.
