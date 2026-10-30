@@ -36,3 +36,9 @@ Một packet canonical duy nhất trên mỗi phạm vi; không nhân đôi câu
 
 - [Gói B07–B08](G10-SGK-CHIV.md): 16 Core/Practice, 2 Written (1 Anchor), 6 D2 examples, 2 SVG D5 source-locked, 4 D6 HELP_ID, 10/10 outcomes. Independent NotebookLM R01 PASS exact blob `42b206e31421b33860a1bf697d2d04b7aba992cf`.
 - Source #634 merged main; release #645 combines original bank, Golden R4, #647 UI and improved SGK/Topic search. Dual CI SUCCESS on b5a14224 (THPT Preview #41029330154; Roadmap Quality #41029330166). R1–R5 evidence recorded, but the metadata-only final HEAD must also pass both workflows before merge/deploy. No Chapter/Topic Readiness or Mastery.
+
+## Authoring CONTENT_READY — Chương IV, Bài 9–11 (không phát hành)
+
+- [G10-SGK-CHIV-B09-B11](G10-SGK-CHIV-B09-B11.md) đã NotebookLM PASS 27/27 item, 14/14 outcome, D1–D6 B09–B11; snapshot Git blob `a9f6fab820559a8da98a5a42cd9902dbf9891f34`, biên bản reviewer blob `f13acb74206c00cb489e533df7792870f88830e3`.
+- [Hồ sơ A1–A7](../CHIV_B09_B11_PUBLIC_FORMATIVE_A1A7_EVIDENCE_20261030.md). Trạng thái chỉ áp dụng `PUBLIC_FORMATIVE_ONLY`, bản Draft PR #637 chưa merge. P2: đăng ký ID production và thử 3 SVG responsive trên thiết bị, do nhánh phát hành xử lý.
+- Gói B07–B08 của Draft PR #634 được duyệt riêng; cả hai phải được tích hợp vào **một** hành trình ChIV SGK và một ngân hàng canonical, không được coi là đạt Tự kiểm tra cuối chương/Topic/Mastery. R1–R5 vẫn chưa thực hiện.
