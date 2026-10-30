@@ -53,10 +53,13 @@ on:
       - 'docs/assets/javascripts/thpt-chiv-b09-b11-reviewed-formative-v1.js'
       - 'scripts/test-thpt-g10-chiv-b09-b11-release-integration.cjs'
       - 'scripts/test-thpt-g10-chiv-b09-b11-browser-smoke.cjs'
-      - 'scripts/test-thpt-r4-search-browser.cjs'
+      - 'docs/assets/javascripts/thpt-g11-chi-reviewed-formative-v1.js'
+      - 'scripts/test-thpt-g11-chi-b01-b02-release-integration.cjs'
+      - 'scripts/test-thpt-g11-chi-b01-b02-browser-smoke.cjs'
       - 'scripts/test-thpt-formative-actions-ui-browser.cjs'
-      - 'scripts/test-thpt-r4-public-formative-interaction.cjs'
       - 'scripts/test-thpt-interactive-compact-browser.cjs'
+      - 'scripts/test-thpt-r4-public-formative-interaction.cjs'
+      - 'scripts/test-thpt-r4-search-browser.cjs'
       - 'docs/assets/javascripts/thpt-chvii-reviewed-formative-v1.js'
       - 'docs/assets/javascripts/thpt-chviii-reviewed-formative-v1.js'
       - 'scripts/test-thpt-chvi-math-block-render.cjs'
@@ -95,6 +98,7 @@ jobs:
           node --check docs/assets/javascripts/thpt-chiii-reviewed-formative-v1.js
           node --check docs/assets/javascripts/thpt-chiv-b07-b08-reviewed-formative-v1.js
           node --check docs/assets/javascripts/thpt-chiv-b09-b11-reviewed-formative-v1.js
+          node --check docs/assets/javascripts/thpt-g11-chi-reviewed-formative-v1.js
       - name: Validate updated interactive THPT browser test syntax
         run: |
           node --check scripts/test-thpt-interactive-compact-browser.cjs
@@ -133,6 +137,8 @@ jobs:
         run: node scripts/test-thpt-g10-chiv-b07-b08-release-integration.cjs
       - name: Guard G10 ChIV B09–B11 exact source and canonical uniqueness
         run: node scripts/test-thpt-g10-chiv-b09-b11-release-integration.cjs
+      - name: Guard G11 ChI original 16 source-locked items, 2 SVG, Written/Anchor and D6
+        run: node scripts/test-thpt-g11-chi-b01-b02-release-integration.cjs
       - name: Guard G10 ChIX source-locked public formative and reviewed D5/D6
         run: |
           node scripts/test-thpt-g10-chix-reviewed-stage3.cjs
@@ -189,6 +195,7 @@ jobs:
           node scripts/test-thpt-chvi-math-block-render.cjs --built
           node scripts/test-thpt-g10-sgk-display-ui.cjs --built
           node scripts/test-thpt-g10-chiv-b09-b11-release-integration.cjs --built
+          node scripts/test-thpt-g11-chi-b01-b02-release-integration.cjs --built
           node scripts/test-thpt-chvi-student-notes.cjs --built
       - name: Verify combined build has no backend
         run: |
@@ -209,7 +216,7 @@ jobs:
           node scripts/test-thpt-r4-preview-browser.js
       - name: SGK and Chuyên đề search QA · class/chapter/lesson · mobile / iPad / desktop
         run: node scripts/test-thpt-r4-search-browser.cjs
-      - name: THPT compact formative actions question-first UI QA · phone / tablet / desktop
+      - name: Integrated PR651/652 question-first compact and interactive browser QA
         run: |
           node scripts/test-thpt-formative-actions-ui-browser.cjs
           node scripts/test-thpt-interactive-compact-browser.cjs
@@ -223,6 +230,8 @@ jobs:
         run: node scripts/test-thpt-g10-chiv-b07-b08-browser-smoke.cjs
       - name: ChIV B09/B10/B11 browser QA mobile / iPad / desktop
         run: node scripts/test-thpt-g10-chiv-b09-b11-browser-smoke.cjs
+      - name: G11 ChI B01/B02 browser QA mobile / tablet / desktop
+        run: node scripts/test-thpt-g11-chi-b01-b02-browser-smoke.cjs
       - name: ChIX reviewed D5/D6 browser smoke · mobile / iPad / desktop
         run: node scripts/test-thpt-g10-chix-browser-smoke.cjs
       - name: Emulate old and new GitHub Pages paths, without renaming the repo
