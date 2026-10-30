@@ -44,3 +44,11 @@
 - `CHVI_A5_D1_D6=HOLD` until end-to-end student release checks; `ASSESSMENT_ITEM_BANK=NOT_REVIEWED_FOR_THIS_DELTA`, `SGK_CHAPTER_READINESS_ACTIVE=NO`, `NO_SCORE/NO_MASTERY`.
 
 **Verified static delta QA (after page edit):** one and only one HTML `<details class="thpt-r4-pedagogical-note">` block changed; byte-for-byte prefix and suffix outside this block preserved; reviewed `f(x)`/discriminant examples and headings untouched; no erroneous non-Core blanket claim; SGK/SBT references, `\(\mathbb R\)`, `\(\Delta\)` intact. **PASS_STATIC**, not browser/device/CI PASS.
+
+## 5. CI-found MathJax parity issue resolved by equivalent presentation (no academic rewrite)
+
+- First Draft PR #649 HEAD `84b58fa7928080259588e8e8379ab23824a64d83` failed both Roadmap and Preview workflows because the existing **source/built inline-math parity test for B17** expected 130 inline `\( ... \)` formulas but the approved note's raw HTML contained 8 extra TeX inline delimiters (observed `138 !== 130`). This was not a wrong mathematics/answer or SGK outcome error.
+- Technical `DELTA_A_UI` / source-equivalent typographic fix (commit `afb69052509885ca147db5ad2b098fb466761c9f`): display the **exact same approved meanings** as native inline Unicode `ℝ`, `a`, `Δ`, `Δ′`, `0` in the **same single HTML paragraph** instead of raw HTML embedded MathJax. Preserve approved Core vs advanced tier and SGK/SBT page labels. No global renderer or QA test was relaxed.
+- **Final D1 Git blob** `dafa3ee1d68753bf06806bb212742d7db2ddc6fc` (supersedes intermediate page blob `d881fa2e9c723dce4148872e355b6703c7e6eeea`). Compared to original `main` blob `2511190850579c6d83d4e38476be880dd77e38a0`, prefix and suffix outside the single approved note remain byte-identical.
+- **Static exact-head QA PASS:** B17 source inline TeX expression count `130→130` (no drift); source outside the one `<details>` unchanged, SGK p24/SBT p17–18 citations intact, old blanket non-Core text absent, `ℝ/a/Δ/Δ′` present, no new readiness/mastery hooks. **GitHub CI on newest head must still be checked separately**.
+- `DELTA_C_ACADEMIC_MATERIAL=NOTEBOOKLM_R02_PASS` retains its exact curricular meaning; `DELTA_A_UI=UNICODE_INLINE_MATH_PRESENTATION_ONLY`, `NOTEBOOKLM_RE_REVIEW=NOT_REQUIRED_WITH_REASON:SOURCE_EQUIVALENT_RENDERING`, `RELEASE_AUTHORIZATION=NO`.
