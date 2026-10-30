@@ -1,6 +1,6 @@
 # Toán 10 KNTT — Chương VII (Phương pháp tọa độ trong mặt phẳng) · Ma trận phạm vi Tự kiểm tra R00
 
-**PHÂN LOẠI:** `SGK_CHAPTER_READINESS:G10:CHVII` · `OUTCOME_COVERAGE_BLUEPRINT_ONLY` · `NOT_REVIEWED_FOR_ASSESSMENT` · `NO_SCORE/NO_MASTERY`.
+**PHÂN LOẠI:** `SGK_CHAPTER_READINESS:G10:CHVII` · `OUTCOME_COVERAGE_BLUEPRINT_ONLY` · `NOT_REVIEWED_FOR_ASSESSMENT` · `NOT_ACTIVE` · `NO_SCORE/NO_MASTERY`.
 **BÀI SGK:** B19–B22.
 **S1 kiểm kê:** SGK Toán 10 KNTT tập 2 B19 tr.29–34, B20 tr.35–41, B21 tr.42–46, B22 tr.47–56, cuối ChVII tr.57–58; SBT tập 2 B19 tr.27–31, B20 tr.31–38, B21 tr.38–41, B22 tr.41–45, cuối ChVII tr.46–49.
 **Nguồn outcome / bằng chứng public:** prototypes/thpt/THPT_G10_CHVII_CHVIII_OUTCOME_PLACEMENT_MATRIX_v0.2.md (matrix đề xuất, Git blob 92808da0176c2ba6e282a1872521a38299802919) + scoped public review receipts trong release-queue của main
