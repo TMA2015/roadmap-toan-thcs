@@ -37,6 +37,13 @@ async function run(){
     await dlg.waitFor({state:"visible"});
     assert.equal(await dlg.locator('[data-thpt-chvi-d6] [data-help-id]').count(),2,
       "Missing source-locked D6 for B"+lesson);
+    if(lesson==="16"){
+     const first=dlg.locator('[data-thpt-core] input[name="answer"]').first();
+     await first.check();
+     await dlg.locator(".thpt-chvi-d6-main > summary").click();
+     await dlg.locator('[data-help-id="HELP-G10-B16-01"] > summary').click();
+     assert(await first.isChecked(),"Opening B16 D6 must not reset original R4 answer selection");
+    }
     await dlg.locator("[data-thpt-modal-close]").click();
    }
    await page.goto("http://127.0.0.1:8765/thpt-preview/sgk/chuong-vi/tu-kiem-tra-chuong/",{waitUntil:"domcontentloaded"});
