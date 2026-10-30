@@ -46,4 +46,4 @@
 
 ## 5. Tiếp tục
 
-[Core và Luyện tập Bài 8](../luyen-tap/) · [Bài tự luận Chương IV](../../thu-vien/tu-luan-chuong-iv-b07-b08.md)
+[Core và Luyện tập Bài 8](luyen-tap.md) · [Bài tự luận Chương IV](../../thu-vien/tu-luan-chuong-iv-b07-b08.md)
