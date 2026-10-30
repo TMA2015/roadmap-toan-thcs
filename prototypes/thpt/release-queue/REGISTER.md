@@ -4,7 +4,7 @@
 
 | Gói | Hành trình | Trạng thái | Phạm vi | PR / nguồn |
 |---|---|---|---|---|
-| [G10-SGK-CHIV](ready/G10-SGK-CHIV.md) | SGK_CHAPTER | CONTENT_READY | PUBLIC_FORMATIVE_ONLY | source #634 merged main ccf45c78; release #645 combined, R2 exact-final-head CI pending |
+| [G10-SGK-CHIV](ready/G10-SGK-CHIV.md) | SGK_CHAPTER | RELEASE_READY | PUBLIC_FORMATIVE_ONLY | source #634 merged; release #645 R1–R5 evidence completed, exact-final-head CI recheck before merge/deploy |
 | [G10-SGK-CHIII](ready/G10-SGK-CHIII.md) | SGK_CHAPTER | RELEASE_READY | PUBLIC_FORMATIVE_ONLY | academic source #633 merged; release #644 only after both exact-final-head CI SUCCESS |
 | [G10-SGK-CHII](ready/G10-SGK-CHII.md) | SGK_CHAPTER | RELEASE_READY | PUBLIC_FORMATIVE_ONLY | #631 authoring merged; #636 combined release, dual exact-head CI mandatory before merge |
 | [G10-SGK-CHI](ready/G10-SGK-CHI.md) | SGK_CHAPTER | RELEASE_READY | PUBLIC_FORMATIVE_ONLY | authoring #628 merged, release #635 exact-head CI pending |
