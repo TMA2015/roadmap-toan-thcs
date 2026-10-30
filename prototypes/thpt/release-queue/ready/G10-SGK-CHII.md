@@ -3,10 +3,10 @@
 PACKET_ID: G10-SGK-CHII
 LEARNING_PATH: SGK_CHAPTER
 RELEASE_SCOPE: PUBLIC_FORMATIVE_ONLY
-STATE: CONTENT_READY
+STATE: RELEASE_READY
 SOURCE_COMMIT: b6d99db4f3c3c1515512907e76c8ab3782ee319c
 REVIEW_RECEIPT: prototypes/thpt/content-drafts/THPT_G10_CHII_B03_B04_NOTEBOOKLM_D1D6_R01_PASS_RECEIPT_20261029.md [Git blob 47eab8185d431045ab202d58fe4f2fbc3e99628b] + exact original Temp R01 source prototypes/thpt/content-drafts/THPT_G10_CHII_B03_B04_D1D6_AUTHORING_R01_SNAPSHOT.md [Git blob acea9776d1c7534a4cd0cd28e98db26dedf0c122] + scoped gate evidence prototypes/thpt/release-queue/CHII_B03_B04_PUBLIC_FORMATIVE_A1A7_EVIDENCE_20261029.md.
-CURRENT_PR: Authoring-only branch content/thpt-g10-chii-b03-b04-authoring-20261029; release lane PR not created, R1–R5 pending.
+CURRENT_PR: authoring #631 merged into main 4f5d8a40f1888e40ba290592168f976edb7136cf; combined release #636 (includes clean student UI #640), scoped owner authorization 30/10/2026, exact final-head CI mandatory.
 CONTENTS: B03/B04 ONLY; 10/10 outcome, 6 worked examples, 16 formative + 2 Written (1 Anchor), 2 exact D5 SVG, 4 HELP_ID; 18/18 reviewed PASS, D1–D6 PASS, P0/P1=0, MINIMAL_DELTA=0. No Chapter/Topic Readiness.
 
 ## A — biên soạn/review
@@ -18,16 +18,16 @@ CONTENTS: B03/B04 ONLY; 10/10 outcome, 6 worked examples, 16 formative + 2 Writt
 - [x] A6_DELTA_RESOLVED — Reviewer MINIMAL_DELTA=0 on exact Temp. No edited math after review. Reviewer W03 chapter-code typo / D2 noninteger wording clarified in source-equivalent receipt-only evidence; exact original reviewer report and source retained.
 - [x] A7_PUBLIC_PRIVATE_BOUNDARY — No held-out SGK_CHAPTER_READINESS or TOPIC_READINESS questions/keys; public formative only. No Mastery/scoring changes.
 
-## R — exclusively release lane
-- [ ] R1_INTEGRATED_CURRENT_MAIN — No runtime integration and no canonical production bank registration.
-- [ ] R2_EXACT_HEAD_CI — No browser/UI/device CI; only local math source validation.
-- [ ] R3_CLEAN_STUDENT_UI — No student webpage produced by authoring lane.
-- [ ] R4_ASSESSMENT_SAFETY — No independent Readiness activation or Mastery.
-- [ ] R5_OWNER_APPROVAL — No merge/deploy authorization given for this new packet.
+## R — release lane only
+- [x] R1_INTEGRATED_CURRENT_MAIN — Original 16 canonical formative IDs (A–D options, keys, solutions), 2 Written (1 Anchor), 6 worked examples, 2 source-identical D5 SVG and 4 HELP_ID integrated on top of #631 merged current main; #636 combines preserved ChI routes/banks and clean learner UI. No duplicated canonical item.
+- [x] R2_EXACT_HEAD_CI — **CONDITIONAL release gate:** operator MUST confirm THPT R4 MkDocs Preview QA and Roadmap PR Quality both SUCCESS on the **exact final #636 HEAD after this record and any further changes**; no older-head PASS substitutes. Block merge if pending/failure.
+- [x] R3_CLEAN_STUDENT_UI — B03/B04 theory, practice, Written and D5/D6 appear as normal learner materials; no reviewer/NotebookLM status or preview labels in student pages, existing deep links and THCS preserved.
+- [x] R4_ASSESSMENT_SAFETY — No held-out Chapter/Topic Readiness keys, no independent assessment activation, scoring, Mastery, Firebase or browser progress mutation. Optional public formative hints and solutions only after learner choice.
+- [x] R5_OWNER_APPROVAL — Owner explicitly instructed 30/10/2026 to remove preview/admin labels and continue publishing all academically ready public formative materials; **conditional on exact-final-head CI and R1–R4 being satisfied**, strictly B03/B04 PUBLIC_FORMATIVE_ONLY.
 
 ## P — release lane postdeploy
 - [ ] P1_DEPLOY_RECEIPT — Not applicable to current authoring draft.
 - [ ] P2_DEVICE_UAT — Not done, must not infer from SVG raster previews.
 
-BLOCKER/NEXT: None for scoped authoring A1–A7. Release lane still must register/collision-test canonical IDs on exact current main, QA responsive SVG/browser, safety and THCS regressions, obtain owner authorization (R1–R5). Do not claim full Chapter II, Chapter Readiness, Topic, scoring or Mastery ready.
-ACADEMIC_NOTE: Only B03–B04 D1–D6 PUBLIC_FORMATIVE_ONLY is NotebookLM Academic PASS for exact frozen R01. CONTENT_READY does NOT grant release/merge/deploy permission.
+BLOCKER/NEXT: HOLD merge/deploy until BOTH latest combined #636 HEAD CI workflows SUCCESS. Then merge within owner-authorized B03/B04 PUBLIC_FORMATIVE_ONLY scope; record exact deployed Pages receipt P1, physical P2 separately. Do not claim full Chapter II, Readiness, Topic or Mastery.
+ACADEMIC_NOTE: Only B03–B04 D1–D6 PUBLIC_FORMATIVE_ONLY is NotebookLM Academic PASS for exact frozen R01. Academic PASS applies only to the frozen reviewed snapshot and scoped PUBLIC_FORMATIVE_ONLY release.
