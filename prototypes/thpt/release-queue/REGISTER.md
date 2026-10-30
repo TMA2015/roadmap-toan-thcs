@@ -4,6 +4,7 @@
 
 | Gói | Hành trình | Trạng thái | Phạm vi | PR / nguồn |
 |---|---|---|---|---|
+| [G10-SGK-CHIII](ready/G10-SGK-CHIII.md) | SGK_CHAPTER | CONTENT_READY | PUBLIC_FORMATIVE_ONLY | authoring #633 A1–A7 PASS, 18/18 exact R01; release not yet integrated |
 | [G10-SGK-CHII](ready/G10-SGK-CHII.md) | SGK_CHAPTER | RELEASE_READY | PUBLIC_FORMATIVE_ONLY | #631 authoring merged; #636 combined release, dual exact-head CI mandatory before merge |
 | [G10-SGK-CHI](ready/G10-SGK-CHI.md) | SGK_CHAPTER | RELEASE_READY | PUBLIC_FORMATIVE_ONLY | authoring #628 merged, release #635 exact-head CI pending |
 | [G10-SGK-CHVI](inventory/G10-SGK-CHVI.md) | SGK_CHAPTER | PUBLISHED_SCOPED | PUBLIC_FORMATIVE_ONLY | merged #612; UI #617–619 |
@@ -27,3 +28,5 @@
 **30/10/2026 — Handoff ChII B03–B04:** Academic NotebookLM R01 18/18, 10/10 outcomes, D1–D6 PASS trong phạm vi PUBLIC_FORMATIVE_ONLY, snapshot blob `acea9776d1c7534a4cd0cd28e98db26dedf0c122` giữ nguyên. Manifest tại `ready/G10-SGK-CHII.md` có A1–A7 nhưng chưa có R1–R5, không tự cấp Mastery/Readiness. Release Draft #636 đã đối chiếu với `main` có ChI #635, cả hai CI trên HEAD `e74ef9f7273c94f39efcfbc0749297730786072b` SUCCESS. Chưa merge/deploy cho ChII.
 
 **30/10/2026 ChII R1–R5:** G10 B03/B04 R01 Academic PASS (exact Temp Git blob `acea9776d1c7534a4cd0cd28e98db26dedf0c122`), original 18 canonical candidates, 2 SVG, 4 HELP_ID. Source #631 merged; release #636 combined clean UI #640 and both SGK chapters. Owner authorized release *only after* two exact-final-head workflows SUCCESS. P1/P2 postdeploy remain separate. No Readiness/Mastery.
+
+**30/10/2026 — ChIII B05–B06 authoring handoff:** Academic PASS 18/18, 10/10 outcomes, D1–D6 PASS on exact source blob `6320aeaa89bd51c514b07461e01fad5e3aca833f`. Source PR #633 integrated onto main including released ChII #636; CONTENT_READY only. No Chapter/Topic Readiness or Mastery; R1–R5 pending release lane.
