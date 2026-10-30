@@ -5,6 +5,7 @@
 | Gói | Hành trình | Trạng thái | Phạm vi | PR / nguồn |
 |---|---|---|---|---|
 | [G10-SGK-CHI](ready/G10-SGK-CHI.md) | SGK_CHAPTER | RELEASE_READY | PUBLIC_FORMATIVE_ONLY | authoring #628 merged, release #635 exact-head CI pending |
+| [G10-SGK-CHV](inventory/G10-SGK-CHV.md) | SGK_CHAPTER | ACADEMIC_PARTIAL | PUBLIC_FORMATIVE_ONLY B12–B14 | D1–D6 R01, 27 candidate IDs, NotebookLM pending |
 | [G10-SGK-CHVI](inventory/G10-SGK-CHVI.md) | SGK_CHAPTER | PUBLISHED_SCOPED | PUBLIC_FORMATIVE_ONLY | merged #612; UI #617–619 |
 | [G10-SGK-CHVII](ready/G10-SGK-CHVII.md) | SGK_CHAPTER | RELEASE_READY | PUBLIC_FORMATIVE_ONLY | merged/deployed #625, source #624 |
 | [G10-SGK-CHVIII](ready/G10-SGK-CHVIII.md) | SGK_CHAPTER | RELEASE_READY | PUBLIC_FORMATIVE_ONLY | merged/deployed #625, source #624 |
@@ -22,3 +23,6 @@
 **G10 ChI B01–B02:** A1–A7 đã có Academic PASS đúng snapshot 2026-10-29, hồ sơ tại [CHI_B01_B02_A1A7_SCOPED_EVIDENCE_20261029.md](CHI_B01_B02_A1A7_SCOPED_EVIDENCE_20261029.md). Chưa phải công bố chương hoàn chỉnh; R1–R5 do nhánh phát hành #635 kiểm tra. ChIX đã triển khai #630 P1 PASS, nhưng nhãn manifest `RELEASE_READY` trong ready/ chưa chuyển quy ước historical inventory.
 
 **30/10/2026 — ChI B01–B02:** authoring #628 đã merge và A1–A7 được giữ đúng snapshot. Ứng viên website #635 đã kiểm tra 16/16 original canonical + 2 Written/Anchor, 7 ví dụ, 2 SVG và 4 HELP_ID. R2 chỉ chốt khi exact combined HEAD CI PASS; P1/P2 ghi nhận riêng sau deploy.
+
+
+**G10 ChV authoring candidate:** [B12–B14 inventory](inventory/G10-SGK-CHV.md), Temp R01 exact Git source blob `49502fe39cf0a67f6a3e973a77f94164150637a7`, 27 candidate item IDs, 14 outcomes, 9 worked examples, 3 SVG and 6 D6 HELP_ID. 28/28 author checks PASS, but independent NotebookLM Academic PASS NOT RECEIVED. A3/A5/A6 HOLD, R1–R5 unchecked, whole-ChV Readiness/Topic not approved. This is the unmerged authoring branch, not main.
