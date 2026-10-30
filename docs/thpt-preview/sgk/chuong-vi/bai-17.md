@@ -85,8 +85,8 @@ x^2-2(m+1)x+m^2+3>0
 Suy ra \(\boxed{m<1}\). Nếu \(m=1\), tam thức có nghiệm kép và bằng \(0\) tại một điểm nên **không** thỏa dấu \(>\).
 
 <details class="thpt-r4-pedagogical-note">
-<summary>Lưu ý: Kiến thức mở rộng về tham số</summary>
-<p>Phần bất phương trình có tham số là nội dung luyện tập mở rộng, không phải kiến thức Core bắt buộc của SGK. Các ví dụ ở trên giúp rèn kỹ năng xét dấu.</p>
+<summary>Lưu ý về phạm vi Core và mở rộng của bài toán tham số</summary>
+<p>Tìm tham số để tam thức bậc hai luôn dương/không âm (hoặc luôn âm/không dương) trên \(\mathbb R\) <strong>khi hệ số bậc hai \(a\) cố định khác \(0\)</strong> thuộc phạm vi vận dụng kiến thức Core của Bài 17 (SGK trang 24, bài 6.17; SBT trang 17 Ví dụ 3 và trang 18 bài 6.24). Cần xét dấu của \(a\) và \(\Delta\) (hoặc \(\Delta'\)) phù hợp. Nếu \(a\) phụ thuộc tham số và có thể bằng \(0\), phải xét thêm trường hợp biểu thức không còn là tam thức bậc hai; nội dung này được đặt ở phần nâng cao, không yêu cầu như một outcome Core bắt buộc.</p>
 </details>
 
 [Chuyển đến Luyện tập và Vận dụng Chương VI](luyen-tap.md) để làm bài củng cố. Bạn có thể mở gợi ý và lời giải sau khi tự làm.
