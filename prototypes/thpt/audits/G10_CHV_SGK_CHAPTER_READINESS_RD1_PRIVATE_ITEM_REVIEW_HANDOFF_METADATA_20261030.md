@@ -3,6 +3,8 @@
 **DATE:** 2026-10-30 · **PACKET_ID:** `THPT-G10-CHV-SGK-CHAPTER-READINESS-RD1-PRIVATE-ITEMS-20261030-R01` · **SCOPE:** `SGK_CHAPTER_READINESS:G10:CHV`, B12–B14 only, not Topic Readiness.  
 **STATUS:** `DELTA_C_NEW_PRIVATE_ASSESSMENT_ITEMS` / `AUTHORING_STATIC_QA_PASS` / **`NOTEBOOKLM_ITEM_REVIEW_PENDING`**, not Academic PASS or approved release.
 
+**CURRENT_OWNER_REVIEW_RESULT (2026-10-30):** Independent NotebookLM owner-supplied report `ACADEMIC_OVERALL=PASS`, `ACADEMIC_CLEARANCE=YES` for the **18/18 private ChV RD1 candidates and 14/14 RD0 outcomes**, `P0/P1/P2=0/0/0`, `MINIMAL_DELTA=0`. [Scoped metadata reviewer receipt](G10_CHV_RD1_OWNER_NOTEBOOKLM_R01_SCOPED_PASS_PRIVATE_METADATA_20261030.md). Reviewer source filename `..._R01_202.md` differs from actual private `..._R01_20261030.md`, and reviewer source SHA is absent, so `EXACT_NOTEBOOKLM_SOURCE_BYTE_PARITY=HOLD`. Earlier `NOTEBOOKLM_ITEM_REVIEW_PENDING` and `RD1_CHV_ACADEMIC_PASS=NO` text below is **historical pre-verdict state**, superseded only for academic review; `PROTECTED_DELIVERY=HOLD`, `FINAL_SUBMIT=NOT_ACTIVE`, `NO_SCORE/NO_MASTERY`, `NO_MERGE_DEPLOY` remain.
+
 ## Frozen sources and reviewer boundaries
 
 - **Owner S1 original scanned SGK Toán 10 KNTT Tập 1**, B12 printed pp73–77, B13 pp78–83, B14 pp84–88, end ChV pp89–90; PDF SHA256 `3cbb335780dc0f2f4a034a55eb542e3bbe67693412b10a90ca1dffe9ea50eac2`. Actual scans opened/rendered as page images and numerics inspected. **SBT Tập 1**, B12 pp72–73, B13 pp74–77, B14 pp78–80, end ChV pp81–84; PDF SHA256 `2b1b98665b2c5cccb99f6699a43cbf71b8b2dfc63bdaec759a7b1c51778e2fa1`. Both hashes recomputed on real source PDF files.
