@@ -252,6 +252,7 @@ extra_css:
   - assets/stylesheets/math-knowledge-r30-consistency.css
 
   - assets/stylesheets/thpt-r4-preview.css
+  - assets/stylesheets/thpt-chvi-d6-reviewed-r01.css
 
 extra_javascript:
   # Critical learner route/runtime scripts first so KNTT/Core can mount before remote MathJax or heavier observers.
@@ -293,4 +294,5 @@ extra_javascript:
 
   # Phase-1 static THPT learning pages; no accounts or private backend.
   - assets/javascripts/thpt-chvi-reviewed-formative-v1.js
+  - assets/javascripts/thpt-chvi-d6-reviewed-r01.js
   - assets/javascripts/thpt-r4-preview.js
