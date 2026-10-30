@@ -78,7 +78,7 @@
    if(!dlg){
     dlg=document.createElement("dialog");
     dlg.className="roadmap-topic-dialog";dlg.dataset.thptR4ShortcutDialog="1";
-    dlg.setAttribute("aria-label","Điều hướng nhanh Toán THPT · Bản mẫu");
+    dlg.setAttribute("aria-label","Điều hướng nhanh Toán THPT");
     const heading=document.createElement("div");heading.className="roadmap-topic-dialog__heading";
     const title=document.createElement("h2");title.textContent="Toán THPT · 5 nhóm + "+topics.length+" chuyên đề mẫu";
     const close=document.createElement("button");close.type="button";close.className="roadmap-topic-dialog__close";close.textContent="Đóng ✕";
@@ -236,7 +236,7 @@
   const dlg=document.createElement("dialog");
   dlg.className="thpt-r4-practice-dialog";
   dlg.dataset.thptR4="1"; // Eligible root for existing R4 exercise binder when remote card is inserted.
-  dlg.setAttribute("aria-label","Luyện tập Toán THPT · bản mẫu");
+  dlg.setAttribute("aria-label","Luyện tập Toán THPT");
   dlg.innerHTML='<div class="thpt-r4-modal-top"><span class="thpt-r4-modal-lesson-badge" data-thpt-modal-lesson-number aria-hidden="true">15</span><div class="thpt-r4-modal-heading"><p class="thpt-r4-modal-meta">LỚP 10 · CHƯƠNG VI</p><h2 data-thpt-modal-title>Luyện tập</h2></div><button type="button" data-thpt-modal-close aria-label="Đóng cửa sổ">Đóng ×</button></div><div class="thpt-r4-modal-main" data-thpt-modal-body></div>';
   document.body.append(dlg);
   const modalBody=dlg.querySelector("[data-thpt-modal-body]");
@@ -605,7 +605,7 @@
       if(word&& !group.hidden)group.open=true;
      });
      if(counter&&word)counter.textContent=visible+" kết quả phù hợp · Chỉ mục đã có nội dung/đang đối chiếu";
-     if(counter&&!word)counter.textContent=items.length+" mục trong bản mẫu · chưa phải danh mục đã nghiệm thu";
+     if(counter&&!word)counter.textContent=items.length+" mục";
     };
     input.addEventListener("input",run);kind?.addEventListener("change",run);
    }
