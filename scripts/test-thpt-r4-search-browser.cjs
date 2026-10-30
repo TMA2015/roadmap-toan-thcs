@@ -42,7 +42,13 @@ const base="http://127.0.0.1:8765/thpt-preview/";
    result=await query("tọa độ",1);
    assert((await result.first().getAttribute("href")).endsWith("chuong-vii/"));
    await query("toa do",1);
-   await query("chương IV, bài 9",0); // Not yet public, do not invent lesson links
+   result=await query("chương IV, bài 9",1);
+   assert((await result.first().getAttribute("href")).endsWith("chuong-iv/bai-9/"));
+   result=await query("bài 10",1);
+   assert((await result.first().getAttribute("href")).endsWith("chuong-iv/bai-10/"));
+   result=await query("bài 11",1);
+   assert((await result.first().getAttribute("href")).endsWith("chuong-iv/bai-11/"));
+   await query("chương V, bài 12",0); // ChV B12 is not yet published
    result=await query("lớp 11",1);
    assert((await result.first().innerText()).includes("Chưa phát hành"));
    await query("xyz-khong-co",0);
