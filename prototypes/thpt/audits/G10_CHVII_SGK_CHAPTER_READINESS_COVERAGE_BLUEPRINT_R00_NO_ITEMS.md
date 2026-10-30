@@ -3,9 +3,11 @@
 **PHÂN LOẠI:** `SGK_CHAPTER_READINESS:G10:CHVII` · `OUTCOME_COVERAGE_BLUEPRINT_ONLY` · `NOT_REVIEWED_FOR_ASSESSMENT` · `NOT_ACTIVE` · `NO_SCORE/NO_MASTERY`.
 **BÀI SGK:** B19–B22.
 **S1 kiểm kê:** SGK Toán 10 KNTT tập 2 B19 tr.29–34, B20 tr.35–41, B21 tr.42–46, B22 tr.47–56, cuối ChVII tr.57–58; SBT tập 2 B19 tr.27–31, B20 tr.31–38, B21 tr.38–41, B22 tr.41–45, cuối ChVII tr.46–49.
-**Nguồn outcome / bằng chứng public:** prototypes/thpt/THPT_G10_CHVII_CHVIII_OUTCOME_PLACEMENT_MATRIX_v0.2.md (matrix đề xuất, Git blob 92808da0176c2ba6e282a1872521a38299802919) + scoped public review receipts trong release-queue của main
+**Nguồn outcome / bằng chứng public:** `prototypes/thpt/THPT_G10_CHVII_CHVIII_OUTCOME_PLACEMENT_MATRIX_v0.4.md` (authoring branch `content/thpt-g10-chvii-chviii-authoring-20261028`, Git blob `a145b898e13ef88dbc5d37e879b243a1e6e880a3`); base v0.2 blob `92808da0176c2ba6e282a1872521a38299802919` chỉ là lịch sử, không dùng làm chuẩn snapshot mới.
 
-**GIỚI HẠN HỌC THUẬT:** Danh sách outcome lấy từ matrix v0.2 vốn ghi DRAFT_NOT_ACADEMICALLY_REVIEWED. Public D1–D6 packet khác đã có reviewer PASS theo snapshot cụ thể; **không suy reviewer đã duyệt từng outcome ID này cho Readiness**.
+**GIỚI HẠN HỌC THUẬT / ĐỐI CHIẾU NGUỒN 30/10:** Reviewer S1 đã đối chiếu **35/35 outcome của ChVII–VIII cho phạm vi PUBLIC_FORMATIVE_ONLY** (D1/D2 + delta R1; D3/D4 63 câu gốc và B25-P07 qua delta riêng), theo `prototypes/thpt/release-queue/CHVII_VIII_PUBLIC_FORMATIVE_A1_A7_FINAL_EVIDENCE_20261029.md` (main Git blob `f9997fc36bc511cc73d96f1a5f4141d7a5b43358`). **Không suy ra** một outcome đã được reviewer chứng nhận cho bài kiểm tra độc lập hoặc đã có Readiness `item_id` hợp lệ. Đây vẫn là R00 assessment proposal.
+
+**Rủi ro phạm vi cần reviewer xét riêng:** B22-C01 về tâm sai đã được phân tầng `ELECTIVE_SPECIALIZED_NOT_CORE` trong v0.4; coverage Core Elip dựa vào B22-P01/W22-01. Không tự đưa kiến thức optional hoặc câu đã luyện vào kiểm tra Core. `THPT-G10-CHVII-RD02` là candidate đã lộ/RETIRED; không dùng lại.
 
 ## Ma trận metadata (không có đề / đáp án / thang điểm)
 
