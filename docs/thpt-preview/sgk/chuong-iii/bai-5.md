@@ -2,7 +2,7 @@
 
 <div class="thpt-r4-screen" data-thpt-r4><p class="thpt-r4-eyebrow">TOÁN 10 · CHƯƠNG III · KIẾN THỨC SGK KNTT</p><p class="thpt-r4-lead">Học kiến thức và ví dụ theo Bài 5, sau đó tự luyện.</p><nav class="thpt-r4-lesson-tabs"><a href="../">Chương III</a><a href="../luyen-tap/">Core và Luyện tập</a><a href="../tu-kiem-tra-chuong/">Tự kiểm tra</a></nav></div>
 
-## 1. Kiến thức và ví dụ
+## 1. Kiến thức
 
 ### Định nghĩa trên nửa đường tròn đơn vị
 
@@ -27,12 +27,14 @@ Với tan/cot, dùng tỷ số sin/cos chỉ **khi mẫu khác 0**; không ghi m
 ### Góc bù
 
 Với hai góc bù `α` và `180°−α`:
+
 \[
 \begin{aligned}
 \sin(180^\circ-\alpha)&=\sin\alpha, & \cos(180^\circ-\alpha)&=-\cos\alpha,\\
 \tan(180^\circ-\alpha)&=-\tan\alpha, & \cot(180^\circ-\alpha)&=-\cot\alpha
 \end{aligned}
 \]
+
 Hai đẳng thức có tan và cot chỉ dùng khi vế tương ứng đều xác định. Đây không phải công thức sin/cos của tổng hai góc bất kỳ; không đưa nội dung công thức cộng Toán 11 vào Core.
 
 ### Hệ thức cơ bản và dấu
@@ -42,9 +44,10 @@ Hai đẳng thức có tan và cot chỉ dùng khi vế tương ứng đều xá
 1+\tan^2\alpha=\frac1{\cos^2\alpha}\;(\cos\alpha\ne0),\quad
 1+\cot^2\alpha=\frac1{\sin^2\alpha}\;(\sin\alpha\ne0).
 \]
+
 Khi `sin α ≠ 0` **và** `cos α ≠ 0`, có `tan α·cot α=1`. Biết một giá trị sin/cos cần xét **góc nhọn hay tù** để chọn dấu căn còn lại.
 
-## Ví dụ giải mẫu
+## 2. Ví dụ
 
 **Ví dụ 1 — Góc 120°:** `120°=180°−60°`, do đó 
 \(\sin120^\circ=\sqrt3/2\), \(\cos120^\circ=-1/2\), \(\tan120^\circ=-\sqrt3\), \(\cot120^\circ=-\sqrt3/3\). Cos âm vì góc tù; hai tỷ số đều có nghĩa.
