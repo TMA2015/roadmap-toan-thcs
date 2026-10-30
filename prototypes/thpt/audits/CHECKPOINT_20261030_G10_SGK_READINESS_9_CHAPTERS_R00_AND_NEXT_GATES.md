@@ -24,3 +24,12 @@
 4. Only after full G10 close proceed G11 already-reviewed B01–B02 (#627) then B03/B04 onward SGK, later G12 B01 onward; Topic reuse audit last.
 
 **NO MERGE/DEPLOY performed by this turn.**
+
+## B3 continuation · RD0 ChVII/VIII handoff (2026-10-30)
+
+- ChVII+VIII blueprints re-pointed from historical DRAFT v0.2 to reviewer-reconciled **public** v0.4 Git blob `a145b898e13ef88dbc5d37e879b243a1e6e880a3`; public A1–A7 receipt Git blob `f9997fc36bc511cc73d96f1a5f4141d7a5b43358`.
+- Exact ID set reconciliation: ChVII **23/23**, ChVIII **12/12**, combined **35/35**, zero duplicates/missing/extra; unchanged versus v0.4. Public 35-outcome S1 receipts **do not** constitute independently reviewed Chapter Readiness. `B22-C01` specialized; `B25-P07` Core-reviewed delta, P02/P05/P06 non-Core as flagged; CHVII-RD02 permanently retired.
+- Nine R00 blueprints rechecked on Draft #641: **133 distinct IDs**, all nine still `NOT_ACTIVE`; no held-out question/answer/rubric published. New provenance/expected-ID document: `G10_CHVII_CHVIII_RD0_OUTCOME_PROVENANCE_AND_REVIEW_REGISTER_R01_20261030.md`.
+- Prepared **two actual Temp_ Markdown owner handoff files** (one per chapter, 23+12 full outcome target tables, S1 review protocol, explicit evidence/limits), delivered outside GitHub for NotebookLM upload with a short prompt under Source 06. Files are transport artifacts, not permanent repository sources or academic verdicts.
+- GitHub current main at last verified observation `1643c60e3638cbc180c6580b54111a64e07cf663`: ChIII authoring #633 merged, release #644 Draft. Audit PR #641 updated, stays Draft. At audit HEAD `5bae3e9a7baa94ff031672b2ad785dcd1f2e1774`, Roadmap PR Quality run #41014522551 was **IN_PROGRESS** when queried, not asserted PASS.
+- Next gate: wait for owner-supplied independent RD0 NotebookLM verdict per exact 35 IDs; resolve only source-scoped deltas, then design protected item access/scoring before drafting real independent Readiness. Public-formative release workstream independent. **NO MERGE/DEPLOY/MASTERY/READINESS ACTIVATION**.
