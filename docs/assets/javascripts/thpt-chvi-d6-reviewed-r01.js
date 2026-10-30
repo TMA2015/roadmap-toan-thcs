@@ -319,6 +319,7 @@
   const wrapper=document.createElement("section");wrapper.className="thpt-chvi-d6";
   wrapper.dataset.thptChviD6="1";wrapper.setAttribute("aria-label","Hỗ trợ D6 Bài "+lesson);
   const all=document.createElement("details"),summary=document.createElement("summary");
+  all.className="thpt-chvi-d6-main";
   summary.textContent="Hỗ trợ khi làm sai · 2 hướng tự sửa Bài "+lesson;
   all.append(summary);
   const note=document.createElement("p");note.className="thpt-chvi-d6-caption";
