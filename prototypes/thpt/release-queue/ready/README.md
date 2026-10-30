@@ -42,3 +42,8 @@ Một packet canonical duy nhất trên mỗi phạm vi; không nhân đôi câu
 - [G10-SGK-CHIV-B09-B11](G10-SGK-CHIV-B09-B11.md) đã NotebookLM PASS 27/27 item, 14/14 outcome, D1–D6 B09–B11; snapshot Git blob `a9f6fab820559a8da98a5a42cd9902dbf9891f34`, biên bản reviewer blob `f13acb74206c00cb489e533df7792870f88830e3`.
 - [Hồ sơ A1–A7](../CHIV_B09_B11_PUBLIC_FORMATIVE_A1A7_EVIDENCE_20261030.md). Trạng thái chỉ áp dụng `PUBLIC_FORMATIVE_ONLY`, bản Draft PR #637 chưa merge. P2: đăng ký ID production và thử 3 SVG responsive trên thiết bị, do nhánh phát hành xử lý.
 - Gói B07–B08 của Draft PR #634 được duyệt riêng; cả hai phải được tích hợp vào **một** hành trình ChIV SGK và một ngân hàng canonical, không được coi là đạt Tự kiểm tra cuối chương/Topic/Mastery. R1–R5 vẫn chưa thực hiện.
+
+## Chương V B12–B14 — chuyển về kiểm toán học thuật (Draft #639)
+
+- [Manifest hiện hành: ACADEMIC_PARTIAL / HELP01 delta review HOLD](../inventory/G10-SGK-CHV.md). Nội dung được review R01 chỉ có hiệu lực theo snapshot cũ; HELP02 đã nhận NotebookLM R02 PASS, nhưng HELP01 còn điểm bất nhất ký hiệu và hướng dẫn khoảng số đúng, đang chờ review riêng.
+- Bản Temp HELP01 R02 đã chuẩn bị, **chưa PASS**, không phát hành R01 HELP01/HELP02 từ snapshot cũ. D1–D5 và các item không bị ảnh hưởng tiếp tục giữ trạng thái review nguồn cũ. Không merge/deploy.
