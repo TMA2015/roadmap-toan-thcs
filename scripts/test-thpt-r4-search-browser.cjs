@@ -27,13 +27,13 @@ const base="http://127.0.0.1:8765/thpt-preview/";
    assert.equal(await page.locator("[data-thpt-search-only]:visible").count(),0,
     "Direct lesson results must not clutter default chapter index");
    await query("lớp 10",9); // 8 available chapter cards + one clearly marked unpublished ChV
-   let result=await query("chương I",1);
+   let result=await query("chương I",2); // published G10 and G11 chapter I
    assert((await result.first().getAttribute("href")).endsWith("chuong-i/"));
    result=await query("chương II",1);
    assert((await result.first().getAttribute("href")).endsWith("chuong-ii/"));
    result=await query("lớp 10, chương I",1);
    assert((await result.first().getAttribute("href")).endsWith("chuong-i/"));
-   result=await query("bài 1",1);
+   result=await query("bài 1",2); // grade is required to disambiguate B01
    assert((await result.first().getAttribute("href")).endsWith("chuong-i/bai-1/"));
    result=await query("lớp 10, chương I, bài 2",1);
    assert((await result.first().getAttribute("href")).endsWith("chuong-i/bai-2/"));
@@ -52,7 +52,13 @@ const base="http://127.0.0.1:8765/thpt-preview/";
    assert((await result.first().getAttribute("href")).endsWith("chuong-iv/bai-11/"));
    await query("chương V, bài 12",0); // ChV B12 is not yet published
    result=await query("lớp 11",1);
-   assert((await result.first().innerText()).includes("Chưa phát hành"));
+   assert((await result.first().getAttribute("href")).endsWith("lop-11/chuong-i/"));
+   result=await query("lớp 11, chương I, bài 1",1);
+   assert((await result.first().getAttribute("href")).endsWith("lop-11/chuong-i/bai-1/"));
+   result=await query("lớp 11, bài 2",1);
+   assert((await result.first().getAttribute("href")).endsWith("lop-11/chuong-i/bai-2/"));
+   await query("lớp 11, bài 3",0);
+   await query("lớp 12, bài 1",0);
    await query("xyz-khong-co",0);
    await field.fill("");
    assert.equal(await page.locator("[data-thpt-search-only]:visible").count(),0);
@@ -77,6 +83,6 @@ const base="http://127.0.0.1:8765/thpt-preview/";
   assert.equal(await thcs.locator("[data-thpt-filter-input]").count(),0,
    "THPT search must not leak into THCS");
   await thcs.close();
-  console.log("PASS G10 SGK class/chapter/lesson + Topic search desktop/iPad/phone, published-only links and THCS isolation");
+  console.log("PASS G10/G11 SGK class/chapter/lesson + Topic search desktop/iPad/phone, published-only links and THCS isolation");
  }finally{await browser.close()}
 })().catch(error=>{console.error("FAIL THPT search browser",error);process.exit(1)});
