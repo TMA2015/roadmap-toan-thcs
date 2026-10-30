@@ -4,6 +4,7 @@
 
 | Gói | Hành trình | Trạng thái | Phạm vi | PR / nguồn |
 |---|---|---|---|---|
+| [G10-SGK-CHI](ready/G10-SGK-CHI.md) | SGK_CHAPTER | CONTENT_READY | PUBLIC_FORMATIVE_ONLY | authoring #628 A1–A7 R01, release candidate #635 (unmerged) |
 | [G10-SGK-CHVI](inventory/G10-SGK-CHVI.md) | SGK_CHAPTER | PUBLISHED_SCOPED | PUBLIC_FORMATIVE_ONLY | merged #612; UI #617–619 |
 | [G10-SGK-CHVII](ready/G10-SGK-CHVII.md) | SGK_CHAPTER | RELEASE_READY | PUBLIC_FORMATIVE_ONLY | merged/deployed #625, source #624 |
 | [G10-SGK-CHVIII](ready/G10-SGK-CHVIII.md) | SGK_CHAPTER | RELEASE_READY | PUBLIC_FORMATIVE_ONLY | merged/deployed #625, source #624 |
@@ -18,3 +19,4 @@
 **Nhánh Chuyên đề:** chưa có packet đạt cổng riêng; không suy luận từ SGK. Khi có batch TOPIC thực tế, dùng PACKET_TEMPLATE.md tạo một hàng, không thêm gói rỗng.
 
 **Nguồn ChIX mới:** [hồ sơ A1–A7 B26–B27](CHIX_B26_B27_PUBLIC_FORMATIVE_A1_A7_FINAL_EVIDENCE_20261029.md). Hai SVG D5 và bốn thẻ D6 nguồn R01 được tích hợp trong ứng viên kỹ thuật #630; chưa phát hành. **PR lịch sử:** #614/#615/#616 và #620/#621 không được merge như gói học liệu độc lập.
+**G10 ChI B01–B02:** A1–A7 đã có Academic PASS đúng snapshot 2026-10-29, hồ sơ tại [CHI_B01_B02_A1A7_SCOPED_EVIDENCE_20261029.md](CHI_B01_B02_A1A7_SCOPED_EVIDENCE_20261029.md). Chưa phải công bố chương hoàn chỉnh; R1–R5 do nhánh phát hành #635 kiểm tra. ChIX đã triển khai #630 P1 PASS, nhưng nhãn manifest `RELEASE_READY` trong ready/ chưa chuyển quy ước historical inventory.

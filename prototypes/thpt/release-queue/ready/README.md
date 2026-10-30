@@ -15,3 +15,9 @@
 - Technical release candidate #630 has same original canonical bank, Written/rubric, two SVG and four R01 D6. R1/R3/R4 đã tích hợp và kiểm chứng trên bản ứng viên #630; R2 chỉ đạt khi hai workflow exact HEAD đều SUCCESS. Chủ dự án đã cho phép phát hành ChIX có điều kiện đạt CI, không bật Readiness/Mastery. P1/P2 chỉ xác nhận sau khi triển khai.
 
 Một packet canonical duy nhất trên mỗi phạm vi; không nhân đôi câu hỏi, không mở Readiness/Mastery chỉ vì gói `CONTENT_READY`. Trạng thái thực tế từng chương tra trong [REGISTER](../REGISTER.md).
+
+## G10 Chương I B01–B02 · CONTENT_READY (chưa phát hành)
+
+- [Gói học thuật A1–A7](G10-SGK-CHI.md), phạm vi `PUBLIC_FORMATIVE_ONLY`: 16 câu Core/Practice, 2 Written (một Anchor), 7 ví dụ, 2 SVG, 4 thẻ D6.
+- [Hồ sơ chi tiết](../CHI_B01_B02_A1A7_SCOPED_EVIDENCE_20261029.md), source reviewed exact blob `95a554e31a613b8e215679fe6790738473d598df`, NotebookLM receipt `fece80dcb4b0e17d369e2ecbe12e8d13b672281a`.
+- Kỹ thuật tích hợp trong Draft release #635. Chỉ khi hai workflow CI PASS trên đúng HEAD cuối, xác nhận item_id và owner authorization, mới merge/deploy; không tự bật Chapter/Topic Readiness hoặc Mastery.
