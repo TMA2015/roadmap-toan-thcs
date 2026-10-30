@@ -4,7 +4,7 @@
 
 | Gói | Hành trình | Trạng thái | Phạm vi | PR / nguồn |
 |---|---|---|---|---|
-| [G10-SGK-CHIV-B09-B11](inventory/G10-SGK-CHIV-B09-B11.md) | SGK_CHAPTER | ACADEMIC_PARTIAL | PUBLIC_FORMATIVE_ONLY B09–B11 | R01 D1–D6 candidate; 27 item IDs, NotebookLM pending |
+| [G10-SGK-CHIV-B09-B11](ready/G10-SGK-CHIV-B09-B11.md) | SGK_CHAPTER | CONTENT_READY | PUBLIC_FORMATIVE_ONLY B09–B11 | #637 NotebookLM R01 D1–D6 PASS, 27/27 items |
 | [G10-SGK-CHVI](inventory/G10-SGK-CHVI.md) | SGK_CHAPTER | PUBLISHED_SCOPED | PUBLIC_FORMATIVE_ONLY | merged #612; UI #617–619 |
 | [G10-SGK-CHVII](ready/G10-SGK-CHVII.md) | SGK_CHAPTER | RELEASE_READY | PUBLIC_FORMATIVE_ONLY | merged/deployed #625, source #624 |
 | [G10-SGK-CHVIII](ready/G10-SGK-CHVIII.md) | SGK_CHAPTER | RELEASE_READY | PUBLIC_FORMATIVE_ONLY | merged/deployed #625, source #624 |
@@ -20,4 +20,4 @@
 
 **Nguồn ChIX mới:** [hồ sơ A1–A7 B26–B27](CHIX_B26_B27_PUBLIC_FORMATIVE_A1_A7_FINAL_EVIDENCE_20261029.md). Hai SVG D5 và bốn thẻ D6 nguồn R01 được tích hợp trong ứng viên kỹ thuật #630; chưa phát hành. **PR lịch sử:** #614/#615/#616 và #620/#621 không được merge như gói học liệu độc lập.
 
-**B09–B11 Academic candidate ChIV:** [inventory scoped batch](inventory/G10-SGK-CHIV-B09-B11.md) on authoring branch only. Exact R01 Git blob `a9f6fab820559a8da98a5a42cd9902dbf9891f34`, 27 new candidate item IDs (6 Core + 18 Practice + 3 Written), 14 outcomes, 9 examples, 3 SVG, 6 HELP. No NotebookLM verdict; A3/A5/A6 pending, R1–R5 untouched. Do not overwrite or count twice the separately reviewed B07–B08 packet (Draft PR #634); both belong to one eventual Chapter IV website and one canonical item bank. No Chapter/Topic Readiness or Mastery claims.
+**B09–B11 ChIV authoring ready:** [manifest](ready/G10-SGK-CHIV-B09-B11.md) · [Academic A1–A7 evidence](CHIV_B09_B11_PUBLIC_FORMATIVE_A1A7_EVIDENCE_20261030.md). NotebookLM PASS for exact R01 source blob `a9f6fab820559a8da98a5a42cd9902dbf9891f34`, receipt blob `f13acb74206c00cb489e533df7792870f88830e3`, 27/27 items; R1–R5 not done, no ChIV readiness or Topic claim. Separate B07–B08 #634 source retains independent approval, do not clone items.
