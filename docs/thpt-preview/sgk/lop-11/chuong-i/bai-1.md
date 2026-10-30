@@ -62,4 +62,4 @@ Bánh xe bán kính \(30 cm\) quay góc \(−2π/3 rad\); độ dài cung quét 
 
 ## 5. Tiếp tục
 
-[Core và Luyện tập Bài 1](../luyen-tap/) · [Tự luận Chương I](../../../thu-vien/tu-luan-g11-chuong-i-b01-b02/)
+[Core và Luyện tập Bài 1](../luyen-tap/) · [Tự luận Chương I](../../../../thu-vien/tu-luan-g11-chuong-i-b01-b02/)
