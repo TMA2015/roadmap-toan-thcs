@@ -39,3 +39,9 @@
 Review exactly two self-contained sources: public complete Chapter I D1–D6 with four SVGs (GitHub source above) and private complete Chapter I RD0/RD1 (Markdown or verified PDF). Validate S1 scope B01–B04 and precise B03/B04 SBT page receipts, D1–D6 completeness, 26 outcomes, 46 public canonical IDs (18 old already approved), 20 independent held-out RD1 items and exposure against the public bank; return per-lesson, outcome and item verdict plus P0/P1/P2, MINIMAL_DELTA and scoped Academic Clearance.
 
 **Gate:** `G11_CHI_WHOLE_CHAPTER_AUTHORING=QA_PASS_REVIEW_PENDING`, `ACADEMIC_NEW_B03_B04_RD1=NOT_GRANTED`, `RELEASE_AUTHORIZATION=NO`, `MASTERY_ACTIVATION=NO`, `NEXT_CHAPTER=G11_CHII_AFTER_CHI_REVIEW_FIX_CANONICAL_FREEZE`.
+## Two actual NotebookLM import sources (ONE CHAPTER batch)
+
+1. Public `Temp_THPT_G11_CHI_B01_B04_D1D6_WHOLE_CHAPTER_R01_20261031.md` at `prototypes/thpt/review-packets/` on this Draft PR. **Byte-identical Git blob `599d12ac7c2252001f881833c39978f94112cee4`** to full Chapter I D1–D6 authoring review source. It includes exact frozen B01/B02, all B03/B04 D1–D6 new, all 46 public item IDs and complete SVG XML.
+2. Private `Temp_G11_CHI_B01_B04_RD0_RD1_20_PRIVATE_ITEMS_R01_20261031.pdf`, seven-page text layer, SHA256 `651558959c1553d2633189421713e5738caf1c88b00e1c956aa7a04cf9f37665`, plus original Markdown SHA256 `9b9235703b165c2ecb6c4b4c6eadcb37c1b72b35382f04c2c4eafb37463821e5`. Both retained and restored exact bytes in private Library. **Do not place private item questions in GitHub.**
+
+Delivery to owner: download **both sources** separately and add to NotebookLM with existing five Permanent Sources v2.0 and SGK/SBT S1. No JSON review file and no need for a third source. Review one time for the entire chapter; no fragment-per-lesson review requests. After verdict, archive raw report/complete canonical with source SHA, then release A1–A7 handoff; no automatic merge/deploy.
