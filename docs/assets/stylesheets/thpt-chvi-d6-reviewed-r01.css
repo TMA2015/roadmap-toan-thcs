@@ -1,0 +1,53 @@
+/* NotebookLM R01 source-locked ChVI D6, public formative modal only. */
+[data-thpt-practice-hub] + .thpt-chvi-d6, .thpt-r4-practice-dialog .thpt-chvi-d6{
+ width:100%;max-width:100%;min-width:0;box-sizing:border-box;margin:1rem 0 0;
+}
+.thpt-r4-practice-dialog .thpt-chvi-d6-main,
+.thpt-r4-practice-dialog .thpt-chvi-d6-card{
+ border:1px solid var(--md-default-fg-color--lighter,#ccd4dd);
+ border-radius:.65rem;background:var(--md-default-bg-color,#fff);
+ min-width:0;overflow-wrap:anywhere;
+}
+.thpt-r4-practice-dialog .thpt-chvi-d6-main{padding:.8rem;}
+.thpt-r4-practice-dialog .thpt-chvi-d6-main > summary{
+ cursor:pointer;font-weight:700;line-height:1.5;padding:.25rem;
+ color:var(--md-typeset-a-color,#1666a3);
+}
+.thpt-r4-practice-dialog .thpt-chvi-d6-card{margin:.7rem 0;padding:.65rem;}
+.thpt-r4-practice-dialog .thpt-chvi-d6-card > summary{
+ cursor:pointer;font-weight:600;line-height:1.5;padding:.2rem;
+}
+.thpt-r4-practice-dialog .thpt-chvi-d6-card ol{
+ padding-left:1.35rem;margin:.65rem 0 0;display:grid;gap:.65rem;
+}
+.thpt-r4-practice-dialog .thpt-chvi-d6-card li{line-height:1.55;padding-left:.2rem;}
+.thpt-r4-practice-dialog .thpt-chvi-d6-card li > strong{
+ display:block;margin-bottom:.2rem;font-size:.84rem;letter-spacing:.015em;
+}
+.thpt-r4-practice-dialog .thpt-chvi-d6-stage,
+.thpt-r4-practice-dialog .thpt-chvi-d6-caption{
+ margin:.15rem 0 .45rem;white-space:normal;overflow-wrap:anywhere;
+}
+.thpt-r4-practice-dialog .thpt-chvi-d6-caption{opacity:.83;font-size:.85rem;}
+.thpt-r4-practice-dialog .thpt-chvi-d6-targets{
+ display:flex;flex-wrap:wrap;align-items:center;gap:.35rem;margin-top:.8rem;
+}
+.thpt-r4-practice-dialog .thpt-chvi-d6-targets > p{
+ width:100%;margin:.1rem 0;font-size:.85rem;
+}
+.thpt-r4-practice-dialog .thpt-chvi-d6-targets button{
+ border:1px solid var(--md-typeset-a-color,#1666a3);border-radius:.4rem;
+ background:transparent;color:var(--md-typeset-a-color,#1666a3);
+ padding:.38rem .65rem;min-height:2.75rem;cursor:pointer;
+ font:inherit;font-size:.85rem;overflow-wrap:anywhere;
+}
+.thpt-r4-practice-dialog .thpt-chvi-d6-targets button:focus-visible,
+.thpt-r4-practice-dialog .thpt-chvi-d6-card > summary:focus-visible,
+.thpt-r4-practice-dialog .thpt-chvi-d6-main > summary:focus-visible{
+ outline:3px solid var(--md-typeset-a-color,#1666a3);outline-offset:2px;
+}
+@media(max-width:40rem){
+ .thpt-r4-practice-dialog .thpt-chvi-d6-main{padding:.5rem;}
+ .thpt-r4-practice-dialog .thpt-chvi-d6-card{padding:.5rem;}
+ .thpt-r4-practice-dialog .thpt-chvi-d6-targets button{flex:1 1 45%;max-width:100%;}
+}
