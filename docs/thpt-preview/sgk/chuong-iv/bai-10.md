@@ -4,23 +4,31 @@
 
 ## 1. Kiến thức SGK
 
-**D1.1 Hệ tọa độ và vectơ.** Trong hệ tọa độ vuông góc $Oxy$ với hai vectơ đơn vị $\vec i=(1;0)$ và $\vec j=(0;1)$, vectơ $\vec u=(u_x;u_y)=u_x\vec i+u_y\vec j$. Nếu $A(x_A;y_A)$, $B(x_B;y_B)$, thì
+### 1. Hệ tọa độ và vectơ
+
+ Trong hệ tọa độ vuông góc $Oxy$ với hai vectơ đơn vị $\vec i=(1;0)$ và $\vec j=(0;1)$, vectơ $\vec u=(u_x;u_y)=u_x\vec i+u_y\vec j$. Nếu $A(x_A;y_A)$, $B(x_B;y_B)$, thì
 
 \[
 \overrightarrow{AB}=(x_B-x_A;\ y_B-y_A).
 \]
 
-Tọa độ vectơ $\overrightarrow{AB}$ **không phải** tọa độ điểm $B$ trừ khi $A=O$.
+**Lưu ý:** Tọa độ vectơ $\overrightarrow{AB}$ **không phải** tọa độ điểm $B$ trừ khi $A=O$.
 
-**D1.2 Các phép toán tọa độ.** Với $\vec u=(a;b)$, $\vec v=(c;d)$, $t\in\mathbb R$:
+### 2. Các phép toán tọa độ
+
+ Với $\vec u=(a;b)$, $\vec v=(c;d)$, $t\in\mathbb R$:
 
 \[
 \vec u+\vec v=(a+c;b+d),\quad \vec u-\vec v=(a-c;b-d),\quad t\vec u=(ta;tb).
 \]
 
-$|\vec u|=\sqrt{a^2+b^2}$, $AB=\sqrt{(x_B-x_A)^2+(y_B-y_A)^2}$. Hai vectơ **khác không** cùng phương khi $ad-bc=0$; với vectơ không cần nêu quy ước KNTT riêng.
+$|\vec u|=\sqrt{a^2+b^2}$, $AB=\sqrt{(x_B-x_A)^2+(y_B-y_A)^2}$.
 
-**D1.3 Tọa độ trung điểm, trọng tâm.** $M$ là trung điểm $AB$ khi
+**Điều kiện cùng phương:** Hai vectơ **khác không** cùng phương khi $ad-bc=0$; với vectơ không cần nêu quy ước KNTT riêng.
+
+### 3. Tọa độ trung điểm và trọng tâm
+
+ $M$ là trung điểm $AB$ khi
 
 \[
 M\left(\frac{x_A+x_B}{2};\frac{y_A+y_B}{2}\right).
@@ -32,9 +40,11 @@ Trọng tâm tam giác $ABC$ là
 G\left(\frac{x_A+x_B+x_C}{3};\frac{y_A+y_B+y_C}{3}\right).
 \]
 
-Chỉ dùng công thức trọng tâm khi $ABC$ là tam giác không suy biến. Kiểm tra lại bằng $\overrightarrow{GA}+\overrightarrow{GB}+\overrightarrow{GC}=\vec0$.
+**Điều kiện:** Chỉ dùng công thức trọng tâm khi $ABC$ là tam giác không suy biến. Kiểm tra lại bằng $\overrightarrow{GA}+\overrightarrow{GB}+\overrightarrow{GC}=\vec0$.
 
-**D1.4 Ứng dụng.** Định vị/chuyển động trong bản đồ Oxy phải xác định trục, đơn vị và phân biệt độ dài đường đi thực tế với khoảng cách thẳng giữa hai vị trí.
+### 4. Ứng dụng
+
+ Định vị/chuyển động trong bản đồ Oxy phải xác định trục, đơn vị và phân biệt độ dài đường đi thực tế với khoảng cách thẳng giữa hai vị trí.
 
 ## 2. Ví dụ
 
