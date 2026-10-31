@@ -234,6 +234,8 @@ jobs:
         run: node scripts/test-thpt-g10-chiv-b09-b11-browser-smoke.cjs
       - name: G11 ChI B01/B02 browser QA mobile / tablet / desktop
         run: node scripts/test-thpt-g11-chi-b01-b02-browser-smoke.cjs
+      - name: Academic Presentation QA pilot · MathJax overflow / 390 820 1440
+        run: node scripts/test-thpt-academic-presentation-browser.cjs
       - name: ChIX reviewed D5/D6 browser smoke · mobile / iPad / desktop
         run: node scripts/test-thpt-g10-chix-browser-smoke.cjs
       - name: Emulate old and new GitHub Pages paths, without renaming the repo
