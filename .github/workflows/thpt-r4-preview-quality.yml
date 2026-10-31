@@ -15,6 +15,9 @@ on:
       - 'docs/thcs/**'
       - 'docs/thpt-preview/**'
       - 'docs/assets/javascripts/thpt-r4-preview.js'
+      - 'docs/assets/javascripts/thpt-self-check-qa-v1.js'
+      - 'docs/assets/stylesheets/thpt-self-check-qa-v1.css'
+      - 'scripts/test-thpt-self-check-qa-browser.cjs'
       - 'docs/assets/javascripts/floating-ai-tutor-v1.js'
       - 'docs/assets/javascripts/firebase-gemini-v1.js'
       - 'docs/assets/javascripts/sticky-nav-v1.js'
@@ -87,6 +90,7 @@ jobs:
       - name: Validate scoped THPT JavaScript syntax
         run: |
           node --check docs/assets/javascripts/thpt-r4-preview.js
+          node --check docs/assets/javascripts/thpt-self-check-qa-v1.js
           node --check docs/assets/javascripts/floating-ai-tutor-v1.js
           node --check docs/assets/javascripts/firebase-gemini-v1.js
           node --check docs/assets/javascripts/thpt-chvi-reviewed-formative-v1.js
@@ -104,6 +108,7 @@ jobs:
           node --check scripts/test-thpt-interactive-compact-browser.cjs
           node --check scripts/test-thpt-formative-actions-ui-browser.cjs
           node --check scripts/test-thpt-r4-public-formative-interaction.cjs
+          node --check scripts/test-thpt-self-check-qa-browser.cjs
           node --check scripts/test-thpt-g10-chii-browser-smoke.cjs
           node --check scripts/test-thpt-g10-chiii-browser-smoke.cjs
           node --check scripts/test-thpt-g10-chiv-b07-b08-browser-smoke.cjs
@@ -213,6 +218,8 @@ jobs:
         run: |
           npm install --no-save playwright@1.56.1
           npx playwright install chromium
+      - name: Issue 662 QA-only self-check · Final Submit / formats / no evidence writes
+        run: node scripts/test-thpt-self-check-qa-browser.cjs
       - name: Browser smoke test · desktop / iPhone / iPad simulation
         run: |
           python -m http.server 8765 --directory site > /tmp/thpt-r4-combined-http.log 2>&1 &
