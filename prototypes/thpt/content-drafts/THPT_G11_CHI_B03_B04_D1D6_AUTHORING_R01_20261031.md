@@ -2,7 +2,7 @@
 
 **PACKET_ID:** THPT-G11-CHI-B03-B04-D1D6-AUTHORING-R01-20261031
 **LEARNING_PATH:** SGK_CHAPTER · **AUTHORING_STATUS:** DRAFT_QA_ONLY, NOT_NOTEBOOKLM_PASS
-**SOURCE:** SGK Toán 11 KNTT Tập 1 Bài 3 trang in 22–30, Bài 4 trang in 31–39, Bài tập cuối Chương I trang 40–41. SBT KNTT Tập 1 B03–04 và cuối chương: **cần NotebookLM xác minh trang in trực tiếp từ S1**, không tự suy đoán. Năm Permanent Sources THPT v2.0. B01–B02 đã có snapshot R01 độc lập PASS: blob \`f0e737f2d07a27f233615345b60070319d5bd00f\`; không sửa nguồn đã duyệt.
+**SOURCE:** SGK Toán 11 KNTT Tập 1 Bài 3 trang in 22–30, Bài 4 trang in 31–39, Bài tập cuối Chương I trang 40–41. SBT KNTT Tập 1 B03–04 và cuối chương: **cần NotebookLM xác minh trang in trực tiếp từ S1**, không tự suy đoán. Năm Permanent Sources THPT v2.0. B01–B02 đã có snapshot R01 độc lập PASS: blob `f0e737f2d07a27f233615345b60070319d5bd00f`; không sửa nguồn đã duyệt.
 
 ## RD0 — 16 outcomes B03–B04
 
@@ -27,41 +27,41 @@
 
 ## D1 — Bài 3. Hàm số lượng giác
 
-1. **Hàm sin và cos:** \`y=sin x\`, \`y=cos x\` xác định với mọi \`x∈ℝ\`, giá trị trong \`[-1,1]\`. \`sin(-x)=-sin x\` (lẻ), \`cos(-x)=cos x\` (chẵn). Chu kỳ dương nhỏ nhất \`2π\`.
-2. **Đồ thị sin:** qua \`(0,0)\`, \`(π/2,1)\`, \`(π,0)\`, \`(3π/2,-1)\`, \`(2π,0)\`; tăng trên \`[-π/2+2kπ,π/2+2kπ]\`, giảm trên \`[π/2+2kπ,3π/2+2kπ]\`. Không nói sin tăng trên toàn ℝ.
-3. **Đồ thị cos:** qua \`(0,1)\`, \`(π/2,0)\`, \`(π,-1)\`, \`(3π/2,0)\`, \`(2π,1)\`; giảm trên \`[2kπ,(2k+1)π]\`, tăng trên \`[(2k-1)π,2kπ]\` với \`k∈ℤ\`.
-4. **Hàm tan:** \`tan x=sin x/cos x\`; TXĐ \`ℝ\{π/2+kπ:k∈ℤ}\`, TGT ℝ, hàm lẻ, chu kỳ cơ bản π, đồng biến trên mỗi khoảng \`(-π/2+kπ,π/2+kπ)\`. Tiệm cận đứng tại \`x=π/2+kπ\`. Không nối đồ thị qua tiệm cận.
-5. **Hàm cot:** \`cot x=cos x/sin x\`; TXĐ \`ℝ\{kπ:k∈ℤ}\`, TGT ℝ, hàm lẻ, chu kỳ π, nghịch biến trên mỗi \`(kπ,(k+1)π)\`, tiệm cận đứng tại \`x=kπ\`. Không tính \`cot 0\`.
-6. **Hàm biến đổi và mô hình:** \`f(x)=A sin(ωx+φ)+c\` (\`Aω≠0\`) có biên độ \`|A|\`, TGT \`[c-|A|,c+|A|]\`, chu kỳ \`2π/|ω|\` (nếu miền thời gian đủ để thể hiện chu kỳ); với tan/cot \`tan(ωx+φ)\` có chu kỳ \`π/|ω|\`. \`y=A sin(ωx+φ)+c\` khi \`A=0\` là hằng, không được tuyên bố có chu kỳ *cơ bản*.
+1. **Hàm sin và cos:** `y=sin x`, `y=cos x` xác định với mọi `x∈ℝ`, giá trị trong `[-1,1]`. `sin(-x)=-sin x` (lẻ), `cos(-x)=cos x` (chẵn). Chu kỳ dương nhỏ nhất `2π`.
+2. **Đồ thị sin:** qua `(0,0)`, `(π/2,1)`, `(π,0)`, `(3π/2,-1)`, `(2π,0)`; tăng trên `[-π/2+2kπ,π/2+2kπ]`, giảm trên `[π/2+2kπ,3π/2+2kπ]`. Không nói sin tăng trên toàn ℝ.
+3. **Đồ thị cos:** qua `(0,1)`, `(π/2,0)`, `(π,-1)`, `(3π/2,0)`, `(2π,1)`; giảm trên `[2kπ,(2k+1)π]`, tăng trên `[(2k-1)π,2kπ]` với `k∈ℤ`.
+4. **Hàm tan:** `tan x=sin x/cos x`; TXĐ `ℝ\{π/2+kπ:k∈ℤ}`, TGT ℝ, hàm lẻ, chu kỳ cơ bản π, đồng biến trên mỗi khoảng `(-π/2+kπ,π/2+kπ)`. Tiệm cận đứng tại `x=π/2+kπ`. Không nối đồ thị qua tiệm cận.
+5. **Hàm cot:** `cot x=cos x/sin x`; TXĐ `ℝ\{kπ:k∈ℤ}`, TGT ℝ, hàm lẻ, chu kỳ π, nghịch biến trên mỗi `(kπ,(k+1)π)`, tiệm cận đứng tại `x=kπ`. Không tính `cot 0`.
+6. **Hàm biến đổi và mô hình:** `f(x)=A sin(ωx+φ)+c` (`Aω≠0`) có biên độ `|A|`, TGT `[c-|A|,c+|A|]`, chu kỳ `2π/|ω|` (nếu miền thời gian đủ để thể hiện chu kỳ); với tan/cot `tan(ωx+φ)` có chu kỳ `π/|ω|`. `y=A sin(ωx+φ)+c` khi `A=0` là hằng, không được tuyên bố có chu kỳ *cơ bản*.
 7. **Sử dụng đồ thị:** Hoành độ là radian; xét miền xác định trước, đọc điểm, cực trị và tiệm cận từ hình. Cần phân biệt tập giá trị và tập xác định, chu kỳ biểu thức và thời gian thực tế; trả lời số chu kỳ trong một phút phải đổi đơn vị nhất quán.
 
 ## D2 — Ví dụ giải thích bản chất B03
 
-- **EX-G11-B03-01 (TXĐ/TGT).** \`f(x)=tan(2x)\` yêu cầu \`cos(2x)≠0\`, nên \`x≠π/4+kπ/2\` với \`k∈ℤ\`; giá trị vẫn là ℝ. Không viết x≠π/2+kπ vì quên hệ số 2.
-- **EX-G11-B03-02 (chẵn/lẻ).** \`f(x)=sin x+cos x\` không chẵn, không lẻ vì \`f(-x)=-sin x+cos x\` khác cả \`f(x)\` lẫn \`-f(x)\`; trái lại \`sin x\` lẻ và \`cos x\` chẵn.
-- **EX-G11-B03-03 (chu kỳ).** \`y=2 sin(3x-π/4)\` có chu kỳ cơ bản \`T=2π/3\`, TGT \`[-2,2]\`; \`3x\` khiến chu kỳ *ngắn hơn*, không dài hơn 3 lần.
-- **EX-G11-B03-04 (đọc đồ thị).** \`y=cos x\` trên \`[0,2π]\` cắt Ox tại \`π/2\` và \`3π/2\`; vì vậy không kết luận đồ thị luôn dương.
-- **EX-G11-B03-05 (ứng dụng).** Nhiệt độ \`T(t)=24+3cos(πt/6)\` (t tính giờ) có đường trung bình 24°C, biên độ 3°C, chu kỳ 12 giờ; T lớn nhất 27°C tại \`t=12k\`, nhỏ nhất 21°C tại \`t=6+12k\`.
+- **EX-G11-B03-01 (TXĐ/TGT).** `f(x)=tan(2x)` yêu cầu `cos(2x)≠0`, nên `x≠π/4+kπ/2` với `k∈ℤ`; giá trị vẫn là ℝ. Không viết x≠π/2+kπ vì quên hệ số 2.
+- **EX-G11-B03-02 (chẵn/lẻ).** `f(x)=sin x+cos x` không chẵn, không lẻ vì `f(-x)=-sin x+cos x` khác cả `f(x)` lẫn `-f(x)`; trái lại `sin x` lẻ và `cos x` chẵn.
+- **EX-G11-B03-03 (chu kỳ).** `y=2 sin(3x-π/4)` có chu kỳ cơ bản `T=2π/3`, TGT `[-2,2]`; `3x` khiến chu kỳ *ngắn hơn*, không dài hơn 3 lần.
+- **EX-G11-B03-04 (đọc đồ thị).** `y=cos x` trên `[0,2π]` cắt Ox tại `π/2` và `3π/2`; vì vậy không kết luận đồ thị luôn dương.
+- **EX-G11-B03-05 (ứng dụng).** Nhiệt độ `T(t)=24+3cos(πt/6)` (t tính giờ) có đường trung bình 24°C, biên độ 3°C, chu kỳ 12 giờ; T lớn nhất 27°C tại `t=12k`, nhỏ nhất 21°C tại `t=6+12k`.
 
 ## D1 — Bài 4. Phương trình lượng giác cơ bản
 
-1. **Nguyên tắc:** phương trình là tìm toàn bộ \`x\` sao cho hai vế xác định và bằng nhau. Mỗi nhánh nghiệm phải có \`k∈ℤ\`; nghiệm tổng quát và nghiệm trên đoạn là hai yêu cầu khác nhau.
-2. **\`sin x=m\`:** nếu \`|m|>1\` vô nghiệm; khi \`|m|≤1\`, đặt \`α=arcsin m\` (giá trị chính trong \`[-π/2,π/2]\`), hai họ \`x=α+2kπ\` hoặc \`x=π-α+2kπ\`, \`k∈ℤ\`. Hai họ có thể trùng khi \`m=±1\`; khi đó đếm nghiệm theo *tập hợp*, không cộng trùng.
-3. **\`cos x=m\`:** nếu \`|m|>1\` vô nghiệm; nếu \`|m|≤1\`, đặt \`α=arccos m∈[0,π]\`, \`x=±α+2kπ\`. Với \`m=±1\`, hai họ có thể trùng.
-4. **\`tan x=m\`:** với mọi \`m∈ℝ\`, \`x=arctan m+kπ\`; chỉ nhận các x thuộc miền \`cos x≠0\`, tự động được thỏa khi theo họ nghiệm đúng.
-5. **\`cot x=m\`:** với mọi \`m∈ℝ\`, chọn \`α∈(0,π)\` sao cho \`cot α=m\`, \`x=α+kπ\`. Có thể chuyển về \`tan x=1/m\` **chỉ khi \`m≠0\` và còn điều kiện TXĐ**; với \`cot x=0\`, nghiệm \`x=π/2+kπ\`, không chia cho 0.
-6. **Đặt đối số:** với \`sin(ax+b)=m\`, giải cho \`t=ax+b\` rồi biến đổi *cả* hai họ nghiệm; cùng cách cho cos/tan/cot. Không quên chia \`a\` và ghi \`k∈ℤ\` (nếu \`a≠0\`); khi hệ số bằng 0 phải xét phương trình hằng riêng.
-7. **Phương trình quy về cơ bản:** biến đổi bằng công thức lượng giác hoặc đặt \`u=sin x\`... trong đúng miền. Khi chia cho \`sin x\`, \`cos x\` có thể mất nghiệm; tốt hơn phân tích nhân tử và xét các trường hợp. Bình phương có thể sinh nghiệm ngoại lai: luôn thử lại phương trình ban đầu.
-8. **Nghiệm trên đoạn:** tìm các k nguyên phù hợp cận và xét dấu \`[a,b]\` so với \`(a,b)\`. Đối chiếu đồ thị để tự kiểm nghiệm nhưng không thay thế phép thế nghiệm vào đề.
+1. **Nguyên tắc:** phương trình là tìm toàn bộ `x` sao cho hai vế xác định và bằng nhau. Mỗi nhánh nghiệm phải có `k∈ℤ`; nghiệm tổng quát và nghiệm trên đoạn là hai yêu cầu khác nhau.
+2. **`sin x=m`:** nếu `|m|>1` vô nghiệm; khi `|m|≤1`, đặt `α=arcsin m` (giá trị chính trong `[-π/2,π/2]`), hai họ `x=α+2kπ` hoặc `x=π-α+2kπ`, `k∈ℤ`. Hai họ có thể trùng khi `m=±1`; khi đó đếm nghiệm theo *tập hợp*, không cộng trùng.
+3. **`cos x=m`:** nếu `|m|>1` vô nghiệm; nếu `|m|≤1`, đặt `α=arccos m∈[0,π]`, `x=±α+2kπ`. Với `m=±1`, hai họ có thể trùng.
+4. **`tan x=m`:** với mọi `m∈ℝ`, `x=arctan m+kπ`; chỉ nhận các x thuộc miền `cos x≠0`, tự động được thỏa khi theo họ nghiệm đúng.
+5. **`cot x=m`:** với mọi `m∈ℝ`, chọn `α∈(0,π)` sao cho `cot α=m`, `x=α+kπ`. Có thể chuyển về `tan x=1/m` **chỉ khi `m≠0` và còn điều kiện TXĐ**; với `cot x=0`, nghiệm `x=π/2+kπ`, không chia cho 0.
+6. **Đặt đối số:** với `sin(ax+b)=m`, giải cho `t=ax+b` rồi biến đổi *cả* hai họ nghiệm; cùng cách cho cos/tan/cot. Không quên chia `a` và ghi `k∈ℤ` (nếu `a≠0`); khi hệ số bằng 0 phải xét phương trình hằng riêng.
+7. **Phương trình quy về cơ bản:** biến đổi bằng công thức lượng giác hoặc đặt `u=sin x`... trong đúng miền. Khi chia cho `sin x`, `cos x` có thể mất nghiệm; tốt hơn phân tích nhân tử và xét các trường hợp. Bình phương có thể sinh nghiệm ngoại lai: luôn thử lại phương trình ban đầu.
+8. **Nghiệm trên đoạn:** tìm các k nguyên phù hợp cận và xét dấu `[a,b]` so với `(a,b)`. Đối chiếu đồ thị để tự kiểm nghiệm nhưng không thay thế phép thế nghiệm vào đề.
 
 ## D2 — Ví dụ giải thích bản chất B04
 
-- **EX-G11-B04-01 (sin).** \`sin x=√2/2\` cho \`x=π/4+2kπ\` hoặc \`3π/4+2kπ\`, k∈ℤ. Không ghi duy nhất π/4 vì bỏ nghiệm góc phần tư II.
-- **EX-G11-B04-02 (tan/cot).** \`tan x=-√3\` cho \`x=-π/3+kπ\`. \`cot x=0\` cho \`x=π/2+kπ\`. Không biến cot=0 thành tan x vô hạn rồi kết luận vô nghiệm.
-- **EX-G11-B04-03 (đối số).** \`sin(2x)=1/2\` cho \`x=π/12+kπ\` hoặc \`5π/12+kπ\`. Mọi nghiệm phải có \`k∈ℤ\`; không dùng π/6,5π/6 trực tiếp làm nghiệm x.
-- **EX-G11-B04-04 (đoạn).** \`cos x=-1/2\` trên \`[0,2π)\` chỉ có \`2π/3,4π/3\`. Hai biên 0 và 2π không đều thuộc đoạn.
-- **EX-G11-B04-05 (ngoại lai).** \`sin x=cos x\` cho \`tan x=1\` **chỉ sau khi kiểm \`cos x≠0\`**; tại \`cos x=0\`, \`sin x=±1\` nên không là nghiệm. Do đó \`x=π/4+kπ\`, không mất nghiệm.
-- **EX-G11-B04-06 (ứng dụng).** \`H(t)=10+2sin(πt/6)\` (t giờ) bằng 11 khi \`sin(πt/6)=1/2\`. Trên \`0≤t<12\`, có \`t=1\` và \`t=5\` giờ, nhờ chọn đúng hai họ và lọc miền thời gian.
+- **EX-G11-B04-01 (sin).** `sin x=√2/2` cho `x=π/4+2kπ` hoặc `3π/4+2kπ`, k∈ℤ. Không ghi duy nhất π/4 vì bỏ nghiệm góc phần tư II.
+- **EX-G11-B04-02 (tan/cot).** `tan x=-√3` cho `x=-π/3+kπ`. `cot x=0` cho `x=π/2+kπ`. Không biến cot=0 thành tan x vô hạn rồi kết luận vô nghiệm.
+- **EX-G11-B04-03 (đối số).** `sin(2x)=1/2` cho `x=π/12+kπ` hoặc `5π/12+kπ`. Mọi nghiệm phải có `k∈ℤ`; không dùng π/6,5π/6 trực tiếp làm nghiệm x.
+- **EX-G11-B04-04 (đoạn).** `cos x=-1/2` trên `[0,2π)` chỉ có `2π/3,4π/3`. Hai biên 0 và 2π không đều thuộc đoạn.
+- **EX-G11-B04-05 (ngoại lai).** `sin x=cos x` cho `tan x=1` **chỉ sau khi kiểm `cos x≠0`**; tại `cos x=0`, `sin x=±1` nên không là nghiệm. Do đó `x=π/4+kπ`, không mất nghiệm.
+- **EX-G11-B04-06 (ứng dụng).** `H(t)=10+2sin(πt/6)` (t giờ) bằng 11 khi `sin(πt/6)=1/2`. Trên `0≤t<12`, có `t=1` và `t=5` giờ, nhờ chọn đúng hai họ và lọc miền thời gian.
 
 ## D3 — SGK Core, Practice, Application: 26 canonical candidate items (NEW, NOT REVIEWED)
 
@@ -296,10 +296,10 @@
 
 ## D5 — Đồ thị, hình minh họa canonical
 
-- \`FIG-G11-B03-01\`: đồ thị y=sinx, các mốc -π/2,0,π/2,π,3π/2,2π; đường liên tục, TGT [-1,1].
-- \`FIG-G11-B03-02\`: y=cosx, các mốc 0,π/2,π,3π/2,2π; đồ thị liên tục, TGT [-1,1].
-- \`FIG-G11-B03-03\`: y=tanx với hai tiệm cận x=±π/2, các nhánh **tách nhau**, tăng trên mỗi khoảng.
-- \`FIG-G11-B03-04\`: y=cotx với hai tiệm cận x=0,π, mỗi nhánh giảm.
+- `FIG-G11-B03-01`: đồ thị y=sinx, các mốc -π/2,0,π/2,π,3π/2,2π; đường liên tục, TGT [-1,1].
+- `FIG-G11-B03-02`: y=cosx, các mốc 0,π/2,π,3π/2,2π; đồ thị liên tục, TGT [-1,1].
+- `FIG-G11-B03-03`: y=tanx với hai tiệm cận x=±π/2, các nhánh **tách nhau**, tăng trên mỗi khoảng.
+- `FIG-G11-B03-04`: y=cotx với hai tiệm cận x=0,π, mỗi nhánh giảm.
 - B04 áp dụng cùng đồ thị đường tròn lượng giác SGK B01 đã được review và đồ thị B03 cho kiểm tra số họ nghiệm. Các SVG mới **chỉ dùng như nguồn ứng viên**, phải QA font/trục/mốc/a11y cả desktop/mobile, không dùng như chứng cứ Academic PASS trước NotebookLM.
 - **Text fallback bắt buộc:** ngay cả khi hình không tải, phần D1 và mô tả trên đã ghi rõ toàn bộ điểm mốc, miền, tính đơn điệu, giá trị và tiệm cận.
 
