@@ -2,41 +2,73 @@
 (() => {
  "use strict";
 
- // Cover-page navigation is not a THCS or THPT lesson sidebar.
- // Only replace the root selector's native drawer list. No change to
- // /thcs/, its 7+25 navigation, storage or existing header controls.
+ // The level-1 programme selector has ONE navigation contract. Material's
+ // native THCS tabs remain unchanged away from the neutral root route.
+ const programNavItems=[
+  ["Chọn chương trình","./"],
+  ["Toán THCS · Lớp 6–9","thcs/"],
+  ["Toán THPT · Lớp 10–12","thpt-preview/home/"]
+ ];
+ const programNavPending="SAT/ACT · Chưa phát hành";
+ let originalProgramTabs=null;
  function initProgramSelectorDrawer(){
-  const cover=document.querySelector("[data-math-program-selector]");
-  if(!cover)return;
+  if(!document.querySelector("[data-math-program-selector]"))return;
   const primary=document.querySelector(".md-sidebar--primary nav.md-nav--primary");
   const list=primary?.querySelector(":scope > ul.md-nav__list");
   if(!list||list.dataset.mathProgramDrawerReady==="1")return;
   list.dataset.mathProgramDrawerReady="1";
   list.replaceChildren();
-  for(const item of [
-   ["Chọn chương trình","./"],
-   ["Toán THCS · Lớp 6–9","thcs/"],
-   ["Toán THPT · Lớp 10–12","thpt-preview/home/"]
-  ]){
-   const li=document.createElement("li");
-   li.className="md-nav__item";
-   const a=document.createElement("a");
-   a.href=item[1];a.className="md-nav__link";
-   if(item[1]==="./"){li.classList.add("md-nav__item--active");a.classList.add("md-nav__link--active")}
-   const span=document.createElement("span");
-   span.className="md-ellipsis";span.textContent=item[0];
+  for(const [label,href] of programNavItems){
+   const li=document.createElement("li");li.className="md-nav__item";
+   const a=document.createElement("a");a.href=href;a.className="md-nav__link";
+   if(href==="./"){
+    li.classList.add("md-nav__item--active");a.classList.add("md-nav__link--active");
+    a.setAttribute("aria-current","page");
+   }
+   const span=document.createElement("span");span.className="md-ellipsis";span.textContent=label;
    a.append(span);li.append(a);list.append(li);
   }
-  const pending=document.createElement("li");
-  pending.className="md-nav__item";
-  const label=document.createElement("span");
-  label.className="md-nav__link";
-  label.setAttribute("aria-disabled","true");
-  const title=document.createElement("span");
-  title.className="md-ellipsis";title.textContent="SAT/ACT · Chưa phát hành";
-  label.append(title);pending.append(label);list.append(pending);
+  const li=document.createElement("li");li.className="md-nav__item";
+  const pending=document.createElement("span");pending.className="md-nav__link";
+  pending.setAttribute("aria-disabled","true");
+  const title=document.createElement("span");title.className="md-ellipsis";title.textContent=programNavPending;
+  pending.append(title);li.append(pending);list.append(li);
  }
- 
+ function initProgramSelectorDesktopTabs(){
+  const list=document.querySelector(".md-tabs .md-tabs__list");
+  if(!list)return;
+  if(!document.querySelector("[data-math-program-selector]")){
+   // Material's instant-navigation mode can preserve the same tabs node.
+   // Restore its original children when leaving the programme selector.
+   if(list.dataset.mathProgramTabsReady==="1"&&originalProgramTabs?.list===list){
+    list.replaceChildren(...originalProgramTabs.children);
+    delete list.dataset.mathProgramTabsReady;
+    originalProgramTabs=null;
+   }
+   return;
+  }
+  if(list.dataset.mathProgramTabsReady==="1")return;
+  originalProgramTabs={list,children:[...list.children]};
+  list.dataset.mathProgramTabsReady="1";
+  list.replaceChildren();
+  for(const [label,href] of programNavItems){
+   const li=document.createElement("li");li.className="md-tabs__item";
+   const a=document.createElement("a");a.className="md-tabs__link";a.href=href;
+   a.textContent=label;
+   if(href==="./"){
+    a.classList.add("md-tabs__link--active");
+    a.setAttribute("aria-current","page");
+   }
+   li.append(a);list.append(li);
+  }
+  const li=document.createElement("li");li.className="md-tabs__item";
+  const pending=document.createElement("span");
+  pending.className="md-tabs__link thpt-r4-program-tab--pending";
+  pending.textContent=programNavPending;
+  pending.setAttribute("aria-disabled","true");
+  li.append(pending);list.append(li);
+ }
+
  // THPT-only launcher. The accepted THCS 7+25 launcher code remains unchanged.
  function initTHPTLauncher(){
   const match=location.pathname.match(/^(.*?\/)(thpt-preview|thpt)\//);
@@ -654,6 +686,7 @@
 
  function init() {
   initProgramSelectorDrawer();
+  initProgramSelectorDesktopTabs();
   initTHPTPrimarySidebar();
   initAdaptiveKnowledgeTabs();
   initChapterPracticeCards();
