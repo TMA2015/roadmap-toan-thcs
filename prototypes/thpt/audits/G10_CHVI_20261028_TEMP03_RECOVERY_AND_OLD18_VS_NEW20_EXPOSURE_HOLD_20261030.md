@@ -54,3 +54,9 @@ These are **all** 18 original historical protected IDs, validated by ID role and
 - If old bytes remain inaccessible: maintain `OLD18_VS_NEW20_DEDUP=HOLD` and do not enable independent ChVI Readiness or Mastery; existing public Core/Practice unaffected. Do not treat deletion of old known IDs or renaming as exposure verification.
 
 **STATUS:** `TRACE_PASS / CONTENT_NOT_RECOVERED / EXPOSURE_HOLD / FINAL_SUBMIT_NOT_ACTIVE / NO_SCORE_NO_MASTERY / NO_MERGE_DEPLOY`.
+
+## UPDATE 31/10/2026 — original ZIP/Temp_03 RECOVERED: historical source-lost finding superseded
+
+Owner-upload copy of original 28/10 ZIP matches **exact recorded ZIP SHA256** `704f23d50278f9d36270d4b065b3d8f72e08ffbd00f3ac3fbe41a66fb40b2960`; all 5 Temp member SHA match, including `Temp_03` exact `3ee7d0cdf3c50fbbac9b1af5487f9dd1dcba8f33c5224e6bb5e859966c33cdce`. Thus the former `ORIGINAL_BYTES_RECOVERED=NO`, `OLD18_CONTENT_AVAILABLE=NO` statements above are **HISTORICAL AS-OF 30/10**, no longer current. Full 18 old canonical item blocks are archived privately; no original stems or keys in GitHub. New metadata receipt: `prototypes/thpt/audits/G10_CHVI_R0_18ITEM_SOURCE_RECOVERY_AND_RUBRIC_DELTA_C_R01_20261031.md`.
+
+The newer 20 alternative candidates still require exact structural exposure comparison before any registration **alongside** old18; do not confuse `SOURCE_RECOVERY=CLOSED` with `OLD18_VS_NEW20=RECONCILED`. R0 original math PASS stays; 18 newly authored point-level rubrics are `DELTA_C`, independently reviewed only after NotebookLM verdict, no self-granted academic PASS or release.
