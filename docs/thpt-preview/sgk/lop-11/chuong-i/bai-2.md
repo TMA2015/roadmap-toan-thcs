@@ -8,21 +8,99 @@
 
 ## 1. Kiến thức SGK
 
-### 1. Công thức cộng và trừ.
+### 1. Công thức cộng và trừ
 
-\(cos(u±v)=cosu cosv ∓ sinu sinv\); \(sin(u±v)=sinu cosv ± cosu sinv\). Các biểu thức sin,cos luôn xác định với u,v thực. Không thay \(sin(u+v)\) bằng \(sin u+sin v\). Khi dùng \(tan(u±v)=(tan u±tan v)/(1∓tan u tan v)\), cần **tan u, tan v đều xác định** và mẫu số khác 0; nếu không, nên dùng sin/cos trực tiếp.
+**Công thức cos**
 
-### 2. Công thức nhân đôi.
+\[
+cos(u±v)=cosu cosv ∓ sinu sinv
+\]
 
-\(sin2u=2sin u cos u\); \(cos2u=cos²u−sin²u=2cos²u−1=1−2sin²u\); \(tan2u=2tan u/(1−tan²u)\) chỉ khi mọi giá trị tan trong biểu thức xác định và \(1−tan²u≠0\).
+**Công thức sin**
 
-### 3. Tích thành tổng.
+\[
+sin(u±v)=sinu cosv ± cosu sinv
+\]
 
-\(2sin u sin v=cos(u−v)−cos(u+v)\), \(2cosu cosv=cos(u−v)+cos(u+v)\), \(2sin u cos v=sin(u+v)+sin(u−v)\). Quy tắc dấu không tự hoán đổi giữa sin·sin và cos·cos.
+Các biểu thức sin,cos luôn xác định với u,v thực.
 
-### 4. Tổng thành tích.
+**Lỗi cần tránh:** Không thay \(sin(u+v)\) bằng \(sin u+sin v\).
 
-\(sin u+sin v=2sin((u+v)/2)cos((u−v)/2)\); \(sin u−sin v=2cos((u+v)/2)sin((u−v)/2)\); \(cos u+cos v=2cos((u+v)/2)cos((u−v)/2)\); \(cos u−cos v=−2sin((u+v)/2)sin((u−v)/2)\). Phải dùng **nửa tổng / nửa hiệu**, không phải tổng / hiệu đơn thuần.
+**Công thức tan**
+
+\[
+tan(u±v)=(tan u±tan v)/(1∓tan u tan v)
+\]
+
+**Điều kiện áp dụng:** Cần **tan u, tan v đều xác định** và mẫu số khác 0; nếu không, nên dùng sin/cos trực tiếp.
+
+### 2. Công thức nhân đôi
+
+**Sin của góc nhân đôi**
+
+\[
+sin2u=2sin u cos u
+\]
+
+**Cos của góc nhân đôi**
+
+\[
+cos2u=cos²u−sin²u=2cos²u−1=1−2sin²u
+\]
+
+**Tan của góc nhân đôi**
+
+\[
+tan2u=2tan u/(1−tan²u)
+\]
+
+**Điều kiện áp dụng:** Chỉ khi mọi giá trị tan trong biểu thức xác định và \(1−tan²u≠0\).
+
+### 3. Tích thành tổng
+
+**Tích sin · sin**
+
+\[
+2sin u sin v=cos(u−v)−cos(u+v)
+\]
+
+**Tích cos · cos**
+
+\[
+2cosu cosv=cos(u−v)+cos(u+v)
+\]
+
+**Tích sin · cos**
+
+\[
+2sin u cos v=sin(u+v)+sin(u−v)
+\]
+
+**Lưu ý về dấu:** Quy tắc dấu không tự hoán đổi giữa sin·sin và cos·cos.
+
+### 4. Tổng thành tích
+
+**Tổng và hiệu hai sin**
+
+\[
+sin u+sin v=2sin((u+v)/2)cos((u−v)/2)
+\]
+
+\[
+sin u−sin v=2cos((u+v)/2)sin((u−v)/2)
+\]
+
+**Tổng và hiệu hai cos**
+
+\[
+cos u+cos v=2cos((u+v)/2)cos((u−v)/2)
+\]
+
+\[
+cos u−cos v=−2sin((u+v)/2)sin((u−v)/2)
+\]
+
+**Điểm cần nhớ:** Phải dùng **nửa tổng / nửa hiệu**, không phải tổng / hiệu đơn thuần.
 
 ## 2. Ví dụ
 
