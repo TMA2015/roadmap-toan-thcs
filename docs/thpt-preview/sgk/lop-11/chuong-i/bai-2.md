@@ -8,6 +8,8 @@
 
 ## 1. Kiến thức SGK
 
+<span class="thpt-ap-knowledge-pilot" hidden aria-hidden="true"></span>
+
 ### 1. Công thức cộng và trừ
 
 **Công thức cos**
