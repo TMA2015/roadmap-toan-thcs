@@ -31,3 +31,10 @@ CONTENTS: 16 public canonical = 14 formative + 2 Written (1 Anchor tag); D1–D4
 
 BLOCKER/NEXT: RELEASE_READY with explicit owner scope; must verify both exact final-head CI workflows SUCCESS before merge/deploy, then P1 actual GitHub Pages receipt and P2 physical Safari QA. Full chapter Readiness, Topic and Mastery remain inactive.
 ACADEMIC_NOTE: NotebookLM D1–D4 PASS previous source snapshot, new D5 2/2 + D6 4/4 exact R01 academic PASS/clearance. Addendum resolves source-citation P1. This packet does not claim chapter-wide assessment/Topic readiness or permit automatic release.
+## 31/10/2026 — Readiness R0 private canonical recovered (authoring archival addendum ONLY)
+
+- `PACKET_ID=THPT-G10-CHIX-SGK-CHAPTER-READINESS-SIX-HELDOUT-20261028-R0`. Owner recovered complete original Temp, SHA256 `4f1da6dcbd85ba84c272450acbf6e64856732047586567754b1737584a7c4b32` (18,127 bytes).
+- Six full canonical items `THPT-G10-CHIX-RD01..RD06` with answer/solutions/rubrics preserved **private**, canonical SHA256 `d27e8361d3356ac9f0b224aaa3cbaea61ad02eed4510a8a3489b89ebd4cc5a96` (12,448 bytes). Exact item block parity 6/6, 10/10 outcome crosswalk, author math QA 6/6.
+- NotebookLM historical R0 academic verdict 6/6 PASS matches recovered packet and content; no academic edits, therefore no duplicate questions or repeat review. The old NotebookLM upload lacked a byte hash, so historical byte identity is not retrospectively asserted.
+- `CHIX_PRIVATE_R0_CANONICAL_RESTORE=PASS`: original Temp + canonical + manifest archived and read-back byte-matched in private Library. Audit receipt: `prototypes/thpt/audits/G10_CHIX_READINESS_R0_RECOVERED_CANONICAL_SOURCE_LOCK_20261031.md` on Draft audit PR #641; automated source QA `scripts/check-thpt-canonical-custody.cjs` requires restored private input files.
+- **This does NOT change current published scope** `PUBLIC_FORMATIVE_ONLY` (16 Formative/Written). Six SGK Chapter Readiness candidates remain **NOT RELEASED**; Topic Readiness not included; no Mastery, new progress keys or merge/deploy. Any release R1–R5/Final Submit scoring policies stay in release lane.
