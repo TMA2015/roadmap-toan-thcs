@@ -26,7 +26,7 @@ async function ready(page,path){
   fs.mkdirSync("thpt-r4-visual-qa",{recursive:true});
   // Owner P2: the neutral cover drawer must not show the THCS-only menu.
   // Native THPT home drawer must open at phone/tablet/narrow desktop widths.
-  for(const vp of [{width:390,height:844},{width:820,height:1180},{width:1100,height:820}]){
+  for(const vp of [{width:390,height:844},{width:820,height:1180},{width:960,height:900},{width:1100,height:820}]){
    const navPage=await browser.newPage({viewport:vp});
    try{
     const root=await navPage.goto("http://127.0.0.1:8765/",{waitUntil:"networkidle"});
@@ -64,6 +64,46 @@ async function ready(page,path){
      el.dispatchEvent(new Event("change",{bubbles:true}));
     });
    }finally{await navPage.close()}
+  }
+
+  // Owner UI QA: fullscreen Material tabs must match the root drawer,
+  // not the legacy THCS learning tabs. Half-screen/mobile remain unchanged.
+  for(const width of [1440,1730]){
+   const desktop=await browser.newPage({viewport:{width,height:900}});
+   try{
+    const response=await desktop.goto("http://127.0.0.1:8765/",{waitUntil:"networkidle"});
+    assert(response?.ok(),"Programme selector desktop route missing");
+    const selectorTabs=desktop.locator(".md-tabs .md-tabs__list");
+    assert(await desktop.locator(".md-tabs").isVisible(),"Desktop programme bar hidden at "+width);
+    const labels=(await selectorTabs.locator(":scope > li.md-tabs__item").allTextContents()).map(s=>s.trim());
+    const drawerLabels=(await desktop.locator(".md-sidebar--primary nav.md-nav--primary > ul.md-nav__list > li.md-nav__item").allTextContents()).map(s=>s.trim());
+    const expected=["Chọn chương trình","Toán THCS · Lớp 6–9","Toán THPT · Lớp 10–12","SAT/ACT · Chưa phát hành"];
+    assert.deepEqual(labels,expected,"Desktop bar must match the four programme options");
+    assert.deepEqual(labels,drawerLabels,"Desktop and hamburger menus differ at "+width);
+    for(const label of ["Học theo lớp","Học theo chuyên đề","Thư viện bài tập","Tiến độ học tập","Hướng dẫn"])
+     assert(!labels.some(s=>s.includes(label)),"THCS learning menu leaked into programme tabs: "+label);
+    const links=selectorTabs.locator("a.md-tabs__link");
+    assert.equal(await links.count(),3,"SAT/ACT must not be an active link");
+    const expectedRoutes=["./","thcs/","thpt-preview/home/"];
+    for(let i=0;i<expectedRoutes.length;i++)
+     assert.equal(await links.nth(i).getAttribute("href"),expectedRoutes[i],"Wrong programme path");
+    assert.equal(await links.first().getAttribute("aria-current"),"page","Programme home tab should be active");
+    const pending=selectorTabs.locator(".thpt-r4-program-tab--pending");
+    assert.equal(await pending.count(),1,"Disabled SAT/ACT tab missing");
+    assert.equal(await pending.getAttribute("aria-disabled"),"true","SAT/ACT tab must not be navigable");
+    assert.equal(await pending.locator("a").count(),0,"SAT/ACT must not be a clickable link");
+    await desktop.screenshot({path:"thpt-r4-visual-qa/programme-selector-desktop-"+width+".png"});
+    await links.nth(1).click();
+    assert(new URL(desktop.url()).pathname.endsWith("/thcs/"),"Desktop THCS programme path broken");
+    assert((await desktop.locator(".md-tabs__list").innerText()).includes("Học theo lớp"),
+     "THCS native Golden tabs were replaced outside root");
+    await desktop.goto("http://127.0.0.1:8765/",{waitUntil:"networkidle"});
+    await desktop.locator('.md-tabs .md-tabs__link[href="thpt-preview/home/"]').click();
+    assert(new URL(desktop.url()).pathname.endsWith("/thpt-preview/home/"),"Desktop THPT programme path broken");
+    // Material's instant-navigation DOM updates may finish after the link click.
+    await desktop.locator("[data-thpt-r4-launcher]").waitFor({state:"visible"});
+    await desktop.locator("body.thpt-r4-home").waitFor({state:"attached"});
+   }finally{await desktop.close()}
   }
 
   // Programme-switch QA for the ONE GitHub Pages site.
