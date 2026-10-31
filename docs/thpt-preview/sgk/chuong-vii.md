@@ -12,9 +12,9 @@
 <div class="thpt-r4-lesson-tabs" aria-label="Chương VII: học và luyện">
 <a href="luyen-tap/">Core và Luyện tập/Vận dụng</a>
 <a href="../../thu-vien/tu-luan-chuong-vii/">Tự luận Chương VII · 4 bài</a>
-<a href="tu-kiem-tra-chuong/">Tự kiểm tra cuối chương · chưa kích hoạt</a>
+<a href="tu-kiem-tra-chuong/">Tự kiểm tra cuối chương</a>
 </div>
-<p class="thpt-r4-lead">Luyện tập có gợi ý và lời giải tự mở; không ghi điểm thành thạo. Bài Tự kiểm tra cuối chương chưa kích hoạt.</p>
+<p class="thpt-r4-lead">Luyện tập có gợi ý và lời giải tự mở; không ghi điểm thành thạo. Bài Tự kiểm tra cuối chương đã mở để tự đánh giá, không ghi Skill Mastery.</p>
 </div>
 
 <small>Nguồn học liệu: SGK Toán 10 KNTT tập 2 trang 29–58; SBT trang 27–49.</small>

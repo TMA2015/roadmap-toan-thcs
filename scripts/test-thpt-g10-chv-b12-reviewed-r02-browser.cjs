@@ -32,7 +32,7 @@ const assert=require("node:assert/strict"),{chromium}=require("playwright");
      assert(!await modal.isVisible());
     }
     assert((await page.goto(base+"tu-kiem-tra-chuong/",{waitUntil:"domcontentloaded"}))?.ok());
-    assert(await page.getByText("chưa kích hoạt",{exact:false}).count()>0,"Readiness remains disabled");
+    await page.locator('[data-g10-chapter-selfcheck="CHV"] .g10sc-progress').waitFor();assert(!(await page.locator('[data-g10-chapter-selfcheck="CHV"]').innerText()).includes("Đáp án:"),"ChV pre-final answer leak");
     const overflow=await page.evaluate(()=>document.documentElement.scrollWidth-innerWidth);
     assert(overflow<=20,"Mobile overflow "+overflow+" at "+width);
    }finally{await page.close()}

@@ -11,9 +11,9 @@
 <nav class="thpt-r4-lesson-tabs" aria-label="Học và luyện Chương VIII">
 <a href="luyen-tap/">Core và Luyện tập/Vận dụng</a>
 <a href="../../thu-vien/tu-luan-chuong-viii/">Tự luận Chương VIII · 3 bài</a>
-<a href="tu-kiem-tra-chuong/">Tự kiểm tra cuối chương · chưa kích hoạt</a>
+<a href="tu-kiem-tra-chuong/">Tự kiểm tra cuối chương</a>
 </nav>
-<p class="thpt-r4-lead">Luyện tập có gợi ý, lời giải và hình minh họa tự mở; không ghi điểm thành thạo. Tự kiểm tra cuối chương chưa kích hoạt.</p>
+<p class="thpt-r4-lead">Luyện tập có gợi ý, lời giải và hình minh họa tự mở; không ghi điểm thành thạo. Tự kiểm tra cuối chương đã mở để tự đánh giá; không ghi Skill Mastery.</p>
 </div>
 
 <small>Nguồn học liệu: SGK Toán 10 KNTT tập 2 trang 59–79; SBT trang 50–59.</small>

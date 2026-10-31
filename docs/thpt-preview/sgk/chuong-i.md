@@ -9,7 +9,7 @@
 </div>
 <nav class="thpt-r4-lesson-tabs" aria-label="Học và luyện Chương I">
 <a href="luyen-tap/">Core và Luyện tập</a>
-<a href="tu-kiem-tra-chuong/">Tự kiểm tra · chưa kích hoạt</a>
+<a href="tu-kiem-tra-chuong/">Tự kiểm tra cuối chương</a>
 </nav>
 <p class="thpt-r4-lead">Học liệu công khai để tự học và tự đối chiếu; chưa chấm điểm hay cập nhật Mastery.</p>
 </div>
