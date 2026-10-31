@@ -31,10 +31,9 @@ const {chromium}=require("playwright");
     assert.equal(await modal.locator("details[open]").count(),0,"Public formative answers start collapsed");
     await modal.locator("[data-thpt-modal-close]").click();
     const ready=await page.goto("http://127.0.0.1:8765/thpt-preview/sgk/chuong-ix/tu-kiem-tra-chuong/",{waitUntil:"networkidle"});
-    assert(ready?.ok()&&await page.getByText("chưa mở",{exact:false}).count()>0,
-      "Protected Chapter IX readiness must remain inactive");
+    assert(ready?.ok());await page.locator('[data-g10-chapter-selfcheck="CHIX"] .g10sc-progress').waitFor();assert(!(await page.locator('[data-g10-chapter-selfcheck="CHIX"]').innerText()).includes("Đáp án:"),"ChIX pre-submit answer leak");
    }finally{await page.close()}
   }
-  console.log("PASS G10 ChIX B26/B27 browser: 4 reviewed D6 cards, 2 responsive SVG on phone/tablet/desktop, canonical deep link, no active Readiness");
+  console.log("PASS G10 ChIX B26/B27 browser: 4 reviewed D6 cards, 2 responsive SVG on phone/tablet/desktop, canonical deep link, client self-check without Mastery");
  }finally{await browser.close()}
 })().catch(e=>{console.error(e.stack||e);process.exit(1)});
