@@ -11,7 +11,7 @@ EFFECTIVE_D6_SOURCE_MAP: prototypes/thpt/content-drafts/THPT_G10_CHV_B12_B14_D6_
 REVIEW_RECEIPT: prototypes/thpt/content-drafts/THPT_G10_CHV_B12_B14_NOTEBOOKLM_D1D6_R01_PASS_RECEIPT_20261030.md [blob 7a20d601c5e3e6ef184bcb44e4e7e214e8a06baf] + scoped R02 owner-reviewed HELP01 receipt [blob d8ed85283d2095ca633613eb1fccde754fdef3d1] and HELP02 receipt [blob 9dc02b7fa8a43c72b7988d1685a7e020d8c37738]
 ACADEMIC_EVIDENCE: prototypes/thpt/release-queue/CHV_B12_B14_PUBLIC_FORMATIVE_A1A7_EVIDENCE_20261030.md
 SCOPED_HELP02_R03_RECEIPT: prototypes/thpt/content-drafts/THPT_G10_CHV_B12_D6_HELP02_R03_OWNER_SCOPED_SOURCE_VERIFY_RECEIPT_20261031.md [reviewer R03: SOURCE_EQUIVALENCE PASS, HISTORICAL_TEMP_BYTE_PARITY NOT_VERIFIED, no new math delta]
-HELP02_R1_PROVENANCE_DECISION: prototypes/thpt/release-queue/CHV_HELP02_R02_ALTERNATE_PROVENANCE_OWNER_DECISION_R03_20261031.md [OWNER_DECISION_PENDING: recover historic Temp OR accept R03 effective-source blob; no automatic waiver]
+HELP02_EFFECTIVE_PROVENANCE: ACCEPTED_BY_EVIDENCE [HELP-G10-B12-02@R02 Git blob 913400d6aff63befac95a8a47a00870663dd0096 + NotebookLM R03 SOURCE_EQUIVALENCE=PASS, P0/P1/P2=0; HISTORICAL_TEMP_BYTE_PARITY=NOT_VERIFIED; see CHV_HELP02_R02_ALTERNATE_PROVENANCE_OWNER_DECISION_R03_20261031.md]
 CURRENT_PR: #639 authoring Draft only, no merge/deploy approval
 
 **Effective reviewed academic source: frozen R01 for unaffected content + independently reviewed HELP01@R02 and HELP02@R02 overlays:** B12 Số gần đúng và sai số; B13 Xu thế trung tâm; B14 Độ phân tán. 14 outcomes, 9 worked examples, 24 Formative (6 Core + 18 Practice), 3 Written (one Anchor label), 3 SVG and 6 HELP_ID. NotebookLM Academic PASS 27/27, D1–D6 PASS; P0=0, P1=0, P2=1, MINIMAL_DELTA=0. Exact original Temp SHA256: 77a189bb1aa199f3b81b8915903f85bae6659729849251ad92fa092761fd850c.
@@ -22,7 +22,7 @@ CURRENT_PR: #639 authoring Draft only, no merge/deploy approval
 - [x] A3_NOTEBOOKLM_VERDICT — R01 27/27 canonical public candidate items and 14/14 outcomes PASS in original scope; both targeted D6 R02 corrections, HELP01 + HELP02, separately owner-provided NotebookLM PASS (same six canonical HELP_IDs).
 - [x] A4_ITEM_OUTCOME_IDS — 27 item candidates and 14 outcome IDs matched reviewer; production canonical ID registration reserved for R1.
 - [x] A5_D1_D6_SCOPE — Combined effective source has reviewed D1–D5 R01 (9 examples, 24 formative + 3 Written, 3 SVG), 4 unchanged R01 D6 and 2 owner-reviewed R02 D6 overlays; 6 distinct canonical HELP_IDs, no held-out assessment source.
-- [x] A6_DELTA_RESOLVED — Original two B12 D6 P1 issues independently closed by scoped NotebookLM R02 PASS (HELP01 0/0/0 outstanding, HELP02 PASS); frozen R01 retained, replacement-only source map pinned. Release R1 must verify HELP02 original Temp byte parity and canonical effective-source insertion.
+- [x] A6_DELTA_RESOLVED — Original two B12 D6 P1 issues independently closed by scoped NotebookLM R02 PASS (HELP01 0/0/0 outstanding, HELP02 PASS); frozen R01 retained, replacement-only source map pinned. Release R1 must verify exact effective HELP02@R02 blob/content integration and dedup; historic Temp byte parity remains unverified but is resolved through independent R03 effective-source provenance under SOP v1.0.
 - [x] A7_PUBLIC_PRIVATE_BOUNDARY — No independent Readiness item/answer key or Mastery write.
 
 ## R1–R5 (separate release lane)
@@ -61,3 +61,10 @@ The original R01 HELP01 describes finding the *approximate* `a` interval from `\
 - Owner option: verify recovered historic original Temp (A), or **explicitly approve** R03 + pinned Git effective-source blob as an alternate provenance basis for *HELP02 only* (B). Both alternatives, exact evidence and sample decision text are in `CHV_HELP02_R02_ALTERNATE_PROVENANCE_OWNER_DECISION_R03_20261031.md`.
 - Authoring A1–A7 remains source-complete **only for 27 candidate items/14 outcomes of B12–B14 PUBLIC_FORMATIVE_ONLY**; reviewer did not grant a new Chapter-wide PASS. No stem, key, rubric, figure or D6 five-stage text modified.
 - Release R1 is **HOLD_OWNER_DECISION** until Option A or B is explicitly recorded; R2–R5/physical UAT/merge/deploy separate and pending.
+
+## 31/10/2026 — FINAL authoring provenance decision (supersedes prior owner-option HOLD)
+
+- Owner's updated instruction: **do not escalate ordinary academic source choices** when established standards independently validate the effective material.
+- `HELP-G10-B12-02@R02` effective source Git blob `913400d6aff63befac95a8a47a00870663dd0096` **ACCEPTED_BY_EVIDENCE** via independent NotebookLM R03 `SOURCE_EQUIVALENCE_VERDICT=PASS`, `MINIMAL_DELTA=0`, correct conditions/inequalities and unchanged `THPT-G10-B12-P06`. Existing reviewed R01/HELP01 R02 unchanged.
+- `HISTORICAL_TEMP_BYTE_PARITY=NOT_VERIFIED` is retained as an archival fact, **not** a standalone release R1 blocker. Previous 'owner option A/B' and `HOLD_OWNER_DECISION` above are **SUPERSEDED** by this decision; no owner source-choice input is required.
+- Process protection: `prototypes/thpt/THPT_NOTEBOOKLM_SOURCE_ARCHIVE_AND_PROVENANCE_SOP_v1.0_20261031.md`; authoring remains `CONTENT_READY` for `PUBLIC_FORMATIVE_ONLY` B12–B14. Release R1 integration dedup/content-fingerprint, R2–R5, owner *merge/deploy* permission, device UAT and Mastery restrictions unchanged.
