@@ -4,7 +4,7 @@ PACKET_ID: G10-SGK-CHV
 LEARNING_PATH: SGK_CHAPTER
 LESSON_SCOPE: B12–B14 ONLY
 RELEASE_SCOPE: PUBLIC_FORMATIVE_ONLY
-STATE: RELEASE_READY
+STATE: CONTENT_READY
 SOURCE_COMMIT: ff1866fd62e2a45379a0372566e1a87ce8156033
 SOURCE_SNAPSHOT: prototypes/thpt/content-drafts/THPT_G10_CHV_B12_B14_D1D6_AUTHORING_R01_SNAPSHOT.md [Git blob 49502fe39cf0a67f6a3e973a77f94164150637a7; original SHA256 77a189bb1aa199f3b81b8915903f85bae6659729849251ad92fa092761fd850c]
 REVIEW_RECEIPT: Authoring #639 ready/G10-SGK-CHV.md [blob e2c713f899ea2e2f17abffb4d70f07866361fed5], NotebookLM D1–D6 R01 27/27 and 14/14 PASS, reviewed HELP01/02 R02 and FIG01 R02 scoped receipts, independent HELP02 R03 source equivalence
@@ -23,7 +23,7 @@ CURRENT_PR: #677 release candidate (source #639; partial public B13/B14 #671 alr
 
 ## R — nhánh phát hành
 - [x] R1_INTEGRATED_CURRENT_MAIN — #677 HEAD trước khi thêm manifest 7e674d931af75ba96e2a4a0eb005938b83e25b78: test đối chiếu R01 8/8 B12, đúng Git blob SVG FIG01 R02, 2 HELP R02 mỗi cái 5 bước, cùng 16 IDs B13/B14 không đụng nguồn.
-- [x] R2_EXACT_HEAD_CI — HEAD code 7e674d931af75ba96e2a4a0eb005938b83e25b78 và metadata HEAD a476eead425ced0eff44630cb976e19b59b8db53 đều có THPT R4 Preview + Roadmap Quality SUCCESS (runs 41205224278 / 41205224329 trên metadata), cùng Branding / Skill QA SUCCESS. **Final RELEASE_READY/REGISTER-only commit phải được QA lại trên exact final HEAD trước khi merge; nếu thiếu hoặc FAIL, HOLD.**
+- [ ] R2_EXACT_HEAD_CI — Standalone PR #677 verified code 7e674d931af75ba96e2a4a0eb005938b83e25b78 và metadata HEAD a476eead425ced0eff44630cb976e19b59b8db53 đều có THPT R4 Preview + Roadmap Quality SUCCESS (runs 41205224278 / 41205224329 trên metadata), cùng Branding / Skill QA SUCCESS. **Final RELEASE_READY/REGISTER-only commit phải được QA lại trên exact final HEAD trước khi merge; nếu thiếu hoặc FAIL, HOLD.**
 - [x] R3_CLEAN_STUDENT_UI — #677 chỉ đưa B12 Knowledge/Core/Practice/Written và Golden ChV grid vào giao diện; các ID nội bộ và biên bản reviewer chỉ ở source/QA.
 - [x] R4_ASSESSMENT_SAFETY — Không kích hoạt chapter/topic Readiness, synthetic QA demo không ghi điểm/Mastery; không sửa Firebase/Gemini/progress hoặc key trình duyệt.
 - [x] R5_OWNER_APPROVAL — Quyết định thường trực của chủ dự án ngày 31/10/2026 cho phép A6 merge/deploy chỉ khi gói đạt đủ cổng; #677 thuộc PUBLIC_FORMATIVE_ONLY, không mở rộng assessment.
@@ -39,4 +39,4 @@ CURRENT_PR: #677 release candidate (source #639; partial public B13/B14 #671 alr
 - [ ] P1_DEPLOY_RECEIPT — Chưa merge #677; chỉ ghi SUCCESS sau workflow deploy và xác minh gh-pages đúng SHA/các assets mới.
 - [ ] P2_DEVICE_UAT — Chưa có UAT Safari iPhone / Android Chromium vật lý được xác nhận; không suy từ mô phỏng.
 
-**Release restriction:** R2 code+metadata HEAD đã PASS và đã ghi RELEASE_READY; yêu cầu kiểm tra lại exact final HEAD sau commit cập nhật trạng thái/REGISTER trước khi merge. P1/P2 ghi riêng. Không công bố toàn ChV là hành trình hoàn chỉnh hoặc tự cấp quyền Mastery.
+**Release restriction:** Standalone B12 was CI PASS, but the final G10 one-batch integration #680 adds ChVI D6 and nine self-check routes; R2 remains unchecked and STATE=CONTENT_READY until full combined final-HEAD dual QA SUCCESS. No merge until verified. P1/P2 ghi riêng. Không công bố toàn ChV là hành trình hoàn chỉnh hoặc tự cấp quyền Mastery.
