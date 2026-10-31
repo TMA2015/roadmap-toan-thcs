@@ -49,7 +49,7 @@ const root=read("docs/assets/javascripts/thpt-r4-preview.js");
 assert.equal(root.split("THPT_CHV_B13_B14_REVIEWED_FORMATIVE").length-1,2);
 assert(root.includes("Number(lesson)<=14?\"V\""));
 assert(!/data-thpt-readiness|data-mastery-credit/.test(read("docs/thpt-preview/sgk/chuong-v/tu-kiem-tra-chuong.md")));
-assert(read("docs/thpt-preview/sgk/chuong-v.md").includes("Bài 12")&&read("docs/thpt-preview/sgk/chuong-v.md").includes("chưa công bố"));
+assert(read("docs/thpt-preview/sgk/chuong-v.md").includes('href="bai-12/"')&&read("docs/thpt-preview/sgk/chuong-v.md").includes("Tự kiểm tra · chưa kích hoạt"));
 if(process.argv.includes("--built")){
  for(const n of [13,14])assert(fs.existsSync("site/thpt-preview/sgk/chuong-v/bai-"+n+"/index.html"));
  assert(fs.existsSync("site/thpt-preview/thu-vien/tu-luan-chuong-v-b13-b14/index.html"));
