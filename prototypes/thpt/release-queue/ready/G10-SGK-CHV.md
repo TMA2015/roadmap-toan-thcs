@@ -68,3 +68,11 @@ The original R01 HELP01 describes finding the *approximate* `a` interval from `\
 - `HELP-G10-B12-02@R02` effective source Git blob `913400d6aff63befac95a8a47a00870663dd0096` **ACCEPTED_BY_EVIDENCE** via independent NotebookLM R03 `SOURCE_EQUIVALENCE_VERDICT=PASS`, `MINIMAL_DELTA=0`, correct conditions/inequalities and unchanged `THPT-G10-B12-P06`. Existing reviewed R01/HELP01 R02 unchanged.
 - `HISTORICAL_TEMP_BYTE_PARITY=NOT_VERIFIED` is retained as an archival fact, **not** a standalone release R1 blocker. Previous 'owner option A/B' and `HOLD_OWNER_DECISION` above are **SUPERSEDED** by this decision; no owner source-choice input is required.
 - Process protection: `prototypes/thpt/THPT_NOTEBOOKLM_SOURCE_ARCHIVE_AND_PROVENANCE_SOP_v1.0_20261031.md`; authoring remains `CONTENT_READY` for `PUBLIC_FORMATIVE_ONLY` B12–B14. Release R1 integration dedup/content-fingerprint, R2–R5, owner *merge/deploy* permission, device UAT and Mastery restrictions unchanged.
+
+## 31/10/2026 — Owner recovered historical HELP02 R02 candidate Temp (latest evidence)
+
+- `R02_CANDIDATE_ORIGINAL_TEMP_RECOVERED=YES`: uploaded copy `Temp_THPT_G10_CHV_B12_D6_HELP02_DELTA_REVIEW_20261030(1).md`, 5,765 bytes, SHA256 `eb8e266523b62465e7d869c2ed9a5002aa06ed6efa2c12919c330929696c8fed`.
+- Exact copy bytes archived in private Library and restore-verified. Original prior-upload *independent* SHA unavailable, so historic **old hash parity is still unverified**; do not confuse with recovered copy's verified checksum.
+- Original Temp section 3 compared with unchanged effective R02 Git overlay blob `913400d6aff63befac95a8a47a00870663dd0096`: five stages **5/5 content matched after notation normalization**; heading/editorial formatting differs, whole file bytes are not supposed to equal overlay document bytes.
+- Evidence: `prototypes/thpt/content-drafts/THPT_G10_CHV_B12_D6_HELP02_R02_RECOVERED_ORIGINAL_TEMP_EVIDENCE_20261031.md`. Existing NotebookLM R02 and R03 PASS already cover the corrected math; **no new academic delta or re-review needed**. 
+- Authoring A1–A7 remains `CONTENT_READY` **only** B12–B14 `PUBLIC_FORMATIVE_ONLY`; release technical R1–R5, real-device QA and owner permission for merge/deploy remain separate, no Readiness or Mastery activation.
