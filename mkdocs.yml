@@ -252,6 +252,7 @@ extra_css:
   - assets/stylesheets/math-knowledge-r30-consistency.css
 
   - assets/stylesheets/thpt-r4-preview.css
+  - assets/stylesheets/thpt-g10-reviewed-selfcheck-v1.css
 
 extra_javascript:
   # Critical learner route/runtime scripts first so KNTT/Core can mount before remote MathJax or heavier observers.
@@ -295,3 +296,4 @@ extra_javascript:
   - assets/javascripts/thpt-chv-b13-b14-reviewed-formative-v1.js
   - assets/javascripts/thpt-chvi-reviewed-formative-v1.js
   - assets/javascripts/thpt-r4-preview.js
+  - assets/javascripts/thpt-g10-reviewed-selfcheck-v1.js
