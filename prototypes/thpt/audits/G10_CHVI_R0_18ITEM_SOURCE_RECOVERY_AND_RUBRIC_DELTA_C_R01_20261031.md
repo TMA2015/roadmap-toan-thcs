@@ -62,3 +62,9 @@ This record satisfies authoring source custody; **does not assert full readiness
 - Implementation: `scripts/qa-thpt-chvi-r0-rubric-delta.py` in the same Draft authoring PR #641; **source code contains no protected item text**. Runs against four private inputs (original owner ZIP, exact R0 canonical, rubric candidate, review handoff) and the private manifest.
 - Actual local run before handoff: `QA_PASS: 115/115 checks; 18 original items and 18 rubric deltas; private source not logged.`
 - This static check guards source identity/rubric structure; **does not replace NotebookLM independent clearance for new scoring rubrics** or physical/runtime QA.
+
+## PDF transport for NotebookLM UI import (fallback only)
+
+- Same academic source as private exact Markdown review snapshot SHA256 `4d2eb7534e904f2eeefdba94f0411885f2fb8e7ce52623ce422498133c426259` (15,311 bytes); formatted for import into NotebookLM when MD/TXT ingestion fails. **PDF is not byte-equivalent to Markdown**, only a presentation transport.
+- PDF transport name `Temp_G10_CHVI_R0_18ITEM_RUBRIC_DELTA_C_REVIEW_R01_20261031.pdf`, SHA256 `2d60042d370e4cb04f3d1a84db13e5c260bd9d61ad2130c861478f24d9ec646b`, **88,917 bytes**, **6 pages**. Text-extract QA recovered 18/18 canonical IDs and 18 rubric markers, exact `PACKET_ID`; rendered pages visually inspected. Archived privately and re-materialized byte-identically.
+- If reviewer uses the PDF, reviewer `SOURCE_RECEIPT` should reference **this PDF SHA256** plus the authoritative Markdown snapshot SHA256. No additional student-facing content, score or production readiness is authorized.
