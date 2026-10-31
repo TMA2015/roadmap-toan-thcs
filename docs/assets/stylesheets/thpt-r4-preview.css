@@ -540,3 +540,29 @@ body[data-md-color-scheme="slate"] .thpt-r4-home-orbit-caption{color:#243e68}
 .md-typeset details.thpt-r4-pedagogical-note{border:1px solid var(--md-default-fg-color--lightest);background:var(--md-default-bg-color);border-radius:10px;padding:10px 14px;margin:14px 0;color:var(--md-default-fg-color)}
 .md-typeset details.thpt-r4-pedagogical-note summary{font-weight:650;cursor:pointer;font-size:.87rem}
 .md-typeset details.thpt-r4-pedagogical-note p{margin:10px 0 3px;line-height:1.55}
+
+
+/* Academic Presentation QA #655: compact, non-clipped mobile MathJax.
+   Deliberately scoped to the two approved pilot Knowledge pages only.
+   At narrow viewports, shrink complex display maths slightly; on very
+   small devices a formula can scroll within its own row (never the page).
+   No effect on THCS, other THPT pages, SVG, assessment or canonical items. */
+@media (max-width: 480px) {
+  .md-content__inner:has(.thpt-ap-knowledge-pilot) .arithmatex {
+    max-width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+  }
+  .md-content__inner:has(.thpt-ap-knowledge-pilot) .arithmatex mjx-container[jax="CHTML"][display="true"] {
+    font-size: 78% !important;
+  }
+}
+
+/* Level-1 programme selector only: match the mobile drawer on desktop tabs.
+   The SAT/ACT roadmap is informative, never a clickable unpublished route. */
+.md-tabs__link.thpt-r4-program-tab--pending{
+  opacity:.48;
+  cursor:default;
+  pointer-events:none;
+}

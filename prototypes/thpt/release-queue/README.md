@@ -15,6 +15,12 @@ Danh mục là **con trỏ** đến học liệu và biên bản, không phải 
 3. **Nhánh phát hành** chỉ nhận gói ở ready/, trỏ tới nội dung canonical theo commit; không copy câu hỏi hoặc lời giải. Tích hợp website hiện hành và QA exact-head THCS/THPT, desktop/mobile, MathJax, exposure/readiness, giao diện học sinh sạch. Điền **R1–R5**; R5 là phép merge/deploy rõ ràng của chủ dự án.
 4. Chỉ sau A1–A7 và R1–R5 PASS mới đặt RELEASE_READY và merge/deploy đúng phạm vi được duyệt. Ghi **P1/P2** sau phát hành; P2 không được suy từ trình duyệt giả lập.
 
+### Cổng trình bày học thuật AP1–AP5 (áp dụng từ 31/10/2026)
+
+Theo [Issue #655](https://github.com/TMA2015/self-learning-math/issues/655), mọi gói học liệu **mới chuẩn bị phát hành** cần xác nhận thêm Academic Presentation QA bên cạnh D1–D6 và A/R/P. **Gọn nhưng không nén**: công thức, điều kiện, định nghĩa, ví dụ và lỗi thường gặp phải phân nhóm hợp lý; hình/đồ thị/SVG đủ rõ để học sinh tự đọc trên desktop, iPhone, iPad. Có thể dùng Adaptive Knowledge Tabs v2 để giảm chiều dọc, nhưng không ghép nhiều ý khác nhau lên một hàng. Các mã D1.x/NotebookLM/PR chỉ dùng trong nguồn/QA, không làm nhãn học sinh.
+
+AP1 cấu trúc ý; AP2 công thức/MathJax; AP3 hình, biểu đồ, SVG; AP4 tự học độc lập; AP5 responsive. Bằng chứng AP cần đủ ngay trên snapshot release HEAD và được ghi trong manifest mới theo `PACKET_TEMPLATE.md`. Không coi Academic PASS hay browser build thành AP3/AP5 PASS tự động. `DELTA_A_UI` được tự QA/log khi không đổi toán; `DELTA_B_SOURCE_EQUIVALENT` cần kiểm chứng tương đương nguồn; `DELTA_C_ACADEMIC_MATERIAL` cần review đúng phần bị tác động; `DELTA_D_BLOCKER` chặn release. Các packet lịch sử được audit theo batch, không tự đổi trạng thái trước khi có bằng chứng.
+
 **HOLD** khi thiếu chứng cứ, D1–D6 chưa đủ theo phạm vi, delta C/D chưa review, hoặc QA lỗi. Review PASS thành phần ≠ CONTENT_READY; CONTENT_READY ≠ merge permission. Một gói đã phát hành phạm vi hữu hạn vẫn có thể chưa đạt FULL_LEARNING_PATH.
 
 **Hai hành trình độc lập:** SGK_CHAPTER (Tự kiểm tra cuối chương); TOPIC (chỉ Kiến thức/Luyện tập/Tự kiểm tra). SGK PASS không suy rộng TOPIC PASS. Dùng chung một canonical item_id/Written/Anchor/skill/ảnh theo placement; tách bằng chứng SGK_CHAPTER_READINESS và TOPIC_READINESS.
