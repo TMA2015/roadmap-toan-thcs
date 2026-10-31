@@ -573,3 +573,94 @@ Vốn V_0=100 triệu đồng, lãi kép 2% mỗi kỳ và không nạp/rút: sa
 - **RD1:** ngân hàng đánh giá kín riêng trọn Chương II, 18 câu khác dữ kiện và cấu trúc với các câu luyện đã xem. Không tiết lộ đề/đáp án/rubric trên GitHub công khai; không lấy formative correct làm Skill Mastery.
 - **S1:** SGK Toán 11 KNTT Tập 1 B05 42–47, B06 48–51, B07 52–55, cuối chương 56–57 (mục lục công khai đối chiếu). SBT KNTT B05–B07 chính xác về trang in cần NotebookLM đối chiếu trực tiếp nguồn S1; không suy đoán PASS dựa trên web tham khảo.
 - **Golden UI:** không thay đổi menu, Javascript, tiến độ, Firebase/Gemini hay THCS. Đây là nguồn **ứng viên học thuật R01**, chưa QA frontend, chưa được phát hành hoặc cho phép ghi điểm.
+
+---
+
+## PART D5 EXACT SVG XML FOR NOTEBOOKLM (three canonical graph sources)
+
+These exact source SVG XML blocks are academically unreviewed candidates. Reviewer: validate all displayed numbers, point coordinates, index/axis labeling, discrete-only points, missing line segments, accessible text and pedagogical accuracy; compare with SGK/SBT. Source IDs FIG-G11-B05-01, FIG-G11-B06-01 and FIG-G11-B07-01 are NOT new student assessment items.
+
+### FIG-G11-B05-01 · source Git blob 154e10059899d635dec5aacc78616e3d53b9ad17
+
+```xml
+<svg xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc" viewBox="0 0 750 330" width="750" height="330">
+<title id="title">Dãy u_n=(-1)^n, n=1..6</title>
+<desc id="desc">Giá trị luân phiên dấu -1 và 1; chỉ có sáu điểm rời rạc, không nối thành một đường thẳng. Các giá trị chỉ tồn tại trên chỉ số nguyên dương, không nối các điểm.</desc>
+<rect width="750" height="330" fill="#fff"/>
+<text x="375" y="29" fill="#0f172a" font-size="18" text-anchor="middle" font-weight="600">Dãy u_n=(-1)^n, n=1..6</text>
+<path d="M85 163.5 H720 M85 52 V275" stroke="#475569" stroke-width="1.8" fill="none"/>
+<circle cx="85.0" cy="249.3" r="6" fill="#2563eb"/>
+<text x="85.0" y="235.3" fill="#1d4ed8" text-anchor="middle" font-size="14">u1=-1</text>
+<text x="85.0" y="296.0" fill="#334155" text-anchor="middle" font-size="12">1</text>
+<circle cx="212.0" cy="77.7" r="6" fill="#2563eb"/>
+<text x="212.0" y="63.7" fill="#1d4ed8" text-anchor="middle" font-size="14">u2=1</text>
+<text x="212.0" y="296.0" fill="#334155" text-anchor="middle" font-size="12">2</text>
+<circle cx="339.0" cy="249.3" r="6" fill="#2563eb"/>
+<text x="339.0" y="235.3" fill="#1d4ed8" text-anchor="middle" font-size="14">u3=-1</text>
+<text x="339.0" y="296.0" fill="#334155" text-anchor="middle" font-size="12">3</text>
+<circle cx="466.0" cy="77.7" r="6" fill="#2563eb"/>
+<text x="466.0" y="63.7" fill="#1d4ed8" text-anchor="middle" font-size="14">u4=1</text>
+<text x="466.0" y="296.0" fill="#334155" text-anchor="middle" font-size="12">4</text>
+<circle cx="593.0" cy="249.3" r="6" fill="#2563eb"/>
+<text x="593.0" y="235.3" fill="#1d4ed8" text-anchor="middle" font-size="14">u5=-1</text>
+<text x="593.0" y="296.0" fill="#334155" text-anchor="middle" font-size="12">5</text>
+<circle cx="720.0" cy="77.7" r="6" fill="#2563eb"/>
+<text x="720.0" y="63.7" fill="#1d4ed8" text-anchor="middle" font-size="14">u6=1</text>
+<text x="720.0" y="296.0" fill="#334155" text-anchor="middle" font-size="12">6</text>
+<text x="720" y="303" font-size="15" fill="#334155">n</text></svg>
+```
+
+### FIG-G11-B06-01 · source Git blob 7b26242cad828b6b4b6c27b87f3359273b03bf2a
+
+```xml
+<svg xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc" viewBox="0 0 750 330" width="750" height="330">
+<title id="title">Cấp số cộng u_n=3n, n=1..5</title>
+<desc id="desc">Năm điểm của cấp số cộng là (1,3), (2,6), (3,9), (4,12), (5,15), hiệu các số hạng d=3. Các giá trị chỉ tồn tại trên chỉ số nguyên dương, không nối các điểm.</desc>
+<rect width="750" height="330" fill="#fff"/>
+<text x="375" y="29" fill="#0f172a" font-size="18" text-anchor="middle" font-weight="600">Cấp số cộng u_n=3n, n=1..5</text>
+<path d="M85 249.3 H720 M85 52 V275" stroke="#475569" stroke-width="1.8" fill="none"/>
+<circle cx="85.0" cy="215.0" r="6" fill="#2563eb"/>
+<text x="85.0" y="201.0" fill="#1d4ed8" text-anchor="middle" font-size="14">u1=3</text>
+<text x="85.0" y="296.0" fill="#334155" text-anchor="middle" font-size="12">1</text>
+<circle cx="212.0" cy="180.7" r="6" fill="#2563eb"/>
+<text x="212.0" y="166.7" fill="#1d4ed8" text-anchor="middle" font-size="14">u2=6</text>
+<text x="212.0" y="296.0" fill="#334155" text-anchor="middle" font-size="12">2</text>
+<circle cx="339.0" cy="146.3" r="6" fill="#2563eb"/>
+<text x="339.0" y="132.3" fill="#1d4ed8" text-anchor="middle" font-size="14">u3=9</text>
+<text x="339.0" y="296.0" fill="#334155" text-anchor="middle" font-size="12">3</text>
+<circle cx="466.0" cy="112.0" r="6" fill="#2563eb"/>
+<text x="466.0" y="98.0" fill="#1d4ed8" text-anchor="middle" font-size="14">u4=12</text>
+<text x="466.0" y="296.0" fill="#334155" text-anchor="middle" font-size="12">4</text>
+<circle cx="593.0" cy="77.7" r="6" fill="#2563eb"/>
+<text x="593.0" y="63.7" fill="#1d4ed8" text-anchor="middle" font-size="14">u5=15</text>
+<text x="593.0" y="296.0" fill="#334155" text-anchor="middle" font-size="12">5</text>
+<text x="720" y="303" font-size="15" fill="#334155">n</text></svg>
+```
+
+### FIG-G11-B07-01 · source Git blob 3aa50318e6bbe1666d27bd82b5034101f1c100d9
+
+```xml
+<svg xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc" viewBox="0 0 750 330" width="750" height="330">
+<title id="title">Cấp số nhân u_n=2^n, n=1..5</title>
+<desc id="desc">Năm điểm của cấp số nhân là (1,2), (2,4), (3,8), (4,16), (5,32), công bội q=2. Các giá trị chỉ tồn tại trên chỉ số nguyên dương, không nối các điểm.</desc>
+<rect width="750" height="330" fill="#fff"/>
+<text x="375" y="29" fill="#0f172a" font-size="18" text-anchor="middle" font-weight="600">Cấp số nhân u_n=2^n, n=1..5</text>
+<path d="M85 249.3 H720 M85 52 V275" stroke="#475569" stroke-width="1.8" fill="none"/>
+<circle cx="85.0" cy="238.5" r="6" fill="#2563eb"/>
+<text x="85.0" y="224.5" fill="#1d4ed8" text-anchor="middle" font-size="14">u1=2</text>
+<text x="85.0" y="296.0" fill="#334155" text-anchor="middle" font-size="12">1</text>
+<circle cx="212.0" cy="227.8" r="6" fill="#2563eb"/>
+<text x="212.0" y="213.8" fill="#1d4ed8" text-anchor="middle" font-size="14">u2=4</text>
+<text x="212.0" y="296.0" fill="#334155" text-anchor="middle" font-size="12">2</text>
+<circle cx="339.0" cy="206.4" r="6" fill="#2563eb"/>
+<text x="339.0" y="192.4" fill="#1d4ed8" text-anchor="middle" font-size="14">u3=8</text>
+<text x="339.0" y="296.0" fill="#334155" text-anchor="middle" font-size="12">3</text>
+<circle cx="466.0" cy="163.5" r="6" fill="#2563eb"/>
+<text x="466.0" y="149.5" fill="#1d4ed8" text-anchor="middle" font-size="14">u4=16</text>
+<text x="466.0" y="296.0" fill="#334155" text-anchor="middle" font-size="12">4</text>
+<circle cx="593.0" cy="77.7" r="6" fill="#2563eb"/>
+<text x="593.0" y="63.7" fill="#1d4ed8" text-anchor="middle" font-size="14">u5=32</text>
+<text x="593.0" y="296.0" fill="#334155" text-anchor="middle" font-size="12">5</text>
+<text x="720" y="303" font-size="15" fill="#334155">n</text></svg>
+```
+
