@@ -56,3 +56,9 @@ MASTERY_ACTIVATION|NO
 ```
 
 This record satisfies authoring source custody; **does not assert full readiness release readiness**, R1 rubric PASS, complete subject readiness, or deployment. Post-review process must archive exact new accepted canonical and re-run restorable byte-hash QA before any A1–A7 completion.
+
+## Local reproducible QA script
+
+- Implementation: `scripts/qa-thpt-chvi-r0-rubric-delta.py` in the same Draft authoring PR #641; **source code contains no protected item text**. Runs against four private inputs (original owner ZIP, exact R0 canonical, rubric candidate, review handoff) and the private manifest.
+- Actual local run before handoff: `QA_PASS: 115/115 checks; 18 original items and 18 rubric deltas; private source not logged.`
+- This static check guards source identity/rubric structure; **does not replace NotebookLM independent clearance for new scoring rubrics** or physical/runtime QA.
