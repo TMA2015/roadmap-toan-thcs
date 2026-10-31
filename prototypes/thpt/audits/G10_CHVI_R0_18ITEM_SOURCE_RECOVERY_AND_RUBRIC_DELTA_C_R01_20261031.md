@@ -68,3 +68,14 @@ This record satisfies authoring source custody; **does not assert full readiness
 - Same academic source as private exact Markdown review snapshot SHA256 `4d2eb7534e904f2eeefdba94f0411885f2fb8e7ce52623ce422498133c426259` (15,311 bytes); formatted for import into NotebookLM when MD/TXT ingestion fails. **PDF is not byte-equivalent to Markdown**, only a presentation transport.
 - PDF transport name `Temp_G10_CHVI_R0_18ITEM_RUBRIC_DELTA_C_REVIEW_R01_20261031.pdf`, SHA256 `2d60042d370e4cb04f3d1a84db13e5c260bd9d61ad2130c861478f24d9ec646b`, **88,917 bytes**, **6 pages**. Text-extract QA recovered 18/18 canonical IDs and 18 rubric markers, exact `PACKET_ID`; rendered pages visually inspected. Archived privately and re-materialized byte-identically.
 - If reviewer uses the PDF, reviewer `SOURCE_RECEIPT` should reference **this PDF SHA256** plus the authoritative Markdown snapshot SHA256. No additional student-facing content, score or production readiness is authorized.
+
+
+## UPDATE 31/10 — NotebookLM independently PASSED all 18 R1 rubrics
+
+- Authoring state advanced from `R1_NEW_RUBRICS=DELTA_C_NOTEBOOKLM_REVIEW_PENDING` to **`R1_NEW_RUBRICS=ACADEMIC_PASS_18_OF_18`** after owner supplied actual independent NotebookLM text. Old R0 exact mathematics remains preserved and PASSED; original old18 canonical IDs unchanged.
+- Verified original owner reviewer report SHA256 `6a2c9240387d87fe7db406aa7a34364370ec7b9462de9e9b0d6687e278336fbd` (11,601 bytes); all 18 ID verdicts PASS; `P0/P1/P2=0/0/0`, `MINIMAL_DELTA=0`, `RELEASE_AUTHORIZATION=NO`, `MASTERY_ACTIVATION=NO`.
+- Reviewer mislabeled Markdown SHA256 `4d2eb7...` as the PDF checksum. Actual PDF transport SHA256 `2d60042d370e4cb04f3d1a84db13e5c260bd9d61ad2130c861478f24d9ec646b` (88,917 bytes); Markdown remains `4d2eb7534e904f2eeefdba94f0411885f2fb8e7ce52623ce422498133c426259`. Administrative citation correction only.
+- Reviewer paraphrase says “đơn ánh” for B15-R01, but effective reviewed original rubric correctly uses “mỗi x ứng với đúng một y”; **injectivity and functionhood are not synonymous**. Correction is in metadata receipt only, **no alteration to reviewed source**.
+- **Final effective 18-item R1 private canonical** is source-byte-identical to the R1 candidate, SHA256 `a25ae92a4cb01122189bab2f4a22f7427838d5d7d7361a2cb9e9855571c9a154` (13,044 bytes); full reviewer report, canonical and new v2 manifest stored in private Library, independently restored 3/3 byte-pass. v2 manifest SHA256 `d263c274c0c6b82e69a3b8d43d76fd485dfcf2233182c1c6e9c091ace108ed5c`; author source QA `115/115 PASS`.
+- **Full disposition and definitive source pointers:** `prototypes/thpt/audits/G10_CHVI_R1_18_RUBRIC_NOTEBOOKLM_PASS_CANONICAL_RECEIPT_20261031.md` on this authoring Draft.
+- `NEW20_VS_OLD18_EXPOSURE=HOLD`; `READINESS_RELEASE=NO`; `MASTERY=OFF`; `MERGE_DEPLOY=NO`. This new update supersedes **only** this audit's old pending-rubric line, not unrelated exposure/system blocks.
