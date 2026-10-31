@@ -42,8 +42,13 @@ assert(quality.includes("test ! -e site/assets/javascripts/thpt-protected-readin
  "CI should assert that the retired backend client is absent from static output");
 assert(!browser.includes("THPT_PROTECTED_AUTH"),"Browser regression still exercises learner accounts");
 const readiness=read("docs/thpt-preview/sgk/chuong-vi/tu-kiem-tra-chuong.md");
-assert(readiness.includes("TECHNICAL_DEMO_ONLY")&&readiness.includes("mastery_credit: false"),
- "Unreviewed demo must remain clearly non-credit");
+assert(readiness.includes('data-g10-chapter-selfcheck="CHVI"')&&readiness.includes("Final Submit")&&
+ readiness.includes("không tự động ghi điểm thành thạo"),
+ "G10 ChVI self-check must use reviewed Final Submit route with no Mastery writes");
+const releaseRunner=read("docs/assets/javascripts/thpt-g10-reviewed-selfcheck-v1.js");
+assert(releaseRunner.includes("mastery_credit")&&releaseRunner.includes("persist_results")&&
+ !releaseRunner.includes("localStorage.setItem")&&!releaseRunner.includes("sessionStorage.setItem"),
+ "Readiness client must keep storage/Mastery disabled");
 assert(read("docs/assets/javascripts/thpt-r4-preview.js").includes("thpt-r4-route"),
  "THPT-only R4 scoping removed");
-console.log("PASS THPT GitHub Pages first-phase static release: routes/assets, Gemini retained, no student auth/backend, Readiness demo clearly no credit.");
+console.log("PASS THPT GitHub Pages first-phase static release: routes/assets, Gemini retained, no student auth/backend, G10 reviewed self-check no-Mastery scope.");
