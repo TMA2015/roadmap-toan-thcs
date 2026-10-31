@@ -4,13 +4,37 @@
 
 ## 1. Kiến thức SGK
 
-**Định nghĩa:** Bất phương trình bậc nhất hai ẩn có dạng \(ax+by<c\), \(ax+by\le c\), \(ax+by>c\) hoặc \(ax+by\ge c\), trong đó \(a,b,c\in\mathbb R\) và \((a,b)\ne(0,0)\). Ví dụ \(0x-3y>1\) vẫn hợp lệ; \(x^2+y>3\) và \(0x+0y\le2\) không phải dạng này.
+### 1. Dạng bất phương trình bậc nhất hai ẩn
 
-**Cặp nghiệm:** Một cặp thực \((x_0,y_0)\) là nghiệm khi phép thế làm bất phương trình đúng. Đường \(d:ax+by=c\) chia mặt phẳng thành hai nửa; miền nghiệm là một nửa mặt phẳng, **có** đường biên nếu dấu \(\le/\ge\), **không** có đường biên nếu \(</>\).
+**Định nghĩa:** Bất phương trình bậc nhất hai ẩn có dạng \(ax+by<c\), \(ax+by\le c\), \(ax+by>c\) hoặc \(ax+by\ge c\), trong đó \(a,b,c\in\mathbb R\) và \((a,b)\ne(0,0)\).
 
-**Quy trình 5 bước:** (1) Xác định đường biên \(d\), vẽ bằng hai điểm phân biệt hoặc dạng phù hợp; (2) chọn một điểm kiểm tra **không thuộc** \(d\) — có thể chọn \(O(0,0)\) khi \(c\ne0\); (3) thế và xét đúng/sai; (4) chọn phía thỏa; (5) kết luận lấy/không lấy biên. Khi giải \(-y<2-3x\) phải **đảo chiều** để được \(y>3x-2\).
+**Nhận dạng:** Ví dụ \(0x-3y>1\) vẫn hợp lệ; \(x^2+y>3\) và \(0x+0y\le2\) không phải dạng này.
 
-**Điều kiện thực tiễn:** Với giá, thời lượng, số lượng, phải nêu miền của biến, dấu không âm, đơn vị. Nếu \(x,y\) là sản phẩm/ghế/vé, thường yêu cầu nguyên không âm. Nếu dùng trung bình phân thức, phải xác nhận mẫu dương; không thể chỉ giữ bất phương trình sau nhân mẫu rồi bỏ điều kiện ban đầu.
+### 2. Cặp nghiệm và miền nghiệm
+
+**Cặp nghiệm:** Một cặp thực \((x_0,y_0)\) là nghiệm khi phép thế làm bất phương trình đúng. 
+
+**Miền nghiệm và đường biên:** Đường \(d:ax+by=c\) chia mặt phẳng thành hai nửa; miền nghiệm là một nửa mặt phẳng, **có** đường biên nếu dấu \(\le/\ge\), **không** có đường biên nếu \(</>\).
+
+### 3. Quy trình biểu diễn miền nghiệm
+
+**Quy trình 5 bước:**
+
+1. Xác định đường biên \(d\), vẽ bằng hai điểm phân biệt hoặc dạng phù hợp.
+2. Chọn một điểm kiểm tra **không thuộc** \(d\) — có thể chọn \(O(0,0)\) khi \(c\ne0\).
+3. Thế và xét đúng/sai.
+4. Chọn phía thỏa.
+5. Kết luận lấy/không lấy biên.
+
+**Lỗi cần tránh:** Khi giải \(-y<2-3x\) phải **đảo chiều** để được \(y>3x-2\).
+
+### 4. Điều kiện thực tiễn
+
+**Điều kiện thực tiễn:** Với giá, thời lượng, số lượng, phải nêu miền của biến, dấu không âm, đơn vị. 
+
+**Điều kiện nguyên:** Nếu \(x,y\) là sản phẩm/ghế/vé, thường yêu cầu nguyên không âm. 
+
+**Điều kiện của mẫu:** Nếu dùng trung bình phân thức, phải xác nhận mẫu dương; không thể chỉ giữ bất phương trình sau nhân mẫu rồi bỏ điều kiện ban đầu.
 
 ## 2. Ví dụ
 

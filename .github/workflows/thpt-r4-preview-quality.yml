@@ -123,6 +123,8 @@ jobs:
         run: node scripts/test-thpt-academic-presentation-pilot.cjs
       - name: Guard G11 B01 source-locked Knowledge presentation (no deploy)
         run: node scripts/test-thpt-g11-b01-ap-parity.cjs
+      - name: Guard G10 B03 Knowledge AP source parity (no deploy)
+        run: node scripts/test-thpt-g10-b03-ap-parity.cjs
       - name: Guard AP vector source lock G10 B07/B08/B10 (no deploy)
         run: node scripts/test-thpt-ap-vector-knowledge-parity.cjs
       - name: Validate THPT academic-to-release checklist (no deploy)
@@ -247,6 +249,8 @@ jobs:
         run: node scripts/test-thpt-g11-chi-b01-b02-browser-smoke.cjs
       - name: Academic Presentation QA pilot · MathJax overflow / 390 820 1440
         run: node scripts/test-thpt-academic-presentation-browser.cjs
+      - name: Academic Presentation QA G10 B03 · 390 820 1440
+        run: node scripts/test-thpt-g10-b03-ap-browser.cjs
       - name: Academic Presentation QA G10 vectors · 390 820 1440
         run: node scripts/test-thpt-ap-vector-knowledge-browser.cjs
       - name: ChIX reviewed D5/D6 browser smoke · mobile / iPad / desktop
