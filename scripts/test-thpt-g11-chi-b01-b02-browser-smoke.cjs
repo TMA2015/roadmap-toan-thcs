@@ -13,6 +13,9 @@ const {chromium}=require("playwright"),assert=require("node:assert/strict");
      assert.equal(await page.locator("[data-thpt-help-id]").count(),2);
      const image=page.locator(".thpt-r4-probability-figure img");
      assert.equal(await image.count(),1);
+     // The reviewed SVG loads lazily; AP knowledge grouping can move it below the fold.
+     // Explicitly simulate learner scrolling rather than treating offscreen loading as missing content.
+     await image.scrollIntoViewIfNeeded();
      await page.waitForFunction(()=>[...document.querySelectorAll(".thpt-r4-probability-figure img")].every(x=>x.complete&&x.naturalWidth>0));
      const dims=await image.evaluate(el=>({child:el.getBoundingClientRect().width,parent:el.parentElement.getBoundingClientRect().width}));
      assert(dims.child<=dims.parent+2,"SVG oversized on viewport "+viewport.width);
