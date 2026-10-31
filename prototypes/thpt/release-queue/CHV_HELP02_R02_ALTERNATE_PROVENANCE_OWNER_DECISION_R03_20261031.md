@@ -20,8 +20,7 @@
 | Independent, newly source-equivalent reviewer R03 | `prototypes/thpt/content-drafts/THPT_G10_CHV_B12_D6_HELP02_R03_OWNER_SCOPED_SOURCE_VERIFY_RECEIPT_20261031.md` blob `5d9bd6fd8040e38ddbcc0b07eb88d5b0be5b1ddc`; `SOURCE_EQUIVALENCE_VERDICT=PASS`, `D6_FIVE_STEP_VERDICT=PASS`, `FORMULA_AND_CONDITION_VERDICT=PASS`, `P0/P1/P2=0`, `MINIMAL_DELTA=0`, `ACADEMIC_CLEARANCE_FOR_THIS_CANDIDATE=YES`, `ACADEMIC_OVERALL_CHAPTER_V=NOT_EXTENDED` |
 | Effective source resolver | `THPT_G10_CHV_B12_B14_D6_EFFECTIVE_CANONICAL_SOURCE_MAP_R02_20261030.md` blob `374315bb3f9a2f17bb086b85544fe45ebb1ae183`; **4 unaffected R01 D6 + HELP01@R02 + HELP02@R02** exactly 6 unique helpers |
 
-**Mathematical guard (unchanged R02):** (a) = approximate, (ar a) = exact; (Delta_a=|a-ar a|), (delta_a=Delta_a/|a|) when (a
-e0), (Delta_ale dRightarrow delta_ale d/|a|), **not necessarily equality**. R03's review supports the effective five-step text, not the exact historic Temp bytes.
+**Mathematical guard (unchanged R02):** `a` là số gần đúng, `a_bar` là số đúng; `Delta_a = |a - a_bar|`, `delta_a = Delta_a / |a|` khi `a != 0`. Từ `Delta_a <= d` chỉ suy `delta_a <= d / |a|`, không khẳng định bằng nhau. R03 xác minh đúng bản chất toán học của năm bước hiện hành, không xác minh trùng byte với Temp lịch sử.
 
 ## 3. Owner choice for release R1 SOURCE verification
 
