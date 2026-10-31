@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 460" role="img" aria-labelledby="b14title b14desc">
+<title id="b14title">Bài 14: hai mẫu cùng trung bình nhưng độ phân tán khác nhau</title>
+<desc id="b14desc">Mẫu A gồm 4, 5, 6, phương sai hai phần ba; mẫu B gồm 1, 5, 9, phương sai ba mươi hai phần ba. Trung bình của cả hai bằng 5.</desc>
+<rect width="960" height="460" rx="18" fill="#f9fcff"/>
+<text x="38" y="48" font-size="25" font-family="DejaVu Sans,Arial" font-weight="bold" fill="#193e61">Cùng trung bình 5, nhưng độ phân tán khác</text>
+<text x="40" y="105" font-size="21" font-family="DejaVu Sans,Arial" fill="#225998">A = (4,5,6)   ·   s² = 2/3</text>
+<text x="40" y="250" font-size="21" font-family="DejaVu Sans,Arial" fill="#a15330">B = (1,5,9)   ·   s² = 32/3</text>
+<g stroke="#54657c" stroke-width="2"><line x1="150" y1="184" x2="835" y2="184"/><line x1="150" y1="328" x2="835" y2="328"/></g>
+<g font-family="DejaVu Sans,Arial" font-size="16" fill="#354962" text-anchor="middle"><text x="150" y="209">1</text><text x="302" y="209">3</text><text x="378" y="209">4</text><text x="454" y="209">5</text><text x="530" y="209">6</text><text x="758" y="209">9</text><text x="150" y="353">1</text><text x="454" y="353">5</text><text x="758" y="353">9</text></g>
+<g fill="#377ac5"><circle cx="378" cy="165" r="11"/><circle cx="454" cy="165" r="11"/><circle cx="530" cy="165" r="11"/></g>
+<g fill="#d37c3b"><circle cx="150" cy="309" r="11"/><circle cx="454" cy="309" r="11"/><circle cx="758" cy="309" r="11"/></g>
+<line x1="454" y1="127" x2="454" y2="368" stroke="#168174" stroke-width="2.5" stroke-dasharray="7 6"/>
+<text x="463" y="139" font-family="DejaVu Sans,Arial" font-size="17" fill="#117e72">Trung bình = 5</text>
+<text x="40" y="420" font-family="DejaVu Sans,Arial" font-size="18" fill="#314761">Mẫu B trải rộng hơn; chỉ so số trung bình sẽ bỏ lỡ điều này.</text>
+</svg>
