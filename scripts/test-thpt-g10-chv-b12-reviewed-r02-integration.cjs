@@ -69,7 +69,10 @@ assert(root.includes('"12":"Số gần đúng và sai số"'));
 assert(root.includes("|11|12|13|14|19|"),"B12 canonical D6 deep-link allowlist not active");
 for(const p of ["mkdocs.yml","mkdocs.thpt-preview.yml"])assert(read(p).includes("assets/javascripts/thpt-chv-b12-reviewed-formative-r02.js"),"Missing B12 script in "+p);
 const readiness=read("docs/thpt-preview/sgk/chuong-v/tu-kiem-tra-chuong.md");
-assert(readiness.includes("chưa kích hoạt")&&!readiness.includes("data-mastery-credit"));
+const selfCheck=JSON.parse(read("docs/assets/data/thpt-g10-readiness/CHV.json"));
+assert(readiness.includes('data-g10-chapter-selfcheck="CHV"')&&readiness.includes("Final Submit")&&!readiness.includes("data-mastery-credit"));
+assert.equal(selfCheck.items.length,18,"ChV reviewed chapter-end 18 items required");
+assert.equal(selfCheck.mastery_credit,false);assert.equal(selfCheck.persist_results,false);
 if(process.argv.includes("--built")){
  for(const p of ["site/thpt-preview/sgk/chuong-v/bai-12/index.html","site/thpt-preview/sgk/chuong-v/luyen-tap/index.html"])
   assert(fs.existsSync(p),"Missing built public page "+p);
