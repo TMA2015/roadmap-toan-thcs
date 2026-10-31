@@ -264,7 +264,7 @@
    "b16-core":["../../core/ham-so-bac-hai/","[data-thpt-core]"],
    "b16-practice":["../../../chuyen-de/ham-so/luyen-tap/","[data-thpt-practice]"]
   };
-  const lessonTitle={"1":"Mệnh đề","2":"Tập hợp và các phép toán trên tập hợp","3":"Bất phương trình bậc nhất hai ẩn","4":"Hệ bất phương trình bậc nhất hai ẩn","5":"Giá trị lượng giác của góc 0°–180°","6":"Hệ thức lượng trong tam giác","7":"Các khái niệm mở đầu về vectơ","8":"Tổng và hiệu của hai vectơ","9":"Tích của một vectơ với một số","10":"Vectơ trong mặt phẳng tọa độ","11":"Tích vô hướng của hai vectơ","13":"Các số đặc trưng đo xu thế trung tâm","14":"Các số đặc trưng đo độ phân tán","15":"Hàm số","16":"Hàm số bậc hai","17":"Dấu của tam thức bậc hai","18":"Phương trình quy về phương trình bậc hai","19":"Phương trình đường thẳng","20":"Vị trí, góc và khoảng cách","21":"Đường tròn","22":"Ba đường conic","23":"Quy tắc đếm","24":"Hoán vị, chỉnh hợp và tổ hợp","25":"Nhị thức Newton","26":"Biến cố và xác suất cổ điển","27":"Thực hành tính xác suất cổ điển"};
+  const lessonTitle={"1":"Mệnh đề","2":"Tập hợp và các phép toán trên tập hợp","3":"Bất phương trình bậc nhất hai ẩn","4":"Hệ bất phương trình bậc nhất hai ẩn","5":"Giá trị lượng giác của góc 0°–180°","6":"Hệ thức lượng trong tam giác","7":"Các khái niệm mở đầu về vectơ","8":"Tổng và hiệu của hai vectơ","9":"Tích của một vectơ với một số","10":"Vectơ trong mặt phẳng tọa độ","11":"Tích vô hướng của hai vectơ","12":"Số gần đúng và sai số","13":"Các số đặc trưng đo xu thế trung tâm","14":"Các số đặc trưng đo độ phân tán","15":"Hàm số","16":"Hàm số bậc hai","17":"Dấu của tam thức bậc hai","18":"Phương trình quy về phương trình bậc hai","19":"Phương trình đường thẳng","20":"Vị trí, góc và khoảng cách","21":"Đường tròn","22":"Ba đường conic","23":"Quy tắc đếm","24":"Hoán vị, chỉnh hợp và tổ hợp","25":"Nhị thức Newton","26":"Biến cố và xác suất cổ điển","27":"Thực hành tính xác suất cổ điển"};
   const g11LessonTitle={"1":"Giá trị lượng giác của góc lượng giác","2":"Công thức lượng giác"};
   const dlg=document.createElement("dialog");
   dlg.className="thpt-r4-practice-dialog";
@@ -314,10 +314,19 @@
   // Each item has one canonical record in thpt-chvi-reviewed-formative-v1.js;
   // the SGK card chooses a role-based placement without cloning content.
   const reviewed=window.THPT_CHVI_REVIEWED_FORMATIVE;
+  // In-memory only: retain Core/Practice question positions and unsubmitted
+  // answer text when a reviewed D6 return link changes roles in this modal.
+  const lastViewedReviewed=new Map(),reviewedResponses=new Map();
+  let pendingD6Item=null;
   const showReviewed=(items,requestedItem)=>{
    // Ephemeral answers only: no localStorage, backend writes or Skill Mastery.
    const responses=new Map();
+   // Retain ephemeral prior answers across a D6 Core↔Practice return;
+   // each new role renderer still owns its own Map for the active view.
+   for(const [id,state] of reviewedResponses)responses.set(id,state);
+   const viewedKey=String(items[0]?.lesson)+":"+(items[0]?.role==="CORE"?"core":"practice");
    let index=items.findIndex(item=>item.item_id===requestedItem);
+   if(index<0)index=items.findIndex(item=>item.item_id===lastViewedReviewed.get(viewedKey));
    if(index<0)index=0;
    const root=document.createElement("section");
    root.className="thpt-r4-reviewed-formative";
@@ -329,7 +338,8 @@
    const prev=document.createElement("button"),next=document.createElement("button");
    prev.type=next.type="button";prev.textContent="← Câu trước";next.textContent="Câu tiếp →";
    const render=()=>{
-    const item=items[index];card.replaceChildren();tabs.replaceChildren();
+    const item=items[index];lastViewedReviewed.set(viewedKey,item.item_id);
+    card.replaceChildren();tabs.replaceChildren();
     card.dataset.thptCanonicalItem=item.item_id;
     const exposureRole=item.role==="CORE"?"SGK_CORE":
       item.role==="APPLICATION"?"SGK_CHAPTER_APPLICATION":"SGK_PRACTICE";
@@ -352,7 +362,7 @@
     const canAutoCheck=Array.isArray(item.options)&&item.options.length===4&&
       /^[ABCD]$/.test(item.answerKey||"");
     let response=responses.get(item.item_id);
-    if(!response){response={value:"",submitted:false};responses.set(item.item_id,response)}
+    if(!response){response={value:"",submitted:false};responses.set(item.item_id,response);reviewedResponses.set(item.item_id,response)}
     const answerForm=document.createElement("form");
     answerForm.className="thpt-r4-formative-answer";
     answerForm.setAttribute("aria-label","Trả lời câu "+(index+1));
@@ -484,6 +494,19 @@
    footer.append(prev,next);root.append(head,tabs,card,footer);
    modalBody.replaceChildren(root);
    render();
+   // D6 mount is safe only on ChVI public SGK practice. The module itself
+   // independently rejects Readiness and any non-ChVI route.
+   window.THPT_CHVI_D6_REVIEWED?.mount(modalBody,items[0]?.lesson,itemId=>{
+    if(!reviewed?.items?.some(item=>item.item_id===itemId))return false;
+    const i=items.findIndex(item=>item.item_id===itemId);
+    if(i>=0){index=i;render();return true}
+    const newRole=reviewed.forLesson(items[0].lesson,"core").some(item=>item.item_id===itemId)?"core":"practice";
+    const trigger=document.querySelector('[data-thpt-practice-hub] [data-thpt-open-quiz="b'+items[0].lesson+'-'+newRole+'"]');
+    if(!trigger)return false;
+    pendingD6Item=itemId;
+    trigger.click(); // Retains in-memory answer drafts and original modal focus.
+    return true;
+   });
   };
 
   // Cumulative exercises remain one backing source, assigned to eligible
@@ -534,7 +557,7 @@
 
   root.querySelectorAll("[data-thpt-open-quiz]").forEach(button=>{
    button.addEventListener("click",async()=>{
-    returnFocus=button;
+    if(!pendingD6Item)returnFocus=button;
     const id=button.dataset.thptOpenQuiz;
     const g11=id.match(/^g11-b([12])-(core|practice)$/);
     const parts=g11||id.match(/^b([1-9]|10|11|1[2-9]|2[0-7])-(core|practice)$/);
@@ -544,12 +567,13 @@
     dlg.querySelector("[data-thpt-modal-lesson-number]").textContent=lesson;
     dlg.querySelector(".thpt-r4-modal-meta").textContent=isG11?"LỚP 11 · CHƯƠNG I":"LỚP 10 · CHƯƠNG "+(Number(lesson)<=2?"I":Number(lesson)<=4?"II":Number(lesson)<=6?"III":Number(lesson)<=11?"IV":Number(lesson)<=14?"V":Number(lesson)>=26?"IX":Number(lesson)>=23?"VIII":Number(lesson)>=19?"VII":"VI");
     modalTitle.textContent=role+" · Bài "+lesson+". "+(isG11?g11LessonTitle[lesson]:lessonTitle[lesson]);
-    modalBody.textContent="Đang mở nội dung…";dlg.showModal();
-    const activeBank=isG11?window.THPT_G11_CHI_REVIEWED_FORMATIVE:Number(lesson)<=2?window.THPT_CHI_REVIEWED_FORMATIVE:Number(lesson)<=4?window.THPT_CHII_REVIEWED_FORMATIVE:Number(lesson)<=6?window.THPT_CHIII_REVIEWED_FORMATIVE:Number(lesson)<=8?window.THPT_CHIV_B07_B08_REVIEWED_FORMATIVE:Number(lesson)<=11?window.THPT_CHIV_B09_B11_REVIEWED_FORMATIVE:Number(lesson)<=14?window.THPT_CHV_B13_B14_REVIEWED_FORMATIVE:Number(lesson)>=26?window.THPT_CHIX_REVIEWED_FORMATIVE:Number(lesson)>=23?window.THPT_CHVIII_REVIEWED_FORMATIVE:Number(lesson)>=19?window.THPT_CHVII_REVIEWED_FORMATIVE:reviewed;
+    modalBody.textContent="Đang mở nội dung…";if(!dlg.open)dlg.showModal();
+    const activeBank=isG11?window.THPT_G11_CHI_REVIEWED_FORMATIVE:Number(lesson)<=2?window.THPT_CHI_REVIEWED_FORMATIVE:Number(lesson)<=4?window.THPT_CHII_REVIEWED_FORMATIVE:Number(lesson)<=6?window.THPT_CHIII_REVIEWED_FORMATIVE:Number(lesson)<=8?window.THPT_CHIV_B07_B08_REVIEWED_FORMATIVE:Number(lesson)<=11?window.THPT_CHIV_B09_B11_REVIEWED_FORMATIVE:Number(lesson)===12?window.THPT_CHV_B12_REVIEWED_FORMATIVE:Number(lesson)<=14?window.THPT_CHV_B13_B14_REVIEWED_FORMATIVE:Number(lesson)>=26?window.THPT_CHIX_REVIEWED_FORMATIVE:Number(lesson)>=23?window.THPT_CHVIII_REVIEWED_FORMATIVE:Number(lesson)>=19?window.THPT_CHVII_REVIEWED_FORMATIVE:reviewed;
     if(activeBank?.validate().valid){
      const items=activeBank.forLesson(lesson,parts[2]);
      if(items.length){
-      showReviewed(items,new URLSearchParams(location.search).get("item"));
+      showReviewed(items,pendingD6Item||new URLSearchParams(location.search).get("item"));
+      pendingD6Item=null;
       if(!isG11&&parts[2]==="practice"&&Number(lesson)>=15&&Number(lesson)<=18)attachCumulative(lesson);
       return;
      }
@@ -574,6 +598,8 @@
      dlg.dataset.thptR4Ready="0";
      init();
      if(!isG11&&parts[2]==="practice"&&Number(lesson)>=15&&Number(lesson)<=18)attachCumulative(lesson);
+     // B16 must retain the original imported R4 form and selected answer.
+     if(!isG11&&lesson==="16")window.THPT_CHVI_D6_REVIEWED?.mount(modalBody,lesson);
      if(window.MathJax?.typesetPromise)window.MathJax.typesetPromise([modalBody]).catch(()=>{});
     }catch(error){
      modalBody.textContent="Chưa tải được bài. Hãy mở lại từ trang SGK hoặc kiểm tra kết nối.";
@@ -582,11 +608,11 @@
   });
   // Public formative navigation from the approved D6 help cards only.
   const requestedItem=new URLSearchParams(location.search).get("item");
-  const parsed=/^THPT-G10-B(01|02|03|04|05|06|07|08|09|10|11|13|14|19|20|21|22|23|24|25|26|27)-[CP]\d{2}$/.exec(requestedItem||"");
+  const parsed=/^THPT-G10-B(01|02|03|04|05|06|07|08|09|10|11|12|13|14|19|20|21|22|23|24|25|26|27)-[CP]\d{2}$/.exec(requestedItem||"");
   const parsedG11=/^THPT-G11-B(01|02)-[CP]\d{2}$/.exec(requestedItem||"");
   if(parsed||parsedG11){
    const isG11=Boolean(parsedG11);
-   const lesson=(parsedG11||parsed)[1], bank=isG11?window.THPT_G11_CHI_REVIEWED_FORMATIVE:Number(lesson)<=2?window.THPT_CHI_REVIEWED_FORMATIVE:Number(lesson)<=4?window.THPT_CHII_REVIEWED_FORMATIVE:Number(lesson)<=6?window.THPT_CHIII_REVIEWED_FORMATIVE:Number(lesson)<=8?window.THPT_CHIV_B07_B08_REVIEWED_FORMATIVE:Number(lesson)<=11?window.THPT_CHIV_B09_B11_REVIEWED_FORMATIVE:Number(lesson)<=14?window.THPT_CHV_B13_B14_REVIEWED_FORMATIVE:Number(lesson)>=26?window.THPT_CHIX_REVIEWED_FORMATIVE:Number(lesson)>=23?window.THPT_CHVIII_REVIEWED_FORMATIVE:window.THPT_CHVII_REVIEWED_FORMATIVE;
+   const lesson=(parsedG11||parsed)[1], bank=isG11?window.THPT_G11_CHI_REVIEWED_FORMATIVE:Number(lesson)<=2?window.THPT_CHI_REVIEWED_FORMATIVE:Number(lesson)<=4?window.THPT_CHII_REVIEWED_FORMATIVE:Number(lesson)<=6?window.THPT_CHIII_REVIEWED_FORMATIVE:Number(lesson)<=8?window.THPT_CHIV_B07_B08_REVIEWED_FORMATIVE:Number(lesson)<=11?window.THPT_CHIV_B09_B11_REVIEWED_FORMATIVE:Number(lesson)===12?window.THPT_CHV_B12_REVIEWED_FORMATIVE:Number(lesson)<=14?window.THPT_CHV_B13_B14_REVIEWED_FORMATIVE:Number(lesson)>=26?window.THPT_CHIX_REVIEWED_FORMATIVE:Number(lesson)>=23?window.THPT_CHVIII_REVIEWED_FORMATIVE:window.THPT_CHVII_REVIEWED_FORMATIVE;
    if(bank?.validate().valid){
     const placement=["core","practice"].find(role=>bank.forLesson(lesson,role).some(item=>item.item_id===requestedItem));
     const trigger=placement?root.querySelector('[data-thpt-open-quiz="'+(isG11?"g11-b":"b")+Number(lesson)+'-'+placement+'"]'):null;

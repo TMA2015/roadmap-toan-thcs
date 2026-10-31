@@ -1,0 +1,221 @@
+{
+  "schema": "thpt-g10-reviewed-selfcheck-v1",
+  "scope": "SGK_CHAPTER_READINESS",
+  "chapter": "CHVII",
+  "chapter_label": "VII",
+  "source_sha256": "1698c220a7d507eacf0774de09f7fdd5ae5711bbdd900d943ddeb365b4670bd4",
+  "review_scope": "INDIVIDUAL_CHAPTER_NOTEBOOKLM_PASS",
+  "mastery_credit": false,
+  "persist_results": false,
+  "items": [
+    {
+      "item_id": "THPT-G10-CHVII-RD1-01",
+      "stem": "Đường thẳng $d$ được cho dưới dạng tham số $\\begin{cases}x=2-3t\\\\ y=1+4t\\end{cases}$, $t\\in\\mathbb R$. Cặp **(vectơ pháp tuyến; vectơ chỉ phương)** nào phù hợp với đường thẳng này?\nA. $((4;3);(-3;4))$\nB. $((-3;4);(4;3))$\nC. $((4;-3);(-3;4))$\nD. $((3;4);(-3;4))$",
+      "type": "MCQ_SINGLE",
+      "optional": false,
+      "outcome_id": "",
+      "answer": "A",
+      "solution": "Từ phương trình tham số suy ra $\\vec u=(-3;4)\\ne\\vec0$. Một pháp tuyến là $\\vec n=(4;3)$ vì $\\vec n\\cdot\\vec u=4(-3)+3\\cdot4=0$. Chỉ phương án A nêu đúng thứ tự hai vectơ và tính vuông góc; các phương án còn lại không thỏa đồng thời."
+    },
+    {
+      "item_id": "THPT-G10-CHVII-RD1-02",
+      "stem": "Cho $d_1:x+y-5=0$, $d_2:2x-y-1=0$ và $d_3:2x+3y-7=0$. Viết phương trình tổng quát của đường thẳng $\\Delta$ đi qua giao điểm $I=d_1\\cap d_2$ và song song, phân biệt với $d_3$.",
+      "type": "SHORT_EXPLANATION",
+      "optional": false,
+      "outcome_id": "",
+      "answer": "$I(2;3)$; $\\Delta:2x+3y-13=0$.",
+      "solution": "Giải $x+y=5$, $2x-y=1$ được $I=(2;3)$. Vì $\\Delta\\parallel d_3$ nên lấy pháp tuyến $(2;3)$ và viết $2x+3y+c=0$. Thay $I$: $4+9+c=0$ cho $c=-13$. Hằng số $-13\\ne-7$ khi hệ số $x,y$ bằng nhau, nên hai đường phân biệt.",
+      "rubric": "- 1đ tìm đúng giao điểm $I$;\n- 1đ tìm được phương trình và kết luận song song phân biệt."
+    },
+    {
+      "item_id": "THPT-G10-CHVII-RD1-03",
+      "stem": "Cho $P(2;-3)$ và $Q(-1;5)$. Viết một phương trình tham số của đường thẳng $PQ$, rồi tìm giá trị tham số ứng với $Q$.",
+      "type": "SHORT_EXPLANATION",
+      "optional": false,
+      "outcome_id": "",
+      "answer": "$x=2-3t,\\ y=-3+8t$, $t\\in\\mathbb R$; $Q$ ứng với $t=1$.",
+      "solution": "$\\overrightarrow{PQ}=(-3;8)\\ne(0;0)$ nên $PQ:(x,y)=(2,-3)+t(-3,8)$. Khi $t=1$ nhận $Q=(-1,5)$.",
+      "rubric": "- 1đ vectơ và dạng tham số; 1đ tham số ứng với Q"
+    },
+    {
+      "item_id": "THPT-G10-CHVII-RD1-04",
+      "stem": "Với $d:\\begin{cases}x=1+2t\\\\ y=4-t\\end{cases}$ ($t\\in\\mathbb R$), khẳng định nào đúng?\nA. Cả $M(7;1)$ và $N(5;3)$ đều thuộc $d$.\nB. Chỉ $M(7;1)$ thuộc $d$.\nC. Chỉ $N(5;3)$ thuộc $d$.\nD. Không điểm nào thuộc $d$.",
+      "type": "MCQ_SINGLE",
+      "optional": false,
+      "outcome_id": "",
+      "answer": "B",
+      "solution": "$M(7;1)$ thuộc đường (ứng với $t=3$). $N(5;3)$ không thuộc đường: từ $x=5$ cho $t=2$ thì $y=2\\ne3$."
+    },
+    {
+      "item_id": "THPT-G10-CHVII-RD1-05",
+      "stem": "Cho $d_1:x+2y-7=0$, $d_2:3x-y=0$, và đường thẳng $d_3:y=0$. (a) Tìm giao điểm $I=d_1\\cap d_2$. (b) Tìm **cả hai** đường thẳng qua $I$ tạo với $d_3$ góc nhỏ bằng $45^\\circ$. (c) Chứng minh hai đường tìm được ở (b) vuông góc với nhau.",
+      "type": "WRITTEN_RUBRIC",
+      "optional": false,
+      "outcome_id": "",
+      "rubric": "- 1đ tìm đúng $I$;\n- 1đ nêu đủ hai hướng $m=\\pm1$ từ điều kiện góc $45^\\circ$;\n- 1đ viết đủ hai phương trình;\n- 1đ chứng minh hai đường vuông góc (vectơ hoặc hệ số góc).",
+      "answer": "$I(1;3)$; $\\Delta_1:y=x+2$, $\\Delta_2:y=-x+4$; $\\Delta_1\\perp\\Delta_2$.",
+      "solution": "Từ $d_2$ có $y=3x$; thay vào $d_1$ được $x+6x-7=0$, suy ra $I(1;3)$. Đường $d_3:y=0$ nằm ngang, nên một đường không thẳng đứng tạo góc nhỏ $45^\\circ$ với $d_3$ có hệ số góc $m=\\pm1$. Hai đường qua $I$ lần lượt $y-3=x-1$ và $y-3=-(x-1)$. Vectơ chỉ phương tương ứng $(1;1)$ và $(1;-1)$ có tích vô hướng $1-1=0$, nên hai đường vuông góc nhau."
+    },
+    {
+      "item_id": "THPT-G10-CHVII-RD1-06",
+      "stem": "Một bể chứa ban đầu có $120$ lít nước; một vòi tháo đều $8$ lít/phút và không nạp thêm. (a) Lập hàm $V(t)$ và miền thời gian vật lý. (b) Khi nào còn $40$ lít? (c) Vì sao $t=20$ phút không thuộc mô hình?",
+      "type": "WRITTEN_RUBRIC",
+      "optional": false,
+      "outcome_id": "",
+      "rubric": "- 1đ công thức và đơn vị\n- 1đ miền vật lý\n- 1đ thời điểm cần tìm\n- 1đ giải thích ngoại suy",
+      "answer": "$V(t)=120-8t$, $0\\le t\\le15$; $t=10$ phút; 20 phút vượt lúc hết nước.",
+      "solution": "Thể tích không âm: $120-8t\\ge0\\Rightarrow0\\le t\\le15$. $120-8t=40\\Rightarrow t=10$. Tại 20 phút mô hình tuyến tính cho thể tích âm, vô nghĩa vật lý."
+    },
+    {
+      "item_id": "THPT-G10-CHVII-RD1-07",
+      "stem": "Xét $d_1:2x-3y+1=0$, $d_2:4x-6y+5=0$, $d_3:3x+2y-7=0$, $d_4:-2x+3y-1=0$. Đánh giá bốn nhận định: (a) $d_1\\parallel d_2$ và phân biệt; (b) $d_1\\perp d_3$; (c) $d_1$ và $d_4$ cắt tại một điểm; (d) $d_2$ trùng $d_1$.",
+      "type": "TRUE_FALSE_GROUP",
+      "optional": false,
+      "outcome_id": "",
+      "answer": "(a) Đ; (b) Đ; (c) S; (d) S.",
+      "solution": "$d_2$ có hệ số $x,y$ gấp 2 nhưng hằng số $5\\ne2$, nên song song phân biệt. Pháp tuyến $n_1=(2,-3)$ và $n_3=(3,2)$ có tích vô hướng 0. $d_4=-d_1$, trùng nhau, không chỉ cắt ở một điểm."
+    },
+    {
+      "item_id": "THPT-G10-CHVII-RD1-08",
+      "stem": "Cho $P(2;5)$ và đường thẳng $d:x+y-3=0$. Hình chiếu vuông góc $H$ của $P$ lên $d$ có tọa độ nào?\nA. $(0;3)$\nB. $(2;5)$\nC. $(3;0)$\nD. $(1;2)$",
+      "type": "MCQ_SINGLE",
+      "optional": false,
+      "outcome_id": "",
+      "answer": "A",
+      "solution": "Đường vuông góc với $d:x+y-3=0$ qua $P(2;5)$ có phương trình $x-y+3=0$ (vectơ chỉ phương $(1;1)$). Giao điểm của $x+y=3$ và $x-y=-3$ là $(0;3)$. Đây là chân đường vuông góc cần tìm; ba phương án còn lại không đồng thời nằm trên $d$ và đường vuông góc qua $P$."
+    },
+    {
+      "item_id": "THPT-G10-CHVII-RD1-09",
+      "stem": "Tìm **tất cả** các điểm $M$ trên trục tung $Oy$ sao cho khoảng cách từ $M$ đến đường thẳng $d:3x+4y-10=0$ bằng $2$. Giải thích vì sao không bỏ sót nghiệm.",
+      "type": "SHORT_EXPLANATION",
+      "optional": false,
+      "outcome_id": "",
+      "answer": "$M_1(0;0)$ và $M_2(0;5)$.",
+      "solution": "Đặt $M(0;t)$ với $t\\in\\mathbb R$. Công thức khoảng cách cho $\\dfrac{|3\\cdot0+4t-10|}{\\sqrt{3^2+4^2}}=2$, tức $|4t-10|=10$. Xét đủ hai khả năng $4t-10=10$ hoặc $4t-10=-10$ cho $t=5$ hoặc $t=0$. Cả hai đều nằm trên $Oy$ và có khoảng cách đúng bằng $2$.",
+      "rubric": "- 1đ lập đúng phương trình khoảng cách có trị tuyệt đối;\n- 1đ xét đủ hai trường hợp và kiểm tra hai điểm."
+    },
+    {
+      "item_id": "THPT-G10-CHVII-RD1-10",
+      "stem": "Cho $d_1:y=0$ và $d_m:mx+y-2=0$, với $m\\in\\mathbb R$. Có bao nhiêu và những giá trị $m$ nào để **góc nhỏ** giữa $d_1$ và $d_m$ bằng $45^\\circ$?\nA. $m=1$ hoặc $m=-1$\nB. Chỉ $m=1$\nC. Chỉ $m=-1$\nD. $m=0$",
+      "type": "MCQ_SINGLE",
+      "optional": false,
+      "outcome_id": "",
+      "answer": "A",
+      "solution": "Lấy các pháp tuyến $\\vec n_1=(0;1)$, $\\vec n_m=(m;1)$. Góc nhỏ $45^\\circ$ thỏa $\\dfrac{|\\vec n_1\\cdot\\vec n_m|}{\\|\\vec n_1\\|\\|\\vec n_m\\|}=\\dfrac1{\\sqrt{m^2+1}}=\\dfrac{\\sqrt2}{2}$. Suy ra $m^2+1=2$, nên có đúng hai nghiệm $m=\\pm1$; $m=0$ cho hai đường song song, góc nhỏ $0^\\circ$."
+    },
+    {
+      "item_id": "THPT-G10-CHVII-RD1-11",
+      "stem": "Xét $d_m:(m-1)x+6y-2=0$ và $d:2x-3y+5=0$. (a) Tìm $m$ để hai đường song song. (b) Chứng minh chúng phân biệt khi tìm được $m$. (c) Tính khoảng cách giữa hai đường khi đó.",
+      "type": "WRITTEN_RUBRIC",
+      "optional": false,
+      "outcome_id": "",
+      "rubric": "- 1đ điều kiện song song và tìm m\n- 1đ phân biệt với trùng nhau\n- 1đ đưa cùng hệ số\n- 1đ áp dụng đúng công thức khoảng cách",
+      "answer": "$m=-3$; hai đường phân biệt; khoảng cách bằng $8/\\sqrt{52}=4/\\sqrt{13}$.",
+      "solution": "Hai pháp tuyến cùng phương: $(m-1,6)=\\lambda(2,-3)$. Từ $6=-3\\lambda$ có $\\lambda=-2$, nên $m-1=-4$, $m=-3$. Với $m=-3$, $d_m:-4x+6y-2=0$, còn $-2d:-4x+6y-10=0$ nên khác nhau. Đổi $d_m$ về $2x-3y+1=0$; khoảng cách giữa $2x-3y+1=0$ và $2x-3y+5=0$ là $|5-1|/\\sqrt{2^2+(-3)^2}=4/\\sqrt{13}$."
+    },
+    {
+      "item_id": "THPT-G10-CHVII-RD1-12",
+      "stem": "Với giá trị $k$ nào, phương trình $x^2+y^2-8x+2y+k=0$ xác định **đường tròn thực có bán kính dương**?\nA. $k\\le17$\nB. $k>17$\nC. $k\\ge17$\nD. $k<17$",
+      "type": "MCQ_SINGLE",
+      "optional": false,
+      "outcome_id": "",
+      "answer": "D",
+      "solution": "Hoàn thành bình phương: $(x-4)^2+(y+1)^2=17-k$, cần $17-k>0\\iff k<17$. $k=17$ chỉ còn điểm, không phải đường tròn bán kính dương."
+    },
+    {
+      "item_id": "THPT-G10-CHVII-RD1-13",
+      "stem": "Một đường tròn đi qua $P(1;2)$, $Q(5;4)$ và có tâm $I$ nằm trên đường thẳng $d:x+y-5=0$. Tìm tọa độ tâm, bán kính và phương trình đường tròn.",
+      "type": "SHORT_EXPLANATION",
+      "optional": false,
+      "outcome_id": "",
+      "answer": "$I(4;1)$, $R=\\sqrt{10}$; $(x-4)^2+(y-1)^2=10$.",
+      "solution": "Đặt tâm $I(h;k)$. Do đường tròn đi qua $P,Q$, có $(h-1)^2+(k-2)^2=(h-5)^2+(k-4)^2$, rút gọn được $2h+k=9$. Đồng thời $h+k=5$. Giải hệ được $h=4,k=1$. Khi đó $R^2=IP^2=(4-1)^2+(1-2)^2=10>0$. Vậy phương trình cần tìm là $(x-4)^2+(y-1)^2=10$.",
+      "rubric": "- 1đ lập điều kiện cách đều và tìm đúng tâm bằng giao hai đường;\n- 1đ tính đúng $R^2$ và viết phương trình."
+    },
+    {
+      "item_id": "THPT-G10-CHVII-RD1-14",
+      "stem": "Cho đường tròn $(C):x^2+y^2=9$ và điểm $A(5;0)$. (a) Chứng minh $A$ nằm ngoài $(C)$. (b) Tìm **tất cả** các tiếp tuyến của $(C)$ đi qua $A$. (c) Kiểm chứng các đường vừa tìm là tiếp tuyến bằng khoảng cách từ tâm đường tròn đến mỗi đường.",
+      "type": "WRITTEN_RUBRIC",
+      "optional": false,
+      "outcome_id": "",
+      "rubric": "- 1đ xác định tâm, bán kính và $OA>R$;\n- 1đ lập họ đường qua $A$ và điều kiện tiếp xúc;\n- 1đ giải đúng cả hai giá trị $m$ và loại khả năng thẳng đứng;\n- 1đ viết hai phương trình và kiểm tra khoảng cách bằng $R$.",
+      "answer": "$A$ nằm ngoài $(C)$; hai tiếp tuyến $3x+4y-15=0$ và $3x-4y-15=0$.",
+      "solution": "Tâm $O(0;0)$, bán kính $R=3$ và $OA=5>3$. Mọi đường thẳng không thẳng đứng qua $A$ viết $y=m(x-5)$, hay $mx-y-5m=0$. Điều kiện tiếp xúc $d(O,\\ell)=R$ tương đương $\\dfrac{|5m|}{\\sqrt{m^2+1}}=3$. Bình phương được $25m^2=9(m^2+1)$, do đó $m=\\pm3/4$. Suy ra hai đường $3x-4y-15=0$, $3x+4y-15=0$. Đường thẳng đứng $x=5$ cách $O$ một khoảng $5\\ne3$, không phải tiếp tuyến. Với mỗi tiếp tuyến tìm được, khoảng cách từ $O$ bằng $15/5=3$, nên kết quả đúng và đủ."
+    },
+    {
+      "item_id": "THPT-G10-CHVII-RD1-15",
+      "stem": "Cho đường tròn $(C):x^2+(y+1)^2=9$. Đánh giá: (a) $y=2$ tiếp xúc $(C)$; (b) tiếp điểm ở $(0;-2)$; (c) $y=1$ cắt $(C)$ tại hai điểm; (d) đường thẳng $y=3$ cắt $(C)$ tại hai điểm.",
+      "type": "TRUE_FALSE_GROUP",
+      "optional": false,
+      "outcome_id": "",
+      "answer": "(a) Đ; (b) S; (c) Đ; (d) S.",
+      "solution": "Tâm $(0,-1)$, $R=3$. Khoảng cách từ tâm đến $y=2$ là 3, nên tiếp xúc ở $(0,2)$. Đến $y=1$ là 2 (<3), cắt hai điểm. Đến $y=3$ là 4 (>3), không giao. MERGE_COVERAGE: dùng chung chứng cứ vị trí đường–tròn, không tạo điểm mastery độc lập."
+    },
+    {
+      "item_id": "THPT-G10-CHVII-RD1-16",
+      "stem": "Cho $(C):x^2+y^2+2x-4y-20=0$. Điểm nào **nằm trên** $(C)$?\nA. $(1;6)$\nB. $(2;6)$\nC. $(2;5)$\nD. $(0;2)$",
+      "type": "MCQ_SINGLE",
+      "optional": false,
+      "outcome_id": "",
+      "answer": "B",
+      "solution": "Hoàn thành bình phương $(x+1)^2+(y-2)^2=25$. Điểm $(2,6)$ có khoảng cách bình phương tới tâm $(-1,2)$ là $9+16=25$."
+    },
+    {
+      "item_id": "THPT-G10-CHVII-RD1-17",
+      "stem": "Một elip có tâm $O$, trục lớn theo $Ox$ và nửa trục lớn $a=6$. Biết elip đi qua điểm $M(3;3)$. Phương trình chính tắc nào đúng? (Không yêu cầu tâm sai.)\nA. $\\dfrac{x^2}{36}+\\dfrac{y^2}{12}=1$\nB. $\\dfrac{x^2}{12}+\\dfrac{y^2}{36}=1$\nC. $\\dfrac{x^2}{36}+\\dfrac{y^2}{9}=1$\nD. $\\dfrac{x^2}{36}-\\dfrac{y^2}{12}=1$",
+      "type": "MCQ_SINGLE",
+      "optional": false,
+      "outcome_id": "",
+      "answer": "A",
+      "solution": "Dạng chính tắc $x^2/36+y^2/b^2=1$ với $0<b^2<36$. Vì $M(3;3)$ thuộc elip nên $9/36+9/b^2=1$, suy ra $9/b^2=3/4$, $b^2=12$. Chỉ A phù hợp cả điều kiện đi qua $M$ và elip có trục lớn theo $Ox$; không dùng tâm sai."
+    },
+    {
+      "item_id": "THPT-G10-CHVII-RD1-18",
+      "stem": "Hypebol chính tắc có tâm $O$, trục thực theo $Ox$, độ dài trục thực bằng $4$ và đi qua $M(4;3)$. Viết phương trình chính tắc và xác định độ dài trục ảo.",
+      "type": "SHORT_EXPLANATION",
+      "optional": false,
+      "outcome_id": "",
+      "answer": "$\\dfrac{x^2}{4}-\\dfrac{y^2}{3}=1$; độ dài trục ảo bằng $2\\sqrt3$.",
+      "solution": "Độ dài trục thực $2a=4$ cho $a=2$, $a^2=4$. Dạng chính tắc là $x^2/4-y^2/b^2=1$ với $b^2>0$. Thế $M(4;3)$: $16/4-9/b^2=1$, suy ra $9/b^2=3$, $b^2=3$. Vậy hypebol $x^2/4-y^2/3=1$ và trục ảo dài $2b=2\\sqrt3$.",
+      "rubric": "- 1đ xác định $a$ và $b^2$ từ điều kiện điểm thuộc hypebol;\n- 1đ lập phương trình, suy ra độ dài trục ảo."
+    },
+    {
+      "item_id": "THPT-G10-CHVII-RD1-19",
+      "stem": "Cho parabol $(P)$ có tiêu điểm $F(3;0)$ và đường chuẩn $x=-3$. (a) Viết phương trình chính tắc $y^2=2px$, $p>0$. (b) Kiểm tra điểm $M(3;6)$ thuộc $(P)$. (c) Chứng minh tại $M$, khoảng cách đến tiêu điểm bằng khoảng cách tới đường chuẩn.",
+      "type": "WRITTEN_RUBRIC",
+      "optional": false,
+      "outcome_id": "",
+      "rubric": "- 1đ xác định p\n- 1đ phương trình\n- 1đ chứng minh M thuộc parabol\n- 1đ hai khoảng cách bằng nhau",
+      "answer": "$p=6$, $(P):y^2=12x$; $M\\in(P)$, hai khoảng cách cùng bằng 6.",
+      "solution": "Với quy ước SGK $y^2=2px$, tiêu điểm $(p/2,0)$, đường chuẩn $x=-p/2$. Do đó $p=6$, $y^2=12x$. Tại $M(3,6)$: $36=12\\cdot3$. $MF=6$ vì $F=(3,0)$; khoảng cách từ $(3,6)$ đến $x=-3$ bằng $|3+3|=6$."
+    },
+    {
+      "item_id": "THPT-G10-CHVII-RD1-20",
+      "stem": "Xét elip $(E):x^2/25+y^2/16=1$ và đường $d:y=4x/5$. Đánh giá: (a) Hệ có đúng một giao điểm; (b) các giao điểm có $x=\\pm5/\\sqrt2$; (c) hai giao điểm nằm cùng một góc phần tư; (d) có giao điểm với hoành độ $x=0$.",
+      "type": "TRUE_FALSE_GROUP",
+      "optional": false,
+      "outcome_id": "",
+      "answer": "(a) S; (b) Đ; (c) S; (d) S.",
+      "solution": "Thế $y=4x/5$ vào $(E)$: $x^2/25+(16x^2/25)/16=2x^2/25=1$, $x=\\pm5/\\sqrt2$, $y=\\pm4/\\sqrt2$ cùng dấu. Hai điểm ở góc phần tư I và III, không có $x=0$."
+    },
+    {
+      "item_id": "THPT-G10-CHVII-RD1-21",
+      "stem": "Mặt cắt lý tưởng của một chảo phản xạ được mô hình bởi $y^2=16x$ (cm). (a) Tìm tiêu điểm và đường chuẩn. (b) Tại độ sâu $x=9$ cm, xác định **chiều rộng toàn phần** giữa hai mép của mặt cắt. (c) Giải thích vì sao chiều rộng không bằng $|y|$.",
+      "type": "WRITTEN_RUBRIC",
+      "optional": false,
+      "outcome_id": "",
+      "rubric": "- 1đ tham số và tiêu điểm\n- 1đ đường chuẩn\n- 1đ tính 2 mép\n- 1đ lý giải chiều rộng và đơn vị",
+      "answer": "$F(4;0)$, đường chuẩn $x=-4$; tại $x=9$, $y=\\pm12$, chiều rộng toàn phần $24$ cm.",
+      "solution": "So $y^2=2px$ suy ra $p=8$, nên $F(p/2,0)=(4,0)$ và đường chuẩn $x=-p/2=-4$. Tại $x=9$, $y^2=144$, có hai mép $y=12$ và $y=-12$ nên khoảng cách giữa chúng theo phương $Oy$ là 24 cm. $|y|=12$ chỉ là nửa chiều rộng."
+    },
+    {
+      "item_id": "THPT-G10-CHVII-RD1-22",
+      "stem": "**Tự chọn — không thuộc điều kiện đạt Core Readiness.** Hypebol $x^2/49-y^2/9=1$ có cặp tiệm cận nào?\nA. $y=\\pm3x/7$\nB. $y=\\pm7x/3$\nC. $y=\\pm3x$\nD. $x=\\pm7$",
+      "type": "MCQ_SINGLE",
+      "optional": true,
+      "outcome_id": "",
+      "answer": "A",
+      "solution": "Tiệm cận của $x^2/a^2-y^2/b^2=1$ có dạng $y=\\pm(b/a)x$; ở đây $a=7,b=3$, nên $y=\\pm3x/7$. Không tính câu này vào Core Readiness."
+    }
+  ]
+}

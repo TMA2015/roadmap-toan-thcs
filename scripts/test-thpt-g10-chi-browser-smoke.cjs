@@ -20,8 +20,8 @@ const assert=require("node:assert/strict");const {chromium}=require("playwright"
     await dlg.locator("[data-thpt-modal-close]").click();
    }
    const ready=await page.goto("http://127.0.0.1:8765/thpt-preview/sgk/chuong-i/tu-kiem-tra-chuong/",{waitUntil:"networkidle"});
-   assert(ready?.ok()&&await page.getByText("chưa mở",{exact:false}).count()>0,"Chapter I protected readiness wrongly active");
+   assert(ready?.ok()&&await page.locator('[data-g10-chapter-selfcheck="CHI"] .g10sc-progress').count()===1,"Chapter I reviewed self-check missing");assert(!(await page.locator('[data-g10-chapter-selfcheck="CHI"]').innerText()).includes("Đáp án:"),"Answer exposed before Final Submit");
   }finally{await page.close()}
  }
- console.log("PASS G10 ChI browser: 16 source-locked formative items, two D1/D2 lesson pages, 4 D6 and 2 responsive D5, original item deep-links, no readiness");
+ console.log("PASS G10 ChI browser: 16 source-locked formative items, two D1/D2 lesson pages, 4 D6 and 2 responsive D5, original item deep-links, client self-check no pre-final answers");
 }finally{await browser.close()}})().catch(e=>{console.error(e.stack||e);process.exit(1)});

@@ -40,8 +40,11 @@ assert(nav.includes("thpt-preview/sgk/chuong-vi/luyen-tap.md"));
 assert(nav.includes("thpt-preview/sgk/chuong-vi/tu-kiem-tra-chuong.md"));
 assert(nav.includes("thpt-chvi-reviewed-formative-v1.js"));
 const readiness=read("docs/thpt-preview/sgk/chuong-vi/tu-kiem-tra-chuong.md");
-assert(readiness.includes("TECHNICAL_DEMO_ONLY"));
-assert(readiness.includes("mastery_credit: false"));
+const reviewed=JSON.parse(read("docs/assets/data/thpt-g10-readiness/CHVI.json"));
+assert(readiness.includes('data-g10-chapter-selfcheck="CHVI"')&&readiness.includes("Final Submit"));
+assert.equal(reviewed.items.length,18,"The effective old18 reviewed ChVI scope is required");
+assert.equal(reviewed.mastery_credit,false,"Do not import self-check grades into Skill Mastery");
+assert.equal(reviewed.persist_results,false,"Do not alter student progress history");
 const content=Object.values(expected).reduce((a,b)=>a+b,0);
 console.log("PASS THPT ChVI 19/"+content+
- " approved-outcome structural lesson mapping, independent chapter readiness demo and reviewed formative asset wiring; not full academic byte parity.");
+ " approved-outcome structural lesson mapping, reviewed client-only 18-item chapter self-check and formative asset wiring; not full academic byte parity.");

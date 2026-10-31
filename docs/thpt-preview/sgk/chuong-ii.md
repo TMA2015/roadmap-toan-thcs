@@ -9,6 +9,6 @@
 </div>
 <nav class="thpt-r4-lesson-tabs" aria-label="Học và luyện Chương II">
 <a href="luyen-tap/">Core và Luyện tập</a>
-<a href="tu-kiem-tra-chuong/">Tự kiểm tra chưa kích hoạt</a>
+<a href="tu-kiem-tra-chuong/">Tự kiểm tra cuối chương</a>
 </nav>
 </div>

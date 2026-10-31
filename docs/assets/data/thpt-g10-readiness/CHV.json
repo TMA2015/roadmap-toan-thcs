@@ -1,0 +1,192 @@
+{
+  "schema": "thpt-g10-reviewed-selfcheck-v1",
+  "scope": "SGK_CHAPTER_READINESS",
+  "chapter": "CHV",
+  "chapter_label": "V",
+  "source_sha256": "efc16a92ac7c168d34b2353276137d13a25478008e4e5e42817135e153eb111e",
+  "review_scope": "INDIVIDUAL_CHAPTER_NOTEBOOKLM_PASS",
+  "mastery_credit": false,
+  "persist_results": false,
+  "items": [
+    {
+      "item_id": "THPT-G10-CHV-RD1-01",
+      "stem": "Một phép đo được ghi bằng số gần đúng `a=80` (đơn vị thích hợp) với độ chính xác `d=2`; chưa biết số đúng `\\bar a`. Kết luận nào sau đây **chắc chắn đúng**?\nA. Sai số tuyệt đối bằng 2.\nB. Số đúng nằm trong đoạn [78;82] và sai số tương đối không vượt quá 2,5%.\nC. Sai số tương đối bằng 2,5%.\nD. Sai số tương đối bằng `2/|\\bar a|`.",
+      "type": "MCQ_SINGLE",
+      "optional": false,
+      "outcome_id": "APPROX_CONCEPT, ABS_ERROR, REL_ERROR.",
+      "answer": "B.",
+      "solution": "`\\Delta_a≤2` nên `78≤\\bar a≤82`; vì `a=80≠0`, `\\delta_a=\\Delta_a/80≤2/80=2,5%`. Bất đẳng thức không cho phép kết luận bằng 2 hoặc 2,5%.",
+      "rubric": "1 điểm MCQ; chỉ chọn B."
+    },
+    {
+      "item_id": "THPT-G10-CHV-RD1-02",
+      "stem": "Hai thiết bị cùng đo một chiều dài chưa biết `\\bar a`. Thiết bị I ghi `40,0 ± 0,3 cm`; thiết bị II ghi `40,5 ± 0,4 cm`. Hai kết quả có **thể cùng đúng** về số thật hay không? Xác định toàn bộ đoạn các giá trị của số đúng thỏa cả hai phép đo.",
+      "type": "SHORT_EXPLANATION",
+      "optional": false,
+      "outcome_id": "APPROX_CONCEPT, ABS_ERROR.",
+      "answer": "Có thể; `\\bar a∈[40,1;40,3] cm`.",
+      "solution": "I cho `[39,7;40,3]`, II cho `[40,1;40,9]`. Giao hai đoạn là `[40,1;40,3]`, không rỗng, nên có thể là hai đo đạc của cùng một độ dài.",
+      "rubric": "2đ: hai khoảng đúng (1); giao đúng và diễn giải (1)."
+    },
+    {
+      "item_id": "THPT-G10-CHV-RD1-03",
+      "stem": "Hai phép đo chiều dài của **cùng** một vật cho `a_1=50,3 cm, d_1=0,2 cm` và `a_2=50,1 cm, d_2=0,15 cm`. (a) Hãy tìm đoạn chung mà số đúng có thể thuộc. (b) Xét **cận trên sai số tương đối** `d_i/|a_i|`, phép đo nào cho cận nhỏ hơn? Giải thích vì sao không thể suy ra sai số tương đối thực của mỗi phép đo chỉ từ `d_i`.",
+      "type": "WRITTEN_RUBRIC",
+      "optional": false,
+      "outcome_id": "ABS_ERROR, REL_ERROR.",
+      "answer": "(a) `[50,1;50,25] cm`. (b) Phép II: `0,15/50,1 < 0,2/50,3`; thực tế chỉ có cận.",
+      "solution": "Khoảng I `[50,1;50,5]`, khoảng II `[49,95;50,25]`; giao `[50,1;50,25]`. So sánh `0,15×50,3=7,545` với `0,2×50,1=10,02` suy ra cận II nhỏ hơn. `\\Delta_{a_i}≤d_i` không khẳng định dấu bằng.",
+      "rubric": "4đ: hai khoảng (1); giao (1); bất đẳng thức cận (1); phân biệt cận và sai số thực (1)."
+    },
+    {
+      "item_id": "THPT-G10-CHV-RD1-04",
+      "stem": "Biết số đúng `\\bar a=23,746`. Xét các khẳng định:\n(a) Làm tròn đến hàng phần trăm nhận số gần đúng `a=23,75`.\n(b) Sai số tuyệt đối của phép làm tròn ở (a) là `0,004`.\n(c) Sai số tương đối của phép làm tròn ở (a) bằng `0,004/23,746`.\n(d) Làm tròn đến hàng phần mười được `23,7`, sai số tuyệt đối không vượt `0,05`.",
+      "type": "TRUE_FALSE_GROUP",
+      "optional": false,
+      "outcome_id": "ROUNDING, ABS_ERROR, REL_ERROR.",
+      "answer": "(a) Đ; (b) Đ; (c) S; (d) Đ.",
+      "solution": "`|23,75-23,746|=0,004`; mẫu số tính sai số tương đối là `|a|=23,75` theo SGK, không phải số đúng. Làm tròn đến 0,1 được 23,7, sai số `0,046≤0,05`.",
+      "rubric": "4 ý, mỗi ý 1đ, không phản hồi trước Final Submit."
+    },
+    {
+      "item_id": "THPT-G10-CHV-RD1-05",
+      "stem": "Một số gần đúng `a=240` khác 0. Cần bảo đảm cận sai số tương đối `d/|a|` **không vượt quá 0,5%**. Độ chính xác `d` phải thỏa bất đẳng thức nào? Tìm giá trị `d` lớn nhất có thể chọn theo điều kiện này.",
+      "type": "SHORT_EXPLANATION",
+      "optional": false,
+      "outcome_id": "REL_ERROR.",
+      "answer": "`0≤d≤1,2`; tối đa `d=1,2`.",
+      "solution": "`d≥0`; `d/240≤0,005` suy ra `d≤1,2`. Đây là ràng buộc lên độ chính xác, không có nghĩa sai số tuyệt đối thực bằng 1,2.",
+      "rubric": "2đ: lập bất đẳng thức đúng (1), giải và diễn giải (1)."
+    },
+    {
+      "item_id": "THPT-G10-CHV-RD1-06",
+      "stem": "Hai phép đo thuộc những đại lượng có cùng đơn vị: I `a_1=50`, `d_1=0,2`; II `a_2=75`, `d_2=0,25`. Phép đo nào có **cận sai số tương đối** nhỏ hơn?\nA. I, vì d_1 nhỏ hơn d_2.\nB. Hai phép đo bằng nhau.\nC. II, vì 0,25/75 < 0,2/50.\nD. Không thể so cận vì chưa biết số đúng.",
+      "type": "MCQ_SINGLE",
+      "optional": false,
+      "outcome_id": "REL_ERROR.",
+      "answer": "C.",
+      "solution": "I `0,2/50=0,4%`, II `0,25/75=1/300≈0,3333%`. Dù d_2 lớn hơn, cận tỷ lệ II nhỏ hơn. So cận được mà không cần biết sai số thực.",
+      "rubric": "MCQ 1đ, chọn C."
+    },
+    {
+      "item_id": "THPT-G10-CHV-RD1-07",
+      "stem": "Năm phép đo có các giá trị `4,7,8,k,11` và trung bình bằng `8`. Giá trị k là bao nhiêu?\nA. 8. B. 9. C. 10. D. 12.",
+      "type": "MCQ_SINGLE",
+      "optional": false,
+      "outcome_id": "MEAN.",
+      "answer": "C.",
+      "solution": "Tổng phải là `5×8=40`. Tổng bốn số đã biết `4+7+8+11=30`; `k=40-30=10`.",
+      "rubric": "MCQ 1đ."
+    },
+    {
+      "item_id": "THPT-G10-CHV-RD1-08",
+      "stem": "Bảng tần số ghi giá trị `2` xuất hiện 3 lần, giá trị `4` xuất hiện 2 lần và giá trị `8` xuất hiện 1 lần. Hãy (a) tìm số trung bình, (b) tìm trung vị `Q_2`, (c) tìm `Q_1,Q_3` theo cách chia nửa của KNTT, và (d) chỉ ra mốt.",
+      "type": "WRITTEN_RUBRIC",
+      "optional": false,
+      "outcome_id": "MEAN, MEDIAN, QUARTILES, MODE.",
+      "answer": "Mean `11/3`, `Q_2=3`, `Q_1=2`, `Q_3=4`, mode `2`.",
+      "solution": "Dãy tăng `2,2,2,4,4,8`, n=6, tổng 22; mean `22/6=11/3`; Q2=(2+4)/2=3; nửa thấp `2,2,2` cho Q1=2, nửa cao `4,4,8` cho Q3=4; 2 có tần số 3 lớn nhất.",
+      "rubric": "4đ: dựng dãy/tần số (1), trung bình (1), trung vị/tứ phân vị (1), mốt (1)."
+    },
+    {
+      "item_id": "THPT-G10-CHV-RD1-09",
+      "stem": "Với mẫu đã sắp `1,2,4,6,8,10,12`, thay **duy nhất** số 6 ở chính giữa bằng số 7. Hãy so sánh `Q_1,Q_2,Q_3` trước/sau thay đổi theo quy tắc KNTT. Giải thích vì sao không phải cả ba tứ phân vị đều đổi.",
+      "type": "SHORT_EXPLANATION",
+      "optional": false,
+      "outcome_id": "MEDIAN, QUARTILES, INTERPRETATION.",
+      "answer": "Ban đầu `(Q1,Q2,Q3)=(2,6,10)`; sau `(2,7,10)`.",
+      "solution": "n=7, tách nửa dưới `1,2,4` và trên `8,10,12`, không dùng giá trị giữa; Q1=2 Q3=10 bất biến, chỉ Q2 từ 6 thành 7.",
+      "rubric": "3đ: phân nửa đúng (1); cả hai bộ số đúng (1); diễn giải biến động (1)."
+    },
+    {
+      "item_id": "THPT-G10-CHV-RD1-10",
+      "stem": "Mẫu `2,2,3,5,8,10,30` (đã sắp). Đánh giá:\n(a) Trung vị là 5.\n(b) Số trung bình là `60/7`.\n(c) Mốt duy nhất là 30.\n(d) Thay duy nhất 30 bằng 9 (rồi sắp lại) làm trung vị thay đổi.",
+      "type": "TRUE_FALSE_GROUP",
+      "optional": false,
+      "outcome_id": "MEAN, MEDIAN, MODE, INTERPRETATION.",
+      "answer": "(a) Đ; (b) Đ; (c) S; (d) S.",
+      "solution": "Tổng 60, n=7; phần tử thứ tư là 5; mốt là 2 vì xuất hiện hai lần. Sau thay đổi dãy `2,2,3,5,8,9,10` vẫn có trung vị là 5.",
+      "rubric": "4 ý, mỗi ý 1đ."
+    },
+    {
+      "item_id": "THPT-G10-CHV-RD1-11",
+      "stem": "Trong bảng tần số có giá trị `1` xuất hiện 2 lần, `3` xuất hiện k lần, `5` xuất hiện 4 lần. Biết tổng số quan sát bằng 11. Hãy tìm k, mốt duy nhất và số trung bình.",
+      "type": "SHORT_EXPLANATION",
+      "optional": false,
+      "outcome_id": "MEAN, MODE.",
+      "answer": "`k=5`, mốt `3`, mean `37/11`.",
+      "solution": "`2+k+4=11` nên `k=5`; vì 5 lớn hơn 4 và 2, mốt duy nhất là 3. Tổng có trọng số `1×2+3×5+5×4=37`; mean `37/11`.",
+      "rubric": "3đ: k (1); mốt (1); trung bình (1)."
+    },
+    {
+      "item_id": "THPT-G10-CHV-RD1-12",
+      "stem": "Mẫu A đã sắp `2,4,6,8,10,12,14`; mẫu B thay **duy nhất** giá trị lớn nhất của A là 14 bằng 70. So sánh trung bình, trung vị, `Q1`, `Q3` hai mẫu và giải thích tại sao một số đặc trưng bị ảnh hưởng mạnh còn các đặc trưng khác giữ nguyên.",
+      "type": "WRITTEN_RUBRIC",
+      "optional": false,
+      "outcome_id": "MEAN, MEDIAN, QUARTILES, INTERPRETATION.",
+      "answer": "A mean 8; B mean 16; cả hai Q1=4, Q2=8, Q3=12.",
+      "solution": "Tổng A=56; tổng B=56−14+70=112 nên mean lần lượt 8 và 16. Hai mẫu đều có n=7, hai nửa dưới `2,4,6` và trên `10,12,14` hoặc `10,12,70`; do đó Q1=4, Q2=8, Q3=12 không đổi. Trung bình bị ảnh hưởng mạnh bởi ngoại lệ lớn.",
+      "rubric": "4đ: hai mean (1); median (1); Q1/Q3 (1); giải thích (1)."
+    },
+    {
+      "item_id": "THPT-G10-CHV-RD1-13",
+      "stem": "Với `t≥0`, mẫu gồm ba số `5−t,5,5+t` có phương sai (chia n theo SGK) bằng 6. Giá trị t là bao nhiêu?\nA. 1. B. 2. C. 3. D. 6.",
+      "type": "MCQ_SINGLE",
+      "optional": false,
+      "outcome_id": "VARIANCE.",
+      "answer": "C.",
+      "solution": "Mean=5; variance `(t²+0+t²)/3=2t²/3=6` nên `t²=9`. Vì t≥0, `t=3`.",
+      "rubric": "MCQ 1đ."
+    },
+    {
+      "item_id": "THPT-G10-CHV-RD1-14",
+      "stem": "Mẫu A đo bằng cm là `1,3,5,7`; mẫu B được tạo bằng cách **cộng 3 cm vào từng giá trị của A**. Xác định số trung bình, khoảng biến thiên, IQR, phương sai và độ lệch chuẩn của A, B; chỉ ra đại lượng nào không đổi khi cộng cùng một hằng số.",
+      "type": "SHORT_EXPLANATION",
+      "optional": false,
+      "outcome_id": "RANGE_IQR, VARIANCE, STDDEV, COMPARISON.",
+      "answer": "A mean 4, B mean 7; cả hai range 6, IQR 4, variance 5 cm², stddev `√5 cm`.",
+      "solution": "B là `4,6,8,10`. A Q1=(1+3)/2=2, Q3=(5+7)/2=6; B Q1=5, Q3=9, IQR=4 ở cả hai. A deviation from 4 là `−3,−1,1,3` nên variance `(9+1+1+9)/4=5`; cộng 3 không đổi độ lệch khỏi mean, nên B cũng s²=5, s=√5. Hai range đều 6.",
+      "rubric": "4đ: means (1); range/IQR (1); variance/std (1); invariance explanation (1)."
+    },
+    {
+      "item_id": "THPT-G10-CHV-RD1-15",
+      "stem": "Với **mẫu tham chiếu cố định** `2,4,4,6,6,8,8,10`, hãy tính Q1, Q3, IQR và xác định ngưỡng bất thường theo hàng rào `1,5 IQR`. Bốn giá trị mới `14,15,−2,−3` được **đánh giá theo hàng rào của mẫu tham chiếu**, KHÔNG bổ sung vào mẫu để tính lại tứ phân vị. Trong bốn giá trị đó, giá trị nào là bất thường? Giải thích trường hợp đúng bằng ngưỡng.",
+      "type": "WRITTEN_RUBRIC",
+      "optional": false,
+      "outcome_id": "RANGE_IQR, OUTLIERS.",
+      "answer": "Q1=4, Q3=8, IQR=4, fences `−2` và `14`; bất thường `15,−3`, không bất thường `14,−2`.",
+      "solution": "n=8, nửa dưới `2,4,4,6` ⇒ Q1=4; nửa trên `6,8,8,10` ⇒ Q3=8. IQR=4; lower=4−1,5×4=−2, upper=8+1,5×4=14. Theo bất đẳng thức **nghiêm ngặt** (`x<−2` hoặc `x>14`), chỉ −3 và 15 bất thường so với mẫu tham chiếu.",
+      "rubric": "4đ: Q1/Q3 (1); IQR/ngưỡng (1); phân loại 4 giá trị (1); giải thích dấu nghiêm ngặt (1)."
+    },
+    {
+      "item_id": "THPT-G10-CHV-RD1-16",
+      "stem": "Mẫu A (đơn vị cm) là `2,4,6,8`, mẫu B nhân đôi từng giá trị trong A. Ghi Đúng/Sai:\n(a) Phương sai A là `5 cm²`.\n(b) Phương sai B bằng `10 cm²`.\n(c) Độ lệch chuẩn B gấp hai lần độ lệch chuẩn A.\n(d) IQR của hai mẫu bằng nhau.",
+      "type": "TRUE_FALSE_GROUP",
+      "optional": false,
+      "outcome_id": "RANGE_IQR, VARIANCE, STDDEV.",
+      "answer": "(a) Đ; (b) S; (c) Đ; (d) S.",
+      "solution": "Mean A=5, s²_A=(9+1+1+9)/4=5 cm²; B=(4,8,12,16) nên s²_B=4s²_A=20 cm²; s_B=2s_A. A Q1=3,Q3=7,IQR=4; B Q1=6,Q3=14,IQR=8.",
+      "rubric": "4 ý, mỗi ý 1đ."
+    },
+    {
+      "item_id": "THPT-G10-CHV-RD1-17",
+      "stem": "Cho mẫu A `4,6,8,10,12` (cm); tạo mẫu B bằng quy tắc `b_i=8+2(a_i−8)` cho từng quan sát tương ứng. Hãy tìm (a) mẫu B, (b) số trung bình và phương sai của A và B, (c) tỷ số hai độ lệch chuẩn và hai khoảng biến thiên; giải thích bằng biến đổi dữ liệu.",
+      "type": "WRITTEN_RUBRIC",
+      "optional": false,
+      "outcome_id": "RANGE_IQR, VARIANCE, STDDEV, COMPARISON.",
+      "answer": "B=`0,4,8,12,16`; cả hai mean8; s²_A=8 cm², s²_B=32 cm²; s_B/s_A=2, R_B/R_A=2.",
+      "solution": "A deviation from 8 is `−4,−2,0,2,4`; s²_A=(16+4+0+4+16)/5=8. B deviation are double, so s²_B=4×8=32; s_B=2s_A. Range A=12−4=8, B=16−0=16, ratio2. Centered scaling preserves mean8.",
+      "rubric": "4đ: sample B (1); correct means (1); variances (1); both ratios/explanation (1)."
+    },
+    {
+      "item_id": "THPT-G10-CHV-RD1-18",
+      "stem": "Mẫu A gồm `1,3,5` có số trung bình bằng 3. Thêm **một quan sát mới bằng đúng số trung bình là 3** để nhận mẫu B có 4 số. Tính phương sai theo SGK của A và B, giải thích vì sao thêm một quan sát đúng bằng trung bình lại làm phương sai giảm.",
+      "type": "SHORT_EXPLANATION",
+      "optional": false,
+      "outcome_id": "VARIANCE.",
+      "answer": "`s²_A=8/3`, `s²_B=2`.",
+      "solution": "Cả hai mean=3; tổng bình phương độ lệch `4+0+4=8` không đổi do quan sát mới 3 có deviation0. Nhưng n tăng từ3 lên4 nên variance giảm từ8/3 xuống8/4=2. Không dùng mẫu số n−1.",
+      "rubric": "3đ: hai mean/sum deviations (1), s²_A (1), s²_B và giải thích n tăng (1)."
+    }
+  ]
+}

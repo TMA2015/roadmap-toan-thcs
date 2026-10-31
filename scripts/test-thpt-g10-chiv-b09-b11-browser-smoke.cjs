@@ -35,7 +35,7 @@ const assert=require("node:assert/strict"),{chromium}=require("playwright");
     assert.equal(await short.locator("[data-thpt-canonical-item]").first().getAttribute("data-thpt-canonical-item"),"THPT-G10-B09-P01");
     assert.equal(await short.locator('.thpt-r4-formative-choice-group input[type="radio"]').count(),0);
     const lock=await page.goto(base+"tu-kiem-tra-chuong/",{waitUntil:"domcontentloaded"});
-    assert(lock?.ok()&&await page.getByText("chưa mở",{exact:false}).count()>0,"Readiness must stay inactive");
+    assert(lock?.ok());await page.locator('[data-g10-chapter-selfcheck="CHIV"] .g10sc-progress').waitFor();assert(!(await page.locator('[data-g10-chapter-selfcheck="CHIV"]').innerText()).includes("Đáp án:"),"ChIV pre-submit answer leak");
     const overflow=await page.evaluate(()=>document.documentElement.scrollWidth-window.innerWidth);
     assert(overflow<=20,"Layout overflow at "+width);
    }finally{await page.close()}

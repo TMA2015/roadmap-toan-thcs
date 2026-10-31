@@ -29,5 +29,5 @@ const assert=require("node:assert/strict"),{chromium}=require("playwright");
  assert.equal(await dlg.locator("details[open]").count(),0,"Auto-check must not reveal solution without voluntary disclosure");
  await dlg.locator("[data-thpt-modal-close]").click();
 }
- const ready=await page.goto("http://127.0.0.1:8765/thpt-preview/sgk/chuong-ii/tu-kiem-tra-chuong/",{waitUntil:"networkidle"});assert(ready?.ok()&&await page.getByText("chưa mở",{exact:false}).count()>0);
-}finally{await page.close()}}console.log("PASS G10 ChII mobile/tablet/desktop: responsive SVG, 4 D6, original A-D MCQ choices, hidden answers, canonical deep links, inactive readiness");}finally{await browser.close()}})().catch(e=>{console.error(e.stack||e);process.exit(1)});
+ const ready=await page.goto("http://127.0.0.1:8765/thpt-preview/sgk/chuong-ii/tu-kiem-tra-chuong/",{waitUntil:"networkidle"});assert(ready?.ok()&&await page.locator('[data-g10-chapter-selfcheck="CHII"] .g10sc-progress').count()===1,"ChII reviewed self-check missing");
+}finally{await page.close()}}console.log("PASS G10 ChII mobile/tablet/desktop: responsive SVG, 4 D6, original A-D MCQ choices, hidden answers, canonical deep links, client self-check without Mastery");}finally{await browser.close()}})().catch(e=>{console.error(e.stack||e);process.exit(1)});

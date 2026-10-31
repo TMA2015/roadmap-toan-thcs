@@ -17,12 +17,25 @@ on:
       - 'scripts/test-thpt-chapter-overview-golden-vii.cjs'
       - 'scripts/test-thpt-chapter-overview-golden-vii-browser.cjs'
       - 'docs/assets/javascripts/thpt-r4-preview.js'
+      - 'docs/assets/javascripts/thpt-chvi-d6-reviewed-r01.js'
+      - 'docs/assets/stylesheets/thpt-chvi-d6-reviewed-r01.css'
+      - 'scripts/test-thpt-chvi-d6-reviewed-r01.cjs'
+      - 'scripts/test-thpt-chvi-d6-browser-smoke.cjs'
+      - 'docs/assets/javascripts/thpt-chv-b12-reviewed-formative-r02.js'
+      - 'docs/assets/images/thpt/THPT_G10_B12_ERROR_INTERVAL_D5_R02_REVIEWED.svg'
+      - 'scripts/test-thpt-g10-chv-b12-reviewed-r02-integration.cjs'
+      - 'scripts/test-thpt-g10-chv-b12-reviewed-r02-browser.cjs'
       - 'docs/assets/javascripts/thpt-chv-b13-b14-reviewed-formative-v1.js'
       - 'docs/assets/images/thpt/THPT_G10_B13_QUARTILES_D5_R01.svg'
       - 'docs/assets/images/thpt/THPT_G10_B14_DISPERSION_D5_R01.svg'
       - 'scripts/test-thpt-g10-chv-b13-b14-release-integration.cjs'
       - 'scripts/test-thpt-g10-chv-b13-b14-browser-smoke.cjs'
       - 'docs/assets/javascripts/thpt-self-check-qa-v1.js'
+      - 'docs/assets/javascripts/thpt-g10-reviewed-selfcheck-v1.js'
+      - 'docs/assets/stylesheets/thpt-g10-reviewed-selfcheck-v1.css'
+      - 'docs/assets/data/thpt-g10-readiness/**'
+      - 'scripts/test-thpt-g10-reviewed-selfcheck-data.cjs'
+      - 'scripts/test-thpt-g10-reviewed-selfcheck-browser.cjs'
       - 'docs/assets/stylesheets/thpt-self-check-qa-v1.css'
       - 'scripts/test-thpt-self-check-qa-browser.cjs'
       - 'docs/assets/javascripts/floating-ai-tutor-v1.js'
@@ -98,9 +111,12 @@ jobs:
         run: |
           node --check docs/assets/javascripts/thpt-r4-preview.js
           node --check docs/assets/javascripts/thpt-self-check-qa-v1.js
+          node --check docs/assets/javascripts/thpt-g10-reviewed-selfcheck-v1.js
           node --check docs/assets/javascripts/floating-ai-tutor-v1.js
           node --check docs/assets/javascripts/firebase-gemini-v1.js
           node --check docs/assets/javascripts/thpt-chvi-reviewed-formative-v1.js
+          node --check docs/assets/javascripts/thpt-chvi-d6-reviewed-r01.js
+          node scripts/test-thpt-chvi-d6-reviewed-r01.cjs
           node --check docs/assets/javascripts/thpt-chvii-reviewed-formative-v1.js
           node --check docs/assets/javascripts/thpt-chviii-reviewed-formative-v1.js
           node --check docs/assets/javascripts/thpt-chix-reviewed-formative-v1.js
@@ -116,6 +132,8 @@ jobs:
           node --check scripts/test-thpt-formative-actions-ui-browser.cjs
           node --check scripts/test-thpt-r4-public-formative-interaction.cjs
           node --check scripts/test-thpt-self-check-qa-browser.cjs
+          node --check scripts/test-thpt-g10-reviewed-selfcheck-data.cjs
+          node --check scripts/test-thpt-g10-reviewed-selfcheck-browser.cjs
           node --check scripts/test-thpt-g10-chii-browser-smoke.cjs
           node --check scripts/test-thpt-g10-chiii-browser-smoke.cjs
           node --check scripts/test-thpt-g10-chiv-b07-b08-browser-smoke.cjs
@@ -159,6 +177,11 @@ jobs:
         run: node scripts/test-thpt-g10-chiv-b07-b08-release-integration.cjs
       - name: Guard G10 ChIV B09–B11 exact source and canonical uniqueness
         run: node scripts/test-thpt-g10-chiv-b09-b11-release-integration.cjs
+      - name: Guard G10 ChV B12 R02 academic source, exact SVG, 8 canonical, 2 HELP
+        run: |
+          node --check docs/assets/javascripts/thpt-chv-b12-reviewed-formative-r02.js
+          node --check scripts/test-thpt-g10-chv-b12-reviewed-r02-integration.cjs
+          node scripts/test-thpt-g10-chv-b12-reviewed-r02-integration.cjs
       - name: Guard G10 ChV B13-B14 source parity · 16 canonical, 2 SVG, 2 Written, 4 D6
         run: |
           node --check docs/assets/javascripts/thpt-chv-b13-b14-reviewed-formative-v1.js
@@ -224,6 +247,7 @@ jobs:
           node scripts/test-thpt-g10-sgk-display-ui.cjs --built
           node scripts/test-thpt-g10-chiv-b09-b11-release-integration.cjs --built
           node scripts/test-thpt-g10-chv-b13-b14-release-integration.cjs --built
+          node scripts/test-thpt-g10-chv-b12-reviewed-r02-integration.cjs --built
           node scripts/test-thpt-g11-chi-b01-b02-release-integration.cjs --built
           node scripts/test-thpt-chvi-student-notes.cjs --built
       - name: Verify combined build has no backend
@@ -240,6 +264,10 @@ jobs:
           npx playwright install chromium
       - name: Issue 662 QA-only self-check · Final Submit / formats / no evidence writes
         run: node scripts/test-thpt-self-check-qa-browser.cjs
+      - name: G10 9-chapter RD1 source and route integrity · 141 canonical
+        run: node scripts/test-thpt-g10-reviewed-selfcheck-data.cjs
+      - name: G10 9-chapter source-locked Final Submit · phone/tablet/desktop
+        run: node scripts/test-thpt-g10-reviewed-selfcheck-browser.cjs
       - name: Browser smoke test · desktop / iPhone / iPad simulation
         run: |
           python -m http.server 8765 --directory site > /tmp/thpt-r4-combined-http.log 2>&1 &
@@ -253,6 +281,8 @@ jobs:
         run: |
           node scripts/test-thpt-formative-actions-ui-browser.cjs
           node scripts/test-thpt-interactive-compact-browser.cjs
+      - name: ChVI D6 Academic PASS source lock and formative modal QA · desktop/mobile emulation
+        run: node scripts/test-thpt-chvi-d6-browser-smoke.cjs
       - name: ChI B01/B02 original canonical/D6/D5 browser QA · mobile / iPad / desktop
         run: node scripts/test-thpt-g10-chi-browser-smoke.cjs
       - name: ChII B03/B04 browser QA mobile / iPad / desktop
@@ -263,6 +293,8 @@ jobs:
         run: node scripts/test-thpt-g10-chiv-b07-b08-browser-smoke.cjs
       - name: ChIV B09/B10/B11 browser QA mobile / iPad / desktop
         run: node scripts/test-thpt-g10-chiv-b09-b11-browser-smoke.cjs
+      - name: G10 ChV B12 R02 reviewed SVG and canonical browser QA · 390 820 1440
+        run: node scripts/test-thpt-g10-chv-b12-reviewed-r02-browser.cjs
       - name: G10 ChV B13/B14 reviewed browser QA · 390 820 1440
         run: node scripts/test-thpt-g10-chv-b13-b14-browser-smoke.cjs
       - name: G11 ChI B01/B02 browser QA mobile / tablet / desktop

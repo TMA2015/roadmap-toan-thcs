@@ -1,3 +1,9 @@
 # Chương I · Tự kiểm tra cuối chương
 
-<div class="thpt-r4-screen" data-thpt-r4><p class="thpt-r4-eyebrow">TOÁN 10 · CHƯƠNG I · TỰ KIỂM TRA</p><p class="thpt-r4-lead"><strong>Bài Tự kiểm tra cuối chương chưa mở.</strong> Em có thể ôn Bài 1 và 2 trước khi có bài đánh giá độc lập.</p><p>Trang này chưa có đề kiểm tra, không chấm điểm và không cập nhật thành thạo.</p><nav class="thpt-r4-lesson-tabs"><a href="../">Tổng quan chương</a><a href="../luyen-tap/">Luyện tập</a></nav></div>
+<div class="thpt-r4-screen" data-thpt-r4>
+<p class="thpt-r4-eyebrow">TOÁN 10 · SGK KNTT · CHƯƠNG I · TỰ KIỂM TRA</p>
+<p class="thpt-r4-lead">Tự đánh giá 14 câu đã được review học thuật. Em có thể chọn, đổi đáp án và chuyển câu; chỉ sau <strong>Final Submit</strong> mới hiện đáp án và lời giải. Bài tự kiểm tra không tự động ghi điểm thành thạo.</p>
+<nav class="thpt-r4-lesson-tabs" aria-label="Điều hướng học SGK"><a href="../">Tổng quan chương</a><a href="../luyen-tap/">Luyện tập</a><span class="is-current" aria-current="page">Tự kiểm tra cuối chương</span></nav>
+</div>
+
+<div data-g10-chapter-selfcheck="CHI" aria-live="polite"></div>

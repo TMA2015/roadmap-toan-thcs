@@ -1,3 +1,9 @@
 # Chương V · Tự kiểm tra cuối chương
 
-<div class="thpt-r4-screen" data-thpt-r4><p class="thpt-r4-eyebrow">TOÁN 10 · CHƯƠNG V · TỰ KIỂM TRA</p><p class="thpt-r4-lead">Tự kiểm tra cuối chương chưa kích hoạt. Không có chấm điểm hay cập nhật Skill Mastery. Hiện có thể học và luyện tập Bài 13–14; Bài 12 chưa thuộc đợt công bố này.</p><a href="../luyen-tap/">Luyện tập Bài 13–14</a></div>
+<div class="thpt-r4-screen" data-thpt-r4>
+<p class="thpt-r4-eyebrow">TOÁN 10 · SGK KNTT · CHƯƠNG V · TỰ KIỂM TRA</p>
+<p class="thpt-r4-lead">Tự đánh giá 18 câu đã được review học thuật. Em có thể chọn, đổi đáp án và chuyển câu; chỉ sau <strong>Final Submit</strong> mới hiện đáp án và lời giải. Bài tự kiểm tra không tự động ghi điểm thành thạo.</p>
+<nav class="thpt-r4-lesson-tabs" aria-label="Điều hướng học SGK"><a href="../">Tổng quan chương</a><a href="../luyen-tap/">Luyện tập</a><span class="is-current" aria-current="page">Tự kiểm tra cuối chương</span></nav>
+</div>
+
+<div data-g10-chapter-selfcheck="CHV" aria-live="polite"></div>

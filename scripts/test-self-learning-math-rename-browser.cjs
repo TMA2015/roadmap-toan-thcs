@@ -70,7 +70,10 @@ const open=async(page,url)=>{
     await open(page,host+prefix+"thpt-preview/sgk/chuong-vi/tu-kiem-tra-chuong/");
     assert.equal(await page.locator("[data-floating-ai]").count(),0,
       "Tutor must never reveal hints or answers in chapter Readiness before Final Submit");
-    assert.equal((await page.locator('[data-thpt-readiness]').getAttribute("data-mastery-credit")),"false");
+    await page.locator('[data-g10-chapter-selfcheck="CHVI"] .g10sc-progress').waitFor();
+     const quiz=page.locator('[data-g10-chapter-selfcheck="CHVI"]');
+     assert(!(await quiz.innerText()).includes("Đáp án:"),"Chapter VI must not reveal answers before Final Submit under "+prefix);
+     assert((await quiz.innerText()).includes("không ghi tiến độ")||(await quiz.innerText()).includes("không tự động ghi điểm thành thạo"),"Chapter VI self-check must not certify Mastery");
     assert.deepEqual(errors,[],"Static asset/request failure on "+prefix+": "+errors.join("; "));
     await page.close();
     console.log("PASS candidate path "+prefix+" on "+viewport.width+"px, THCS/THPT, AI, cover, no-answer-leak");
