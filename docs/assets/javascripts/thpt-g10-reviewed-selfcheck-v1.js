@@ -32,9 +32,17 @@
   };
   const tfKey=q=>{
     if(q.type!=="TRUE_FALSE_GROUP"||q.optional)return null;
-    const s=String(q.answer||"").replace(/^\s*\(/,"").replace(/\).*$/,"").trim();
-    const a=s.split(/\s*[,;]\s*/).map(x=>x.trim().replace(/[().]/g,""));
-    return a.length>=2&&a.length<=8&&a.every(x=>x==="Đ"||x==="S")?a:null;
+    const raw=String(q.answer||"").trim();
+    const compact=raw.replace(/^\(/,"").replace(/\)\s*\.?$/,"").trim();
+    const tokens=compact.split(/\s*[,;]\s*/).map(x=>x.trim());
+    if(tokens.length>=2&&tokens.length<=8&&tokens.every(x=>x==="Đ"||x==="S"))return tokens;
+    // The reviewed sources also record grouped keys as "(a) Đ; (b) Sai; ...".
+    const rex=/\(([a-h])\)\s*(Đúng|Sai|Đ|S)(?=\s*(?:;|,|\.|$))/gu;
+    const segments=[...raw.matchAll(rex)];
+    if(segments.length<2||segments.length>8)return null;
+    if(segments.some((m,i)=>m[1]!==String.fromCharCode(97+i)))return null;
+    if(raw.replace(rex,"").replace(/[;,\s.]/g,"")!=="")return null;
+    return segments.map(m=>m[2]==="Đ"||m[2]==="Đúng"?"Đ":"S");
   };
   const gradingKey=q=>mcqKey(q)||tfKey(q);
   function mount(root,book){
