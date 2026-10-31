@@ -1,0 +1,192 @@
+{
+  "schema": "thpt-g10-reviewed-selfcheck-v1",
+  "scope": "SGK_CHAPTER_READINESS",
+  "chapter": "CHVI",
+  "chapter_label": "VI",
+  "source_sha256": "a25ae92a4cb01122189bab2f4a22f7427838d5d7d7361a2cb9e9855571c9a154",
+  "review_scope": "INDIVIDUAL_CHAPTER_NOTEBOOKLM_PASS",
+  "mastery_credit": false,
+  "persist_results": false,
+  "items": [
+    {
+      "item_id": "THPT-G10-B15-R01",
+      "stem": "Bảng có các cặp `(1;4),(2;5),(2;5)`. Đây có phải quan hệ hàm số `y` của `x` không? Tập xác định là gì?",
+      "type": "OPEN_REVIEW",
+      "optional": false,
+      "outcome_id": "",
+      "answer": "Có; `D={1;2}`.",
+      "solution": "Giá trị đầu vào `2` lặp lại nhưng đều có đầu ra `5`, nên mỗi đầu vào có đúng một đầu ra. `D` gồm các giá trị `x` phân biệt.",
+      "rubric": "- Xác định đúng việc đầu vào 2 lặp lại nhưng không mâu thuẫn (1đ)\n- Kết luận đây là hàm số y theo x (1đ)\n- Nêu tập các đầu vào phân biệt {1,2} (1đ)\n- Lý giải tiêu chuẩn mỗi x ứng với đúng một y (1đ)"
+    },
+    {
+      "item_id": "THPT-G10-B15-R02",
+      "stem": "Với hàm `F(x)=7x` trên `0≤x≤2` và `F(x)=14+3(x−2)` khi `x>2`, tính `F(4)` (đơn vị tùy ý).",
+      "type": "OPEN_REVIEW",
+      "optional": false,
+      "outcome_id": "",
+      "answer": "`20`.",
+      "solution": "`4>2`, nên `F(4)=14+3·2=20`.",
+      "rubric": "- Chọn đúng nhánh x>2 vì x=4 (1đ)\n- Thiết lập F(4)=14+3(4−2) (1đ)\n- Tính đúng F(4)=20 (1đ)\n- Nêu kết quả theo đơn vị đề bài hoặc giải thích vì sao không dùng nhánh 0≤x≤2 (1đ)"
+    },
+    {
+      "item_id": "THPT-G10-B15-R03",
+      "stem": "Hàm `h(x)=−2x+4` đồng biến hay nghịch biến trên `ℝ`? Vì sao?",
+      "type": "OPEN_REVIEW",
+      "optional": false,
+      "outcome_id": "",
+      "answer": "Nghịch biến toàn `ℝ`.",
+      "solution": "Khi `x₁<x₂`, `h(x₁)−h(x₂)=−2(x₁−x₂)>0`.",
+      "rubric": "- Xác định hàm xác định trên ℝ (1đ)\n- Chỉ ra hệ số góc −2<0 hoặc lập so sánh hai điểm (1đ)\n- Kết luận nghịch biến trên toàn ℝ (1đ)\n- Lập luận đúng h(x₁)>h(x₂) khi x₁<x₂ hoặc giải thích ý nghĩa hệ số âm (1đ)"
+    },
+    {
+      "item_id": "THPT-G10-B15-R04",
+      "stem": "Với đồ thị hàm `y=x²−x−6`, hai điểm `P(2;−4)` và `Q(−1;−5)` có thuộc đồ thị không?",
+      "type": "OPEN_REVIEW",
+      "optional": false,
+      "outcome_id": "",
+      "answer": "`P` thuộc, `Q` không thuộc.",
+      "solution": "`f(2)=4−2−6=−4`; `f(−1)=1+1−6=−4≠−5`.",
+      "rubric": "- Thế x=2 được f(2)=−4 (1đ)\n- Khẳng định P(2,−4) thuộc đồ thị (1đ)\n- Thế x=−1 được f(−1)=−4 (1đ)\n- So sánh −4≠−5 và kết luận Q(−1,−5) không thuộc (1đ)"
+    },
+    {
+      "item_id": "THPT-G10-B15-R05",
+      "stem": "Tìm tập xác định trong số thực của `f(x)=√(9−3x)/(x+1)`.",
+      "type": "OPEN_REVIEW",
+      "optional": false,
+      "outcome_id": "",
+      "answer": "`D=(−∞;3]\\{−1}`.",
+      "solution": "Căn đòi `9−3x≥0 ↔ x≤3`; mẫu `x+1≠0 ↔ x≠−1`; lấy giao hai điều kiện.",
+      "rubric": "- Viết điều kiện căn 9−3x≥0 (1đ)\n- Rút ra x≤3 (1đ)\n- Viết điều kiện mẫu x+1≠0, tức x≠−1 (1đ)\n- Lấy giao và biểu diễn D=(−∞,3]∖{−1} (1đ)"
+    },
+    {
+      "item_id": "THPT-G10-B16-R01",
+      "stem": "Cho `f(x)=2x²−12x+11`. Tìm tọa độ đỉnh, trục đối xứng, GTNN và tập giá trị.",
+      "type": "OPEN_REVIEW",
+      "optional": false,
+      "outcome_id": "",
+      "answer": "`I(3;−7)`, trục `x=3`, GTNN `−7`, `T=[−7;+∞)`.",
+      "solution": "`f(x)=2(x−3)²−7`; hệ số trước bình phương dương.",
+      "rubric": "- Biến đổi đúng f(x)=2(x−3)²−7 (1đ)\n- Tìm đúng đỉnh I(3,−7) (1đ)\n- Xác định trục x=3 (1đ)\n- Nêu GTNN=−7 và tập giá trị [−7,+∞) vì a>0 (1đ)"
+    },
+    {
+      "item_id": "THPT-G10-B16-R02",
+      "stem": "Với `y=−x²+4x+5`, xác định đỉnh/trục và các điểm cắt `Ox,Oy`; mô tả chiều mở của parabol.",
+      "type": "OPEN_REVIEW",
+      "optional": false,
+      "outcome_id": "",
+      "answer": "`I(2;9)`, trục `x=2`, cắt `Ox` tại `(-1;0)` và `(5;0)`, cắt `Oy` tại `(0;5)`, parabol mở xuống.",
+      "solution": "`y=−(x−2)²+9=−(x+1)(x−5)`.",
+      "rubric": "- Tìm đỉnh I(2,9) (1đ)\n- Xác định trục đối xứng x=2 (1đ)\n- Tìm đúng hai giao điểm với Ox: (−1,0),(5,0) (1đ)\n- Giao Oy=(0,5) và parabol mở xuống do a<0 (1đ)"
+    },
+    {
+      "item_id": "THPT-G10-B16-R03",
+      "stem": "Chuyển động giả định có độ cao `h(t)=−4t²+24t` (m), tính từ khi bắt đầu `t=0` đến khi chạm đất. Hỏi thời gian đạt độ cao cực đại, độ cao đó và thời gian trở lại mặt đất.",
+      "type": "OPEN_REVIEW",
+      "optional": false,
+      "outcome_id": "",
+      "answer": "`t=3s`, `hmax=36m`, `t_landing=6s`.",
+      "solution": "`h(t)=−4(t−3)²+36`; nghiệm `h=0` là `t=0,6`, miền thực tế `[0;6]`.",
+      "rubric": "- Hoàn thành bình phương h(t)=−4(t−3)²+36 (1đ)\n- Xác định thời gian cực đại t=3 s (1đ)\n- Tính độ cao cực đại 36 m (1đ)\n- Giải h(t)=0, chọn thời gian chạm đất trở lại 6 s và lưu ý t∈[0,6] (1đ)"
+    },
+    {
+      "item_id": "THPT-G10-B16-R04",
+      "stem": "Giá `p` nghìn đồng và nhu cầu dự kiến `n(p)=150−3p` sản phẩm, trên `0≤p≤50`. Tìm giá tối ưu và doanh thu lớn nhất (nghìn đồng), với `R(p)=p·n(p)`.",
+      "type": "OPEN_REVIEW",
+      "optional": false,
+      "outcome_id": "",
+      "answer": "`p=25` nghìn đồng, `Rmax=1875` nghìn đồng (1,875 triệu đồng).",
+      "solution": "`R(p)=−3p²+150p=−3(p−25)²+1875`; khi `p=25`, `n=75`. Điều kiện miền thỏa.",
+      "rubric": "- Lập đúng doanh thu R(p)=−3p²+150p từ giá và nhu cầu (1đ)\n- Dùng dạng đỉnh R(p)=−3(p−25)²+1875 (1đ)\n- Tìm giá tối ưu p=25 nghìn đồng và kiểm miền 0≤p≤50 (1đ)\n- Nêu doanh thu tối đa 1875 nghìn đồng; đơn vị phù hợp (1đ)"
+    },
+    {
+      "item_id": "THPT-G10-B16-R05",
+      "stem": "Trong ba biểu thức `f(x)=x²+3x+2`, `g(x)=0x²+5x−7`, `h(x)=−4x+1`, biểu thức nào là hàm số bậc hai? Vì sao?",
+      "type": "OPEN_REVIEW",
+      "optional": false,
+      "outcome_id": "",
+      "answer": "Chỉ `f` là hàm số bậc hai.",
+      "solution": "Hệ số trước `x²` phải khác 0. Hai biểu thức còn lại chỉ có bậc nhất (`g` có hệ số `x²` bằng 0).",
+      "rubric": "- Nêu tiêu chí hàm bậc hai phải có hệ số a của x² khác 0 (1đ)\n- Khẳng định f(x)=x²+3x+2 là hàm bậc hai (1đ)\n- Loại g vì hệ số 0 trước x² (1đ)\n- Loại h vì là biểu thức bậc nhất, không có x² (1đ)"
+    },
+    {
+      "item_id": "THPT-G10-B17-R01",
+      "stem": "Giải `x²−x−6≥0`.",
+      "type": "OPEN_REVIEW",
+      "optional": false,
+      "outcome_id": "",
+      "answer": "`(−∞;−2]∪[3;+∞)`.",
+      "solution": "`(x+2)(x−3)≥0` ở ngoài hai nghiệm, lấy cả biên.",
+      "rubric": "- Phân tích x²−x−6=(x+2)(x−3) (1đ)\n- Tìm hai nghiệm −2 và 3 (1đ)\n- Xét đúng tam thức không âm phía ngoài hai nghiệm (1đ)\n- Biểu diễn đủ nghiệm và hai đầu mút đóng (−∞,−2]∪[3,+∞) (1đ)"
+    },
+    {
+      "item_id": "THPT-G10-B17-R02",
+      "stem": "Tìm `m∈ℝ` để `x²−2(m−1)x+m²+1>0` với mọi `x∈ℝ`.",
+      "type": "OPEN_REVIEW",
+      "optional": false,
+      "outcome_id": "",
+      "answer": "`m>0`.",
+      "solution": "`a=1>0`, `Δ=4(m−1)²−4(m²+1)=−8m<0` khi và chỉ khi `m>0`.",
+      "rubric": "- Nhận biết a=1>0 và điều kiện f_m(x)>0 với mọi x là Δ<0 (1đ)\n- Tính Δ=4(m−1)²−4(m²+1)=−8m (1đ)\n- Giải −8m<0 được m>0 (1đ)\n- Giải thích dấu nghiêm ngặt loại Δ=0 và chỉ giữ m>0 (1đ)"
+    },
+    {
+      "item_id": "THPT-G10-B17-R03",
+      "stem": "Với `f(x)=−(x−1)²`, giải bất phương trình `f(x)<0`.",
+      "type": "OPEN_REVIEW",
+      "optional": false,
+      "outcome_id": "",
+      "answer": "`ℝ\\{1}`.",
+      "solution": "`−(x−1)²<0 ↔ (x−1)²>0`, xảy ra khi `x≠1`. Nghiệm kép không tạo đổi dấu.",
+      "rubric": "- Biến đổi −(x−1)²<0 thành (x−1)²>0 (1đ)\n- Nhận biết bình phương bằng 0 chỉ khi x=1 (1đ)\n- Kết luận tập nghiệm ℝ∖{1} (1đ)\n- Giải thích nghiệm kép không làm tam thức đổi dấu và bất phương trình nghiêm ngặt loại x=1 (1đ)"
+    },
+    {
+      "item_id": "THPT-G10-B17-R04",
+      "stem": "Lợi nhuận giả định của một hoạt động theo lượng `x` có dạng `P(x)=−x²+10x−16` (triệu đồng), với `0≤x≤10`. Xác định miền `x` để `P(x)>0`.",
+      "type": "OPEN_REVIEW",
+      "optional": false,
+      "outcome_id": "",
+      "answer": "`2<x<8`.",
+      "solution": "`P(x)=−(x−2)(x−8)`, hệ số âm, dương giữa hai nghiệm, thỏa miền vật lý.\n\n## Bài 18 — 4 held-out candidate IDs",
+      "rubric": "- Thiết lập P(x)>0 trong miền 0≤x≤10 (1đ)\n- Phân tích P(x)=−(x−2)(x−8), nghiệm 2,8 (1đ)\n- Xét đúng dấu P>0 giữa hai nghiệm (1đ)\n- Kết luận 2<x<8, phù hợp miền thực tế; loại hai đầu mút vì P=0 (1đ)"
+    },
+    {
+      "item_id": "THPT-G10-B18-R01",
+      "stem": "Giải `√(2x+5)=x+1` trên `ℝ`.",
+      "type": "OPEN_REVIEW",
+      "optional": false,
+      "outcome_id": "",
+      "answer": "`{2}`.",
+      "solution": "`x+1≥0`. Bình phương: `2x+5=(x+1)² ↔ x²=4` cho `±2`, chỉ `2` hợp lệ.",
+      "rubric": "- Viết điều kiện vế phải x+1≥0 (1đ)\n- Bình phương đúng để được x²−4=0 (1đ)\n- Tìm được hai nghiệm ứng viên x=±2 (1đ)\n- Loại x=−2, kiểm x=2 và kết luận {2} (1đ)"
+    },
+    {
+      "item_id": "THPT-G10-B18-R02",
+      "stem": "Giải `√(x²+3x+2)=√(x+2)` trên `ℝ`.",
+      "type": "OPEN_REVIEW",
+      "optional": false,
+      "outcome_id": "",
+      "answer": "`{−2;0}`.",
+      "solution": "Bình phương: `x²+3x+2=x+2 ↔ x(x+2)=0`; ở cả `−2` và `0`, hai biểu thức dưới căn không âm và bằng nhau.",
+      "rubric": "- Nêu điều kiện hai biểu thức dưới căn không âm (1đ)\n- Bình phương hai vế dẫn đến x²+2x=0 (1đ)\n- Giải được hai ứng viên x=−2, x=0 (1đ)\n- Thử lại cả hai thỏa căn và kết luận {−2,0} (1đ)"
+    },
+    {
+      "item_id": "THPT-G10-B18-R03",
+      "stem": "Giải `√(x²+4x+1)=√(2x+3)` trên `ℝ`.",
+      "type": "OPEN_REVIEW",
+      "optional": false,
+      "outcome_id": "",
+      "answer": "`{−1+√3}`.",
+      "solution": "Bình phương `x²+2x−2=0`, cho `x=−1±√3`. Điều kiện `2x+3≥0` loại `x=−1−√3` (nhỏ hơn `−3/2`); nghiệm `−1+√3` đạt cả hai điều kiện.",
+      "rubric": "- Nêu điều kiện ít nhất 2x+3≥0 (1đ)\n- Bình phương và rút gọn x²+2x−2=0 (1đ)\n- Tìm hai nghiệm ứng viên −1±√3 (1đ)\n- Loại −1−√3 theo điều kiện, kiểm −1+√3 và kết luận nghiệm duy nhất (1đ)"
+    },
+    {
+      "item_id": "THPT-G10-B18-R04",
+      "stem": "Một tam giác vuông có hai cạnh góc vuông dài `x>0` m và `4` m, cạnh huyền dài `x+2` m. Tìm `x`.",
+      "type": "OPEN_REVIEW",
+      "optional": false,
+      "outcome_id": "",
+      "answer": "`x=3m`.",
+      "solution": "`√(x²+16)=x+2`. Bình phương cho `x²+16=(x+2)²`, tức `4x=12`, nên `x=3`. Thử `5=3+2`, thỏa điều kiện.",
+      "rubric": "- Áp dụng Pitago để có √(x²+16)=x+2 (1đ)\n- Nêu x>0 và x+2>0 trước khi bình phương (1đ)\n- Bình phương, giải x²+16=(x+2)² ⇒ x=3 (1đ)\n- Thử lại cạnh huyền 5=3+2 và ghi đơn vị m (1đ)"
+    }
+  ]
+}
