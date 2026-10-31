@@ -55,9 +55,21 @@ function startServer(){
           await root.locator(".g10sc-button").filter({hasText:"Câu trước"}).click();
           const preFinal=await root.innerText();
           assert(!preFinal.includes("Đáp án:")&&!preFinal.includes("Lời giải:"),ch+" navigation leak");
+          // ChV/VII/VIII source keys use labeled (a) Đúng; (b) Sai, not bare Đ,S.
+          if(width===390&&["CHV","CHVII","CHVIII"].includes(ch)){
+            const idx={CHV:3,CHVII:6,CHVIII:3}[ch];
+            await root.locator('[data-g10sc-jump="'+idx+'"]').click();
+            assert.equal(await root.locator(".g10sc-tf").count(),4,ch+" reviewed labeled TF must be interactive");
+            assert(!(await root.innerText()).includes("Đáp án:"),ch+" labeled TF pre-submit answer leak");
+            await root.locator('.g10sc-tf input[value="Đ"]').first().check();
+          }
           await root.locator("[data-g10sc-final]").click();
           assert((await root.innerText()).includes("Kết quả tự đánh giá"),ch+" no result");
           assert((await root.innerText()).includes("Đáp án:"),ch+" no post-final solution key");
+          if(width===390&&["CHV","CHVII","CHVIII"].includes(ch)){
+            const denom={CHV:7,CHVII:10,CHVIII:7}[ch];
+            assert((await root.locator(".g10sc-report").innerText()).includes(" / "+denom+" câu"),ch+" TF-group score denominator missing");
+          }
           assert.equal(await root.locator("[data-g10sc-final]").isVisible(),false);
           const flags=await page.evaluate(()=>({writes:window.__g10scWrites,overflow:document.documentElement.scrollWidth-innerWidth}));
           assert.equal(flags.writes.length,0,ch+" must not touch student storage");
