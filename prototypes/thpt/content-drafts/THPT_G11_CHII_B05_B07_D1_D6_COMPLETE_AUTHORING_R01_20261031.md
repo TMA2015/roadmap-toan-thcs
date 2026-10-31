@@ -1,3 +1,12 @@
+# Temp · Toán 11 KNTT Chương II B05–B07 — D1–D6 COMPLETE · CHƯA REVIEW
+
+**PACKET_ID:** `THPT-G11-CHII-B05-B07-WHOLE-CHAPTER-AUTHORING-R01-20261031`
+**LEARNING_PATH:** `SGK_CHAPTER` · **S1 SGK:** Tập 1 B05 tr.42–47, B06 tr.48–51, B07 tr.52–55, cuối chương tr.56–57.
+**SBT KNTT:** trang in B05–B07 và bài cuối chương cần reviewer đối chiếu trực tiếp PDF S1; dữ liệu web chỉ hỗ trợ phát hiện phạm vi, không tự cấp S1 PASS.
+**AUTHORING R01:** 16 outcome, 9 ví dụ, 36 canonical Core/Practice + 6 Written/Anchor, 3 D5 SVG và 6 D6; file kín thứ hai chứa 19 RD1 với lời giải/rubric. Nội dung toán mới chưa được NotebookLM PASS. Không cho phép merge/deploy hoặc Mastery.
+**Lưu ý phiên bản:** khối D1–D2 dưới đây là bản thảo giai đoạn đầu, có dòng “D3–D6 còn thiếu”; dòng ấy là nhãn lịch sử của snapshot. Các phần D3–D6 hoàn chỉnh đã được nối ngay sau đường phân cách cuối khối. Review trên TOÀN FILE này, không chỉ phần đầu.
+
+---
 # Toán 11 KNTT Chương II — Dãy số, Cấp số cộng và Cấp số nhân (SOURCE WORKING DRAFT)
 
 **STATUS: IN_PROGRESS — NOT A WHOLE-CHAPTER REVIEW PACKET. NO NOTEBOOKLM REVIEW OR RELEASE YET.**
