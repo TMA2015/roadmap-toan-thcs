@@ -1,0 +1,26 @@
+/* THPT G10 SGK self-check — no change to THCS/Golden R4. */
+[data-g10-chapter-selfcheck]{max-width:920px;margin:1rem auto;padding:1rem;border:1px solid var(--md-default-fg-color--lightest);border-radius:12px}
+.g10sc-heading{margin:.3rem 0 1rem;font-size:1.32rem}
+.g10sc-notice{font-size:.88rem;line-height:1.6;color:var(--md-default-fg-color--light);margin-bottom:1rem}
+.g10sc-progress{font-weight:600;margin:.5rem 0}
+.g10sc-jump{display:flex;flex-wrap:wrap;gap:.3rem;padding:.55rem 0;margin:0 0 1rem;border-block-end:1px solid var(--md-default-fg-color--lightest)}
+.g10sc-jump-button{background:var(--md-code-bg-color);color:var(--md-default-fg-color);border:1px solid var(--md-default-fg-color--lightest);border-radius:6px;min-width:2.2rem;min-height:2rem;font:inherit;cursor:pointer}
+.g10sc-jump-button.is-current{border-color:var(--md-accent-fg-color);font-weight:700}
+.g10sc-body{line-height:1.75}
+.g10sc-rich{overflow-wrap:anywhere;margin:.6rem 0 1rem}
+.g10sc-rich code{font-size:.87em}
+.g10sc-answer{display:flex;flex-wrap:wrap;gap:.45rem;margin:.9rem 0 1.1rem}
+.g10sc-answer>p{flex-basis:100%;margin:0 0 .2rem}
+.g10sc-choice{display:inline-flex;align-items:center;gap:.3rem;padding:.45rem .75rem;border:1px solid var(--md-default-fg-color--lightest);border-radius:8px;cursor:pointer;min-height:2.2rem}
+.g10sc-choice input{accent-color:var(--md-accent-fg-color)}
+.g10sc-tf{border:1px solid var(--md-default-fg-color--lightest);border-radius:7px;padding:.35rem .55rem;display:flex;align-items:center;gap:.4rem}
+.g10sc-tf legend{font-size:.8rem}
+.g10sc-textarea{width:100%;font:inherit;border:1px solid var(--md-default-fg-color--lightest);background:var(--md-default-bg-color);color:var(--md-default-fg-color);padding:.65rem;border-radius:7px;resize:vertical}
+.g10sc-controls{display:flex;align-items:center;gap:.5rem;flex-wrap:wrap}
+.g10sc-button{font:inherit;cursor:pointer;border-radius:7px;min-height:2.3rem;padding:.45rem .85rem;border:1px solid var(--md-primary-fg-color);color:var(--md-primary-fg-color);background:transparent}
+.g10sc-button:disabled{opacity:.45;cursor:not-allowed}
+.g10sc-final{background:var(--md-primary-fg-color);color:var(--md-primary-bg-color)}
+.g10sc-review,.g10sc-report{border-top:1px solid var(--md-default-fg-color--lightest);margin-top:1rem;padding-top:.8rem}
+.g10sc-verdict{font-weight:600}
+.g10sc-error{color:var(--md-typeset-a-color)}
+@media(max-width:480px){[data-g10-chapter-selfcheck]{padding:.65rem}.g10sc-jump{gap:.2rem}.g10sc-choice{padding:.35rem .48rem}.g10sc-controls{justify-content:space-between}.g10sc-button{font-size:.8rem}}
