@@ -17,6 +17,10 @@ on:
       - 'scripts/test-thpt-chapter-overview-golden-vii.cjs'
       - 'scripts/test-thpt-chapter-overview-golden-vii-browser.cjs'
       - 'docs/assets/javascripts/thpt-r4-preview.js'
+      - 'docs/assets/javascripts/thpt-chv-b12-reviewed-formative-r02.js'
+      - 'docs/assets/images/thpt/THPT_G10_B12_ERROR_INTERVAL_D5_R02_REVIEWED.svg'
+      - 'scripts/test-thpt-g10-chv-b12-reviewed-r02-integration.cjs'
+      - 'scripts/test-thpt-g10-chv-b12-reviewed-r02-browser.cjs'
       - 'docs/assets/javascripts/thpt-chv-b13-b14-reviewed-formative-v1.js'
       - 'docs/assets/images/thpt/THPT_G10_B13_QUARTILES_D5_R01.svg'
       - 'docs/assets/images/thpt/THPT_G10_B14_DISPERSION_D5_R01.svg'
@@ -159,6 +163,11 @@ jobs:
         run: node scripts/test-thpt-g10-chiv-b07-b08-release-integration.cjs
       - name: Guard G10 ChIV B09–B11 exact source and canonical uniqueness
         run: node scripts/test-thpt-g10-chiv-b09-b11-release-integration.cjs
+      - name: Guard G10 ChV B12 R02 academic source, exact SVG, 8 canonical, 2 HELP
+        run: |
+          node --check docs/assets/javascripts/thpt-chv-b12-reviewed-formative-r02.js
+          node --check scripts/test-thpt-g10-chv-b12-reviewed-r02-integration.cjs
+          node scripts/test-thpt-g10-chv-b12-reviewed-r02-integration.cjs
       - name: Guard G10 ChV B13-B14 source parity · 16 canonical, 2 SVG, 2 Written, 4 D6
         run: |
           node --check docs/assets/javascripts/thpt-chv-b13-b14-reviewed-formative-v1.js
@@ -224,6 +233,7 @@ jobs:
           node scripts/test-thpt-g10-sgk-display-ui.cjs --built
           node scripts/test-thpt-g10-chiv-b09-b11-release-integration.cjs --built
           node scripts/test-thpt-g10-chv-b13-b14-release-integration.cjs --built
+          node scripts/test-thpt-g10-chv-b12-reviewed-r02-integration.cjs --built
           node scripts/test-thpt-g11-chi-b01-b02-release-integration.cjs --built
           node scripts/test-thpt-chvi-student-notes.cjs --built
       - name: Verify combined build has no backend
@@ -263,6 +273,8 @@ jobs:
         run: node scripts/test-thpt-g10-chiv-b07-b08-browser-smoke.cjs
       - name: ChIV B09/B10/B11 browser QA mobile / iPad / desktop
         run: node scripts/test-thpt-g10-chiv-b09-b11-browser-smoke.cjs
+      - name: G10 ChV B12 R02 reviewed SVG and canonical browser QA · 390 820 1440
+        run: node scripts/test-thpt-g10-chv-b12-reviewed-r02-browser.cjs
       - name: G10 ChV B13/B14 reviewed browser QA · 390 820 1440
         run: node scripts/test-thpt-g10-chv-b13-b14-browser-smoke.cjs
       - name: G11 ChI B01/B02 browser QA mobile / tablet / desktop
