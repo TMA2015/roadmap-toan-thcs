@@ -232,6 +232,8 @@ jobs:
         run: node scripts/test-thpt-g10-chiv-b07-b08-browser-smoke.cjs
       - name: ChIV B09/B10/B11 browser QA mobile / iPad / desktop
         run: node scripts/test-thpt-g10-chiv-b09-b11-browser-smoke.cjs
+      - name: AP vector Knowledge pilot QA B07 B08 B10 · 390 820 1440
+        run: node scripts/test-thpt-ap-vector-knowledge-browser.cjs
       - name: G11 ChI B01/B02 browser QA mobile / tablet / desktop
         run: node scripts/test-thpt-g11-chi-b01-b02-browser-smoke.cjs
       - name: ChIX reviewed D5/D6 browser smoke · mobile / iPad / desktop
