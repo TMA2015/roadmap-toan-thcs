@@ -8,25 +8,106 @@
 
 ## 1. Kiến thức SGK
 
-### 1. Góc lượng giác và số đo.
+<span class="thpt-ap-knowledge-pilot" hidden aria-hidden="true"></span>
 
-Một góc lượng giác ghi lại cả tia đầu, tia cuối và chiều quay: ngược chiều kim đồng hồ lấy dương, cùng chiều lấy âm. Hai góc cùng tia đầu/tia cuối có thể chênh nhau một số nguyên lần \(360°\) hoặc \(2π\) rad. \(180° = π rad\), nên \(α rad = α·180°/π\), \(x° = xπ/180 rad\). Khi chỉ xét vị trí cuối trên đường tròn lượng giác có thể quy về một đại diện trong \([0,2π)\), nhưng **không được xóa ý nghĩa số vòng quay** nếu bài toán hỏi quãng đường chuyển động.
+### 1. Góc lượng giác và số đo
 
-### 2. Radian, độ dài cung.
+**Chiều quay.** Một góc lượng giác ghi lại cả tia đầu, tia cuối và chiều quay: ngược chiều kim đồng hồ lấy dương, cùng chiều lấy âm.
 
-Với bán kính \(R>0\), góc ở tâm có độ lớn \(|α|\) rad chắn cung có độ dài \(s=R|α|\) (cung đi theo số lần quay được mô tả). Không dùng trực tiếp độ cho công thức này; góc 180° chắn cung nửa đường tròn dài \(πR\).
+**Các góc cùng tia cuối.** Hai góc cùng tia đầu/tia cuối có thể chênh nhau một số nguyên lần \(360°\) hoặc \(2π\) rad.
 
-### 3. Đường tròn lượng giác.
+**Đổi giữa độ và radian:**
 
-Gắn O với gốc tọa độ, bán kính đơn vị, điểm cuối \(M=(cos α,sin α)\) trên đường tròn khi quay từ trục Ox dương. Do đó \(sin²α+cos²α=1\) với mọi α. Dấu của sin/cos phụ thuộc góc phần tư, không phụ thuộc việc chỉ nhớ số dương của góc tham chiếu.
+- \(180° = π rad\)
+- \(α rad = α·180°/π\)
+- \(x° = xπ/180 rad\)
 
-### 4. Các giá trị và điều kiện.
+**Chú ý:** Khi chỉ xét vị trí cuối trên đường tròn lượng giác có thể quy về một đại diện trong \([0,2π)\), nhưng **không được xóa ý nghĩa số vòng quay** nếu bài toán hỏi quãng đường chuyển động.
 
-\(tan α=sin α/cos α\) **chỉ khi cos α ≠ 0**; \(cot α=cos α/sin α\) **chỉ khi sin α ≠ 0**. Từ đẳng thức cơ bản có \(1+tan²α=1/cos²α\) trên miền \(cos α ≠ 0\) và \(1+cot²α=1/sin²α\) trên miền \(sin α ≠ 0\). Sin/cos chu kì 2π; tan/cot chu kì π khi xác định.
+### 2. Radian và độ dài cung
 
-### 5. Góc liên quan đặc biệt.
+**Công thức độ dài cung.** Với bán kính \(R>0\), góc ở tâm có độ lớn \(|α|\) rad chắn cung có độ dài:
 
-\(sin(−α)=−sinα\), \(cos(−α)=cosα\), \(sin(π−α)=sinα\), \(cos(π−α)=−cosα\), \(sin(π+α)=−sinα\), \(cos(π+α)=−cosα\). Với góc phụ: \(sin(π/2−α)=cosα\), \(cos(π/2−α)=sinα\). Mọi hệ thức tan/cot cần kiểm điều kiện mẫu khác 0. Bảng giá trị \(0,π/6,π/4,π/3,π/2\) là tiền đề cần học sinh tự tái dựng trên đường tròn, không chỉ học thuộc.
+\[
+s=R|α|
+\]
+
+**Lưu ý:** Cung đi theo số lần quay được mô tả.
+
+Không dùng trực tiếp độ cho công thức này; góc 180° chắn cung nửa đường tròn dài \(πR\).
+
+### 3. Đường tròn lượng giác
+
+**Điểm cuối.** Gắn O với gốc tọa độ, bán kính đơn vị. Khi quay từ trục Ox dương, điểm cuối trên đường tròn là:
+
+\[
+M=(cos α,sin α)
+\]
+
+**Hệ thức cơ bản (đúng với mọi α):**
+
+\[
+sin²α+cos²α=1
+\]
+
+**Quy tắc dấu.** Dấu của sin/cos phụ thuộc góc phần tư, không phụ thuộc việc chỉ nhớ số dương của góc tham chiếu.
+
+### 4. Tang, côtang và điều kiện xác định
+
+**Tang:**
+
+\[
+tan α=sin α/cos α
+\]
+
+**Điều kiện:** cos α ≠ 0.
+
+**Côtang:**
+
+\[
+cot α=cos α/sin α
+\]
+
+**Điều kiện:** sin α ≠ 0.
+
+**Các hệ thức suy ra từ đẳng thức cơ bản:**
+
+\[
+1+tan²α=1/cos²α
+\]
+
+trên miền \(cos α ≠ 0\);
+
+\[
+1+cot²α=1/sin²α
+\]
+
+trên miền \(sin α ≠ 0\).
+
+**Chu kì.** Sin/cos chu kì 2π; tan/cot chu kì π khi xác định.
+
+### 5. Các góc liên quan đặc biệt
+
+**Góc đối:**
+
+- \(sin(−α)=−sinα\)
+- \(cos(−α)=cosα\)
+
+**Góc liên quan tới π:**
+
+- \(sin(π−α)=sinα\)
+- \(cos(π−α)=−cosα\)
+- \(sin(π+α)=−sinα\)
+- \(cos(π+α)=−cosα\)
+
+**Góc phụ:**
+
+- \(sin(π/2−α)=cosα\)
+- \(cos(π/2−α)=sinα\)
+
+**Điều kiện:** Mọi hệ thức tan/cot cần kiểm điều kiện mẫu khác 0.
+
+**Bảng góc đặc biệt:** Bảng giá trị \(0,π/6,π/4,π/3,π/2\) là tiền đề cần học sinh tự tái dựng trên đường tròn, không chỉ học thuộc.
 
 ## 2. Ví dụ
 

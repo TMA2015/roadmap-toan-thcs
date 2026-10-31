@@ -121,6 +121,8 @@ jobs:
           for js in             docs/assets/javascripts/sticky-nav-v1.js             docs/assets/javascripts/anchor-library-v1.js             docs/assets/javascripts/anchor-topic-related-v1.js             docs/assets/javascripts/model-examples-library-v1.js             docs/assets/javascripts/written-exercise-library-v1.js             docs/assets/javascripts/topic25-exam-engine-v1.js             docs/assets/javascripts/route-module-loader-v1.js             docs/assets/javascripts/route-module-loader-v2.js; do node --check "$js"; done
       - name: Guard AP presentation pilot source math and teaching content (no deploy)
         run: node scripts/test-thpt-academic-presentation-pilot.cjs
+      - name: Guard G11 B01 source-locked Knowledge presentation (no deploy)
+        run: node scripts/test-thpt-g11-b01-ap-parity.cjs
       - name: Guard AP vector source lock G10 B07/B08/B10 (no deploy)
         run: node scripts/test-thpt-ap-vector-knowledge-parity.cjs
       - name: Validate THPT academic-to-release checklist (no deploy)
