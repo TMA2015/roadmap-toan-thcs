@@ -107,7 +107,7 @@ trên miền \(sin α ≠ 0\).
 
 **Điều kiện:** Mọi hệ thức tan/cot cần kiểm điều kiện mẫu khác 0.
 
-**Cần tự tái dựng:** Bảng giá trị \(0,π/6,π/4,π/3,π/2\) là tiền đề cần học sinh tự tái dựng trên đường tròn, không chỉ học thuộc.
+**Bảng góc đặc biệt:** Bảng giá trị \(0,π/6,π/4,π/3,π/2\) là tiền đề cần học sinh tự tái dựng trên đường tròn, không chỉ học thuộc.
 
 ## 2. Ví dụ
 
