@@ -1,3 +1,5 @@
+> **FINAL DISPOSITION 31/10 — STANDARDS-BASED SOURCE ACCEPTANCE:** The project owner explicitly delegated ordinary academic source choice to the authoring team when all independent review criteria pass. **No owner selection of Option A/B is required.** Effective five-step HELP02@R02 Git blob `913400d6aff63befac95a8a47a00870663dd0096` is `ACCEPTED_BY_EVIDENCE` on the independent R03 source-equivalence PASS, while **historical Temp byte parity stays NOT_VERIFIED**. This supersedes the earlier decision-request language below; it is not release authorization. See `prototypes/thpt/THPT_NOTEBOOKLM_SOURCE_ARCHIVE_AND_PROVENANCE_SOP_v1.0_20261031.md`.
+
 # Chương V B12 HELP02@R02 — alternative effective-source provenance decision
 
 **OWNER DECISION REQUEST — not self-approved by author.** Date 31/10/2026. Academic authoring source has no new math delta. Only `G10-SGK-CHV` B12–B14 `PUBLIC_FORMATIVE_ONLY`; no Readiness, Topic or Mastery.
@@ -33,3 +35,10 @@
 `CHV_HELP02_SOURCE_PROVENANCE|ACCEPT_R03_EFFECTIVE_GIT_BLOB_913400d6aff63befac95a8a47a00870663dd0096|HISTORICAL_TEMP_BYTE_PARITY=NOT_VERIFIED|SCOPE=HELP-G10-B12-02@R02_ONLY|MERGE_DEPLOY=NO`
 
 **A1–A7 authoring ChV:** already `CONTENT_READY` for B12–B14 public formative, Draft PR #639; no academic re-review of the original 27 items.
+
+## 4. Standards-based disposition (supersedes earlier owner-choice request)
+
+- `CHV_HELP02_EFFECTIVE_SOURCE_PROVENANCE=ACCEPTED_BY_EVIDENCE` scoped **only** to `HELP-G10-B12-02@R02` with exact overlay blob `913400d6aff63befac95a8a47a00870663dd0096` and independent R03 `SOURCE_EQUIVALENCE_VERDICT=PASS`, `P0=P1=P2=0`, `MINIMAL_DELTA=0`.
+- `HISTORICAL_TEMP_BYTE_PARITY=NOT_VERIFIED` remains; historical original bytes were not recovered. This is not rebranded as `BYTE_PARITY=PASS`.
+- `DELTA_B_SOURCE_EQUIVALENT`: decision/receipt metadata only; five-step math/linked original P06/other 27 items not changed. `NOTEBOOKLM_REREVIEW=NOT_REQUIRED`.
+- **Authoring A1–A7 is complete for `PUBLIC_FORMATIVE_ONLY` B12–B14**. Release R1 is still *implementation/dedup pending* but no longer blocked solely by a request for owner to choose a missing historical Temp source. Reviewer/owner approvals for release, physical QA and any Mastery still separate.
