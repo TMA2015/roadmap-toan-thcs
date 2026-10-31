@@ -14,6 +14,8 @@ on:
       - 'docs/index.md'
       - 'docs/thcs/**'
       - 'docs/thpt-preview/**'
+      - 'scripts/test-thpt-chapter-overview-golden-vii.cjs'
+      - 'scripts/test-thpt-chapter-overview-golden-vii-browser.cjs'
       - 'docs/assets/javascripts/thpt-r4-preview.js'
       - 'docs/assets/javascripts/thpt-chv-b13-b14-reviewed-formative-v1.js'
       - 'docs/assets/images/thpt/THPT_G10_B13_QUARTILES_D5_R01.svg'
@@ -136,6 +138,8 @@ jobs:
         run: node scripts/test-thpt-release-queue.cjs
       - name: Check THPT no-account static release contract
         run: node scripts/test-thpt-static-release.cjs
+      - name: Guard one Golden VII chapter overview across all published SGK chapters
+        run: node scripts/test-thpt-chapter-overview-golden-vii.cjs
       - name: Guard G10 SGK example headings and display math source
         run: node scripts/test-thpt-g10-sgk-display-ui.cjs
       - name: Guard ChVII–VIII scoped public formative bank and reviewed R02 recovery
@@ -215,6 +219,7 @@ jobs:
         run: |
           mkdocs build --strict
           node scripts/assemble-thpt-site.cjs
+          node scripts/test-thpt-chapter-overview-golden-vii.cjs --built
           node scripts/test-thpt-chvi-math-block-render.cjs --built
           node scripts/test-thpt-g10-sgk-display-ui.cjs --built
           node scripts/test-thpt-g10-chiv-b09-b11-release-integration.cjs --built
@@ -240,6 +245,8 @@ jobs:
           python -m http.server 8765 --directory site > /tmp/thpt-r4-combined-http.log 2>&1 &
           sleep 2
           node scripts/test-thpt-r4-preview-browser.js
+      - name: Chapter overview Golden VII cards · phone tablet desktop browser QA
+        run: node scripts/test-thpt-chapter-overview-golden-vii-browser.cjs
       - name: SGK and Chuyên đề search QA · class/chapter/lesson · mobile / iPad / desktop
         run: node scripts/test-thpt-r4-search-browser.cjs
       - name: Integrated PR651/652 question-first compact and interactive browser QA
