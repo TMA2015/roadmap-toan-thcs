@@ -8,6 +8,10 @@
 
 ## PART A · Frozen previously reviewed B01–B02 exact full text
 
+**Lưu ý lịch sử:** khối B01–B02 bên dưới được trích nguyên văn bản R01 khi còn ở trạng thái *candidate*. Trạng thái đó là nhãn lịch sử của tệp nguồn; kết quả NotebookLM sau đó đã **PASS đúng snapshot** theo `THPT_G11_CHI_B01_B02_NOTEBOOKLM_R01_PASS_RECEIPT_20261029.md` (Git blob `97c01873aa501e791fb14c45c3a3c88784db5d17`). Không suy rộng PASS B01–B02 sang nội dung B03–B04 mới.
+
+
+
 # Temp · Toán 11 KNTT Tập 1 · Chương I · Bài 1–2 · D1–D6 học liệu mới · R01
 
 **PACKET_ID:** `THPT-G11-CHI-B01-B02-D1D6-AUTHORING-20261029-R01`  
