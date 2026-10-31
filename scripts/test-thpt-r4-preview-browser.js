@@ -709,12 +709,17 @@ async function ready(page,path){
 
   // Chapter VI reviewed academic snapshot is integrated into non-production lesson previews.
   await ready(page,"sgk/chuong-vi/");
-  const draftLinks=page.locator(".thpt-r4-lesson-tabs a[href]");
+  // Golden VII overview: lesson links are cards, not chapter action-row buttons.
   const lessonTargets=["bai-15/","bai-16/","bai-17/","bai-18/"];
+  assert.equal(await page.locator(".thpt-r4-grid > a.thpt-r4-tile").count(),4,
+    "Chapter VI must have exactly four Golden VII lesson cards");
   for(const target of lessonTargets){
-    assert((await draftLinks.filter({has:page.locator("span")}).count())>=0,"Navigation DOM unexpectedly changed");
-    assert((await page.locator('.thpt-r4-lesson-tabs a[href="'+target+'"]').count())===1,"Missing lesson route "+target);
+    assert.equal(await page.locator('.thpt-r4-grid > a.thpt-r4-tile[href="'+target+'"]').count(),1,
+      "Missing Golden VII lesson card route "+target);
   }
+  const chapterActions=page.locator(".thpt-r4-lesson-tabs");
+  assert.equal(await chapterActions.locator('a[href="luyen-tap/"]').count(),1);
+  assert.equal(await chapterActions.locator('a[href="tu-kiem-tra-chuong/"]').count(),1);
   // Full-page B17/B18 rendering QA: do not sample only the screenshots.
   for(const [lesson,inlineCount,displayCount] of [["17",130,4],["18",59,8]]){
     await ready(page,"sgk/chuong-vi/bai-"+lesson+"/");
