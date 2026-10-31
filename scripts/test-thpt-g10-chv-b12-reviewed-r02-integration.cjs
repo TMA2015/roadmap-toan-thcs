@@ -66,6 +66,7 @@ for(const k of ["b12-core","b12-practice"])assert(practice.includes('data-thpt-o
 const root=read("docs/assets/javascripts/thpt-r4-preview.js");
 assert.equal(root.split("THPT_CHV_B12_REVIEWED_FORMATIVE").length-1,2);
 assert(root.includes('"12":"Số gần đúng và sai số"'));
+assert(root.includes("|11|12|13|14|19|"),"B12 canonical D6 deep-link allowlist not active");
 for(const p of ["mkdocs.yml","mkdocs.thpt-preview.yml"])assert(read(p).includes("assets/javascripts/thpt-chv-b12-reviewed-formative-r02.js"),"Missing B12 script in "+p);
 const readiness=read("docs/thpt-preview/sgk/chuong-v/tu-kiem-tra-chuong.md");
 assert(readiness.includes("chưa kích hoạt")&&!readiness.includes("data-mastery-credit"));
