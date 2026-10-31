@@ -5,6 +5,13 @@ const {chromium}=require("playwright");
 
 const pages=[
   {
+    path:"sgk/lop-11/chuong-i/bai-1/",
+    expected:["1. Góc lượng giác và số đo","2. Radian và độ dài cung",
+      "3. Đường tròn lượng giác","4. Tang, côtang và điều kiện xác định",
+      "5. Các góc liên quan đặc biệt"],
+    minMath:27
+  },
+  {
     path:"sgk/lop-11/chuong-i/bai-2/",
     expected:["1. Công thức cộng và trừ","2. Công thức nhân đôi",
       "3. Tích thành tổng","4. Tổng thành tích"],
