@@ -114,6 +114,8 @@ jobs:
           node scripts/test-site-navigation-v1.js
           node scripts/test-self-learning-math-rename-preflight.cjs
           for js in             docs/assets/javascripts/sticky-nav-v1.js             docs/assets/javascripts/anchor-library-v1.js             docs/assets/javascripts/anchor-topic-related-v1.js             docs/assets/javascripts/model-examples-library-v1.js             docs/assets/javascripts/written-exercise-library-v1.js             docs/assets/javascripts/topic25-exam-engine-v1.js             docs/assets/javascripts/route-module-loader-v1.js             docs/assets/javascripts/route-module-loader-v2.js; do node --check "$js"; done
+      - name: Guard Academic Presentation QA G10 vectors B07 B08 B10 source-lock
+        run: node scripts/test-thpt-ap-vector-knowledge-parity.cjs
       - name: Validate THPT academic-to-release checklist (no deploy)
         run: node scripts/test-thpt-release-queue.cjs
       - name: Check THPT no-account static release contract
@@ -230,6 +232,8 @@ jobs:
         run: node scripts/test-thpt-g10-chiv-b07-b08-browser-smoke.cjs
       - name: ChIV B09/B10/B11 browser QA mobile / iPad / desktop
         run: node scripts/test-thpt-g10-chiv-b09-b11-browser-smoke.cjs
+      - name: AP vector Knowledge pilot QA B07 B08 B10 · 390 820 1440
+        run: node scripts/test-thpt-ap-vector-knowledge-browser.cjs
       - name: G11 ChI B01/B02 browser QA mobile / tablet / desktop
         run: node scripts/test-thpt-g11-chi-b01-b02-browser-smoke.cjs
       - name: ChIX reviewed D5/D6 browser smoke · mobile / iPad / desktop
