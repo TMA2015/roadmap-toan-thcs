@@ -63,7 +63,7 @@
 - **EX-G11-B04-05 (ngoại lai).** \`sin x=cos x\` cho \`tan x=1\` **chỉ sau khi kiểm \`cos x≠0\`**; tại \`cos x=0\`, \`sin x=±1\` nên không là nghiệm. Do đó \`x=π/4+kπ\`, không mất nghiệm.
 - **EX-G11-B04-06 (ứng dụng).** \`H(t)=10+2sin(πt/6)\` (t giờ) bằng 11 khi \`sin(πt/6)=1/2\`. Trên \`0≤t<12\`, có \`t=1\` và \`t=5\` giờ, nhờ chọn đúng hai họ và lọc miền thời gian.
 
-## D3 — SGK Core, Practice, Application: 20 canonical candidate items (NEW, NOT REVIEWED)
+## D3 — SGK Core, Practice, Application: 26 canonical candidate items (NEW, NOT REVIEWED)
 
 **Quy ước:** tất cả câu sau là câu tự biên soạn *mới*; formative có thể có gợi ý/lời giải nhưng **không ghi Mastery**, không dùng chính nguyên câu đã luyện làm chứng cứ RD1. Không chuyển câu mới lên website khi chưa có NotebookLM verdict.
 
@@ -153,7 +153,7 @@
 
 **Đáp án:** Nghịch biến.
 
-**Lời giải:** cot'(x)=-1/sin²x<0 ở nơi xác định (cũng thấy từ đồ thị đi từ +∞ về -∞).
+**Lời giải:** Trên (0,π), đồ thị cot đi liên tục từ +∞ xuống -∞; tương tự trên (kπ,(k+1)π). Không cần dùng đạo hàm (học ở chương sau).
 
 ### THPT-G11-B03-P08 — SGK_PRACTICE · G11-B03-MODELING · APPLICATION
 
@@ -228,6 +228,54 @@
 **Lời giải:** 2cos²x-cosx-1=(2cosx+1)(cosx-1)=0; x=2kπ hoặc ±2π/3+2kπ; hợp hai tập bằng 2kπ/3.
 
 
+### THPT-G11-B04-P05 — SGK_PRACTICE · G11-B04-TRANSFORM · APPLICATION
+
+**Đề:** Giải sinx=sin(3x) trên ℝ.
+
+**Đáp án:** x=kπ hoặc x=π/4+kπ/2, k∈ℤ.
+
+**Lời giải:** sin A=sin B khi A=B+2kπ hoặc A=π-B+2kπ. Nhánh x=3x+2kπ cho x=-kπ, tức mọi kπ. Nhánh x=π-3x+2kπ cho 4x=π+2kπ, tức x=π/4+kπ/2. Không chia hai vế cho sinx.
+
+### THPT-G11-B04-P06 — SGK_PRACTICE · G11-B04-INTERVAL · CORE_APPLY
+
+**Đề:** Giải sinx=1/2 trên [0,2π).
+
+**Đáp án:** {π/6,5π/6}.
+
+**Lời giải:** Nghiệm tổng quát π/6+2kπ hoặc 5π/6+2kπ; chỉ k=0 cho nghiệm thuộc khoảng yêu cầu, 2π bị loại.
+
+### THPT-G11-B04-P07 — SGK_PRACTICE · G11-B04-INTERVAL · CORE_APPLY
+
+**Đề:** Giải cos(2x)=0 trên [0,π].
+
+**Đáp án:** {π/4,3π/4}.
+
+**Lời giải:** 2x=π/2+kπ, nên x=π/4+kπ/2; k=0,1 thỏa đoạn đóng [0,π].
+
+### THPT-G11-B04-P08 — SGK_PRACTICE · G11-B04-EXTRANEOUS · APPLICATION
+
+**Đề:** Giải tanx=tan(2x) trên ℝ, ghi rõ TXĐ.
+
+**Đáp án:** x=kπ, k∈ℤ.
+
+**Lời giải:** Phải có cosx≠0 và cos2x≠0. Khi đó tanA=tanB ⇔ A=B+kπ; x=2x+kπ ⇔ x=-kπ. Các x=kπ đều thuộc TXĐ và thế lại hai vế cùng bằng 0.
+
+### THPT-G11-B04-P09 — SGK_PRACTICE · G11-B04-APPLICATION · APPLICATION
+
+**Đề:** Mực nước H(t)=10+2sin(πt/6), với 0≤t<12 (giờ), bằng 11 lúc mấy giờ?
+
+**Đáp án:** t=1 và t=5 (giờ).
+
+**Lời giải:** sin(πt/6)=1/2; đối số trong [0,2π). Hai nghiệm πt/6=π/6 hoặc 5π/6, nên t=1 hoặc 5.
+
+### THPT-G11-B04-P10 — SGK_PRACTICE · G11-B04-SIN_EQ · CORE_APPLY
+
+**Đề:** Với m∈ℝ, điều kiện nào để sinx=m có nghiệm thực?
+
+**Đáp án:** -1≤m≤1.
+
+**Lời giải:** Giá trị sinx thuộc [-1,1] nên điều kiện cần |m|≤1; ngược lại mọi m trong đoạn đều đạt được trên đường tròn lượng giác.
+
 ## D4 — 4 Written/Anchor candidates dùng chung trong Thư viện (NEW, NOT REVIEWED)
 
 ### THPT-G11-CHI-W03 — WRITTEN · G11-B03-MODELING · Rubric /7
@@ -287,7 +335,7 @@
 
 ## A1–A7 nguồn học liệu, ranh giới bảo vệ
 
-- 20 item public B03–B04 = 8 Core + 12 Practice, và 2 Written; cùng 16 formative +2 Written B01–B02 đã được PASS trước đó, thành **40 public candidates toàn Chương I** (B01/02=18; B03/04=22).
-- Tất cả 22 mục B03/B04 **chưa NotebookLM PASS**; 16+2 cũ B01/B02 giữ nguyên bản R01 đã duyệt. Core/Practice placement dùng một canonical ID; Written/Anchor có một rubric chung.
+- 26 item public B03–B04 = 8 Core + 18 Practice, và 2 Written; cùng 16 formative +2 Written B01–B02 đã được PASS trước đó, thành **46 public candidates toàn Chương I** (B01/02=18; B03/04=28).
+- Tất cả 28 mục B03/B04 **chưa NotebookLM PASS**; 16+2 cũ B01/B02 giữ nguyên bản R01 đã duyệt. Core/Practice placement dùng một canonical ID; Written/Anchor có một rubric chung.
 - RD0/RD1 kín cuối chương phải độc lập và **không lộ đáp án/gợi ý trước Final Submit**. Trước khi được release xác minh, không ghi điểm chính thức hay Mastery.
 - Không thêm menu Chuyên đề, không sửa UI Golden, Firebase, THCS hoặc learner localStorage. Gói review mới sẽ gồm **toàn bộ Chương I**, không các delta lẻ.
