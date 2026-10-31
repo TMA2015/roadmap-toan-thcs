@@ -57,8 +57,11 @@ function run(){
  }
  assert.equal(formative.validate().valid,true,"existing 18 reviewed public items remain valid");
  const readiness=fs.readFileSync(path.join(base,"docs/thpt-preview/sgk/chuong-vi/tu-kiem-tra-chuong.md"),"utf8");
- assert(readiness.includes("TECHNICAL_DEMO_ONLY"));
- assert(readiness.includes("mastery_credit: false"));
+ const reviewed=JSON.parse(fs.readFileSync(path.join(base,"docs/assets/data/thpt-g10-readiness/CHVI.json"),"utf8"));
+ assert(readiness.includes('data-g10-chapter-selfcheck="CHVI"')&&readiness.includes("Final Submit"));
+ assert.equal(reviewed.items.length,18,"ChVI must show all 18 reviewed self-check items");
+ assert.equal(reviewed.mastery_credit,false,"Reviewed client self-check must not award Mastery");
+ assert.equal(reviewed.persist_results,false,"Reviewed self-check must not modify learner progress");
  console.log("PASS CHVI D6 authoring source parity: 8 cards / 40 original stages / 19 outcomes / 17 canonical return refs");
  console.log("PASS scope: only public ChVI practice, no readiness or mastery, no persistence/network");
 }
