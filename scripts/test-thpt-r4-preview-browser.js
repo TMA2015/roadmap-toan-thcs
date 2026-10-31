@@ -26,7 +26,7 @@ async function ready(page,path){
   fs.mkdirSync("thpt-r4-visual-qa",{recursive:true});
   // Owner P2: the neutral cover drawer must not show the THCS-only menu.
   // Native THPT home drawer must open at phone/tablet/narrow desktop widths.
-  for(const vp of [{width:390,height:844},{width:820,height:1180},{width:1100,height:820}]){
+  for(const vp of [{width:390,height:844},{width:820,height:1180},{width:960,height:900},{width:1100,height:820}]){
    const navPage=await browser.newPage({viewport:vp});
    try{
     const root=await navPage.goto("http://127.0.0.1:8765/",{waitUntil:"networkidle"});
