@@ -5,15 +5,41 @@
 ## 1. Kiến thức SGK
 
 
-**D1.1 Quy tắc ba điểm/ tam giác.** Với A,B,C tùy ý: $\overrightarrow{AB}+\overrightarrow{BC}=\overrightarrow{AC}$. Lưu ý điểm cuối của vectơ thứ nhất B là điểm đầu của vectơ thứ hai; đảo BC thành CB có thể làm đổi kết quả.
+### 1. Quy tắc ba điểm (quy tắc tam giác)
 
-**D1.2 Quy tắc hình bình hành.** Với hình bình hành ABCD, $\overrightarrow{AB}+\overrightarrow{AD}=\overrightarrow{AC}$. Hai cạnh được chọn phải cùng xuất phát từ **A**, đường chéo kết quả từ A đến C. Phép cộng vectơ có giao hoán, kết hợp, phần tử không.
+ Với A,B,C tùy ý: $\overrightarrow{AB}+\overrightarrow{BC}=\overrightarrow{AC}$.
 
-**D1.3 Vectơ đối và hiệu.** $-\overrightarrow{AB}=\overrightarrow{BA}$ và $\vec u-\vec v=\vec u+(-\vec v)$. Quy tắc ba điểm suy ra $\overrightarrow{AB}-\overrightarrow{AC}=\overrightarrow{CB}$; phép trừ vectơ nói chung **không giao hoán**. $\vec a+\vec0=\vec a$, $\vec a+(-\vec a)=\vec0$.
+**Lưu ý:** Điểm cuối của vectơ thứ nhất B là điểm đầu của vectơ thứ hai; đảo BC thành CB có thể làm đổi kết quả.
 
-**D1.4 Trung điểm và trọng tâm.** M là trung điểm AB khi và chỉ khi $\overrightarrow{MA}+\overrightarrow{MB}=\vec0$. G là trọng tâm tam giác ABC thì $\overrightarrow{GA}+\overrightarrow{GB}+\overrightarrow{GC}=\vec0$. Đối với M trung điểm BC và E bất kì: $\overrightarrow{EB}+\overrightarrow{EC}=\overrightarrow{EM}+\overrightarrow{EM}$. Chú ý đây là quan hệ cộng vectơ đã có trong bài, không xây thêm phần Core riêng.
+### 2. Quy tắc hình bình hành
 
-**D1.5 Ứng dụng hợp lực.** Nếu hai lực có cùng điểm đặt, hợp lực là đường chéo hình bình hành tạo bởi hai vectơ lực. Độ lớn hợp lực không bằng tổng các độ lớn nếu hai lực không cùng hướng. Bài toán hai lực vuông góc có thể dùng định lí Pitago.
+ Với hình bình hành ABCD, $\overrightarrow{AB}+\overrightarrow{AD}=\overrightarrow{AC}$.
+
+**Điều kiện hình vẽ:** Hai cạnh được chọn phải cùng xuất phát từ **A**, đường chéo kết quả từ A đến C.
+
+**Tính chất:** Phép cộng vectơ có giao hoán, kết hợp, phần tử không.
+
+### 3. Vectơ đối và hiệu
+
+ $-\overrightarrow{AB}=\overrightarrow{BA}$ và $\vec u-\vec v=\vec u+(-\vec v)$. 
+
+**Hệ quả:** Quy tắc ba điểm suy ra $\overrightarrow{AB}-\overrightarrow{AC}=\overrightarrow{CB}$; phép trừ vectơ nói chung **không giao hoán**.
+
+**Phần tử không và vectơ đối:** $\vec a+\vec0=\vec a$, $\vec a+(-\vec a)=\vec0$.
+
+### 4. Trung điểm và trọng tâm
+
+ M là trung điểm AB khi và chỉ khi $\overrightarrow{MA}+\overrightarrow{MB}=\vec0$.
+
+**Trọng tâm:** G là trọng tâm tam giác ABC thì $\overrightarrow{GA}+\overrightarrow{GB}+\overrightarrow{GC}=\vec0$.
+
+**Hệ quả trung điểm:** Đối với M trung điểm BC và E bất kì: $\overrightarrow{EB}+\overrightarrow{EC}=\overrightarrow{EM}+\overrightarrow{EM}$.
+
+**Liên hệ:** Chú ý đây là quan hệ cộng vectơ đã có trong bài, không xây thêm phần Core riêng.
+
+### 5. Ứng dụng hợp lực
+
+ Nếu hai lực có cùng điểm đặt, hợp lực là đường chéo hình bình hành tạo bởi hai vectơ lực. Độ lớn hợp lực không bằng tổng các độ lớn nếu hai lực không cùng hướng. Bài toán hai lực vuông góc có thể dùng định lí Pitago.
 
 ## 2. Ví dụ
 
