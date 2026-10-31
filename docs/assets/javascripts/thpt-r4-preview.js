@@ -582,7 +582,7 @@
   });
   // Public formative navigation from the approved D6 help cards only.
   const requestedItem=new URLSearchParams(location.search).get("item");
-  const parsed=/^THPT-G10-B(01|02|03|04|05|06|07|08|09|10|11|13|14|19|20|21|22|23|24|25|26|27)-[CP]\d{2}$/.exec(requestedItem||"");
+  const parsed=/^THPT-G10-B(01|02|03|04|05|06|07|08|09|10|11|12|13|14|19|20|21|22|23|24|25|26|27)-[CP]\d{2}$/.exec(requestedItem||"");
   const parsedG11=/^THPT-G11-B(01|02)-[CP]\d{2}$/.exec(requestedItem||"");
   if(parsed||parsedG11){
    const isG11=Boolean(parsedG11);
