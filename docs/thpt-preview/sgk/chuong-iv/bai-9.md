@@ -4,11 +4,35 @@
 
 ## 1. Kiến thức SGK
 
-**D1.1 Định nghĩa và trường hợp đặc biệt.** Cho $k\in\mathbb R$ và vectơ $\vec u$. Vectơ $k\vec u$ có độ dài $|k\vec u|=|k|\,|\vec u|$. Nếu $\vec u\ne\vec0$, với $k>0$ thì $k\vec u$ cùng hướng $\vec u$; với $k<0$ thì ngược hướng. Nếu $k=0$ hoặc $\vec u=\vec0$ thì $k\vec u=\vec0$. Với vectơ-không, SGK/SBT KNTT có quy ước riêng về phương/hướng; không suy ra vectơ-không có một mũi tên vật lí khác 0.
+### 1. Định nghĩa và trường hợp đặc biệt
 
-**D1.2 Tính chất.** $k(\vec u+\vec v)=k\vec u+k\vec v$, $(k+m)\vec u=k\vec u+m\vec u$, $k(m\vec u)=(km)\vec u$, $1\vec u=\vec u$, $(-1)\vec u=-\vec u$. Nếu $\vec u$ và $\vec v$ **đều khác không**, chúng cùng phương khi và chỉ khi tồn tại $t\ne0$ sao cho $\vec v=t\vec u$. Trường hợp vectơ không phải kiểm riêng theo quy ước, không chia cho độ dài 0.
+Cho $k\in\mathbb R$ và vectơ $\vec u$. 
 
-**D1.3 Trung điểm và trọng tâm.** Nếu $M$ là trung điểm $AB$ thì $\overrightarrow{AM}=\tfrac12\overrightarrow{AB}$; ngược lại, đẳng thức này xác định trung điểm. Nếu $G$ là trọng tâm tam giác $ABC$, $M$ là trung điểm $BC$ thì
+**Độ dài:** Vectơ $k\vec u$ có độ dài $|k\vec u|=|k|\,|\vec u|$. 
+
+**Hướng:** Nếu $\vec u\ne\vec0$, với $k>0$ thì $k\vec u$ cùng hướng $\vec u$; với $k<0$ thì ngược hướng. 
+
+**Trường hợp đặc biệt:** Nếu $k=0$ hoặc $\vec u=\vec0$ thì $k\vec u=\vec0$. 
+
+**Lưu ý:** Với vectơ-không, SGK/SBT KNTT có quy ước riêng về phương/hướng; không suy ra vectơ-không có một mũi tên vật lí khác 0.
+
+### 2. Tính chất
+
+**Các quy tắc cơ bản:**
+
+- $k(\vec u+\vec v)=k\vec u+k\vec v$
+- $(k+m)\vec u=k\vec u+m\vec u$
+- $k(m\vec u)=(km)\vec u$
+- $1\vec u=\vec u$
+- $(-1)\vec u=-\vec u$
+
+Nếu $\vec u$ và $\vec v$ **đều khác không**, chúng cùng phương khi và chỉ khi tồn tại $t\ne0$ sao cho $\vec v=t\vec u$. Trường hợp vectơ không phải kiểm riêng theo quy ước, không chia cho độ dài 0.
+
+### 3. Trung điểm và trọng tâm
+
+**Trung điểm:** Nếu $M$ là trung điểm $AB$ thì $\overrightarrow{AM}=\tfrac12\overrightarrow{AB}$; ngược lại, đẳng thức này xác định trung điểm. 
+
+**Trọng tâm:** Nếu $G$ là trọng tâm tam giác $ABC$, $M$ là trung điểm $BC$ thì
 
 \[
 \overrightarrow{AG}=\tfrac23\overrightarrow{AM}=\tfrac13(\overrightarrow{AB}+\overrightarrow{AC}),
@@ -17,7 +41,9 @@
 
 Đây là liên hệ vận dụng từ Bài 8 (cộng vectơ) sang nhân với một số, không tạo item trùng với Bài 8.
 
-**D1.4 Ứng dụng.** Khi các vectơ biểu diễn dịch chuyển hay lực, $k$ thay đổi độ lớn và có thể đổi chiều. Không ghi độ dài âm hoặc cộng độ dài thay cho tổng vectơ khi các hướng khác nhau.
+### 4. Ứng dụng
+
+Khi các vectơ biểu diễn dịch chuyển hay lực, $k$ thay đổi độ lớn và có thể đổi chiều. Không ghi độ dài âm hoặc cộng độ dài thay cho tổng vectơ khi các hướng khác nhau.
 
 ## 2. Ví dụ
 
