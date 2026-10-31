@@ -26,6 +26,16 @@ const base="http://127.0.0.1:8765/thpt-preview/";
     "Placeholder must provide an actually supported lesson query");
    assert.equal(await page.locator("[data-thpt-search-only]:visible").count(),0,
     "Direct lesson results must not clutter default chapter index");
+   const gradePanels=page.locator("details.library-cluster[data-thpt-filter-group]");
+   assert.equal(await gradePanels.count(),3,"All three SGK grade panels must exist");
+   for(const grade of ["10","11","12"]){
+    const panel=page.locator('details.library-cluster[data-thpt-grade="'+grade+'"]');
+    assert.equal(await panel.getAttribute("open"),"","Grade "+grade+" must be expanded by default");
+    assert(await panel.locator("summary").isVisible(),"Grade "+grade+" heading must be visible");
+   }
+   const grade10Text=await page.locator('[data-thpt-grade="10"] summary').innerText();
+   assert(!/khung đối chiếu|phạm vi được duyệt|Core\/Luyện tập|B01–B02/.test(grade10Text),
+     "Grade 10 summary must not expose old release-process notes");
    await query("lớp 10",9); // 8 available chapter cards + one clearly marked unpublished ChV
    let result=await query("chương I",2); // published G10 and G11 chapter I
    assert((await result.first().getAttribute("href")).endsWith("chuong-i/"));
@@ -50,7 +60,12 @@ const base="http://127.0.0.1:8765/thpt-preview/";
    assert((await result.first().getAttribute("href")).endsWith("chuong-iv/bai-10/"));
    result=await query("bài 11",1);
    assert((await result.first().getAttribute("href")).endsWith("chuong-iv/bai-11/"));
-   await query("chương V, bài 12",0); // ChV B12 is not yet published
+   result=await query("chương V, bài 12",1);
+   assert((await result.first().getAttribute("href")).endsWith("chuong-v/bai-12/"),"Released B12 should be found");
+   result=await query("bài 13",1);
+   assert((await result.first().getAttribute("href")).endsWith("chuong-v/bai-13/"));
+   result=await query("bài 14",1);
+   assert((await result.first().getAttribute("href")).endsWith("chuong-v/bai-14/"));
    result=await query("lớp 11",1);
    assert((await result.first().getAttribute("href")).endsWith("lop-11/chuong-i/"));
    result=await query("lớp 11, chương I, bài 1",1);
