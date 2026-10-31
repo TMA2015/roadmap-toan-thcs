@@ -256,7 +256,7 @@ async function ready(page,path){
     assert.equal(await page.locator("[data-thpt-secure-readiness]").count(),0);
     assert.equal(await page.locator("[data-thpt-open-quiz]").count(),0,
       "ChVII held-out Readiness must not be served as a public practice card");
-    assert((await page.locator("article").innerText()).includes("chưa mở"),"ChVII inactive readiness clearly identified to learners");
+    assert.equal(await page.locator('[data-g10-chapter-selfcheck="CHVII"] .g10sc-progress').count(),1,"ChVII reviewed 22-item self-check missing");assert(!((await page.locator('[data-g10-chapter-selfcheck="CHVII"]').innerText()).includes("Đáp án:")),"ChVII pre-submit answer leak");
     const overflow=await page.evaluate(()=>document.documentElement.scrollWidth-window.innerWidth);
     assert(overflow<=20,"ChVII R4 overflow at "+viewport.width+"px: "+overflow);
     await page.close();
@@ -606,27 +606,20 @@ async function ready(page,path){
   await ready(page,"sgk/chuong-vi/tu-kiem-tra-chuong/");
   assert.equal(await page.locator("[data-floating-ai]").count(),0,
     "Gemini Tutor must stay hidden throughout SGK Chapter Readiness");
-  const chapterReady=page.locator('[data-thpt-assessment="sgk-chapter"][data-thpt-readiness]');
-  assert((await chapterReady.count())===1,"Missing separate SGK chapter Readiness engine");
-  assert((await chapterReady.getAttribute("data-demo-scope"))==="TECHNICAL_DEMO_ONLY","Chapter readiness must be explicitly demo only");
-  assert((await chapterReady.getAttribute("data-mastery-credit"))==="false","Chapter readiness must not grant mastery");
-  assert(await chapterReady.locator("[data-thpt-solution]").isHidden(),"SGK chapter assessment leaked answers before Submit");
-  assert((await chapterReady.locator("[data-thpt-progress]").textContent()).includes("1 / 4"),"Chapter readiness must contain four technical demo questions");
-  await chapterReady.locator('input[value="1"]').check();
-  await chapterReady.locator("[data-thpt-next]").click();
-  await chapterReady.locator('input[value="1"]').check();
-  await chapterReady.locator("[data-thpt-next]").click();
-  await chapterReady.locator('input[value="2"]').check();
-  await chapterReady.locator("[data-thpt-next]").click();
-  await chapterReady.locator('input[value="0"]').check();
-  assert(await chapterReady.locator("[data-thpt-solution]").isHidden(),"SGK chapter assessment leaked after Next");
-  await chapterReady.locator("[data-thpt-previous]").click();
-  await chapterReady.locator('input[value="2"]').check();
-  await chapterReady.locator("[data-thpt-next]").click();
-  await chapterReady.locator("[data-thpt-final]").click();
-  const finalText=await chapterReady.locator("[data-thpt-feedback]").textContent();
-  assert(finalText.includes("4 / 4"),"SGK chapter Final Submit score incorrect");
-  assert(await chapterReady.locator("[data-thpt-solution]").isVisible(),"SGK chapter explanation did not appear after Final Submit");
+  const chapterReady=page.locator('[data-g10-chapter-selfcheck="CHVI"]');
+  assert.equal(await chapterReady.count(),1,"Missing reviewed G10 chapter VI self-check route");
+  await chapterReady.locator(".g10sc-progress").waitFor();
+  assert((await chapterReady.locator(".g10sc-progress").innerText()).includes("1 / 18"),"ChVI must show original reviewed 18 candidates");
+  assert(!((await chapterReady.innerText()).includes("Đáp án:")),"ChVI pre-submit answer leak");
+  await chapterReady.locator(".g10sc-textarea").fill("Tự giải trước khi xem đáp án");
+  await chapterReady.locator(".g10sc-controls button").filter({hasText:"Câu tiếp"}).click();
+  assert(!((await chapterReady.innerText()).includes("Đáp án:")),"Next unexpectedly exposed ChVI answer");
+  await chapterReady.locator(".g10sc-controls button").filter({hasText:"Câu trước"}).click();
+  assert((await chapterReady.locator(".g10sc-textarea").inputValue()).includes("Tự giải"),"ChVI answer lost after navigation");
+  await chapterReady.locator("[data-g10sc-final]").click();
+  assert((await chapterReady.innerText()).includes("Kết quả tự đánh giá"),"ChVI self-check must summarize only after Final Submit");
+  assert((await chapterReady.innerText()).includes("Đáp án:"),"ChVI post-submit answer missing");
+  assert.equal(await chapterReady.locator("[data-g10sc-final]").isVisible(),false,"ChVI final must lock");
 
   await ready(page,"chuyen-de/ham-so/luyen-tap/");
   assert((await page.locator("article").textContent()).includes("THPT-CORE-QF01"),"Same shared Core item must be referenced in beginner Practice");
@@ -808,9 +801,9 @@ async function ready(page,path){
   assert.equal(await page.locator('[data-thpt-kind="anchor"]').count(),1,"Anchor must be a Written tag");
   assert.equal(await page.locator('section[data-thpt-written-canonical] details[open]').count(),0,"Written solutions must start hidden");
   await ready(page,"sgk/chuong-viii/tu-kiem-tra-chuong/");
-  assert.equal(await page.locator("[data-thpt-readiness], [data-thpt-secure-readiness]").count(),0,"No active ChVIII Readiness");
+  assert.equal(await page.locator('[data-g10-chapter-selfcheck="CHVIII"] .g10sc-progress').count(),1,"ChVIII reviewed self-check route absent");assert.equal(await page.locator("[data-thpt-secure-readiness]").count(),0,"No independent Mastery engine");
 
   await page.close();
-  console.log("PASS THPT R4 reviewed formative/Written + technical Readiness Chromium smoke (not production approval or real-device QA)");
+  console.log("PASS THPT R4 reviewed formative/Written + reviewed client self-check Chromium smoke (no Mastery or real-device certification)");
  }finally{await browser.close();}
 })().catch(e=>{console.error("FAIL THPT R4 browser smoke",e);process.exit(1)});
