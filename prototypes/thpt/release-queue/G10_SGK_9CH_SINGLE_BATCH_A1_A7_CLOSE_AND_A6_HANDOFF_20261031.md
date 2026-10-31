@@ -83,3 +83,20 @@ RELEASE_AUTHORIZATION|NO
 MASTERY_ACTIVATION|NO
 FULL_G10_SGK_WEBSITE|NOT_COMPLETE
 ```
+## 6. Exact source entrypoints for a release engineer (do not search old chat attachments)
+
+| Chapter | SGK public reviewed authoring source locator | RD1 private source / review evidence |
+|---|---|---|
+| I | `prototypes/thpt/release-queue/ready/G10-SGK-CHI.md` on main, frozen D1–D6 blob `95a554e31a613b8e215679fe6790738473d598df` | Private ChI R02 14 candidates, SHA256 `a3c3410555b86b2186bcfe342f3cb084475a37c4777d2fb9b1c8562433d40d32`; metadata Draft #669 |
+| II | `prototypes/thpt/release-queue/ready/G10-SGK-CHII.md` on main | Private ChII R01 14 candidates SHA `679dbdb7ee293b7879c63dc391edce0c36097cc7522eaddc0daffae3623309b3` |
+| III | `prototypes/thpt/release-queue/ready/G10-SGK-CHIII.md` on main | Private ChIII R01 14 candidates SHA `1f4e6eb5af786d8d0502d9d71a8d84290d364fd9c25be28adadf32bd05adaa1e` |
+| IV | `prototypes/thpt/release-queue/ready/G10-SGK-CHIV.md` AND `G10-SGK-CHIV-B09-B11.md` on main (two source-scoped lesson groups) | Private ChIV R01 21 candidates SHA `14868ed2fff5bdca0da7ea4b6e20f917c356880c28d86c425c7d0c8686196e41` |
+| V | **Draft #639** `prototypes/thpt/release-queue/ready/G10-SGK-CHV-EFFECTIVE-R02-SINGLE-SOURCE-MANIFEST_20261031.md`, blob `8cd9bf1059b628f2fba95fb24900bb200b93b599` | Private ChV R01 18 candidates SHA `efc16a92ac7c168d34b2353276137d13a25478008e4e5e42817135e153eb111e` |
+| VI | `prototypes/thpt/release-queue/inventory/G10-SGK-CHVI.md` on authoring Draft **#642**, plus 8 D6 source and QA receipt there; current public pages remain on main | Private ChVI old18 math/R1 rubric PASS SHA `a25ae92a4cb01122189bab2f4a22f7427838d5d7d7361a2cb9e9855571c9a154`; 20-item alternative **excluded** |
+| VII | `prototypes/thpt/release-queue/ready/G10-SGK-CHVII.md` on main | Private ChVII R03 22 candidates SHA `1698c220a7d507eacf0774de09f7fdd5ae5711bbdd900d943ddeb365b4670bd4`; retired old RD02 **excluded** |
+| VIII | `prototypes/thpt/release-queue/ready/G10-SGK-CHVIII.md` on main | Private ChVIII R01 14 candidates SHA `c33e116b51c6da274e9ecce64f9885f820cf3e4aaa49cac61e80b554b268d601` |
+| IX | `prototypes/thpt/release-queue/ready/G10-SGK-CHIX.md` on main | Private ChIX R0 6 candidates SHA `d27e8361d3356ac9f0b224aaa3cbaea61ad02eed4510a8a3489b89ebd4cc5a96` |
+
+**Private bank location is deliberately not a public download URL:** ChatGPT Library `Math App/THPT_Academic_Review_Archive`; A6 must use an authorized source handoff, not public HTML or a transient ChatGPT Temp link. Only the named effective source snapshots may be integrated. All pointers in this section are **source receipts**, not statements that the corresponding release head or independent testing engine has passed R1–R5.
+
+**Metadata correction:** Legacy `ready/G10-SGK-CHVII.md` and `CHVIII.md` include an inherited `B19–B25` / `7/7` scope string. The current actual Grade 10 lesson directories are ChVII B19–B22 (4), ChVIII B23–B25 (3). Treat the inherited strings as stale *manifest prose* and this whole-grade S1 chapter crosswalk as the correct lesson-range index; do not alter mathematical material or request NotebookLM review solely to fix the label.
