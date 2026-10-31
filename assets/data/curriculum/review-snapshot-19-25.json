@@ -1,0 +1,552 @@
+{
+  "schema": "practice-skill-audit-snapshot-v1",
+  "date": "2026-09-26",
+  "phase": "manifest-only-unverified-question-tags",
+  "topics": [
+    {
+      "topic": "19-duong-tron",
+      "manifest": "docs/assets/data/practice/19-duong-tron-v1.manifest.json",
+      "manifest_sha": "4529bf3a748257eed515cf4e7781e4cfc6c13db4",
+      "declared_questions": 147,
+      "skill_labels": {
+        "goc-o-tam": "Góc ở tâm",
+        "goc-noi-tiep": "Góc nội tiếp",
+        "nua-duong-tron": "Góc chắn nửa đường tròn",
+        "day-va-tam": "Dây và khoảng cách đến tâm",
+        "tiep-tuyen-ban-kinh": "Tiếp tuyến và bán kính",
+        "hai-tiep-tuyen": "Hai tiếp tuyến từ một điểm",
+        "tu-giac-noi-tiep": "Tứ giác nội tiếp",
+        "dau-hieu-noi-tiep": "Dấu hiệu nội tiếp",
+        "hai-day-cat-nhau": "Hai dây cắt nhau",
+        "tiep-tuyen-cat-tuyen": "Tiếp tuyến – cát tuyến",
+        "chung-minh-tiep-tuyen": "Chứng minh tiếp tuyến",
+        "goc-cung": "Góc và cung tổng hợp",
+        "do-dai-duong-tron": "Hệ thức độ dài trong đường tròn",
+        "cung-va-day": "Quan hệ cung và dây",
+        "do-dai-cung": "Độ dài cung",
+        "dien-tich-quat-tron": "Diện tích quạt tròn",
+        "dien-tich-vanh-khuyen": "Diện tích vành khuyên",
+        "vi-tri-tuong-doi-duong-thang-duong-tron": "Vị trí tương đối đường thẳng – đường tròn",
+        "vi-tri-tuong-doi-hai-duong-tron": "Vị trí tương đối hai đường tròn",
+        "duong-tron-ngoai-tiep-tam-giac": "Đường tròn ngoại tiếp tam giác",
+        "duong-tron-noi-tiep-tam-giac": "Đường tròn nội tiếp tam giác",
+        "da-giac-deu": "Đa giác đều"
+      },
+      "skill_groups": [
+        {
+          "id": "goc-cung",
+          "label": "A. Góc, cung và dây",
+          "skills": [
+            "goc-o-tam",
+            "goc-noi-tiep",
+            "nua-duong-tron",
+            "day-va-tam",
+            "goc-cung"
+          ]
+        },
+        {
+          "id": "tiep-tuyen",
+          "label": "B. Tiếp tuyến",
+          "skills": [
+            "tiep-tuyen-ban-kinh",
+            "hai-tiep-tuyen",
+            "chung-minh-tiep-tuyen"
+          ]
+        },
+        {
+          "id": "noi-tiep",
+          "label": "C. Tứ giác nội tiếp",
+          "skills": [
+            "tu-giac-noi-tiep",
+            "dau-hieu-noi-tiep"
+          ]
+        },
+        {
+          "id": "he-thuc",
+          "label": "D. Hệ thức độ dài",
+          "skills": [
+            "hai-day-cat-nhau",
+            "tiep-tuyen-cat-tuyen",
+            "do-dai-duong-tron"
+          ]
+        },
+        {
+          "id": "kntt-core-bo-sung",
+          "label": "E. KNTT Core bổ sung lớp 9",
+          "skills": [
+            "cung-va-day",
+            "do-dai-cung",
+            "dien-tich-quat-tron",
+            "dien-tich-vanh-khuyen",
+            "vi-tri-tuong-doi-duong-thang-duong-tron",
+            "vi-tri-tuong-doi-hai-duong-tron",
+            "duong-tron-ngoai-tiep-tam-giac",
+            "duong-tron-noi-tiep-tam-giac",
+            "da-giac-deu"
+          ]
+        }
+      ],
+      "sources": [
+        "19-duong-tron-v1-01.json",
+        "19-duong-tron-v1-02.json",
+        "19-duong-tron-v1-03.json",
+        "19-duong-tron-v1-04.json",
+        "19-duong-tron-v1-05.json"
+      ]
+    },
+    {
+      "topic": "20-hinh-hoc-tong-hop",
+      "manifest": "docs/assets/data/practice/20-hinh-hoc-tong-hop-v1.manifest.json",
+      "manifest_sha": "7fc4157bd2e56fa243b428ef0949583c589a3eb9",
+      "declared_questions": 195,
+      "skill_labels": {
+        "nhan-dang-cong-cu": "Nhận dạng công cụ",
+        "song-song-dong-dang": "Song song → đồng dạng",
+        "hai-goc-vuong-noi-tiep": "Hai góc vuông → nội tiếp",
+        "noi-tiep-dong-dang": "Nội tiếp → đồng dạng",
+        "dong-dang-he-thuc-tich": "Đồng dạng → hệ thức tích",
+        "tam-giac-vuong-dong-dang": "Đồng dạng trong tam giác vuông",
+        "tiep-tuyen-chung-minh": "Chứng minh tiếp tuyến",
+        "chuoi-suy-luan": "Chuỗi suy luận hình học",
+        "the-tich-hop-chu-nhat": "Thể tích hình hộp chữ nhật",
+        "the-tich-lang-tru": "Thể tích lăng trụ đứng",
+        "dien-tich-day": "Diện tích đáy",
+        "doi-don-vi-do-luong": "Đổi đơn vị đo lường",
+        "bai-toan-tong-hop": "Bài toán tổng hợp",
+        "nhan-biet-tam-giac-deu": "Nhận biết tam giác đều",
+        "nhan-biet-hinh-vuong": "Nhận biết hình vuông",
+        "nhan-biet-luc-giac-deu": "Nhận biết lục giác đều",
+        "nhan-biet-tu-giac-dac-biet": "Nhận biết tứ giác đặc biệt",
+        "chu-vi-tu-giac": "Chu vi tứ giác",
+        "dien-tich-tu-giac": "Diện tích tứ giác",
+        "do-luong-thuc-te": "Đo lường thực tế",
+        "truc-doi-xung": "Trục đối xứng",
+        "tam-doi-xung": "Tâm đối xứng",
+        "nhan-biet-hinh-hop-lap-phuong": "Nhận biết hình hộp chữ nhật và lập phương",
+        "dien-tich-xung-quanh-hop-chu-nhat": "Diện tích xung quanh hình hộp chữ nhật",
+        "nhan-biet-lang-tru-dung": "Nhận biết lăng trụ đứng",
+        "dien-tich-xung-quanh-lang-tru": "Diện tích xung quanh lăng trụ đứng",
+        "nhan-biet-hinh-chop-deu": "Nhận biết hình chóp đều",
+        "dien-tich-xung-quanh-hinh-chop": "Diện tích xung quanh hình chóp đều",
+        "the-tich-hinh-chop": "Thể tích hình chóp",
+        "nhan-biet-hinh-tru": "Nhận biết hình trụ",
+        "dien-tich-xung-quanh-hinh-tru": "Diện tích xung quanh hình trụ",
+        "the-tich-hinh-tru": "Thể tích hình trụ",
+        "nhan-biet-hinh-non": "Nhận biết hình nón",
+        "dien-tich-xung-quanh-hinh-non": "Diện tích xung quanh hình nón",
+        "the-tich-hinh-non": "Thể tích hình nón",
+        "nhan-biet-hinh-cau": "Nhận biết hình cầu",
+        "dien-tich-mat-cau": "Diện tích mặt cầu",
+        "the-tich-hinh-cau": "Thể tích hình cầu"
+      },
+      "skill_groups": [
+        {
+          "id": "nhan-dang",
+          "label": "A. Nhận dạng cấu hình và công cụ",
+          "skills": [
+            "nhan-dang-cong-cu",
+            "song-song-dong-dang",
+            "hai-goc-vuong-noi-tiep"
+          ]
+        },
+        {
+          "id": "cau-noi",
+          "label": "B. Các cầu nối suy luận",
+          "skills": [
+            "noi-tiep-dong-dang",
+            "dong-dang-he-thuc-tich",
+            "tam-giac-vuong-dong-dang",
+            "tiep-tuyen-chung-minh"
+          ]
+        },
+        {
+          "id": "chien-luoc",
+          "label": "C. Chuỗi suy luận tổng hợp",
+          "skills": [
+            "chuoi-suy-luan",
+            "bai-toan-tong-hop"
+          ]
+        },
+        {
+          "id": "do-luong",
+          "label": "D. Đo lường và hình khối",
+          "skills": [
+            "the-tich-hop-chu-nhat",
+            "the-tich-lang-tru",
+            "dien-tich-day",
+            "doi-don-vi-do-luong"
+          ]
+        },
+        {
+          "id": "kntt-core-hinh-phang",
+          "label": "E. KNTT Core – hình phẳng và đối xứng",
+          "skills": [
+            "nhan-biet-tam-giac-deu",
+            "nhan-biet-hinh-vuong",
+            "nhan-biet-luc-giac-deu",
+            "nhan-biet-tu-giac-dac-biet",
+            "chu-vi-tu-giac",
+            "dien-tich-tu-giac",
+            "do-luong-thuc-te",
+            "truc-doi-xung",
+            "tam-doi-xung"
+          ]
+        },
+        {
+          "id": "kntt-core-hinh-khoi",
+          "label": "F. KNTT Core – hình khối",
+          "skills": [
+            "nhan-biet-hinh-hop-lap-phuong",
+            "dien-tich-xung-quanh-hop-chu-nhat",
+            "nhan-biet-lang-tru-dung",
+            "dien-tich-xung-quanh-lang-tru",
+            "nhan-biet-hinh-chop-deu",
+            "dien-tich-xung-quanh-hinh-chop",
+            "the-tich-hinh-chop",
+            "nhan-biet-hinh-tru",
+            "dien-tich-xung-quanh-hinh-tru",
+            "the-tich-hinh-tru",
+            "nhan-biet-hinh-non",
+            "dien-tich-xung-quanh-hinh-non",
+            "the-tich-hinh-non",
+            "nhan-biet-hinh-cau",
+            "dien-tich-mat-cau",
+            "the-tich-hinh-cau"
+          ]
+        }
+      ],
+      "sources": [
+        "20-hinh-hoc-tong-hop-v1-01.json",
+        "20-hinh-hoc-tong-hop-v1-02.json",
+        "20-hinh-hoc-tong-hop-v1-03.json",
+        "20-hinh-hoc-tong-hop-v1-04.json",
+        "20-hinh-hoc-tong-hop-v1-05.json"
+      ]
+    },
+    {
+      "topic": "21-thong-ke",
+      "manifest": "docs/assets/data/practice/21-thong-ke-v1.manifest.json",
+      "manifest_sha": "3d88c1ce48ac1129648980de3f0544e6024251b9",
+      "declared_questions": 132,
+      "skill_labels": {
+        "du-lieu-phan-loai": "Dữ liệu và phân loại dữ liệu",
+        "thu-thap-du-lieu": "Thu thập dữ liệu",
+        "kiem-tra-chat-luong": "Kiểm tra chất lượng dữ liệu",
+        "mau-thien-lech": "Nhận biết mẫu thiên lệch",
+        "bang-tan-so": "Bảng tần số",
+        "tan-suat": "Tần suất và phần trăm",
+        "doc-bieu-do-cot": "Đọc biểu đồ cột",
+        "doc-bieu-do-doan-thang": "Đọc biểu đồ đoạn thẳng",
+        "chon-bieu-do": "Chọn dạng biểu diễn",
+        "chuyen-bang-bieu-do": "Chuyển đổi bảng – biểu đồ",
+        "nhan-xet-du-lieu": "Nhận xét và kết luận từ dữ liệu",
+        "don-vi-thang-do": "Đơn vị và thang đo",
+        "doc-bieu-do-cot-kep": "Đọc và so sánh biểu đồ cột kép",
+        "bieu-do-quat-tron": "Biểu đồ hình quạt tròn",
+        "du-lieu-ghep-nhom": "Dữ liệu và tần số ghép nhóm"
+      },
+      "skill_groups": [
+        {
+          "id": "du-lieu-thu-thap",
+          "label": "A. Dữ liệu và thu thập",
+          "skills": [
+            "du-lieu-phan-loai",
+            "thu-thap-du-lieu",
+            "kiem-tra-chat-luong",
+            "mau-thien-lech"
+          ]
+        },
+        {
+          "id": "to-chuc-du-lieu",
+          "label": "B. Tổ chức dữ liệu",
+          "skills": [
+            "bang-tan-so",
+            "tan-suat",
+            "du-lieu-ghep-nhom"
+          ]
+        },
+        {
+          "id": "bieu-dien-du-lieu",
+          "label": "C. Biểu diễn dữ liệu",
+          "skills": [
+            "doc-bieu-do-cot",
+            "doc-bieu-do-doan-thang",
+            "doc-bieu-do-cot-kep",
+            "bieu-do-quat-tron",
+            "chon-bieu-do",
+            "chuyen-bang-bieu-do"
+          ]
+        },
+        {
+          "id": "phan-tich-du-lieu",
+          "label": "D. Phân tích và kết luận",
+          "skills": [
+            "nhan-xet-du-lieu",
+            "don-vi-thang-do"
+          ]
+        }
+      ],
+      "sources": [
+        "21-thong-ke-v1-01.json",
+        "21-thong-ke-v1-02.json",
+        "21-thong-ke-v1-03.json",
+        "21-thong-ke-v1-04.json",
+        "21-thong-ke-v1-05.json"
+      ]
+    },
+    {
+      "topic": "22-dai-luong-dac-trung",
+      "manifest": "docs/assets/data/practice/22-dai-luong-dac-trung-v1.manifest.json",
+      "manifest_sha": "bb7c8f353100ae8b1a55b56cd103e8ec820d0d6c",
+      "declared_questions": 120,
+      "skill_labels": {
+        "trung-binh-tho": "Số trung bình từ dữ liệu thô",
+        "trung-binh-tan-so": "Số trung bình từ bảng tần số",
+        "trung-vi": "Trung vị",
+        "mot": "Mốt",
+        "nhieu-mot": "Nhiều mốt và không có mốt nổi bật",
+        "khoang-bien-thien": "Khoảng biến thiên",
+        "ngoai-lai": "Ảnh hưởng của giá trị ngoại lai",
+        "so-sanh-trung-binh-trung-vi": "So sánh trung bình và trung vị",
+        "chon-dai-luong": "Chọn đại lượng đại diện",
+        "so-sanh-hai-bo": "So sánh hai bộ dữ liệu"
+      },
+      "skill_groups": [
+        {
+          "id": "trung-binh",
+          "label": "A. Số trung bình",
+          "skills": [
+            "trung-binh-tho",
+            "trung-binh-tan-so"
+          ]
+        },
+        {
+          "id": "trung-vi-mot",
+          "label": "B. Trung vị và mốt",
+          "skills": [
+            "trung-vi",
+            "mot",
+            "nhieu-mot"
+          ]
+        },
+        {
+          "id": "phan-tan-ngoai-lai",
+          "label": "C. Phân tán và ngoại lai",
+          "skills": [
+            "khoang-bien-thien",
+            "ngoai-lai",
+            "so-sanh-trung-binh-trung-vi"
+          ]
+        },
+        {
+          "id": "lua-chon-so-sanh",
+          "label": "D. Chọn đại lượng và so sánh",
+          "skills": [
+            "chon-dai-luong",
+            "so-sanh-hai-bo"
+          ]
+        }
+      ],
+      "sources": [
+        "22-dai-luong-dac-trung-v1-01.json",
+        "22-dai-luong-dac-trung-v1-02.json",
+        "22-dai-luong-dac-trung-v1-03.json",
+        "22-dai-luong-dac-trung-v1-04.json"
+      ]
+    },
+    {
+      "topic": "23-xac-suat",
+      "manifest": "docs/assets/data/practice/23-xac-suat-v1.manifest.json",
+      "manifest_sha": "7b936f2e5a01ce0937fc2cfd6ae391d4cbf741fb",
+      "declared_questions": 120,
+      "skill_labels": {
+        "phep-thu-ngau-nhien": "Phép thử ngẫu nhiên",
+        "khong-gian-mau": "Không gian mẫu",
+        "bien-co": "Biến cố",
+        "bien-co-chac-chan-khong-the": "Biến cố chắc chắn và không thể",
+        "xac-suat-co-dien": "Xác suất cổ điển",
+        "bien-co-doi": "Biến cố đối",
+        "dong-xu-nhieu-lan": "Đồng xu nhiều lần",
+        "xuc-xac-hai-lan": "Hai xúc xắc",
+        "so-do-cay": "Sơ đồ cây",
+        "nhieu-buoc-doc-lap": "Thí nghiệm nhiều bước độc lập",
+        "khong-hoan-lai": "Rút không hoàn lại",
+        "kiem-tra-xac-suat": "Kiểm tra tính hợp lý của xác suất",
+        "xac-suat-thuc-nghiem": "Xác suất thực nghiệm và tần số tương đối"
+      },
+      "skill_groups": [
+        {
+          "id": "nen-tang-xac-suat",
+          "label": "A. Phép thử, không gian mẫu và biến cố",
+          "skills": [
+            "phep-thu-ngau-nhien",
+            "khong-gian-mau",
+            "bien-co",
+            "bien-co-chac-chan-khong-the"
+          ]
+        },
+        {
+          "id": "xac-suat-co-dien",
+          "label": "B. Xác suất cổ điển và biến cố đối",
+          "skills": [
+            "xac-suat-co-dien",
+            "xac-suat-thuc-nghiem",
+            "bien-co-doi"
+          ]
+        },
+        {
+          "id": "thi-nghiem-nhieu-buoc",
+          "label": "C. Thí nghiệm nhiều bước",
+          "skills": [
+            "dong-xu-nhieu-lan",
+            "xuc-xac-hai-lan",
+            "so-do-cay",
+            "nhieu-buoc-doc-lap",
+            "khong-hoan-lai"
+          ]
+        },
+        {
+          "id": "kiem-tra-xac-suat",
+          "label": "D. Kiểm tra kết quả",
+          "skills": [
+            "kiem-tra-xac-suat"
+          ]
+        }
+      ],
+      "sources": [
+        "23-xac-suat-v1-01.json",
+        "23-xac-suat-v1-02.json",
+        "23-xac-suat-v1-03.json",
+        "23-xac-suat-v1-04.json"
+      ]
+    },
+    {
+      "topic": "24-bai-toan-thuc-te",
+      "manifest": "docs/assets/data/practice/24-bai-toan-thuc-te-v1.manifest.json",
+      "manifest_sha": "52eb0407dd2ee8876e59ef77959fcac64d00379b",
+      "declared_questions": 120,
+      "skill_labels": {
+        "doc-de-du-kien": "Đọc đề và xác định đại lượng",
+        "doi-don-vi": "Đổi và thống nhất đơn vị",
+        "chuyen-dong": "Bài toán chuyển động",
+        "nang-suat": "Bài toán năng suất",
+        "phan-tram": "Bài toán phần trăm",
+        "lap-phuong-trinh": "Lập phương trình thực tế",
+        "lap-he": "Lập hệ phương trình thực tế",
+        "hinh-hoc-do-luong": "Hình học và đo lường thực tế",
+        "luong-giac-thuc-te": "Lượng giác trong thực tế",
+        "thong-ke-thuc-te": "Thống kê trong tình huống thực tế",
+        "xac-suat-thuc-te": "Xác suất trong tình huống thực tế",
+        "kiem-tra-ket-luan": "Kiểm tra nghiệm, đơn vị và kết luận"
+      },
+      "skill_groups": [
+        {
+          "id": "doc-de-mo-hinh",
+          "label": "A. Đọc đề và chuẩn hóa dữ kiện",
+          "skills": [
+            "doc-de-du-kien",
+            "doi-don-vi"
+          ]
+        },
+        {
+          "id": "dai-so-thuc-te",
+          "label": "B. Đại số trong bài toán thực tế",
+          "skills": [
+            "chuyen-dong",
+            "nang-suat",
+            "phan-tram",
+            "lap-phuong-trinh",
+            "lap-he"
+          ]
+        },
+        {
+          "id": "hinh-du-lieu-thuc-te",
+          "label": "C. Hình học, dữ liệu và xác suất thực tế",
+          "skills": [
+            "hinh-hoc-do-luong",
+            "luong-giac-thuc-te",
+            "thong-ke-thuc-te",
+            "xac-suat-thuc-te"
+          ]
+        },
+        {
+          "id": "kiem-tra-ket-luan",
+          "label": "D. Kiểm tra và kết luận",
+          "skills": [
+            "kiem-tra-ket-luan"
+          ]
+        }
+      ],
+      "sources": [
+        "24-bai-toan-thuc-te-v1-01.json",
+        "24-bai-toan-thuc-te-v1-02.json",
+        "24-bai-toan-thuc-te-v1-03.json",
+        "24-bai-toan-thuc-te-v1-04.json"
+      ]
+    },
+    {
+      "topic": "25-tong-hop-on-thi-10",
+      "manifest": "docs/assets/data/practice/25-tong-hop-on-thi-10-v1.manifest.json",
+      "manifest_sha": "b3e698e3cb3cffc6e42b2f180f70e4a458e070cf",
+      "declared_questions": 120,
+      "skill_labels": {
+        "nhan-dien-chuyen-de": "Nhận diện chuyên đề và công cụ",
+        "on-thi-bieu-thuc-can": "Ôn biểu thức và căn thức",
+        "on-thi-phuong-trinh": "Ôn phương trình và bất phương trình",
+        "on-thi-he": "Ôn hệ phương trình",
+        "on-thi-ham-so": "Ôn hàm số và đồ thị",
+        "on-thi-hinh-hoc": "Ôn hình học trọng tâm",
+        "on-thi-thong-ke": "Ôn thống kê",
+        "on-thi-xac-suat": "Ôn xác suất",
+        "on-thi-mo-hinh-hoa": "Ôn bài toán thực tế",
+        "quan-ly-thoi-gian": "Quản lý thời gian làm bài",
+        "phan-loai-loi": "Phân loại và sửa lỗi",
+        "checklist-chua-de": "Checklist chữa đề và kế hoạch ôn"
+      },
+      "skill_groups": [
+        {
+          "id": "nhan-dien",
+          "label": "A. Nhận diện dạng và chuyên đề",
+          "skills": [
+            "nhan-dien-chuyen-de"
+          ]
+        },
+        {
+          "id": "on-dai-so",
+          "label": "B. Ôn trọng tâm Số và Đại số",
+          "skills": [
+            "on-thi-bieu-thuc-can",
+            "on-thi-phuong-trinh",
+            "on-thi-he",
+            "on-thi-ham-so"
+          ]
+        },
+        {
+          "id": "on-hinh-du-lieu",
+          "label": "C. Ôn Hình học, Thống kê, Xác suất và mô hình hóa",
+          "skills": [
+            "on-thi-hinh-hoc",
+            "on-thi-thong-ke",
+            "on-thi-xac-suat",
+            "on-thi-mo-hinh-hoa"
+          ]
+        },
+        {
+          "id": "chien-luoc-thi",
+          "label": "D. Chiến lược làm đề và chữa lỗi",
+          "skills": [
+            "quan-ly-thoi-gian",
+            "phan-loai-loi",
+            "checklist-chua-de"
+          ]
+        }
+      ],
+      "sources": [
+        "25-tong-hop-on-thi-10-v1-01.json",
+        "25-tong-hop-on-thi-10-v1-02.json",
+        "25-tong-hop-on-thi-10-v1-03.json",
+        "25-tong-hop-on-thi-10-v1-04.json"
+      ]
+    }
+  ]
+}

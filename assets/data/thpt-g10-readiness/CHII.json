@@ -1,0 +1,152 @@
+{
+  "schema": "thpt-g10-reviewed-selfcheck-v1",
+  "scope": "SGK_CHAPTER_READINESS",
+  "chapter": "CHII",
+  "chapter_label": "II",
+  "source_sha256": "679dbdb7ee293b7879c63dc391edce0c36097cc7522eaddc0daffae3623309b3",
+  "review_scope": "INDIVIDUAL_CHAPTER_NOTEBOOKLM_PASS",
+  "mastery_credit": false,
+  "persist_results": false,
+  "items": [
+    {
+      "item_id": "THPT-G10-CHII-RD1-01",
+      "stem": "Trong các điểm A(0;4), B(2;2), C(6;0), D(-1;3), chỉ có điểm nào thỏa bất phương trình x+2y>6?",
+      "type": "MCQ_SINGLE",
+      "optional": false,
+      "outcome_id": "`G10-B03-POINT_TEST`, `G10-B03-LINEAR_INEQUALITY`.",
+      "answer": "A",
+      "solution": "Giá trị vế trái tại A là 8>6; tại B và C đều bằng 6 (không thỏa dấu >); tại D là 5<6.",
+      "rubric": "1đ chọn A, không hiện kết quả trước Final Submit."
+    },
+    {
+      "item_id": "THPT-G10-CHII-RD1-02",
+      "stem": "Xét miền nghiệm H: x−2y≤4. Đánh giá Đ/S: (a) O(0;0) thuộc H. (b) P(4;0) không thuộc H. (c) Q(0;−2) nằm trên đường biên và thuộc H. (d) H tương đương y≥(x−4)/2.",
+      "type": "TRUE_FALSE_GROUP",
+      "optional": false,
+      "outcome_id": "`G10-B03-BOUNDARY`, `G10-B03-HALFPLANE`, `G10-B03-POINT_TEST`.",
+      "answer": "(Đ, S, Đ, Đ)",
+      "solution": "a: 0≤4 đúng; b: 4≤4 nên P thuộc H, mệnh đề sai; c: 0−2(−2)=4; d: chuyển vế −2y≤4−x, chia −2 đổi chiều, y≥(x−4)/2.",
+      "rubric": "4 ý, mỗi ý 1đ; giải thích dấu đổi chiều và nhận biên."
+    },
+    {
+      "item_id": "THPT-G10-CHII-RD1-03",
+      "stem": "Một nửa mặt phẳng có đường biên đi qua A(6;0), B(0;3), chứa O(0;0) nhưng không chứa đường biên. Hãy viết bất phương trình và giải thích cách xác định phía.",
+      "type": "SHORT_EXPLANATION",
+      "optional": false,
+      "outcome_id": "`G10-B03-BOUNDARY`, `G10-B03-HALFPLANE`.",
+      "answer": "x+2y<6",
+      "solution": "Đường AB có phương trình x+2y=6; thế O được 0<6, vậy nửa mặt phẳng chứa O là x+2y<6; dấu < vì không lấy biên.",
+      "rubric": "1đ tìm đường biên, 1đ chọn điểm thử, 1đ chọn dấu và loại biên."
+    },
+    {
+      "item_id": "THPT-G10-CHII-RD1-04",
+      "stem": "Xe tải chở tối đa 1 200 kg, trong đó khung giá đỡ chiếm 200 kg. Mỗi kiện A nặng 40 kg, mỗi kiện B nặng 60 kg. Gọi x,y lần lượt là số kiện A,B. Viết ràng buộc đầy đủ và xét (x,y)=(10,10) có hợp lệ không.",
+      "type": "SHORT_EXPLANATION",
+      "optional": false,
+      "outcome_id": "`G10-B03-MODELING`, `G10-B03-POINT_TEST`.",
+      "answer": "2x+3y≤50; x,y∈Z≥0; (10,10) hợp lệ",
+      "solution": "200+40x+60y≤1200, rút gọn 2x+3y≤50, x,y là số nguyên không âm. Với (10,10), vế trái 20+30=50 nên hợp lệ, vừa đủ tải.",
+      "rubric": "1đ lập tổng tải; 1đ rút gọn; 1đ điều kiện nguyên không âm; 1đ điểm xét dấu bằng."
+    },
+    {
+      "item_id": "THPT-G10-CHII-RD1-05",
+      "stem": "Cho miền nghiệm K: x−3y≥−6 và các điểm A(0;2), B(−3;0), C(0;3). Xác định điểm thuộc K, điểm nằm trên đường biên; rồi viết K dưới dạng y≤f(x), giải thích tại sao dấu đổi chiều.",
+      "type": "WRITTEN_RUBRIC",
+      "optional": false,
+      "outcome_id": "`G10-B03-HALFPLANE`, `G10-B03-POINT_TEST`, `G10-B03-BOUNDARY`.",
+      "answer": "A,B∈K; A trên biên; C∉K; y≤(x+6)/3",
+      "solution": "A: 0−6=−6, nên thuộc K và nằm biên. B: −3≥−6, nên thuộc trong. C: −9<−6 nên ngoài. Từ x−3y≥−6 ⇔ −3y≥−x−6 ⇔ y≤(x+6)/3 (chia −3 đổi chiều).",
+      "rubric": "4đ: A 1đ; B và C 1đ; biểu thức 1đ; lý do đổi dấu 1đ."
+    },
+    {
+      "item_id": "THPT-G10-CHII-RD1-06",
+      "stem": "Điểm M(t;2t−1) phụ thuộc t∈R. Xác định t để M thuộc miền 3x−2y≤5. Tìm riêng t khi M nằm trên biên.",
+      "type": "SHORT_EXPLANATION",
+      "optional": false,
+      "outcome_id": "`G10-B03-POINT_TEST`, `G10-B03-BOUNDARY`.",
+      "answer": "t≥−3; t=−3 trên biên",
+      "solution": "3t−2(2t−1)=2−t. Điều kiện 2−t≤5 ⇔ −t≤3 ⇔ t≥−3. Dấu bằng khi t=−3.",
+      "rubric": "1đ thay tọa độ, 1đ biến đổi đúng chiều, 1đ xét dấu bằng."
+    },
+    {
+      "item_id": "THPT-G10-CHII-RD1-07",
+      "stem": "Với m thực, (m−2)x+(m²−4)y≤4 là bất phương trình bậc nhất hai ẩn khi nào? A. m≠2; B. m≠±2; C. mọi m; D. chỉ m=2.",
+      "type": "MCQ_SINGLE",
+      "optional": false,
+      "outcome_id": "`G10-B03-LINEAR_INEQUALITY`.",
+      "answer": "A",
+      "solution": "Chỉ khi hệ số x và y đồng thời bằng 0 thì không còn BPT bậc nhất hai ẩn. m−2=0 ⇒ m=2; lúc này m²−4=0. Với m=−2 hệ số x=−4 khác 0, vẫn hợp lệ. Vậy m≠2.",
+      "rubric": "1đ chọn A, nhận diện điều kiện (a,b)≠(0,0)."
+    },
+    {
+      "item_id": "THPT-G10-CHII-RD1-08",
+      "stem": "Miền nghiệm của hệ x≥0, y≥0, x+y≤5, y≤2 có các đỉnh nào? A. (0;0),(5;0),(3;2),(0;2); B. (0;0),(5;0),(5;2),(0;2); C. (0;0),(2;0),(0;5); D. (0;0),(5;0),(0;5).",
+      "type": "MCQ_SINGLE",
+      "optional": false,
+      "outcome_id": "`G10-B04-REGION_INTERSECTION`, `G10-B04-SYSTEM`.",
+      "answer": "A",
+      "solution": "Trên trục Ox: (5,0); trên trục Oy: (0,2); giao x+y=5 và y=2 là (3,2), thêm O(0,0). B chứa (5,2) sai x+y; C và D sai biên.",
+      "rubric": "1đ chọn A; minh họa bằng phác miền nghiệm khi giải thích."
+    },
+    {
+      "item_id": "THPT-G10-CHII-RD1-09",
+      "stem": "Trên cùng miền x≥0, y≥0, x+y≤5, y≤2, tìm giá trị lớn nhất của F=3x+2y và mọi đỉnh đạt giá trị đó.",
+      "type": "SHORT_EXPLANATION",
+      "optional": false,
+      "outcome_id": "`G10-B04-LINEAR_OBJECTIVE`, `G10-B04-FEASIBILITY`.",
+      "answer": "Fmax=15 tại (5;0)",
+      "solution": "Bốn đỉnh (0,0),(5,0),(3,2),(0,2). F lần lượt 0,15,13,4. Hàm tuyến tính cực trị tại một đỉnh nên tối đa 15 tại (5,0).",
+      "rubric": "1đ đỉnh; 1đ tính các giá trị; 1đ kết luận đúng."
+    },
+    {
+      "item_id": "THPT-G10-CHII-RD1-10",
+      "stem": "Xét hệ x≥0, y≥0, x+2y≤8, 2x+y≤8. Cho biết Đ/S: (a) (2;3) là nghiệm. (b) (3;3) là nghiệm. (c) (0;4) là nghiệm. (d) (5;0) là nghiệm.",
+      "type": "TRUE_FALSE_GROUP",
+      "optional": false,
+      "outcome_id": "`G10-B04-FEASIBILITY`, `G10-B04-SYSTEM`.",
+      "answer": "(Đ, S, Đ, S)",
+      "solution": "a: 2+6=8, 4+3=7 hợp lệ; b: 3+6=9 và 6+3=9 đều vượt 8; c: 0+8=8, 0+4=4 hợp lệ; d: 10>8, không hợp lệ.",
+      "rubric": "4 ý, mỗi ý 1đ; không phản hồi đúng/sai từng câu trước Final Submit."
+    },
+    {
+      "item_id": "THPT-G10-CHII-RD1-11",
+      "stem": "Một xưởng làm x sản phẩm A và y sản phẩm B, x,y nguyên không âm. Mỗi A dùng (1;2) đơn vị hai loại vật liệu; mỗi B dùng (2;1). Mỗi vật liệu có tối đa 8 đơn vị. Lợi nhuận lần lượt 3 và 5 đơn vị. Viết hệ ràng buộc và tìm lợi nhuận nguyên lớn nhất, giải thích vì sao không được làm tròn tùy ý nghiệm tối ưu thực.",
+      "type": "WRITTEN_RUBRIC",
+      "optional": false,
+      "outcome_id": "`G10-B04-INTEGER_MODELS`, `G10-B04-LINEAR_OBJECTIVE`, `G10-B04-SYSTEM`.",
+      "answer": "x=2,y=3, Fmax=21",
+      "solution": "Ràng buộc x+2y≤8, 2x+y≤8, x,y∈Z≥0; F=3x+5y. Đỉnh thực giao nhau (8/3,8/3) cho F=64/3, nhưng không nguyên. Vét cạn từng y=0,…,4 hoặc so sánh các điểm nguyên gần đỉnh cho max F=21 tại (2,3); các đối thủ (0,4) cho 20, (3,2) cho 19.",
+      "rubric": "4đ: lập hệ và miền nguyên 1đ; hàm mục tiêu 1đ; xét miền nghiệm nguyên có lý lẽ đủ 1đ; cực đại 21 và cặp (2,3) 1đ."
+    },
+    {
+      "item_id": "THPT-G10-CHII-RD1-12",
+      "stem": "Miền nghiệm x≥0, y≥0, x+2y≤10, 2x+y≤10 là một tứ giác. Hãy xác định đủ bốn đỉnh và tính diện tích tứ giác.",
+      "type": "SHORT_EXPLANATION",
+      "optional": false,
+      "outcome_id": "`G10-B04-REGION_INTERSECTION`, `G10-B04-FEASIBILITY`.",
+      "answer": "Đỉnh (0,0),(5,0),(10/3,10/3),(0,5); S=50/3",
+      "solution": "Hai giao trục là (5,0),(0,5); giao hai đường chéo: x+2y=10 và 2x+y=10 ⇒ x=y=10/3. Dùng công thức dây giày hoặc chia tam giác: S=1/2(5·10/3+10/3·5)=50/3.",
+      "rubric": "1đ giao trục; 1đ giao hai đường; 1đ diện tích; 1đ lý giải hình/đơn vị diện tích."
+    },
+    {
+      "item_id": "THPT-G10-CHII-RD1-13",
+      "stem": "Cho miền đa giác lồi có các đỉnh (0;0), (5;0), (3;2), (0;4). Giá trị lớn nhất của F=5x+3y là bao nhiêu? A. 25; B. 21; C. 12; D. 0.",
+      "type": "MCQ_SINGLE",
+      "optional": false,
+      "outcome_id": "`G10-B04-LINEAR_OBJECTIVE`.",
+      "answer": "A",
+      "solution": "Giá trị tại các đỉnh lần lượt 0,25,21,12; max 25 tại (5,0). Bài cho đa giác thay vì yêu cầu đọc nghiệm từ hình.",
+      "rubric": "1đ chọn A."
+    },
+    {
+      "item_id": "THPT-G10-CHII-RD1-14",
+      "stem": "Tìm tất cả cặp số nguyên không âm (x,y) thỏa x+y=5, 2x+y≤7, x+2y≤8.",
+      "type": "SHORT_EXPLANATION",
+      "optional": false,
+      "outcome_id": "`G10-B04-INTEGER_MODELS`, `G10-B04-SYSTEM`.",
+      "answer": "(x,y)=(2,3) duy nhất",
+      "solution": "Đặt y=5−x: từ 2x+y≤7 suy ra x≤2; từ x+2y≤8 suy ra 10−x≤8 ⇒ x≥2. Vậy x=2,y=3 thỏa mọi điều kiện và duy nhất.",
+      "rubric": "1đ thay y; 1đ nhận cận trên; 1đ nhận cận dưới; 1đ kết luận nghiệm duy nhất."
+    }
+  ]
+}

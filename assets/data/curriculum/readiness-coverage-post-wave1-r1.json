@@ -1,0 +1,74 @@
+{
+  "audit_id": "MATH-READINESS-COVERAGE-POST-WAVE1-R1-20261010",
+  "as_of": "2026-10-10",
+  "status": "RECONCILED_NO_FURTHER_R1_AUTHORING_AUTHORIZED",
+  "sources": {
+    "priority_decision": {
+      "path": "docs/assets/data/curriculum/readiness-coverage-priority-r1.json",
+      "clearance": "READINESS_COVERAGE_PRIORITY_R1_REVIEW_COMPLETE"
+    },
+    "implementation": {
+      "path": "docs/assets/data/curriculum/readiness-implementation-wave1-r1.json",
+      "clearance": "READINESS_IMPLEMENTATION_W1_R1_CONTENT_REVIEW_COMPLETE"
+    },
+    "taxonomy": "docs/assets/data/curriculum/skill-taxonomy-v2-registry-r1.json"
+  },
+  "baseline": {
+    "assessment_files": 21,
+    "readiness_items": 219,
+    "kntt_core_families": 100,
+    "one_item_families": 30,
+    "add_readiness_authorized": 18,
+    "keep_as_is": 12,
+    "needs_more_evidence": 0
+  },
+  "implementation_result": {
+    "readiness_items_after": 237,
+    "new_items": 18,
+    "approved_families_implemented": 18,
+    "existing_items_modified": 0,
+    "threshold_changes": 0,
+    "hard_gate_changes": 0,
+    "mastery_history_changes": 0
+  },
+  "post_wave1": {
+    "assessment_files": 21,
+    "readiness_items": 237,
+    "kntt_core_families": 100,
+    "families_with_primary_readiness_evidence": 100,
+    "zero_readiness_families": 0,
+    "one_item_families": 12,
+    "one_item_family_ids": [
+      "ALG-DIV-MONOMIAL",
+      "ALG-EVALUATE",
+      "CIRCLE-CYCLIC",
+      "GEO-PLANE-MEASURE",
+      "NUM-ABS",
+      "NUM-PERCENT",
+      "RAD-RATIONALIZE",
+      "RATEX-CONCEPT",
+      "RATEX-EVALUATE",
+      "RATIO-INVERSE",
+      "RIGHT-APPLICATION",
+      "TRI-PERPBISECTOR"
+    ],
+    "count_histogram": {
+      "1": 12,
+      "2": 61,
+      "3": 15,
+      "4": 6,
+      "5": 4,
+      "6": 1,
+      "8": 1
+    },
+    "exact_primary_skill_mappings": 237,
+    "ambiguous_primary_mappings": 0,
+    "unresolved_primary_mappings": 0,
+    "all_remaining_one_item_are_keep_as_is": true
+  },
+  "conclusion": {
+    "r1_readiness_authoring_complete": true,
+    "further_wave_authorized": false,
+    "rule": "Do not add more Core Readiness items under R1 merely because a family has one item. The 12 remaining one-item families were independently reviewed KEEP_AS_IS. Any later expansion requires new evidence or a separately approved review decision."
+  }
+}

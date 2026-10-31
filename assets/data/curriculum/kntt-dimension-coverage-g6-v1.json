@@ -1,0 +1,3973 @@
+{
+  "schema": "kntt-dimension-coverage-audit-v1",
+  "version": 1,
+  "as_of": "2026-10-08",
+  "grade": 6,
+  "status": "G6_WRITTEN_BAI42_RECONCILED_R1",
+  "architecture": "One Knowledge Graph · Two Learning Paths",
+  "purpose": "Audit whether semantically mapped Grade-6 KNTT rows have explicit evidence across six learning dimensions without treating skill-ID existence as full coverage.",
+  "source_locks": {
+    "coverage_matrix": {
+      "path": "docs/assets/data/curriculum/kntt-coverage-matrix-6-9-v1.json",
+      "blob_sha": "2935f58925918674b5bacd2d8743d5526283adba"
+    },
+    "grade6_reconciliation": {
+      "path": "docs/assets/data/curriculum/kntt-grade6-reconciliation-r1.json",
+      "blob_sha": "38aa6e86781ac63e1481aa0080c3fbc2d819885b"
+    },
+    "taxonomy": {
+      "path": "docs/assets/data/curriculum/skill-taxonomy-v2-registry-r1.json",
+      "blob_sha": "90e58fa666a0cea4ae41ff7ef82a3cbf80ca11e4"
+    },
+    "written_library": {
+      "path": "docs/assets/data/written-exercises/written-exercise-library-v1.json",
+      "blob_sha": "e5b7013e1f71df810a20d39d0f1fef36c2dc48f3"
+    },
+    "topic_evidence": {
+      "02-so-va-phep-tinh": {
+        "ct": "CT02",
+        "placement": "EXACT",
+        "workspace": {
+          "path": "docs/assets/data/curriculum/topic02-learning-workspace.json",
+          "sha": "956087701533dd50c61f653f61e969392216e57f"
+        },
+        "micro": {
+          "path": "docs/assets/data/practice/02-so-va-phep-tinh-micro-v1.json",
+          "sha": "b6ec952b786f897ef6f45301208dcd9d55bde98b",
+          "grade6Skills": [
+            "tap-hop-so",
+            "thu-tu-phep-tinh",
+            "luy-thua",
+            "dau-hieu-chia-het",
+            "so-nguyen-to",
+            "ucln",
+            "so-nguyen-phep-tinh",
+            "rut-gon-phan-so",
+            "phep-tinh-phan-so",
+            "so-huu-ti-thap-phan",
+            "phan-tram",
+            "phan-tich-thua-so-nguyen-to",
+            "bcnn",
+            "gia-tri-tuyet-doi",
+            "quy-dong-so-sanh-phan-so",
+            "lam-tron-so"
+          ],
+          "grade6LessonLocalTargets": [
+            "cong-tru-so-tu-nhien",
+            "nhan-chia-so-tu-nhien",
+            "quan-he-chia-het",
+            "tinh-chat-chia-het",
+            "tim-gia-tri-phan-so-cua-so",
+            "tim-so-khi-biet-gia-tri-phan-so",
+            "ghi-so-tu-nhien",
+            "thu-tu-so-tu-nhien",
+            "bai-toan-ucln-bcnn",
+            "phan-so-bang-nhau",
+            "hon-so-duong"
+          ],
+          "grade6LessonLocalItemIds": [
+            "NUM02MICRO_024",
+            "NUM02MICRO_025",
+            "NUM02MICRO_026",
+            "NUM02MICRO_027",
+            "NUM02MICRO_028",
+            "NUM02MICRO_029",
+            "NUM02MICRO_030",
+            "NUM02MICRO_031",
+            "NUM02MICRO_032",
+            "NUM02MICRO_033",
+            "NUM02MICRO_034",
+            "NUM02MICRO_035",
+            "NUM02MICRO_036",
+            "NUM02MICRO_037",
+            "NUM02MICRO_038",
+            "NUM02MICRO_039",
+            "NUM02MICRO_040",
+            "NUM02MICRO_041"
+          ]
+        },
+        "manifest": {
+          "path": "docs/assets/data/practice/02-so-va-phep-tinh-v1.manifest.json",
+          "sha": "4609bcd1c34a338cbd456eb4f3219ba7f89f943f",
+          "skills": [
+            "tap-hop-so",
+            "so-nguyen-phep-tinh",
+            "gia-tri-tuyet-doi",
+            "thu-tu-phep-tinh",
+            "luy-thua",
+            "dau-hieu-chia-het",
+            "so-nguyen-to",
+            "phan-tich-thua-so-nguyen-to",
+            "ucln",
+            "bcnn",
+            "rut-gon-phan-so",
+            "quy-dong-so-sanh-phan-so",
+            "phep-tinh-phan-so",
+            "so-huu-ti-thap-phan",
+            "phan-tram",
+            "can-bac-hai",
+            "lam-tron-so"
+          ]
+        }
+      },
+      "03-ti-le-ti-le-thuc": {
+        "ct": "CT03",
+        "placement": "GRADE_BROAD",
+        "workspace": {
+          "path": "docs/assets/data/curriculum/topic03-learning-workspace.json",
+          "sha": "f2864fb45bda98422a4b31f5859452c18744159d"
+        },
+        "micro": {
+          "path": "docs/assets/data/practice/03-ti-le-ti-le-thuc-micro-v1.json",
+          "sha": "bd817c0ec44ff2c376c542e3d8604c01fb2e282f",
+          "grade6Skills": [
+            "ti-so",
+            "doi-don-vi-ti-so",
+            "ti-so-phan-tram"
+          ]
+        },
+        "manifest": {
+          "path": "docs/assets/data/practice/03-ti-le-ti-le-thuc-v1.manifest.json",
+          "sha": "4645eb69493281702a19a36453f999d1114736f3",
+          "skills": [
+            "ti-so",
+            "doi-don-vi-ti-so",
+            "ti-le-thuc",
+            "tim-x-ti-le-thuc",
+            "day-ti-so-bang-nhau",
+            "chia-theo-ti-le",
+            "ti-le-thuan",
+            "he-so-ti-le-thuan",
+            "ti-le-nghich",
+            "he-so-ti-le-nghich",
+            "phan-biet-thuan-nghich",
+            "ti-le-ban-do",
+            "ti-so-phan-tram",
+            "chuyen-dong-ti-le",
+            "nang-suat-ti-le",
+            "mo-hinh-ti-le"
+          ]
+        }
+      },
+      "13-goc-va-duong-thang": {
+        "ct": "CT13",
+        "placement": "EXACT",
+        "workspace": {
+          "path": "docs/assets/data/curriculum/topic13-learning-workspace.json",
+          "sha": "d5aa55f158cbff42eae388e76f485d072878095a"
+        },
+        "micro": {
+          "path": "docs/assets/data/practice/13-goc-va-duong-thang-micro-v1.json",
+          "sha": "32afda07968b3fbaed0a6d206db821abb718b95a",
+          "grade6Skills": [
+            "diem-thuoc-duong",
+            "diem-nam-giua",
+            "trung-diem",
+            "khai-niem-goc",
+            "tia",
+            "tia-doi",
+            "doan-thang-do-dai",
+            "do-goc",
+            "phan-loai-goc",
+            "goc-phu-bu"
+          ]
+        },
+        "manifest": {
+          "path": "docs/assets/data/practice/13-goc-va-duong-thang-v1.manifest.json",
+          "sha": "4b6a44701d6fe413e333349a799aaa7911390b70",
+          "skills": [
+            "diem-thuoc-duong",
+            "tia-doi",
+            "trung-diem",
+            "phan-loai-goc",
+            "goc-phu-bu",
+            "tia-phan-giac",
+            "goc-doi-dinh",
+            "duong-vuong-goc",
+            "goc-so-le-trong",
+            "goc-dong-vi",
+            "goc-trong-cung-phia",
+            "tinh-chat-song-song",
+            "dau-hieu-song-song",
+            "vuong-goc-song-song",
+            "diem-nam-giua",
+            "tia",
+            "doan-thang-do-dai",
+            "khai-niem-goc",
+            "do-goc",
+            "nhan-dang-goc-dac-biet",
+            "tien-de-euclid",
+            "gia-thiet-ket-luan",
+            "lap-luan-chung-minh-ngan"
+          ]
+        }
+      },
+      "20-hinh-hoc-tong-hop": {
+        "ct": "CT20",
+        "placement": "GRADE_BROAD",
+        "workspace": {
+          "path": "docs/assets/data/curriculum/topic20-learning-workspace.json",
+          "sha": "774997cd9ac4d2efc1c53c17c0de48e6fcdba497"
+        },
+        "micro": {
+          "path": "docs/assets/data/practice/20-hinh-hoc-tong-hop-micro-v1.json",
+          "sha": "efaa4bff821023700381edee0168b294c2d3ea05",
+          "grade6Skills": [
+            "nhan-biet-tam-giac-deu",
+            "truc-doi-xung",
+            "dien-tich-tu-giac",
+            "nhan-biet-hinh-vuong",
+            "nhan-biet-luc-giac-deu",
+            "nhan-biet-tu-giac-dac-biet",
+            "chu-vi-tu-giac",
+            "do-luong-thuc-te",
+            "tam-doi-xung"
+          ]
+        },
+        "manifest": {
+          "path": "docs/assets/data/practice/20-hinh-hoc-tong-hop-v1.manifest.json",
+          "sha": "7fc4157bd2e56fa243b428ef0949583c589a3eb9",
+          "skills": [
+            "nhan-biet-tam-giac-deu",
+            "nhan-biet-hinh-vuong",
+            "nhan-biet-luc-giac-deu",
+            "nhan-biet-tu-giac-dac-biet",
+            "chu-vi-tu-giac",
+            "dien-tich-tu-giac",
+            "do-luong-thuc-te",
+            "truc-doi-xung",
+            "tam-doi-xung"
+          ]
+        }
+      },
+      "21-thong-ke": {
+        "ct": "CT21",
+        "placement": "EXACT",
+        "workspace": {
+          "path": "docs/assets/data/curriculum/topic21-learning-workspace.json",
+          "sha": "2e1a0dc26890ae06e4046d633637e5409af2cc3b"
+        },
+        "micro": {
+          "path": "docs/assets/data/practice/21-thong-ke-micro-v1.json",
+          "sha": "7ca07feda16ea97bb25eb85f62030e0cee4d286f",
+          "grade6Skills": [
+            "du-lieu-phan-loai",
+            "thu-thap-du-lieu",
+            "doc-bieu-do-cot",
+            "doc-bieu-do-cot-kep",
+            "nhan-xet-du-lieu"
+          ],
+          "grade6LessonLocalTargets": [
+            "du-lieu",
+            "bang-thong-ke",
+            "bieu-do-tranh"
+          ],
+          "grade6LessonLocalItemIds": [
+            "STA21MICRO_018",
+            "STA21MICRO_019",
+            "STA21MICRO_020"
+          ]
+        },
+        "manifest": {
+          "path": "docs/assets/data/practice/21-thong-ke-v1.manifest.json",
+          "sha": "3d88c1ce48ac1129648980de3f0544e6024251b9",
+          "skills": [
+            "du-lieu-phan-loai",
+            "thu-thap-du-lieu",
+            "kiem-tra-chat-luong",
+            "mau-thien-lech",
+            "bang-tan-so",
+            "tan-suat",
+            "doc-bieu-do-cot",
+            "doc-bieu-do-doan-thang",
+            "chon-bieu-do",
+            "chuyen-bang-bieu-do",
+            "nhan-xet-du-lieu",
+            "don-vi-thang-do",
+            "doc-bieu-do-cot-kep",
+            "bieu-do-quat-tron",
+            "du-lieu-ghep-nhom"
+          ]
+        }
+      },
+      "23-xac-suat": {
+        "ct": "CT23",
+        "placement": "EXACT",
+        "workspace": {
+          "path": "docs/assets/data/curriculum/topic23-learning-workspace.json",
+          "sha": "443169587e0ba663bc694122ee4a37e456793c70"
+        },
+        "micro": {
+          "path": "docs/assets/data/practice/23-xac-suat-micro-v1.json",
+          "sha": "10f6dfcc41040da16b351a8c607c10fe82e6e4b3",
+          "grade6Skills": [
+            "xac-suat-thuc-nghiem"
+          ],
+          "grade6LessonLocalTargets": [
+            "ket-qua-co-the",
+            "su-kien-don-gian"
+          ],
+          "grade6LessonLocalItemIds": [
+            "PRO23MICRO_018",
+            "PRO23MICRO_019",
+            "PRO23MICRO_020"
+          ]
+        },
+        "manifest": {
+          "path": "docs/assets/data/practice/23-xac-suat-v1.manifest.json",
+          "sha": "7b936f2e5a01ce0937fc2cfd6ae391d4cbf741fb",
+          "skills": [
+            "phep-thu-ngau-nhien",
+            "khong-gian-mau",
+            "bien-co",
+            "bien-co-chac-chan-khong-the",
+            "xac-suat-co-dien",
+            "bien-co-doi",
+            "dong-xu-nhieu-lan",
+            "xuc-xac-hai-lan",
+            "so-do-cay",
+            "nhieu-buoc-doc-lap",
+            "khong-hoan-lai",
+            "kiem-tra-xac-suat",
+            "xac-suat-thuc-nghiem"
+          ]
+        }
+      }
+    },
+    "placement_overlays": {
+      "20-hinh-hoc-tong-hop": {
+        "path": "docs/assets/data/curriculum/kntt-g6-topic20-placement-r1.json",
+        "sha": "71734904e6d8dc148e20982f31823d7a8d483150"
+      }
+    }
+  },
+  "status_semantics": {
+    "SKILL_MAP": "VERIFIED_SEMANTIC means all historical refs were closed by reviewed canonical skill/family/lesson-local reconciliation.",
+    "LEARN_CONTENT": "VERIFIED_DIRECT requires direct canonical skills in a lesson-matched workspace card; PARTIAL statuses expose family/local, broad placement, shared-skill granularity, or missing direct skill.",
+    "MICRO_PRACTICE": "VERIFIED_DIRECT requires Grade-6-tagged micro evidence for every direct skill. FAMILY_LEVEL_ONLY is not equivalent to direct lesson evidence.",
+    "PRACTICE_BANK": "Topic-level manifests prove a bank/skill exists but not Grade-6 lesson placement; therefore no Practice status is called FULL.",
+    "WRITTEN_LIBRARY": "VERIFIED_KNTT_PLACEMENT requires an independently reviewed true curriculum placement in the canonical Written Library. One canonical item may legitimately verify more than one Grade-6 lesson row when the whole task materially assesses each placement.",
+    "READINESS": "Only explicit structured assessment evidence is counted. REVIEWED_STRUCTURED_READINESS requires independent academic PASS on lesson-matched assessment items; topic-level authorization remains distinct."
+  },
+  "protected_boundaries": {
+    "learner_facing_change": false,
+    "content_generation": false,
+    "taxonomy_change": false,
+    "runtime_change": false,
+    "mastery_readiness_change": false,
+    "history_migration": false
+  },
+  "summary": {
+    "row_count": 31,
+    "dimension_status_counts": {
+      "SKILL_MAP": {
+        "VERIFIED_SEMANTIC": 31
+      },
+      "LEARN_CONTENT": {
+        "PARTIAL_LOCAL_OR_FAMILY": 0,
+        "VERIFIED_DIRECT": 23,
+        "PARTIAL_SHARED_SKILL": 0,
+        "PARTIAL_PLACEMENT": 0,
+        "PARTIAL_MISSING_DIRECT_SKILL": 0,
+        "VERIFIED_LESSON_LOCAL": 4,
+        "VERIFIED_DIRECT_AND_LOCAL": 4
+      },
+      "MICRO_PRACTICE": {
+        "PARTIAL": 0,
+        "FAMILY_LEVEL_ONLY": 0,
+        "VERIFIED_DIRECT": 23,
+        "NONE": 0,
+        "VERIFIED_LESSON_LOCAL": 4,
+        "VERIFIED_DIRECT_AND_LOCAL": 4
+      },
+      "PRACTICE_BANK": {
+        "PARTIAL_TOPIC_EVIDENCE": 4,
+        "FAMILY_LEVEL_TOPIC_EVIDENCE": 4,
+        "TOPIC_SKILL_EVIDENCE": 23,
+        "NONE": 0
+      },
+      "WRITTEN_LIBRARY": {
+        "VERIFIED_KNTT_PLACEMENT": 9,
+        "CANDIDATE_ONLY_NO_KNTT_PLACEMENT": 0,
+        "NONE": 22
+      },
+      "READINESS": {
+        "NOT_VERIFIED_STRUCTURED": 29,
+        "AUTHORIZED_TOPIC_LEVEL": 1,
+        "REVIEWED_STRUCTURED_READINESS": 1,
+        "PENDING_REVIEW": 0
+      }
+    },
+    "written_library_kntt_placement_count": 8,
+    "priority_gap_rows": [],
+    "repaired_rows": [
+      {
+        "chapter": 7,
+        "lesson_ref": "Bài 30",
+        "summary": "Làm tròn và ước lượng",
+        "repair_status": "REPAIRED_REVIEWED_R1",
+        "learn": "VERIFIED_DIRECT",
+        "micro": "VERIFIED_DIRECT",
+        "practice": "TOPIC_SKILL_EVIDENCE",
+        "review_receipt": "review-packets/kntt-g6-bai30-rounding-r1/01_NOTEBOOKLM_RESULT_R1.md"
+      },
+      {
+        "chapter": 9,
+        "lesson_ref": "Bài 42",
+        "summary": "Kết quả có thể và sự kiện trong trò chơi, thí nghiệm",
+        "repair_status": "REPAIRED_REVIEWED_R1",
+        "learn": "VERIFIED_LESSON_LOCAL",
+        "micro": "VERIFIED_LESSON_LOCAL",
+        "practice": "FAMILY_LEVEL_TOPIC_EVIDENCE",
+        "readiness": "PENDING_REVIEW",
+        "review_receipt": "review-packets/kntt-g6-bai42-event-outcome-r1/01_NOTEBOOKLM_RESULT_R1.md"
+      },
+      {
+        "chapter": 1,
+        "lesson_ref": "Bài 4-5",
+        "summary": "Cộng, trừ, nhân, chia số tự nhiên và tính chất",
+        "repair_status": "REPAIRED_SOURCE_CONFIRMED_R1",
+        "learn": "VERIFIED_LESSON_LOCAL",
+        "micro": "VERIFIED_LESSON_LOCAL",
+        "practice": "FAMILY_LEVEL_TOPIC_EVIDENCE",
+        "readiness": "NOT_VERIFIED_STRUCTURED",
+        "review_basis": "Existing Grade-6 reconciliation NotebookLM PASS + deterministic arithmetic"
+      },
+      {
+        "chapter": 2,
+        "lesson_ref": "Bài 8",
+        "summary": "Quan hệ chia hết và tính chất",
+        "repair_status": "REPAIRED_SOURCE_CONFIRMED_R1",
+        "learn": "VERIFIED_LESSON_LOCAL",
+        "micro": "VERIFIED_LESSON_LOCAL",
+        "practice": "FAMILY_LEVEL_TOPIC_EVIDENCE",
+        "readiness": "NOT_VERIFIED_STRUCTURED",
+        "review_basis": "KNTT Grade-6 map + reviewed semantic reconciliation + deterministic divisibility"
+      },
+      {
+        "chapter": 6,
+        "lesson_ref": "Bài 27",
+        "summary": "Hai bài toán về phân số",
+        "repair_status": "REPAIRED_SOURCE_CONFIRMED_R1",
+        "learn": "VERIFIED_LESSON_LOCAL",
+        "micro": "VERIFIED_LESSON_LOCAL",
+        "practice": "FAMILY_LEVEL_TOPIC_EVIDENCE",
+        "readiness": "NOT_VERIFIED_STRUCTURED",
+        "review_basis": "KNTT Grade-6 map + reviewed semantic reconciliation + deterministic fraction arithmetic"
+      },
+      {
+        "chapter": 9,
+        "lesson_ref": "Bài 38-41",
+        "summary": "Dữ liệu, thu thập dữ liệu, bảng thống kê, biểu đồ tranh, biểu đồ cột và cột kép",
+        "repair_status": "REPAIRED_REVIEWED_R1",
+        "learn": "VERIFIED_DIRECT_AND_LOCAL",
+        "micro": "VERIFIED_DIRECT_AND_LOCAL",
+        "practice": "PARTIAL_TOPIC_EVIDENCE",
+        "readiness": "AUTHORIZED_TOPIC_LEVEL",
+        "review_receipt": "review-packets/kntt-g6-statistics-r1/01_NOTEBOOKLM_RESULT_R1.md"
+      },
+      {
+        "chapter": 7,
+        "lesson_ref": "Bài 31",
+        "summary": "Tỉ số và tỉ số phần trăm; bài toán phần trăm",
+        "repair_status": "RECONCILED_EXISTING_MULTI_TOPIC_EVIDENCE_R1",
+        "learn": "VERIFIED_DIRECT",
+        "micro": "VERIFIED_DIRECT",
+        "practice": "TOPIC_SKILL_EVIDENCE",
+        "readiness": "NOT_VERIFIED_STRUCTURED",
+        "review_basis": "Existing reviewed semantic reconciliation + deployed Topic02/Topic03 evidence; no new content",
+        "written": "VERIFIED_KNTT_PLACEMENT"
+      },
+      {
+        "chapter": 1,
+        "lesson_ref": "Bài 1-3",
+        "summary": "Tập hợp; cách ghi và thứ tự số tự nhiên",
+        "repair_status": "REPAIRED_SOURCE_CONFIRMED_R1",
+        "learn": "VERIFIED_DIRECT_AND_LOCAL",
+        "micro": "VERIFIED_DIRECT_AND_LOCAL",
+        "practice": "PARTIAL_TOPIC_EVIDENCE",
+        "readiness": "NOT_VERIFIED_STRUCTURED",
+        "review_basis": "Reviewed semantic reconciliation + deterministic natural-number representation/order"
+      },
+      {
+        "chapter": 2,
+        "lesson_ref": "Bài 11-12",
+        "summary": "Ước chung, ƯCLN; bội chung, BCNN và ứng dụng",
+        "repair_status": "REPAIRED_SOURCE_CONFIRMED_R1",
+        "learn": "VERIFIED_DIRECT_AND_LOCAL",
+        "micro": "VERIFIED_DIRECT_AND_LOCAL",
+        "practice": "PARTIAL_TOPIC_EVIDENCE",
+        "readiness": "NOT_VERIFIED_STRUCTURED",
+        "review_basis": "Reviewed semantic reconciliation + deterministic UCLN/BCNN application problem type",
+        "written": "VERIFIED_KNTT_PLACEMENT"
+      },
+      {
+        "chapter": 6,
+        "lesson_ref": "Bài 23-24",
+        "summary": "Mở rộng phân số, phân số bằng nhau; so sánh phân số; hỗn số dương",
+        "repair_status": "REPAIRED_SOURCE_CONFIRMED_R1",
+        "learn": "VERIFIED_DIRECT_AND_LOCAL",
+        "micro": "VERIFIED_DIRECT_AND_LOCAL",
+        "practice": "PARTIAL_TOPIC_EVIDENCE",
+        "readiness": "NOT_VERIFIED_STRUCTURED",
+        "review_basis": "Reviewed semantic reconciliation + deterministic equivalent-fraction/mixed-number representations"
+      },
+      {
+        "chapter": 3,
+        "lesson_ref": "Bài 13–17",
+        "summary": "Số nguyên: biểu diễn, so sánh và phép tính",
+        "repair_status": "REPAIRED_REVIEWED_R1",
+        "learn": "VERIFIED_DIRECT",
+        "micro": "VERIFIED_DIRECT",
+        "review_receipt": "review-packets/kntt-g6-shared-skill-density-r1/01_NOTEBOOKLM_RESULT_R1.md"
+      },
+      {
+        "chapter": 6,
+        "lesson_ref": "Bài 25-26",
+        "summary": "Cộng, trừ, nhân, chia phân số",
+        "repair_status": "REPAIRED_REVIEWED_R1",
+        "learn": "VERIFIED_DIRECT",
+        "micro": "VERIFIED_DIRECT",
+        "review_receipt": "review-packets/kntt-g6-shared-skill-density-r1/01_NOTEBOOKLM_RESULT_R1.md"
+      },
+      {
+        "chapter": 7,
+        "lesson_ref": "Bài 28-29",
+        "summary": "Số thập phân và tính toán với số thập phân",
+        "repair_status": "REPAIRED_REVIEWED_R1",
+        "learn": "VERIFIED_DIRECT",
+        "micro": "VERIFIED_DIRECT",
+        "review_receipt": "review-packets/kntt-g6-shared-skill-density-r1/01_NOTEBOOKLM_RESULT_R1.md",
+        "written": "NONE"
+      },
+      {
+        "chapter": 4,
+        "lesson_ref": "Bài 18",
+        "summary": "Tam giác đều, hình vuông, lục giác đều",
+        "repair_status": "RECONCILED_EXISTING_PLACEMENT_R1",
+        "learn": "VERIFIED_DIRECT",
+        "micro": "VERIFIED_DIRECT",
+        "placement_overlay": "docs/assets/data/curriculum/kntt-g6-topic20-placement-r1.json"
+      },
+      {
+        "chapter": 4,
+        "lesson_ref": "Bài 19",
+        "summary": "Tứ giác đặc biệt",
+        "repair_status": "RECONCILED_EXISTING_PLACEMENT_R1",
+        "learn": "VERIFIED_DIRECT",
+        "micro": "VERIFIED_DIRECT",
+        "placement_overlay": "docs/assets/data/curriculum/kntt-g6-topic20-placement-r1.json"
+      },
+      {
+        "chapter": 4,
+        "lesson_ref": "Bài 20",
+        "summary": "Chu vi, diện tích và đo lường tứ giác",
+        "repair_status": "RECONCILED_EXISTING_PLACEMENT_R1",
+        "learn": "VERIFIED_DIRECT",
+        "micro": "VERIFIED_DIRECT",
+        "placement_overlay": "docs/assets/data/curriculum/kntt-g6-topic20-placement-r1.json"
+      },
+      {
+        "chapter": 4,
+        "lesson_ref": "Bài 21",
+        "summary": "Trục đối xứng",
+        "repair_status": "RECONCILED_EXISTING_PLACEMENT_R1",
+        "learn": "VERIFIED_DIRECT",
+        "micro": "VERIFIED_DIRECT",
+        "placement_overlay": "docs/assets/data/curriculum/kntt-g6-topic20-placement-r1.json"
+      },
+      {
+        "chapter": 4,
+        "lesson_ref": "Bài 22",
+        "summary": "Tâm đối xứng",
+        "repair_status": "RECONCILED_EXISTING_PLACEMENT_R1",
+        "learn": "VERIFIED_DIRECT",
+        "micro": "VERIFIED_DIRECT",
+        "placement_overlay": "docs/assets/data/curriculum/kntt-g6-topic20-placement-r1.json"
+      }
+    ],
+    "shared_skill_rerank_r1": {
+      "status": "REPAIRED_REVIEWED_R1",
+      "packet_id": "MATH-KNTT-G6-SHARED-SKILL-DENSITY-R1-20261006",
+      "conclusion": "The seven PARTIAL_SHARED_SKILL rows are not mere audit noise. They share broad canonical skills but several exact KNTT lesson demands are not explicit in current Learn/Micro evidence. Repair by densifying existing Core cards and direct Micro; do not create new canonical skills.",
+      "no_new_skills": true,
+      "proposed_micro_ids": [
+        "NUM02MICRO_042",
+        "NUM02MICRO_043",
+        "NUM02MICRO_044",
+        "NUM02MICRO_045",
+        "NUM02MICRO_046",
+        "NUM02MICRO_047",
+        "NUM02MICRO_048",
+        "NUM02MICRO_049",
+        "NUM02MICRO_050",
+        "NUM02MICRO_051",
+        "NUM02MICRO_052"
+      ],
+      "proposed_card_ids": [
+        "num02-g6-core-3",
+        "num02-g6-core-4",
+        "num02-g6-core-5"
+      ],
+      "clearance": "G6_SHARED_SKILL_DENSITY_R1_CONTENT_REVIEW_COMPLETE",
+      "review_receipt": "review-packets/kntt-g6-shared-skill-density-r1/01_NOTEBOOKLM_RESULT_R1.md"
+    },
+    "topic20_placement_r1": {
+      "status": "RECONCILED_EXISTING_PLACEMENT_R1",
+      "overlay": "docs/assets/data/curriculum/kntt-g6-topic20-placement-r1.json",
+      "overlay_sha": "71734904e6d8dc148e20982f31823d7a8d483150",
+      "display_sha": "ebd5e3e2a7d58d0a75a4cfafd7c026bbd693bd32",
+      "lessons": [
+        "Bài 18",
+        "Bài 19",
+        "Bài 20",
+        "Bài 21",
+        "Bài 22"
+      ],
+      "conclusion": "The remaining five PARTIAL_PLACEMENT rows were caused by the audit reading the immutable broad legacy workspace instead of the already released Topic20 v2 display partition. An audit-only exact placement overlay closes Bài 18–22 without new content, new skills, Micro changes, Practice changes, or learner-data migration."
+    },
+    "nonlearn_rerank_r1": {
+      "status": "BAI43_READINESS_REVIEWED_RECONCILED",
+      "artifact": "docs/assets/data/curriculum/kntt-g6-nonlearn-rerank-r1.json",
+      "conclusion": "Practice has no immediate authoring queue; Written has 3 true placement candidates and 2 prerequisite-overlap false positives; Bài 43 has reviewed structured Readiness while Bài 42 remains NOT_VERIFIED_STRUCTURED.",
+      "practice_authoring": "DEFER_NO_DUPLICATE_KNTT_BANK",
+      "written_next": "RECONCILE_EXISTING_TRUE_PLACEMENTS_BEFORE_NEW_AUTHORING",
+      "readiness_next": "BAI43_REVIEWED_STRUCTURED_BAI42_UNVERIFIED",
+      "protected_boundaries": [
+        "PRACTICE_BANK",
+        "WRITTEN_LIBRARY_CONTENT",
+        "MASTERY",
+        "LEARNER_HISTORY",
+        "RUNTIME_TAXONOMY"
+      ],
+      "readiness_review": {
+        "packet_id": "MATH-KNTT-G6-PROB23-READINESS-R1-20261006",
+        "verdict": "PASS",
+        "reviewed_items": 4,
+        "revise_items": 0,
+        "clearance": "G6_PROB23_READINESS_R1_CONTENT_REVIEW_COMPLETE",
+        "review_receipt": "review-packets/kntt-g6-prob23-readiness-r1/01_NOTEBOOKLM_RESULT_R1.md",
+        "b43_status": "REVIEWED_STRUCTURED_READINESS",
+        "b42_status": "NOT_VERIFIED_STRUCTURED"
+      }
+    },
+    "written_placement_reconciliation": {
+      "packet_id": "MATH-KNTT-G6-WRITTEN-PLACEMENT-R1-20261006",
+      "clearance": "G6_WRITTEN_PLACEMENT_R1_CONTENT_REVIEW_COMPLETE",
+      "verified_rows": [
+        "Bài 11-12",
+        "Bài 31",
+        "Bài 43"
+      ],
+      "rejected_prerequisite_overlap_rows": [
+        "Bài 10",
+        "Bài 28-29"
+      ],
+      "review_receipt": "review-packets/kntt-g6-written-placement-r1/01_NOTEBOOKLM_RESULT_R1.md"
+    },
+    "written_gap_priority_reconciliation": {
+      "packet_id": "MATH-KNTT-G6-WRITTEN-GAP-PRIORITY-R1-20261007",
+      "clearance": "G6_WRITTEN_GAP_PRIORITY_R1_REVIEW_COMPLETE",
+      "reused_approved": [
+        {
+          "exercise_id": "WX21-STA-001",
+          "lesson_ref": "Bài 38-41"
+        }
+      ],
+      "reuse_rejected": [
+        {
+          "exercise_id": "WX21-STA-002",
+          "lesson_ref": "Bài 38-41",
+          "reason": "Whole task exceeds Grade-6 Bài 38–41 primary scope because percentage increase and causal-claim analysis are material components."
+        }
+      ],
+      "boundaries_confirmed": [
+        "WX20-GEO-001:NOT_G6_KNTT",
+        "WX23-PRO-002:NOT_G6_KNTT"
+      ],
+      "authoring_priorities": {
+        "P0": [
+          "Bài 27",
+          "Bài 20",
+          "Bài 34-37"
+        ],
+        "P1": [
+          "Bài 38-41 reuse-first",
+          "Bài 42"
+        ],
+        "P2": [
+          "Bài 30",
+          "Bài 23-24"
+        ],
+        "defer_group": [
+          "Bài 1-10",
+          "Bài 13-19",
+          "Bài 25-26",
+          "Bài 28-29",
+          "Bài 32-33"
+        ]
+      },
+      "first_authoring_wave": [
+        "Bài 27",
+        "Bài 20",
+        "Bài 34-37"
+      ],
+      "max_new_items_wave1": 3,
+      "review_receipt": "review-packets/kntt-g6-written-gap-priority-r1/01_NOTEBOOKLM_RESULT_R1.md"
+    },
+    "written_library_kntt_item_count": 8,
+    "written_library_kntt_placement_row_count": 9,
+    "written_wave1_reconciliation": {
+      "packet_id": "MATH-KNTT-G6-WRITTEN-WAVE1-R1-20261007",
+      "clearance": "G6_WRITTEN_WAVE1_R1_CONTENT_REVIEW_COMPLETE",
+      "appended_items": [
+        {
+          "exercise_id": "WX02-NUM-003",
+          "lesson_refs": [
+            "Bài 27"
+          ]
+        },
+        {
+          "exercise_id": "WX20-GEO-003",
+          "lesson_refs": [
+            "Bài 20"
+          ]
+        },
+        {
+          "exercise_id": "WX13-LIN-003",
+          "lesson_refs": [
+            "Bài 34-35",
+            "Bài 36-37"
+          ]
+        }
+      ],
+      "new_item_count": 3,
+      "new_verified_rows": 4,
+      "grade6_written_item_count_with_kntt_placement": 7,
+      "grade6_verified_written_rows": 8,
+      "review_receipt": "review-packets/kntt-g6-written-wave1-r1/01_NOTEBOOKLM_RESULT_R1.md",
+      "boundaries": {
+        "new_canonical_skills": 0,
+        "readiness_credit": false,
+        "mastery_change": false,
+        "learner_history_regrade": false,
+        "runtime_taxonomy_change": false
+      }
+    },
+    "written_bai42_reconciliation": {
+      "packet_id": "MATH-KNTT-G6-WRITTEN-BAI42-R1-20261007",
+      "clearance": "G6_WRITTEN_BAI42_R1_CONTENT_REVIEW_COMPLETE",
+      "appended_item": {
+        "exercise_id": "WX23-PRO-003",
+        "lesson_ref": "Bài 42"
+      },
+      "grade6_written_item_count_with_kntt_placement": 8,
+      "grade6_verified_written_rows": 9,
+      "boundaries": {
+        "grade6_terminology": "sự kiện",
+        "probability_calculation": false,
+        "new_canonical_skills": 0,
+        "readiness_credit": false,
+        "mastery_change": false,
+        "learner_history_regrade": false,
+        "runtime_taxonomy_change": false
+      },
+      "review_receipt": "review-packets/kntt-g6-written-bai42-r1/01_NOTEBOOKLM_RESULT_R1.md"
+    }
+  },
+  "rows": [
+    {
+      "chapter": 1,
+      "lesson_ref": "Bài 1-3",
+      "curriculum_summary": "Tập hợp; cách ghi và thứ tự số tự nhiên",
+      "primary_topic": "02-so-va-phep-tinh",
+      "secondary_topics": [],
+      "semantic_targets": {
+        "direct_skills": [
+          "tap-hop-so"
+        ],
+        "families": [
+          "NUM-SETS"
+        ],
+        "local_or_family_refs": [
+          {
+            "ref": "ghi-so-tu-nhien",
+            "resolution": "CANONICAL_FAMILY",
+            "role": "LESSON_LOCAL_CONCEPT"
+          },
+          {
+            "ref": "thu-tu-so-tu-nhien",
+            "resolution": "CANONICAL_FAMILY",
+            "role": "LESSON_LOCAL_CONCEPT"
+          }
+        ],
+        "aggregated_granularity": false
+      },
+      "dimensions": {
+        "SKILL_MAP": {
+          "status": "VERIFIED_SEMANTIC",
+          "evidence": [
+            "docs/assets/data/curriculum/kntt-grade6-reconciliation-r1.json"
+          ]
+        },
+        "LEARN_CONTENT": {
+          "status": "VERIFIED_DIRECT_AND_LOCAL",
+          "card_skill_evidence": [
+            "tap-hop-so",
+            "thu-tu-phep-tinh",
+            "luy-thua"
+          ],
+          "missing_direct_skills": [],
+          "placement_strength": "EXACT",
+          "workspace": {
+            "path": "docs/assets/data/curriculum/topic02-learning-workspace.json",
+            "sha": "956087701533dd50c61f653f61e969392216e57f"
+          },
+          "direct_skill_hits": [
+            "tap-hop-so"
+          ],
+          "lesson_local_hits": [
+            "ghi-so-tu-nhien",
+            "thu-tu-so-tu-nhien"
+          ],
+          "note": "Bài 1–3 now explicitly covers the direct set/natural-number identity plus the reviewed lesson-local concepts for writing natural numbers and ordering natural numbers under NUM-SETS."
+        },
+        "MICRO_PRACTICE": {
+          "status": "VERIFIED_DIRECT_AND_LOCAL",
+          "direct_skill_hits": [
+            "tap-hop-so"
+          ],
+          "family_skill_hits": [
+            "tap-hop-so",
+            "so-huu-ti-thap-phan"
+          ],
+          "micro": {
+            "path": "docs/assets/data/practice/02-so-va-phep-tinh-micro-v1.json",
+            "sha": "a5b3aca07d88ba836d98938c49479723164ac716"
+          },
+          "lesson_local_hits": [
+            "ghi-so-tu-nhien",
+            "thu-tu-so-tu-nhien"
+          ],
+          "direct_item_ids": [
+            "NUM02MICRO_001"
+          ],
+          "lesson_local_item_ids": [
+            "NUM02MICRO_033",
+            "NUM02MICRO_034",
+            "NUM02MICRO_035"
+          ],
+          "lesson_local_evidence_role": "LESSON_LOCAL_CORE_FORMATIVE",
+          "lesson_local_gates_core": false,
+          "note": "Existing direct tap-hop-so Micro plus three deterministic lesson-local items now cover the row's direct and local demands without new skill writes."
+        },
+        "PRACTICE_BANK": {
+          "status": "PARTIAL_TOPIC_EVIDENCE",
+          "direct_skill_hits": [
+            "tap-hop-so"
+          ],
+          "family_skill_hits": [
+            "tap-hop-so",
+            "so-huu-ti-thap-phan"
+          ],
+          "manifest": {
+            "path": "docs/assets/data/practice/02-so-va-phep-tinh-v1.manifest.json",
+            "sha": "c3e592de17203a5ccb9f589fd8501e8dd0a6c417"
+          },
+          "note": "Practice manifests are topic-level and do not by themselves prove Grade-6 lesson placement."
+        },
+        "WRITTEN_LIBRARY": {
+          "status": "NONE",
+          "candidates": [],
+          "note": "No Grade-6 skill-matched written candidate found in the current shared library."
+        },
+        "READINESS": {
+          "status": "NOT_VERIFIED_STRUCTURED",
+          "evidence": null
+        }
+      },
+      "repair_evidence": {
+        "status": "REPAIRED_SOURCE_CONFIRMED_R1",
+        "review_basis": "Existing NotebookLM-reviewed Grade-6 reconciliation + deterministic natural-number representation/order content under owner-approved risk-based review policy",
+        "learn": "VERIFIED_DIRECT_AND_LOCAL",
+        "micro": "VERIFIED_DIRECT_AND_LOCAL",
+        "practice": "PARTIAL_TOPIC_EVIDENCE",
+        "written": "NONE",
+        "readiness": "NOT_VERIFIED_STRUCTURED",
+        "note": "Learn + Micro direct/local gap repaired. Practice remains topic-level partial evidence; Written and Readiness remain open."
+      }
+    },
+    {
+      "chapter": 1,
+      "lesson_ref": "Bài 4-5",
+      "curriculum_summary": "Cộng, trừ, nhân, chia số tự nhiên và tính chất",
+      "primary_topic": "02-so-va-phep-tinh",
+      "secondary_topics": [],
+      "semantic_targets": {
+        "direct_skills": [],
+        "families": [
+          "NUM-INTEGER-OPS"
+        ],
+        "local_or_family_refs": [
+          {
+            "ref": "cong-tru-so-tu-nhien",
+            "resolution": "CANONICAL_FAMILY",
+            "role": "LESSON_LOCAL_CONCEPT"
+          },
+          {
+            "ref": "nhan-chia-so-tu-nhien",
+            "resolution": "CANONICAL_FAMILY",
+            "role": "LESSON_LOCAL_CONCEPT"
+          }
+        ],
+        "aggregated_granularity": false
+      },
+      "dimensions": {
+        "SKILL_MAP": {
+          "status": "VERIFIED_SEMANTIC",
+          "evidence": [
+            "docs/assets/data/curriculum/kntt-grade6-reconciliation-r1.json"
+          ]
+        },
+        "LEARN_CONTENT": {
+          "status": "VERIFIED_LESSON_LOCAL",
+          "card_skill_evidence": [
+            "tap-hop-so",
+            "thu-tu-phep-tinh",
+            "luy-thua"
+          ],
+          "missing_direct_skills": [],
+          "placement_strength": "EXACT",
+          "workspace": {
+            "path": "docs/assets/data/curriculum/topic02-learning-workspace.json",
+            "sha": "956087701533dd50c61f653f61e969392216e57f"
+          },
+          "lesson_local_hits": [
+            "cong-tru-so-tu-nhien",
+            "nhan-chia-so-tu-nhien"
+          ],
+          "note": "Bài 4–5 operations/properties are explicitly taught as Grade-6 lesson-local content under NUM-INTEGER-OPS; no duplicate canonical skill is created."
+        },
+        "MICRO_PRACTICE": {
+          "status": "VERIFIED_LESSON_LOCAL",
+          "direct_skill_hits": [],
+          "family_skill_hits": [
+            "so-nguyen-phep-tinh"
+          ],
+          "micro": {
+            "path": "docs/assets/data/practice/02-so-va-phep-tinh-micro-v1.json",
+            "sha": "a5b3aca07d88ba836d98938c49479723164ac716"
+          },
+          "lesson_local_hits": [
+            "cong-tru-so-tu-nhien",
+            "nhan-chia-so-tu-nhien"
+          ],
+          "item_ids": [
+            "NUM02MICRO_024",
+            "NUM02MICRO_025",
+            "NUM02MICRO_026"
+          ],
+          "evidence_role": "LESSON_LOCAL_CORE_FORMATIVE",
+          "gates_core": false,
+          "note": "Direct Grade-6 lesson-local formative evidence is present without canonical skill writes or mastery/readiness credit."
+        },
+        "PRACTICE_BANK": {
+          "status": "FAMILY_LEVEL_TOPIC_EVIDENCE",
+          "direct_skill_hits": [],
+          "family_skill_hits": [
+            "so-nguyen-phep-tinh"
+          ],
+          "manifest": {
+            "path": "docs/assets/data/practice/02-so-va-phep-tinh-v1.manifest.json",
+            "sha": "c3e592de17203a5ccb9f589fd8501e8dd0a6c417"
+          },
+          "note": "Practice manifests are topic-level and do not by themselves prove Grade-6 lesson placement."
+        },
+        "WRITTEN_LIBRARY": {
+          "status": "NONE",
+          "candidates": [],
+          "note": "No Grade-6 skill-matched written candidate found in the current shared library."
+        },
+        "READINESS": {
+          "status": "NOT_VERIFIED_STRUCTURED",
+          "evidence": null
+        }
+      },
+      "repair_evidence": {
+        "status": "REPAIRED_SOURCE_CONFIRMED_R1",
+        "review_basis": "Existing Grade-6 reconciliation NotebookLM PASS + KNTT Grade-6 map + deterministic arithmetic; owner-approved low-risk review policy",
+        "learn": "VERIFIED_LESSON_LOCAL",
+        "micro": "VERIFIED_LESSON_LOCAL",
+        "practice": "FAMILY_LEVEL_TOPIC_EVIDENCE",
+        "written": "NONE",
+        "readiness": "NOT_VERIFIED_STRUCTURED",
+        "note": "Bài 4–5 Learn + lesson-local Micro gap repaired. Practice remains family/topic-level; Written and Readiness dimensions are unchanged."
+      }
+    },
+    {
+      "chapter": 1,
+      "lesson_ref": "Bài 6",
+      "curriculum_summary": "Lũy thừa với số mũ tự nhiên",
+      "primary_topic": "02-so-va-phep-tinh",
+      "secondary_topics": [],
+      "semantic_targets": {
+        "direct_skills": [
+          "luy-thua"
+        ],
+        "families": [],
+        "local_or_family_refs": [],
+        "aggregated_granularity": false
+      },
+      "dimensions": {
+        "SKILL_MAP": {
+          "status": "VERIFIED_SEMANTIC",
+          "evidence": [
+            "docs/assets/data/curriculum/kntt-grade6-reconciliation-r1.json"
+          ]
+        },
+        "LEARN_CONTENT": {
+          "status": "VERIFIED_DIRECT",
+          "card_skill_evidence": [
+            "tap-hop-so",
+            "thu-tu-phep-tinh",
+            "luy-thua"
+          ],
+          "missing_direct_skills": [],
+          "placement_strength": "EXACT",
+          "workspace": {
+            "path": "docs/assets/data/curriculum/topic02-learning-workspace.json",
+            "sha": "956087701533dd50c61f653f61e969392216e57f"
+          }
+        },
+        "MICRO_PRACTICE": {
+          "status": "VERIFIED_DIRECT",
+          "direct_skill_hits": [
+            "luy-thua"
+          ],
+          "family_skill_hits": [],
+          "micro": {
+            "path": "docs/assets/data/practice/02-so-va-phep-tinh-micro-v1.json",
+            "sha": "a5b3aca07d88ba836d98938c49479723164ac716"
+          }
+        },
+        "PRACTICE_BANK": {
+          "status": "TOPIC_SKILL_EVIDENCE",
+          "direct_skill_hits": [
+            "luy-thua"
+          ],
+          "family_skill_hits": [],
+          "manifest": {
+            "path": "docs/assets/data/practice/02-so-va-phep-tinh-v1.manifest.json",
+            "sha": "c3e592de17203a5ccb9f589fd8501e8dd0a6c417"
+          },
+          "note": "Practice manifests are topic-level and do not by themselves prove Grade-6 lesson placement."
+        },
+        "WRITTEN_LIBRARY": {
+          "status": "NONE",
+          "candidates": [],
+          "note": "No Grade-6 skill-matched written candidate found in the current shared library."
+        },
+        "READINESS": {
+          "status": "NOT_VERIFIED_STRUCTURED",
+          "evidence": null
+        }
+      }
+    },
+    {
+      "chapter": 1,
+      "lesson_ref": "Bài 7",
+      "curriculum_summary": "Thứ tự thực hiện phép tính",
+      "primary_topic": "02-so-va-phep-tinh",
+      "secondary_topics": [],
+      "semantic_targets": {
+        "direct_skills": [
+          "thu-tu-phep-tinh"
+        ],
+        "families": [],
+        "local_or_family_refs": [],
+        "aggregated_granularity": false
+      },
+      "dimensions": {
+        "SKILL_MAP": {
+          "status": "VERIFIED_SEMANTIC",
+          "evidence": [
+            "docs/assets/data/curriculum/kntt-grade6-reconciliation-r1.json"
+          ]
+        },
+        "LEARN_CONTENT": {
+          "status": "VERIFIED_DIRECT",
+          "card_skill_evidence": [
+            "tap-hop-so",
+            "thu-tu-phep-tinh",
+            "luy-thua"
+          ],
+          "missing_direct_skills": [],
+          "placement_strength": "EXACT",
+          "workspace": {
+            "path": "docs/assets/data/curriculum/topic02-learning-workspace.json",
+            "sha": "956087701533dd50c61f653f61e969392216e57f"
+          }
+        },
+        "MICRO_PRACTICE": {
+          "status": "VERIFIED_DIRECT",
+          "direct_skill_hits": [
+            "thu-tu-phep-tinh"
+          ],
+          "family_skill_hits": [],
+          "micro": {
+            "path": "docs/assets/data/practice/02-so-va-phep-tinh-micro-v1.json",
+            "sha": "a5b3aca07d88ba836d98938c49479723164ac716"
+          }
+        },
+        "PRACTICE_BANK": {
+          "status": "TOPIC_SKILL_EVIDENCE",
+          "direct_skill_hits": [
+            "thu-tu-phep-tinh"
+          ],
+          "family_skill_hits": [],
+          "manifest": {
+            "path": "docs/assets/data/practice/02-so-va-phep-tinh-v1.manifest.json",
+            "sha": "c3e592de17203a5ccb9f589fd8501e8dd0a6c417"
+          },
+          "note": "Practice manifests are topic-level and do not by themselves prove Grade-6 lesson placement."
+        },
+        "WRITTEN_LIBRARY": {
+          "status": "NONE",
+          "candidates": [],
+          "note": "No Grade-6 skill-matched written candidate found in the current shared library."
+        },
+        "READINESS": {
+          "status": "NOT_VERIFIED_STRUCTURED",
+          "evidence": null
+        }
+      }
+    },
+    {
+      "chapter": 2,
+      "lesson_ref": "Bài 8",
+      "curriculum_summary": "Quan hệ chia hết và tính chất",
+      "primary_topic": "02-so-va-phep-tinh",
+      "secondary_topics": [],
+      "semantic_targets": {
+        "direct_skills": [],
+        "families": [
+          "NUM-DIV-PRIME"
+        ],
+        "local_or_family_refs": [
+          {
+            "ref": "quan-he-chia-het",
+            "resolution": "CANONICAL_FAMILY",
+            "role": "LESSON_LOCAL_CONCEPT"
+          },
+          {
+            "ref": "tinh-chat-chia-het",
+            "resolution": "CANONICAL_FAMILY",
+            "role": "LESSON_LOCAL_CONCEPT"
+          }
+        ],
+        "aggregated_granularity": false
+      },
+      "dimensions": {
+        "SKILL_MAP": {
+          "status": "VERIFIED_SEMANTIC",
+          "evidence": [
+            "docs/assets/data/curriculum/kntt-grade6-reconciliation-r1.json"
+          ]
+        },
+        "LEARN_CONTENT": {
+          "status": "VERIFIED_LESSON_LOCAL",
+          "card_skill_evidence": [
+            "dau-hieu-chia-het",
+            "so-nguyen-to",
+            "phan-tich-thua-so-nguyen-to",
+            "ucln",
+            "bcnn"
+          ],
+          "missing_direct_skills": [],
+          "placement_strength": "EXACT",
+          "workspace": {
+            "path": "docs/assets/data/curriculum/topic02-learning-workspace.json",
+            "sha": "956087701533dd50c61f653f61e969392216e57f"
+          },
+          "lesson_local_hits": [
+            "quan-he-chia-het",
+            "tinh-chat-chia-het"
+          ],
+          "note": "Bài 8 explicitly teaches the reviewed lesson-local divisibility relation and divisibility properties under NUM-DIV-PRIME; no duplicate canonical skill is created."
+        },
+        "MICRO_PRACTICE": {
+          "status": "VERIFIED_LESSON_LOCAL",
+          "direct_skill_hits": [],
+          "family_skill_hits": [
+            "dau-hieu-chia-het",
+            "so-nguyen-to",
+            "phan-tich-thua-so-nguyen-to"
+          ],
+          "micro": {
+            "path": "docs/assets/data/practice/02-so-va-phep-tinh-micro-v1.json",
+            "sha": "a5b3aca07d88ba836d98938c49479723164ac716"
+          },
+          "lesson_local_hits": [
+            "quan-he-chia-het",
+            "tinh-chat-chia-het"
+          ],
+          "item_ids": [
+            "NUM02MICRO_027",
+            "NUM02MICRO_028",
+            "NUM02MICRO_029"
+          ],
+          "evidence_role": "LESSON_LOCAL_CORE_FORMATIVE",
+          "gates_core": false,
+          "note": "Direct Grade-6 lesson-local formative evidence covers divisibility relation plus sum/difference properties without canonical skill writes or mastery/readiness credit."
+        },
+        "PRACTICE_BANK": {
+          "status": "FAMILY_LEVEL_TOPIC_EVIDENCE",
+          "direct_skill_hits": [],
+          "family_skill_hits": [
+            "dau-hieu-chia-het",
+            "so-nguyen-to",
+            "phan-tich-thua-so-nguyen-to"
+          ],
+          "manifest": {
+            "path": "docs/assets/data/practice/02-so-va-phep-tinh-v1.manifest.json",
+            "sha": "c3e592de17203a5ccb9f589fd8501e8dd0a6c417"
+          },
+          "note": "Practice manifests are topic-level and do not by themselves prove Grade-6 lesson placement."
+        },
+        "WRITTEN_LIBRARY": {
+          "status": "NONE",
+          "candidates": [],
+          "note": "No Grade-6 skill-matched written candidate found in the current shared library."
+        },
+        "READINESS": {
+          "status": "NOT_VERIFIED_STRUCTURED",
+          "evidence": null
+        }
+      },
+      "repair_evidence": {
+        "status": "REPAIRED_SOURCE_CONFIRMED_R1",
+        "review_basis": "KNTT Grade-6 map + reviewed Grade-6 semantic reconciliation + deterministic divisibility arithmetic; owner-approved low-risk review policy",
+        "learn": "VERIFIED_LESSON_LOCAL",
+        "micro": "VERIFIED_LESSON_LOCAL",
+        "practice": "FAMILY_LEVEL_TOPIC_EVIDENCE",
+        "written": "NONE",
+        "readiness": "NOT_VERIFIED_STRUCTURED",
+        "note": "Bài 8 Learn + lesson-local Micro gap repaired. Practice remains family/topic-level; Written and Readiness dimensions are unchanged."
+      }
+    },
+    {
+      "chapter": 2,
+      "lesson_ref": "Bài 9",
+      "curriculum_summary": "Dấu hiệu chia hết",
+      "primary_topic": "02-so-va-phep-tinh",
+      "secondary_topics": [],
+      "semantic_targets": {
+        "direct_skills": [
+          "dau-hieu-chia-het"
+        ],
+        "families": [],
+        "local_or_family_refs": [],
+        "aggregated_granularity": false
+      },
+      "dimensions": {
+        "SKILL_MAP": {
+          "status": "VERIFIED_SEMANTIC",
+          "evidence": [
+            "docs/assets/data/curriculum/kntt-grade6-reconciliation-r1.json"
+          ]
+        },
+        "LEARN_CONTENT": {
+          "status": "VERIFIED_DIRECT",
+          "card_skill_evidence": [
+            "dau-hieu-chia-het",
+            "so-nguyen-to",
+            "phan-tich-thua-so-nguyen-to",
+            "ucln",
+            "bcnn"
+          ],
+          "missing_direct_skills": [],
+          "placement_strength": "EXACT",
+          "workspace": {
+            "path": "docs/assets/data/curriculum/topic02-learning-workspace.json",
+            "sha": "956087701533dd50c61f653f61e969392216e57f"
+          }
+        },
+        "MICRO_PRACTICE": {
+          "status": "VERIFIED_DIRECT",
+          "direct_skill_hits": [
+            "dau-hieu-chia-het"
+          ],
+          "family_skill_hits": [],
+          "micro": {
+            "path": "docs/assets/data/practice/02-so-va-phep-tinh-micro-v1.json",
+            "sha": "a5b3aca07d88ba836d98938c49479723164ac716"
+          }
+        },
+        "PRACTICE_BANK": {
+          "status": "TOPIC_SKILL_EVIDENCE",
+          "direct_skill_hits": [
+            "dau-hieu-chia-het"
+          ],
+          "family_skill_hits": [],
+          "manifest": {
+            "path": "docs/assets/data/practice/02-so-va-phep-tinh-v1.manifest.json",
+            "sha": "c3e592de17203a5ccb9f589fd8501e8dd0a6c417"
+          },
+          "note": "Practice manifests are topic-level and do not by themselves prove Grade-6 lesson placement."
+        },
+        "WRITTEN_LIBRARY": {
+          "status": "NONE",
+          "candidates": [],
+          "note": "No Grade-6 skill-matched written candidate found in the current shared library."
+        },
+        "READINESS": {
+          "status": "NOT_VERIFIED_STRUCTURED",
+          "evidence": null
+        }
+      }
+    },
+    {
+      "chapter": 2,
+      "lesson_ref": "Bài 10",
+      "curriculum_summary": "Số nguyên tố và hợp số; phân tích ra thừa số nguyên tố",
+      "primary_topic": "02-so-va-phep-tinh",
+      "secondary_topics": [],
+      "semantic_targets": {
+        "direct_skills": [
+          "phan-tich-thua-so-nguyen-to",
+          "so-nguyen-to"
+        ],
+        "families": [
+          "NUM-DIV-PRIME"
+        ],
+        "local_or_family_refs": [],
+        "aggregated_granularity": false
+      },
+      "dimensions": {
+        "SKILL_MAP": {
+          "status": "VERIFIED_SEMANTIC",
+          "evidence": [
+            "docs/assets/data/curriculum/kntt-grade6-reconciliation-r1.json"
+          ]
+        },
+        "LEARN_CONTENT": {
+          "status": "VERIFIED_DIRECT",
+          "card_skill_evidence": [
+            "dau-hieu-chia-het",
+            "so-nguyen-to",
+            "phan-tich-thua-so-nguyen-to",
+            "ucln",
+            "bcnn"
+          ],
+          "missing_direct_skills": [],
+          "placement_strength": "EXACT",
+          "workspace": {
+            "path": "docs/assets/data/curriculum/topic02-learning-workspace.json",
+            "sha": "956087701533dd50c61f653f61e969392216e57f"
+          }
+        },
+        "MICRO_PRACTICE": {
+          "status": "VERIFIED_DIRECT",
+          "direct_skill_hits": [
+            "phan-tich-thua-so-nguyen-to",
+            "so-nguyen-to"
+          ],
+          "family_skill_hits": [
+            "dau-hieu-chia-het",
+            "so-nguyen-to",
+            "phan-tich-thua-so-nguyen-to"
+          ],
+          "micro": {
+            "path": "docs/assets/data/practice/02-so-va-phep-tinh-micro-v1.json",
+            "sha": "a5b3aca07d88ba836d98938c49479723164ac716"
+          }
+        },
+        "PRACTICE_BANK": {
+          "status": "TOPIC_SKILL_EVIDENCE",
+          "direct_skill_hits": [
+            "phan-tich-thua-so-nguyen-to",
+            "so-nguyen-to"
+          ],
+          "family_skill_hits": [
+            "dau-hieu-chia-het",
+            "so-nguyen-to",
+            "phan-tich-thua-so-nguyen-to"
+          ],
+          "manifest": {
+            "path": "docs/assets/data/practice/02-so-va-phep-tinh-v1.manifest.json",
+            "sha": "c3e592de17203a5ccb9f589fd8501e8dd0a6c417"
+          },
+          "note": "Practice manifests are topic-level and do not by themselves prove Grade-6 lesson placement."
+        },
+        "WRITTEN_LIBRARY": {
+          "status": "NONE",
+          "candidates": [],
+          "rejected_overlap": {
+            "exercise_id": "WX02-NUM-001",
+            "review_receipt": "review-packets/kntt-g6-written-placement-r1/01_NOTEBOOKLM_RESULT_R1.md",
+            "reason": "Prime factorization is a supporting calculation method for the reviewed ƯCLN application, not this exercise's primary curriculum placement."
+          },
+          "note": "Reviewed prerequisite/supporting-skill overlap; no KNTT Written placement is claimed for this lesson."
+        },
+        "READINESS": {
+          "status": "NOT_VERIFIED_STRUCTURED",
+          "evidence": null
+        }
+      }
+    },
+    {
+      "chapter": 2,
+      "lesson_ref": "Bài 11-12",
+      "curriculum_summary": "Ước chung, ƯCLN; bội chung, BCNN và ứng dụng",
+      "primary_topic": "02-so-va-phep-tinh",
+      "secondary_topics": [],
+      "semantic_targets": {
+        "direct_skills": [
+          "ucln",
+          "bcnn"
+        ],
+        "families": [
+          "NUM-GCD-LCM"
+        ],
+        "local_or_family_refs": [
+          {
+            "ref": "bai-toan-ucln-bcnn",
+            "resolution": "CANONICAL_FAMILY",
+            "role": "PROBLEM_TYPE"
+          }
+        ],
+        "aggregated_granularity": false
+      },
+      "dimensions": {
+        "SKILL_MAP": {
+          "status": "VERIFIED_SEMANTIC",
+          "evidence": [
+            "docs/assets/data/curriculum/kntt-grade6-reconciliation-r1.json"
+          ]
+        },
+        "LEARN_CONTENT": {
+          "status": "VERIFIED_DIRECT_AND_LOCAL",
+          "card_skill_evidence": [
+            "dau-hieu-chia-het",
+            "so-nguyen-to",
+            "phan-tich-thua-so-nguyen-to",
+            "ucln",
+            "bcnn"
+          ],
+          "missing_direct_skills": [],
+          "placement_strength": "EXACT",
+          "workspace": {
+            "path": "docs/assets/data/curriculum/topic02-learning-workspace.json",
+            "sha": "956087701533dd50c61f653f61e969392216e57f"
+          },
+          "direct_skill_hits": [
+            "ucln",
+            "bcnn"
+          ],
+          "lesson_local_hits": [
+            "bai-toan-ucln-bcnn"
+          ],
+          "note": "Bài 11–12 now explicitly teaches direct UCLN/BCNN content and the reviewed application problem type for choosing/modeling ƯCLN versus BCNN under NUM-GCD-LCM."
+        },
+        "MICRO_PRACTICE": {
+          "status": "VERIFIED_DIRECT_AND_LOCAL",
+          "direct_skill_hits": [
+            "ucln",
+            "bcnn"
+          ],
+          "family_skill_hits": [
+            "ucln",
+            "bcnn"
+          ],
+          "micro": {
+            "path": "docs/assets/data/practice/02-so-va-phep-tinh-micro-v1.json",
+            "sha": "a5b3aca07d88ba836d98938c49479723164ac716"
+          },
+          "lesson_local_hits": [
+            "bai-toan-ucln-bcnn"
+          ],
+          "direct_item_ids": [
+            "NUM02MICRO_006",
+            "NUM02MICRO_018"
+          ],
+          "lesson_local_item_ids": [
+            "NUM02MICRO_036",
+            "NUM02MICRO_037",
+            "NUM02MICRO_038"
+          ],
+          "lesson_local_evidence_role": "LESSON_LOCAL_CORE_FORMATIVE",
+          "lesson_local_gates_core": false,
+          "note": "Existing direct UCLN/BCNN Micro plus three deterministic application/problem-type items now cover the row's direct and local demands without creating a new canonical skill."
+        },
+        "PRACTICE_BANK": {
+          "status": "PARTIAL_TOPIC_EVIDENCE",
+          "direct_skill_hits": [
+            "ucln",
+            "bcnn"
+          ],
+          "family_skill_hits": [
+            "ucln",
+            "bcnn"
+          ],
+          "manifest": {
+            "path": "docs/assets/data/practice/02-so-va-phep-tinh-v1.manifest.json",
+            "sha": "c3e592de17203a5ccb9f589fd8501e8dd0a6c417"
+          },
+          "note": "Practice manifests are topic-level and do not by themselves prove Grade-6 lesson placement."
+        },
+        "WRITTEN_LIBRARY": {
+          "status": "VERIFIED_KNTT_PLACEMENT",
+          "placements": [
+            {
+              "exercise_id": "WX02-NUM-001",
+              "grade": 6,
+              "chapter": 2,
+              "lesson": "Bài 11–12 — Ước chung, ƯCLN; bội chung, BCNN và ứng dụng"
+            }
+          ],
+          "evidence": {
+            "packet_id": "MATH-KNTT-G6-WRITTEN-PLACEMENT-R1-20261006",
+            "clearance": "G6_WRITTEN_PLACEMENT_R1_CONTENT_REVIEW_COMPLETE",
+            "review_receipt": "review-packets/kntt-g6-written-placement-r1/01_NOTEBOOKLM_RESULT_R1.md"
+          },
+          "note": "Independent placement review confirms this as the exercise's true Grade-6 KNTT curriculum placement."
+        },
+        "READINESS": {
+          "status": "NOT_VERIFIED_STRUCTURED",
+          "evidence": null
+        }
+      },
+      "repair_evidence": {
+        "status": "REPAIRED_SOURCE_CONFIRMED_R1",
+        "review_basis": "Existing NotebookLM-reviewed Grade-6 reconciliation + deterministic GCD/LCM application content under owner-approved risk-based review policy",
+        "learn": "VERIFIED_DIRECT_AND_LOCAL",
+        "micro": "VERIFIED_DIRECT_AND_LOCAL",
+        "practice": "PARTIAL_TOPIC_EVIDENCE",
+        "written": "VERIFIED_KNTT_PLACEMENT",
+        "readiness": "NOT_VERIFIED_STRUCTURED",
+        "note": "Learn + Micro direct/local gap repaired. Practice remains topic-level partial evidence; Readiness remains open."
+      }
+    },
+    {
+      "chapter": 3,
+      "lesson_ref": "Bài 13",
+      "curriculum_summary": "Tập hợp số nguyên, số đối, trục số, thứ tự và giá trị tuyệt đối",
+      "primary_topic": "02-so-va-phep-tinh",
+      "secondary_topics": [],
+      "semantic_targets": {
+        "direct_skills": [
+          "gia-tri-tuyet-doi",
+          "so-nguyen-phep-tinh"
+        ],
+        "families": [
+          "NUM-INTEGER-OPS"
+        ],
+        "local_or_family_refs": [],
+        "aggregated_granularity": true
+      },
+      "dimensions": {
+        "SKILL_MAP": {
+          "status": "VERIFIED_SEMANTIC",
+          "evidence": [
+            "docs/assets/data/curriculum/kntt-grade6-reconciliation-r1.json"
+          ]
+        },
+        "LEARN_CONTENT": {
+          "status": "VERIFIED_DIRECT",
+          "card_skill_evidence": [
+            "so-nguyen-phep-tinh",
+            "gia-tri-tuyet-doi"
+          ],
+          "missing_direct_skills": [],
+          "placement_strength": "EXACT",
+          "workspace": {
+            "path": "docs/assets/data/curriculum/topic02-learning-workspace.json",
+            "sha": "956087701533dd50c61f653f61e969392216e57f"
+          }
+        },
+        "MICRO_PRACTICE": {
+          "status": "VERIFIED_DIRECT",
+          "direct_skill_hits": [
+            "gia-tri-tuyet-doi",
+            "so-nguyen-phep-tinh"
+          ],
+          "family_skill_hits": [
+            "so-nguyen-phep-tinh"
+          ],
+          "micro": {
+            "path": "docs/assets/data/practice/02-so-va-phep-tinh-micro-v1.json",
+            "sha": "b6ec952b786f897ef6f45301208dcd9d55bde98b"
+          },
+          "item_ids": [
+            "NUM02MICRO_019",
+            "NUM02MICRO_042",
+            "NUM02MICRO_043"
+          ]
+        },
+        "PRACTICE_BANK": {
+          "status": "TOPIC_SKILL_EVIDENCE",
+          "direct_skill_hits": [
+            "gia-tri-tuyet-doi",
+            "so-nguyen-phep-tinh"
+          ],
+          "family_skill_hits": [
+            "so-nguyen-phep-tinh"
+          ],
+          "manifest": {
+            "path": "docs/assets/data/practice/02-so-va-phep-tinh-v1.manifest.json",
+            "sha": "c3e592de17203a5ccb9f589fd8501e8dd0a6c417"
+          },
+          "note": "Practice manifests are topic-level and do not by themselves prove Grade-6 lesson placement."
+        },
+        "WRITTEN_LIBRARY": {
+          "status": "NONE",
+          "candidates": [],
+          "note": "No Grade-6 skill-matched written candidate found in the current shared library."
+        },
+        "READINESS": {
+          "status": "NOT_VERIFIED_STRUCTURED",
+          "evidence": null
+        }
+      },
+      "repair_evidence": {
+        "status": "REPAIRED_REVIEWED_R1",
+        "packet_id": "MATH-KNTT-G6-SHARED-SKILL-DENSITY-R1-20261006",
+        "clearance": "G6_SHARED_SKILL_DENSITY_R1_CONTENT_REVIEW_COMPLETE",
+        "review_receipt": "review-packets/kntt-g6-shared-skill-density-r1/01_NOTEBOOKLM_RESULT_R1.md",
+        "learn": "VERIFIED_DIRECT",
+        "micro": "VERIFIED_DIRECT",
+        "practice": "TOPIC_SKILL_EVIDENCE",
+        "written": "NONE",
+        "readiness": "NOT_VERIFIED_STRUCTURED",
+        "note": "NotebookLM PASS authorizes Learn/Micro promotion only; Practice, Written and Readiness remain unchanged."
+      }
+    },
+    {
+      "chapter": 3,
+      "lesson_ref": "Bài 14",
+      "curriculum_summary": "Cộng và trừ số nguyên",
+      "primary_topic": "02-so-va-phep-tinh",
+      "secondary_topics": [],
+      "semantic_targets": {
+        "direct_skills": [
+          "so-nguyen-phep-tinh"
+        ],
+        "families": [
+          "NUM-INTEGER-OPS"
+        ],
+        "local_or_family_refs": [],
+        "aggregated_granularity": true
+      },
+      "dimensions": {
+        "SKILL_MAP": {
+          "status": "VERIFIED_SEMANTIC",
+          "evidence": [
+            "docs/assets/data/curriculum/kntt-grade6-reconciliation-r1.json"
+          ]
+        },
+        "LEARN_CONTENT": {
+          "status": "VERIFIED_DIRECT",
+          "card_skill_evidence": [
+            "so-nguyen-phep-tinh",
+            "gia-tri-tuyet-doi"
+          ],
+          "missing_direct_skills": [],
+          "placement_strength": "EXACT",
+          "workspace": {
+            "path": "docs/assets/data/curriculum/topic02-learning-workspace.json",
+            "sha": "956087701533dd50c61f653f61e969392216e57f"
+          }
+        },
+        "MICRO_PRACTICE": {
+          "status": "VERIFIED_DIRECT",
+          "direct_skill_hits": [
+            "so-nguyen-phep-tinh"
+          ],
+          "family_skill_hits": [
+            "so-nguyen-phep-tinh"
+          ],
+          "micro": {
+            "path": "docs/assets/data/practice/02-so-va-phep-tinh-micro-v1.json",
+            "sha": "b6ec952b786f897ef6f45301208dcd9d55bde98b"
+          },
+          "item_ids": [
+            "NUM02MICRO_007",
+            "NUM02MICRO_009",
+            "NUM02MICRO_044"
+          ]
+        },
+        "PRACTICE_BANK": {
+          "status": "TOPIC_SKILL_EVIDENCE",
+          "direct_skill_hits": [
+            "so-nguyen-phep-tinh"
+          ],
+          "family_skill_hits": [
+            "so-nguyen-phep-tinh"
+          ],
+          "manifest": {
+            "path": "docs/assets/data/practice/02-so-va-phep-tinh-v1.manifest.json",
+            "sha": "c3e592de17203a5ccb9f589fd8501e8dd0a6c417"
+          },
+          "note": "Practice manifests are topic-level and do not by themselves prove Grade-6 lesson placement."
+        },
+        "WRITTEN_LIBRARY": {
+          "status": "NONE",
+          "candidates": [],
+          "note": "No Grade-6 skill-matched written candidate found in the current shared library."
+        },
+        "READINESS": {
+          "status": "NOT_VERIFIED_STRUCTURED",
+          "evidence": null
+        }
+      },
+      "repair_evidence": {
+        "status": "REPAIRED_REVIEWED_R1",
+        "packet_id": "MATH-KNTT-G6-SHARED-SKILL-DENSITY-R1-20261006",
+        "clearance": "G6_SHARED_SKILL_DENSITY_R1_CONTENT_REVIEW_COMPLETE",
+        "review_receipt": "review-packets/kntt-g6-shared-skill-density-r1/01_NOTEBOOKLM_RESULT_R1.md",
+        "learn": "VERIFIED_DIRECT",
+        "micro": "VERIFIED_DIRECT",
+        "practice": "TOPIC_SKILL_EVIDENCE",
+        "written": "NONE",
+        "readiness": "NOT_VERIFIED_STRUCTURED",
+        "note": "NotebookLM PASS authorizes Learn/Micro promotion only; Practice, Written and Readiness remain unchanged."
+      }
+    },
+    {
+      "chapter": 3,
+      "lesson_ref": "Bài 15",
+      "curriculum_summary": "Quy tắc dấu ngoặc",
+      "primary_topic": "02-so-va-phep-tinh",
+      "secondary_topics": [],
+      "semantic_targets": {
+        "direct_skills": [
+          "so-nguyen-phep-tinh"
+        ],
+        "families": [
+          "NUM-INTEGER-OPS"
+        ],
+        "local_or_family_refs": [],
+        "aggregated_granularity": true
+      },
+      "dimensions": {
+        "SKILL_MAP": {
+          "status": "VERIFIED_SEMANTIC",
+          "evidence": [
+            "docs/assets/data/curriculum/kntt-grade6-reconciliation-r1.json"
+          ]
+        },
+        "LEARN_CONTENT": {
+          "status": "VERIFIED_DIRECT",
+          "card_skill_evidence": [
+            "so-nguyen-phep-tinh",
+            "gia-tri-tuyet-doi"
+          ],
+          "missing_direct_skills": [],
+          "placement_strength": "EXACT",
+          "workspace": {
+            "path": "docs/assets/data/curriculum/topic02-learning-workspace.json",
+            "sha": "956087701533dd50c61f653f61e969392216e57f"
+          }
+        },
+        "MICRO_PRACTICE": {
+          "status": "VERIFIED_DIRECT",
+          "direct_skill_hits": [
+            "so-nguyen-phep-tinh"
+          ],
+          "family_skill_hits": [
+            "so-nguyen-phep-tinh"
+          ],
+          "micro": {
+            "path": "docs/assets/data/practice/02-so-va-phep-tinh-micro-v1.json",
+            "sha": "b6ec952b786f897ef6f45301208dcd9d55bde98b"
+          },
+          "item_ids": [
+            "NUM02MICRO_045"
+          ]
+        },
+        "PRACTICE_BANK": {
+          "status": "TOPIC_SKILL_EVIDENCE",
+          "direct_skill_hits": [
+            "so-nguyen-phep-tinh"
+          ],
+          "family_skill_hits": [
+            "so-nguyen-phep-tinh"
+          ],
+          "manifest": {
+            "path": "docs/assets/data/practice/02-so-va-phep-tinh-v1.manifest.json",
+            "sha": "c3e592de17203a5ccb9f589fd8501e8dd0a6c417"
+          },
+          "note": "Practice manifests are topic-level and do not by themselves prove Grade-6 lesson placement."
+        },
+        "WRITTEN_LIBRARY": {
+          "status": "NONE",
+          "candidates": [],
+          "note": "No Grade-6 skill-matched written candidate found in the current shared library."
+        },
+        "READINESS": {
+          "status": "NOT_VERIFIED_STRUCTURED",
+          "evidence": null
+        }
+      },
+      "repair_evidence": {
+        "status": "REPAIRED_REVIEWED_R1",
+        "packet_id": "MATH-KNTT-G6-SHARED-SKILL-DENSITY-R1-20261006",
+        "clearance": "G6_SHARED_SKILL_DENSITY_R1_CONTENT_REVIEW_COMPLETE",
+        "review_receipt": "review-packets/kntt-g6-shared-skill-density-r1/01_NOTEBOOKLM_RESULT_R1.md",
+        "learn": "VERIFIED_DIRECT",
+        "micro": "VERIFIED_DIRECT",
+        "practice": "TOPIC_SKILL_EVIDENCE",
+        "written": "NONE",
+        "readiness": "NOT_VERIFIED_STRUCTURED",
+        "note": "NotebookLM PASS authorizes Learn/Micro promotion only; Practice, Written and Readiness remain unchanged."
+      }
+    },
+    {
+      "chapter": 3,
+      "lesson_ref": "Bài 16",
+      "curriculum_summary": "Nhân số nguyên",
+      "primary_topic": "02-so-va-phep-tinh",
+      "secondary_topics": [],
+      "semantic_targets": {
+        "direct_skills": [
+          "so-nguyen-phep-tinh"
+        ],
+        "families": [
+          "NUM-INTEGER-OPS"
+        ],
+        "local_or_family_refs": [],
+        "aggregated_granularity": true
+      },
+      "dimensions": {
+        "SKILL_MAP": {
+          "status": "VERIFIED_SEMANTIC",
+          "evidence": [
+            "docs/assets/data/curriculum/kntt-grade6-reconciliation-r1.json"
+          ]
+        },
+        "LEARN_CONTENT": {
+          "status": "VERIFIED_DIRECT",
+          "card_skill_evidence": [
+            "so-nguyen-phep-tinh",
+            "gia-tri-tuyet-doi"
+          ],
+          "missing_direct_skills": [],
+          "placement_strength": "EXACT",
+          "workspace": {
+            "path": "docs/assets/data/curriculum/topic02-learning-workspace.json",
+            "sha": "956087701533dd50c61f653f61e969392216e57f"
+          }
+        },
+        "MICRO_PRACTICE": {
+          "status": "VERIFIED_DIRECT",
+          "direct_skill_hits": [
+            "so-nguyen-phep-tinh"
+          ],
+          "family_skill_hits": [
+            "so-nguyen-phep-tinh"
+          ],
+          "micro": {
+            "path": "docs/assets/data/practice/02-so-va-phep-tinh-micro-v1.json",
+            "sha": "b6ec952b786f897ef6f45301208dcd9d55bde98b"
+          },
+          "item_ids": [
+            "NUM02MICRO_008"
+          ]
+        },
+        "PRACTICE_BANK": {
+          "status": "TOPIC_SKILL_EVIDENCE",
+          "direct_skill_hits": [
+            "so-nguyen-phep-tinh"
+          ],
+          "family_skill_hits": [
+            "so-nguyen-phep-tinh"
+          ],
+          "manifest": {
+            "path": "docs/assets/data/practice/02-so-va-phep-tinh-v1.manifest.json",
+            "sha": "c3e592de17203a5ccb9f589fd8501e8dd0a6c417"
+          },
+          "note": "Practice manifests are topic-level and do not by themselves prove Grade-6 lesson placement."
+        },
+        "WRITTEN_LIBRARY": {
+          "status": "NONE",
+          "candidates": [],
+          "note": "No Grade-6 skill-matched written candidate found in the current shared library."
+        },
+        "READINESS": {
+          "status": "NOT_VERIFIED_STRUCTURED",
+          "evidence": null
+        }
+      },
+      "repair_evidence": {
+        "status": "REPAIRED_REVIEWED_R1",
+        "packet_id": "MATH-KNTT-G6-SHARED-SKILL-DENSITY-R1-20261006",
+        "clearance": "G6_SHARED_SKILL_DENSITY_R1_CONTENT_REVIEW_COMPLETE",
+        "review_receipt": "review-packets/kntt-g6-shared-skill-density-r1/01_NOTEBOOKLM_RESULT_R1.md",
+        "learn": "VERIFIED_DIRECT",
+        "micro": "VERIFIED_DIRECT",
+        "practice": "TOPIC_SKILL_EVIDENCE",
+        "written": "NONE",
+        "readiness": "NOT_VERIFIED_STRUCTURED",
+        "note": "NotebookLM PASS authorizes Learn/Micro promotion only; Practice, Written and Readiness remain unchanged."
+      }
+    },
+    {
+      "chapter": 3,
+      "lesson_ref": "Bài 17",
+      "curriculum_summary": "Phép chia hết; ước và bội của một số nguyên",
+      "primary_topic": "02-so-va-phep-tinh",
+      "secondary_topics": [],
+      "semantic_targets": {
+        "direct_skills": [
+          "so-nguyen-phep-tinh"
+        ],
+        "families": [
+          "NUM-INTEGER-OPS"
+        ],
+        "local_or_family_refs": [],
+        "aggregated_granularity": true
+      },
+      "dimensions": {
+        "SKILL_MAP": {
+          "status": "VERIFIED_SEMANTIC",
+          "evidence": [
+            "docs/assets/data/curriculum/kntt-grade6-reconciliation-r1.json"
+          ]
+        },
+        "LEARN_CONTENT": {
+          "status": "VERIFIED_DIRECT",
+          "card_skill_evidence": [
+            "so-nguyen-phep-tinh",
+            "gia-tri-tuyet-doi"
+          ],
+          "missing_direct_skills": [],
+          "placement_strength": "EXACT",
+          "workspace": {
+            "path": "docs/assets/data/curriculum/topic02-learning-workspace.json",
+            "sha": "956087701533dd50c61f653f61e969392216e57f"
+          }
+        },
+        "MICRO_PRACTICE": {
+          "status": "VERIFIED_DIRECT",
+          "direct_skill_hits": [
+            "so-nguyen-phep-tinh"
+          ],
+          "family_skill_hits": [
+            "so-nguyen-phep-tinh"
+          ],
+          "micro": {
+            "path": "docs/assets/data/practice/02-so-va-phep-tinh-micro-v1.json",
+            "sha": "b6ec952b786f897ef6f45301208dcd9d55bde98b"
+          },
+          "item_ids": [
+            "NUM02MICRO_046",
+            "NUM02MICRO_047"
+          ]
+        },
+        "PRACTICE_BANK": {
+          "status": "TOPIC_SKILL_EVIDENCE",
+          "direct_skill_hits": [
+            "so-nguyen-phep-tinh"
+          ],
+          "family_skill_hits": [
+            "so-nguyen-phep-tinh"
+          ],
+          "manifest": {
+            "path": "docs/assets/data/practice/02-so-va-phep-tinh-v1.manifest.json",
+            "sha": "c3e592de17203a5ccb9f589fd8501e8dd0a6c417"
+          },
+          "note": "Practice manifests are topic-level and do not by themselves prove Grade-6 lesson placement."
+        },
+        "WRITTEN_LIBRARY": {
+          "status": "NONE",
+          "candidates": [],
+          "note": "No Grade-6 skill-matched written candidate found in the current shared library."
+        },
+        "READINESS": {
+          "status": "NOT_VERIFIED_STRUCTURED",
+          "evidence": null
+        }
+      },
+      "repair_evidence": {
+        "status": "REPAIRED_REVIEWED_R1",
+        "packet_id": "MATH-KNTT-G6-SHARED-SKILL-DENSITY-R1-20261006",
+        "clearance": "G6_SHARED_SKILL_DENSITY_R1_CONTENT_REVIEW_COMPLETE",
+        "review_receipt": "review-packets/kntt-g6-shared-skill-density-r1/01_NOTEBOOKLM_RESULT_R1.md",
+        "learn": "VERIFIED_DIRECT",
+        "micro": "VERIFIED_DIRECT",
+        "practice": "TOPIC_SKILL_EVIDENCE",
+        "written": "NONE",
+        "readiness": "NOT_VERIFIED_STRUCTURED",
+        "note": "NotebookLM PASS authorizes Learn/Micro promotion only; Practice, Written and Readiness remain unchanged."
+      }
+    },
+    {
+      "chapter": 4,
+      "lesson_ref": "Bài 18",
+      "curriculum_summary": "Tam giác đều, hình vuông, lục giác đều: nhận biết và tính chất trực quan",
+      "primary_topic": "20-hinh-hoc-tong-hop",
+      "secondary_topics": [
+        "14-tam-giac",
+        "16-tu-giac"
+      ],
+      "semantic_targets": {
+        "direct_skills": [
+          "nhan-biet-tam-giac-deu",
+          "nhan-biet-hinh-vuong",
+          "nhan-biet-luc-giac-deu"
+        ],
+        "families": [],
+        "local_or_family_refs": [],
+        "aggregated_granularity": false
+      },
+      "dimensions": {
+        "SKILL_MAP": {
+          "status": "VERIFIED_SEMANTIC",
+          "evidence": [
+            "docs/assets/data/curriculum/kntt-grade6-reconciliation-r1.json"
+          ]
+        },
+        "LEARN_CONTENT": {
+          "status": "VERIFIED_DIRECT",
+          "card_skill_evidence": [
+            "nhan-biet-tam-giac-deu",
+            "nhan-biet-hinh-vuong",
+            "nhan-biet-luc-giac-deu",
+            "nhan-biet-tu-giac-dac-biet",
+            "chu-vi-tu-giac",
+            "dien-tich-tu-giac",
+            "do-luong-thuc-te",
+            "truc-doi-xung",
+            "tam-doi-xung"
+          ],
+          "missing_direct_skills": [],
+          "placement_strength": "KNTT_G6_EXACT_PLACEMENT_OVERLAY",
+          "workspace": {
+            "path": "docs/assets/data/curriculum/topic20-learning-workspace.json",
+            "sha": "774997cd9ac4d2efc1c53c17c0de48e6fcdba497"
+          },
+          "placement_overlay": {
+            "path": "docs/assets/data/curriculum/kntt-g6-topic20-placement-r1.json",
+            "sha": "71734904e6d8dc148e20982f31823d7a8d483150"
+          },
+          "display_overlay": {
+            "path": "docs/assets/data/curriculum/topic20-core-display-v2.json",
+            "sha": "ebd5e3e2a7d58d0a75a4cfafd7c026bbd693bd32"
+          }
+        },
+        "MICRO_PRACTICE": {
+          "status": "VERIFIED_DIRECT",
+          "direct_skill_hits": [
+            "nhan-biet-tam-giac-deu",
+            "nhan-biet-hinh-vuong",
+            "nhan-biet-luc-giac-deu"
+          ],
+          "family_skill_hits": [],
+          "micro": {
+            "path": "docs/assets/data/practice/20-hinh-hoc-tong-hop-micro-v1.json",
+            "sha": "efaa4bff821023700381edee0168b294c2d3ea05"
+          }
+        },
+        "PRACTICE_BANK": {
+          "status": "TOPIC_SKILL_EVIDENCE",
+          "direct_skill_hits": [
+            "nhan-biet-tam-giac-deu",
+            "nhan-biet-hinh-vuong",
+            "nhan-biet-luc-giac-deu"
+          ],
+          "family_skill_hits": [],
+          "manifest": {
+            "path": "docs/assets/data/practice/20-hinh-hoc-tong-hop-v1.manifest.json",
+            "sha": "7fc4157bd2e56fa243b428ef0949583c589a3eb9"
+          },
+          "note": "Practice manifests are topic-level and do not by themselves prove Grade-6 lesson placement."
+        },
+        "WRITTEN_LIBRARY": {
+          "status": "NONE",
+          "candidates": [],
+          "note": "No Grade-6 skill-matched written candidate found in the current shared library."
+        },
+        "READINESS": {
+          "status": "NOT_VERIFIED_STRUCTURED",
+          "evidence": null
+        }
+      },
+      "repair_evidence": {
+        "status": "RECONCILED_EXISTING_PLACEMENT_R1",
+        "method": "SOURCE_CONFIRMED_EXISTING_REVIEW",
+        "placement_overlay": "docs/assets/data/curriculum/kntt-g6-topic20-placement-r1.json",
+        "display_overlay": "docs/assets/data/curriculum/topic20-core-display-v2.json",
+        "note": "No new academic content. Exact Grade-6 KNTT placement maps already reconciled semantic targets to already released Topic20 display-card skills; immutable legacy workspace and learner history remain unchanged.",
+        "learn": "VERIFIED_DIRECT",
+        "micro": "VERIFIED_DIRECT",
+        "practice": "TOPIC_SKILL_EVIDENCE",
+        "written": "NONE",
+        "readiness": "NOT_VERIFIED_STRUCTURED"
+      }
+    },
+    {
+      "chapter": 4,
+      "lesson_ref": "Bài 19",
+      "curriculum_summary": "Hình chữ nhật, hình thoi, hình bình hành, hình thang cân: nhận biết và tính chất trực quan",
+      "primary_topic": "20-hinh-hoc-tong-hop",
+      "secondary_topics": [
+        "16-tu-giac"
+      ],
+      "semantic_targets": {
+        "direct_skills": [
+          "nhan-biet-tu-giac-dac-biet"
+        ],
+        "families": [],
+        "local_or_family_refs": [],
+        "aggregated_granularity": false
+      },
+      "dimensions": {
+        "SKILL_MAP": {
+          "status": "VERIFIED_SEMANTIC",
+          "evidence": [
+            "docs/assets/data/curriculum/kntt-grade6-reconciliation-r1.json"
+          ]
+        },
+        "LEARN_CONTENT": {
+          "status": "VERIFIED_DIRECT",
+          "card_skill_evidence": [
+            "nhan-biet-tam-giac-deu",
+            "nhan-biet-hinh-vuong",
+            "nhan-biet-luc-giac-deu",
+            "nhan-biet-tu-giac-dac-biet",
+            "chu-vi-tu-giac",
+            "dien-tich-tu-giac",
+            "do-luong-thuc-te",
+            "truc-doi-xung",
+            "tam-doi-xung"
+          ],
+          "missing_direct_skills": [],
+          "placement_strength": "KNTT_G6_EXACT_PLACEMENT_OVERLAY",
+          "workspace": {
+            "path": "docs/assets/data/curriculum/topic20-learning-workspace.json",
+            "sha": "774997cd9ac4d2efc1c53c17c0de48e6fcdba497"
+          },
+          "placement_overlay": {
+            "path": "docs/assets/data/curriculum/kntt-g6-topic20-placement-r1.json",
+            "sha": "71734904e6d8dc148e20982f31823d7a8d483150"
+          },
+          "display_overlay": {
+            "path": "docs/assets/data/curriculum/topic20-core-display-v2.json",
+            "sha": "ebd5e3e2a7d58d0a75a4cfafd7c026bbd693bd32"
+          }
+        },
+        "MICRO_PRACTICE": {
+          "status": "VERIFIED_DIRECT",
+          "direct_skill_hits": [
+            "nhan-biet-tu-giac-dac-biet"
+          ],
+          "family_skill_hits": [],
+          "micro": {
+            "path": "docs/assets/data/practice/20-hinh-hoc-tong-hop-micro-v1.json",
+            "sha": "efaa4bff821023700381edee0168b294c2d3ea05"
+          }
+        },
+        "PRACTICE_BANK": {
+          "status": "TOPIC_SKILL_EVIDENCE",
+          "direct_skill_hits": [
+            "nhan-biet-tu-giac-dac-biet"
+          ],
+          "family_skill_hits": [],
+          "manifest": {
+            "path": "docs/assets/data/practice/20-hinh-hoc-tong-hop-v1.manifest.json",
+            "sha": "7fc4157bd2e56fa243b428ef0949583c589a3eb9"
+          },
+          "note": "Practice manifests are topic-level and do not by themselves prove Grade-6 lesson placement."
+        },
+        "WRITTEN_LIBRARY": {
+          "status": "NONE",
+          "candidates": [],
+          "note": "No Grade-6 skill-matched written candidate found in the current shared library."
+        },
+        "READINESS": {
+          "status": "NOT_VERIFIED_STRUCTURED",
+          "evidence": null
+        }
+      },
+      "repair_evidence": {
+        "status": "RECONCILED_EXISTING_PLACEMENT_R1",
+        "method": "SOURCE_CONFIRMED_EXISTING_REVIEW",
+        "placement_overlay": "docs/assets/data/curriculum/kntt-g6-topic20-placement-r1.json",
+        "display_overlay": "docs/assets/data/curriculum/topic20-core-display-v2.json",
+        "note": "No new academic content. Exact Grade-6 KNTT placement maps already reconciled semantic targets to already released Topic20 display-card skills; immutable legacy workspace and learner history remain unchanged.",
+        "learn": "VERIFIED_DIRECT",
+        "micro": "VERIFIED_DIRECT",
+        "practice": "TOPIC_SKILL_EVIDENCE",
+        "written": "NONE",
+        "readiness": "NOT_VERIFIED_STRUCTURED"
+      }
+    },
+    {
+      "chapter": 4,
+      "lesson_ref": "Bài 20",
+      "curriculum_summary": "Chu vi và diện tích một số tứ giác đã học",
+      "primary_topic": "20-hinh-hoc-tong-hop",
+      "secondary_topics": [
+        "24-bai-toan-thuc-te"
+      ],
+      "semantic_targets": {
+        "direct_skills": [
+          "chu-vi-tu-giac",
+          "dien-tich-tu-giac",
+          "do-luong-thuc-te"
+        ],
+        "families": [],
+        "local_or_family_refs": [],
+        "aggregated_granularity": false
+      },
+      "dimensions": {
+        "SKILL_MAP": {
+          "status": "VERIFIED_SEMANTIC",
+          "evidence": [
+            "docs/assets/data/curriculum/kntt-grade6-reconciliation-r1.json"
+          ]
+        },
+        "LEARN_CONTENT": {
+          "status": "VERIFIED_DIRECT",
+          "card_skill_evidence": [
+            "nhan-biet-tam-giac-deu",
+            "nhan-biet-hinh-vuong",
+            "nhan-biet-luc-giac-deu",
+            "nhan-biet-tu-giac-dac-biet",
+            "chu-vi-tu-giac",
+            "dien-tich-tu-giac",
+            "do-luong-thuc-te",
+            "truc-doi-xung",
+            "tam-doi-xung"
+          ],
+          "missing_direct_skills": [],
+          "placement_strength": "KNTT_G6_EXACT_PLACEMENT_OVERLAY",
+          "workspace": {
+            "path": "docs/assets/data/curriculum/topic20-learning-workspace.json",
+            "sha": "774997cd9ac4d2efc1c53c17c0de48e6fcdba497"
+          },
+          "placement_overlay": {
+            "path": "docs/assets/data/curriculum/kntt-g6-topic20-placement-r1.json",
+            "sha": "71734904e6d8dc148e20982f31823d7a8d483150"
+          },
+          "display_overlay": {
+            "path": "docs/assets/data/curriculum/topic20-core-display-v2.json",
+            "sha": "ebd5e3e2a7d58d0a75a4cfafd7c026bbd693bd32"
+          }
+        },
+        "MICRO_PRACTICE": {
+          "status": "VERIFIED_DIRECT",
+          "direct_skill_hits": [
+            "chu-vi-tu-giac",
+            "dien-tich-tu-giac",
+            "do-luong-thuc-te"
+          ],
+          "family_skill_hits": [],
+          "micro": {
+            "path": "docs/assets/data/practice/20-hinh-hoc-tong-hop-micro-v1.json",
+            "sha": "efaa4bff821023700381edee0168b294c2d3ea05"
+          }
+        },
+        "PRACTICE_BANK": {
+          "status": "TOPIC_SKILL_EVIDENCE",
+          "direct_skill_hits": [
+            "chu-vi-tu-giac",
+            "dien-tich-tu-giac",
+            "do-luong-thuc-te"
+          ],
+          "family_skill_hits": [],
+          "manifest": {
+            "path": "docs/assets/data/practice/20-hinh-hoc-tong-hop-v1.manifest.json",
+            "sha": "7fc4157bd2e56fa243b428ef0949583c589a3eb9"
+          },
+          "note": "Practice manifests are topic-level and do not by themselves prove Grade-6 lesson placement."
+        },
+        "WRITTEN_LIBRARY": {
+          "status": "VERIFIED_KNTT_PLACEMENT",
+          "placements": [
+            {
+              "exercise_id": "WX20-GEO-003",
+              "grade": 6,
+              "chapter": 4,
+              "lesson": "Bài 20 — Chu vi và diện tích một số tứ giác đã học"
+            }
+          ],
+          "evidence": {
+            "packet_id": "MATH-KNTT-G6-WRITTEN-WAVE1-R1-20261007",
+            "clearance": "G6_WRITTEN_WAVE1_R1_CONTENT_REVIEW_COMPLETE",
+            "review_receipt": "review-packets/kntt-g6-written-wave1-r1/01_NOTEBOOKLM_RESULT_R1.md"
+          },
+          "note": "Independent Wave-1 review confirms a deep Written anchor for perimeter/area distinction, unit discipline and real-context measurement."
+        },
+        "READINESS": {
+          "status": "NOT_VERIFIED_STRUCTURED",
+          "evidence": null
+        }
+      },
+      "repair_evidence": {
+        "status": "RECONCILED_EXISTING_PLACEMENT_R1",
+        "method": "SOURCE_CONFIRMED_EXISTING_REVIEW",
+        "placement_overlay": "docs/assets/data/curriculum/kntt-g6-topic20-placement-r1.json",
+        "display_overlay": "docs/assets/data/curriculum/topic20-core-display-v2.json",
+        "note": "No new academic content. Exact Grade-6 KNTT placement maps already reconciled semantic targets to already released Topic20 display-card skills; immutable legacy workspace and learner history remain unchanged. Written Wave 1 is independently reviewed and verified.",
+        "learn": "VERIFIED_DIRECT",
+        "micro": "VERIFIED_DIRECT",
+        "practice": "TOPIC_SKILL_EVIDENCE",
+        "written": "VERIFIED_KNTT_PLACEMENT",
+        "readiness": "NOT_VERIFIED_STRUCTURED"
+      }
+    },
+    {
+      "chapter": 5,
+      "lesson_ref": "Bài 21",
+      "curriculum_summary": "Hình có trục đối xứng",
+      "primary_topic": "20-hinh-hoc-tong-hop",
+      "secondary_topics": [],
+      "semantic_targets": {
+        "direct_skills": [
+          "truc-doi-xung"
+        ],
+        "families": [],
+        "local_or_family_refs": [],
+        "aggregated_granularity": false
+      },
+      "dimensions": {
+        "SKILL_MAP": {
+          "status": "VERIFIED_SEMANTIC",
+          "evidence": [
+            "docs/assets/data/curriculum/kntt-grade6-reconciliation-r1.json"
+          ]
+        },
+        "LEARN_CONTENT": {
+          "status": "VERIFIED_DIRECT",
+          "card_skill_evidence": [
+            "nhan-biet-tam-giac-deu",
+            "nhan-biet-hinh-vuong",
+            "nhan-biet-luc-giac-deu",
+            "nhan-biet-tu-giac-dac-biet",
+            "chu-vi-tu-giac",
+            "dien-tich-tu-giac",
+            "do-luong-thuc-te",
+            "truc-doi-xung",
+            "tam-doi-xung"
+          ],
+          "missing_direct_skills": [],
+          "placement_strength": "KNTT_G6_EXACT_PLACEMENT_OVERLAY",
+          "workspace": {
+            "path": "docs/assets/data/curriculum/topic20-learning-workspace.json",
+            "sha": "774997cd9ac4d2efc1c53c17c0de48e6fcdba497"
+          },
+          "placement_overlay": {
+            "path": "docs/assets/data/curriculum/kntt-g6-topic20-placement-r1.json",
+            "sha": "71734904e6d8dc148e20982f31823d7a8d483150"
+          },
+          "display_overlay": {
+            "path": "docs/assets/data/curriculum/topic20-core-display-v2.json",
+            "sha": "ebd5e3e2a7d58d0a75a4cfafd7c026bbd693bd32"
+          }
+        },
+        "MICRO_PRACTICE": {
+          "status": "VERIFIED_DIRECT",
+          "direct_skill_hits": [
+            "truc-doi-xung"
+          ],
+          "family_skill_hits": [],
+          "micro": {
+            "path": "docs/assets/data/practice/20-hinh-hoc-tong-hop-micro-v1.json",
+            "sha": "efaa4bff821023700381edee0168b294c2d3ea05"
+          }
+        },
+        "PRACTICE_BANK": {
+          "status": "TOPIC_SKILL_EVIDENCE",
+          "direct_skill_hits": [
+            "truc-doi-xung"
+          ],
+          "family_skill_hits": [],
+          "manifest": {
+            "path": "docs/assets/data/practice/20-hinh-hoc-tong-hop-v1.manifest.json",
+            "sha": "7fc4157bd2e56fa243b428ef0949583c589a3eb9"
+          },
+          "note": "Practice manifests are topic-level and do not by themselves prove Grade-6 lesson placement."
+        },
+        "WRITTEN_LIBRARY": {
+          "status": "NONE",
+          "candidates": [],
+          "note": "No Grade-6 skill-matched written candidate found in the current shared library."
+        },
+        "READINESS": {
+          "status": "NOT_VERIFIED_STRUCTURED",
+          "evidence": null
+        }
+      },
+      "repair_evidence": {
+        "status": "RECONCILED_EXISTING_PLACEMENT_R1",
+        "method": "SOURCE_CONFIRMED_EXISTING_REVIEW",
+        "placement_overlay": "docs/assets/data/curriculum/kntt-g6-topic20-placement-r1.json",
+        "display_overlay": "docs/assets/data/curriculum/topic20-core-display-v2.json",
+        "note": "No new academic content. Exact Grade-6 KNTT placement maps already reconciled semantic targets to already released Topic20 display-card skills; immutable legacy workspace and learner history remain unchanged.",
+        "learn": "VERIFIED_DIRECT",
+        "micro": "VERIFIED_DIRECT",
+        "practice": "TOPIC_SKILL_EVIDENCE",
+        "written": "NONE",
+        "readiness": "NOT_VERIFIED_STRUCTURED"
+      }
+    },
+    {
+      "chapter": 5,
+      "lesson_ref": "Bài 22",
+      "curriculum_summary": "Hình có tâm đối xứng",
+      "primary_topic": "20-hinh-hoc-tong-hop",
+      "secondary_topics": [],
+      "semantic_targets": {
+        "direct_skills": [
+          "tam-doi-xung"
+        ],
+        "families": [],
+        "local_or_family_refs": [],
+        "aggregated_granularity": false
+      },
+      "dimensions": {
+        "SKILL_MAP": {
+          "status": "VERIFIED_SEMANTIC",
+          "evidence": [
+            "docs/assets/data/curriculum/kntt-grade6-reconciliation-r1.json"
+          ]
+        },
+        "LEARN_CONTENT": {
+          "status": "VERIFIED_DIRECT",
+          "card_skill_evidence": [
+            "nhan-biet-tam-giac-deu",
+            "nhan-biet-hinh-vuong",
+            "nhan-biet-luc-giac-deu",
+            "nhan-biet-tu-giac-dac-biet",
+            "chu-vi-tu-giac",
+            "dien-tich-tu-giac",
+            "do-luong-thuc-te",
+            "truc-doi-xung",
+            "tam-doi-xung"
+          ],
+          "missing_direct_skills": [],
+          "placement_strength": "KNTT_G6_EXACT_PLACEMENT_OVERLAY",
+          "workspace": {
+            "path": "docs/assets/data/curriculum/topic20-learning-workspace.json",
+            "sha": "774997cd9ac4d2efc1c53c17c0de48e6fcdba497"
+          },
+          "placement_overlay": {
+            "path": "docs/assets/data/curriculum/kntt-g6-topic20-placement-r1.json",
+            "sha": "71734904e6d8dc148e20982f31823d7a8d483150"
+          },
+          "display_overlay": {
+            "path": "docs/assets/data/curriculum/topic20-core-display-v2.json",
+            "sha": "ebd5e3e2a7d58d0a75a4cfafd7c026bbd693bd32"
+          }
+        },
+        "MICRO_PRACTICE": {
+          "status": "VERIFIED_DIRECT",
+          "direct_skill_hits": [
+            "tam-doi-xung"
+          ],
+          "family_skill_hits": [],
+          "micro": {
+            "path": "docs/assets/data/practice/20-hinh-hoc-tong-hop-micro-v1.json",
+            "sha": "efaa4bff821023700381edee0168b294c2d3ea05"
+          }
+        },
+        "PRACTICE_BANK": {
+          "status": "TOPIC_SKILL_EVIDENCE",
+          "direct_skill_hits": [
+            "tam-doi-xung"
+          ],
+          "family_skill_hits": [],
+          "manifest": {
+            "path": "docs/assets/data/practice/20-hinh-hoc-tong-hop-v1.manifest.json",
+            "sha": "7fc4157bd2e56fa243b428ef0949583c589a3eb9"
+          },
+          "note": "Practice manifests are topic-level and do not by themselves prove Grade-6 lesson placement."
+        },
+        "WRITTEN_LIBRARY": {
+          "status": "NONE",
+          "candidates": [],
+          "note": "No Grade-6 skill-matched written candidate found in the current shared library."
+        },
+        "READINESS": {
+          "status": "NOT_VERIFIED_STRUCTURED",
+          "evidence": null
+        }
+      },
+      "repair_evidence": {
+        "status": "RECONCILED_EXISTING_PLACEMENT_R1",
+        "method": "SOURCE_CONFIRMED_EXISTING_REVIEW",
+        "placement_overlay": "docs/assets/data/curriculum/kntt-g6-topic20-placement-r1.json",
+        "display_overlay": "docs/assets/data/curriculum/topic20-core-display-v2.json",
+        "note": "No new academic content. Exact Grade-6 KNTT placement maps already reconciled semantic targets to already released Topic20 display-card skills; immutable legacy workspace and learner history remain unchanged.",
+        "learn": "VERIFIED_DIRECT",
+        "micro": "VERIFIED_DIRECT",
+        "practice": "TOPIC_SKILL_EVIDENCE",
+        "written": "NONE",
+        "readiness": "NOT_VERIFIED_STRUCTURED"
+      }
+    },
+    {
+      "chapter": 6,
+      "lesson_ref": "Bài 23-24",
+      "curriculum_summary": "Mở rộng phân số, phân số bằng nhau; so sánh phân số; hỗn số dương",
+      "primary_topic": "02-so-va-phep-tinh",
+      "secondary_topics": [],
+      "semantic_targets": {
+        "direct_skills": [
+          "rut-gon-phan-so",
+          "quy-dong-so-sanh-phan-so"
+        ],
+        "families": [
+          "NUM-FRACTION-FORM"
+        ],
+        "local_or_family_refs": [
+          {
+            "ref": "phan-so-bang-nhau",
+            "resolution": "CANONICAL_FAMILY",
+            "role": "LESSON_LOCAL_CONCEPT"
+          },
+          {
+            "ref": "hon-so-duong",
+            "resolution": "CANONICAL_FAMILY",
+            "role": "LESSON_LOCAL_CONCEPT"
+          }
+        ],
+        "aggregated_granularity": false
+      },
+      "dimensions": {
+        "SKILL_MAP": {
+          "status": "VERIFIED_SEMANTIC",
+          "evidence": [
+            "docs/assets/data/curriculum/kntt-grade6-reconciliation-r1.json"
+          ]
+        },
+        "LEARN_CONTENT": {
+          "status": "VERIFIED_DIRECT_AND_LOCAL",
+          "card_skill_evidence": [
+            "rut-gon-phan-so",
+            "quy-dong-so-sanh-phan-so",
+            "phep-tinh-phan-so"
+          ],
+          "missing_direct_skills": [],
+          "placement_strength": "EXACT",
+          "workspace": {
+            "path": "docs/assets/data/curriculum/topic02-learning-workspace.json",
+            "sha": "956087701533dd50c61f653f61e969392216e57f"
+          },
+          "direct_skill_hits": [
+            "rut-gon-phan-so",
+            "quy-dong-so-sanh-phan-so"
+          ],
+          "lesson_local_hits": [
+            "phan-so-bang-nhau",
+            "hon-so-duong"
+          ],
+          "note": "Bài 23–24 now explicitly teaches the direct fraction-form skills together with reviewed lesson-local equivalent-fraction and positive-mixed-number representations under NUM-FRACTION-FORM."
+        },
+        "MICRO_PRACTICE": {
+          "status": "VERIFIED_DIRECT_AND_LOCAL",
+          "direct_skill_hits": [
+            "rut-gon-phan-so",
+            "quy-dong-so-sanh-phan-so"
+          ],
+          "family_skill_hits": [
+            "rut-gon-phan-so",
+            "quy-dong-so-sanh-phan-so"
+          ],
+          "micro": {
+            "path": "docs/assets/data/practice/02-so-va-phep-tinh-micro-v1.json",
+            "sha": "a5b3aca07d88ba836d98938c49479723164ac716"
+          },
+          "lesson_local_hits": [
+            "phan-so-bang-nhau",
+            "hon-so-duong"
+          ],
+          "direct_item_ids": [
+            "NUM02MICRO_010",
+            "NUM02MICRO_020"
+          ],
+          "lesson_local_item_ids": [
+            "NUM02MICRO_039",
+            "NUM02MICRO_040",
+            "NUM02MICRO_041"
+          ],
+          "lesson_local_evidence_role": "LESSON_LOCAL_CORE_FORMATIVE",
+          "lesson_local_gates_core": false,
+          "note": "Existing direct fraction-form Micro plus three deterministic lesson-local representation items cover the row's direct and local demands without new canonical skill writes."
+        },
+        "PRACTICE_BANK": {
+          "status": "PARTIAL_TOPIC_EVIDENCE",
+          "direct_skill_hits": [
+            "rut-gon-phan-so",
+            "quy-dong-so-sanh-phan-so"
+          ],
+          "family_skill_hits": [
+            "rut-gon-phan-so",
+            "quy-dong-so-sanh-phan-so"
+          ],
+          "manifest": {
+            "path": "docs/assets/data/practice/02-so-va-phep-tinh-v1.manifest.json",
+            "sha": "c3e592de17203a5ccb9f589fd8501e8dd0a6c417"
+          },
+          "note": "Practice manifests are topic-level and do not by themselves prove Grade-6 lesson placement."
+        },
+        "WRITTEN_LIBRARY": {
+          "status": "NONE",
+          "candidates": [],
+          "note": "No Grade-6 skill-matched written candidate found in the current shared library."
+        },
+        "READINESS": {
+          "status": "NOT_VERIFIED_STRUCTURED",
+          "evidence": null
+        }
+      },
+      "repair_evidence": {
+        "status": "REPAIRED_SOURCE_CONFIRMED_R1",
+        "review_basis": "Existing NotebookLM-reviewed Grade-6 reconciliation + deterministic equivalent-fraction/mixed-number representation content under owner-approved risk-based review policy",
+        "learn": "VERIFIED_DIRECT_AND_LOCAL",
+        "micro": "VERIFIED_DIRECT_AND_LOCAL",
+        "practice": "PARTIAL_TOPIC_EVIDENCE",
+        "written": "NONE",
+        "readiness": "NOT_VERIFIED_STRUCTURED",
+        "note": "Learn + Micro direct/local gap repaired. Practice remains topic-level partial evidence; Written and Readiness remain open."
+      }
+    },
+    {
+      "chapter": 6,
+      "lesson_ref": "Bài 25-26",
+      "curriculum_summary": "Cộng, trừ, nhân, chia phân số",
+      "primary_topic": "02-so-va-phep-tinh",
+      "secondary_topics": [],
+      "semantic_targets": {
+        "direct_skills": [
+          "phep-tinh-phan-so"
+        ],
+        "families": [
+          "NUM-FRACTION-OPS"
+        ],
+        "local_or_family_refs": [],
+        "aggregated_granularity": true
+      },
+      "dimensions": {
+        "SKILL_MAP": {
+          "status": "VERIFIED_SEMANTIC",
+          "evidence": [
+            "docs/assets/data/curriculum/kntt-grade6-reconciliation-r1.json"
+          ]
+        },
+        "LEARN_CONTENT": {
+          "status": "VERIFIED_DIRECT",
+          "card_skill_evidence": [
+            "rut-gon-phan-so",
+            "quy-dong-so-sanh-phan-so",
+            "phep-tinh-phan-so"
+          ],
+          "missing_direct_skills": [],
+          "placement_strength": "EXACT",
+          "workspace": {
+            "path": "docs/assets/data/curriculum/topic02-learning-workspace.json",
+            "sha": "956087701533dd50c61f653f61e969392216e57f"
+          }
+        },
+        "MICRO_PRACTICE": {
+          "status": "VERIFIED_DIRECT",
+          "direct_skill_hits": [
+            "phep-tinh-phan-so"
+          ],
+          "family_skill_hits": [
+            "phep-tinh-phan-so"
+          ],
+          "micro": {
+            "path": "docs/assets/data/practice/02-so-va-phep-tinh-micro-v1.json",
+            "sha": "b6ec952b786f897ef6f45301208dcd9d55bde98b"
+          },
+          "item_ids": [
+            "NUM02MICRO_011",
+            "NUM02MICRO_012",
+            "NUM02MICRO_048",
+            "NUM02MICRO_049"
+          ]
+        },
+        "PRACTICE_BANK": {
+          "status": "TOPIC_SKILL_EVIDENCE",
+          "direct_skill_hits": [
+            "phep-tinh-phan-so"
+          ],
+          "family_skill_hits": [
+            "phep-tinh-phan-so"
+          ],
+          "manifest": {
+            "path": "docs/assets/data/practice/02-so-va-phep-tinh-v1.manifest.json",
+            "sha": "c3e592de17203a5ccb9f589fd8501e8dd0a6c417"
+          },
+          "note": "Practice manifests are topic-level and do not by themselves prove Grade-6 lesson placement."
+        },
+        "WRITTEN_LIBRARY": {
+          "status": "NONE",
+          "candidates": [],
+          "note": "No Grade-6 skill-matched written candidate found in the current shared library."
+        },
+        "READINESS": {
+          "status": "NOT_VERIFIED_STRUCTURED",
+          "evidence": null
+        }
+      },
+      "repair_evidence": {
+        "status": "REPAIRED_REVIEWED_R1",
+        "packet_id": "MATH-KNTT-G6-SHARED-SKILL-DENSITY-R1-20261006",
+        "clearance": "G6_SHARED_SKILL_DENSITY_R1_CONTENT_REVIEW_COMPLETE",
+        "review_receipt": "review-packets/kntt-g6-shared-skill-density-r1/01_NOTEBOOKLM_RESULT_R1.md",
+        "learn": "VERIFIED_DIRECT",
+        "micro": "VERIFIED_DIRECT",
+        "practice": "TOPIC_SKILL_EVIDENCE",
+        "written": "NONE",
+        "readiness": "NOT_VERIFIED_STRUCTURED",
+        "note": "NotebookLM PASS authorizes Learn/Micro promotion only; Practice, Written and Readiness remain unchanged."
+      }
+    },
+    {
+      "chapter": 6,
+      "lesson_ref": "Bài 27",
+      "curriculum_summary": "Hai bài toán về phân số",
+      "primary_topic": "02-so-va-phep-tinh",
+      "secondary_topics": [
+        "24-bai-toan-thuc-te"
+      ],
+      "semantic_targets": {
+        "direct_skills": [],
+        "families": [
+          "NUM-FRACTION-OPS"
+        ],
+        "local_or_family_refs": [
+          {
+            "ref": "tim-gia-tri-phan-so-cua-so",
+            "resolution": "CANONICAL_FAMILY",
+            "role": "PROBLEM_TYPE"
+          },
+          {
+            "ref": "tim-so-khi-biet-gia-tri-phan-so",
+            "resolution": "CANONICAL_FAMILY",
+            "role": "PROBLEM_TYPE"
+          }
+        ],
+        "aggregated_granularity": false
+      },
+      "dimensions": {
+        "SKILL_MAP": {
+          "status": "VERIFIED_SEMANTIC",
+          "evidence": [
+            "docs/assets/data/curriculum/kntt-grade6-reconciliation-r1.json"
+          ]
+        },
+        "LEARN_CONTENT": {
+          "status": "VERIFIED_LESSON_LOCAL",
+          "card_skill_evidence": [
+            "rut-gon-phan-so",
+            "quy-dong-so-sanh-phan-so",
+            "phep-tinh-phan-so"
+          ],
+          "missing_direct_skills": [],
+          "placement_strength": "EXACT",
+          "workspace": {
+            "path": "docs/assets/data/curriculum/topic02-learning-workspace.json",
+            "sha": "956087701533dd50c61f653f61e969392216e57f"
+          },
+          "lesson_local_hits": [
+            "tim-gia-tri-phan-so-cua-so",
+            "tim-so-khi-biet-gia-tri-phan-so"
+          ],
+          "note": "Bài 27 explicitly teaches both reviewed fraction application problem types under NUM-FRACTION-OPS; they remain problem types rather than duplicate canonical skills."
+        },
+        "MICRO_PRACTICE": {
+          "status": "VERIFIED_LESSON_LOCAL",
+          "direct_skill_hits": [],
+          "family_skill_hits": [
+            "phep-tinh-phan-so"
+          ],
+          "micro": {
+            "path": "docs/assets/data/practice/02-so-va-phep-tinh-micro-v1.json",
+            "sha": "a5b3aca07d88ba836d98938c49479723164ac716"
+          },
+          "lesson_local_hits": [
+            "tim-gia-tri-phan-so-cua-so",
+            "tim-so-khi-biet-gia-tri-phan-so"
+          ],
+          "item_ids": [
+            "NUM02MICRO_030",
+            "NUM02MICRO_031",
+            "NUM02MICRO_032"
+          ],
+          "evidence_role": "LESSON_LOCAL_CORE_FORMATIVE",
+          "gates_core": false,
+          "note": "Direct Grade-6 formative evidence covers both Bài 27 problem types without canonical skill writes or mastery/readiness credit."
+        },
+        "PRACTICE_BANK": {
+          "status": "FAMILY_LEVEL_TOPIC_EVIDENCE",
+          "direct_skill_hits": [],
+          "family_skill_hits": [
+            "phep-tinh-phan-so"
+          ],
+          "manifest": {
+            "path": "docs/assets/data/practice/02-so-va-phep-tinh-v1.manifest.json",
+            "sha": "c3e592de17203a5ccb9f589fd8501e8dd0a6c417"
+          },
+          "note": "Practice manifests are topic-level and do not by themselves prove Grade-6 lesson placement."
+        },
+        "WRITTEN_LIBRARY": {
+          "status": "VERIFIED_KNTT_PLACEMENT",
+          "placements": [
+            {
+              "exercise_id": "WX02-NUM-003",
+              "grade": 6,
+              "chapter": 6,
+              "lesson": "Bài 27 — Hai bài toán về phân số"
+            }
+          ],
+          "evidence": {
+            "packet_id": "MATH-KNTT-G6-WRITTEN-WAVE1-R1-20261007",
+            "clearance": "G6_WRITTEN_WAVE1_R1_CONTENT_REVIEW_COMPLETE",
+            "review_receipt": "review-packets/kntt-g6-written-wave1-r1/01_NOTEBOOKLM_RESULT_R1.md"
+          },
+          "note": "Independent Wave-1 review confirms a deep Written anchor that assesses both Grade-6 Bài 27 fraction problem types through operation choice and explanation."
+        },
+        "READINESS": {
+          "status": "NOT_VERIFIED_STRUCTURED",
+          "evidence": null
+        }
+      },
+      "repair_evidence": {
+        "status": "REPAIRED_SOURCE_CONFIRMED_R1",
+        "review_basis": "KNTT Grade-6 map + reviewed semantic reconciliation + deterministic fraction arithmetic; owner-approved low-risk review policy",
+        "learn": "VERIFIED_LESSON_LOCAL",
+        "micro": "VERIFIED_LESSON_LOCAL",
+        "practice": "FAMILY_LEVEL_TOPIC_EVIDENCE",
+        "written": "VERIFIED_KNTT_PLACEMENT",
+        "readiness": "NOT_VERIFIED_STRUCTURED",
+        "note": "Bài 27 Learn + problem-type Micro gap repaired. Practice remains family/topic-level; Written and Readiness dimensions are unchanged. Written Wave 1 is independently reviewed and verified."
+      }
+    },
+    {
+      "chapter": 7,
+      "lesson_ref": "Bài 28-29",
+      "curriculum_summary": "Số thập phân và tính toán với số thập phân",
+      "primary_topic": "02-so-va-phep-tinh",
+      "secondary_topics": [],
+      "semantic_targets": {
+        "direct_skills": [
+          "so-huu-ti-thap-phan"
+        ],
+        "families": [
+          "NUM-SETS"
+        ],
+        "local_or_family_refs": [],
+        "aggregated_granularity": true
+      },
+      "dimensions": {
+        "SKILL_MAP": {
+          "status": "VERIFIED_SEMANTIC",
+          "evidence": [
+            "docs/assets/data/curriculum/kntt-grade6-reconciliation-r1.json"
+          ]
+        },
+        "LEARN_CONTENT": {
+          "status": "VERIFIED_DIRECT",
+          "card_skill_evidence": [
+            "so-huu-ti-thap-phan",
+            "phan-tram"
+          ],
+          "missing_direct_skills": [],
+          "placement_strength": "EXACT",
+          "workspace": {
+            "path": "docs/assets/data/curriculum/topic02-learning-workspace.json",
+            "sha": "956087701533dd50c61f653f61e969392216e57f"
+          }
+        },
+        "MICRO_PRACTICE": {
+          "status": "VERIFIED_DIRECT",
+          "direct_skill_hits": [
+            "so-huu-ti-thap-phan"
+          ],
+          "family_skill_hits": [
+            "tap-hop-so",
+            "so-huu-ti-thap-phan"
+          ],
+          "micro": {
+            "path": "docs/assets/data/practice/02-so-va-phep-tinh-micro-v1.json",
+            "sha": "b6ec952b786f897ef6f45301208dcd9d55bde98b"
+          },
+          "item_ids": [
+            "NUM02MICRO_013",
+            "NUM02MICRO_050",
+            "NUM02MICRO_051",
+            "NUM02MICRO_052"
+          ]
+        },
+        "PRACTICE_BANK": {
+          "status": "TOPIC_SKILL_EVIDENCE",
+          "direct_skill_hits": [
+            "so-huu-ti-thap-phan"
+          ],
+          "family_skill_hits": [
+            "tap-hop-so",
+            "so-huu-ti-thap-phan"
+          ],
+          "manifest": {
+            "path": "docs/assets/data/practice/02-so-va-phep-tinh-v1.manifest.json",
+            "sha": "c3e592de17203a5ccb9f589fd8501e8dd0a6c417"
+          },
+          "note": "Practice manifests are topic-level and do not by themselves prove Grade-6 lesson placement."
+        },
+        "WRITTEN_LIBRARY": {
+          "status": "NONE",
+          "candidates": [],
+          "rejected_overlap": {
+            "exercise_id": "WX02-NUM-002",
+            "review_receipt": "review-packets/kntt-g6-written-placement-r1/01_NOTEBOOKLM_RESULT_R1.md",
+            "reason": "Decimal arithmetic is supporting computation for the reviewed percentage problem, not this exercise's primary curriculum placement."
+          },
+          "note": "Reviewed prerequisite/supporting-skill overlap; no KNTT Written placement is claimed for this lesson."
+        },
+        "READINESS": {
+          "status": "NOT_VERIFIED_STRUCTURED",
+          "evidence": null
+        }
+      },
+      "repair_evidence": {
+        "status": "REPAIRED_REVIEWED_R1",
+        "packet_id": "MATH-KNTT-G6-SHARED-SKILL-DENSITY-R1-20261006",
+        "clearance": "G6_SHARED_SKILL_DENSITY_R1_CONTENT_REVIEW_COMPLETE",
+        "review_receipt": "review-packets/kntt-g6-shared-skill-density-r1/01_NOTEBOOKLM_RESULT_R1.md",
+        "learn": "VERIFIED_DIRECT",
+        "micro": "VERIFIED_DIRECT",
+        "practice": "TOPIC_SKILL_EVIDENCE",
+        "written": "NONE",
+        "readiness": "NOT_VERIFIED_STRUCTURED",
+        "note": "NotebookLM PASS authorizes Learn/Micro promotion only; Practice, Written and Readiness remain unchanged."
+      }
+    },
+    {
+      "chapter": 7,
+      "lesson_ref": "Bài 30",
+      "curriculum_summary": "Làm tròn và ước lượng",
+      "primary_topic": "02-so-va-phep-tinh",
+      "secondary_topics": [
+        "24-bai-toan-thuc-te"
+      ],
+      "semantic_targets": {
+        "direct_skills": [
+          "lam-tron-so"
+        ],
+        "families": [
+          "NUM-SETS"
+        ],
+        "local_or_family_refs": [
+          {
+            "ref": "uoc-luong",
+            "resolution": "LESSON_LOCAL",
+            "role": "APPLICATION_TECHNIQUE"
+          }
+        ],
+        "aggregated_granularity": false
+      },
+      "dimensions": {
+        "SKILL_MAP": {
+          "status": "VERIFIED_SEMANTIC",
+          "evidence": [
+            "docs/assets/data/curriculum/kntt-grade6-reconciliation-r1.json"
+          ]
+        },
+        "LEARN_CONTENT": {
+          "status": "VERIFIED_DIRECT",
+          "card_skill_evidence": [
+            "so-huu-ti-thap-phan",
+            "lam-tron-so",
+            "phan-tram"
+          ],
+          "missing_direct_skills": [],
+          "placement_strength": "EXACT",
+          "workspace": {
+            "path": "docs/assets/data/curriculum/topic02-learning-workspace.json",
+            "sha": "956087701533dd50c61f653f61e969392216e57f"
+          }
+        },
+        "MICRO_PRACTICE": {
+          "status": "VERIFIED_DIRECT",
+          "direct_skill_hits": [
+            "lam-tron-so"
+          ],
+          "family_skill_hits": [
+            "tap-hop-so",
+            "so-huu-ti-thap-phan"
+          ],
+          "micro": {
+            "path": "docs/assets/data/practice/02-so-va-phep-tinh-micro-v1.json",
+            "sha": "a5b3aca07d88ba836d98938c49479723164ac716"
+          },
+          "item_ids": [
+            "NUM02MICRO_021",
+            "NUM02MICRO_022",
+            "NUM02MICRO_023"
+          ]
+        },
+        "PRACTICE_BANK": {
+          "status": "TOPIC_SKILL_EVIDENCE",
+          "direct_skill_hits": [
+            "lam-tron-so"
+          ],
+          "family_skill_hits": [
+            "tap-hop-so",
+            "so-huu-ti-thap-phan"
+          ],
+          "manifest": {
+            "path": "docs/assets/data/practice/02-so-va-phep-tinh-v1.manifest.json",
+            "sha": "4609bcd1c34a338cbd456eb4f3219ba7f89f943f"
+          },
+          "note": "Practice manifests are topic-level and do not by themselves prove Grade-6 lesson placement.",
+          "practice_chunk": {
+            "path": "docs/assets/data/practice/02-so-va-phep-tinh-v1-05.json",
+            "sha": "74e9be4dedcc5c39376455a1c428f1f3ed2bceae",
+            "item_ids": [
+              "NUM02V1_121",
+              "NUM02V1_122",
+              "NUM02V1_123",
+              "NUM02V1_124",
+              "NUM02V1_125",
+              "NUM02V1_126",
+              "NUM02V1_127",
+              "NUM02V1_128",
+              "NUM02V1_129",
+              "NUM02V1_130",
+              "NUM02V1_131",
+              "NUM02V1_132"
+            ]
+          }
+        },
+        "WRITTEN_LIBRARY": {
+          "status": "NONE",
+          "candidates": [],
+          "note": "No Grade-6 skill-matched written candidate found in the current shared library."
+        },
+        "READINESS": {
+          "status": "NOT_VERIFIED_STRUCTURED",
+          "evidence": null
+        }
+      },
+      "repair_evidence": {
+        "status": "REPAIRED_REVIEWED_R1",
+        "packet_id": "MATH-KNTT-G6-BAI30-ROUNDING-R1-20261004",
+        "clearance": "G6_BAI30_ROUNDING_CONTENT_REVIEW_COMPLETE",
+        "review_receipt": "review-packets/kntt-g6-bai30-rounding-r1/01_NOTEBOOKLM_RESULT_R1.md",
+        "learn": "VERIFIED_DIRECT",
+        "micro": "VERIFIED_DIRECT",
+        "practice": "TOPIC_SKILL_EVIDENCE",
+        "written": "NONE",
+        "readiness": "NOT_VERIFIED_STRUCTURED",
+        "note": "Learn + Grade-6 micro + Topic02 Practice direct evidence repaired. Written and Readiness dimensions remain unchanged."
+      }
+    },
+    {
+      "chapter": 7,
+      "lesson_ref": "Bài 31",
+      "curriculum_summary": "Tỉ số và tỉ số phần trăm; bài toán phần trăm",
+      "primary_topic": "03-ti-le-ti-le-thuc",
+      "secondary_topics": [
+        "02-so-va-phep-tinh",
+        "24-bai-toan-thuc-te"
+      ],
+      "semantic_targets": {
+        "direct_skills": [
+          "ti-so",
+          "ti-so-phan-tram",
+          "phan-tram"
+        ],
+        "families": [
+          "NUM-PERCENT"
+        ],
+        "local_or_family_refs": [],
+        "aggregated_granularity": false
+      },
+      "dimensions": {
+        "SKILL_MAP": {
+          "status": "VERIFIED_SEMANTIC",
+          "evidence": [
+            "docs/assets/data/curriculum/kntt-grade6-reconciliation-r1.json"
+          ]
+        },
+        "LEARN_CONTENT": {
+          "status": "VERIFIED_DIRECT",
+          "card_skill_evidence": [
+            "ti-so",
+            "ti-so-phan-tram",
+            "phan-tram"
+          ],
+          "missing_direct_skills": [],
+          "placement_strength": "MULTI_TOPIC_REVIEWED_PLACEMENT",
+          "workspace": {
+            "path": "docs/assets/data/curriculum/topic03-learning-workspace.json",
+            "sha": "f2864fb45bda98422a4b31f5859452c18744159d"
+          },
+          "workspace_evidence": [
+            {
+              "topic": "03-ti-le-ti-le-thuc",
+              "path": "docs/assets/data/curriculum/topic03-learning-workspace.json",
+              "sha": "f2864fb45bda98422a4b31f5859452c18744159d",
+              "card_id": "rat03-core-g6-1",
+              "skills": [
+                "ti-so",
+                "ti-so-phan-tram"
+              ],
+              "placement": "Lớp 6 · Tỉ số và phần trăm"
+            },
+            {
+              "topic": "02-so-va-phep-tinh",
+              "path": "docs/assets/data/curriculum/topic02-learning-workspace.json",
+              "sha": "956087701533dd50c61f653f61e969392216e57f",
+              "card_id": "num02-g6-core-5",
+              "skills": [
+                "phan-tram"
+              ],
+              "placement": "Lớp 6 · Bài 28–31"
+            }
+          ],
+          "note": "Bài 31 is a legitimate multi-topic KNTT row. Topic03 provides direct Learn evidence for ti-so and ti-so-phan-tram, while Topic02 card num02-g6-core-5 explicitly covers phan-tram across Bài 28–31. No duplicate Topic03 percent card is required."
+        },
+        "MICRO_PRACTICE": {
+          "status": "VERIFIED_DIRECT",
+          "direct_skill_hits": [
+            "ti-so",
+            "ti-so-phan-tram",
+            "phan-tram"
+          ],
+          "family_skill_hits": [
+            "ti-so-phan-tram",
+            "phan-tram"
+          ],
+          "micro": {
+            "path": "docs/assets/data/practice/03-ti-le-ti-le-thuc-micro-v1.json",
+            "sha": "bd817c0ec44ff2c376c542e3d8604c01fb2e282f"
+          },
+          "item_ids": [
+            "RAT03MICRO_001",
+            "RAT03MICRO_003",
+            "NUM02MICRO_014",
+            "NUM02MICRO_015"
+          ],
+          "micro_evidence": [
+            {
+              "topic": "03-ti-le-ti-le-thuc",
+              "path": "docs/assets/data/practice/03-ti-le-ti-le-thuc-micro-v1.json",
+              "sha": "bd817c0ec44ff2c376c542e3d8604c01fb2e282f",
+              "skills": [
+                "ti-so",
+                "ti-so-phan-tram"
+              ],
+              "item_ids": [
+                "RAT03MICRO_001",
+                "RAT03MICRO_003"
+              ]
+            },
+            {
+              "topic": "02-so-va-phep-tinh",
+              "path": "docs/assets/data/practice/02-so-va-phep-tinh-micro-v1.json",
+              "sha": "a5b3aca07d88ba836d98938c49479723164ac716",
+              "skills": [
+                "phan-tram"
+              ],
+              "item_ids": [
+                "NUM02MICRO_014",
+                "NUM02MICRO_015"
+              ]
+            }
+          ],
+          "note": "Existing Grade-6 Micro evidence covers all three direct Bài 31 skills when primary and secondary topic evidence are reconciled together."
+        },
+        "PRACTICE_BANK": {
+          "status": "TOPIC_SKILL_EVIDENCE",
+          "direct_skill_hits": [
+            "ti-so",
+            "ti-so-phan-tram",
+            "phan-tram"
+          ],
+          "family_skill_hits": [
+            "ti-so-phan-tram",
+            "phan-tram"
+          ],
+          "manifest": {
+            "path": "docs/assets/data/practice/03-ti-le-ti-le-thuc-v1.manifest.json",
+            "sha": "4645eb69493281702a19a36453f999d1114736f3"
+          },
+          "note": "All three direct Bài 31 skills exist in the combined Topic03 + Topic02 Practice manifests. This remains topic-level evidence and does not create a new lesson-specific practice bank.",
+          "manifest_evidence": [
+            {
+              "topic": "03-ti-le-ti-le-thuc",
+              "path": "docs/assets/data/practice/03-ti-le-ti-le-thuc-v1.manifest.json",
+              "sha": "4645eb69493281702a19a36453f999d1114736f3",
+              "skills": [
+                "ti-so",
+                "ti-so-phan-tram"
+              ]
+            },
+            {
+              "topic": "02-so-va-phep-tinh",
+              "path": "docs/assets/data/practice/02-so-va-phep-tinh-v1.manifest.json",
+              "sha": "4609bcd1c34a338cbd456eb4f3219ba7f89f943f",
+              "skills": [
+                "phan-tram"
+              ]
+            }
+          ]
+        },
+        "WRITTEN_LIBRARY": {
+          "status": "VERIFIED_KNTT_PLACEMENT",
+          "placements": [
+            {
+              "exercise_id": "WX02-NUM-002",
+              "grade": 6,
+              "chapter": 7,
+              "lesson": "Bài 31 — Một số bài toán về tỉ số và tỉ số phần trăm"
+            }
+          ],
+          "evidence": {
+            "packet_id": "MATH-KNTT-G6-WRITTEN-PLACEMENT-R1-20261006",
+            "clearance": "G6_WRITTEN_PLACEMENT_R1_CONTENT_REVIEW_COMPLETE",
+            "review_receipt": "review-packets/kntt-g6-written-placement-r1/01_NOTEBOOKLM_RESULT_R1.md"
+          },
+          "note": "Independent placement review confirms this as the exercise's true Grade-6 KNTT curriculum placement."
+        },
+        "READINESS": {
+          "status": "NOT_VERIFIED_STRUCTURED",
+          "evidence": null
+        }
+      },
+      "repair_evidence": {
+        "status": "RECONCILED_EXISTING_MULTI_TOPIC_EVIDENCE_R1",
+        "review_basis": "Existing reviewed Grade-6 semantic reconciliation plus already-deployed Topic02/Topic03 Learn and Micro evidence; audit correction only, no new academic content.",
+        "learn": "VERIFIED_DIRECT",
+        "micro": "VERIFIED_DIRECT",
+        "practice": "TOPIC_SKILL_EVIDENCE",
+        "written": "VERIFIED_KNTT_PLACEMENT",
+        "readiness": "NOT_VERIFIED_STRUCTURED",
+        "note": "The prior gap was caused by auditing only the primary Topic03 workspace. Bài 31 already spans Topic03 and secondary Topic02; existing evidence covers all direct skills."
+      }
+    },
+    {
+      "chapter": 8,
+      "lesson_ref": "Bài 32",
+      "curriculum_summary": "Điểm và đường thẳng",
+      "primary_topic": "13-goc-va-duong-thang",
+      "secondary_topics": [],
+      "semantic_targets": {
+        "direct_skills": [
+          "diem-thuoc-duong"
+        ],
+        "families": [],
+        "local_or_family_refs": [],
+        "aggregated_granularity": false
+      },
+      "dimensions": {
+        "SKILL_MAP": {
+          "status": "VERIFIED_SEMANTIC",
+          "evidence": [
+            "docs/assets/data/curriculum/kntt-grade6-reconciliation-r1.json"
+          ]
+        },
+        "LEARN_CONTENT": {
+          "status": "VERIFIED_DIRECT",
+          "card_skill_evidence": [
+            "diem-thuoc-duong",
+            "diem-nam-giua",
+            "tia",
+            "tia-doi",
+            "doan-thang-do-dai",
+            "trung-diem"
+          ],
+          "missing_direct_skills": [],
+          "placement_strength": "EXACT",
+          "workspace": {
+            "path": "docs/assets/data/curriculum/topic13-learning-workspace.json",
+            "sha": "d5aa55f158cbff42eae388e76f485d072878095a"
+          }
+        },
+        "MICRO_PRACTICE": {
+          "status": "VERIFIED_DIRECT",
+          "direct_skill_hits": [
+            "diem-thuoc-duong"
+          ],
+          "family_skill_hits": [],
+          "micro": {
+            "path": "docs/assets/data/practice/13-goc-va-duong-thang-micro-v1.json",
+            "sha": "32afda07968b3fbaed0a6d206db821abb718b95a"
+          }
+        },
+        "PRACTICE_BANK": {
+          "status": "TOPIC_SKILL_EVIDENCE",
+          "direct_skill_hits": [
+            "diem-thuoc-duong"
+          ],
+          "family_skill_hits": [],
+          "manifest": {
+            "path": "docs/assets/data/practice/13-goc-va-duong-thang-v1.manifest.json",
+            "sha": "4b6a44701d6fe413e333349a799aaa7911390b70"
+          },
+          "note": "Practice manifests are topic-level and do not by themselves prove Grade-6 lesson placement."
+        },
+        "WRITTEN_LIBRARY": {
+          "status": "NONE",
+          "candidates": [],
+          "note": "No Grade-6 skill-matched written candidate found in the current shared library."
+        },
+        "READINESS": {
+          "status": "NOT_VERIFIED_STRUCTURED",
+          "evidence": null
+        }
+      }
+    },
+    {
+      "chapter": 8,
+      "lesson_ref": "Bài 33",
+      "curriculum_summary": "Điểm nằm giữa hai điểm; tia",
+      "primary_topic": "13-goc-va-duong-thang",
+      "secondary_topics": [],
+      "semantic_targets": {
+        "direct_skills": [
+          "diem-nam-giua",
+          "tia",
+          "tia-doi"
+        ],
+        "families": [],
+        "local_or_family_refs": [],
+        "aggregated_granularity": false
+      },
+      "dimensions": {
+        "SKILL_MAP": {
+          "status": "VERIFIED_SEMANTIC",
+          "evidence": [
+            "docs/assets/data/curriculum/kntt-grade6-reconciliation-r1.json"
+          ]
+        },
+        "LEARN_CONTENT": {
+          "status": "VERIFIED_DIRECT",
+          "card_skill_evidence": [
+            "diem-thuoc-duong",
+            "diem-nam-giua",
+            "tia",
+            "tia-doi",
+            "doan-thang-do-dai",
+            "trung-diem"
+          ],
+          "missing_direct_skills": [],
+          "placement_strength": "EXACT",
+          "workspace": {
+            "path": "docs/assets/data/curriculum/topic13-learning-workspace.json",
+            "sha": "d5aa55f158cbff42eae388e76f485d072878095a"
+          }
+        },
+        "MICRO_PRACTICE": {
+          "status": "VERIFIED_DIRECT",
+          "direct_skill_hits": [
+            "diem-nam-giua",
+            "tia",
+            "tia-doi"
+          ],
+          "family_skill_hits": [],
+          "micro": {
+            "path": "docs/assets/data/practice/13-goc-va-duong-thang-micro-v1.json",
+            "sha": "32afda07968b3fbaed0a6d206db821abb718b95a"
+          }
+        },
+        "PRACTICE_BANK": {
+          "status": "TOPIC_SKILL_EVIDENCE",
+          "direct_skill_hits": [
+            "diem-nam-giua",
+            "tia",
+            "tia-doi"
+          ],
+          "family_skill_hits": [],
+          "manifest": {
+            "path": "docs/assets/data/practice/13-goc-va-duong-thang-v1.manifest.json",
+            "sha": "4b6a44701d6fe413e333349a799aaa7911390b70"
+          },
+          "note": "Practice manifests are topic-level and do not by themselves prove Grade-6 lesson placement."
+        },
+        "WRITTEN_LIBRARY": {
+          "status": "NONE",
+          "candidates": [],
+          "note": "No Grade-6 skill-matched written candidate found in the current shared library."
+        },
+        "READINESS": {
+          "status": "NOT_VERIFIED_STRUCTURED",
+          "evidence": null
+        }
+      }
+    },
+    {
+      "chapter": 8,
+      "lesson_ref": "Bài 34-35",
+      "curriculum_summary": "Đoạn thẳng, độ dài đoạn thẳng, trung điểm",
+      "primary_topic": "13-goc-va-duong-thang",
+      "secondary_topics": [],
+      "semantic_targets": {
+        "direct_skills": [
+          "doan-thang-do-dai",
+          "trung-diem"
+        ],
+        "families": [],
+        "local_or_family_refs": [],
+        "aggregated_granularity": false
+      },
+      "dimensions": {
+        "SKILL_MAP": {
+          "status": "VERIFIED_SEMANTIC",
+          "evidence": [
+            "docs/assets/data/curriculum/kntt-grade6-reconciliation-r1.json"
+          ]
+        },
+        "LEARN_CONTENT": {
+          "status": "VERIFIED_DIRECT",
+          "card_skill_evidence": [
+            "diem-thuoc-duong",
+            "diem-nam-giua",
+            "tia",
+            "tia-doi",
+            "doan-thang-do-dai",
+            "trung-diem"
+          ],
+          "missing_direct_skills": [],
+          "placement_strength": "EXACT",
+          "workspace": {
+            "path": "docs/assets/data/curriculum/topic13-learning-workspace.json",
+            "sha": "d5aa55f158cbff42eae388e76f485d072878095a"
+          }
+        },
+        "MICRO_PRACTICE": {
+          "status": "VERIFIED_DIRECT",
+          "direct_skill_hits": [
+            "doan-thang-do-dai",
+            "trung-diem"
+          ],
+          "family_skill_hits": [],
+          "micro": {
+            "path": "docs/assets/data/practice/13-goc-va-duong-thang-micro-v1.json",
+            "sha": "32afda07968b3fbaed0a6d206db821abb718b95a"
+          }
+        },
+        "PRACTICE_BANK": {
+          "status": "TOPIC_SKILL_EVIDENCE",
+          "direct_skill_hits": [
+            "doan-thang-do-dai",
+            "trung-diem"
+          ],
+          "family_skill_hits": [],
+          "manifest": {
+            "path": "docs/assets/data/practice/13-goc-va-duong-thang-v1.manifest.json",
+            "sha": "4b6a44701d6fe413e333349a799aaa7911390b70"
+          },
+          "note": "Practice manifests are topic-level and do not by themselves prove Grade-6 lesson placement."
+        },
+        "WRITTEN_LIBRARY": {
+          "status": "VERIFIED_KNTT_PLACEMENT",
+          "placements": [
+            {
+              "exercise_id": "WX13-LIN-003",
+              "grade": 6,
+              "chapter": 8,
+              "lesson": "Bài 34–35 — Đoạn thẳng, độ dài đoạn thẳng, trung điểm"
+            }
+          ],
+          "evidence": {
+            "packet_id": "MATH-KNTT-G6-WRITTEN-WAVE1-R1-20261007",
+            "clearance": "G6_WRITTEN_WAVE1_R1_CONTENT_REVIEW_COMPLETE",
+            "review_receipt": "review-packets/kntt-g6-written-wave1-r1/01_NOTEBOOKLM_RESULT_R1.md"
+          },
+          "note": "Independent Wave-1 review confirms the segment/midpoint portion as a primary assessment target of the combined anchor."
+        },
+        "READINESS": {
+          "status": "NOT_VERIFIED_STRUCTURED",
+          "evidence": null
+        }
+      }
+    },
+    {
+      "chapter": 8,
+      "lesson_ref": "Bài 36-37",
+      "curriculum_summary": "Góc, số đo góc, góc nhọn/vuông/tù/bẹt",
+      "primary_topic": "13-goc-va-duong-thang",
+      "secondary_topics": [],
+      "semantic_targets": {
+        "direct_skills": [
+          "khai-niem-goc",
+          "do-goc",
+          "phan-loai-goc"
+        ],
+        "families": [],
+        "local_or_family_refs": [],
+        "aggregated_granularity": false
+      },
+      "dimensions": {
+        "SKILL_MAP": {
+          "status": "VERIFIED_SEMANTIC",
+          "evidence": [
+            "docs/assets/data/curriculum/kntt-grade6-reconciliation-r1.json"
+          ]
+        },
+        "LEARN_CONTENT": {
+          "status": "VERIFIED_DIRECT",
+          "card_skill_evidence": [
+            "khai-niem-goc",
+            "do-goc",
+            "phan-loai-goc",
+            "goc-phu-bu",
+            "goc-doi-dinh",
+            "tia-phan-giac",
+            "nhan-dang-goc-dac-biet"
+          ],
+          "missing_direct_skills": [],
+          "placement_strength": "EXACT",
+          "workspace": {
+            "path": "docs/assets/data/curriculum/topic13-learning-workspace.json",
+            "sha": "d5aa55f158cbff42eae388e76f485d072878095a"
+          }
+        },
+        "MICRO_PRACTICE": {
+          "status": "VERIFIED_DIRECT",
+          "direct_skill_hits": [
+            "khai-niem-goc",
+            "do-goc",
+            "phan-loai-goc"
+          ],
+          "family_skill_hits": [],
+          "micro": {
+            "path": "docs/assets/data/practice/13-goc-va-duong-thang-micro-v1.json",
+            "sha": "32afda07968b3fbaed0a6d206db821abb718b95a"
+          }
+        },
+        "PRACTICE_BANK": {
+          "status": "TOPIC_SKILL_EVIDENCE",
+          "direct_skill_hits": [
+            "khai-niem-goc",
+            "do-goc",
+            "phan-loai-goc"
+          ],
+          "family_skill_hits": [],
+          "manifest": {
+            "path": "docs/assets/data/practice/13-goc-va-duong-thang-v1.manifest.json",
+            "sha": "4b6a44701d6fe413e333349a799aaa7911390b70"
+          },
+          "note": "Practice manifests are topic-level and do not by themselves prove Grade-6 lesson placement."
+        },
+        "WRITTEN_LIBRARY": {
+          "status": "VERIFIED_KNTT_PLACEMENT",
+          "placements": [
+            {
+              "exercise_id": "WX13-LIN-003",
+              "grade": 6,
+              "chapter": 8,
+              "lesson": "Bài 36–37 — Góc, số đo góc và phân loại góc"
+            }
+          ],
+          "evidence": {
+            "packet_id": "MATH-KNTT-G6-WRITTEN-WAVE1-R1-20261007",
+            "clearance": "G6_WRITTEN_WAVE1_R1_CONTENT_REVIEW_COMPLETE",
+            "review_receipt": "review-packets/kntt-g6-written-wave1-r1/01_NOTEBOOKLM_RESULT_R1.md"
+          },
+          "note": "Independent Wave-1 review confirms the angle-measure/classification portion as a second genuine primary placement of the combined anchor."
+        },
+        "READINESS": {
+          "status": "NOT_VERIFIED_STRUCTURED",
+          "evidence": null
+        }
+      }
+    },
+    {
+      "chapter": 9,
+      "lesson_ref": "Bài 38-41",
+      "curriculum_summary": "Dữ liệu, thu thập dữ liệu, bảng thống kê, biểu đồ tranh, biểu đồ cột và cột kép",
+      "primary_topic": "21-thong-ke",
+      "secondary_topics": [
+        "24-bai-toan-thuc-te"
+      ],
+      "semantic_targets": {
+        "direct_skills": [
+          "thu-thap-du-lieu",
+          "doc-bieu-do-cot",
+          "doc-bieu-do-cot-kep",
+          "nhan-xet-du-lieu"
+        ],
+        "families": [
+          "STAT-DATA",
+          "STAT-REPRESENT",
+          "STAT-CHART-READ"
+        ],
+        "local_or_family_refs": [
+          {
+            "ref": "du-lieu",
+            "resolution": "CANONICAL_FAMILY",
+            "role": "LESSON_LOCAL_CONCEPT"
+          },
+          {
+            "ref": "bang-thong-ke",
+            "resolution": "CANONICAL_FAMILY",
+            "role": "LESSON_LOCAL_REPRESENTATION"
+          },
+          {
+            "ref": "bieu-do-tranh",
+            "resolution": "CANONICAL_FAMILY",
+            "role": "LESSON_LOCAL_REPRESENTATION"
+          }
+        ],
+        "aggregated_granularity": false
+      },
+      "dimensions": {
+        "SKILL_MAP": {
+          "status": "VERIFIED_SEMANTIC",
+          "evidence": [
+            "docs/assets/data/curriculum/kntt-grade6-reconciliation-r1.json"
+          ]
+        },
+        "LEARN_CONTENT": {
+          "status": "VERIFIED_DIRECT_AND_LOCAL",
+          "card_skill_evidence": [
+            "du-lieu-phan-loai",
+            "thu-thap-du-lieu",
+            "doc-bieu-do-cot",
+            "doc-bieu-do-cot-kep",
+            "nhan-xet-du-lieu"
+          ],
+          "missing_direct_skills": [],
+          "placement_strength": "EXACT",
+          "workspace": {
+            "path": "docs/assets/data/curriculum/topic21-learning-workspace.json",
+            "sha": "2e1a0dc26890ae06e4046d633637e5409af2cc3b"
+          },
+          "direct_skill_hits": [
+            "thu-thap-du-lieu",
+            "doc-bieu-do-cot",
+            "doc-bieu-do-cot-kep",
+            "nhan-xet-du-lieu"
+          ],
+          "lesson_local_hits": [
+            "du-lieu",
+            "bang-thong-ke",
+            "bieu-do-tranh"
+          ],
+          "note": "Reviewed Learn evidence covers all Grade-6 direct skills and the three lesson-local data/representation identities."
+        },
+        "MICRO_PRACTICE": {
+          "status": "VERIFIED_DIRECT_AND_LOCAL",
+          "direct_skill_hits": [
+            "thu-thap-du-lieu",
+            "doc-bieu-do-cot",
+            "doc-bieu-do-cot-kep",
+            "nhan-xet-du-lieu"
+          ],
+          "family_skill_hits": [
+            "du-lieu-phan-loai",
+            "doc-bieu-do-cot"
+          ],
+          "micro": {
+            "path": "docs/assets/data/practice/21-thong-ke-micro-v1.json",
+            "sha": "7ca07feda16ea97bb25eb85f62030e0cee4d286f"
+          },
+          "direct_item_ids": [
+            "STA21MICRO_016",
+            "STA21MICRO_004",
+            "STA21MICRO_017",
+            "STA21MICRO_013"
+          ],
+          "lesson_local_hits": [
+            "du-lieu",
+            "bang-thong-ke",
+            "bieu-do-tranh"
+          ],
+          "lesson_local_item_ids": [
+            "STA21MICRO_018",
+            "STA21MICRO_019",
+            "STA21MICRO_020"
+          ],
+          "lesson_local_evidence_role": "LESSON_LOCAL_CORE_FORMATIVE",
+          "lesson_local_gates_core": false,
+          "note": "Reviewed Grade-6 Micro covers all direct row skills and the three local identities without creating new skill writes."
+        },
+        "PRACTICE_BANK": {
+          "status": "PARTIAL_TOPIC_EVIDENCE",
+          "direct_skill_hits": [
+            "thu-thap-du-lieu",
+            "doc-bieu-do-cot",
+            "doc-bieu-do-cot-kep",
+            "nhan-xet-du-lieu"
+          ],
+          "family_skill_hits": [
+            "du-lieu-phan-loai",
+            "thu-thap-du-lieu",
+            "chon-bieu-do",
+            "chuyen-bang-bieu-do",
+            "doc-bieu-do-cot",
+            "doc-bieu-do-doan-thang",
+            "doc-bieu-do-cot-kep",
+            "bieu-do-quat-tron"
+          ],
+          "manifest": {
+            "path": "docs/assets/data/practice/21-thong-ke-v1.manifest.json",
+            "sha": "3d88c1ce48ac1129648980de3f0544e6024251b9"
+          },
+          "note": "Practice manifests are topic-level and do not by themselves prove Grade-6 lesson placement."
+        },
+        "WRITTEN_LIBRARY": {
+          "status": "VERIFIED_KNTT_PLACEMENT",
+          "placements": [
+            {
+              "exercise_id": "WX21-STA-001",
+              "grade": 6,
+              "chapter": 9,
+              "lesson": "Bài 38–41 — Dữ liệu, bảng thống kê, biểu đồ tranh, biểu đồ cột và cột kép"
+            }
+          ],
+          "evidence": {
+            "packet_id": "MATH-KNTT-G6-WRITTEN-GAP-PRIORITY-R1-20261007",
+            "clearance": "G6_WRITTEN_GAP_PRIORITY_R1_REVIEW_COMPLETE",
+            "review_receipt": "review-packets/kntt-g6-written-gap-priority-r1/01_NOTEBOOKLM_RESULT_R1.md"
+          },
+          "note": "Independent S1-grounded review confirms the whole WX21-STA-001 task as a true Grade-6 Bài 38–41 curriculum placement."
+        },
+        "READINESS": {
+          "status": "AUTHORIZED_TOPIC_LEVEL",
+          "evidence": {
+            "path": "content-staging/reviews/STA21-READY-CHATGPT-INTEGRATION-001.json",
+            "sha": "eb2c001d4d46e3f4007688cf87ecf57e6f50b05d",
+            "note": "Full-topic Core grade 6–8; not a Grade-6-only lesson assessment."
+          }
+        }
+      },
+      "repair_evidence": {
+        "status": "REPAIRED_REVIEWED_R1",
+        "packet_id": "MATH-KNTT-G6-STATISTICS-R1-20261004",
+        "clearance": "G6_STATISTICS_CONTENT_REVIEW_COMPLETE",
+        "review_receipt": "review-packets/kntt-g6-statistics-r1/01_NOTEBOOKLM_RESULT_R1.md",
+        "learn": "VERIFIED_DIRECT_AND_LOCAL",
+        "micro": "VERIFIED_DIRECT_AND_LOCAL",
+        "practice": "PARTIAL_TOPIC_EVIDENCE",
+        "written": "VERIFIED_KNTT_PLACEMENT",
+        "readiness": "AUTHORIZED_TOPIC_LEVEL",
+        "note": "Learn and Grade-6 Micro gap repaired. Practice and Readiness scope are unchanged. Written reuse is now independently reviewed and verified via WX21-STA-001."
+      }
+    },
+    {
+      "chapter": 9,
+      "lesson_ref": "Bài 42",
+      "curriculum_summary": "Kết quả có thể và sự kiện trong trò chơi, thí nghiệm",
+      "primary_topic": "23-xac-suat",
+      "secondary_topics": [],
+      "semantic_targets": {
+        "direct_skills": [],
+        "families": [
+          "PROB-EVENT"
+        ],
+        "local_or_family_refs": [
+          {
+            "ref": "ket-qua-co-the",
+            "resolution": "CANONICAL_FAMILY",
+            "role": "LESSON_LOCAL_CONCEPT"
+          },
+          {
+            "ref": "su-kien-don-gian",
+            "resolution": "CANONICAL_FAMILY",
+            "role": "LESSON_LOCAL_CONCEPT"
+          }
+        ],
+        "aggregated_granularity": false
+      },
+      "dimensions": {
+        "SKILL_MAP": {
+          "status": "VERIFIED_SEMANTIC",
+          "evidence": [
+            "docs/assets/data/curriculum/kntt-grade6-reconciliation-r1.json"
+          ]
+        },
+        "LEARN_CONTENT": {
+          "status": "VERIFIED_LESSON_LOCAL",
+          "card_skill_evidence": [
+            "xac-suat-thuc-nghiem"
+          ],
+          "missing_direct_skills": [],
+          "placement_strength": "EXACT",
+          "workspace": {
+            "path": "docs/assets/data/curriculum/topic23-learning-workspace.json",
+            "sha": "443169587e0ba663bc694122ee4a37e456793c70"
+          },
+          "lesson_local_hits": [
+            "ket-qua-co-the",
+            "su-kien-don-gian"
+          ],
+          "note": "Bài 42 concepts are explicitly taught as reviewed Grade-6 lesson-local content under PROB-EVENT; no canonical skill is created."
+        },
+        "MICRO_PRACTICE": {
+          "status": "VERIFIED_LESSON_LOCAL",
+          "direct_skill_hits": [],
+          "family_skill_hits": [],
+          "micro": {
+            "path": "docs/assets/data/practice/23-xac-suat-micro-v1.json",
+            "sha": "10f6dfcc41040da16b351a8c607c10fe82e6e4b3"
+          },
+          "lesson_local_hits": [
+            "ket-qua-co-the",
+            "su-kien-don-gian"
+          ],
+          "item_ids": [
+            "PRO23MICRO_018",
+            "PRO23MICRO_019",
+            "PRO23MICRO_020"
+          ],
+          "evidence_role": "LESSON_LOCAL_CORE_FORMATIVE",
+          "gates_core": false,
+          "note": "Direct Grade-6 lesson-local formative evidence is present without canonical skill writes or mastery/readiness credit."
+        },
+        "PRACTICE_BANK": {
+          "status": "FAMILY_LEVEL_TOPIC_EVIDENCE",
+          "direct_skill_hits": [],
+          "family_skill_hits": [
+            "phep-thu-ngau-nhien",
+            "bien-co",
+            "bien-co-chac-chan-khong-the"
+          ],
+          "manifest": {
+            "path": "docs/assets/data/practice/23-xac-suat-v1.manifest.json",
+            "sha": "7b936f2e5a01ce0937fc2cfd6ae391d4cbf741fb"
+          },
+          "note": "Practice manifests are topic-level and do not by themselves prove Grade-6 lesson placement."
+        },
+        "WRITTEN_LIBRARY": {
+          "status": "VERIFIED_KNTT_PLACEMENT",
+          "placements": [
+            {
+              "exercise_id": "WX23-PRO-003",
+              "grade": 6,
+              "chapter": 9,
+              "lesson": "Bài 42 — Kết quả có thể và sự kiện trong trò chơi, thí nghiệm"
+            }
+          ],
+          "evidence": {
+            "packet_id": "MATH-KNTT-G6-WRITTEN-BAI42-R1-20261007",
+            "clearance": "G6_WRITTEN_BAI42_R1_CONTENT_REVIEW_COMPLETE",
+            "review_receipt": "review-packets/kntt-g6-written-bai42-r1/01_NOTEBOOKLM_RESULT_R1.md"
+          },
+          "note": "Independent review confirms a true Grade-6 Bài 42 Written anchor for distinguishing a concrete outcome from a sự kiện, without introducing probability calculation or a new canonical skill."
+        },
+        "READINESS": {
+          "status": "NOT_VERIFIED_STRUCTURED",
+          "evidence": null,
+          "note": "Non-Learn re-rank R1: current Grade-6 Topic23 readiness items are all xac-suat-thuc-nghiem and do not directly assess Bài 42 event/outcome content."
+        }
+      },
+      "repair_evidence": {
+        "status": "REPAIRED_REVIEWED_R1",
+        "packet_id": "MATH-KNTT-G6-BAI42-EVENT-OUTCOME-R1-20261004",
+        "clearance": "G6_BAI42_EVENT_OUTCOME_CONTENT_REVIEW_COMPLETE",
+        "review_receipt": "review-packets/kntt-g6-bai42-event-outcome-r1/01_NOTEBOOKLM_RESULT_R1.md",
+        "learn": "VERIFIED_LESSON_LOCAL",
+        "micro": "VERIFIED_LESSON_LOCAL",
+        "practice": "FAMILY_LEVEL_TOPIC_EVIDENCE",
+        "written": "VERIFIED_KNTT_PLACEMENT",
+        "readiness": "PENDING_REVIEW",
+        "note": "Bài 42 Learn + Grade-6 lesson-local Micro evidence repaired. Practice remains topic/family-level; Written and Readiness dimensions are unchanged. Written Bài 42 is independently reviewed and verified by WX23-PRO-003."
+      }
+    },
+    {
+      "chapter": 9,
+      "lesson_ref": "Bài 43",
+      "curriculum_summary": "Xác suất thực nghiệm",
+      "primary_topic": "23-xac-suat",
+      "secondary_topics": [
+        "24-bai-toan-thuc-te"
+      ],
+      "semantic_targets": {
+        "direct_skills": [
+          "xac-suat-thuc-nghiem"
+        ],
+        "families": [],
+        "local_or_family_refs": [],
+        "aggregated_granularity": false
+      },
+      "dimensions": {
+        "SKILL_MAP": {
+          "status": "VERIFIED_SEMANTIC",
+          "evidence": [
+            "docs/assets/data/curriculum/kntt-grade6-reconciliation-r1.json"
+          ]
+        },
+        "LEARN_CONTENT": {
+          "status": "VERIFIED_DIRECT",
+          "card_skill_evidence": [
+            "xac-suat-thuc-nghiem"
+          ],
+          "missing_direct_skills": [],
+          "placement_strength": "EXACT",
+          "workspace": {
+            "path": "docs/assets/data/curriculum/topic23-learning-workspace.json",
+            "sha": "7b2659c78e298017d16ec52f2a45cd57d3d88191"
+          }
+        },
+        "MICRO_PRACTICE": {
+          "status": "VERIFIED_DIRECT",
+          "direct_skill_hits": [
+            "xac-suat-thuc-nghiem"
+          ],
+          "family_skill_hits": [],
+          "micro": {
+            "path": "docs/assets/data/practice/23-xac-suat-micro-v1.json",
+            "sha": "ef8e6f27456591ddc42e606575abeb8d5fd28437"
+          }
+        },
+        "PRACTICE_BANK": {
+          "status": "TOPIC_SKILL_EVIDENCE",
+          "direct_skill_hits": [
+            "xac-suat-thuc-nghiem"
+          ],
+          "family_skill_hits": [],
+          "manifest": {
+            "path": "docs/assets/data/practice/23-xac-suat-v1.manifest.json",
+            "sha": "7b936f2e5a01ce0937fc2cfd6ae391d4cbf741fb"
+          },
+          "note": "Practice manifests are topic-level and do not by themselves prove Grade-6 lesson placement."
+        },
+        "WRITTEN_LIBRARY": {
+          "status": "VERIFIED_KNTT_PLACEMENT",
+          "placements": [
+            {
+              "exercise_id": "WX23-PRO-001",
+              "grade": 6,
+              "chapter": 9,
+              "lesson": "Bài 43 — Xác suất thực nghiệm"
+            }
+          ],
+          "evidence": {
+            "packet_id": "MATH-KNTT-G6-WRITTEN-PLACEMENT-R1-20261006",
+            "clearance": "G6_WRITTEN_PLACEMENT_R1_CONTENT_REVIEW_COMPLETE",
+            "review_receipt": "review-packets/kntt-g6-written-placement-r1/01_NOTEBOOKLM_RESULT_R1.md"
+          },
+          "note": "Independent placement review confirms this as the exercise's true Grade-6 KNTT curriculum placement."
+        },
+        "READINESS": {
+          "status": "REVIEWED_STRUCTURED_READINESS",
+          "evidence": {
+            "assessment_id": "PROB23-CORE-READY-V1",
+            "path": "docs/assets/data/assessment/23-xac-suat-core-v1.json",
+            "sha": "6ecf6eb6545fbb8e01465ccac76db0d5c60b7485",
+            "item_ids": [
+              "PRO23READY_001",
+              "PRO23READY_002",
+              "PRO23READY_003",
+              "PRO23READY_004"
+            ],
+            "skill": "xac-suat-thuc-nghiem",
+            "packet_id": "MATH-KNTT-G6-PROB23-READINESS-R1-20261006",
+            "clearance": "G6_PROB23_READINESS_R1_CONTENT_REVIEW_COMPLETE",
+            "review_receipt": "review-packets/kntt-g6-prob23-readiness-r1/01_NOTEBOOKLM_RESULT_R1.md",
+            "policy": "CONTROLLED_SOFT_READINESS"
+          },
+          "note": "Independent NotebookLM PASS for all four Grade-6 Bài 43 readiness items. Soft readiness only."
+        }
+      }
+    }
+  ]
+}

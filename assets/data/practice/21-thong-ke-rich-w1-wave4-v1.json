@@ -1,0 +1,157 @@
+{
+  "schema": "practice-question-chunk-v1",
+  "version": 3,
+  "bank_id": "STA21-RICH-W1-WAVE4",
+  "questions": [
+    {
+      "id": "STA21-RICH-W1-01-V1",
+      "source_item_id": "21-M2-01",
+      "source_lineage": "W1 NotebookLM R2a PASS source; additive frequency-table formative variant, original handwritten source preserved",
+      "response_type": "numeric_fields",
+      "answer_contract": {
+        "fields": [
+          {
+            "label": "Tần số của 6",
+            "expected": "1"
+          },
+          {
+            "label": "Tần số của 7",
+            "expected": "2"
+          },
+          {
+            "label": "Tần số của 8",
+            "expected": "3"
+          },
+          {
+            "label": "Tần số của 9",
+            "expected": "1"
+          }
+        ],
+        "table_view": {
+          "kind": "frequency",
+          "value_header": "Giá trị",
+          "frequency_header": "Tần số",
+          "row_values": [
+            "6",
+            "7",
+            "8",
+            "9"
+          ]
+        }
+      },
+      "question": "Cho dữ liệu 6, 7, 8, 8, 9, 8, 7. Lập bảng tần số bằng cách nhập số lần xuất hiện của từng giá trị vào cột “Tần số”.",
+      "explanation": "Đếm từng giá trị: 6: 1; 7: 2; 8: 3; 9: 1. Tổng 1 + 2 + 3 + 1 = 7 quan sát.",
+      "hints": [
+        "Đếm số lần xuất hiện của từng giá trị trong dãy số liệu.",
+        "Kiểm tra tổng các tần số phải bằng số quan sát trong dãy."
+      ],
+      "difficulty": "intermediate",
+      "tags": {
+        "topic": "21-thong-ke",
+        "skill": [
+          "bang-tan-so"
+        ],
+        "type": "rich-w1-frequency-table",
+        "layer": "Core-Support",
+        "grade": 9
+      },
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          9
+        ],
+        "level": "support",
+        "review_packet": "MATH-EXERCISE-RECLASSIFY-W1-20261015",
+        "academic_review": "NOTEBOOKLM_R2a_20261015"
+      },
+      "authoring_review": {
+        "status": "PASS",
+        "packet_id": "MATH-EXERCISE-RECLASSIFY-W1-20261015",
+        "review_round": "R2a",
+        "scope": "SOURCE_TASK_ONLY; FREQUENCY_TABLE_INPUT_PENDING_TECH_AND_OWNER_QA"
+      },
+      "variant_group": "21-M2-01-frequency-table-v1",
+      "worked_answer": "6: 1; 7: 2; 8: 3; 9: 1; tổng 7."
+    },
+    {
+      "id": "STA21-RICH-W1-02-V1",
+      "source_item_id": "21-M3-01",
+      "source_lineage": "W1 NotebookLM R2a PASS source; additive frequency-table formative variant, original handwritten source preserved",
+      "response_type": "numeric_fields",
+      "answer_contract": {
+        "fields": [
+          {
+            "label": "Tần số của 6",
+            "expected": "1"
+          },
+          {
+            "label": "Tần số của 7",
+            "expected": "2"
+          },
+          {
+            "label": "Tần số của 8",
+            "expected": "4"
+          },
+          {
+            "label": "Tần số của 9",
+            "expected": "2"
+          },
+          {
+            "label": "Tần số của 10",
+            "expected": "1"
+          },
+          {
+            "label": "Tổng tần số",
+            "expected": "10"
+          }
+        ],
+        "table_view": {
+          "kind": "frequency",
+          "value_header": "Giá trị",
+          "frequency_header": "Tần số",
+          "row_values": [
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "Tổng"
+          ]
+        }
+      },
+      "question": "Cho dữ liệu 6, 7, 7, 8, 8, 8, 9, 9, 10, 8. Lập bảng tần số bằng cách nhập số lần xuất hiện của từng giá trị vào cột “Tần số”. Điền cả hàng Tổng và kiểm tra với số quan sát.",
+      "explanation": "Đếm từng giá trị: 6: 1; 7: 2; 8: 4; 9: 2; 10: 1. Tổng 1 + 2 + 4 + 2 + 1 = 10, đúng bằng số quan sát.",
+      "hints": [
+        "Đếm số lần xuất hiện của từng giá trị trong dãy số liệu.",
+        "Sau khi điền các tần số, cộng tất cả để kiểm tra với 10 số liệu gốc."
+      ],
+      "difficulty": "advanced",
+      "tags": {
+        "topic": "21-thong-ke",
+        "skill": [
+          "bang-tan-so"
+        ],
+        "type": "rich-w1-frequency-table",
+        "layer": "Core-Support",
+        "grade": 9
+      },
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          9
+        ],
+        "level": "support",
+        "review_packet": "MATH-EXERCISE-RECLASSIFY-W1-20261015",
+        "academic_review": "NOTEBOOKLM_R2a_20261015"
+      },
+      "authoring_review": {
+        "status": "PASS",
+        "packet_id": "MATH-EXERCISE-RECLASSIFY-W1-20261015",
+        "review_round": "R2a",
+        "scope": "SOURCE_TASK_ONLY; FREQUENCY_TABLE_INPUT_PENDING_TECH_AND_OWNER_QA"
+      },
+      "variant_group": "21-M3-01-frequency-table-v1",
+      "worked_answer": "6: 1; 7: 2; 8: 4; 9: 2; 10: 1; tổng 10."
+    }
+  ]
+}

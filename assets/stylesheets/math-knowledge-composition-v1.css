@@ -1,0 +1,90 @@
+/* Reusable knowledge-reading composition patterns. OPT-IN ONLY, no global rewrite.
+   All units follow real teaching semantics; do not automatically rearrange equations. */
+.md-typeset .math-composition{
+  --mc-line:var(--roadmap-line,#e1e8f2);--mc-soft:var(--roadmap-soft,#f5f8fd);
+  --mc-card:var(--roadmap-surface,#fff);--mc-ink:var(--roadmap-ink,#14213d);
+  --mc-accent:var(--roadmap-indigo,#344bc8);--mc-muted:var(--roadmap-muted,#586782);
+  max-width:100%;font-size:1rem;line-height:1.65;
+}
+.md-typeset .math-composition .math-compare{
+  display:grid;grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:.85rem;margin:1rem 0 1.3rem;align-items:stretch;
+}
+.md-typeset .math-composition .math-compare.is-three{
+  grid-template-columns:repeat(3,minmax(0,1fr));
+}
+.md-typeset .math-composition .math-compare>*{
+  min-width:0;border:1px solid var(--mc-line);background:var(--mc-soft);
+  padding:1rem;border-radius:.85rem;overflow-wrap:break-word;
+}
+.md-typeset .math-composition .math-compare h4,
+.md-typeset .math-composition .math-process-step h4{
+  font-size:.94rem;font-weight:750;color:var(--mc-accent);margin:0 0 .6rem;line-height:1.4;
+}
+.md-typeset .math-composition .math-compare p,
+.md-typeset .math-composition .math-process-step p{margin:.5rem 0;}
+.md-typeset .math-composition .math-principle{
+  background:var(--mc-soft);border:1px solid var(--mc-line);border-radius:.75rem;
+  margin:.8rem 0;padding:.85rem 1rem;text-align:center;font-size:1.1rem;
+  font-weight:700;overflow-x:auto;
+}
+.md-typeset .math-composition .math-process{
+  display:flex;align-items:stretch;gap:.55rem;margin:1rem 0 1.25rem;
+}
+.md-typeset .math-composition .math-process-step{
+  flex:1 1 0;min-width:0;border:1px solid var(--mc-line);background:var(--mc-soft);
+  border-radius:.8rem;padding:.95rem;overflow-wrap:break-word;
+}
+.md-typeset .math-composition .math-process-arrow{
+  flex:0 0 22px;align-self:center;text-align:center;
+  color:var(--mc-accent);font-size:1.35rem;font-weight:800;
+}
+.md-typeset .math-composition .math-outcome{
+  border-left:3px solid var(--mc-accent);background:var(--mc-soft);
+  border-radius:.45rem;padding:.75rem 1rem;margin:1rem 0;line-height:1.6;
+}
+.md-typeset .math-composition .math-compact-equations{
+  display:flex;align-items:center;flex-wrap:wrap;gap:.5rem 1rem;
+  background:var(--mc-soft);border:1px solid var(--mc-line);
+  border-radius:.65rem;padding:.85rem 1rem;margin:1rem 0;
+}
+.md-typeset .math-composition .math-compact-equations>*{
+  min-width:0;max-width:100%;overflow-x:auto;flex:1 1 auto;
+}
+.md-typeset .math-composition .math-comparison-caption{
+  margin:.2rem 0 1rem;color:var(--mc-muted);font-size:.88rem;line-height:1.55;
+}
+.md-typeset .math-composition a:focus-visible{outline:3px solid var(--mc-accent);outline-offset:2px;}
+@media(max-width:850px){
+  .md-typeset .math-composition .math-compare.is-three{grid-template-columns:1fr 1fr;}
+  /* Keep arrows between their actual sequential steps; don't strand one at a row start. */
+  .md-typeset .math-composition .math-process{flex-direction:column;gap:.35rem;}
+  .md-typeset .math-composition .math-process-step{flex:none;}
+  .md-typeset .math-composition .math-process-arrow{transform:rotate(90deg);flex:none;min-height:25px;}
+}
+@media(max-width:610px){
+  .md-typeset .math-composition .math-compare,.md-typeset .math-composition .math-compare.is-three{grid-template-columns:1fr;}
+  .md-typeset .math-composition .math-process{flex-direction:column;gap:.3rem;}
+  .md-typeset .math-composition .math-process-step{flex:none;}
+  .md-typeset .math-composition .math-process-arrow{transform:rotate(90deg);flex:none;min-height:25px;}
+  .md-typeset .math-composition .math-principle{font-size:1rem;}
+}
+@media print{
+  .md-typeset .math-composition .math-compare{grid-template-columns:repeat(2,minmax(0,1fr));}
+  .md-typeset .math-composition .math-process{flex-direction:row;}
+  .md-typeset .math-composition .math-process-step{break-inside:avoid;}
+  .md-typeset .math-composition .math-process-arrow{transform:none;}
+}
+
+.md-typeset .math-composition .math-related-practice{
+  border:1px solid var(--mc-line);border-radius:.7rem;background:var(--mc-soft);
+  padding:.7rem .85rem;display:flex;align-items:center;flex-wrap:wrap;gap:.55rem .7rem;
+  margin:.8rem 0 1.25rem;
+}
+.md-typeset .math-composition .math-related-practice>span{font-size:.85rem;font-weight:700;color:var(--mc-ink);}
+.md-typeset .math-composition .math-related-practice>a{
+  display:inline-flex;align-items:center;min-height:44px;padding:.42rem .7rem;
+  border:1px solid var(--mc-line);border-radius:.45rem;background:var(--mc-card);
+  font-size:.82rem;font-weight:700;text-decoration:none;overflow-wrap:anywhere;
+}
+.md-typeset .math-composition .math-related-practice>a:hover{border-color:var(--mc-accent);}

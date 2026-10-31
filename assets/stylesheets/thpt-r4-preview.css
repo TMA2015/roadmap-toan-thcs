@@ -1,0 +1,568 @@
+/* THPT R4: scoped styling only. Reuses MkDocs Material/THCS navy shell and existing library styles. */
+.thpt-r4-screen{--r4-accent:var(--roadmap-indigo,#344bc8);--r4-ink:var(--roadmap-ink,#14213d);--r4-line:var(--roadmap-line,#e1e8f2);--r4-soft:var(--roadmap-soft,#f5f8fd);--r4-surface:var(--roadmap-surface,#fff);max-width:100%}
+.thpt-r4-eyebrow{color:var(--r4-accent);font-size:.78rem;font-weight:800;letter-spacing:.055em;text-transform:uppercase}
+.thpt-r4-lead{font-size:1.05rem;line-height:1.7;color:var(--roadmap-muted,#586782);max-width:70ch}
+.thpt-r4-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin:20px 0 26px}
+.thpt-r4-cover{grid-template-columns:repeat(3,minmax(0,1fr))}
+.thpt-r4-tile{display:flex;flex-direction:column;gap:12px;min-width:0;min-height:180px;border:1px solid var(--r4-line);border-radius:18px;background:var(--r4-surface);padding:24px;color:var(--r4-ink);text-decoration:none!important}
+.thpt-r4-tile>span{font-size:1.7rem;font-weight:700;color:var(--r4-accent);line-height:1}
+.thpt-r4-tile>strong{font-size:1.2rem;line-height:1.3}
+.thpt-r4-tile>small{font-size:.9rem;color:var(--roadmap-muted,#586782);line-height:1.55}
+.thpt-r4-tile>em{font-size:.85rem;font-weight:650;font-style:normal;color:var(--r4-accent);margin-top:auto}
+.thpt-r4-tile[href]:hover,.thpt-r4-tile[href]:focus-visible{border-color:var(--r4-accent);box-shadow:0 5px 15px rgba(43,65,115,.11)}
+.thpt-r4-pending{opacity:.7}.thpt-r4-footnote{font-size:.87rem;color:var(--roadmap-muted,#586782);margin-top:20px}
+.thpt-r4-search{display:grid;gap:9px;background:var(--r4-soft);border:1px solid var(--r4-line);border-radius:16px;padding:17px 20px;margin:22px 0}
+.thpt-r4-search label{font-size:.9rem}.thpt-r4-search input,.thpt-r4-search select{width:100%;max-width:100%;border:1px solid var(--r4-line);border-radius:10px;min-height:44px;background:var(--r4-surface);color:var(--r4-ink);padding:10px 12px;font:inherit}
+.thpt-r4-search [data-thpt-filter-count]{font-size:.78rem;color:var(--roadmap-muted,#586782)}
+.thpt-r4-muted-card{border:1px solid var(--r4-line);background:var(--r4-surface);border-radius:10px;padding:14px;line-height:1.5;color:var(--roadmap-muted,#586782);font-size:.88rem}
+.thpt-r4-lesson-tabs,.thpt-r4-topic-steps,.thpt-r4-section-links{display:flex;gap:8px;flex-wrap:wrap;align-items:stretch;margin:12px 0 22px}
+.thpt-r4-lesson-tabs>* , .thpt-r4-topic-steps>* , .thpt-r4-section-links>* {display:inline-flex;align-items:center;justify-content:center;padding:9px 13px;min-height:44px;border-radius:9px;border:1px solid var(--r4-line);background:var(--r4-soft);color:var(--r4-ink);text-decoration:none!important;font-weight:650;font-size:.87rem}
+.thpt-r4-lesson-tabs>[aria-disabled=true]{opacity:.55;cursor:not-allowed}
+.thpt-r4-lesson-tabs>.is-current,.thpt-r4-topic-steps>a[aria-current=page]{border-color:var(--r4-accent);color:var(--r4-accent);background:color-mix(in srgb,var(--r4-accent) 9%,var(--r4-surface))}
+.thpt-r4-section-links{position:sticky;top:5.2rem;z-index:3;max-width:100%;padding:9px 0;background:var(--md-default-bg-color);margin-top:10px}
+.thpt-r4-section-links>a{font-size:.78rem;min-height:40px}
+.thpt-r4-flow{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:18px 0}
+.thpt-r4-flow>span{padding:10px 12px;border:1px solid var(--r4-line);border-radius:9px;background:var(--r4-soft);font-size:.85rem;font-weight:600}
+.thpt-r4-flow>b{color:var(--r4-accent)}
+.thpt-r4-exercise,.thpt-r4-written-card{background:var(--r4-soft);border:1px solid var(--r4-line);border-radius:15px;padding:20px;margin:18px 0}
+.thpt-r4-exercise form,.thpt-r4-exercise fieldset{margin:0;border:0;padding:0}
+.thpt-r4-exercise legend{font-weight:700;margin-bottom:10px}
+.thpt-r4-exercise label{display:flex;align-items:center;gap:9px;min-height:44px;border-radius:9px;border:1px solid var(--r4-line);padding:9px 12px;background:var(--r4-surface);margin:8px 0}
+.thpt-r4-exercise label input{accent-color:var(--r4-accent);width:18px;height:18px;flex-shrink:0}
+.thpt-r4-action{min-height:44px;padding:9px 15px;background:var(--r4-surface);color:var(--r4-ink);border-radius:10px;border:1px solid var(--r4-accent);font:inherit;font-size:.9rem;font-weight:700;cursor:pointer}
+.thpt-r4-action:focus-visible,.thpt-r4-tile:focus-visible{outline:3px solid var(--r4-accent);outline-offset:3px}
+.thpt-r4-action:disabled{opacity:.45;cursor:not-allowed}
+.thpt-r4-buttons{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.thpt-r4-exercise [data-thpt-feedback]:not(:empty){padding:12px;margin:12px 0;border:1px solid var(--r4-line);border-radius:10px;background:var(--r4-surface)}
+.thpt-r4-written-card details{padding:8px 0}
+.thpt-r4-written-card table{width:100%}
+.thpt-r4-written-card td,.thpt-r4-written-card th{padding:.45rem}
+[data-thpt-filter-item][hidden],[data-thpt-filter-group][hidden]{display:none!important}
+@media(max-width:850px){.thpt-r4-cover{grid-template-columns:1fr 1fr}.thpt-r4-grid{gap:12px}.thpt-r4-section-links{top:3.1rem}}
+@media(max-width:600px){.thpt-r4-grid,.thpt-r4-cover{grid-template-columns:minmax(0,1fr)}.thpt-r4-tile{min-height:146px;padding:19px}.thpt-r4-lesson-tabs,.thpt-r4-topic-steps{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}.thpt-r4-section-links{position:static}.thpt-r4-search{padding:15px}}
+@media(prefers-reduced-motion:reduce){.thpt-r4-screen *{scroll-behavior:auto}}
+
+/* R4 only: isolate the original THCS 7+25 control without editing its code. */
+body.thpt-r4-route [data-roadmap-topic-launcher]{display:none!important}
+body.thpt-r4-route [data-thpt-r4-launcher]{display:inline-flex!important}
+body.thpt-r4-route .thpt-r4-launcher .roadmap-topic-launcher__name{font-size:.73rem}
+.thpt-r4-plot{margin:1.2rem 0;padding:14px;background:var(--md-default-bg-color);border:1px solid var(--r4-line,#d1d9e8);border-radius:14px}
+.thpt-r4-plot svg{width:100%;max-width:640px;height:auto;display:block;margin:auto;background:#fdfefe;border-radius:8px}
+/* Reviewed ChIX B26/B27 D5 figures responsive on narrow devices. */
+.thpt-r4-probability-figure{max-width:100%;min-width:0;overflow:hidden}
+.thpt-r4-probability-figure img{display:block;width:100%;max-width:100%;height:auto;object-fit:contain;margin:0 auto}
+/* Source-reviewed G10 ChII A–D options, visible before optional answer reveal. */
+.thpt-r4-formative-options{display:grid;gap:0.4rem;margin:0.75rem 0 1rem}
+.thpt-r4-formative-options p{margin:0;padding:0.4rem 0.6rem;border:1px solid var(--md-default-fg-color--lightest);border-radius:0.4rem;overflow-wrap:anywhere}
+.thpt-r4-plot figcaption{font-size:.77rem;line-height:1.5;color:var(--md-default-fg-color--light);text-align:center;margin-top:7px}
+.thpt-r4-plot svg>text{font-size:15px;fill:#27395a}
+@media(max-width:600px){body.thpt-r4-route .thpt-r4-launcher .roadmap-topic-launcher__name{font-size:.65rem}.thpt-r4-plot{padding:7px}}
+
+
+/* Adaptive Knowledge Tabs, owner-accepted UI typography contract.
+   A semantic (Khái niệm/Tính chất/Ví dụ) tab and a multi-module tab are the
+   SAME visual component. Normal content prose never becomes smaller inside. */
+body.thpt-r4-topic-knowledge {
+  --thpt-knowledge-tab-font-size: .9rem;
+  --thpt-knowledge-tab-font-weight: 700;
+  --thpt-knowledge-prose-line-height: 1.7;
+}
+body.thpt-r4-topic-knowledge .md-typeset .tabbed-set > .tabbed-labels > label,
+body.thpt-r4-topic-knowledge .md-typeset .thpt-r4-knowledge-tabs > .thpt-r4-knowledge-tab {
+  font-family: inherit;
+  font-size: var(--thpt-knowledge-tab-font-size);
+  font-weight: var(--thpt-knowledge-tab-font-weight);
+  line-height: 1.45;
+  letter-spacing: normal;
+  text-transform: none;
+  color: var(--md-default-fg-color);
+  min-height: 44px;
+  opacity: 1;
+}
+body.thpt-r4-topic-knowledge .md-typeset .thpt-r4-knowledge-tabs > .thpt-r4-knowledge-tab {
+  border: 1px solid var(--md-default-fg-color--lightest);
+  background: var(--md-code-bg-color);
+  border-radius: 9px;
+  padding: 9px 13px;
+  cursor: pointer;
+}
+body.thpt-r4-topic-knowledge .md-typeset .thpt-r4-knowledge-tabs > .thpt-r4-knowledge-tab.is-active,
+body.thpt-r4-topic-knowledge .md-typeset .thpt-r4-knowledge-tabs > .thpt-r4-knowledge-tab[aria-selected="true"] {
+  border-color: var(--md-accent-fg-color);
+  color: var(--md-default-fg-color);
+  background: var(--md-default-bg-color);
+}
+body.thpt-r4-topic-knowledge .md-typeset .tabbed-set > .tabbed-labels > label:hover,
+body.thpt-r4-topic-knowledge .md-typeset .thpt-r4-knowledge-tab:hover {
+  color: var(--md-accent-fg-color);
+}
+body.thpt-r4-topic-knowledge .md-typeset .thpt-r4-knowledge-tab:focus-visible {
+  outline: 3px solid var(--md-accent-fg-color);
+  outline-offset: 3px;
+}
+body.thpt-r4-topic-knowledge .md-typeset .tabbed-content,
+body.thpt-r4-topic-knowledge .md-typeset .tabbed-content .tabbed-block,
+body.thpt-r4-topic-knowledge .md-typeset .thpt-r4-knowledge-panel {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: 400;
+  color: inherit;
+  line-height: var(--thpt-knowledge-prose-line-height);
+}
+body.thpt-r4-topic-knowledge .md-typeset .tabbed-content p,
+body.thpt-r4-topic-knowledge .md-typeset .tabbed-content li,
+body.thpt-r4-topic-knowledge .md-typeset .thpt-r4-knowledge-panel p {
+  font-size: inherit;
+  font-family: inherit;
+  line-height: inherit;
+  color: inherit;
+}
+.thpt-r4-knowledge-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+  margin: 16px 0;
+}
+.thpt-r4-knowledge-panel { padding: 12px 0; }
+.thpt-r4-knowledge-panel[hidden] { display: none !important; }
+.thpt-r4-knowledge-panel > h2 {
+  font-size: 1.05em;
+  font-weight: 750;
+  margin-top: 18px;
+}
+.thpt-r4-knowledge-note {
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 10px;
+  background: var(--md-code-bg-color);
+  padding: 13px 16px;
+  margin: 16px 0;
+}
+@media(max-width:600px) {
+  .thpt-r4-knowledge-tabs { display: grid; grid-template-columns: minmax(0,1fr); }
+  .thpt-r4-knowledge-tabs .thpt-r4-knowledge-tab { width: 100%; }
+}
+
+
+/* R4 two-level knowledge navigation: the OUTER row chooses the knowledge
+   module; the INNER row uses the identical type/color tokens as single-module
+   semantic tabs. No third level is introduced. */
+body.thpt-r4-topic-knowledge .md-typeset .thpt-r4-knowledge-modules {
+  margin: 12px 0 18px;
+  gap: 10px;
+}
+body.thpt-r4-topic-knowledge .md-typeset .thpt-r4-knowledge-module-tab {
+  border-radius: 12px;
+  padding-inline: 17px;
+  background: var(--md-default-bg-color);
+}
+body.thpt-r4-topic-knowledge .md-typeset .thpt-r4-knowledge-module-tab.is-active {
+  border-color: var(--md-accent-fg-color);
+  box-shadow: inset 0 -3px var(--md-accent-fg-color);
+}
+body.thpt-r4-topic-knowledge .md-typeset .thpt-r4-knowledge-module-panel {
+  padding: 9px 0 0;
+}
+body.thpt-r4-topic-knowledge .md-typeset .thpt-r4-knowledge-module-panel > h2 {
+  font-size: 1.03em;
+  margin: 8px 0 14px;
+  font-weight: 700;
+}
+body.thpt-r4-topic-knowledge .md-typeset .thpt-r4-knowledge-subgroup > .thpt-r4-knowledge-subtabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 4px 0 12px;
+}
+body.thpt-r4-topic-knowledge .md-typeset .thpt-r4-knowledge-subgroup .thpt-r4-knowledge-tab {
+  /* Same component as first-level semantic tab, never a smaller tab */
+  font-size: var(--thpt-knowledge-tab-font-size);
+  font-weight: var(--thpt-knowledge-tab-font-weight);
+  color: var(--md-default-fg-color);
+}
+body.thpt-r4-topic-knowledge .md-typeset .thpt-r4-knowledge-content-panel {
+  font-size: inherit;
+  font-family: inherit;
+  line-height: var(--thpt-knowledge-prose-line-height);
+  color: inherit;
+  padding: 8px 0;
+}
+body.thpt-r4-topic-knowledge .md-typeset .thpt-r4-knowledge-content-panel h3 {
+  font-size: 1.05em;
+  font-weight: 700;
+  margin: 9px 0;
+}
+body.thpt-r4-topic-knowledge .md-typeset .thpt-r4-knowledge-content-panel p {
+  font: inherit;
+  color: inherit;
+}
+@media(max-width:600px) {
+  body.thpt-r4-topic-knowledge .md-typeset .thpt-r4-knowledge-modules {
+    display: grid;
+    grid-template-columns: repeat(2,minmax(0,1fr));
+  }
+  body.thpt-r4-topic-knowledge .md-typeset .thpt-r4-knowledge-subgroup > .thpt-r4-knowledge-subtabs {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  body.thpt-r4-topic-knowledge .md-typeset .thpt-r4-knowledge-subtabs > button {
+    flex: 1 1 auto;
+    min-width: 0;
+  }
+}
+
+
+/* THPT SGK chapter lesson groups: THCS-inspired layout, THPT-sized typography. */
+.thpt-r4-practice-sections{display:grid;gap:22px;margin:18px 0 24px}
+.thpt-r4-practice-lesson{--thpt-grade-accent:#405bc6;--thpt-grade-soft:#eef2ff;--thpt-grade-border:#cdd8ff;min-width:0;border:1px solid var(--md-default-fg-color--lightest);border-radius:16px;overflow:hidden;background:var(--md-default-bg-color);box-shadow:0 3px 14px rgba(17,33,73,.05)}
+.thpt-r4-practice-lesson[data-thpt-grade="11"],.thpt-r4-practice-card[data-thpt-grade="11"]{--thpt-grade-accent:#148477;--thpt-grade-soft:#e9f7f3;--thpt-grade-border:#addbcf}
+.thpt-r4-practice-lesson[data-thpt-grade="12"],.thpt-r4-practice-card[data-thpt-grade="12"]{--thpt-grade-accent:#8554c1;--thpt-grade-soft:#f4eefe;--thpt-grade-border:#d8c2f4}
+.thpt-r4-practice-lesson[data-thpt-grade="10"],.thpt-r4-practice-card[data-thpt-grade="10"]{--thpt-grade-accent:#405bc6;--thpt-grade-soft:#eef2ff;--thpt-grade-border:#cdd8ff}
+.thpt-r4-practice-lesson-header{display:flex;align-items:center;gap:15px;padding:14px 18px;background:var(--thpt-grade-soft);border-top:4px solid var(--thpt-grade-accent);color:#172947}
+.thpt-r4-lesson-number{display:grid;place-items:center;border-radius:50%;background:var(--thpt-grade-accent);color:#fff;font-weight:800;min-width:43px;height:43px;font-size:1rem}
+.thpt-r4-practice-lesson-header h2{font-size:1.13rem!important;font-weight:750!important;border:0!important;padding:0!important;margin:1px 0 0!important;color:#172947!important}
+.thpt-r4-practice-class{font-size:.83rem!important;color:#52617d!important;margin:0!important;font-weight:600}
+.thpt-r4-practice-card-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;padding:16px}
+.thpt-r4-practice-card{--thpt-grade-accent:#405bc6;display:flex;flex-direction:column;justify-content:space-between;gap:20px;border:1px solid var(--md-default-fg-color--lightest);border-radius:12px;padding:16px;min-width:0;background:var(--md-default-bg-color)}
+.thpt-r4-practice-card-kind{margin:0 0 6px!important;font-size:.88rem!important;font-weight:850;color:var(--thpt-grade-accent)}
+.thpt-r4-practice-card>div>strong{font-size:.97rem;line-height:1.45;display:block}
+.thpt-r4-practice-card-desc{font-size:.85rem!important;color:var(--md-default-fg-color--light)!important;line-height:1.55;margin:8px 0!important}
+.thpt-r4-practice-card small{display:block;color:var(--md-default-fg-color--light);font-size:.75rem;line-height:1.45;margin-top:7px}
+.thpt-r4-practice-open{width:100%;background:var(--md-default-bg-color);border:1px solid var(--thpt-grade-border,#cdd8ff);border-radius:9px;color:var(--thpt-grade-accent,#405bc6);font-weight:750;font-size:.94rem;min-height:43px;padding:8px 13px;cursor:pointer}
+.thpt-r4-practice-open:hover,.thpt-r4-practice-open:focus-visible{background:var(--thpt-grade-soft,#eef2ff);outline-offset:2px}
+.thpt-r4-practice-disclaimer{font-size:.82rem!important;color:var(--md-default-fg-color--light);line-height:1.6;margin:13px 0 24px}
+body[data-md-color-scheme="slate"] .thpt-r4-practice-lesson-header{background:#20334e;color:#f2f5ff}
+body[data-md-color-scheme="slate"] .thpt-r4-practice-lesson-header h2{color:#f2f5ff!important}
+body[data-md-color-scheme="slate"] .thpt-r4-practice-class{color:#b5c6e1!important}
+.thpt-r4-practice-dialog{position:fixed;inset:0;border:1px solid var(--md-default-fg-color--lightest);border-radius:18px;background:var(--md-default-bg-color);color:var(--md-default-fg-color);box-shadow:0 20px 70px rgba(3,12,30,.35);padding:0;width:min(860px,calc(100vw - 24px));max-height:min(91vh,900px);overflow:hidden}
+.thpt-r4-practice-dialog::backdrop{background:rgba(5,15,35,.68)}
+.thpt-r4-modal-top{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;padding:18px 22px 16px;border-bottom:1px solid var(--md-default-fg-color--lightest)}
+.thpt-r4-modal-top h2{font-size:1.12rem;margin:0!important;border:0!important;padding:0!important}
+.thpt-r4-modal-meta{font-size:.72rem;color:var(--md-default-fg-color--light);margin:0 0 5px;letter-spacing:.05em}
+.thpt-r4-modal-top [data-thpt-modal-close]{border:1px solid var(--md-default-fg-color--lightest);background:var(--md-code-bg-color);border-radius:8px;min-height:40px;padding:5px 10px;white-space:nowrap;cursor:pointer;color:inherit}
+.thpt-r4-modal-main{padding:20px 24px 28px;overflow-y:auto;max-height:calc(min(91vh,900px) - 90px);font-size:.98rem}
+.thpt-r4-modal-progress{color:var(--md-default-fg-color--light);font-size:.81rem;letter-spacing:.02em;font-weight:650}
+.thpt-r4-modal-question-nav{display:flex;gap:8px;margin:14px 0;flex-wrap:wrap}
+.thpt-r4-modal-question-nav button{min-height:38px;border-radius:8px;border:1px solid var(--md-default-fg-color--lightest);background:var(--md-code-bg-color);color:inherit;padding:5px 12px;cursor:pointer}
+.thpt-r4-modal-question-nav button.active{border-color:var(--md-accent-fg-color);font-weight:750}
+.thpt-r4-modal-main h3{font-size:1.03rem;margin:18px 0!important}
+.thpt-r4-modal-options{border:0;padding:0;margin:0 0 12px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+.thpt-r4-modal-options label{display:flex;align-items:center;gap:10px;border:1px solid var(--md-default-fg-color--lightest);border-radius:9px;padding:12px;cursor:pointer;min-width:0}
+.thpt-r4-modal-options input{flex:none}
+.thpt-r4-modal-main details{margin:14px 0;padding:10px 12px;border-radius:9px;background:var(--md-code-bg-color)}
+.thpt-r4-modal-buttons{display:flex;justify-content:space-between;gap:10px;margin:15px 0}
+.thpt-r4-modal-buttons button{padding:10px 15px;border-radius:8px;background:var(--md-code-bg-color);border:1px solid var(--md-default-fg-color--lightest);color:inherit;cursor:pointer}
+.thpt-r4-modal-buttons button:disabled{opacity:.48;cursor:not-allowed}
+.thpt-r4-modal-main .thpt-r4-exercise{max-width:100%;font-size:inherit}
+.thpt-r4-practice-dialog .thpt-r4-exercise fieldset label{font-size:inherit}
+@media(max-width:680px){
+ .thpt-r4-practice-card-grid,.thpt-r4-modal-options{grid-template-columns:minmax(0,1fr)}
+ .thpt-r4-practice-lesson-header{padding:12px 13px}
+ .thpt-r4-practice-card-grid{padding:12px}
+ .thpt-r4-modal-top{padding:14px}
+ .thpt-r4-modal-main{padding:14px}
+}
+
+
+.thpt-r4-modal-cumulative{border-top:1px solid var(--md-default-fg-color--lightest);margin:22px 0 0;padding-top:15px}
+.thpt-r4-modal-cumulative-button{width:100%;border:1px solid var(--md-default-fg-color--lightest);border-radius:9px;background:var(--md-code-bg-color);color:var(--md-default-fg-color);font-weight:730;text-align:left;cursor:pointer;padding:12px 14px}
+.thpt-r4-modal-cumulative-button:hover,.thpt-r4-modal-cumulative-button[aria-expanded="true"]{border-color:var(--md-accent-fg-color)}
+.thpt-r4-modal-cumulative-pane{margin-top:12px;display:grid;gap:16px}
+.thpt-r4-modal-cumulative-pane[hidden]{display:none!important}
+.thpt-r4-modal-cumulative-item{border:1px solid var(--md-default-fg-color--lightest);padding:13px 15px;border-radius:10px}
+.thpt-r4-modal-cumulative-item h3{font-size:1.03rem!important;margin:0 0 10px!important}
+.thpt-r4-modal-cumulative-item details{background:var(--md-code-bg-color);padding:8px 10px;border-radius:8px}
+
+
+/* THPT-only information architecture: left menu collapsible at each nested
+   level; default-closed groups with accessible per-group disclosure buttons. */
+body.thpt-r4-route .md-sidebar--primary .thpt-r4-collapsible{
+  position:relative;
+}
+body.thpt-r4-route .md-sidebar--primary .thpt-r4-collapsible > .md-nav__link{
+  padding-right:2.3rem;
+}
+body.thpt-r4-route .md-sidebar--primary .thpt-r4-collapsible > .md-nav__link .md-nav__icon{
+  display:none!important;
+}
+body.thpt-r4-route .md-sidebar--primary .thpt-r4-collapsible > .md-nav[hidden]{
+  display:none!important;
+}
+/* On the native Material mobile drawer the child nav is mounted as a
+   stacked panel. Hiding only the panel (never its parent label) prevents
+   stale active branches from overlaying the three category names/header. */
+@media(max-width:76.234375em){
+ body.thpt-r4-route .md-sidebar--primary li.md-nav__item--nested > nav.md-nav[hidden]{
+  display:none!important;
+ }
+}
+body.thpt-r4-route .md-sidebar--primary .thpt-r4-sidebar-toggle{
+  position:absolute;
+  z-index:2;
+  top:.12rem;
+  right:.2rem;
+  display:grid;
+  place-items:center;
+  width:1.7rem;
+  height:1.7rem;
+  min-width:38px;
+  min-height:38px;
+  background:transparent;
+  color:var(--md-default-fg-color);
+  border:1px solid transparent;
+  border-radius:7px;
+  font-size:1.1rem;
+  cursor:pointer;
+}
+body.thpt-r4-route .md-sidebar--primary .thpt-r4-sidebar-toggle:hover,
+body.thpt-r4-route .md-sidebar--primary .thpt-r4-sidebar-toggle:focus-visible{
+  border-color:var(--md-accent-fg-color);
+  background:var(--md-code-bg-color);
+  outline-offset:2px;
+}
+/* The THPT landing keeps its home layout, but the native Material
+   mobile/tablet drawer must remain available on the header's menu icon.
+   Never force display:none on the primary navigation sidebar. */
+body.thpt-r4-home .md-main__inner{
+  justify-content:center;
+}
+.thpt-r4-lesson-core-entry{
+  max-width:32rem;
+  margin:12px 0 20px;
+}
+.thpt-r4-lesson-core-entry .thpt-r4-practice-open{
+  width:auto;
+  min-width:min(100%,18rem);
+}
+
+
+/* Approved G10 ChVI public formative items use the existing R4 modal.
+ * Self-check reveals answers only on deliberate disclosure; no scoring.
+ */
+.thpt-r4-reviewed-formative-card{padding:4px 0;line-height:1.65;min-width:0}
+.thpt-r4-reviewed-formative-card h3{font-size:1rem!important;line-height:1.65;white-space:pre-wrap;overflow-wrap:anywhere;margin:13px 0 18px!important}
+.thpt-r4-reviewed-formative-card details{margin:12px 0;padding:12px 14px;border:1px solid var(--md-default-fg-color--lightest);border-radius:9px;white-space:pre-line;line-height:1.7}
+.thpt-r4-reviewed-formative-card details summary{font-weight:700;cursor:pointer}
+.thpt-r4-reviewed-formative-card .thpt-r4-modal-progress{overflow-wrap:anywhere}
+
+/* DELTA_A_UI: question-first hierarchy shared by G10/G11 reviewed formative.
+   Three optional actions sit below the prompt like THCS, without changing
+   source item data, solution visibility, progress or assessment behavior. */
+.thpt-r4-reviewed-formative-card h3{
+ font-size:1.12rem!important;line-height:1.5!important;
+ margin:13px 0 18px!important;
+}
+/* DELTA_A_UI: equal-height centered controls matching THCS visual rhythm.
+   Scoped to formative modals; disclose only when opened by the learner. */
+.thpt-r4-reviewed-formative-card .thpt-r4-formative-actions{
+ display:flex;flex-wrap:wrap;align-items:stretch;
+ gap:8px;margin:17px 0 6px;
+}
+.thpt-r4-reviewed-formative-card .thpt-r4-formative-actions details{
+ margin:0;padding:0;min-width:0;flex:0 1 auto;
+ background:transparent;border:0;border-radius:0;
+ white-space:normal;line-height:1.45;
+}
+.thpt-r4-reviewed-formative-card .thpt-r4-formative-actions details summary,
+.thpt-r4-reviewed-formative-card .thpt-r4-formative-actions .thpt-r4-remediation-link{
+ display:inline-flex;box-sizing:border-box;align-items:center;justify-content:center;gap:6px;
+ width:auto;max-width:100%;height:42px;min-height:42px;max-height:42px;
+ padding:0 12px;margin:0;border:1px solid var(--md-default-fg-color--lightest);
+ border-radius:8px;background:var(--md-code-bg-color);
+ color:var(--md-default-fg-color);font-size:.84rem;
+ font-weight:400!important;line-height:1.25;
+ text-decoration:none;white-space:nowrap;vertical-align:middle;cursor:pointer;
+}
+.thpt-r4-reviewed-formative-card .thpt-r4-formative-actions details summary{
+ display:inline-flex;list-style:none;
+}
+.thpt-r4-reviewed-formative-card .thpt-r4-formative-actions details summary::-webkit-details-marker{
+ display:none;
+}
+.thpt-r4-reviewed-formative-card .thpt-r4-formative-actions details summary::before{
+ content:"▸";display:inline-block;flex:none;font-size:.75rem;line-height:1;
+}
+.thpt-r4-reviewed-formative-card .thpt-r4-formative-actions details[open] summary::before{
+ transform:rotate(90deg);
+}
+.thpt-r4-reviewed-formative-card .thpt-r4-formative-actions details[open]{
+ flex:1 0 100%;
+}
+.thpt-r4-reviewed-formative-card .thpt-r4-formative-actions .thpt-r4-formative-reveal{
+ white-space:pre-wrap;overflow-wrap:anywhere;
+ margin:8px 0 0;padding:12px 14px;
+ border:1px solid var(--md-default-fg-color--lightest);
+ border-radius:8px;background:var(--md-code-bg-color);
+ font-size:.92rem;line-height:1.6;
+}
+.thpt-r4-reviewed-formative-card .thpt-r4-formative-actions
+ :is(details summary,.thpt-r4-remediation-link):focus-visible{
+ outline:2px solid var(--md-accent-fg-color);outline-offset:2px;
+}
+@media(max-width:480px){
+ .thpt-r4-reviewed-formative-card .thpt-r4-formative-actions{gap:7px;}
+ .thpt-r4-reviewed-formative-card .thpt-r4-formative-actions details summary,
+ .thpt-r4-reviewed-formative-card .thpt-r4-formative-actions .thpt-r4-remediation-link{
+  font-size:.82rem;height:42px;min-height:42px;max-height:42px;padding:0 9px;
+ }
+}
+
+/* Canonical public FORMATIVE interactions only. No assessment score widgets. */
+.thpt-r4-formative-answer{margin:14px 0;padding:14px;border:1px solid var(--md-default-fg-color--lightest);border-radius:10px}
+.thpt-r4-formative-choice-group{display:grid;gap:9px;margin:0 0 12px;padding:0;border:0;min-width:0}
+.thpt-r4-formative-choice-group legend{font-weight:700;margin:0 0 10px}
+.thpt-r4-formative-choice-group label{display:flex;align-items:center;gap:10px;padding:10px 12px;border:1px solid var(--md-default-fg-color--lightest);border-radius:8px;cursor:pointer;min-width:0;overflow-wrap:anywhere}
+.thpt-r4-formative-choice-group label:focus-within{outline:2px solid var(--md-accent-fg-color);outline-offset:2px}
+.thpt-r4-formative-choice-group input{flex:none;width:17px;height:17px;accent-color:var(--md-accent-fg-color)}
+.thpt-r4-formative-text-label{display:grid;gap:8px;font-weight:700}
+.thpt-r4-formative-text-label textarea{display:block;box-sizing:border-box;width:100%;min-height:98px;resize:vertical;padding:10px 12px;background:var(--md-default-bg-color);color:var(--md-default-fg-color);border:1px solid var(--md-default-fg-color--lightest);border-radius:8px;font:inherit;font-weight:400}
+.thpt-r4-formative-text-label textarea:focus-visible{outline:2px solid var(--md-accent-fg-color)}
+.thpt-r4-formative-submit{display:inline-block;min-height:44px;margin:12px 0 0;padding:9px 16px;border:1px solid var(--md-accent-fg-color);border-radius:8px;background:var(--md-accent-fg-color);color:var(--md-primary-bg-color);font:inherit;font-weight:750;cursor:pointer}
+.thpt-r4-formative-submit:focus-visible{outline:3px solid var(--md-default-fg-color);outline-offset:2px}
+.thpt-r4-formative-feedback{min-height:1.5em;margin:10px 0 0;line-height:1.55;font-weight:650}
+@media(max-width:680px){.thpt-r4-formative-answer{padding:11px}.thpt-r4-formative-submit{width:100%}}
+
+/* Owner-requested THPT landing: related to THCS home, but visualizes the two
+   independent learning paths instead of copying the THCS 25-topic diagram. */
+.thpt-r4-home-hero{
+ display:grid;grid-template-columns:minmax(0,1.06fr) minmax(0,.94fr);
+ align-items:center;gap:clamp(22px,3vw,52px);
+ padding:clamp(25px,4vw,56px);border:1px solid #d5e3f9;border-radius:25px;
+ background:linear-gradient(112deg,#eaf2ff 0%,#e9f6fc 51%,#e3edff 100%);
+ color:#15213e;overflow:hidden;margin:6px 0 15px;
+}
+.thpt-r4-home-hero-copy{min-width:0}
+.thpt-r4-home-hero-eyebrow{
+ display:flex;align-items:center;gap:9px;color:#334cc2;font-size:.77rem;
+ font-weight:800;letter-spacing:.055em;line-height:1.5;margin:0 0 18px!important
+}
+.thpt-r4-home-hero-eyebrow::before{content:"";width:11px;height:11px;border-radius:50%;background:#16b8ad;box-shadow:0 0 0 5px #d0f0ef;flex:none}
+.thpt-r4-home-hero h1{
+ color:#14213d!important;border:0!important;font-size:clamp(1.9rem,3.2vw,3.4rem)!important;
+ line-height:1.12!important;letter-spacing:-.045em;font-weight:850;
+ margin:0 0 23px!important;padding:0!important
+}
+.thpt-r4-home-hero h1 span{display:block;color:#3d56cc}
+.thpt-r4-home-hero-desc{font-size:clamp(.95rem,1.3vw,1.08rem);line-height:1.75;color:#4d6180;margin:0 0 25px!important;max-width:55ch}
+.thpt-r4-home-hero-actions{display:flex;gap:10px;flex-wrap:wrap;margin:0 0 18px}
+.thpt-r4-home-hero-actions a{
+ display:inline-flex;align-items:center;justify-content:center;gap:13px;min-height:49px;
+ border-radius:12px;padding:10px 17px;font-size:.88rem;font-weight:750;
+ text-decoration:none!important;transition:transform .15s ease,box-shadow .15s ease
+}
+.thpt-r4-home-hero-actions a:hover,.thpt-r4-home-hero-actions a:focus-visible{transform:translateY(-2px)}
+.thpt-r4-home-hero-primary{background:#304fc7;color:#fff!important;box-shadow:0 8px 18px #243e9c25}
+.thpt-r4-home-hero-secondary{border:1px solid #c5d7f5;background:#fff9;color:#284497!important}
+.thpt-r4-home-hero-notice{font-size:.79rem;line-height:1.55;color:#536882;margin:0!important}
+.thpt-r4-home-illustration{
+ min-width:0;border:1px solid #c6d9f4;border-radius:20px;
+ background:linear-gradient(155deg,#ffffffed,#dfeeffd9);
+ box-shadow:0 17px 42px #20366618;padding:17px 19px 14px
+}
+.thpt-r4-home-visual-head{display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap}
+.thpt-r4-home-visual-head span{font-size:.71rem;letter-spacing:.07em;font-weight:800;color:#3d55b4}
+.thpt-r4-home-visual-head strong{font-size:.88rem;font-weight:800;color:#213d7b}
+.thpt-r4-home-illustration svg{display:block;width:100%;height:auto;max-height:340px}
+.thpt-r4-home-visual-footer{display:flex;gap:9px;flex-wrap:wrap;justify-content:space-between;font-size:.73rem;color:#3c587d}
+.thpt-r4-home-visual-footer span{border:1px solid #c9dbef;background:#ffffffc9;border-radius:10px;padding:8px 11px}
+.thpt-r4-home-visual-footer b{color:#3150c3;margin-right:4px}
+.thpt-r4-home-stats{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));border:1px solid var(--r4-line);background:var(--md-default-bg-color);border-radius:18px;padding:14px 0;margin:0 0 27px}
+.thpt-r4-home-stats>div{display:grid;gap:3px;place-items:center;text-align:center;padding:8px 10px;min-width:0;border-right:1px solid var(--r4-line)}
+.thpt-r4-home-stats>div:last-child{border-right:0}
+.thpt-r4-home-stats strong{font-size:1.45rem;color:var(--r4-accent);line-height:1.25}
+.thpt-r4-home-stats span{font-size:.76rem;color:var(--md-default-fg-color--light);line-height:1.5}
+.thpt-r4-home-subheading{font-size:1.12rem;color:var(--md-default-fg-color);font-weight:750;margin:0 0 13px}
+body[data-md-color-scheme="slate"] .thpt-r4-home-hero{background:linear-gradient(120deg,#1a2d51,#243b5d);border-color:#385174}
+body[data-md-color-scheme="slate"] .thpt-r4-home-hero h1{color:#f4f7ff!important}
+body[data-md-color-scheme="slate"] .thpt-r4-home-hero h1 span{color:#9bb1ff}
+body[data-md-color-scheme="slate"] .thpt-r4-home-hero-desc,body[data-md-color-scheme="slate"] .thpt-r4-home-hero-notice{color:#c5d3ed}
+body[data-md-color-scheme="slate"] .thpt-r4-home-illustration{background:linear-gradient(140deg,#dce9ff,#b4c8e7);border-color:#446188}
+@media(max-width:980px){.thpt-r4-home-hero{grid-template-columns:minmax(0,1fr)}.thpt-r4-home-illustration{max-width:650px;width:100%;margin:auto}}
+@media(max-width:610px){.thpt-r4-home-hero{padding:22px 18px;border-radius:18px}.thpt-r4-home-hero h1{font-size:2rem!important}.thpt-r4-home-hero-actions{display:grid;grid-template-columns:minmax(0,1fr)}.thpt-r4-home-stats{grid-template-columns:repeat(2,minmax(0,1fr))}.thpt-r4-home-stats>div{border-bottom:1px solid var(--r4-line)}.thpt-r4-home-stats>div:nth-child(even){border-right:0}.thpt-r4-home-stats>div:last-child{grid-column:1/-1;border-bottom:0}}
+@media(prefers-reduced-motion:reduce){.thpt-r4-home-hero-actions a{transition:none}}
+
+/* Shared SGK lesson and Core/Practice modal title language. Keep the
+   existing R4 dialog behavior; only the header presentation changes. */
+.thpt-r4-practice-dialog .thpt-r4-modal-top{
+ display:flex;align-items:center;gap:16px;padding:16px 22px;
+ background:var(--thpt-grade-soft,#eef2ff);border-top:4px solid #405bc6;
+ border-bottom:1px solid #dce4f3;color:#162340;
+}
+.thpt-r4-practice-dialog .thpt-r4-modal-lesson-badge{
+ flex:none;display:grid;place-items:center;width:45px;height:45px;border-radius:50%;
+ background:#405ac9;color:white;font-weight:800;font-size:1.12rem;line-height:1;
+}
+.thpt-r4-practice-dialog .thpt-r4-modal-heading{flex:1;min-width:0}
+.thpt-r4-practice-dialog .thpt-r4-modal-meta{font-size:.77rem;font-weight:700;color:#566783;margin:0 0 3px;letter-spacing:normal}
+.thpt-r4-practice-dialog .thpt-r4-modal-top h2{font-size:1.15rem!important;line-height:1.3!important;font-weight:800!important;color:#162340!important;margin:0!important;overflow-wrap:anywhere}
+.thpt-r4-practice-dialog .thpt-r4-modal-top [data-thpt-modal-close]{margin-left:auto;align-self:center;color:#293b58;background:#ffffffb9}
+body[data-md-color-scheme="slate"] .thpt-r4-practice-dialog .thpt-r4-modal-top{background:#20334e;color:#f2f5ff;border-color:#405acc}
+body[data-md-color-scheme="slate"] .thpt-r4-practice-dialog .thpt-r4-modal-top h2{color:#f2f5ff!important}
+body[data-md-color-scheme="slate"] .thpt-r4-practice-dialog .thpt-r4-modal-meta{color:#b5c6e1}
+@media(max-width:600px){.thpt-r4-practice-dialog .thpt-r4-modal-top{padding:13px 14px;gap:11px}.thpt-r4-practice-dialog .thpt-r4-modal-lesson-badge{width:40px;height:40px;font-size:1rem}.thpt-r4-practice-dialog .thpt-r4-modal-top h2{font-size:1.01rem!important}}
+
+
+/* The five orbits are conceptual programme features, not five separate
+   curricula. Static SVG avoids motion, fetches and THCS Golden UI changes. */
+.thpt-r4-home-illustration{padding:14px 11px 9px}
+.thpt-r4-home-orbit-heading{font-size:.7rem!important;letter-spacing:.045em;font-weight:800;color:#3451a9;text-align:center;margin:3px 6px 0!important}
+.thpt-r4-home-illustration .thpt-r4-home-orbit{width:100%;max-height:none;height:auto;display:block;overflow:visible}
+.thpt-r4-home-orbit-lines ellipse{vector-effect:non-scaling-stroke}
+.thpt-r4-home-sun{filter:drop-shadow(0 11px 16px #28469b44)}
+.thpt-r4-home-planet{filter:drop-shadow(0 5px 9px #314a9133)}
+.thpt-r4-orbit-sun-top{fill:#fff;font-size:16px;font-weight:850;letter-spacing:1px}
+.thpt-r4-orbit-sun-main{fill:#fff;font-size:34px;font-weight:900;letter-spacing:-1px}
+.thpt-r4-orbit-sun-bottom{fill:#edf2ff;font-size:11px;font-weight:750;letter-spacing:.8px}
+.thpt-r4-orbit-planet-number{fill:#17a79c;font-size:24px;font-weight:900}
+.thpt-r4-orbit-planet-label{fill:#17284c;font-size:17px;font-weight:800}
+.thpt-r4-orbit-planet-sub{fill:#576d91;font-size:16px;font-weight:750}
+.thpt-r4-home-orbit-caption{font-size:.72rem!important;line-height:1.5;text-align:center;color:#526783;margin:0 7px 5px!important}
+.thpt-r4-home-stats>div{overflow-wrap:anywhere}
+.thpt-r4-home-stats strong{font-size:1.32rem;white-space:nowrap}
+@media(min-width:611px) and (max-width:1090px){
+ .thpt-r4-home-stats{grid-template-columns:repeat(3,minmax(0,1fr))}
+ .thpt-r4-home-stats>div:nth-child(3){border-right:0}
+ .thpt-r4-home-stats>div:nth-child(-n+3){border-bottom:1px solid var(--r4-line)}
+}
+@media(max-width:610px){
+ .thpt-r4-home-illustration{padding:12px 5px 9px}
+ .thpt-r4-home-orbit-heading{font-size:.62rem!important}
+ .thpt-r4-home-orbit-caption{font-size:.69rem!important}
+}
+body[data-md-color-scheme="slate"] .thpt-r4-home-orbit-heading{color:#c6d5ff}
+body[data-md-color-scheme="slate"] .thpt-r4-home-orbit-caption{color:#243e68}
+
+/* ChVII D5 SVGs: show only after opening the reviewed formative solution.
+   White artboard in both Material light and dark themes; never crop labels. */
+.thpt-r4-reviewed-solution-figure{display:block;width:100%;max-width:720px;height:auto;object-fit:contain;margin:14px auto 6px;border-radius:12px;border:1px solid #d8e3f3;background:#fff}
+.thpt-r4-reviewed-solution-caption{font-size:.76rem;color:var(--roadmap-muted,#586782);text-align:center;line-height:1.5;margin:5px 0 12px}
+
+/* ChVI: optional pedagogical context only; native details defaults to collapsed. */
+.md-typeset details.thpt-r4-pedagogical-note{border:1px solid var(--md-default-fg-color--lightest);background:var(--md-default-bg-color);border-radius:10px;padding:10px 14px;margin:14px 0;color:var(--md-default-fg-color)}
+.md-typeset details.thpt-r4-pedagogical-note summary{font-weight:650;cursor:pointer;font-size:.87rem}
+.md-typeset details.thpt-r4-pedagogical-note p{margin:10px 0 3px;line-height:1.55}
+
+
+/* Academic Presentation QA #655: compact, non-clipped mobile MathJax.
+   Deliberately scoped to the two approved pilot Knowledge pages only.
+   At narrow viewports, shrink complex display maths slightly; on very
+   small devices a formula can scroll within its own row (never the page).
+   No effect on THCS, other THPT pages, SVG, assessment or canonical items. */
+@media (max-width: 480px) {
+  .md-content__inner:has(.thpt-ap-knowledge-pilot) .arithmatex {
+    max-width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+  }
+  .md-content__inner:has(.thpt-ap-knowledge-pilot) .arithmatex mjx-container[jax="CHTML"][display="true"] {
+    font-size: 78% !important;
+  }
+}
+
+/* Level-1 programme selector only: match the mobile drawer on desktop tabs.
+   The SAT/ACT roadmap is informative, never a clickable unpublished route. */
+.md-tabs__link.thpt-r4-program-tab--pending{
+  opacity:.48;
+  cursor:default;
+  pointer-events:none;
+}

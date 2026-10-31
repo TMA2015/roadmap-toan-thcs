@@ -1,0 +1,61 @@
+{
+  "protocol_version": "2.0",
+  "packet_id": "GEO-ARCH-V1-GEMINI-REVIEW-001",
+  "from": "CHATGPT",
+  "to": "GEMINI",
+  "mode": "INDEPENDENT_REVIEW",
+  "task_id": "GEO-ARCH-V1-001",
+  "context_version": "1.0.30",
+  "scope": {
+    "artifacts": [
+      "geometry-architecture-v1.json",
+      "geometry-core-coverage-v1.json",
+      "geometry-diagram-spec-v1.schema.json",
+      "geometry authoring template",
+      "BENCH-GEO-001"
+    ],
+    "topics": [
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20"
+    ]
+  },
+  "review_requirements": [
+    "Check whether the separation of givens/construction/target/derived relations is pedagogically and mathematically sound.",
+    "Check proof claim+reason contract and forbidden visual inference rules.",
+    "Review the exact Core coverage matrix against the embedded KNTT grade maps; do not infer Core from exam frequency.",
+    "For exact-ID gaps, distinguish true missing content from semantic reuse/alias candidates.",
+    "Check proposed 5-card groupings for age-appropriate sequencing.",
+    "Check CĐ19 and CĐ20 especially because their exact-ID gaps are largest.",
+    "Every correction must cite source_path + exact current quote; if referring to a skill, use the exact skill ID from the bundle."
+  ],
+  "result_format": {
+    "packet_id": "GEO-ARCH-V1-GEMINI-REVIEW-001-RESULT",
+    "verdict": "PASS | PASS_WITH_CHANGES | REVISIONS_REQUIRED",
+    "corrections": [
+      {
+        "source_path": "",
+        "skill_id": null,
+        "quote": "",
+        "type": "CURRICULUM_LAYER | PROOF_LOGIC | DIAGRAM_CONTRACT | CARD_SEQUENCE | COVERAGE_ALIAS | PEDAGOGY",
+        "issue": "",
+        "correction": ""
+      }
+    ],
+    "confirmed_aliases": [
+      {
+        "topic": "",
+        "target_skill": "",
+        "existing_skill": "",
+        "scope": "FULL | PARTIAL"
+      }
+    ],
+    "unresolved_questions": [],
+    "optional_suggestions": []
+  }
+}

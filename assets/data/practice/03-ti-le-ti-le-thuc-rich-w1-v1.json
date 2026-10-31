@@ -1,0 +1,49 @@
+{
+  "schema": "practice-question-chunk-v1",
+  "version": 3,
+  "questions": [
+    {
+      "id": "RAT03-RICH-W1-01-V1",
+      "source_item_id": "03-M1-02",
+      "source_lineage": "W1-R2a-reviewed-task; new typed-input variant; old source preserved",
+      "response_type": "rational",
+      "answer_contract": {
+        "expected": "15/2"
+      },
+      "question": "Tìm x: x/12 = 5/8. Nhập một số hoặc một phân số có giá trị đúng.",
+      "explanation": "x = 12 × 5/8 = 60/8 = 15/2 = 7,5. Các cách viết cùng giá trị đều đúng.",
+      "hints": [
+        "Nhân hai vế với 12 để tìm x.",
+        "12 × 5/8 = 60/8; em có thể rút gọn phân số."
+      ],
+      "difficulty": "basic",
+      "tags": {
+        "topic": "03-ti-le-ti-le-thuc",
+        "skill": [
+          "tim-x-ti-le-thuc"
+        ],
+        "type": "rich-w1-typed-response",
+        "layer": "KNTT-Core",
+        "grade": 7
+      },
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core",
+        "review_packet": "MATH-EXERCISE-RECLASSIFY-W1-20261015",
+        "academic_review": "NOTEBOOKLM_R2a_20261015"
+      },
+      "authoring_review": {
+        "status": "PASS",
+        "packet_id": "MATH-EXERCISE-RECLASSIFY-W1-20261015",
+        "review_round": "R2a",
+        "scope": "SOURCE_TASK_ONLY; INPUT_MODE_TO_BE_TECH_QA"
+      },
+      "variant_group": "03-M1-02-typed-v1",
+      "worked_answer": "15/2 hoặc 7,5"
+    }
+  ],
+  "bank_id": "03-TI-LE-TI-LE-THUC-RICH-W1"
+}

@@ -1,0 +1,152 @@
+{
+  "schema": "thpt-g10-reviewed-selfcheck-v1",
+  "scope": "SGK_CHAPTER_READINESS",
+  "chapter": "CHIII",
+  "chapter_label": "III",
+  "source_sha256": "1f4e6eb5af786d8d0502d9d71a8d84290d364fd9c25be28adadf32bd05adaa1e",
+  "review_scope": "INDIVIDUAL_CHAPTER_NOTEBOOKLM_PASS",
+  "mastery_credit": false,
+  "persist_results": false,
+  "items": [
+    {
+      "item_id": "THPT-G10-CHIII-RD1-01",
+      "stem": "Một góc α thuộc (90°,180°). Cặp dấu nào luôn đúng? A. sin α>0, cos α<0; B. cả hai âm; C. sin α<0, cos α>0; D. cả hai dương.",
+      "type": "MCQ_SINGLE",
+      "optional": false,
+      "outcome_id": "`G10-B05-UNIT_SEMICIRCLE`, `G10-B05-SIGN_DOMAIN`.",
+      "answer": "A",
+      "solution": "Trên nửa đường tròn đơn vị, góc phần tư II có tung độ (sin) dương, hoành độ (cos) âm.",
+      "rubric": "1đ đáp án A."
+    },
+    {
+      "item_id": "THPT-G10-CHIII-RD1-02",
+      "stem": "Đánh giá Đ/S: (a) sin 90°=1. (b) tan 90°=0. (c) cot 180° không xác định. (d) cos 180°=−1.",
+      "type": "TRUE_FALSE_GROUP",
+      "optional": false,
+      "outcome_id": "`G10-B05-SIGN_DOMAIN`, `G10-B05-UNIT_SEMICIRCLE`.",
+      "answer": "(Đ,S,Đ,Đ)",
+      "solution": "a đúng; b sai vì cos 90°=0 nên tan không xác định; c đúng vì sin 180°=0; d đúng do điểm cuối ở (−1,0).",
+      "rubric": "Mỗi ý 1đ; nhấn mạnh mẫu số khác 0."
+    },
+    {
+      "item_id": "THPT-G10-CHIII-RD1-03",
+      "stem": "Biết α là góc tù và cos α=−5/13. Tìm sin α, tan α và giải thích cách chọn dấu.",
+      "type": "SHORT_EXPLANATION",
+      "optional": false,
+      "outcome_id": "`G10-B05-IDENTITIES`, `G10-B05-SIGN_DOMAIN`.",
+      "answer": "sin α=12/13; tan α=−12/5",
+      "solution": "sin² α=1−25/169=144/169; sin α=12/13>0 vì α tù. tan α=(12/13)/(−5/13)=−12/5.",
+      "rubric": "1đ hệ thức cơ bản; 1đ chọn dấu sin; 1đ tan đúng."
+    },
+    {
+      "item_id": "THPT-G10-CHIII-RD1-04",
+      "stem": "Trong đoạn 0°≤α≤180°, tất cả góc thỏa sin α=√2/2 là? A. 45°,135°; B. chỉ 45°; C. 135°,180°; D. 45°,90°.",
+      "type": "MCQ_SINGLE",
+      "optional": false,
+      "outcome_id": "`G10-B05-SUPPLEMENTARY`, `G10-B05-SPECIAL_ANGLES`.",
+      "answer": "A",
+      "solution": "sin 45°=√2/2 và sin(180°−45°)=sin135°=√2/2; trên [0°,180°] có đúng hai nghiệm.",
+      "rubric": "1đ chọn A."
+    },
+    {
+      "item_id": "THPT-G10-CHIII-RD1-05",
+      "stem": "Biết α là góc tù và sin α=5/13. a) Xác định cos α, tan α, cot α. b) Với β=180°−α, tìm sin β, cos β.",
+      "type": "WRITTEN_RUBRIC",
+      "optional": false,
+      "outcome_id": "`G10-B05-IDENTITIES`, `G10-B05-SUPPLEMENTARY`.",
+      "answer": "cos α=−12/13, tan α=−5/12, cot α=−12/5; sin β=5/13, cos β=12/13",
+      "solution": "cos² α=1−25/169=144/169; α tù nên cos α=−12/13. Chia các tỉ số được tan α=−5/12, cot α=−12/5. Góc bù: sin β=sin α, cos β=−cos α.",
+      "rubric": "4đ: dấu và cos 1đ; tan/cot 1đ; sin β 1đ; cos β 1đ."
+    },
+    {
+      "item_id": "THPT-G10-CHIII-RD1-06",
+      "stem": "Giá trị chính xác của sin120°+cos135° bằng? A. (√3−√2)/2; B. (√3+√2)/2; C. (√2−√3)/2; D. −(√3+√2)/2.",
+      "type": "MCQ_SINGLE",
+      "optional": false,
+      "outcome_id": "`G10-B05-SPECIAL_ANGLES`.",
+      "answer": "A",
+      "solution": "sin120°=√3/2; cos135°=−√2/2, tổng = (√3−√2)/2.",
+      "rubric": "1đ chọn A."
+    },
+    {
+      "item_id": "THPT-G10-CHIII-RD1-07",
+      "stem": "Với α∈(90°,180°) và cot α=−3/4, tìm sin α, cos α, tan α. Nêu điều kiện để cot α xác định.",
+      "type": "SHORT_EXPLANATION",
+      "optional": false,
+      "outcome_id": "`G10-B05-SIGN_DOMAIN`, `G10-B05-IDENTITIES`.",
+      "answer": "sin α=4/5; cos α=−3/5; tan α=−4/3; sin α≠0",
+      "solution": "cot α=cos α/sin α; vì α tù, cos<0 và sin>0. Tỉ lệ |cos|:sin=3:4 và sin²+cos²=1 suy ra (sin,cos)=(4/5,−3/5); tan=sin/cos=−4/3; cot chỉ xác định khi sin≠0.",
+      "rubric": "1đ dấu; 1đ bộ sin/cos; 1đ tan và điều kiện cot."
+    },
+    {
+      "item_id": "THPT-G10-CHIII-RD1-08",
+      "stem": "Trong tam giác ABC, AB=9, AC=7 và góc A=60°. Độ dài BC là? A. √67; B. 8; C. 2√13; D. √130.",
+      "type": "MCQ_SINGLE",
+      "optional": false,
+      "outcome_id": "`G10-B06-COSINE_RULE`.",
+      "answer": "A",
+      "solution": "BC²=AB²+AC²−2·AB·AC·cos60°=81+49−63=67, nên BC=√67.",
+      "rubric": "1đ chọn A."
+    },
+    {
+      "item_id": "THPT-G10-CHIII-RD1-09",
+      "stem": "Cho tam giác ABC có A=30°, B=45°, BC=a=6. Tìm C, độ dài AC=b và bán kính đường tròn ngoại tiếp R.",
+      "type": "SHORT_EXPLANATION",
+      "optional": false,
+      "outcome_id": "`G10-B06-SINE_RULE`.",
+      "answer": "C=105°; b=6√2; R=6",
+      "solution": "C=180°−30°−45°=105°. Theo định lý sin, b/a=sin45°/sin30°=√2, nên b=6√2. Lại a/sinA=2R ⇒ 6/(1/2)=12 ⇒ R=6.",
+      "rubric": "1đ C; 1đ b; 1đ R."
+    },
+    {
+      "item_id": "THPT-G10-CHIII-RD1-10",
+      "stem": "Tam giác có độ dài ba cạnh 10,10,12. Tính nửa chu vi, diện tích bằng công thức Heron, bán kính đường tròn nội tiếp và chiều cao ứng với cạnh 12.",
+      "type": "WRITTEN_RUBRIC",
+      "optional": false,
+      "outcome_id": "`G10-B06-HERON`, `G10-B06-AREA_SIN`.",
+      "answer": "p=16; S=48; r=3; h=8",
+      "solution": "p=(10+10+12)/2=16. S=√[16(16−10)(16−10)(16−12)]=√(16·6·6·4)=48. r=S/p=3; h=2S/12=8.",
+      "rubric": "4đ: nửa chu vi 1đ; Heron 1đ; bán kính nội tiếp 1đ; chiều cao 1đ."
+    },
+    {
+      "item_id": "THPT-G10-CHIII-RD1-11",
+      "stem": "Trong tam giác ABC, hai cạnh kề góc A dài 6 và 10, góc A=150°. Diện tích bằng? A. 15; B. 30; C. 15√3; D. 60.",
+      "type": "MCQ_SINGLE",
+      "optional": false,
+      "outcome_id": "`G10-B06-AREA_SIN`.",
+      "answer": "A",
+      "solution": "S=1/2·6·10·sin150°=30·(1/2)=15.",
+      "rubric": "1đ chọn A."
+    },
+    {
+      "item_id": "THPT-G10-CHIII-RD1-12",
+      "stem": "Tam giác có cạnh a=7 đối diện góc A, còn hai cạnh kề góc A là b=5,c=8. Tìm cos A và suy ra A.",
+      "type": "SHORT_EXPLANATION",
+      "optional": false,
+      "outcome_id": "`G10-B06-COSINE_RULE`.",
+      "answer": "cos A=1/2; A=60°",
+      "solution": "cos A=(b²+c²−a²)/(2bc)=(25+64−49)/80=40/80=1/2. Vì 0°<A<180°, A=60°.",
+      "rubric": "1đ áp dụng quy tắc; 1đ tính 1/2; 1đ suy góc."
+    },
+    {
+      "item_id": "THPT-G10-CHIII-RD1-13",
+      "stem": "Tam giác có ba cạnh 3,4,5. Đánh giá Đ/S: (a) Tam giác vuông. (b) Diện tích bằng 6. (c) Bán kính đường tròn nội tiếp bằng 2. (d) Bán kính đường tròn ngoại tiếp bằng 5/2.",
+      "type": "TRUE_FALSE_GROUP",
+      "optional": false,
+      "outcome_id": "`G10-B06-APPLICATION`, `G10-B06-HERON`, `G10-B06-COSINE_RULE`.",
+      "answer": "(Đ,Đ,S,Đ)",
+      "solution": "3²+4²=5², góc đối diện cạnh 5 vuông. S=3·4/2=6, p=6 nên r=S/p=1, không phải 2; với tam giác vuông R=5/2.",
+      "rubric": "4 ý 1đ/ý; có thể suy bằng công thức S=abc/(4R) hoặc định lý sin."
+    },
+    {
+      "item_id": "THPT-G10-CHIII-RD1-14",
+      "stem": "Trong tam giác ABC có AB=7, AC=5, góc BAC=60°. a) Tính BC. b) Tính diện tích S. c) Tính bán kính R đường tròn ngoại tiếp.",
+      "type": "WRITTEN_RUBRIC",
+      "optional": false,
+      "outcome_id": "`G10-B06-COSINE_RULE`, `G10-B06-AREA_SIN`, `G10-B06-SINE_RULE`, `G10-B06-APPLICATION`.",
+      "answer": "BC=√39; S=35√3/4; R=√13",
+      "solution": "BC²=7²+5²−2·7·5·(1/2)=39. Diện tích S=1/2·7·5·sin60°=35√3/4. Định lý sin 2R=BC/sin60°=√39/(√3/2), suy ra R=√39/√3=√13.",
+      "rubric": "4đ: quy tắc cos và BC 2đ; công thức diện tích 1đ; định lý sin và R 1đ."
+    }
+  ]
+}

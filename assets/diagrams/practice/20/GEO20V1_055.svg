@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="440" height="280" viewBox="0 0 440 280" role="img">
+<style>
+  .g{fill:none;stroke:#222;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round}
+  .thin{fill:none;stroke:#555;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+  .dash{fill:none;stroke:#666;stroke-width:1.6;stroke-dasharray:6 5}
+  .pt{fill:#222}
+  .txt{font:16px system-ui,sans-serif;fill:#222}
+  .small{font:14px system-ui,sans-serif;fill:#444}
+</style>
+
+<circle class="g" cx="220" cy="140" r="120"/>
+<path class="g" d="M100 140 L220 20 L340 140 M100 140 L220 260 L340 140"/>
+<circle class="pt" cx="100" cy="140" r="4"/><circle class="pt" cx="340" cy="140" r="4"/>
+<circle class="pt" cx="220" cy="20" r="4"/><circle class="pt" cx="220" cy="260" r="4"/>
+<path class="thin" d="M210.1 29.9 L220 39.8 L229.9 29.9"/>
+<path class="thin" d="M210.1 250.1 L220 240.2 L229.9 250.1"/>
+<text class="txt" x="83" y="145">A</text><text class="txt" x="347" y="145">B</text><text class="txt" x="226" y="18">E</text><text class="txt" x="226" y="274">F</text>
+<text class="small" x="167" y="136">AB là đường kính</text>
+</svg>

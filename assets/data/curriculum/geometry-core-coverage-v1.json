@@ -1,0 +1,960 @@
+{
+  "schema": "roadmap-geometry-core-coverage-v1",
+  "version": "1.0.4",
+  "status": "ACTIVE_ROLLOUT",
+  "generated_from": [
+    "kntt-grade6-map.json",
+    "kntt-grade7-map.json",
+    "kntt-grade8-map.json",
+    "kntt-grade9-map.json",
+    "practice manifests 13–20"
+  ],
+  "interpretation": {
+    "exact_id_gap": "A missing exact skill ID is a migration/coverage signal, not proof that equivalent content is absent. Check semantic_reuse_candidates before authoring new items.",
+    "core_rule": "Only PRIMARY KNTT mappings and their reviewed proposed skills define Core for this matrix.",
+    "prerequisite_rule": "PREREQUISITE/SECONDARY mappings do not automatically make the row's skills Core in the referenced topic.",
+    "extra_rule": "A bank skill absent from the current Core map may remain useful, but does not gate KNTT Core readiness until layer review."
+  },
+  "summary": {
+    "topics": 8,
+    "total_curriculum_core_skills": 124,
+    "exact_id_covered": 124,
+    "exact_id_gaps": 0
+  },
+  "topics": [
+    {
+      "id": "13-goc-va-duong-thang",
+      "title": "Góc và đường thẳng",
+      "source_grades": [
+        6,
+        7
+      ],
+      "curriculum_core_skills": [
+        "diem-thuoc-duong",
+        "diem-nam-giua",
+        "tia",
+        "tia-doi",
+        "doan-thang-do-dai",
+        "trung-diem",
+        "khai-niem-goc",
+        "do-goc",
+        "phan-loai-goc",
+        "goc-phu-bu",
+        "goc-doi-dinh",
+        "tia-phan-giac",
+        "nhan-dang-goc-dac-biet",
+        "goc-so-le-trong",
+        "goc-dong-vi",
+        "goc-trong-cung-phia",
+        "tinh-chat-song-song",
+        "dau-hieu-song-song",
+        "tien-de-euclid",
+        "gia-thiet-ket-luan",
+        "lap-luan-chung-minh-ngan"
+      ],
+      "bank_exact_id_coverage": [
+        "diem-thuoc-duong",
+        "diem-nam-giua",
+        "tia",
+        "tia-doi",
+        "doan-thang-do-dai",
+        "trung-diem",
+        "khai-niem-goc",
+        "do-goc",
+        "phan-loai-goc",
+        "goc-phu-bu",
+        "goc-doi-dinh",
+        "tia-phan-giac",
+        "nhan-dang-goc-dac-biet",
+        "goc-so-le-trong",
+        "goc-dong-vi",
+        "goc-trong-cung-phia",
+        "tinh-chat-song-song",
+        "dau-hieu-song-song",
+        "tien-de-euclid",
+        "gia-thiet-ket-luan",
+        "lap-luan-chung-minh-ngan"
+      ],
+      "missing_by_exact_skill_id": [],
+      "bank_skills_not_core_by_current_map": [
+        "duong-vuong-goc",
+        "vuong-goc-song-song"
+      ],
+      "supporting_skills": [
+        "duong-vuong-goc",
+        "vuong-goc-song-song"
+      ],
+      "explicit_noncore": [],
+      "semantic_reuse_candidates": [
+        {
+          "target": "nhan-dang-goc-dac-biet",
+          "candidates": [
+            "duong-vuong-goc"
+          ],
+          "status": "PARTIAL_REVIEW"
+        }
+      ],
+      "recommended_cards": [
+        {
+          "id": "geo13-core-1",
+          "title": "Điểm, tia, đoạn thẳng",
+          "skills": [
+            "diem-thuoc-duong",
+            "diem-nam-giua",
+            "tia",
+            "tia-doi",
+            "doan-thang-do-dai",
+            "trung-diem"
+          ]
+        },
+        {
+          "id": "geo13-core-2",
+          "title": "Góc và các quan hệ góc",
+          "skills": [
+            "khai-niem-goc",
+            "do-goc",
+            "phan-loai-goc",
+            "goc-phu-bu",
+            "goc-doi-dinh",
+            "tia-phan-giac",
+            "nhan-dang-goc-dac-biet"
+          ]
+        },
+        {
+          "id": "geo13-core-3",
+          "title": "Góc tạo bởi một đường cắt",
+          "skills": [
+            "goc-so-le-trong",
+            "goc-dong-vi",
+            "goc-trong-cung-phia"
+          ]
+        },
+        {
+          "id": "geo13-core-4",
+          "title": "Song song và tiên đề Euclid",
+          "skills": [
+            "tinh-chat-song-song",
+            "dau-hieu-song-song",
+            "tien-de-euclid"
+          ]
+        },
+        {
+          "id": "geo13-core-5",
+          "title": "Định lí, giả thiết và kết luận",
+          "skills": [
+            "gia-thiet-ket-luan",
+            "lap-luan-chung-minh-ngan"
+          ]
+        }
+      ],
+      "counts": {
+        "core": 21,
+        "exact_present": 21,
+        "exact_missing": 0,
+        "bank_extra": 2
+      }
+    },
+    {
+      "id": "14-tam-giac",
+      "title": "Tam giác",
+      "source_grades": [
+        7
+      ],
+      "curriculum_core_skills": [
+        "tong-goc-tam-giac",
+        "bang-nhau-ccc",
+        "bang-nhau-cgc",
+        "bang-nhau-gcg",
+        "bang-nhau-tam-giac-vuong",
+        "viet-tuong-ung-tam-giac-bang-nhau",
+        "tam-giac-can",
+        "nhan-biet-trung-truc",
+        "cach-deu-dinh",
+        "tinh-chat-duong-trung-truc",
+        "so-sanh-canh-goc",
+        "bat-dang-thuc-tam-giac",
+        "duong-vuong-goc-duong-xien"
+      ],
+      "bank_exact_id_coverage": [
+        "tong-goc-tam-giac",
+        "bang-nhau-ccc",
+        "bang-nhau-cgc",
+        "bang-nhau-gcg",
+        "bang-nhau-tam-giac-vuong",
+        "viet-tuong-ung-tam-giac-bang-nhau",
+        "tam-giac-can",
+        "nhan-biet-trung-truc",
+        "cach-deu-dinh",
+        "tinh-chat-duong-trung-truc",
+        "so-sanh-canh-goc",
+        "bat-dang-thuc-tam-giac",
+        "duong-vuong-goc-duong-xien"
+      ],
+      "missing_by_exact_skill_id": [],
+      "bank_skills_not_core_by_current_map": [
+        "phan-loai-tam-giac",
+        "chu-vi-dien-tich",
+        "goc-ngoai",
+        "tam-giac-deu",
+        "pythagore",
+        "pythagore-dao"
+      ],
+      "supporting_skills": [
+        "phan-loai-tam-giac",
+        "goc-ngoai",
+        "tam-giac-deu"
+      ],
+      "explicit_noncore": [],
+      "semantic_reuse_candidates": [
+        {
+          "target": "nhan-biet-trung-truc",
+          "candidates": [
+            "15-duong-dong-quy:nhan-biet-trung-truc"
+          ],
+          "status": "CROSS_TOPIC_REVIEW"
+        },
+        {
+          "target": "cach-deu-dinh",
+          "candidates": [
+            "15-duong-dong-quy:cach-deu-dinh"
+          ],
+          "status": "CROSS_TOPIC_REVIEW"
+        }
+      ],
+      "recommended_cards": [
+        {
+          "id": "geo14-core-1",
+          "title": "Góc, cạnh và bất đẳng thức",
+          "skills": [
+            "tong-goc-tam-giac",
+            "so-sanh-canh-goc",
+            "bat-dang-thuc-tam-giac",
+            "duong-vuong-goc-duong-xien"
+          ]
+        },
+        {
+          "id": "geo14-core-2",
+          "title": "Tam giác cân và đường trung trực",
+          "skills": [
+            "tam-giac-can",
+            "nhan-biet-trung-truc",
+            "cach-deu-dinh",
+            "tinh-chat-duong-trung-truc"
+          ]
+        },
+        {
+          "id": "geo14-core-3",
+          "title": "Tương ứng và bằng nhau c.c.c",
+          "skills": [
+            "viet-tuong-ung-tam-giac-bang-nhau",
+            "bang-nhau-ccc"
+          ]
+        },
+        {
+          "id": "geo14-core-4",
+          "title": "Bằng nhau c.g.c và g.c.g",
+          "skills": [
+            "bang-nhau-cgc",
+            "bang-nhau-gcg"
+          ]
+        },
+        {
+          "id": "geo14-core-5",
+          "title": "Bằng nhau của tam giác vuông",
+          "skills": [
+            "bang-nhau-tam-giac-vuong"
+          ]
+        }
+      ],
+      "counts": {
+        "core": 13,
+        "exact_present": 13,
+        "exact_missing": 0,
+        "bank_extra": 6
+      }
+    },
+    {
+      "id": "15-duong-dong-quy",
+      "title": "Các đường đồng quy trong tam giác",
+      "source_grades": [
+        7
+      ],
+      "curriculum_core_skills": [
+        "nhan-biet-trung-tuyen",
+        "trong-tam",
+        "ti-so-trong-tam",
+        "nhan-biet-phan-giac",
+        "nhan-biet-trung-truc",
+        "nhan-biet-duong-cao",
+        "truc-tam",
+        "tam-noi-tiep",
+        "tam-ngoai-tiep",
+        "phan-biet-bon-tam",
+        "dong-quy-bon-duong-dac-biet"
+      ],
+      "bank_exact_id_coverage": [
+        "nhan-biet-trung-tuyen",
+        "trong-tam",
+        "ti-so-trong-tam",
+        "nhan-biet-phan-giac",
+        "nhan-biet-trung-truc",
+        "nhan-biet-duong-cao",
+        "truc-tam",
+        "tam-noi-tiep",
+        "tam-ngoai-tiep",
+        "phan-biet-bon-tam",
+        "dong-quy-bon-duong-dac-biet"
+      ],
+      "missing_by_exact_skill_id": [],
+      "bank_skills_not_core_by_current_map": [
+        "vi-tri-truc-tam",
+        "cach-deu-canh",
+        "cach-deu-dinh",
+        "vi-tri-tam-ngoai-tiep"
+      ],
+      "supporting_skills": [
+        "vi-tri-truc-tam",
+        "cach-deu-canh",
+        "cach-deu-dinh",
+        "vi-tri-tam-ngoai-tiep"
+      ],
+      "explicit_noncore": [],
+      "semantic_reuse_candidates": [],
+      "recommended_cards": [
+        {
+          "id": "geo15-core-1",
+          "title": "Trung tuyến và trọng tâm",
+          "skills": [
+            "nhan-biet-trung-tuyen",
+            "trong-tam",
+            "ti-so-trong-tam"
+          ]
+        },
+        {
+          "id": "geo15-core-2",
+          "title": "Đường cao và trực tâm",
+          "skills": [
+            "nhan-biet-duong-cao",
+            "truc-tam"
+          ]
+        },
+        {
+          "id": "geo15-core-3",
+          "title": "Phân giác và tâm nội tiếp",
+          "skills": [
+            "nhan-biet-phan-giac",
+            "tam-noi-tiep"
+          ]
+        },
+        {
+          "id": "geo15-core-4",
+          "title": "Trung trực và tâm ngoại tiếp",
+          "skills": [
+            "nhan-biet-trung-truc",
+            "tam-ngoai-tiep"
+          ]
+        },
+        {
+          "id": "geo15-core-5",
+          "title": "Bốn tâm và tính đồng quy",
+          "skills": [
+            "phan-biet-bon-tam",
+            "dong-quy-bon-duong-dac-biet"
+          ]
+        }
+      ],
+      "counts": {
+        "core": 11,
+        "exact_present": 11,
+        "exact_missing": 0,
+        "bank_extra": 4
+      }
+    },
+    {
+      "id": "16-tu-giac",
+      "title": "Tứ giác và các hình đặc biệt",
+      "source_grades": [
+        8
+      ],
+      "curriculum_core_skills": [
+        "tong-goc-tu-giac",
+        "hinh-thang",
+        "hinh-thang-can",
+        "hbh-tinh-chat",
+        "hbh-dau-hieu",
+        "hcn-tinh-chat",
+        "hcn-dau-hieu",
+        "hthoi-tinh-chat",
+        "hthoi-dau-hieu",
+        "hvuong-tinh-chat",
+        "hvuong-dau-hieu",
+        "quan-he-bao-ham",
+        "duong-cheo-suy-luan"
+      ],
+      "bank_exact_id_coverage": [
+        "tong-goc-tu-giac",
+        "hinh-thang",
+        "hinh-thang-can",
+        "hbh-tinh-chat",
+        "hbh-dau-hieu",
+        "hcn-tinh-chat",
+        "hcn-dau-hieu",
+        "hthoi-tinh-chat",
+        "hthoi-dau-hieu",
+        "hvuong-tinh-chat",
+        "hvuong-dau-hieu",
+        "quan-he-bao-ham",
+        "duong-cheo-suy-luan"
+      ],
+      "missing_by_exact_skill_id": [],
+      "bank_skills_not_core_by_current_map": [],
+      "supporting_skills": [],
+      "explicit_noncore": [],
+      "semantic_reuse_candidates": [],
+      "recommended_cards": [
+        {
+          "id": "geo16-core-1",
+          "title": "Tứ giác, hình thang và hình thang cân",
+          "skills": [
+            "tong-goc-tu-giac",
+            "hinh-thang",
+            "hinh-thang-can"
+          ]
+        },
+        {
+          "id": "geo16-core-2",
+          "title": "Hình bình hành",
+          "skills": [
+            "hbh-tinh-chat",
+            "hbh-dau-hieu"
+          ]
+        },
+        {
+          "id": "geo16-core-3",
+          "title": "Hình chữ nhật",
+          "skills": [
+            "hcn-tinh-chat",
+            "hcn-dau-hieu"
+          ]
+        },
+        {
+          "id": "geo16-core-4",
+          "title": "Hình thoi",
+          "skills": [
+            "hthoi-tinh-chat",
+            "hthoi-dau-hieu"
+          ]
+        },
+        {
+          "id": "geo16-core-5",
+          "title": "Hình vuông và quan hệ bao hàm",
+          "skills": [
+            "hvuong-tinh-chat",
+            "hvuong-dau-hieu",
+            "quan-he-bao-ham",
+            "duong-cheo-suy-luan"
+          ]
+        }
+      ],
+      "counts": {
+        "core": 13,
+        "exact_present": 13,
+        "exact_missing": 0,
+        "bank_extra": 0
+      }
+    },
+    {
+      "id": "17-thales-dong-dang",
+      "title": "Thalès và đồng dạng",
+      "source_grades": [
+        8
+      ],
+      "curriculum_core_skills": [
+        "thales-thuan",
+        "thales-dao",
+        "ti-le-doan-thang",
+        "duong-trung-binh",
+        "tinh-chat-duong-phan-giac",
+        "nhan-biet-dong-dang",
+        "dong-dang-gg",
+        "dong-dang-cgc",
+        "dong-dang-ccc",
+        "thu-tu-tuong-ung",
+        "tinh-do-dai-dong-dang",
+        "hinh-dong-dang"
+      ],
+      "bank_exact_id_coverage": [
+        "thales-thuan",
+        "thales-dao",
+        "ti-le-doan-thang",
+        "duong-trung-binh",
+        "nhan-biet-dong-dang",
+        "dong-dang-gg",
+        "dong-dang-cgc",
+        "dong-dang-ccc",
+        "thu-tu-tuong-ung",
+        "tinh-do-dai-dong-dang",
+        "tinh-chat-duong-phan-giac",
+        "hinh-dong-dang"
+      ],
+      "missing_by_exact_skill_id": [],
+      "bank_skills_not_core_by_current_map": [
+        "ti-so-chu-vi",
+        "ti-so-dien-tich",
+        "he-thuc-tich",
+        "ket-hop-song-song-dong-dang"
+      ],
+      "supporting_skills": [
+        "ket-hop-song-song-dong-dang"
+      ],
+      "explicit_noncore": [],
+      "semantic_reuse_candidates": [
+        {
+          "target": "hinh-dong-dang",
+          "candidates": [
+            "nhan-biet-dong-dang"
+          ],
+          "status": "PARTIAL_REVIEW"
+        }
+      ],
+      "recommended_cards": [
+        {
+          "id": "geo17-core-1",
+          "title": "Thalès thuận, đảo và tỉ lệ",
+          "skills": [
+            "thales-thuan",
+            "thales-dao",
+            "ti-le-doan-thang"
+          ]
+        },
+        {
+          "id": "geo17-core-2",
+          "title": "Đường trung bình và phân giác",
+          "skills": [
+            "duong-trung-binh",
+            "tinh-chat-duong-phan-giac"
+          ]
+        },
+        {
+          "id": "geo17-core-3",
+          "title": "Nhận biết và thứ tự tương ứng",
+          "skills": [
+            "nhan-biet-dong-dang",
+            "thu-tu-tuong-ung"
+          ]
+        },
+        {
+          "id": "geo17-core-4",
+          "title": "Ba trường hợp đồng dạng",
+          "skills": [
+            "dong-dang-gg",
+            "dong-dang-cgc",
+            "dong-dang-ccc"
+          ]
+        },
+        {
+          "id": "geo17-core-5",
+          "title": "Tính độ dài và hình đồng dạng",
+          "skills": [
+            "tinh-do-dai-dong-dang",
+            "hinh-dong-dang"
+          ]
+        }
+      ],
+      "counts": {
+        "core": 12,
+        "exact_present": 12,
+        "exact_missing": 0,
+        "bank_extra": 4
+      }
+    },
+    {
+      "id": "18-he-thuc-luong",
+      "title": "Hệ thức lượng trong tam giác vuông",
+      "source_grades": [
+        8,
+        9
+      ],
+      "curriculum_core_skills": [
+        "pythagore",
+        "pythagore-dao",
+        "canh-huyen",
+        "sin",
+        "cos",
+        "tan",
+        "tim-canh-luong-giac",
+        "tim-goc-luong-giac",
+        "goc-nang-ha",
+        "chieu-cao-khoang-cach",
+        "cot"
+      ],
+      "bank_exact_id_coverage": [
+        "pythagore",
+        "pythagore-dao",
+        "canh-huyen",
+        "sin",
+        "cos",
+        "tan",
+        "tim-canh-luong-giac",
+        "tim-goc-luong-giac",
+        "goc-nang-ha",
+        "chieu-cao-khoang-cach",
+        "cot"
+      ],
+      "missing_by_exact_skill_id": [],
+      "bank_skills_not_core_by_current_map": [
+        "he-thuc-canh",
+        "he-thuc-duong-cao",
+        "dien-tich-duong-cao",
+        "doi-ke-huyen",
+        "ket-hop-he-thuc"
+      ],
+      "supporting_skills": [
+        "doi-ke-huyen"
+      ],
+      "explicit_noncore": [],
+      "semantic_reuse_candidates": [],
+      "recommended_cards": [
+        {
+          "id": "geo18-core-1",
+          "title": "Pythagore và nhận biết tam giác vuông",
+          "skills": [
+            "pythagore",
+            "pythagore-dao",
+            "canh-huyen"
+          ]
+        },
+        {
+          "id": "geo18-core-2",
+          "title": "Sin và cos",
+          "skills": [
+            "sin",
+            "cos"
+          ]
+        },
+        {
+          "id": "geo18-core-3",
+          "title": "Tan và cot",
+          "skills": [
+            "tan",
+            "cot"
+          ]
+        },
+        {
+          "id": "geo18-core-4",
+          "title": "Tìm cạnh và tìm góc",
+          "skills": [
+            "tim-canh-luong-giac",
+            "tim-goc-luong-giac"
+          ]
+        },
+        {
+          "id": "geo18-core-5",
+          "title": "Góc nâng, góc hạ và đo khoảng cách",
+          "skills": [
+            "goc-nang-ha",
+            "chieu-cao-khoang-cach"
+          ]
+        }
+      ],
+      "counts": {
+        "core": 11,
+        "exact_present": 11,
+        "exact_missing": 0,
+        "bank_extra": 5
+      }
+    },
+    {
+      "id": "19-duong-tron",
+      "title": "Đường tròn",
+      "source_grades": [
+        9
+      ],
+      "curriculum_core_skills": [
+        "day-va-tam",
+        "do-dai-duong-tron",
+        "cung-va-day",
+        "do-dai-cung",
+        "dien-tich-quat-tron",
+        "dien-tich-vanh-khuyen",
+        "vi-tri-tuong-doi-duong-thang-duong-tron",
+        "vi-tri-tuong-doi-hai-duong-tron",
+        "goc-noi-tiep",
+        "tu-giac-noi-tiep",
+        "dau-hieu-noi-tiep",
+        "duong-tron-ngoai-tiep-tam-giac",
+        "duong-tron-noi-tiep-tam-giac",
+        "da-giac-deu"
+      ],
+      "bank_exact_id_coverage": [
+        "day-va-tam",
+        "do-dai-duong-tron",
+        "goc-noi-tiep",
+        "tu-giac-noi-tiep",
+        "dau-hieu-noi-tiep",
+        "cung-va-day",
+        "do-dai-cung",
+        "dien-tich-quat-tron",
+        "dien-tich-vanh-khuyen",
+        "vi-tri-tuong-doi-duong-thang-duong-tron",
+        "vi-tri-tuong-doi-hai-duong-tron",
+        "duong-tron-ngoai-tiep-tam-giac",
+        "duong-tron-noi-tiep-tam-giac",
+        "da-giac-deu"
+      ],
+      "missing_by_exact_skill_id": [],
+      "bank_skills_not_core_by_current_map": [
+        "goc-o-tam",
+        "nua-duong-tron",
+        "tiep-tuyen-ban-kinh",
+        "hai-tiep-tuyen",
+        "hai-day-cat-nhau",
+        "tiep-tuyen-cat-tuyen",
+        "chung-minh-tiep-tuyen",
+        "goc-cung"
+      ],
+      "supporting_skills": [
+        "goc-o-tam",
+        "nua-duong-tron",
+        "tiep-tuyen-ban-kinh",
+        "hai-tiep-tuyen",
+        "chung-minh-tiep-tuyen",
+        "goc-cung"
+      ],
+      "explicit_noncore": [
+        "hai-day-cat-nhau",
+        "tiep-tuyen-cat-tuyen"
+      ],
+      "semantic_reuse_candidates": [
+        {
+          "target": "vi-tri-tuong-doi-duong-thang-duong-tron",
+          "candidates": [
+            "tiep-tuyen-ban-kinh",
+            "chung-minh-tiep-tuyen"
+          ],
+          "status": "PARTIAL_REVIEW"
+        },
+        {
+          "target": "duong-tron-ngoai-tiep-tam-giac",
+          "candidates": [
+            "15-duong-dong-quy:tam-ngoai-tiep"
+          ],
+          "status": "CROSS_TOPIC_REVIEW"
+        },
+        {
+          "target": "duong-tron-noi-tiep-tam-giac",
+          "candidates": [
+            "15-duong-dong-quy:tam-noi-tiep"
+          ],
+          "status": "CROSS_TOPIC_REVIEW"
+        }
+      ],
+      "recommended_cards": [
+        {
+          "id": "geo19-core-1",
+          "title": "Dây, cung và độ dài đường tròn",
+          "skills": [
+            "day-va-tam",
+            "cung-va-day",
+            "do-dai-duong-tron",
+            "do-dai-cung"
+          ]
+        },
+        {
+          "id": "geo19-core-2",
+          "title": "Vị trí tương đối",
+          "skills": [
+            "vi-tri-tuong-doi-duong-thang-duong-tron",
+            "vi-tri-tuong-doi-hai-duong-tron"
+          ]
+        },
+        {
+          "id": "geo19-core-3",
+          "title": "Góc nội tiếp",
+          "skills": [
+            "goc-noi-tiep"
+          ]
+        },
+        {
+          "id": "geo19-core-4",
+          "title": "Nội tiếp và ngoại tiếp tam giác",
+          "skills": [
+            "tu-giac-noi-tiep",
+            "dau-hieu-noi-tiep",
+            "duong-tron-ngoai-tiep-tam-giac",
+            "duong-tron-noi-tiep-tam-giac"
+          ]
+        },
+        {
+          "id": "geo19-core-5",
+          "title": "Đa giác đều, quạt tròn và vành khuyên",
+          "skills": [
+            "da-giac-deu",
+            "dien-tich-quat-tron",
+            "dien-tich-vanh-khuyen"
+          ]
+        }
+      ],
+      "counts": {
+        "core": 14,
+        "exact_present": 14,
+        "exact_missing": 0,
+        "bank_extra": 8
+      }
+    },
+    {
+      "id": "20-hinh-hoc-tong-hop",
+      "title": "Hình học tổng hợp và hình khối",
+      "source_grades": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "curriculum_core_skills": [
+        "nhan-biet-tam-giac-deu",
+        "nhan-biet-hinh-vuong",
+        "nhan-biet-luc-giac-deu",
+        "nhan-biet-tu-giac-dac-biet",
+        "chu-vi-tu-giac",
+        "dien-tich-tu-giac",
+        "do-luong-thuc-te",
+        "truc-doi-xung",
+        "tam-doi-xung",
+        "the-tich-hop-chu-nhat",
+        "dien-tich-day",
+        "doi-don-vi-do-luong",
+        "nhan-biet-hinh-hop-lap-phuong",
+        "dien-tich-xung-quanh-hop-chu-nhat",
+        "the-tich-lang-tru",
+        "nhan-biet-lang-tru-dung",
+        "dien-tich-xung-quanh-lang-tru",
+        "nhan-biet-hinh-chop-deu",
+        "dien-tich-xung-quanh-hinh-chop",
+        "the-tich-hinh-chop",
+        "nhan-biet-hinh-tru",
+        "dien-tich-xung-quanh-hinh-tru",
+        "the-tich-hinh-tru",
+        "nhan-biet-hinh-non",
+        "dien-tich-xung-quanh-hinh-non",
+        "the-tich-hinh-non",
+        "nhan-biet-hinh-cau",
+        "dien-tich-mat-cau",
+        "the-tich-hinh-cau"
+      ],
+      "bank_exact_id_coverage": [
+        "the-tich-hop-chu-nhat",
+        "dien-tich-day",
+        "doi-don-vi-do-luong",
+        "the-tich-lang-tru",
+        "nhan-biet-tam-giac-deu",
+        "nhan-biet-hinh-vuong",
+        "nhan-biet-luc-giac-deu",
+        "nhan-biet-tu-giac-dac-biet",
+        "chu-vi-tu-giac",
+        "dien-tich-tu-giac",
+        "do-luong-thuc-te",
+        "truc-doi-xung",
+        "tam-doi-xung",
+        "nhan-biet-hinh-hop-lap-phuong",
+        "dien-tich-xung-quanh-hop-chu-nhat",
+        "nhan-biet-lang-tru-dung",
+        "dien-tich-xung-quanh-lang-tru",
+        "nhan-biet-hinh-chop-deu",
+        "dien-tich-xung-quanh-hinh-chop",
+        "the-tich-hinh-chop",
+        "nhan-biet-hinh-tru",
+        "dien-tich-xung-quanh-hinh-tru",
+        "the-tich-hinh-tru",
+        "nhan-biet-hinh-non",
+        "dien-tich-xung-quanh-hinh-non",
+        "the-tich-hinh-non",
+        "nhan-biet-hinh-cau",
+        "dien-tich-mat-cau",
+        "the-tich-hinh-cau"
+      ],
+      "missing_by_exact_skill_id": [],
+      "bank_skills_not_core_by_current_map": [
+        "nhan-dang-cong-cu",
+        "song-song-dong-dang",
+        "hai-goc-vuong-noi-tiep",
+        "noi-tiep-dong-dang",
+        "dong-dang-he-thuc-tich",
+        "tam-giac-vuong-dong-dang",
+        "tiep-tuyen-chung-minh",
+        "chuoi-suy-luan",
+        "bai-toan-tong-hop"
+      ],
+      "supporting_skills": [],
+      "explicit_noncore": [],
+      "semantic_reuse_candidates": [],
+      "recommended_cards": [
+        {
+          "id": "geo20-core-1",
+          "title": "Hình phẳng, đo lường và đối xứng",
+          "skills": [
+            "nhan-biet-tam-giac-deu",
+            "nhan-biet-hinh-vuong",
+            "nhan-biet-luc-giac-deu",
+            "nhan-biet-tu-giac-dac-biet",
+            "chu-vi-tu-giac",
+            "dien-tich-tu-giac",
+            "do-luong-thuc-te",
+            "truc-doi-xung",
+            "tam-doi-xung"
+          ]
+        },
+        {
+          "id": "geo20-core-2",
+          "title": "Hình hộp, lập phương và lăng trụ",
+          "skills": [
+            "the-tich-hop-chu-nhat",
+            "dien-tich-day",
+            "doi-don-vi-do-luong",
+            "nhan-biet-hinh-hop-lap-phuong",
+            "dien-tich-xung-quanh-hop-chu-nhat",
+            "the-tich-lang-tru",
+            "nhan-biet-lang-tru-dung",
+            "dien-tich-xung-quanh-lang-tru"
+          ]
+        },
+        {
+          "id": "geo20-core-3",
+          "title": "Hình chóp đều",
+          "skills": [
+            "nhan-biet-hinh-chop-deu",
+            "dien-tich-xung-quanh-hinh-chop",
+            "the-tich-hinh-chop"
+          ]
+        },
+        {
+          "id": "geo20-core-4",
+          "title": "Hình trụ và hình nón",
+          "skills": [
+            "nhan-biet-hinh-tru",
+            "dien-tich-xung-quanh-hinh-tru",
+            "the-tich-hinh-tru",
+            "nhan-biet-hinh-non",
+            "dien-tich-xung-quanh-hinh-non",
+            "the-tich-hinh-non"
+          ]
+        },
+        {
+          "id": "geo20-core-5",
+          "title": "Hình cầu",
+          "skills": [
+            "nhan-biet-hinh-cau",
+            "dien-tich-mat-cau",
+            "the-tich-hinh-cau"
+          ]
+        }
+      ],
+      "counts": {
+        "core": 29,
+        "exact_present": 29,
+        "exact_missing": 0,
+        "bank_extra": 9
+      }
+    }
+  ]
+}

@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <title>Kiểm tra dữ liệu trước chuyển bộ đếm · Self-Learning Math</title>
+  <style>
+    *{box-sizing:border-box}
+    :root{font-family:system-ui,-apple-system,"Segoe UI",sans-serif;color:#20392e;background:#f4f7f5}
+    body{margin:0;line-height:1.6}
+    main{margin:auto;max-width:850px;padding:20px 15px 50px}
+    header{background:#1b553e;color:#fff;border-radius:18px;padding:22px}
+    h1{font-size:clamp(1.45rem,3.5vw,2rem);line-height:1.3;margin:8px 0}
+    h2{font-size:1.15rem;margin-top:0}
+    header p{color:#e5efe8;margin:0}
+    section{background:white;border:1px solid #d5e4d9;padding:19px;margin:15px 0;border-radius:15px}
+    .caution{border-left:4px solid #b68a3d;padding:10px 14px;background:#fff9ed}
+    button{border:1px solid #215c44;background:#205d43;color:#fff;border-radius:10px;padding:12px 16px;min-height:44px;font:inherit;font-weight:650;cursor:pointer}
+    button.secondary{background:white;color:#205d43}
+    button:disabled{opacity:.5;cursor:not-allowed}
+    button:focus-visible,a:focus-visible{outline:3px solid #c88628;outline-offset:3px}
+    .actions{display:flex;gap:12px;flex-wrap:wrap}
+    .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+    .cell{border:1px solid #dce6df;border-radius:10px;background:#f7faf8;padding:13px}
+    .cell strong{display:block;font-size:1.4rem}
+    .small{font-size:.9rem;color:#54635a}
+    .message{padding:12px 14px;border-radius:9px;background:#edf4ef;min-height:45px}
+    .message[data-kind="error"]{color:#833224;background:#fff0ec}
+    .message[data-kind="success"]{color:#225738;background:#ebf8ef}
+    ul{padding-left:20px}
+    a{color:#205d43;font-weight:600}
+    @media(max-width:620px){main{padding:10px}.grid{grid-template-columns:1fr}.actions button{width:100%}section{padding:15px}}
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <div>G Learning · Self-Learning Math</div>
+    <h1>Kiểm tra trước khi chuyển bộ đếm v2</h1>
+    <p>Dành cho phụ huynh: xác minh khả năng sao lưu tiến độ học thật hiện có mà không sửa điểm hoặc lịch sử.</p>
+  </header>
+  <section>
+    <h2>Phạm vi và an toàn</h2>
+    <p class="caution"><strong>Chỉ đọc dữ liệu thật trên thiết bị này.</strong> Trang không ghi vào localStorage hay IndexedDB, không tải dữ liệu lên máy chủ và không khôi phục hoặc chuyển đổi lịch sử. Bộ đếm v2 cho học sinh vẫn chưa được bật.</p>
+    <p class="small">Trang dùng đúng công cụ sao lưu học thật <code>self-learning-math-local-backup-v1</code>, không dùng tệp thử nghiệm QA R11. Bạn không cần tải tệp học thật lên trang QA.</p>
+  </section>
+  <section>
+    <h2>Bước 1 · Xác minh tiến độ hiện tại</h2>
+    <p>Bấm kiểm tra. Công cụ đọc và kiểm tra toàn vẹn một bản sao lưu tạm trong bộ nhớ; nó không tạo điểm, không gộp hoặc tái dựng lịch sử.</p>
+    <div class="actions">
+      <button type="button" id="inspect">Kiểm tra dữ liệu trên thiết bị</button>
+      <button type="button" id="export" class="secondary" disabled>Tải bản sao lưu thật đã kiểm tra</button>
+    </div>
+    <p id="status" class="message" role="status" aria-live="polite">Chưa đọc dữ liệu. Chọn “Kiểm tra dữ liệu trên thiết bị”.</p>
+    <div class="grid" aria-label="Nguồn dữ liệu học thật">
+      <div class="cell"><span>Practice / Core</span><strong id="practice">Chưa kiểm tra</strong><span class="small" id="practice-help">Không suy diễn lượt từ bộ đếm v2.</span></div>
+      <div class="cell"><span>Readiness đã nộp</span><strong id="readiness">Chưa kiểm tra</strong><span class="small" id="readiness-help">Số bài đã nộp, không phải số câu trả lời.</span></div>
+      <div class="cell"><span>Vùng dữ liệu trong tệp</span><strong id="zones">—</strong><span class="small">Các nguồn học thật được phép sao lưu.</span></div>
+      <div class="cell"><span>Kiểm tra SHA-256</span><strong id="integrity">—</strong><span class="small">Kiểm tra ngay trên máy, không gửi nội dung ra ngoài.</span></div>
+    </div>
+    <p class="small">Khi dữ liệu thiếu hoặc không xác minh được, công cụ hiển thị trạng thái chưa rõ thay vì tự đặt bằng 0.</p>
+  </section>
+  <section>
+    <h2>Bước 2 · Giữ bản dự phòng trước khi nâng cấp</h2>
+    <p>Sau khi kiểm tra đạt yêu cầu, dùng nút “Tải bản sao lưu thật đã kiểm tra”. Giữ tệp riêng tư. Khi tiến độ thay đổi, kiểm tra và tải bản mới trước khi chuyển hệ thống.</p>
+    <p><a href="../tien-do-hoc-tap/">Quay lại trang Tiến độ học tập</a> để dùng công cụ khôi phục tiến độ học thật. Không nhập tệp này vào trang thử nghiệm bộ đếm v2.</p>
+  </section>
+  <section>
+    <h2>Trạng thái chuyển đổi</h2>
+    <ul>
+      <li>Hệ thống mới sẽ lưu sự kiện mới theo các nhóm Practice, Readiness, Written riêng biệt.</li>
+      <li>Chưa chạy chuyển đổi lịch sử sang bộ đếm mới; không chấm lại điểm cũ.</li>
+      <li>Việc có bản sao lưu hợp lệ <strong>không có nghĩa</strong> đã nghiệm thu chuyển bộ đếm. Cần thử nghiệm trên PC/iPad và xác nhận riêng trước khi bật chính thức.</li>
+    </ul>
+  </section>
+</main>
+<script src="../assets/javascripts/local-progress-backup-v1.js"></script>
+<script>
+(() => {
+  "use strict";
+  const $=id=>document.getElementById(id);
+  const backup=window.MathLocalProgressBackup;
+  let validated=null,signature=null,busy=false;
+  const setStatus=(value,kind="info")=>{$("status").textContent=value;$("status").dataset.kind=kind;};
+  const exactSignature=()=>{
+    const snapshot=backup.collect(localStorage);
+    return JSON.stringify(backup.KEYS.map(key=>[key,Object.hasOwn(snapshot,key)?snapshot[key]:null]));
+  };
+  const counts=(doc,key,kind)=>{
+    if(!Object.hasOwn(doc.entries,key))return {value:"Chưa có",help:"Chưa có bản ghi loại này trên thiết bị; không coi là điểm 0."};
+    let state;
+    try{state=JSON.parse(doc.entries[key]);}catch(_){return {value:"Không rõ",help:"Không đọc được JSON."};}
+    if(!state||typeof state!=="object"||Array.isArray(state))return {value:"Không rõ",help:"Dữ liệu không đúng cấu trúc."};
+    if(kind==="practice"){
+      if(!state.questions||typeof state.questions!=="object"||Array.isArray(state.questions))return {value:"Không rõ",help:"Thiếu bảng câu hỏi."};
+      let result=0;
+      for(const value of Object.values(state.questions)){
+        if(!value||!Number.isSafeInteger(value.attempted)||value.attempted<0||
+           !Number.isSafeInteger(value.correct)||value.correct<0||value.correct>value.attempted)
+          return {value:"Không rõ",help:"Có lượt Practice không đủ dữ liệu để xác minh."};
+        result+=value.attempted;
+        if(!Number.isSafeInteger(result))return {value:"Không rõ",help:"Bộ đếm vượt giới hạn số nguyên."};
+      }
+      return {value:String(result),help:"Lượt Practice và Core; gồm lượt làm lại, chỉ đọc số gốc."};
+    }
+    if(!state.assessments||typeof state.assessments!=="object"||Array.isArray(state.assessments))return {value:"Không rõ",help:"Thiếu bảng Readiness."};
+    let result=0;
+    for(const entry of Object.values(state.assessments)){
+      if(!entry||!Array.isArray(entry.attempts))return {value:"Không rõ",help:"Có bản ghi chưa đủ dữ liệu."};
+      for(const attempt of entry.attempts){
+        if(!attempt||typeof attempt.submitted_at!=="string"||!Number.isFinite(Date.parse(attempt.submitted_at)))
+          return {value:"Không rõ",help:"Không thể xác nhận thời điểm nộp bài."};
+        result++;
+      }
+    }
+    return {value:String(result),help:"Bài Readiness có thời điểm nộp hợp lệ, không phải tổng câu."};
+  };
+  const refresh=async()=>{
+    if(busy)return;
+    busy=true;validated=null;signature=null;$("inspect").disabled=true;$("export").disabled=true;
+    setStatus("Đang đọc và kiểm tra bản sao lưu trong bộ nhớ...");
+    try{
+      if(!backup)throw Error("Không tải được công cụ sao lưu tiến độ học thật.");
+      const start=exactSignature();
+      const doc=await backup.buildBackup(localStorage);
+      const verified=await backup.validateBackup(doc);
+      const end=exactSignature();
+      if(start!==end)throw Error("Tiến độ thay đổi trong lúc kiểm tra. Hãy thử lại.");
+      if(verified.schema!=="self-learning-math-local-backup-v1"||
+         verified.sha256!==doc.sha256)throw Error("Bản sao lưu không khớp định dạng học thật.");
+      const p=counts(verified,"toan-thcs-practice-v1","practice");
+      const r=counts(verified,"toan-thcs-assessment-v1","readiness");
+      $("practice").textContent=p.value;$("practice-help").textContent=p.help;
+      $("readiness").textContent=r.value;$("readiness-help").textContent=r.help;
+      $("zones").textContent=String(Object.keys(verified.entries).length);
+      $("integrity").textContent="Hợp lệ";
+      validated=verified;signature=end;
+      $("export").disabled=false;
+      setStatus("PASS: có thể tạo và tự xác minh tệp sao lưu học thật trên thiết bị này. Chưa chuyển đổi hoặc chỉnh sửa lịch sử.","success");
+    }catch(e){
+      $("practice").textContent="Chưa xác minh";$("readiness").textContent="Chưa xác minh";
+      $("zones").textContent="—";$("integrity").textContent="Chưa đạt";
+      setStatus("Chưa thể xác minh bản sao lưu: "+String(e?.message||e)+". Không có dữ liệu nào bị sửa.","error");
+    }finally{busy=false;$("inspect").disabled=false;}
+  };
+  const download=async()=>{
+    if(busy||!validated)return;
+    busy=true;$("inspect").disabled=true;$("export").disabled=true;
+    try{
+      if(exactSignature()!==signature){
+        validated=null;signature=null;
+        throw Error("Tiến độ đã thay đổi sau khi kiểm tra. Hãy chạy kiểm tra lại trước khi tải.");
+      }
+      await backup.validateBackup(validated);
+      const blob=new Blob([JSON.stringify(validated,null,2)],{type:"application/json;charset=utf-8"});
+      const url=URL.createObjectURL(blob);
+      const a=document.createElement("a");a.href=url;
+      a.download="math-progress-before-v2-"+new Date().toISOString().slice(0,10)+".json";
+      document.body.append(a);a.click();a.remove();
+      setTimeout(()=>URL.revokeObjectURL(url),10000);
+      setStatus("Đã yêu cầu tải bản sao lưu học thật. Hãy giữ tệp ở nơi riêng tư.","success");
+    }catch(e){setStatus("Chưa tải bản sao lưu: "+String(e?.message||e),"error");}
+    finally{busy=false;$("inspect").disabled=false;$("export").disabled=!validated;}
+  };
+  $("inspect").addEventListener("click",refresh);
+  $("export").addEventListener("click",download);
+})();
+</script>
+</body>
+</html>

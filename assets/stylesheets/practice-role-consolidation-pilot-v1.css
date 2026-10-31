@@ -1,0 +1,13 @@
+/* Four-topic UI-only placement pilot: no changes to existing maths or grading. */
+.practice-role-summary{margin:1rem 0 1.2rem;padding:.8rem 1rem;border:1px solid var(--md-default-fg-color--lightest);border-left:4px solid var(--md-primary-fg-color);border-radius:.55rem;background:color-mix(in srgb,var(--md-primary-fg-color) 6%,var(--md-default-bg-color))}
+.practice-role-summary h2{font-size:1rem;margin:0 0 .55rem;padding:0;border:0}
+.practice-role-summary p{font-size:.82rem;line-height:1.6;margin:.2rem 0 .7rem}
+.practice-role-links{display:flex;flex-wrap:wrap;gap:.65rem 1rem}
+.practice-role-links a{font-size:.78rem;font-weight:700}
+.practice-role-legacy{margin:1.2rem 0;border:1px solid var(--md-default-fg-color--lightest);border-radius:.65rem;padding:0 1rem}
+.practice-role-legacy>summary{font-size:.84rem;font-weight:750;padding:.9rem .2rem;cursor:pointer}
+.practice-role-legacy>.practice-role-legacy-note{background:color-mix(in srgb,var(--md-primary-fg-color) 7%,var(--md-default-bg-color));border-radius:.4rem;padding:.7rem;font-size:.77rem;line-height:1.6}
+.practice-role-legacy:not([open])>*:not(summary){display:none}
+.practice-role-legacy>:last-child{margin-bottom:1rem}
+.practice-role-compact .md-sidebar--secondary{display:none}
+@media(max-width:700px){.practice-role-links{flex-direction:column}.practice-role-summary{padding:.75rem}}

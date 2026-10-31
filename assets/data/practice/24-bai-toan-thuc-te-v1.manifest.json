@@ -1,0 +1,69 @@
+{
+  "version": 2,
+  "schema": "practice-bank-manifest-v1",
+  "bank_id": "MOD24-V1",
+  "topic": {
+    "id": "24-bai-toan-thuc-te",
+    "title": "Bài toán thực tế và mô hình hóa"
+  },
+  "session_size": 10,
+  "question_count": 120,
+  "skill_labels": {
+    "doc-de-du-kien": "Đọc đề và xác định đại lượng",
+    "doi-don-vi": "Đổi và thống nhất đơn vị",
+    "chuyen-dong": "Bài toán chuyển động",
+    "nang-suat": "Bài toán năng suất",
+    "phan-tram": "Bài toán phần trăm",
+    "lap-phuong-trinh": "Lập phương trình thực tế",
+    "lap-he": "Lập hệ phương trình thực tế",
+    "hinh-hoc-do-luong": "Hình học và đo lường thực tế",
+    "luong-giac-thuc-te": "Lượng giác trong thực tế",
+    "thong-ke-thuc-te": "Thống kê trong tình huống thực tế",
+    "xac-suat-thuc-te": "Xác suất trong tình huống thực tế",
+    "kiem-tra-ket-luan": "Kiểm tra nghiệm, đơn vị và kết luận"
+  },
+  "skill_groups": [
+    {
+      "id": "doc-de-mo-hinh",
+      "label": "A. Đọc đề và chuẩn hóa dữ kiện",
+      "skills": [
+        "doc-de-du-kien",
+        "doi-don-vi"
+      ]
+    },
+    {
+      "id": "dai-so-thuc-te",
+      "label": "B. Đại số trong bài toán thực tế",
+      "skills": [
+        "chuyen-dong",
+        "nang-suat",
+        "phan-tram",
+        "lap-phuong-trinh",
+        "lap-he"
+      ]
+    },
+    {
+      "id": "hinh-du-lieu-thuc-te",
+      "label": "C. Hình học, dữ liệu và xác suất thực tế",
+      "skills": [
+        "hinh-hoc-do-luong",
+        "luong-giac-thuc-te",
+        "thong-ke-thuc-te",
+        "xac-suat-thuc-te"
+      ]
+    },
+    {
+      "id": "kiem-tra-ket-luan",
+      "label": "D. Kiểm tra và kết luận",
+      "skills": [
+        "kiem-tra-ket-luan"
+      ]
+    }
+  ],
+  "sources": [
+    "24-bai-toan-thuc-te-v1-01.json",
+    "24-bai-toan-thuc-te-v1-02.json",
+    "24-bai-toan-thuc-te-v1-03.json",
+    "24-bai-toan-thuc-te-v1-04.json"
+  ]
+}

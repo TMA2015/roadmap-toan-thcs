@@ -1,0 +1,157 @@
+{
+  "schema": "roadmap-topic-learning-workspace-v1",
+  "topic": "20-hinh-hoc-tong-hop",
+  "title": "Hình học tổng hợp, đo lường và hình khối",
+  "core_progress_policy": {
+    "layer": "KNTT-Core",
+    "rule": "Only mapped Core cards contribute to readiness; support/Entrance10/Challenge never gate Core."
+  },
+  "cards": [
+    {
+      "id": "geo20-core-1",
+      "order": 1,
+      "title": "Hình phẳng, đo lường và đối xứng",
+      "kntt_lessons": [
+        "Lớp 6–9"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "nhan-biet-tam-giac-deu",
+        "nhan-biet-hinh-vuong",
+        "nhan-biet-luc-giac-deu",
+        "nhan-biet-tu-giac-dac-biet",
+        "chu-vi-tu-giac",
+        "dien-tich-tu-giac",
+        "do-luong-thuc-te",
+        "truc-doi-xung",
+        "tam-doi-xung"
+      ],
+      "prerequisites": [
+        "tong-goc-tu-giac"
+      ],
+      "micro_practice": [
+        "GEO20MICRO_001",
+        "GEO20MICRO_002",
+        "GEO20MICRO_003"
+      ]
+    },
+    {
+      "id": "geo20-core-2",
+      "order": 2,
+      "title": "Hình hộp, lập phương và lăng trụ",
+      "kntt_lessons": [
+        "Lớp 6–9"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "the-tich-hop-chu-nhat",
+        "dien-tich-day",
+        "doi-don-vi-do-luong",
+        "nhan-biet-hinh-hop-lap-phuong",
+        "dien-tich-xung-quanh-hop-chu-nhat",
+        "the-tich-lang-tru",
+        "nhan-biet-lang-tru-dung",
+        "dien-tich-xung-quanh-lang-tru"
+      ],
+      "prerequisites": [
+        "dien-tich-tu-giac"
+      ],
+      "micro_practice": [
+        "GEO20MICRO_004",
+        "GEO20MICRO_005",
+        "GEO20MICRO_006"
+      ]
+    },
+    {
+      "id": "geo20-core-3",
+      "order": 3,
+      "title": "Hình chóp đều",
+      "kntt_lessons": [
+        "Lớp 6–9"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "nhan-biet-hinh-chop-deu",
+        "dien-tich-xung-quanh-hinh-chop",
+        "the-tich-hinh-chop"
+      ],
+      "prerequisites": [
+        "dien-tich-day"
+      ],
+      "micro_practice": [
+        "GEO20MICRO_007",
+        "GEO20MICRO_008",
+        "GEO20MICRO_009"
+      ]
+    },
+    {
+      "id": "geo20-core-4",
+      "order": 4,
+      "title": "Hình trụ và hình nón",
+      "kntt_lessons": [
+        "Lớp 6–9"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "nhan-biet-hinh-tru",
+        "dien-tich-xung-quanh-hinh-tru",
+        "the-tich-hinh-tru",
+        "nhan-biet-hinh-non",
+        "dien-tich-xung-quanh-hinh-non",
+        "the-tich-hinh-non"
+      ],
+      "prerequisites": [
+        "do-dai-duong-tron"
+      ],
+      "micro_practice": [
+        "GEO20MICRO_010",
+        "GEO20MICRO_011",
+        "GEO20MICRO_012"
+      ]
+    },
+    {
+      "id": "geo20-core-5",
+      "order": 5,
+      "title": "Hình cầu",
+      "kntt_lessons": [
+        "Lớp 6–9"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "nhan-biet-hinh-cau",
+        "dien-tich-mat-cau",
+        "the-tich-hinh-cau"
+      ],
+      "prerequisites": [
+        "dien-tich-hinh-tron"
+      ],
+      "micro_practice": [
+        "GEO20MICRO_013",
+        "GEO20MICRO_014",
+        "GEO20MICRO_015"
+      ]
+    }
+  ],
+  "extensions": [
+    {
+      "id": "geo20-ext-1",
+      "layer": "Core-Support",
+      "title": "Kết nối các công cụ hình học phẳng đã học",
+      "gates_core": false
+    },
+    {
+      "id": "geo20-ext-2",
+      "layer": "Entrance10",
+      "title": "Chuỗi nội tiếp → đồng dạng → hệ thức → tiếp tuyến",
+      "gates_core": false
+    },
+    {
+      "id": "geo20-ext-3",
+      "layer": "Challenge",
+      "title": "Chứng minh tổng hợp nhiều bước; không dùng để gate phần đo lường Core",
+      "gates_core": false
+    }
+  ],
+  "micro_practice_bank": "assets/data/practice/20-hinh-hoc-tong-hop-micro-v1.json",
+  "geometry_contract": "assets/data/curriculum/geometry-architecture-v1.json"
+}

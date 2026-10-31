@@ -1,0 +1,90 @@
+{
+  "schema": "gemini-skill-review-response-v1",
+  "reviewer": "Gemini",
+  "status": "NOT_STARTED",
+  "input_snapshot_files": [
+    "review-snapshot-04-11.json",
+    "review-snapshot-12-18.json",
+    "review-snapshot-19-25.json",
+    "skill-taxonomy-audit-v1.json"
+  ],
+  "read_status": {
+    "manifest_snapshots": "pending",
+    "question_sources": "pending",
+    "curriculum_sources": "pending",
+    "exam_corpus": "pending"
+  },
+  "scope": {
+    "batches": [
+      "04-11",
+      "12-18",
+      "19-25",
+      "cross-batch"
+    ],
+    "reviewed_skill_ids": [],
+    "unreviewed_skill_ids": []
+  },
+  "decisions": [
+    {
+      "action": "REVIEW",
+      "old_ids": [
+        "cach-deu-dinh"
+      ],
+      "proposed_canonical_ids": [],
+      "proposed_label": null,
+      "measurable_outcome": null,
+      "topic_occurrences": [
+        "14-tam-giac",
+        "15-duong-dong-quy"
+      ],
+      "evidence_question_ids": [
+        "TRI14V1_129",
+        "TRI14V1_132",
+        "CTR15V1_097"
+      ],
+      "rationale": "Example only: independent reviewer must fill after reading questions.",
+      "confidence": "unverified",
+      "needs_human_review": true,
+      "legacy_aliases": [],
+      "history_migration": "hold: do not merge old counters across different meanings"
+    }
+  ],
+  "priorities": [
+    {
+      "canonical_id": "example-skill-id",
+      "curriculum_status": "unverified",
+      "curriculum_grade": null,
+      "curriculum_source": null,
+      "foundation_importance": "unverified",
+      "dependency_evidence": [],
+      "learner_layers": [],
+      "exam_non_specialist": {
+        "status": "unverified",
+        "corpus": [],
+        "question_references": [],
+        "hits": null,
+        "denominator": null,
+        "counting_method": null
+      },
+      "exam_specialist": {
+        "status": "unverified",
+        "corpus": [],
+        "question_references": [],
+        "hits": null,
+        "denominator": null,
+        "counting_method": null
+      },
+      "recommended_practice_weight": "unverified",
+      "reason": null
+    }
+  ],
+  "missing_skills": [],
+  "unresolved_questions": [],
+  "coverage": {
+    "input_ids": 346,
+    "reviewed_ids": 0,
+    "unreviewed_ids": 346,
+    "complete": false
+  },
+  "reviewer_final_verdict": "PENDING"
+}

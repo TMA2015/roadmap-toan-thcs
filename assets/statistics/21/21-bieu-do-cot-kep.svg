@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="500" viewBox="0 0 820 500" role="img" aria-labelledby="title desc">
+  <title id="title">Biểu đồ cột kép</title>
+  <desc id="desc">Biểu đồ cột kép so sánh hai dãy số liệu theo cùng ba nhóm, có chú giải rõ hai dãy.</desc>
+  <rect width="820" height="500" fill="white"/>
+  <text x="410" y="38" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="700">Biểu đồ cột kép</text>
+  <text x="410" y="66" text-anchor="middle" font-family="Arial, sans-serif" font-size="15">So sánh hai dãy số liệu trên cùng nhóm</text>
+  <g font-family="Arial, sans-serif" font-size="14" fill="#222">
+    <rect x="545" y="82" width="20" height="14" fill="#dbeafe" stroke="#244b74"/>
+    <text x="575" y="94">Kỳ 1</text>
+    <rect x="645" y="82" width="20" height="14" fill="#fed7aa" stroke="#9a4d12"/>
+    <text x="675" y="94">Kỳ 2</text>
+  </g>
+  <g stroke="#222" stroke-width="2" fill="none">
+    <line x1="120" y1="390" x2="700" y2="390"/>
+    <line x1="120" y1="390" x2="120" y2="110"/>
+  </g>
+  <g stroke="#d0d0d0" stroke-width="1">
+    <line x1="120" y1="330" x2="700" y2="330"/>
+    <line x1="120" y1="270" x2="700" y2="270"/>
+    <line x1="120" y1="210" x2="700" y2="210"/>
+    <line x1="120" y1="150" x2="700" y2="150"/>
+  </g>
+  <g font-family="Arial, sans-serif" font-size="15" fill="#222">
+    <text x="100" y="395" text-anchor="end">0</text>
+    <text x="100" y="335" text-anchor="end">2</text>
+    <text x="100" y="275" text-anchor="end">4</text>
+    <text x="100" y="215" text-anchor="end">6</text>
+    <text x="100" y="155" text-anchor="end">8</text>
+  </g>
+  <g stroke-width="2">
+    <g fill="#dbeafe" stroke="#244b74">
+      <rect x="190" y="210" width="52" height="180"/>
+      <rect x="370" y="270" width="52" height="120"/>
+      <rect x="550" y="180" width="52" height="210"/>
+    </g>
+    <g fill="#fed7aa" stroke="#9a4d12">
+      <rect x="245" y="180" width="52" height="210"/>
+      <rect x="425" y="240" width="52" height="150"/>
+      <rect x="605" y="150" width="52" height="240"/>
+    </g>
+  </g>
+  <g font-family="Arial, sans-serif" font-size="16" fill="#222">
+    <text x="244" y="425" text-anchor="middle">Lớp A</text>
+    <text x="424" y="425" text-anchor="middle">Lớp B</text>
+    <text x="604" y="425" text-anchor="middle">Lớp C</text>
+  </g>
+  <g font-family="Arial, sans-serif" font-size="14" fill="#333">
+    <text x="216" y="202" text-anchor="middle">6</text>
+    <text x="271" y="172" text-anchor="middle">7</text>
+    <text x="396" y="262" text-anchor="middle">4</text>
+    <text x="451" y="232" text-anchor="middle">5</text>
+    <text x="576" y="172" text-anchor="middle">7</text>
+    <text x="631" y="142" text-anchor="middle">8</text>
+  </g>
+  <text x="410" y="470" text-anchor="middle" font-family="Arial, sans-serif" font-size="16">Luôn đọc chú giải trước khi so sánh hai cột trong cùng một nhóm.</text>
+</svg>

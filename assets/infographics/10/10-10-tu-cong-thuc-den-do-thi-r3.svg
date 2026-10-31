@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="260" viewBox="0 0 1000 260" role="img" aria-labelledby="title desc">
+<title id="title">Từ công thức đến đồ thị hàm số</title>
+<desc id="desc">Bốn bước liên hệ: bắt đầu với công thức y = 2x + 1; tính bảng giá trị x = 0, 1, 2; lấy ba điểm (0;1), (1;3), (2;5); biểu diễn chúng trên hệ trục thành đường thẳng. Đây là bản đồ quan hệ, không phải bản lặp lý thuyết.</desc>
+<rect x="1" y="1" width="998" height="258" rx="23" fill="#f8fbff" stroke="#d8e3f3" stroke-width="2"/>
+<g font-family="Arial, sans-serif" fill="#132440">
+<text x="30" y="38" font-size="23" font-weight="700">Một hàm số — nhiều cách biểu diễn</text>
+<text x="30" y="62" font-size="15" fill="#44566e">Đi từ quy tắc tính đến hình ảnh trực quan của các điểm tương ứng</text>
+</g>
+<g font-family="Arial, sans-serif" font-size="17" fill="#172b48">
+<rect x="24" y="88" width="188" height="145" rx="14" fill="#fff" stroke="#cbdaf0" stroke-width="2"/>
+<text x="42" y="120" font-weight="700" fill="#314bc7">1. Công thức</text>
+<text x="42" y="168" font-size="25" font-weight="700">y = 2x + 1</text>
+<rect x="258" y="88" width="188" height="145" rx="14" fill="#fff" stroke="#cbdaf0" stroke-width="2"/>
+<text x="276" y="120" font-weight="700" fill="#314bc7">2. Bảng giá trị</text>
+<text x="276" y="162" font-family="monospace" font-size="20">x  0  1  2</text>
+<text x="276" y="193" font-family="monospace" font-size="20">y  1  3  5</text>
+<rect x="492" y="88" width="225" height="145" rx="14" fill="#fff" stroke="#cbdaf0" stroke-width="2"/>
+<text x="510" y="120" font-weight="700" fill="#314bc7">3. Tọa độ điểm</text>
+<text x="510" y="159" font-size="19">A(0; 1), B(1; 3)</text>
+<text x="510" y="188" font-size="19">C(2; 5)</text>
+<rect x="763" y="88" width="213" height="145" rx="14" fill="#fff" stroke="#cbdaf0" stroke-width="2"/>
+<text x="779" y="120" font-weight="700" fill="#314bc7">4. Đồ thị</text>
+</g>
+<g stroke="#14796e" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round">
+<path d="M222 161h25m-10 -9 10 9 -10 9"/>
+<path d="M456 161h25m-10 -9 10 9 -10 9"/>
+<path d="M727 161h25m-10 -9 10 9 -10 9"/>
+</g>
+<g transform="translate(797 130)" stroke-linecap="round">
+<path d="M0 73H155 M23 93V-4" stroke="#526b91" stroke-width="1.7"/>
+<path d="M5 69L121 3" stroke="#304db6" stroke-width="3.5" fill="none"/>
+<g fill="#15837c" stroke="white" stroke-width="1.5">
+<circle cx="23" cy="59" r="4.3"/><circle cx="72" cy="31" r="4.3"/><circle cx="121" cy="3" r="4.3"/>
+</g>
+<text x="156" y="78" font-family="Arial" font-size="13" fill="#172b48">x</text>
+<text x="17" y="-7" font-family="Arial" font-size="13" fill="#172b48">y</text>
+</g>
+</svg>

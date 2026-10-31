@@ -1,0 +1,1199 @@
+{
+  "version": 2,
+  "schema": "practice-question-chunk-v1",
+  "bank_id": "ANG13-V1-05",
+  "topic": {
+    "id": "13-goc-va-duong-thang",
+    "title": "Góc và quan hệ giữa các đường thẳng"
+  },
+  "questions": [
+    {
+      "id": "GEO13V1_121",
+      "question": "Nếu B nằm giữa A và C thì đẳng thức độ dài nào đúng?",
+      "options": [
+        "AB+BC=AC",
+        "AB+AC=BC",
+        "AC+BC=AB",
+        "AB=BC"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "goc-va-duong-thang",
+        "skill": [
+          "diem-nam-giua"
+        ],
+        "type": "diem-nam-giua",
+        "layer": "KNTT-Core",
+        "grade": 6
+      },
+      "difficulty": "basic",
+      "explanation": "Điểm nằm giữa cho phép cộng hai đoạn nhỏ để được đoạn lớn.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "GEO13V1_122",
+      "question": "A, M, B thẳng hàng và AM+MB=AB. Kết luận phù hợp là:",
+      "options": [
+        "M nằm giữa A và B",
+        "A nằm giữa M và B",
+        "B nằm giữa A và M",
+        "Không thể có ba điểm thẳng hàng"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "goc-va-duong-thang",
+        "skill": [
+          "diem-nam-giua"
+        ],
+        "type": "diem-nam-giua",
+        "layer": "KNTT-Core",
+        "grade": 6
+      },
+      "difficulty": "basic",
+      "explanation": "Với ba điểm thẳng hàng, đẳng thức AM+MB=AB xác định M nằm giữa A và B.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "GEO13V1_123",
+      "question": "Nếu C nằm giữa A và B, AB=12 cm, AC=5 cm thì CB bằng:",
+      "options": [
+        "7 cm",
+        "17 cm",
+        "5 cm",
+        "12 cm"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "goc-va-duong-thang",
+        "skill": [
+          "diem-nam-giua"
+        ],
+        "type": "diem-nam-giua",
+        "layer": "KNTT-Core",
+        "grade": 6
+      },
+      "difficulty": "intermediate",
+      "explanation": "AC+CB=AB nên CB=7 cm.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "GEO13V1_124",
+      "question": "Điều nào KHÔNG đủ để kết luận M nằm giữa A và B?",
+      "options": [
+        "Chỉ biết AM<AB",
+        "A,M,B thẳng hàng và AM+MB=AB",
+        "M thuộc đoạn AB và M khác A,B",
+        "A,M,B thẳng hàng với thứ tự A-M-B"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "goc-va-duong-thang",
+        "skill": [
+          "diem-nam-giua"
+        ],
+        "type": "diem-nam-giua",
+        "layer": "KNTT-Core",
+        "grade": 6
+      },
+      "difficulty": "intermediate",
+      "explanation": "AM<AB một mình không xác định vị trí tương đối của ba điểm.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "GEO13V1_125",
+      "question": "Tia Ox có:",
+      "options": [
+        "Gốc O và kéo dài vô hạn về một phía",
+        "Hai đầu mút O và x",
+        "Không có gốc",
+        "Kéo dài vô hạn về hai phía"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "goc-va-duong-thang",
+        "skill": [
+          "tia"
+        ],
+        "type": "tia",
+        "layer": "KNTT-Core",
+        "grade": 6
+      },
+      "difficulty": "basic",
+      "explanation": "Tia có một gốc và kéo dài vô hạn về một phía.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "GEO13V1_126",
+      "question": "Hai tia OA và OB trùng nhau khi:",
+      "options": [
+        "A và B nằm cùng phía đối với O trên cùng một đường thẳng",
+        "A và B ở hai phía đối nhau của O",
+        "OA vuông góc OB",
+        "A=B bắt buộc"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "goc-va-duong-thang",
+        "skill": [
+          "tia"
+        ],
+        "type": "tia",
+        "layer": "KNTT-Core",
+        "grade": 6
+      },
+      "difficulty": "basic",
+      "explanation": "Cùng gốc, cùng đường thẳng và cùng hướng tạo hai tia trùng nhau.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "GEO13V1_127",
+      "question": "Nếu A nằm trên tia Ox và A khác O thì:",
+      "options": [
+        "O là gốc của tia OA",
+        "A là gốc của tia Ox",
+        "Ox là đoạn thẳng OA",
+        "Tia AO luôn trùng tia Ox"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "goc-va-duong-thang",
+        "skill": [
+          "tia"
+        ],
+        "type": "tia",
+        "layer": "KNTT-Core",
+        "grade": 6
+      },
+      "difficulty": "intermediate",
+      "explanation": "Tia OA có gốc O và đi qua A.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "GEO13V1_128",
+      "question": "Hai tia chung gốc nhưng không cùng nằm trên một đường thẳng thì:",
+      "options": [
+        "Không phải hai tia đối nhau",
+        "Luôn là hai tia đối nhau",
+        "Luôn trùng nhau",
+        "Tạo thành một đoạn thẳng"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "goc-va-duong-thang",
+        "skill": [
+          "tia"
+        ],
+        "type": "tia",
+        "layer": "KNTT-Core",
+        "grade": 6
+      },
+      "difficulty": "basic",
+      "explanation": "Hai tia đối nhau bắt buộc phải cùng nằm trên một đường thẳng.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "GEO13V1_129",
+      "question": "Đoạn thẳng AB gồm:",
+      "options": [
+        "A, B và các điểm nằm giữa A, B",
+        "Chỉ A và B",
+        "Mọi điểm trên đường thẳng AB",
+        "Các điểm nằm ngoài A, B"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "goc-va-duong-thang",
+        "skill": [
+          "doan-thang-do-dai"
+        ],
+        "type": "doan-thang-do-dai",
+        "layer": "KNTT-Core",
+        "grade": 6
+      },
+      "difficulty": "basic",
+      "explanation": "Định nghĩa đoạn thẳng gồm hai đầu mút và các điểm nằm giữa.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "GEO13V1_130",
+      "question": "Nếu AB=7 cm và M nằm giữa A,B với AM=3 cm thì MB bằng:",
+      "options": [
+        "4 cm",
+        "10 cm",
+        "3 cm",
+        "7 cm"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "goc-va-duong-thang",
+        "skill": [
+          "doan-thang-do-dai"
+        ],
+        "type": "doan-thang-do-dai",
+        "layer": "KNTT-Core",
+        "grade": 6
+      },
+      "difficulty": "basic",
+      "explanation": "AM+MB=AB nên MB=4 cm.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "GEO13V1_131",
+      "question": "Khẳng định nào đúng về độ dài đoạn thẳng?",
+      "options": [
+        "AB=BA",
+        "AB=-BA",
+        "AB có thể âm",
+        "AB phụ thuộc hướng đọc"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "goc-va-duong-thang",
+        "skill": [
+          "doan-thang-do-dai"
+        ],
+        "type": "doan-thang-do-dai",
+        "layer": "KNTT-Core",
+        "grade": 6
+      },
+      "difficulty": "basic",
+      "explanation": "Độ dài không có hướng nên AB=BA.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "GEO13V1_132",
+      "question": "A,M,B thẳng hàng, AM=4 cm, MB=6 cm, M nằm giữa A,B. Khi đó AB=",
+      "options": [
+        "10 cm",
+        "2 cm",
+        "24 cm",
+        "6 cm"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "goc-va-duong-thang",
+        "skill": [
+          "doan-thang-do-dai"
+        ],
+        "type": "doan-thang-do-dai",
+        "layer": "KNTT-Core",
+        "grade": 6
+      },
+      "difficulty": "intermediate",
+      "explanation": "AB=AM+MB=10 cm.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "GEO13V1_133",
+      "question": "Góc xOy có đỉnh là:",
+      "options": [
+        "O",
+        "x",
+        "y",
+        "xy"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "goc-va-duong-thang",
+        "skill": [
+          "khai-niem-goc"
+        ],
+        "type": "khai-niem-goc",
+        "layer": "KNTT-Core",
+        "grade": 6
+      },
+      "difficulty": "basic",
+      "explanation": "Tên góc xOy đặt đỉnh ở chữ giữa O.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "GEO13V1_134",
+      "question": "Hai cạnh của góc xOy là:",
+      "options": [
+        "Hai tia Ox và Oy",
+        "Hai đoạn Ox và Oy",
+        "Hai đường thẳng xO và yO",
+        "Hai điểm x và y"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "goc-va-duong-thang",
+        "skill": [
+          "khai-niem-goc"
+        ],
+        "type": "khai-niem-goc",
+        "layer": "KNTT-Core",
+        "grade": 6
+      },
+      "difficulty": "basic",
+      "explanation": "Cạnh của góc là hai tia chung gốc.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "GEO13V1_135",
+      "question": "Khi Ox và Oy là hai tia đối nhau, góc xOy là:",
+      "options": [
+        "Góc bẹt",
+        "Góc vuông",
+        "Góc nhọn",
+        "Góc tù"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "goc-va-duong-thang",
+        "skill": [
+          "khai-niem-goc"
+        ],
+        "type": "khai-niem-goc",
+        "layer": "KNTT-Core",
+        "grade": 6
+      },
+      "difficulty": "basic",
+      "explanation": "Hai tia đối nhau tạo góc 180°, tức góc bẹt.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "GEO13V1_136",
+      "question": "Điều kiện cần để hai tia tạo thành một góc là:",
+      "options": [
+        "Có chung gốc",
+        "Song song",
+        "Vuông góc",
+        "Có cùng độ dài"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "goc-va-duong-thang",
+        "skill": [
+          "khai-niem-goc"
+        ],
+        "type": "khai-niem-goc",
+        "layer": "KNTT-Core",
+        "grade": 6
+      },
+      "difficulty": "basic",
+      "explanation": "Một góc được tạo bởi hai tia chung gốc.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "GEO13V1_137",
+      "question": "Số đo của góc vuông là:",
+      "options": [
+        "90°",
+        "180°",
+        "45°",
+        "360°"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "goc-va-duong-thang",
+        "skill": [
+          "do-goc"
+        ],
+        "type": "do-goc",
+        "layer": "KNTT-Core",
+        "grade": 6
+      },
+      "difficulty": "basic",
+      "explanation": "Góc vuông có số đo 90°.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "GEO13V1_138",
+      "question": "Một góc có số đo 135° thuộc loại:",
+      "options": [
+        "Góc tù",
+        "Góc nhọn",
+        "Góc vuông",
+        "Góc bẹt"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "goc-va-duong-thang",
+        "skill": [
+          "do-goc"
+        ],
+        "type": "do-goc",
+        "layer": "KNTT-Core",
+        "grade": 6
+      },
+      "difficulty": "basic",
+      "explanation": "135° nằm giữa 90° và 180°.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "GEO13V1_139",
+      "question": "Nếu ∠xOy=70° và Oz nằm trong góc, ∠xOz=25° thì ∠zOy=",
+      "options": [
+        "45°",
+        "95°",
+        "25°",
+        "70°"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "goc-va-duong-thang",
+        "skill": [
+          "do-goc"
+        ],
+        "type": "do-goc",
+        "layer": "KNTT-Core",
+        "grade": 6
+      },
+      "difficulty": "intermediate",
+      "explanation": "Khi Oz nằm trong góc: 25°+∠zOy=70°.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "GEO13V1_140",
+      "question": "Khẳng định nào đúng?",
+      "options": [
+        "Số đo góc không âm và góc bẹt có số đo 180°",
+        "Mọi góc đều nhỏ hơn 90°",
+        "Góc bẹt bằng 360°",
+        "Góc tù lớn hơn 180°"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "goc-va-duong-thang",
+        "skill": [
+          "do-goc"
+        ],
+        "type": "do-goc",
+        "layer": "KNTT-Core",
+        "grade": 6
+      },
+      "difficulty": "basic",
+      "explanation": "Trong phạm vi góc THCS cơ bản, góc bẹt bằng 180°.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "GEO13V1_141",
+      "question": "Hai góc đối đỉnh xuất hiện khi:",
+      "options": [
+        "Hai đường thẳng cắt nhau",
+        "Hai đường thẳng song song",
+        "Hai tia trùng nhau",
+        "Một đoạn có trung điểm"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "goc-va-duong-thang",
+        "skill": [
+          "nhan-dang-goc-dac-biet"
+        ],
+        "type": "nhan-dang-goc-dac-biet",
+        "layer": "KNTT-Core",
+        "grade": 7
+      },
+      "difficulty": "basic",
+      "explanation": "Góc đối đỉnh được tạo bởi hai đường thẳng cắt nhau.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "GEO13V1_142",
+      "question": "Hai góc kề bù có tổng số đo:",
+      "options": [
+        "180°",
+        "90°",
+        "360°",
+        "45°"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "goc-va-duong-thang",
+        "skill": [
+          "nhan-dang-goc-dac-biet"
+        ],
+        "type": "nhan-dang-goc-dac-biet",
+        "layer": "KNTT-Core",
+        "grade": 7
+      },
+      "difficulty": "basic",
+      "explanation": "Kề bù nghĩa là vừa kề nhau vừa bù nhau.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "GEO13V1_143",
+      "question": "Khi một đường thẳng cắt hai đường thẳng, để gọi hai góc là so le trong cần kiểm tra:",
+      "options": [
+        "Nằm giữa hai đường và ở hai phía của đường cắt",
+        "Cùng phía đường cắt và đều ở ngoài",
+        "Có cùng số đo",
+        "Đều là góc vuông"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "goc-va-duong-thang",
+        "skill": [
+          "nhan-dang-goc-dac-biet"
+        ],
+        "type": "nhan-dang-goc-dac-biet",
+        "layer": "KNTT-Core",
+        "grade": 7
+      },
+      "difficulty": "intermediate",
+      "explanation": "Tên vị trí góc phụ thuộc cấu hình, không phụ thuộc việc chúng có bằng nhau hay không.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "GEO13V1_144",
+      "question": "Hai góc đồng vị được nhận dạng chủ yếu bởi:",
+      "options": [
+        "Vị trí tương ứng tại hai giao điểm",
+        "Tổng bằng 180°",
+        "Có cùng đỉnh",
+        "Đều nằm giữa hai đường"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "goc-va-duong-thang",
+        "skill": [
+          "nhan-dang-goc-dac-biet"
+        ],
+        "type": "nhan-dang-goc-dac-biet",
+        "layer": "KNTT-Core",
+        "grade": 7
+      },
+      "difficulty": "basic",
+      "explanation": "Đồng vị là quan hệ vị trí tương ứng tại hai giao điểm.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "GEO13V1_145",
+      "question": "Qua một điểm M nằm ngoài đường thẳng a, có bao nhiêu đường thẳng đi qua M và song song với a?",
+      "options": [
+        "Đúng một",
+        "Không có",
+        "Hai",
+        "Vô số"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "goc-va-duong-thang",
+        "skill": [
+          "tien-de-euclid"
+        ],
+        "type": "tien-de-euclid",
+        "layer": "KNTT-Core",
+        "grade": 7
+      },
+      "difficulty": "basic",
+      "explanation": "Đây là nội dung tiên đề Euclid trong hình học phẳng.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "GEO13V1_146",
+      "question": "Phát biểu nào đúng theo tiên đề Euclid?",
+      "options": [
+        "Qua điểm ngoài một đường thẳng chỉ có một đường thẳng song song với đường đó",
+        "Qua điểm ngoài một đường thẳng có vô số đường song song",
+        "Mọi hai đường thẳng đều cắt nhau",
+        "Hai đường vuông góc luôn song song"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "goc-va-duong-thang",
+        "skill": [
+          "tien-de-euclid"
+        ],
+        "type": "tien-de-euclid",
+        "layer": "KNTT-Core",
+        "grade": 7
+      },
+      "difficulty": "basic",
+      "explanation": "Tiên đề khẳng định tính duy nhất của đường song song qua điểm ngoài.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "GEO13V1_147",
+      "question": "M ngoài a. Nếu b và c cùng đi qua M, b∥a và c∥a thì:",
+      "options": [
+        "b và c trùng nhau",
+        "b⊥c",
+        "b và c cắt nhau tại hai điểm",
+        "Không thể kết luận"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "goc-va-duong-thang",
+        "skill": [
+          "tien-de-euclid"
+        ],
+        "type": "tien-de-euclid",
+        "layer": "KNTT-Core",
+        "grade": 7
+      },
+      "difficulty": "intermediate",
+      "explanation": "Tính duy nhất trong tiên đề Euclid buộc b và c là cùng một đường thẳng.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "GEO13V1_148",
+      "question": "Vai trò trực tiếp của tiên đề Euclid trong mạch này là:",
+      "options": [
+        "Bảo đảm duy nhất đường song song qua một điểm ngoài đường thẳng",
+        "Tính độ dài đoạn thẳng",
+        "Định nghĩa tia phân giác",
+        "Tính góc đối đỉnh"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "goc-va-duong-thang",
+        "skill": [
+          "tien-de-euclid"
+        ],
+        "type": "tien-de-euclid",
+        "layer": "KNTT-Core",
+        "grade": 7
+      },
+      "difficulty": "basic",
+      "explanation": "Tiên đề Euclid là nền cho lý thuyết đường thẳng song song.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "GEO13V1_149",
+      "question": "Trong định lí “Nếu hai đường thẳng phân biệt cùng vuông góc với đường thẳng thứ ba thì chúng song song”, giả thiết là:",
+      "options": [
+        "Hai đường phân biệt cùng vuông góc với đường thứ ba",
+        "Hai đường song song",
+        "Ba đường cùng đi qua một điểm",
+        "Hai góc đối đỉnh"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "goc-va-duong-thang",
+        "skill": [
+          "gia-thiet-ket-luan"
+        ],
+        "type": "gia-thiet-ket-luan",
+        "layer": "KNTT-Core",
+        "grade": 7
+      },
+      "difficulty": "basic",
+      "explanation": "Giả thiết là phần đã cho sau chữ “nếu”.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "GEO13V1_150",
+      "question": "Trong cùng định lí, kết luận là:",
+      "options": [
+        "Hai đường thẳng đó song song",
+        "Hai đường thẳng đó vuông góc nhau",
+        "Ba đường trùng nhau",
+        "Hai góc bù nhau"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "goc-va-duong-thang",
+        "skill": [
+          "gia-thiet-ket-luan"
+        ],
+        "type": "gia-thiet-ket-luan",
+        "layer": "KNTT-Core",
+        "grade": 7
+      },
+      "difficulty": "basic",
+      "explanation": "Kết luận là điều phải suy ra.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "GEO13V1_151",
+      "question": "Khi viết GT/KL cho một bài chứng minh, điều nào đúng?",
+      "options": [
+        "Không đưa điều cần chứng minh vào giả thiết",
+        "Có thể dùng hình vẽ để thêm giả thiết",
+        "Kết luận luôn là một số đo",
+        "Không cần phân biệt dữ kiện và mục tiêu"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "goc-va-duong-thang",
+        "skill": [
+          "gia-thiet-ket-luan"
+        ],
+        "type": "gia-thiet-ket-luan",
+        "layer": "KNTT-Core",
+        "grade": 7
+      },
+      "difficulty": "basic",
+      "explanation": "Tách rõ dữ kiện và mục tiêu là yêu cầu cơ bản của chứng minh.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "GEO13V1_152",
+      "question": "Cho GT: a∥b, c⊥a. KL phù hợp để dùng tính chất song song-vuông góc là:",
+      "options": [
+        "c⊥b",
+        "c∥b",
+        "a⊥b",
+        "a=c"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "goc-va-duong-thang",
+        "skill": [
+          "gia-thiet-ket-luan"
+        ],
+        "type": "gia-thiet-ket-luan",
+        "layer": "KNTT-Core",
+        "grade": 7
+      },
+      "difficulty": "intermediate",
+      "explanation": "Từ a∥b và c⊥a suy ra c⊥b.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "GEO13V1_153",
+      "question": "Chuỗi nào hợp logic từ GT a∥b, c⊥a đến KL c⊥b?",
+      "options": [
+        "c⊥a ⇒ góc tạo bởi c,a bằng 90°; a∥b ⇒ góc tương ứng với c,b bằng 90°; suy ra c⊥b",
+        "a∥b ⇒ a⊥b ⇒ c⊥b",
+        "Nhìn hình thấy c⊥b",
+        "c⊥a ⇒ c∥b"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "goc-va-duong-thang",
+        "skill": [
+          "lap-luan-chung-minh-ngan"
+        ],
+        "type": "lap-luan-chung-minh-ngan",
+        "layer": "KNTT-Core",
+        "grade": 7
+      },
+      "difficulty": "basic",
+      "explanation": "Mỗi bước dùng dữ kiện hoặc tính chất đã học, không dựa vào hình vẽ.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "GEO13V1_154",
+      "question": "Trong chứng minh hình học, lý do nào KHÔNG hợp lệ?",
+      "options": [
+        "Theo hình vẽ thấy hai đoạn bằng nhau",
+        "Theo giả thiết",
+        "Theo tính chất góc đối đỉnh",
+        "Theo dấu hiệu nhận biết song song"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "goc-va-duong-thang",
+        "skill": [
+          "lap-luan-chung-minh-ngan"
+        ],
+        "type": "lap-luan-chung-minh-ngan",
+        "layer": "KNTT-Core",
+        "grade": 7
+      },
+      "difficulty": "basic",
+      "explanation": "Hình vẽ minh họa không phải căn cứ chứng minh.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "GEO13V1_155",
+      "question": "Muốn kết luận a∥b từ hai góc bằng nhau, bước còn thiếu quan trọng là:",
+      "options": [
+        "Chỉ ra chúng là cặp so le trong hoặc đồng vị thích hợp",
+        "Đo lại bằng thước",
+        "Giả sử a∥b",
+        "Chứng minh hai đoạn bằng nhau"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "goc-va-duong-thang",
+        "skill": [
+          "lap-luan-chung-minh-ngan"
+        ],
+        "type": "lap-luan-chung-minh-ngan",
+        "layer": "KNTT-Core",
+        "grade": 7
+      },
+      "difficulty": "intermediate",
+      "explanation": "Dấu hiệu song song cần đúng vị trí của cặp góc.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "GEO13V1_156",
+      "question": "Một proof step tốt nên có dạng:",
+      "options": [
+        "Mệnh đề + căn cứ",
+        "Chỉ ghi kết quả",
+        "Chỉ ghi tên định lí",
+        "Nhìn hình rồi kết luận"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "goc-va-duong-thang",
+        "skill": [
+          "lap-luan-chung-minh-ngan"
+        ],
+        "type": "lap-luan-chung-minh-ngan",
+        "layer": "KNTT-Core",
+        "grade": 7
+      },
+      "difficulty": "basic",
+      "explanation": "Claim + reason giúp chuỗi chứng minh kiểm tra được.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    }
+  ]
+}

@@ -1,0 +1,152 @@
+{
+  "schema": "thpt-g10-reviewed-selfcheck-v1",
+  "scope": "SGK_CHAPTER_READINESS",
+  "chapter": "CHI",
+  "chapter_label": "I",
+  "source_sha256": "a3c3410555b86b2186bcfe342f3cb084475a37c4777d2fb9b1c8562433d40d32",
+  "review_scope": "INDIVIDUAL_CHAPTER_NOTEBOOKLM_PASS",
+  "mastery_credit": false,
+  "persist_results": false,
+  "items": [
+    {
+      "item_id": "THPT-G10-CHI-RD1-01",
+      "stem": "Cho P(n): “n(n+1) chẵn”, với n là số nguyên. Phát biểu nào là mệnh đề ĐÚNG? A. Với mọi n∈ℤ, P(n); B. Tồn tại n∈ℤ sao cho ¬P(n); C. Với mọi n∈ℤ, n² lẻ; D. Với mọi n∈ℤ, n>0.",
+      "type": "MCQ_SINGLE",
+      "optional": false,
+      "outcome_id": "G10-B01-PROPOSITION, G10-B01-QUANTIFIERS.",
+      "answer": "A",
+      "solution": "Trong hai số nguyên liên tiếp n,n+1 luôn có một số chẵn nên n(n+1) chẵn với mọi n. B sai vì không tồn tại phản ví dụ; C sai với n=2; D sai với n=0.",
+      "rubric": "1đ chọn A và xác định mệnh đề đóng."
+    },
+    {
+      "item_id": "THPT-G10-CHI-RD1-02",
+      "stem": "Cho n∈ℤ, xét các điều kiện A: “n chia hết cho 12”, B: “n chia hết cho 4”, C: “n chia hết cho 3”. Đánh giá Đ/S: (a) A⇒B; (b) A⇒C; (c) B⇒A; (d) (B và C)⇒A.",
+      "type": "TRUE_FALSE_GROUP",
+      "optional": false,
+      "outcome_id": "G10-B01-IMPLICATION.",
+      "answer": "(Đ, Đ, S, Đ)",
+      "solution": "12 là bội của 4 và 3 nên (a),(b) đúng; n=4 là phản ví dụ cho (c). Vì 4 và 3 nguyên tố cùng nhau nên n chia hết cả 4 và 3 thì chia hết 12, (d) đúng.",
+      "rubric": "Mỗi ý 1đ; phải giải thích phản ví dụ và kết hợp hai điều kiện."
+    },
+    {
+      "item_id": "THPT-G10-CHI-RD1-03",
+      "stem": "Với D=[−1;2], hãy viết phủ định của câu “∀x∈D, x²−x≥0” rồi xác định tính đúng/sai của câu ban đầu bằng một giá trị x cụ thể.",
+      "type": "SHORT_EXPLANATION",
+      "optional": false,
+      "outcome_id": "G10-B01-NEGATION, G10-B01-QUANTIFIERS.",
+      "answer": "Phủ định: ∃x∈D: x²−x<0; câu ban đầu sai.",
+      "solution": "Chọn x=1/2 thuộc D; x²−x=1/4−1/2=−1/4<0, bác bỏ lượng từ ∀.",
+      "rubric": "3đ: phủ định ∀↔∃ 1đ; đảo ≥ thành < 1đ; phản ví dụ đúng 1đ."
+    },
+    {
+      "item_id": "THPT-G10-CHI-RD1-04",
+      "stem": "Với n∈ℤ, chứng minh n chia hết cho 6 khi và chỉ khi n chia hết cho cả 2 và 3. Nêu rõ hai chiều và vì sao n chia hết cho 2 và 3 là đủ.",
+      "type": "WRITTEN_RUBRIC",
+      "optional": false,
+      "outcome_id": "G10-B01-IMPLICATION, G10-B01-EQUIVALENCE.",
+      "answer": "n chia hết cho 6 ⇔ (2|n và 3|n).",
+      "solution": "Chiều thuận hiển nhiên vì 6=2·3. Chiều đảo: nếu 2|n và 3|n, do gcd(2,3)=1 nên n chia hết cho BCNN(2,3)=6. Có thể viết n=2k; từ 3|2k và gcd(2,3)=1 suy 3|k, vậy n=6h.",
+      "rubric": "4đ: phát biểu hai chiều 1đ; chiều thuận 1đ; chứng minh chiều đảo 2đ."
+    },
+    {
+      "item_id": "THPT-G10-CHI-RD1-05",
+      "stem": "Xét phương trình x²−5x+6=0 trên ℝ. Phát biểu nào đúng? A. Mọi x thực đều là nghiệm; B. Tồn tại ít nhất một x thực thỏa phương trình; C. Không tồn tại nghiệm thực; D. Mọi số nguyên x đều là nghiệm.",
+      "type": "MCQ_SINGLE",
+      "optional": false,
+      "outcome_id": "G10-B01-QUANTIFIERS.",
+      "answer": "B",
+      "solution": "x²−5x+6=(x−2)(x−3), nên có nghiệm thực x=2 hoặc x=3, nhưng không đúng với mọi x.",
+      "rubric": "1đ chọn B."
+    },
+    {
+      "item_id": "THPT-G10-CHI-RD1-06",
+      "stem": "Cho n thuộc D={0,1,2,3,4,5}. Xét P(n): “n²≤9”. P(n) có phải một mệnh đề hoàn chỉnh khi chưa gán n không? Hãy tìm tập các n làm P(n) đúng và phát biểu một mệnh đề có lượng từ ∃ đúng.",
+      "type": "SHORT_EXPLANATION",
+      "optional": false,
+      "outcome_id": "G10-B01-PROPOSITION, G10-B01-QUANTIFIERS.",
+      "answer": "P(n) là mệnh đề chứa biến; tập nghiệm {0,1,2,3}; ví dụ ∃n∈D: n²≤9 đúng.",
+      "solution": "Chưa cố định n thì P(n) chưa có giá trị chân lý duy nhất; xét từng n trong D cho 0,1,2,3 thỏa.",
+      "rubric": "3đ: nhận biết mệnh đề chứa biến 1đ; tập đúng 1đ; lượng từ đúng 1đ."
+    },
+    {
+      "item_id": "THPT-G10-CHI-RD1-07",
+      "stem": "Cho P: “9 chia hết cho 3” và Q: “9 chia hết cho 2”. Đánh giá Đ/S: (a) P⇒Q; (b) Q⇒P; (c) P⇔Q; (d) ¬(P hoặc Q).",
+      "type": "TRUE_FALSE_GROUP",
+      "optional": false,
+      "outcome_id": "G10-B01-NEGATION, G10-B01-IMPLICATION, G10-B01-EQUIVALENCE.",
+      "answer": "(S, Đ, S, S)",
+      "solution": "P đúng, Q sai. Do vậy P⇒Q sai; Q⇒P đúng vì tiền đề Q sai; P⇔Q sai vì khác giá trị chân lý; P∨Q đúng nên phủ định sai.",
+      "rubric": "Mỗi ý 1đ; nêu điều kiện sai duy nhất của kéo theo."
+    },
+    {
+      "item_id": "THPT-G10-CHI-RD1-08",
+      "stem": "Cho A={−2,0,2} và B={x∈ℤ | x²=4}. Phát biểu nào đúng? A. B⊆A và B≠A; B. A⊆B; C. 0∈B; D. B=A.",
+      "type": "MCQ_SINGLE",
+      "optional": false,
+      "outcome_id": "G10-B02-MEMBERSHIP_SUBSET.",
+      "answer": "A",
+      "solution": "B={−2,2}, nên mọi phần tử B đều thuộc A nhưng 0 thuộc A và không thuộc B.",
+      "rubric": "1đ chọn A và phân biệt tập con với tập bằng nhau."
+    },
+    {
+      "item_id": "THPT-G10-CHI-RD1-09",
+      "stem": "Cho X=(−∞,2] và Y=[−1,5). Tìm X∩Y, X∪Y và X∖Y, giải thích đầu mút −1 và 2.",
+      "type": "SHORT_EXPLANATION",
+      "optional": false,
+      "outcome_id": "G10-B02-INTERVALS, G10-B02-UNION_INTERSECTION, G10-B02-DIFFERENCE.",
+      "answer": "X∩Y=[−1,2]; X∪Y=(−∞,5); X∖Y=(−∞,−1).",
+      "solution": "−1 thuộc cả X,Y; 2 thuộc cả X,Y. Các số nhỏ hơn −1 chỉ thuộc X. X và Y giao nhau nên hợp phủ mọi x<5.",
+      "rubric": "4đ: mỗi tập 1đ, giải thích ngoặc 1đ."
+    },
+    {
+      "item_id": "THPT-G10-CHI-RD1-10",
+      "stem": "Lớp có 38 học sinh; 22 em tham gia bơi, 19 em tham gia cầu lông, 6 em không tham gia môn nào trong hai môn. Tìm số em tham gia cả hai, chỉ bơi, chỉ cầu lông, rồi kiểm tra tổng bốn vùng sơ đồ Venn.",
+      "type": "WRITTEN_RUBRIC",
+      "optional": false,
+      "outcome_id": "G10-B02-VENN_MODEL, G10-B02-UNION_INTERSECTION.",
+      "answer": "Cả hai 9; chỉ bơi 13; chỉ cầu lông 10; ngoài hai 6.",
+      "solution": "|A∪B|=38−6=32; |A∩B|=22+19−32=9; chỉ A=22−9=13; chỉ B=19−9=10; 13+9+10+6=38.",
+      "rubric": "4đ: tính hợp 1đ; giao 1đ; hai vùng chỉ 1đ; kiểm tra tổng 1đ."
+    },
+    {
+      "item_id": "THPT-G10-CHI-RD1-11",
+      "stem": "Với X=[−2,3) và Y=(1,5], cho biết Đ/S: (a) 3∈X; (b) −2∈X; (c) 1∈X∩Y; (d) 5∈X∪Y.",
+      "type": "TRUE_FALSE_GROUP",
+      "optional": false,
+      "outcome_id": "G10-B02-INTERVALS, G10-B02-UNION_INTERSECTION.",
+      "answer": "(S, Đ, S, Đ)",
+      "solution": "X không chứa 3; có −2; Y không chứa 1 nên 1 không thuộc giao; Y chứa 5 nên 5 thuộc hợp.",
+      "rubric": "4 ý, mỗi ý 1đ; dấu ngoặc là căn cứ."
+    },
+    {
+      "item_id": "THPT-G10-CHI-RD1-12",
+      "stem": "Cho A={x∈ℤ | −2≤x≤2}, B={x∈ℤ | x²≤1}. Liệt kê A,B và xác định B⊆A có đúng không; tính A∖B.",
+      "type": "SHORT_EXPLANATION",
+      "optional": false,
+      "outcome_id": "G10-B02-MEMBERSHIP_SUBSET, G10-B02-DIFFERENCE.",
+      "answer": "A={−2,−1,0,1,2}, B={−1,0,1}; B⊆A, A∖B={−2,2}.",
+      "solution": "Giải điều kiện bình phương trong số nguyên, so từng phần tử, rồi loại ba phần tử B khỏi A.",
+      "rubric": "3đ: liệt kê 1đ; quan hệ tập con 1đ; hiệu 1đ."
+    },
+    {
+      "item_id": "THPT-G10-CHI-RD1-13",
+      "stem": "Với U={−2,−1,0,1,2,3,4,5} và A={x∈U | x chẵn}, U∖A bằng tập nào? A. {−2,0,2,4}; B. {−1,1,3,5}; C. {−1,0,1,3,5}; D. {1,3,5}.",
+      "type": "MCQ_SINGLE",
+      "optional": false,
+      "outcome_id": "G10-B02-COMPLEMENT.",
+      "answer": "B",
+      "solution": "Các phần tử chẵn trong U là −2,0,2,4; phần bù trong U chứa các phần tử còn lại −1,1,3,5.",
+      "rubric": "1đ chọn B; lưu ý −1 là phần tử của U."
+    },
+    {
+      "item_id": "THPT-G10-CHI-RD1-14",
+      "stem": "Lấy U=ℝ, A=[−1,4], B=(2,6). Hãy xác định A∩B, A∪B, A∖B và phần bù U∖A. Giải thích vì sao 2 thuộc A∖B còn 4 thuộc A∩B.",
+      "type": "WRITTEN_RUBRIC",
+      "optional": false,
+      "outcome_id": "G10-B02-INTERVALS, G10-B02-UNION_INTERSECTION, G10-B02-DIFFERENCE, G10-B02-COMPLEMENT.",
+      "answer": "A∩B=(2,4]; A∪B=[−1,6); A∖B=[−1,2]; U∖A=(−∞,−1)∪(4,+∞).",
+      "solution": "B không chứa đầu mút 2 nên 2 thuộc A nhưng không thuộc B; B chứa 4 và A chứa 4, nên 4 ở giao. Chú ý phần bù lấy trong U=ℝ.",
+      "rubric": "4đ: giao/hợp 1đ mỗi phần; hiệu/phần bù 1đ mỗi phần; điều kiện giải thích dùng chấm theo từng ý."
+    }
+  ]
+}

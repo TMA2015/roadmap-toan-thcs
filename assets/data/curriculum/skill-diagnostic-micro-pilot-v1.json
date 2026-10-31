@@ -1,0 +1,110 @@
+{
+  "schema": "skill-diagnostic-micro-pilot-v1",
+  "status": "draft_not_loaded_by_practice_engine",
+  "as_of": "2026-09-26",
+  "purpose": "Small clean assessments for distinct diagnostic behaviors without adding more taxonomy nodes",
+  "policy_ref": "docs/roadmap/skill-taxonomy-minimal-policy-v1.md",
+  "metadata_rules": {
+    "legacy_question_ids_unchanged": true,
+    "legacy_tag_stats_unchanged": true,
+    "one_assessed_skill_per_item": true,
+    "not_counted_in_core_readiness_until_QA": true
+  },
+  "items": [
+    {
+      "id": "PILOT04_SIGN_01",
+      "topic": "04-bieu-thuc-dai-so",
+      "assessed_skill": "bo-ngoac-dau",
+      "context": "algebraic_expression",
+      "prompt": "Chỉ bỏ dấu ngoặc, chưa thu gọn: \\(-(2x-3)+x\\) bằng biểu thức nào?",
+      "options": [
+        "\\(-2x+3+x\\)",
+        "\\(-2x-3+x\\)",
+        "\\(2x-3+x\\)",
+        "\\(-2x+3-x\\)"
+      ],
+      "answer_index": 0,
+      "explanation": "Dấu trừ trước ngoặc đổi dấu cả hai hạng tử: -(2x-3)=-2x+3; giữ nguyên +x.",
+      "diagnostic_target": "Đổi dấu mọi hạng tử sau dấu trừ trước ngoặc",
+      "supporting_skills": [],
+      "review": "draft_math_checked_not_deployed"
+    },
+    {
+      "id": "PILOT04_SIGN_02",
+      "topic": "04-bieu-thuc-dai-so",
+      "assessed_skill": "bo-ngoac-dau",
+      "context": "algebraic_expression",
+      "prompt": "Chỉ bỏ dấu ngoặc, chưa thu gọn: \\(5-(x-2)\\) bằng biểu thức nào?",
+      "options": [
+        "\\(5-x+2\\)",
+        "\\(5-x-2\\)",
+        "\\(5+x-2\\)",
+        "\\(5+x+2\\)"
+      ],
+      "answer_index": 0,
+      "explanation": "Trừ cả ngoặc nghĩa là đổi dấu từng hạng tử bên trong: -(x-2)=-x+2.",
+      "diagnostic_target": "Bảo toàn dấu khi bỏ ngoặc có dấu trừ",
+      "supporting_skills": [],
+      "review": "draft_math_checked_not_deployed"
+    },
+    {
+      "id": "PILOT11_ROOT_01",
+      "topic": "11-can-thuc",
+      "assessed_skill": "khai-phuong-tich",
+      "context": "radical_property",
+      "prompt": "Với \\(a,b\\geq 0\\), khẳng định nào luôn đúng?",
+      "options": [
+        "\\(\\sqrt{ab}=\\sqrt a\\,\\sqrt b\\)",
+        "\\(\\sqrt{a+b}=\\sqrt a+\\sqrt b\\)",
+        "\\(\\sqrt{a-b}=\\sqrt a-\\sqrt b\\)",
+        "\\(\\sqrt{a^2}=a^2\\)"
+      ],
+      "answer_index": 0,
+      "explanation": "Quy tắc khai phương một tích áp dụng khi các thừa số không âm. Không phân phối căn bậc hai qua phép cộng/trừ.",
+      "diagnostic_target": "Nhận biết công thức khai phương tích và điều kiện áp dụng",
+      "supporting_skills": [],
+      "review": "draft_math_checked_not_deployed"
+    },
+    {
+      "id": "PILOT11_ROOT_02",
+      "topic": "11-can-thuc",
+      "assessed_skill": "khai-phuong-tich",
+      "context": "radical_property",
+      "prompt": "Trong tập số thực, phép biến đổi nào KHÔNG hợp lệ?",
+      "options": [
+        "\\(\\sqrt{(-2)(-8)}=\\sqrt{-2}\\,\\sqrt{-8}\\)",
+        "\\(\\sqrt{9\\cdot4}=\\sqrt9\\,\\sqrt4\\)",
+        "\\(\\sqrt{4\\cdot25}=\\sqrt4\\,\\sqrt{25}\\)",
+        "\\(\\sqrt{0\\cdot7}=\\sqrt0\\,\\sqrt7\\)"
+      ],
+      "answer_index": 0,
+      "explanation": "Vế trái ở A bằng 4 nhưng hai căn ở vế phải không xác định trong tập số thực. Quy tắc tách căn chỉ áp dụng với các thừa số không âm.",
+      "diagnostic_target": "Kiểm tra điều kiện không âm trước khi dùng quy tắc khai phương tích",
+      "supporting_skills": [],
+      "review": "draft_math_checked_not_deployed"
+    }
+  ],
+  "pending_microtests": [
+    {
+      "skill": "y-nghia-hinh-hoc",
+      "topic": "09-he-phuong-trinh",
+      "reason": "Need independently checked two-line graph asset to assess visual reading, not only verbal description; no unreviewed image auto-created."
+    }
+  ],
+  "existing_direct_evidence": [
+    {
+      "skill": "giu-dieu-kien-ban-dau",
+      "question_ids": [
+        "RAT07V1_063",
+        "RAT07V1_064"
+      ],
+      "reason": "Review existing standalone tagged questions before adding new items."
+    }
+  ],
+  "acceptance": [
+    "All math and distractors independently reviewed",
+    "Separate diagnostic skill is tested without requiring unrelated multistep solution",
+    "No existing bank/skill tags modified",
+    "No historical counters reinterpreted"
+  ]
+}
