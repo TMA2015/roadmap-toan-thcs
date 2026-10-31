@@ -1,0 +1,20 @@
+#!/usr/bin/env node
+"use strict";
+const assert=require("node:assert/strict");
+const fs=require("node:fs");
+const path=require("node:path");
+const src=fs.readFileSync(path.join(__dirname,"../docs/thpt-preview/sgk/chuong-ii/bai-3.md"),"utf8");
+const a=src.indexOf("## 1. Kiến thức SGK"),b=src.indexOf("## 2. Ví dụ",a);
+assert(a>=0&&b>a,"G10 B03 knowledge/Example section missing");
+const fnv=s=>{let h=2166136261;for(let i=0;i<s.length;i++)h=Math.imul(h^s.charCodeAt(i),16777619);return (h>>>0).toString(16).padStart(8,"0")};
+const expr=s=>[...s.matchAll(/\\\(([\s\S]*?)\\\)|\\\[([\s\S]*?)\\\]/g)].map(x=>(x[1]??x[2]).trim());
+const k=src.slice(a,b);
+assert.equal(expr(k).length,20,"Expression count drift");
+assert.equal(fnv(JSON.stringify(expr(k))),"20a9cd2f","Source mathematical expressions changed; academic review classification required");
+assert.equal(fnv(src.slice(0,a)),"0de94b33","Header/deep links changed");
+assert.equal(fnv(src.slice(b)),"4cd03416","Examples, original SVG, HELP_ID, canonical item links or sources changed");
+for(const heading of ["### 1. Dạng bất phương trình bậc nhất hai ẩn","### 2. Cặp nghiệm và miền nghiệm","### 3. Quy trình biểu diễn miền nghiệm","### 4. Điều kiện thực tiễn"])assert(k.includes(heading),"Missing AP1 heading "+heading);
+for(const label of ["**Định nghĩa:**","**Miền nghiệm và đường biên:**","**Quy trình 5 bước:**","**Lỗi cần tránh:**","**Điều kiện nguyên:**","**Điều kiện của mẫu:**"])assert(k.includes(label),"Missing AP4 group "+label);
+for(let i=1;i<=5;i++)assert(new RegExp("^"+i+"\\. ","m").test(k),"Lost practice method step "+i);
+assert(!/data-thpt-readiness|data-mastery-credit|data-scoring-engine/.test(src),"Unexpected assessed Readiness/Mastery activation");
+console.log("PASS G10 B03 AP source-only: 20/20 unchanged mathematical expressions, unchanged lesson header, examples, original SVG/HELP/links, clear 5 steps, no Readiness/Mastery.");
