@@ -4,6 +4,8 @@
 
 ## 1. Kiến thức SGK
 
+<span class="thpt-ap-knowledge-pilot" hidden aria-hidden="true"></span>
+
 ### 1. Định nghĩa và trường hợp đặc biệt
 
 Cho $k\in\mathbb R$ và vectơ $\vec u$. 
