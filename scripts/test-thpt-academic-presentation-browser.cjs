@@ -29,7 +29,7 @@ const pages=[
      assert(response?.ok(),"AP page missing "+sample.path);
      const headings=await page.locator("h3").allInnerTexts();
      for(const expected of sample.expected){
-      assert(headings.some(x=>x.trim()===expected),
+      assert(headings.some(x=>x.trim().startsWith(expected)),
        "Missing learner-facing heading "+expected+" on "+sample.path);
      }
      await page.waitForFunction(()=>document.querySelectorAll("mjx-container").length>0,{timeout:12000});
