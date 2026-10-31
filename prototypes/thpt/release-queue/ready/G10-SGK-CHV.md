@@ -11,6 +11,7 @@ EFFECTIVE_D6_SOURCE_MAP: prototypes/thpt/content-drafts/THPT_G10_CHV_B12_B14_D6_
 REVIEW_RECEIPT: prototypes/thpt/content-drafts/THPT_G10_CHV_B12_B14_NOTEBOOKLM_D1D6_R01_PASS_RECEIPT_20261030.md [blob 7a20d601c5e3e6ef184bcb44e4e7e214e8a06baf] + scoped R02 owner-reviewed HELP01 receipt [blob d8ed85283d2095ca633613eb1fccde754fdef3d1] and HELP02 receipt [blob 9dc02b7fa8a43c72b7988d1685a7e020d8c37738]
 ACADEMIC_EVIDENCE: prototypes/thpt/release-queue/CHV_B12_B14_PUBLIC_FORMATIVE_A1A7_EVIDENCE_20261030.md
 SCOPED_HELP02_R03_RECEIPT: prototypes/thpt/content-drafts/THPT_G10_CHV_B12_D6_HELP02_R03_OWNER_SCOPED_SOURCE_VERIFY_RECEIPT_20261031.md [reviewer R03: SOURCE_EQUIVALENCE PASS, HISTORICAL_TEMP_BYTE_PARITY NOT_VERIFIED, no new math delta]
+HELP02_R1_PROVENANCE_DECISION: prototypes/thpt/release-queue/CHV_HELP02_R02_ALTERNATE_PROVENANCE_OWNER_DECISION_R03_20261031.md [OWNER_DECISION_PENDING: recover historic Temp OR accept R03 effective-source blob; no automatic waiver]
 CURRENT_PR: #639 authoring Draft only, no merge/deploy approval
 
 **Effective reviewed academic source: frozen R01 for unaffected content + independently reviewed HELP01@R02 and HELP02@R02 overlays:** B12 Số gần đúng và sai số; B13 Xu thế trung tâm; B14 Độ phân tán. 14 outcomes, 9 worked examples, 24 Formative (6 Core + 18 Practice), 3 Written (one Anchor label), 3 SVG and 6 HELP_ID. NotebookLM Academic PASS 27/27, D1–D6 PASS; P0=0, P1=0, P2=1, MINIMAL_DELTA=0. Exact original Temp SHA256: 77a189bb1aa199f3b81b8915903f85bae6659729849251ad92fa092761fd850c.
@@ -53,3 +54,10 @@ The original R01 HELP01 describes finding the *approximate* `a` interval from `\
 - Read-only branch source QA `13/13 PASS`: R01 immutable blob, two R02 overlay blobs, five-step formula/condition/bound, sole canonical help placement, unchanged linked P06, six-entry effective D6 map, no new assessment credit.
 - `HISTORICAL_TEMP_BYTE_PARITY=NOT_VERIFIED` **remains**; R03 academic equivalence does not prove exact bytes. Release R1 must reconcile original historical Temp provenance or obtain explicit owner acceptance of alternate provenance before active integration. No new NotebookLM request for the unchanged 27 canonical items.
 - Final authoring scope remains **CONTENT_READY only for `PUBLIC_FORMATIVE_ONLY` B12–B14**. Independent SGK chapter Readiness, vertical Topic Readiness, Mastery and website release are not approved. PR #639 Draft remains not merged.
+
+## 31/10/2026 — R1 effective-source decision handoff to release
+
+- Historical HELP02 R02 Temp search did not yield a verified original file. Independent R03 validates **mathematical equivalence** of reviewed effective HELP02@R02 Git blob `913400d6aff63befac95a8a47a00870663dd0096`, but `HISTORICAL_TEMP_BYTE_PARITY=NOT_VERIFIED` remains.
+- Owner option: verify recovered historic original Temp (A), or **explicitly approve** R03 + pinned Git effective-source blob as an alternate provenance basis for *HELP02 only* (B). Both alternatives, exact evidence and sample decision text are in `CHV_HELP02_R02_ALTERNATE_PROVENANCE_OWNER_DECISION_R03_20261031.md`.
+- Authoring A1–A7 remains source-complete **only for 27 candidate items/14 outcomes of B12–B14 PUBLIC_FORMATIVE_ONLY**; reviewer did not grant a new Chapter-wide PASS. No stem, key, rubric, figure or D6 five-stage text modified.
+- Release R1 is **HOLD_OWNER_DECISION** until Option A or B is explicitly recorded; R2–R5/physical UAT/merge/deploy separate and pending.
