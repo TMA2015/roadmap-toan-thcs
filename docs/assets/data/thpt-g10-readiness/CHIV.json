@@ -1,0 +1,222 @@
+{
+  "schema": "thpt-g10-reviewed-selfcheck-v1",
+  "scope": "SGK_CHAPTER_READINESS",
+  "chapter": "CHIV",
+  "chapter_label": "IV",
+  "source_sha256": "14868ed2fff5bdca0da7ea4b6e20f917c356880c28d86c425c7d0c8686196e41",
+  "review_scope": "INDIVIDUAL_CHAPTER_NOTEBOOKLM_PASS",
+  "mastery_credit": false,
+  "persist_results": false,
+  "items": [
+    {
+      "item_id": "THPT-G10-CHIV-RD1-01",
+      "stem": "Ba điểm phân biệt A, M, B thẳng hàng theo đúng thứ tự đó, AM=3 cm, MB=5 cm. Ghi Đ/S: (a) |\\overrightarrow{AB}|=8 cm; (b) \\overrightarrow{AM} và \\overrightarrow{MB} cùng hướng; (c) \\overrightarrow{AM}=\\overrightarrow{MB}; (d) \\overrightarrow{BA} và \\overrightarrow{AB} ngược hướng.",
+      "type": "TRUE_FALSE_GROUP",
+      "optional": false,
+      "outcome_id": "G10-B07-DEFINITION, G10-B07-DIRECTION, G10-B07-EQUALITY, G10-B07-LENGTH.",
+      "answer": "Đ, Đ, S, Đ",
+      "solution": "AB=AM+MB=8; AM và MB cùng hướng nhưng có độ dài 3 và 5 nên không bằng nhau; BA có điểm đầu B, điểm cuối A, đối AB.",
+      "rubric": "4 ý × 1đ."
+    },
+    {
+      "item_id": "THPT-G10-CHIV-RD1-02",
+      "stem": "Cho \\vec u khác \\vec0, và một vectơ \\vec v thỏa \\vec u+\\vec v=\\vec u. Phát biểu nào đúng theo quy ước vectơ-không SBT KNTT? A. v là vectơ-không, có độ dài 0 và được quy ước cùng hướng với u. B. v=u. C. v ngược hướng u và khác 0. D. Độ dài v bằng |u|.",
+      "type": "MCQ_SINGLE",
+      "optional": false,
+      "outcome_id": "G10-B07-ZERO, G10-B07-DEFINITION.",
+      "answer": "A",
+      "solution": "Trừ cùng vectơ u ở hai vế cho v=0. Theo quy ước SBT B07, vectơ-không có độ dài 0 và cùng hướng với mọi vectơ.",
+      "rubric": "MCQ 1đ."
+    },
+    {
+      "item_id": "THPT-G10-CHIV-RD1-03",
+      "stem": "Trên một đường thẳng, A, C, B nằm theo thứ tự đó với AB=8 cm, AC=3 cm. D nằm trên tia đối của tia AB với AD=5 cm. (a) Xác định vectơ cùng hướng với \\overrightarrow{AB} trong tập \\overrightarrow{AC}, \\overrightarrow{DA}, \\overrightarrow{CD}. (b) Tìm một cặp vectơ đối nhau trong tập \\overrightarrow{AB},\\overrightarrow{AC},\\overrightarrow{DA},\\overrightarrow{CD}. (c) Tính |\\overrightarrow{BD}|.",
+      "type": "WRITTEN_RUBRIC",
+      "optional": false,
+      "outcome_id": "G10-B07-EQUALITY, G10-B07-LENGTH, G10-B07-DIRECTION.",
+      "answer": "(a) AC và DA; (b) AB=-CD (vectơ); (c) BD=13 cm.",
+      "solution": "Chọn trục có A=0, C=3, B=8, D=-5: AB=+8, AC=+3, DA=+5, CD=−8. AC,DA cùng hướng AB; AB và CD đối nhau (cùng độ dài 8 ngược hướng); BD có độ dài |−5−8|=13.",
+      "rubric": "4đ: xác định hướng đúng (1); cặp đối (1); lập đoạn BD (1); độ dài (1)."
+    },
+    {
+      "item_id": "THPT-G10-CHIV-RD1-04",
+      "stem": "Với bốn điểm A, B, C, D bất kỳ, rút gọn vectơ T=\\overrightarrow{AB}+\\overrightarrow{BC}-\\overrightarrow{DC} thành một vectơ có điểm đầu A.",
+      "type": "SHORT_EXPLANATION",
+      "optional": false,
+      "outcome_id": "G10-B08-TRIANGLE, G10-B08-OPPOSITE-SUBTRACTION.",
+      "answer": "\\overrightarrow{AD}",
+      "solution": "AB+BC=AC; -DC=CD; AC+CD=AD (các đẳng thức vectơ).",
+      "rubric": "2đ: hai lần áp dụng quy tắc ba điểm."
+    },
+    {
+      "item_id": "THPT-G10-CHIV-RD1-05",
+      "stem": "Trong hình bình hành ABCD, O là giao điểm hai đường chéo. Biểu thức \\overrightarrow{AB}+\\overrightarrow{AD}-2\\overrightarrow{AO} bằng: A. \\vec0. B. \\overrightarrow{AB}. C. \\overrightarrow{AD}. D. \\overrightarrow{AC}.",
+      "type": "MCQ_SINGLE",
+      "optional": false,
+      "outcome_id": "G10-B08-PARALLELOGRAM, G10-B08-MIDPOINT.",
+      "answer": "A",
+      "solution": "AB+AD=AC theo quy tắc hình bình hành; O trung điểm AC nên 2AO=AC. Hiệu bằng vectơ-không.",
+      "rubric": "MCQ 1đ."
+    },
+    {
+      "item_id": "THPT-G10-CHIV-RD1-06",
+      "stem": "Cho tam giác ABC, M là trung điểm BC, G là trọng tâm. (a) Dùng quy tắc vectơ chứng minh \\overrightarrow{AB}+\\overrightarrow{AC}=2\\overrightarrow{AM}. (b) Suy ra \\overrightarrow{AG}=(\\overrightarrow{AB}+\\overrightarrow{AC})/3 và \\overrightarrow{GM}=\\overrightarrow{AM}/3.",
+      "type": "WRITTEN_RUBRIC",
+      "optional": false,
+      "outcome_id": "G10-B08-MIDPOINT, G10-B08-CENTROID, G10-B08-TRIANGLE.",
+      "answer": "AB+AC=2AM; AG=(AB+AC)/3; GM=AM/3 (vectơ).",
+      "solution": "AB=AM+MB, AC=AM+MC; MB+MC=0 do M trung điểm, suy ra AB+AC=2AM. G chia trung tuyến AM theo AG:GM=2:1 nên AG=2AM/3=(AB+AC)/3 và GM=AM/3.",
+      "rubric": "4đ: phân rã (1), triệt tiêu hai vectơ MB/MC (1), AG (1), GM (1)."
+    },
+    {
+      "item_id": "THPT-G10-CHIV-RD1-07",
+      "stem": "Cho tam giác ABC, M là trung điểm AB, G là trọng tâm. Ghi Đ/S: (a) \\overrightarrow{MA}+\\overrightarrow{MB}=\\vec0; (b) \\overrightarrow{GA}+\\overrightarrow{GB}+\\overrightarrow{GC}=\\vec0; (c) \\overrightarrow{AB}+\\overrightarrow{BC}=\\overrightarrow{CA}; (d) \\overrightarrow{AB}-\\overrightarrow{AC}=\\overrightarrow{CB}.",
+      "type": "TRUE_FALSE_GROUP",
+      "optional": false,
+      "outcome_id": "G10-B08-MIDPOINT, G10-B08-CENTROID, G10-B08-TRIANGLE, G10-B08-OPPOSITE-SUBTRACTION.",
+      "answer": "Đ, Đ, S, Đ",
+      "solution": "(a) Hai vectơ MA và MB đối nhau; (b) định lý trọng tâm; (c) tổng AB+BC=AC, không phải CA (tam giác không suy biến); (d) AB-AC=AB+CA=CB.",
+      "rubric": "4 ý × 1đ."
+    },
+    {
+      "item_id": "THPT-G10-CHIV-RD1-08",
+      "stem": "Cho \\vec v khác \\vec0, |\\vec v|=3. Đặt \\vec u=2\\vec v và \\vec w=-3\\vec u+4\\vec v. Kết luận đúng là: A. w=2v, cùng hướng v. B. w=-2v, ngược hướng v và |w|=6. C. w=-6v, |w|=18. D. w=0.",
+      "type": "MCQ_SINGLE",
+      "optional": false,
+      "outcome_id": "G10-B09-COLLINEAR, G10-B09-DISTRIBUTION, G10-B09-LENGTH_DIRECTION, G10-B09-SCALAR_DEFINITION.",
+      "answer": "B",
+      "solution": "w=-3(2v)+4v=-2v; do v khác 0, w ngược hướng v và |w|=2×3=6.",
+      "rubric": "MCQ 1đ."
+    },
+    {
+      "item_id": "THPT-G10-CHIV-RD1-09",
+      "stem": "Ba điểm A, M, B thẳng hàng theo thứ tự đó, AM:MB=2:3. Viết \\overrightarrow{AM}, \\overrightarrow{BM} theo \\overrightarrow{AB} và rút gọn 2\\overrightarrow{AM}-\\overrightarrow{MB}.",
+      "type": "SHORT_EXPLANATION",
+      "optional": false,
+      "outcome_id": "G10-B09-COLLINEAR, G10-B09-MIDPOINT_CENTROID, G10-B09-DISTRIBUTION.",
+      "answer": "AM=(2/5)AB; BM=-(3/5)AB; 2AM-MB=(1/5)AB (vectơ).",
+      "solution": "AB=AM+MB với tỷ số 2:3 nên AM=2AB/5, MB=3AB/5, BM=-3AB/5; tổ hợp 2AM-MB=(4-3)AB/5.",
+      "rubric": "3đ: AM/BM đúng (1), MB đúng chiều (1), rút gọn (1)."
+    },
+    {
+      "item_id": "THPT-G10-CHIV-RD1-10",
+      "stem": "Cho tam giác ABC có trọng tâm G. Điểm P được xác định bởi \\overrightarrow{GP}=-2\\overrightarrow{GA}. (a) Biểu diễn \\overrightarrow{AP} qua \\overrightarrow{AB}, \\overrightarrow{AC}. (b) Suy ra \\overrightarrow{BP}=\\overrightarrow{AC}. (c) Nêu kết luận hình học về tứ giác ABPC.",
+      "type": "WRITTEN_RUBRIC",
+      "optional": false,
+      "outcome_id": "G10-B09-MIDPOINT_CENTROID, G10-B09-DISTRIBUTION, G10-B09-SCALAR_DEFINITION.",
+      "answer": "(a) AP=AB+AC; (b) BP=AC (vectơ); (c) ABPC là hình bình hành.",
+      "solution": "Vì GA=-AG nên GP=-2GA=2AG. AP=AG+GP=3AG=AB+AC (hệ thức trọng tâm). BP=BA+AP=-AB+AB+AC=AC. ABPC có cặp cạnh BP song song, cùng hướng và bằng AC nên là hình bình hành.",
+      "rubric": "4đ: GP/AG (1); AP (1); BP (1); kết luận (1)."
+    },
+    {
+      "item_id": "THPT-G10-CHIV-RD1-11",
+      "stem": "Cho \\vec u khác \\vec0 và \\vec v=-2\\vec u. Đánh giá: (a) |u+v|=|u|; (b) u-v=3u; (c) u và v cùng hướng; (d) 2u+v là vectơ-không.",
+      "type": "TRUE_FALSE_GROUP",
+      "optional": false,
+      "outcome_id": "G10-B09-DISTRIBUTION, G10-B09-COLLINEAR, G10-B09-LENGTH_DIRECTION.",
+      "answer": "Đ, Đ, S, Đ",
+      "solution": "u+v=-u nên cùng độ dài; u-v=3u; hệ số -2 nên ngược hướng; 2u+v=0.",
+      "rubric": "4 ý × 1đ."
+    },
+    {
+      "item_id": "THPT-G10-CHIV-RD1-12",
+      "stem": "Ba điểm A(-1;2), B(3;6), C(7;10). Phát biểu nào đúng? A. B là trung điểm AC và \\overrightarrow{AB}=\\overrightarrow{BC}. B. B là trung điểm nhưng hai vectơ AB,BC ngược hướng. C. A là trung điểm BC. D. AB và BC không cùng phương.",
+      "type": "MCQ_SINGLE",
+      "optional": false,
+      "outcome_id": "G10-B10-VECTOR_COORDS, G10-B10-MIDPOINT_CENTROID.",
+      "answer": "A",
+      "solution": "Trung điểm AC là ((-1+7)/2,(2+10)/2)=(3,6)=B; AB=(4,4)=BC.",
+      "rubric": "MCQ 1đ."
+    },
+    {
+      "item_id": "THPT-G10-CHIV-RD1-13",
+      "stem": "Cho P(-2;1), Q(4;t). Tìm t sao cho \\overrightarrow{PQ} cùng phương với vectơ \\vec v=(3;-2), và chỉ rõ hệ số k trong \\overrightarrow{PQ}=k\\vec v.",
+      "type": "SHORT_EXPLANATION",
+      "optional": false,
+      "outcome_id": "G10-B10-COLLINEAR_COORDS, G10-B10-VECTOR_COORDS.",
+      "answer": "t=-3, k=2.",
+      "solution": "PQ=(6,t-1). Vì v có tọa độ x bằng 3, k=6/3=2; khi đó t-1=2×(-2)=-4 nên t=-3.",
+      "rubric": "2đ: k và t đúng kèm lý giải."
+    },
+    {
+      "item_id": "THPT-G10-CHIV-RD1-14",
+      "stem": "Cho tam giác ABC có A(-2;1), B(4;1), trọng tâm G(1;3). (a) Tìm tọa độ đỉnh C chưa biết. (b) Tìm trung điểm M của AB và chứng minh C,G,M thẳng hàng theo tỉ số CG=2GM. (c) Tính chu vi tam giác ABC.",
+      "type": "WRITTEN_RUBRIC",
+      "optional": false,
+      "outcome_id": "G10-B10-MIDPOINT_CENTROID, G10-B10-NORM_DISTANCE, G10-B10-VECTOR_COORDS.",
+      "answer": "C(1;7); M(1;1); C,G,M thẳng hàng với CG=4, GM=2; chu vi 6+6√5.",
+      "solution": "C=3G-A-B=(3,9)-(-2,1)-(4,1)=(1,7). M=((−2+4)/2,(1+1)/2)=(1,1). C,G,M có hoành độ bằng 1; CG=4 và GM=2. AB=6; AC=BC=√(3²+6²)=3√5; chu vi 6+6√5.",
+      "rubric": "4đ: C (1), M (1), quan hệ trọng tâm (1), chu vi (1)."
+    },
+    {
+      "item_id": "THPT-G10-CHIV-RD1-15",
+      "stem": "Cho \\vec u=(1;-3), \\vec v=(-2;4). Tìm tham số t để hai tọa độ của \\vec w=t\\vec u+\\vec v bằng nhau; đồng thời chọn đúng độ dài |w|. A. (t=1; |w|=√2/2). B. (t=3/2; |w|=√2/2). C. (t=2; |w|=√5). D. (t=3; |w|=2).",
+      "type": "MCQ_SINGLE",
+      "optional": false,
+      "outcome_id": "G10-B10-OPERATIONS, G10-B10-NORM_DISTANCE.",
+      "answer": "B",
+      "solution": "w=(t−2,−3t+4). Đặt t−2=−3t+4 được 4t=6, t=3/2. Khi đó w=(−1/2,−1/2), có độ dài √2/2.",
+      "rubric": "MCQ 1đ; lời giải nêu thêm vectơ và độ dài để đối chiếu outcome."
+    },
+    {
+      "item_id": "THPT-G10-CHIV-RD1-16",
+      "stem": "Hình bình hành ABCD có A(0;1), B(4;2), D(-1;5). Tìm đỉnh C và tính độ dài đường chéo AC.",
+      "type": "SHORT_EXPLANATION",
+      "optional": false,
+      "outcome_id": "G10-B10-VECTOR_COORDS, G10-B10-OPERATIONS, G10-B10-NORM_DISTANCE.",
+      "answer": "C(3;6); AC=√34.",
+      "solution": "Trong hình bình hành, C=B+D−A=(3,6); AC=(3,5) nên |AC|=√(3²+5²)=√34.",
+      "rubric": "2đ: điểm C (1), độ dài AC (1)."
+    },
+    {
+      "item_id": "THPT-G10-CHIV-RD1-17",
+      "stem": "Biết A(1;2), B(4;3), C(t;5). Tìm t để tam giác ABC vuông tại B (với ba đỉnh phân biệt).",
+      "type": "SHORT_EXPLANATION",
+      "optional": false,
+      "outcome_id": "G10-B11-PERPENDICULAR, G10-B11-COORDINATE_DOT.",
+      "answer": "t=10/3.",
+      "solution": "BA=(-3,-1), BC=(t-4,2). Điều kiện BA·BC=-3(t-4)-2=0 suy t=10/3. Khi đó BC=(-2/3,2) khác 0, BA khác 0 nên tam giác vuông hợp lệ.",
+      "rubric": "3đ: hai vectơ (1), tích bằng 0 (1), t và điều kiện không suy biến (1)."
+    },
+    {
+      "item_id": "THPT-G10-CHIV-RD1-18",
+      "stem": "Hai vectơ khác vectơ-không có độ dài lần lượt 4 và 6, tích vô hướng bằng -12. Góc giữa hai vectơ là: A. 60°. B. 120°. C. 90°. D. 150°.",
+      "type": "MCQ_SINGLE",
+      "optional": false,
+      "outcome_id": "G10-B11-GEOMETRIC_DOT.",
+      "answer": "B",
+      "solution": "cosθ=(−12)/(4×6)=−1/2, với θ∈[0°,180°] suy θ=120°.",
+      "rubric": "MCQ 1đ."
+    },
+    {
+      "item_id": "THPT-G10-CHIV-RD1-19",
+      "stem": "Cho A(1;1), B(5;2), C(0;5). Chứng minh tam giác ABC vuông cân tại A, rồi tính diện tích tam giác.",
+      "type": "WRITTEN_RUBRIC",
+      "optional": false,
+      "outcome_id": "G10-B11-COORDINATE_DOT, G10-B11-PERPENDICULAR, G10-B11-APPLICATION.",
+      "answer": "AB·AC=0; AB=AC=√17; diện tích S=17/2.",
+      "solution": "AB=(4,1), AC=(-1,4), tích vô hướng -4+4=0; hai vectơ khác 0 nên vuông góc. AB²=AC²=17 nên hai cạnh bằng nhau. S=AB×AC/2=17/2.",
+      "rubric": "4đ: vectơ (1), vuông góc (1), hai cạnh bằng nhau (1), diện tích (1)."
+    },
+    {
+      "item_id": "THPT-G10-CHIV-RD1-20",
+      "stem": "Cho \\vec u=(3;4), \\vec v=(-4;3), \\vec w=-2\\vec u. Ghi Đ/S: (a) u·v=0; (b) |w|=10; (c) góc giữa u và w bằng 0°; (d) u·w=-50.",
+      "type": "TRUE_FALSE_GROUP",
+      "optional": false,
+      "outcome_id": "G10-B11-COORDINATE_DOT, G10-B11-PERPENDICULAR, G10-B11-GEOMETRIC_DOT.",
+      "answer": "Đ, Đ, S, Đ",
+      "solution": "u·v=3×(-4)+4×3=0; |u|=5 nên |w|=10. w là bội âm của u nên góc 180°, u·w=-2|u|²=-2×25=-50.",
+      "rubric": "4 ý × 1đ."
+    },
+    {
+      "item_id": "THPT-G10-CHIV-RD1-21",
+      "stem": "Một vật dịch chuyển theo \\vec s=(4;3) m. Hai lực (đơn vị N) được xét riêng: \\vec F_1=(5;2) và \\vec F_2=(-3;4). (a) Tính công mỗi lực theo W=F·s. (b) Tính cos góc giữa F1 và s; giải thích vì sao công của F2 bằng 0.",
+      "type": "WRITTEN_RUBRIC",
+      "optional": false,
+      "outcome_id": "G10-B11-APPLICATION, G10-B11-COORDINATE_DOT, G10-B11-GEOMETRIC_DOT, G10-B11-PERPENDICULAR.",
+      "answer": "W1=26 J, W2=0 J; cos(F1,s)=26/(5√29); F2 vuông góc s.",
+      "solution": "W1=5×4+2×3=26; W2=(-3)×4+4×3=0. |F1|=√29, |s|=5 nên cos=26/(5√29). F2 và s đều khác 0, tích vô hướng 0 nên vuông góc, công bằng 0.",
+      "rubric": "4đ: W1 (1), W2 (1), cos (1), lý giải vuông góc (1)."
+    }
+  ]
+}
