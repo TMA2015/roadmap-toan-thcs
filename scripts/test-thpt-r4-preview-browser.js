@@ -100,7 +100,9 @@ async function ready(page,path){
     await desktop.goto("http://127.0.0.1:8765/",{waitUntil:"networkidle"});
     await desktop.locator('.md-tabs .md-tabs__link[href="thpt-preview/home/"]').click();
     assert(new URL(desktop.url()).pathname.endsWith("/thpt-preview/home/"),"Desktop THPT programme path broken");
-    assert.equal(await desktop.locator("body.thpt-r4-home").count(),1,"THPT Golden home broken");
+    // Material's instant-navigation DOM updates may finish after the link click.
+    await desktop.locator("[data-thpt-r4-launcher]").waitFor({state:"visible"});
+    await desktop.locator("body.thpt-r4-home").waitFor({state:"attached"});
    }finally{await desktop.close()}
   }
 
