@@ -23,7 +23,21 @@ for(const [lesson,anchor] of Object.entries(pedagogical)){
    const matches=[...article.matchAll(/<details class="thpt-r4-pedagogical-note"([^>]*)>/g)];
    assert.equal(matches.length,1,"B17 compact extension note missing");
    assert(!/\bopen\b/.test(matches[0][1]),"B17 note must begin collapsed");
-   assert(article.includes("không phải kiến thức Core bắt buộc"),"B17 extension vs core distinction lost");
+   const noteStart=article.indexOf('<details class="thpt-r4-pedagogical-note"');
+   const noteEnd=article.indexOf("</details>",noteStart);
+   assert(noteStart>=0&&noteEnd>noteStart,"B17 approved R02 note missing");
+   const note=article.slice(noteStart,noteEnd);
+   assert(note.includes("hệ số bậc hai a cố định khác 0")
+       &&note.includes("thuộc phạm vi vận dụng kiến thức Core"),
+       "B17 R02: fixed nonzero leading coefficient must be Core application");
+   assert(note.includes("Nếu a phụ thuộc tham số và có thể bằng 0")
+       &&note.includes("phần nâng cao"),
+       "B17 R02: variable leading coefficient a=0 must be specialized");
+   assert(note.includes("SGK trang 24, bài 6.17")
+       &&note.includes("SBT trang 17 Ví dụ 3 và trang 18 bài 6.24"),
+       "B17 R02: exact original S1 source citations missing");
+   assert(!note.includes("Phần bất phương trình có tham số là nội dung luyện tập mở rộng"),
+       "B17 R02: prior blanket non-Core tier wording reintroduced");
   }
  }
  console.log("PASS B"+lesson+" student-first notes"+(built?" compiled HTML":""));
